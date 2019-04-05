@@ -1,0 +1,44 @@
+[
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": {},
+	"name": "Q.T. Down",
+	"ignoreGauge": true,
+	"change": [
+		{
+			"onInterrupt": true,
+			"onInaccessiblePanel": true,
+			"action": { "id": 1 }
+		}
+	],
+	"moves": [
+		{ "move": "MOVING_TILE", "yTile": 1, "moveSpeed": 3 },
+		{
+			"time": 1,
+			"turnType": "TARGET",
+			"voc": { "id": 22 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 1 },
+	"name": "Q.T. Up",
+	"ignoreGauge": true,
+	"change": [
+		{
+			"onInterrupt": true,
+			"onInaccessiblePanel": true,
+			"action": {}
+		}
+	],
+	"moves": [
+		{ "move": "MOVING_TILE", "yTile": -1, "moveSpeed": 3 },
+		{
+			"time": 1,
+			"turnType": "TARGET",
+			"voc": { "id": 22 }
+		}
+	]
+}
+]

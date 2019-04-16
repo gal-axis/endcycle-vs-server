@@ -111,7 +111,6 @@
 	"class": "com.one2b3.endcycle.features.background.BackgroundData",
 	"id": { "id": 4 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Xmas" },
-	"visible": true,
 	"frames": [
 		{
 			"drawable": {
@@ -235,7 +234,6 @@
 	"class": "com.one2b3.endcycle.features.background.BackgroundData",
 	"id": { "id": 8000 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Halloween" },
-	"visible": true,
 	"frames": [
 		{
 			"drawable": {
@@ -275,6 +273,30 @@
 			"yRepeat": 64,
 			"xSpeed": -100,
 			"ySpeed": 100
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.background.BackgroundData",
+	"id": { "id": 7 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Ruins" },
+	"visible": true,
+	"neutralFrame": {
+		"drawable": { "id": 13 }
+	},
+	"allyFrame": {
+		"drawable": { "id": 12 }
+	},
+	"enemyFrame": {
+		"drawable": { "id": 14 }
+	},
+	"frames": [
+		{
+			"drawable": {
+				"drawable": { "id": 11 }
+			},
+			"xRepeat": 96,
+			"yRepeat": 128
 		}
 	]
 }

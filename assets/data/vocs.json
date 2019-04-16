@@ -38,11 +38,11 @@
 			],
 			{ "class": "java.lang.Integer", "value": 12 },
 			{ "class": "java.lang.Integer", "value": 4 },
-			{ "class": "com.one2b3.endcycle.engine.audio.Sounds", "value": "battle_programs_cannon" },
+			{ "class": "com.one2b3.endcycle.engine.audio.sound.SoundInfo", "sound": "battle/programs/cannon.wav", "volume": 1, "pitch": 1 },
 			{ "class": "java.lang.Float", "value": -1 },
 			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "java.lang.Float", "value": 0 },
-			{ "class": "java.lang.Float", "value": 0 }
+			{ "class": "java.lang.Float", "value": 15 }
 		]
 	}
 },
@@ -167,7 +167,7 @@
 			],
 			{ "class": "java.lang.Integer", "value": 12 },
 			{ "class": "java.lang.Integer", "value": 4 },
-			{ "class": "com.one2b3.endcycle.engine.audio.Sounds", "value": "battle_programs_spreader_shot" },
+			{ "class": "com.one2b3.endcycle.engine.audio.sound.SoundInfo", "sound": "battle/programs/spreader_shot.wav", "volume": 1, "pitch": 1 },
 			{ "class": "java.lang.Float", "value": -1 },
 			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "java.lang.Float", "value": 0 },
@@ -228,7 +228,7 @@
 			],
 			{ "class": "java.lang.Integer", "value": 12 },
 			{ "class": "java.lang.Integer", "value": 4 },
-			{ "class": "com.one2b3.endcycle.engine.audio.Sounds", "value": "battle_programs_cannon" },
+			{ "class": "com.one2b3.endcycle.engine.audio.sound.SoundInfo", "sound": "battle/programs/machinegun.wav", "volume": 1, "pitch": 1 },
 			{ "class": "java.lang.Float", "value": -1 },
 			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "java.lang.Float", "value": 0 },
@@ -246,8 +246,8 @@
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Lance.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Lance.Description" },
 		"level": 1,
-		"power": 135,
-		"crushPower": 150,
+		"power": 85,
+		"crushPower": 100,
 		"targetType": "CLOSEST_ENEMY",
 		"ailments": [
 			{ "type": "PUSH", "intensity": 1 },
@@ -256,8 +256,8 @@
 		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.StationarySwordAttack",
 		"fields": [
 			[
-				{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.HitArea", "timer": 0.05, "duration": 0.3, "x": 1 },
-				{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.HitArea", "timer": 0.1, "duration": 0.2, "x": 2 }
+				{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.HitArea", "timer": 0.05, "duration": 0.15, "x": 1 },
+				{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.HitArea", "timer": 0.1, "duration": 0.1, "x": 2 }
 			],
 			{ "class": "java.lang.Float", "value": 0.1 },
 			{ "class": "java.lang.Float", "value": 0.1 },
@@ -273,7 +273,7 @@
 			{ "class": "java.lang.Float", "value": 0 },
 			{ "class": "java.lang.Float", "value": 0 },
 			{ "class": "java.lang.Float", "value": 0 },
-			{ "class": "java.lang.Float", "value": 0.5 },
+			{ "class": "java.lang.Boolean", "value": true },
 			{ "class": "java.lang.Float", "value": 0 },
 			{ "class": "java.lang.Float", "value": 0 },
 			{ "class": "java.lang.Float", "value": 0 }
@@ -320,7 +320,7 @@
 			],
 			{ "class": "java.lang.Integer", "value": 12 },
 			{ "class": "java.lang.Integer", "value": 4 },
-			{ "class": "com.one2b3.endcycle.engine.audio.Sounds", "value": "battle_programs_cannon" },
+			{ "class": "com.one2b3.endcycle.engine.audio.sound.SoundInfo", "sound": "battle/programs/cannon.wav", "volume": 1, "pitch": 1 },
 			{ "class": "java.lang.Float", "value": -1 },
 			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "java.lang.Float", "value": 0 },
@@ -335,8 +335,8 @@
 	"visible": true,
 	"imageIndex": 152,
 	"attackShell": {
-		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "value": "Voc_Grenade_Name" },
-		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "value": "Voc_Grenade_Description" },
+		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Grenade.Name" },
+		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Grenade.Description" },
 		"level": 2,
 		"power": 200,
 		"crushPower": 150,
@@ -358,7 +358,11 @@
 			{ "class": "com.one2b3.endcycle.utils.bounded.BoundedFloat", "max": 0.25 },
 			null,
 			{ "class": "java.lang.Boolean", "value": true },
-			{ "class": "java.lang.Boolean", "value": false }
+			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Float", "value": 0 },
+			{ "class": "java.lang.Float", "value": 0 },
+			{ "class": "java.lang.Float", "value": 0 },
+			[]
 		]
 	}
 },
@@ -381,12 +385,12 @@
 		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.StationarySwordAttack",
 		"fields": [
 			[
-				{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.HitArea", "timer": 0.1, "x": 1 },
-				{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.HitArea", "timer": 0.1, "x": 1, "y": -1 },
-				{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.HitArea", "timer": 0.1, "x": 1, "y": 1 }
+				{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.HitArea", "x": 1 },
+				{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.HitArea", "x": 1, "y": -1 },
+				{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.HitArea", "x": 1, "y": 1 }
 			],
 			{ "class": "java.lang.Float", "value": 0.2 },
-			{ "class": "java.lang.Float", "value": 0.1 },
+			{ "class": "java.lang.Float", "value": 0 },
 			{
 				"class": "com.one2b3.endcycle.engine.graphics.DrawableId",
 				"drawable": { "id": 57 },
@@ -400,7 +404,7 @@
 			{ "class": "java.lang.Float", "value": -1 },
 			{ "class": "java.lang.Float", "value": 0 },
 			{ "class": "java.lang.Float", "value": 0 },
-			{ "class": "java.lang.Float", "value": -1 },
+			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "java.lang.Float", "value": -1 },
 			{ "class": "java.lang.Float", "value": 0 },
 			{ "class": "java.lang.Float", "value": 0 }
@@ -447,7 +451,7 @@
 			],
 			{ "class": "java.lang.Integer", "value": 12 },
 			{ "class": "java.lang.Integer", "value": 4 },
-			{ "class": "com.one2b3.endcycle.engine.audio.Sounds", "value": "battle_programs_flame_shot" },
+			{ "class": "com.one2b3.endcycle.engine.audio.sound.SoundInfo", "sound": "battle/programs/flame_shot.wav", "volume": 1, "pitch": 1 },
 			{ "class": "java.lang.Float", "value": -1 },
 			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "java.lang.Float", "value": 0 },
@@ -489,8 +493,8 @@
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Rebound.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Rebound.Description" },
 		"level": 2,
-		"power": 60,
-		"crushPower": 100,
+		"power": 70,
+		"crushPower": 90,
 		"element": "ELEC",
 		"targetType": "CLOSEST_ENEMY",
 		"ailments": [
@@ -499,11 +503,11 @@
 		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ReboundAttack",
 		"fields": [
 			{ "class": "java.lang.Float", "value": 10 },
-			{ "class": "java.lang.Float", "value": 2.5 },
+			{ "class": "java.lang.Float", "value": 4 },
 			{ "class": "java.lang.Float", "value": 1 },
 			{ "class": "java.lang.Integer", "value": 2 },
-			{ "class": "com.one2b3.endcycle.engine.audio.Sounds", "value": "battle_programs_zap" },
-			{ "class": "com.one2b3.endcycle.utils.bounded.BoundedFloat", "max": 0.1 },
+			{ "class": "com.one2b3.endcycle.engine.audio.sound.SoundInfo", "sound": "battle/programs/zap.wav", "volume": 1, "pitch": 1 },
+			{ "class": "java.lang.Integer", "value": 2 },
 			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "java.lang.Float", "value": 0.5 },
@@ -538,13 +542,13 @@
 				"attackName": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.StationarySwordAttack",
 				"fields": [
 					[
-						{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.HitArea", "timer": 0.15, "x": 1, "y": -1 },
-						{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.HitArea", "timer": 0.075, "x": 1 },
-						{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.HitArea", "x": 1, "y": 1 },
-						{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.HitArea", "timer": 0.075, "x": 2 }
+						{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.HitArea", "x": 1, "y": -1 },
+						{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.HitArea", "timer": 0.05, "x": 1 },
+						{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.HitArea", "timer": 0.1, "x": 1, "y": 1 },
+						{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.HitArea", "timer": 0.05, "x": 2 }
 					],
 					{ "class": "java.lang.Float", "value": 0.1 },
-					{ "class": "java.lang.Float", "value": 0.1 },
+					{ "class": "java.lang.Float", "value": 0 },
 					{
 						"class": "com.one2b3.endcycle.engine.graphics.DrawableId",
 						"drawable": { "id": 57 },
@@ -576,8 +580,8 @@
 				"drawable": { "id": 1254 },
 				"color": { "r": 0.6, "g": 0.6, "b": 1, "a": 0.8980392 }
 			},
-			{ "class": "com.one2b3.endcycle.engine.audio.Sounds", "value": "battle_programs_charge" },
-			{ "class": "com.one2b3.endcycle.engine.audio.Sounds", "value": "battle_programs_charged" },
+			{ "class": "com.one2b3.endcycle.engine.audio.sound.SoundInfo", "sound": "battle/programs/charge.wav", "volume": 1, "pitch": 1 },
+			{ "class": "com.one2b3.endcycle.engine.audio.sound.SoundInfo", "sound": "battle/programs/charged.wav", "volume": 1, "pitch": 1 },
 			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "java.lang.Float", "value": -15 },
 			{ "class": "java.lang.Float", "value": -10 },
@@ -749,7 +753,11 @@
 			{ "class": "com.one2b3.endcycle.utils.bounded.BoundedFloat", "max": 0.1 },
 			null,
 			{ "class": "java.lang.Boolean", "value": false },
-			{ "class": "java.lang.Boolean", "value": false }
+			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Float", "value": 0 },
+			{ "class": "java.lang.Float", "value": 0 },
+			{ "class": "java.lang.Float", "value": 0 },
+			[]
 		]
 	}
 },
@@ -782,7 +790,11 @@
 			{ "class": "com.one2b3.endcycle.utils.bounded.BoundedFloat", "max": 0.1 },
 			null,
 			{ "class": "java.lang.Boolean", "value": false },
-			{ "class": "java.lang.Boolean", "value": false }
+			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Float", "value": 0 },
+			{ "class": "java.lang.Float", "value": 0 },
+			{ "class": "java.lang.Float", "value": 0 },
+			[]
 		]
 	}
 },
@@ -1110,7 +1122,7 @@
 			],
 			{ "class": "java.lang.Integer", "value": 12 },
 			{ "class": "java.lang.Integer", "value": 4 },
-			{ "class": "com.one2b3.endcycle.engine.audio.Sounds", "value": "battle_programs_cannon" },
+			{ "class": "com.one2b3.endcycle.engine.audio.sound.SoundInfo", "sound": "battle/programs/cannon.wav", "volume": 1, "pitch": 1 },
 			{ "class": "java.lang.Float", "value": -1 },
 			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "java.lang.Float", "value": 0 },
@@ -1160,7 +1172,7 @@
 			],
 			{ "class": "java.lang.Integer", "value": 12 },
 			{ "class": "java.lang.Integer", "value": 4 },
-			{ "class": "com.one2b3.endcycle.engine.audio.Sounds", "value": "battle_programs_cannon" },
+			{ "class": "com.one2b3.endcycle.engine.audio.sound.SoundInfo", "sound": "battle/programs/cannon.wav", "volume": 1, "pitch": 1 },
 			{ "class": "java.lang.Float", "value": -1 },
 			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "java.lang.Float", "value": 0 },
@@ -1712,7 +1724,7 @@
 			],
 			{ "class": "java.lang.Integer", "value": 4 },
 			{ "class": "java.lang.Integer", "value": 4 },
-			{ "class": "com.one2b3.endcycle.engine.audio.Sounds", "value": "battle_programs_leaf_shot" },
+			{ "class": "com.one2b3.endcycle.engine.audio.sound.SoundInfo", "sound": "battle/programs/leaf_shot.wav", "volume": 1, "pitch": 1 },
 			{ "class": "java.lang.Float", "value": -1 },
 			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "java.lang.Float", "value": 0 },
@@ -1759,11 +1771,11 @@
 			],
 			{ "class": "java.lang.Integer", "value": 12 },
 			{ "class": "java.lang.Integer", "value": 4 },
-			{ "class": "com.one2b3.endcycle.engine.audio.Sounds", "value": "battle_programs_cannon" },
+			{ "class": "com.one2b3.endcycle.engine.audio.sound.SoundInfo", "sound": "battle/programs/cannon.wav", "volume": 1, "pitch": 1 },
 			{ "class": "java.lang.Float", "value": -1 },
 			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "java.lang.Float", "value": 0 },
-			{ "class": "java.lang.Float", "value": 0 }
+			{ "class": "java.lang.Float", "value": 15 }
 		]
 	}
 },
@@ -1777,8 +1789,8 @@
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.ElectroRay.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.ElectroRay.Description" },
 		"level": 1,
-		"power": 75,
-		"crushPower": 50,
+		"power": 100,
+		"crushPower": 75,
 		"element": "ELEC",
 		"ailments": [
 			{ "type": "STUN", "intensity": 0.2 }
@@ -1808,15 +1820,15 @@
 			{ "class": "com.one2b3.endcycle.engine.graphics.DrawableId" },
 			{ "class": "java.lang.Float", "value": 0 },
 			{ "class": "java.lang.Float", "value": 20 },
-			{ "class": "com.one2b3.endcycle.engine.audio.Sounds", "value": "battle_programs_ray_start" },
-			{ "class": "com.one2b3.endcycle.engine.audio.Sounds", "value": "battle_programs_ray" },
-			{ "class": "java.lang.Integer", "value": 3 },
+			{ "class": "com.one2b3.endcycle.engine.audio.sound.SoundInfo", "sound": "battle/programs/ray_start.wav", "volume": 1, "pitch": 1 },
+			{ "class": "com.one2b3.endcycle.engine.audio.sound.SoundInfo", "sound": "battle/programs/ray.wav", "volume": 1, "pitch": 1 },
+			{ "class": "java.lang.Integer", "value": 4 },
 			{ "class": "java.lang.Integer", "value": 1 },
-			{ "class": "java.lang.Float", "value": 0.5 },
+			{ "class": "java.lang.Float", "value": 0.35 },
 			{ "class": "java.lang.Float", "value": 0.25 },
 			{ "class": "java.lang.Integer", "value": 1 },
 			{ "class": "java.lang.Boolean", "value": true },
-			{ "class": "java.lang.Float", "value": 0.333 },
+			{ "class": "java.lang.Float", "value": 1 },
 			{ "class": "java.lang.Float", "value": 0.2 },
 			[
 				{ "class": "java.awt.Point" }
@@ -1906,9 +1918,11 @@
 					],
 					{ "class": "java.lang.Integer", "value": 12 },
 					{ "class": "java.lang.Integer", "value": 4 },
-					{ "class": "com.one2b3.endcycle.engine.audio.Sounds", "value": "battle_programs_flame_shot" },
+					{ "class": "com.one2b3.endcycle.engine.audio.sound.SoundInfo", "sound": "battle/programs/flame_shot.wav", "volume": 1, "pitch": 1 },
 					{ "class": "java.lang.Float", "value": -1 },
-					{ "class": "java.lang.Boolean", "value": false }
+					{ "class": "java.lang.Boolean", "value": false },
+					{ "class": "java.lang.Float", "value": 0 },
+					{ "class": "java.lang.Float", "value": 14 }
 				]
 			},
 			{ "class": "java.lang.Float", "value": 1.2 },
@@ -1923,8 +1937,8 @@
 				"drawable": { "id": 1254 },
 				"color": { "r": 1, "g": 0.6, "b": 0.6, "a": 0.8980392 }
 			},
-			{ "class": "com.one2b3.endcycle.engine.audio.Sounds", "value": "battle_programs_charge" },
-			{ "class": "com.one2b3.endcycle.engine.audio.Sounds", "value": "battle_programs_charged" }
+			{ "class": "com.one2b3.endcycle.engine.audio.sound.SoundInfo", "sound": "battle/programs/charge.wav", "volume": 1, "pitch": 1 },
+			{ "class": "com.one2b3.endcycle.engine.audio.sound.SoundInfo", "sound": "battle/programs/charged.wav", "volume": 1, "pitch": 1 }
 		]
 	}
 },
@@ -1994,10 +2008,10 @@
 			],
 			{ "class": "java.lang.Integer", "value": 12 },
 			{ "class": "java.lang.Integer", "value": 4 },
-			{ "class": "com.one2b3.endcycle.engine.audio.Sounds", "value": "battle_programs_log_roll" },
+			{ "class": "com.one2b3.endcycle.engine.audio.sound.SoundInfo", "sound": "battle/programs/log_roll.wav", "volume": 1, "pitch": 1 },
 			{ "class": "java.lang.Float", "value": 1 },
 			{ "class": "java.lang.Boolean", "value": true },
-			{ "class": "java.lang.Float", "value": -10 },
+			{ "class": "java.lang.Float", "value": 0 },
 			{ "class": "java.lang.Float", "value": 0 }
 		]
 	}
@@ -2068,13 +2082,26 @@
 			{ "class": "java.lang.Float", "value": 0 },
 			{
 				"class": "com.one2b3.endcycle.engine.graphics.DrawableId",
-				"drawable": { "id": 54 }
+				"drawable": { "id": 15 }
 			},
 			{ "class": "java.lang.Float", "value": 1 },
 			{ "class": "com.one2b3.endcycle.utils.bounded.BoundedFloat", "max": 0.1, "val": 0.1 },
 			{ "class": "com.one2b3.endcycle.screens.battle.field.PanelType", "value": "SNOW" },
 			{ "class": "java.lang.Boolean", "value": true },
-			{ "class": "java.lang.Boolean", "value": false }
+			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Float", "value": 0.05 },
+			{ "class": "java.lang.Float", "value": 0 },
+			{ "class": "java.lang.Float", "value": -5 },
+			[
+				{
+					"class": "com.one2b3.endcycle.engine.graphics.DrawableId",
+					"drawable": { "id": 16 }
+				},
+				{
+					"class": "com.one2b3.endcycle.engine.graphics.DrawableId",
+					"drawable": { "id": 17 }
+				}
+			]
 		]
 	}
 },
@@ -2088,7 +2115,7 @@
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Push.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Push.Description" },
-		"power": 50,
+		"power": 75,
 		"crushPower": 50,
 		"ailments": [
 			{ "type": "PUSH", "intensity": 1 }
@@ -2112,7 +2139,7 @@
 			{ "class": "java.lang.Float", "value": 0 },
 			{ "class": "java.lang.Float", "value": -10 },
 			{ "class": "java.lang.Float", "value": 0 },
-			{ "class": "java.lang.Float", "value": -1 },
+			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "java.lang.Float", "value": 0 },
 			{ "class": "java.lang.Float", "value": -10 },
 			{ "class": "java.lang.Float", "value": 0 }
@@ -2153,7 +2180,7 @@
 			],
 			{ "class": "java.lang.Integer", "value": 12 },
 			{ "class": "java.lang.Integer", "value": 4 },
-			{ "class": "com.one2b3.endcycle.engine.audio.Sounds", "value": "battle_programs_cannon" },
+			{ "class": "com.one2b3.endcycle.engine.audio.sound.SoundInfo", "sound": "battle/programs/cannon.wav", "volume": 1, "pitch": 1 },
 			{ "class": "java.lang.Float", "value": -1 },
 			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "java.lang.Float", "value": 0 },

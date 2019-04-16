@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo "[1/7] Installing Java 8..."
-apt install openjdk-8-jre
+apt install openjdk-8-jre-headless
 
 echo "[2/7] Setting install location for service to $PWD"
 sed -i "s@INSTALL_LOCATION@${PWD}@g" EndCycleService.service

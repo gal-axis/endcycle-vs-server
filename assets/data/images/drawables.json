@@ -1019,7 +1019,7 @@
 	"id": { "id": 158 },
 	"name": "battle_crush",
 	"frames": [
-		{ "texturePath": "battle/visuals/crush.png", "width": 68, "height": 22 }
+		{ "texturePath": "battle/visuals/crush.png", "width": 63, "height": 29 }
 	]
 },
 {
@@ -3228,7 +3228,7 @@
 	"id": { "id": 574 },
 	"name": "crushbarFg",
 	"frames": [
-		{ "texturePath": "general/misc/elements.png", "x": 94, "y": 84, "width": 27, "height": 5 }
+		{ "texturePath": "general/misc/elements.png", "x": 94, "y": 84, "width": 29, "height": 5 }
 	]
 },
 {
@@ -3236,7 +3236,7 @@
 	"id": { "id": 575 },
 	"name": "crushbarBg",
 	"frames": [
-		{ "texturePath": "general/misc/elements.png", "x": 94, "y": 90, "width": 26, "height": 5 }
+		{ "texturePath": "general/misc/elements.png", "x": 94, "y": 90, "width": 28, "height": 5 }
 	]
 },
 {
@@ -4771,6 +4771,7 @@
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1173 },
 	"name": "b_note_1",
+	"speed": 0.2,
 	"frames": [
 		{ "texturePath": "battle/vocs/speaker/note_1.png", "width": -4, "height": 10 }
 	]
@@ -4779,6 +4780,7 @@
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1174 },
 	"name": "b_note_2",
+	"speed": 0.2,
 	"frames": [
 		{ "texturePath": "battle/vocs/speaker/note_2.png", "width": -8, "height": 10 }
 	]
@@ -4868,7 +4870,7 @@
 	"id": { "id": 1185 },
 	"name": "b_ice_cube",
 	"frames": [
-		{ "texturePath": "battle/vocs/ice_cube.png", "width": 48, "height": 58 }
+		{ "texturePath": "battle/vocs/ice_cube.png", "width": 40, "height": 48 }
 	]
 },
 {
@@ -5042,54 +5044,6 @@
 	"name": "icon_disconnected",
 	"frames": [
 		{ "texturePath": "general/misc/elements.png", "x": 81, "y": 58, "width": 9, "height": 9 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 1205 },
-	"name": "help_autodata",
-	"frames": [
-		{ "packToAtlas": false, "texturePath": "help/help_autodata.png", "filter": "Linear", "width": 1098, "height": 709 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 1206 },
-	"name": "help_drawables",
-	"frames": [
-		{ "packToAtlas": false, "texturePath": "help/help_drawables.png", "filter": "Linear", "width": 958, "height": 638 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 1207 },
-	"name": "help_change_frame",
-	"frames": [
-		{ "packToAtlas": false, "texturePath": "help/help_change_frame.png", "filter": "Linear", "width": 958, "height": 638 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 1208 },
-	"name": "help_change_frame_button",
-	"frames": [
-		{ "packToAtlas": false, "texturePath": "help/change_frame.png", "filter": "Linear", "width": 556, "height": 617 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 1209 },
-	"name": "help_drawables_search",
-	"frames": [
-		{ "packToAtlas": false, "texturePath": "help/drawables_search.png", "filter": "Linear", "width": 809, "height": 435 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 1210 },
-	"name": "help_mod",
-	"frames": [
-		{ "packToAtlas": false, "texturePath": "help/mod.png", "filter": "Linear", "width": 766, "height": 506 }
 	]
 },
 {
@@ -5556,7 +5510,7 @@
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1260 },
 	"name": "b_laser_startup",
-	"speed": 0.1,
+	"speed": 0.07,
 	"frames": [
 		{ "texturePath": "battle/vocs/laser.png", "width": 40, "height": 40 },
 		{ "texturePath": "battle/vocs/laser.png", "x": 40, "width": 40, "height": 40 },
@@ -5596,7 +5550,7 @@
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1264 },
 	"name": "b_laser_startup_end",
-	"speed": 0.1,
+	"speed": 0.07,
 	"frames": [
 		{ "texturePath": "battle/vocs/laser_end.png", "x": 36, "width": -3, "height": 20 },
 		{ "texturePath": "battle/vocs/laser_end.png", "x": 36, "width": -3, "height": 20 },
@@ -5856,6 +5810,77 @@
 		{ "texturePath": "battle/vocs/pickup.png", "x": 394, "y": 4, "width": 22, "height": 22 },
 		{ "texturePath": "battle/vocs/pickup.png", "x": 424, "y": 4, "width": 22, "height": 22 },
 		{ "texturePath": "battle/vocs/pickup.png", "x": 454, "y": 4, "width": 22, "height": 22 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 11 },
+	"name": "desert_bg",
+	"frames": [
+		{ "texturePath": "battle/backgrounds/desert.png", "width": 96, "height": 128 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 12 },
+	"name": "Frame Ally Desert",
+	"frames": [
+		{ "texturePath": "battle/field/Frames/Desert_Frame_Enemy.png", "x": 2, "y": 2, "width": 41, "height": 35 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 13 },
+	"name": "Frame Neutral Desert",
+	"frames": [
+		{ "texturePath": "battle/field/Frames/Desert_Frame_Neutral.png", "x": 2, "y": 2, "width": 41, "height": 35 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 14 },
+	"name": "Frame Enemy Desert",
+	"frames": [
+		{ "texturePath": "battle/field/Frames/Desert_Frame_Player.png", "x": 2, "y": 2, "width": 41, "height": 35 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 15 },
+	"name": "b_waterbomb",
+	"speed": 0.1,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/vocs/water_bomb/bomb.png", "y": 1, "width": 15, "height": 15 },
+		{ "texturePath": "battle/vocs/water_bomb/bomb.png", "x": 16, "y": 1, "width": 15, "height": 15 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 16 },
+	"name": "b_waterbomb Particle 1",
+	"speed": 0.1,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/vocs/water_bomb/particle_a.png", "x": 2, "y": 2, "width": 4, "height": 4 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 17 },
+	"name": "b_waterbomb Particle 2",
+	"speed": 0.1,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/vocs/water_bomb/particle_b.png", "x": 2, "y": 2, "width": 3, "height": 3 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 18 },
+	"name": "text_cursor",
+	"frames": [
+		{ "texturePath": "fonts/font_dialog.png", "x": 44, "y": 30, "width": 1, "height": 9 }
 	]
 }
 ]

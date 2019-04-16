@@ -1,47 +1,42 @@
-11th March 2019 Update
-		=== Version: Toolbox.2 ===
-	+ Readded prototype Q.T. Behaviour
-	
-	> Fixed:
-		* Online Multiplayer Servers not updating battles
-		* Local Multiplayer stage display with active dev mod
-	
-	Modding:
-	+ Added Entity Action editor for enemy AI
+16th April 2019 Update
+		=== Version: Toolbox.Net.1 ===
+	+ Added in-game Mod manager
+	+ Added Mod browser to download mods in-game
+	+ Game now automatically synchronizes mods with server
+	+ Reworked Tutorial and Tips menu
+	+ Reworked entity HP/Crush gauge
+	+ Added Sound Effects for Menus and VOCs
+	* Reworked Hitboxes for a few VOCs
+	* Local Multiplayer has both premade and player packs
 	
 	> VOCs:
-		* Lv3 JumperJet: Lv2->Lv3
-
-
-9th March 2019 Update
-		=== Version: Toolbox.1 ===
-	+ "On Sale" tab in shop
-	+ Added power/crush display to VOCs
-	+ New VOC icons
-	+ New Battle Background: Clocks
-	* Panel Frames now change with certain backgrounds
-	* Overhauled shop UI
-	* Halved panel break duration
-	* Regen slows crush recovery
-	* Poison quickens crush recovery
-	- Temporarily removed offline AI due to incoming rework
-	
-	Modding:
-	+ New Auto-Data Skin
-	+ Updates can now stack with each other
-	+ Backgrounds can now be modded
-	+ Improved sprite editor
-	+ Reworked Battle Field editor
-	+ VOC inventory is now saved offline when using mods
-	* VOCs icon drawable can now be assigned
-	* When using MODs inventory/shop will work offline
+		* RushSword + JumperJet now buffer input
+		* Lance pushes enemy back twice
+		* Renamed TrndWttr -> Froster
+		* Lv2 Rebound now always rotates twice
+		* Lv0 Push: Power++
+		* Lv1 ElectroRay: Activation Speed++
 	
 	> Fixed:
-		* Pull/Push locking players
-		* Lobby Rule display locking input
-		* Crush message appearing if hit right after crush
-		* Inventory sync issues
-		* Spectator ghost bug
-		
-	> VOCs:
-		* Reworked Lv2 Heal, Lv4 Heal+
+		* Being able to purchase more than 99 of a VOC/Style
+		* Sand Panels not displaying correctly
+		* Lobby configuration not being changeable
+		* Lobby Chat mixing up
+		* Lv0 VOCs having styles
+		* Ice Panels preventing VOCs from activating
+		* Tutorials not working
+		* Anthem waves not displaying correctly
+		* Rush-Style with charged VOCs being used while charging
+		* Rebound not reacting to ChronoRip
+		* Tri-Wing being able to move into objects
+		* Push/Pull making players stuck
+		* Berserk sometimes not boosting VOCs
+		* Chat scrolling issues
+		* Offline Inventory and Shop issues
+		* Field Panels not being transferred correctly
+		* Sand Hole online issues
+		* Rebound hitbox issues
+	
+	Modding:
+	+ Upload mods to share them with others through the mod browser
+	+ Added move Up/Down buttons to list elements

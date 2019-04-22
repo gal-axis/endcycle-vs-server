@@ -11,10 +11,24 @@ This is the repository for the EndCycle VS server!
 * Inside that directory execute `git clone https://github.com/redmatters/endcycle-vs-server.git .`
   * Before proceeding double check the install scripts content to make sure you didn't download any malicious copy of this software.
   * You can do this by executing `nano install.sh` and reading through the commands it does
-* Now, execute `source install.sh` and input the information the script asks of you
+* Now, execute `sudo source install.sh` and input the information the script asks of you
   * The script should only ask you for the Server IP and Server Name
 * If everything went well, your EndCycle VS server should now be up-and-running!
-* To update the server run `source updater.sh`. Beware, as this will disconnect all users from the server!
+* To update the server run `sudo source update.sh`. Beware, as this will disconnect all users from the server!
+
+### Mods
+
+If you want to install mods for the server, you can do so with the following commands:
+* `mod list`
+  * Lists all installed mods and if they're enabled or not.
+* `mod search [keyword]`
+  * Searches the mod repository for mods.
+* `mod install id` or `mod uninstall id`
+  * Installs or uninstalls the mod with the given ID
+* `mod enable id` or `mod disable id`
+  * Enables or disables the mod with the given ID
+  
+If you installed/uninstalled or enabled/disabled mods, you'll have to restart the server to apply the changes. You can do so by running `systemctl restart EndCycleServer.service`.
 
 ### Additional Properties
 

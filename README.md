@@ -4,7 +4,7 @@ This is the repository for the EndCycle VS server!
 ## Headless Setup (Debian virtual server)
 
 * First create an debian server on a platform of your choice (DigitalOcean, Vultr, etc.)
-  * You can also select any other linux variant, as long as it supports Java 8. But beware of this option as you will have to adapt the install script
+  * You can also select any other linux variant, as long as it supports Java 8. But beware of this option as you will have to adapt the install script manually
 * Login to your server via SSH
 * Create a directory anywhere you'd like
 * Update repositories (`sudo apt update`) and install git (`sudo apt install git`)
@@ -18,7 +18,7 @@ This is the repository for the EndCycle VS server!
 
 ### Mods
 
-If you want to install mods for the server, you can do so with the following commands:
+If you want to configure mods for the server, you can do so with the following commands:
 * `mod list`
   * Lists all installed mods and if they're enabled or not.
 * `mod search [keyword]`

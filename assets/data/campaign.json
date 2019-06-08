@@ -1,0 +1,429 @@
+[
+{
+	"class": "com.one2b3.endcycle.features.campaign.CampaignData",
+	"id": { "id": 1 },
+	"name": "The Path Home",
+	"color": { "r": 0.7019608, "g": 0.28627452, "b": 0.16078432, "a": 1 },
+	"description": "A young Noise Hunter pledges to protect the roads of the world, but Rozu must first find his own path.",
+	"victory": "You have brought Rozu one step closer to becoming a great Noise Hunter!",
+	"character": { "id": 7 },
+	"background": {},
+	"music": { "id": 6 },
+	"nodes": [
+		{
+			"name": "Noise Hunter Rule #2",
+			"description": "We strike first.",
+			"battle": { "id": 3 },
+			"dialogue": { "id": 3 },
+			"dialogueAfter": { "id": 5 },
+			"onLoad": {
+				"scripts": [
+					{
+						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+						"fields": [
+							{ "class": "java.lang.String", "value": "player" },
+							{ "class": "java.lang.Boolean", "value": false }
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Noise Hunter Rule #3",
+			"description": "We guard the roads.",
+			"battle": { "id": 4 },
+			"dialogue": { "id": 6 },
+			"dialogueDelay": 0.6,
+			"dialogueAfter": { "id": 7 },
+			"endAfterDialogue": false,
+			"onLoad": {
+				"scripts": [
+					{
+						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+						"fields": [
+							{ "class": "java.lang.String", "value": "player" },
+							{ "class": "java.lang.Boolean", "value": false }
+						]
+					},
+					{
+						"script": "com.one2b3.endcycle.features.scripts.battle.ShakeEntityScript",
+						"fields": [
+							{ "class": "java.lang.String", "value": "neo" },
+							{ "class": "java.lang.Float", "value": 1 }
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Noise Hunter Rule #7",
+			"description": "They do not feel.",
+			"battle": { "id": 5 },
+			"dialogue": { "id": 9 },
+			"dialogueAfter": { "id": 10 },
+			"startAfterDialogue": false,
+			"timeTwoStars": 15,
+			"timeOneStar": 25,
+			"onLoad": {}
+		},
+		{
+			"name": "Noise Hunter Rule #9",
+			"description": "Earn your name.",
+			"battle": { "id": 6 },
+			"dialogue": { "id": 11 },
+			"startAfterDialogue": false,
+			"onLoad": {
+				"scripts": [
+					{
+						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+						"fields": [
+							{ "class": "java.lang.String", "value": "player" },
+							{ "class": "java.lang.Boolean", "value": false }
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Noise Hunter Rule #10",
+			"description": "Do not cry.",
+			"battle": { "id": 7 },
+			"dialogue": { "id": 13 },
+			"dialogueAfter": { "id": 14 },
+			"attackStar": 30,
+			"timeTwoStars": 60,
+			"timeOneStar": 90,
+			"onLoad": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.campaign.CampaignData",
+	"id": {},
+	"name": "Spark's Battle",
+	"color": { "r": 0.92156863, "g": 0.56078434, "b": 0.47843137, "a": 1 },
+	"description": "Tough fighter Spark is looking for a way to use her powers for more than just tournaments. This proves harder than she thought.",
+	"victory": "A new opportunity opens up for Spark! How is she going to use it?",
+	"character": { "id": 2 },
+	"background": { "id": 1 },
+	"music": { "id": 6 },
+	"nodes": [
+		{
+			"name": "The Grind",
+			"description": "Time to make some money moves!",
+			"battle": { "id": 10 },
+			"dialogue": { "id": 18 },
+			"dialogueAfter": { "id": 15 },
+			"leaveAlive": true,
+			"onLoad": {
+				"scripts": [
+					{
+						"script": "com.one2b3.endcycle.features.scripts.battle.CreateAudienceScript",
+						"fields": [
+							{ "class": "java.lang.Integer", "value": 12 },
+							{ "class": "java.lang.Float", "value": 0.2 }
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Bodyguard",
+			"description": "Fans are a hassle",
+			"battle": { "id": 11 },
+			"dialogue": { "id": 16 },
+			"dialogueAfter": { "id": 17 },
+			"startAfterDialogue": false,
+			"onLoad": {
+				"scripts": [
+					{
+						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+						"fields": [
+							{ "class": "java.lang.String", "value": "greed" },
+							{ "class": "java.lang.Boolean", "value": false }
+						]
+					},
+					{
+						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+						"fields": [
+							{ "class": "java.lang.String", "value": "qt" },
+							{ "class": "java.lang.Boolean", "value": false }
+						]
+					},
+					{
+						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+						"fields": [
+							{ "class": "java.lang.String", "value": "fin" },
+							{ "class": "java.lang.Boolean", "value": false }
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Friendship...?",
+			"description": "Ok, maybe it would be nice to... help someone?",
+			"battle": { "id": 12 },
+			"dialogue": { "id": 19 },
+			"dialogueAfter": { "id": 21 },
+			"startAfterDialogue": false,
+			"leaveAlive": true,
+			"onLoad": {
+				"scripts": [
+					{
+						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+						"fields": [
+							{ "class": "java.lang.String", "value": "fin" },
+							{ "class": "java.lang.Boolean", "value": false }
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Erasing Data",
+			"description": "Noises? Not on my watch!",
+			"battle": { "id": 13 },
+			"dialogue": { "id": 22 },
+			"dialogueAfter": { "id": 25 },
+			"startAfterDialogue": false,
+			"endAfterDialogue": false,
+			"onLoad": {
+				"scripts": [
+					{
+						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+						"fields": [
+							{ "class": "java.lang.String", "value": "sofa" },
+							{ "class": "java.lang.Boolean", "value": false }
+						]
+					},
+					{
+						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+						"fields": [
+							{ "class": "java.lang.String", "value": "bomb" },
+							{ "class": "java.lang.Boolean", "value": false }
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Everod's Protector",
+			"description": "Azure Shield? Those guys are up to no good. Let's annoy them.",
+			"battle": { "id": 14 },
+			"dialogue": { "id": 27 },
+			"dialogueAfter": { "id": 30 },
+			"startAfterDialogue": false,
+			"endAfterDialogue": false,
+			"leaveAlive": true,
+			"onLoad": {}
+		},
+		{
+			"name": "A Girl's Gotta Eat",
+			"description": "Back to the grind, I guess.",
+			"battle": { "id": 15 },
+			"dialogue": { "id": 32 },
+			"dialogueAfter": { "id": 33 },
+			"leaveAlive": true,
+			"timeTwoStars": 61,
+			"timeOneStar": 61,
+			"onLoad": {
+				"scripts": [
+					{
+						"script": "com.one2b3.endcycle.features.scripts.battle.CreateAudienceScript",
+						"fields": [
+							{ "class": "java.lang.Integer", "value": 14 },
+							{ "class": "java.lang.Float", "value": 0.15 }
+						]
+					}
+				]
+			}
+		}
+	],
+	"unlockCondition": {
+		"campaigns": [
+			{
+				"campaign": { "id": 1 }
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.campaign.CampaignData",
+	"id": { "id": 2 },
+	"name": "Azure Ambitions",
+	"color": { "r": 0.2784314, "g": 0.6156863, "b": 0.8392157, "a": 1 },
+	"description": "To make Azure Shield work you need all sorts of Agents. Every day consists of challenges and hardships for them, but it will all be worth it soon.",
+	"victory": "Together we will accomplish our goals. Good work Agents!",
+	"character": { "id": 13 },
+	"background": { "id": 5 },
+	"nodes": [
+		{
+			"name": "Initiation",
+			"description": "Vanessa joins Azure Shield knowing only one thing about them: They can save the world!",
+			"battle": { "id": 16 },
+			"dialogue": { "id": 34 },
+			"dialogueAfter": {},
+			"startAfterDialogue": false,
+			"endAfterDialogue": false,
+			"leaveAlive": true,
+			"onLoad": {
+				"scripts": [
+					{
+						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+						"fields": [
+							{ "class": "java.lang.String", "value": "agent1" },
+							{ "class": "java.lang.Boolean", "value": false }
+						]
+					},
+					{
+						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+						"fields": [
+							{ "class": "java.lang.String", "value": "agent2" },
+							{ "class": "java.lang.Boolean", "value": false }
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Office Romance",
+			"description": "Agent Sarah's and Agent Jessica's relationship is having a rough patch. Maybe all they need is a little... Spark.",
+			"battle": { "id": 17 },
+			"dialogue": { "id": 36 },
+			"dialogueAfter": { "id": 38 },
+			"startAfterDialogue": false,
+			"endAfterDialogue": false,
+			"timeTwoStars": 45.1,
+			"timeOneStar": 45.1,
+			"onLoad": {
+				"scripts": [
+					{
+						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+						"fields": [
+							{ "class": "java.lang.String", "value": "spark" },
+							{ "class": "java.lang.Boolean", "value": false }
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Crimson Rozu",
+			"description": "Agent Echs is running out of time. But that's just how they like it.",
+			"battle": { "id": 18 },
+			"dialogue": { "id": 40 },
+			"dialogueAfter": { "id": 42 },
+			"startAfterDialogue": false,
+			"endAfterDialogue": false,
+			"onLoad": {
+				"scripts": [
+					{
+						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+						"fields": [
+							{ "class": "java.lang.String", "value": "rozu" },
+							{ "class": "java.lang.Boolean", "value": false }
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Dating Advice",
+			"description": "Charles helps out a friend by destroying him in battle.",
+			"battle": { "id": 19 },
+			"dialogue": { "id": 44 },
+			"dialogueAfter": { "id": 45 },
+			"endAfterDialogue": false,
+			"leaveAlive": true,
+			"onLoad": {}
+		},
+		{
+			"name": "Gotta Run, Gotta Run Now",
+			"description": "The last Agent standing needs to run through a noise-filled factory to prevent an outbreak.",
+			"battle": { "id": 20 },
+			"dialogue": { "id": 47 },
+			"dialogueAfter": { "id": 48 },
+			"attackStar": 60,
+			"timeTwoStars": 110,
+			"timeOneStar": 180,
+			"onLoad": {}
+		},
+		{
+			"name": "\"Heroes\"",
+			"description": "Crimson Force talks a big game after endangering innocent lives. Let's put them in their place!",
+			"battle": { "id": 21 },
+			"dialogue": { "id": 54 },
+			"dialogueAfter": { "id": 51 },
+			"startAfterDialogue": false,
+			"endAfterDialogue": false,
+			"leaveAlive": true,
+			"onLoad": {
+				"scripts": [
+					{
+						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+						"fields": [
+							{ "class": "java.lang.String", "value": "spark" },
+							{ "class": "java.lang.Boolean", "value": false }
+						]
+					}
+				]
+			}
+		}
+	],
+	"unlockCondition": {
+		"campaigns": [
+			{
+				"campaign": {}
+			},
+			{
+				"campaign": { "id": 1 }
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.campaign.CampaignData",
+	"id": { "id": 3 },
+	"name": "Leader of Azure Shield",
+	"color": { "r": 0.20784314, "g": 0.28235295, "b": 0.9490196, "a": 1 },
+	"description": "This campaign will be unlocked with the next big update, so stay tuned!",
+	"character": { "id": 9 },
+	"unlockCondition": {
+		"campaigns": [
+			{
+				"campaign": { "id": 2 }
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.campaign.CampaignData",
+	"id": { "id": 4 },
+	"name": "Break The Servers",
+	"color": { "r": 0.3254902, "g": 0.76862746, "b": 0.28627452, "a": 1 },
+	"description": "This extra challenge will put you into a Battle Run with any character of your choice!\nYour objective is to destroy all servers as fast as you can! Good luck!",
+	"victory": "Congratulations! Can you do it faster?",
+	"character": null,
+	"background": { "id": 8 },
+	"music": { "id": 6 },
+	"nodes": [
+		{
+			"name": "Break The Servers",
+			"description": "Destroy the servers as fast as you can!",
+			"battle": { "id": 22 },
+			"attackStar": 45,
+			"timeTwoStars": 160,
+			"timeOneStar": 300,
+			"onLoad": {}
+		}
+	],
+	"unlockCondition": {
+		"campaigns": [
+			{
+				"campaign": { "id": 2 }
+			}
+		]
+	}
+}
+]

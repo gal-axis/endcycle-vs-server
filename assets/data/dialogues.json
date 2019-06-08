@@ -1,0 +1,2107 @@
+[
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 3 },
+	"name": "Rozu C1B",
+	"lines": [
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Rozu.1" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"fields": [
+					{ "class": "com.one2b3.endcycle.utils.ID", "id": 4 }
+				]
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 4 },
+	"name": "Rozu C1B2",
+	"lines": [
+		{
+			"entity": "player",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Rozu.2" }
+		}
+	],
+	"startScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+				"fields": [
+					{ "class": "java.lang.String", "value": "player" },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript",
+				"fields": [
+					{ "class": "java.lang.String", "value": "bomb1" },
+					{ "class": "java.lang.Boolean", "value": false },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript",
+				"fields": [
+					{ "class": "java.lang.String", "value": "bomb2" },
+					{ "class": "java.lang.Boolean", "value": false },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			}
+		]
+	},
+	"endScripts": {}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 5 },
+	"name": "Rozu C1A",
+	"lines": [
+		{
+			"entity": "player",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Rozu.3" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 6 },
+	"name": "Rozu C2B",
+	"lines": [
+		{
+			"entity": "player",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Rozu.4" }
+		}
+	],
+	"startScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+				"fields": [
+					{ "class": "java.lang.String", "value": "player" },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			}
+		]
+	},
+	"endScripts": {}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 7 },
+	"name": "Rozu C2A",
+	"lines": [
+		{
+			"entity": "player",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Rozu.5" }
+		},
+		{
+			"entity": "neo",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "???" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "..." }
+		},
+		{
+			"entity": "player",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Rozu.6" }
+		}
+	],
+	"startScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript",
+				"fields": [
+					{ "class": "java.lang.String", "value": "player" },
+					{ "class": "java.lang.Boolean", "value": true },
+					{ "class": "java.lang.Boolean", "value": false }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript",
+				"fields": [
+					{ "class": "java.lang.String", "value": "player" },
+					{ "class": "java.lang.Boolean", "value": false },
+					{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.movers.MoveType", "value": "ANIMATED_TILE" },
+					{ "class": "java.lang.Integer", "value": 1 },
+					{ "class": "java.lang.Integer", "value": 1 },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.ZoomOnEntityScript",
+				"fields": [
+					{ "class": "java.lang.String", "value": "player" },
+					{ "class": "java.lang.Float", "value": 1.5 },
+					{ "class": "java.lang.Float", "value": 0 }
+				]
+			}
+		]
+	},
+	"endScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+				"fields": [
+					{ "class": "java.lang.String", "value": "neo" },
+					{ "class": "java.lang.Boolean", "value": true },
+					{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.movers.MoveType", "value": "ANIMATED_TILE" },
+					{ "class": "java.lang.Integer", "value": -100 },
+					{ "class": "java.lang.Integer", "value": -100 },
+					{ "class": "java.lang.Boolean", "value": false }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"delay": 1,
+				"fields": [
+					{ "class": "com.one2b3.endcycle.utils.ID", "id": 8 },
+					{
+						"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+						"scripts": [
+							{
+								"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+								"fields": [
+									{ "class": "com.one2b3.endcycle.utils.ID", "id": 8 }
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 8 },
+	"name": "Rozu C2A2",
+	"lines": [
+		{
+			"entity": "player",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Rozu.7" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{ "script": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 9 },
+	"name": "Rozu C3B",
+	"lines": [
+		{
+			"entity": "player",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Rozu.3.1" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.general.SetStateScript",
+				"fields": [
+					{ "class": "java.lang.String", "value": "player" },
+					{ "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.CampaignStartBattleScript",
+				"delay": 1,
+				"fields": [
+					{ "class": "java.lang.Float", "value": 1 },
+					{
+						"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+						"scripts": [
+							{ "script": "com.one2b3.endcycle.features.scripts.battle.CampaignStartBattleScript" }
+						]
+					}
+				]
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 10 },
+	"name": "Rozu C3A",
+	"lines": [
+		{
+			"entity": "player",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Rozu.3.2" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 11 },
+	"name": "Rozu C4B",
+	"lines": [
+		{
+			"entity": "player",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Rozu.4.1" }
+		},
+		{
+			"entity": "grunt",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Rozu.4.2" }
+		},
+		{
+			"entity": "player",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Rozu.4.3" }
+		},
+		{
+			"entity": "grunt",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Rozu.4.4" }
+		},
+		{
+			"entity": "grunt",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Rozu.4.5" }
+		}
+	],
+	"startScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+				"delay": 0.5,
+				"fields": [
+					{ "class": "java.lang.String", "value": "player" },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			}
+		]
+	},
+	"endScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.general.SetStateScript",
+				"fields": [
+					{ "class": "java.lang.String", "value": "grunt" },
+					{ "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "DEFENDING" }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.general.SetStateScript",
+				"fields": [
+					{ "class": "java.lang.String", "value": "player" },
+					{ "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"delay": 1,
+				"fields": [
+					{ "class": "com.one2b3.endcycle.utils.ID", "id": 12 },
+					{
+						"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+						"scripts": [
+							{
+								"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+								"fields": [
+									{ "class": "com.one2b3.endcycle.utils.ID", "id": 12 }
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 12 },
+	"name": "Rozu C4B2",
+	"lines": [
+		{
+			"entity": "player",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Rozu.4.6" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{ "script": "com.one2b3.endcycle.features.scripts.battle.CampaignStartBattleScript" }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 13 },
+	"name": "Rozu C5B",
+	"lines": [
+		{
+			"entity": "player",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Rozu.5.1" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 14 },
+	"name": "Rozu C5A",
+	"lines": [
+		{
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "???" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Rozu.5.2" }
+		},
+		{
+			"entity": "",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Rozu" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Rozu.5.3" }
+		},
+		{
+			"entity": "",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "???" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Rozu.5.4" }
+		},
+		{
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "???" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Rozu.5.5" }
+		},
+		{
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "(Multiple Voices)" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Rozu.5.6" }
+		},
+		{
+			"entity": "",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Rozu" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Rozu.5.7" }
+		},
+		{
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "???" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Rozu.5.8" }
+		},
+		{
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Rozu.5.9" },
+			"color": { "r": 1, "g": 0.78431374, "a": 1 }
+		}
+	],
+	"startScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+				"fields": [
+					{ "class": "java.lang.Float", "value": 1 },
+					{ "class": "java.lang.Boolean", "value": false },
+					{ "class": "java.lang.Integer", "value": 14 },
+					{ "class": "com.badlogic.gdx.graphics.Color", "r": 1, "g": 1, "b": 1, "a": 1 }
+				]
+			}
+		]
+	},
+	"endScripts": {}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 18 },
+	"name": "Spark C1B",
+	"lines": [
+		{
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Audience" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.1" }
+		},
+		{
+			"entity": "player",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.2" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 15 },
+	"name": "Spark C1A",
+	"lines": [
+		{
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Announcer" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.3" }
+		},
+		{
+			"entity": "player",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.4" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 16 },
+	"name": "Spark C2B",
+	"lines": [
+		{
+			"entity": "player",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.5" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+				"delay": 0.3,
+				"fields": [
+					{ "class": "java.lang.String", "value": "fin" },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript",
+				"delay": 0.4,
+				"fields": [
+					{ "class": "java.lang.String", "value": "player" },
+					{ "class": "java.lang.Boolean", "value": false },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"delay": 0.7,
+				"fields": [
+					{ "class": "com.one2b3.endcycle.utils.ID", "id": 2 }
+				]
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 17 },
+	"name": "Spark C2A",
+	"lines": [
+		{
+			"entity": "fin",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.2.1" }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.2.2" }
+		},
+		{
+			"entity": "fin",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.2.3" }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.2.4" }
+		}
+	],
+	"startScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript",
+				"fields": [
+					{ "class": "java.lang.String", "value": "player" },
+					{ "class": "java.lang.Boolean", "value": false },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			}
+		]
+	},
+	"endScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript",
+				"fields": [
+					{ "class": "java.lang.String", "value": "fin" },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 19 },
+	"name": "Spark C3B",
+	"lines": [
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.3.1" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+				"fields": [
+					{ "class": "java.lang.String", "value": "fin" },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"fields": [
+					{ "class": "com.one2b3.endcycle.utils.ID", "id": 20 }
+				]
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 20 },
+	"name": "Spark C3B2",
+	"lines": [
+		{
+			"entity": "fin",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.3.2" }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.3.3" }
+		},
+		{
+			"entity": "fin",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.3.4" }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.3.5" }
+		},
+		{
+			"entity": "fin",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.3.8" }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.3.9" }
+		},
+		{
+			"entity": "fin",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.3.10" }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.3.11" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{ "script": "com.one2b3.endcycle.features.scripts.battle.CampaignStartBattleScript" }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 21 },
+	"name": "Spark C3A",
+	"lines": [
+		{
+			"entity": "fin",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.3.6" }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.3.7" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 22 },
+	"name": "Spark C4B",
+	"lines": [
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.4.1" }
+		},
+		{
+			"entity": "fin",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.4.2" }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.4.3" }
+		},
+		{
+			"entity": "fin",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.4.4" }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.4.5" }
+		},
+		{
+			"entity": "fin",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.4.6" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript",
+				"delay": 0.2,
+				"fields": [
+					{ "class": "java.lang.String", "value": "fin" },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"delay": 0.8,
+				"fields": [
+					{ "class": "com.one2b3.endcycle.utils.ID", "id": 23 }
+				]
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 23 },
+	"name": "Spark C4B2",
+	"lines": [
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.4.7" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+				"delay": 0.5,
+				"fields": [
+					{ "class": "java.lang.String", "value": "sofa" },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+				"delay": 0.5,
+				"fields": [
+					{ "class": "java.lang.String", "value": "bomb" },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"delay": 1,
+				"fields": [
+					{ "class": "com.one2b3.endcycle.utils.ID", "id": 24 }
+				]
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 24 },
+	"name": "Spark C4B3",
+	"lines": [
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.4.8" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{ "script": "com.one2b3.endcycle.features.scripts.battle.CampaignStartBattleScript" }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 25 },
+	"name": "Spark C4A",
+	"lines": [
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.4.9" },
+			"color": { "r": 1, "g": 0.78039217, "b": 0.78039217, "a": 1 }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript",
+				"fields": [
+					{ "class": "java.lang.String", "value": "player" },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.AddEntityScript",
+				"delay": 1.5,
+				"fields": [
+					{
+						"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+						"id": { "id": 7 },
+						"name": "rozu",
+						"x": 1,
+						"y": 1,
+						"party": "FRIENDLY",
+						"cache": {
+							"customizations": [ 4, -1, 2 ]
+						}
+					},
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"delay": 2,
+				"fields": [
+					{ "class": "com.one2b3.endcycle.utils.ID", "id": 26 }
+				]
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 26 },
+	"name": "Spark C4A2",
+	"lines": [
+		{
+			"entity": "rozu",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.4.10" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{ "script": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 27 },
+	"name": "Spark C5B",
+	"lines": [
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.5.1" }
+		},
+		{
+			"entity": "agent1",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Whispering" }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.5.2" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript",
+				"delay": 0.5,
+				"fields": [
+					{ "class": "java.lang.String", "value": "agent1" },
+					{ "class": "java.lang.Boolean", "value": false },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"delay": 1,
+				"fields": [
+					{ "class": "com.one2b3.endcycle.utils.ID", "id": 28 }
+				]
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 28 },
+	"name": "Spark C5B2",
+	"lines": [
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.5.3" }
+		},
+		{
+			"entity": "agent1",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.5.4" }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.5.5" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{ "script": "com.one2b3.endcycle.features.scripts.battle.CampaignStartBattleScript" }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 30 },
+	"name": "Spark C5A",
+	"lines": [
+		{
+			"entity": "agent1",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.5.6" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript",
+				"delay": 0.5,
+				"fields": [
+					{ "class": "java.lang.String", "value": "agent1" },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript",
+				"delay": 0.7,
+				"fields": [
+					{ "class": "java.lang.String", "value": "agent2" },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"delay": 1.2,
+				"fields": [
+					{ "class": "com.one2b3.endcycle.utils.ID", "id": 31 }
+				]
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 31 },
+	"name": "Spark C5A2",
+	"lines": [
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.5.7" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{ "script": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 32 },
+	"name": "Spark C6B",
+	"lines": [
+		{
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Pass.Weeks" }
+		},
+		{
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Audience" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.1" }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.6.1" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 33 },
+	"name": "Spark C6A",
+	"lines": [
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.6.2" }
+		},
+		{
+			"entity": "rozu",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.6.3" }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.6.4" }
+		},
+		{
+			"entity": "rozu",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.6.5" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+				"fields": [
+					{ "class": "java.lang.Float", "value": 0.5 },
+					{ "class": "java.lang.Boolean", "value": false },
+					{ "class": "java.lang.Integer", "value": 14 },
+					{ "class": "com.badlogic.gdx.graphics.Color", "a": 1 }
+				]
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 34 },
+	"name": "Agent C1B",
+	"lines": [
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.1.1" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+				"delay": 0.3,
+				"fields": [
+					{ "class": "java.lang.String", "value": "agent1" },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+				"delay": 0.6,
+				"fields": [
+					{ "class": "java.lang.String", "value": "agent2" },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"delay": 1,
+				"fields": [
+					{ "class": "com.one2b3.endcycle.utils.ID", "id": 35 }
+				]
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 35 },
+	"name": "Agent C1B2",
+	"lines": [
+		{
+			"entity": "agent1",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.1.2" }
+		},
+		{
+			"entity": "agent2",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.1.3" }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.1.4" }
+		},
+		{
+			"entity": "agent1",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.1.5" }
+		},
+		{
+			"entity": "agent2",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.1.6" }
+		},
+		{
+			"entity": "agent1",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.1.7" }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.1.8" }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.1.9" },
+			"color": { "r": 0.70980394, "g": 0.83137256, "b": 1, "a": 1 }
+		},
+		{
+			"entity": "agent2",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.1.10" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{ "script": "com.one2b3.endcycle.features.scripts.battle.CampaignStartBattleScript" }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 36 },
+	"name": "Agent C2B",
+	"lines": [
+		{
+			"entity": "tim",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.2.1" }
+		},
+		{
+			"entity": "lisa",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.2.2" }
+		},
+		{
+			"entity": "tim",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.2.3" }
+		},
+		{
+			"entity": "lisa",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.2.4" }
+		},
+		{
+			"entity": "tim",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.2.5" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+				"fields": [
+					{ "class": "java.lang.String", "value": "spark" },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"delay": 1.5,
+				"fields": [
+					{ "class": "com.one2b3.endcycle.utils.ID", "id": 37 }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript",
+				"delay": 0.5,
+				"fields": [
+					{ "class": "java.lang.String", "value": "lisa" },
+					{ "class": "java.lang.Boolean", "value": false },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 37 },
+	"name": "Agent C2B2",
+	"lines": [
+		{
+			"entity": "spark",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.5.2" }
+		},
+		{
+			"entity": "spark",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.5.3" }
+		},
+		{
+			"entity": "tim",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.5.4" }
+		},
+		{
+			"entity": "lisa",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.2.6" }
+		},
+		{
+			"entity": "spark",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.5.5" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{ "script": "com.one2b3.endcycle.features.scripts.battle.CampaignStartBattleScript" }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 38 },
+	"name": "Agent C2A",
+	"lines": [
+		{
+			"entity": "tim",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.5.6" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript",
+				"fields": [
+					{ "class": "java.lang.String", "value": "tim" },
+					{ "class": "java.lang.Boolean", "value": false },
+					{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.movers.MoveType", "value": "ANIMATED_TILE" },
+					{ "class": "java.lang.Integer", "value": -100 },
+					{ "class": "java.lang.Integer", "value": -100 },
+					{ "class": "java.lang.Boolean", "value": false }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript",
+				"delay": 0.3,
+				"fields": [
+					{ "class": "java.lang.String", "value": "lisa" },
+					{ "class": "java.lang.Boolean", "value": false },
+					{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.movers.MoveType", "value": "ANIMATED_TILE" },
+					{ "class": "java.lang.Integer", "value": -100 },
+					{ "class": "java.lang.Integer", "value": -100 },
+					{ "class": "java.lang.Boolean", "value": false }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+				"delay": 0.6,
+				"fields": [
+					{ "class": "java.lang.Float", "value": 2 },
+					{ "class": "java.lang.Boolean", "value": false },
+					{ "class": "java.lang.Integer", "value": 14 },
+					{ "class": "com.badlogic.gdx.graphics.Color", "a": 1 }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"delay": 1.2,
+				"fields": [
+					{ "class": "com.one2b3.endcycle.utils.ID", "id": 39 }
+				]
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 39 },
+	"name": "Agent C2A2",
+	"lines": [
+		{
+			"entity": "lisa",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.2.7" }
+		},
+		{
+			"entity": "tim",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.2.8" }
+		},
+		{
+			"entity": "lisa",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.2.9" }
+		},
+		{
+			"entity": "tim",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.2.10" }
+		},
+		{
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.2.11" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{ "script": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 40 },
+	"name": "Agent C3B",
+	"lines": [
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.3.1" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+				"fields": [
+					{ "class": "java.lang.String", "value": "rozu" },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"delay": 0.2,
+				"fields": [
+					{ "class": "com.one2b3.endcycle.utils.ID", "id": 41 }
+				]
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 41 },
+	"name": "Agent C3B2",
+	"lines": [
+		{
+			"entity": "rozu",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.3.2" }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.3.3" }
+		},
+		{
+			"entity": "rozu",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.3.4" }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.3.5" }
+		},
+		{
+			"entity": "rozu",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.3.6" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{ "script": "com.one2b3.endcycle.features.scripts.battle.CampaignStartBattleScript" }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 42 },
+	"name": "Agent C3A",
+	"lines": [
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.3.7" }
+		},
+		{
+			"entity": "rozu",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.3.8" }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.3.9" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript",
+				"fields": [
+					{ "class": "java.lang.String", "value": "player" },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript",
+				"fields": [
+					{ "class": "java.lang.String", "value": "rozu" },
+					{ "class": "java.lang.Boolean", "value": false },
+					{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.movers.MoveType", "value": "ANIMATED_TILE" },
+					{ "class": "java.lang.Integer", "value": 4 },
+					{ "class": "java.lang.Integer", "value": 1 },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript",
+				"fields": [
+					{ "class": "java.lang.String", "value": "rozu" },
+					{ "class": "java.lang.Boolean", "value": true },
+					{ "class": "java.lang.Boolean", "value": false }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"delay": 0.2,
+				"fields": [
+					{ "class": "com.one2b3.endcycle.utils.ID", "id": 43 }
+				]
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 43 },
+	"name": "Agent C3A2",
+	"lines": [
+		{
+			"entity": "rozu",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.3.10" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"delay": 0.5,
+				"fields": [
+					{ "class": "com.one2b3.endcycle.utils.ID", "id": 29 }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript",
+				"fields": [
+					{ "class": "java.lang.String", "value": "rozu" },
+					{ "class": "java.lang.Boolean", "value": false },
+					{ "class": "java.lang.Boolean", "value": false }
+				]
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 44 },
+	"name": "Agent C4B",
+	"lines": [
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.4.1" }
+		},
+		{
+			"entity": "fin",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.4.2" }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.4.3" }
+		},
+		{
+			"entity": "fin",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.4.4" }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.4.5" }
+		},
+		{
+			"entity": "fin",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.4.6" }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.4.7" }
+		},
+		{
+			"entity": "fin",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.4.8" }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.4.9" }
+		},
+		{
+			"entity": "fin",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.4.10" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 45 },
+	"name": "Agent C4A",
+	"lines": [
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.4.11" }
+		},
+		{
+			"entity": "fin",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.4.12" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript",
+				"fields": [
+					{ "class": "java.lang.String", "value": "player" },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.AddEntityScript",
+				"delay": 0.6,
+				"fields": [
+					{
+						"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+						"id": { "id": 2 },
+						"name": "spark",
+						"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+						"x": 1,
+						"y": 1,
+						"party": "FRIENDLY"
+					},
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"delay": 1,
+				"fields": [
+					{ "class": "com.one2b3.endcycle.utils.ID", "id": 46 }
+				]
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 46 },
+	"name": "Agent C4A2",
+	"lines": [
+		{
+			"entity": "spark",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.4.13" }
+		},
+		{
+			"entity": "fin",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.4.14" }
+		},
+		{
+			"entity": "spark",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.4.15" }
+		},
+		{
+			"entity": "fin",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.4.16" }
+		},
+		{
+			"entity": "",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Fin" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.4.17" },
+			"color": { "r": 0.50980395, "g": 0.50980395, "b": 0.50980395, "a": 1 }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{ "script": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 47 },
+	"name": "Agent C5B",
+	"lines": [
+		{
+			"entity": "del",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.5.1" }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.5.2" }
+		},
+		{
+			"entity": "del",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.5.3" }
+		},
+		{
+			"entity": "del",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.5.4" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 48 },
+	"name": "Agent C5A",
+	"lines": [
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.5.5" }
+		},
+		{
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "???" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.5.6" }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.5.7" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+				"fields": [
+					{ "class": "java.lang.Float", "value": 1 },
+					{ "class": "java.lang.Boolean", "value": false },
+					{ "class": "java.lang.Integer", "value": 8 },
+					{ "class": "com.badlogic.gdx.graphics.Color", "a": 1 }
+				]
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 49 },
+	"name": "Agent C6B2",
+	"lines": [
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.5.9" }
+		},
+		{
+			"entity": "spark",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.5.10" }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.5.11" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.AddEntityScript",
+				"fields": [
+					{
+						"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+						"id": { "id": 9 },
+						"name": "del",
+						"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+						"x": 2,
+						"y": 1,
+						"party": "FRIENDLY"
+					},
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"delay": 0.2,
+				"fields": [
+					{ "class": "com.one2b3.endcycle.utils.ID", "id": 50 }
+				]
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 50 },
+	"name": "Agent C6B3",
+	"lines": [
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.6.2" }
+		},
+		{
+			"entity": "del",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.6.1" }
+		},
+		{
+			"entity": "spark",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.6.3" }
+		},
+		{
+			"entity": "del",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.6.4" }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.6.5" }
+		},
+		{
+			"entity": "spark",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.6.6" }
+		},
+		{
+			"entity": "del",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.6.7" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript",
+				"fields": [
+					{ "class": "java.lang.String", "value": "del" },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"delay": 0.5,
+				"fields": [
+					{ "class": "com.one2b3.endcycle.utils.ID", "id": 55 }
+				]
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 51 },
+	"name": "Agent C6A",
+	"lines": [
+		{
+			"entity": "spark",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.6.9" }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.6.10" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript",
+				"fields": [
+					{ "class": "java.lang.String", "value": "spark" },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"delay": 0.4,
+				"fields": [
+					{ "class": "com.one2b3.endcycle.utils.ID", "id": 52 }
+				]
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 52 },
+	"name": "Agent C6A2",
+	"lines": [
+		{
+			"entity": "",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Del" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.6.11" },
+			"color": { "r": 0.30980393, "g": 0.49411765, "b": 0.72156864, "a": 1 }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.6.12" }
+		},
+		{
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Del" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.6.13" },
+			"color": { "r": 0.30980393, "g": 0.49411765, "b": 0.72156864, "a": 1 }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{ "script": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" },
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+				"fields": [
+					{ "class": "java.lang.Float", "value": 1 },
+					{ "class": "java.lang.Boolean", "value": false },
+					{ "class": "java.lang.Integer", "value": 14 },
+					{ "class": "com.badlogic.gdx.graphics.Color", "a": 1 }
+				]
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": {},
+	"name": "Agent C1A",
+	"lines": [
+		{
+			"entity": "agent1",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.1.11" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+				"fields": [
+					{ "class": "java.lang.Float", "value": 2 },
+					{ "class": "java.lang.Boolean", "value": false },
+					{ "class": "java.lang.Integer", "value": 8 },
+					{ "class": "com.badlogic.gdx.graphics.Color", "a": 1 }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript",
+				"delay": 0.55,
+				"fields": [
+					{ "class": "java.lang.String", "value": "player" },
+					{ "class": "java.lang.Boolean", "value": false }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.AddEntityScript",
+				"delay": 0.53,
+				"fields": [
+					{
+						"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+						"id": { "id": 13 },
+						"name": "player",
+						"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Vanessa" },
+						"x": 1,
+						"y": 1,
+						"party": "FRIENDLY",
+						"cache": {
+							"patchwork": 1,
+							"customizations": [ 4, 3, 0, 0 ]
+						}
+					},
+					{ "class": "java.lang.Boolean", "value": false }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+				"delay": 0.7,
+				"fields": [
+					{ "class": "java.lang.Float", "value": 2 },
+					{ "class": "java.lang.Boolean", "value": true },
+					{ "class": "java.lang.Integer", "value": 8 },
+					{ "class": "com.badlogic.gdx.graphics.Color", "a": 1 }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"delay": 1,
+				"fields": [
+					{ "class": "com.one2b3.endcycle.utils.ID", "id": 1 }
+				]
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 1 },
+	"name": "Agent C1A2",
+	"lines": [
+		{
+			"entity": "agent2",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.1.12" }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.1.13" }
+		},
+		{
+			"entity": "agent1",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.1.14" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{ "script": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 2 },
+	"name": "Spark C2B2",
+	"lines": [
+		{
+			"entity": "fin",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.6" }
+		},
+		{
+			"entity": "player",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.7" }
+		},
+		{
+			"entity": "fin",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.8" },
+			"duration": 0.2
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript",
+				"delay": 0.2,
+				"fields": [
+					{ "class": "java.lang.String", "value": "player" },
+					{ "class": "java.lang.Boolean", "value": false },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+				"fields": [
+					{ "class": "java.lang.String", "value": "greed" },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+				"fields": [
+					{ "class": "java.lang.String", "value": "qt" },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"delay": 0.2,
+				"fields": [
+					{ "class": "com.one2b3.endcycle.utils.ID", "id": 53 }
+				]
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 53 },
+	"name": "Spark C2B3",
+	"lines": [
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.9" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{ "script": "com.one2b3.endcycle.features.scripts.battle.CampaignStartBattleScript" }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 29 },
+	"name": "Agent C3A3",
+	"lines": [
+		{
+			"entity": "rozu",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.3.11" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{ "script": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 54 },
+	"name": "Agent C6B",
+	"lines": [
+		{
+			"entity": "",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "???" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.5.6" }
+		},
+		{
+			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.5.7" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+				"fields": [
+					{ "class": "java.lang.String", "value": "spark" },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			},
+			{
+				"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"delay": 0.5,
+				"fields": [
+					{ "class": "com.one2b3.endcycle.utils.ID", "id": 49 }
+				]
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 55 },
+	"name": "Agent C6B4",
+	"lines": [
+		{
+			"entity": "spark",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.6.8" }
+		}
+	],
+	"startScripts": {},
+	"endScripts": {
+		"scripts": [
+			{ "script": "com.one2b3.endcycle.features.scripts.battle.CampaignStartBattleScript" }
+		]
+	}
+}
+]

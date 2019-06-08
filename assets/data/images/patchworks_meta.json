@@ -1,638 +1,1419 @@
 [
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 74 },
-		"name": "Fin",
-		"idle": {
-			"drawable": { "id": 400 }
-		},
-		"hurt": {
-			"drawable": { "id": 401 }
-		},
-		"stunStart": {
-			"drawable": { "id": 403 }
-		},
-		"stunEnd": {
-			"drawable": { "id": 404 }
-		},
-		"cast": {
-			"drawable": { "id": 402 }
-		},
-		"attack": {},
-		"defend": {},
-		"shadowY": 4
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 74 },
+	"name": "Fin",
+	"idle": {
+		"drawable": { "id": 400 }
 	},
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 75 },
-		"name": "Cannon 01",
-		"idle": {
-			"drawable": { "id": 405 }
-		},
-		"hurt": {},
-		"stunStart": {},
-		"stunEnd": {},
-		"cast": {},
-		"attack": {},
-		"defend": {}
+	"hurt": {
+		"drawable": { "id": 401 }
 	},
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 76 },
-		"name": "Cannon 02",
-		"idle": {
-			"drawable": { "id": 406 }
-		},
-		"hurt": {
-			"drawable": { "id": 407 }
-		},
-		"stunStart": {
-			"drawable": { "id": 410 }
-		},
-		"stunEnd": {
-			"drawable": { "id": 411 }
-		},
-		"cast": {
-			"drawable": { "id": 408 }
-		},
-		"attack": {
-			"drawable": { "id": 409 }
-		},
-		"defend": {},
-		"attackLeadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_CLOSE" },
-		"shadowY": 5,
-		"extraStates": [
-			{
-				"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_OPEN" },
-				"shadowOffsetY": 5,
-				"images": [
-					{
-						"drawable": { "id": 412 }
-					}
-				]
-			},
-			{
-				"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_CLOSE" },
-				"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
-				"shadowOffsetY": 5,
-				"images": [
-					{
-						"drawable": { "id": 413 }
-					}
-				]
-			}
-		]
+	"stunStart": {
+		"drawable": { "id": 403 }
 	},
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 77 },
-		"name": "Fin Proto",
-		"idle": {
-			"drawable": { "id": 414 }
-		},
-		"hurt": {},
-		"stunStart": {},
-		"stunEnd": {},
-		"cast": {},
-		"attack": {
-			"drawable": { "id": 415 }
-		},
-		"defend": {}
+	"stunEnd": {
+		"drawable": { "id": 404 }
 	},
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 78 },
-		"name": "Sofa",
-		"idle": {
-			"drawable": { "id": 416 }
-		},
-		"hurt": {
-			"drawable": { "id": 417 }
-		},
-		"stunStart": {
-			"drawable": { "id": 419 }
-		},
-		"stunEnd": {
-			"drawable": { "id": 420 }
-		},
-		"cast": {
-			"drawable": { "id": 418 }
-		},
-		"attack": {},
-		"defend": {},
-		"extraStates": [
-			{
-				"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "COUCH" },
-				"images": [
-					{
-						"drawable": { "id": 421 }
-					}
-				]
-			}
-		]
+	"cast": {
+		"drawable": { "id": 402 }
 	},
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 79 },
-		"name": "Resistor 01",
-		"idle": {
-			"drawable": { "id": 422 }
-		},
-		"hurt": {},
-		"stunStart": {},
-		"stunEnd": {},
-		"cast": {},
-		"attack": {},
-		"defend": {}
-	},
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 80 },
-		"name": "Resistor 02",
-		"idle": {
-			"drawable": { "id": 423 }
-		},
-		"hurt": {},
-		"stunStart": {},
-		"stunEnd": {},
-		"cast": {},
-		"attack": {},
-		"defend": {}
-	},
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 81 },
-		"name": "Greed",
-		"idle": {
-			"drawable": { "id": 424 }
-		},
-		"hurt": {
-			"drawable": { "id": 425 }
-		},
-		"stunStart": {
-			"drawable": { "id": 427 }
-		},
-		"stunEnd": {
-			"drawable": { "id": 428 }
-		},
-		"cast": {
-			"drawable": { "id": 426 }
-		},
-		"attack": {},
-		"defend": {}
-	},
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 82 },
-		"name": "Greed Big",
-		"idle": {
-			"drawable": { "id": 429 }
-		},
-		"hurt": {
-			"drawable": { "id": 430 }
-		},
-		"stunStart": {
-			"drawable": { "id": 432 }
-		},
-		"stunEnd": {
-			"drawable": { "id": 433 }
-		},
-		"cast": {
-			"drawable": { "id": 431 }
-		},
-		"attack": {},
-		"defend": {}
-	},
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 83 },
-		"name": "Bomby",
-		"idle": {
-			"drawable": { "id": 434 }
-		},
-		"hurt": {
-			"drawable": { "id": 435 }
-		},
-		"stunStart": {
-			"drawable": { "id": 437 }
-		},
-		"stunEnd": {
-			"drawable": { "id": 438 }
-		},
-		"cast": {
-			"drawable": { "id": 436 }
-		},
-		"attack": {},
-		"defend": {},
-		"shadowY": 3
-	},
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 84 },
-		"name": "Beelet",
-		"idle": {
-			"drawable": { "id": 439 }
-		},
-		"hurt": {},
-		"stunStart": {},
-		"stunEnd": {},
-		"cast": {},
-		"attack": {},
-		"defend": {}
-	},
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 85 },
-		"name": "Pompulus",
-		"idle": {
-			"drawable": { "id": 440 }
-		},
-		"hurt": {},
-		"stunStart": {},
-		"stunEnd": {},
-		"cast": {},
-		"attack": {},
-		"defend": {}
-	},
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 86 },
-		"name": "Neo",
-		"idle": {
-			"drawable": { "id": 441 }
-		},
-		"hurt": {
-			"drawable": { "id": 442 }
-		},
-		"stunStart": {
-			"drawable": { "id": 444 }
-		},
-		"stunEnd": {
-			"drawable": { "id": 445 }
-		},
-		"cast": {
-			"drawable": { "id": 443 }
-		},
-		"attack": {},
-		"defend": {},
-		"shadowY": 3
-	},
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 87 },
-		"name": "Neo2",
-		"idle": {
-			"drawable": { "id": 446 }
-		},
-		"hurt": {
-			"drawable": { "id": 447 }
-		},
-		"stunStart": {
-			"drawable": { "id": 449 }
-		},
-		"stunEnd": {
-			"drawable": { "id": 450 }
-		},
-		"cast": {
-			"drawable": { "id": 448 }
-		},
-		"attack": {},
-		"defend": {},
-		"shadowY": 3
-	},
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 88 },
-		"name": "Neo3",
-		"idle": {
-			"drawable": { "id": 451 }
-		},
-		"hurt": {
-			"drawable": { "id": 452 }
-		},
-		"stunStart": {
-			"drawable": { "id": 454 }
-		},
-		"stunEnd": {
-			"drawable": { "id": 455 }
-		},
-		"cast": {
-			"drawable": { "id": 453 }
-		},
-		"attack": {},
-		"defend": {},
-		"shadowY": 3
-	},
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 89 },
-		"name": "Neo4",
-		"idle": {
-			"drawable": { "id": 456 }
-		},
-		"hurt": {
-			"drawable": { "id": 457 }
-		},
-		"stunStart": {
-			"drawable": { "id": 459 }
-		},
-		"stunEnd": {
-			"drawable": { "id": 460 }
-		},
-		"cast": {
-			"drawable": { "id": 458 }
-		},
-		"attack": {},
-		"defend": {},
-		"shadowY": 3
-	},
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 90 },
-		"name": "Neo5",
-		"idle": {
-			"drawable": { "id": 461 }
-		},
-		"hurt": {
-			"drawable": { "id": 462 }
-		},
-		"stunStart": {
-			"drawable": { "id": 464 }
-		},
-		"stunEnd": {
-			"drawable": { "id": 465 }
-		},
-		"cast": {
-			"drawable": { "id": 463 }
-		},
-		"attack": {},
-		"defend": {},
-		"shadowY": 3
-	},
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 91 },
-		"name": "Neo6",
-		"idle": {
-			"drawable": { "id": 466 }
-		},
-		"hurt": {
-			"drawable": { "id": 467 }
-		},
-		"stunStart": {
-			"drawable": { "id": 469 }
-		},
-		"stunEnd": {
-			"drawable": { "id": 470 }
-		},
-		"cast": {
-			"drawable": { "id": 468 }
-		},
-		"attack": {},
-		"defend": {},
-		"shadowY": 3
-	},
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 92 },
-		"name": "NeoBomb",
-		"idle": {
-			"drawable": { "id": 471 }
-		},
-		"hurt": {},
-		"stunStart": {},
-		"stunEnd": {},
-		"cast": {},
-		"attack": {},
-		"defend": {},
-		"shadowY": 1
-	},
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 93 },
-		"name": "Spark",
-		"idle": {
-			"drawable": { "id": 472 }
-		},
-		"hurt": {
-			"drawable": { "id": 473 }
-		},
-		"stunStart": {
-			"drawable": { "id": 476 }
-		},
-		"stunEnd": {
-			"drawable": { "id": 477 }
-		},
-		"cast": {
-			"drawable": { "id": 474 }
-		},
-		"attack": {
-			"drawable": { "id": 475 }
-		},
-		"defend": {},
-		"shadowY": 5
-	},
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 94 },
-		"name": "Alexsander1",
-		"idle": {
-			"drawable": { "id": 478 }
-		},
-		"hurt": {},
-		"stunStart": {},
-		"stunEnd": {},
-		"cast": {},
-		"attack": {},
-		"defend": {}
-	},
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 95 },
-		"name": "Alexsander2",
-		"idle": {
-			"drawable": { "id": 479 }
-		},
-		"hurt": {},
-		"stunStart": {},
-		"stunEnd": {},
-		"cast": {},
-		"attack": {},
-		"defend": {}
-	},
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 96 },
-		"name": "Alexsander3",
-		"idle": {
-			"drawable": { "id": 480 }
-		},
-		"hurt": {},
-		"stunStart": {},
-		"stunEnd": {},
-		"cast": {},
-		"attack": {},
-		"defend": {}
-	},
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 97 },
-		"name": "Finish Line",
-		"idle": {
-			"drawable": { "id": 481 }
-		},
-		"hurt": {
-			"drawable": { "id": 482 }
-		},
-		"stunStart": {},
-		"stunEnd": {},
-		"cast": {},
-		"attack": {},
-		"defend": {},
-		"hurtLeadsInto": null
-	},
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 98 },
-		"name": "Run Door",
-		"idle": {
-			"drawable": { "id": 484 }
-		},
-		"hurt": {
-			"drawable": { "id": 485 }
-		},
-		"stunStart": {
-			"drawable": { "id": 486 }
-		},
-		"stunEnd": {
-			"drawable": { "id": 487 }
-		},
-		"cast": {},
-		"attack": {},
-		"defend": {}
-	},
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 99 },
-		"name": "Loot Box",
-		"idle": {
-			"drawable": { "id": 488 }
-		},
-		"hurt": {},
-		"stunStart": {},
-		"stunEnd": {},
-		"cast": {},
-		"attack": {},
-		"defend": {}
-	},
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 100 },
-		"name": "Notice Me",
-		"idle": {
-			"drawable": { "id": 489 }
-		},
-		"hurt": {},
-		"stunStart": {},
-		"stunEnd": {},
-		"cast": {},
-		"attack": {},
-		"defend": {}
-	},
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 102 },
-		"name": "Lightmass",
-		"idle": {
-			"drawable": { "id": 491 }
-		},
-		"hurt": {},
-		"stunStart": {},
-		"stunEnd": {},
-		"cast": {},
-		"attack": {},
-		"defend": {}
-	},
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 103 },
-		"name": "Lukor",
-		"idle": {
-			"drawable": { "id": 493 }
-		},
-		"hurt": {},
-		"stunStart": {},
-		"stunEnd": {},
-		"cast": {
-			"drawable": { "id": 494 }
-		},
-		"attack": {},
-		"defend": {}
-	},
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 108 },
-		"name": "Rozu",
-		"idle": {
-			"drawable": { "id": 1228 }
-		},
-		"hurt": {
-			"drawable": { "id": 1250 }
-		},
-		"stunStart": {
-			"drawable": { "id": 1251 }
-		},
-		"stunEnd": {
-			"drawable": { "id": 1250 }
-		},
-		"cast": {
-			"drawable": { "id": 1248 }
-		},
-		"attack": {
-			"drawable": { "id": 1249 }
-		},
-		"defend": {
-			"drawable": {}
+	"shadowY": 4,
+	"keepUncustomized": true,
+	"customizables": [
+		{
+			"name": "Jacket",
+			"replace": [
+				{ "replace": -1573045505 },
+				{
+					"replace": 1712723711,
+					"newColor": { "r": 0.65882355, "g": 0.65882355, "b": 0.65882355, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.41960785, "g": 0.43137255, "b": 0.81960785, "a": 1 },
+				{ "r": 0.4745098, "g": 0.72156864, "b": 0.3529412, "a": 1 }
+			]
+		},
+		{
+			"name": "Shirt",
+			"replace": [
+				{ "replace": 1855240703 }
+			],
+			"colors": [
+				{ "r": 0.65882355, "g": 0.43137255, "b": 0.7294118, "a": 1 },
+				{ "r": 0.7411765, "g": 0.36862746, "b": 0.34117648, "a": 1 },
+				{ "r": 0.7294118, "g": 0.654902, "b": 0.43137255, "a": 1 },
+				{ "r": 0.4392157, "g": 0.7294118, "b": 0.43137255, "a": 1 }
+			]
+		},
+		{
+			"name": "Pants",
+			"replace": [
+				{ "replace": 1263225599 },
+				{
+					"replace": 606348287,
+					"newColor": { "r": 0.45882353, "g": 0.45882353, "b": 0.45882353, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.52156866, "g": 0.34509805, "b": 0.25490198, "a": 1 },
+				{ "r": 0.36862746, "g": 0.27058825, "b": 0.6784314, "a": 1 },
+				{ "r": 0.21960784, "g": 0.3254902, "b": 0.50980395, "a": 1 }
+			]
 		}
-	},
-	{
-		"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-		"id": { "id": 109 },
-		"name": "Tri-Wing",
-		"idle": {
-			"drawable": { "id": 1229 }
-		},
-		"hurt": {
-			"drawable": { "id": 1231 }
-		},
-		"stunStart": {
-			"drawable": { "id": 1231 }
-		},
-		"stunEnd": {
-			"drawable": { "id": 1231 }
-		},
-		"cast": {
-			"drawable": { "id": 1230 }
-		},
-		"attack": {},
-		"defend": {},
-		"extraStates": [
-			{
-				"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
-				"images": [
-					{
-						"drawable": { "id": 1236 }
-					}
-				]
-			},
-			{
-				"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
-				"images": [
-					{
-						"drawable": { "id": 1237 }
-					}
-				]
-			}
-		]
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 75 },
+	"name": "Cannon 01",
+	"idle": {
+		"drawable": { "id": 405 }
 	}
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 76 },
+	"name": "Cannon 02",
+	"idle": {
+		"drawable": { "id": 406 }
+	},
+	"hurt": {
+		"drawable": { "id": 407 }
+	},
+	"stunStart": {
+		"drawable": { "id": 410 }
+	},
+	"stunEnd": {
+		"drawable": { "id": 411 }
+	},
+	"cast": {
+		"drawable": { "id": 408 }
+	},
+	"attack": {
+		"drawable": { "id": 409 }
+	},
+	"attackLeadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_CLOSE" },
+	"shadowY": 5,
+	"extraStates": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_OPEN" },
+			"shadowOffsetY": 5,
+			"images": [
+				{
+					"drawable": { "id": 412 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_CLOSE" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 5,
+			"images": [
+				{
+					"drawable": { "id": 413 }
+				}
+			]
+		}
+	],
+	"keepUncustomized": true,
+	"customizables": [
+		{
+			"name": "Color",
+			"replace": [
+				{
+					"replace": -1238151937,
+					"newColor": { "r": 0.72156864, "g": 0.72156864, "b": 0.72156864, "a": 1 }
+				},
+				{
+					"replace": -915839489,
+					"newColor": { "r": 0.8901961, "g": 0.8901961, "b": 0.8901961, "a": 1 }
+				},
+				{
+					"replace": -1827262721,
+					"newColor": { "r": 0.52156866, "g": 0.52156866, "b": 0.52156866, "a": 1 }
+				},
+				{
+					"replace": 2066888959,
+					"newColor": { "r": 0.3882353, "g": 0.3882353, "b": 0.3882353, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.8392157, "g": 0.30980393, "b": 0.6627451, "a": 1 },
+				{ "r": 0.8901961, "g": 0.7019608, "b": 0.23137255, "a": 1 },
+				{ "r": 0.3019608, "g": 0.70980394, "b": 0.2, "a": 1 },
+				{ "r": 0.2, "g": 0.65882355, "b": 0.70980394, "a": 1 },
+				{ "r": 0.42745098, "g": 0.27450982, "b": 0.56078434, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 77 },
+	"name": "Fin Proto",
+	"idle": {
+		"drawable": { "id": 414 }
+	},
+	"attack": {
+		"drawable": { "id": 415 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 78 },
+	"name": "Sofa",
+	"idle": {
+		"drawable": { "id": 416 }
+	},
+	"hurt": {
+		"drawable": { "id": 417 }
+	},
+	"stunStart": {
+		"drawable": { "id": 419 }
+	},
+	"stunEnd": {
+		"drawable": { "id": 420 }
+	},
+	"cast": {
+		"drawable": { "id": 418 }
+	},
+	"extraStates": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "COUCH" },
+			"images": [
+				{
+					"drawable": { "id": 421 }
+				}
+			]
+		}
+	],
+	"keepUncustomized": true,
+	"customizables": [
+		{
+			"name": "Color",
+			"replace": [
+				{ "replace": 1803259903 },
+				{
+					"replace": 1247374079,
+					"newColor": { "r": 0.6509804, "g": 0.6509804, "b": 0.6509804, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.8117647, "g": 0.25882354, "b": 0.2784314, "a": 1 },
+				{ "r": 0.53333336, "g": 0.41960785, "b": 0.56078434, "a": 1 },
+				{ "r": 0.6392157, "g": 0.4627451, "b": 0.37254903, "a": 1 },
+				{ "r": 0.6117647, "g": 0.5882353, "b": 0.28627452, "a": 1 },
+				{ "r": 0.39607844, "g": 0.6313726, "b": 0.30980393, "a": 1 },
+				{ "r": 0.32156864, "g": 0.61960787, "b": 0.5803922, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 79 },
+	"name": "Resistor 01",
+	"idle": {
+		"drawable": { "id": 422 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 80 },
+	"name": "Resistor 02",
+	"idle": {
+		"drawable": { "id": 423 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 81 },
+	"name": "Greed",
+	"idle": {
+		"drawable": { "id": 424 }
+	},
+	"hurt": {
+		"drawable": { "id": 425 }
+	},
+	"stunStart": {
+		"drawable": { "id": 427 }
+	},
+	"stunEnd": {
+		"drawable": { "id": 428 }
+	},
+	"cast": {
+		"drawable": { "id": 426 }
+	},
+	"keepUncustomized": true,
+	"customizables": [
+		{
+			"name": "Color",
+			"replace": [
+				{
+					"replace": -50343425,
+					"newColor": { "r": 0.92941177, "g": 0.92941177, "b": 0.92941177, "a": 1 }
+				},
+				{
+					"replace": -872443393,
+					"newColor": { "r": 0.7882353, "g": 0.7882353, "b": 0.7882353, "a": 1 }
+				},
+				{
+					"replace": 2059706623,
+					"newColor": { "r": 0.4392157, "g": 0.4392157, "b": 0.4392157, "a": 1 }
+				},
+				{
+					"replace": 1285203455,
+					"newColor": { "r": 0.2784314, "g": 0.2784314, "b": 0.2784314, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.9411765, "g": 0.57254905, "b": 0.57254905, "a": 1 },
+				{ "r": 0.9019608, "g": 0.7647059, "b": 0.4509804, "a": 1 },
+				{ "r": 0.627451, "g": 0.8509804, "b": 0.67058825, "a": 1 },
+				{ "r": 0.38431373, "g": 0.5921569, "b": 0.8901961, "a": 1 },
+				{ "r": 0.5921569, "g": 0.38431373, "b": 0.8901961, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 82 },
+	"name": "Greed Big",
+	"idle": {
+		"drawable": { "id": 429 }
+	},
+	"hurt": {
+		"drawable": { "id": 430 }
+	},
+	"stunStart": {
+		"drawable": { "id": 432 }
+	},
+	"stunEnd": {
+		"drawable": { "id": 433 }
+	},
+	"cast": {
+		"drawable": { "id": 431 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 83 },
+	"name": "Bomby",
+	"idle": {
+		"drawable": { "id": 434 }
+	},
+	"hurt": {
+		"drawable": { "id": 435 }
+	},
+	"stunStart": {
+		"drawable": { "id": 437 }
+	},
+	"stunEnd": {
+		"drawable": { "id": 438 }
+	},
+	"cast": {
+		"drawable": { "id": 436 }
+	},
+	"shadowY": 3,
+	"keepUncustomized": true,
+	"customizables": [
+		{
+			"name": "Color",
+			"replace": [
+				{ "replace": -17665 },
+				{
+					"replace": -65281,
+					"newColor": { "r": 0.78039217, "g": 0.78039217, "b": 0.78039217, "a": 1 }
+				},
+				{
+					"replace": -6094593,
+					"newColor": { "r": 0.56078434, "g": 0.56078434, "b": 0.56078434, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.96862745, "g": 0.36078432, "b": 0.36078432, "a": 1 },
+				{ "r": 0.6156863, "g": 1, "b": 0.34117648, "a": 1 },
+				{ "r": 0.36862746, "g": 0.95686275, "b": 1, "a": 1 },
+				{ "r": 0.78039217, "g": 0.43137255, "b": 1, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 84 },
+	"name": "Beelet",
+	"idle": {
+		"drawable": { "id": 439 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 85 },
+	"name": "Pompulus",
+	"idle": {
+		"drawable": { "id": 440 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 86 },
+	"name": "Neo",
+	"idle": {
+		"drawable": { "id": 441 }
+	},
+	"hurt": {
+		"drawable": { "id": 442 }
+	},
+	"stunStart": {
+		"drawable": { "id": 444 }
+	},
+	"stunEnd": {
+		"drawable": { "id": 445 }
+	},
+	"cast": {
+		"drawable": { "id": 443 }
+	},
+	"shadowY": 3,
+	"customizables": [
+		{
+			"name": "Body",
+			"replace": [
+				{ "replace": -1835961857 }
+			],
+			"colors": [
+				{ "r": 0.5176471, "g": 0.5411765, "b": 0.27450982, "a": 1 },
+				{ "r": 0.31764707, "g": 0.5294118, "b": 0.42745098, "a": 1 },
+				{ "r": 0.30588236, "g": 0.44313726, "b": 0.6784314, "a": 1 },
+				{ "r": 0.36862746, "g": 0.30588236, "b": 0.5294118, "a": 1 },
+				{ "r": 0.50980395, "g": 0.22352941, "b": 0.49019608, "a": 1 },
+				{ "r": 0.5882353, "g": 0.23137255, "b": 0.24313726, "a": 1 },
+				{ "r": 0.6392157, "g": 0.40392157, "b": 0.23529412, "a": 1 },
+				{ "r": 0.6901961, "g": 0.6509804, "b": 0.2901961, "a": 1 }
+			]
+		},
+		{
+			"name": "Body - Secondary",
+			"replace": [
+				{ "replace": 1616000767 },
+				{
+					"replace": 1262296831,
+					"newColor": { "r": 0.7882353, "g": 0.7882353, "b": 0.7882353, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.25882354, "g": 0.25882354, "b": 0.25882354, "a": 1 },
+				{ "r": 0.9098039, "g": 0.9098039, "b": 0.9098039, "a": 1 },
+				{ "r": 0.3764706, "g": 0.32156864, "b": 0.21176471, "a": 1 },
+				{ "r": 0.41960785, "g": 0.47843137, "b": 0.23921569, "a": 1 },
+				{ "r": 0.2784314, "g": 0.56078434, "b": 0.3254902, "a": 1 },
+				{ "r": 0.25490198, "g": 0.5568628, "b": 0.5803922, "a": 1 },
+				{ "r": 0.23137255, "g": 0.37254903, "b": 0.65882355, "a": 1 },
+				{ "r": 0.5411765, "g": 0.4117647, "b": 0.72156864, "a": 1 },
+				{ "r": 0.6392157, "g": 0.19215687, "b": 0.34117648, "a": 1 },
+				{ "r": 0.76862746, "g": 0.3764706, "b": 0.23137255, "a": 1 },
+				{ "r": 0.81960785, "g": 0.7294118, "b": 0.28627452, "a": 1 }
+			]
+		},
+		{
+			"name": "Arms + Legs",
+			"replace": [
+				{ "replace": 255 }
+			],
+			"colors": [
+				{ "r": 0.078431375, "g": 0.078431375, "b": 0.078431375, "a": 1 },
+				{ "r": 0.36862746, "g": 0.36862746, "b": 0.36862746, "a": 1 },
+				{ "r": 0.5882353, "g": 0.5882353, "b": 0.5882353, "a": 1 },
+				{ "r": 0.78039217, "g": 0.78039217, "b": 0.78039217, "a": 1 },
+				{ "r": 0.9019608, "g": 0.9019608, "b": 0.9019608, "a": 1 }
+			]
+		},
+		{
+			"name": "Buster",
+			"replace": [
+				{ "replace": -741092353 },
+				{
+					"replace": -960051457,
+					"newColor": { "r": 0.81960785, "g": 0.81960785, "b": 0.81960785, "a": 1 }
+				},
+				{ "replace": -454761217 },
+				{
+					"replace": 1650615039,
+					"newColor": { "r": 0.54901963, "g": 0.54901963, "b": 0.54901963, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.827451, "g": 0.827451, "b": 0.827451, "a": 1 },
+				{ "r": 0.21960784, "g": 0.20784314, "b": 0.20784314, "a": 1 },
+				{ "r": 0.35686275, "g": 0.7294118, "b": 0.4, "a": 1 },
+				{ "r": 0.30588236, "g": 0.3764706, "b": 0.78039217, "a": 1 },
+				{ "r": 0.78039217, "g": 0.30588236, "b": 0.73333335, "a": 1 },
+				{ "r": 0.6, "g": 0.24705882, "b": 0.2509804, "a": 1 },
+				{ "r": 0.78039217, "g": 0.53333336, "b": 0.30588236, "a": 1 },
+				{ "r": 0.78039217, "g": 0.7176471, "b": 0.30588236, "a": 1 }
+			]
+		},
+		{
+			"name": "Skin",
+			"replace": [
+				{
+					"replace": -1781761,
+					"newColor": { "r": 0.90588236, "g": 0.90588236, "b": 0.90588236, "a": 1 }
+				},
+				{
+					"replace": -660632065,
+					"newColor": { "r": 0.7019608, "g": 0.7019608, "b": 0.7019608, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 1, "g": 0.89411765, "b": 0.8117647, "a": 1 },
+				{ "r": 0.92156863, "g": 0.69411767, "b": 0.5803922, "a": 1 },
+				{ "r": 0.67058825, "g": 0.44313726, "b": 0.32941177, "a": 1 },
+				{ "r": 0.45882353, "g": 0.30588236, "b": 0.23137255, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 93 },
+	"name": "Spark",
+	"idle": {
+		"drawable": { "id": 472 }
+	},
+	"hurt": {
+		"drawable": { "id": 473 }
+	},
+	"stunStart": {
+		"drawable": { "id": 476 }
+	},
+	"stunEnd": {
+		"drawable": { "id": 477 }
+	},
+	"cast": {
+		"drawable": { "id": 474 }
+	},
+	"attack": {
+		"drawable": { "id": 475 }
+	},
+	"shadowY": 5,
+	"keepUncustomized": true,
+	"customizables": [
+		{
+			"name": "Jacket",
+			"replace": [
+				{ "replace": -591438337 },
+				{
+					"replace": -1197853441,
+					"newColor": { "r": 0.8, "g": 0.8, "b": 0.8, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.6784314, "g": 0.8392157, "b": 0.49411765, "a": 1 },
+				{ "r": 0.5176471, "g": 0.8509804, "b": 0.8352941, "a": 1 },
+				{ "r": 0.34117648, "g": 0.59607846, "b": 0.87058824, "a": 1 },
+				{ "r": 0.7176471, "g": 0.46666667, "b": 0.78039217, "a": 1 },
+				{ "r": 0.85882354, "g": 0.3764706, "b": 0.3882353, "a": 1 },
+				{ "r": 0.6117647, "g": 0.40784314, "b": 0.24313726, "a": 1 }
+			]
+		},
+		{
+			"name": "Jacket - Secondary",
+			"replace": [
+				{ "replace": -1525147393 },
+				{
+					"replace": -2130311425,
+					"newColor": { "r": 0.78039217, "g": 0.78039217, "b": 0.78039217, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.9019608, "g": 0.7529412, "b": 0.30588236, "a": 1 },
+				{ "r": 0.31764707, "g": 0.6509804, "b": 0.27450982, "a": 1 },
+				{ "r": 0.1882353, "g": 0.40392157, "b": 0.6313726, "a": 1 },
+				{ "r": 0.43529412, "g": 0.19215687, "b": 0.54901963, "a": 1 }
+			]
+		},
+		{
+			"name": "Pants",
+			"replace": [
+				{ "replace": 1263225855 }
+			],
+			"colors": [
+				{ "r": 0.45882353, "g": 0.36078432, "b": 0.19215687, "a": 1 },
+				{ "r": 0.1254902, "g": 0.3254902, "b": 0.3882353, "a": 1 },
+				{ "r": 0.5019608, "g": 0.19607843, "b": 0.29803923, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 94 },
+	"name": "Alexsander1",
+	"idle": {
+		"drawable": { "id": 478 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 95 },
+	"name": "Alexsander2",
+	"idle": {
+		"drawable": { "id": 479 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 96 },
+	"name": "Alexsander3",
+	"idle": {
+		"drawable": { "id": 480 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 97 },
+	"name": "Finish Line",
+	"idle": {
+		"drawable": { "id": 481 }
+	},
+	"hurt": {
+		"drawable": { "id": 482 }
+	},
+	"hurtLeadsInto": null
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 98 },
+	"name": "Run Door",
+	"idle": {
+		"drawable": { "id": 484 }
+	},
+	"hurt": {
+		"drawable": { "id": 485 }
+	},
+	"stunStart": {
+		"drawable": { "id": 486 }
+	},
+	"stunEnd": {
+		"drawable": { "id": 487 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 99 },
+	"name": "Loot Box",
+	"idle": {
+		"drawable": { "id": 488 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 100 },
+	"name": "Notice Me",
+	"idle": {
+		"drawable": { "id": 64 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 102 },
+	"name": "Lightmass",
+	"idle": {
+		"drawable": { "id": 491 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 103 },
+	"name": "Lukor",
+	"idle": {
+		"drawable": { "id": 493 }
+	},
+	"cast": {
+		"drawable": { "id": 494 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 108 },
+	"name": "Rozu",
+	"idle": {
+		"drawable": { "id": 1228 }
+	},
+	"hurt": {
+		"drawable": { "id": 1250 }
+	},
+	"stunStart": {
+		"drawable": { "id": 1251 }
+	},
+	"stunEnd": {
+		"drawable": { "id": 1250 }
+	},
+	"cast": {
+		"drawable": { "id": 1248 }
+	},
+	"attack": {
+		"drawable": { "id": 1249 }
+	},
+	"defend": {
+		"drawable": {}
+	},
+	"keepUncustomized": true,
+	"customizables": [
+		{
+			"name": "Coat",
+			"replace": [
+				{
+					"replace": -1586868993,
+					"newColor": { "r": 0.81960785, "g": 0.81960785, "b": 0.81960785, "a": 1 }
+				},
+				{
+					"replace": 2119054079,
+					"newColor": { "r": 0.70980394, "g": 0.70980394, "b": 0.70980394, "a": 1 }
+				},
+				{
+					"replace": 1310727935,
+					"newColor": { "r": 0.4117647, "g": 0.4117647, "b": 0.4117647, "a": 1 }
+				},
+				{ "replace": 2102875647 }
+			],
+			"colors": [
+				{ "r": 0.87058824, "g": 0.78039217, "b": 0.20784314, "a": 1 },
+				{ "r": 0.29803923, "g": 0.6313726, "b": 0.31764707, "a": 1 },
+				{ "r": 0.29803923, "g": 0.59607846, "b": 0.6313726, "a": 1 },
+				{ "r": 0.39607844, "g": 0.29803923, "b": 0.6313726, "a": 1 },
+				{ "r": 0.92156863, "g": 0.29411766, "b": 0.30588236, "a": 1 }
+			]
+		},
+		{
+			"name": "Coat - Secondary",
+			"replace": [
+				{ "replace": -186524673 },
+				{
+					"replace": -356865793,
+					"newColor": { "r": 0.76862746, "g": 0.76862746, "b": 0.76862746, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.627451, "g": 0.81960785, "b": 0.45882353, "a": 1 },
+				{ "r": 0.45882353, "g": 0.81960785, "b": 0.7294118, "a": 1 },
+				{ "r": 0.54509807, "g": 0.45882353, "b": 0.81960785, "a": 1 },
+				{ "r": 0.81960785, "g": 0.45882353, "b": 0.46666667, "a": 1 },
+				{ "r": 0.81960785, "g": 0.78431374, "b": 0.45882353, "a": 1 }
+			]
+		},
+		{
+			"name": "Voxel Generator",
+			"replace": [
+				{ "replace": -1914047489 }
+			],
+			"colors": [
+				{ "r": 0.87058824, "g": 0.5529412, "b": 0.9490196, "a": 1 },
+				{ "r": 0.9607843, "g": 0.27058825, "b": 0.2784314, "a": 1 },
+				{ "r": 0.9490196, "g": 0.7137255, "b": 0.24705882, "a": 1 },
+				{ "r": 0.3137255, "g": 0.9019608, "b": 0.3529412, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 109 },
+	"name": "Tri-Wing",
+	"idle": {
+		"drawable": { "id": 1229 }
+	},
+	"hurt": {
+		"drawable": { "id": 1231 }
+	},
+	"stunStart": {
+		"drawable": { "id": 1231 }
+	},
+	"stunEnd": {
+		"drawable": { "id": 1231 }
+	},
+	"cast": {
+		"drawable": { "id": 1230 }
+	},
+	"extraStates": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"images": [
+				{
+					"drawable": { "id": 1236 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"images": [
+				{
+					"drawable": { "id": 1237 }
+				}
+			]
+		}
+	],
+	"customizables": [
+		{
+			"name": "Helmet",
+			"replace": [
+				{ "replace": 2013255679 },
+				{
+					"replace": 113545471,
+					"newColor": { "r": 0.8627451, "g": 0.8627451, "b": 0.8627451, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.46666667, "g": 1, "b": 0.84313726, "a": 1 },
+				{ "r": 0.49411765, "g": 0.5058824, "b": 0.5019608, "a": 1 },
+				{ "r": 0.2784314, "g": 0.2784314, "b": 0.2784314, "a": 1 },
+				{ "r": 0.92156863, "g": 0.92156863, "b": 0.92156863, "a": 1 },
+				{ "r": 0.38431373, "g": 0.60784316, "b": 0.36862746, "a": 1 },
+				{ "r": 0.972549, "g": 0.93333334, "b": 0.34117648, "a": 1 },
+				{ "r": 1, "g": 0.56078434, "b": 0.13333334, "a": 1 },
+				{ "r": 0.9647059, "g": 0.25490198, "b": 0.25490198, "a": 1 },
+				{ "r": 1, "g": 0.74509805, "b": 0.9607843, "a": 1 },
+				{ "r": 0.16078432, "g": 0.05882353, "b": 0.3019608, "a": 1 },
+				{ "r": 0.039215688, "g": 0.46666667, "b": 0.9019608, "a": 1 },
+				{ "r": 0.6156863, "g": 0.8392157, "b": 0.89411765, "a": 1 }
+			]
+		},
+		{
+			"name": "Body",
+			"replace": [
+				{ "replace": -2139062017 },
+				{
+					"replace": 1532713983,
+					"newColor": { "r": 0.7411765, "g": 0.7411765, "b": 0.7411765, "a": 1 }
+				},
+				{
+					"replace": 1077952767,
+					"newColor": { "r": 0.45882353, "g": 0.45882353, "b": 0.45882353, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.5019608, "g": 0.5019608, "b": 0.5019608, "a": 1 },
+				{ "r": 0.30588236, "g": 0.30588236, "b": 0.30588236, "a": 1 },
+				{ "r": 0.9490196, "g": 0.9490196, "b": 0.9490196, "a": 1 },
+				{ "r": 0.45490196, "g": 0.41568628, "b": 0.38431373, "a": 1 },
+				{ "r": 0.7294118, "g": 0.6, "b": 0.40784314, "a": 1 },
+				{ "r": 1, "g": 0.54901963, "b": 0.27450982, "a": 1 },
+				{ "r": 0.5254902, "b": 0.16078432, "a": 1 },
+				{ "r": 0.7647059, "g": 0.35686275, "b": 0.5764706, "a": 1 },
+				{ "r": 0.42352942, "g": 0.28235295, "b": 0.3647059, "a": 1 },
+				{ "r": 0.20392157, "g": 0.17254902, "b": 0.34117648, "a": 1 },
+				{ "r": 0.019607844, "g": 0.44313726, "b": 0.6627451, "a": 1 },
+				{ "r": 0.48235294, "g": 0.9490196, "b": 0.7921569, "a": 1 },
+				{ "r": 0.23921569, "g": 0.2901961, "b": 0.23529412, "a": 1 },
+				{ "r": 0.34117648, "g": 0.36078432, "b": 0.26666668, "a": 1 }
+			]
+		},
+		{
+			"name": "Body - Secondary",
+			"replace": [
+				{ "replace": -606348289 },
+				{
+					"replace": -1077952513,
+					"newColor": { "r": 0.78039217, "g": 0.78039217, "b": 0.78039217, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.85882354, "g": 0.85882354, "b": 0.85882354, "a": 1 },
+				{ "r": 0.5921569, "g": 0.5921569, "b": 0.5921569, "a": 1 },
+				{ "r": 0.29803923, "g": 0.29803923, "b": 0.29803923, "a": 1 },
+				{ "r": 0.2, "g": 0.12941177, "b": 0.12941177, "a": 1 },
+				{ "r": 0.4745098, "g": 0.3137255, "b": 0.13725491, "a": 1 },
+				{ "r": 0.8156863, "g": 0.28627452, "b": 0.078431375, "a": 1 },
+				{ "r": 0.70980394, "g": 0.03137255, "b": 0.03137255, "a": 1 },
+				{ "r": 0.65882355, "g": 0.19607843, "b": 0.19607843, "a": 1 },
+				{ "r": 0.20784314, "g": 0.015686275, "b": 0.38431373, "a": 1 },
+				{ "r": 0.9490196, "g": 0.3764706, "b": 0.6039216, "a": 1 },
+				{ "r": 0.43137255, "g": 0.7254902, "b": 0.5058824, "a": 1 },
+				{ "r": 0.09411765, "g": 0.8666667, "b": 0.7294118, "a": 1 },
+				{ "r": 0.039215688, "g": 0.46666667, "b": 0.9019608, "a": 1 },
+				{ "r": 0.3372549, "g": 0.6313726, "b": 0.92941177, "a": 1 }
+			]
+		},
+		{
+			"name": "Energy",
+			"replace": [
+				{ "replace": -50210561 },
+				{
+					"replace": -1979681025,
+					"newColor": { "r": 0.6901961, "g": 0.6901961, "b": 0.6901961, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.4627451, "g": 1, "b": 0.84313726, "a": 1 },
+				{ "r": 1, "g": 1, "b": 1, "a": 1 },
+				{ "r": 0.32941177, "g": 0.91764706, "b": 0.38431373, "a": 1 },
+				{ "r": 0.5647059, "g": 0.7058824, "b": 0.19215687, "a": 1 },
+				{ "r": 0.93333334, "g": 0.9019608, "b": 0.12156863, "a": 1 },
+				{ "r": 1, "g": 0.72156864, "b": 0.18039216, "a": 1 },
+				{ "r": 0.9843137, "g": 0.3137255, "b": 0.3137255, "a": 1 },
+				{ "r": 0.34509805, "g": 0.8627451, "b": 0.89411765, "a": 1 },
+				{ "r": 0.34509805, "g": 0.57254905, "b": 0.7490196, "a": 1 },
+				{ "r": 1, "g": 0.7019608, "b": 0.9529412, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleLayeredPatchworkMetaData",
+	"id": {},
+	"name": "Del",
+	"idle": [
+		{
+			"drawable": { "id": 26 }
+		}
+	],
+	"hurt": [
+		{
+			"drawable": { "id": 27 }
+		}
+	],
+	"stunStart": [
+		{
+			"drawable": { "id": 30 }
+		}
+	],
+	"stunEnd": [
+		{
+			"drawable": { "id": 31 }
+		}
+	],
+	"cast": [
+		{
+			"drawable": { "id": 28 }
+		}
+	],
+	"attack": [
+		{
+			"drawable": { "id": 29 }
+		}
+	],
+	"keepUncustomized": true,
+	"customizables": [
+		{
+			"name": "Body",
+			"replace": [
+				{ "replace": 664386559 },
+				{
+					"replace": 239163391,
+					"newColor": { "r": 0.6784314, "g": 0.6784314, "b": 0.6784314, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.5686275, "g": 0.9019608, "b": 0.89411765, "a": 1 },
+				{ "r": 0.15294118, "g": 0.7294118, "b": 0.54901963, "a": 1 },
+				{ "r": 0.26666668, "g": 0.40392157, "b": 0.78039217, "a": 1 },
+				{ "r": 0.4392157, "g": 0.27058825, "b": 0.9019608, "a": 1 }
+			]
+		},
+		{
+			"name": "Body - Secondary",
+			"replace": [
+				{ "replace": 1280800255 },
+				{
+					"replace": 758400511,
+					"newColor": { "r": 0.7411765, "g": 0.7411765, "b": 0.7411765, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.3529412, "g": 0.6784314, "b": 0.6745098, "a": 1 },
+				{ "r": 0.43137255, "g": 0.27450982, "b": 0.5686275, "a": 1 },
+				{ "r": 0.19215687, "g": 0.40784314, "b": 0.47843137, "a": 1 },
+				{ "r": 0.23137255, "g": 0.5803922, "b": 0.45882353, "a": 1 }
+			]
+		},
+		{
+			"name": "Equipment",
+			"replace": [
+				{ "replace": -388046849 },
+				{
+					"replace": -1146117121,
+					"newColor": { "r": 0.8784314, "g": 0.8784314, "b": 0.8784314, "a": 1 }
+				},
+				{
+					"replace": -1920694785,
+					"newColor": { "r": 0.6784314, "g": 0.6784314, "b": 0.6784314, "a": 1 }
+				},
+				{
+					"replace": 1885956863,
+					"newColor": { "r": 0.50980395, "g": 0.50980395, "b": 0.50980395, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.9607843, "g": 0.92156863, "b": 0.35686275, "a": 1 },
+				{ "r": 0.9607843, "g": 0.5568628, "b": 0.35686275, "a": 1 },
+				{ "r": 0.43529412, "g": 0.8235294, "b": 0.9490196, "a": 1 },
+				{ "r": 0.5529412, "g": 0.4117647, "b": 0.9411765, "a": 1 },
+				{ "r": 0.29411766, "g": 0.81960785, "b": 0.37254903, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleLayeredPatchworkMetaData",
+	"id": { "id": 1 },
+	"name": "Fin SP",
+	"shadowY": 4,
+	"idle": [
+		{
+			"drawable": { "id": 34 }
+		}
+	],
+	"hurt": [
+		{
+			"drawable": { "id": 35 }
+		}
+	],
+	"stunStart": [
+		{
+			"drawable": { "id": 37 }
+		}
+	],
+	"stunEnd": [
+		{
+			"drawable": { "id": 38 }
+		}
+	],
+	"cast": [
+		{
+			"drawable": { "id": 36 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleLayeredPatchworkMetaData",
+	"id": { "id": 2 },
+	"name": "Rozu SP",
+	"idle": [
+		{
+			"drawable": { "id": 39 }
+		}
+	],
+	"hurt": [
+		{
+			"drawable": { "id": 66 }
+		}
+	],
+	"stunStart": [
+		{
+			"drawable": { "id": 67 }
+		}
+	],
+	"stunEnd": [
+		{
+			"drawable": { "id": 66 }
+		}
+	],
+	"cast": [
+		{
+			"drawable": { "id": 40 }
+		}
+	],
+	"attack": [
+		{
+			"drawable": { "id": 41 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleLayeredPatchworkMetaData",
+	"id": { "id": 3 },
+	"name": "AS Grunt",
+	"idle": [
+		{
+			"drawable": { "id": 202 }
+		}
+	],
+	"hurt": [
+		{
+			"drawable": { "id": 218 }
+		}
+	],
+	"stunStart": [
+		{
+			"drawable": { "id": 219 }
+		}
+	],
+	"stunEnd": [
+		{
+			"drawable": { "id": 220 }
+		}
+	],
+	"cast": [
+		{
+			"drawable": { "id": 221 }
+		}
+	],
+	"attack": [
+		{
+			"drawable": { "id": 217 },
+			"xOffset": 15
+		}
+	],
+	"defend": [
+		{
+			"drawable": { "id": 222 }
+		}
+	],
+	"customizables": [
+		{
+			"name": "Hair",
+			"replace": [
+				{ "replace": -847546881 },
+				{
+					"replace": -1454615041,
+					"newColor": { "r": 0.61960787, "g": 0.61960787, "b": 0.61960787, "a": 1 }
+				},
+				{
+					"replace": -1555475713,
+					"newColor": { "r": 0.61960787, "g": 0.61960787, "b": 0.61960787, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.85882354, "g": 0.85882354, "b": 0.85882354, "a": 1 },
+				{ "r": 0.5921569, "g": 0.5921569, "b": 0.5921569, "a": 1 },
+				{ "r": 0.29803923, "g": 0.29803923, "b": 0.29803923, "a": 1 },
+				{ "r": 0.4509804, "g": 0.2784314, "b": 0.09803922, "a": 1 },
+				{ "r": 1, "g": 0.92156863, "b": 0.41960785, "a": 1 },
+				{ "r": 0.8156863, "g": 0.28627452, "b": 0.078431375, "a": 1 },
+				{ "r": 0.2, "g": 0.12941177, "b": 0.12941177, "a": 1 },
+				{ "r": 0.36862746, "g": 0.14509805, "b": 0.14509805, "a": 1 },
+				{ "r": 0.65882355, "g": 0.19607843, "b": 0.19607843, "a": 1 },
+				{ "r": 0.5176471, "g": 0.34509805, "b": 0.6784314, "a": 1 },
+				{ "r": 0.9490196, "g": 0.3764706, "b": 0.6039216, "a": 1 },
+				{ "r": 0.22745098, "g": 0.7294118, "b": 0.3529412, "a": 1 },
+				{ "r": 0.09411765, "g": 0.8666667, "b": 0.7294118, "a": 1 },
+				{ "r": 0.039215688, "g": 0.46666667, "b": 0.9019608, "a": 1 },
+				{ "r": 0.3372549, "g": 0.6313726, "b": 0.92941177, "a": 1 },
+				{ "r": 0.14509805, "g": 0.16862746, "b": 0.36862746, "a": 1 }
+			]
+		},
+		{
+			"name": "Skin",
+			"replace": [
+				{ "replace": -321930497 },
+				{
+					"replace": -610628097,
+					"newColor": { "r": 0.7607843, "g": 0.7607843, "b": 0.7607843, "a": 1 }
+				},
+				{
+					"replace": -1454615297,
+					"newColor": { "r": 0.49019608, "g": 0.49019608, "b": 0.49019608, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.9254902, "g": 0.8117647, "b": 0.7294118, "a": 1 },
+				{ "r": 0.92156863, "g": 0.69411767, "b": 0.5803922, "a": 1 },
+				{ "r": 0.67058825, "g": 0.44313726, "b": 0.32941177, "a": 1 },
+				{ "r": 0.45882353, "g": 0.30588236, "b": 0.23137255, "a": 1 }
+			]
+		},
+		{
+			"name": "Armor",
+			"replace": [
+				{ "replace": 1116388095 },
+				{
+					"replace": 1280800255,
+					"newColor": { "r": 0.6509804, "g": 0.6509804, "b": 0.6509804, "a": 1 }
+				},
+				{
+					"replace": 758400511,
+					"newColor": { "r": 0.34901962, "g": 0.34901962, "b": 0.34901962, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.25882354, "g": 0.5411765, "b": 0.7294118, "a": 1 },
+				{ "r": 0.15294118, "g": 0.34901962, "b": 0.3882353, "a": 1 },
+				{ "r": 0.23921569, "g": 0.7019608, "b": 0.6627451, "a": 1 },
+				{ "r": 0.4392157, "g": 0.27058825, "b": 0.9019608, "a": 1 }
+			]
+		},
+		{
+			"name": "Armor - Secondary",
+			"replace": [
+				{ "replace": -769 },
+				{
+					"replace": -337254401,
+					"newColor": { "r": 0.92156863, "g": 0.92156863, "b": 0.92156863, "a": 1 }
+				},
+				{
+					"replace": -1397571073,
+					"newColor": { "r": 0.7607843, "g": 0.7607843, "b": 0.7607843, "a": 1 }
+				},
+				{
+					"replace": 2004583935,
+					"newColor": { "r": 0.52156866, "g": 0.52156866, "b": 0.52156866, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.8901961, "g": 0.92156863, "b": 1, "a": 1 },
+				{ "r": 0.87058824, "g": 0.7490196, "b": 0.2627451, "a": 1 },
+				{ "r": 0.7058824, "g": 0.36862746, "b": 1, "a": 1 },
+				{ "r": 0.45882353, "g": 0.8666667, "b": 1, "a": 1 },
+				{ "r": 0.24313726, "g": 0.8117647, "b": 0.3764706, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleLayeredPatchworkMetaData",
+	"id": { "id": 4 },
+	"name": "Del SP",
+	"idle": [
+		{
+			"drawable": { "id": 203 }
+		}
+	],
+	"hurt": [
+		{
+			"drawable": { "id": 204 }
+		}
+	],
+	"stunStart": [
+		{
+			"drawable": { "id": 207 }
+		}
+	],
+	"stunEnd": [
+		{
+			"drawable": { "id": 208 }
+		}
+	],
+	"cast": [
+		{
+			"drawable": { "id": 205 }
+		}
+	],
+	"attack": [
+		{
+			"drawable": { "id": 206 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.SimplePatchworkMetaData",
+	"id": { "id": 7 },
+	"name": "Boulder",
+	"drawable": { "id": 63 }
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.SimplePatchworkMetaData",
+	"id": { "id": 5 },
+	"name": "Dummy",
+	"drawable": { "id": 215 }
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.SimplePatchworkMetaData",
+	"id": { "id": 6 },
+	"name": "FireGate",
+	"drawable": { "id": 216 }
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.SimplePatchworkMetaData",
+	"id": { "id": 8 },
+	"name": "Bomboyage",
+	"drawable": { "id": 1169 }
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.SimplePatchworkMetaData",
+	"id": { "id": 9 },
+	"name": "Pickup",
+	"drawable": { "id": 10 }
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleLayeredPatchworkMetaData",
+	"id": { "id": 10 },
+	"name": "AS Grunt 2",
+	"idle": [
+		{
+			"drawable": { "id": 223 }
+		}
+	],
+	"hurt": [
+		{
+			"drawable": { "id": 218 }
+		}
+	],
+	"stunStart": [
+		{
+			"drawable": { "id": 226 }
+		}
+	],
+	"stunEnd": [
+		{
+			"drawable": { "id": 227 }
+		}
+	],
+	"cast": [
+		{
+			"drawable": { "id": 228 }
+		}
+	],
+	"attack": [
+		{
+			"drawable": { "id": 224 },
+			"xOffset": 15
+		}
+	],
+	"defend": [
+		{
+			"drawable": { "id": 230 }
+		}
+	],
+	"customizables": [
+		{
+			"name": "Hair",
+			"replace": [
+				{ "replace": -847546881 },
+				{
+					"replace": -1454615041,
+					"newColor": { "r": 0.61960787, "g": 0.61960787, "b": 0.61960787, "a": 1 }
+				},
+				{
+					"replace": -1555475713,
+					"newColor": { "r": 0.61960787, "g": 0.61960787, "b": 0.61960787, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.85882354, "g": 0.85882354, "b": 0.85882354, "a": 1 },
+				{ "r": 0.5921569, "g": 0.5921569, "b": 0.5921569, "a": 1 },
+				{ "r": 0.29803923, "g": 0.29803923, "b": 0.29803923, "a": 1 },
+				{ "r": 0.4509804, "g": 0.2784314, "b": 0.09803922, "a": 1 },
+				{ "r": 1, "g": 0.92156863, "b": 0.41960785, "a": 1 },
+				{ "r": 0.8156863, "g": 0.28627452, "b": 0.078431375, "a": 1 },
+				{ "r": 0.2, "g": 0.12941177, "b": 0.12941177, "a": 1 },
+				{ "r": 0.36862746, "g": 0.14509805, "b": 0.14509805, "a": 1 },
+				{ "r": 0.65882355, "g": 0.19607843, "b": 0.19607843, "a": 1 },
+				{ "r": 0.5176471, "g": 0.34509805, "b": 0.6784314, "a": 1 },
+				{ "r": 0.9490196, "g": 0.3764706, "b": 0.6039216, "a": 1 },
+				{ "r": 0.22745098, "g": 0.7294118, "b": 0.3529412, "a": 1 },
+				{ "r": 0.09411765, "g": 0.8666667, "b": 0.7294118, "a": 1 },
+				{ "r": 0.039215688, "g": 0.46666667, "b": 0.9019608, "a": 1 },
+				{ "r": 0.3372549, "g": 0.6313726, "b": 0.92941177, "a": 1 },
+				{ "r": 0.14509805, "g": 0.16862746, "b": 0.36862746, "a": 1 }
+			]
+		},
+		{
+			"name": "Skin",
+			"replace": [
+				{ "replace": -321930497 },
+				{
+					"replace": -610628097,
+					"newColor": { "r": 0.7607843, "g": 0.7607843, "b": 0.7607843, "a": 1 }
+				},
+				{
+					"replace": -1454615297,
+					"newColor": { "r": 0.49019608, "g": 0.49019608, "b": 0.49019608, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.9254902, "g": 0.8117647, "b": 0.7294118, "a": 1 },
+				{ "r": 0.92156863, "g": 0.69411767, "b": 0.5803922, "a": 1 },
+				{ "r": 0.67058825, "g": 0.44313726, "b": 0.32941177, "a": 1 },
+				{ "r": 0.45882353, "g": 0.30588236, "b": 0.23137255, "a": 1 }
+			]
+		},
+		{
+			"name": "Armor",
+			"replace": [
+				{ "replace": 1116388095 },
+				{
+					"replace": 1280800255,
+					"newColor": { "r": 0.6509804, "g": 0.6509804, "b": 0.6509804, "a": 1 }
+				},
+				{
+					"replace": 758400511,
+					"newColor": { "r": 0.34901962, "g": 0.34901962, "b": 0.34901962, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.25882354, "g": 0.5411765, "b": 0.7294118, "a": 1 },
+				{ "r": 0.15294118, "g": 0.34901962, "b": 0.3882353, "a": 1 },
+				{ "r": 0.23921569, "g": 0.7019608, "b": 0.6627451, "a": 1 },
+				{ "r": 0.4392157, "g": 0.27058825, "b": 0.9019608, "a": 1 }
+			]
+		},
+		{
+			"name": "Armor - Secondary",
+			"replace": [
+				{ "replace": -769 },
+				{
+					"replace": -337254401,
+					"newColor": { "r": 0.92156863, "g": 0.92156863, "b": 0.92156863, "a": 1 }
+				},
+				{
+					"replace": -1397571073,
+					"newColor": { "r": 0.7607843, "g": 0.7607843, "b": 0.7607843, "a": 1 }
+				},
+				{
+					"replace": 2004583935,
+					"newColor": { "r": 0.52156866, "g": 0.52156866, "b": 0.52156866, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.8901961, "g": 0.92156863, "b": 1, "a": 1 },
+				{ "r": 0.87058824, "g": 0.7490196, "b": 0.2627451, "a": 1 },
+				{ "r": 0.7058824, "g": 0.36862746, "b": 1, "a": 1 },
+				{ "r": 0.45882353, "g": 0.8666667, "b": 1, "a": 1 },
+				{ "r": 0.24313726, "g": 0.8117647, "b": 0.3764706, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.SimplePatchworkMetaData",
+	"id": { "id": 11 },
+	"name": "Fire Mantle",
+	"drawable": { "id": 1257 }
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleLayeredPatchworkMetaData",
+	"id": { "id": 12 },
+	"name": "Spark SP",
+	"shadowY": 5,
+	"idle": [
+		{
+			"drawable": { "id": 240 }
+		}
+	],
+	"hurt": [
+		{
+			"drawable": { "id": 241 }
+		}
+	],
+	"stunStart": [
+		{
+			"drawable": { "id": 244 }
+		}
+	],
+	"stunEnd": [
+		{
+			"drawable": { "id": 245 }
+		}
+	],
+	"cast": [
+		{
+			"drawable": { "id": 242 }
+		}
+	],
+	"attack": [
+		{
+			"drawable": { "id": 243 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.SimplePatchworkMetaData",
+	"id": { "id": 13 },
+	"name": "Data Server",
+	"drawable": { "id": 246 }
+}
 ]

@@ -1,100 +1,487 @@
 [
 {
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "BattleEntity.Fin.Name" },
-	"patchwork": { "id": 74 },
-	"visible": true
-},
-{
-	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
-	"id": { "id": 1 },
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "BattleEntity.QuadTurret.Name" },
-	"patchwork": { "id": 76 },
-	"element": "ELEC",
-	"health": 1200,
-	"speed": 50,
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Fin" },
+	"patchworks": [
+		{
+			"id": { "id": 74 }
+		}
+	],
 	"visible": true,
-	"skills": [ "Loaded" ]
+	"customizable": true,
+	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 },
+	"customizationUnlockCondition": {
+		"affinities": [
+			{
+				"character": {},
+				"amount": 1
+			}
+		]
+	}
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 2 },
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "BattleEntity.Spark.Name" },
-	"patchwork": { "id": 93 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Spark" },
+	"patchworks": [
+		{
+			"id": { "id": 93 }
+		}
+	],
 	"health": 800,
 	"power": 150,
 	"speed": 75,
 	"crush": 125,
-	"visible": true
+	"visible": true,
+	"customizable": true,
+	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 },
+	"customizationUnlockCondition": {
+		"campaigns": [
+			{
+				"campaign": {}
+			}
+		],
+		"affinities": [
+			{
+				"character": { "id": 2 },
+				"amount": 1
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 7 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Rozu" },
+	"patchworks": [
+		{
+			"id": { "id": 108 }
+		}
+	],
+	"health": 1100,
+	"power": 75,
+	"crush": 75,
+	"visible": true,
+	"customizable": true,
+	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 },
+	"skills": [ "Analyst" ],
+	"customizationUnlockCondition": {
+		"affinities": [
+			{
+				"character": { "id": 7 },
+				"amount": 1
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 5 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Neo" },
+	"patchworks": [
+		{
+			"id": { "id": 86 }
+		}
+	],
+	"health": 1100,
+	"speed": 125,
+	"crush": 50,
+	"visible": true,
+	"tease": true,
+	"nameable": true,
+	"customizable": true,
+	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 },
+	"skills": [ "Virtual" ],
+	"unlockCondition": { "battlesFought": 5 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 13 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "ASGrunt" },
+	"patchworks": [
+		{
+			"id": { "id": 3 },
+			"label": "Long Hair"
+		},
+		{
+			"id": { "id": 10 },
+			"label": "Short Hair"
+		}
+	],
+	"power": 50,
+	"speed": 150,
+	"crush": 75,
+	"visible": true,
+	"tease": true,
+	"nameable": true,
+	"customizable": true,
+	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 },
+	"skills": [ "Combos" ],
+	"unlockCondition": {
+		"campaigns": [
+			{
+				"campaign": {}
+			},
+			{
+				"campaign": { "id": 1 }
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 9 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Del" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Del.Description" },
+	"patchworks": [
+		{
+			"id": {}
+		}
+	],
+	"power": 75,
+	"speed": 125,
+	"visible": true,
+	"tease": true,
+	"customizable": true,
+	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 },
+	"skills": [ "Skip", "Sprint" ],
+	"unlockCondition": {
+		"campaigns": [
+			{
+				"campaign": { "id": 2 }
+			}
+		]
+	},
+	"customizationUnlockCondition": {
+		"affinities": [
+			{
+				"character": { "id": 9 },
+				"amount": 1
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 1 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "QuadTurret" },
+	"patchworks": [
+		{
+			"id": { "id": 76 }
+		}
+	],
+	"element": "ELEC",
+	"health": 1200,
+	"speed": 50,
+	"visible": true,
+	"tease": true,
+	"customizable": true,
+	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 },
+	"skills": [ "Loaded" ],
+	"unlockCondition": { "battlesFought": 20 },
+	"customizationUnlockCondition": {
+		"affinities": [
+			{
+				"character": { "id": 1 },
+				"amount": 1
+			}
+		]
+	}
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 3 },
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "BattleEntity.SofaSogood.Name" },
-	"patchwork": { "id": 78 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "SofaSogood" },
+	"patchworks": [
+		{
+			"id": { "id": 78 }
+		}
+	],
 	"element": "NATURE",
 	"power": 150,
 	"speed": 75,
 	"crush": 75,
 	"visible": true,
-	"skills": [ "Functional" ]
+	"tease": true,
+	"customizable": true,
+	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 },
+	"skills": [ "Functional" ],
+	"unlockCondition": { "battlesWon": 10 },
+	"customizationUnlockCondition": {
+		"affinities": [
+			{
+				"character": { "id": 3 },
+				"amount": 1
+			}
+		]
+	}
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 4 },
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "BattleEntity.Greed.Name" },
-	"patchwork": { "id": 81 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Greed" },
+	"patchworks": [
+		{
+			"id": { "id": 81 }
+		}
+	],
 	"element": "WATER",
 	"health": 900,
 	"power": 75,
 	"speed": 125,
 	"crush": 150,
 	"visible": true,
-	"skills": [ "Impatience" ]
-},
-{
-	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
-	"id": { "id": 5 },
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "BattleEntity.Neo.Name" },
-	"patchwork": { "id": 86 },
-	"health": 1100,
-	"speed": 125,
-	"crush": 50,
-	"visible": true,
-	"skills": [ "Virtual" ]
+	"tease": true,
+	"customizable": true,
+	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 },
+	"skills": [ "Impatience" ],
+	"unlockCondition": { "enemiesCrushed": 10 },
+	"customizationUnlockCondition": {
+		"affinities": [
+			{
+				"character": { "id": 4 },
+				"amount": 1
+			}
+		]
+	}
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 6 },
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "BattleEntity.Bombarbara.Name" },
-	"patchwork": { "id": 83 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Bombarbara" },
+	"patchworks": [
+		{
+			"id": { "id": 83 }
+		}
+	],
 	"element": "FIRE",
 	"health": 700,
 	"speed": 150,
 	"crush": 125,
 	"visible": true,
-	"skills": [ "Extinguish" ]
-},
-{
-	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
-	"id": { "id": 7 },
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "BattleEntity.Rozu.Name" },
-	"patchwork": { "id": 108 },
-	"health": 1100,
-	"power": 75,
-	"crush": 75,
-	"visible": true,
-	"skills": [ "Analyst" ]
+	"tease": true,
+	"customizable": true,
+	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 },
+	"skills": [ "Extinguish" ],
+	"unlockCondition": { "selfCrushed": 5 },
+	"customizationUnlockCondition": {
+		"affinities": [
+			{
+				"character": { "id": 6 },
+				"amount": 1
+			}
+		]
+	}
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 8 },
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "BattleEntity.TriWing.Name" },
-	"patchwork": { "id": 109 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "TriWing" },
+	"patchworks": [
+		{
+			"id": { "id": 109 }
+		}
+	],
 	"power": 125,
 	"speed": 0,
 	"visible": true,
+	"customizable": true,
 	"guest": true,
-	"skills": [ "OldSchool", "FuelSystem" ]
+	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 },
+	"skills": [ "OldSchool", "FuelSystem" ],
+	"unlockCondition": { "enemiesCrushed": 25 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 10 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Fin.SP" },
+	"patchworks": [
+		{
+			"id": { "id": 1 }
+		}
+	],
+	"element": "WATER",
+	"visible": true,
+	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 },
+	"unlockCondition": {
+		"campaigns": [
+			{
+				"campaign": { "id": 4 }
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 12 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Spark.SP" },
+	"patchworks": [
+		{
+			"id": { "id": 12 }
+		}
+	],
+	"element": "NATURE",
+	"health": 800,
+	"power": 150,
+	"speed": 75,
+	"crush": 125,
+	"visible": true,
+	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 },
+	"unlockCondition": {
+		"campaigns": [
+			{
+				"campaign": {},
+				"perfect": true
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 11 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Rozu.SP" },
+	"patchworks": [
+		{
+			"id": { "id": 2 }
+		}
+	],
+	"element": "FIRE",
+	"health": 1100,
+	"power": 75,
+	"crush": 75,
+	"visible": true,
+	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 },
+	"skills": [ "Analyst" ],
+	"unlockCondition": {
+		"campaigns": [
+			{
+				"campaign": { "id": 1 },
+				"perfect": true
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 14 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "DelSP" },
+	"patchworks": [
+		{
+			"id": { "id": 4 }
+		}
+	],
+	"element": "ELEC",
+	"power": 75,
+	"speed": 125,
+	"visible": true,
+	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 },
+	"skills": [ "Skip", "Sprint" ],
+	"unlockCondition": {
+		"campaigns": [
+			{
+				"campaign": { "id": 2 },
+				"perfect": true
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 15 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Bomby Rozu" },
+	"patchworks": [
+		{
+			"id": { "id": 83 }
+		}
+	],
+	"element": "FIRE",
+	"health": 900,
+	"crush": 150,
+	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 17 },
+	"dataName": "Scaredy Neo",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Neo" },
+	"patchworks": [
+		{
+			"id": { "id": 86 }
+		}
+	],
+	"health": 250,
+	"crush": 0,
+	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 18 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Dummy" },
+	"patchworks": [
+		{
+			"id": { "id": 5 }
+		}
+	],
+	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 16 },
+	"dataName": "Weak Fin",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Fin" },
+	"patchworks": [
+		{
+			"id": { "id": 74 }
+		}
+	],
+	"health": 450,
+	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 19 },
+	"dataName": "Weak Data Server",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "DataServer" },
+	"patchworks": [
+		{
+			"id": { "id": 13 }
+		}
+	],
+	"health": 150,
+	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 20 },
+	"dataName": "Strong Data Server",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "DataServer" },
+	"patchworks": [
+		{
+			"id": { "id": 13 }
+		}
+	],
+	"health": 800,
+	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 }
 }
 ]

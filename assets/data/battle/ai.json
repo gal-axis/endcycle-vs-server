@@ -12,11 +12,26 @@
 		}
 	],
 	"moves": [
-		{ "move": "MOVING_TILE", "yTile": 1, "moveSpeed": 3 },
 		{
-			"time": 1,
+			"move": "MOVING_TILE",
+			"yTile": 1,
+			"moveSpeed": 3,
 			"turnType": "TARGET",
-			"voc": { "id": 22 }
+			"scripts": {}
+		},
+		{
+			"time": 0.3,
+			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_OPEN" },
+			"scripts": {}
+		},
+		{
+			"voc": { "id": 22 },
+			"scripts": {}
+		},
+		{
+			"time": 0.3,
+			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_CLOSE" },
+			"scripts": {}
 		}
 	]
 },
@@ -33,11 +48,1181 @@
 		}
 	],
 	"moves": [
-		{ "move": "MOVING_TILE", "yTile": -1, "moveSpeed": 3 },
+		{
+			"move": "MOVING_TILE",
+			"yTile": -1,
+			"moveSpeed": 3,
+			"turnType": "TARGET",
+			"scripts": {}
+		},
+		{
+			"time": 0.3,
+			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_OPEN" },
+			"scripts": {}
+		},
+		{
+			"voc": { "id": 22 },
+			"scripts": {}
+		},
+		{
+			"time": 0.3,
+			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_CLOSE" },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 2 },
+	"name": "Bomby Shooter Up",
+	"ignoreGauge": true,
+	"change": [
+		{}
+	],
+	"moves": [
+		{
+			"time": 2,
+			"voc": { "id": 10034 },
+			"scripts": {}
+		},
+		{
+			"time": 0.5,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"turnType": "TARGET",
+			"scripts": {}
+		},
+		{
+			"time": 0.5,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"scripts": {}
+		},
+		{
+			"time": 0.5,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"scripts": {}
+		},
+		{
+			"time": 0.5,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 3 },
+	"name": "Bomby Healer",
+	"ignoreGauge": true,
+	"moves": [
+		{
+			"time": 4,
+			"voc": { "id": 10110 },
+			"scripts": {}
+		},
+		{
+			"time": 4,
+			"voc": { "id": 8 },
+			"style": 29,
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 4 },
+	"name": "Sofa Grabber",
+	"ignoreGauge": true,
+	"change": [
+		{
+			"onInterrupt": true,
+			"onInaccessiblePanel": true,
+			"action": { "id": 6 }
+		},
+		{
+			"moves": 2,
+			"action": { "id": 5 }
+		}
+	],
+	"moves": [
+		{
+			"time": 2,
+			"turnType": "TARGET",
+			"voc": { "id": 27 },
+			"scripts": {}
+		},
+		{
+			"time": 0.5,
+			"move": "ANIMATED_TILE",
+			"xTile": -1,
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 5 },
+	"name": "Sofa Grabber Phase 2",
+	"ignoreGauge": true,
+	"randomizeMoves": true,
+	"change": [
+		{
+			"time": 2.5,
+			"moves": 1,
+			"action": { "id": 4 }
+		}
+	],
+	"moves": [
+		{
+			"time": 1.5,
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"scripts": {}
+		},
+		{
+			"time": 1.5,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 6 },
+	"name": "Sofa Grabber Reset",
+	"change": [
+		{
+			"moves": 1,
+			"action": { "id": 4 }
+		}
+	],
+	"moves": [
+		{
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": 4,
+			"turnType": "TARGET",
+			"scripts": {}
+		},
+		{
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": 3,
+			"turnType": "TARGET",
+			"scripts": {}
+		},
+		{
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": 2,
+			"turnType": "TARGET",
+			"scripts": {}
+		},
+		{
+			"time": 0.1,
+			"turnType": "TARGET",
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 7 },
+	"name": "Bomby Simple Down",
+	"ignoreGauge": true,
+	"change": [
+		{
+			"moves": 3,
+			"onInaccessiblePanel": true,
+			"action": { "id": 8 }
+		}
+	],
+	"moves": [
+		{
+			"time": 2.5,
+			"voc": { "id": 10034 },
+			"scripts": {}
+		},
+		{
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"moveType": "TARGET",
+			"scripts": {}
+		},
+		{
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"turnType": "TARGET",
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 8 },
+	"name": "Bomby Simple Up",
+	"ignoreGauge": true,
+	"change": [
+		{
+			"moves": 3,
+			"onInaccessiblePanel": true,
+			"action": { "id": 7 }
+		}
+	],
+	"moves": [
+		{
+			"time": 2.5,
+			"voc": { "id": 10034 },
+			"scripts": {}
+		},
+		{
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"moveType": "TARGET",
+			"scripts": {}
+		},
+		{
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"turnType": "TARGET",
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 9 },
+	"name": "Greed Protecc",
+	"moves": [
+		{
+			"time": 0.5,
+			"move": "ANIMATED_TILE",
+			"xTile": 5,
+			"moveType": "ABSOLUTE",
+			"turnType": "TARGET",
+			"scripts": {}
+		},
+		{
+			"time": 0.5,
+			"voc": { "id": 10352 },
+			"scripts": {}
+		},
+		{
+			"move": "ANIMATED_TILE",
+			"xTile": 5,
+			"yTile": 3,
+			"moveType": "ABSOLUTE",
+			"turnType": "TARGET",
+			"scripts": {}
+		},
+		{
+			"voc": { "id": 10352 },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 10 },
+	"name": "Greed Attacc",
+	"ignoreGauge": true,
+	"moves": [
 		{
 			"time": 1,
 			"turnType": "TARGET",
-			"voc": { "id": 22 }
+			"voc": { "id": 20 },
+			"scripts": {}
+		},
+		{
+			"time": 1,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"scripts": {}
+		},
+		{
+			"time": 1,
+			"turnType": "TARGET",
+			"voc": { "id": 20 },
+			"scripts": {}
+		},
+		{
+			"time": 1,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 11 },
+	"name": "Agent Evade",
+	"moves": [
+		{
+			"time": 2,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"scripts": {}
+		},
+		{
+			"time": 0.4,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"scripts": {}
+		},
+		{
+			"time": 0.4,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"scripts": {}
+		},
+		{
+			"time": 2,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"scripts": {}
+		},
+		{
+			"time": 0.4,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"scripts": {}
+		},
+		{
+			"time": 0.4,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 12 },
+	"name": "Giant Q.T. Dodge",
+	"change": [
+		{
+			"onAlone": true,
+			"action": { "id": 13 }
+		}
+	],
+	"moves": [
+		{
+			"time": 1.5,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"turnType": "TARGET",
+			"scripts": {}
+		},
+		{
+			"time": 1.5,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"turnType": "TARGET",
+			"scripts": {}
+		},
+		{
+			"time": 1.5,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"turnType": "TARGET",
+			"scripts": {}
+		},
+		{
+			"time": 1.5,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"turnType": "TARGET",
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 13 },
+	"name": "Giant Q.T. Spawn",
+	"change": [
+		{
+			"moves": 1,
+			"action": { "id": 12 }
+		}
+	],
+	"moves": [
+		{
+			"voc": { "id": 33 },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 14 },
+	"name": "Neo Meteor",
+	"ignoreGauge": true,
+	"moves": [
+		{
+			"time": 1.2,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": 3,
+			"yTile": 1,
+			"moveType": "ABSOLUTE",
+			"turnType": "TARGET",
+			"voc": { "id": 29 },
+			"scripts": {}
+		},
+		{
+			"time": 1.2,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": 1,
+			"yTile": -1,
+			"voc": { "id": 14 },
+			"scripts": {}
+		},
+		{
+			"time": 1.2,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": 1,
+			"yTile": 1,
+			"voc": { "id": 10034 },
+			"scripts": {}
+		},
+		{
+			"time": 1.2,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": -1,
+			"yTile": 1,
+			"voc": { "id": 14 },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 15 },
+	"name": "Q.T. Double-Down",
+	"ignoreGauge": true,
+	"change": [
+		{
+			"onInterrupt": true,
+			"onInaccessiblePanel": true,
+			"action": { "id": 16 }
+		}
+	],
+	"moves": [
+		{
+			"time": 1.5,
+			"move": "MOVING_TILE",
+			"yTile": 2,
+			"moveSpeed": 1,
+			"scripts": {}
+		},
+		{
+			"time": 0.5,
+			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_OPEN" },
+			"scripts": {}
+		},
+		{
+			"voc": { "id": 22 },
+			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"scripts": {}
+		},
+		{
+			"time": 0.5,
+			"turnType": "TARGET",
+			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_CLOSE" },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 16 },
+	"name": "Q.T. Double-Up",
+	"ignoreGauge": true,
+	"change": [
+		{
+			"onInterrupt": true,
+			"onInaccessiblePanel": true,
+			"action": { "id": 15 }
+		}
+	],
+	"moves": [
+		{
+			"time": 1.5,
+			"move": "MOVING_TILE",
+			"yTile": -2,
+			"moveSpeed": 1,
+			"scripts": {}
+		},
+		{
+			"time": 0.5,
+			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_OPEN" },
+			"scripts": {}
+		},
+		{
+			"voc": { "id": 22 },
+			"scripts": {}
+		},
+		{
+			"time": 0.5,
+			"turnType": "TARGET",
+			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_CLOSE" },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 17 },
+	"name": "Greed Attacc Down",
+	"ignoreGauge": true,
+	"change": [
+		{
+			"onInterrupt": true,
+			"onInaccessiblePanel": true,
+			"action": { "id": 18 }
+		}
+	],
+	"moves": [
+		{
+			"time": 1.5,
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"turnType": "TARGET",
+			"scripts": {}
+		},
+		{
+			"time": 1.5,
+			"voc": { "id": 20 },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 18 },
+	"name": "Greed Attacc Up",
+	"ignoreGauge": true,
+	"change": [
+		{
+			"onInterrupt": true,
+			"onInaccessiblePanel": true,
+			"action": { "id": 17 }
+		}
+	],
+	"moves": [
+		{
+			"time": 1.5,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"turnType": "TARGET",
+			"scripts": {}
+		},
+		{
+			"time": 1.5,
+			"voc": { "id": 20 },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 19 },
+	"name": "Weak boi fin",
+	"ignoreGauge": true,
+	"change": [
+		{
+			"onInterrupt": true,
+			"action": { "id": 20 }
+		}
+	],
+	"moves": [
+		{
+			"time": 0.5,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": 1,
+			"scripts": {}
+		},
+		{
+			"time": 0.5,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"scripts": {}
+		},
+		{
+			"time": 1.5,
+			"voc": { "id": 10016 },
+			"scripts": {}
+		},
+		{
+			"time": 0.5,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"scripts": {}
+		},
+		{
+			"time": 1.5,
+			"voc": { "id": 10106 },
+			"scripts": {}
+		},
+		{
+			"time": 0.5,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"scripts": {}
+		},
+		{
+			"time": 1.5,
+			"voc": { "id": 10016 },
+			"scripts": {}
+		},
+		{
+			"time": 0.5,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 20 },
+	"name": "He scared",
+	"ignoreGauge": true,
+	"randomizeMoves": true,
+	"change": [
+		{
+			"moves": 1,
+			"action": { "id": 19 }
+		}
+	],
+	"moves": [
+		{
+			"yTile": 1,
+			"voc": { "id": 10010 },
+			"scripts": {}
+		},
+		{
+			"yTile": -1,
+			"voc": { "id": 10031 },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 21 },
+	"name": "Crimson Rozu",
+	"ignoreGauge": true,
+	"change": [
+		{
+			"onInaccessiblePanel": true,
+			"action": { "id": 22 }
+		}
+	],
+	"moves": [
+		{
+			"time": 0.5,
+			"voc": { "id": 10422 },
+			"scripts": {}
+		},
+		{
+			"time": 0.4,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": -1,
+			"scripts": {}
+		},
+		{
+			"time": 1.6,
+			"voc": { "id": 10114 },
+			"style": 13,
+			"scripts": {}
+		},
+		{
+			"time": 0.4,
+			"voc": { "id": 10022 },
+			"style": 10,
+			"scripts": {}
+		},
+		{
+			"time": 0.2,
+			"move": "ANIMATED_TILE",
+			"xTile": 1,
+			"scripts": {}
+		},
+		{
+			"time": 0.2,
+			"move": "ANIMATED_TILE",
+			"xTile": 1,
+			"scripts": {}
+		},
+		{
+			"time": 0.6,
+			"voc": { "id": 10031 },
+			"style": 0,
+			"scripts": {}
+		},
+		{
+			"time": 0.5,
+			"move": "ANIMATED_TILE",
+			"xTile": -1,
+			"scripts": {}
+		},
+		{
+			"time": 0.8,
+			"voc": { "id": 10034 },
+			"scripts": {}
+		},
+		{
+			"time": 0.2,
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"scripts": {}
+		},
+		{
+			"voc": { "id": 10031 },
+			"scripts": {}
+		},
+		{
+			"time": 0.2,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"scripts": {}
+		},
+		{
+			"time": 0.2,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"scripts": {}
+		},
+		{
+			"voc": { "id": 10031 },
+			"scripts": {}
+		},
+		{
+			"time": 0.2,
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"scripts": {}
+		},
+		{
+			"time": 0.5,
+			"voc": { "id": 10034 },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 22 },
+	"name": "Crimson Rozu 2",
+	"ignoreGauge": true,
+	"change": [
+		{
+			"moves": 2,
+			"action": { "id": 21 }
+		}
+	],
+	"moves": [
+		{
+			"voc": { "id": 10 },
+			"scripts": {}
+		},
+		{
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": 1,
+			"scripts": {}
+		},
+		{
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"scripts": {}
+		},
+		{
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"scripts": {}
+		},
+		{
+			"move": "ANIMATED_TILE",
+			"xTile": -1,
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 23 },
+	"name": "Crimson Rozu 3",
+	"ignoreGauge": true,
+	"moves": [
+		{
+			"voc": { "id": 10234 },
+			"scripts": {}
+		},
+		{
+			"time": 1,
+			"voc": { "id": 10031 },
+			"scripts": {}
+		},
+		{
+			"time": 0.5,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": 4,
+			"yTile": 1,
+			"moveType": "ABSOLUTE",
+			"scripts": {}
+		},
+		{
+			"time": 0.3,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"scripts": {}
+		},
+		{
+			"time": 0.6,
+			"voc": { "id": 10034 },
+			"scripts": {}
+		},
+		{
+			"time": 1,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"voc": { "id": 10106 },
+			"scripts": {}
+		},
+		{
+			"time": 0.3,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"scripts": {}
+		},
+		{
+			"time": 0.6,
+			"voc": { "id": 10034 },
+			"scripts": {}
+		},
+		{
+			"time": 0.5,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 24 },
+	"name": "Crimson Spark",
+	"ignoreGauge": true,
+	"moves": [
+		{
+			"time": 1.1,
+			"voc": { "id": 10012 },
+			"scripts": {}
+		},
+		{
+			"time": 1.1,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"voc": { "id": 10013 },
+			"style": 10,
+			"scripts": {}
+		},
+		{
+			"time": 1.1,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": 1,
+			"voc": { "id": 10 },
+			"style": 29,
+			"scripts": {}
+		},
+		{
+			"time": 1.1,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"voc": { "id": 10031 },
+			"style": 10,
+			"scripts": {}
+		},
+		{
+			"time": 1.1,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"voc": { "id": 10110 },
+			"scripts": {}
+		},
+		{
+			"time": 1.1,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": -1,
+			"voc": { "id": 10011 },
+			"style": 12,
+			"scripts": {}
+		},
+		{
+			"time": 1.1,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"voc": { "id": 8 },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 25 },
+	"name": "Spark",
+	"ignoreGauge": true,
+	"moves": [
+		{
+			"time": 1.5,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": 4,
+			"yTile": 1,
+			"moveType": "ABSOLUTE",
+			"voc": { "id": 10034 },
+			"scripts": {}
+		},
+		{
+			"time": 1.2,
+			"voc": { "id": 10010 },
+			"style": 18,
+			"scripts": {}
+		},
+		{
+			"time": 1.2,
+			"skippable": true,
+			"yTile": -1,
+			"voc": { "id": 10022 },
+			"style": 19,
+			"scripts": {}
+		},
+		{
+			"time": 0.5,
+			"skippable": true,
+			"scripts": {}
+		},
+		{
+			"time": 1.5,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"voc": { "id": 10446 },
+			"scripts": {}
+		},
+		{
+			"time": 1.2,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"voc": { "id": 10440 },
+			"scripts": {}
+		},
+		{
+			"time": 1.2,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"voc": { "id": 10446 },
+			"scripts": {}
+		},
+		{
+			"time": 0.8,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"voc": { "id": 10434 },
+			"scripts": {}
+		},
+		{
+			"time": 0.8,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": 3,
+			"yTile": 1,
+			"moveType": "ABSOLUTE",
+			"voc": { "id": 5 },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 26 },
+	"name": "Heal Grunt",
+	"moves": [
+		{
+			"time": 0.5,
+			"voc": { "id": 10110 },
+			"scripts": {}
+		},
+		{
+			"time": 0.8,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"scripts": {}
+		},
+		{
+			"time": 0.8,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"scripts": {}
+		},
+		{
+			"time": 0.8,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"scripts": {}
+		},
+		{
+			"time": 0.8,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"scripts": {}
+		},
+		{
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": -1,
+			"scripts": {}
+		},
+		{
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": -1,
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 27 },
+	"name": "ElectroCannon",
+	"moves": [
+		{
+			"time": 0.5,
+			"turnType": "TARGET",
+			"scripts": {}
+		},
+		{
+			"voc": { "id": 34 },
+			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_OPEN" },
+			"scripts": {}
+		},
+		{
+			"time": 3,
+			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_CLOSE" },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 28 },
+	"name": "Dualeaf Sofa",
+	"ignoreGauge": true,
+	"moves": [
+		{
+			"time": 1.5,
+			"turnType": "TARGET",
+			"voc": { "id": 11 },
+			"scripts": {}
+		},
+		{
+			"time": 1,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"scripts": {}
+		},
+		{
+			"time": 1.5,
+			"turnType": "TARGET",
+			"voc": { "id": 11 },
+			"scripts": {}
+		},
+		{
+			"time": 1,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"scripts": {}
+		},
+		{
+			"time": 1.5,
+			"turnType": "TARGET",
+			"voc": { "id": 11 },
+			"scripts": {}
+		},
+		{
+			"time": 1,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"scripts": {}
+		},
+		{
+			"time": 1.5,
+			"turnType": "TARGET",
+			"voc": { "id": 11 },
+			"scripts": {}
+		},
+		{
+			"time": 1,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"scripts": {}
 		}
 	]
 }

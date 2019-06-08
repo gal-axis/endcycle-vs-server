@@ -587,7 +587,7 @@
 	"id": { "id": 110 },
 	"name": "menu_background",
 	"frames": [
-		{ "texturePath": "general/menus/backgrounds.png", "y": 28, "width": 416, "height": 234 }
+		{ "texturePath": "general/menus/backgrounds.png", "y": 28, "width": 20, "height": 20 }
 	]
 },
 {
@@ -611,7 +611,7 @@
 	"id": { "id": 113 },
 	"name": "menu_header_back_arrow",
 	"frames": [
-		{ "texturePath": "general/menus/backgrounds.png", "x": 417, "y": 28, "width": 11, "height": 9 }
+		{ "texturePath": "general/menus/backgrounds.png", "x": 21, "y": 28, "width": 11, "height": 9 }
 	]
 },
 {
@@ -625,7 +625,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 115 },
-	"name": "menu_button",
+	"name": "menu_button_fg",
 	"frames": [
 		{ "texturePath": "general/menus/elements_new.png", "y": 235, "width": 37, "height": 27 }
 	]
@@ -1490,7 +1490,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 405 },
-	"name": "bo_cannon_01_idle",
+	"name": "Cannon Old Idle",
 	"speed": 0.1,
 	"playMode": "LOOP",
 	"frames": [
@@ -1505,7 +1505,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 406 },
-	"name": "bo_cannon_02_idle",
+	"name": "Cannon Idle",
 	"speed": 0.1,
 	"playMode": "LOOP",
 	"frames": [
@@ -1518,7 +1518,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 407 },
-	"name": "bo_cannon_02_flinch",
+	"name": "Cannon Flinch",
 	"speed": 0.0375,
 	"frames": [
 		{ "texturePath": "battle/entities/cannon_02.png", "y": 60, "width": 54, "height": 59 },
@@ -1534,7 +1534,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 408 },
-	"name": "bo_cannon_02_cast",
+	"name": "Cannon Cast",
 	"speed": 0.07,
 	"frames": [
 		{ "texturePath": "battle/entities/cannon_02.png", "y": 120, "width": 54, "height": 59 },
@@ -1549,7 +1549,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 409 },
-	"name": "bo_cannon_02_attack",
+	"name": "Cannon Attack",
 	"speed": 0.04,
 	"frames": [
 		{ "texturePath": "battle/entities/cannon_02.png", "y": 180, "width": 54, "height": 59 },
@@ -1568,7 +1568,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 410 },
-	"name": "bo_cannon_02_stun_start",
+	"name": "Cannon Stun Start",
 	"speed": 0.0375,
 	"frames": [
 		{ "texturePath": "battle/entities/cannon_02.png", "y": 60, "width": 54, "height": 59 },
@@ -1583,7 +1583,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 411 },
-	"name": "bo_cannon_02_stun_end",
+	"name": "Cannon Stun End",
 	"speed": 0.0375,
 	"frames": [
 		{ "texturePath": "battle/entities/cannon_02.png", "x": 385, "y": 60, "width": 54, "height": 59 }
@@ -1592,7 +1592,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 412 },
-	"name": "bo_cannon_02_hatch_open",
+	"name": "Cannon Hatch Open",
 	"speed": 0.05,
 	"frames": [
 		{ "texturePath": "battle/entities/cannon_02.png", "y": 300, "width": 54, "height": 59 },
@@ -1604,7 +1604,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 413 },
-	"name": "bo_cannon_02_hatch_close",
+	"name": "Cannon Hatch Close",
 	"speed": 0.05,
 	"frames": [
 		{ "texturePath": "battle/entities/cannon_02.png", "y": 360, "width": 54, "height": 59 },
@@ -1615,35 +1615,8 @@
 },
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 414 },
-	"name": "bo_fin_0x_idle",
-	"speed": 0.1,
-	"playMode": "LOOP",
-	"frames": [
-		{ "texturePath": "battle/entities/fin_0X.png", "width": 28, "height": 45 },
-		{ "texturePath": "battle/entities/fin_0X.png", "x": 29, "width": 28, "height": 45 },
-		{ "texturePath": "battle/entities/fin_0X.png", "x": 58, "width": 28, "height": 45 },
-		{ "texturePath": "battle/entities/fin_0X.png", "x": 87, "width": 28, "height": 45 },
-		{ "texturePath": "battle/entities/fin_0X.png", "x": 116, "width": 28, "height": 45 },
-		{ "texturePath": "battle/entities/fin_0X.png", "x": 145, "width": 28, "height": 45 },
-		{ "texturePath": "battle/entities/fin_0X.png", "x": 174, "width": 28, "height": 45 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 415 },
-	"name": "bo_fin_0x_attack",
-	"speed": 0.03,
-	"frames": [
-		{ "texturePath": "battle/entities/fin_0X.png", "y": 138, "width": 28, "height": 45 },
-		{ "texturePath": "battle/entities/fin_0X.png", "x": 29, "y": 138, "width": 28, "height": 45 },
-		{ "texturePath": "battle/entities/fin_0X.png", "x": 58, "y": 138, "width": 28, "height": 45 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 416 },
-	"name": "bo_sofa_01_idle",
+	"name": "Sofa Idle",
 	"speed": 0.1,
 	"playMode": "LOOP",
 	"frames": [
@@ -1657,7 +1630,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 417 },
-	"name": "bo_sofa_01_flinch",
+	"name": "Sofa Flinch",
 	"speed": 0.07,
 	"frames": [
 		{ "texturePath": "battle/entities/sofa_01.png", "y": 60, "width": 59, "height": 59 },
@@ -1669,7 +1642,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 418 },
-	"name": "bo_sofa_01_cast",
+	"name": "Sofa Cast",
 	"speed": 0.05,
 	"frames": [
 		{ "texturePath": "battle/entities/sofa_01.png", "y": 120, "width": 59, "height": 59 },
@@ -1686,7 +1659,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 419 },
-	"name": "bo_sofa_01_stun_start",
+	"name": "Sofa Stun Start",
 	"speed": 0.07,
 	"frames": [
 		{ "texturePath": "battle/entities/sofa_01.png", "y": 60, "width": 59, "height": 59 },
@@ -1697,7 +1670,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 420 },
-	"name": "bo_sofa_01_stun_end",
+	"name": "Sofa Stun End",
 	"speed": 0.07,
 	"frames": [
 		{ "texturePath": "battle/entities/sofa_01.png", "x": 180, "y": 60, "width": 59, "height": 59 }
@@ -1706,8 +1679,8 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 421 },
-	"name": "bo_sofa_01_couch",
-	"speed": 0.05,
+	"name": "Sofa Couch",
+	"speed": 0.03,
 	"frames": [
 		{ "texturePath": "battle/entities/sofa_01.png", "y": 180, "width": 59, "height": 59 },
 		{ "texturePath": "battle/entities/sofa_01.png", "x": 60, "y": 180, "width": 59, "height": 59 },
@@ -1975,7 +1948,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 441 },
-	"name": "bo_neo_01_idle",
+	"name": "Neo Idle",
 	"speed": 0.1,
 	"playMode": "LOOP",
 	"frames": [
@@ -1993,7 +1966,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 442 },
-	"name": "bo_neo_01_flinch",
+	"name": "Neo Flinch",
 	"speed": 0.07,
 	"frames": [
 		{ "texturePath": "battle/entities/neo_01.png", "y": 46, "width": 49, "height": 45 },
@@ -2005,7 +1978,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 443 },
-	"name": "bo_neo_01_cast",
+	"name": "Neo Cast",
 	"speed": 0.06,
 	"frames": [
 		{ "texturePath": "battle/entities/neo_01.png", "y": 92, "width": 49, "height": 45 },
@@ -2023,7 +1996,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 444 },
-	"name": "bo_neo_01_stun_start",
+	"name": "Neo Stun Start",
 	"speed": 0.07,
 	"frames": [
 		{ "texturePath": "battle/entities/neo_01.png", "y": 46, "width": 49, "height": 45 },
@@ -2034,7 +2007,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 445 },
-	"name": "bo_neo_01_stun_end",
+	"name": "Neo Stun End",
 	"speed": 0.07,
 	"frames": [
 		{ "texturePath": "battle/entities/neo_01.png", "x": 150, "y": 46, "width": 49, "height": 45 }
@@ -2042,356 +2015,8 @@
 },
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 446 },
-	"name": "bo_neo_02_idle",
-	"speed": 0.1,
-	"playMode": "LOOP",
-	"frames": [
-		{ "texturePath": "battle/entities/neo_02.png", "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_02.png", "x": 50, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_02.png", "x": 100, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_02.png", "x": 150, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_02.png", "x": 200, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_02.png", "x": 250, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_02.png", "x": 300, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_02.png", "x": 350, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_02.png", "x": 400, "width": 49, "height": 45 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 447 },
-	"name": "bo_neo_02_flinch",
-	"speed": 0.07,
-	"frames": [
-		{ "texturePath": "battle/entities/neo_02.png", "y": 46, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_02.png", "x": 50, "y": 46, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_02.png", "x": 100, "y": 46, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_02.png", "x": 150, "y": 46, "width": 49, "height": 45 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 448 },
-	"name": "bo_neo_02_cast",
-	"speed": 0.06,
-	"frames": [
-		{ "texturePath": "battle/entities/neo_02.png", "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_02.png", "x": 50, "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_02.png", "x": 100, "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_02.png", "x": 150, "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_02.png", "x": 200, "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_02.png", "x": 250, "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_02.png", "x": 300, "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_02.png", "x": 350, "y": 92, "width": 49, "height": 45 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 449 },
-	"name": "bo_neo_02_stun_start",
-	"speed": 0.07,
-	"frames": [
-		{ "texturePath": "battle/entities/neo_02.png", "y": 46, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_02.png", "x": 50, "y": 46, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_02.png", "x": 100, "y": 46, "width": 49, "height": 45 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 450 },
-	"name": "bo_neo_02_stun_end",
-	"speed": 0.07,
-	"frames": [
-		{ "texturePath": "battle/entities/neo_02.png", "x": 150, "y": 46, "width": 49, "height": 45 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 451 },
-	"name": "bo_neo_03_idle",
-	"speed": 0.1,
-	"playMode": "LOOP",
-	"frames": [
-		{ "texturePath": "battle/entities/neo_03.png", "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_03.png", "x": 50, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_03.png", "x": 100, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_03.png", "x": 150, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_03.png", "x": 200, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_03.png", "x": 250, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_03.png", "x": 300, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_03.png", "x": 350, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_03.png", "x": 400, "width": 49, "height": 45 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 452 },
-	"name": "bo_neo_03_flinch",
-	"speed": 0.07,
-	"frames": [
-		{ "texturePath": "battle/entities/neo_03.png", "y": 46, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_03.png", "x": 50, "y": 46, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_03.png", "x": 100, "y": 46, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_03.png", "x": 150, "y": 46, "width": 49, "height": 45 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 453 },
-	"name": "bo_neo_03_cast",
-	"speed": 0.06,
-	"frames": [
-		{ "texturePath": "battle/entities/neo_03.png", "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_03.png", "x": 50, "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_03.png", "x": 100, "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_03.png", "x": 150, "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_03.png", "x": 200, "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_03.png", "x": 250, "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_03.png", "x": 300, "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_03.png", "x": 350, "y": 92, "width": 49, "height": 45 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 454 },
-	"name": "bo_neo_03_stun_start",
-	"speed": 0.07,
-	"frames": [
-		{ "texturePath": "battle/entities/neo_03.png", "y": 46, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_03.png", "x": 50, "y": 46, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_03.png", "x": 100, "y": 46, "width": 49, "height": 45 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 455 },
-	"name": "bo_neo_03_stun_end",
-	"speed": 0.07,
-	"frames": [
-		{ "texturePath": "battle/entities/neo_03.png", "x": 150, "y": 46, "width": 49, "height": 45 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 456 },
-	"name": "bo_neo_04_idle",
-	"speed": 0.1,
-	"playMode": "LOOP",
-	"frames": [
-		{ "texturePath": "battle/entities/neo_04.png", "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_04.png", "x": 50, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_04.png", "x": 100, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_04.png", "x": 150, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_04.png", "x": 200, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_04.png", "x": 250, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_04.png", "x": 300, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_04.png", "x": 350, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_04.png", "x": 400, "width": 49, "height": 45 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 457 },
-	"name": "bo_neo_04_flinch",
-	"speed": 0.07,
-	"frames": [
-		{ "texturePath": "battle/entities/neo_04.png", "y": 46, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_04.png", "x": 50, "y": 46, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_04.png", "x": 100, "y": 46, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_04.png", "x": 150, "y": 46, "width": 49, "height": 45 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 458 },
-	"name": "bo_neo_04_cast",
-	"speed": 0.06,
-	"frames": [
-		{ "texturePath": "battle/entities/neo_04.png", "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_04.png", "x": 50, "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_04.png", "x": 100, "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_04.png", "x": 150, "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_04.png", "x": 200, "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_04.png", "x": 250, "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_04.png", "x": 300, "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_04.png", "x": 350, "y": 92, "width": 49, "height": 45 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 459 },
-	"name": "bo_neo_04_stun_start",
-	"speed": 0.07,
-	"frames": [
-		{ "texturePath": "battle/entities/neo_04.png", "y": 46, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_04.png", "x": 50, "y": 46, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_04.png", "x": 100, "y": 46, "width": 49, "height": 45 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 460 },
-	"name": "bo_neo_04_stun_end",
-	"speed": 0.07,
-	"frames": [
-		{ "texturePath": "battle/entities/neo_04.png", "x": 150, "y": 46, "width": 49, "height": 45 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 461 },
-	"name": "bo_neo_05_idle",
-	"speed": 0.1,
-	"playMode": "LOOP",
-	"frames": [
-		{ "texturePath": "battle/entities/neo_05.png", "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_05.png", "x": 50, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_05.png", "x": 100, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_05.png", "x": 150, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_05.png", "x": 200, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_05.png", "x": 250, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_05.png", "x": 300, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_05.png", "x": 350, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_05.png", "x": 400, "width": 49, "height": 45 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 462 },
-	"name": "bo_neo_05_flinch",
-	"speed": 0.07,
-	"frames": [
-		{ "texturePath": "battle/entities/neo_05.png", "y": 46, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_05.png", "x": 50, "y": 46, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_05.png", "x": 100, "y": 46, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_05.png", "x": 150, "y": 46, "width": 49, "height": 45 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 463 },
-	"name": "bo_neo_05_cast",
-	"speed": 0.06,
-	"frames": [
-		{ "texturePath": "battle/entities/neo_05.png", "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_05.png", "x": 50, "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_05.png", "x": 100, "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_05.png", "x": 150, "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_05.png", "x": 200, "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_05.png", "x": 250, "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_05.png", "x": 300, "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_05.png", "x": 350, "y": 92, "width": 49, "height": 45 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 464 },
-	"name": "bo_neo_05_stun_start",
-	"speed": 0.07,
-	"frames": [
-		{ "texturePath": "battle/entities/neo_05.png", "y": 46, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_05.png", "x": 50, "y": 46, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_05.png", "x": 100, "y": 46, "width": 49, "height": 45 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 465 },
-	"name": "bo_neo_05_stun_end",
-	"speed": 0.07,
-	"frames": [
-		{ "texturePath": "battle/entities/neo_05.png", "x": 150, "y": 46, "width": 49, "height": 45 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 466 },
-	"name": "bo_neo_06_idle",
-	"speed": 0.1,
-	"playMode": "LOOP",
-	"frames": [
-		{ "texturePath": "battle/entities/neo_06.png", "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_06.png", "x": 50, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_06.png", "x": 100, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_06.png", "x": 150, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_06.png", "x": 200, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_06.png", "x": 250, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_06.png", "x": 300, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_06.png", "x": 350, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_06.png", "x": 400, "width": 49, "height": 45 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 467 },
-	"name": "bo_neo_06_flinch",
-	"speed": 0.07,
-	"frames": [
-		{ "texturePath": "battle/entities/neo_06.png", "y": 46, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_06.png", "x": 50, "y": 46, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_06.png", "x": 100, "y": 46, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_06.png", "x": 150, "y": 46, "width": 49, "height": 45 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 468 },
-	"name": "bo_neo_06_cast",
-	"speed": 0.06,
-	"frames": [
-		{ "texturePath": "battle/entities/neo_06.png", "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_06.png", "x": 50, "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_06.png", "x": 100, "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_06.png", "x": 150, "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_06.png", "x": 200, "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_06.png", "x": 250, "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_06.png", "x": 300, "y": 92, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_06.png", "x": 350, "y": 92, "width": 49, "height": 45 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 469 },
-	"name": "bo_neo_06_stun_start",
-	"speed": 0.07,
-	"frames": [
-		{ "texturePath": "battle/entities/neo_06.png", "y": 46, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_06.png", "x": 50, "y": 46, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_06.png", "x": 100, "y": 46, "width": 49, "height": 45 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 470 },
-	"name": "bo_neo_06_stun_end",
-	"speed": 0.07,
-	"frames": [
-		{ "texturePath": "battle/entities/neo_06.png", "x": 150, "y": 46, "width": 49, "height": 45 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 471 },
-	"name": "bo_neo_bombarbara_idle",
-	"speed": 0.1,
-	"playMode": "LOOP",
-	"frames": [
-		{ "texturePath": "battle/entities/neo_bombarbara.png", "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_bombarbara.png", "x": 50, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_bombarbara.png", "x": 100, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_bombarbara.png", "x": 150, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_bombarbara.png", "x": 200, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_bombarbara.png", "x": 250, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_bombarbara.png", "x": 300, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_bombarbara.png", "x": 350, "width": 49, "height": 45 },
-		{ "texturePath": "battle/entities/neo_bombarbara.png", "x": 400, "width": 49, "height": 45 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 472 },
-	"name": "bo_spark_01_idle",
+	"name": "Spark Idle",
 	"speed": 0.1,
 	"playMode": "LOOP",
 	"frames": [
@@ -2404,7 +2029,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 473 },
-	"name": "bo_spark_01_flinch",
+	"name": "Spark Flinch",
 	"speed": 0.07,
 	"frames": [
 		{ "texturePath": "battle/entities/spark_01.png", "y": 50, "width": 34, "height": 49 },
@@ -2416,7 +2041,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 474 },
-	"name": "bo_spark_01_cast",
+	"name": "Spark Cast",
 	"speed": 0.06,
 	"frames": [
 		{ "texturePath": "battle/entities/spark_01.png", "y": 100, "width": 34, "height": 49 },
@@ -2429,7 +2054,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 475 },
-	"name": "bo_spark_01_attack",
+	"name": "Spark Attack",
 	"speed": 0.05,
 	"frames": [
 		{ "texturePath": "battle/entities/spark_01.png", "y": 150, "width": 34, "height": 49 },
@@ -2447,7 +2072,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 476 },
-	"name": "bo_spark_01_stun_start",
+	"name": "Spark Stun Start",
 	"speed": 0.07,
 	"frames": [
 		{ "texturePath": "battle/entities/spark_01.png", "y": 50, "width": 34, "height": 49 },
@@ -2458,7 +2083,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 477 },
-	"name": "bo_spark_01_stun_end",
+	"name": "Spark Stun End",
 	"speed": 0.07,
 	"frames": [
 		{ "texturePath": "battle/entities/spark_01.png", "x": 105, "y": 50, "width": 34, "height": 49 }
@@ -2598,15 +2223,6 @@
 	"playMode": "LOOP",
 	"frames": [
 		{ "texturePath": "battle/entities/notice_me.png", "width": 18, "height": 53 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 490 },
-	"name": "bo_speaker_idle",
-	"playMode": "LOOP",
-	"frames": [
-		{ "texturePath": "battle/entities/speaker.png", "width": 34, "height": 66 }
 	]
 },
 {
@@ -3392,7 +3008,7 @@
 	"id": { "id": 992 },
 	"name": "modification",
 	"frames": [
-		{ "texturePath": "programs/vocs.png", "x": 180, "y": 780, "width": 19, "height": 19 }
+		{ "texturePath": "programs/frames.png", "y": 100, "width": 19, "height": 19 }
 	]
 },
 {
@@ -3448,7 +3064,7 @@
 	"id": { "id": 999 },
 	"name": "sinnergy_logo",
 	"frames": [
-		{ "texturePath": "general/title/sinnergyGames.png", "filter": "Linear", "width": 685, "height": 686 }
+		{ "texturePath": "general/title/sinnergyGames.png", "width": 685, "height": 686 }
 	]
 },
 {
@@ -3552,17 +3168,17 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1038 },
-	"name": "enemyTile",
+	"name": "Frame Enemy",
 	"frames": [
-		{ "texturePath": "battle/field/Frames/Frame_Player.png", "width": 40, "height": 28 }
+		{ "texturePath": "battle/field/Frames.png", "x": 82, "y": 38, "width": 40, "height": 28 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1039 },
-	"name": "allyTile",
+	"name": "Frame Ally",
 	"frames": [
-		{ "texturePath": "battle/field/Frames/Frame_Enemy.png", "width": 40, "height": 28 }
+		{ "texturePath": "battle/field/Frames.png", "y": 38, "width": 40, "height": 28 }
 	]
 },
 {
@@ -3584,9 +3200,9 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1042 },
-	"name": "neutralTile",
+	"name": "Frame Neutral",
 	"frames": [
-		{ "texturePath": "battle/field/Frames/Frame_Neutral.png", "width": 40, "height": 28 }
+		{ "texturePath": "battle/field/Frames.png", "x": 41, "y": 38, "width": 40, "height": 28 }
 	]
 },
 {
@@ -3922,66 +3538,6 @@
 },
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 1076 },
-	"name": "battle_message_left",
-	"speed": 0.01,
-	"frames": [
-		{ "texturePath": "battle/hud/battle_message.png", "width": 9, "height": 3 },
-		{ "texturePath": "battle/hud/battle_message.png", "y": 3, "width": 9, "height": 5 },
-		{ "texturePath": "battle/hud/battle_message.png", "y": 8, "width": 9, "height": 7 },
-		{ "texturePath": "battle/hud/battle_message.png", "y": 15, "width": 9, "height": 9 },
-		{ "texturePath": "battle/hud/battle_message.png", "y": 24, "width": 9, "height": 11 },
-		{ "texturePath": "battle/hud/battle_message.png", "y": 35, "width": 9, "height": 13 },
-		{ "texturePath": "battle/hud/battle_message.png", "y": 48, "width": 9, "height": 15 },
-		{ "texturePath": "battle/hud/battle_message.png", "y": 63, "width": 9, "height": 17 },
-		{ "texturePath": "battle/hud/battle_message.png", "y": 80, "width": 9, "height": 19 },
-		{ "texturePath": "battle/hud/battle_message.png", "y": 99, "width": 9, "height": 21 },
-		{ "texturePath": "battle/hud/battle_message.png", "y": 120, "width": 9, "height": 23 },
-		{ "texturePath": "battle/hud/battle_message.png", "y": 143, "width": 9, "height": 25 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 1077 },
-	"name": "battle_message_mid",
-	"speed": 0.01,
-	"frames": [
-		{ "texturePath": "battle/hud/battle_message.png", "x": 10, "width": 24, "height": 3 },
-		{ "texturePath": "battle/hud/battle_message.png", "x": 10, "y": 3, "width": 24, "height": 5 },
-		{ "texturePath": "battle/hud/battle_message.png", "x": 10, "y": 8, "width": 24, "height": 7 },
-		{ "texturePath": "battle/hud/battle_message.png", "x": 10, "y": 15, "width": 24, "height": 9 },
-		{ "texturePath": "battle/hud/battle_message.png", "x": 10, "y": 24, "width": 24, "height": 11 },
-		{ "texturePath": "battle/hud/battle_message.png", "x": 10, "y": 35, "width": 24, "height": 13 },
-		{ "texturePath": "battle/hud/battle_message.png", "x": 10, "y": 48, "width": 24, "height": 15 },
-		{ "texturePath": "battle/hud/battle_message.png", "x": 10, "y": 63, "width": 24, "height": 17 },
-		{ "texturePath": "battle/hud/battle_message.png", "x": 10, "y": 80, "width": 24, "height": 19 },
-		{ "texturePath": "battle/hud/battle_message.png", "x": 10, "y": 99, "width": 24, "height": 21 },
-		{ "texturePath": "battle/hud/battle_message.png", "x": 10, "y": 120, "width": 24, "height": 23 },
-		{ "texturePath": "battle/hud/battle_message.png", "x": 10, "y": 143, "width": 24, "height": 25 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 1078 },
-	"name": "battle_message_right",
-	"speed": 0.01,
-	"frames": [
-		{ "texturePath": "battle/hud/battle_message.png", "x": 35, "width": 9, "height": 3 },
-		{ "texturePath": "battle/hud/battle_message.png", "x": 35, "y": 3, "width": 9, "height": 5 },
-		{ "texturePath": "battle/hud/battle_message.png", "x": 35, "y": 8, "width": 9, "height": 7 },
-		{ "texturePath": "battle/hud/battle_message.png", "x": 35, "y": 15, "width": 9, "height": 9 },
-		{ "texturePath": "battle/hud/battle_message.png", "x": 35, "y": 24, "width": 9, "height": 11 },
-		{ "texturePath": "battle/hud/battle_message.png", "x": 35, "y": 35, "width": 9, "height": 13 },
-		{ "texturePath": "battle/hud/battle_message.png", "x": 35, "y": 48, "width": 9, "height": 15 },
-		{ "texturePath": "battle/hud/battle_message.png", "x": 35, "y": 63, "width": 9, "height": 17 },
-		{ "texturePath": "battle/hud/battle_message.png", "x": 35, "y": 80, "width": 9, "height": 19 },
-		{ "texturePath": "battle/hud/battle_message.png", "x": 35, "y": 99, "width": 9, "height": 21 },
-		{ "texturePath": "battle/hud/battle_message.png", "x": 35, "y": 120, "width": 9, "height": 23 },
-		{ "texturePath": "battle/hud/battle_message.png", "x": 35, "y": 143, "width": 9, "height": 25 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1079 },
 	"name": "lootScreen",
 	"frames": [
@@ -4072,12 +3628,17 @@
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1090 },
 	"name": "lockedOn",
-	"speed": 0.06,
-	"playMode": "LOOP_PINGPONG",
+	"speed": 0.05,
+	"playMode": "LOOP_REVERSED",
 	"frames": [
-		{ "texturePath": "battle/visuals/locked_on.png", "width": 23, "height": 23 },
-		{ "texturePath": "battle/visuals/locked_on.png", "x": 23, "width": 23, "height": 23 },
-		{ "texturePath": "battle/visuals/locked_on.png", "x": 46, "width": 23, "height": 23 }
+		{ "texturePath": "battle/visuals/locked_on.png", "width": 25, "height": 25 },
+		{ "texturePath": "battle/visuals/locked_on.png", "x": 25, "width": 25, "height": 25 },
+		{ "texturePath": "battle/visuals/locked_on.png", "x": 51, "width": 25, "height": 25 },
+		{ "texturePath": "battle/visuals/locked_on.png", "x": 77, "width": 25, "height": 25 },
+		{ "texturePath": "battle/visuals/locked_on.png", "width": 25, "height": 25 },
+		{ "texturePath": "battle/visuals/locked_on.png", "x": 25, "width": 25, "height": 25 },
+		{ "texturePath": "battle/visuals/locked_on.png", "x": 51, "width": 25, "height": 25 },
+		{ "texturePath": "battle/visuals/locked_on.png", "x": 77, "width": 25, "height": 25 }
 	]
 },
 {
@@ -4085,7 +3646,7 @@
 	"id": { "id": 1094 },
 	"name": "role_container_strike",
 	"frames": [
-		{ "texturePath": "programs/vocs.png", "x": 180, "y": 680, "width": 19, "height": 19 }
+		{ "texturePath": "programs/frames.png", "width": 19, "height": 19 }
 	]
 },
 {
@@ -4093,7 +3654,7 @@
 	"id": { "id": 1095 },
 	"name": "role_container_guard",
 	"frames": [
-		{ "texturePath": "programs/vocs.png", "x": 180, "y": 700, "width": 19, "height": 19 }
+		{ "texturePath": "programs/frames.png", "y": 20, "width": 19, "height": 19 }
 	]
 },
 {
@@ -4101,7 +3662,7 @@
 	"id": { "id": 1096 },
 	"name": "role_container_tune",
 	"frames": [
-		{ "texturePath": "programs/vocs.png", "x": 180, "y": 720, "width": 19, "height": 19 }
+		{ "texturePath": "programs/frames.png", "y": 40, "width": 19, "height": 19 }
 	]
 },
 {
@@ -4109,7 +3670,7 @@
 	"id": { "id": 1097 },
 	"name": "role_container_exe",
 	"frames": [
-		{ "texturePath": "programs/vocs.png", "x": 180, "y": 760, "width": 19, "height": 19 }
+		{ "texturePath": "programs/frames.png", "y": 80, "width": 19, "height": 19 }
 	]
 },
 {
@@ -4117,7 +3678,7 @@
 	"id": { "id": 1098 },
 	"name": "role_container_impair",
 	"frames": [
-		{ "texturePath": "programs/vocs.png", "x": 180, "y": 740, "width": 19, "height": 19 }
+		{ "texturePath": "programs/frames.png", "y": 60, "width": 19, "height": 19 }
 	]
 },
 {
@@ -4278,23 +3839,6 @@
 	"name": "role_label_exe",
 	"frames": [
 		{ "texturePath": "programs/levels.png", "x": 74, "y": 20, "width": 13, "height": 7 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 1118 },
-	"name": "status_9patch",
-	"speed": 0.1,
-	"frames": [
-		{ "texturePath": "general/menus/elements.png", "x": 95, "y": 131, "width": 12, "height": 23 },
-		{ "texturePath": "general/menus/elements.png", "x": 125, "y": 134, "width": 16, "height": 23 },
-		{ "texturePath": "general/menus/elements.png", "x": 95, "y": 131, "width": -12, "height": 23 },
-		{ "texturePath": "general/menus/elements.png", "x": 95, "y": 155, "width": 12, "height": 23 },
-		{ "texturePath": "general/menus/elements.png", "x": 108, "y": 134, "width": 16, "height": 23 },
-		{ "texturePath": "general/menus/elements.png", "x": 95, "y": 155, "width": -12, "height": 23 },
-		{ "texturePath": "general/menus/elements.png", "x": 108, "y": 117, "width": 12, "height": 16 },
-		{ "texturePath": "general/menus/elements.png", "x": 121, "y": 117, "width": 16, "height": 16 },
-		{ "texturePath": "general/menus/elements.png", "x": 108, "y": 117, "width": -12, "height": 16 }
 	]
 },
 {
@@ -4482,7 +4026,7 @@
 	"id": { "id": 1138 },
 	"name": "battle_death_0",
 	"frames": [
-		{ "texturePath": "fonts/font_tiny.png", "x": 8, "y": 6, "width": 3, "height": 5 }
+		{ "texturePath": "battle/visuals/death.png", "width": 3, "height": 5 }
 	]
 },
 {
@@ -4490,7 +4034,7 @@
 	"id": { "id": 1139 },
 	"name": "battle_death_1",
 	"frames": [
-		{ "texturePath": "fonts/font_tiny.png", "x": 12, "y": 6, "width": 3, "height": 5 }
+		{ "texturePath": "battle/visuals/death.png", "y": 6, "width": 3, "height": 5 }
 	]
 },
 {
@@ -4562,7 +4106,7 @@
 	"id": { "id": 1148 },
 	"name": "vs_logo",
 	"frames": [
-		{ "texturePath": "general/title/VSLogo.png", "filter": "Linear", "width": 1000, "height": 516 }
+		{ "texturePath": "general/title/VSLogo.png", "width": 1000, "height": 516 }
 	]
 },
 {
@@ -4708,7 +4252,7 @@
 	"id": { "id": 1164 },
 	"name": "libgdx_logo",
 	"frames": [
-		{ "texturePath": "general/title/libgdx.png", "width": 256, "height": 43 }
+		{ "texturePath": "general/title/libgdx.png", "width": 600, "height": 104 }
 	]
 },
 {
@@ -4755,8 +4299,21 @@
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1170 },
 	"name": "b_seed",
+	"speed": 0.07,
+	"playMode": "LOOP",
 	"frames": [
-		{ "texturePath": "battle/vocs/peachseed_01.png", "width": 14, "height": 20 }
+		{ "texturePath": "battle/vocs/peachseed_01.png", "width": 21, "height": 21 },
+		{ "texturePath": "battle/vocs/peachseed_01.png", "x": 22, "width": 21, "height": 21 },
+		{ "texturePath": "battle/vocs/peachseed_01.png", "x": 44, "width": 21, "height": 21 },
+		{ "texturePath": "battle/vocs/peachseed_01.png", "x": 66, "width": 21, "height": 21 },
+		{ "texturePath": "battle/vocs/peachseed_01.png", "x": 44, "width": 21, "height": -21 },
+		{ "texturePath": "battle/vocs/peachseed_01.png", "x": 22, "width": 21, "height": -21 },
+		{ "texturePath": "battle/vocs/peachseed_01.png", "width": 21, "height": -21 },
+		{ "texturePath": "battle/vocs/peachseed_01.png", "x": 22, "width": -21, "height": -21 },
+		{ "texturePath": "battle/vocs/peachseed_01.png", "x": 44, "width": -21, "height": -21 },
+		{ "texturePath": "battle/vocs/peachseed_01.png", "x": 66, "width": -21, "height": -21 },
+		{ "texturePath": "battle/vocs/peachseed_01.png", "x": 44, "width": -21, "height": 21 },
+		{ "texturePath": "battle/vocs/peachseed_01.png", "x": 22, "width": -21, "height": 21 }
 	]
 },
 {
@@ -5495,7 +5052,7 @@
 	"id": { "id": 1258 },
 	"name": "battle_visuals_star1",
 	"frames": [
-		{ "texturePath": "battle/backgrounds/background_2.png", "x": 87, "y": 19, "width": 3, "height": 3 }
+		{ "texturePath": "battle/backgrounds/background_2.png", "x": 103, "y": 18, "width": 3, "height": 3 }
 	]
 },
 {
@@ -5503,7 +5060,7 @@
 	"id": { "id": 1259 },
 	"name": "battle_visuals_star2",
 	"frames": [
-		{ "texturePath": "battle/backgrounds/background_2.png", "x": 78, "y": 28, "width": 3, "height": 3 }
+		{ "texturePath": "battle/backgrounds/background_2.png", "x": 76, "y": 44, "width": 3, "height": 3 }
 	]
 },
 {
@@ -5713,7 +5270,7 @@
 	"id": { "id": 1278 },
 	"name": "Frame Enemy Clock",
 	"frames": [
-		{ "texturePath": "battle/field/Frames/Mechanical_Frame_Player.png", "x": 2, "y": 3, "width": 40, "height": 37 }
+		{ "texturePath": "battle/field/Frames.png", "x": 82, "width": 40, "height": 37 }
 	]
 },
 {
@@ -5721,7 +5278,7 @@
 	"id": { "id": 1279 },
 	"name": "Frame Ally Clock",
 	"frames": [
-		{ "texturePath": "battle/field/Frames/Mechanical_Frame_Enemy.png", "x": 2, "y": 3, "width": 40, "height": 37 }
+		{ "texturePath": "battle/field/Frames.png", "width": 40, "height": 37 }
 	]
 },
 {
@@ -5729,7 +5286,7 @@
 	"id": { "id": 1280 },
 	"name": "Frame Neutral Clock",
 	"frames": [
-		{ "texturePath": "battle/field/Frames/Mechanical_Frame_Neutral.png", "x": 2, "y": 3, "width": 40, "height": 37 }
+		{ "texturePath": "battle/field/Frames.png", "x": 41, "width": 40, "height": 37 }
 	]
 },
 {
@@ -5825,7 +5382,7 @@
 	"id": { "id": 12 },
 	"name": "Frame Ally Desert",
 	"frames": [
-		{ "texturePath": "battle/field/Frames/Desert_Frame_Enemy.png", "x": 2, "y": 2, "width": 41, "height": 35 }
+		{ "texturePath": "battle/field/Frames.png", "y": 67, "width": 40, "height": 35 }
 	]
 },
 {
@@ -5833,7 +5390,7 @@
 	"id": { "id": 13 },
 	"name": "Frame Neutral Desert",
 	"frames": [
-		{ "texturePath": "battle/field/Frames/Desert_Frame_Neutral.png", "x": 2, "y": 2, "width": 41, "height": 35 }
+		{ "texturePath": "battle/field/Frames.png", "x": 41, "y": 67, "width": 40, "height": 35 }
 	]
 },
 {
@@ -5841,7 +5398,7 @@
 	"id": { "id": 14 },
 	"name": "Frame Enemy Desert",
 	"frames": [
-		{ "texturePath": "battle/field/Frames/Desert_Frame_Player.png", "x": 2, "y": 2, "width": 41, "height": 35 }
+		{ "texturePath": "battle/field/Frames.png", "x": 82, "y": 67, "width": 40, "height": 35 }
 	]
 },
 {
@@ -5880,7 +5437,1258 @@
 	"id": { "id": 18 },
 	"name": "text_cursor",
 	"frames": [
-		{ "texturePath": "fonts/font_dialog.png", "x": 44, "y": 30, "width": 1, "height": 9 }
+		{ "texturePath": "general/dialogue.png", "x": 6, "y": 74, "width": 1, "height": 9 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 19 },
+	"name": "grassTile",
+	"frames": [
+		{ "texturePath": "battle/field/Panels.png", "x": 258, "width": 36, "height": 22 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 20 },
+	"name": "burnTile",
+	"speed": 0.15,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/field/LavaPanel.png", "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/LavaPanel.png", "x": 37, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/LavaPanel.png", "x": 74, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/LavaPanel.png", "x": 111, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/LavaPanel.png", "x": 148, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/LavaPanel.png", "x": 185, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/LavaPanel.png", "x": 222, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/LavaPanel.png", "x": 259, "width": 36, "height": 20 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 21 },
+	"name": "wireTile",
+	"frames": [
+		{ "texturePath": "battle/field/Panels.png", "x": 258, "y": 44, "width": 31, "height": 17 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 22 },
+	"name": "white_9patch",
+	"frames": [
+		{ "texturePath": "general/menus/elements.png", "x": 146, "y": 82, "width": 2, "height": 1 },
+		{ "texturePath": "general/menus/elements.png", "x": 146, "y": 82, "width": 2, "height": 1 },
+		{ "texturePath": "general/menus/elements.png", "x": 146, "y": 82, "width": 2, "height": 1 },
+		{ "texturePath": "general/menus/elements.png", "x": 146, "y": 82, "width": 2, "height": 1 },
+		{ "texturePath": "general/menus/elements.png", "x": 146, "y": 82, "width": 2, "height": 1 },
+		{ "texturePath": "general/menus/elements.png", "x": 146, "y": 82, "width": 2, "height": 1 },
+		{ "texturePath": "general/menus/elements.png", "x": 146, "y": 82, "width": 2, "height": 1 },
+		{ "texturePath": "general/menus/elements.png", "x": 146, "y": 82, "width": 2, "height": 1 },
+		{ "texturePath": "general/menus/elements.png", "x": 146, "y": 82, "width": 2, "height": 1 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 23 },
+	"name": "vs",
+	"frames": [
+		{ "texturePath": "general/title/VS.png", "width": 505, "height": 267 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 24 },
+	"name": "big_circle",
+	"frames": [
+		{ "texturePath": "general/menus/elements.png", "x": 144, "y": 87, "width": 10, "height": 10 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 25 },
+	"name": "small_circle",
+	"frames": [
+		{ "texturePath": "general/menus/elements.png", "x": 155, "y": 89, "width": 6, "height": 6 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 26 },
+	"name": "Del Idle",
+	"speed": 0.1,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/entities/del/idle.png", "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/idle.png", "x": 70, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/idle.png", "x": 140, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/idle.png", "x": 210, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/idle.png", "x": 280, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/idle.png", "x": 350, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/idle.png", "x": 420, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/idle.png", "x": 490, "width": 70, "height": 53 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 27 },
+	"name": "Del Flinch",
+	"speed": 0.1,
+	"frames": [
+		{ "texturePath": "battle/entities/del/flinch.png", "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/flinch.png", "x": 70, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/flinch.png", "x": 140, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/flinch.png", "x": 210, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/flinch.png", "x": 280, "width": 70, "height": 53 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 28 },
+	"name": "Del Cast",
+	"speed": 0.1,
+	"frames": [
+		{ "texturePath": "battle/entities/del/cast.png", "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/cast.png", "x": 70, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/cast.png", "x": 140, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/cast.png", "x": 210, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/cast.png", "x": 280, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/cast.png", "x": 350, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/cast.png", "x": 420, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/cast.png", "x": 490, "width": 70, "height": 53 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 29 },
+	"name": "Del Attack",
+	"speed": 0.1,
+	"frames": [
+		{ "texturePath": "battle/entities/del/attack.png", "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/attack.png", "x": 70, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/attack.png", "x": 140, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/attack.png", "x": 210, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/attack.png", "x": 280, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/attack.png", "x": 350, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/attack.png", "x": 420, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/attack.png", "x": 490, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/attack.png", "x": 560, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/attack.png", "x": 630, "width": 70, "height": 53 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 30 },
+	"name": "Del Flinch Start",
+	"speed": 0.1,
+	"frames": [
+		{ "texturePath": "battle/entities/del/flinch.png", "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/flinch.png", "x": 70, "width": 70, "height": 53 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 31 },
+	"name": "Del Flinch End",
+	"speed": 0.1,
+	"frames": [
+		{ "texturePath": "battle/entities/del/flinch.png", "x": 140, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/flinch.png", "x": 210, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/flinch.png", "x": 280, "width": 70, "height": 53 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 32 },
+	"name": "reaction_cool",
+	"frames": [
+		{ "texturePath": "general/reactions.png", "x": 136, "y": 42, "width": 16, "height": 20 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 33 },
+	"name": "reaction_owo",
+	"frames": [
+		{ "texturePath": "general/reactions.png", "x": 153, "y": 42, "width": 16, "height": 20 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 34 },
+	"name": "bo_fin_sp_idle",
+	"speed": 0.1,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/entities/fin_sp.png", "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/fin_sp.png", "x": 35, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/fin_sp.png", "x": 70, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/fin_sp.png", "x": 105, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/fin_sp.png", "x": 140, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/fin_sp.png", "x": 175, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/fin_sp.png", "x": 210, "width": 34, "height": 49 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 35 },
+	"name": "bo_fin_sp_flinch",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/fin_sp.png", "y": 50, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/fin_sp.png", "x": 35, "y": 50, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/fin_sp.png", "x": 70, "y": 50, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/fin_sp.png", "x": 105, "y": 50, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/fin_sp.png", "x": 140, "y": 50, "width": 34, "height": 49 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 36 },
+	"name": "bo_fin_sp_cast",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/fin_sp.png", "y": 100, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/fin_sp.png", "x": 35, "y": 100, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/fin_sp.png", "x": 70, "y": 100, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/fin_sp.png", "x": 105, "y": 100, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/fin_sp.png", "x": 140, "y": 100, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/fin_sp.png", "x": 140, "y": 100, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/fin_sp.png", "x": 140, "y": 100, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/fin_sp.png", "x": 175, "y": 100, "width": 34, "height": 49, "xOffset": 3 },
+		{ "texturePath": "battle/entities/fin_sp.png", "x": 210, "y": 100, "width": 34, "height": 49 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 37 },
+	"name": "bo_fin_sp_stun_start",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/fin_sp.png", "y": 50, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/fin_sp.png", "x": 35, "y": 50, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/fin_sp.png", "x": 70, "y": 50, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/fin_sp.png", "x": 105, "y": 50, "width": 34, "height": 49 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 38 },
+	"name": "bo_fin_sp_stun_end",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/fin_sp.png", "x": 140, "y": 50, "width": 34, "height": 49 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 39 },
+	"name": "bo_rozu_sp_idle",
+	"speed": 0.1,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/entities/rozu/idle_sp.png", "x": 3, "y": 3, "width": 38, "height": 44 },
+		{ "texturePath": "battle/entities/rozu/idle_sp.png", "x": 47, "y": 3, "width": 38, "height": 44 },
+		{ "texturePath": "battle/entities/rozu/idle_sp.png", "x": 91, "y": 3, "width": 38, "height": 44 },
+		{ "texturePath": "battle/entities/rozu/idle_sp.png", "x": 135, "y": 3, "width": 38, "height": 44 },
+		{ "texturePath": "battle/entities/rozu/idle_sp.png", "x": 179, "y": 3, "width": 38, "height": 44 },
+		{ "texturePath": "battle/entities/rozu/idle_sp.png", "x": 223, "y": 3, "width": 38, "height": 44 },
+		{ "texturePath": "battle/entities/rozu/idle_sp.png", "x": 267, "y": 3, "width": 38, "height": 44 },
+		{ "texturePath": "battle/entities/rozu/idle_sp.png", "x": 311, "y": 3, "width": 38, "height": 44 },
+		{ "texturePath": "battle/entities/rozu/idle_sp.png", "x": 355, "y": 3, "width": 38, "height": 44 },
+		{ "texturePath": "battle/entities/rozu/idle_sp.png", "x": 399, "y": 3, "width": 38, "height": 44 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 40 },
+	"name": "bo_rozu_sp_cast",
+	"speed": 0.05,
+	"frames": [
+		{ "texturePath": "battle/entities/rozu/cast_sp.png", "x": 4, "y": 2, "width": 39, "height": 44 },
+		{ "texturePath": "battle/entities/rozu/cast_sp.png", "x": 54, "y": 2, "width": 39, "height": 44 },
+		{ "texturePath": "battle/entities/rozu/cast_sp.png", "x": 104, "y": 2, "width": 39, "height": 44 },
+		{ "texturePath": "battle/entities/rozu/cast_sp.png", "x": 154, "y": 2, "width": 39, "height": 44 },
+		{ "texturePath": "battle/entities/rozu/cast_sp.png", "x": 204, "y": 2, "width": 39, "height": 44 },
+		{ "texturePath": "battle/entities/rozu/cast_sp.png", "x": 254, "y": 2, "width": 39, "height": 44 },
+		{ "texturePath": "battle/entities/rozu/cast_sp.png", "x": 304, "y": 2, "width": 39, "height": 44 },
+		{ "texturePath": "battle/entities/rozu/cast_sp.png", "x": 354, "y": 2, "width": 39, "height": 44 },
+		{ "texturePath": "battle/entities/rozu/cast_sp.png", "x": 404, "y": 2, "width": 39, "height": 44 },
+		{ "texturePath": "battle/entities/rozu/cast_sp.png", "x": 454, "y": 2, "width": 39, "height": 44 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 41 },
+	"name": "bo_rozu_sp_attack",
+	"speed": 0.1,
+	"frames": [
+		{ "texturePath": "battle/entities/rozu/attack_sp.png", "x": 2, "y": 2, "width": 41, "height": 46 },
+		{ "texturePath": "battle/entities/rozu/attack_sp.png", "x": 51, "y": 2, "width": 41, "height": 46 },
+		{ "texturePath": "battle/entities/rozu/attack_sp.png", "x": 104, "y": 2, "width": 41, "height": 46 },
+		{ "texturePath": "battle/entities/rozu/attack_sp.png", "x": 154, "y": 2, "width": 41, "height": 46 },
+		{ "texturePath": "battle/entities/rozu/attack_sp.png", "x": 204, "y": 2, "width": 41, "height": 46 },
+		{ "texturePath": "battle/entities/rozu/attack_sp.png", "x": 254, "y": 2, "width": 41, "height": 46 },
+		{ "texturePath": "battle/entities/rozu/attack_sp.png", "x": 304, "y": 2, "width": 41, "height": 46 },
+		{ "texturePath": "battle/entities/rozu/attack_sp.png", "x": 354, "y": 2, "width": 41, "height": 46 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 66 },
+	"name": "bo_rozu_sp_flinch",
+	"speed": 0.1,
+	"frames": [
+		{ "texturePath": "battle/entities/rozu/flinch_sp.png", "width": 38, "height": 46 },
+		{ "texturePath": "battle/entities/rozu/flinch_sp.png", "x": 48, "width": 38, "height": 46 },
+		{ "texturePath": "battle/entities/rozu/flinch_sp.png", "x": 104, "width": 38, "height": 46 },
+		{ "texturePath": "battle/entities/rozu/flinch_sp.png", "x": 155, "width": 38, "height": 46 },
+		{ "texturePath": "battle/entities/rozu/flinch_sp.png", "x": 206, "width": 38, "height": 46 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 67 },
+	"name": "bo_rozu_sp_stun",
+	"speed": 0.1,
+	"frames": [
+		{ "texturePath": "battle/entities/rozu/flinch_sp.png", "width": 38, "height": 46 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 68 },
+	"name": "press_start",
+	"frames": [
+		{ "texturePath": "general/title/start.png", "width": 1024, "height": 170 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 99 },
+	"name": "node_star",
+	"frames": [
+		{ "texturePath": "general/menus/star.png", "width": 11, "height": 11 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 100 },
+	"name": "fire_particle",
+	"speed": 0.08,
+	"frames": [
+		{ "texturePath": "battle/visuals/fire.png", "width": 16, "height": 16 },
+		{ "texturePath": "battle/visuals/fire.png", "x": 16, "width": 16, "height": 16 },
+		{ "texturePath": "battle/visuals/fire.png", "x": 32, "width": 16, "height": 16 },
+		{ "texturePath": "battle/visuals/fire.png", "x": 48, "width": 16, "height": 16 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 101 },
+	"name": "sparks_particle",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/visuals/sparks.png", "width": 16, "height": 16 },
+		{ "texturePath": "battle/visuals/sparks.png", "x": 16, "width": 16, "height": 16 },
+		{ "texturePath": "battle/visuals/sparks.png", "x": 32, "width": 16, "height": 16 },
+		{ "texturePath": "battle/visuals/sparks.png", "x": 48, "width": 16, "height": 16 },
+		{ "texturePath": "battle/visuals/sparks.png", "x": 64, "width": 16, "height": 16 },
+		{ "texturePath": "battle/visuals/sparks.png", "x": 80, "width": 16, "height": 16 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 102 },
+	"name": "steam_particle",
+	"speed": 0.08,
+	"frames": [
+		{ "texturePath": "battle/visuals/steam.png", "width": 16, "height": 16 },
+		{ "texturePath": "battle/visuals/steam.png", "x": 16, "width": 16, "height": 16 },
+		{ "texturePath": "battle/visuals/steam.png", "x": 32, "width": 16, "height": 16 },
+		{ "texturePath": "battle/visuals/steam.png", "x": 48, "width": 16, "height": 16 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 103 },
+	"name": "small_message_9patch",
+	"speed": 0.1,
+	"frames": [
+		{ "texturePath": "general/menus/elements.png", "x": 166, "y": 144, "width": 7, "height": 7 },
+		{ "texturePath": "general/menus/elements.png", "x": 173, "y": 144, "width": 7, "height": 7 },
+		{ "texturePath": "general/menus/elements.png", "x": 180, "y": 144, "width": 7, "height": 7 },
+		{ "texturePath": "general/menus/elements.png", "x": 166, "y": 151, "width": 7, "height": 7 },
+		{ "texturePath": "general/menus/elements.png", "x": 173, "y": 151, "width": 7, "height": 7 },
+		{ "texturePath": "general/menus/elements.png", "x": 180, "y": 151, "width": 7, "height": 7 },
+		{ "texturePath": "general/menus/elements.png", "x": 166, "y": 158, "width": 7, "height": 7 },
+		{ "texturePath": "general/menus/elements.png", "x": 173, "y": 158, "width": 7, "height": 7 },
+		{ "texturePath": "general/menus/elements.png", "x": 180, "y": 158, "width": 7, "height": 7 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 147 },
+	"name": "Azure Header",
+	"frames": [
+		{ "texturePath": "general/menus/azure/header.png", "x": 62, "width": 416, "height": 27 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 148 },
+	"name": "Azure Header Back",
+	"frames": [
+		{ "texturePath": "general/menus/azure/header.png", "width": 62, "height": 27 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 149 },
+	"name": "Azure Button 9P",
+	"speed": 0.1,
+	"frames": [
+		{ "texturePath": "general/menus/azure/elements.png", "x": 22, "width": 4, "height": 5 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 26, "width": 4, "height": 5 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 32, "width": 4, "height": 5 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 22, "y": 5, "width": 4, "height": 4 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 27, "y": 4, "width": 4, "height": 4 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 32, "y": 5, "width": 4, "height": 4 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 22, "y": 9, "width": 4, "height": 5 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 26, "y": 9, "width": 4, "height": 5 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 32, "y": 9, "width": 4, "height": 5 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 150 },
+	"name": "Azure Big Message 9P",
+	"speed": 0.1,
+	"frames": [
+		{ "texturePath": "general/menus/azure/elements.png", "x": 37, "width": 6, "height": 6 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 45, "width": 6, "height": 6 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 61, "width": 6, "height": 6 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 37, "y": 8, "width": 6, "height": 6 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 45, "y": 8, "width": 6, "height": 6 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 61, "y": 8, "width": 6, "height": 6 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 37, "y": 24, "width": 6, "height": 6 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 45, "y": 24, "width": 6, "height": 6 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 61, "y": 24, "width": 6, "height": 6 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 168 },
+	"name": "Azure Title Container 9P",
+	"speed": 0.1,
+	"frames": [
+		{ "texturePath": "general/menus/azure/elements.png", "x": 30, "y": 31, "width": 3, "height": 18 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 34, "y": 31, "width": 3, "height": 18 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 70, "y": 31, "width": 3, "height": 18 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 30, "y": 51, "width": 3, "height": 3 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 36, "y": 52, "width": 3, "height": 3 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 70, "y": 52, "width": 3, "height": 3 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 30, "y": 74, "width": 3, "height": 3 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 43, "y": 74, "width": 3, "height": 3 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 70, "y": 74, "width": 3, "height": 3 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 169 },
+	"name": "Azure Small Message 9P",
+	"speed": 0.1,
+	"frames": [
+		{ "texturePath": "general/menus/azure/elements.png", "width": 7, "height": 7 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 7, "width": 7, "height": 7 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 14, "width": 7, "height": 7 },
+		{ "texturePath": "general/menus/azure/elements.png", "y": 7, "width": 7, "height": 7 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 7, "y": 7, "width": 7, "height": 7 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 14, "y": 7, "width": 7, "height": 7 },
+		{ "texturePath": "general/menus/azure/elements.png", "y": 14, "width": 7, "height": 7 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 7, "y": 14, "width": 7, "height": 7 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 14, "y": 14, "width": 7, "height": 7 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 191 },
+	"name": "Azure Container 9P",
+	"speed": 0.1,
+	"frames": [
+		{ "texturePath": "general/menus/azure/elements.png", "y": 22, "width": 9, "height": 9 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 10, "y": 22, "width": 9, "height": 9 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 20, "y": 22, "width": 9, "height": 9 },
+		{ "texturePath": "general/menus/azure/elements.png", "y": 32, "width": 9, "height": 9 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 10, "y": 32, "width": 9, "height": 9 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 20, "y": 32, "width": 9, "height": 9 },
+		{ "texturePath": "general/menus/azure/elements.png", "y": 42, "width": 9, "height": 9 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 10, "y": 42, "width": 9, "height": 9 },
+		{ "texturePath": "general/menus/azure/elements.png", "x": 20, "y": 42, "width": 9, "height": 9 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 200 },
+	"name": "menu_button_bg",
+	"frames": [
+		{ "texturePath": "general/menus/elements_new.png", "x": 38, "y": 235, "width": 37, "height": 27 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 201 },
+	"name": "Azure Logo",
+	"frames": [
+		{ "texturePath": "general/title/VSLogoAzure.png", "width": 1000, "height": 516 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 202 },
+	"name": "ASGrunt Idle",
+	"speed": 0.1,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/entities/grunt/idle.png", "width": 42, "height": 54 },
+		{ "texturePath": "battle/entities/grunt/idle.png", "x": 42, "width": 42, "height": 54 },
+		{ "texturePath": "battle/entities/grunt/idle.png", "x": 84, "width": 42, "height": 54 },
+		{ "texturePath": "battle/entities/grunt/idle.png", "x": 126, "width": 42, "height": 54 },
+		{ "texturePath": "battle/entities/grunt/idle.png", "x": 168, "width": 42, "height": 54 },
+		{ "texturePath": "battle/entities/grunt/idle.png", "x": 210, "width": 42, "height": 54 },
+		{ "texturePath": "battle/entities/grunt/idle.png", "x": 252, "width": 42, "height": 54 },
+		{ "texturePath": "battle/entities/grunt/idle.png", "x": 294, "width": 42, "height": 54 },
+		{ "texturePath": "battle/entities/grunt/idle.png", "x": 336, "width": 42, "height": 54 },
+		{ "texturePath": "battle/entities/grunt/idle.png", "x": 378, "width": 42, "height": 54 },
+		{ "texturePath": "battle/entities/grunt/idle.png", "x": 420, "width": 42, "height": 54 },
+		{ "texturePath": "battle/entities/grunt/idle.png", "x": 462, "width": 42, "height": 54 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 203 },
+	"name": "Del SP Idle",
+	"speed": 0.1,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/entities/del/idle_sp.png", "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/idle_sp.png", "x": 70, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/idle_sp.png", "x": 140, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/idle_sp.png", "x": 210, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/idle_sp.png", "x": 280, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/idle_sp.png", "x": 350, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/idle_sp.png", "x": 420, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/idle_sp.png", "x": 490, "width": 70, "height": 53 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 204 },
+	"name": "Del SP Flinch",
+	"speed": 0.1,
+	"frames": [
+		{ "texturePath": "battle/entities/del/flinch_sp.png", "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/flinch_sp.png", "x": 70, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/flinch_sp.png", "x": 140, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/flinch_sp.png", "x": 210, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/flinch_sp.png", "x": 280, "width": 70, "height": 53 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 205 },
+	"name": "Del SP Cast",
+	"speed": 0.1,
+	"frames": [
+		{ "texturePath": "battle/entities/del/cast_sp.png", "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/cast_sp.png", "x": 70, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/cast_sp.png", "x": 140, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/cast_sp.png", "x": 210, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/cast_sp.png", "x": 280, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/cast_sp.png", "x": 350, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/cast_sp.png", "x": 420, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/cast_sp.png", "x": 490, "width": 70, "height": 53 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 206 },
+	"name": "Del SP Attack",
+	"speed": 0.1,
+	"frames": [
+		{ "texturePath": "battle/entities/del/attack_sp.png", "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/attack_sp.png", "x": 70, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/attack_sp.png", "x": 140, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/attack_sp.png", "x": 210, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/attack_sp.png", "x": 280, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/attack_sp.png", "x": 350, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/attack_sp.png", "x": 420, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/attack_sp.png", "x": 490, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/attack_sp.png", "x": 560, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/attack_sp.png", "x": 630, "width": 70, "height": 53 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 207 },
+	"name": "Del SP Flinch Start",
+	"speed": 0.1,
+	"frames": [
+		{ "texturePath": "battle/entities/del/flinch_sp.png", "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/flinch_sp.png", "x": 70, "width": 70, "height": 53 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 208 },
+	"name": "Del SP Flinch End",
+	"speed": 0.1,
+	"frames": [
+		{ "texturePath": "battle/entities/del/flinch_sp.png", "x": 140, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/flinch_sp.png", "x": 210, "width": 70, "height": 53 },
+		{ "texturePath": "battle/entities/del/flinch_sp.png", "x": 280, "width": 70, "height": 53 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 209 },
+	"name": "style_infuse",
+	"frames": [
+		{ "texturePath": "battle/ailments.png", "x": 36, "y": 48, "width": 11, "height": 11 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 210 },
+	"name": "hp",
+	"frames": [
+		{ "texturePath": "general/misc/elements.png", "x": 68, "y": 42, "width": 9, "height": 5 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 211 },
+	"name": "style_fast",
+	"frames": [
+		{ "texturePath": "battle/ailments.png", "x": 36, "y": 60, "width": 11, "height": 11 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 212 },
+	"name": "style_slow",
+	"frames": [
+		{ "texturePath": "battle/ailments.png", "x": 36, "y": 72, "width": 11, "height": 11 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 213 },
+	"name": "style_turn",
+	"frames": [
+		{ "texturePath": "battle/ailments.png", "x": 36, "y": 84, "width": 11, "height": 11 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 214 },
+	"name": "style_back",
+	"frames": [
+		{ "texturePath": "battle/ailments.png", "x": 36, "y": 96, "width": 11, "height": 11 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 215 },
+	"name": "training_dummy",
+	"frames": [
+		{ "texturePath": "battle/entities/training_dummy.png", "width": 26, "height": 51 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 216 },
+	"name": "b_firegate",
+	"speed": 0.1,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/vocs/fire_gate.png", "width": 37, "height": 59 },
+		{ "texturePath": "battle/vocs/fire_gate.png", "x": 37, "width": 37, "height": 59 },
+		{ "texturePath": "battle/vocs/fire_gate.png", "x": 74, "width": 37, "height": 59 },
+		{ "texturePath": "battle/vocs/fire_gate.png", "x": 111, "width": 37, "height": 59 },
+		{ "texturePath": "battle/vocs/fire_gate.png", "x": 148, "width": 37, "height": 59 },
+		{ "texturePath": "battle/vocs/fire_gate.png", "x": 185, "width": 37, "height": 59 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 217 },
+	"name": "ASGrunt Attack",
+	"speed": 0.1,
+	"frames": [
+		{ "texturePath": "battle/entities/grunt/attack.png", "x": 73, "width": 73, "height": 55 },
+		{ "texturePath": "battle/entities/grunt/attack.png", "x": 146, "width": 73, "height": 55 },
+		{ "texturePath": "battle/entities/grunt/attack.png", "x": 219, "width": 73, "height": 55 },
+		{ "texturePath": "battle/entities/grunt/attack.png", "x": 292, "width": 73, "height": 55 },
+		{ "texturePath": "battle/entities/grunt/attack.png", "x": 365, "width": 73, "height": 55 },
+		{ "texturePath": "battle/entities/grunt/attack.png", "x": 438, "width": 73, "height": 55 },
+		{ "texturePath": "battle/entities/grunt/attack.png", "x": 511, "width": 73, "height": 55 },
+		{ "texturePath": "battle/entities/grunt/attack.png", "x": 584, "width": 73, "height": 55 },
+		{ "texturePath": "battle/entities/grunt/attack.png", "x": 657, "width": 73, "height": 55 },
+		{ "texturePath": "battle/entities/grunt/attack.png", "x": 730, "width": 73, "height": 55 },
+		{ "texturePath": "battle/entities/grunt/attack.png", "x": 803, "width": 73, "height": 55 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 218 },
+	"name": "ASGrunt Flinch",
+	"speed": 0.1,
+	"frames": [
+		{ "texturePath": "battle/entities/grunt/flinch.png", "width": 50, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/flinch.png", "x": 50, "width": 50, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/flinch.png", "x": 100, "width": 50, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/flinch.png", "x": 150, "width": 50, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/flinch.png", "x": 200, "width": 50, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/flinch.png", "x": 250, "width": 50, "height": 52 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 219 },
+	"name": "ASGrunt Stun Start",
+	"speed": 0.1,
+	"frames": [
+		{ "texturePath": "battle/entities/grunt/flinch.png", "width": 50, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/flinch.png", "x": 50, "width": 50, "height": 52 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 220 },
+	"name": "ASGrunt Stun End",
+	"speed": 0.05,
+	"frames": [
+		{ "texturePath": "battle/entities/grunt/flinch.png", "x": 100, "width": 50, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/flinch.png", "x": 150, "width": 50, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/flinch.png", "x": 200, "width": 50, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/flinch.png", "x": 250, "width": 50, "height": 52 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 221 },
+	"name": "ASGrunt Cast",
+	"speed": 0.1,
+	"frames": [
+		{ "texturePath": "battle/entities/grunt/cast.png", "x": 265, "width": 53, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/cast.png", "x": 318, "width": 53, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/cast.png", "x": 318, "width": 53, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/cast.png", "x": 371, "width": 53, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/cast.png", "x": 424, "width": 53, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/cast.png", "x": 477, "width": 53, "height": 52 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 222 },
+	"name": "ASGrunt FullCast",
+	"speed": 0.1,
+	"frames": [
+		{ "texturePath": "battle/entities/grunt/cast.png", "width": 53, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/cast.png", "x": 53, "width": 53, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/cast.png", "x": 106, "width": 53, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/cast.png", "x": 159, "width": 53, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/cast.png", "x": 212, "width": 53, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/cast.png", "x": 265, "width": 53, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/cast.png", "x": 318, "width": 53, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/cast.png", "x": 371, "width": 53, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/cast.png", "x": 424, "width": 53, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/cast.png", "x": 477, "width": 53, "height": 52 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 223 },
+	"name": "ASGrunt Idle 2",
+	"speed": 0.1,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/entities/grunt/idle_alt.png", "width": 42, "height": 54 },
+		{ "texturePath": "battle/entities/grunt/idle_alt.png", "x": 42, "width": 42, "height": 54 },
+		{ "texturePath": "battle/entities/grunt/idle_alt.png", "x": 84, "width": 42, "height": 54 },
+		{ "texturePath": "battle/entities/grunt/idle_alt.png", "x": 126, "width": 42, "height": 54 },
+		{ "texturePath": "battle/entities/grunt/idle_alt.png", "x": 168, "width": 42, "height": 54 },
+		{ "texturePath": "battle/entities/grunt/idle_alt.png", "x": 210, "width": 42, "height": 54 },
+		{ "texturePath": "battle/entities/grunt/idle_alt.png", "x": 252, "width": 42, "height": 54 },
+		{ "texturePath": "battle/entities/grunt/idle_alt.png", "x": 294, "width": 42, "height": 54 },
+		{ "texturePath": "battle/entities/grunt/idle_alt.png", "x": 336, "width": 42, "height": 54 },
+		{ "texturePath": "battle/entities/grunt/idle_alt.png", "x": 378, "width": 42, "height": 54 },
+		{ "texturePath": "battle/entities/grunt/idle_alt.png", "x": 420, "width": 42, "height": 54 },
+		{ "texturePath": "battle/entities/grunt/idle_alt.png", "x": 462, "width": 42, "height": 54 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 224 },
+	"name": "ASGrunt Attack 2",
+	"speed": 0.1,
+	"frames": [
+		{ "texturePath": "battle/entities/grunt/attack_alt.png", "width": 73, "height": 55 },
+		{ "texturePath": "battle/entities/grunt/attack_alt.png", "x": 73, "width": 73, "height": 55 },
+		{ "texturePath": "battle/entities/grunt/attack_alt.png", "x": 146, "width": 73, "height": 55 },
+		{ "texturePath": "battle/entities/grunt/attack_alt.png", "x": 219, "width": 73, "height": 55 },
+		{ "texturePath": "battle/entities/grunt/attack_alt.png", "x": 292, "width": 73, "height": 55 },
+		{ "texturePath": "battle/entities/grunt/attack_alt.png", "x": 365, "width": 73, "height": 55 },
+		{ "texturePath": "battle/entities/grunt/attack_alt.png", "x": 438, "width": 73, "height": 55 },
+		{ "texturePath": "battle/entities/grunt/attack_alt.png", "x": 511, "width": 73, "height": 55 },
+		{ "texturePath": "battle/entities/grunt/attack_alt.png", "x": 584, "width": 73, "height": 55 },
+		{ "texturePath": "battle/entities/grunt/attack_alt.png", "x": 657, "width": 73, "height": 55 },
+		{ "texturePath": "battle/entities/grunt/attack_alt.png", "x": 730, "width": 73, "height": 55 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 225 },
+	"name": "ASGrunt Flinch 2",
+	"speed": 0.1,
+	"frames": [
+		{ "texturePath": "battle/entities/grunt/flinch_alt.png", "width": 50, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/flinch_alt.png", "x": 50, "width": 50, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/flinch_alt.png", "x": 100, "width": 50, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/flinch_alt.png", "x": 150, "width": 50, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/flinch_alt.png", "x": 200, "width": 50, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/flinch_alt.png", "x": 250, "width": 50, "height": 52 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 226 },
+	"name": "ASGrunt Stun Start 2",
+	"speed": 0.1,
+	"frames": [
+		{ "texturePath": "battle/entities/grunt/flinch_alt.png", "width": 50, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/flinch_alt.png", "x": 50, "width": 50, "height": 52 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 227 },
+	"name": "ASGrunt Stun End 2",
+	"speed": 0.05,
+	"frames": [
+		{ "texturePath": "battle/entities/grunt/flinch_alt.png", "x": 100, "width": 50, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/flinch_alt.png", "x": 150, "width": 50, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/flinch_alt.png", "x": 200, "width": 50, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/flinch_alt.png", "x": 250, "width": 50, "height": 52 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 228 },
+	"name": "ASGrunt Cast 2",
+	"speed": 0.1,
+	"frames": [
+		{ "texturePath": "battle/entities/grunt/cast_alt.png", "x": 318, "width": 53, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/cast_alt.png", "x": 318, "width": 53, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/cast_alt.png", "x": 371, "width": 53, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/cast_alt.png", "x": 424, "width": 53, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/cast_alt.png", "x": 477, "width": 53, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/cast_alt.png", "x": 530, "width": 53, "height": 52 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 229 },
+	"name": "star_big",
+	"frames": [
+		{ "texturePath": "general/menus/star_big.png", "width": 33, "height": 33 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 230 },
+	"name": "ASGrunt FullCast 2",
+	"speed": 0.1,
+	"frames": [
+		{ "texturePath": "battle/entities/grunt/cast_alt.png", "x": 53, "width": 53, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/cast_alt.png", "x": 106, "width": 53, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/cast_alt.png", "x": 159, "width": 53, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/cast_alt.png", "x": 212, "width": 53, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/cast_alt.png", "x": 265, "width": 53, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/cast_alt.png", "x": 318, "width": 53, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/cast_alt.png", "x": 371, "width": 53, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/cast_alt.png", "x": 424, "width": 53, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/cast_alt.png", "x": 477, "width": 53, "height": 52 },
+		{ "texturePath": "battle/entities/grunt/cast_alt.png", "x": 530, "width": 53, "height": 52 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 231 },
+	"name": "Tri Header",
+	"frames": [
+		{ "texturePath": "general/menus/tri/header.png", "x": 62, "width": 416, "height": 25 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 232 },
+	"name": "Tri Header Back",
+	"frames": [
+		{ "texturePath": "general/menus/tri/header.png", "width": 61, "height": 24 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 233 },
+	"name": "Tri Button 9P",
+	"frames": [
+		{ "texturePath": "general/menus/tri/button.png", "width": 6, "height": 6 },
+		{ "texturePath": "general/menus/tri/button.png", "x": 5, "width": 6, "height": 6 },
+		{ "texturePath": "general/menus/tri/button.png", "x": 10, "width": 6, "height": 6 },
+		{ "texturePath": "general/menus/tri/button.png", "y": 3, "width": 6, "height": 6 },
+		{ "texturePath": "general/menus/tri/button.png", "x": 4, "y": 3, "width": 6, "height": 6 },
+		{ "texturePath": "general/menus/tri/button.png", "x": 10, "y": 3, "width": 6, "height": 6 },
+		{ "texturePath": "general/menus/tri/button.png", "y": 10, "width": 6, "height": 6 },
+		{ "texturePath": "general/menus/tri/button.png", "x": 3, "y": 10, "width": 6, "height": 6 },
+		{ "texturePath": "general/menus/tri/button.png", "x": 10, "y": 10, "width": 6, "height": 6 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 234 },
+	"name": "Tri Logo",
+	"frames": [
+		{ "texturePath": "general/title/VSLogoTri.png", "width": 1000, "height": 516 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 235 },
+	"name": "Tri Title Container 9P",
+	"frames": [
+		{ "texturePath": "general/menus/tri/container_name.png", "width": 25, "height": 16 },
+		{ "texturePath": "general/menus/tri/container_name.png", "x": 24, "width": 11, "height": 16 },
+		{ "texturePath": "general/menus/tri/container_name.png", "x": 35, "width": 6, "height": 16 },
+		{ "texturePath": "general/menus/tri/container_name.png", "y": 17, "width": 25, "height": 5 },
+		{ "texturePath": "general/menus/tri/container_name.png", "x": 18, "y": 17, "width": 11, "height": 5 },
+		{ "texturePath": "general/menus/tri/container_name.png", "x": 35, "y": 17, "width": 6, "height": 5 },
+		{ "texturePath": "general/menus/tri/container_name.png", "y": 22, "width": 25, "height": 4 },
+		{ "texturePath": "general/menus/tri/container_name.png", "x": 18, "y": 22, "width": 11, "height": 4 },
+		{ "texturePath": "general/menus/tri/container_name.png", "x": 35, "y": 22, "width": 6, "height": 4 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 236 },
+	"name": "Tri Container 9P",
+	"frames": [
+		{ "texturePath": "general/menus/tri/container.png", "width": 6, "height": 4 },
+		{ "texturePath": "general/menus/tri/container.png", "x": 5, "width": 6, "height": 4 },
+		{ "texturePath": "general/menus/tri/container.png", "x": 10, "width": 6, "height": 4 },
+		{ "texturePath": "general/menus/tri/container.png", "y": 4, "width": 6, "height": 3 },
+		{ "texturePath": "general/menus/tri/container.png", "x": 5, "y": 4, "width": 6, "height": 3 },
+		{ "texturePath": "general/menus/tri/container.png", "x": 10, "y": 4, "width": 6, "height": 3 },
+		{ "texturePath": "general/menus/tri/container.png", "y": 7, "width": 6, "height": 4 },
+		{ "texturePath": "general/menus/tri/container.png", "x": 5, "y": 7, "width": 6, "height": 4 },
+		{ "texturePath": "general/menus/tri/container.png", "x": 10, "y": 7, "width": 6, "height": 4 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 237 },
+	"name": "Tri Small Message 9P",
+	"frames": [
+		{ "texturePath": "general/menus/tri/small_message.png", "width": 8, "height": 6 },
+		{ "texturePath": "general/menus/tri/small_message.png", "x": 8, "width": 2, "height": 6 },
+		{ "texturePath": "general/menus/tri/small_message.png", "x": 10, "width": 8, "height": 6 },
+		{ "texturePath": "general/menus/tri/small_message.png", "y": 6, "width": 8, "height": 2 },
+		{ "texturePath": "general/menus/tri/small_message.png", "x": 8, "y": 6, "width": 2, "height": 2 },
+		{ "texturePath": "general/menus/tri/small_message.png", "x": 10, "y": 6, "width": 8, "height": 2 },
+		{ "texturePath": "general/menus/tri/small_message.png", "y": 8, "width": 8, "height": 6 },
+		{ "texturePath": "general/menus/tri/small_message.png", "x": 8, "y": 8, "width": 2, "height": 6 },
+		{ "texturePath": "general/menus/tri/small_message.png", "x": 10, "y": 8, "width": 8, "height": 6 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 238 },
+	"name": "Tri Panel 9P",
+	"frames": [
+		{ "texturePath": "general/menus/tri/panel.png", "width": 4, "height": 4 },
+		{ "texturePath": "general/menus/tri/panel.png", "x": 3, "width": 4, "height": 4 },
+		{ "texturePath": "general/menus/tri/panel.png", "x": 6, "width": 4, "height": 4 },
+		{ "texturePath": "general/menus/tri/panel.png", "y": 3, "width": 4, "height": 4 },
+		{ "texturePath": "general/menus/tri/panel.png", "x": 3, "y": 3, "width": 4, "height": 4 },
+		{ "texturePath": "general/menus/tri/panel.png", "x": 6, "y": 3, "width": 4, "height": 4 },
+		{ "texturePath": "general/menus/tri/panel.png", "y": 6, "width": 4, "height": 4 },
+		{ "texturePath": "general/menus/tri/panel.png", "x": 3, "y": 6, "width": 4, "height": 4 },
+		{ "texturePath": "general/menus/tri/panel.png", "x": 6, "y": 6, "width": 4, "height": 4 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 239 },
+	"name": "Tri Background",
+	"frames": [
+		{ "texturePath": "general/menus/tri/background.png", "width": 416, "height": 180 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 240 },
+	"name": "Spark SP Idle",
+	"speed": 0.1,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/entities/spark_sp.png", "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/spark_sp.png", "x": 35, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/spark_sp.png", "x": 70, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/spark_sp.png", "x": 105, "width": 34, "height": 49 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 241 },
+	"name": "Spark SP Flinch",
+	"speed": 0.07,
+	"frames": [
+		{ "texturePath": "battle/entities/spark_sp.png", "y": 50, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/spark_sp.png", "x": 35, "y": 50, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/spark_sp.png", "x": 70, "y": 50, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/spark_sp.png", "x": 105, "y": 50, "width": 34, "height": 49 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 242 },
+	"name": "Spark SP Cast",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/spark_sp.png", "y": 100, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/spark_sp.png", "x": 35, "y": 100, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/spark_sp.png", "x": 70, "y": 100, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/spark_sp.png", "x": 70, "y": 100, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/spark_sp.png", "x": 105, "y": 100, "width": 34, "height": 49 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 243 },
+	"name": "Spark SP Attack",
+	"speed": 0.05,
+	"frames": [
+		{ "texturePath": "battle/entities/spark_sp.png", "y": 150, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/spark_sp.png", "x": 35, "y": 150, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/spark_sp.png", "x": 70, "y": 150, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/spark_sp.png", "x": 105, "y": 150, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/spark_sp.png", "x": 140, "y": 150, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/spark_sp.png", "x": 140, "y": 150, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/spark_sp.png", "x": 140, "y": 150, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/spark_sp.png", "x": 105, "y": 150, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/spark_sp.png", "x": 70, "y": 150, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/spark_sp.png", "x": 35, "y": 150, "width": 34, "height": 49 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 244 },
+	"name": "Spark SP Stun Start",
+	"speed": 0.07,
+	"frames": [
+		{ "texturePath": "battle/entities/spark_sp.png", "y": 50, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/spark_sp.png", "x": 35, "y": 50, "width": 34, "height": 49 },
+		{ "texturePath": "battle/entities/spark_sp.png", "x": 70, "y": 50, "width": 34, "height": 49 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 245 },
+	"name": "Spark SP Stun End",
+	"speed": 0.07,
+	"frames": [
+		{ "texturePath": "battle/entities/spark_sp.png", "x": 105, "y": 50, "width": 34, "height": 49 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 246 },
+	"name": "Data Server",
+	"frames": [
+		{ "texturePath": "battle/entities/data_server.png", "width": -34, "height": 47 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 248 },
+	"name": "Galaxy Stars",
+	"frames": [
+		{ "texturePath": "battle/backgrounds/galaxy/stars.png", "width": 416, "height": 234 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 249 },
+	"name": "Galaxy Star",
+	"speed": 0.08,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/backgrounds/galaxy/star.png", "width": 23, "height": 19 },
+		{ "texturePath": "battle/backgrounds/galaxy/star.png", "x": 23, "width": 23, "height": 19 },
+		{ "texturePath": "battle/backgrounds/galaxy/star.png", "x": 46, "width": 23, "height": 19 },
+		{ "texturePath": "battle/backgrounds/galaxy/star.png", "x": 69, "width": 23, "height": 19 },
+		{ "texturePath": "battle/backgrounds/galaxy/star.png", "x": 92, "width": 23, "height": 19 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 250 },
+	"name": "Galaxy Planet 1",
+	"speed": 0.1,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/backgrounds/galaxy/planet1.png", "width": 106, "height": 77 },
+		{ "texturePath": "battle/backgrounds/galaxy/planet1.png", "x": 106, "width": 106, "height": 77 },
+		{ "texturePath": "battle/backgrounds/galaxy/planet1.png", "x": 212, "width": 106, "height": 77 },
+		{ "texturePath": "battle/backgrounds/galaxy/planet1.png", "x": 318, "width": 106, "height": 77 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 251 },
+	"name": "Galaxy Planet 2",
+	"speed": 0.1,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/backgrounds/galaxy/planet2.png", "width": 64, "height": 47 },
+		{ "texturePath": "battle/backgrounds/galaxy/planet2.png", "x": 64, "width": 64, "height": 47 },
+		{ "texturePath": "battle/backgrounds/galaxy/planet2.png", "x": 128, "width": 64, "height": 47 },
+		{ "texturePath": "battle/backgrounds/galaxy/planet2.png", "x": 192, "width": 64, "height": 47 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 252 },
+	"name": "Galaxy Nebula",
+	"speed": 0.1,
+	"frames": [
+		{ "texturePath": "battle/backgrounds/galaxy/1.png", "width": 416, "height": 234 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 247 },
+	"name": "Energy BG Left",
+	"frames": [
+		{ "texturePath": "battle/backgrounds/energy_bg.png", "width": 208, "height": 32 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 253 },
+	"name": "Energy Beam S",
+	"frames": [
+		{ "texturePath": "battle/backgrounds/energy_beam_s.png", "width": 1, "height": 15 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 254 },
+	"name": "Energy Beam M",
+	"frames": [
+		{ "texturePath": "battle/backgrounds/energy_beam_m.png", "width": 3, "height": 21 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 255 },
+	"name": "Energy Beam L",
+	"frames": [
+		{ "texturePath": "battle/backgrounds/energy_beam_lg.png", "width": 5, "height": 32 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 256 },
+	"name": "Energy BG Right",
+	"frames": [
+		{ "texturePath": "battle/backgrounds/energy_bg.png", "width": -208, "height": -32 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 257 },
+	"name": "white",
+	"frames": [
+		{ "texturePath": "general/menus/backgrounds.png", "x": 34, "y": 29, "width": 8, "height": 8 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 258 },
+	"name": "Snow BG 1",
+	"frames": [
+		{ "texturePath": "battle/backgrounds/snow/0.png", "width": 480, "height": 280 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 259 },
+	"name": "Snow BG 2",
+	"frames": [
+		{ "texturePath": "battle/backgrounds/snow/1.png", "width": 416, "height": 170 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 260 },
+	"name": "Snow BG 3",
+	"frames": [
+		{ "texturePath": "battle/backgrounds/snow/2.png", "width": 416, "height": 122 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 261 },
+	"name": "Snow BG Ice",
+	"speed": 0.06666667,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/backgrounds/snow/falling_ice.png", "width": 8, "height": 52 },
+		{ "texturePath": "battle/backgrounds/snow/falling_ice.png", "x": 8, "width": 8, "height": 52 },
+		{ "texturePath": "battle/backgrounds/snow/falling_ice.png", "x": 16, "width": 8, "height": 52 },
+		{ "texturePath": "battle/backgrounds/snow/falling_ice.png", "x": 24, "width": 8, "height": 52 },
+		{ "texturePath": "battle/backgrounds/snow/falling_ice.png", "x": 32, "width": 8, "height": 52 },
+		{ "texturePath": "battle/backgrounds/snow/falling_ice.png", "x": 40, "width": 8, "height": 52 },
+		{ "texturePath": "battle/backgrounds/snow/falling_ice.png", "x": 48, "width": 8, "height": 52 },
+		{ "texturePath": "battle/backgrounds/snow/falling_ice.png", "x": 56, "width": 8, "height": 52 },
+		{ "texturePath": "battle/backgrounds/snow/falling_ice.png", "x": 64, "width": 8, "height": 52 },
+		{ "texturePath": "battle/backgrounds/snow/falling_ice.png", "x": 54, "y": 3, "width": 3, "height": 2 },
+		{ "texturePath": "battle/backgrounds/snow/falling_ice.png", "x": 54, "y": 3, "width": 3, "height": 2 },
+		{ "texturePath": "battle/backgrounds/snow/falling_ice.png", "x": 54, "y": 3, "width": 3, "height": 2 },
+		{ "texturePath": "battle/backgrounds/snow/falling_ice.png", "x": 54, "y": 3, "width": 3, "height": 2 },
+		{ "texturePath": "battle/backgrounds/snow/falling_ice.png", "x": 54, "y": 3, "width": 3, "height": 2 },
+		{ "texturePath": "battle/backgrounds/snow/falling_ice.png", "x": 54, "y": 3, "width": 3, "height": 2 },
+		{ "texturePath": "battle/backgrounds/snow/falling_ice.png", "x": 54, "y": 3, "width": 3, "height": 2 },
+		{ "texturePath": "battle/backgrounds/snow/falling_ice.png", "x": 54, "y": 3, "width": 3, "height": 2 },
+		{ "texturePath": "battle/backgrounds/snow/falling_ice.png", "x": 54, "y": 3, "width": 3, "height": 2 },
+		{ "texturePath": "battle/backgrounds/snow/falling_ice.png", "x": 54, "y": 3, "width": 3, "height": 2 },
+		{ "texturePath": "battle/backgrounds/snow/falling_ice.png", "x": 54, "y": 3, "width": 3, "height": 2 },
+		{ "texturePath": "battle/backgrounds/snow/falling_ice.png", "x": 54, "y": 3, "width": 3, "height": 2 },
+		{ "texturePath": "battle/backgrounds/snow/falling_ice.png", "x": 54, "y": 3, "width": 3, "height": 2 },
+		{ "texturePath": "battle/backgrounds/snow/falling_ice.png", "x": 54, "y": 3, "width": 3, "height": 2 },
+		{ "texturePath": "battle/backgrounds/snow/falling_ice.png", "x": 54, "y": 3, "width": 3, "height": 2 },
+		{ "texturePath": "battle/backgrounds/snow/falling_ice.png", "x": 54, "y": 3, "width": 3, "height": 2 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 262 },
+	"name": "reaction_think",
+	"frames": [
+		{ "texturePath": "general/reactions.png", "x": 102, "width": 16, "height": 20 }
 	]
 }
 ]

@@ -25,8 +25,10 @@ done
 
 done
 
-sed -i "s@Server\.Ip=.*@Server\.Ip=${server_ip}@g" assets/game.properties
-sed -i "s@Server\.Name=.*@Server\.Name=${server_name}@g" assets/game.properties
+cat <<EOT >> assets/server.properties
+Server.Ip=${server_ip}
+Server.Name=${server_name}
+EOT
 
 echo "[6/7] Starting service..."
 systemctl daemon-reload

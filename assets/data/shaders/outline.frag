@@ -1,5 +1,3 @@
-#version 130
-
 #ifdef GL_ES
     precision mediump float;
 #endif
@@ -21,7 +19,10 @@ float toAdd(float color){
 }
 
 float alpha(float x, float y){
-	return texture2D(u_texture, vec2(v_texCoords.x + x, v_texCoords.y + y)).a;
+	vec2 pos = vec2(v_texCoords.x + x, v_texCoords.y + y)
+	pos.x = clamp(pos.x, gl_Vertex, gl_Position[3])
+	pos.y = clamp(pos.x, gl_Position[0], v_texCoords.y)
+	return texture2D(u_texture, pos).a;
 }
 
 void main() {

@@ -2965,46 +2965,6 @@
 },
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 987 },
-	"name": "levelImages_0",
-	"frames": [
-		{ "texturePath": "programs/levels.png", "width": 19, "height": 19 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 988 },
-	"name": "levelImages_1",
-	"frames": [
-		{ "texturePath": "programs/levels.png", "x": 20, "width": 19, "height": 19 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 989 },
-	"name": "levelImages_2",
-	"frames": [
-		{ "texturePath": "programs/levels.png", "x": 40, "width": 19, "height": 19 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 990 },
-	"name": "levelImages_3",
-	"frames": [
-		{ "texturePath": "programs/levels.png", "x": 60, "width": 19, "height": 19 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 991 },
-	"name": "levelImages_4",
-	"frames": [
-		{ "texturePath": "programs/levels.png", "x": 80, "width": 19, "height": 19 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 992 },
 	"name": "modification",
 	"frames": [
@@ -3686,7 +3646,7 @@
 	"id": { "id": 1099 },
 	"name": "level_background_1",
 	"frames": [
-		{ "texturePath": "programs/vocs.png", "x": 80, "y": 780, "width": 19, "height": 19 }
+		{ "texturePath": "programs/level_frames.png", "width": 19, "height": 19 }
 	]
 },
 {
@@ -3694,7 +3654,7 @@
 	"id": { "id": 1100 },
 	"name": "level_background_2",
 	"frames": [
-		{ "texturePath": "programs/vocs.png", "x": 100, "y": 780, "width": 19, "height": 19 }
+		{ "texturePath": "programs/level_frames.png", "x": 20, "width": 19, "height": 19 }
 	]
 },
 {
@@ -3702,7 +3662,7 @@
 	"id": { "id": 1101 },
 	"name": "level_background_3",
 	"frames": [
-		{ "texturePath": "programs/vocs.png", "x": 120, "y": 780, "width": 19, "height": 19 }
+		{ "texturePath": "programs/level_frames.png", "x": 40, "width": 19, "height": 19 }
 	]
 },
 {
@@ -3710,7 +3670,7 @@
 	"id": { "id": 1102 },
 	"name": "level_background_4",
 	"frames": [
-		{ "texturePath": "programs/vocs.png", "x": 140, "y": 780, "width": 19, "height": 19 }
+		{ "texturePath": "programs/level_frames.png", "x": 60, "width": 19, "height": 19 }
 	]
 },
 {
@@ -3718,7 +3678,7 @@
 	"id": { "id": 1103 },
 	"name": "level_background_5",
 	"frames": [
-		{ "texturePath": "programs/vocs.png", "x": 160, "y": 780, "width": 19, "height": 19 }
+		{ "texturePath": "programs/level_frames.png", "x": 80, "width": 19, "height": 19 }
 	]
 },
 {
@@ -3768,13 +3728,7 @@
 	"speed": 0.1,
 	"playMode": "LOOP",
 	"frames": [
-		{ "texturePath": "programs/special.png", "x": 1, "y": 1, "width": 11, "height": 11 },
-		{ "texturePath": "programs/special.png", "x": 14, "y": 1, "width": 11, "height": 11 },
-		{ "texturePath": "programs/special.png", "x": 27, "y": 1, "width": 11, "height": 11 },
-		{ "texturePath": "programs/special.png", "x": 40, "y": 1, "width": 11, "height": 11 },
-		{ "texturePath": "programs/special.png", "x": 53, "y": 1, "width": 11, "height": 11 },
-		{ "texturePath": "programs/special.png", "x": 66, "y": 1, "width": 11, "height": 11 },
-		{ "texturePath": "programs/special.png", "x": 79, "y": 1, "width": 11, "height": 11 }
+		{ "texturePath": "programs/special.png", "x": 1, "y": 1, "width": 11, "height": 11 }
 	]
 },
 {
@@ -4161,48 +4115,100 @@
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1156 },
 	"name": "moveTileUp",
-	"speed": 0.15,
+	"speed": 0.03,
 	"playMode": "LOOP",
 	"frames": [
-		{ "texturePath": "battle/field/Panels.png", "x": 222, "y": 42, "width": 36, "height": 20 },
-		{ "texturePath": "battle/field/Panels.png", "x": 222, "y": 21, "width": 36, "height": 20 },
-		{ "texturePath": "battle/field/Panels.png", "x": 222, "width": 36, "height": 20 }
+		{ "texturePath": "battle/field/Up.png", "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/Up.png", "x": 37, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/Up.png", "x": 74, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/Up.png", "x": 111, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/Up.png", "x": 148, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/Up.png", "x": 185, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/Up.png", "x": 222, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/Up.png", "x": 259, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/Up.png", "y": 21, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/Up.png", "x": 37, "y": 21, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/Up.png", "x": 74, "y": 21, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/Up.png", "x": 111, "y": 21, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/Up.png", "x": 148, "y": 21, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/Up.png", "x": 185, "y": 21, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/Up.png", "x": 222, "y": 21, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/Up.png", "x": 259, "y": 21, "width": 36, "height": 20 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1157 },
 	"name": "moveTileDown",
-	"speed": 0.15,
+	"speed": 0.03,
 	"playMode": "LOOP",
 	"frames": [
-		{ "texturePath": "battle/field/Panels.png", "x": 148, "width": 36, "height": 20 },
-		{ "texturePath": "battle/field/Panels.png", "x": 148, "y": 21, "width": 36, "height": 20 },
-		{ "texturePath": "battle/field/Panels.png", "x": 148, "y": 42, "width": 36, "height": 20 }
+		{ "texturePath": "battle/field/Down.png", "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/Down.png", "x": 37, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/Down.png", "x": 74, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/Down.png", "x": 111, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/Down.png", "x": 148, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/Down.png", "x": 185, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/Down.png", "x": 222, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/Down.png", "x": 259, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/Down.png", "y": 21, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/Down.png", "x": 37, "y": 21, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/Down.png", "x": 74, "y": 21, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/Down.png", "x": 111, "y": 21, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/Down.png", "x": 148, "y": 21, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/Down.png", "x": 185, "y": 21, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/Down.png", "x": 222, "y": 21, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/Down.png", "x": 259, "y": 21, "width": 36, "height": 20 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1158 },
 	"name": "moveTileLeft",
-	"speed": 0.15,
-	"playMode": "LOOP",
+	"speed": 0.03,
+	"playMode": "LOOP_REVERSED",
 	"frames": [
-		{ "texturePath": "battle/field/Panels.png", "x": 185, "y": 42, "width": 36, "height": 20 },
-		{ "texturePath": "battle/field/Panels.png", "x": 185, "y": 21, "width": 36, "height": 20 },
-		{ "texturePath": "battle/field/Panels.png", "x": 185, "width": 36, "height": 20 }
+		{ "texturePath": "battle/field/side.png", "width": -36, "height": 20 },
+		{ "texturePath": "battle/field/side.png", "x": 37, "width": -36, "height": 20 },
+		{ "texturePath": "battle/field/side.png", "x": 74, "width": -36, "height": 20 },
+		{ "texturePath": "battle/field/side.png", "x": 111, "width": -36, "height": 20 },
+		{ "texturePath": "battle/field/side.png", "x": 148, "width": -36, "height": 20 },
+		{ "texturePath": "battle/field/side.png", "x": 185, "width": -36, "height": 20 },
+		{ "texturePath": "battle/field/side.png", "x": 222, "width": -36, "height": 20 },
+		{ "texturePath": "battle/field/side.png", "x": 259, "width": -36, "height": 20 },
+		{ "texturePath": "battle/field/side.png", "y": 21, "width": -36, "height": 20 },
+		{ "texturePath": "battle/field/side.png", "x": 37, "y": 21, "width": -36, "height": 20 },
+		{ "texturePath": "battle/field/side.png", "x": 74, "y": 21, "width": -36, "height": 20 },
+		{ "texturePath": "battle/field/side.png", "x": 111, "y": 21, "width": -36, "height": 20 },
+		{ "texturePath": "battle/field/side.png", "x": 148, "y": 21, "width": -36, "height": 20 },
+		{ "texturePath": "battle/field/side.png", "x": 185, "y": 21, "width": -36, "height": 20 },
+		{ "texturePath": "battle/field/side.png", "x": 222, "y": 21, "width": -36, "height": 20 },
+		{ "texturePath": "battle/field/side.png", "x": 259, "y": 21, "width": -36, "height": 20 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1159 },
 	"name": "moveTileRight",
-	"speed": 0.15,
-	"playMode": "LOOP",
+	"speed": 0.03,
+	"playMode": "LOOP_REVERSED",
 	"frames": [
-		{ "texturePath": "battle/field/Panels.png", "x": 185, "y": 42, "width": -36, "height": 20 },
-		{ "texturePath": "battle/field/Panels.png", "x": 185, "y": 21, "width": -36, "height": 20 },
-		{ "texturePath": "battle/field/Panels.png", "x": 185, "width": -36, "height": 20 }
+		{ "texturePath": "battle/field/side.png", "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/side.png", "x": 37, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/side.png", "x": 74, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/side.png", "x": 111, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/side.png", "x": 148, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/side.png", "x": 185, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/side.png", "x": 222, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/side.png", "x": 259, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/side.png", "y": 21, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/side.png", "x": 37, "y": 21, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/side.png", "x": 74, "y": 21, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/side.png", "x": 111, "y": 21, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/side.png", "x": 148, "y": 21, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/side.png", "x": 185, "y": 21, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/side.png", "x": 222, "y": 21, "width": 36, "height": 20 },
+		{ "texturePath": "battle/field/side.png", "x": 259, "y": 21, "width": 36, "height": 20 }
 	]
 },
 {
@@ -5445,7 +5451,7 @@
 	"id": { "id": 19 },
 	"name": "grassTile",
 	"frames": [
-		{ "texturePath": "battle/field/Panels.png", "x": 258, "width": 36, "height": 22 }
+		{ "texturePath": "battle/field/Panels.png", "x": 148, "width": 36, "height": 22 }
 	]
 },
 {
@@ -6689,6 +6695,78 @@
 	"name": "reaction_think",
 	"frames": [
 		{ "texturePath": "general/reactions.png", "x": 102, "width": 16, "height": 20 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 263 },
+	"name": "New Desert BG 1",
+	"frames": [
+		{ "texturePath": "battle/backgrounds/desert/0.png", "width": 520, "height": 280 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 264 },
+	"name": "New Desert BG 2",
+	"frames": [
+		{ "texturePath": "battle/backgrounds/desert/1.png", "width": 480, "height": 236 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 265 },
+	"name": "New Desert BG 3",
+	"frames": [
+		{ "texturePath": "battle/backgrounds/desert/2.png", "width": 480, "height": 243 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 266 },
+	"name": "New Forest BG 1",
+	"frames": [
+		{ "texturePath": "battle/backgrounds/forest/0.png", "width": 480, "height": 280 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 267 },
+	"name": "New Forest BG 2",
+	"frames": [
+		{ "texturePath": "battle/backgrounds/forest/1.png", "width": 480, "height": 117 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 268 },
+	"name": "New Forest BG Trees 1",
+	"frames": [
+		{ "texturePath": "battle/backgrounds/forest/trees_1.png", "width": 480, "height": 280 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 269 },
+	"name": "New Forest BG Trees 2",
+	"frames": [
+		{ "texturePath": "battle/backgrounds/forest/trees_2.png", "width": 314, "height": 280 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 270 },
+	"name": "New Forest BG Trees 4",
+	"frames": [
+		{ "texturePath": "battle/backgrounds/forest/trees_3.png", "width": 480, "height": 280 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 271 },
+	"name": "New Forest BG Trees 3",
+	"frames": [
+		{ "texturePath": "battle/backgrounds/forest/trees_4.png", "width": 480, "height": 280 }
 	]
 }
 ]

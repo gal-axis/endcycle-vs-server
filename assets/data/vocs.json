@@ -502,9 +502,9 @@
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Rebound.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Rebound.Description" },
-		"level": 2,
-		"power": 70,
-		"crushPower": 90,
+		"level": 3,
+		"power": 100,
+		"crushPower": 130,
 		"element": "ELEC",
 		"targetType": "CLOSEST_ENEMY",
 		"ailments": [
@@ -1620,7 +1620,7 @@
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.IceCube.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.IceCube.Description" },
 		"level": 2,
-		"power": 300,
+		"power": 250,
 		"crushPower": 300,
 		"element": "WATER",
 		"ailments": [
@@ -1668,7 +1668,7 @@
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.FireBomb.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.FireBomb.Description" },
 		"level": 4,
-		"power": 360,
+		"power": 320,
 		"crushPower": 360,
 		"element": "FIRE",
 		"targetType": null,
@@ -1872,7 +1872,7 @@
 			{ "class": "com.one2b3.endcycle.engine.audio.sound.SoundInfo", "sound": "battle/programs/ray.wav", "volume": 1, "pitch": 1 },
 			{ "class": "java.lang.Integer", "value": 4 },
 			{ "class": "java.lang.Integer", "value": 1 },
-			{ "class": "java.lang.Float", "value": 0.25 },
+			{ "class": "java.lang.Float", "value": 0.3 },
 			{ "class": "java.lang.Float", "value": 0.25 },
 			{ "class": "java.lang.Integer", "value": 1 },
 			{ "class": "java.lang.Boolean", "value": true },
@@ -1964,7 +1964,7 @@
 					[
 						{ "class": "com.one2b3.endcycle.utils.objects.Point" }
 					],
-					{ "class": "java.lang.Integer", "value": 8 },
+					{ "class": "java.lang.Integer", "value": 7 },
 					{ "class": "java.lang.Integer", "value": 4 },
 					{ "class": "com.one2b3.endcycle.engine.audio.sound.SoundInfo", "sound": "battle/programs/flame_shot.wav", "volume": 1, "pitch": 1 },
 					{ "class": "java.lang.Float", "value": -1 },
@@ -2291,7 +2291,7 @@
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.BuildMove.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.BuildMove.Description" },
-		"level": 2,
+		"level": 1,
 		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.field.BuildMovePanelAttack",
 		"fields": [
 			null,
@@ -2311,7 +2311,7 @@
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.PanelSword.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.PanelSword.Description" },
 		"level": 4,
-		"power": 120,
+		"power": 150,
 		"crushPower": 150,
 		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.StationarySwordAttack",
 		"fields": [
@@ -2351,8 +2351,8 @@
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.SofaGrab.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.SofaGrab.Description" },
 		"level": 1,
-		"power": 180,
-		"crushPower": 200,
+		"power": 150,
+		"crushPower": 170,
 		"element": "NATURE",
 		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.field.SofaGrabAttack"
 	}
@@ -2409,7 +2409,7 @@
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Explant.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Explant.Description" },
-		"level": 4,
+		"level": 3,
 		"power": 150,
 		"crushPower": 150,
 		"element": "NATURE",
@@ -2456,7 +2456,7 @@
 			{ "class": "java.lang.Integer", "value": 0 },
 			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnedEntityType", "value": "FIRE_GATE" },
 			{ "class": "com.one2b3.endcycle.utils.ID", "id": 6 },
-			{ "class": "java.lang.Integer", "value": 1000 },
+			{ "class": "java.lang.Integer", "value": 800 },
 			{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.Party", "value": "NEUTRAL" },
 			null
 		]

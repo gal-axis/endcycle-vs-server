@@ -4,17 +4,16 @@
 	"id": {},
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Snow" },
 	"visible": true,
+	"background": { "r": 0.6509804, "g": 0.4, "b": 0.8784314, "a": 1 },
 	"frames": [
 		{
 			"drawable": {
 				"drawable": { "id": 258 }
 			},
-			"x": -32,
-			"y": -32,
 			"offsetXFactor": 0,
 			"offsetYFactor": 0,
-			"hAlign": -1,
-			"vAlign": -1
+			"screenHAlign": 0,
+			"screenVAlign": 0
 		},
 		{
 			"drawable": {
@@ -75,17 +74,16 @@
 	"id": { "id": 2 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Forest" },
 	"visible": true,
+	"background": { "r": 0.58431375, "g": 0.8666667, "b": 0.47843137, "a": 1 },
 	"frames": [
 		{
 			"drawable": {
 				"drawable": { "id": 266 }
 			},
-			"x": -32,
-			"y": -32,
 			"offsetXFactor": 0,
 			"offsetYFactor": 0,
-			"hAlign": -1,
-			"vAlign": -1
+			"screenHAlign": 0,
+			"screenVAlign": 0
 		},
 		{
 			"drawable": {
@@ -148,6 +146,7 @@
 	"id": { "id": 3 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Desert" },
 	"visible": true,
+	"background": { "r": 0.57254905, "g": 0.23137255, "b": 0.30588236, "a": 1 },
 	"frames": [
 		{
 			"drawable": {
@@ -155,12 +154,12 @@
 			},
 			"tintModulate": 0.1,
 			"tintSpeed": 0.5,
-			"x": -32,
-			"y": -32,
+			"y": 35,
 			"offsetXFactor": 0,
 			"offsetYFactor": 0,
-			"hAlign": -1,
-			"vAlign": -1
+			"vAlign": 1,
+			"screenHAlign": 0,
+			"screenVAlign": 1
 		},
 		{
 			"drawable": {
@@ -169,7 +168,7 @@
 			"x": -32,
 			"y": -32,
 			"offsetXFactor": 0.25,
-			"offsetYFactor": 0,
+			"offsetYFactor": 0.05,
 			"xRepeat": 480,
 			"hAlign": -1,
 			"vAlign": -1
@@ -179,7 +178,7 @@
 				"drawable": { "id": 265 }
 			},
 			"y": -32,
-			"offsetYFactor": 0,
+			"offsetYFactor": 0.075,
 			"xRepeat": 480,
 			"hAlign": -1,
 			"vAlign": -1
@@ -460,32 +459,36 @@
 	"class": "com.one2b3.endcycle.features.background.BackgroundData",
 	"id": { "id": 9 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Energy" },
+	"background": { "r": 0.8509804, "g": 0.4392157, "a": 1 },
 	"frames": [
 		{
 			"drawable": {
 				"drawable": { "id": 247 },
 				"color": { "r": 0.8509804, "g": 0.4392157, "a": 1 }
 			},
+			"x": -64,
 			"offsetXFactor": 0,
 			"offsetYFactor": 0,
 			"yRepeat": 32,
 			"ySpeed": 128,
-			"hAlign": -1,
-			"vAlign": -1
+			"hAlign": 1,
+			"vAlign": -1,
+			"screenHAlign": 0
 		},
 		{
 			"drawable": {
 				"drawable": { "id": 256 },
 				"color": { "r": 0.8509804, "g": 0.4392157, "a": 1 }
 			},
-			"x": 416,
+			"x": 64,
 			"y": -4,
 			"offsetXFactor": 0,
 			"offsetYFactor": 0,
 			"yRepeat": 32,
 			"ySpeed": 128,
-			"hAlign": 1,
-			"vAlign": -1
+			"hAlign": -1,
+			"vAlign": -1,
+			"screenHAlign": 0
 		},
 		{
 			"drawable": {
@@ -590,12 +593,12 @@
 			"drawable": {
 				"drawable": { "id": 239 }
 			},
-			"y": 130,
 			"offsetXFactor": 0,
 			"offsetYFactor": 0,
 			"xRepeat": 416,
 			"yRepeat": 180,
-			"hAlign": -1
+			"screenHAlign": 0,
+			"screenVAlign": 0
 		}
 	]
 }

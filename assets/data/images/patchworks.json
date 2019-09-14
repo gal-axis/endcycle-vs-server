@@ -101,5 +101,65 @@
 			]
 		}
 	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 16 },
+	"name": "Spikes",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 323 },
+					"yPos": 10
+				},
+				{
+					"drawable": { "id": 323 },
+					"xPos": 14,
+					"yPos": 10
+				},
+				{
+					"drawable": { "id": 323 },
+					"xPos": 7,
+					"yPos": 5
+				},
+				{
+					"drawable": { "id": 323 },
+					"xPos": 14
+				},
+				{
+					"drawable": { "id": 323 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" },
+			"images": [
+				{
+					"drawable": { "id": 324 },
+					"yPos": 10
+				},
+				{
+					"drawable": { "id": 324 },
+					"xPos": 14,
+					"yPos": 10
+				},
+				{
+					"drawable": { "id": 324 },
+					"xPos": 7,
+					"yPos": 5
+				},
+				{
+					"drawable": { "id": 324 }
+				},
+				{
+					"drawable": { "id": 324 },
+					"xPos": 14
+				}
+			]
+		}
+	]
 }
 ]

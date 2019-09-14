@@ -1,96 +1,104 @@
-19th July 2019 Update
-		=== Version: Azure.5 ===
-	* Fixed a ton of modding related bugs
-
-7th July 2019 Update
-		=== Version: Azure.4 ===
-	+ Noises have new abilities!
-		+ Sofa Sogood - Floating: Panels do not affect user!
-		+ Bombabrara - Explosive: Deals more damage while on low HP!
-		+ Q.T. - Overdrive: Gauge speed increases when almost crushed!
-		+ Greed - Fluid: Moves between panels fluently and fixes them!
-	* Fixed an audio memory leak
+14th August 2019 Update
+		=== Version: Crimson.3 ===
+	* Having an element now grants a slight resistance to certain ailments:
+	    - Water: Shorter Freeze duration
+		- Fire: Shorter Blind duration
+		- Nature: Less Poison effectiveness
+		- Elec: Shorter Stun duration
 	
-		> VOCs:
-			* Plantrap: Now affects tile
-			
-
-5th July 2019 Update
-		=== Version: Azure.3 ===
-	+ Added ultra-wide screen support
-	+ Reworked mouse input support
-	+ Reworked voc inventory management
-	+ Reworked pack menu
-	* Improved sound engine and removed sound effect lag
-	* Tiles stay longer on field
-	* Fixed a lot of input and modding bugs
+	- Removed Floating ability from Sofa Sogood
+	+ Sofa Sogood now has Backstab ability
+		+ Deal more damage while the enemy is facing away from you
 	
 	> VOCs:
-		* IceCube: Power 300 -> 250
-		* Rebound: Level 2 -> 3, Power 70 -> 100, Crush 90 -> 130
-		* Bomboyage: Power 360 -> 320
-
-
-15th June 2019 Update
-		=== Version: Azure.2 ===
-	+ New move panel visuals
-	+ Reworked Forest and Desert Background
-	* Improved VOC visuals
-	* Added GIF FPS setting
-	* Missions track amount of gauge used instead of voc amount
-	* Fixed certain campaign enemies not turning towards player
+		* Lv3 Rebound: Delay before activation, Power 100 -> 110
+		* Lv4 Bomboyage: Delay before explosion, hits + then X
+		* Lv1 Gatling: Power 60 -> 50
+		* Lv3 JumperJet: Power 250 -> 220, Crush 250 -> 270
 	
-	> VOCs:
-		* Reduced Berserk Style level
-		* JumperJet: Power 220 -> 250
-		* Spreader: Power 250 -> 200
-		* Meteors: Power 100 -> 120
-
-		
-8th June 2019 Update
-		=== Version: Azure.1 ===
-	+ Brand new Campaign Mode
-	+ Credits Mode
-	+ Added 2 New Menu Themes
-	+ Added 2 New Characters
-	+ Added 4 New Secret Characters
-	+ Character Affinity System
-		+ Playing with a character boosts their affinity
-	+ Characters can now be customized
-	+ New Content can now be unlocked through gameplay
-	+ Colorblind Mode
-	+ Added new panels and reworked old ones
-		+ Lava: Hurts non-FIRE elementals
-		+ Grass: Heals non-FIRE elementals
-		+ Metal: Can't break and speeds up ELEC elementals
-		+ Ice: Makes non-WATER elementals slide
-	+ Hitting a panel with an element sometimes changes it
-	+ Added new fonts
-	+ Changed "Practice" battles into "Test" battle with dummy
-	* Battles are now started out with a full Strike Gauge
-	* VOCs now show their styled power/crush values
-	* Spawning attacks that can't spawn the object don't reduce gauge
-	* Fixed VOC inventory navigation
-	* Renamed Neo to AV.atar
-	- Removed Online Inventory Synchronization
-	
-	> VOCs:
-		+ Lv2 BuildMove
-		+ Lv1 BuildGrass
-		+ Lv4 PanelSword
-		+ Lv2 SofaGrab
-		+ Lv4 Explant
-		+ Lv3 FireGate
-		+ Lv0 GreenPiece
-		+ Lv2 BioHeart
-		> Lv3 BigSword: Removed Charge
-		> Lv4 Bomboyage: Power--, Crush--
-		> Heal is now a Pickup
-		
 	> Styles:
-		+ Lv0 Infusion
-		+ Lv0 Turn
-		+ Lv0 Slow
-		+ Lv1 Fast
-		+ Lv1 RushBack
-		> You can now turn while moving with a rush-style
+		* Lv1 Turn: Lv0 -> Lv1, now turns target instead of you
+		* Lv1 Freeze: Shorter Freeze duration
+		* Lv1 Blind: Shorter Blind duration
+		* Rush-styles: Now move to panel fluidly
+		
+
+31st August 2019 Update
+		=== Version: Crimson.2 ===
+	+ Replays of past-battles can now be watched in the Replay mode
+	+ Characters have new customization options
+	+ More VOC filter options and auto-sorting
+	+ Added Screen Shake and Battle Zoom settings
+	* Polished input on some menus
+	* Pushing objects can now interrupt their attacks
+	* Polished game feel when attacks connect
+	
+	> VOCs:
+		* Lv3 Froster: Reduced Freeze Time
+		* Lv4 Humidity: Reduced Freeze Time
+	
+	> Styles:
+		* Lv0 Fast -> Lv1
+		* Lv1 Freeze: Reduced Freeze time
+		* Lv1 Blind: Reduced Blind time
+		* Lv1 Regen: Increased Health gained
+		* Lv1 Poison: Increased Health lost
+		* Fixed Lv0 Charge style
+		
+
+28th August 2019 Update
+		=== Version: Crimson.1 ===
+	+ All backgrounds now have custom panels
+	+ New background: Astrat Night
+	+ Added automatic battle replay recording
+	+ Added indicator when getting hit by weakness element
+	+ Added VOC Starter Packs: Berserk, Tank and Conquerer
+	+ Battles can now be set to best of three, or best of five
+	* Improved VOC UI game feel
+	* Unlock Message is now faster
+	* Added Reset Settings button
+	
+	+ Added new Ailments:
+		+ Blind: Limits your vision to a 3x3 area
+		+ Haste: Speeds up your VOC cooldown speed
+		+ Brake: Slows down your VOC cooldown speed
+		* Berserk: Boosts your attack power for a small duration
+		+ Meak: Reduces your attack power for a small duration
+		+ Floating: Makes you float, making you unaffected by panels
+		+ Frozen: Freezes you into place, making you unable to move
+	
+	> VOCs:
+		+ Lv2 BackFlash
+		+ Lv4 FrontFlare
+		+ Lv3 Companion
+		+ Lv2 BoulderBack
+		+ Lv2 Virus
+		+ Lv2 CoffeeBean
+		+ Lv2 PanelLance
+		+ Lv2 ShowStopper
+		+ Lv1 SpikeTrap
+		* Froster and Humidity now freeze enemies
+		* Caffeine now grants haste
+		* Reworked StunWave and ToxicWave
+		* Reworked Anthem and Lightmass
+	
+	> Styles:
+		+ Lv1 Meak
+		+ Lv1 Floating
+		+ Lv1 Haste
+		+ Lv1 Brake
+		+ Lv1 Blind
+		+ Lv1 Freeze
+		+ Lv1 Crack
+		+ Lv1 Repair
+		+ Lv1 Grass
+		+ Lv1 Ice
+		+ Lv1 Metal
+		
+	> Modding:
+		+ Styles are now moddable
+		+ Volatile Skill: Keeps draining HP
+		+ SuperArmor Skill: Prevents flinching during attacks
+		+ Rebound Attack now can have a custom drawable
+		+ Shoot Attacks can now travel tile-by-tile
+		* Updated UI with more colors to be more readable

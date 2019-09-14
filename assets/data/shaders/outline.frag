@@ -31,7 +31,7 @@ void main() {
 	float outline_a = (1.0 - alpha(0.0, 0.0)) *
 		step(0.01, alpha(u_seek.x, 0.0) + alpha(-u_seek.x, 0.0) + alpha(0.0, u_seek.y) + alpha(0.0, -u_seek.y));
 		
-	vec4 tint = vec4(toTint(v_color.r), toTint(v_color.g), toTint(v_color.b), toTint(v_color.a) * 254.0F / 244.0F);
+	vec4 tint = vec4(toTint(v_color.r), toTint(v_color.g), toTint(v_color.b), toTint(v_color.a) * 254.0 / 244.0);
 	vec4 addition = vec4(toAdd(v_color.r), toAdd(v_color.g), toAdd(v_color.b), 0.0) * toAdd(v_color.a);
 	gl_FragColor = (tint * color + addition * color.a) * (1.0 - outline_a) + u_outlineColor * outline_a * tint.a;
 }

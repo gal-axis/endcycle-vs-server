@@ -12,5 +12,5 @@ float toTint(float color){
 
 void main() {
 	vec4 color = texture2D(u_texture, v_texCoords);	
-	gl_FragColor = vec4(toTint(v_color.r), toTint(v_color.g), toTint(v_color.b), color.a * toTint(v_color.a) * 254.0F / 244.0F);
+	gl_FragColor = vec4(toTint(v_color.r), toTint(v_color.g), toTint(v_color.b), color.a * toTint(v_color.a) * 254.0 / 244.0);
 }

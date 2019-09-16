@@ -1300,7 +1300,24 @@
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Exchange.Description" },
 		"level": 1,
 		"targetType": "SELF",
-		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.field.CounterAreaGrabAttack"
+		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.guarding.CounterWrapperAttack",
+		"fields": [
+			{
+				"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AttackShellWrapper",
+				"attackName": "com.one2b3.endcycle.screens.battle.attacks.data.field.AreaGrabAttack",
+				"fields": [
+					{ "class": "java.lang.Boolean", "value": false }
+				]
+			},
+			{ "class": "java.lang.Float", "value": 0.5 },
+			{
+				"class": "com.one2b3.endcycle.engine.graphics.DrawableId",
+				"drawable": { "id": 296 },
+				"color": { "r": 0.34901962, "g": 0.6627451, "b": 0.83137256, "a": 1 }
+			},
+			{ "class": "java.lang.Boolean", "value": true },
+			{ "class": "com.badlogic.gdx.graphics.Color", "r": 0.34901962, "g": 0.6627451, "b": 0.83137256, "a": 1 }
+		]
 	}
 },
 {
@@ -2466,6 +2483,10 @@
 		"power": 150,
 		"crushPower": 170,
 		"element": "NATURE",
+		"ailments": [
+			{ "type": "TURN" },
+			{ "type": "FLINCHING" }
+		],
 		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.field.SofaGrabAttack"
 	}
 },

@@ -353,13 +353,15 @@
 	"class": "com.one2b3.endcycle.features.background.BackgroundData",
 	"id": { "id": 8000 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Halloween" },
+	"background": { "r": 0.65882355, "g": 0.13725491, "b": 0.2784314, "a": 0.8235294 },
 	"frames": [
 		{
 			"drawable": {
-				"drawable": { "id": 146 }
+				"drawable": { "id": 341 }
 			},
-			"offsetXFactor": 0,
-			"offsetYFactor": 0
+			"xRepeat": 480,
+			"vAlign": -1,
+			"screenHAlign": 0
 		}
 	]
 },
@@ -755,6 +757,54 @@
 			},
 			"xRepeat": 30,
 			"yRepeat": 30
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.background.BackgroundData",
+	"id": { "id": 15 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.IceCave" },
+	"frames": [
+		{
+			"drawable": {
+				"drawable": { "id": 342 }
+			},
+			"x": 83,
+			"y": -37,
+			"xRepeat": 124,
+			"yRepeat": 132
+		},
+		{
+			"drawable": {
+				"drawable": { "id": 342 }
+			},
+			"xRepeat": 124,
+			"yRepeat": 132
+		},
+		{
+			"drawable": {
+				"drawable": { "id": 342 }
+			},
+			"x": 101,
+			"y": 46,
+			"xRepeat": 124,
+			"yRepeat": 132
+		},
+		{
+			"drawable": {
+				"drawable": { "id": 343 }
+			},
+			"xRepeat": 200,
+			"yRepeat": 140
+		},
+		{
+			"drawable": {
+				"drawable": { "id": 343 }
+			},
+			"x": 130,
+			"y": 65,
+			"xRepeat": 200,
+			"yRepeat": 140
 		}
 	]
 }

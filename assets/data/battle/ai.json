@@ -20,7 +20,7 @@
 			"scripts": {}
 		},
 		{
-			"time": 0.3,
+			"time": 0.5,
 			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_OPEN" },
 			"scripts": {}
 		},
@@ -29,7 +29,7 @@
 			"scripts": {}
 		},
 		{
-			"time": 0.3,
+			"time": 0.5,
 			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_CLOSE" },
 			"scripts": {}
 		}
@@ -56,7 +56,7 @@
 			"scripts": {}
 		},
 		{
-			"time": 0.3,
+			"time": 0.5,
 			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_OPEN" },
 			"scripts": {}
 		},
@@ -65,7 +65,7 @@
 			"scripts": {}
 		},
 		{
-			"time": 0.3,
+			"time": 0.5,
 			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_CLOSE" },
 			"scripts": {}
 		}
@@ -131,7 +131,7 @@
 		{
 			"time": 4,
 			"voc": { "id": 8 },
-			"style": 29,
+			"style": { "id": 29 },
 			"scripts": {}
 		}
 	]
@@ -248,16 +248,18 @@
 	],
 	"moves": [
 		{
-			"time": 2.5,
+			"time": 2.3,
 			"voc": { "id": 10034 },
 			"scripts": {}
 		},
 		{
+			"time": 0.7,
 			"move": "ANIMATED_TILE",
 			"yTile": 1,
 			"scripts": {}
 		},
 		{
+			"time": 0.7,
 			"move": "ANIMATED_TILE",
 			"yTile": 1,
 			"turnType": "TARGET",
@@ -279,16 +281,18 @@
 	],
 	"moves": [
 		{
-			"time": 2.5,
+			"time": 2.3,
 			"voc": { "id": 10034 },
 			"scripts": {}
 		},
 		{
+			"time": 0.7,
 			"move": "ANIMATED_TILE",
 			"yTile": -1,
 			"scripts": {}
 		},
 		{
+			"time": 0.7,
 			"move": "ANIMATED_TILE",
 			"yTile": -1,
 			"turnType": "TARGET",
@@ -668,7 +672,7 @@
 			"scripts": {}
 		},
 		{
-			"time": 0.8,
+			"time": 1,
 			"skippable": true,
 			"move": "ANIMATED_TILE",
 			"yTile": -1,
@@ -676,12 +680,12 @@
 			"scripts": {}
 		},
 		{
-			"time": 1.5,
+			"time": 1.7,
 			"voc": { "id": 10016 },
 			"scripts": {}
 		},
 		{
-			"time": 0.8,
+			"time": 1,
 			"skippable": true,
 			"move": "ANIMATED_TILE",
 			"yTile": 1,
@@ -689,12 +693,12 @@
 			"scripts": {}
 		},
 		{
-			"time": 1.5,
+			"time": 1.7,
 			"voc": { "id": 10106 },
 			"scripts": {}
 		},
 		{
-			"time": 0.8,
+			"time": 1,
 			"skippable": true,
 			"move": "ANIMATED_TILE",
 			"yTile": 1,
@@ -702,12 +706,12 @@
 			"scripts": {}
 		},
 		{
-			"time": 1.5,
+			"time": 1.7,
 			"voc": { "id": 10016 },
 			"scripts": {}
 		},
 		{
-			"time": 0.8,
+			"time": 1,
 			"skippable": true,
 			"move": "ANIMATED_TILE",
 			"yTile": -1,
@@ -719,7 +723,7 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 20 },
-	"name": "He scared",
+	"name": "Fin scared",
 	"ignoreGauge": true,
 	"randomizeMoves": true,
 	"change": [
@@ -774,13 +778,13 @@
 			"time": 1.6,
 			"turnType": "TARGET",
 			"voc": { "id": 10114 },
-			"style": 13,
+			"style": { "id": 13 },
 			"scripts": {}
 		},
 		{
 			"time": 0.4,
 			"voc": { "id": 10022 },
-			"style": 10,
+			"style": { "id": 10 },
 			"scripts": {}
 		},
 		{
@@ -799,7 +803,7 @@
 		{
 			"time": 0.6,
 			"voc": { "id": 10031 },
-			"style": 0,
+			"style": {},
 			"scripts": {}
 		},
 		{
@@ -979,7 +983,7 @@
 			"move": "ANIMATED_TILE",
 			"yTile": -1,
 			"voc": { "id": 10013 },
-			"style": 10,
+			"style": { "id": 10 },
 			"scripts": {}
 		},
 		{
@@ -988,7 +992,7 @@
 			"move": "ANIMATED_TILE",
 			"xTile": 1,
 			"voc": { "id": 10 },
-			"style": 29,
+			"style": { "id": 29 },
 			"scripts": {}
 		},
 		{
@@ -997,7 +1001,7 @@
 			"move": "ANIMATED_TILE",
 			"yTile": 1,
 			"voc": { "id": 10031 },
-			"style": 10,
+			"style": { "id": 10 },
 			"scripts": {}
 		},
 		{
@@ -1015,7 +1019,7 @@
 			"move": "ANIMATED_TILE",
 			"xTile": -1,
 			"voc": { "id": 10011 },
-			"style": 12,
+			"style": { "id": 12 },
 			"scripts": {}
 		},
 		{
@@ -1048,7 +1052,7 @@
 		{
 			"time": 1.2,
 			"voc": { "id": 10010 },
-			"style": 18,
+			"style": { "id": 18 },
 			"scripts": {}
 		},
 		{
@@ -1056,7 +1060,7 @@
 			"skippable": true,
 			"yTile": -1,
 			"voc": { "id": 10022 },
-			"style": 19,
+			"style": { "id": 19 },
 			"scripts": {}
 		},
 		{

@@ -2888,7 +2888,7 @@
 					null,
 					null,
 					{ "class": "java.lang.Boolean", "value": true },
-					{ "class": "java.lang.Boolean", "value": true }
+					{ "class": "java.lang.Boolean", "value": false }
 				]
 			},
 			{ "class": "java.lang.Float", "value": 0.4 },
@@ -3125,6 +3125,58 @@
 			null,
 			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "java.lang.Boolean", "value": false }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 38 },
+	"role": "EXECUTION",
+	"vocType": "PROJECTILE",
+	"visible": true,
+	"imageIndex": 43,
+	"attackShell": {
+		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.PanelCannon" },
+		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.PanelCannon.Description" },
+		"level": 2,
+		"power": 75,
+		"crushPower": 50,
+		"ailments": [
+			{ "type": "FLINCHING" },
+			{ "type": "GRAB_PANEL" }
+		],
+		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
+		"fields": [
+			{ "class": "com.one2b3.endcycle.utils.bounded.BoundedFloat", "max": 5, "speed": 60 },
+			{
+				"class": "com.one2b3.endcycle.engine.graphics.DrawableId",
+				"drawable": { "id": 1163 }
+			},
+			{ "class": "java.lang.Float", "value": 0.1 },
+			{ "class": "java.lang.Float", "value": 0.2 },
+			{ "class": "com.one2b3.endcycle.utils.bounded.BoundedFloat", "max": 0 },
+			{ "class": "com.one2b3.endcycle.utils.bounded.BoundedFloat", "max": 0.1 },
+			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Boolean", "value": true },
+			{ "class": "java.lang.Float", "value": 0.5 },
+			{ "class": "java.lang.Float", "value": 20 },
+			{ "class": "java.lang.Integer", "value": -1 },
+			{ "class": "java.lang.Float", "value": 1 },
+			{ "class": "java.lang.Float", "value": 1 },
+			{ "class": "java.lang.Integer", "value": 1 },
+			[
+				{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack$Shot" }
+			],
+			{ "class": "java.lang.Integer", "value": 8 },
+			{ "class": "java.lang.Integer", "value": 4 },
+			{ "class": "com.one2b3.endcycle.engine.audio.sound.SoundInfo", "sound": "battle/programs/cannon.wav", "volume": 1, "pitch": 1 },
+			{ "class": "java.lang.Float", "value": -1 },
+			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Float", "value": 0 },
+			{ "class": "java.lang.Float", "value": 15 },
+			{ "class": "java.lang.Boolean", "value": true },
+			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Boolean", "value": true }
 		]
 	}
 }

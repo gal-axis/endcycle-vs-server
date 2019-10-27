@@ -10,8 +10,7 @@
 	"speed": 125,
 	"visible": true,
 	"customizable": true,
-	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
-	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
 	"customizationUnlockCondition": {
 		"affinities": [
 			{
@@ -36,8 +35,7 @@
 	"crush": 125,
 	"visible": true,
 	"customizable": true,
-	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
-	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
 	"customizationUnlockCondition": {
 		"campaigns": [
 			{
@@ -66,8 +64,7 @@
 	"crush": 75,
 	"visible": true,
 	"customizable": true,
-	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
-	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
 	"skills": [ "Analyst" ],
 	"customizationUnlockCondition": {
 		"affinities": [
@@ -94,8 +91,7 @@
 	"tease": true,
 	"nameable": true,
 	"customizable": true,
-	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
-	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
 	"skills": [ "Virtual" ],
 	"unlockCondition": { "battlesFought": 5 }
 },
@@ -120,8 +116,7 @@
 	"tease": true,
 	"nameable": true,
 	"customizable": true,
-	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
-	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
 	"skills": [ "Combos" ],
 	"unlockCondition": {
 		"campaigns": [
@@ -138,7 +133,6 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 9 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Del" },
-	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Del.Description" },
 	"patchworks": [
 		{
 			"id": {}
@@ -146,12 +140,12 @@
 	],
 	"power": 75,
 	"speed": 125,
+	"crush": 50,
 	"visible": true,
 	"tease": true,
 	"customizable": true,
-	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
-	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 },
-	"skills": [ "Skip", "Sprint" ],
+	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
+	"skills": [ "Boss" ],
 	"unlockCondition": {
 		"campaigns": [
 			{
@@ -163,6 +157,40 @@
 		"affinities": [
 			{
 				"character": { "id": 9 },
+				"amount": 1
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 21 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Cress" },
+	"patchworks": [
+		{
+			"id": { "id": 18 }
+		}
+	],
+	"health": 900,
+	"power": 125,
+	"speed": 75,
+	"crush": 75,
+	"visible": true,
+	"tease": true,
+	"customizable": true,
+	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
+	"skills": [ "Leader" ],
+	"unlockCondition": {
+		"campaigns": [
+			{
+				"campaign": { "id": 4 }
+			}
+		]
+	},
+	"customizationUnlockCondition": {
+		"affinities": [
+			{
+				"character": { "id": 21 },
 				"amount": 1
 			}
 		]
@@ -183,8 +211,7 @@
 	"visible": true,
 	"tease": true,
 	"customizable": true,
-	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
-	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
 	"skills": [ "Overdrive" ],
 	"unlockCondition": { "battlesFought": 20 },
 	"customizationUnlockCondition": {
@@ -212,8 +239,7 @@
 	"visible": true,
 	"tease": true,
 	"customizable": true,
-	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
-	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
 	"skills": [ "Backstab" ],
 	"unlockCondition": { "battlesWon": 10 },
 	"customizationUnlockCondition": {
@@ -242,8 +268,7 @@
 	"visible": true,
 	"tease": true,
 	"customizable": true,
-	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
-	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
 	"skills": [ "Fluid" ],
 	"unlockCondition": { "enemiesCrushed": 10 },
 	"customizationUnlockCondition": {
@@ -271,8 +296,7 @@
 	"visible": true,
 	"tease": true,
 	"customizable": true,
-	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
-	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
 	"skills": [ "Explosive" ],
 	"unlockCondition": { "selfCrushed": 5 },
 	"customizationUnlockCondition": {
@@ -299,8 +323,7 @@
 	"visible": true,
 	"customizable": true,
 	"guest": true,
-	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
-	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
 	"skills": [ "OldSchool", "FuelSystem" ],
 	"unlockCondition": { "enemiesCrushed": 25 }
 },
@@ -316,8 +339,7 @@
 	"element": "WATER",
 	"speed": 125,
 	"visible": true,
-	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
-	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
 	"unlockCondition": {
 		"campaigns": [
 			{
@@ -341,8 +363,7 @@
 	"speed": 75,
 	"crush": 125,
 	"visible": true,
-	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
-	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
 	"unlockCondition": {
 		"campaigns": [
 			{
@@ -366,8 +387,7 @@
 	"power": 75,
 	"crush": 75,
 	"visible": true,
-	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
-	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 },
+	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
 	"skills": [ "Analyst" ],
 	"unlockCondition": {
 		"campaigns": [
@@ -390,15 +410,41 @@
 	"element": "ELEC",
 	"power": 75,
 	"speed": 125,
+	"crush": 50,
 	"visible": true,
-	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
-	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 },
-	"skills": [ "Skip", "Sprint" ],
+	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
+	"skills": [ "Boss" ],
 	"unlockCondition": {
 		"campaigns": [
 			{
 				"campaign": { "id": 2 },
 				"perfect": true
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 22 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Cress.SP" },
+	"patchworks": [
+		{
+			"id": { "id": 22 }
+		}
+	],
+	"element": "FIRE",
+	"health": 900,
+	"power": 125,
+	"speed": 75,
+	"crush": 75,
+	"visible": true,
+	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
+	"skills": [ "Leader" ],
+	"unlockCondition": {
+		"campaigns": [
+			{
+				"campaign": { "id": 4 },
+				"time": 150
 			}
 		]
 	}
@@ -415,8 +461,7 @@
 	"element": "FIRE",
 	"health": 900,
 	"crush": 150,
-	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
-	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 }
+	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 }
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
@@ -430,8 +475,7 @@
 	],
 	"health": 250,
 	"crush": 0,
-	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
-	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 }
+	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 }
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
@@ -442,8 +486,7 @@
 			"id": { "id": 5 }
 		}
 	],
-	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
-	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 }
+	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 }
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
@@ -457,8 +500,7 @@
 	],
 	"health": 300,
 	"crush": -100,
-	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
-	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 }
+	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 }
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
@@ -471,8 +513,7 @@
 		}
 	],
 	"health": 150,
-	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
-	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 }
+	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 }
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
@@ -485,7 +526,6 @@
 		}
 	],
 	"health": 800,
-	"hurtSound": { "sound": "battle/entities/hits/normal.wav", "volume": 1, "pitch": 1 },
-	"deathSound": { "sound": "battle/entities/general/defeated.wav", "volume": 1, "pitch": 1 }
+	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 }
 }
 ]

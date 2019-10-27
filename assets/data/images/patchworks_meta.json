@@ -887,10 +887,10 @@
 				}
 			],
 			"colors": [
-				{ "r": 0.5686275, "g": 0.9019608, "b": 0.89411765, "a": 1 },
-				{ "r": 0.15294118, "g": 0.7294118, "b": 0.54901963, "a": 1 },
-				{ "r": 0.26666668, "g": 0.40392157, "b": 0.78039217, "a": 1 },
-				{ "r": 0.4392157, "g": 0.27058825, "b": 0.9019608, "a": 1 }
+				{ "r": 0.50980395, "g": 0.7294118, "b": 0.7254902, "a": 1 },
+				{ "r": 0.15294118, "g": 0.7294118, "b": 0.47843137, "a": 1 },
+				{ "r": 0.26666668, "g": 0.26666668, "b": 0.78039217, "a": 1 },
+				{ "r": 0.58431375, "g": 0.27058825, "b": 0.9019608, "a": 1 }
 			]
 		},
 		{
@@ -1412,5 +1412,187 @@
 	"id": { "id": 17 },
 	"name": "Regen Pickup",
 	"drawable": { "id": 329 }
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleLayeredPatchworkMetaData",
+	"id": { "id": 18 },
+	"name": "Cress",
+	"shadowY": 1,
+	"idle": [
+		{
+			"drawable": { "id": 5 }
+		}
+	],
+	"hurt": [
+		{
+			"drawable": { "id": 43 }
+		}
+	],
+	"stunStart": [
+		{
+			"drawable": { "id": 44 }
+		}
+	],
+	"stunEnd": [
+		{
+			"drawable": { "id": 45 }
+		}
+	],
+	"cast": [
+		{
+			"drawable": { "id": 7 }
+		}
+	],
+	"attack": [
+		{
+			"drawable": { "id": 6 }
+		}
+	],
+	"extraStates": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FALLING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 46 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 49 }
+				}
+			]
+		}
+	],
+	"castLeadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FALLING" },
+	"keepUncustomized": true,
+	"customizables": [
+		{
+			"name": "Body",
+			"replace": [
+				{ "replace": -617535745 },
+				{
+					"replace": -1726795777,
+					"newColor": { "r": 0.5882353, "g": 0.5882353, "b": 0.5882353, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.87058824, "g": 0.4, "b": 0.08627451, "a": 1 },
+				{ "r": 0.98039216, "g": 0.69803923, "b": 0.24313726, "a": 1 },
+				{ "r": 0.5803922, "g": 0.12941177, "b": 0.13333334, "a": 1 },
+				{ "r": 0.6901961, "g": 0.1254902, "b": 0.3882353, "a": 1 }
+			]
+		},
+		{
+			"name": "Body - Secondary",
+			"replace": [
+				{ "replace": -273544449 },
+				{
+					"replace": -696512513,
+					"newColor": { "r": 0.56078434, "g": 0.56078434, "b": 0.56078434, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.96862745, "g": 0.3882353, "b": 0.6313726, "a": 1 },
+				{ "r": 1, "g": 0.16078432, "b": 0.24313726, "a": 1 },
+				{ "r": 0.5921569, "g": 0.39215687, "b": 0.9607843, "a": 1 },
+				{ "r": 0.6392157, "g": 0.5764706, "b": 0.15294118, "a": 1 }
+			]
+		},
+		{
+			"name": "Pants",
+			"replace": [
+				{ "replace": 1683116799 },
+				{
+					"replace": 1345929471,
+					"newColor": { "r": 0.5803922, "g": 0.5803922, "b": 0.5803922, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.56078434, "g": 0.22352941, "b": 0.36862746, "a": 1 },
+				{ "r": 0.42745098, "g": 0.22352941, "b": 0.56078434, "a": 1 },
+				{ "r": 0.32941177, "g": 0.3882353, "b": 0.13725491, "a": 1 },
+				{ "r": 0.45882353, "g": 0.3529412, "b": 0.15686275, "a": 1 },
+				{ "r": 0.54901963, "g": 0.22745098, "b": 0.22745098, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.SimplePatchworkMetaData",
+	"id": { "id": 20 },
+	"name": "Bomb 2",
+	"drawable": { "id": 47 }
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.SimplePatchworkMetaData",
+	"id": { "id": 21 },
+	"name": "Resistor",
+	"drawable": { "id": 48 }
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleLayeredPatchworkMetaData",
+	"id": { "id": 22 },
+	"name": "Cress SP",
+	"shadowY": 1,
+	"idle": [
+		{
+			"drawable": { "id": 53 }
+		}
+	],
+	"hurt": [
+		{
+			"drawable": { "id": 59 }
+		}
+	],
+	"stunStart": [
+		{
+			"drawable": { "id": 69 }
+		}
+	],
+	"stunEnd": [
+		{
+			"drawable": { "id": 89 }
+		}
+	],
+	"cast": [
+		{
+			"drawable": { "id": 58 }
+		}
+	],
+	"attack": [
+		{
+			"drawable": { "id": 56 }
+		}
+	],
+	"extraStates": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FALLING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 90 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 91 }
+				}
+			]
+		}
+	],
+	"castLeadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FALLING" }
 }
 ]

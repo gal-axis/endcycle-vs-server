@@ -5,6 +5,9 @@
 	"vocType": "PROJECTILE",
 	"visible": true,
 	"imageIndex": 150,
+	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Cannon.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Cannon.Description" },
@@ -55,6 +58,9 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 15,
+	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Telepunch.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Telepunch.Description" },
@@ -97,6 +103,9 @@
 	"vocType": "CAST",
 	"visible": true,
 	"imageIndex": 16,
+	"tags": [ "COUNTER", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.HexenZeit.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.HexenZeit.Description" },
@@ -150,6 +159,9 @@
 	"vocType": "PROJECTILE",
 	"visible": true,
 	"imageIndex": 154,
+	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Spreader.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Spreader.Description" },
@@ -201,6 +213,9 @@
 	"vocType": "DAMAGE",
 	"visible": true,
 	"imageIndex": 155,
+	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.RushSword.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.RushSword.Description" },
@@ -211,7 +226,18 @@
 		"ailments": [
 			{ "type": "FLINCHING", "intensity": 0.3 }
 		],
-		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.SwordAttack"
+		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.SwordAttack",
+		"fields": [
+			{ "class": "java.lang.Boolean", "value": true },
+			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Integer", "value": 5 },
+			{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.movers.MoveType", "value": "ANIMATED_MOVING_TILE" },
+			{ "class": "java.lang.Float", "value": 12 },
+			{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.movers.MoveType", "value": "ANIMATED_TILE" },
+			{ "class": "java.lang.Float", "value": 0 }
+		]
 	}
 },
 {
@@ -220,6 +246,9 @@
 	"vocType": "PROJECTILE",
 	"visible": true,
 	"imageIndex": 351,
+	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Chipper.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Chipper.Description" },
@@ -266,6 +295,9 @@
 	"vocType": "DAMAGE",
 	"visible": true,
 	"imageIndex": 157,
+	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "EQUAL" },
+	"minimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Lance.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Lance.Description" },
@@ -310,6 +342,9 @@
 	"vocType": "PROJECTILE",
 	"visible": true,
 	"imageIndex": 151,
+	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Crusher.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Crusher.Description" },
@@ -361,6 +396,9 @@
 	"vocType": "PROJECTILE",
 	"visible": true,
 	"imageIndex": 152,
+	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "CLOSER", "xDistance": 5, "yType": "CLOSER", "yDistance": 2 },
+	"minimalPosition": { "xType": "FURTHER", "xDistance": 1, "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Grenade.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Grenade.Description" },
@@ -397,6 +435,9 @@
 	"vocType": "DAMAGE",
 	"visible": true,
 	"imageIndex": 17,
+	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "EQUAL", "xDistance": 1, "yType": "CLOSER", "yDistance": 2 },
+	"minimalPosition": { "xType": "CLOSER", "xDistance": 2, "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.WideSword.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.WideSword.Description" },
@@ -442,6 +483,9 @@
 	"vocType": "PROJECTILE",
 	"visible": true,
 	"imageIndex": 153,
+	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.FlameBurst.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.FlameBurst.Description" },
@@ -490,18 +534,24 @@
 {
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 10037 },
-	"vocType": "DAMAGE",
+	"role": "EFFECT",
+	"vocType": "CAST",
 	"visible": true,
-	"imageIndex": 158,
+	"imageIndex": 46,
+	"tags": [ "BUFF", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "CLOSER", "yDistance": 2 },
+	"minimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "IGNORE" },
 	"attackShell": {
-		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Flurry.Name" },
-		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Flurry.Description" },
+		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Panic" },
+		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Panic.Description" },
 		"level": 2,
-		"power": 50,
-		"crushPower": 50,
-		"element": "WATER",
-		"targetType": "CLOSEST_ENEMY",
-		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.FlurryAttack",
+		"targetType": "SELF",
+		"ailments": [
+			{ "type": "BLINDED", "duration": 5 },
+			{ "type": "SPEED", "intensity": 1.5, "duration": 1 },
+			{ "type": "FLASH" }
+		],
+		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.status.AilmentInflicterAttack",
 		"fields": [
 			{
 				"class": "com.one2b3.endcycle.engine.graphics.DrawableId",
@@ -524,12 +574,15 @@
 	"vocType": "DAMAGE",
 	"visible": true,
 	"imageIndex": 159,
+	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "CLOSER", "xDistance": 2, "yType": "CLOSER", "yDistance": 2 },
+	"minimalPosition": { "xType": "CLOSER", "xDistance": 2, "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Rebound.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Rebound.Description" },
 		"level": 3,
-		"power": 110,
-		"crushPower": 130,
+		"power": 100,
+		"crushPower": 120,
 		"element": "ELEC",
 		"targetType": "CLOSEST_ENEMY",
 		"ailments": [
@@ -564,6 +617,9 @@
 	"vocType": "DAMAGE",
 	"visible": true,
 	"imageIndex": 156,
+	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "CLOSER", "yDistance": 2 },
+	"minimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.BigSword.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.BigSword.Description" },
@@ -611,6 +667,9 @@
 	"vocType": "CAST",
 	"visible": true,
 	"imageIndex": 162,
+	"tags": [ "COUNTER", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Guard.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Guard.Description" },
@@ -626,33 +685,38 @@
 {
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 10101 },
-	"role": "GUARD",
-	"vocType": "SPAWN",
+	"role": "EFFECT",
+	"vocType": "DAMAGE",
 	"visible": true,
-	"imageIndex": 165,
+	"imageIndex": 47,
+	"tags": [ "ATTACK", "DEBUFF", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "CLOSER", "xDistance": 4, "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
-		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Regen.Name" },
-		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Regen.Description" },
+		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "FreezeRush" },
+		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "FreezeRush.Description" },
 		"level": 2,
-		"targetType": "ALL_ALLIES",
+		"power": 100,
+		"crushPower": 150,
+		"element": "WATER",
+		"targetType": "CLOSEST_ENEMY",
 		"ailments": [
-			{ "type": "HP_CHANGER", "intensity": 15, "duration": 15 },
-			{ "type": "HEAL", "intensity": 25 }
+			{ "type": "FREEZE", "duration": 1.8 }
 		],
-		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ThrowSpawnAttack",
+		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.RushWrapperAttack",
 		"fields": [
-			{ "class": "java.lang.Integer", "value": 1 },
-			{ "class": "java.lang.Integer", "value": 0 },
-			{ "class": "java.lang.Float", "value": 0.1 },
-			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnedEntityType", "value": "PICKUP" },
-			{ "class": "com.one2b3.endcycle.utils.ID", "id": 17 },
-			{ "class": "java.lang.Integer", "value": 1 },
-			{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.Party", "value": "NEUTRAL" },
-			null,
 			{ "class": "java.lang.Boolean", "value": false },
-			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.EntityLimit", "limit": true },
-			null,
-			{ "class": "java.lang.Boolean", "value": false }
+			{ "class": "java.lang.Boolean", "value": true },
+			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Boolean", "value": true },
+			{ "class": "java.lang.Integer", "value": 4 },
+			{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.movers.MoveType", "value": "ANIMATED_MOVING_TILE" },
+			{ "class": "java.lang.Float", "value": 10 },
+			{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.movers.MoveType", "value": "ANIMATED_TILE" },
+			{ "class": "java.lang.Float", "value": 0 },
+			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AttackShellWrapper" },
+			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AttackShellWrapper" },
+			{ "class": "java.lang.Boolean", "value": true }
 		]
 	}
 },
@@ -663,9 +727,12 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 165,
+	"tags": [ "HEAL", "BUFF", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "FURTHER", "xDistance": 2, "yType": "IGNORE" },
+	"minimalPosition": { "xType": "FURTHER", "xDistance": 1, "yType": "IGNORE" },
 	"attackShell": {
-		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.RegenPlus.Name" },
-		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.RegenPlus.Description" },
+		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Regen.Name" },
+		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Regen.Description" },
 		"level": 3,
 		"targetType": "ALL_ALLIES",
 		"ailments": [
@@ -684,41 +751,47 @@
 			null,
 			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.EntityLimit", "limit": true },
-			null,
-			{ "class": "java.lang.Boolean", "value": false }
+			{ "class": "java.lang.String", "value": "Regen" },
+			{ "class": "java.lang.Boolean", "value": true }
 		]
 	}
 },
 {
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 10103 },
-	"role": "GUARD",
 	"vocType": "SPAWN",
 	"visible": true,
-	"imageIndex": 165,
+	"imageIndex": 45,
+	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "FURTHER", "xDistance": 1, "yType": "IGNORE" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
-		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.RegenPlusPlus.Name" },
-		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.RegenPlusPlus.Description" },
+		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Generator" },
+		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Generator.Description" },
 		"level": 4,
+		"power": 70,
+		"crushPower": 80,
+		"element": "ELEC",
 		"targetType": "ALL_ALLIES",
 		"ailments": [
-			{ "type": "HP_CHANGER", "intensity": 22.5, "duration": 15 },
-			{ "type": "HEAL", "intensity": 75 }
+			{ "type": "STUN", "duration": 0.5 }
 		],
-		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ThrowSpawnAttack",
+		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
 		"fields": [
+			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.EntityLimit", "limit": true },
+			{ "class": "java.lang.Boolean", "value": true },
 			{ "class": "java.lang.Integer", "value": 1 },
 			{ "class": "java.lang.Integer", "value": 0 },
-			{ "class": "java.lang.Float", "value": 0.1 },
-			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnedEntityType", "value": "PICKUP" },
-			{ "class": "com.one2b3.endcycle.utils.ID", "id": 17 },
-			{ "class": "java.lang.Integer", "value": 1 },
+			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnedEntityType", "value": "HIT_AMOUNT" },
+			{ "class": "com.one2b3.endcycle.utils.ID", "id": 21 },
+			{ "class": "java.lang.Integer", "value": 6 },
 			{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.Party", "value": "NEUTRAL" },
+			{ "class": "com.one2b3.endcycle.utils.ID", "id": 30 },
 			null,
 			{ "class": "java.lang.Boolean", "value": false },
-			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.EntityLimit", "limit": true },
-			null,
-			{ "class": "java.lang.Boolean", "value": false }
+			{ "class": "java.lang.Boolean", "value": true },
+			{ "class": "java.lang.Float", "value": -1 },
+			{ "class": "java.lang.Boolean", "value": true }
 		]
 	}
 },
@@ -729,6 +802,9 @@
 	"vocType": "CAST",
 	"visible": true,
 	"imageIndex": 163,
+	"tags": [ "BUFF", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Eject.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Eject.Description" },
@@ -747,6 +823,9 @@
 	"vocType": "CAST",
 	"visible": true,
 	"imageIndex": 164,
+	"tags": [ "BUFF", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.EjectPlus.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.EjectPlus.Description" },
@@ -765,6 +844,9 @@
 	"vocType": "CAST",
 	"visible": true,
 	"imageIndex": 169,
+	"tags": [ "HEAL", "COUNTER", "BUFF", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Barrier.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Barrier.Description" },
@@ -780,6 +862,9 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 160,
+	"tags": [ "HEAL", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "FURTHER", "xDistance": 2, "yType": "IGNORE" },
+	"minimalPosition": { "xType": "FURTHER", "xDistance": 1, "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Heal.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Heal.Description" },
@@ -800,39 +885,45 @@
 			null,
 			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.EntityLimit", "limit": true },
-			null,
-			{ "class": "java.lang.Boolean", "value": false }
+			{ "class": "java.lang.String", "value": "Heal" },
+			{ "class": "java.lang.Boolean", "value": true }
 		]
 	}
 },
 {
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 10111 },
-	"role": "GUARD",
 	"vocType": "SPAWN",
 	"visible": true,
-	"imageIndex": 160,
+	"imageIndex": 44,
+	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "FURTHER", "xDistance": 1, "yType": "CLOSER", "yDistance": 2 },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
-		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.HealPlus.Name" },
-		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.HealPlus.Description" },
+		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Artillery" },
+		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Artillery.Description" },
 		"level": 4,
+		"power": 200,
+		"crushPower": 200,
 		"targetType": "SELF",
 		"ailments": [
-			{ "type": "HEAL", "intensity": 400 }
+			{ "type": "FLINCHING" }
 		],
-		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ThrowSpawnAttack",
+		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
 		"fields": [
+			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.EntityLimit" },
+			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "java.lang.Integer", "value": 1 },
 			{ "class": "java.lang.Integer", "value": 0 },
-			{ "class": "java.lang.Float", "value": 0.1 },
-			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnedEntityType", "value": "PICKUP" },
-			{ "class": "com.one2b3.endcycle.utils.ID", "id": 9 },
+			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnedEntityType", "value": "ARTILLERY" },
+			{ "class": "com.one2b3.endcycle.utils.ID", "id": 110 },
 			{ "class": "java.lang.Integer", "value": 1 },
 			{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.Party", "value": "NEUTRAL" },
 			null,
-			{ "class": "java.lang.Boolean", "value": false },
-			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.EntityLimit", "limit": true },
 			null,
+			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Float", "value": 0.6 },
 			{ "class": "java.lang.Boolean", "value": false }
 		]
 	}
@@ -844,6 +935,9 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 168,
+	"tags": [ "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "CLOSER", "xDistance": 4, "yType": "IGNORE" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.NoticeMe.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.NoticeMe.Description" },
@@ -866,7 +960,9 @@
 			null,
 			null,
 			{ "class": "java.lang.Boolean", "value": false },
-			{ "class": "java.lang.Boolean", "value": true }
+			{ "class": "java.lang.Boolean", "value": true },
+			{ "class": "java.lang.Float", "value": -1 },
+			{ "class": "java.lang.Boolean", "value": false }
 		]
 	}
 },
@@ -877,6 +973,9 @@
 	"vocType": "CAST",
 	"visible": true,
 	"imageIndex": 161,
+	"tags": [ "COUNTER", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Blocker.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Blocker.Description" },
@@ -891,6 +990,9 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 179,
+	"tags": [ "HEAL", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Lightmass.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Lightmass.Description" },
@@ -913,7 +1015,9 @@
 			null,
 			null,
 			{ "class": "java.lang.Boolean", "value": false },
-			{ "class": "java.lang.Boolean", "value": true }
+			{ "class": "java.lang.Boolean", "value": true },
+			{ "class": "java.lang.Float", "value": -1 },
+			{ "class": "java.lang.Boolean", "value": false }
 		]
 	}
 },
@@ -924,6 +1028,9 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 178,
+	"tags": [ "BUFF", "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "EQUAL" },
+	"minimalPosition": { "xType": "FURTHER", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Anthem.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Anthem.Description" },
@@ -948,7 +1055,9 @@
 			null,
 			null,
 			{ "class": "java.lang.Boolean", "value": false },
-			{ "class": "java.lang.Boolean", "value": true }
+			{ "class": "java.lang.Boolean", "value": true },
+			{ "class": "java.lang.Float", "value": -1 },
+			{ "class": "java.lang.Boolean", "value": false }
 		]
 	}
 },
@@ -963,6 +1072,9 @@
 	},
 	"imageHeight": 11,
 	"imageWidth": 11,
+	"tags": [ "BUFF", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.FireSoul.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.FireSoul.Description" },
@@ -1002,6 +1114,9 @@
 	},
 	"imageHeight": 11,
 	"imageWidth": 11,
+	"tags": [ "BUFF", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.WaterSoul.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.WaterSoul.Description" },
@@ -1041,6 +1156,9 @@
 	},
 	"imageHeight": 11,
 	"imageWidth": 11,
+	"tags": [ "BUFF", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.ElecSoul.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.ElecSoul.Description" },
@@ -1080,6 +1198,9 @@
 	},
 	"imageHeight": 11,
 	"imageWidth": 11,
+	"tags": [ "BUFF", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.NatureSoul.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.NatureSoul.Description" },
@@ -1115,6 +1236,9 @@
 	"vocType": "PROJECTILE",
 	"visible": true,
 	"imageIndex": 185,
+	"tags": [ "DEBUFF", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.ToxicWave.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.ToxicWave.Description" },
@@ -1168,6 +1292,9 @@
 	"vocType": "PROJECTILE",
 	"visible": true,
 	"imageIndex": 181,
+	"tags": [ "DEBUFF", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.StunWave.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.StunWave.Description" },
@@ -1221,6 +1348,9 @@
 	"vocType": "CAST",
 	"visible": true,
 	"imageIndex": 190,
+	"tags": [ "AREA_DEFENSE", "AREA_OFFENSE", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.PanelGrab.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.PanelGrab.Description" },
@@ -1235,6 +1365,9 @@
 	"vocType": "CAST",
 	"visible": true,
 	"imageIndex": 191,
+	"tags": [ "AREA_DEFENSE", "AREA_OFFENSE", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.AreaGrab.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.AreaGrab.Description" },
@@ -1253,6 +1386,9 @@
 	"vocType": "CAST",
 	"visible": true,
 	"imageIndex": 192,
+	"tags": [ "HEAL", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Compensation.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Compensation.Description" },
@@ -1274,6 +1410,9 @@
 	"vocType": "CAST",
 	"visible": true,
 	"imageIndex": 193,
+	"tags": [ "BUFF", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Surrender.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Surrender.Description" },
@@ -1295,6 +1434,9 @@
 	"vocType": "CAST",
 	"visible": true,
 	"imageIndex": 194,
+	"tags": [ "COUNTER", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Exchange.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Exchange.Description" },
@@ -1327,6 +1469,9 @@
 	"vocType": "CAST",
 	"visible": true,
 	"imageIndex": 195,
+	"tags": [ "AREA_OFFENSE", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "EQUAL", "xDistance": 2, "yType": "EQUAL" },
+	"minimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Singularity.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Singularity.Description" },
@@ -1348,6 +1493,9 @@
 	"vocType": "CAST",
 	"visible": true,
 	"imageIndex": 8,
+	"tags": [ "AREA_OFFENSE", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.DoubleBreak.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.DoubleBreak.Description" },
@@ -1369,6 +1517,9 @@
 	"vocType": "CAST",
 	"visible": true,
 	"imageIndex": 197,
+	"tags": [ "AREA_DEFENSE", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.RepairPlus.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.RepairPlus.Description" },
@@ -1395,6 +1546,9 @@
 	"vocType": "CAST",
 	"visible": true,
 	"imageIndex": 198,
+	"tags": [ "AREA_DEFENSE", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.RepairAll.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.RepairAll.Description" },
@@ -1424,6 +1578,9 @@
 	"vocType": "DAMAGE",
 	"visible": true,
 	"imageIndex": 199,
+	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "EQUAL", "xDistance": 2, "yType": "EQUAL" },
+	"minimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.BoulderDrop.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.BoulderDrop.Description" },
@@ -1448,6 +1605,8 @@
 			null,
 			null,
 			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Float", "value": -1 },
 			{ "class": "java.lang.Boolean", "value": false }
 		]
 	}
@@ -1457,6 +1616,8 @@
 	"id": { "id": 16091 },
 	"vocType": "DAMAGE",
 	"imageIndex": 352,
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Daniel.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Daniel.Description" },
@@ -1503,6 +1664,8 @@
 	"id": { "id": 16092 },
 	"vocType": "SPAWN",
 	"imageIndex": 110,
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.LUKOR.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.LUKOR.Description" },
@@ -1523,6 +1686,8 @@
 			null,
 			null,
 			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Float", "value": -1 },
 			{ "class": "java.lang.Boolean", "value": false }
 		]
 	}
@@ -1532,6 +1697,8 @@
 	"id": { "id": 16093 },
 	"vocType": "DAMAGE",
 	"imageIndex": 104,
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Sumprise.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Sumprise.Description" },
@@ -1554,6 +1721,9 @@
 	"id": { "id": 1 },
 	"vocType": "DAMAGE",
 	"visible": true,
+	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "EQUAL", "xDistance": 3, "yType": "EQUAL" },
+	"minimalPosition": { "xType": "EQUAL", "xDistance": 3, "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.IceSpear.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.IceSpear.Description" },
@@ -1561,7 +1731,7 @@
 		"power": 150,
 		"crushPower": 150,
 		"element": "WATER",
-		"targetType": "CLOSEST_ENEMY",
+		"targetType": "SELF",
 		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.IceSpearAttack",
 		"fields": [
 			{
@@ -1584,6 +1754,9 @@
 	"vocType": "DAMAGE",
 	"visible": true,
 	"imageIndex": 1,
+	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "CLOSER", "xDistance": 4, "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "EQUAL" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.VinePull.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.VinePull.Description" },
@@ -1602,6 +1775,9 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 3,
+	"tags": [ "ATTACK", "HEAL", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Mosquito.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Mosquito.Description" },
@@ -1609,7 +1785,23 @@
 		"power": 200,
 		"crushPower": 150,
 		"element": "NATURE",
-		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.MosquitoAttack"
+		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
+		"fields": [
+			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.EntityLimit" },
+			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Integer", "value": 1 },
+			{ "class": "java.lang.Integer", "value": 0 },
+			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnedEntityType", "value": "MOSQUITO" },
+			{ "class": "com.one2b3.endcycle.utils.ID", "id": 104 },
+			{ "class": "java.lang.Integer", "value": 1 },
+			{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.Party", "value": "NEUTRAL" },
+			null,
+			null,
+			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Float", "value": 0.4 },
+			{ "class": "java.lang.Boolean", "value": false }
+		]
 	}
 },
 {
@@ -1619,6 +1811,9 @@
 	"vocType": "CAST",
 	"visible": true,
 	"imageIndex": 2,
+	"tags": [ "BUFF", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.BuildMetal.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.BuildMetal.Description" },
@@ -1639,6 +1834,9 @@
 	"vocType": "CAST",
 	"visible": true,
 	"imageIndex": 4,
+	"tags": [ "AREA_OFFENSE", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.BuildIce.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.BuildIce.Description" },
@@ -1646,7 +1844,7 @@
 		"panel": "SNOW",
 		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.field.BuildPanelAttack",
 		"fields": [
-			{ "class": "java.lang.Integer", "value": 0 },
+			{ "class": "java.lang.Integer", "value": 1 },
 			{ "class": "java.lang.Integer", "value": 0 },
 			{ "class": "java.lang.Integer", "value": 0 }
 		]
@@ -1659,6 +1857,9 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 5,
+	"tags": [ "DEBUFF", "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "EQUAL", "xDistance": 2, "yType": "EQUAL" },
+	"minimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Mine.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Mine.Description" },
@@ -1682,7 +1883,9 @@
 			null,
 			null,
 			{ "class": "java.lang.Boolean", "value": false },
-			{ "class": "java.lang.Boolean", "value": true }
+			{ "class": "java.lang.Boolean", "value": true },
+			{ "class": "java.lang.Float", "value": -1 },
+			{ "class": "java.lang.Boolean", "value": false }
 		]
 	}
 },
@@ -1693,6 +1896,9 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 6,
+	"tags": [ "AREA_DEFENSE", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.IceCube.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.IceCube.Description" },
@@ -1716,7 +1922,9 @@
 			null,
 			null,
 			{ "class": "java.lang.Boolean", "value": false },
-			{ "class": "java.lang.Boolean", "value": true }
+			{ "class": "java.lang.Boolean", "value": true },
+			{ "class": "java.lang.Float", "value": -1 },
+			{ "class": "java.lang.Boolean", "value": false }
 		]
 	}
 },
@@ -1727,6 +1935,9 @@
 	"vocType": "CAST",
 	"visible": true,
 	"imageIndex": 7,
+	"tags": [ "COUNTER" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Swap.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Swap.Description" },
@@ -1744,6 +1955,9 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 9,
+	"tags": [ "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "EQUAL", "xDistance": 2, "yType": "EQUAL" },
+	"minimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.FireBomb.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.FireBomb.Description" },
@@ -1779,6 +1993,9 @@
 	"vocType": "CAST",
 	"visible": true,
 	"imageIndex": 201,
+	"tags": [ "AREA_OFFENSE", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Neutralize.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Neutralize.Description" },
@@ -1797,6 +2014,9 @@
 	"vocType": "DAMAGE",
 	"visible": true,
 	"imageIndex": 10,
+	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "CLOSER", "xDistance": 2, "yType": "CLOSER", "yDistance": 2 },
+	"minimalPosition": { "xType": "CLOSER", "xDistance": 2, "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Humidity.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Humidity.Description" },
@@ -1840,6 +2060,9 @@
 	"vocType": "PROJECTILE",
 	"visible": true,
 	"imageIndex": 11,
+	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "FURTHER" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.RazorLeaf.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.RazorLeaf.Description" },
@@ -1889,6 +2112,9 @@
 	"vocType": "PROJECTILE",
 	"visible": true,
 	"imageIndex": 12,
+	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Gatling.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Gatling.Description" },
@@ -1939,11 +2165,14 @@
 	"vocType": "DAMAGE",
 	"visible": true,
 	"imageIndex": 18,
+	"tags": [ "ATTACK", "DEBUFF", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "CLOSER", "xDistance": 4, "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "EQUAL" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.ElectroRay.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.ElectroRay.Description" },
 		"level": 1,
-		"power": 70,
+		"power": 60,
 		"crushPower": 80,
 		"element": "ELEC",
 		"ailments": [
@@ -2003,6 +2232,9 @@
 	"vocType": "DAMAGE",
 	"visible": true,
 	"imageIndex": 13,
+	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "EQUAL", "xDistance": 3, "yType": "EQUAL" },
+	"minimalPosition": { "xType": "EQUAL", "xDistance": 3, "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.MeteorShower.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.MeteorShower.Description" },
@@ -2010,7 +2242,7 @@
 		"power": 120,
 		"crushPower": 120,
 		"element": "FIRE",
-		"targetType": "CLOSEST_ENEMY",
+		"targetType": "SELF",
 		"ailments": [
 			{ "type": "FLINCHING", "intensity": 0.3 }
 		],
@@ -2037,6 +2269,8 @@
 	"vocType": "PROJECTILE",
 	"visible": true,
 	"imageIndex": 19,
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.ChargeFlame.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.ChargeFlame.Description" },
@@ -2111,6 +2345,9 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 20,
+	"tags": [ "AREA_DEFENSE", "COUNTER", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.HotMagic.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.HotMagic.Description" },
@@ -2134,6 +2371,8 @@
 			null,
 			null,
 			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Float", "value": -1 },
 			{ "class": "java.lang.Boolean", "value": false }
 		]
 	}
@@ -2144,6 +2383,9 @@
 	"vocType": "PROJECTILE",
 	"visible": true,
 	"imageIndex": 21,
+	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.LogLaunch.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.LogLaunch.Description" },
@@ -2197,6 +2439,9 @@
 	"vocType": "DAMAGE",
 	"visible": true,
 	"imageIndex": 14,
+	"tags": [ "HEAL", "DEBUFF", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "EQUAL", "xDistance": 2, "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.LeechLife.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.LeechLife.Description" },
@@ -2226,6 +2471,9 @@
 	"vocType": "CAST",
 	"visible": true,
 	"imageIndex": 22,
+	"tags": [ "BUFF", "AREA_DEFENSE", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Caffeine.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Caffeine.Description" },
@@ -2243,6 +2491,9 @@
 	"vocType": "PROJECTILE",
 	"visible": true,
 	"imageIndex": 23,
+	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "CLOSER", "xDistance": 4, "yType": "CLOSER", "yDistance": 2 },
+	"minimalPosition": { "xType": "CLOSER", "xDistance": 4, "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.TrndWttr.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.TrndWttr.Description" },
@@ -2291,6 +2542,9 @@
 	"vocType": "DAMAGE",
 	"visible": true,
 	"imageIndex": 24,
+	"tags": [ "ATTACK" ],
+	"optimalPosition": { "xType": "EQUAL", "xDistance": 1, "yType": "EQUAL" },
+	"minimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "EQUAL" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Push.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Push.Description" },
@@ -2329,8 +2583,10 @@
 {
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 22 },
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
-		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "QT-Shot" },
+		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Q.T. Shot" },
 		"power": 100,
 		"crushPower": 200,
 		"ailments": [
@@ -2378,6 +2634,9 @@
 	"vocType": "CAST",
 	"visible": true,
 	"imageIndex": 25,
+	"tags": [ "AREA_DEFENSE", "BUFF", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "FURTHER", "xDistance": 2, "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.BuildGrass.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.BuildGrass.Description" },
@@ -2393,30 +2652,14 @@
 },
 {
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
-	"id": { "id": 24 },
-	"role": "EXECUTION",
-	"vocType": "CAST",
-	"imageIndex": 26,
-	"attackShell": {
-		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.BuildLava.Name" },
-		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.BuildLava.Description" },
-		"level": 1,
-		"panel": "LAVA",
-		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.field.BuildPanelAttack",
-		"fields": [
-			{ "class": "java.lang.Integer", "value": 0 },
-			{ "class": "java.lang.Integer", "value": 0 },
-			{ "class": "java.lang.Integer", "value": 0 }
-		]
-	}
-},
-{
-	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 25 },
 	"role": "EXECUTION",
 	"vocType": "CAST",
 	"visible": true,
 	"imageIndex": 27,
+	"tags": [ "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.BuildMove.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.BuildMove.Description" },
@@ -2436,6 +2679,9 @@
 	"vocType": "DAMAGE",
 	"visible": true,
 	"imageIndex": 28,
+	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "EQUAL", "xDistance": 1, "yType": "CLOSER", "yDistance": 2 },
+	"minimalPosition": { "xType": "CLOSER", "xDistance": 2, "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.PanelSword.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.PanelSword.Description" },
@@ -2476,6 +2722,9 @@
 	"vocType": "DAMAGE",
 	"visible": true,
 	"imageIndex": 29,
+	"tags": [ "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "EQUAL", "xDistance": 1, "yType": "EQUAL" },
+	"minimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "EQUAL" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.SofaGrab.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.SofaGrab.Description" },
@@ -2492,55 +2741,14 @@
 },
 {
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
-	"id": { "id": 28 },
-	"attackShell": {
-		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "WHOOOOO" },
-		"power": 100,
-		"crushPower": 100,
-		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
-		"fields": [
-			{ "class": "com.one2b3.endcycle.utils.bounded.BoundedFloat", "max": 5, "speed": 60 },
-			{
-				"class": "com.one2b3.endcycle.engine.graphics.DrawableId",
-				"drawable": { "id": 55 }
-			},
-			{ "class": "java.lang.Float", "value": 0.1 },
-			{ "class": "java.lang.Float", "value": 0.1 },
-			{ "class": "com.one2b3.endcycle.utils.bounded.BoundedFloat", "max": 0 },
-			{ "class": "com.one2b3.endcycle.utils.bounded.BoundedFloat", "max": 0.1 },
-			{ "class": "java.lang.Boolean", "value": false },
-			{ "class": "java.lang.Boolean", "value": false },
-			{ "class": "java.lang.Float", "value": 0.2 },
-			{ "class": "java.lang.Float", "value": 20 },
-			{ "class": "java.lang.Integer", "value": -1 },
-			{ "class": "java.lang.Float", "value": 1 },
-			{ "class": "java.lang.Float", "value": 1 },
-			{ "class": "java.lang.Integer", "value": 3 },
-			[
-				{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack$Shot", "ySpeed": 100 },
-				{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack$Shot" },
-				{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack$Shot", "ySpeed": -100 }
-			],
-			{ "class": "java.lang.Integer", "value": 12 },
-			{ "class": "java.lang.Integer", "value": 4 },
-			{ "class": "com.one2b3.endcycle.engine.audio.sound.SoundInfo", "sound": "battle/programs/cannon.wav", "volume": 1, "pitch": 1 },
-			{ "class": "java.lang.Float", "value": -1 },
-			{ "class": "java.lang.Boolean", "value": false },
-			{ "class": "java.lang.Float", "value": 0 },
-			{ "class": "java.lang.Float", "value": 14 },
-			{ "class": "java.lang.Boolean", "value": false },
-			{ "class": "java.lang.Boolean", "value": false },
-			{ "class": "java.lang.Boolean", "value": true }
-		]
-	}
-},
-{
-	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 29 },
 	"role": "EXECUTION",
 	"vocType": "PROJECTILE",
 	"visible": true,
 	"imageIndex": 30,
+	"tags": [ "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "CLOSER", "xDistance": 5, "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Explant.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Explant.Description" },
@@ -2577,6 +2785,9 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 31,
+	"tags": [ "BUFF", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.FireGate.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.FireGate.Description" },
@@ -2597,6 +2808,8 @@
 			null,
 			null,
 			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Float", "value": -1 },
 			{ "class": "java.lang.Boolean", "value": false }
 		]
 	}
@@ -2608,6 +2821,8 @@
 	"vocType": "CAST",
 	"visible": true,
 	"imageIndex": 32,
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.GreenPiece.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.GreenPiece.Description" },
@@ -2649,6 +2864,9 @@
 	"vocType": "CAST",
 	"visible": true,
 	"imageIndex": 33,
+	"tags": [ "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.BioHeart.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.BioHeart.Description" },
@@ -2678,6 +2896,8 @@
 {
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 33 },
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Q.T. Assembly" },
 		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.MultiWrapperAttack",
@@ -2726,6 +2946,8 @@
 {
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 34 },
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "QTRay" },
 		"power": 75,
@@ -2765,7 +2987,7 @@
 			{ "class": "java.lang.Integer", "value": 1 },
 			{ "class": "java.lang.Float", "value": 0.25 },
 			{ "class": "java.lang.Float", "value": 0.25 },
-			{ "class": "java.lang.Integer", "value": 9 },
+			{ "class": "java.lang.Integer", "value": 4 },
 			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "java.lang.Float", "value": 0 },
 			{ "class": "java.lang.Boolean", "value": true }
@@ -2779,6 +3001,9 @@
 	"vocType": "CAST",
 	"visible": true,
 	"imageIndex": 34,
+	"tags": [ "COUNTER", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "BackFlash" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "BackFlash.Description" },
@@ -2808,6 +3033,9 @@
 	"vocType": "CAST",
 	"visible": true,
 	"imageIndex": 42,
+	"tags": [ "ATTACK", "DEBUFF", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "CLOSER", "xDistance": 5, "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "FrontFlare" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "FrontFlare.Description" },
@@ -2861,6 +3089,9 @@
 	"vocType": "CAST",
 	"visible": true,
 	"imageIndex": 35,
+	"tags": [ "COUNTER", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "BoulderBack" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "BoulderBack.Description" },
@@ -2888,6 +3119,8 @@
 					null,
 					null,
 					{ "class": "java.lang.Boolean", "value": true },
+					{ "class": "java.lang.Boolean", "value": false },
+					{ "class": "java.lang.Float", "value": -1 },
 					{ "class": "java.lang.Boolean", "value": false }
 				]
 			},
@@ -2908,6 +3141,9 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 36,
+	"tags": [ "COUNTER", "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "CLOSER", "xDistance": 4, "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Companion" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Companion.Description" },
@@ -2930,7 +3166,9 @@
 			null,
 			null,
 			{ "class": "java.lang.Boolean", "value": false },
-			{ "class": "java.lang.Boolean", "value": true }
+			{ "class": "java.lang.Boolean", "value": true },
+			{ "class": "java.lang.Float", "value": -1 },
+			{ "class": "java.lang.Boolean", "value": false }
 		]
 	}
 },
@@ -2941,6 +3179,9 @@
 	"vocType": "DAMAGE",
 	"visible": true,
 	"imageIndex": 37,
+	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "EQUAL" },
+	"minimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "PanelLance" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "PanelLance.Description" },
@@ -2981,6 +3222,9 @@
 	"vocType": "CAST",
 	"visible": true,
 	"imageIndex": 38,
+	"tags": [ "COUNTER", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "ShowStopper" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "ShowStopper.Description" },
@@ -3009,6 +3253,9 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 41,
+	"tags": [ "BUFF", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Bean" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Bean.Description" },
@@ -3042,6 +3289,9 @@
 	"vocType": "CAST",
 	"visible": true,
 	"imageIndex": 40,
+	"tags": [ "COUNTER", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Virus" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Virus.Description" },
@@ -3102,6 +3352,9 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 39,
+	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "EQUAL", "xDistance": 1, "yType": "EQUAL" },
+	"minimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Spikes" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Spikes.Description" },
@@ -3124,6 +3377,8 @@
 			null,
 			null,
 			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Float", "value": -1 },
 			{ "class": "java.lang.Boolean", "value": false }
 		]
 	}
@@ -3135,6 +3390,9 @@
 	"vocType": "PROJECTILE",
 	"visible": true,
 	"imageIndex": 43,
+	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.PanelCannon" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.PanelCannon.Description" },
@@ -3178,6 +3436,179 @@
 			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "java.lang.Boolean", "value": true }
 		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 24 },
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+	"attackShell": {
+		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "ChargeRay" },
+		"gauge": 0,
+		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.HitScanAttack",
+		"fields": [
+			{
+				"class": "com.one2b3.endcycle.engine.graphics.DrawableId",
+				"drawable": { "id": 1260 }
+			},
+			{
+				"class": "com.one2b3.endcycle.engine.graphics.DrawableId",
+				"drawable": { "id": 1264 }
+			},
+			{
+				"class": "com.one2b3.endcycle.engine.graphics.DrawableId",
+				"drawable": { "id": 1262 }
+			},
+			{
+				"class": "com.one2b3.endcycle.engine.graphics.DrawableId",
+				"drawable": { "id": 1265 }
+			},
+			{
+				"class": "com.one2b3.endcycle.engine.graphics.DrawableId",
+				"drawable": { "id": 1263 }
+			},
+			{ "class": "com.one2b3.endcycle.engine.graphics.DrawableId" },
+			{ "class": "java.lang.Float", "value": 0 },
+			{ "class": "java.lang.Float", "value": 20 },
+			{ "class": "com.one2b3.endcycle.engine.audio.sound.SoundInfo", "sound": "battle/programs/ray_start.wav", "volume": 1, "pitch": 1 },
+			{ "class": "com.one2b3.endcycle.engine.audio.sound.SoundInfo", "sound": "battle/programs/ray.wav", "volume": 1, "pitch": 1 },
+			{ "class": "java.lang.Integer", "value": 3 },
+			{ "class": "java.lang.Integer", "value": 1 },
+			{ "class": "java.lang.Float", "value": 0.1 },
+			{ "class": "java.lang.Float", "value": 0.3 },
+			{ "class": "java.lang.Integer", "value": 2 },
+			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Float", "value": 0 },
+			{ "class": "java.lang.Boolean", "value": true }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 28 },
+	"role": "GUARD",
+	"vocType": "DAMAGE",
+	"visible": true,
+	"imageIndex": 48,
+	"tags": [ "AFFECTS_ENEMY", "BUFF" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+	"attackShell": {
+		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "AntiSword" },
+		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "AntiSword.Description" },
+		"level": 1,
+		"power": 50,
+		"crushPower": 100,
+		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AntiAilmentWrapperAttack",
+		"fields": [
+			{
+				"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AttackShellWrapper",
+				"attackName": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.SwordAttack",
+				"fields": [
+					{ "class": "java.lang.Boolean", "value": true },
+					{ "class": "java.lang.Boolean", "value": false },
+					{ "class": "java.lang.Boolean", "value": false },
+					{ "class": "java.lang.Boolean", "value": false },
+					{ "class": "java.lang.Integer", "value": 5 },
+					{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.movers.MoveType", "value": "ANIMATED_MOVING_TILE" },
+					{ "class": "java.lang.Float", "value": 12 },
+					{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.movers.MoveType", "value": "ANIMATED_TILE" },
+					{ "class": "java.lang.Float", "value": 0 }
+				]
+			},
+			null,
+			{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.status.EffectType", "value": "NERF" },
+			{ "class": "java.lang.Boolean", "value": true },
+			{ "class": "java.lang.Boolean", "value": true },
+			{ "class": "java.lang.Boolean", "value": true },
+			{ "class": "java.lang.Boolean", "value": true },
+			{ "class": "java.lang.Float", "value": 1 },
+			{ "class": "java.lang.Float", "value": 0 },
+			{ "class": "java.lang.Float", "value": 0 },
+			{ "class": "java.lang.Integer", "value": 0 },
+			{ "class": "java.lang.Integer", "value": 0 },
+			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AttackShellWrapper" }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 39 },
+	"role": "EXECUTION",
+	"vocType": "DAMAGE",
+	"visible": true,
+	"imageIndex": 49,
+	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "CLOSER", "xDistance": 4, "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+	"attackShell": {
+		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "AdvanceRush" },
+		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "AdvanceRush.Description" },
+		"level": 3,
+		"power": 100,
+		"crushPower": 150,
+		"ailments": [
+			{ "type": "GRAB_PANEL" }
+		],
+		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.RushWrapperAttack",
+		"fields": [
+			{ "class": "java.lang.Boolean", "value": true },
+			{ "class": "java.lang.Boolean", "value": true },
+			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Boolean", "value": true },
+			{ "class": "java.lang.Integer", "value": 3 },
+			{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.movers.MoveType", "value": "ANIMATED_MOVING_TILE" },
+			{ "class": "java.lang.Float", "value": 12 },
+			{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.movers.MoveType", "value": "ANIMATED_TILE" },
+			{ "class": "java.lang.Float", "value": 0 },
+			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AttackShellWrapper" },
+			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AttackShellWrapper" }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 40 },
+	"role": "EFFECT",
+	"vocType": "CAST",
+	"visible": true,
+	"imageIndex": 50,
+	"tags": [ "BUFF", "DEBUFF", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+	"attackShell": {
+		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "AttackForm" },
+		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "AttackForm.Description" },
+		"level": 1,
+		"targetType": "SELF",
+		"ailments": [
+			{ "type": "BERSERK", "intensity": 0.25, "duration": 5 },
+			{ "type": "SPEED", "intensity": -0.25, "duration": 5 }
+		],
+		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.status.AilmentInflicterAttack"
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 41 },
+	"role": "EFFECT",
+	"vocType": "CAST",
+	"visible": true,
+	"imageIndex": 51,
+	"tags": [ "BUFF", "DEBUFF", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+	"attackShell": {
+		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "SpeedForm" },
+		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "SpeedForm.Description" },
+		"level": 1,
+		"targetType": "SELF",
+		"ailments": [
+			{ "type": "SPEED", "intensity": 0.25, "duration": 5 },
+			{ "type": "BERSERK", "intensity": -0.25, "duration": 5 }
+		],
+		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.status.AilmentInflicterAttack"
 	}
 }
 ]

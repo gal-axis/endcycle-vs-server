@@ -1016,16 +1016,6 @@
 },
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 423 },
-	"name": "Resistor Idle",
-	"speed": 0.1,
-	"playMode": "LOOP",
-	"frames": [
-		{ "texturePath": "battle/entities/others/resistor_02.png", "width": 22, "height": 55 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 424 },
 	"name": "Greed Idle",
 	"speed": 0.1,
@@ -2573,9 +2563,9 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1169 },
-	"name": "b_bomb",
+	"name": "Bomb 1",
 	"frames": [
-		{ "texturePath": "battle/vocs/bomb_01.png", "width": -35, "height": 35 }
+		{ "texturePath": "battle/vocs/bomb_01.png", "width": -31, "height": 33 }
 	]
 },
 {
@@ -2655,54 +2645,6 @@
 	"name": "Ailment Pull",
 	"frames": [
 		{ "texturePath": "programs/styles.png", "x": 12, "y": 108, "width": 11, "height": 11 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 1179 },
-	"name": "Ailment Power-1",
-	"frames": [
-		{ "texturePath": "programs/styles.png", "x": 12, "width": 11, "height": 11 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 1180 },
-	"name": "Ailment Power-2",
-	"frames": [
-		{ "texturePath": "programs/styles.png", "x": 24, "width": 11, "height": 11 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 1181 },
-	"name": "Ailment Power-3",
-	"frames": [
-		{ "texturePath": "programs/styles.png", "x": 24, "y": 12, "width": 11, "height": 11 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 1182 },
-	"name": "Ailment Crush-1",
-	"frames": [
-		{ "texturePath": "programs/styles.png", "x": 24, "y": 24, "width": 11, "height": 11 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 1183 },
-	"name": "Ailment Crush-2",
-	"frames": [
-		{ "texturePath": "programs/styles.png", "x": 24, "y": 36, "width": 11, "height": 11 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 1184 },
-	"name": "Ailment Crush-3",
-	"frames": [
-		{ "texturePath": "programs/styles.png", "x": 24, "y": 48, "width": 11, "height": 11 }
 	]
 },
 {
@@ -3039,7 +2981,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1229 },
-	"name": "bo_tri_idle",
+	"name": "Tri Idle",
 	"speed": 0.15,
 	"playMode": "LOOP",
 	"frames": [
@@ -3052,8 +2994,8 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1230 },
-	"name": "bo_tri_cast",
-	"speed": 0.1,
+	"name": "Tri Cast",
+	"speed": 0.06,
 	"frames": [
 		{ "texturePath": "battle/entities/tri-wing/cast.png", "y": 6, "width": 38, "height": 34 },
 		{ "texturePath": "battle/entities/tri-wing/cast.png", "x": 41, "y": 8, "width": 39, "height": 32 },
@@ -3068,7 +3010,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1231 },
-	"name": "bo_tri_flinch",
+	"name": "Tri Flinch",
 	"speed": 0.1,
 	"frames": [
 		{ "texturePath": "battle/entities/tri-wing/flinch.png", "x": 42, "y": 3, "width": 28, "height": 33 }
@@ -3109,7 +3051,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1236 },
-	"name": "bo_tri_move",
+	"name": "Tri Move Forward",
 	"speed": 0.022,
 	"frames": [
 		{ "texturePath": "battle/entities/tri-wing/move.png", "x": 7, "width": 24, "height": 36 },
@@ -3120,7 +3062,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1237 },
-	"name": "bo_tri_move_back",
+	"name": "Tri Move Back",
 	"speed": 0.022,
 	"frames": [
 		{ "texturePath": "battle/entities/tri-wing/move.png", "x": 71, "width": 24, "height": 36 },
@@ -5922,7 +5864,7 @@
 	"id": { "id": 341 },
 	"name": "Halloween Menu",
 	"frames": [
-		{ "texturePath": "battle/backgrounds/halloween_menu.png", "width": 480, "height": 324 }
+		{ "texturePath": "general/menus/halloween_menu.png", "width": 480, "height": 324 }
 	]
 },
 {
@@ -6003,6 +5945,298 @@
 		{ "texturePath": "general/logos/google.png", "y": 131, "width": 130, "height": 40 },
 		{ "texturePath": "general/logos/google.png", "x": 130, "y": 131, "width": 40, "height": 40 },
 		{ "texturePath": "general/logos/google.png", "x": 170, "y": 131, "width": 86, "height": 40 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 5 },
+	"name": "Cress Idle",
+	"speed": 0.08,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/entities/cress/idle.png", "width": 33, "height": 50 },
+		{ "texturePath": "battle/entities/cress/idle.png", "x": 33, "width": 33, "height": 50 },
+		{ "texturePath": "battle/entities/cress/idle.png", "x": 66, "width": 33, "height": 50 },
+		{ "texturePath": "battle/entities/cress/idle.png", "x": 99, "width": 33, "height": 50 },
+		{ "texturePath": "battle/entities/cress/idle.png", "x": 132, "width": 33, "height": 50 },
+		{ "texturePath": "battle/entities/cress/idle.png", "x": 165, "width": 33, "height": 50 },
+		{ "texturePath": "battle/entities/cress/idle.png", "x": 198, "width": 33, "height": 50 },
+		{ "texturePath": "battle/entities/cress/idle.png", "x": 231, "width": 33, "height": 50 },
+		{ "texturePath": "battle/entities/cress/idle.png", "x": 264, "width": 33, "height": 50 },
+		{ "texturePath": "battle/entities/cress/idle.png", "x": 297, "width": 33, "height": 50 },
+		{ "texturePath": "battle/entities/cress/idle.png", "x": 330, "width": 33, "height": 50 },
+		{ "texturePath": "battle/entities/cress/idle.png", "x": 363, "width": 33, "height": 50 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 6 },
+	"name": "Cress Attack",
+	"speed": 0.08,
+	"frames": [
+		{ "texturePath": "battle/entities/cress/attack.png", "x": 47, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack.png", "x": 94, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack.png", "x": 141, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack.png", "x": 188, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack.png", "x": 235, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack.png", "x": 282, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack.png", "x": 329, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack.png", "x": 376, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack.png", "x": 423, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack.png", "x": 470, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack.png", "x": 517, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack.png", "x": 564, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack.png", "x": 611, "width": 47, "height": 47 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 7 },
+	"name": "Cress Cast",
+	"speed": 0.08,
+	"frames": [
+		{ "texturePath": "battle/entities/cress/cast.png", "x": 51, "width": 51, "height": 52 },
+		{ "texturePath": "battle/entities/cress/cast.png", "x": 102, "width": 51, "height": 52 },
+		{ "texturePath": "battle/entities/cress/cast.png", "x": 153, "width": 51, "height": 52 },
+		{ "texturePath": "battle/entities/cress/cast.png", "x": 204, "width": 51, "height": 52 },
+		{ "texturePath": "battle/entities/cress/cast.png", "x": 255, "width": 51, "height": 52 },
+		{ "texturePath": "battle/entities/cress/cast.png", "x": 306, "width": 51, "height": 52 },
+		{ "texturePath": "battle/entities/cress/cast.png", "x": 357, "width": 51, "height": 52 },
+		{ "texturePath": "battle/entities/cress/cast.png", "x": 408, "width": 51, "height": 52 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 43 },
+	"name": "Cress Flinch",
+	"speed": 0.08,
+	"frames": [
+		{ "texturePath": "battle/entities/cress/flinch.png", "width": 39, "height": 46 },
+		{ "texturePath": "battle/entities/cress/flinch.png", "x": 39, "width": 39, "height": 46 },
+		{ "texturePath": "battle/entities/cress/flinch.png", "x": 78, "width": 39, "height": 46 },
+		{ "texturePath": "battle/entities/cress/flinch.png", "x": 117, "width": 39, "height": 46 },
+		{ "texturePath": "battle/entities/cress/flinch.png", "x": 156, "width": 39, "height": 46 },
+		{ "texturePath": "battle/entities/cress/flinch.png", "x": 195, "width": 39, "height": 46 },
+		{ "texturePath": "battle/entities/cress/flinch.png", "x": 234, "width": 39, "height": 46 },
+		{ "texturePath": "battle/entities/cress/flinch.png", "x": 273, "width": 39, "height": 46 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 44 },
+	"name": "Cress Stun Start",
+	"speed": 0.08,
+	"frames": [
+		{ "texturePath": "battle/entities/cress/flinch.png", "width": 39, "height": 46 },
+		{ "texturePath": "battle/entities/cress/flinch.png", "x": 39, "width": 39, "height": 46 },
+		{ "texturePath": "battle/entities/cress/flinch.png", "x": 78, "width": 39, "height": 46 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 45 },
+	"name": "Cress Stun End",
+	"speed": 0.08,
+	"frames": [
+		{ "texturePath": "battle/entities/cress/flinch.png", "x": 117, "width": 39, "height": 46 },
+		{ "texturePath": "battle/entities/cress/flinch.png", "x": 156, "width": 39, "height": 46 },
+		{ "texturePath": "battle/entities/cress/flinch.png", "x": 195, "width": 39, "height": 46 },
+		{ "texturePath": "battle/entities/cress/flinch.png", "x": 234, "width": 39, "height": 46 },
+		{ "texturePath": "battle/entities/cress/flinch.png", "x": 273, "width": 39, "height": 46 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 46 },
+	"name": "Cress Cast Followup",
+	"speed": 0.07,
+	"frames": [
+		{ "texturePath": "battle/entities/cress/cast.png", "x": 459, "width": 51, "height": 52 },
+		{ "texturePath": "battle/entities/cress/cast.png", "x": 510, "width": 51, "height": 52 },
+		{ "texturePath": "battle/entities/cress/cast.png", "x": 561, "width": 51, "height": 52 },
+		{ "texturePath": "battle/entities/cress/cast.png", "x": 612, "width": 51, "height": 52 },
+		{ "texturePath": "battle/entities/cress/cast.png", "x": 663, "width": 51, "height": 52 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 47 },
+	"name": "Bomb 2",
+	"frames": [
+		{ "texturePath": "battle/vocs/bomb_02.png", "width": -27, "height": 7 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 48 },
+	"name": "Resistor",
+	"frames": [
+		{ "texturePath": "battle/entities/others/resistor_02.png", "width": 22, "height": 55 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 49 },
+	"name": "Cress Move",
+	"speed": 0.08,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/entities/cress/attack.png", "x": 94, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack.png", "x": 141, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack.png", "x": 329, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack.png", "x": 376, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack.png", "x": 423, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack.png", "x": 517, "width": 47, "height": 47 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 50 },
+	"name": "Ailment Anti",
+	"frames": [
+		{ "texturePath": "programs/styles.png", "x": 12, "width": 11, "height": 11 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 51 },
+	"name": "Ailment Survivor",
+	"frames": [
+		{ "texturePath": "programs/styles.png", "x": 24, "width": 11, "height": 11 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 52 },
+	"name": "Ailment Panic",
+	"frames": [
+		{ "texturePath": "programs/styles.png", "x": 24, "y": 12, "width": 11, "height": 11 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 53 },
+	"name": "Cress SP Idle",
+	"speed": 0.08,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/entities/cress/idle_sp.png", "width": 33, "height": 50 },
+		{ "texturePath": "battle/entities/cress/idle_sp.png", "x": 33, "width": 33, "height": 50 },
+		{ "texturePath": "battle/entities/cress/idle_sp.png", "x": 66, "width": 33, "height": 50 },
+		{ "texturePath": "battle/entities/cress/idle_sp.png", "x": 99, "width": 33, "height": 50 },
+		{ "texturePath": "battle/entities/cress/idle_sp.png", "x": 132, "width": 33, "height": 50 },
+		{ "texturePath": "battle/entities/cress/idle_sp.png", "x": 165, "width": 33, "height": 50 },
+		{ "texturePath": "battle/entities/cress/idle_sp.png", "x": 198, "width": 33, "height": 50 },
+		{ "texturePath": "battle/entities/cress/idle_sp.png", "x": 231, "width": 33, "height": 50 },
+		{ "texturePath": "battle/entities/cress/idle_sp.png", "x": 264, "width": 33, "height": 50 },
+		{ "texturePath": "battle/entities/cress/idle_sp.png", "x": 297, "width": 33, "height": 50 },
+		{ "texturePath": "battle/entities/cress/idle_sp.png", "x": 330, "width": 33, "height": 50 },
+		{ "texturePath": "battle/entities/cress/idle_sp.png", "x": 363, "width": 33, "height": 50 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 56 },
+	"name": "Cress SP Attack",
+	"speed": 0.08,
+	"frames": [
+		{ "texturePath": "battle/entities/cress/attack_sp.png", "x": 47, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack_sp.png", "x": 94, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack_sp.png", "x": 141, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack_sp.png", "x": 188, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack_sp.png", "x": 235, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack_sp.png", "x": 282, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack_sp.png", "x": 329, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack_sp.png", "x": 376, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack_sp.png", "x": 423, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack_sp.png", "x": 470, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack_sp.png", "x": 517, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack_sp.png", "x": 564, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack_sp.png", "x": 611, "width": 47, "height": 47 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 58 },
+	"name": "Cress SP Cast",
+	"speed": 0.08,
+	"frames": [
+		{ "texturePath": "battle/entities/cress/cast_sp.png", "x": 51, "width": 51, "height": 52 },
+		{ "texturePath": "battle/entities/cress/cast_sp.png", "x": 102, "width": 51, "height": 52 },
+		{ "texturePath": "battle/entities/cress/cast_sp.png", "x": 153, "width": 51, "height": 52 },
+		{ "texturePath": "battle/entities/cress/cast_sp.png", "x": 204, "width": 51, "height": 52 },
+		{ "texturePath": "battle/entities/cress/cast_sp.png", "x": 255, "width": 51, "height": 52 },
+		{ "texturePath": "battle/entities/cress/cast_sp.png", "x": 306, "width": 51, "height": 52 },
+		{ "texturePath": "battle/entities/cress/cast_sp.png", "x": 357, "width": 51, "height": 52 },
+		{ "texturePath": "battle/entities/cress/cast_sp.png", "x": 408, "width": 51, "height": 52 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 59 },
+	"name": "Cress SP Flinch",
+	"speed": 0.08,
+	"frames": [
+		{ "texturePath": "battle/entities/cress/flinch_sp.png", "width": 39, "height": 46 },
+		{ "texturePath": "battle/entities/cress/flinch_sp.png", "x": 39, "width": 39, "height": 46 },
+		{ "texturePath": "battle/entities/cress/flinch_sp.png", "x": 78, "width": 39, "height": 46 },
+		{ "texturePath": "battle/entities/cress/flinch_sp.png", "x": 117, "width": 39, "height": 46 },
+		{ "texturePath": "battle/entities/cress/flinch_sp.png", "x": 156, "width": 39, "height": 46 },
+		{ "texturePath": "battle/entities/cress/flinch_sp.png", "x": 195, "width": 39, "height": 46 },
+		{ "texturePath": "battle/entities/cress/flinch_sp.png", "x": 234, "width": 39, "height": 46 },
+		{ "texturePath": "battle/entities/cress/flinch_sp.png", "x": 273, "width": 39, "height": 46 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 69 },
+	"name": "Cress SP Stun Start",
+	"speed": 0.08,
+	"frames": [
+		{ "texturePath": "battle/entities/cress/flinch_sp.png", "width": 39, "height": 46 },
+		{ "texturePath": "battle/entities/cress/flinch_sp.png", "x": 39, "width": 39, "height": 46 },
+		{ "texturePath": "battle/entities/cress/flinch_sp.png", "x": 78, "width": 39, "height": 46 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 89 },
+	"name": "Cress SP Stun End",
+	"speed": 0.08,
+	"frames": [
+		{ "texturePath": "battle/entities/cress/flinch_sp.png", "x": 117, "width": 39, "height": 46 },
+		{ "texturePath": "battle/entities/cress/flinch_sp.png", "x": 156, "width": 39, "height": 46 },
+		{ "texturePath": "battle/entities/cress/flinch_sp.png", "x": 195, "width": 39, "height": 46 },
+		{ "texturePath": "battle/entities/cress/flinch_sp.png", "x": 234, "width": 39, "height": 46 },
+		{ "texturePath": "battle/entities/cress/flinch_sp.png", "x": 273, "width": 39, "height": 46 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 90 },
+	"name": "Cress SP Cast Followup",
+	"speed": 0.07,
+	"frames": [
+		{ "texturePath": "battle/entities/cress/cast_sp.png", "x": 459, "width": 51, "height": 52 },
+		{ "texturePath": "battle/entities/cress/cast_sp.png", "x": 510, "width": 51, "height": 52 },
+		{ "texturePath": "battle/entities/cress/cast_sp.png", "x": 561, "width": 51, "height": 52 },
+		{ "texturePath": "battle/entities/cress/cast_sp.png", "x": 612, "width": 51, "height": 52 },
+		{ "texturePath": "battle/entities/cress/cast_sp.png", "x": 663, "width": 51, "height": 52 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 91 },
+	"name": "Cress SP Move",
+	"speed": 0.08,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/entities/cress/attack_sp.png", "x": 94, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack_sp.png", "x": 141, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack_sp.png", "x": 329, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack_sp.png", "x": 376, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack_sp.png", "x": 423, "width": 47, "height": 47 },
+		{ "texturePath": "battle/entities/cress/attack_sp.png", "x": 517, "width": 47, "height": 47 }
 	]
 }
 ]

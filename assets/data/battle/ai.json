@@ -1173,7 +1173,7 @@
 	"name": "ElectroCannon",
 	"moves": [
 		{
-			"time": 0.5,
+			"time": 1,
 			"turnType": "TARGET",
 			"scripts": {}
 		},
@@ -1183,7 +1183,7 @@
 			"scripts": {}
 		},
 		{
-			"time": 3,
+			"time": 2.5,
 			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_CLOSE" },
 			"scripts": {}
 		}
@@ -1257,6 +1257,38 @@
 	"moves": [
 		{
 			"voc": { "id": 35 },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 30 },
+	"name": "Generator Idle",
+	"change": [
+		{
+			"onHit": "ELEC",
+			"action": { "id": 31 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 31 },
+	"name": "Generator Ray",
+	"ignoreGauge": true,
+	"resetStatus": true,
+	"change": [
+		{
+			"onHit": "ELEC",
+			"action": { "id": 31 }
+		}
+	],
+	"moves": [
+		{
+			"uses": 1,
+			"resetUses": true,
+			"voc": { "id": 24 },
 			"scripts": {}
 		}
 	]

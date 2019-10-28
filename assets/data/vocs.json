@@ -5,7 +5,7 @@
 	"vocType": "PROJECTILE",
 	"visible": true,
 	"imageIndex": 150,
-	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"tags": [ "ATTACK", "AFFECTS_ENEMY", "SHOOT" ],
 	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
 	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
@@ -58,7 +58,7 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 15,
-	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"tags": [ "ATTACK", "AFFECTS_ENEMY", "SPAWN" ],
 	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
 	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
@@ -159,7 +159,7 @@
 	"vocType": "PROJECTILE",
 	"visible": true,
 	"imageIndex": 154,
-	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"tags": [ "ATTACK", "AFFECTS_ENEMY", "SHOOT" ],
 	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
 	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
@@ -213,7 +213,7 @@
 	"vocType": "DAMAGE",
 	"visible": true,
 	"imageIndex": 155,
-	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"tags": [ "ATTACK", "AFFECTS_ENEMY", "SWORD" ],
 	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
 	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
@@ -246,7 +246,7 @@
 	"vocType": "PROJECTILE",
 	"visible": true,
 	"imageIndex": 351,
-	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"tags": [ "ATTACK", "AFFECTS_ENEMY", "SHOOT" ],
 	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
 	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
@@ -295,7 +295,7 @@
 	"vocType": "DAMAGE",
 	"visible": true,
 	"imageIndex": 157,
-	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY", "SWORD" ],
 	"optimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "EQUAL" },
 	"minimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "IGNORE" },
 	"attackShell": {
@@ -342,7 +342,7 @@
 	"vocType": "PROJECTILE",
 	"visible": true,
 	"imageIndex": 151,
-	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"tags": [ "ATTACK", "AFFECTS_ENEMY", "SHOOT" ],
 	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
 	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
@@ -396,7 +396,7 @@
 	"vocType": "PROJECTILE",
 	"visible": true,
 	"imageIndex": 152,
-	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY", "THROW" ],
 	"optimalPosition": { "xType": "CLOSER", "xDistance": 5, "yType": "CLOSER", "yDistance": 2 },
 	"minimalPosition": { "xType": "FURTHER", "xDistance": 1, "yType": "IGNORE" },
 	"attackShell": {
@@ -435,7 +435,7 @@
 	"vocType": "DAMAGE",
 	"visible": true,
 	"imageIndex": 17,
-	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"tags": [ "ATTACK", "AFFECTS_ENEMY", "SWORD" ],
 	"optimalPosition": { "xType": "EQUAL", "xDistance": 1, "yType": "CLOSER", "yDistance": 2 },
 	"minimalPosition": { "xType": "CLOSER", "xDistance": 2, "yType": "IGNORE" },
 	"attackShell": {
@@ -483,7 +483,7 @@
 	"vocType": "PROJECTILE",
 	"visible": true,
 	"imageIndex": 153,
-	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"tags": [ "ATTACK", "AFFECTS_ENEMY", "SHOOT" ],
 	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
 	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
@@ -617,7 +617,7 @@
 	"vocType": "DAMAGE",
 	"visible": true,
 	"imageIndex": 156,
-	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"tags": [ "ATTACK", "AFFECTS_ENEMY", "SWORD" ],
 	"optimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "CLOSER", "yDistance": 2 },
 	"minimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "IGNORE" },
 	"attackShell": {
@@ -727,7 +727,7 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 165,
-	"tags": [ "HEAL", "BUFF", "AFFECTS_ALLY" ],
+	"tags": [ "HEAL", "BUFF", "AFFECTS_ALLY", "THROW" ],
 	"optimalPosition": { "xType": "FURTHER", "xDistance": 2, "yType": "IGNORE" },
 	"minimalPosition": { "xType": "FURTHER", "xDistance": 1, "yType": "IGNORE" },
 	"attackShell": {
@@ -762,15 +762,15 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 45,
-	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"tags": [ "ATTACK", "AFFECTS_ENEMY", "SPAWN" ],
 	"optimalPosition": { "xType": "FURTHER", "xDistance": 1, "yType": "IGNORE" },
 	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Generator" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Generator.Description" },
 		"level": 4,
-		"power": 70,
-		"crushPower": 80,
+		"power": 80,
+		"crushPower": 90,
 		"element": "ELEC",
 		"targetType": "ALL_ALLIES",
 		"ailments": [
@@ -778,12 +778,12 @@
 		],
 		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
 		"fields": [
-			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.EntityLimit", "limit": true },
+			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.EntityLimit", "limit": true, "countGlobal": true },
 			{ "class": "java.lang.Boolean", "value": true },
 			{ "class": "java.lang.Integer", "value": 1 },
 			{ "class": "java.lang.Integer", "value": 0 },
 			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnedEntityType", "value": "HIT_AMOUNT" },
-			{ "class": "com.one2b3.endcycle.utils.ID", "id": 21 },
+			{ "class": "com.one2b3.endcycle.utils.ID", "id": 23 },
 			{ "class": "java.lang.Integer", "value": 6 },
 			{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.Party", "value": "NEUTRAL" },
 			{ "class": "com.one2b3.endcycle.utils.ID", "id": 30 },
@@ -862,7 +862,7 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 160,
-	"tags": [ "HEAL", "AFFECTS_ALLY" ],
+	"tags": [ "HEAL", "AFFECTS_ALLY", "THROW" ],
 	"optimalPosition": { "xType": "FURTHER", "xDistance": 2, "yType": "IGNORE" },
 	"minimalPosition": { "xType": "FURTHER", "xDistance": 1, "yType": "IGNORE" },
 	"attackShell": {
@@ -896,7 +896,7 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 44,
-	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"tags": [ "ATTACK", "AFFECTS_ENEMY", "SPAWN" ],
 	"optimalPosition": { "xType": "FURTHER", "xDistance": 1, "yType": "CLOSER", "yDistance": 2 },
 	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
@@ -935,7 +935,7 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 168,
-	"tags": [ "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"tags": [ "AREA_OFFENSE", "AFFECTS_ENEMY", "SPAWN" ],
 	"optimalPosition": { "xType": "CLOSER", "xDistance": 4, "yType": "IGNORE" },
 	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
@@ -949,7 +949,7 @@
 		],
 		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
 		"fields": [
-			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.EntityLimit", "limit": true },
+			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.EntityLimit", "limit": true, "countGlobal": true },
 			{ "class": "java.lang.Boolean", "value": true },
 			{ "class": "java.lang.Integer", "value": 1 },
 			{ "class": "java.lang.Integer", "value": 0 },
@@ -990,7 +990,7 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 179,
-	"tags": [ "HEAL", "AFFECTS_ALLY" ],
+	"tags": [ "HEAL", "AFFECTS_ALLY", "SPAWN" ],
 	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
 	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
@@ -1004,7 +1004,7 @@
 		],
 		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
 		"fields": [
-			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.EntityLimit", "limit": true, "team": true },
+			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.EntityLimit", "limit": true, "team": true, "countGlobal": true },
 			{ "class": "java.lang.Boolean", "value": true },
 			{ "class": "java.lang.Integer", "value": 1 },
 			{ "class": "java.lang.Integer", "value": 0 },
@@ -1028,7 +1028,7 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 178,
-	"tags": [ "BUFF", "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"tags": [ "BUFF", "AREA_OFFENSE", "AFFECTS_ENEMY", "SPAWN" ],
 	"optimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "EQUAL" },
 	"minimalPosition": { "xType": "FURTHER", "yType": "IGNORE" },
 	"attackShell": {
@@ -1044,7 +1044,7 @@
 		],
 		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
 		"fields": [
-			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.EntityLimit", "limit": true },
+			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.EntityLimit", "limit": true, "countGlobal": true },
 			{ "class": "java.lang.Boolean", "value": true },
 			{ "class": "java.lang.Integer", "value": 1 },
 			{ "class": "java.lang.Integer", "value": 0 },
@@ -1236,7 +1236,7 @@
 	"vocType": "PROJECTILE",
 	"visible": true,
 	"imageIndex": 185,
-	"tags": [ "DEBUFF", "AFFECTS_ENEMY" ],
+	"tags": [ "DEBUFF", "AFFECTS_ENEMY", "SHOOT" ],
 	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
 	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
@@ -1292,7 +1292,7 @@
 	"vocType": "PROJECTILE",
 	"visible": true,
 	"imageIndex": 181,
-	"tags": [ "DEBUFF", "AFFECTS_ENEMY" ],
+	"tags": [ "DEBUFF", "AFFECTS_ENEMY", "SHOOT" ],
 	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
 	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
@@ -1578,7 +1578,7 @@
 	"vocType": "DAMAGE",
 	"visible": true,
 	"imageIndex": 199,
-	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY", "SPAWN" ],
 	"optimalPosition": { "xType": "EQUAL", "xDistance": 2, "yType": "EQUAL" },
 	"minimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "IGNORE" },
 	"attackShell": {
@@ -1775,7 +1775,7 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 3,
-	"tags": [ "ATTACK", "HEAL", "AFFECTS_ENEMY" ],
+	"tags": [ "ATTACK", "HEAL", "AFFECTS_ENEMY", "SPAWN" ],
 	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
 	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
@@ -1857,7 +1857,7 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 5,
-	"tags": [ "DEBUFF", "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"tags": [ "DEBUFF", "AREA_OFFENSE", "AFFECTS_ENEMY", "SPAWN" ],
 	"optimalPosition": { "xType": "EQUAL", "xDistance": 2, "yType": "EQUAL" },
 	"minimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "IGNORE" },
 	"attackShell": {
@@ -1896,7 +1896,7 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 6,
-	"tags": [ "AREA_DEFENSE", "AFFECTS_ENEMY" ],
+	"tags": [ "AREA_DEFENSE", "AFFECTS_ENEMY", "SPAWN" ],
 	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
 	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
@@ -1911,7 +1911,7 @@
 		],
 		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
 		"fields": [
-			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.EntityLimit", "limit": true, "team": true },
+			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.EntityLimit", "limit": true, "team": true, "countGlobal": true },
 			{ "class": "java.lang.Boolean", "value": true },
 			{ "class": "java.lang.Integer", "value": 1 },
 			{ "class": "java.lang.Integer", "value": 0 },
@@ -1955,7 +1955,7 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 9,
-	"tags": [ "AFFECTS_ENEMY" ],
+	"tags": [ "AFFECTS_ENEMY", "THROW" ],
 	"optimalPosition": { "xType": "EQUAL", "xDistance": 2, "yType": "EQUAL" },
 	"minimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "IGNORE" },
 	"attackShell": {
@@ -1980,7 +1980,7 @@
 			{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.Party", "value": "NEUTRAL" },
 			null,
 			{ "class": "java.lang.Boolean", "value": true },
-			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.EntityLimit", "limit": true, "team": true },
+			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.EntityLimit", "limit": true, "team": true, "countGlobal": true },
 			null,
 			{ "class": "java.lang.Boolean", "value": true }
 		]
@@ -2060,7 +2060,7 @@
 	"vocType": "PROJECTILE",
 	"visible": true,
 	"imageIndex": 11,
-	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"tags": [ "ATTACK", "AFFECTS_ENEMY", "SHOOT" ],
 	"optimalPosition": { "xType": "FURTHER", "yType": "FURTHER" },
 	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
@@ -2112,7 +2112,7 @@
 	"vocType": "PROJECTILE",
 	"visible": true,
 	"imageIndex": 12,
-	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"tags": [ "ATTACK", "AFFECTS_ENEMY", "SHOOT" ],
 	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
 	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
@@ -2269,6 +2269,7 @@
 	"vocType": "PROJECTILE",
 	"visible": true,
 	"imageIndex": 19,
+	"tags": [ "SHOOT" ],
 	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
 	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
@@ -2345,7 +2346,7 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 20,
-	"tags": [ "AREA_DEFENSE", "COUNTER", "AFFECTS_ENEMY" ],
+	"tags": [ "AREA_DEFENSE", "COUNTER", "AFFECTS_ENEMY", "SPAWN" ],
 	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
 	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
@@ -2491,7 +2492,7 @@
 	"vocType": "PROJECTILE",
 	"visible": true,
 	"imageIndex": 23,
-	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY", "THROW" ],
 	"optimalPosition": { "xType": "CLOSER", "xDistance": 4, "yType": "CLOSER", "yDistance": 2 },
 	"minimalPosition": { "xType": "CLOSER", "xDistance": 4, "yType": "IGNORE" },
 	"attackShell": {
@@ -2542,7 +2543,7 @@
 	"vocType": "DAMAGE",
 	"visible": true,
 	"imageIndex": 24,
-	"tags": [ "ATTACK" ],
+	"tags": [ "ATTACK", "SWORD" ],
 	"optimalPosition": { "xType": "EQUAL", "xDistance": 1, "yType": "EQUAL" },
 	"minimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "EQUAL" },
 	"attackShell": {
@@ -2679,7 +2680,7 @@
 	"vocType": "DAMAGE",
 	"visible": true,
 	"imageIndex": 28,
-	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY", "SWORD" ],
 	"optimalPosition": { "xType": "EQUAL", "xDistance": 1, "yType": "CLOSER", "yDistance": 2 },
 	"minimalPosition": { "xType": "CLOSER", "xDistance": 2, "yType": "IGNORE" },
 	"attackShell": {
@@ -2722,7 +2723,7 @@
 	"vocType": "DAMAGE",
 	"visible": true,
 	"imageIndex": 29,
-	"tags": [ "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"tags": [ "AREA_OFFENSE", "AFFECTS_ENEMY", "SWORD" ],
 	"optimalPosition": { "xType": "EQUAL", "xDistance": 1, "yType": "EQUAL" },
 	"minimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "EQUAL" },
 	"attackShell": {
@@ -2746,7 +2747,7 @@
 	"vocType": "PROJECTILE",
 	"visible": true,
 	"imageIndex": 30,
-	"tags": [ "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"tags": [ "AREA_OFFENSE", "AFFECTS_ENEMY", "THROW" ],
 	"optimalPosition": { "xType": "CLOSER", "xDistance": 5, "yType": "EQUAL" },
 	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
@@ -2785,7 +2786,7 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 31,
-	"tags": [ "BUFF", "AFFECTS_ENEMY" ],
+	"tags": [ "BUFF", "AFFECTS_ENEMY", "SPAWN" ],
 	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
 	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
@@ -2797,7 +2798,7 @@
 		"element": "FIRE",
 		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
 		"fields": [
-			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.EntityLimit", "limit": true },
+			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.EntityLimit", "limit": true, "countGlobal": true },
 			{ "class": "java.lang.Boolean", "value": true },
 			{ "class": "java.lang.Integer", "value": 1 },
 			{ "class": "java.lang.Integer", "value": 0 },
@@ -3141,7 +3142,7 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 36,
-	"tags": [ "COUNTER", "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"tags": [ "COUNTER", "AREA_OFFENSE", "AFFECTS_ENEMY", "SPAWN" ],
 	"optimalPosition": { "xType": "CLOSER", "xDistance": 4, "yType": "EQUAL" },
 	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
@@ -3155,7 +3156,7 @@
 		],
 		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
 		"fields": [
-			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.EntityLimit", "limit": true, "team": true, "id": "Companion" },
+			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.EntityLimit", "limit": true, "team": true, "id": "Companion", "countGlobal": true },
 			{ "class": "java.lang.Boolean", "value": true },
 			{ "class": "java.lang.Integer", "value": 1 },
 			{ "class": "java.lang.Integer", "value": 0 },
@@ -3179,7 +3180,7 @@
 	"vocType": "DAMAGE",
 	"visible": true,
 	"imageIndex": 37,
-	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY", "SWORD" ],
 	"optimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "EQUAL" },
 	"minimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "IGNORE" },
 	"attackShell": {
@@ -3253,7 +3254,7 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 41,
-	"tags": [ "BUFF", "AFFECTS_ALLY" ],
+	"tags": [ "BUFF", "AFFECTS_ALLY", "THROW" ],
 	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
 	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
@@ -3352,7 +3353,7 @@
 	"vocType": "SPAWN",
 	"visible": true,
 	"imageIndex": 39,
-	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY", "SPAWN" ],
 	"optimalPosition": { "xType": "EQUAL", "xDistance": 1, "yType": "EQUAL" },
 	"minimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "IGNORE" },
 	"attackShell": {
@@ -3390,7 +3391,7 @@
 	"vocType": "PROJECTILE",
 	"visible": true,
 	"imageIndex": 43,
-	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY", "SHOOT" ],
 	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
 	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
@@ -3445,7 +3446,8 @@
 	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "ChargeRay" },
-		"gauge": 0,
+		"gauge": 0.8,
+		"attackAnimation": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "DEFENDING" },
 		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.HitScanAttack",
 		"fields": [
 			{
@@ -3491,7 +3493,7 @@
 	"vocType": "DAMAGE",
 	"visible": true,
 	"imageIndex": 48,
-	"tags": [ "AFFECTS_ENEMY", "BUFF" ],
+	"tags": [ "AFFECTS_ENEMY", "BUFF", "SWORD" ],
 	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
 	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"attackShell": {

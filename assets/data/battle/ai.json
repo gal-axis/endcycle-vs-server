@@ -1276,7 +1276,6 @@
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 31 },
 	"name": "Generator Ray",
-	"ignoreGauge": true,
 	"resetStatus": true,
 	"change": [
 		{
@@ -1289,6 +1288,13 @@
 			"uses": 1,
 			"resetUses": true,
 			"voc": { "id": 24 },
+			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "DEFENDING" },
+			"scripts": {}
+		},
+		{
+			"uses": 1,
+			"resetUses": true,
+			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
 			"scripts": {}
 		}
 	]

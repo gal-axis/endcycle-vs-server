@@ -1531,12 +1531,6 @@
 	"drawable": { "id": 47 }
 },
 {
-	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.SimplePatchworkMetaData",
-	"id": { "id": 21 },
-	"name": "Resistor",
-	"drawable": { "id": 48 }
-},
-{
 	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleLayeredPatchworkMetaData",
 	"id": { "id": 22 },
 	"name": "Cress SP",
@@ -1594,5 +1588,20 @@
 		}
 	],
 	"castLeadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FALLING" }
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleLayeredPatchworkMetaData",
+	"id": { "id": 23 },
+	"name": "Resistor",
+	"idle": [
+		{
+			"drawable": { "id": 48 }
+		}
+	],
+	"defend": [
+		{
+			"drawable": { "id": 92 }
+		}
+	]
 }
 ]

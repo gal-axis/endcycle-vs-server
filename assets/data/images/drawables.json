@@ -6069,9 +6069,9 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 48 },
-	"name": "Resistor",
+	"name": "Resistor Idle",
 	"frames": [
-		{ "texturePath": "battle/entities/others/resistor_02.png", "width": 22, "height": 55 }
+		{ "texturePath": "battle/entities/others/resistor_02.png", "width": 22, "height": 54 }
 	]
 },
 {
@@ -6237,6 +6237,19 @@
 		{ "texturePath": "battle/entities/cress/attack_sp.png", "x": 376, "width": 47, "height": 47 },
 		{ "texturePath": "battle/entities/cress/attack_sp.png", "x": 423, "width": 47, "height": 47 },
 		{ "texturePath": "battle/entities/cress/attack_sp.png", "x": 517, "width": 47, "height": 47 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 92 },
+	"name": "Resistor Hit",
+	"speed": 0.075,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/entities/others/resistor_02.png", "x": 23, "width": 22, "height": 54 },
+		{ "texturePath": "battle/entities/others/resistor_02.png", "x": 46, "width": 22, "height": 54 },
+		{ "texturePath": "battle/entities/others/resistor_02.png", "x": 23, "width": 22, "height": 54 },
+		{ "texturePath": "battle/entities/others/resistor_02.png", "x": 46, "width": 22, "height": 54 }
 	]
 }
 ]

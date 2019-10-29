@@ -1,6 +1,10 @@
 # EndCycle VS Battle Server
 This is the repository for the EndCycle VS server!
 
+## Windows Setup
+
+To start a server with a minimal GUI on windows, simply start the server.bat file. In order to let others join your server through the internet, make sure that you have the game's ports forwarded (17778, 17779). Also **make sure that you have your external IP set in the server.properties file** (check the Additional Properties section on how to do that).
+
 ## Headless Setup (Debian virtual server)
 
 * First create an debian server on a platform of your choice (DigitalOcean, Vultr, etc.)
@@ -30,11 +34,29 @@ If you want to configure mods for the server, you can do so with the following c
   
 If you installed/uninstalled or enabled/disabled mods, you'll have to restart the server to apply the changes. You can do so by running `systemctl restart EndCycleServer.service`.
 
-### Additional Properties
+## Additional Properties
 
-Add these to the game.properties file under the assets/ folder to enable/disable certain functionality.
+Add these to a file under the assets/ folder called  server.properties to enable/disable certain functionality.
+Here is an example of how you could configure your server:
+```
+Discord.Enabled=true
+Discord.Token=YOUR_DISCORD_TOKEN_HERE
+Discord.Server=5134350573369524244
+Discord.Channel.Battle=1235353747254018058
+Client.UDP=17780
+Client.TCP=17781
+```
 
-#### Discord
+### Connection Properties
+
+| Property | Description
+| --- | --- |
+| Client.UDP | The UDP port of your server (default is 17778) |
+| Client.TCP | The TCP port of your server (default is 17779) |
+| Server.IP | The IP of your server that clients connect through (default is 17779) |
+| Server.Name | The name of your server that will be visible for others in the server browser |
+
+### Discord
 
 To enable a discord bot that will send notifications to your discord server, you first need to create one. Here's instructions on how to do that: https://discordpy.readthedocs.io/en/rewrite/discord.html
 

@@ -1,97 +1,1173 @@
 [
 {
 	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 2 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Fin" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Fin.Desc" }
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 3 },
+	"parent": { "id": 2 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Fin.1" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Fin.1.Desc" },
+	"author": "Fergus Russell",
+	"image": "fin/fin_prototype_1.jpg",
+	"affinity": {
+		"character": {},
+		"amount": 0.1
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 4 },
+	"parent": { "id": 2 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Fin.2" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Fergus Russell",
+	"image": "fin/fin_prototype_2.jpg",
+	"affinity": {
+		"character": {},
+		"amount": 0.3
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 5 },
+	"parent": { "id": 2 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Fin.3" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Fergus Russell",
+	"image": "fin/fin_prototype_color_1.jpg",
+	"affinity": {
+		"character": {},
+		"amount": 0.5
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 6 },
+	"parent": { "id": 2 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Fin.4" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Fergus Russell",
+	"image": "fin/fin_prototype_color_2.jpg",
+	"affinity": {
+		"character": {},
+		"amount": 0.7
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 7 },
+	"parent": { "id": 2 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Fin.5" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Fin.2.Desc" },
+	"author": "Fergus Russell",
+	"image": "fin/fin_prototype_final.jpg",
+	"affinity": {
+		"character": {},
+		"amount": 0.9
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 16 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Spark" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Spark.Desc" }
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 17 },
+	"parent": { "id": 16 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Spark.1" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Fergus Russell",
+	"image": "spark/spark_prototype_1.jpg",
+	"affinity": {
+		"character": { "id": 2 },
+		"amount": 0.2
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 18 },
+	"parent": { "id": 16 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Spark.2" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Fergus Russell",
+	"image": "spark/spark_prototype_2.jpg",
+	"affinity": {
+		"character": { "id": 2 },
+		"amount": 0.4
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 19 },
+	"parent": { "id": 16 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Spark.3" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Fergus Russell",
+	"image": "spark/spark_prototype_colors.jpg",
+	"affinity": {
+		"character": { "id": 2 },
+		"amount": 0.6
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 100 },
+	"parent": { "id": 16 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Spark.4" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Fergus Russell",
+	"image": "spark/spark_prototype_final.jpg",
+	"affinity": {
+		"character": { "id": 2 },
+		"amount": 0.8
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 20 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Rozu" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Rozu.Desc" }
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 21 },
+	"parent": { "id": 20 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Rozu.1" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Rozu.1.Desc" },
+	"author": "Wei Wu",
+	"image": "rozu/rozu_prototype.jpg",
+	"affinity": {
+		"character": { "id": 7 },
+		"amount": 0.2
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 22 },
+	"parent": { "id": 20 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Rozu.2" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Wei Wu, coloring by JJ",
+	"image": "rozu/rozu_color_1.jpg",
+	"affinity": {
+		"character": { "id": 7 },
+		"amount": 0.5
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 23 },
+	"parent": { "id": 20 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Rozu.3" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Wei Wu, coloring by JJ",
+	"image": "rozu/rozu_color_2.jpg",
+	"affinity": {
+		"character": { "id": 7 },
+		"amount": 0.8
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 24 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "ASGrunt" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Agent.Desc" }
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 25 },
+	"parent": { "id": 24 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Agent.1" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Auramiyonautica",
+	"image": "azure/grunt_1.jpg",
+	"affinity": {
+		"character": { "id": 13 },
+		"amount": 0.1
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
 	"id": {},
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Characters" },
-	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Characters.Desc" },
-	"entries": [
-		{
-			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Rozu" },
-			"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Rozu" },
-			"drawable": {
-				"drawable": { "id": 1228 }
-			}
-		},
-		{
-			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Spark" },
-			"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-			"drawable": {
-				"drawable": { "id": 472 }
-			}
-		},
-		{
-			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Fin" },
-			"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-			"drawable": {
-				"drawable": { "id": 400 }
-			}
-		},
-		{
-			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Neo" },
-			"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-			"drawable": {
-				"drawable": { "id": 441 }
-			}
-		},
-		{
-			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "ASGrunt" },
-			"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-			"drawable": {
-				"drawable": { "id": 202 }
-			}
-		},
-		{
-			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Del" },
-			"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-			"drawable": {
-				"drawable": { "id": 26 }
-			}
-		},
-		{
-			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "TriWing" },
-			"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-			"drawable": {
-				"drawable": { "id": 1229 }
-			}
-		}
-	]
+	"parent": { "id": 24 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Agent.2" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Auramiyonautica",
+	"image": "azure/grunt_2.jpg",
+	"affinity": {
+		"character": { "id": 13 },
+		"amount": 0.3
+	}
 },
 {
 	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
 	"id": { "id": 1 },
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "World" },
-	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "World.Desc" },
-	"entries": [
-		{
-			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Noises" },
-			"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Noises.Desc" }
-		}
-	]
+	"parent": { "id": 24 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Agent.3" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Auramiyonautica",
+	"image": "azure/grunt_color_1.jpg",
+	"affinity": {
+		"character": { "id": 13 },
+		"amount": 0.5
+	}
 },
 {
 	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
-	"id": { "id": 2 },
+	"id": { "id": 26 },
+	"parent": { "id": 24 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Agent.4" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Auramiyonautica",
+	"image": "azure/grunt_color_2.jpg",
+	"affinity": {
+		"character": { "id": 13 },
+		"amount": 0.7
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 27 },
+	"parent": { "id": 24 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Agent.5" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Auramiyonautica",
+	"image": "azure/grunt_final.jpg",
+	"affinity": {
+		"character": { "id": 13 },
+		"amount": 0.9
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 28 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Del" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Del.Desc" }
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 29 },
+	"parent": { "id": 28 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Del.1" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Del.1.Desc" },
+	"author": "Auramiyonautica",
+	"image": "del/del_0.jpg",
+	"affinity": {
+		"character": { "id": 9 },
+		"amount": 0.1
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 30 },
+	"parent": { "id": 28 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Del.2" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Del.2.Desc" },
+	"author": "Auramiyonautica",
+	"image": "del/del_1.jpg",
+	"affinity": {
+		"character": { "id": 9 },
+		"amount": 0.25
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 31 },
+	"parent": { "id": 28 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Del.3" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Del.3.Desc" },
+	"author": "Auramiyonautica",
+	"image": "del/del_2.jpg",
+	"affinity": {
+		"character": { "id": 9 },
+		"amount": 0.4
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 32 },
+	"parent": { "id": 28 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Del.4" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Del.4.Desc" },
+	"author": "Auramiyonautica",
+	"image": "del/del_color_1.jpg",
+	"affinity": {
+		"character": { "id": 9 },
+		"amount": 0.55
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 33 },
+	"parent": { "id": 28 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Del.5" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Del.5.Desc" },
+	"author": "Auramiyonautica",
+	"image": "del/del_color_2.jpg",
+	"affinity": {
+		"character": { "id": 9 },
+		"amount": 0.7
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 34 },
+	"parent": { "id": 28 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Del.6" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Del.6.Desc" },
+	"author": "Auramiyonautica",
+	"image": "del/del_final.jpg",
+	"affinity": {
+		"character": { "id": 9 },
+		"amount": 0.85
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 35 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Cress" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Cress.Desc" }
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 36 },
+	"parent": { "id": 35 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Cress.1" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Cress.1.Desc" },
+	"author": "Auramiyonautica",
+	"image": "cress/cress_1.jpg",
+	"affinity": {
+		"character": { "id": 21 },
+		"amount": 0.1
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 37 },
+	"parent": { "id": 35 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Cress.2" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Cress.2.Desc" },
+	"author": "Auramiyonautica",
+	"image": "cress/cress_2.jpg",
+	"affinity": {
+		"character": { "id": 21 },
+		"amount": 0.25
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 38 },
+	"parent": { "id": 35 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Cress.3" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Cress.3.Desc" },
+	"author": "Auramiyonautica",
+	"image": "cress/cress_3.jpg",
+	"affinity": {
+		"character": { "id": 21 },
+		"amount": 0.4
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 39 },
+	"parent": { "id": 35 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Cress.4" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Cress.4.Desc" },
+	"author": "Auramiyonautica",
+	"image": "cress/cress_4.jpg",
+	"affinity": {
+		"character": { "id": 21 },
+		"amount": 0.5
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 40 },
+	"parent": { "id": 35 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Cress.5" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Cress.5.Desc" },
+	"author": "Auramiyonautica",
+	"image": "cress/cress_5.jpg",
+	"affinity": {
+		"character": { "id": 21 },
+		"amount": 0.65
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 41 },
+	"parent": { "id": 35 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Cress.6" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Cress.6.Desc" },
+	"author": "Auramiyonautica",
+	"image": "cress/cress_color_1.jpg",
+	"affinity": {
+		"character": { "id": 21 },
+		"amount": 0.8
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 42 },
+	"parent": { "id": 35 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Cress.7" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Cress.7.Desc" },
+	"author": "Auramiyonautica",
+	"image": "cress/cress_final.jpg",
+	"affinity": {
+		"character": { "id": 21 },
+		"amount": 0.9
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 43 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "CFGrunt" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Punk.Desc" }
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 44 },
+	"parent": { "id": 43 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Punk.1" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Auramiyonautica",
+	"image": "crimson/punk_1.jpg",
+	"affinity": {
+		"character": { "id": 18 },
+		"amount": 0.06
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 45 },
+	"parent": { "id": 43 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Punk.2" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Auramiyonautica",
+	"image": "crimson/punk_2.jpg",
+	"affinity": {
+		"character": { "id": 18 },
+		"amount": 0.18
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 46 },
+	"parent": { "id": 43 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Punk.3" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Auramiyonautica",
+	"image": "crimson/punk_3.jpg",
+	"affinity": {
+		"character": { "id": 18 },
+		"amount": 0.3
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 47 },
+	"parent": { "id": 43 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Punk.4" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Auramiyonautica",
+	"image": "crimson/punk_4.jpg",
+	"affinity": {
+		"character": { "id": 18 },
+		"amount": 0.42
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 48 },
+	"parent": { "id": 43 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Punk.5" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Auramiyonautica",
+	"image": "crimson/punk_5.jpg",
+	"affinity": {
+		"character": { "id": 18 },
+		"amount": 0.54
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 49 },
+	"parent": { "id": 43 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Punk.6" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Auramiyonautica",
+	"image": "crimson/punk_color_1.jpg",
+	"affinity": {
+		"character": { "id": 18 },
+		"amount": 0.66
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 50 },
+	"parent": { "id": 43 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Punk.7" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Auramiyonautica",
+	"image": "crimson/punk_color_2.jpg",
+	"affinity": {
+		"character": { "id": 18 },
+		"amount": 0.78
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 51 },
+	"parent": { "id": 43 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Punk.8" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Punk.8.Desc" },
+	"author": "Auramiyonautica",
+	"image": "crimson/final.jpg",
+	"affinity": {
+		"character": { "id": 18 },
+		"amount": 0.9
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 52 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Noises" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Noises.Desc" }
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 53 },
+	"parent": { "id": 52 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "QT.1" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Felix Santiago Riano",
+	"image": "qt/prototype.jpg",
+	"affinity": {
+		"character": { "id": 1 },
+		"amount": 0.15
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 54 },
+	"parent": { "id": 52 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "QT.2" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Felix Santiago Riano",
+	"image": "qt/alpha.jpg",
+	"affinity": {
+		"character": { "id": 1 },
+		"amount": 0.3
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 55 },
+	"parent": { "id": 52 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "QT.3" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Felix Santiago Riano",
+	"image": "qt/color.jpg",
+	"affinity": {
+		"character": { "id": 1 },
+		"amount": 0.45
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 56 },
+	"parent": { "id": 52 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "QT.4" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Felix Santiago Riano",
+	"image": "qt/modes.jpg",
+	"affinity": {
+		"character": { "id": 1 },
+		"amount": 0.6
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 57 },
+	"parent": { "id": 52 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "QT.5" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Felix Santiago Riano",
+	"image": "qt/faces.jpg",
+	"affinity": {
+		"character": { "id": 1 },
+		"amount": 0.75
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 58 },
+	"parent": { "id": 52 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "QT.6" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Felix Santiago Riano",
+	"image": "qt/faces_2.jpg",
+	"affinity": {
+		"character": { "id": 1 },
+		"amount": 0.9
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 59 },
+	"parent": { "id": 52 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Noises.1" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Noises.1.Desc" },
+	"author": "Felix Santiago Riano",
+	"image": "noises/unused_2_1.jpg",
+	"affinity": {
+		"character": { "id": 3 },
+		"amount": 0.35
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 60 },
+	"parent": { "id": 52 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Noises.2" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Noises.2.Desc" },
+	"author": "Felix Santiago Riano",
+	"image": "noises/unused_2_2.jpg",
+	"affinity": {
+		"character": { "id": 3 },
+		"amount": 0.7
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 61 },
+	"parent": { "id": 52 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Noises.3" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Noises.3.Desc" },
+	"author": "Felix Santiago Riano",
+	"image": "noises/glitch.jpg",
+	"affinity": {
+		"character": { "id": 4 },
+		"amount": 0.35
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 62 },
+	"parent": { "id": 52 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Noises.4" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Noises.4.Desc" },
+	"author": "Felix Santiago Riano",
+	"image": "noises/greed_prototype.jpg",
+	"affinity": {
+		"character": { "id": 4 },
+		"amount": 0.7
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 63 },
+	"parent": { "id": 52 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Noises.5" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Noises.5.Desc" },
+	"author": "Felix Santiago Riano",
+	"image": "noises/unused_3.jpg",
+	"affinity": {
+		"character": { "id": 6 },
+		"amount": 0.35
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 64 },
+	"parent": { "id": 52 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Noises.6" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Noises.6.Desc" },
+	"author": "Felix Santiago Riano",
+	"image": "noises/unused_4.jpg",
+	"affinity": {
+		"character": { "id": 6 },
+		"amount": 0.7
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 65 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Promo" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Promo.Desc" }
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 66 },
+	"parent": { "id": 65 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Promo.1" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Auramiyonautica",
+	"image": "promo/azure.jpg"
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 67 },
+	"parent": { "id": 65 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Promo.2" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Promo.2.Desc" },
+	"author": "Auramiyonautica",
+	"image": "promo/cress.jpg",
+	"affinity": {
+		"character": { "id": 22 },
+		"amount": 0.5
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 68 },
+	"parent": { "id": 65 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Promo.3" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Auramiyonautica",
+	"image": "promo/halloween_contest.jpg"
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 69 },
+	"parent": { "id": 65 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Promo.4" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "JJ",
+	"image": "promo/old.jpg"
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 70 },
+	"parent": { "id": 65 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Promo.5" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Promo.5.Desc" },
+	"author": "Auramiyonautica",
+	"image": "promo/punk.jpg",
+	"affinity": {
+		"character": { "id": 22 },
+		"amount": 0.8
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 71 },
+	"parent": { "id": 65 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Promo.6" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Auramiyonautica",
+	"image": "promo/summer_contest.jpg"
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 72 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "World" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "World.Desc" }
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 73 },
+	"parent": { "id": 72 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "World.1" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Felix Santiago Riano",
+	"image": "voxel_generator_1.jpg",
+	"affinity": {
+		"character": { "id": 5 },
+		"amount": 0.4
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 74 },
+	"parent": { "id": 72 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "World.2" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Fergus Russell",
+	"image": "voxel_generator_2.jpg",
+	"affinity": {
+		"character": { "id": 5 },
+		"amount": 0.8
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 75 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Misc" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Misc.Desc" }
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 76 },
+	"parent": { "id": 75 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Misc.1" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Pia Neundlinger",
+	"image": "logo/1.jpg",
+	"affinity": {
+		"character": { "id": 10 },
+		"amount": 0.2
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 77 },
+	"parent": { "id": 75 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Misc.2" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Pia Neundlinger",
+	"image": "logo/2.jpg",
+	"affinity": {
+		"character": { "id": 10 },
+		"amount": 0.5
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 78 },
+	"parent": { "id": 75 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Misc.3" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Pia Neundlinger",
+	"image": "logo/final.png",
+	"affinity": {
+		"character": { "id": 10 },
+		"amount": 0.8
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 79 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.Desc" }
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 80 },
+	"parent": { "id": 79 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.1" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.1.Desc" },
+	"author": "Fergus Russell",
+	"image": "crimson/grunt_prototype_1.jpg",
+	"affinity": {
+		"character": { "id": 12 },
+		"amount": 0.15
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 81 },
+	"parent": { "id": 79 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.2" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.2.Desc" },
+	"author": "Fergus Russell",
+	"image": "crimson/grunt_prototype_2.jpg",
+	"affinity": {
+		"character": { "id": 12 },
+		"amount": 0.3
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 82 },
+	"parent": { "id": 79 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.3" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.3.Desc" },
+	"author": "Fergus Russell",
+	"image": "crimson/grunt_prototype_color.jpg",
+	"affinity": {
+		"character": { "id": 12 },
+		"amount": 0.45
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 83 },
+	"parent": { "id": 79 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.4" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.4.Desc" },
+	"author": "Fergus Russell",
+	"image": "crimson/grunt_prototype_final.jpg",
+	"affinity": {
+		"character": { "id": 12 },
+		"amount": 0.6
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 84 },
+	"parent": { "id": 79 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.5" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.5.Desc" },
+	"author": "Fergus Russell",
+	"image": "crimson/captain_prototype.jpg",
+	"affinity": {
+		"character": { "id": 12 },
+		"amount": 0.75
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 85 },
+	"parent": { "id": 79 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.6" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.6.Desc" },
+	"author": "Fergus Russell",
+	"image": "crimson/commander_prototype.jpg",
+	"affinity": {
+		"character": { "id": 12 },
+		"amount": 0.9
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 86 },
+	"parent": { "id": 79 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.7" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Fergus Russell",
+	"image": "azure/grunt_prototype.jpg",
+	"affinity": {
+		"character": { "id": 11 },
+		"amount": 0.1
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 87 },
+	"parent": { "id": 79 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.8" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Fergus Russell",
+	"image": "azure/grunt_prototype_color.jpg",
+	"affinity": {
+		"character": { "id": 11 },
+		"amount": 0.2
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 88 },
+	"parent": { "id": 79 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.9" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Fergus Russell",
+	"image": "azure/grunt_prototype_final.jpg",
+	"affinity": {
+		"character": { "id": 11 },
+		"amount": 0.35
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 89 },
+	"parent": { "id": 79 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.10" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.10.Desc" },
+	"author": "Fergus Russell",
+	"image": "azure/commander.jpg",
+	"affinity": {
+		"character": { "id": 11 },
+		"amount": 0.5
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 90 },
+	"parent": { "id": 79 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.11" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.11.Desc" },
+	"author": "Fergus Russell",
+	"image": "azure/commander_color.jpg",
+	"affinity": {
+		"character": { "id": 11 },
+		"amount": 0.65
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 91 },
+	"parent": { "id": 79 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.12" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Fergus Russell",
+	"image": "azure/captain.jpg",
+	"affinity": {
+		"character": { "id": 11 },
+		"amount": 0.75
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 92 },
+	"parent": { "id": 79 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.13" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.13.Desc" },
+	"author": "Fergus Russell",
+	"image": "azure/captain_color.jpg",
+	"affinity": {
+		"character": { "id": 11 },
+		"amount": 0.9
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 93 },
+	"parent": { "id": 79 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.14" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.14.Desc" },
+	"author": "Fergus Russell",
+	"image": "del/del_prototype_1.jpg",
+	"affinity": {
+		"character": { "id": 14 },
+		"amount": 0.2
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 94 },
+	"parent": { "id": 79 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.15" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.15.Desc" },
+	"author": "Fergus Russell",
+	"image": "del/del_prototype_2.jpg",
+	"affinity": {
+		"character": { "id": 14 },
+		"amount": 0.4
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 95 },
+	"parent": { "id": 79 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.16" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.16.Desc" },
+	"author": "Fergus Russell",
+	"image": "del/del_prototype_colors.jpg",
+	"affinity": {
+		"character": { "id": 14 },
+		"amount": 0.6
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 96 },
+	"parent": { "id": 79 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.17" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.17.Desc" },
+	"author": "Fergus Russell",
+	"image": "del/del_prototype_final.jpg",
+	"affinity": {
+		"character": { "id": 14 },
+		"amount": 0.8
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 97 },
+	"parent": { "id": 79 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.18" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Proto.18.Desc" },
+	"author": "Wei Wu",
+	"image": "cress/cress_prototype.jpg",
+	"affinity": {
+		"character": { "id": 22 },
+		"amount": 0.3
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 98 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Crossover" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Crossover.Desc" }
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 99 },
+	"parent": { "id": 98 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Crossover.1" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Crossover.1.Desc" },
+	"author": "Veak",
+	"image": "tri/promo.jpg",
+	"affinity": {
+		"character": { "id": 8 },
+		"amount": 1
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 8 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Fanworks" },
 	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Fanworks.Desc" }
 },
 {
 	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
-	"id": { "id": 3 },
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Development" },
-	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Development.Desc" }
+	"id": { "id": 9 },
+	"parent": { "id": 8 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Rozu.JJ" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "JJ",
+	"image": "fanart/rozu_jj.jpg"
 },
 {
 	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
-	"id": { "id": 4 },
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Secret" },
-	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Secret.Desc" },
-	"unlockCondition": {
-		"campaigns": [
-			{
-				"campaign": { "id": 3 },
-				"perfect": true
-			}
-		]
-	}
+	"id": { "id": 12 },
+	"parent": { "id": 8 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Del.Serapheneid" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Serapheneid",
+	"image": "fanart/del_serapheneid.jpg"
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 14 },
+	"parent": { "id": 8 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Cress.ChibiCheese" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "ChibiCheesePuff",
+	"image": "fanart/cress_chibicheese.jpg"
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 15 },
+	"parent": { "id": 8 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Cast.Soruu" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Soruu",
+	"image": "fanart/cast_soruu.jpg"
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 10 },
+	"parent": { "id": 8 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Rozu.Halloween" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Cristian Semh",
+	"image": "fanart/rozu_cristiansemh.jpg"
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 13 },
+	"parent": { "id": 8 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Cress.Serapheneid" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Serapheneid",
+	"image": "fanart/cress_serapheneid.jpg"
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 11 },
+	"parent": { "id": 8 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Fin.Oran" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Oran",
+	"image": "fanart/fin_oran.jpg"
 }
 ]

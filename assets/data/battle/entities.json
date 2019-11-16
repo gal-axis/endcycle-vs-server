@@ -174,11 +174,7 @@
 	"customizable": true,
 	"skills": [ "Leader" ],
 	"unlockCondition": {
-		"campaigns": [
-			{
-				"campaign": { "id": 4 }
-			}
-		]
+		"onslaughtScore": { "hardWave": 5 }
 	},
 	"customizationUnlockCondition": {
 		"affinities": [
@@ -204,6 +200,7 @@
 	"visible": true,
 	"tease": true,
 	"customizable": true,
+	"onslaughtTheme": { "id": 3 },
 	"skills": [ "Overdrive" ],
 	"unlockCondition": { "battlesFought": 20 },
 	"customizationUnlockCondition": {
@@ -231,6 +228,7 @@
 	"visible": true,
 	"tease": true,
 	"customizable": true,
+	"onslaughtTheme": { "id": 3 },
 	"skills": [ "Backstab" ],
 	"unlockCondition": { "battlesWon": 10 },
 	"customizationUnlockCondition": {
@@ -259,6 +257,7 @@
 	"visible": true,
 	"tease": true,
 	"customizable": true,
+	"onslaughtTheme": { "id": 3 },
 	"skills": [ "Fluid" ],
 	"unlockCondition": { "enemiesCrushed": 10 },
 	"customizationUnlockCondition": {
@@ -286,8 +285,11 @@
 	"visible": true,
 	"tease": true,
 	"customizable": true,
+	"onslaughtTheme": { "id": 3 },
 	"skills": [ "Explosive" ],
-	"unlockCondition": { "selfCrushed": 5 },
+	"unlockCondition": {
+		"onslaughtScore": { "normalWave": 5 }
+	},
 	"customizationUnlockCondition": {
 		"affinities": [
 			{
@@ -313,7 +315,13 @@
 	"customizable": true,
 	"guest": true,
 	"skills": [ "OldSchool", "FuelSystem" ],
-	"unlockCondition": { "enemiesCrushed": 25 }
+	"unlockCondition": {
+		"enemiesCrushed": 25,
+		"onslaughtScore": { "dragonriderWave": 10 }
+	},
+	"customizationUnlockCondition": {
+		"onslaughtScore": { "dragonriderWave": 5 }
+	}
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
@@ -424,12 +432,7 @@
 	"visible": true,
 	"skills": [ "Leader" ],
 	"unlockCondition": {
-		"campaigns": [
-			{
-				"campaign": { "id": 4 },
-				"time": 150
-			}
-		]
+		"onslaughtScore": { "extreme": 10 }
 	}
 },
 {

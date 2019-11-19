@@ -158,6 +158,23 @@
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 23 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "CFGrunt" },
+	"speed": 50,
+	"crush": 150,
+	"tease": true,
+	"nameable": true,
+	"customizable": true,
+	"skills": [ "Determination" ],
+	"customTagAnimations": [
+		{
+			"tag": "THROW",
+			"attack": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 21 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Cress" },
 	"patchworks": [
@@ -432,7 +449,7 @@
 	"visible": true,
 	"skills": [ "Leader" ],
 	"unlockCondition": {
-		"onslaughtScore": { "extreme": 10 }
+		"onslaughtScore": { "extremeWave": 10 }
 	}
 },
 {

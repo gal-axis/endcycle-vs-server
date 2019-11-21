@@ -2,23 +2,18 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": {},
-	"name": "Q.T. Down",
+	"name": "Q.T. Shoot",
 	"ignoreGauge": true,
+	"targetType": "FARTHEST_ENEMY",
 	"change": [
 		{
+			"moves": 3,
 			"onInterrupt": true,
-			"onInaccessiblePanel": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 			"action": { "id": 1 }
 		}
 	],
 	"moves": [
-		{
-			"move": "MOVING_TILE",
-			"yTile": 1,
-			"moveSpeed": 3,
-			"turnType": "TARGET",
-			"scripts": {}
-		},
 		{
 			"time": 0.5,
 			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_OPEN" },
@@ -38,35 +33,24 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 1 },
-	"name": "Q.T. Up",
+	"name": "Q.T. Move",
 	"ignoreGauge": true,
+	"targetType": "FARTHEST_ENEMY",
 	"change": [
 		{
 			"onInterrupt": true,
 			"onInaccessiblePanel": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "EQUAL" },
 			"action": {}
 		}
 	],
 	"moves": [
 		{
-			"move": "MOVING_TILE",
-			"yTile": -1,
+			"move": "ANIMATED_MOVING_TILE",
+			"yTile": 1,
 			"moveSpeed": 3,
+			"moveType": "TOWARD_TARGET",
 			"turnType": "TARGET",
-			"scripts": {}
-		},
-		{
-			"time": 0.5,
-			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_OPEN" },
-			"scripts": {}
-		},
-		{
-			"voc": { "id": 22 },
-			"scripts": {}
-		},
-		{
-			"time": 0.5,
-			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_CLOSE" },
 			"scripts": {}
 		}
 	]
@@ -77,7 +61,11 @@
 	"name": "Bomby Shooter Up",
 	"ignoreGauge": true,
 	"change": [
-		{}
+		{
+			"onInterrupt": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 32 }
+		}
 	],
 	"moves": [
 		{
@@ -145,10 +133,12 @@
 		{
 			"onInterrupt": true,
 			"onInaccessiblePanel": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 			"action": { "id": 6 }
 		},
 		{
 			"moves": 2,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 			"action": { "id": 5 }
 		}
 	],
@@ -173,10 +163,12 @@
 	"name": "Sofa Grabber Phase 2",
 	"ignoreGauge": true,
 	"randomizeMoves": true,
+	"targetType": "SAME_COL_ENEMY",
 	"change": [
 		{
 			"time": 2.5,
 			"moves": 1,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 			"action": { "id": 4 }
 		}
 	],
@@ -185,12 +177,14 @@
 			"time": 1.5,
 			"move": "ANIMATED_TILE",
 			"yTile": -1,
+			"moveType": "TOWARD_TARGET",
 			"scripts": {}
 		},
 		{
 			"time": 1.5,
 			"move": "ANIMATED_TILE",
 			"yTile": 1,
+			"moveType": "TOWARD_TARGET",
 			"scripts": {}
 		}
 	]
@@ -202,6 +196,7 @@
 	"change": [
 		{
 			"moves": 1,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 			"action": { "id": 4 }
 		}
 	],
@@ -242,7 +237,9 @@
 	"change": [
 		{
 			"moves": 3,
+			"onInterrupt": true,
 			"onInaccessiblePanel": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 			"action": { "id": 8 }
 		}
 	],
@@ -275,7 +272,9 @@
 	"change": [
 		{
 			"moves": 3,
+			"onInterrupt": true,
 			"onInaccessiblePanel": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 			"action": { "id": 7 }
 		}
 	],
@@ -337,31 +336,22 @@
 	"id": { "id": 10 },
 	"name": "Greed Attacc",
 	"ignoreGauge": true,
+	"change": [
+		{
+			"targetPosition": { "xType": "IGNORE", "yType": "EQUAL" },
+			"action": { "id": 17 }
+		}
+	],
 	"moves": [
 		{
-			"time": 1,
+			"time": 0.6,
 			"turnType": "TARGET",
 			"voc": { "id": 20 },
 			"scripts": {}
 		},
 		{
-			"time": 1,
+			"time": 1.4,
 			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"yTile": 1,
-			"scripts": {}
-		},
-		{
-			"time": 1,
-			"turnType": "TARGET",
-			"voc": { "id": 20 },
-			"scripts": {}
-		},
-		{
-			"time": 1,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"yTile": -1,
 			"scripts": {}
 		}
 	]
@@ -422,6 +412,7 @@
 	"change": [
 		{
 			"onAlone": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 			"action": { "id": 13 }
 		}
 	],
@@ -467,6 +458,7 @@
 	"change": [
 		{
 			"moves": 1,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 			"action": { "id": 12 }
 		}
 	],
@@ -532,6 +524,7 @@
 		{
 			"onInterrupt": true,
 			"onInaccessiblePanel": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 			"action": { "id": 16 }
 		}
 	],
@@ -570,6 +563,7 @@
 		{
 			"onInterrupt": true,
 			"onInaccessiblePanel": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 			"action": { "id": 15 }
 		}
 	],
@@ -600,66 +594,13 @@
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
-	"id": { "id": 17 },
-	"name": "Greed Attacc Down",
-	"ignoreGauge": true,
-	"change": [
-		{
-			"onInterrupt": true,
-			"onInaccessiblePanel": true,
-			"action": { "id": 18 }
-		}
-	],
-	"moves": [
-		{
-			"time": 1.5,
-			"move": "ANIMATED_TILE",
-			"yTile": -1,
-			"turnType": "TARGET",
-			"scripts": {}
-		},
-		{
-			"time": 1.5,
-			"voc": { "id": 20 },
-			"scripts": {}
-		}
-	]
-},
-{
-	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
-	"id": { "id": 18 },
-	"name": "Greed Attacc Up",
-	"ignoreGauge": true,
-	"change": [
-		{
-			"onInterrupt": true,
-			"onInaccessiblePanel": true,
-			"action": { "id": 17 }
-		}
-	],
-	"moves": [
-		{
-			"time": 1.5,
-			"move": "ANIMATED_TILE",
-			"yTile": 1,
-			"turnType": "TARGET",
-			"scripts": {}
-		},
-		{
-			"time": 1.5,
-			"voc": { "id": 20 },
-			"scripts": {}
-		}
-	]
-},
-{
-	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 19 },
 	"name": "Weak boi fin",
 	"ignoreGauge": true,
 	"change": [
 		{
 			"onInterrupt": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 			"action": { "id": 20 }
 		}
 	],
@@ -729,6 +670,7 @@
 	"change": [
 		{
 			"moves": 1,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 			"action": { "id": 19 }
 		}
 	],
@@ -757,6 +699,7 @@
 	"change": [
 		{
 			"onInaccessiblePanel": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 			"action": { "id": 22 }
 		}
 	],
@@ -778,7 +721,6 @@
 			"time": 1.6,
 			"turnType": "TARGET",
 			"voc": { "id": 10114 },
-			"style": { "id": 13 },
 			"scripts": {}
 		},
 		{
@@ -803,7 +745,6 @@
 		{
 			"time": 0.6,
 			"voc": { "id": 10031 },
-			"style": {},
 			"scripts": {}
 		},
 		{
@@ -865,6 +806,7 @@
 	"change": [
 		{
 			"moves": 2,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 			"action": { "id": 21 }
 		}
 	],
@@ -1268,6 +1210,7 @@
 	"change": [
 		{
 			"onHit": "ELEC",
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 			"action": { "id": 31 }
 		}
 	]
@@ -1280,6 +1223,7 @@
 	"change": [
 		{
 			"onHit": "ELEC",
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 			"action": { "id": 31 }
 		}
 	],
@@ -1295,6 +1239,57 @@
 			"uses": 1,
 			"resetUses": true,
 			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 32 },
+	"name": "Bomby Explode",
+	"change": [
+		{
+			"onEmpty": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 2 }
+		}
+	],
+	"moves": [
+		{
+			"uses": 1,
+			"resetUses": true,
+			"voc": { "id": 48 },
+			"style": { "id": 16 },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 17 },
+	"name": "Greed Run",
+	"change": [
+		{
+			"onInaccessiblePanel": true,
+			"onEmpty": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 10 }
+		}
+	],
+	"moves": [
+		{
+			"uses": 1,
+			"resetUses": true,
+			"time": 0.2,
+			"scripts": {}
+		},
+		{
+			"uses": 1,
+			"resetUses": true,
+			"time": 0.6,
+			"move": "ANIMATED_MOVING_TILE",
+			"yTile": -1,
+			"moveType": "TOWARD_TARGET",
 			"scripts": {}
 		}
 	]

@@ -409,11 +409,13 @@
 	"id": { "id": 151 },
 	"name": "Toxic Wave",
 	"speed": 0.04,
-	"playMode": "LOOP",
+	"playMode": "LOOP_PINGPONG",
 	"frames": [
-		{ "texturePath": "battle/vocs/poison.png", "width": 31, "height": 31 },
-		{ "texturePath": "battle/vocs/poison.png", "x": 33, "width": 31, "height": 31 },
-		{ "texturePath": "battle/vocs/poison.png", "x": 66, "width": 31, "height": 31 }
+		{ "texturePath": "battle/vocs/poison.png", "x": 34, "width": 17, "height": 21 },
+		{ "texturePath": "battle/vocs/poison.png", "x": 51, "width": 17, "height": 21 },
+		{ "texturePath": "battle/vocs/poison.png", "x": 68, "width": 17, "height": 21 },
+		{ "texturePath": "battle/vocs/poison.png", "x": 85, "width": 17, "height": 21 },
+		{ "texturePath": "battle/vocs/poison.png", "x": 102, "width": 17, "height": 21 }
 	]
 },
 {
@@ -1873,22 +1875,6 @@
 	"name": "Mini Panel Enemy",
 	"frames": [
 		{ "texturePath": "general/menus/field_select.png", "x": 89, "width": 7, "height": 7 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 1079 },
-	"name": "Loot Screen",
-	"frames": [
-		{ "texturePath": "battle/hud/loot.png", "width": 200, "height": 81 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 1080 },
-	"name": "Loot Item",
-	"frames": [
-		{ "texturePath": "battle/hud/loot_item.png", "width": 106, "height": 3 }
 	]
 },
 {
@@ -6258,6 +6244,418 @@
 	"name": "Battle BG Multiplayer",
 	"frames": [
 		{ "texturePath": "battle/hud/voc_bg_multiplayer.png", "width": 107, "height": 71 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 94 },
+	"name": "Punk 00 Idle",
+	"speed": 0.075,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/entities/punk/idle_00.png", "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_00.png", "x": 46, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_00.png", "x": 92, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_00.png", "x": 138, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_00.png", "x": 184, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_00.png", "x": 230, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_00.png", "x": 276, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_00.png", "x": 322, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_00.png", "x": 368, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_00.png", "x": 414, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_00.png", "x": 460, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_00.png", "x": 506, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_00.png", "x": 552, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_00.png", "x": 598, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_00.png", "x": 644, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_00.png", "x": 690, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_00.png", "x": 736, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_00.png", "x": 782, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_00.png", "x": 828, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_00.png", "x": 874, "width": 46, "height": 57 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 95 },
+	"name": "Punk 00 Attack",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/punk/attack_00.png", "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_00.png", "x": 69, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_00.png", "x": 138, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_00.png", "x": 207, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_00.png", "x": 276, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_00.png", "x": 345, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_00.png", "x": 414, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_00.png", "x": 483, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_00.png", "x": 552, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_00.png", "x": 621, "width": 69, "height": 54 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 96 },
+	"name": "Punk 00 Cast",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/punk/cast_00.png", "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_00.png", "x": 55, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_00.png", "x": 110, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_00.png", "x": 165, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_00.png", "x": 220, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_00.png", "x": 275, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_00.png", "x": 330, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_00.png", "x": 385, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_00.png", "x": 440, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_00.png", "x": 495, "width": 55, "height": 54 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 97 },
+	"name": "Punk 00 Flinch",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/punk/hurt_00.png", "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_00.png", "x": 51, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_00.png", "x": 102, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_00.png", "x": 153, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_00.png", "x": 204, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_00.png", "x": 255, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_00.png", "x": 306, "width": 51, "height": 56 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 98 },
+	"name": "Punk 00 Stun Start",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/punk/hurt_00.png", "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_00.png", "x": 51, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_00.png", "x": 102, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_00.png", "x": 153, "width": 51, "height": 56 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 104 },
+	"name": "Punk 00 Stun End",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/punk/hurt_00.png", "x": 204, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_00.png", "x": 255, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_00.png", "x": 306, "width": 51, "height": 56 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 105 },
+	"name": "Punk 01 Idle",
+	"speed": 0.075,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/entities/punk/idle_01.png", "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_01.png", "x": 46, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_01.png", "x": 92, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_01.png", "x": 138, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_01.png", "x": 184, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_01.png", "x": 230, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_01.png", "x": 276, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_01.png", "x": 322, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_01.png", "x": 368, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_01.png", "x": 414, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_01.png", "x": 460, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_01.png", "x": 506, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_01.png", "x": 552, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_01.png", "x": 598, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_01.png", "x": 644, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_01.png", "x": 690, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_01.png", "x": 736, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_01.png", "x": 782, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_01.png", "x": 828, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_01.png", "x": 874, "width": 46, "height": 57 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 108 },
+	"name": "Punk 01 Attack",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/punk/attack_01.png", "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_01.png", "x": 69, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_01.png", "x": 138, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_01.png", "x": 207, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_01.png", "x": 276, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_01.png", "x": 345, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_01.png", "x": 414, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_01.png", "x": 483, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_01.png", "x": 552, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_01.png", "x": 621, "width": 69, "height": 54 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 109 },
+	"name": "Punk 01 Cast",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/punk/cast_01.png", "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_01.png", "x": 55, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_01.png", "x": 110, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_01.png", "x": 165, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_01.png", "x": 220, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_01.png", "x": 275, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_01.png", "x": 330, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_01.png", "x": 385, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_01.png", "x": 440, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_01.png", "x": 495, "width": 55, "height": 54 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 130 },
+	"name": "Punk 01 Flinch",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/punk/hurt_01.png", "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_01.png", "x": 51, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_01.png", "x": 102, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_01.png", "x": 153, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_01.png", "x": 204, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_01.png", "x": 255, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_01.png", "x": 306, "width": 51, "height": 56 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 131 },
+	"name": "Punk 01 Stun Start",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/punk/hurt_01.png", "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_01.png", "x": 51, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_01.png", "x": 102, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_01.png", "x": 153, "width": 51, "height": 56 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 133 },
+	"name": "Punk 01 Stun End",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/punk/hurt_01.png", "x": 204, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_01.png", "x": 255, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_01.png", "x": 306, "width": 51, "height": 56 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 134 },
+	"name": "Punk 10 Idle",
+	"speed": 0.075,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/entities/punk/idle_10.png", "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_10.png", "x": 46, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_10.png", "x": 92, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_10.png", "x": 138, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_10.png", "x": 184, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_10.png", "x": 230, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_10.png", "x": 276, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_10.png", "x": 322, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_10.png", "x": 368, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_10.png", "x": 414, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_10.png", "x": 460, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_10.png", "x": 506, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_10.png", "x": 552, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_10.png", "x": 598, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_10.png", "x": 644, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_10.png", "x": 690, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_10.png", "x": 736, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_10.png", "x": 782, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_10.png", "x": 828, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_10.png", "x": 874, "width": 46, "height": 57 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 136 },
+	"name": "Punk 10 Attack",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/punk/attack_10.png", "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_10.png", "x": 69, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_10.png", "x": 138, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_10.png", "x": 207, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_10.png", "x": 276, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_10.png", "x": 345, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_10.png", "x": 414, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_10.png", "x": 483, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_10.png", "x": 552, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_10.png", "x": 621, "width": 69, "height": 54 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 137 },
+	"name": "Punk 10 Cast",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/punk/cast_10.png", "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_10.png", "x": 55, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_10.png", "x": 110, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_10.png", "x": 165, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_10.png", "x": 220, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_10.png", "x": 275, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_10.png", "x": 330, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_10.png", "x": 385, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_10.png", "x": 440, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_10.png", "x": 495, "width": 55, "height": 54 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 138 },
+	"name": "Punk 10 Flinch",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/punk/hurt_10.png", "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_10.png", "x": 51, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_10.png", "x": 102, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_10.png", "x": 153, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_10.png", "x": 204, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_10.png", "x": 255, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_10.png", "x": 306, "width": 51, "height": 56 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 139 },
+	"name": "Punk 10 Stun Start",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/punk/hurt_10.png", "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_10.png", "x": 51, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_10.png", "x": 102, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_10.png", "x": 153, "width": 51, "height": 56 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 140 },
+	"name": "Punk 10 Stun End",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/punk/hurt_10.png", "x": 204, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_10.png", "x": 255, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_10.png", "x": 306, "width": 51, "height": 56 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 141 },
+	"name": "Punk 11 Idle",
+	"speed": 0.075,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/entities/punk/idle_11.png", "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_11.png", "x": 46, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_11.png", "x": 92, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_11.png", "x": 138, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_11.png", "x": 184, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_11.png", "x": 230, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_11.png", "x": 276, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_11.png", "x": 322, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_11.png", "x": 368, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_11.png", "x": 414, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_11.png", "x": 460, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_11.png", "x": 506, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_11.png", "x": 552, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_11.png", "x": 598, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_11.png", "x": 644, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_11.png", "x": 690, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_11.png", "x": 736, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_11.png", "x": 782, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_11.png", "x": 828, "width": 46, "height": 57 },
+		{ "texturePath": "battle/entities/punk/idle_11.png", "x": 874, "width": 46, "height": 57 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 142 },
+	"name": "Punk 11 Attack",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/punk/attack_11.png", "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_11.png", "x": 69, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_11.png", "x": 138, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_11.png", "x": 207, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_11.png", "x": 276, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_11.png", "x": 345, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_11.png", "x": 414, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_11.png", "x": 483, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_11.png", "x": 552, "width": 69, "height": 54 },
+		{ "texturePath": "battle/entities/punk/attack_11.png", "x": 621, "width": 69, "height": 54 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 143 },
+	"name": "Punk 11 Cast",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/punk/cast_11.png", "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_11.png", "x": 55, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_11.png", "x": 110, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_11.png", "x": 165, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_11.png", "x": 220, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_11.png", "x": 275, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_11.png", "x": 330, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_11.png", "x": 385, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_11.png", "x": 440, "width": 55, "height": 54 },
+		{ "texturePath": "battle/entities/punk/cast_11.png", "x": 495, "width": 55, "height": 54 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 154 },
+	"name": "Punk 11 Flinch",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/punk/hurt_11.png", "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_11.png", "x": 51, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_11.png", "x": 102, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_11.png", "x": 153, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_11.png", "x": 204, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_11.png", "x": 255, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_11.png", "x": 306, "width": 51, "height": 56 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 193 },
+	"name": "Punk 11 Stun Start",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/punk/hurt_11.png", "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_11.png", "x": 51, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_11.png", "x": 102, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_11.png", "x": 153, "width": 51, "height": 56 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 198 },
+	"name": "Punk 11 Stun End",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/punk/hurt_11.png", "x": 204, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_11.png", "x": 255, "width": 51, "height": 56 },
+		{ "texturePath": "battle/entities/punk/hurt_11.png", "x": 306, "width": 51, "height": 56 }
 	]
 }
 ]

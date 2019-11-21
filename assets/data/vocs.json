@@ -3612,5 +3612,60 @@
 		],
 		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.status.AilmentInflicterAttack"
 	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 48 },
+	"optimalPosition": { "xType": "CLOSER", "xDistance": 2, "yType": "CLOSER", "yDistance": 2 },
+	"minimalPosition": { "xType": "CLOSER", "xDistance": 2, "yType": "CLOSER", "yDistance": 2 },
+	"attackShell": {
+		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Explosion" },
+		"power": 200,
+		"crushPower": 150,
+		"element": "FIRE",
+		"ailments": [
+			{ "type": "FLINCHING" }
+		],
+		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.MultiWrapperAttack",
+		"fields": [
+			{
+				"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AttackShellWrapper",
+				"attackName": "com.one2b3.endcycle.screens.battle.attacks.data.field.HumidityAttack",
+				"fields": [
+					{
+						"class": "com.one2b3.endcycle.engine.graphics.DrawableId",
+						"drawable": { "id": 1225 }
+					},
+					{
+						"class": "com.one2b3.endcycle.engine.graphics.DrawableId",
+						"drawable": { "id": 1186 }
+					},
+					{ "class": "java.lang.Float", "value": 10 },
+					{ "class": "java.lang.Float", "value": 0.4 },
+					{ "class": "java.lang.Float", "value": 0.15 },
+					[
+						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": -1, "y": -1 },
+						{ "class": "com.one2b3.endcycle.utils.objects.Point", "y": -1 },
+						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": 1, "y": -1 },
+						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": -1 },
+						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": 1 },
+						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": -1, "y": 1 },
+						{ "class": "com.one2b3.endcycle.utils.objects.Point", "y": 1 },
+						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": 1, "y": 1 }
+					]
+				]
+			},
+			[
+				{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AttackShellWrapper", "power": 100, "crushPower": 0, "overrideAilments": true, "target": "SELF", "attackName": "com.one2b3.endcycle.screens.battle.attacks.data.status.DirectAttack" }
+			],
+			{ "class": "java.lang.Float", "value": 10 },
+			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Boolean", "value": true },
+			{ "class": "java.lang.Float", "value": 0.75 },
+			{ "class": "java.lang.Float", "value": 1.25 },
+			{ "class": "java.lang.Boolean", "value": true },
+			{ "class": "java.lang.Boolean", "value": true }
+		]
+	}
 }
 ]

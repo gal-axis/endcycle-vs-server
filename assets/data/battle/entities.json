@@ -160,8 +160,28 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 23 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "CFGrunt" },
+	"patchworks": [
+		{
+			"id": { "id": 21 },
+			"label": "Short Hair / Beard"
+		},
+		{
+			"id": { "id": 24 },
+			"label": "Long Hair / Beard"
+		},
+		{
+			"id": { "id": 25 },
+			"label": "Short Hair / No Beard"
+		},
+		{
+			"id": { "id": 26 },
+			"label": "Long Hair / No Beard"
+		}
+	],
+	"power": 75,
 	"speed": 50,
 	"crush": 150,
+	"visible": true,
 	"tease": true,
 	"nameable": true,
 	"customizable": true,
@@ -171,7 +191,10 @@
 			"tag": "THROW",
 			"attack": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" }
 		}
-	]
+	],
+	"unlockCondition": {
+		"onslaughtScore": { "normalWave": 8 }
+	}
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
@@ -305,7 +328,7 @@
 	"onslaughtTheme": { "id": 3 },
 	"skills": [ "Explosive" ],
 	"unlockCondition": {
-		"onslaughtScore": { "normalWave": 5 }
+		"onslaughtScore": { "easyWave": 5 }
 	},
 	"customizationUnlockCondition": {
 		"affinities": [

@@ -457,13 +457,21 @@
 	"name": "Giant Q.T. Spawn",
 	"change": [
 		{
-			"moves": 1,
+			"onEmpty": true,
 			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 			"action": { "id": 12 }
 		}
 	],
 	"moves": [
 		{
+			"uses": 1,
+			"resetUses": true,
+			"time": 3,
+			"scripts": {}
+		},
+		{
+			"uses": 1,
+			"resetUses": true,
 			"voc": { "id": 33 },
 			"scripts": {}
 		}
@@ -1290,6 +1298,22 @@
 			"move": "ANIMATED_MOVING_TILE",
 			"yTile": -1,
 			"moveType": "TOWARD_TARGET",
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 18 },
+	"name": "Lightmass",
+	"ignoreGauge": true,
+	"moves": [
+		{
+			"time": 3,
+			"scripts": {}
+		},
+		{
+			"voc": { "id": 49 },
 			"scripts": {}
 		}
 	]

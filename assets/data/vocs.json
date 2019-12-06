@@ -1000,7 +1000,7 @@
 		"element": "ELEC",
 		"targetType": "ALL_ALLIES",
 		"ailments": [
-			{ "type": "HEAL", "intensity": 40 }
+			{ "type": "HEAL", "intensity": 100 }
 		],
 		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
 		"fields": [
@@ -1010,14 +1010,14 @@
 			{ "class": "java.lang.Integer", "value": 0 },
 			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnedEntityType", "value": "LIGHTMASS" },
 			{ "class": "com.one2b3.endcycle.utils.ID", "id": 102 },
-			{ "class": "java.lang.Integer", "value": 350 },
+			{ "class": "java.lang.Integer", "value": 300 },
 			{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.Party", "value": "FRIENDLY" },
-			null,
+			{ "class": "com.one2b3.endcycle.utils.ID", "id": 18 },
 			null,
 			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "java.lang.Boolean", "value": true },
 			{ "class": "java.lang.Float", "value": -1 },
-			{ "class": "java.lang.Boolean", "value": false }
+			{ "class": "java.lang.Boolean", "value": true }
 		]
 	}
 },
@@ -1481,7 +1481,7 @@
 		"fields": [
 			{ "class": "com.one2b3.endcycle.screens.battle.field.PanelType", "value": "HOLE" },
 			[
-				{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": 2 }
+				{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": 1 }
 			]
 		]
 	}
@@ -1765,7 +1765,10 @@
 		"crushPower": 150,
 		"element": "NATURE",
 		"targetType": "CLOSEST_ENEMY",
-		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.VinePullAttack"
+		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.VinePullAttack",
+		"fields": [
+			{ "class": "java.lang.Integer", "value": 3 }
+		]
 	}
 },
 {
@@ -2050,7 +2053,9 @@
 				{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": -1, "y": 1 },
 				{ "class": "com.one2b3.endcycle.utils.objects.Point", "y": 1 },
 				{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": 1, "y": 1 }
-			]
+			],
+			null,
+			{ "class": "com.one2b3.endcycle.engine.audio.sound.SoundInfo", "sound": "battle/programs/ice_break.wav", "volume": 1, "pitch": 1 }
 		]
 	}
 },
@@ -2550,7 +2555,7 @@
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Push.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Push.Description" },
 		"gauge": 0,
-		"power": 140,
+		"power": 120,
 		"crushPower": 50,
 		"ailments": [
 			{ "type": "PUSH", "intensity": 1 }
@@ -2879,7 +2884,7 @@
 			{
 				"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AttackShellWrapper",
 				"ailments": [
-					{ "type": "HEAL", "intensity": 150 }
+					{ "type": "HEAL", "intensity": 120 }
 				],
 				"attackName": "com.one2b3.endcycle.screens.battle.attacks.data.status.AilmentInflicterAttack"
 			},
@@ -2913,12 +2918,14 @@
 					{ "class": "java.lang.Integer", "value": 0 },
 					{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnedEntityType", "value": "VITAL" },
 					{ "class": "com.one2b3.endcycle.utils.ID", "id": 76 },
-					{ "class": "java.lang.Integer", "value": 300 },
+					{ "class": "java.lang.Integer", "value": 200 },
 					{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.Party", "value": "FRIENDLY" },
 					{ "class": "com.one2b3.endcycle.utils.ID", "id": 1 },
 					null,
 					{ "class": "java.lang.Boolean", "value": false },
-					{ "class": "java.lang.Boolean", "value": true }
+					{ "class": "java.lang.Boolean", "value": true },
+					{ "class": "java.lang.Float", "value": -1 },
+					{ "class": "java.lang.Boolean", "value": false }
 				]
 			},
 			[
@@ -2932,12 +2939,14 @@
 						{ "class": "java.lang.Integer", "value": 0 },
 						{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnedEntityType", "value": "VITAL" },
 						{ "class": "com.one2b3.endcycle.utils.ID", "id": 76 },
-						{ "class": "java.lang.Integer", "value": 300 },
+						{ "class": "java.lang.Integer", "value": 200 },
 						{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.Party", "value": "FRIENDLY" },
 						{ "class": "com.one2b3.endcycle.utils.ID" },
 						null,
 						{ "class": "java.lang.Boolean", "value": false },
-						{ "class": "java.lang.Boolean", "value": true }
+						{ "class": "java.lang.Boolean", "value": true },
+						{ "class": "java.lang.Float", "value": -1 },
+						{ "class": "java.lang.Boolean", "value": false }
 					]
 				}
 			]
@@ -3042,7 +3051,7 @@
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "FrontFlare.Description" },
 		"level": 3,
 		"power": 50,
-		"crushPower": 350,
+		"crushPower": 300,
 		"ailments": [
 			{ "type": "FLASH" },
 			{ "type": "BLINDED", "duration": 5 }
@@ -3479,7 +3488,7 @@
 			{ "class": "java.lang.Integer", "value": 1 },
 			{ "class": "java.lang.Float", "value": 0.1 },
 			{ "class": "java.lang.Float", "value": 0.3 },
-			{ "class": "java.lang.Integer", "value": 2 },
+			{ "class": "java.lang.Integer", "value": 1 },
 			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "java.lang.Float", "value": 0 },
 			{ "class": "java.lang.Boolean", "value": true }
@@ -3665,6 +3674,41 @@
 			{ "class": "java.lang.Float", "value": 1.25 },
 			{ "class": "java.lang.Boolean", "value": true },
 			{ "class": "java.lang.Boolean", "value": true }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 49 },
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+	"attackShell": {
+		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Lightmass.Attack" },
+		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.field.HumidityAttack",
+		"fields": [
+			{
+				"class": "com.one2b3.endcycle.engine.graphics.DrawableId",
+				"drawable": { "id": 1225 }
+			},
+			{
+				"class": "com.one2b3.endcycle.engine.graphics.DrawableId",
+				"drawable": { "id": 496 }
+			},
+			{ "class": "java.lang.Float", "value": 10 },
+			{ "class": "java.lang.Float", "value": 0.4 },
+			{ "class": "java.lang.Float", "value": 0.15 },
+			[
+				{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": -1, "y": -1 },
+				{ "class": "com.one2b3.endcycle.utils.objects.Point", "y": -1 },
+				{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": 1, "y": -1 },
+				{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": -1 },
+				{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": 1 },
+				{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": -1, "y": 1 },
+				{ "class": "com.one2b3.endcycle.utils.objects.Point", "y": 1 },
+				{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": 1, "y": 1 }
+			],
+			{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.Party", "value": "NEUTRAL" },
+			{ "class": "com.one2b3.endcycle.engine.audio.sound.SoundInfo", "sound": "battle/entity/heal.wav", "volume": 1, "pitch": 1 }
 		]
 	}
 }

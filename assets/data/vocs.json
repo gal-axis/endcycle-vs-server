@@ -677,8 +677,12 @@
 		"targetType": "SELF",
 		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.guarding.GuardAttack",
 		"fields": [
-			{ "class": "java.lang.Boolean", "value": false },
-			{ "class": "com.one2b3.endcycle.utils.bounded.BoundedFloat", "max": 0.2, "val": 0.2 }
+			{
+				"class": "com.one2b3.endcycle.engine.graphics.DrawableId",
+				"drawable": { "id": 62 }
+			},
+			{ "class": "java.lang.Float", "value": 0.2 },
+			{ "class": "java.lang.Float", "value": 2 }
 		]
 	}
 },
@@ -1395,7 +1399,7 @@
 		"level": 1,
 		"targetType": "SELF",
 		"ailments": [
-			{ "type": "HEAL", "intensity": 150 }
+			{ "type": "HEAL", "intensity": 120 }
 		],
 		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.field.AilmentTakeoverAttack",
 		"fields": [
@@ -2325,7 +2329,7 @@
 					{ "class": "java.lang.Boolean", "value": true }
 				]
 			},
-			{ "class": "java.lang.Float", "value": 1.2 },
+			{ "class": "java.lang.Float", "value": 0.8 },
 			{ "class": "com.badlogic.gdx.graphics.Color", "r": 1, "g": 0.6, "b": 0.6, "a": 0.9 },
 			{
 				"class": "com.one2b3.endcycle.engine.graphics.DrawableId",
@@ -2844,12 +2848,14 @@
 					[
 						{ "class": "com.one2b3.endcycle.utils.objects.Point" },
 						{ "class": "com.one2b3.endcycle.utils.objects.Point", "y": 1 },
-						{ "class": "com.one2b3.endcycle.utils.objects.Point", "y": -1 }
+						{ "class": "com.one2b3.endcycle.utils.objects.Point", "y": -1 },
+						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": -1 },
+						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": 1 }
 					],
 					{ "class": "java.lang.Integer", "value": 0 }
 				]
 			},
-			{ "class": "java.lang.Float", "value": 0.6 },
+			{ "class": "java.lang.Float", "value": 0.7 },
 			{ "class": "com.badlogic.gdx.graphics.Color", "r": 0.27058825, "g": 1, "b": 0.38039216, "a": 0.9 },
 			{
 				"class": "com.one2b3.endcycle.engine.graphics.DrawableId",
@@ -3539,6 +3545,9 @@
 			{ "class": "java.lang.Float", "value": 0 },
 			{ "class": "java.lang.Integer", "value": 0 },
 			{ "class": "java.lang.Integer", "value": 0 },
+			{ "class": "java.lang.Float", "value": 0 },
+			{ "class": "java.lang.Float", "value": 0 },
+			{ "class": "java.lang.Float", "value": 0 },
 			{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AttackShellWrapper" }
 		]
 	}

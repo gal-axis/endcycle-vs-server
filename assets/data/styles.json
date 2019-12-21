@@ -776,5 +776,66 @@
 			}
 		}
 	]
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.styles.VocStyle",
+	"id": { "id": 42 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.Invis" },
+	"prefix": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.Invis" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.Invis.Desc" },
+	"level": 1,
+	"drawable": {
+		"drawable": { "id": 361 }
+	},
+	"modifications": [
+		{
+			"class": "com.one2b3.endcycle.features.vocs.modifications.types.WrapperModification",
+			"before": {
+				"power": 0,
+				"crushPower": 0,
+				"element": "NORMAL",
+				"overrideAilments": true,
+				"ailments": [
+					{ "type": "INVISIBLE", "duration": 0.5 }
+				],
+				"target": "SELF",
+				"attackName": "com.one2b3.endcycle.screens.battle.attacks.data.status.DirectAttack"
+			},
+			"wrapper": { "attackName": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.EmptyAttack" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.styles.VocStyle",
+	"id": { "id": 43 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.Guard" },
+	"prefix": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.Guard" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.Guard.Desc" },
+	"level": 1,
+	"drawable": {
+		"drawable": { "id": 362 }
+	},
+	"modifications": [
+		{
+			"class": "com.one2b3.endcycle.features.vocs.modifications.types.WrapperModification",
+			"before": {
+				"power": 0,
+				"crushPower": 0,
+				"element": "NORMAL",
+				"overrideAilments": true,
+				"attackName": "com.one2b3.endcycle.screens.battle.attacks.data.guarding.GuardAttack",
+				"fields": [
+					{
+						"class": "com.one2b3.endcycle.engine.graphics.DrawableId",
+						"drawable": { "id": 62 }
+					},
+					{ "class": "java.lang.Float", "value": 0.3 },
+					{ "class": "java.lang.Float", "value": 2 },
+					{ "class": "java.lang.Boolean", "value": false }
+				]
+			},
+			"wrapper": { "attackName": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.EmptyAttack" }
+		}
+	]
 }
 ]

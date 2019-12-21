@@ -211,6 +211,7 @@
 	"lines": [
 		{
 			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Rozu.3.1" }
 		}
 	],
@@ -260,22 +261,27 @@
 	"lines": [
 		{
 			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Rozu.4.1" }
 		},
 		{
 			"entity": "grunt",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Rozu.4.2" }
 		},
 		{
 			"entity": "player",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Rozu.4.3" }
 		},
 		{
 			"entity": "grunt",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Rozu.4.4" }
 		},
 		{
 			"entity": "grunt",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Rozu.4.5" }
 		}
 	],
@@ -2046,7 +2052,14 @@
 	"startScripts": {},
 	"endScripts": {
 		"scripts": [
-			{ "script": "com.one2b3.endcycle.features.scripts.battle.CampaignStartBattleScript" }
+			{ "script": "com.one2b3.endcycle.features.scripts.battle.CampaignStartBattleScript" },
+			{
+				"script": "com.one2b3.endcycle.features.scripts.battle.ShakeEntityScript",
+				"fields": [
+					{ "class": "java.lang.String", "value": "fin" },
+					{ "class": "java.lang.Float", "value": 1 }
+				]
+			}
 		]
 	}
 },

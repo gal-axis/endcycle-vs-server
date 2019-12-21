@@ -71,16 +71,8 @@
 },
 {
 	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-	"id": { "id": 75 },
-	"name": "Cannon 01",
-	"idle": {
-		"drawable": { "id": 405 }
-	}
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
 	"id": { "id": 76 },
-	"name": "Cannon 02",
+	"name": "Cannon",
 	"idle": {
 		"drawable": { "id": 406 }
 	},
@@ -128,25 +120,17 @@
 			"name": "Color",
 			"replace": [
 				{
-					"replace": -1238151937,
-					"newColor": { "r": 0.72156864, "g": 0.72156864, "b": 0.72156864, "a": 1 }
+					"replace": -1086046977,
+					"newColor": { "r": 0.7490196, "g": 0.7490196, "b": 0.7490196, "a": 1 }
 				},
 				{
-					"replace": -915839489,
-					"newColor": { "r": 0.8901961, "g": 0.8901961, "b": 0.8901961, "a": 1 }
-				},
-				{
-					"replace": -1827262721,
-					"newColor": { "r": 0.52156866, "g": 0.52156866, "b": 0.52156866, "a": 1 }
-				},
-				{
-					"replace": 2066888959,
-					"newColor": { "r": 0.3882353, "g": 0.3882353, "b": 0.3882353, "a": 1 }
+					"replace": -1876806657,
+					"newColor": { "r": 0.56078434, "g": 0.56078434, "b": 0.56078434, "a": 1 }
 				}
 			],
 			"colors": [
 				{ "r": 0.8392157, "g": 0.30980393, "b": 0.6627451, "a": 1 },
-				{ "r": 0.8901961, "g": 0.7019608, "b": 0.23137255, "a": 1 },
+				{ "r": 0.92941177, "g": 0.70980394, "b": 0.15686275, "a": 1 },
 				{ "r": 0.3019608, "g": 0.70980394, "b": 0.2, "a": 1 },
 				{ "r": 0.2, "g": 0.65882355, "b": 0.70980394, "a": 1 },
 				{ "r": 0.42745098, "g": 0.27450982, "b": 0.56078434, "a": 1 },
@@ -191,6 +175,15 @@
 			"images": [
 				{
 					"drawable": { "id": 421 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 377 }
 				}
 			]
 		}
@@ -524,30 +517,6 @@
 			]
 		}
 	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-	"id": { "id": 94 },
-	"name": "Alexsander1",
-	"idle": {
-		"drawable": { "id": 478 }
-	}
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-	"id": { "id": 95 },
-	"name": "Alexsander2",
-	"idle": {
-		"drawable": { "id": 479 }
-	}
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-	"id": { "id": 96 },
-	"name": "Alexsander3",
-	"idle": {
-		"drawable": { "id": 480 }
-	}
 },
 {
 	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
@@ -1042,6 +1011,7 @@
 			"drawable": { "id": 222 }
 		}
 	],
+	"defendLeadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
 	"customizables": [
 		{
 			"name": "Hair",
@@ -1247,6 +1217,7 @@
 			"drawable": { "id": 230 }
 		}
 	],
+	"defendLeadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
 	"customizables": [
 		{
 			"name": "Hair",
@@ -2188,6 +2159,228 @@
 				{ "r": 0.5686275, "g": 0.2, "b": 0.19215687, "a": 1 },
 				{ "r": 0.16862746, "g": 0.09803922, "b": 0.08235294, "a": 1 },
 				{ "r": 0.32156864, "g": 0.18039216, "b": 0.09803922, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleLayeredPatchworkMetaData",
+	"id": { "id": 27 },
+	"name": "Alexsander",
+	"idle": [
+		{
+			"drawable": { "id": 357 }
+		}
+	],
+	"hurt": [
+		{
+			"drawable": { "id": 257 }
+		}
+	],
+	"stunStart": [
+		{
+			"drawable": { "id": 347 }
+		}
+	],
+	"stunEnd": [
+		{
+			"drawable": { "id": 348 }
+		}
+	],
+	"cast": [
+		{
+			"drawable": { "id": 358 }
+		}
+	],
+	"attack": [
+		{
+			"drawable": { "id": 121 }
+		}
+	],
+	"extraStates": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_OPEN" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 349 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_CLOSE" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 350 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 351 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-FLINCH" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 353 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-STUN_START" },
+			"images": [
+				{
+					"drawable": { "id": 354 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-STUN_END" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 355 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-CASTING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 352 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-ATTACKING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 352 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"images": [
+				{
+					"drawable": { "id": 351 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 351 }
+				}
+			]
+		}
+	],
+	"keepUncustomized": true,
+	"customizables": [
+		{
+			"name": "Ice Cream",
+			"replace": [
+				{ "replace": -3219201 },
+				{ "replace": -855809 },
+				{
+					"replace": -224863233,
+					"newColor": { "r": 0.8392157, "g": 0.8392157, "b": 0.8392157, "a": 1 }
+				}
+			],
+			"colors": [
+				{
+					"r": 0.9411765,
+					"g": 0.8980392,
+					"b": 0.7882353,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.9882353, "g": 0.9764706, "b": 0.9019608, "a": 1 }
+					],
+					"primary": true
+				},
+				{
+					"r": 0.7372549,
+					"g": 0.9019608,
+					"b": 0.6392157,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.87058824, "g": 0.98039216, "b": 0.8039216, "a": 1 }
+					],
+					"primary": true
+				},
+				{
+					"r": 0.54901963,
+					"g": 0.8392157,
+					"b": 0.87058824,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.83137256, "g": 0.9843137, "b": 1, "a": 1 }
+					],
+					"primary": true
+				},
+				{
+					"r": 0.6,
+					"g": 0.40784314,
+					"b": 0.20392157,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.76862746, "g": 0.61960787, "b": 0.4627451, "a": 1 }
+					],
+					"primary": true
+				},
+				{
+					"r": 0.6784314,
+					"g": 0.53333336,
+					"b": 0.81960785,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.90588236, "g": 0.84313726, "b": 0.96862745, "a": 1 }
+					],
+					"primary": true
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleLayeredPatchworkMetaData",
+	"id": { "id": 28 },
+	"name": "Mirror",
+	"idle": [
+		{
+			"drawable": { "id": 119 }
+		}
+	],
+	"extraStates": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_OPEN" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 359 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_CLOSE" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 360 }
+				}
 			]
 		}
 	]

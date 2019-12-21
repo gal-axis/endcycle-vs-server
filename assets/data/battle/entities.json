@@ -298,7 +298,7 @@
 	"tease": true,
 	"customizable": true,
 	"onslaughtTheme": { "id": 3 },
-	"skills": [ "Fluid" ],
+	"skills": [ "Fluid", "Glide" ],
 	"unlockCondition": { "enemiesCrushed": 10 },
 	"customizationUnlockCondition": {
 		"affinities": [
@@ -334,6 +334,31 @@
 		"affinities": [
 			{
 				"character": { "id": 6 },
+				"amount": 1
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 24 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Alexsander" },
+	"patchworks": [
+		{
+			"id": { "id": 27 }
+		}
+	],
+	"element": "WATER",
+	"power": 125,
+	"speed": 150,
+	"visible": true,
+	"customizable": true,
+	"skills": [ "Melting" ],
+	"unlockCondition": { "battlesFought": 40 },
+	"customizationUnlockCondition": {
+		"affinities": [
+			{
+				"character": { "id": 24 },
 				"amount": 1
 			}
 		]
@@ -546,5 +571,20 @@
 		}
 	],
 	"health": 800
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 25 },
+	"dataName": "Spark Boss",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Spark" },
+	"patchworks": [
+		{
+			"id": { "id": 93 }
+		}
+	],
+	"health": 1500,
+	"power": 150,
+	"crush": 200,
+	"skills": [ "Determination" ]
 }
 ]

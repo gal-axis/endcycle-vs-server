@@ -159,7 +159,7 @@
 			"y": 1,
 			"turned": true,
 			"noise": true,
-			"action": {}
+			"action": { "id": 34 }
 		}
 	]
 },
@@ -186,7 +186,7 @@
 			"x": 6,
 			"y": 2,
 			"turned": true,
-			"action": { "id": 11 },
+			"action": { "id": 38 },
 			"mustSurvive": true,
 			"cache": {
 				"patchwork": 1,
@@ -323,19 +323,19 @@
 			"id": { "id": 1 },
 			"name": "qt",
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-			"x": 5,
-			"y": 3,
+			"x": 4,
+			"y": 4,
 			"turned": true,
-			"action": {}
+			"action": { "id": 16 }
 		},
 		{
 			"id": { "id": 4 },
 			"name": "greed",
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-			"x": 4,
-			"y": 2,
+			"x": 5,
+			"y": 1,
 			"turned": true,
-			"action": { "id": 10 }
+			"action": { "id": 9 }
 		}
 	]
 },
@@ -417,6 +417,7 @@
 	"class": "com.one2b3.endcycle.features.battle.BattleData",
 	"id": { "id": 14 },
 	"name": "Spark C5",
+	"field": { "id": 1 },
 	"background": {},
 	"music": { "id": 2 },
 	"entityShells": [
@@ -434,7 +435,7 @@
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent1" },
 			"x": 4,
 			"y": 1,
-			"action": { "id": 2 },
+			"action": { "id": 40 },
 			"mustSurvive": true,
 			"cache": {
 				"patchwork": 1,
@@ -448,7 +449,7 @@
 			"x": 5,
 			"y": 1,
 			"turned": true,
-			"action": { "id": 3 },
+			"action": { "id": 42 },
 			"mustSurvive": true,
 			"cache": {
 				"customizations": [ 3, 2, 0, 1 ]
@@ -460,7 +461,6 @@
 	"class": "com.one2b3.endcycle.features.battle.BattleData",
 	"id": { "id": 15 },
 	"name": "Spark C6",
-	"field": { "id": 1 },
 	"background": { "id": 8 },
 	"music": { "id": 26 },
 	"time": 45,
@@ -513,9 +513,9 @@
 			"name": "agent1",
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent1" },
 			"x": 4,
-			"y": 2,
+			"y": 1,
 			"turned": true,
-			"action": { "id": 18 },
+			"action": { "id": 44 },
 			"mustSurvive": true,
 			"cache": {
 				"patchwork": 1,
@@ -527,9 +527,9 @@
 			"name": "agent2",
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent2" },
 			"x": 5,
-			"y": 1,
+			"y": 2,
 			"turned": true,
-			"action": { "id": 2 },
+			"action": { "id": 23 },
 			"mustSurvive": true,
 			"cache": {
 				"customizations": [ 11, 3, 1, 3 ]
@@ -567,6 +567,7 @@
 			"turned": true,
 			"party": "FRIENDLY",
 			"player": true,
+			"mustSurvive": true,
 			"cache": {
 				"patchwork": 1,
 				"customizations": [ 4, 1, 1, 1 ]
@@ -621,7 +622,7 @@
 			"x": 4,
 			"y": 1,
 			"turned": true,
-			"action": { "id": 23 },
+			"action": { "id": 46 },
 			"cache": {
 				"customizations": [ 4, -1, 2 ]
 			}
@@ -655,7 +656,7 @@
 			"x": 4,
 			"y": 1,
 			"turned": true,
-			"action": { "id": 19 }
+			"action": { "id": 48 }
 		}
 	],
 	"entityGoals": [
@@ -708,13 +709,17 @@
 			"action": { "id": 2 }
 		},
 		{
-			"id": { "id": 1 },
+			"id": { "id": 23 },
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 13,
 			"y": 6,
 			"turned": true,
 			"noise": true,
-			"action": {}
+			"action": { "id": 14 },
+			"cache": {
+				"patchwork": 1,
+				"customizations": [ 4, 0, 1, 2 ]
+			}
 		},
 		{
 			"id": { "id": 4 },
@@ -776,13 +781,17 @@
 			"action": { "id": 10 }
 		},
 		{
-			"id": { "id": 4 },
+			"id": { "id": 23 },
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 26,
 			"y": 12,
 			"turned": true,
 			"noise": true,
-			"action": { "id": 10 }
+			"action": { "id": 14 },
+			"cache": {
+				"patchwork": 2,
+				"customizations": [ 11, 2, 2, 1 ]
+			}
 		},
 		{
 			"id": { "id": 9 },
@@ -821,13 +830,13 @@
 			"cache": { "patchwork": 1 }
 		},
 		{
-			"id": { "id": 2 },
+			"id": { "id": 25 },
 			"name": "spark",
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 4,
 			"y": 1,
 			"turned": true,
-			"action": { "id": 24 },
+			"action": { "id": 50 },
 			"cache": {
 				"customizations": [ 4, 0, 2 ]
 			}

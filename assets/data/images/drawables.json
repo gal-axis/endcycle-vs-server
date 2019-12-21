@@ -563,6 +563,7 @@
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 161 },
 	"name": "Visuals Heal Big",
+	"speed": 0.1,
 	"frames": [
 		{ "texturePath": "battle/visuals/heal.png", "width": 9, "height": 9 }
 	]
@@ -571,6 +572,7 @@
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 162 },
 	"name": "Visuals Heal Middle",
+	"speed": 0.1,
 	"frames": [
 		{ "texturePath": "battle/visuals/heal.png", "x": 10, "width": 6, "height": 6 }
 	]
@@ -579,6 +581,7 @@
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 163 },
 	"name": "Visuals Heal Small",
+	"speed": 0.1,
 	"frames": [
 		{ "texturePath": "battle/visuals/heal.png", "x": 17, "width": 3, "height": 3 }
 	]
@@ -1290,16 +1293,6 @@
 	"speed": 0.07,
 	"frames": [
 		{ "texturePath": "battle/entities/spark/spark_01.png", "x": 105, "y": 50, "width": 34, "height": 49 }
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 480 },
-	"name": "Alexsander Idle",
-	"speed": 0.1,
-	"playMode": "LOOP",
-	"frames": [
-		{ "texturePath": "battle/entities/alexsander/alexsander_03.png", "width": 45, "height": 69 }
 	]
 },
 {
@@ -2287,7 +2280,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1144 },
-	"name": "b_ice_chunk_0",
+	"name": "Ice Chunk 0",
 	"frames": [
 		{ "texturePath": "battle/vocs/icespear_01.png", "x": 20, "y": 19, "width": 4, "height": 4 }
 	]
@@ -2295,7 +2288,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1145 },
-	"name": "b_ice_chunk_1",
+	"name": "Ice Chunk 1",
 	"frames": [
 		{ "texturePath": "battle/vocs/icespear_01.png", "x": 10, "y": 3, "width": 2, "height": 2 }
 	]
@@ -2303,7 +2296,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1146 },
-	"name": "b_ice_chunk_2",
+	"name": "Ice Chunk 2",
 	"frames": [
 		{ "texturePath": "battle/vocs/icespear_01.png", "x": 17, "y": 17, "width": 2, "height": 2 }
 	]
@@ -2674,7 +2667,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1191 },
-	"name": "b_boulder_part_0",
+	"name": "Boulder Chunk 0",
 	"frames": [
 		{ "texturePath": "battle/vocs/boulder_parts/chunk_1.png", "width": 27, "height": 27 }
 	]
@@ -2682,7 +2675,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1192 },
-	"name": "b_boulder_part_1",
+	"name": "Boulder Chunk 1",
 	"frames": [
 		{ "texturePath": "battle/vocs/boulder_parts/chunk_2.png", "width": 28, "height": 23 }
 	]
@@ -2690,7 +2683,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1193 },
-	"name": "b_boulder_part_2",
+	"name": "Boulder Chunk 2",
 	"frames": [
 		{ "texturePath": "battle/vocs/boulder_parts/chunk_3.png", "width": 25, "height": 25 }
 	]
@@ -2698,7 +2691,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1194 },
-	"name": "b_boulder_part_3",
+	"name": "Boulder Chunk 3",
 	"frames": [
 		{ "texturePath": "battle/vocs/boulder_parts/chunk_4.png", "width": 9, "height": 9 }
 	]
@@ -2706,7 +2699,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1195 },
-	"name": "b_boulder_part_4",
+	"name": "Boulder Chunk 4",
 	"frames": [
 		{ "texturePath": "battle/vocs/boulder_parts/chunk_5.png", "width": 24, "height": 27 }
 	]
@@ -2714,9 +2707,9 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1196 },
-	"name": "b_boulder_part_5",
+	"name": "Slime Chunk 0",
 	"frames": [
-		{ "texturePath": "battle/vocs/boulder_parts/chunk_6.png", "width": 9, "height": 9 }
+		{ "texturePath": "battle/vocs/slime_parts/slime_chunk_1.png", "width": 6, "height": 4 }
 	]
 },
 {
@@ -3070,7 +3063,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1242 },
-	"name": "b_meteor_chunk_0",
+	"name": "Meteor Chunk 0",
 	"frames": [
 		{ "texturePath": "battle/vocs/meteor_parts.png", "width": 6, "height": 6 }
 	]
@@ -3078,7 +3071,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1243 },
-	"name": "b_meteor_chunk_1",
+	"name": "Meteor Chunk 1",
 	"frames": [
 		{ "texturePath": "battle/vocs/meteor_parts.png", "y": 7, "width": 5, "height": 6 }
 	]
@@ -3086,7 +3079,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1244 },
-	"name": "b_meteor_chunk_2",
+	"name": "Meteor Chunk 2",
 	"frames": [
 		{ "texturePath": "battle/vocs/meteor_parts.png", "x": 7, "width": 10, "height": 10 }
 	]
@@ -3094,7 +3087,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1245 },
-	"name": "b_meteor_chunk_3",
+	"name": "Meteor Chunk 3",
 	"frames": [
 		{ "texturePath": "battle/vocs/meteor_parts.png", "x": 6, "y": 11, "width": 5, "height": 5 }
 	]
@@ -3102,7 +3095,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1246 },
-	"name": "b_meteor_chunk_4",
+	"name": "Meteor Chunk 4",
 	"frames": [
 		{ "texturePath": "battle/vocs/meteor_parts.png", "x": 12, "y": 11, "width": 6, "height": 5 }
 	]
@@ -3110,7 +3103,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1247 },
-	"name": "b_meteor_chunk_5",
+	"name": "Meteor Chunk 5",
 	"frames": [
 		{ "texturePath": "battle/vocs/meteor_parts.png", "x": 18, "width": 10, "height": 11 }
 	]
@@ -3953,7 +3946,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 101 },
-	"name": "sparks_particle",
+	"name": "Spark Particle",
 	"speed": 0.06,
 	"frames": [
 		{ "texturePath": "battle/visuals/sparks.png", "width": 16, "height": 16 },
@@ -5539,7 +5532,7 @@
 	"id": { "id": 313 },
 	"name": "Companion",
 	"frames": [
-		{ "texturePath": "battle/vocs/companion.png", "width": 40, "height": 43 }
+		{ "texturePath": "battle/vocs/companion.png", "width": 40, "height": 40 }
 	]
 },
 {
@@ -5665,7 +5658,7 @@
 	"id": { "id": 326 },
 	"name": "Frame Enemy City",
 	"frames": [
-		{ "texturePath": "battle/field/frames_enemy.png", "y": 260, "width": 40, "height": 37 }
+		{ "texturePath": "battle/field/frames_enemy.png", "y": 260, "width": 40, "height": 36 }
 	]
 },
 {
@@ -5673,7 +5666,7 @@
 	"id": { "id": 327 },
 	"name": "Frame Neutral City",
 	"frames": [
-		{ "texturePath": "battle/field/frames_neutral.png", "y": 260, "width": 40, "height": 37 }
+		{ "texturePath": "battle/field/frames_neutral.png", "y": 260, "width": 40, "height": 36 }
 	]
 },
 {
@@ -5681,7 +5674,7 @@
 	"id": { "id": 328 },
 	"name": "Frame Ally City",
 	"frames": [
-		{ "texturePath": "battle/field/frames_ally.png", "y": 260, "width": 40, "height": 37 }
+		{ "texturePath": "battle/field/frames_ally.png", "y": 260, "width": 40, "height": 36 }
 	]
 },
 {
@@ -6620,7 +6613,7 @@
 },
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
-	"id": { "id": 119 },
+	"id": { "id": 356 },
 	"name": "Counter Loop",
 	"speed": 0.05,
 	"playMode": "LOOP",
@@ -6637,6 +6630,23 @@
 		{ "texturePath": "battle/visuals/counter.png", "x": -360 },
 		{ "texturePath": "battle/visuals/counter.png", "x": -540 },
 		{ "texturePath": "battle/visuals/counter.png", "x": -720 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 357 },
+	"name": "Alexsander Idle",
+	"speed": 0.1,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/entities/alexsander/idle.png", "width": 53, "height": 61 },
+		{ "texturePath": "battle/entities/alexsander/idle.png", "x": 53, "width": 53, "height": 61 },
+		{ "texturePath": "battle/entities/alexsander/idle.png", "x": 106, "width": 53, "height": 61 },
+		{ "texturePath": "battle/entities/alexsander/idle.png", "x": 159, "width": 53, "height": 61 },
+		{ "texturePath": "battle/entities/alexsander/idle.png", "x": 212, "width": 53, "height": 61 },
+		{ "texturePath": "battle/entities/alexsander/idle.png", "x": 265, "width": 53, "height": 61 },
+		{ "texturePath": "battle/entities/alexsander/idle.png", "x": 318, "width": 53, "height": 61 },
+		{ "texturePath": "battle/entities/alexsander/idle.png", "x": 371, "width": 53, "height": 61 }
 	]
 },
 {
@@ -6686,6 +6696,390 @@
 		{ "texturePath": "battle/visuals/crush/crush.png", "x": 351, "width": 117, "height": 78 },
 		{ "texturePath": "battle/visuals/crush/crush.png", "x": 468, "width": 117, "height": 78 },
 		{ "texturePath": "battle/visuals/crush/crush.png", "x": 585, "width": 117, "height": 78 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 358 },
+	"name": "Alexsander Cast",
+	"speed": 0.05,
+	"frames": [
+		{ "texturePath": "battle/entities/alexsander/cast.png", "width": 55, "height": 64 },
+		{ "texturePath": "battle/entities/alexsander/cast.png", "x": 55, "width": 55, "height": 64 },
+		{ "texturePath": "battle/entities/alexsander/cast.png", "x": 110, "width": 55, "height": 64 },
+		{ "texturePath": "battle/entities/alexsander/cast.png", "x": 165, "width": 55, "height": 64 },
+		{ "texturePath": "battle/entities/alexsander/cast.png", "x": 220, "width": 55, "height": 64 },
+		{ "texturePath": "battle/entities/alexsander/cast.png", "x": 275, "width": 55, "height": 64 },
+		{ "texturePath": "battle/entities/alexsander/cast.png", "x": 330, "width": 55, "height": 64 },
+		{ "texturePath": "battle/entities/alexsander/cast.png", "x": 385, "width": 55, "height": 64 },
+		{ "texturePath": "battle/entities/alexsander/cast.png", "x": 440, "width": 55, "height": 64 },
+		{ "texturePath": "battle/entities/alexsander/cast.png", "x": 495, "width": 55, "height": 64 },
+		{ "texturePath": "battle/entities/alexsander/cast.png", "x": 550, "width": 55, "height": 64 },
+		{ "texturePath": "battle/entities/alexsander/cast.png", "x": 605, "width": 55, "height": 64 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 121 },
+	"name": "Alexsander Attack",
+	"speed": 0.04,
+	"frames": [
+		{ "texturePath": "battle/entities/alexsander/attack.png", "width": 76, "height": 62 },
+		{ "texturePath": "battle/entities/alexsander/attack.png", "x": 76, "width": 76, "height": 62 },
+		{ "texturePath": "battle/entities/alexsander/attack.png", "x": 152, "width": 76, "height": 62 },
+		{ "texturePath": "battle/entities/alexsander/attack.png", "x": 228, "width": 76, "height": 62 },
+		{ "texturePath": "battle/entities/alexsander/attack.png", "x": 304, "width": 76, "height": 62 },
+		{ "texturePath": "battle/entities/alexsander/attack.png", "x": 380, "width": 76, "height": 62 },
+		{ "texturePath": "battle/entities/alexsander/attack.png", "x": 456, "width": 76, "height": 62 },
+		{ "texturePath": "battle/entities/alexsander/attack.png", "y": 63, "width": 76, "height": 62 },
+		{ "texturePath": "battle/entities/alexsander/attack.png", "x": 76, "y": 63, "width": 76, "height": 62 },
+		{ "texturePath": "battle/entities/alexsander/attack.png", "x": 152, "y": 63, "width": 76, "height": 62 },
+		{ "texturePath": "battle/entities/alexsander/attack.png", "x": 228, "y": 63, "width": 76, "height": 62 },
+		{ "texturePath": "battle/entities/alexsander/attack.png", "x": 304, "y": 63, "width": 76, "height": 62 },
+		{ "texturePath": "battle/entities/alexsander/attack.png", "x": 380, "y": 63, "width": 76, "height": 62 },
+		{ "texturePath": "battle/entities/alexsander/attack.png", "x": 456, "y": 63, "width": 76, "height": 62 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 257 },
+	"name": "Alexsander Flinch",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/alexsander/flinch.png", "width": 56, "height": 68 },
+		{ "texturePath": "battle/entities/alexsander/flinch.png", "x": 56, "width": 56, "height": 68 },
+		{ "texturePath": "battle/entities/alexsander/flinch.png", "x": 112, "width": 56, "height": 68 },
+		{ "texturePath": "battle/entities/alexsander/flinch.png", "x": 168, "width": 56, "height": 68 },
+		{ "texturePath": "battle/entities/alexsander/flinch.png", "x": 224, "width": 56, "height": 68 },
+		{ "texturePath": "battle/entities/alexsander/flinch.png", "x": 280, "width": 56, "height": 68 },
+		{ "texturePath": "battle/entities/alexsander/flinch.png", "x": 336, "width": 56, "height": 68 },
+		{ "texturePath": "battle/entities/alexsander/flinch.png", "x": 392, "width": 56, "height": 68 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 347 },
+	"name": "Alexsander Stun Start",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/alexsander/flinch.png", "width": 56, "height": 68 },
+		{ "texturePath": "battle/entities/alexsander/flinch.png", "x": 56, "width": 56, "height": 68 },
+		{ "texturePath": "battle/entities/alexsander/flinch.png", "x": 112, "width": 56, "height": 68 },
+		{ "texturePath": "battle/entities/alexsander/flinch.png", "x": 168, "width": 56, "height": 68 },
+		{ "texturePath": "battle/entities/alexsander/flinch.png", "x": 224, "width": 56, "height": 68 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 348 },
+	"name": "Alexsander Stun End",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/alexsander/flinch.png", "x": 280, "width": 56, "height": 68 },
+		{ "texturePath": "battle/entities/alexsander/flinch.png", "x": 336, "width": 56, "height": 68 },
+		{ "texturePath": "battle/entities/alexsander/flinch.png", "x": 392, "width": 56, "height": 68 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 349 },
+	"name": "Alexsander Recover",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/alexsander/recover.png", "width": 49, "height": 60 },
+		{ "texturePath": "battle/entities/alexsander/recover.png", "x": 49, "width": 49, "height": 60 },
+		{ "texturePath": "battle/entities/alexsander/recover.png", "x": 98, "width": 49, "height": 60 },
+		{ "texturePath": "battle/entities/alexsander/recover.png", "x": 147, "width": 49, "height": 60 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 350 },
+	"name": "Alexsander Melt",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/alexsander/melt.png", "width": 43, "height": 55 },
+		{ "texturePath": "battle/entities/alexsander/melt.png", "x": 43, "width": 43, "height": 55 },
+		{ "texturePath": "battle/entities/alexsander/melt.png", "x": 86, "width": 43, "height": 55 },
+		{ "texturePath": "battle/entities/alexsander/melt.png", "x": 129, "width": 43, "height": 55 },
+		{ "texturePath": "battle/entities/alexsander/melt.png", "x": 172, "width": 43, "height": 55 },
+		{ "texturePath": "battle/entities/alexsander/melt.png", "x": 215, "width": 43, "height": 55 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 351 },
+	"name": "Alexsander Melt Idle",
+	"speed": 0.08,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/entities/alexsander/melt_idle.png", "width": 37, "height": 32 },
+		{ "texturePath": "battle/entities/alexsander/melt_idle.png", "x": 37, "width": 37, "height": 32 },
+		{ "texturePath": "battle/entities/alexsander/melt_idle.png", "x": 74, "width": 37, "height": 32 },
+		{ "texturePath": "battle/entities/alexsander/melt_idle.png", "x": 111, "width": 37, "height": 32 },
+		{ "texturePath": "battle/entities/alexsander/melt_idle.png", "x": 148, "width": 37, "height": 32 },
+		{ "texturePath": "battle/entities/alexsander/melt_idle.png", "x": 185, "width": 37, "height": 32 },
+		{ "texturePath": "battle/entities/alexsander/melt_idle.png", "x": 222, "width": 37, "height": 32 },
+		{ "texturePath": "battle/entities/alexsander/melt_idle.png", "x": 259, "width": 37, "height": 32 },
+		{ "texturePath": "battle/entities/alexsander/melt_idle.png", "x": 296, "width": 37, "height": 32 },
+		{ "texturePath": "battle/entities/alexsander/melt_idle.png", "x": 333, "width": 37, "height": 32 },
+		{ "texturePath": "battle/entities/alexsander/melt_idle.png", "x": 370, "width": 37, "height": 32 },
+		{ "texturePath": "battle/entities/alexsander/melt_idle.png", "x": 407, "width": 37, "height": 32 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 352 },
+	"name": "Alexsander Melt Cast",
+	"speed": 0.08,
+	"frames": [
+		{ "texturePath": "battle/entities/alexsander/melt_cast.png", "width": 39, "height": 33 },
+		{ "texturePath": "battle/entities/alexsander/melt_cast.png", "x": 39, "width": 39, "height": 33 },
+		{ "texturePath": "battle/entities/alexsander/melt_cast.png", "x": 78, "width": 39, "height": 33 },
+		{ "texturePath": "battle/entities/alexsander/melt_cast.png", "x": 117, "width": 39, "height": 33 },
+		{ "texturePath": "battle/entities/alexsander/melt_cast.png", "x": 156, "width": 39, "height": 33 },
+		{ "texturePath": "battle/entities/alexsander/melt_cast.png", "x": 195, "width": 39, "height": 33 },
+		{ "texturePath": "battle/entities/alexsander/melt_cast.png", "x": 234, "width": 39, "height": 33 },
+		{ "texturePath": "battle/entities/alexsander/melt_cast.png", "x": 273, "width": 39, "height": 33 },
+		{ "texturePath": "battle/entities/alexsander/melt_cast.png", "x": 312, "width": 39, "height": 33 },
+		{ "texturePath": "battle/entities/alexsander/melt_cast.png", "x": 351, "width": 39, "height": 33 },
+		{ "texturePath": "battle/entities/alexsander/melt_cast.png", "x": 390, "width": 39, "height": 33 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 353 },
+	"name": "Alexsander Melt Flinch",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/alexsander/melt_flinch.png", "width": 37, "height": 32 },
+		{ "texturePath": "battle/entities/alexsander/melt_flinch.png", "x": 37, "width": 37, "height": 32 },
+		{ "texturePath": "battle/entities/alexsander/melt_flinch.png", "x": 74, "width": 37, "height": 32 },
+		{ "texturePath": "battle/entities/alexsander/melt_flinch.png", "x": 111, "width": 37, "height": 32 },
+		{ "texturePath": "battle/entities/alexsander/melt_flinch.png", "x": 148, "width": 37, "height": 32 },
+		{ "texturePath": "battle/entities/alexsander/melt_flinch.png", "x": 185, "width": 37, "height": 32 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 354 },
+	"name": "Alexsander Melt Stun Start",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/alexsander/melt_flinch.png", "width": 37, "height": 32 },
+		{ "texturePath": "battle/entities/alexsander/melt_flinch.png", "x": 37, "width": 37, "height": 32 },
+		{ "texturePath": "battle/entities/alexsander/melt_flinch.png", "x": 74, "width": 37, "height": 32 },
+		{ "texturePath": "battle/entities/alexsander/melt_flinch.png", "x": 111, "width": 37, "height": 32 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 355 },
+	"name": "Alexsander Melt Stun End",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/alexsander/melt_flinch.png", "x": 148, "width": 37, "height": 32 },
+		{ "texturePath": "battle/entities/alexsander/melt_flinch.png", "x": 185, "width": 37, "height": 32 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 119 },
+	"name": "Mirror Idle",
+	"frames": [
+		{ "texturePath": "battle/entities/others/mirror_left.png", "width": 24, "height": 47 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 359 },
+	"name": "Mirror Left",
+	"speed": 0.04,
+	"frames": [
+		{ "texturePath": "battle/entities/others/mirror_left.png", "x": 24, "width": 24, "height": 47 },
+		{ "texturePath": "battle/entities/others/mirror_left.png", "x": 48, "width": 24, "height": 47 },
+		{ "texturePath": "battle/entities/others/mirror_left.png", "x": 72, "width": 24, "height": 47 },
+		{ "texturePath": "battle/entities/others/mirror_left.png", "x": 96, "width": 24, "height": 47 },
+		{ "texturePath": "battle/entities/others/mirror_left.png", "x": 120, "width": 24, "height": 47 },
+		{ "texturePath": "battle/entities/others/mirror_left.png", "x": 144, "width": 24, "height": 47 },
+		{ "texturePath": "battle/entities/others/mirror_left.png", "x": 168, "width": 24, "height": 47 },
+		{ "texturePath": "battle/entities/others/mirror_left.png", "x": 192, "width": 24, "height": 47 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 360 },
+	"name": "Mirror Right",
+	"speed": 0.04,
+	"frames": [
+		{ "texturePath": "battle/entities/others/mirror_right.png", "x": 24, "width": 24, "height": 47 },
+		{ "texturePath": "battle/entities/others/mirror_right.png", "x": 48, "width": 24, "height": 47 },
+		{ "texturePath": "battle/entities/others/mirror_right.png", "x": 72, "width": 24, "height": 47 },
+		{ "texturePath": "battle/entities/others/mirror_right.png", "x": 96, "width": 24, "height": 47 },
+		{ "texturePath": "battle/entities/others/mirror_right.png", "x": 120, "width": 24, "height": 47 },
+		{ "texturePath": "battle/entities/others/mirror_right.png", "x": 144, "width": 24, "height": 47 },
+		{ "texturePath": "battle/entities/others/mirror_right.png", "x": 168, "width": 24, "height": 47 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 361 },
+	"name": "Ailment Invis",
+	"speed": 0.2,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "programs/styles.png", "x": 24, "y": 24, "width": 11, "height": 11 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 362 },
+	"name": "Ailment Guard",
+	"speed": 0.2,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "programs/styles.png", "x": 24, "y": 36, "width": 11, "height": 11 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 363 },
+	"name": "Thunder Bolt",
+	"speed": 0.04,
+	"frames": [
+		{ "texturePath": "battle/vocs/lightning.png", "width": 79, "height": 166 },
+		{ "texturePath": "battle/vocs/lightning.png", "x": 80, "width": 79, "height": 166 },
+		{ "texturePath": "battle/vocs/lightning.png", "x": 160, "width": 79, "height": 166 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 364 },
+	"name": "Whistle",
+	"speed": 0.04,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/vocs/whistle.png", "width": 30, "height": 24 },
+		{ "texturePath": "battle/vocs/whistle.png", "x": 30, "width": 30, "height": 24 },
+		{ "texturePath": "battle/vocs/whistle.png", "width": 30, "height": 24 },
+		{ "texturePath": "battle/vocs/whistle.png", "x": 30, "width": 30, "height": 24 },
+		{ "texturePath": "battle/vocs/whistle.png", "width": 30, "height": 24 },
+		{ "texturePath": "battle/vocs/whistle.png", "x": 30, "width": 30, "height": 24 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 365 },
+	"name": "Frame Enemy Destroyed",
+	"frames": [
+		{ "texturePath": "battle/field/frames_enemy.png", "y": 297, "width": 40, "height": 36 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 366 },
+	"name": "Frame Neutral Destroyed",
+	"frames": [
+		{ "texturePath": "battle/field/frames_neutral.png", "y": 297, "width": 40, "height": 36 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 367 },
+	"name": "Frame Ally Destroyed",
+	"frames": [
+		{ "texturePath": "battle/field/frames_ally.png", "y": 297, "width": 40, "height": 36 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 368 },
+	"name": "Dark BG 1",
+	"frames": [
+		{ "texturePath": "battle/backgrounds/dark/1.png", "width": 480, "height": 280 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 369 },
+	"name": "Dark BG 2",
+	"frames": [
+		{ "texturePath": "battle/backgrounds/dark/2.png", "width": 480, "height": 317 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 370 },
+	"name": "Dark BG 3",
+	"frames": [
+		{ "texturePath": "battle/backgrounds/dark/3.png", "width": 480, "height": 245 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 371 },
+	"name": "Dark BG 4",
+	"frames": [
+		{ "texturePath": "battle/backgrounds/dark/4.png", "width": 480, "height": 140 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 372 },
+	"name": "Yoink",
+	"speed": 0.1,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/vocs/yoink.png", "width": 18, "height": 16 },
+		{ "texturePath": "battle/vocs/yoink.png", "x": 18, "width": 18, "height": 16 },
+		{ "texturePath": "battle/vocs/yoink.png", "x": 36, "width": 18, "height": 16 },
+		{ "texturePath": "battle/vocs/yoink.png", "x": 54, "width": 18, "height": 16 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 373 },
+	"name": "Controller Silhouette",
+	"frames": [
+		{ "texturePath": "general/input/controller.png", "width": 147, "height": 95 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 374 },
+	"name": "Slime Chunk 1",
+	"frames": [
+		{ "texturePath": "battle/vocs/slime_parts/slime_chunk_2.png", "width": 5, "height": 5 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 375 },
+	"name": "Slime Chunk 2",
+	"frames": [
+		{ "texturePath": "battle/vocs/slime_parts/slime_chunk_3.png", "width": 6, "height": 5 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 376 },
+	"name": "Slime Chunk 3",
+	"frames": [
+		{ "texturePath": "battle/vocs/slime_parts/slime_chunk_4.png", "width": 7, "height": 6 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 377 },
+	"name": "Sofa Move",
+	"speed": 0.05,
+	"frames": [
+		{ "texturePath": "battle/entities/sofa/sofa_01.png", "y": 120, "width": 59, "height": 59 },
+		{ "texturePath": "battle/entities/sofa/sofa_01.png", "x": 180, "y": 120, "width": 59, "height": 59, "xOffset": 2 },
+		{ "texturePath": "battle/entities/sofa/sofa_01.png", "x": 240, "y": 120, "width": 59, "height": 59, "xOffset": 3, "yOffset": 4 },
+		{ "texturePath": "battle/entities/sofa/sofa_01.png", "x": 240, "y": 120, "width": 59, "height": 59, "xOffset": 3, "yOffset": 4 },
+		{ "texturePath": "battle/entities/sofa/sofa_01.png", "x": 180, "y": 120, "width": 59, "height": 59, "xOffset": 2 },
+		{ "texturePath": "battle/entities/sofa/sofa_01.png", "x": 60, "y": 120, "width": 59, "height": 59, "xOffset": -3 }
 	]
 }
 ]

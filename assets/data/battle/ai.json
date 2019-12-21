@@ -160,26 +160,21 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 5 },
-	"name": "Sofa Grabber Phase 2",
+	"name": "Sofa Grabber Home In",
 	"ignoreGauge": true,
-	"randomizeMoves": true,
-	"targetType": "SAME_COL_ENEMY",
 	"change": [
 		{
-			"time": 2.5,
 			"moves": 1,
 			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 			"action": { "id": 4 }
+		},
+		{
+			"onInaccessiblePanel": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 33 }
 		}
 	],
 	"moves": [
-		{
-			"time": 1.5,
-			"move": "ANIMATED_TILE",
-			"yTile": -1,
-			"moveType": "TOWARD_TARGET",
-			"scripts": {}
-		},
 		{
 			"time": 1.5,
 			"move": "ANIMATED_TILE",
@@ -203,23 +198,8 @@
 	"moves": [
 		{
 			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"xTile": 4,
-			"turnType": "TARGET",
-			"scripts": {}
-		},
-		{
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"xTile": 3,
-			"turnType": "TARGET",
-			"scripts": {}
-		},
-		{
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"xTile": 2,
-			"turnType": "TARGET",
+			"move": "ANIMATED_MOVING_TILE",
+			"xTile": 1,
 			"scripts": {}
 		},
 		{
@@ -236,7 +216,6 @@
 	"ignoreGauge": true,
 	"change": [
 		{
-			"moves": 3,
 			"onInterrupt": true,
 			"onInaccessiblePanel": true,
 			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
@@ -245,21 +224,14 @@
 	],
 	"moves": [
 		{
-			"time": 2.3,
+			"time": 1.6,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"scripts": {}
+		},
+		{
+			"time": 0.7,
 			"voc": { "id": 10034 },
-			"scripts": {}
-		},
-		{
-			"time": 0.7,
-			"move": "ANIMATED_TILE",
-			"yTile": 1,
-			"scripts": {}
-		},
-		{
-			"time": 0.7,
-			"move": "ANIMATED_TILE",
-			"yTile": 1,
-			"turnType": "TARGET",
 			"scripts": {}
 		}
 	]
@@ -271,7 +243,6 @@
 	"ignoreGauge": true,
 	"change": [
 		{
-			"moves": 3,
 			"onInterrupt": true,
 			"onInaccessiblePanel": true,
 			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
@@ -280,21 +251,14 @@
 	],
 	"moves": [
 		{
-			"time": 2.3,
+			"time": 1.6,
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"scripts": {}
+		},
+		{
+			"time": 0.7,
 			"voc": { "id": 10034 },
-			"scripts": {}
-		},
-		{
-			"time": 0.7,
-			"move": "ANIMATED_TILE",
-			"yTile": -1,
-			"scripts": {}
-		},
-		{
-			"time": 0.7,
-			"move": "ANIMATED_TILE",
-			"yTile": -1,
-			"turnType": "TARGET",
 			"scripts": {}
 		}
 	]
@@ -303,29 +267,19 @@
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 9 },
 	"name": "Greed Protecc",
+	"ignoreGauge": true,
 	"moves": [
 		{
-			"time": 0.5,
+			"time": 0.8,
+			"skippable": true,
 			"move": "ANIMATED_TILE",
-			"xTile": 5,
-			"moveType": "ABSOLUTE",
-			"turnType": "TARGET",
+			"yTile": 1,
+			"moveType": "TOWARD_TARGET",
+			"turnType": "TOWARD_TARGET",
 			"scripts": {}
 		},
 		{
-			"time": 0.5,
-			"voc": { "id": 10352 },
-			"scripts": {}
-		},
-		{
-			"move": "ANIMATED_TILE",
-			"xTile": 5,
-			"yTile": 3,
-			"moveType": "ABSOLUTE",
-			"turnType": "TARGET",
-			"scripts": {}
-		},
-		{
+			"time": 1.4,
 			"voc": { "id": 10352 },
 			"scripts": {}
 		}
@@ -360,36 +314,21 @@
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 11 },
 	"name": "Agent Evade",
+	"randomizeMoves": true,
+	"change": [
+		{
+			"moves": 1,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 38 }
+		},
+		{
+			"onAlone": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 39 }
+		}
+	],
 	"moves": [
 		{
-			"time": 2,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"yTile": -1,
-			"scripts": {}
-		},
-		{
-			"time": 0.4,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"yTile": 1,
-			"scripts": {}
-		},
-		{
-			"time": 0.4,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"yTile": 1,
-			"scripts": {}
-		},
-		{
-			"time": 2,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"yTile": 1,
-			"scripts": {}
-		},
-		{
 			"time": 0.4,
 			"skippable": true,
 			"move": "ANIMATED_TILE",
@@ -400,7 +339,7 @@
 			"time": 0.4,
 			"skippable": true,
 			"move": "ANIMATED_TILE",
-			"yTile": -1,
+			"yTile": 1,
 			"scripts": {}
 		}
 	]
@@ -418,7 +357,7 @@
 	],
 	"moves": [
 		{
-			"time": 1.5,
+			"time": 1.8,
 			"skippable": true,
 			"move": "ANIMATED_TILE",
 			"yTile": -1,
@@ -426,7 +365,7 @@
 			"scripts": {}
 		},
 		{
-			"time": 1.5,
+			"time": 1.8,
 			"skippable": true,
 			"move": "ANIMATED_TILE",
 			"yTile": -1,
@@ -434,7 +373,7 @@
 			"scripts": {}
 		},
 		{
-			"time": 1.5,
+			"time": 1.8,
 			"skippable": true,
 			"move": "ANIMATED_TILE",
 			"yTile": 1,
@@ -442,7 +381,7 @@
 			"scripts": {}
 		},
 		{
-			"time": 1.5,
+			"time": 1.8,
 			"skippable": true,
 			"move": "ANIMATED_TILE",
 			"yTile": 1,
@@ -466,7 +405,7 @@
 		{
 			"uses": 1,
 			"resetUses": true,
-			"time": 3,
+			"time": 1.9,
 			"scripts": {}
 		},
 		{
@@ -480,45 +419,52 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 14 },
-	"name": "Neo Meteor",
+	"name": "Neo Tournament",
 	"ignoreGauge": true,
 	"moves": [
 		{
-			"time": 1.2,
+			"time": 1.4,
 			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"xTile": 3,
-			"yTile": 1,
-			"moveType": "ABSOLUTE",
-			"turnType": "TARGET",
-			"voc": { "id": 29 },
+			"voc": { "id": 8 },
 			"scripts": {}
 		},
 		{
-			"time": 1.2,
+			"time": 1.9,
 			"skippable": true,
 			"move": "ANIMATED_TILE",
-			"xTile": 1,
 			"yTile": -1,
-			"voc": { "id": 14 },
+			"moveType": "TOWARD_TARGET",
+			"voc": { "id": 10028 },
 			"scripts": {}
 		},
 		{
-			"time": 1.2,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"xTile": 1,
-			"yTile": 1,
-			"voc": { "id": 10034 },
-			"scripts": {}
-		},
-		{
-			"time": 1.2,
+			"time": 1.9,
 			"skippable": true,
 			"move": "ANIMATED_TILE",
 			"xTile": -1,
 			"yTile": 1,
-			"voc": { "id": 14 },
+			"moveType": "TOWARD_TARGET",
+			"turnType": "TOWARD_TARGET",
+			"voc": { "id": 10034 },
+			"style": { "id": 11 },
+			"scripts": {}
+		},
+		{
+			"time": 1.9,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"moveType": "TOWARD_TARGET",
+			"voc": { "id": 10028 },
+			"scripts": {}
+		},
+		{
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": 1,
+			"yTile": 1,
+			"moveType": "TOWARD_TARGET",
+			"turnType": "TOWARD_TARGET",
 			"scripts": {}
 		}
 	]
@@ -526,22 +472,25 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 15 },
-	"name": "Q.T. Double-Down",
+	"name": "Q.T. Down",
 	"ignoreGauge": true,
 	"change": [
 		{
-			"onInterrupt": true,
 			"onInaccessiblePanel": true,
 			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 			"action": { "id": 16 }
+		},
+		{
+			"onInterrupt": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 15 }
 		}
 	],
 	"moves": [
 		{
 			"time": 1.5,
-			"move": "MOVING_TILE",
-			"yTile": 2,
-			"moveSpeed": 1,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
 			"scripts": {}
 		},
 		{
@@ -565,22 +514,25 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 16 },
-	"name": "Q.T. Double-Up",
+	"name": "Q.T. Up",
 	"ignoreGauge": true,
 	"change": [
 		{
-			"onInterrupt": true,
 			"onInaccessiblePanel": true,
 			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 			"action": { "id": 15 }
+		},
+		{
+			"onInterrupt": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 16 }
 		}
 	],
 	"moves": [
 		{
 			"time": 1.5,
-			"move": "MOVING_TILE",
-			"yTile": -2,
-			"moveSpeed": 1,
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
 			"scripts": {}
 		},
 		{
@@ -614,57 +566,13 @@
 	],
 	"moves": [
 		{
-			"time": 0.5,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"xTile": 1,
+			"time": 1.1,
+			"voc": { "id": 10010 },
 			"scripts": {}
 		},
 		{
-			"time": 1,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"yTile": -1,
-			"turnType": "TARGET",
-			"scripts": {}
-		},
-		{
-			"time": 1.7,
-			"voc": { "id": 10016 },
-			"scripts": {}
-		},
-		{
-			"time": 1,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"yTile": 1,
-			"turnType": "TARGET",
-			"scripts": {}
-		},
-		{
-			"time": 1.7,
-			"voc": { "id": 10106 },
-			"scripts": {}
-		},
-		{
-			"time": 1,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"yTile": 1,
-			"turnType": "TARGET",
-			"scripts": {}
-		},
-		{
-			"time": 1.7,
-			"voc": { "id": 10016 },
-			"scripts": {}
-		},
-		{
-			"time": 1,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"yTile": -1,
-			"turnType": "TARGET",
+			"time": 0.9,
+			"voc": { "id": 10031 },
 			"scripts": {}
 		}
 	]
@@ -687,14 +595,7 @@
 			"time": 1,
 			"yTile": 1,
 			"turnType": "TARGET",
-			"voc": { "id": 10010 },
-			"scripts": {}
-		},
-		{
-			"time": 1,
-			"yTile": -1,
-			"turnType": "TARGET",
-			"voc": { "id": 10031 },
+			"voc": { "id": 10016 },
 			"scripts": {}
 		}
 	]
@@ -706,102 +607,74 @@
 	"ignoreGauge": true,
 	"change": [
 		{
-			"onInaccessiblePanel": true,
+			"onInterrupt": true,
 			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 			"action": { "id": 22 }
 		}
 	],
 	"moves": [
 		{
-			"time": 0.5,
-			"turnType": "TARGET",
-			"voc": { "id": 10422 },
+			"time": 0.8,
+			"move": "ANIMATED_TILE",
+			"xTile": 4,
+			"yTile": 1,
+			"moveType": "ABSOLUTE",
+			"voc": { "id": 6 },
+			"style": { "id": 2 },
 			"scripts": {}
 		},
 		{
-			"time": 0.4,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"xTile": -1,
+			"time": 1.1,
+			"voc": { "id": 21 },
 			"scripts": {}
 		},
 		{
 			"time": 1.6,
-			"turnType": "TARGET",
-			"voc": { "id": 10114 },
-			"scripts": {}
-		},
-		{
-			"time": 0.4,
-			"voc": { "id": 10022 },
-			"style": { "id": 10 },
-			"scripts": {}
-		},
-		{
-			"time": 0.2,
-			"move": "ANIMATED_TILE",
-			"xTile": 1,
-			"turnType": "TARGET",
-			"scripts": {}
-		},
-		{
-			"time": 0.2,
-			"move": "ANIMATED_TILE",
-			"xTile": 1,
-			"scripts": {}
-		},
-		{
-			"time": 0.6,
-			"voc": { "id": 10031 },
-			"scripts": {}
-		},
-		{
-			"time": 0.5,
+			"skippable": true,
 			"move": "ANIMATED_TILE",
 			"xTile": -1,
+			"voc": { "id": 8 },
 			"scripts": {}
 		},
 		{
-			"time": 0.8,
-			"voc": { "id": 10034 },
+			"time": 0.7,
+			"voc": { "id": 30 },
 			"scripts": {}
 		},
 		{
-			"time": 0.2,
+			"time": 1.6,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": 1,
+			"voc": { "id": 10028 },
+			"scripts": {}
+		},
+		{
+			"time": 1,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"voc": { "id": 10031 },
+			"scripts": {}
+		},
+		{
+			"skippable": true,
 			"move": "ANIMATED_TILE",
 			"yTile": -1,
 			"scripts": {}
 		},
 		{
-			"turnType": "TARGET",
-			"voc": { "id": 10031 },
-			"scripts": {}
-		},
-		{
-			"time": 0.2,
-			"move": "ANIMATED_TILE",
-			"yTile": 1,
-			"scripts": {}
-		},
-		{
-			"time": 0.2,
-			"move": "ANIMATED_TILE",
-			"yTile": 1,
-			"scripts": {}
-		},
-		{
-			"voc": { "id": 10031 },
-			"scripts": {}
-		},
-		{
-			"time": 0.2,
+			"time": 1,
+			"skippable": true,
 			"move": "ANIMATED_TILE",
 			"yTile": -1,
+			"voc": { "id": 10031 },
 			"scripts": {}
 		},
 		{
-			"time": 0.5,
-			"voc": { "id": 10034 },
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
 			"scripts": {}
 		}
 	]
@@ -813,171 +686,15 @@
 	"ignoreGauge": true,
 	"change": [
 		{
-			"moves": 2,
+			"moves": 1,
 			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 			"action": { "id": 21 }
 		}
 	],
 	"moves": [
 		{
-			"voc": { "id": 10 },
-			"scripts": {}
-		},
-		{
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"xTile": 1,
-			"scripts": {}
-		},
-		{
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"yTile": 1,
-			"scripts": {}
-		},
-		{
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"yTile": -1,
-			"scripts": {}
-		},
-		{
-			"move": "ANIMATED_TILE",
-			"xTile": -1,
-			"scripts": {}
-		}
-	]
-},
-{
-	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
-	"id": { "id": 23 },
-	"name": "Crimson Rozu 3",
-	"ignoreGauge": true,
-	"moves": [
-		{
-			"turnType": "TARGET",
-			"voc": { "id": 10234 },
-			"scripts": {}
-		},
-		{
-			"time": 1,
-			"voc": { "id": 10031 },
-			"scripts": {}
-		},
-		{
-			"time": 0.5,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"xTile": 4,
-			"yTile": 1,
-			"moveType": "ABSOLUTE",
-			"scripts": {}
-		},
-		{
-			"time": 0.3,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"yTile": -1,
-			"scripts": {}
-		},
-		{
-			"time": 0.6,
-			"voc": { "id": 10034 },
-			"scripts": {}
-		},
-		{
-			"time": 1,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"yTile": 1,
-			"voc": { "id": 10106 },
-			"scripts": {}
-		},
-		{
-			"time": 0.3,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"yTile": 1,
-			"scripts": {}
-		},
-		{
-			"time": 0.6,
-			"turnType": "TARGET",
-			"voc": { "id": 10034 },
-			"scripts": {}
-		},
-		{
-			"time": 0.5,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"yTile": -1,
-			"scripts": {}
-		}
-	]
-},
-{
-	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
-	"id": { "id": 24 },
-	"name": "Crimson Spark",
-	"ignoreGauge": true,
-	"moves": [
-		{
-			"time": 1.1,
-			"turnType": "TARGET",
-			"voc": { "id": 10012 },
-			"scripts": {}
-		},
-		{
-			"time": 1.1,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"yTile": -1,
-			"voc": { "id": 10013 },
-			"style": { "id": 10 },
-			"scripts": {}
-		},
-		{
-			"time": 1.1,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"xTile": 1,
-			"voc": { "id": 10 },
-			"style": { "id": 29 },
-			"scripts": {}
-		},
-		{
-			"time": 1.1,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"yTile": 1,
-			"voc": { "id": 10031 },
-			"style": { "id": 10 },
-			"scripts": {}
-		},
-		{
-			"time": 1.1,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"yTile": 1,
-			"turnType": "TARGET",
-			"voc": { "id": 10110 },
-			"scripts": {}
-		},
-		{
-			"time": 1.1,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"xTile": -1,
-			"voc": { "id": 10011 },
-			"style": { "id": 12 },
-			"scripts": {}
-		},
-		{
-			"time": 1.1,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"yTile": -1,
-			"voc": { "id": 8 },
+			"voc": { "id": 10040 },
+			"style": { "id": 17 },
 			"scripts": {}
 		}
 	]
@@ -985,81 +702,59 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 25 },
-	"name": "Spark",
+	"name": "Spark: VS Agent",
 	"ignoreGauge": true,
+	"change": [
+		{
+			"onInterrupt": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 45 }
+		}
+	],
 	"moves": [
 		{
-			"time": 1.5,
+			"time": 1.4,
+			"skippable": true,
+			"xTile": -1,
+			"yTile": -1,
+			"moveType": "TOWARD_TARGET",
+			"voc": { "id": 41 },
+			"scripts": {}
+		},
+		{
+			"time": 1.9,
+			"voc": { "id": 26 },
+			"style": { "id": 16 },
+			"scripts": {}
+		},
+		{
+			"time": 0.9,
+			"voc": { "id": 11 },
+			"scripts": {}
+		},
+		{
+			"time": 1.7,
+			"voc": { "id": 10346 },
+			"scripts": {}
+		},
+		{
+			"time": 0.9,
 			"skippable": true,
 			"move": "ANIMATED_TILE",
-			"xTile": 4,
+			"xTile": 1,
 			"yTile": 1,
-			"moveType": "ABSOLUTE",
-			"turnType": "TARGET",
-			"voc": { "id": 10034 },
-			"scripts": {}
-		},
-		{
-			"time": 1.2,
-			"voc": { "id": 10010 },
-			"style": { "id": 18 },
-			"scripts": {}
-		},
-		{
-			"time": 1.2,
-			"skippable": true,
-			"yTile": -1,
-			"voc": { "id": 10022 },
-			"style": { "id": 19 },
-			"scripts": {}
-		},
-		{
-			"time": 0.5,
-			"skippable": true,
-			"scripts": {}
-		},
-		{
-			"time": 1.5,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"yTile": 1,
-			"turnType": "TARGET",
-			"voc": { "id": 10446 },
-			"scripts": {}
-		},
-		{
-			"time": 1.2,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"yTile": -1,
-			"voc": { "id": 10440 },
-			"scripts": {}
-		},
-		{
-			"time": 1.2,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"yTile": -1,
-			"voc": { "id": 10446 },
+			"moveType": "TOWARD_TARGET",
+			"turnType": "TOWARD_TARGET",
+			"voc": { "id": 10052 },
 			"scripts": {}
 		},
 		{
 			"time": 0.8,
-			"skippable": true,
 			"move": "ANIMATED_TILE",
+			"xTile": -1,
 			"yTile": 1,
-			"turnType": "TARGET",
-			"voc": { "id": 10434 },
-			"scripts": {}
-		},
-		{
-			"time": 0.8,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"xTile": 3,
-			"yTile": 1,
-			"moveType": "ABSOLUTE",
-			"voc": { "id": 5 },
+			"moveType": "TOWARD_TARGET",
+			"voc": { "id": 10423 },
 			"scripts": {}
 		}
 	]
@@ -1067,52 +762,33 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 26 },
-	"name": "Heal Grunt",
+	"name": "Agent Heal",
+	"targetType": "CLOSEST_ALLY",
 	"moves": [
 		{
-			"time": 0.5,
+			"time": 1.1,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": -1,
+			"moveType": "TARGET_RELATIVE",
 			"turnType": "TARGET",
-			"voc": { "id": 10110 },
 			"scripts": {}
 		},
 		{
-			"time": 0.8,
-			"skippable": true,
+			"time": 1.6,
 			"move": "ANIMATED_TILE",
-			"yTile": -1,
+			"xTile": -1,
+			"moveType": "TARGET_RELATIVE",
+			"turnType": "TOWARD_TARGET",
+			"voc": { "id": 10102 },
 			"scripts": {}
 		},
 		{
-			"time": 0.8,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"yTile": 1,
-			"scripts": {}
-		},
-		{
-			"time": 0.8,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"yTile": 1,
-			"scripts": {}
-		},
-		{
-			"time": 0.8,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"yTile": -1,
-			"scripts": {}
-		},
-		{
+			"time": 1.1,
 			"skippable": true,
 			"move": "ANIMATED_TILE",
 			"xTile": -1,
-			"scripts": {}
-		},
-		{
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"xTile": -1,
+			"moveType": "TARGET_RELATIVE",
 			"scripts": {}
 		}
 	]
@@ -1314,6 +990,617 @@
 		},
 		{
 			"voc": { "id": 49 },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 33 },
+	"name": "Sofa Grabber Away",
+	"change": [
+		{
+			"moves": 1,
+			"onInaccessiblePanel": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 4 }
+		}
+	],
+	"moves": [
+		{
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"moveType": "TOWARD_TARGET",
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 34 },
+	"name": "Q.T. Alone",
+	"change": [
+		{
+			"onInaccessiblePanel": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 36 }
+		},
+		{
+			"minHealth": 0.3,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 35 }
+		}
+	],
+	"moves": [
+		{
+			"time": 1.4,
+			"voc": { "id": 22 },
+			"scripts": {}
+		},
+		{
+			"time": 0.6,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"moveType": "TOWARD_TARGET",
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 35 },
+	"name": "Q.T. Alone Buff",
+	"ignoreGauge": true,
+	"change": [
+		{
+			"onEmpty": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 34 }
+		}
+	],
+	"moves": [
+		{
+			"uses": 1,
+			"time": 0.8,
+			"voc": { "id": 55 },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 36 },
+	"name": "Q.T. Alone Right",
+	"change": [
+		{
+			"moves": 1,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 34 }
+		},
+		{
+			"onInaccessiblePanel": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 37 }
+		}
+	],
+	"moves": [
+		{
+			"move": "ANIMATED_TILE",
+			"xTile": 1,
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 37 },
+	"name": "Q.T. Alone Left",
+	"change": [
+		{
+			"moves": 1,
+			"onInaccessiblePanel": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 34 }
+		}
+	],
+	"moves": [
+		{
+			"move": "ANIMATED_TILE",
+			"xTile": -1,
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 38 },
+	"name": "Agent Observe",
+	"change": [
+		{
+			"onInterrupt": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 11 }
+		},
+		{
+			"onAlone": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 39 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 39 },
+	"name": "Agent Alone",
+	"moves": [
+		{
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"turnType": "TOWARD_TARGET",
+			"scripts": {}
+		},
+		{
+			"voc": { "id": 12 },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 40 },
+	"name": "Agent 1",
+	"change": [
+		{
+			"minHealth": 0.5,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 41 }
+		}
+	],
+	"moves": [
+		{
+			"time": 1.4,
+			"voc": { "id": 11 },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 41 },
+	"name": "Agent 1 Reflect",
+	"change": [
+		{
+			"onEmpty": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 40 }
+		}
+	],
+	"moves": [
+		{
+			"uses": 1,
+			"voc": { "id": 50 },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 42 },
+	"name": "Agent 2",
+	"moves": [
+		{
+			"time": 0.6,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": 1,
+			"turnType": "TARGET_RELATIVE",
+			"scripts": {}
+		},
+		{
+			"time": 1.4,
+			"voc": { "id": 10110 },
+			"scripts": {}
+		},
+		{
+			"time": 1.9,
+			"voc": { "id": 10052 },
+			"style": { "id": 17 },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 23 },
+	"name": "Agent Test 1",
+	"ignoreGauge": true,
+	"moves": [
+		{
+			"time": 0.9,
+			"voc": { "id": 10031 },
+			"scripts": {}
+		},
+		{
+			"time": 1.1,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"moveType": "TOWARD_TARGET",
+			"voc": { "id": 10010 },
+			"scripts": {}
+		},
+		{
+			"time": 1.6,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"moveType": "TOWARD_TARGET",
+			"turnType": "TOWARD_TARGET",
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 43 },
+	"name": "Agent Test 2 Hit",
+	"ignoreGauge": true,
+	"change": [
+		{
+			"onEmpty": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 44 }
+		}
+	],
+	"moves": [
+		{
+			"uses": 1,
+			"resetUses": true,
+			"time": 0.9,
+			"turnType": "TOWARD_TARGET",
+			"voc": { "id": 30 },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 44 },
+	"name": "Agent Test 2",
+	"ignoreGauge": true,
+	"change": [
+		{
+			"onInterrupt": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 43 }
+		}
+	],
+	"moves": [
+		{
+			"time": 1.9,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"moveType": "TOWARD_TARGET",
+			"turnType": "TOWARD_TARGET",
+			"voc": { "id": 36 },
+			"scripts": {}
+		},
+		{
+			"time": 1.1,
+			"voc": { "id": 51 },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 45 },
+	"name": "Spark: VS Agent Hit",
+	"change": [
+		{
+			"onEmpty": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 25 }
+		}
+	],
+	"moves": [
+		{
+			"uses": 1,
+			"resetUses": true,
+			"time": 1.3,
+			"voc": { "id": 10032 },
+			"style": { "id": 16 },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 46 },
+	"name": "Rozu: VS Agent",
+	"ignoreGauge": true,
+	"change": [
+		{
+			"onInterrupt": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 47 }
+		}
+	],
+	"moves": [
+		{
+			"time": 1.8,
+			"voc": { "id": 10116 },
+			"scripts": {}
+		},
+		{
+			"time": 1.4,
+			"voc": { "id": 10423 },
+			"scripts": {}
+		},
+		{
+			"time": 1.4,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"moveType": "TOWARD_TARGET",
+			"voc": { "id": 10031 },
+			"scripts": {}
+		},
+		{
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": 1,
+			"yTile": 1,
+			"moveType": "TOWARD_TARGET",
+			"voc": { "id": 51 },
+			"scripts": {}
+		},
+		{
+			"voc": { "id": 10 },
+			"scripts": {}
+		},
+		{
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": -1,
+			"yTile": 1,
+			"moveType": "TOWARD_TARGET",
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 47 },
+	"name": "Rozu: VS Agent Hit",
+	"ignoreGauge": true,
+	"targetType": "CLOSEST_ALLY",
+	"change": [
+		{
+			"onInterrupt": true,
+			"onEmpty": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 46 }
+		}
+	],
+	"moves": [
+		{
+			"uses": 1,
+			"resetUses": true,
+			"time": 0.4,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": -1,
+			"moveType": "TARGET_RELATIVE",
+			"turnType": "TOWARD_TARGET",
+			"scripts": {}
+		},
+		{
+			"uses": 1,
+			"resetUses": true,
+			"time": 0.7,
+			"voc": { "id": 10102 },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 48 },
+	"name": "Weak boi fin upgrade",
+	"ignoreGauge": true,
+	"change": [
+		{
+			"onInterrupt": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 49 }
+		}
+	],
+	"moves": [
+		{
+			"time": 1.5,
+			"turnType": "TOWARD_TARGET",
+			"voc": { "id": 10010 },
+			"scripts": {}
+		},
+		{
+			"time": 0.9,
+			"voc": { "id": 10031 },
+			"scripts": {}
+		},
+		{
+			"time": 0.9,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"moveType": "TOWARD_TARGET",
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 49 },
+	"name": "Fin less scared",
+	"ignoreGauge": true,
+	"change": [
+		{
+			"moves": 2,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 48 }
+		}
+	],
+	"moves": [
+		{
+			"time": 1,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"moveType": "TOWARD_TARGET",
+			"turnType": "TOWARD_TARGET",
+			"voc": { "id": 10106 },
+			"scripts": {}
+		},
+		{
+			"time": 1.4,
+			"voc": { "id": 10016 },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 50 },
+	"name": "Crimson Spark",
+	"ignoreGauge": true,
+	"change": [
+		{
+			"onInterrupt": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 24 }
+		},
+		{
+			"minHealth": 0.4,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 51 }
+		}
+	],
+	"moves": [
+		{
+			"time": 0.6,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"moveType": "TOWARD_TARGET",
+			"turnType": "TOWARD_TARGET",
+			"voc": {},
+			"scripts": {}
+		},
+		{
+			"time": 1.1,
+			"skippable": true,
+			"voc": { "id": 10016 },
+			"scripts": {}
+		},
+		{
+			"time": 0.7,
+			"turnType": "TOWARD_TARGET",
+			"voc": { "id": 11 },
+			"scripts": {}
+		},
+		{
+			"time": 0.7,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": 4,
+			"yTile": 1,
+			"moveType": "ABSOLUTE",
+			"turn": true,
+			"turnType": "TOWARD_TARGET",
+			"scripts": {}
+		},
+		{
+			"time": 1,
+			"xTile": -1,
+			"yTile": -1,
+			"moveType": null,
+			"voc": { "id": 10231 },
+			"scripts": {}
+		},
+		{
+			"time": 1.2,
+			"turnType": "TOWARD_TARGET",
+			"voc": { "id": 10111 },
+			"scripts": {}
+		},
+		{
+			"time": 0.8,
+			"voc": { "id": 10032 },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 24 },
+	"name": "Crimson Spark Hit",
+	"change": [
+		{
+			"moves": 2,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 50 }
+		},
+		{
+			"minHealth": 0.4,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 51 }
+		}
+	],
+	"moves": [
+		{
+			"time": 0.4,
+			"turnType": "TOWARD_TARGET",
+			"voc": { "id": 10106 },
+			"scripts": {}
+		},
+		{
+			"time": 0.6,
+			"voc": { "id": 39 },
+			"style": {},
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 51 },
+	"name": "Crimson Spark: CRIMSON JUSTICE!!!",
+	"ignoreGauge": true,
+	"resetStatus": true,
+	"change": [
+		{
+			"onEmpty": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 50 }
+		}
+	],
+	"moves": [
+		{
+			"uses": 1,
+			"time": 0.8,
+			"voc": { "id": 10443 },
+			"scripts": {}
+		},
+		{
+			"uses": 1,
+			"time": 1.1,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": 4,
+			"yTile": 1,
+			"moveType": "ABSOLUTE",
+			"voc": { "id": 56 },
 			"scripts": {}
 		}
 	]

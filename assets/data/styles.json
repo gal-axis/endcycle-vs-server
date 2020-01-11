@@ -704,9 +704,9 @@
 					{ "class": "java.lang.Float", "value": 0 },
 					{ "class": "java.lang.Integer", "value": 0 },
 					{ "class": "java.lang.Integer", "value": 0 },
-					{ "class": "java.lang.Float", "value": 0.5 },
-					{ "class": "java.lang.Float", "value": 0.5 },
-					{ "class": "java.lang.Float", "value": 0.5 },
+					{ "class": "java.lang.Float", "value": 1 },
+					{ "class": "java.lang.Float", "value": 1 },
+					{ "class": "java.lang.Float", "value": 1 },
 					{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AttackShellWrapper" }
 				]
 			}
@@ -835,6 +835,76 @@
 				]
 			},
 			"wrapper": { "attackName": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.EmptyAttack" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.styles.VocStyle",
+	"id": { "id": 44 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.Panel" },
+	"prefix": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.Panel" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.Panel.Desc" },
+	"level": 1,
+	"drawable": {
+		"drawable": { "id": 378 }
+	},
+	"modifications": [
+		{
+			"class": "com.one2b3.endcycle.features.vocs.modifications.types.WrapperModification",
+			"wrapper": {
+				"attackName": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.ConditionalWrapperAttack",
+				"fields": [
+					{
+						"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AttackShellWrapper",
+						"attackName": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.MultiWrapperAttack",
+						"fields": [
+							{
+								"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AttackShellWrapper",
+								"power": 0,
+								"crushPower": 0,
+								"element": "NORMAL",
+								"overrideAilments": true,
+								"attackName": "com.one2b3.endcycle.screens.battle.attacks.data.field.PanelGrabAttack",
+								"fields": [
+									{ "class": "java.lang.Boolean", "value": true },
+									{ "class": "java.lang.Boolean", "value": false },
+									{ "class": "java.lang.Boolean", "value": false }
+								]
+							},
+							[
+								{
+									"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AttackShellWrapper",
+									"attackName": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.EmptyAttack",
+									"fields": [
+										{ "class": "java.lang.Boolean", "value": true },
+										{ "class": "java.lang.Boolean", "value": false },
+										{ "class": "java.lang.Boolean", "value": false }
+									]
+								}
+							]
+						]
+					},
+					{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AttackShellWrapper", "attackName": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.EmptyAttack" },
+					[
+						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": 1 },
+						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": 2 },
+						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": 3 },
+						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": 4 },
+						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": 5 },
+						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": -1 },
+						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": -2 },
+						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": -3 },
+						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": -4 },
+						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": -5 },
+						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": 6 },
+						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": -6 }
+					],
+					null,
+					{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.Party", "value": "ENEMY" },
+					{ "class": "java.lang.Boolean", "value": true },
+					{ "class": "java.lang.Boolean", "value": true }
+				]
+			}
 		}
 	]
 }

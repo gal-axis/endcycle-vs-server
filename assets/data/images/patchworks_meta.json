@@ -92,11 +92,11 @@
 		"drawable": { "id": 409 }
 	},
 	"attackLeadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_CLOSE" },
-	"shadowY": 5,
+	"shadowY": 3,
 	"extraStates": [
 		{
 			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_OPEN" },
-			"shadowOffsetY": 5,
+			"shadowOffsetY": 2,
 			"images": [
 				{
 					"drawable": { "id": 412 }
@@ -106,7 +106,7 @@
 		{
 			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_CLOSE" },
 			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
-			"shadowOffsetY": 5,
+			"shadowOffsetY": 2,
 			"images": [
 				{
 					"drawable": { "id": 413 }
@@ -1370,7 +1370,8 @@
 	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.SimplePatchworkMetaData",
 	"id": { "id": 14 },
 	"name": "Companion",
-	"drawable": { "id": 313 }
+	"drawable": { "id": 313 },
+	"yOfs": -4
 },
 {
 	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.SimplePatchworkMetaData",

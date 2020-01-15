@@ -352,6 +352,7 @@
 	"power": 125,
 	"speed": 150,
 	"visible": true,
+	"tease": true,
 	"customizable": true,
 	"skills": [ "Melting" ],
 	"unlockCondition": { "battlesFought": 40 },
@@ -377,6 +378,7 @@
 	"speed": 0,
 	"crush": 150,
 	"visible": true,
+	"tease": true,
 	"customizable": true,
 	"guest": true,
 	"skills": [ "OldSchool", "FuelSystem" ],
@@ -848,5 +850,19 @@
 	],
 	"health": 1,
 	"shadow": false
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 44 },
+	"dataName": "Weak Q.T.",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "QuadTurret" },
+	"patchworks": [
+		{
+			"id": { "id": 76 }
+		}
+	],
+	"element": "ELEC",
+	"health": 250,
+	"speed": 50
 }
 ]

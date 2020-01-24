@@ -6007,11 +6007,12 @@
 	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
 	"id": { "id": 25 },
 	"name": "Metal Lines",
-	"random": true,
+	"randomCoop": true,
 	"width": 7,
-	"height": 3,
+	"height": 4,
 	"panels": [
 		[
+			{ "party": "FRIENDLY", "fixed": true },
 			{ "party": "FRIENDLY", "fixed": true },
 			{ "party": "FRIENDLY", "fixed": true },
 			{ "party": "FRIENDLY", "fixed": true }
@@ -6019,14 +6020,17 @@
 		[
 			{ "party": "FRIENDLY", "type": "METAL" },
 			{ "party": "FRIENDLY", "type": "METAL" },
+			{ "party": "FRIENDLY", "type": "METAL" },
 			{ "party": "FRIENDLY", "type": "METAL" }
 		],
 		[
 			{},
 			{},
+			{},
 			{}
 		],
 		[
+			{ "type": "METAL" },
 			{ "type": "METAL" },
 			{ "type": "METAL" },
 			{ "type": "METAL" }
@@ -6034,14 +6038,17 @@
 		[
 			{},
 			{},
+			{},
 			{}
 		],
 		[
 			{ "party": "ENEMY", "type": "METAL" },
 			{ "party": "ENEMY", "type": "METAL" },
+			{ "party": "ENEMY", "type": "METAL" },
 			{ "party": "ENEMY", "type": "METAL" }
 		],
 		[
+			{ "party": "ENEMY", "fixed": true },
 			{ "party": "ENEMY", "fixed": true },
 			{ "party": "ENEMY", "fixed": true },
 			{ "party": "ENEMY", "fixed": true }
@@ -6137,6 +6144,274 @@
 			{ "party": "ENEMY", "fixed": true },
 			{ "party": "ENEMY", "fixed": true },
 			{ "party": "ENEMY", "fixed": true }
+		]
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
+	"id": { "id": 28 },
+	"name": "Tutorial Run",
+	"width": 29,
+	"height": 3,
+	"panels": [
+		[
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" }
+		],
+		[
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY" }
+		],
+		[
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" }
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{ "type": "MOVE_RIGHT" },
+			{ "type": "MOVE_RIGHT" },
+			{ "type": "MOVE_RIGHT" }
+		],
+		[
+			{ "type": "SNOW" },
+			{ "type": "SNOW" },
+			{ "type": "SNOW" }
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" }
+		],
+		[
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" }
+		],
+		[
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" }
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" }
+		],
+		[
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" }
+		],
+		[
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" }
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" }
+		],
+		[
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" }
+		],
+		[
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" }
+		],
+		[
+			{ "party": "FRIENDLY", "type": "MOVE_RIGHT", "fixed": true },
+			{ "party": "FRIENDLY", "type": "MOVE_RIGHT", "fixed": true },
+			{ "party": "FRIENDLY", "type": "MOVE_RIGHT", "fixed": true }
+		],
+		[
+			{ "party": "FRIENDLY", "type": "MOVE_RIGHT", "fixed": true },
+			{ "party": "FRIENDLY", "type": "MOVE_RIGHT", "fixed": true },
+			{ "party": "FRIENDLY", "type": "MOVE_RIGHT", "fixed": true }
+		],
+		[
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "fixed": true }
+		],
+		[
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "fixed": true }
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" }
+		],
+		[
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" }
+		]
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
+	"id": { "id": 29 },
+	"name": "Metal Border",
+	"random": true,
+	"width": 6,
+	"height": 3,
+	"panels": [
+		[
+			{ "party": "FRIENDLY", "type": "METAL", "fixed": true },
+			{ "party": "FRIENDLY", "type": "METAL", "fixed": true },
+			{ "party": "FRIENDLY", "type": "METAL", "fixed": true }
+		],
+		[
+			{ "party": "FRIENDLY", "type": "METAL" },
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY", "type": "METAL" }
+		],
+		[
+			{ "party": "FRIENDLY", "type": "METAL" },
+			{},
+			{}
+		],
+		[
+			{},
+			{},
+			{ "party": "ENEMY", "type": "METAL" }
+		],
+		[
+			{ "party": "ENEMY", "type": "METAL" },
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY", "type": "METAL" }
+		],
+		[
+			{ "party": "ENEMY", "type": "METAL", "fixed": true },
+			{ "party": "ENEMY", "type": "METAL", "fixed": true },
+			{ "party": "ENEMY", "type": "METAL", "fixed": true }
+		]
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
+	"id": { "id": 30 },
+	"name": "Empty",
+	"width": 13,
+	"height": 3,
+	"panels": [
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{},
+			{},
+			{}
 		]
 	]
 }

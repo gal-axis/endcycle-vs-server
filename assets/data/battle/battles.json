@@ -1077,5 +1077,67 @@
 		{ "x": 13, "y": 1, "width": 2, "height": 2 },
 		{ "x": 29, "y": 18, "width": 2, "height": 3 }
 	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"name": "Immersive Tutorial",
+	"run": true,
+	"field": { "id": 28 },
+	"background": { "id": 8 },
+	"music": { "id": 26 },
+	"entityShells": [
+		{
+			"id": { "id": 7 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"x": 1,
+			"y": 1,
+			"party": "FRIENDLY",
+			"player": true,
+			"mustSurvive": true
+		},
+		{
+			"id": { "id": 19 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"x": 8,
+			"y": 1,
+			"turned": true
+		},
+		{
+			"id": { "id": 3 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"x": 14,
+			"y": 1,
+			"turned": true,
+			"noise": true,
+			"action": { "id": 4 }
+		},
+		{
+			"id": { "id": 1 },
+			"name": "",
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"x": 19,
+			"y": 1,
+			"turned": true,
+			"noise": true,
+			"action": {}
+		},
+		{
+			"id": { "id": 5 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"x": 28,
+			"y": 1,
+			"turned": true,
+			"action": { "id": 19 },
+			"mustSurvive": true
+		}
+	],
+	"entityGoals": [
+		{ "entity": "loot", "display": "Loot", "defeated": 1 }
+	],
+	"liberations": [
+		{ "x": 7, "width": 3, "height": 3 },
+		{ "x": 18, "width": 2, "height": 3 },
+		{ "x": 13, "width": 2, "height": 3 }
+	]
 }
 ]

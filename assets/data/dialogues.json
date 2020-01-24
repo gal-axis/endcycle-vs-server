@@ -1731,6 +1731,7 @@
 						"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 						"x": 2,
 						"y": 1,
+						"vital": false,
 						"party": "FRIENDLY"
 					},
 					{ "class": "java.lang.Boolean", "value": true }
@@ -1791,10 +1792,14 @@
 	"endScripts": {
 		"scripts": [
 			{
-				"script": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript",
+				"script": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript",
 				"fields": [
 					{ "class": "java.lang.String", "value": "del" },
-					{ "class": "java.lang.Boolean", "value": true }
+					{ "class": "java.lang.Boolean", "value": true },
+					{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.movers.MoveType", "value": "ANIMATED_MOVING_TILE" },
+					{ "class": "java.lang.Integer", "value": -256 },
+					{ "class": "java.lang.Integer", "value": -256 },
+					{ "class": "java.lang.Boolean", "value": false }
 				]
 			},
 			{
@@ -1849,8 +1854,8 @@
 	"name": "Agent C6A2",
 	"lines": [
 		{
-			"entity": "",
-			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Del" },
+			"entity": "del",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.6.11" },
 			"color": { "r": 0.30980393, "g": 0.49411765, "b": 0.72156864, "a": 1 }
 		},
@@ -1860,7 +1865,8 @@
 			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.6.12" }
 		},
 		{
-			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Del" },
+			"entity": "del",
+			"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent.6.13" },
 			"color": { "r": 0.30980393, "g": 0.49411765, "b": 0.72156864, "a": 1 }
 		}

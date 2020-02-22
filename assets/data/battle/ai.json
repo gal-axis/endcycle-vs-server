@@ -191,6 +191,7 @@
 	"change": [
 		{
 			"moves": 1,
+			"onInterrupt": true,
 			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 			"action": { "id": 4 }
 		}
@@ -1216,7 +1217,7 @@
 	"ignoreGauge": true,
 	"moves": [
 		{
-			"time": 0.9,
+			"time": 1.3,
 			"voc": { "id": 10031 },
 			"scripts": {}
 		},
@@ -1287,7 +1288,7 @@
 			"scripts": {}
 		},
 		{
-			"time": 1.1,
+			"time": 1.4,
 			"voc": { "id": 51 },
 			"scripts": {}
 		}
@@ -1601,6 +1602,314 @@
 			"yTile": 1,
 			"moveType": "ABSOLUTE",
 			"voc": { "id": 56 },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 52 },
+	"name": "Punk Pushing",
+	"ignoreGauge": true,
+	"change": [
+		{
+			"onInterrupt": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 53 }
+		}
+	],
+	"moves": [
+		{
+			"time": 0.8,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": 4,
+			"moveType": "TARGET_RELATIVE",
+			"turnType": "TARGET",
+			"scripts": {}
+		},
+		{
+			"time": 1.3,
+			"moveType": null,
+			"turnType": null,
+			"voc": { "id": 21 },
+			"style": { "id": 17 },
+			"scripts": {}
+		},
+		{
+			"time": 0.8,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"moveType": "TOWARD_TARGET",
+			"turnType": "TARGET",
+			"scripts": {}
+		},
+		{
+			"time": 1.3,
+			"yTile": 1,
+			"moveType": null,
+			"turnType": null,
+			"voc": { "id": 10031 },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 53 },
+	"name": "Punk Hurt",
+	"ignoreGauge": true,
+	"change": [
+		{
+			"moves": 2,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 52 }
+		},
+		{
+			"onInterrupt": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 53 }
+		}
+	],
+	"moves": [
+		{
+			"time": 0.4,
+			"voc": { "id": 10352 },
+			"style": { "id": 11 },
+			"scripts": {}
+		},
+		{
+			"time": 0.7,
+			"voc": { "id": 6 },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 54 },
+	"name": "Alexsander IceCrawl",
+	"ignoreGauge": true,
+	"change": [
+		{
+			"onInterrupt": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 55 }
+		}
+	],
+	"moves": [
+		{
+			"time": 0.8,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"moveType": "TOWARD_TARGET",
+			"turnType": "TARGET",
+			"voc": { "id": 60 },
+			"scripts": {}
+		},
+		{
+			"time": 0.8,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": -1,
+			"moveType": "TOWARD_TARGET",
+			"turnType": "TARGET",
+			"voc": { "id": 60 },
+			"scripts": {}
+		},
+		{
+			"time": 0.4,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"moveType": "TOWARD_TARGET",
+			"turnType": "TARGET",
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 55 },
+	"name": "Alexsander Hurt",
+	"ignoreGauge": true,
+	"change": [
+		{
+			"moves": 2,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 54 }
+		}
+	],
+	"moves": [
+		{
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": 4,
+			"moveType": "TARGET_RELATIVE",
+			"scripts": {}
+		},
+		{
+			"time": 1,
+			"voc": { "id": 10101 },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 56 },
+	"name": "Cress Swords",
+	"ignoreGauge": true,
+	"change": [
+		{
+			"onInterrupt": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 58 }
+		},
+		{
+			"minHealth": 0.4,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 57 }
+		}
+	],
+	"moves": [
+		{
+			"time": 0.8,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"yTile": 1,
+			"moveType": "TOWARD_TARGET",
+			"turnType": "TOWARD_TARGET",
+			"scripts": {}
+		},
+		{
+			"time": 0.8,
+			"voc": { "id": 10016 },
+			"scripts": {}
+		},
+		{
+			"time": 0.7,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": 1,
+			"yTile": 1,
+			"moveType": "TOWARD_TARGET",
+			"turnType": "TOWARD_TARGET",
+			"scripts": {}
+		},
+		{
+			"time": 0.4,
+			"skippable": true,
+			"turnType": "TOWARD_TARGET",
+			"scripts": {}
+		},
+		{
+			"time": 1.6,
+			"skippable": true,
+			"voc": { "id": 10032 },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 57 },
+	"name": "Cress Final",
+	"ignoreGauge": true,
+	"change": [
+		{
+			"onEmpty": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 56 }
+		}
+	],
+	"moves": [
+		{
+			"uses": 1,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": 4,
+			"yTile": 1,
+			"moveType": "ABSOLUTE",
+			"scripts": {}
+		},
+		{
+			"uses": 1,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": 5,
+			"yTile": 1,
+			"moveType": "ABSOLUTE",
+			"turn": true,
+			"turnType": "ABSOLUTE",
+			"scripts": {}
+		},
+		{
+			"uses": 1,
+			"turnType": "TOWARD_TARGET",
+			"voc": { "id": 56 },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 58 },
+	"name": "Cress Hurt",
+	"ignoreGauge": true,
+	"change": [
+		{
+			"moves": 3,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 56 }
+		},
+		{
+			"minHealth": 0.4,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 57 }
+		}
+	],
+	"moves": [
+		{
+			"time": 0.4,
+			"skippable": true,
+			"move": "ANIMATED_TILE",
+			"xTile": 1,
+			"yTile": 1,
+			"moveType": "TOWARD_TARGET",
+			"turnType": "TOWARD_TARGET",
+			"scripts": {}
+		},
+		{
+			"time": 0.4,
+			"skippable": true,
+			"turnType": "TOWARD_TARGET",
+			"scripts": {}
+		},
+		{
+			"time": 1,
+			"voc": { "id": 52 },
+			"scripts": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 59 },
+	"name": "Q.T. Pre-Buff",
+	"ignoreGauge": true,
+	"change": [
+		{
+			"onEmpty": true,
+			"targetPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+			"action": { "id": 1 }
+		}
+	],
+	"moves": [
+		{
+			"uses": 1,
+			"voc": { "id": 55 },
 			"scripts": {}
 		}
 	]

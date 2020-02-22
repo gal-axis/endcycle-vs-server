@@ -25,12 +25,12 @@
 				"drawable": { "id": 1163 }
 			},
 			{ "class": "java.lang.Float", "value": 0.1 },
-			{ "class": "java.lang.Float", "value": 0.2 },
+			{ "class": "java.lang.Float", "value": 0.15 },
 			{ "class": "com.one2b3.endcycle.utils.bounded.BoundedFloat", "max": 0 },
 			{ "class": "com.one2b3.endcycle.utils.bounded.BoundedFloat", "max": 0.1, "val": 0.1 },
 			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "java.lang.Boolean", "value": true },
-			{ "class": "java.lang.Float", "value": 0.5 },
+			{ "class": "java.lang.Float", "value": 0.2 },
 			{ "class": "java.lang.Float", "value": 20 },
 			{ "class": "java.lang.Integer", "value": -1 },
 			{ "class": "java.lang.Float", "value": 1 },
@@ -166,8 +166,8 @@
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Spreader.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Spreader.Description" },
 		"level": 3,
-		"power": 200,
-		"crushPower": 250,
+		"power": 180,
+		"crushPower": 230,
 		"targetType": "SAME_COL_ENEMY",
 		"ailments": [
 			{ "type": "FLINCHING", "intensity": 0.3 }
@@ -185,7 +185,7 @@
 			{ "class": "com.one2b3.endcycle.utils.bounded.BoundedFloat", "max": 0.1, "val": 0.1 },
 			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "java.lang.Boolean", "value": true },
-			{ "class": "java.lang.Float", "value": 0.5 },
+			{ "class": "java.lang.Float", "value": 0.25 },
 			{ "class": "java.lang.Float", "value": 20 },
 			{ "class": "java.lang.Integer", "value": 1 },
 			{ "class": "java.lang.Float", "value": 1 },
@@ -267,7 +267,7 @@
 			{ "class": "com.one2b3.endcycle.utils.bounded.BoundedFloat", "max": 0.1, "val": 0.1 },
 			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "java.lang.Boolean", "value": true },
-			{ "class": "java.lang.Float", "value": 0.2 },
+			{ "class": "java.lang.Float", "value": 0.15 },
 			{ "class": "java.lang.Float", "value": 20 },
 			{ "class": "java.lang.Integer", "value": -1 },
 			{ "class": "java.lang.Float", "value": 1 },
@@ -368,7 +368,7 @@
 			{ "class": "com.one2b3.endcycle.utils.bounded.BoundedFloat", "max": 0.1, "val": 0.1 },
 			{ "class": "java.lang.Boolean", "value": true },
 			{ "class": "java.lang.Boolean", "value": true },
-			{ "class": "java.lang.Float", "value": 0.5 },
+			{ "class": "java.lang.Float", "value": 0.25 },
 			{ "class": "java.lang.Float", "value": 20 },
 			{ "class": "java.lang.Integer", "value": -1 },
 			{ "class": "java.lang.Float", "value": 1 },
@@ -509,7 +509,7 @@
 			{ "class": "com.one2b3.endcycle.utils.bounded.BoundedFloat", "max": 0.1, "val": 0.1 },
 			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "java.lang.Boolean", "value": true },
-			{ "class": "java.lang.Float", "value": 0.5 },
+			{ "class": "java.lang.Float", "value": 0.25 },
 			{ "class": "java.lang.Float", "value": 25 },
 			{ "class": "java.lang.Integer", "value": 3 },
 			{ "class": "java.lang.Float", "value": 0.5 },
@@ -547,7 +547,7 @@
 		"level": 2,
 		"targetType": "SELF",
 		"ailments": [
-			{ "type": "BLINDED", "duration": 5 },
+			{ "type": "BLINDED", "duration": 2.5 },
 			{ "type": "SPEED", "intensity": 1.5, "duration": 1 },
 			{ "type": "FLASH" }
 		],
@@ -739,7 +739,7 @@
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Regen.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Regen.Description" },
 		"level": 3,
-		"targetType": "ALL_ALLIES",
+		"targetType": "SELF",
 		"ailments": [
 			{ "type": "HP_CHANGER", "intensity": 20, "duration": 15 },
 			{ "type": "HEAL", "intensity": 50 }
@@ -928,7 +928,7 @@
 			null,
 			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "java.lang.Boolean", "value": false },
-			{ "class": "java.lang.Float", "value": 0.6 },
+			{ "class": "java.lang.Float", "value": 0.3 },
 			{ "class": "java.lang.Boolean", "value": false }
 		]
 	}
@@ -1248,8 +1248,8 @@
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.ToxicWave.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.ToxicWave.Description" },
 		"level": 2,
-		"power": 50,
-		"crushPower": 50,
+		"power": 80,
+		"crushPower": 100,
 		"element": "NATURE",
 		"ailments": [
 			{ "type": "FLINCHING", "intensity": 0.29999998 },
@@ -1304,8 +1304,8 @@
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.StunWave.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.StunWave.Description" },
 		"level": 2,
-		"power": 50,
-		"crushPower": 50,
+		"power": 100,
+		"crushPower": 80,
 		"element": "ELEC",
 		"targetType": "SAME_ROW_ENEMY",
 		"ailments": [
@@ -1489,6 +1489,7 @@
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Singularity.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Singularity.Description" },
 		"level": 2,
+		"element": "FIRE",
 		"targetType": "SELF",
 		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.field.FieldChangerAttack",
 		"fields": [
@@ -1758,7 +1759,7 @@
 			null,
 			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "java.lang.Boolean", "value": false },
-			{ "class": "java.lang.Float", "value": 0.4 },
+			{ "class": "java.lang.Float", "value": 0.2 },
 			{ "class": "java.lang.Boolean", "value": false }
 		]
 	}
@@ -1777,10 +1778,11 @@
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.BuildMetal.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.BuildMetal.Description" },
 		"level": 1,
+		"element": "ELEC",
 		"panel": "METAL",
 		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.field.BuildPanelAttack",
 		"fields": [
-			{ "class": "java.lang.Integer", "value": 0 },
+			{ "class": "java.lang.Integer", "value": 1 },
 			{ "class": "java.lang.Integer", "value": 0 },
 			{ "class": "java.lang.Integer", "value": 0 }
 		]
@@ -1800,6 +1802,7 @@
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.BuildIce.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.BuildIce.Description" },
 		"level": 1,
+		"element": "WATER",
 		"panel": "SNOW",
 		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.field.BuildPanelAttack",
 		"fields": [
@@ -2186,7 +2189,7 @@
 			{ "class": "com.one2b3.endcycle.engine.audio.sound.SoundInfo", "sound": "battle/programs/ray.wav", "volume": 1, "pitch": 1 },
 			{ "class": "java.lang.Integer", "value": 3 },
 			{ "class": "java.lang.Integer", "value": 1 },
-			{ "class": "java.lang.Float", "value": 0.3 },
+			{ "class": "java.lang.Float", "value": 0.2 },
 			{ "class": "java.lang.Float", "value": 0.5 },
 			{ "class": "java.lang.Integer", "value": 1 },
 			{ "class": "java.lang.Boolean", "value": false },
@@ -2273,12 +2276,12 @@
 						"drawable": { "id": 8 }
 					},
 					{ "class": "java.lang.Float", "value": 0.1 },
-					{ "class": "java.lang.Float", "value": 0.2 },
+					{ "class": "java.lang.Float", "value": 0.15 },
 					{ "class": "com.one2b3.endcycle.utils.bounded.BoundedFloat", "max": 0 },
 					{ "class": "com.one2b3.endcycle.utils.bounded.BoundedFloat", "max": 0.1 },
 					{ "class": "java.lang.Boolean", "value": false },
 					{ "class": "java.lang.Boolean", "value": true },
-					{ "class": "java.lang.Float", "value": 0.5 },
+					{ "class": "java.lang.Float", "value": 0.2 },
 					{ "class": "java.lang.Float", "value": 25 },
 					{ "class": "java.lang.Integer", "value": 3 },
 					{ "class": "java.lang.Float", "value": 0.5 },
@@ -2621,10 +2624,11 @@
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.BuildGrass.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.BuildGrass.Description" },
 		"level": 1,
+		"element": "NATURE",
 		"panel": "GRASS",
 		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.field.BuildPanelAttack",
 		"fields": [
-			{ "class": "java.lang.Integer", "value": 0 },
+			{ "class": "java.lang.Integer", "value": 1 },
 			{ "class": "java.lang.Integer", "value": 0 },
 			{ "class": "java.lang.Integer", "value": 0 }
 		]
@@ -3038,7 +3042,7 @@
 		"crushPower": 300,
 		"ailments": [
 			{ "type": "FLASH" },
-			{ "type": "BLINDED", "duration": 5 }
+			{ "type": "BLINDED", "duration": 2.5 }
 		],
 		"attackAnimation": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" },
 		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
@@ -3411,9 +3415,8 @@
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.PanelCannon.Description" },
 		"level": 2,
 		"power": 75,
-		"crushPower": 50,
+		"crushPower": 75,
 		"ailments": [
-			{ "type": "FLINCHING" },
 			{ "type": "GRAB_PANEL" }
 		],
 		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
@@ -3424,12 +3427,12 @@
 				"drawable": { "id": 1163 }
 			},
 			{ "class": "java.lang.Float", "value": 0.1 },
-			{ "class": "java.lang.Float", "value": 0.2 },
+			{ "class": "java.lang.Float", "value": 0.15 },
 			{ "class": "com.one2b3.endcycle.utils.bounded.BoundedFloat", "max": 0 },
 			{ "class": "com.one2b3.endcycle.utils.bounded.BoundedFloat", "max": 0.1 },
 			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "java.lang.Boolean", "value": true },
-			{ "class": "java.lang.Float", "value": 0.5 },
+			{ "class": "java.lang.Float", "value": 0.2 },
 			{ "class": "java.lang.Float", "value": 20 },
 			{ "class": "java.lang.Integer", "value": -1 },
 			{ "class": "java.lang.Float", "value": 1 },
@@ -3635,7 +3638,7 @@
 	"minimalPosition": { "xType": "CLOSER", "xDistance": 2, "yType": "CLOSER", "yDistance": 2 },
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Explosion" },
-		"power": 200,
+		"power": 150,
 		"crushPower": 150,
 		"element": "FIRE",
 		"ailments": [
@@ -3924,8 +3927,8 @@
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Snip" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Snip.Desc" },
 		"level": 1,
-		"power": 40,
-		"crushPower": 40,
+		"power": 70,
+		"crushPower": 60,
 		"element": "SPECIAL",
 		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.field.HumidityAttack",
 		"fields": [
@@ -3956,7 +3959,7 @@
 			},
 			{ "class": "java.lang.Float", "value": 0 },
 			{ "class": "java.lang.Float", "value": 0 },
-			{ "class": "java.lang.Float", "value": 0.15 },
+			{ "class": "java.lang.Float", "value": 0.3 },
 			[
 				{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": 1, "y": -1 },
 				{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": 1 },
@@ -4145,7 +4148,7 @@
 								{ "class": "com.one2b3.endcycle.utils.bounded.BoundedFloat", "max": 0.1 },
 								{ "class": "java.lang.Boolean", "value": false },
 								{ "class": "java.lang.Boolean", "value": true },
-								{ "class": "java.lang.Float", "value": 0.4 },
+								{ "class": "java.lang.Float", "value": 0.25 },
 								{ "class": "java.lang.Float", "value": 20 },
 								{ "class": "java.lang.Integer", "value": -1 },
 								{ "class": "java.lang.Float", "value": 1 },
@@ -4200,6 +4203,82 @@
 		"fields": [
 			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "java.lang.Boolean", "value": true },
+			{ "class": "java.lang.Boolean", "value": true }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 59 },
+	"role": "GUARD",
+	"vocType": "CAST",
+	"visible": true,
+	"imageIndex": 59,
+	"tags": [ "AFFECTS_ALLY", "BUFF" ],
+	"optimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+	"attackShell": {
+		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Invis" },
+		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Invis.Desc" },
+		"level": 3,
+		"targetType": "SELF",
+		"ailments": [
+			{ "type": "BLINDED", "intensity": -1, "duration": 3.5 }
+		],
+		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.status.AilmentInflicterAttack"
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 60 },
+	"role": "EFFECT",
+	"vocType": "PROJECTILE",
+	"visible": true,
+	"imageIndex": 60,
+	"tags": [ "ATTACK", "AFFECTS_ENEMY", "SHOOT" ],
+	"optimalPosition": { "xType": "FURTHER", "yType": "EQUAL" },
+	"minimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+	"attackShell": {
+		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "IceCrawl" },
+		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "IceCrawl.Desc" },
+		"level": 1,
+		"power": 70,
+		"crushPower": 100,
+		"element": "WATER",
+		"ailments": [
+			{ "type": "SPEED", "intensity": -0.35, "duration": 2 }
+		],
+		"attack": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
+		"fields": [
+			{ "class": "com.one2b3.endcycle.utils.bounded.BoundedFloat", "max": 5, "speed": 60 },
+			{
+				"class": "com.one2b3.endcycle.engine.graphics.DrawableId",
+				"drawable": { "id": 384 }
+			},
+			{ "class": "java.lang.Float", "value": 0.1 },
+			{ "class": "java.lang.Float", "value": 0.8 },
+			{ "class": "com.one2b3.endcycle.utils.bounded.BoundedFloat", "max": 0 },
+			{ "class": "com.one2b3.endcycle.utils.bounded.BoundedFloat", "max": 0.1 },
+			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Boolean", "value": true },
+			{ "class": "java.lang.Float", "value": 0.9 },
+			{ "class": "java.lang.Float", "value": 20 },
+			{ "class": "java.lang.Integer", "value": -1 },
+			{ "class": "java.lang.Float", "value": 1 },
+			{ "class": "java.lang.Float", "value": 1 },
+			{ "class": "java.lang.Integer", "value": 1 },
+			[
+				{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack$Shot", "xSpeed": 500 }
+			],
+			{ "class": "java.lang.Integer", "value": 8 },
+			{ "class": "java.lang.Integer", "value": 4 },
+			{ "class": "com.one2b3.endcycle.engine.audio.sound.SoundInfo", "sound": "battle/programs/ice.wav", "volume": 1, "pitch": 1 },
+			{ "class": "java.lang.Float", "value": -1 },
+			{ "class": "java.lang.Boolean", "value": false },
+			{ "class": "java.lang.Float", "value": 0 },
+			{ "class": "java.lang.Float", "value": 14 },
+			{ "class": "java.lang.Boolean", "value": true },
+			{ "class": "java.lang.Boolean", "value": false },
 			{ "class": "java.lang.Boolean", "value": true }
 		]
 	}

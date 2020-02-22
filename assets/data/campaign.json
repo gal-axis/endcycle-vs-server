@@ -402,6 +402,314 @@
 },
 {
 	"class": "com.one2b3.endcycle.features.campaign.CampaignData",
+	"id": { "id": 5 },
+	"name": "Crimson Uprising",
+	"color": { "r": 0.6784314, "g": 0.09019608, "b": 0.16862746, "a": 1 },
+	"description": "Sturdy, broad and loyal: The punks live a carefree life... until a certain young woman breaks into their base one day and forces them to become more than just outlaws. How will they cope?",
+	"victory": "The fight against Azure Shield has officially begun... the punks finally found a goal worth fighting for.",
+	"character": { "id": 23 },
+	"nodes": [
+		{
+			"name": "You talking to Me?",
+			"battle": { "id": 2 },
+			"dialogue": { "id": 56 },
+			"dialogueAfter": { "id": 59 },
+			"startAfterDialogue": false,
+			"endAfterDialogue": false,
+			"leaveAlive": true,
+			"onLoad": {},
+			"onWin": {}
+		},
+		{
+			"name": "Cress Sceptic",
+			"battle": { "id": 8 },
+			"dialogue": { "id": 60 },
+			"startAfterDialogue": false,
+			"autoWin": false,
+			"leaveAlive": true,
+			"onLoad": {},
+			"onWin": {
+				"scripts": [
+					{
+						"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+						"fields": [
+							{ "class": "com.one2b3.endcycle.utils.ID", "id": 87 }
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Brozu Tactics",
+			"battle": { "id": 23 },
+			"dialogue": { "id": 64 },
+			"startAfterDialogue": false,
+			"onLoad": {
+				"scripts": [
+					{
+						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+						"fields": [
+							{ "class": "java.lang.String", "value": "noise" },
+							{ "class": "java.lang.Boolean", "value": false }
+						]
+					}
+				]
+			},
+			"onWin": {},
+			"scenesBefore": [
+				{
+					"battle": { "id": 26 },
+					"scripts": {
+						"scripts": [
+							{
+								"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+								"fields": [
+									{ "class": "com.one2b3.endcycle.utils.ID", "id": 63 }
+								]
+							}
+						]
+					}
+				}
+			],
+			"scenesAfter": [
+				{
+					"battle": { "id": 26 },
+					"scripts": {
+						"scripts": [
+							{
+								"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+								"fields": [
+									{ "class": "com.one2b3.endcycle.utils.ID", "id": 66 }
+								]
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Crimson VS Azure",
+			"battle": { "id": 31 },
+			"dialogue": { "id": 73 },
+			"dialogueAfter": { "id": 75 },
+			"startAfterDialogue": false,
+			"onLoad": {
+				"scripts": [
+					{
+						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+						"fields": [
+							{ "class": "java.lang.String", "value": "player" },
+							{ "class": "java.lang.Boolean", "value": false }
+						]
+					}
+				]
+			},
+			"onWin": {},
+			"scenesBefore": [
+				{
+					"battle": { "id": 24 },
+					"scripts": {
+						"scripts": [
+							{
+								"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+								"fields": [
+									{ "class": "com.one2b3.endcycle.utils.ID", "id": 70 }
+								]
+							}
+						]
+					}
+				},
+				{
+					"battle": { "id": 30 },
+					"scripts": {
+						"scripts": [
+							{
+								"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+								"delay": 0.6,
+								"fields": [
+									{ "class": "com.one2b3.endcycle.utils.ID", "id": 72 }
+								]
+							},
+							{
+								"script": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript",
+								"delay": 0.8,
+								"fields": [
+									{ "class": "java.lang.String", "value": "cress" },
+									{ "class": "java.lang.Boolean", "value": true },
+									{ "class": "java.lang.Boolean", "value": false }
+								]
+							}
+						]
+					}
+				}
+			],
+			"scenesAfter": [
+				{
+					"battle": { "id": 30 },
+					"scripts": {
+						"scripts": [
+							{
+								"script": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript",
+								"fields": [
+									{ "class": "java.lang.String", "value": "player" },
+									{ "class": "java.lang.Boolean", "value": true },
+									{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.movers.MoveType", "value": "INSTANT_TILE" },
+									{ "class": "java.lang.Integer", "value": 0 },
+									{ "class": "java.lang.Integer", "value": -2 },
+									{ "class": "java.lang.Boolean", "value": false },
+									{ "class": "java.lang.Boolean", "value": false }
+								]
+							},
+							{
+								"script": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript",
+								"fields": [
+									{ "class": "java.lang.String", "value": "rozu" },
+									{ "class": "java.lang.Boolean", "value": true },
+									{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.movers.MoveType", "value": "INSTANT_TILE" },
+									{ "class": "java.lang.Integer", "value": 0 },
+									{ "class": "java.lang.Integer", "value": 1 },
+									{ "class": "java.lang.Boolean", "value": false },
+									{ "class": "java.lang.Boolean", "value": false }
+								]
+							},
+							{
+								"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+								"fields": [
+									{ "class": "java.lang.String", "value": "player" },
+									{ "class": "java.lang.Boolean", "value": false }
+								]
+							},
+							{
+								"script": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript",
+								"fields": [
+									{ "class": "java.lang.String", "value": "cress" },
+									{ "class": "java.lang.Boolean", "value": true },
+									{ "class": "java.lang.Boolean", "value": false }
+								]
+							},
+							{
+								"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+								"delay": 0.6,
+								"fields": [
+									{ "class": "java.lang.String", "value": "player" },
+									{ "class": "java.lang.Boolean", "value": true }
+								]
+							},
+							{
+								"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+								"delay": 1,
+								"fields": [
+									{ "class": "com.one2b3.endcycle.utils.ID", "id": 76 }
+								]
+							},
+							{
+								"script": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript",
+								"delay": 1,
+								"fields": [
+									{ "class": "java.lang.String", "value": "rozu" },
+									{ "class": "java.lang.Boolean", "value": true },
+									{ "class": "java.lang.Boolean", "value": false }
+								]
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Godius???",
+			"battle": { "id": 25 },
+			"dialogueAfter": { "id": 81 },
+			"startAfterDialogue": false,
+			"endAfterDialogue": false,
+			"onLoad": {
+				"scripts": [
+					{
+						"script": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript",
+						"delay": 1.2,
+						"fields": [
+							{ "class": "java.lang.String", "value": "puppy" },
+							{ "class": "java.lang.Boolean", "value": true },
+							{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.movers.MoveType", "value": "ANIMATED_TILE" },
+							{ "class": "java.lang.Integer", "value": 1 },
+							{ "class": "java.lang.Integer", "value": 0 },
+							{ "class": "java.lang.Boolean", "value": false },
+							{ "class": "java.lang.Boolean", "value": false }
+						]
+					},
+					{
+						"script": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript",
+						"delay": 1.9,
+						"fields": [
+							{ "class": "java.lang.String", "value": "noise 1" },
+							{ "class": "java.lang.Boolean", "value": false },
+							{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.movers.MoveType", "value": "ANIMATED_TILE" },
+							{ "class": "java.lang.Integer", "value": 4 },
+							{ "class": "java.lang.Integer", "value": 1 },
+							{ "class": "java.lang.Boolean", "value": false },
+							{ "class": "java.lang.Boolean", "value": false }
+						]
+					},
+					{
+						"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+						"delay": 2.2,
+						"fields": [
+							{ "class": "com.one2b3.endcycle.utils.ID", "id": 78 }
+						]
+					}
+				]
+			},
+			"onWin": {},
+			"scenesBefore": [
+				{
+					"battle": { "id": 50 },
+					"scripts": {
+						"scripts": [
+							{
+								"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+								"fields": [
+									{ "class": "com.one2b3.endcycle.utils.ID", "id": 77 }
+								]
+							}
+						]
+					}
+				}
+			],
+			"scenesAfter": [
+				{
+					"battle": { "id": 32 },
+					"scripts": {
+						"scripts": [
+							{
+								"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
+								"fields": [
+									{ "class": "java.lang.String", "value": "del" },
+									{ "class": "java.lang.Boolean", "value": false }
+								]
+							},
+							{
+								"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+								"delay": 0.6,
+								"fields": [
+									{ "class": "com.one2b3.endcycle.utils.ID", "id": 84 }
+								]
+							}
+						]
+					}
+				}
+			]
+		}
+	],
+	"unlockCondition": {
+		"campaigns": [
+			{
+				"campaign": { "id": 2 }
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.campaign.CampaignData",
 	"id": { "id": 3 },
 	"name": "Leader of Azure Shield",
 	"color": { "r": 0.20784314, "g": 0.28235295, "b": 0.9490196, "a": 1 },

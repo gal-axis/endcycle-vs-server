@@ -193,7 +193,12 @@
 		}
 	],
 	"unlockCondition": {
-		"onslaughtScore": { "normalWave": 8 }
+		"onslaughtScore": { "normalWave": 8 },
+		"campaigns": [
+			{
+				"campaign": { "id": 2 }
+			}
+		]
 	}
 },
 {
@@ -214,7 +219,11 @@
 	"customizable": true,
 	"skills": [ "Leader" ],
 	"unlockCondition": {
-		"onslaughtScore": { "hardWave": 5 }
+		"campaigns": [
+			{
+				"campaign": { "id": 5 }
+			}
+		]
 	},
 	"customizationUnlockCondition": {
 		"affinities": [
@@ -883,6 +892,16 @@
 	"patchworks": [
 		{
 			"id": { "id": 98 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 47 },
+	"dataName": "Teleporter",
+	"patchworks": [
+		{
+			"id": { "id": 29 }
 		}
 	]
 }

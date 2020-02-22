@@ -435,7 +435,7 @@
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
 			"inflicts": [
 				{ "type": "FLASH" },
-				{ "type": "BLINDED", "duration": 2 }
+				{ "type": "BLINDED", "duration": 1 }
 			]
 		}
 	]
@@ -455,7 +455,7 @@
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
 			"inflicts": [
-				{ "type": "FLOATING" }
+				{ "type": "FREEZE", "intensity": -1, "duration": 3 }
 			]
 		}
 	]
@@ -796,7 +796,7 @@
 				"element": "NORMAL",
 				"overrideAilments": true,
 				"ailments": [
-					{ "type": "INVISIBLE", "duration": 0.5 }
+					{ "type": "BLINDED", "intensity": -1, "duration": 1 }
 				],
 				"target": "SELF",
 				"attackName": "com.one2b3.endcycle.screens.battle.attacks.data.status.DirectAttack"

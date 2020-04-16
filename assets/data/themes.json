@@ -3,7 +3,40 @@
 	"class": "com.one2b3.endcycle.features.theme.MenuTheme",
 	"id": {},
 	"name": "Default",
-	"visible": true
+	"automatic": true,
+	"visible": true,
+	"menuColor": { "r": 0.6901961, "g": 0.07450981, "b": 0.11764706, "a": 1 },
+	"defaultColor": { "r": 0.24313726, "g": 0.4509804, "b": 0.9411765, "a": 1 },
+	"selectColor": { "r": 0.9411765, "g": 0.24313726, "b": 0.2901961, "a": 1 },
+	"titleColor": { "r": 0.4392157, "g": 0.07450981, "b": 0.07450981, "a": 1 },
+	"background": { "id": 19 },
+	"button": {
+		"drawable": { "id": 457 }
+	},
+	"panel": {
+		"drawable": { "id": 458 }
+	},
+	"container": {
+		"drawable": { "id": 460 }
+	},
+	"containerTitle": {
+		"drawable": { "id": 459 }
+	},
+	"bigMessage": {
+		"drawable": { "id": 458 }
+	},
+	"smallMessage": {
+		"drawable": { "id": 461 }
+	},
+	"header": {
+		"drawable": { "id": 462 }
+	},
+	"headerBar": {
+		"drawable": { "id": 464 }
+	},
+	"headerBack": {
+		"drawable": { "id": 463 }
+	}
 },
 {
 	"class": "com.one2b3.endcycle.features.theme.MenuTheme",
@@ -14,11 +47,8 @@
 	"defaultColor": { "r": 0.27058825, "g": 0.36078432, "b": 0.6901961, "a": 1 },
 	"disabledColor": { "r": 0.2, "g": 0.3019608, "b": 0.32156864, "a": 1 },
 	"selectColor": { "r": 0.3882353, "g": 0.9607843, "b": 1, "a": 1 },
-	"titleColor": { "r": 0.15294118, "g": 0.7294118, "b": 0.76862746, "a": 1 },
+	"titleColor": { "r": 0.19607843, "g": 0.47843137, "b": 0.5019608, "a": 1 },
 	"background": { "id": 14 },
-	"logo": {
-		"drawable": { "id": 201 }
-	},
 	"button": {
 		"drawable": { "id": 149 }
 	},
@@ -64,11 +94,8 @@
 	"defaultColor": { "r": 0.4392157, "g": 0.4392157, "b": 0.4392157, "a": 1 },
 	"disabledColor": { "r": 0.2509804, "g": 0.2509804, "b": 0.2509804, "a": 1 },
 	"selectColor": { "r": 0.019607844, "g": 0.89411765, "b": 0.67058825, "a": 1 },
-	"titleColor": { "r": 0.65882355, "g": 0.99607843, "b": 0.5058824, "a": 1 },
+	"titleColor": { "r": 0.007843138, "g": 0.4509804, "b": 0.34117648, "a": 1 },
 	"background": { "id": 11 },
-	"logo": {
-		"drawable": { "id": 234 }
-	},
 	"button": {
 		"drawable": { "id": 233 }
 	},
@@ -109,15 +136,13 @@
 	"class": "com.one2b3.endcycle.features.theme.MenuTheme",
 	"id": { "id": 3 },
 	"name": "Crimson",
+	"visible": true,
 	"menuColor": { "r": 0.6, "g": 0.16862746, "b": 0.22745098, "a": 1 },
 	"defaultColor": { "r": 0.32156864, "g": 0.2901961, "b": 0.2901961, "a": 1 },
 	"disabledColor": { "r": 0.16078432, "g": 0.14901961, "b": 0.14901961, "a": 1 },
 	"selectColor": { "r": 0.6, "g": 0.16862746, "b": 0.22745098, "a": 1 },
-	"titleColor": { "r": 0.32156864, "g": 0.2901961, "b": 0.2901961, "a": 1 },
+	"titleColor": { "r": 0.3019608, "g": 0.08235294, "b": 0.11372549, "a": 1 },
 	"background": { "id": 13 },
-	"logo": {
-		"drawable": { "id": 307 }
-	},
 	"button": {
 		"drawable": { "id": 302 }
 	},
@@ -144,23 +169,40 @@
 	},
 	"headerBack": {
 		"drawable": { "id": 301 }
+	},
+	"unlockCondition": {
+		"campaigns": [
+			{
+				"campaign": { "id": 5 }
+			}
+		]
 	}
 },
 {
 	"class": "com.one2b3.endcycle.features.theme.MenuTheme",
 	"id": { "id": 4 },
 	"name": "Ultimate",
+	"visible": true,
 	"menuColor": { "r": 0.7490196, "g": 0.6666667, "b": 0.12156863, "a": 1 },
 	"defaultColor": { "r": 0.26666668, "g": 0.21960784, "b": 0.34117648, "a": 1 },
 	"disabledColor": { "r": 0.11372549, "g": 0.0627451, "b": 0.1882353, "a": 1 },
 	"selectColor": { "r": 0.61960787, "g": 0.43137255, "b": 0.9019608, "a": 1 },
-	"titleColor": { "r": 0.7294118, "g": 0.6862745, "b": 0.40784314, "a": 1 },
+	"titleColor": { "r": 0.30980393, "g": 0.21568628, "b": 0.4509804, "a": 1 },
 	"background": { "id": 11 },
-	"logo": {
-		"drawable": { "id": 312 }
-	},
 	"button": {
 		"drawable": { "id": 233 }
+	},
+	"panel": {
+		"drawable": { "id": 458 }
+	},
+	"container": {
+		"drawable": { "id": 460 }
+	},
+	"containerTitle": {
+		"drawable": { "id": 459 }
+	},
+	"bigMessage": {
+		"drawable": { "id": 458 }
 	},
 	"smallMessage": {
 		"drawable": { "id": 237 }
@@ -173,17 +215,21 @@
 	},
 	"headerBack": {
 		"drawable": { "id": 148 }
+	},
+	"unlockCondition": {
+		"onslaughtScore": { "dragonriderWave": 10 }
 	}
 },
 {
 	"class": "com.one2b3.endcycle.features.theme.MenuTheme",
 	"id": { "id": 5 },
 	"name": "Halloween",
-	"automatic": true,
 	"visible": true,
 	"menuSong": { "id": 7 },
+	"menuColor": { "r": 0.9098039, "g": 0.28627452, "a": 1 },
 	"defaultColor": { "r": 0.49411765, "g": 0.19607843, "b": 0.67058825, "a": 1 },
-	"titleColor": { "r": 0.69411767, "g": 0.6, "b": 0.7490196, "a": 1 },
+	"selectColor": { "r": 0.9098039, "g": 0.28627452, "a": 1 },
+	"titleColor": { "r": 0.49019608, "g": 0.18039216, "b": 0.03529412, "a": 1 },
 	"background": { "id": 8000 },
 	"button": {
 		"drawable": { "id": 302 }
@@ -212,5 +258,13 @@
 	"headerBack": {
 		"drawable": { "id": 301 }
 	}
+},
+{
+	"class": "com.one2b3.endcycle.features.theme.MenuTheme",
+	"id": { "id": 6 },
+	"name": "Legacy",
+	"visible": true,
+	"selectColor": { "r": 1, "g": 0.5, "a": 1 },
+	"titleColor": { "r": 0.5019608, "g": 0.2509804, "a": 1 }
 }
 ]

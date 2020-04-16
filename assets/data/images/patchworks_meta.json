@@ -547,12 +547,6 @@
 	},
 	"hurt": {
 		"drawable": { "id": 485 }
-	},
-	"stunStart": {
-		"drawable": { "id": 486 }
-	},
-	"stunEnd": {
-		"drawable": { "id": 487 }
 	}
 },
 {
@@ -822,6 +816,8 @@
 	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleLayeredPatchworkMetaData",
 	"id": {},
 	"name": "Del",
+	"offsetY": 2,
+	"shadowY": 1,
 	"idle": [
 		{
 			"drawable": { "id": 26 }
@@ -1121,6 +1117,8 @@
 	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleLayeredPatchworkMetaData",
 	"id": { "id": 4 },
 	"name": "Del SP",
+	"offsetY": 2,
+	"shadowY": 1,
 	"idle": [
 		{
 			"drawable": { "id": 203 }
@@ -2164,6 +2162,8 @@
 	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleLayeredPatchworkMetaData",
 	"id": { "id": 27 },
 	"name": "Alexsander",
+	"offsetY": -4,
+	"shadowY": 3,
 	"idle": [
 		{
 			"drawable": { "id": 357 }
@@ -2198,6 +2198,7 @@
 		{
 			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_OPEN" },
 			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 3,
 			"images": [
 				{
 					"drawable": { "id": 349 }
@@ -2207,6 +2208,7 @@
 		{
 			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_CLOSE" },
 			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-IDLE" },
+			"shadowOffsetY": 3,
 			"images": [
 				{
 					"drawable": { "id": 350 }
@@ -2215,6 +2217,7 @@
 		},
 		{
 			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-IDLE" },
+			"shadowOffsetY": 3,
 			"images": [
 				{
 					"drawable": { "id": 351 }
@@ -2224,6 +2227,7 @@
 		{
 			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-FLINCH" },
 			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-IDLE" },
+			"shadowOffsetY": 3,
 			"images": [
 				{
 					"drawable": { "id": 353 }
@@ -2232,6 +2236,7 @@
 		},
 		{
 			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-STUN_START" },
+			"shadowOffsetY": 3,
 			"images": [
 				{
 					"drawable": { "id": 354 }
@@ -2241,6 +2246,7 @@
 		{
 			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-STUN_END" },
 			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-IDLE" },
+			"shadowOffsetY": 3,
 			"images": [
 				{
 					"drawable": { "id": 355 }
@@ -2250,6 +2256,7 @@
 		{
 			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-CASTING" },
 			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-IDLE" },
+			"shadowOffsetY": 3,
 			"images": [
 				{
 					"drawable": { "id": 352 }
@@ -2259,6 +2266,7 @@
 		{
 			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-ATTACKING" },
 			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-IDLE" },
+			"shadowOffsetY": 3,
 			"images": [
 				{
 					"drawable": { "id": 352 }
@@ -2268,6 +2276,7 @@
 		{
 			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-MOVING_FORWARD" },
 			"type": "TILE_MOVE_FORWARD",
+			"shadowOffsetY": 3,
 			"images": [
 				{
 					"drawable": { "id": 351 }
@@ -2278,6 +2287,7 @@
 			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-MOVING_BACKWARD" },
 			"type": "TILE_MOVE_BACKWARD",
 			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-IDLE" },
+			"shadowOffsetY": 3,
 			"images": [
 				{
 					"drawable": { "id": 351 }
@@ -2442,6 +2452,41 @@
 			"colors": [
 				{ "r": 0.7882353, "g": 0.1254902, "b": 0.1254902, "a": 1 }
 			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleLayeredPatchworkMetaData",
+	"id": { "id": 30 },
+	"name": "Jeremy",
+	"idle": [
+		{
+			"drawable": { "id": 234 }
+		}
+	],
+	"hurt": [
+		{
+			"drawable": { "id": 466 }
+		}
+	],
+	"stunStart": [
+		{
+			"drawable": { "id": 468 }
+		}
+	],
+	"stunEnd": [
+		{
+			"drawable": { "id": 469 }
+		}
+	],
+	"cast": [
+		{
+			"drawable": { "id": 312 }
+		}
+	],
+	"attack": [
+		{
+			"drawable": { "id": 307 }
 		}
 	]
 }

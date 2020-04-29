@@ -28,7 +28,7 @@
 	"id": { "id": 2 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Spark" },
 	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1.4 }
+		"sound": { "sound": "ui/dialogue/high.wav", "volume": 1, "pitch": 1.4 }
 	},
 	"card": { "id": 414 },
 	"patchworks": [
@@ -228,7 +228,7 @@
 	"id": { "id": 21 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Cress" },
 	"voice": {
-		"sound": { "sound": "ui/dialogue/high.wav", "volume": 1, "pitch": 0.6 }
+		"sound": { "sound": "ui/dialogue/high.wav", "volume": 1, "pitch": 0.9 }
 	},
 	"card": { "id": 394 },
 	"patchworks": [
@@ -459,8 +459,12 @@
 			"id": { "id": 30 }
 		}
 	],
+	"health": 800,
+	"power": 125,
+	"speed": 125,
 	"visible": true,
 	"guest": true,
+	"skills": [ "Barricade" ],
 	"unlockCondition": { "creditDefeated": "Jeremy" }
 },
 {
@@ -657,6 +661,9 @@
 	"id": { "id": 25 },
 	"dataName": "Spark Boss",
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Spark" },
+	"voice": {
+		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1.4 }
+	},
 	"patchworks": [
 		{
 			"id": { "id": 93 }

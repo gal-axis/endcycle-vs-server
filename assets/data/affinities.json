@@ -590,7 +590,7 @@
 	"image": "qt/modes.jpg",
 	"affinity": {
 		"character": { "id": 1 },
-		"amount": 0.6
+		"amount": 0.55
 	}
 },
 {
@@ -603,7 +603,7 @@
 	"image": "qt/faces.jpg",
 	"affinity": {
 		"character": { "id": 1 },
-		"amount": 0.75
+		"amount": 0.7
 	}
 },
 {
@@ -616,7 +616,20 @@
 	"image": "qt/faces_2.jpg",
 	"affinity": {
 		"character": { "id": 1 },
-		"amount": 0.9
+		"amount": 0.85
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 23 },
+	"parent": { "id": 52 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "QT.Final" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Auramiyonautica",
+	"image": "qt/final.jpg",
+	"affinity": {
+		"character": { "id": 1 },
+		"amount": 1
 	}
 },
 {
@@ -647,6 +660,19 @@
 },
 {
 	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 102 },
+	"parent": { "id": 52 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Sofa.Final" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Auramiyonautica",
+	"image": "noises/sofa.jpg",
+	"affinity": {
+		"character": { "id": 3 },
+		"amount": 1
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
 	"id": { "id": 61 },
 	"parent": { "id": 52 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Noises.3" },
@@ -673,6 +699,19 @@
 },
 {
 	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 103 },
+	"parent": { "id": 52 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Greed.Final" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Auramiyonautica",
+	"image": "noises/greed_final.jpg",
+	"affinity": {
+		"character": { "id": 4 },
+		"amount": 1
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
 	"id": { "id": 63 },
 	"parent": { "id": 52 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Noises.5" },
@@ -695,6 +734,19 @@
 	"affinity": {
 		"character": { "id": 6 },
 		"amount": 0.7
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 104 },
+	"parent": { "id": 52 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Alexsander.Final" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"author": "Auramiyonautica",
+	"image": "noises/alexsander_final.jpg",
+	"affinity": {
+		"character": { "id": 24 },
+		"amount": 0.8
 	}
 },
 {
@@ -808,7 +860,7 @@
 	"id": { "id": 76 },
 	"parent": { "id": 75 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Misc.1" },
-	"description": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Misc.1.Desc" },
 	"author": "Pia Neundlinger",
 	"image": "logo/1.jpg",
 	"affinity": {
@@ -840,6 +892,45 @@
 	"affinity": {
 		"character": { "id": 10 },
 		"amount": 0.8
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 105 },
+	"parent": { "id": 75 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Misc.4" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Misc.4.Desc" },
+	"author": "Gal Axis & Lucy Arimor",
+	"image": "logo/logo.png",
+	"affinity": {
+		"character": { "id": 22 },
+		"amount": 0.4
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 107 },
+	"parent": { "id": 75 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "vs" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "vs.desc" },
+	"author": "Gal Axis",
+	"image": "logo/vs.png",
+	"affinity": {
+		"character": { "id": 22 },
+		"amount": 0.8
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.affinity.AffinityEntry",
+	"id": { "id": 106 },
+	"parent": { "id": 75 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Revo" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AffinityMessages", "key": "Revo.Description" },
+	"author": "Gal Axis",
+	"image": "logo/revo.png",
+	"affinity": {
+		"character": { "id": 11 },
+		"amount": 0.6
 	}
 },
 {

@@ -18,6 +18,8 @@
 	"cast": {
 		"drawable": { "id": 402 }
 	},
+	"attack": {},
+	"defend": {},
 	"shadowY": 4,
 	"keepUncustomized": true,
 	"customizables": [
@@ -91,6 +93,7 @@
 	"attack": {
 		"drawable": { "id": 409 }
 	},
+	"defend": {},
 	"attackLeadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_CLOSE" },
 	"shadowY": 3,
 	"extraStates": [
@@ -146,9 +149,14 @@
 	"idle": {
 		"drawable": { "id": 414 }
 	},
+	"hurt": {},
+	"stunStart": {},
+	"stunEnd": {},
+	"cast": {},
 	"attack": {
 		"drawable": { "id": 415 }
-	}
+	},
+	"defend": {}
 },
 {
 	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
@@ -169,6 +177,8 @@
 	"cast": {
 		"drawable": { "id": 418 }
 	},
+	"attack": {},
+	"defend": {},
 	"extraStates": [
 		{
 			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "COUCH" },
@@ -230,6 +240,8 @@
 	"cast": {
 		"drawable": { "id": 426 }
 	},
+	"attack": {},
+	"defend": {},
 	"extraStates": [
 		{
 			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
@@ -297,6 +309,7 @@
 	"attack": {
 		"drawable": { "id": 386 }
 	},
+	"defend": {},
 	"shadowY": 3,
 	"keepUncustomized": true,
 	"customizables": [
@@ -347,6 +360,8 @@
 	"cast": {
 		"drawable": { "id": 443 }
 	},
+	"attack": {},
+	"defend": {},
 	"shadowY": 1,
 	"customizables": [
 		{
@@ -472,6 +487,7 @@
 	"attack": {
 		"drawable": { "id": 475 }
 	},
+	"defend": {},
 	"shadowY": 5,
 	"keepUncustomized": true,
 	"customizables": [
@@ -536,6 +552,11 @@
 	"hurt": {
 		"drawable": { "id": 482 }
 	},
+	"stunStart": {},
+	"stunEnd": {},
+	"cast": {},
+	"attack": {},
+	"defend": {},
 	"hurtLeadsInto": null
 },
 {
@@ -547,7 +568,12 @@
 	},
 	"hurt": {
 		"drawable": { "id": 485 }
-	}
+	},
+	"stunStart": {},
+	"stunEnd": {},
+	"cast": {},
+	"attack": {},
+	"defend": {}
 },
 {
 	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
@@ -555,7 +581,13 @@
 	"name": "Loot Box",
 	"idle": {
 		"drawable": { "id": 488 }
-	}
+	},
+	"hurt": {},
+	"stunStart": {},
+	"stunEnd": {},
+	"cast": {},
+	"attack": {},
+	"defend": {}
 },
 {
 	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
@@ -563,7 +595,13 @@
 	"name": "Notice Me",
 	"idle": {
 		"drawable": { "id": 64 }
-	}
+	},
+	"hurt": {},
+	"stunStart": {},
+	"stunEnd": {},
+	"cast": {},
+	"attack": {},
+	"defend": {}
 },
 {
 	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
@@ -571,7 +609,13 @@
 	"name": "Lightmass",
 	"idle": {
 		"drawable": { "id": 491 }
-	}
+	},
+	"hurt": {},
+	"stunStart": {},
+	"stunEnd": {},
+	"cast": {},
+	"attack": {},
+	"defend": {}
 },
 {
 	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
@@ -580,9 +624,14 @@
 	"idle": {
 		"drawable": { "id": 493 }
 	},
+	"hurt": {},
+	"stunStart": {},
+	"stunEnd": {},
 	"cast": {
 		"drawable": { "id": 494 }
-	}
+	},
+	"attack": {},
+	"defend": {}
 },
 {
 	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
@@ -689,6 +738,8 @@
 	"cast": {
 		"drawable": { "id": 1230 }
 	},
+	"attack": {},
+	"defend": {},
 	"extraStates": [
 		{
 			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
@@ -814,7 +865,6 @@
 },
 {
 	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleLayeredPatchworkMetaData",
-	"id": {},
 	"name": "Del",
 	"offsetY": 2,
 	"shadowY": 1,
@@ -907,72 +957,6 @@
 				{ "r": 0.5529412, "g": 0.4117647, "b": 0.9411765, "a": 1 },
 				{ "r": 0.29411766, "g": 0.81960785, "b": 0.37254903, "a": 1 }
 			]
-		}
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleLayeredPatchworkMetaData",
-	"id": { "id": 1 },
-	"name": "Fin SP",
-	"shadowY": 4,
-	"idle": [
-		{
-			"drawable": { "id": 34 }
-		}
-	],
-	"hurt": [
-		{
-			"drawable": { "id": 35 }
-		}
-	],
-	"stunStart": [
-		{
-			"drawable": { "id": 37 }
-		}
-	],
-	"stunEnd": [
-		{
-			"drawable": { "id": 38 }
-		}
-	],
-	"cast": [
-		{
-			"drawable": { "id": 36 }
-		}
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleLayeredPatchworkMetaData",
-	"id": { "id": 2 },
-	"name": "Rozu SP",
-	"idle": [
-		{
-			"drawable": { "id": 39 }
-		}
-	],
-	"hurt": [
-		{
-			"drawable": { "id": 66 }
-		}
-	],
-	"stunStart": [
-		{
-			"drawable": { "id": 67 }
-		}
-	],
-	"stunEnd": [
-		{
-			"drawable": { "id": 66 }
-		}
-	],
-	"cast": [
-		{
-			"drawable": { "id": 40 }
-		}
-	],
-	"attack": [
-		{
-			"drawable": { "id": 41 }
 		}
 	]
 },
@@ -1110,43 +1094,6 @@
 				{ "r": 0.45882353, "g": 0.8666667, "b": 1, "a": 1 },
 				{ "r": 0.24313726, "g": 0.8117647, "b": 0.3764706, "a": 1 }
 			]
-		}
-	]
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleLayeredPatchworkMetaData",
-	"id": { "id": 4 },
-	"name": "Del SP",
-	"offsetY": 2,
-	"shadowY": 1,
-	"idle": [
-		{
-			"drawable": { "id": 203 }
-		}
-	],
-	"hurt": [
-		{
-			"drawable": { "id": 204 }
-		}
-	],
-	"stunStart": [
-		{
-			"drawable": { "id": 207 }
-		}
-	],
-	"stunEnd": [
-		{
-			"drawable": { "id": 208 }
-		}
-	],
-	"cast": [
-		{
-			"drawable": { "id": 205 }
-		}
-	],
-	"attack": [
-		{
-			"drawable": { "id": 206 }
 		}
 	]
 },
@@ -1324,42 +1271,6 @@
 	"drawable": { "id": 1257 }
 },
 {
-	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleLayeredPatchworkMetaData",
-	"id": { "id": 12 },
-	"name": "Spark SP",
-	"shadowY": 5,
-	"idle": [
-		{
-			"drawable": { "id": 240 }
-		}
-	],
-	"hurt": [
-		{
-			"drawable": { "id": 241 }
-		}
-	],
-	"stunStart": [
-		{
-			"drawable": { "id": 244 }
-		}
-	],
-	"stunEnd": [
-		{
-			"drawable": { "id": 245 }
-		}
-	],
-	"cast": [
-		{
-			"drawable": { "id": 242 }
-		}
-	],
-	"attack": [
-		{
-			"drawable": { "id": 243 }
-		}
-	]
-},
-{
 	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.SimplePatchworkMetaData",
 	"id": { "id": 14 },
 	"name": "Companion",
@@ -1495,65 +1406,6 @@
 	"id": { "id": 20 },
 	"name": "Bomb 2",
 	"drawable": { "id": 47 }
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleLayeredPatchworkMetaData",
-	"id": { "id": 22 },
-	"name": "Cress SP",
-	"shadowY": 1,
-	"idle": [
-		{
-			"drawable": { "id": 53 }
-		}
-	],
-	"hurt": [
-		{
-			"drawable": { "id": 59 }
-		}
-	],
-	"stunStart": [
-		{
-			"drawable": { "id": 69 }
-		}
-	],
-	"stunEnd": [
-		{
-			"drawable": { "id": 89 }
-		}
-	],
-	"cast": [
-		{
-			"drawable": { "id": 58 }
-		}
-	],
-	"attack": [
-		{
-			"drawable": { "id": 56 }
-		}
-	],
-	"extraStates": [
-		{
-			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FALLING" },
-			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
-			"shadowOffsetY": 1,
-			"images": [
-				{
-					"drawable": { "id": 90 }
-				}
-			]
-		},
-		{
-			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
-			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
-			"shadowOffsetY": 1,
-			"images": [
-				{
-					"drawable": { "id": 91 }
-				}
-			]
-		}
-	],
-	"castLeadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FALLING" }
 },
 {
 	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleLayeredPatchworkMetaData",
@@ -2487,6 +2339,69 @@
 	"attack": [
 		{
 			"drawable": { "id": 307 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 31 },
+	"name": "Fossil Fuel",
+	"idle": {
+		"drawable": { "id": 482 }
+	},
+	"hurt": {
+		"drawable": { "id": 487 }
+	},
+	"stunStart": {
+		"drawable": { "id": 489 }
+	},
+	"stunEnd": {
+		"drawable": { "id": 490 }
+	},
+	"cast": {
+		"drawable": { "id": 483 }
+	},
+	"attack": {
+		"drawable": { "id": 486 },
+		"xPos": 10
+	},
+	"defend": {},
+	"keepUncustomized": true,
+	"customizables": [
+		{
+			"name": "Color",
+			"replace": [
+				{ "replace": -898671873 },
+				{
+					"replace": -1909050881,
+					"newColor": { "r": 0.6117647, "g": 0.6117647, "b": 0.6117647, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.30588236, "g": 0.6392157, "b": 0.72156864, "a": 1 },
+				{ "r": 0.8509804, "g": 0.6431373, "b": 0.28235295, "a": 1 },
+				{ "r": 0.49019608, "g": 0.8, "b": 0.34509805, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleLayeredPatchworkMetaData",
+	"id": { "id": 1 },
+	"name": "Droplet",
+	"idle": [
+		{
+			"drawable": { "id": 479 }
+		}
+	],
+	"extraStates": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "LANDED" },
+			"images": [
+				{
+					"drawable": { "id": 480 }
+				}
+			]
 		}
 	]
 }

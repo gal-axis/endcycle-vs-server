@@ -3,7 +3,7 @@ This is the repository for the EndCycle VS server!
 
 ## Windows Setup
 
-To start a server with a minimal GUI on windows, simply start the server.bat file. In order to let others join your server through the internet, make sure that you have the game's ports forwarded (17778, 17779). Also **make sure that you have your external IP set in the server.properties file** (check the Additional Properties section on how to do that).
+To start a server with a minimal GUI on windows, simply start the server.bat file. In order to let others join your server through the internet, make sure that you have the game's ports forwarded (17778, 17779).
 
 ## Headless Setup (Debian virtual server)
 
@@ -22,7 +22,7 @@ To start a server with a minimal GUI on windows, simply start the server.bat fil
 
 ### Mods
 
-If you want to configure mods for the server, you can do so with the following commands:
+If you want to configure/download mods for the server from the in-game mod browser, you can do so with the following commands:
 * `mod list`
   * Lists all installed mods and if they're enabled or not.
 * `mod search [keyword]`
@@ -53,7 +53,6 @@ Client.TCP=17781
 | --- | --- |
 | Client.UDP | The UDP port of your server (default is 17778) |
 | Client.TCP | The TCP port of your server (default is 17779) |
-| Server.IP | The IP of your server that clients connect through (default is 17779) |
 | Server.Name | The name of your server that will be visible for others in the server browser |
 
 ### Discord

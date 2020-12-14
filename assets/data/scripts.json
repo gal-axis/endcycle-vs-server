@@ -1,0 +1,6672 @@
+[
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"name": "Agent Squad",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnAllToEntityScript" }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 1 }
+			}
+		},
+		{
+			"delay": 0.1,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureSideScript",
+				"sides": [
+					{
+						"side": "Azure",
+						"betrayed": true,
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+							"script": { "id": 166 }
+						}
+					},
+					{
+						"side": "Crimson",
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureBetrayedBranchScript",
+							"side": "Crimson",
+							"betrayed": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 165 }
+							},
+							"normal": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 64 }
+							}
+						}
+					},
+					{
+						"side": "Azure",
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+							"script": { "id": 67 }
+						}
+					},
+					{
+						"side": "Noise",
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+							"script": { "id": 65 }
+						}
+					},
+					{
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureItemBranchScript",
+							"branches": [
+								{
+									"item": { "id": 54 },
+									"amount": 1,
+									"script": {
+										"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+										"script": { "id": 99 }
+									}
+								}
+							],
+							"defaultScript": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 66 }
+							}
+						}
+					}
+				],
+				"none": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 1 },
+	"name": "Shuffle Squad Names",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.ShuffleNamesScript",
+				"names": [ "punk_1", "punk_2", "punk_3", "agent_1", "agent_2", "agent_3" ]
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 2 },
+	"name": "Azure Recruitment",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureCanChangeSideScript",
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.general.ShowSelectMessageScript",
+					"title": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Adventure.AzureJoin.Message" },
+					"choices": [
+						{
+							"title": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.Messages", "key": "Yes" },
+							"onSelect": {
+								"class": "com.one2b3.endcycle.features.scripts.battle.BattleCharacterBranchScript",
+								"branches": [
+									{
+										"character": { "id": 23 },
+										"script": {
+											"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+											"script": { "id": 169 }
+										}
+									}
+								],
+								"defaultScript": {
+									"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+									"script": { "id": 3 }
+								}
+							}
+						},
+						{
+							"title": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.Messages", "key": "No" },
+							"onSelect": {
+								"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
+								"dialogues": [
+									{
+										"dialogue": { "id": 114 }
+									},
+									{
+										"dialogue": { "id": 604 },
+										"entity": { "id": 23 }
+									}
+								]
+							}
+						}
+					]
+				},
+				"otherwise": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+					"script": { "id": 4 }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 3 },
+	"name": "Azure Recruit Accept",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 115 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+					"onFinish": {
+						"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+						"script": { "id": 168 }
+					}
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 4 },
+	"name": "Change Side Azure Decline",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.BattleCharacterBranchScript",
+				"branches": [
+					{
+						"character": {},
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+							"dialogue": { "id": 133 }
+						}
+					},
+					{
+						"character": { "id": 48 },
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+							"dialogue": { "id": 134 }
+						}
+					},
+					{
+						"character": { "id": 11 },
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+							"dialogue": { "id": 278 }
+						}
+					}
+				]
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 6 },
+	"name": "Lunar Warning",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.LunarBossWarningScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 7 },
+	"name": "Crimson Gang",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnAllToEntityScript" }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 1 }
+			}
+		},
+		{
+			"delay": 0.1,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureSideScript",
+				"sides": [
+					{
+						"side": "Crimson",
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+							"script": { "id": 41 }
+						}
+					},
+					{
+						"side": "Crimson",
+						"betrayed": true,
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureBetrayedBranchScript",
+							"side": "Azure",
+							"betrayed": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 172 }
+							},
+							"normal": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 60 }
+							}
+						}
+					},
+					{
+						"side": "Azure",
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureBetrayedBranchScript",
+							"side": "Azure",
+							"betrayed": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 173 }
+							},
+							"normal": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 42 }
+							}
+						}
+					},
+					{
+						"side": "Noise",
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+							"script": { "id": 43 }
+						}
+					},
+					{
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureSideScript",
+							"sides": [
+								{
+									"side": "Crimson",
+									"betrayed": true,
+									"script": {
+										"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+										"script": { "id": 68 }
+									}
+								},
+								{
+									"side": "Azure",
+									"betrayed": true,
+									"script": {
+										"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+										"script": { "id": 103 }
+									}
+								}
+							],
+							"none": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 44 }
+							}
+						}
+					}
+				],
+				"none": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 8 },
+	"name": "Crimson Supply Other",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureGiveItemScript",
+				"items": [
+					{
+						"item": { "id": 31 },
+						"amount": 5
+					},
+					{
+						"item": { "id": 24 },
+						"amount": 3
+					},
+					{
+						"item": { "id": 28 },
+						"amount": 2
+					},
+					{
+						"item": { "id": 29 }
+					},
+					{
+						"item": { "id": 30 }
+					}
+				],
+				"random": true,
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+					"dialogues": [
+						{
+							"dialogue": { "id": 140 }
+						},
+						{
+							"dialogue": { "id": 142 }
+						}
+					],
+					"name": "punk_1",
+					"single": true,
+					"start": true
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 9 },
+	"name": "A-Punk Supply Crimson",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureGiveItemScript",
+				"items": [
+					{
+						"item": { "id": 32 }
+					},
+					{
+						"item": { "id": 34 }
+					},
+					{
+						"item": { "id": 36 }
+					},
+					{
+						"item": { "id": 38 }
+					},
+					{
+						"item": { "id": 39 }
+					},
+					{
+						"item": { "id": 40 }
+					}
+				],
+				"random": true,
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+					"dialogues": [
+						{
+							"dialogue": { "id": 140 }
+						},
+						{
+							"dialogue": { "id": 141 }
+						}
+					],
+					"onFinish": {
+						"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+						"script": { "id": 176 }
+					}
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 10 },
+	"name": "Shop Noise",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 148 },
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 4 }
+						}
+					]
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 5 },
+	"name": "A-Start Fin",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript", "speed": 0, "layer": 14 }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 135 },
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+					"stop": true,
+					"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShowZoneScript" }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 11 },
+	"name": "A-Start Spark",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript", "speed": 0, "layer": 14 }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 149 },
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+					"stop": true,
+					"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShowZoneScript" }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 12 },
+	"name": "A-Start Rozu",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript", "speed": 0, "layer": 14 }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 150 },
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+					"stop": true,
+					"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShowZoneScript" }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 13 },
+	"name": "A-Start AVatar",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript", "speed": 0, "layer": 14 }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 151 },
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+					"stop": true,
+					"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShowZoneScript" }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 14 },
+	"name": "A-Start Agent",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript", "speed": 0, "layer": 14 }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 152 },
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+					"stop": true,
+					"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShowZoneScript" }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 15 },
+	"name": "A-Start Del",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript", "speed": 0, "layer": 14 }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 153 },
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+					"stop": true,
+					"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShowZoneScript" }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 16 },
+	"name": "A-Start Punk",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript", "speed": 0, "layer": 14 }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 154 },
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+					"stop": true,
+					"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShowZoneScript" }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 17 },
+	"name": "A-Start Cress",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript", "speed": 0, "layer": 14 }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 155 },
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+					"stop": true,
+					"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShowZoneScript" }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 18 },
+	"name": "A-Start Q.T.",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript", "speed": 0, "layer": 14 }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 156 },
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+					"stop": true,
+					"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShowZoneScript" }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 19 },
+	"name": "A-Start Sofa",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript", "speed": 0, "layer": 14 }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 157 },
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+					"stop": true,
+					"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShowZoneScript" }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 20 },
+	"name": "A-Start Greed",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript", "speed": 0, "layer": 14 }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 158 },
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+					"stop": true,
+					"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShowZoneScript" }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 21 },
+	"name": "A-Start Fossil",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript", "speed": 0, "layer": 14 }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 159 },
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+					"stop": true,
+					"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShowZoneScript" }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 22 },
+	"name": "A-Start Bomby",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript", "speed": 0, "layer": 14 }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 160 },
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+					"stop": true,
+					"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShowZoneScript" }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 23 },
+	"name": "A-Start Alexsander",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript", "speed": 0, "layer": 14 }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 161 },
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+					"stop": true,
+					"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShowZoneScript" }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 24 },
+	"name": "A-Start Tankitty",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript", "speed": 0, "layer": 14 }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 162 },
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+					"stop": true,
+					"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShowZoneScript" }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 25 },
+	"name": "A-Start Tri-Wing",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript", "speed": 0, "layer": 14 }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 163 },
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+					"stop": true,
+					"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShowZoneScript" }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 26 },
+	"name": "A-Start Bella",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript", "speed": 0, "layer": 14 }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 164 },
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+					"stop": true,
+					"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShowZoneScript" }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 27 },
+	"name": "A-Start Jeremy",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript", "speed": 0, "layer": 14 }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 165 },
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+					"stop": true,
+					"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShowZoneScript" }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 28 },
+	"name": "A-Enter Del>Midius",
+	"scripts": [
+		{
+			"delay": 0.5,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 168 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 29 },
+	"name": "A-Enter Cress>Midius",
+	"scripts": [
+		{
+			"delay": 0.5,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 167 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 30 },
+	"name": "A-Enter Cress>Desert",
+	"scripts": [
+		{
+			"delay": 0.5,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 166 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 31 },
+	"name": "A-Shop Agent>Punk",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 271 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 5 }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 32 },
+	"name": "A-Shop Agent>Noise",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 594 }
+					}
+				],
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 4 }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 33 },
+	"name": "A-Azure Shop Recruitment",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureCanChangeSideScript",
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.general.ShowSelectMessageScript",
+					"title": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Adventure.AzureJoin.Message" },
+					"choices": [
+						{
+							"title": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.Messages", "key": "Yes" },
+							"onSelect": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 36 }
+							}
+						},
+						{
+							"title": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.Messages", "key": "No" },
+							"onSelect": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+								"dialogues": [
+									{
+										"dialogue": { "id": 245 }
+									}
+								]
+							}
+						}
+					]
+				},
+				"otherwise": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+					"script": { "id": 4 }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 34 },
+	"name": "A-Shop Agent>Other Greet",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 248 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
+						},
+						{
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+								"dialogues": [
+									{
+										"dialogue": { "id": 249 }
+									}
+								],
+								"onFinish": {
+									"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureItemBranchScript",
+									"branches": [
+										{
+											"item": { "id": 54 },
+											"script": {
+												"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+												"script": { "id": 35 }
+											}
+										}
+									],
+									"defaultScript": {
+										"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+										"dialogues": [
+											{
+												"dialogue": { "id": 251 }
+											}
+										],
+										"onFinish": {
+											"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+											"script": { "id": 33 }
+										},
+										"name": "shopkeeper",
+										"single": true,
+										"start": true
+									}
+								},
+								"name": "shopkeeper",
+								"single": true
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 35 },
+	"name": "A-Shop Agent Member Card",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 250 },
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureToShopScript",
+					"shopEvent": { "id": 32 }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 36 },
+	"name": "Azure Shop Recruit Accept",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 246 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+					"onFinish": {
+						"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+						"scripts": [
+							{
+								"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureChangeSideScript" }
+							},
+							{
+								"script": {
+									"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+									"stop": true,
+									"onFinish": {
+										"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+										"dialogues": [
+											{
+												"dialogue": { "id": 247 }
+											}
+										],
+										"onFinish": {
+											"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureToShopScript",
+											"shopEvent": { "id": 32 }
+										}
+									}
+								}
+							}
+						]
+					}
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 37 },
+	"name": "A-Shop Punk>Agent",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 180 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 5 }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 38 },
+	"name": "A-Shop Punk>Noise",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 585 }
+					}
+				],
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 4 }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 39 },
+	"name": "A-Enter Bella>Networld",
+	"scripts": [
+		{
+			"delay": 0.5,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 254 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 40 },
+	"name": "A-Hooded AVatar Encounter",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 217 }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 41 },
+	"name": "A-Punk>Punk",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 138 }
+					},
+					{
+						"dialogue": { "id": 139 }
+					},
+					{
+						"dialogue": { "id": 144 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+					"script": { "id": 9 }
+				},
+				"name": "punk_1",
+				"single": true
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 120 }
+					},
+					{
+						"dialogue": { "id": 136 }
+					},
+					{
+						"dialogue": { "id": 137 }
+					},
+					{
+						"dialogue": { "id": 351 },
+						"entity": { "id": 7 }
+					},
+					{
+						"dialogue": { "id": 352 },
+						"entity": { "id": 7 }
+					},
+					{
+						"dialogue": { "id": 353 },
+						"entity": { "id": 7 }
+					},
+					{
+						"dialogue": { "id": 354 },
+						"entity": { "id": 7 }
+					},
+					{
+						"dialogue": { "id": 355 },
+						"entity": { "id": 21 }
+					},
+					{
+						"dialogue": { "id": 356 },
+						"entity": { "id": 21 }
+					},
+					{
+						"dialogue": { "id": 357 },
+						"entity": { "id": 21 }
+					},
+					{
+						"dialogue": { "id": 519 },
+						"entity": { "id": 2 }
+					},
+					{
+						"dialogue": { "id": 520 },
+						"entity": { "id": 2 }
+					},
+					{
+						"dialogue": { "id": 521 },
+						"entity": { "id": 2 }
+					},
+					{
+						"dialogue": { "id": 522 },
+						"entity": { "id": 2 }
+					},
+					{
+						"dialogue": { "id": 523 },
+						"entity": { "id": 2 }
+					}
+				],
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 45 }
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 104 }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 42 },
+	"name": "A-Punk>Agent",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 89 }
+					},
+					{
+						"dialogue": { "id": 90 }
+					},
+					{
+						"dialogue": { "id": 91 }
+					},
+					{
+						"dialogue": { "id": 92 }
+					},
+					{
+						"dialogue": { "id": 93 }
+					},
+					{
+						"dialogue": { "id": 94 }
+					},
+					{
+						"dialogue": { "id": 95 }
+					},
+					{
+						"dialogue": { "id": 96 }
+					},
+					{
+						"dialogue": { "id": 358 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 359 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 360 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 361 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 362 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 363 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 364 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 365 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 366 },
+						"entity": { "id": 9 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+					"script": { "id": 171 }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 43 },
+	"name": "A-Punks>Noise",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 100 }
+					},
+					{
+						"dialogue": { "id": 101 }
+					},
+					{
+						"dialogue": { "id": 102 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+					"script": { "id": 171 }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 44 },
+	"name": "A-Punks>Other",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 97 }
+					},
+					{
+						"dialogue": { "id": 98 }
+					}
+				],
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 138 }
+					},
+					{
+						"dialogue": { "id": 139 }
+					},
+					{
+						"dialogue": { "id": 144 }
+					},
+					{
+						"dialogue": { "id": 143 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+					"script": { "id": 8 }
+				},
+				"name": "punk_1",
+				"single": true
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 45 }
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 104 }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 45 },
+	"name": "A-Punk Squad Talk",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.BattleCharacterBranchScript",
+				"defaultScript": {
+					"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureZoneBranchScript",
+					"branches": [
+						{
+							"zone": {},
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 46 }
+							}
+						},
+						{
+							"zone": { "id": 1 },
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 47 }
+							}
+						},
+						{
+							"zone": { "id": 2 },
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 48 }
+							}
+						},
+						{
+							"zone": { "id": 3 },
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 49 }
+							}
+						},
+						{
+							"zone": { "id": 4 },
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 50 }
+							}
+						},
+						{
+							"zone": { "id": 6 },
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 79 }
+							}
+						},
+						{
+							"zone": { "id": 10 },
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 110 }
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 46 },
+	"name": "A-Punk: Glacial",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 181 }
+					},
+					{
+						"dialogue": { "id": 182 }
+					},
+					{
+						"dialogue": { "id": 183 }
+					},
+					{
+						"dialogue": { "id": 184 }
+					},
+					{
+						"dialogue": { "id": 185 }
+					},
+					{
+						"dialogue": { "id": 186 }
+					},
+					{
+						"dialogue": { "id": 187 },
+						"onFinish": {
+							"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureGiveItemScript",
+							"items": [
+								{
+									"item": { "id": 56 }
+								}
+							],
+							"onFinish": {
+								"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+								"dialogues": [
+									{
+										"dialogue": { "id": 189 }
+									}
+								],
+								"name": "punk_2",
+								"single": true,
+								"start": true
+							},
+							"onError": {
+								"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+								"dialogues": [
+									{
+										"dialogue": { "id": 188 }
+									}
+								],
+								"name": "punk_2",
+								"single": true,
+								"start": true
+							}
+						}
+					}
+				],
+				"name": "punk_2",
+				"single": true
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 47 },
+	"name": "A-Punk: Forest",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 190 }
+					},
+					{
+						"dialogue": { "id": 191 }
+					},
+					{
+						"dialogue": { "id": 192 }
+					},
+					{
+						"dialogue": { "id": 193 }
+					},
+					{
+						"dialogue": { "id": 194 }
+					},
+					{
+						"dialogue": { "id": 195 }
+					},
+					{
+						"dialogue": { "id": 196 }
+					}
+				],
+				"name": "punk_2",
+				"single": true
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 48 },
+	"name": "A-Punk: Astrat",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 197 }
+					},
+					{
+						"dialogue": { "id": 198 }
+					},
+					{
+						"dialogue": { "id": 199 }
+					},
+					{
+						"dialogue": { "id": 200 }
+					},
+					{
+						"dialogue": { "id": 201 }
+					},
+					{
+						"dialogue": { "id": 202 }
+					},
+					{
+						"dialogue": { "id": 203 }
+					}
+				],
+				"name": "punk_2",
+				"single": true
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 49 },
+	"name": "A-Punk: Clocks",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 204 }
+					},
+					{
+						"dialogue": { "id": 205 }
+					},
+					{
+						"dialogue": { "id": 206 }
+					},
+					{
+						"dialogue": { "id": 207 }
+					},
+					{
+						"dialogue": { "id": 208 }
+					},
+					{
+						"dialogue": { "id": 209 }
+					},
+					{
+						"dialogue": { "id": 210 }
+					}
+				],
+				"name": "punk_2",
+				"single": true
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 50 },
+	"name": "A-Punk: Desert",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 211 }
+					},
+					{
+						"dialogue": { "id": 212 }
+					},
+					{
+						"dialogue": { "id": 213 }
+					},
+					{
+						"dialogue": { "id": 266 }
+					},
+					{
+						"dialogue": { "id": 267 }
+					}
+				],
+				"name": "punk_2",
+				"single": true
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 51 },
+	"name": "A-Crushlord AVatar Encounter",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 223 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 53 }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 52 },
+	"name": "A-Crushlord AVatar Start",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 226 },
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 135 }
+							}
+						},
+						{
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureOverlayBattleScript",
+								"overlayed": { "id": 83 },
+								"leaveVitalAlive": true,
+								"onWin": {
+									"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+									"dialogue": { "id": 228 },
+									"onFinish": {
+										"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureGiveItemScript",
+										"items": [
+											{
+												"item": { "id": 53 }
+											}
+										],
+										"onFinish": {
+											"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+											"dialogues": [
+												{
+													"dialogue": { "id": 229 }
+												}
+											],
+											"name": "crushlord",
+											"single": true,
+											"start": true
+										}
+									}
+								},
+								"onLose": {
+									"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+									"scripts": [
+										{
+											"script": {
+												"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+												"script": { "id": 53 }
+											}
+										},
+										{
+											"script": {
+												"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureRemoveItemScript",
+												"items": [
+													{
+														"item": { "id": 50 }
+													},
+													{
+														"item": { "id": 51 }
+													},
+													{
+														"item": { "id": 52 }
+													},
+													{
+														"item": { "id": 53 }
+													}
+												],
+												"allRequired": false,
+												"single": true
+											}
+										},
+										{
+											"script": {
+												"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+												"dialogue": { "id": 227 }
+											}
+										}
+									]
+								},
+								"onOver": {
+									"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+									"script": { "id": 136 }
+								}
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 53 },
+	"name": "A-Crushlord AV.Atar Set Action",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 224 },
+						"onFinish": {
+							"class": "com.one2b3.endcycle.features.scripts.general.ShowSelectMessageScript",
+							"title": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Adventure.Event.Crushlord.5" },
+							"choices": [
+								{
+									"title": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.Messages", "key": "Yes" },
+									"onSelect": {
+										"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+										"script": { "id": 52 }
+									}
+								},
+								{
+									"title": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.Messages", "key": "No" },
+									"onSelect": {
+										"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+										"dialogue": { "id": 225 }
+									}
+								}
+							]
+						}
+					}
+				],
+				"name": "crushlord",
+				"single": true
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 54 },
+	"name": "A-Gunslinger Encounter",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 230 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 56 }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 55 },
+	"name": "A-Gunslinger Start",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 233 },
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureRestartLastScript" }
+						},
+						{
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.general.SpeedButtonChallengeScript",
+								"reaction": 0.34,
+								"minimum": 5,
+								"maximum": 10,
+								"onWin": {
+									"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+									"scripts": [
+										{
+											"delay": 1,
+											"script": {
+												"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+												"dialogue": { "id": 234 },
+												"onFinish": {
+													"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureGiveItemScript",
+													"items": [
+														{
+															"item": { "id": 52 }
+														}
+													],
+													"onFinish": {
+														"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+														"dialogues": [
+															{
+																"dialogue": { "id": 235 }
+															}
+														],
+														"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" },
+														"name": "gunslinger",
+														"single": true,
+														"start": true
+													}
+												}
+											}
+										},
+										{
+											"script": {
+												"class": "com.one2b3.endcycle.features.scripts.general.SetStateScript",
+												"name": "player",
+												"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" }
+											}
+										},
+										{
+											"script": {
+												"class": "com.one2b3.endcycle.features.scripts.general.SetStateScript",
+												"name": "gunslinger",
+												"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_START" }
+											}
+										},
+										{
+											"delay": 1,
+											"script": {
+												"class": "com.one2b3.endcycle.features.scripts.general.SetStateScript",
+												"name": "gunslinger",
+												"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_END" }
+											}
+										},
+										{
+											"script": {
+												"class": "com.one2b3.endcycle.features.scripts.battle.BattlePlayMusicScript",
+												"song": { "id": 4 }
+											}
+										}
+									]
+								},
+								"onLose": {
+									"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+									"scripts": [
+										{
+											"script": {
+												"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+												"script": { "id": 56 }
+											}
+										},
+										{
+											"script": {
+												"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureRemoveItemScript",
+												"items": [
+													{
+														"item": { "id": 50 }
+													},
+													{
+														"item": { "id": 51 }
+													},
+													{
+														"item": { "id": 52 }
+													},
+													{
+														"item": { "id": 53 }
+													}
+												],
+												"allRequired": false,
+												"single": true
+											}
+										},
+										{
+											"delay": 1,
+											"script": {
+												"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+												"dialogue": { "id": 236 },
+												"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
+											}
+										},
+										{
+											"script": {
+												"class": "com.one2b3.endcycle.features.scripts.general.SetStateScript",
+												"name": "gunslinger",
+												"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" }
+											}
+										},
+										{
+											"script": {
+												"class": "com.one2b3.endcycle.features.scripts.general.SetStateScript",
+												"name": "player",
+												"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_START" }
+											}
+										},
+										{
+											"delay": 1,
+											"script": {
+												"class": "com.one2b3.endcycle.features.scripts.general.SetStateScript",
+												"name": "player",
+												"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_END" }
+											}
+										},
+										{
+											"script": {
+												"class": "com.one2b3.endcycle.features.scripts.battle.BattlePlayMusicScript",
+												"song": { "id": 5 }
+											}
+										}
+									]
+								},
+								"onReact": {
+									"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+									"scripts": [
+										{
+											"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "player" }
+										},
+										{
+											"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "gunslinger", "turned": true }
+										},
+										{}
+									]
+								},
+								"onEarly": {
+									"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+									"dialogue": { "id": 237 },
+									"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
+								},
+								"onOver": {
+									"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+									"scripts": [
+										{
+											"script": { "class": "com.one2b3.endcycle.features.scripts.battle.FlashBattleScript", "speed": 2 }
+										}
+									]
+								}
+							}
+						},
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "gunslinger" }
+						},
+						{
+							"delay": 0.25,
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "player", "turned": true }
+						},
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.BattlePlayMusicScript" }
+						}
+					]
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 56 },
+	"name": "A-Gunslinger Set Action",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 231 },
+						"onFinish": {
+							"class": "com.one2b3.endcycle.features.scripts.general.ShowSelectMessageScript",
+							"title": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Adventure.Event.Gunslinger.4" },
+							"choices": [
+								{
+									"title": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.Messages", "key": "Yes" },
+									"onSelect": {
+										"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+										"script": { "id": 55 }
+									}
+								},
+								{
+									"title": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.Messages", "key": "No" },
+									"onSelect": {
+										"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+										"dialogue": { "id": 232 }
+									}
+								}
+							]
+						}
+					}
+				],
+				"name": "gunslinger",
+				"single": true
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 57 },
+	"name": "A-AV.atar Rescued Gift",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.ClearParticlesScript", "name": "rescued" }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 238 },
+						"onFinish": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+							"script": { "id": 59 }
+						}
+					},
+					{
+						"dialogue": { "id": 239 },
+						"onFinish": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+							"script": { "id": 59 }
+						}
+					},
+					{
+						"dialogue": { "id": 240 },
+						"onFinish": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+							"script": { "id": 59 }
+						}
+					},
+					{
+						"dialogue": { "id": 484 },
+						"entity": { "id": 13 }
+					},
+					{
+						"dialogue": { "id": 485 },
+						"entity": { "id": 13 }
+					},
+					{
+						"dialogue": { "id": 486 },
+						"entity": { "id": 13 }
+					},
+					{
+						"dialogue": { "id": 487 },
+						"entity": { "id": 13 }
+					},
+					{
+						"dialogue": { "id": 488 },
+						"entity": { "id": 13 }
+					},
+					{
+						"dialogue": { "id": 489 },
+						"entity": { "id": 13 }
+					},
+					{
+						"dialogue": { "id": 490 },
+						"entity": { "id": 13 }
+					},
+					{
+						"dialogue": { "id": 491 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 492 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 493 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 494 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 495 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 496 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 497 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 498 },
+						"entity": { "id": 23 }
+					},
+					{
+						"dialogue": { "id": 499 },
+						"entity": { "id": 23 }
+					},
+					{
+						"dialogue": { "id": 500 },
+						"entity": { "id": 23 }
+					},
+					{
+						"dialogue": { "id": 501 },
+						"entity": { "id": 23 }
+					},
+					{
+						"dialogue": { "id": 502 },
+						"entity": { "id": 23 }
+					},
+					{
+						"dialogue": { "id": 503 },
+						"entity": { "id": 23 }
+					},
+					{
+						"dialogue": { "id": 504 },
+						"entity": { "id": 21 }
+					},
+					{
+						"dialogue": { "id": 505 },
+						"entity": { "id": 21 }
+					},
+					{
+						"dialogue": { "id": 506 },
+						"entity": { "id": 21 }
+					},
+					{
+						"dialogue": { "id": 507 },
+						"entity": { "id": 21 }
+					},
+					{
+						"dialogue": { "id": 508 },
+						"entity": { "id": 21 }
+					},
+					{
+						"dialogue": { "id": 509 },
+						"entity": { "id": 21 }
+					},
+					{
+						"dialogue": { "id": 510 },
+						"entity": { "id": 21 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureGiveShopItemScript",
+					"shop": { "id": 6 },
+					"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "rescued", "animation": true }
+				},
+				"name": "rescued",
+				"single": true
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 59 },
+	"name": "A-AV.atar>Other Rescued",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureGiveShopItemScript",
+				"shop": { "id": 6 },
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+					"dialogues": [
+						{
+							"dialogue": { "id": 241 }
+						},
+						{
+							"dialogue": { "id": 242 }
+						},
+						{
+							"dialogue": { "id": 243 }
+						},
+						{
+							"dialogue": { "id": 244 }
+						}
+					],
+					"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "rescued", "animation": true }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 60 },
+	"name": "A-Punk>Traitor",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 620 }
+					},
+					{
+						"dialogue": { "id": 621 }
+					},
+					{
+						"dialogue": { "id": 622 }
+					},
+					{
+						"dialogue": { "id": 623 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+					"script": { "id": 171 }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 61 },
+	"name": "A-Crimson Force Battle",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureForceBattleScript", "generatePack": true }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 62 },
+	"name": "A-Punks Attacked",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.BattleCharacterBranchScript",
+				"branches": [
+					{
+						"character": {},
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+							"script": { "id": 117 }
+						}
+					},
+					{
+						"character": { "id": 2 },
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+							"script": { "id": 117 }
+						}
+					},
+					{
+						"character": { "id": 21 },
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+							"script": { "id": 117 }
+						}
+					},
+					{
+						"character": { "id": 7 },
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+							"script": { "id": 117 }
+						}
+					}
+				],
+				"defaultScript": {
+					"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureBetrayedBranchScript",
+					"side": "Azure",
+					"betrayed": {
+						"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+						"script": { "id": 174 }
+					},
+					"normal": {
+						"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+						"script": { "id": 116 }
+					}
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 63 },
+	"name": "A-Attacked Azure Betray",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 124 }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureSetupCombatScript" }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 436 },
+						"entity": { "id": 13 }
+					},
+					{
+						"dialogue": { "id": 437 },
+						"entity": { "id": 13 }
+					},
+					{
+						"dialogue": { "id": 438 },
+						"entity": { "id": 13 }
+					},
+					{
+						"dialogue": { "id": 439 },
+						"entity": { "id": 13 }
+					},
+					{
+						"dialogue": { "id": 440 },
+						"entity": { "id": 13 }
+					},
+					{
+						"dialogue": { "id": 441 },
+						"entity": { "id": 13 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+					"script": { "id": 123 }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 64 },
+	"name": "A-Agent>Punk",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 103 }
+					},
+					{
+						"dialogue": { "id": 104 }
+					},
+					{
+						"dialogue": { "id": 105 }
+					},
+					{
+						"dialogue": { "id": 106 }
+					},
+					{
+						"dialogue": { "id": 107 }
+					},
+					{
+						"dialogue": { "id": 108 }
+					},
+					{
+						"dialogue": { "id": 109 }
+					},
+					{
+						"dialogue": { "id": 110 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+					"script": { "id": 167 }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 65 },
+	"name": "A-Azure>Noise",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 117 }
+					},
+					{
+						"dialogue": { "id": 118 }
+					},
+					{
+						"dialogue": { "id": 119 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+					"script": { "id": 167 }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 66 },
+	"name": "A-Azure>Other",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 111 }
+					},
+					{
+						"dialogue": { "id": 112 }
+					}
+				],
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 113 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+					"script": { "id": 2 }
+				},
+				"name": "agent_1"
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 101 }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 67 },
+	"name": "A-Azure>Azure",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 121 }
+					},
+					{
+						"dialogue": { "id": 122 }
+					},
+					{
+						"dialogue": { "id": 123 }
+					},
+					{
+						"dialogue": { "id": 281 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 442 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 443 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 444 },
+						"entity": { "id": 9 }
+					}
+				],
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 100 }
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 102 }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 68 },
+	"name": "A-Crimson>Other Betrayed",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 89 }
+					},
+					{
+						"dialogue": { "id": 90 }
+					},
+					{
+						"dialogue": { "id": 91 }
+					},
+					{
+						"dialogue": { "id": 92 }
+					},
+					{
+						"dialogue": { "id": 93 }
+					},
+					{
+						"dialogue": { "id": 94 }
+					},
+					{
+						"dialogue": { "id": 95 }
+					},
+					{
+						"dialogue": { "id": 96 }
+					}
+				],
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureForceBattleScript", "generatePack": true }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 69 },
+	"name": "A-Enter Bella>Glacial",
+	"scripts": [
+		{
+			"delay": 0.5,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 255 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 70 },
+	"name": "A-Enter Bella>Forest",
+	"scripts": [
+		{
+			"delay": 0.5,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 256 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 71 },
+	"name": "A-Enter Bella>Astrat",
+	"scripts": [
+		{
+			"delay": 0.5,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 257 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 72 },
+	"name": "A-Enter Bella>Clocks",
+	"scripts": [
+		{
+			"delay": 0.5,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 258 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 73 },
+	"name": "A-Enter Bella>Desert",
+	"scripts": [
+		{
+			"delay": 0.5,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 259 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 74 },
+	"name": "A-Enter Bella>Beach",
+	"scripts": [
+		{
+			"delay": 0.5,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 260 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 75 },
+	"name": "A-Enter Bella>Ruins",
+	"scripts": [
+		{
+			"delay": 0.5,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 261 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 76 },
+	"name": "A-Enter Bella>Midius",
+	"scripts": [
+		{
+			"delay": 0.5,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 262 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 77 },
+	"name": "A-Enter Bella>Cavern",
+	"scripts": [
+		{
+			"delay": 0.5,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 263 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 78 },
+	"name": "A-Enter Bella>Tower",
+	"scripts": [
+		{
+			"delay": 0.5,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 264 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 79 },
+	"name": "A-Punk: Beach",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 268 }
+					},
+					{
+						"dialogue": { "id": 269 }
+					},
+					{
+						"dialogue": { "id": 270 }
+					}
+				],
+				"name": "punk_2",
+				"single": true
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 80 },
+	"name": "A-Hurt AV.atar>Greet",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 272 }
+					}
+				],
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 274 }
+					}
+				],
+				"name": "hurt",
+				"single": true
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 81 },
+	"name": "A-Hurt AV.atar>Help",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureDisableVocsScript", "removeSpawned": true }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureSideScript",
+				"sides": [
+					{
+						"side": "Noise",
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+							"dialogues": [
+								{
+									"dialogue": { "id": 277 }
+								}
+							],
+							"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "hurt", "animation": true }
+						}
+					}
+				],
+				"none": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+					"dialogues": [
+						{
+							"dialogue": { "id": 273 }
+						}
+					],
+					"onFinish": {
+						"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+						"scripts": [
+							{
+								"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureGiveMoneyScript", "entity": "hurt", "money": 200 }
+							},
+							{
+								"script": {
+									"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureGiveItemScript",
+									"items": [
+										{
+											"item": { "id": 38 }
+										},
+										{
+											"item": { "id": 39 }
+										},
+										{
+											"item": { "id": 40 }
+										},
+										{
+											"item": { "id": 41 }
+										}
+									],
+									"random": true,
+									"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "hurt", "animation": true }
+								}
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ShakeEntityScript", "name": "hurt" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 82 },
+	"name": "A-Hurt AV.atar>Injure",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureDisableVocsScript", "removeSpawned": true }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureSideScript",
+				"sides": [
+					{
+						"side": "Noise",
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+							"scripts": [
+								{
+									"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ChangeHealthScript", "entity": "hurt", "particle": "WEAK" }
+								},
+								{
+									"script": {
+										"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureGiveItemScript",
+										"items": [
+											{
+												"item": { "id": 50 }
+											},
+											{
+												"item": { "id": 52 }
+											},
+											{
+												"item": { "id": 53 }
+											},
+											{
+												"item": { "id": 51 }
+											}
+										],
+										"random": true
+									}
+								}
+							]
+						}
+					}
+				],
+				"none": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+					"dialogues": [
+						{
+							"dialogue": { "id": 275 }
+						}
+					],
+					"onFinish": {
+						"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+						"scripts": [
+							{
+								"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureGiveMoneyScript", "entity": "hurt", "money": 500 }
+							},
+							{
+								"script": {
+									"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureGiveItemScript",
+									"items": [
+										{
+											"item": { "id": 50 }
+										},
+										{
+											"item": { "id": 51 }
+										},
+										{
+											"item": { "id": 52 }
+										},
+										{
+											"item": { "id": 53 }
+										}
+									],
+									"random": true
+								}
+							},
+							{
+								"script": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "hurt", "animation": true }
+							}
+						]
+					}
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 83 },
+	"name": "A-Hurt AV.atar",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureSideScript",
+				"sides": [
+					{
+						"side": "Noise",
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+							"script": { "id": 84 }
+						}
+					}
+				],
+				"none": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+					"script": { "id": 80 }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 84 },
+	"name": "A-Hurt AV.atar>Noise",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 276 }
+					}
+				],
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ShakeEntityScript", "name": "hurt", "intensity": 2 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 85 },
+	"name": "A-Shop Agent>Attacked",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.BattleCharacterBranchScript",
+				"branches": [
+					{
+						"character": { "id": 9 },
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+							"script": { "id": 86 }
+						}
+					},
+					{
+						"character": { "id": 13 },
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+							"dialogues": [
+								{
+									"dialogue": { "id": 591 }
+								}
+							],
+							"onFinish": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 160 }
+							}
+						}
+					}
+				],
+				"defaultScript": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+					"script": { "id": 160 }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 86 },
+	"name": "A-Shop Agent>Del Attacked",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 282 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureEnableVocsScript",
+								"onAttack": {
+									"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+									"script": { "id": 86 }
+								}
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 87 },
+	"name": "Final Boss Event Start",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureSetupCombatScript" }
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.ShakeScreenScript", "x": 1, "y": 1, "duration": 0.5 }
+		},
+		{
+			"delay": 1,
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.ShakeScreenScript", "x": 2, "y": 2, "duration": 1 }
+		},
+		{
+			"delay": 2.5,
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.ShakeScreenScript", "x": 3, "y": 3, "duration": 1.5 }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.DestroyPanelsScript",
+				"panels": [
+					{ "party": null, "type": null, "fixed": true },
+					{ "party": "ENEMY", "fixed": true }
+				]
+			}
+		},
+		{
+			"delay": 5,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureTriggerScript",
+				"trigger": {
+					"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.FinalBossBattleEventTrigger",
+					"onWin": {
+						"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+						"script": { "id": 89 }
+					},
+					"onLose": {
+						"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+						"script": { "id": 88 }
+					}
+				}
+			}
+		},
+		{
+			"delay": 5,
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.StartMovingBackgroundScript", "ySpeed": 300, "yShake": 1 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 88 },
+	"name": "Final Boss Lose",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+				"speed": 0.25,
+				"layer": 14,
+				"color": { "r": 1, "g": 1, "b": 1, "a": 1 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.LootBattleScript" }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 89 },
+	"name": "Final Boss Win",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		},
+		{
+			"delay": 1,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+				"speed": 0.25,
+				"layer": 4,
+				"color": { "r": 1, "g": 1, "b": 1, "a": 1 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureWinScript" }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleBattleHudScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 90 },
+	"name": "A-Complete Rozu",
+	"scripts": [
+		{
+			"delay": 2,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 542 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.LootBattleScript" }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 91 },
+	"name": "A-Punk Backup Call",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityScript",
+				"shell": {
+					"x": -256,
+					"y": -256,
+					"party": "FRIENDLY",
+					"name": "companion",
+					"id": { "id": 23 },
+					"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+					"cache": null,
+					"configuration": {
+						"stats": { "hp": 700 }
+					}
+				}
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 284 },
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureSideScript",
+					"sides": [
+						{
+							"side": "Crimson",
+							"betrayed": true,
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+								"dialogue": { "id": 297 },
+								"onFinish": {
+									"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureRemoveItemScript",
+									"items": [
+										{
+											"item": { "id": 60 },
+											"amount": 3
+										}
+									],
+									"allRequired": false
+								}
+							}
+						}
+					],
+					"none": {
+						"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
+						"dialogues": [
+							{
+								"dialogue": { "id": 285 },
+								"onFinish": {
+									"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureCompanionBranchScript",
+									"companion": {
+										"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+										"script": { "id": 93 }
+									},
+									"none": {
+										"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+										"dialogue": { "id": 286 },
+										"onFinish": {
+											"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+											"script": { "id": 92 }
+										}
+									}
+								}
+							},
+							{
+								"dialogue": { "id": 290 },
+								"onFinish": {
+									"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureCompanionBranchScript",
+									"companion": {
+										"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+										"dialogue": { "id": 291 },
+										"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "companion" }
+									},
+									"none": {
+										"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+										"dialogue": { "id": 292 },
+										"onFinish": {
+											"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+											"script": { "id": 92 }
+										}
+									}
+								}
+							},
+							{
+								"dialogue": { "id": 524 },
+								"entity": { "id": 7 },
+								"onFinish": {
+									"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureCompanionBranchScript",
+									"companion": {
+										"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+										"script": { "id": 93 }
+									},
+									"none": {
+										"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+										"dialogue": { "id": 525 },
+										"onFinish": {
+											"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+											"script": { "id": 92 }
+										}
+									}
+								}
+							},
+							{
+								"dialogue": { "id": 526 },
+								"entity": { "id": 7 },
+								"onFinish": {
+									"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureCompanionBranchScript",
+									"companion": {
+										"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+										"script": { "id": 93 }
+									},
+									"none": {
+										"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+										"dialogue": { "id": 527 },
+										"onFinish": {
+											"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+											"script": { "id": 92 }
+										}
+									}
+								}
+							},
+							{
+								"dialogue": { "id": 531 },
+								"entity": { "id": 2 },
+								"onFinish": {
+									"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureCompanionBranchScript",
+									"companion": {
+										"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+										"script": { "id": 93 }
+									},
+									"none": {
+										"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+										"dialogue": { "id": 532 },
+										"onFinish": {
+											"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+											"script": { "id": 92 }
+										}
+									}
+								}
+							},
+							{
+								"dialogue": { "id": 533 },
+								"entity": { "id": 2 },
+								"onFinish": {
+									"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureCompanionBranchScript",
+									"companion": {
+										"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+										"script": { "id": 93 }
+									},
+									"none": {
+										"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+										"dialogue": { "id": 534 },
+										"onFinish": {
+											"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+											"script": { "id": 92 }
+										}
+									}
+								}
+							},
+							{
+								"dialogue": { "id": 535 },
+								"entity": { "id": 21 },
+								"onFinish": {
+									"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureCompanionBranchScript",
+									"companion": {
+										"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+										"script": { "id": 93 }
+									},
+									"none": {
+										"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+										"dialogue": { "id": 538 },
+										"onFinish": {
+											"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+											"script": { "id": 92 }
+										}
+									}
+								}
+							},
+							{
+								"dialogue": { "id": 536 },
+								"entity": { "id": 21 },
+								"onFinish": {
+									"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureCompanionBranchScript",
+									"companion": {
+										"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+										"script": { "id": 93 }
+									},
+									"none": {
+										"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+										"dialogue": { "id": 539 },
+										"onFinish": {
+											"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+											"script": { "id": 92 }
+										}
+									}
+								}
+							},
+							{
+								"dialogue": { "id": 537 },
+								"entity": { "id": 21 },
+								"onFinish": {
+									"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureCompanionBranchScript",
+									"companion": {
+										"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+										"script": { "id": 93 }
+									},
+									"none": {
+										"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+										"dialogue": { "id": 540 },
+										"onFinish": {
+											"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+											"script": { "id": 92 }
+										}
+									}
+								}
+							}
+						],
+						"onFinish": {
+							"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureCompanionBranchScript",
+							"companion": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 93 }
+							},
+							"none": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 92 }
+							}
+						}
+					}
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 92 },
+	"name": "A-Punk Backup Arrive",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "companion", "relativeEntity": "player", "relative": true, "moveType": "INSTANT_TILE", "x": 1 }
+						},
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnAllToEntityScript", "name": "player" }
+						},
+						{
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+								"stop": true,
+								"onFinish": {
+									"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
+									"dialogues": [
+										{
+											"dialogue": { "id": 287 }
+										},
+										{
+											"dialogue": { "id": 528 },
+											"entity": { "id": 7 }
+										},
+										{
+											"dialogue": { "id": 529 },
+											"entity": { "id": 2 }
+										},
+										{
+											"dialogue": { "id": 530 },
+											"entity": { "id": 21 }
+										}
+									],
+									"onFinish": {
+										"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+										"scripts": [
+											{
+												"script": { "class": "com.one2b3.endcycle.features.scripts.battle.SetEntityComplexActionScript", "name": "companion", "level": 7 }
+											},
+											{
+												"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureSetCompanionScript", "companion": "companion", "changeName": "punk_companion" }
+											}
+										]
+									}
+								}
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureRemoveItemScript",
+				"items": [
+					{
+						"item": { "id": 60 }
+					}
+				],
+				"allRequired": false,
+				"single": true
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 93 },
+	"name": "A-Punk Backup Call Decline",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 288 }
+					},
+					{
+						"dialogue": { "id": 289 }
+					}
+				],
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "companion" }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 94 },
+	"name": "A-Crimson>Companion Question",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureCompanionBranchScript",
+				"companion": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
+					"dialogues": [
+						{
+							"dialogue": { "id": 293 }
+						}
+					]
+				},
+				"none": {
+					"class": "com.one2b3.endcycle.features.scripts.general.ShowSelectMessageScript",
+					"title": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Adventure.Punk.Join.2" },
+					"choices": [
+						{
+							"title": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.Messages", "key": "Yes" },
+							"onSelect": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 95 }
+							}
+						},
+						{
+							"title": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.Messages", "key": "No" }
+						}
+					]
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 95 },
+	"name": "A-Crimson>Companion Join",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 294 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.SetEntityComplexActionScript", "name": "punk_3", "level": 7 }
+						},
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureSetCompanionScript", "companion": "punk_3", "changeName": "punk_companion" }
+						}
+					]
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 96 },
+	"name": "A-Betray Crimson Force",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureBetraySideScript", "side": "Crimson" }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.BattleCharacterBranchScript",
+				"branches": [
+					{
+						"character": { "id": 23 },
+						"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureSetCompanionScript" }
+					}
+				]
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.adventure.AdventurePathBranchScript",
+				"branches": [
+					{
+						"path": { "id": 7 },
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureChangePathScript",
+							"path": { "id": 8 }
+						}
+					},
+					{
+						"path": { "id": 15 },
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureChangePathScript",
+							"path": { "id": 6 }
+						}
+					},
+					{
+						"path": { "id": 5 },
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureChangePathScript",
+							"path": { "id": 3 }
+						}
+					},
+					{
+						"path": { "id": 3 },
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureBetrayedBranchScript",
+							"side": "Azure",
+							"betrayed": {
+								"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureChangePathScript",
+								"path": { "id": 6 }
+							}
+						}
+					}
+				]
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 97 },
+	"name": "A-Cress Attacked",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.BattleCharacterBranchScript",
+				"defaultScript": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 96 }
+							}
+						},
+						{
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureTriggerScript",
+								"trigger": {
+									"class": "com.one2b3.endcycle.screens.adventure.events.data.OtherTriggerEventTrigger",
+									"event": { "id": 53 }
+								}
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 98 },
+	"name": "A-Cress Encounter",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 298 }
+					}
+				],
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 99 },
+	"name": "A-Azure>Other ID",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 300 }
+					},
+					{
+						"dialogue": { "id": 301 }
+					}
+				],
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 100 }
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 102 }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 100 },
+	"name": "A-Azure Talk",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 305 }
+					},
+					{
+						"dialogue": { "id": 306 }
+					},
+					{
+						"dialogue": { "id": 308 }
+					},
+					{
+						"dialogue": { "id": 309 }
+					},
+					{
+						"dialogue": { "id": 312 },
+						"entity": { "id": 13 }
+					},
+					{
+						"dialogue": { "id": 307 },
+						"entity": { "id": 13 }
+					},
+					{
+						"dialogue": { "id": 310 },
+						"entity": { "id": 13 }
+					},
+					{
+						"dialogue": { "id": 311 },
+						"entity": { "id": 13 }
+					},
+					{
+						"dialogue": { "id": 313 },
+						"entity": { "id": 13 }
+					},
+					{
+						"dialogue": { "id": 314 },
+						"entity": { "id": 13 }
+					},
+					{
+						"dialogue": { "id": 315 },
+						"entity": { "id": 13 }
+					},
+					{
+						"dialogue": { "id": 316 }
+					},
+					{
+						"dialogue": { "id": 317 },
+						"entity": { "id": 13 }
+					},
+					{
+						"dialogue": { "id": 318 },
+						"entity": { "id": 13 }
+					},
+					{
+						"dialogue": { "id": 319 }
+					},
+					{
+						"dialogue": { "id": 340 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 341 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 342 },
+						"entity": { "id": 9 },
+						"onFinish": {
+							"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureGiveItemScript",
+							"items": [
+								{
+									"item": { "id": 61 },
+									"amount": 4
+								}
+							],
+							"onFinish": {
+								"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+								"dialogues": [
+									{
+										"dialogue": { "id": 343 }
+									}
+								],
+								"name": "agent_2",
+								"single": true,
+								"start": true
+							}
+						}
+					},
+					{
+						"dialogue": { "id": 344 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 345 },
+						"entity": { "id": 9 },
+						"onFinish": {
+							"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+							"dialogues": [
+								{
+									"dialogue": { "id": 346 }
+								}
+							],
+							"name": "agent_2",
+							"single": true,
+							"start": true
+						}
+					},
+					{
+						"dialogue": { "id": 347 },
+						"entity": { "id": 9 }
+					}
+				],
+				"name": "agent_2",
+				"single": true
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 332 }
+					},
+					{
+						"dialogue": { "id": 333 }
+					},
+					{
+						"dialogue": { "id": 334 }
+					},
+					{
+						"dialogue": { "id": 335 }
+					},
+					{
+						"dialogue": { "id": 336 }
+					},
+					{
+						"dialogue": { "id": 337 }
+					},
+					{
+						"dialogue": { "id": 338 }
+					},
+					{
+						"dialogue": { "id": 339 }
+					}
+				],
+				"name": "agent_3",
+				"single": true
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 101 },
+	"name": "A-Azure Talk Forbidden",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 302 }
+					},
+					{
+						"dialogue": { "id": 303 }
+					},
+					{
+						"dialogue": { "id": 304 }
+					}
+				],
+				"name": "agent_2",
+				"single": true
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 329 }
+					},
+					{
+						"dialogue": { "id": 330 }
+					},
+					{
+						"dialogue": { "id": 331 }
+					}
+				],
+				"name": "agent_3",
+				"single": true
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 102 },
+	"name": "A-Azure Gift",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 124 }
+					},
+					{
+						"dialogue": { "id": 125 }
+					},
+					{
+						"dialogue": { "id": 126 }
+					},
+					{
+						"dialogue": { "id": 279 },
+						"entity": { "id": 9 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureGiveItemScript",
+					"items": [
+						{
+							"item": { "id": 50 }
+						},
+						{
+							"item": { "id": 51 }
+						},
+						{
+							"item": { "id": 52 }
+						},
+						{
+							"item": { "id": 53 }
+						}
+					],
+					"random": true,
+					"onFinish": {
+						"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+						"dialogues": [
+							{
+								"dialogue": { "id": 128 }
+							},
+							{
+								"dialogue": { "id": 129 }
+							},
+							{
+								"dialogue": { "id": 130 }
+							},
+							{
+								"dialogue": { "id": 131 }
+							},
+							{
+								"dialogue": { "id": 280 },
+								"entity": { "id": 9 }
+							}
+						],
+						"name": "agent_1",
+						"single": true,
+						"start": true
+					}
+				},
+				"name": "agent_1",
+				"single": true
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 103 },
+	"name": "A-Punk>Vigilante",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 45 }
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 321 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+					"script": { "id": 105 }
+				},
+				"name": "punk_1"
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 320 }
+					}
+				],
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 104 },
+	"name": "A-Punk Reinforcement",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureSideScript",
+				"sides": [
+					{
+						"side": "Crimson",
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.battle.SetScriptActionScript",
+							"name": "punk_3",
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 94 }
+							}
+						}
+					}
+				],
+				"none": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+					"dialogues": [
+						{
+							"dialogue": { "id": 414 }
+						},
+						{
+							"dialogue": { "id": 415 }
+						}
+					],
+					"name": "punk_3",
+					"single": true
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 105 },
+	"name": "A-Punk>Vigilante Invite",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureCanChangeSideScript",
+				"side": "Crimson",
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+					"script": { "id": 106 }
+				},
+				"otherwise": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+					"script": { "id": 107 }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 106 },
+	"name": "A-Punk>Vigilante Question",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.ShowSelectMessageScript",
+				"title": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Adventure.Crimson.Join.1" },
+				"choices": [
+					{
+						"title": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.Messages", "key": "Yes" },
+						"onSelect": {
+							"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
+							"dialogues": [
+								{
+									"dialogue": { "id": 326 }
+								}
+							],
+							"onFinish": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 108 }
+							}
+						}
+					},
+					{
+						"title": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.Messages", "key": "No" },
+						"onSelect": {
+							"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
+							"dialogues": [
+								{
+									"dialogue": { "id": 325 }
+								}
+							]
+						}
+					}
+				]
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 107 },
+	"name": "A-Punk>Vigilante Auto-Decline",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 322 },
+						"entity": { "id": 11 }
+					},
+					{
+						"dialogue": { "id": 323 },
+						"entity": { "id": 48 }
+					},
+					{
+						"dialogue": { "id": 324 },
+						"entity": {}
+					}
+				]
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 108 },
+	"name": "A-Punk Recruit Accept",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+					"dialogue": { "id": 327 },
+					"onFinish": {
+						"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+						"scripts": [
+							{
+								"script": {
+									"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+									"script": { "id": 109 }
+								}
+							},
+							{
+								"script": {
+									"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+									"stop": true,
+									"onFinish": {
+										"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+										"dialogues": [
+											{
+												"dialogue": { "id": 328 }
+											}
+										],
+										"onFinish": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true },
+										"name": "punk_1",
+										"single": true,
+										"start": true
+									}
+								}
+							},
+							{
+								"script": {
+									"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+									"script": { "id": 104 }
+								}
+							}
+						]
+					}
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 109 },
+	"name": "A-Change Side Punk",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureChangeSideScript", "side": "Crimson" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 110 },
+	"name": "A-Punk: Ice Cave",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 348 }
+					},
+					{
+						"dialogue": { "id": 349 }
+					},
+					{
+						"dialogue": { "id": 350 }
+					}
+				],
+				"name": "punk_2",
+				"single": true
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 111 },
+	"name": "A-Agents Attacked",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.BattleCharacterBranchScript",
+				"branches": [
+					{
+						"character": { "id": 9 },
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+							"script": { "id": 112 }
+						}
+					}
+				],
+				"defaultScript": {
+					"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureBetrayedBranchScript",
+					"side": "Crimson",
+					"betrayed": {
+						"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+						"script": { "id": 170 }
+					},
+					"normal": {
+						"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+						"script": { "id": 63 }
+					}
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 112 },
+	"name": "A-Duel Azures",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureSetupCombatScript" }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 367 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 368 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 369 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 370 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 371 },
+						"entity": { "id": 9 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureForceBattleScript",
+					"generatePack": true,
+					"leaveVitalAlive": true,
+					"onWin": {
+						"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+						"script": { "id": 113 }
+					},
+					"onLose": {
+						"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+						"script": { "id": 114 }
+					},
+					"onOver": {
+						"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+						"script": { "id": 115 }
+					}
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 113 },
+	"name": "A-Duel Azures Win",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 372 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 373 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 374 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 375 },
+						"entity": { "id": 9 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureGiveItemScript",
+					"items": [
+						{
+							"item": { "id": 50 }
+						},
+						{
+							"item": { "id": 51 }
+						},
+						{
+							"item": { "id": 52 }
+						},
+						{
+							"item": { "id": 53 }
+						}
+					],
+					"random": true
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 114 },
+	"name": "A-Duel Azures Lost",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 388 },
+						"entity": { "id": 9 },
+						"onFinish": {
+							"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureGiveItemScript",
+							"items": [
+								{
+									"item": { "id": 61 }
+								}
+							],
+							"random": true
+						}
+					},
+					{
+						"dialogue": { "id": 389 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 390 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 391 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 392 },
+						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 393 },
+						"entity": { "id": 9 }
+					}
+				]
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 115 },
+	"name": "A-Duel Azures After",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 376 }
+					},
+					{
+						"dialogue": { "id": 377 }
+					},
+					{
+						"dialogue": { "id": 378 }
+					},
+					{
+						"dialogue": { "id": 379 }
+					}
+				],
+				"name": "agent_1",
+				"single": true
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 380 }
+					},
+					{
+						"dialogue": { "id": 381 }
+					},
+					{
+						"dialogue": { "id": 382 }
+					},
+					{
+						"dialogue": { "id": 383 }
+					}
+				],
+				"name": "agent_2",
+				"single": true
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 384 }
+					},
+					{
+						"dialogue": { "id": 385 }
+					},
+					{
+						"dialogue": { "id": 386 }
+					},
+					{
+						"dialogue": { "id": 387 }
+					}
+				],
+				"name": "agent_3",
+				"single": true
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 116 },
+	"name": "A-Attacked Crimson Betray",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 96 }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureSetupCombatScript" }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 430 },
+						"entity": { "id": 23 }
+					},
+					{
+						"dialogue": { "id": 431 },
+						"entity": { "id": 23 }
+					},
+					{
+						"dialogue": { "id": 432 },
+						"entity": { "id": 23 }
+					},
+					{
+						"dialogue": { "id": 433 },
+						"entity": { "id": 23 }
+					},
+					{
+						"dialogue": { "id": 434 },
+						"entity": { "id": 23 }
+					},
+					{
+						"dialogue": { "id": 435 },
+						"entity": { "id": 23 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+					"script": { "id": 61 }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 117 },
+	"name": "A-Duel Crimson",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureSetupCombatScript" }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 419 },
+						"entity": { "id": 7 }
+					},
+					{
+						"dialogue": { "id": 420 },
+						"entity": { "id": 7 }
+					},
+					{
+						"dialogue": { "id": 421 },
+						"entity": { "id": 21 }
+					},
+					{
+						"dialogue": { "id": 422 },
+						"entity": { "id": 21 }
+					},
+					{
+						"dialogue": { "id": 423 },
+						"entity": {}
+					},
+					{
+						"dialogue": { "id": 424 },
+						"entity": {}
+					},
+					{
+						"dialogue": { "id": 425 },
+						"entity": { "id": 2 }
+					},
+					{
+						"dialogue": { "id": 426 },
+						"entity": { "id": 2 }
+					},
+					{
+						"dialogue": { "id": 427 },
+						"entity": { "id": 2 }
+					},
+					{
+						"dialogue": { "id": 428 },
+						"entity": { "id": 2 }
+					},
+					{
+						"dialogue": { "id": 429 },
+						"entity": { "id": 2 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureForceBattleScript",
+					"generatePack": true,
+					"leaveVitalAlive": true,
+					"onWin": {
+						"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+						"script": { "id": 119 }
+					},
+					"onLose": {
+						"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+						"script": { "id": 120 }
+					},
+					"onOver": {
+						"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+						"script": { "id": 118 }
+					}
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 118 },
+	"name": "A-Duel Crimson After",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 416 }
+					},
+					{
+						"dialogue": { "id": 417 }
+					},
+					{
+						"dialogue": { "id": 418 }
+					}
+				],
+				"name": "punk_1",
+				"single": true
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 104 }
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 45 }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 119 },
+	"name": "A-Duel Crimson Win",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 396 }
+					},
+					{
+						"dialogue": { "id": 397 }
+					},
+					{
+						"dialogue": { "id": 398 }
+					},
+					{
+						"dialogue": { "id": 399 }
+					},
+					{
+						"dialogue": { "id": 400 }
+					},
+					{
+						"dialogue": { "id": 401 }
+					},
+					{
+						"dialogue": { "id": 402 }
+					},
+					{
+						"dialogue": { "id": 403 }
+					},
+					{
+						"dialogue": { "id": 404 },
+						"onFinish": {
+							"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureGiveItemScript",
+							"items": [
+								{
+									"item": { "id": 25 }
+								}
+							],
+							"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "punk_1", "animation": true }
+						}
+					},
+					{
+						"dialogue": { "id": 405 }
+					},
+					{
+						"dialogue": { "id": 406 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureGiveItemScript",
+					"items": [
+						{
+							"item": { "id": 50 }
+						},
+						{
+							"item": { "id": 51 }
+						},
+						{
+							"item": { "id": 52 }
+						},
+						{
+							"item": { "id": 53 }
+						}
+					],
+					"random": true,
+					"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 120 },
+	"name": "A-Duel Crimson Lose",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 407 }
+					},
+					{
+						"dialogue": { "id": 408 }
+					},
+					{
+						"dialogue": { "id": 409 }
+					},
+					{
+						"dialogue": { "id": 410 }
+					},
+					{
+						"dialogue": { "id": 411 }
+					},
+					{
+						"dialogue": { "id": 412 }
+					},
+					{
+						"dialogue": { "id": 413 }
+					}
+				]
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 121 },
+	"name": "A-Phantom Teleport",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "player", "animation": true }
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.FlashBattleScript" }
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.ShakeScreenScript", "x": 3, "y": 3, "duration": 3 }
+		},
+		{
+			"delay": 1.5,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+				"speed": 0.5,
+				"layer": 14,
+				"color": { "r": 1, "g": 1, "b": 1, "a": 1 },
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureChangeZoneScript",
+					"zone": { "id": 9 }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 122 },
+	"name": "Phantom Realm Boss Start",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.BattlePlayMusicScript" }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.LunarBossWarningScript",
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.battle.BattlePlayMusicScript",
+								"song": { "id": 30 }
+							}
+						},
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.BattleStartScript", "message": false }
+						}
+					]
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 123 },
+	"name": "A-Azure Shield Battle",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureForceBattleScript", "generatePack": true }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 124 },
+	"name": "A-Betray Azure Shield",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureBetraySideScript", "side": "Azure" }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.adventure.AdventurePathBranchScript",
+				"branches": [
+					{
+						"path": { "id": 12 },
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureChangePathScript",
+							"path": { "id": 13 }
+						}
+					},
+					{
+						"path": { "id": 10 },
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureChangePathScript",
+							"path": { "id": 6 }
+						}
+					},
+					{
+						"path": { "id": 4 },
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureChangePathScript",
+							"path": { "id": 6 }
+						}
+					},
+					{
+						"path": { "id": 3 },
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureBetrayedBranchScript",
+							"side": "Crimson",
+							"betrayed": {
+								"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureChangePathScript",
+								"path": { "id": 6 }
+							}
+						}
+					}
+				]
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 125 },
+	"name": "A-AV.atar Rescued",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureSideScript",
+				"sides": [
+					{
+						"side": "Noise",
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+							"script": { "id": 126 }
+						}
+					}
+				],
+				"none": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+					"script": { "id": 57 }
+				}
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.LootBattleScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 126 },
+	"name": "A-AV.atar>Noise Rescued",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureEnableVocsScript",
+				"onAttack": { "class": "com.one2b3.endcycle.features.scripts.battle.ChangeHealthScript", "entity": "rescued", "set": true, "particle": "WEAK" },
+				"onHeal": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+					"script": { "id": 127 }
+				}
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 468 }
+					},
+					{
+						"dialogue": { "id": 469 }
+					},
+					{
+						"dialogue": { "id": 470 }
+					},
+					{
+						"dialogue": { "id": 471 }
+					},
+					{
+						"dialogue": { "id": 472 }
+					},
+					{
+						"dialogue": { "id": 473 }
+					}
+				],
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "rescued", "animation": true },
+				"name": "rescued",
+				"single": true
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 127 },
+	"name": "A-AV.atar>Noise Gift",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureDisableVocsScript", "removeSpawned": true }
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.ClearParticlesScript", "name": "rescued" }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 474 },
+						"onFinish": {
+							"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureGiveShopItemScript",
+							"shop": { "id": 6 },
+							"onFinish": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+								"dialogue": { "id": 479 },
+								"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "rescued", "animation": true }
+							}
+						}
+					},
+					{
+						"dialogue": { "id": 475 },
+						"onFinish": {
+							"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureGiveShopItemScript",
+							"shop": { "id": 6 },
+							"onFinish": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+								"dialogue": { "id": 480 },
+								"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "rescued", "animation": true }
+							}
+						}
+					},
+					{
+						"dialogue": { "id": 476 },
+						"onFinish": {
+							"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureGiveShopItemScript",
+							"shop": { "id": 6 },
+							"onFinish": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+								"dialogue": { "id": 481 },
+								"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "rescued", "animation": true }
+							}
+						}
+					},
+					{
+						"dialogue": { "id": 477 },
+						"onFinish": {
+							"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureGiveShopItemScript",
+							"shop": { "id": 6 },
+							"onFinish": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+								"dialogue": { "id": 482 },
+								"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "rescued", "animation": true }
+							}
+						}
+					},
+					{
+						"dialogue": { "id": 478 },
+						"onFinish": {
+							"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureGiveShopItemScript",
+							"shop": { "id": 6 },
+							"onFinish": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+								"dialogue": { "id": 483 },
+								"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "rescued", "animation": true }
+							}
+						}
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureGiveShopItemScript",
+					"shop": { "id": 6 },
+					"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "rescued", "animation": true }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 58 },
+	"name": "A-Gunslinger Provoked",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureSetupCombatScript" }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 511 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureForceBattleScript",
+					"message": true,
+					"leaveVitalAlive": true,
+					"onWin": {
+						"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+						"script": { "id": 129 }
+					},
+					"onLose": {
+						"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+						"script": { "id": 128 }
+					}
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 128 },
+	"name": "A-Gunslinger Lost",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 512 }
+					}
+				],
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" },
+				"name": "gunslinger",
+				"single": true,
+				"start": true
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 129 },
+	"name": "A-Gunslinger Won",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 513 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "gunslinger", "animation": true }
+						},
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.LootBattleScript" }
+						}
+					]
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 130 },
+	"name": "A-Gunslinger Noise",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureSetupCombatScript" }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 514 }
+					}
+				],
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureForceBattleScript", "message": true }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 131 },
+	"name": "A-Crushlord Provoked",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureSetupCombatScript" }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 515 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureForceBattleScript",
+					"message": true,
+					"leaveVitalAlive": true,
+					"onWin": {
+						"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+						"script": { "id": 133 }
+					},
+					"onLose": {
+						"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+						"script": { "id": 132 }
+					}
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 132 },
+	"name": "A-Crushlord Lost",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 516 }
+					}
+				],
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" },
+				"name": "crushlord",
+				"single": true,
+				"start": true
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 133 },
+	"name": "A-Crushlord Won",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 517 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "crushlord", "animation": true }
+						},
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.LootBattleScript" }
+						}
+					]
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 134 },
+	"name": "A-Crushlord Noise",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureSetupCombatScript" }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 518 }
+					}
+				],
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureForceBattleScript", "message": true }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 135 },
+	"name": "A-Crushlord Battle Setup",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "crushlord", "relativeEntity": "", "relative": true, "moveType": "ANIMATED_TILE", "x": 1, "y": 1 }
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.SetEntityActionScript", "name": "crushlord" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 136 },
+	"name": "A-Crushlord Battle Remove",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "dummy", "animation": true }
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "crushlord", "relative": true, "moveType": "ANIMATED_TILE", "x": -1, "y": -1 }
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureEnableVocsScript",
+				"onAttack": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+					"script": { "id": 131 }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 137 },
+	"name": "A-Enter Rozu>Tower",
+	"scripts": [
+		{
+			"delay": 0.5,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 541 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 138 },
+	"name": "A-Enter Spark>Tower",
+	"scripts": [
+		{
+			"delay": 0.5,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 548 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 139 },
+	"name": "A-Complete Spark",
+	"scripts": [
+		{
+			"delay": 2,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 549 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.LootBattleScript" }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 140 },
+	"name": "A-Enter Fin>Tower",
+	"scripts": [
+		{
+			"delay": 0.5,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 554 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 141 },
+	"name": "A-Complete Fin",
+	"scripts": [
+		{
+			"delay": 2,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 555 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.LootBattleScript" }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 142 },
+	"name": "A-Enter Cress>Tower",
+	"scripts": [
+		{
+			"delay": 0.5,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 561 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 143 },
+	"name": "A-Complete Cress",
+	"scripts": [
+		{
+			"delay": 2,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 562 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.LootBattleScript" }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 144 },
+	"name": "A-Enter Del>Tower",
+	"scripts": [
+		{
+			"delay": 0.5,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 566 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 145 },
+	"name": "A-Complete Del",
+	"scripts": [
+		{
+			"delay": 2,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 567 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.LootBattleScript" }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 146 },
+	"name": "A-Complete Bella",
+	"scripts": [
+		{
+			"delay": 2,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 568 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.LootBattleScript" }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 147 },
+	"name": "A-Enter Agent>Tower",
+	"scripts": [
+		{
+			"delay": 0.5,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 570 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 148 },
+	"name": "A-Complete Agent",
+	"scripts": [
+		{
+			"delay": 2,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 571 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.LootBattleScript" }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 149 },
+	"name": "A-Enter Punk>Tower",
+	"scripts": [
+		{
+			"delay": 0.5,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 572 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 150 },
+	"name": "A-Complete Punk",
+	"scripts": [
+		{
+			"delay": 2,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 575 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.LootBattleScript" }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 151 },
+	"name": "A-Shop Attacked",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.BattleCharacterBranchScript",
+				"branches": [
+					{
+						"character": {},
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+							"script": { "id": 152 }
+						}
+					},
+					{
+						"character": { "id": 2 },
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+							"script": { "id": 152 }
+						}
+					},
+					{
+						"character": { "id": 7 },
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+							"script": { "id": 152 }
+						}
+					},
+					{
+						"character": { "id": 9 },
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+							"script": { "id": 152 }
+						}
+					},
+					{
+						"character": { "id": 21 },
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+							"script": { "id": 152 }
+						}
+					}
+				],
+				"defaultScript": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 6 }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 152 },
+	"name": "A-Shop Attack Ignore",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureEnableVocsScript",
+				"onAttack": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+					"script": { "id": 151 }
+				}
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 576 }
+					}
+				]
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 153 },
+	"name": "A-Shop Punk>Attacked",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.BattleCharacterBranchScript",
+				"branches": [
+					{
+						"character": { "id": 21 },
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+							"dialogue": { "id": 577 },
+							"onFinish": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 154 }
+							}
+						}
+					},
+					{
+						"character": { "id": 2 },
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+							"dialogue": { "id": 578 },
+							"onFinish": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 154 }
+							}
+						}
+					},
+					{
+						"character": { "id": 7 },
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+							"dialogue": { "id": 579 },
+							"onFinish": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 154 }
+							}
+						}
+					},
+					{
+						"character": {},
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+							"dialogue": { "id": 580 },
+							"onFinish": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 154 }
+							}
+						}
+					},
+					{
+						"character": { "id": 23 },
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+							"dialogue": { "id": 581 },
+							"onFinish": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 155 }
+							}
+						}
+					}
+				],
+				"defaultScript": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+					"script": { "id": 155 }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 154 },
+	"name": "A-Shop Crimson Enable VOCs",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureEnableVocsScript",
+				"onAttack": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+					"script": { "id": 153 }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 155 },
+	"name": "A-Shop Punk>Betrayed",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 96 }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 4 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 156 },
+	"name": "A-Shop Crimson>RAgent",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 583 }
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 584 }
+					}
+				],
+				"name": "shopkeeper",
+				"single": true
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 157 },
+	"name": "A-Shop Punk>Traitor",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 586 }
+					}
+				],
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 4 }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 158 },
+	"name": "A-Shop Punk>Double",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 587 }
+					}
+				],
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 4 }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 159 },
+	"name": "A-Shop Agent>RPunk",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 588 }
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 589 }
+					}
+				],
+				"name": "shopkeeper",
+				"single": true
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 160 },
+	"name": "A-Shop Agent>Betrayed",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 124 }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 4 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 161 },
+	"name": "A-Shop Agent>Traitor",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 592 }
+					}
+				],
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 4 }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 162 },
+	"name": "A-Shop Punk>RAgent Betray",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 582 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+					"script": { "id": 155 }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 163 },
+	"name": "A-Shop Agent>RPunk Betray",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 590 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+					"script": { "id": 160 }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 164 },
+	"name": "A-Shop Agent>Double",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 593 }
+					}
+				],
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 4 }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 165 },
+	"name": "A-Agent>RPunk",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 595 }
+					},
+					{
+						"dialogue": { "id": 596 }
+					},
+					{
+						"dialogue": { "id": 597 }
+					}
+				],
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 101 }
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 606 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+					"script": { "id": 2 }
+				},
+				"name": "agent_1",
+				"single": true
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 166 },
+	"name": "A-Agent>Double/Traitor",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 598 },
+						"entity": { "id": 23 }
+					},
+					{
+						"dialogue": { "id": 599 },
+						"entity": { "id": 23 }
+					},
+					{
+						"dialogue": { "id": 600 },
+						"entity": { "id": 23 }
+					},
+					{
+						"dialogue": { "id": 601 }
+					},
+					{
+						"dialogue": { "id": 602 }
+					},
+					{
+						"dialogue": { "id": 603 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+					"script": { "id": 167 }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 167 },
+	"name": "A-Agents Battle",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureForceBattleScript", "generatePack": true, "message": true }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 168 },
+	"name": "Agent Recruit After",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureChangeSideScript" }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+				"stop": true,
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+					"dialogues": [
+						{
+							"dialogue": { "id": 116 }
+						}
+					],
+					"onFinish": {
+						"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+						"dialogues": [
+							{
+								"dialogue": { "id": 132 }
+							}
+						],
+						"onFinish": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true },
+						"name": "agent_1",
+						"single": true,
+						"start": true
+					}
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 169 },
+	"name": "Agent>RPunk Recruit Accept",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+					"dialogues": [
+						{
+							"dialogue": { "id": 605 }
+						}
+					],
+					"onFinish": {
+						"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+						"script": { "id": 168 }
+					}
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 170 },
+	"name": "A-Agent>RPunk Betray",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 124 }
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 123 }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 171 },
+	"name": "A-Punks Battle",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureForceBattleScript", "generatePack": true, "message": true }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 172 },
+	"name": "A-Punk>Double",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 611 },
+						"entity": { "id": 13 }
+					},
+					{
+						"dialogue": { "id": 612 },
+						"entity": { "id": 13 }
+					},
+					{
+						"dialogue": { "id": 613 },
+						"entity": { "id": 13 }
+					},
+					{
+						"dialogue": { "id": 614 },
+						"entity": { "id": 13 }
+					},
+					{
+						"dialogue": { "id": 615 },
+						"entity": { "id": 23 }
+					},
+					{
+						"dialogue": { "id": 616 },
+						"entity": { "id": 23 }
+					},
+					{
+						"dialogue": { "id": 617 },
+						"entity": { "id": 23 }
+					},
+					{
+						"dialogue": { "id": 618 },
+						"entity": { "id": 23 }
+					},
+					{
+						"dialogue": { "id": 619 },
+						"entity": { "id": 23 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+					"script": { "id": 171 }
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 173 },
+	"name": "A-Punk>RAgent",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 45 }
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 104 }
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 607 }
+					},
+					{
+						"dialogue": { "id": 608 }
+					},
+					{
+						"dialogue": { "id": 609 }
+					},
+					{
+						"dialogue": { "id": 610 }
+					}
+				],
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 624 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+					"script": { "id": 175 }
+				},
+				"name": "punk_1",
+				"single": true
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 174 },
+	"name": "A-Punk>RAgent Betray",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 96 }
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 171 }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 175 },
+	"name": "A-Punk>RAgent Recruit",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.ShowSelectMessageScript",
+				"title": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Adventure.Crimson.Join.1" },
+				"choices": [
+					{
+						"title": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.Messages", "key": "Yes" },
+						"onSelect": {
+							"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
+							"dialogues": [
+								{
+									"dialogue": { "id": 625 }
+								}
+							],
+							"onFinish": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 108 }
+							}
+						}
+					},
+					{
+						"title": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.Messages", "key": "No" },
+						"onSelect": {
+							"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
+							"dialogues": [
+								{
+									"dialogue": { "id": 626 }
+								}
+							]
+						}
+					}
+				]
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 176 },
+	"name": "A-Punk>Punk Talk",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.adventure.AdventurePathBranchScript",
+				"branches": [
+					{
+						"path": { "id": 15 },
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+							"dialogues": [
+								{
+									"dialogue": { "id": 627 }
+								},
+								{
+									"dialogue": { "id": 628 }
+								},
+								{
+									"dialogue": { "id": 629 }
+								}
+							],
+							"name": "punk_1",
+							"single": true
+						}
+					}
+				],
+				"defaultScript": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityTalkActionScript",
+					"dialogues": [
+						{
+							"dialogue": { "id": 141 }
+						},
+						{
+							"dialogue": { "id": 140 }
+						},
+						{
+							"dialogue": { "id": 445 },
+							"entity": { "id": 7 }
+						},
+						{
+							"dialogue": { "id": 446 },
+							"entity": { "id": 7 }
+						},
+						{
+							"dialogue": { "id": 447 },
+							"entity": { "id": 7 }
+						},
+						{
+							"dialogue": { "id": 448 },
+							"entity": { "id": 7 }
+						},
+						{
+							"dialogue": { "id": 449 },
+							"entity": { "id": 7 }
+						},
+						{
+							"dialogue": { "id": 450 },
+							"entity": { "id": 7 }
+						},
+						{
+							"dialogue": { "id": 451 },
+							"entity": { "id": 7 }
+						},
+						{
+							"dialogue": { "id": 452 },
+							"entity": { "id": 7 }
+						},
+						{
+							"dialogue": { "id": 453 },
+							"entity": { "id": 21 }
+						},
+						{
+							"dialogue": { "id": 454 },
+							"entity": { "id": 21 }
+						},
+						{
+							"dialogue": { "id": 455 },
+							"entity": { "id": 21 }
+						},
+						{
+							"dialogue": { "id": 456 },
+							"entity": { "id": 21 }
+						},
+						{
+							"dialogue": { "id": 457 },
+							"entity": { "id": 21 }
+						},
+						{
+							"dialogue": { "id": 458 },
+							"entity": { "id": 21 }
+						},
+						{
+							"dialogue": { "id": 459 },
+							"entity": { "id": 2 }
+						},
+						{
+							"dialogue": { "id": 460 },
+							"entity": { "id": 2 }
+						},
+						{
+							"dialogue": { "id": 461 },
+							"entity": { "id": 2 }
+						},
+						{
+							"dialogue": { "id": 462 },
+							"entity": { "id": 2 }
+						},
+						{
+							"dialogue": { "id": 463 },
+							"entity": { "id": 2 }
+						},
+						{
+							"dialogue": { "id": 464 },
+							"entity": { "id": 2 },
+							"onFinish": {
+								"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShowShopScript",
+								"shop": { "id": 5 }
+							}
+						},
+						{
+							"dialogue": { "id": 465 },
+							"entity": { "id": 2 }
+						},
+						{
+							"dialogue": { "id": 466 },
+							"entity": { "id": 2 }
+						},
+						{
+							"dialogue": { "id": 467 },
+							"entity": { "id": 2 }
+						}
+					],
+					"name": "punk_1",
+					"single": true
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 177 },
+	"name": "A-Enter RPunk>Tower",
+	"scripts": [
+		{
+			"delay": 0.5,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 631 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 178 },
+	"name": "A-Complete RPunk",
+	"scripts": [
+		{
+			"delay": 2,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 632 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.LootBattleScript" }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 179 },
+	"name": "A-Complete Double Agent",
+	"scripts": [
+		{
+			"delay": 2,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 635 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.LootBattleScript" }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 180 },
+	"name": "A-Complete Double Punk",
+	"scripts": [
+		{
+			"delay": 2,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 636 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.LootBattleScript" }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 181 },
+	"name": "A-Enter Double Agent>Tower",
+	"scripts": [
+		{
+			"delay": 0.5,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 638 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 182 },
+	"name": "A-Enter Double Punk>Tower",
+	"scripts": [
+		{
+			"delay": 0.5,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 637 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 183 },
+	"name": "A-Enter RAgent>Tower",
+	"scripts": [
+		{
+			"delay": 0.5,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 640 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 184 },
+	"name": "A-Complete RAgent",
+	"scripts": [
+		{
+			"delay": 2,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 641 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.LootBattleScript" }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 185 },
+	"name": "A-Spark>Cress Win",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "spark", "animation": true }
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.LootBattleScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 186 },
+	"name": "A-Spark>Cress Lose",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "spark", "animation": true }
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 187 },
+	"name": "A-Traitor>Del Win",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.LootBattleScript" }
+						},
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "traitor" }
+						},
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript", "stop": true }
+						},
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true }
+						}
+					]
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 188 },
+	"name": "A-Del Attacked",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.BattleCharacterBranchScript",
+				"defaultScript": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+								"script": { "id": 124 }
+							}
+						},
+						{
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureTriggerScript",
+								"trigger": {
+									"class": "com.one2b3.endcycle.screens.adventure.events.data.OtherTriggerEventTrigger",
+									"event": { "id": 62 }
+								}
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 189 },
+	"name": "A-Del Encounter",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 661 }
+					}
+				],
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
+			}
+		}
+	]
+}
+]

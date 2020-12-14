@@ -9,22 +9,50 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"name": "player",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 1,
 			"y": 1,
 			"party": "FRIENDLY",
-			"player": true
+			"player": true,
+			"name": "player",
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 1 },
-			"name": "qt",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 4,
 			"y": 1,
 			"turned": true,
-			"action": {}
+			"name": "qt",
+			"id": { "id": 1 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": {},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		}
 	]
 },
@@ -39,11 +67,25 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 2,
 			"y": 1,
 			"party": "FRIENDLY",
-			"player": true
+			"player": true,
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		}
 	]
 },
@@ -58,10 +100,24 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"party": "FRIENDLY",
+			"player": true,
 			"id": { "id": 7 },
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-			"party": "FRIENDLY",
-			"player": true
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		}
 	]
 },
@@ -75,31 +131,71 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"name": "player",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 1,
 			"y": 1,
 			"party": "FRIENDLY",
-			"player": true
+			"player": true,
+			"name": "player",
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 15 },
-			"name": "bomb1",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 5,
-			"noise": true,
-			"action": { "id": 7 }
+			"name": "bomb1",
+			"id": { "id": 15 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": { "id": 7 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 15 },
-			"name": "bomb2",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 4,
 			"y": 2,
-			"noise": true,
-			"action": { "id": 8 }
+			"name": "bomb2",
+			"id": { "id": 15 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": { "id": 8 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		}
 	]
 },
@@ -114,46 +210,100 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 17 },
-			"name": "neo",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"y": 1,
 			"party": "FRIENDLY",
 			"mustSurvive": true,
+			"name": "neo",
+			"id": { "id": 17 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"cache": {
 				"customizations": [ 2, 8, 3, 0, 1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"name": "player",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 1,
 			"y": 1,
 			"party": "FRIENDLY",
 			"player": true,
-			"mustSurvive": true
+			"mustSurvive": true,
+			"name": "player",
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 3 },
-			"name": "sofa1",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 4,
 			"turned": true,
-			"noise": true,
-			"action": { "id": 4 }
+			"name": "sofa1",
+			"id": { "id": 3 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": { "id": 4 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 3 },
-			"name": "sofa2",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 4,
 			"y": 2,
 			"turned": true,
-			"noise": true,
-			"action": { "id": 4 }
+			"name": "sofa2",
+			"id": { "id": 3 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": { "id": 4 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		}
 	]
 },
@@ -167,23 +317,50 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"name": "player",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 1,
 			"y": 1,
 			"party": "FRIENDLY",
-			"player": true
+			"player": true,
+			"name": "player",
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 1 },
-			"name": "qt",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 4,
 			"y": 1,
 			"turned": true,
-			"noise": true,
-			"action": { "id": 34 }
+			"name": "qt",
+			"id": { "id": 1 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": { "id": 34 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		}
 	]
 },
@@ -198,51 +375,105 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"name": "player",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 1,
 			"y": 1,
 			"party": "FRIENDLY",
-			"player": true
-		},
-		{
-			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 13 },
-			"name": "grunt",
+			"player": true,
+			"name": "player",
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-			"x": 6,
-			"y": 2,
-			"turned": true,
-			"action": { "id": 38 },
-			"mustSurvive": true,
-			"cache": {
-				"patchwork": 1,
-				"customizations": [ 8, 2, 1, 0 ]
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 4 },
-			"name": "greed1",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-			"x": 5,
-			"y": 3,
+			"x": 6,
+			"y": 2,
 			"turned": true,
-			"noise": true,
-			"action": { "id": 9 }
+			"mustSurvive": true,
+			"name": "grunt",
+			"id": { "id": 13 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": { "id": 38 },
+			"cache": {
+				"patchwork": 1,
+				"customizations": [ 8, 2, 1, 0 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 5,
+			"y": 3,
+			"turned": true,
+			"name": "greed1",
 			"id": { "id": 4 },
-			"name": "greed2",
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": { "id": 9 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
 			"x": 4,
 			"y": 1,
 			"turned": true,
-			"noise": true,
+			"name": "greed2",
+			"id": { "id": 4 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"action": { "id": 10 },
 			"cache": {
 				"customizations": [ 0 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		}
 	]
@@ -258,26 +489,53 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"name": "player",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 1,
 			"y": 1,
 			"party": "FRIENDLY",
-			"player": true
+			"player": true,
+			"name": "player",
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 1 },
-			"name": "qt",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 7,
 			"y": 1,
 			"turned": true,
-			"noise": true,
-			"action": { "id": 13 },
 			"mustSurvive": true,
+			"name": "qt",
+			"id": { "id": 1 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": { "id": 13 },
 			"cache": {
 				"customizations": [ 3 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		}
 	]
@@ -290,11 +548,25 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 1,
 			"y": 1,
 			"party": "FRIENDLY",
-			"player": true
+			"player": true,
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		}
 	]
 },
@@ -308,23 +580,51 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"name": "player",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 1,
 			"y": 1,
 			"party": "FRIENDLY",
-			"player": true
+			"player": true,
+			"name": "player",
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 5 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 4,
 			"y": 1,
 			"turned": true,
+			"id": { "id": 5 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"action": { "id": 14 },
 			"cache": {
 				"customizations": [ 1, 8, 1, 1, 3 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		}
 	]
@@ -340,42 +640,98 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 16 },
-			"name": "fin",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"y": 2,
 			"party": "FRIENDLY",
-			"mustSurvive": true
+			"mustSurvive": true,
+			"name": "fin",
+			"id": { "id": 16 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"name": "player",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 1,
 			"y": 2,
 			"party": "FRIENDLY",
 			"player": true,
-			"mustSurvive": true
+			"mustSurvive": true,
+			"name": "player",
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 1 },
-			"name": "qt",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 4,
 			"y": 4,
 			"turned": true,
-			"action": { "id": 16 }
+			"name": "qt",
+			"id": { "id": 1 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": { "id": 16 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 4 },
-			"name": "greed",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 5,
 			"y": 1,
 			"turned": true,
-			"action": { "id": 9 }
+			"name": "greed",
+			"id": { "id": 4 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": { "id": 9 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		}
 	]
 },
@@ -390,22 +746,50 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"name": "player",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 1,
 			"y": 1,
 			"party": "FRIENDLY",
-			"player": true
+			"player": true,
+			"name": "player",
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 16 },
-			"name": "fin",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 4,
 			"y": 1,
 			"turned": true,
+			"name": "fin",
+			"id": { "id": 16 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"action": { "id": 19 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "INVINCIBLE"
 		}
 	],
@@ -423,42 +807,98 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": {},
-			"name": "fin",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 2,
 			"y": 1,
 			"turned": true,
 			"preview": false,
-			"party": "FRIENDLY"
+			"party": "FRIENDLY",
+			"name": "fin",
+			"id": {},
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"name": "player",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 1,
 			"y": 1,
 			"party": "FRIENDLY",
-			"player": true
+			"player": true,
+			"name": "player",
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 3 },
-			"name": "sofa",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 5,
 			"y": 2,
 			"turned": true,
-			"action": { "id": 4 }
+			"name": "sofa",
+			"id": { "id": 3 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": { "id": 4 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 15 },
-			"name": "bomb",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 4,
 			"turned": true,
-			"action": { "id": 7 }
+			"name": "bomb",
+			"id": { "id": 15 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": { "id": 7 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		}
 	]
 },
@@ -473,39 +913,81 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"name": "player",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 1,
 			"y": 1,
 			"party": "FRIENDLY",
-			"player": true
-		},
-		{
-			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 13 },
-			"name": "agent1",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent1" },
-			"x": 4,
-			"y": 1,
-			"action": { "id": 40 },
-			"mustSurvive": true,
-			"cache": {
-				"patchwork": 1,
-				"customizations": [ 4, 1, 1, 1 ]
+			"player": true,
+			"name": "player",
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 4,
+			"y": 1,
+			"mustSurvive": true,
+			"name": "agent1",
 			"id": { "id": 13 },
-			"name": "agent2",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent2" },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent1" },
+			"action": { "id": 40 },
+			"cache": {
+				"patchwork": 1,
+				"customizations": [ 4, 1, 1, 1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
 			"x": 5,
 			"y": 1,
 			"turned": true,
-			"action": { "id": 42 },
 			"mustSurvive": true,
+			"name": "agent2",
+			"id": { "id": 13 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent2" },
+			"action": { "id": 42 },
 			"cache": {
 				"customizations": [ 3, 2, 0, 1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		}
 	]
@@ -522,24 +1004,52 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"name": "player",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 1,
 			"y": 1,
 			"party": "FRIENDLY",
-			"player": true
+			"player": true,
+			"name": "player",
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 7 },
-			"name": "rozu",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 4,
 			"y": 1,
 			"turned": true,
+			"name": "rozu",
+			"id": { "id": 7 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"action": { "id": 21 },
 			"cache": {
 				"customizations": [ 4, -1, 2 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			},
 			"type": "INVINCIBLE"
 		}
@@ -555,44 +1065,86 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 5 },
-			"name": "player",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Vanessa" },
 			"x": 1,
 			"y": 1,
 			"party": "FRIENDLY",
 			"player": true,
+			"name": "player",
+			"id": { "id": 5 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Vanessa" },
 			"cache": {
 				"customizations": [ 2, 1, 0, 1, 3 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 13 },
-			"name": "agent1",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent1" },
 			"x": 4,
 			"y": 1,
 			"turned": true,
-			"action": { "id": 44 },
 			"mustSurvive": true,
+			"name": "agent1",
+			"id": { "id": 13 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent1" },
+			"action": { "id": 44 },
 			"cache": {
 				"patchwork": 1,
 				"customizations": [ 8, 3, 1, 0 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 13 },
-			"name": "agent2",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent2" },
 			"x": 5,
 			"y": 2,
 			"turned": true,
-			"action": { "id": 23 },
 			"mustSurvive": true,
+			"name": "agent2",
+			"id": { "id": 13 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent2" },
+			"action": { "id": 23 },
 			"cache": {
 				"customizations": [ 11, 3, 1, 3 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		}
 	]
@@ -609,42 +1161,84 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 13 },
-			"name": "tim",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Sarah" },
 			"y": 1,
-			"action": { "id": 26 },
 			"party": "FRIENDLY",
 			"mustSurvive": true,
+			"name": "tim",
+			"id": { "id": 13 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Sarah" },
+			"action": { "id": 26 },
 			"cache": {
 				"customizations": [ 3, 2, 0, 1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 13 },
-			"name": "lisa",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Jessica" },
 			"x": 1,
 			"y": 1,
 			"turned": true,
 			"party": "FRIENDLY",
 			"player": true,
 			"mustSurvive": true,
+			"name": "lisa",
+			"id": { "id": 13 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Jessica" },
 			"cache": {
 				"patchwork": 1,
 				"customizations": [ 4, 1, 1, 1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 2 },
-			"name": "spark",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 4,
 			"y": 1,
 			"turned": true,
+			"name": "spark",
+			"id": { "id": 2 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"action": { "id": 25 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "INVINCIBLE"
 		}
 	]
@@ -659,39 +1253,81 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 13 },
-			"name": "player",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent3" },
 			"x": 1,
 			"y": 1,
 			"party": "FRIENDLY",
 			"player": true,
+			"name": "player",
+			"id": { "id": 13 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent3" },
 			"cache": {
 				"patchwork": 1,
 				"customizations": [ 12, 1, 2, 2 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 20 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 5,
 			"y": 1,
 			"turned": true,
 			"mustSurvive": true,
+			"id": { "id": 20 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "DATA_SERVER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 7 },
-			"name": "rozu",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 4,
 			"y": 1,
 			"turned": true,
+			"name": "rozu",
+			"id": { "id": 7 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"action": { "id": 46 },
 			"cache": {
 				"customizations": [ 4, -1, 2 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			},
 			"type": "INVINCIBLE"
 		}
@@ -707,26 +1343,54 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 13 },
-			"name": "player",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent4" },
 			"x": 1,
 			"y": 1,
 			"party": "FRIENDLY",
 			"player": true,
+			"name": "player",
+			"id": { "id": 13 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Agent4" },
 			"cache": {
 				"customizations": [ 6, 0, 0, 0 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 16 },
-			"name": "fin",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 4,
 			"y": 1,
 			"turned": true,
+			"name": "fin",
+			"id": { "id": 16 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"action": { "id": 48 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "INVINCIBLE"
 		}
 	],
@@ -746,204 +1410,448 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"name": "player",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 1,
 			"y": 12,
 			"party": "FRIENDLY",
 			"player": true,
-			"mustSurvive": true
+			"mustSurvive": true,
+			"name": "player",
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 19 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 35,
 			"y": 7,
 			"turned": true,
 			"mustSurvive": true,
+			"id": { "id": 19 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "DATA_SERVER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 3 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 8,
 			"y": 12,
 			"turned": true,
-			"noise": true,
-			"action": { "id": 4 }
+			"id": { "id": 3 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": { "id": 4 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 23 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 13,
 			"y": 6,
 			"turned": true,
-			"noise": true,
+			"id": { "id": 23 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"action": { "id": 14 },
 			"cache": {
 				"patchwork": 1,
 				"customizations": [ 4, 0, 1, 2 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 4 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 19,
 			"y": 6,
 			"turned": true,
-			"noise": true,
-			"action": { "id": 9 }
-		},
-		{
-			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 1 },
+			"id": { "id": 4 },
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-			"x": 27,
-			"turned": true,
-			"noise": true,
-			"action": { "id": 13 },
-			"cache": {
-				"customizations": [ 3 ]
+			"action": { "id": 9 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 27,
+			"turned": true,
 			"id": { "id": 1 },
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": { "id": 13 },
+			"cache": {
+				"customizations": [ 3 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
 			"x": 14,
 			"y": 18,
 			"turned": true,
-			"noise": true,
+			"id": { "id": 1 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"action": { "id": 13 },
 			"cache": {
 				"customizations": [ 3 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 6 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 19,
 			"y": 18,
 			"turned": true,
-			"noise": true,
-			"action": { "id": 7 }
+			"id": { "id": 6 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": { "id": 7 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 4 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 18,
 			"y": 19,
 			"turned": true,
-			"noise": true,
-			"action": { "id": 9 }
+			"id": { "id": 4 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": { "id": 9 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 23 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 26,
 			"y": 12,
 			"turned": true,
-			"noise": true,
+			"id": { "id": 23 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"action": { "id": 14 },
 			"cache": {
 				"patchwork": 2,
 				"customizations": [ 11, 2, 2, 1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 9 },
-			"name": "del",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": -256,
 			"y": 256,
+			"vital": false,
 			"preview": false,
-			"party": "FRIENDLY"
+			"party": "FRIENDLY",
+			"name": "del",
+			"id": { "id": 9 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 6 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 20,
 			"y": 5,
 			"turned": true,
-			"noise": true,
-			"action": { "id": 7 }
+			"id": { "id": 6 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": { "id": 7 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "9:6" },
 			"x": 10,
 			"y": 11,
 			"vital": false,
 			"preview": false,
 			"party": "NEUTRAL",
-			"type": "TELEPORTER"
-		},
-		{
-			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
 			"id": { "id": 47 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "9:18" },
-			"x": 10,
-			"y": 13,
-			"vital": false,
-			"preview": false,
-			"party": "NEUTRAL",
-			"cache": {
-				"customizations": [ -1 ]
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "9:6" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 10,
+			"y": 13,
+			"vital": false,
+			"preview": false,
+			"party": "NEUTRAL",
 			"id": { "id": 47 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "21:1" },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "9:18" },
+			"cache": {
+				"customizations": [ -1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
+			"type": "TELEPORTER"
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
 			"x": 21,
 			"y": 5,
 			"vital": false,
 			"preview": false,
 			"party": "NEUTRAL",
+			"id": { "id": 47 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "21:1" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "31:7" },
 			"x": 28,
 			"y": 3,
 			"vital": false,
 			"preview": false,
 			"party": "NEUTRAL",
+			"id": { "id": 47 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "31:7" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "31:7" },
 			"x": 28,
 			"y": 11,
 			"vital": false,
 			"preview": false,
 			"party": "NEUTRAL",
+			"id": { "id": 47 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "31:7" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "21:12" },
 			"x": 21,
 			"y": 17,
 			"vital": false,
 			"preview": false,
 			"party": "NEUTRAL",
+			"id": { "id": 47 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "21:12" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "TELEPORTER"
 		}
 	],
@@ -967,25 +1875,53 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"name": "player",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 1,
 			"y": 1,
 			"party": "FRIENDLY",
 			"player": true,
-			"cache": { "patchwork": 1 }
+			"name": "player",
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": { "patchwork": 1 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 25 },
-			"name": "spark",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 4,
 			"y": 1,
 			"turned": true,
+			"name": "spark",
+			"id": { "id": 25 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"action": { "id": 50 },
 			"cache": {
-				"customizations": [ 4, 0, 2 ]
+				"customizations": [ 4, -1, 3 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		}
 	]
@@ -1002,368 +1938,846 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 19 },
-			"name": "server",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"y": 1,
 			"vital": false,
+			"name": "server",
+			"id": { "id": 19 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "DATA_SERVER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 19 },
-			"name": "server",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 36,
 			"y": 1,
 			"turned": true,
 			"vital": false,
+			"name": "server",
+			"id": { "id": 19 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "DATA_SERVER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 19 },
-			"name": "server",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 43,
 			"y": 1,
 			"turned": true,
 			"vital": false,
+			"name": "server",
+			"id": { "id": 19 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "DATA_SERVER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 19 },
-			"name": "server",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 43,
 			"y": 18,
 			"turned": true,
 			"vital": false,
+			"name": "server",
+			"id": { "id": 19 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "DATA_SERVER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 19 },
-			"name": "server",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 22,
 			"y": 18,
 			"vital": false,
+			"name": "server",
+			"id": { "id": 19 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "DATA_SERVER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 19 },
-			"name": "server",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 5,
 			"y": 18,
 			"vital": false,
+			"name": "server",
+			"id": { "id": 19 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "DATA_SERVER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 19 },
-			"name": "server",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 9,
 			"y": 10,
 			"vital": false,
+			"name": "server",
+			"id": { "id": 19 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "DATA_SERVER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 19 },
-			"name": "server",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 28,
 			"y": 10,
 			"turned": true,
 			"vital": false,
+			"name": "server",
+			"id": { "id": 19 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "DATA_SERVER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 23,
 			"y": 10,
 			"party": "FRIENDLY",
-			"player": true
+			"player": true,
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 1 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 17,
 			"y": 10,
-			"noise": true,
+			"id": { "id": 1 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"action": { "id": 27 },
 			"cache": {
 				"customizations": [ 1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 1 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 16,
 			"y": 11,
-			"noise": true,
-			"action": { "id": 16 }
+			"id": { "id": 1 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": { "id": 16 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 6 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 23,
 			"y": 18,
-			"noise": true,
-			"action": { "id": 2 }
+			"id": { "id": 6 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": { "id": 2 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 4 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 29,
 			"y": 18,
-			"noise": true,
-			"action": { "id": 10 }
+			"id": { "id": 4 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": { "id": 10 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 1 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 42,
 			"y": 18,
 			"turned": true,
-			"noise": true,
-			"action": { "id": 1 }
+			"id": { "id": 1 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": { "id": 1 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 3 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 42,
 			"y": 1,
 			"turned": true,
-			"noise": true,
-			"action": { "id": 28 }
+			"id": { "id": 3 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": { "id": 28 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 1 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 38,
 			"y": 1,
-			"noise": true,
-			"action": {}
+			"id": { "id": 1 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": {},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 4 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 33,
 			"y": 1,
 			"turned": true,
-			"noise": true,
-			"action": { "id": 10 }
-		},
-		{
-			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 1 },
+			"id": { "id": 4 },
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-			"x": 7,
-			"y": 1,
-			"noise": true,
-			"action": {},
-			"cache": {
-				"customizations": [ 0 ]
+			"action": { "id": 10 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 4 },
+			"x": 7,
+			"y": 1,
+			"id": { "id": 1 },
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": {},
+			"cache": {
+				"customizations": [ 0 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
 			"x": 14,
 			"y": 1,
 			"turned": true,
-			"noise": true,
-			"action": { "id": 10 }
+			"id": { "id": 4 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": { "id": 10 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 4 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 20,
 			"y": 1,
 			"turned": true,
-			"noise": true,
-			"action": { "id": 10 }
+			"id": { "id": 4 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": { "id": 10 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 19 },
-			"name": "server",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 21,
-			"vital": false
+			"vital": false,
+			"name": "server",
+			"id": { "id": 19 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 19 },
-			"name": "server",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 21,
 			"y": 2,
 			"turned": true,
-			"vital": false
+			"vital": false,
+			"name": "server",
+			"id": { "id": 19 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 6 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 28,
 			"y": 1,
-			"action": { "id": 2 }
+			"id": { "id": 6 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": { "id": 2 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 3 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 10,
 			"y": 18,
-			"noise": true,
-			"action": { "id": 28 }
+			"id": { "id": 3 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": { "id": 28 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
-			"name": "TP - B1",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "TP - B2" },
 			"x": 3,
 			"y": 3,
 			"vital": false,
 			"preview": false,
 			"party": "NEUTRAL",
+			"name": "TP - B1",
+			"id": { "id": 47 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "TP - B2" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
-			"name": "TP - B2",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "TP - B1" },
 			"x": 3,
 			"y": 16,
 			"vital": false,
 			"preview": false,
 			"party": "NEUTRAL",
+			"name": "TP - B2",
+			"id": { "id": 47 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "TP - B1" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
-			"name": "TP - B4",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "11:1" },
 			"x": 13,
 			"y": 8,
 			"vital": false,
 			"preview": false,
 			"party": "NEUTRAL",
+			"name": "TP - B4",
+			"id": { "id": 47 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "11:1" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
-			"name": "TP - B5",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "TP - B6" },
 			"x": 13,
 			"y": 12,
 			"vital": false,
 			"preview": false,
 			"party": "NEUTRAL",
+			"name": "TP - B5",
+			"id": { "id": 47 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "TP - B6" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
-			"name": "TP - B6",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "TP - B5" },
 			"x": 15,
 			"y": 16,
 			"vital": false,
 			"preview": false,
 			"party": "NEUTRAL",
+			"name": "TP - B6",
+			"id": { "id": 47 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "TP - B5" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "23:10" },
 			"x": 22,
 			"y": 16,
 			"vital": false,
 			"preview": false,
 			"party": "NEUTRAL",
+			"id": { "id": 47 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "23:10" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "23:10" },
 			"x": 21,
 			"y": 3,
 			"vital": false,
 			"preview": false,
 			"party": "NEUTRAL",
+			"id": { "id": 47 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "23:10" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
-			"name": "TP - B7",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "31:1" },
 			"x": 31,
 			"y": 8,
 			"vital": false,
 			"preview": false,
 			"party": "NEUTRAL",
+			"name": "TP - B7",
+			"id": { "id": 47 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "31:1" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
-			"name": "TP - B9",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "32:18" },
 			"x": 31,
 			"y": 12,
 			"vital": false,
 			"preview": false,
 			"party": "NEUTRAL",
+			"name": "TP - B9",
+			"id": { "id": 47 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "32:18" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
-			"name": "TP - B11",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "TP - B12" },
 			"x": 41,
 			"y": 3,
 			"vital": false,
 			"preview": false,
 			"party": "NEUTRAL",
+			"name": "TP - B11",
+			"id": { "id": 47 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "TP - B12" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
-			"name": "TP - B12",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "TP - B11" },
 			"x": 41,
 			"y": 16,
 			"vital": false,
 			"preview": false,
 			"party": "NEUTRAL",
+			"name": "TP - B12",
+			"id": { "id": 47 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "TP - B11" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "TELEPORTER"
 		}
 	],
@@ -1401,60 +2815,142 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 7 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 1,
 			"y": 1,
 			"party": "FRIENDLY",
 			"player": true,
-			"mustSurvive": true
+			"mustSurvive": true,
+			"id": { "id": 7 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 19 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 8,
 			"y": 1,
-			"turned": true
+			"turned": true,
+			"id": { "id": 19 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 3 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 14,
 			"y": 1,
 			"turned": true,
-			"noise": true,
-			"action": { "id": 4 }
+			"id": { "id": 3 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": { "id": 4 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 1 },
-			"name": "",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 19,
 			"y": 1,
 			"turned": true,
-			"noise": true,
-			"action": {}
+			"name": "",
+			"id": { "id": 1 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": {},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 5 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 28,
 			"y": 1,
 			"turned": true,
+			"mustSurvive": true,
+			"id": { "id": 5 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"action": { "id": 7 },
-			"mustSurvive": true
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "24:1" },
 			"x": 21,
 			"y": 1,
 			"party": "NEUTRAL",
+			"id": { "id": 47 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "24:1" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "TELEPORTER"
 		}
 	],
@@ -1478,28 +2974,56 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 23 },
-			"name": "player",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Punk1" },
 			"y": 1,
 			"party": "FRIENDLY",
 			"player": true,
+			"name": "player",
+			"id": { "id": 23 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Punk1" },
 			"cache": {
 				"patchwork": 1,
 				"customizations": [ 4, 3, 0, 3 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 23 },
-			"name": "punk",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Punk2" },
 			"x": 5,
 			"y": 2,
+			"name": "punk",
+			"id": { "id": 23 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Punk2" },
 			"action": { "id": 52 },
 			"cache": {
 				"patchwork": 2,
 				"customizations": [ 9, 0, 2 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		}
 	]
@@ -1515,26 +3039,54 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 23 },
-			"name": "player",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Flink" },
 			"x": 2,
 			"y": 1,
 			"party": "FRIENDLY",
 			"player": true,
+			"name": "player",
+			"id": { "id": 23 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Flink" },
 			"cache": {
 				"patchwork": 3,
 				"customizations": [ 0, 2, 1, 3 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 21 },
-			"name": "cress",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 3,
 			"y": 2,
-			"action": { "id": 56 }
+			"name": "cress",
+			"id": { "id": 21 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": { "id": 56 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		}
 	]
 },
@@ -1549,39 +3101,81 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 23 },
-			"name": "flink",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Flink" },
 			"x": 1,
 			"y": 1,
 			"party": "FRIENDLY",
 			"player": true,
+			"name": "flink",
+			"id": { "id": 23 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Flink" },
 			"cache": {
 				"patchwork": 3,
 				"customizations": [ 0, 2, 1, 3 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 24 },
-			"name": "noise",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 4,
 			"y": 1,
 			"turned": true,
-			"noise": true,
-			"action": { "id": 54 }
+			"name": "noise",
+			"id": { "id": 24 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"action": { "id": 54 },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 7 },
-			"name": "rozu",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"y": 2,
+			"vital": false,
 			"preview": false,
 			"party": "FRIENDLY",
+			"name": "rozu",
+			"id": { "id": 7 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"cache": {
 				"customizations": [ 4, -1, 2 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		}
 	]
@@ -1597,129 +3191,283 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 21 },
-			"name": "cress",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 4,
 			"y": 1,
 			"party": "FRIENDLY",
+			"name": "cress",
+			"id": { "id": 21 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"cache": {
 				"customizations": [ 4, 1, -1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 23 },
-			"name": "flink",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Flink" },
 			"x": 6,
 			"turned": true,
 			"party": "FRIENDLY",
+			"name": "flink",
+			"id": { "id": 23 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Flink" },
 			"cache": {
 				"patchwork": 3,
 				"customizations": [ 0, 2, 1, 3 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 23 },
-			"name": "punk 2",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Punk2" },
 			"x": 8,
 			"y": 1,
 			"turned": true,
 			"party": "FRIENDLY",
+			"name": "punk 2",
+			"id": { "id": 23 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Punk2" },
 			"cache": {
 				"patchwork": 2,
 				"customizations": [ 4, 3, 0, 3 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 23 },
-			"name": "puppy",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Puppy" },
 			"x": 7,
 			"y": 2,
 			"turned": true,
 			"party": "FRIENDLY",
+			"name": "puppy",
+			"id": { "id": 23 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Puppy" },
 			"cache": {
 				"patchwork": 3,
 				"customizations": [ 8, 1, 0, 4 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 7 },
-			"name": "rozu",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 6,
 			"y": 1,
 			"turned": true,
 			"party": "FRIENDLY",
+			"name": "rozu",
+			"id": { "id": 7 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"cache": {
 				"customizations": [ 4, -1, 2 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 23 },
-			"name": "punk 1",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Punk1" },
 			"x": 7,
 			"turned": true,
 			"party": "FRIENDLY",
+			"name": "punk 1",
+			"id": { "id": 23 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Punk1" },
 			"cache": {
 				"customizations": [ 11, 3, 3, 0 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"name": "player",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 8,
 			"y": 2,
 			"turned": true,
-			"player": true
+			"player": true,
+			"name": "player",
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 19 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 1,
+			"id": { "id": 19 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"cache": {
 				"customizations": [ 0 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			},
 			"type": "DATA_SERVER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 19 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"y": 1,
+			"id": { "id": 19 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"cache": {
 				"customizations": [ 0 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			},
 			"type": "DATA_SERVER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 19 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 2,
 			"y": 2,
+			"id": { "id": 19 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"cache": {
 				"customizations": [ 0 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			},
 			"type": "DATA_SERVER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 10,
 			"id": { "id": 47 },
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-			"x": 10,
 			"cache": {
 				"customizations": [ 1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		}
 	]
@@ -1735,54 +3483,108 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 23 },
-			"name": "puppy",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Puppy" },
 			"y": 1,
 			"party": "FRIENDLY",
 			"player": true,
+			"name": "puppy",
+			"id": { "id": 23 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Puppy" },
 			"cache": {
 				"patchwork": 3,
 				"customizations": [ 8, 1, 0, 4 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 3 },
-			"name": "noise 1",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 256,
 			"y": 256,
 			"turned": true,
-			"noise": true,
+			"name": "noise 1",
+			"id": { "id": 3 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"action": { "id": 4 },
 			"cache": {
 				"customizations": [ 1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 1 },
-			"name": "noise 2",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 256,
 			"y": 256,
 			"turned": true,
-			"noise": true,
+			"name": "noise 2",
+			"id": { "id": 1 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"cache": {
 				"customizations": [ 4 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 6 },
-			"name": "noise 3",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 256,
 			"y": 256,
 			"turned": true,
+			"name": "noise 3",
+			"id": { "id": 6 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"cache": {
 				"customizations": [ 3 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		}
 	]
@@ -1798,68 +3600,152 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 23 },
-			"name": "flink",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Flink" },
 			"x": 7,
 			"y": 1,
 			"turned": true,
 			"party": "FRIENDLY",
+			"name": "flink",
+			"id": { "id": 23 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Flink" },
 			"cache": {
 				"patchwork": 3,
 				"customizations": [ 0, 2, 1, 3 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 7 },
-			"name": "rozu",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 5,
 			"y": 1,
 			"party": "FRIENDLY",
+			"name": "rozu",
+			"id": { "id": 7 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"cache": {
 				"customizations": [ 4, -1, 2 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 19 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 1,
+			"id": { "id": 19 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"cache": {
 				"customizations": [ 0 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			},
 			"type": "DATA_SERVER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 19 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"y": 1,
+			"id": { "id": 19 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"cache": {
 				"customizations": [ 0 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			},
 			"type": "DATA_SERVER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 19 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 2,
 			"y": 2,
+			"id": { "id": 19 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"cache": {
 				"customizations": [ 0 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			},
 			"type": "DATA_SERVER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 10,
 			"id": { "id": 47 },
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-			"x": 10,
 			"cache": {
 				"customizations": [ 1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		}
 	]
@@ -1874,158 +3760,326 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
+			"x": 15,
+			"y": 20,
+			"turned": true,
+			"vital": false,
+			"party": "NEUTRAL",
 			"name": "Blue A",
+			"id": { "id": 47 },
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Blue B" },
-			"x": 15,
-			"y": 20,
-			"turned": true,
-			"vital": false,
-			"party": "NEUTRAL",
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
+			"y": 20,
+			"vital": false,
+			"preview": false,
+			"party": "NEUTRAL",
 			"name": "Red A",
+			"id": { "id": 47 },
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Red B" },
-			"y": 20,
-			"vital": false,
-			"preview": false,
-			"party": "NEUTRAL",
 			"cache": {
 				"customizations": [ 1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
+			"vital": false,
+			"preview": false,
+			"party": "NEUTRAL",
 			"name": "Blue B",
+			"id": { "id": 47 },
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Blue A" },
-			"vital": false,
-			"preview": false,
-			"party": "NEUTRAL",
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
-			"name": "Red B",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Red A" },
 			"x": 15,
 			"turned": true,
 			"vital": false,
 			"preview": false,
 			"party": "NEUTRAL",
+			"name": "Red B",
+			"id": { "id": 47 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Red A" },
 			"cache": {
 				"customizations": [ 1 ]
 			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
+			"x": 11,
+			"y": 8,
+			"turned": true,
+			"vital": false,
 			"name": "Yellow C",
+			"id": { "id": 47 },
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Yellow D" },
-			"x": 11,
-			"y": 8,
-			"turned": true,
-			"vital": false,
 			"cache": {
 				"customizations": [ 2 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
+			"x": 15,
+			"y": 3,
+			"turned": true,
+			"vital": false,
 			"name": "Yellow D",
+			"id": { "id": 47 },
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Yellow C" },
-			"x": 15,
-			"y": 3,
-			"turned": true,
-			"vital": false,
 			"cache": {
 				"customizations": [ 2 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
-			"name": "Yellow B",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Yellow A" },
 			"x": 11,
 			"y": 12,
 			"turned": true,
 			"vital": false,
+			"name": "Yellow B",
+			"id": { "id": 47 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Yellow A" },
 			"cache": {
 				"customizations": [ 2 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
-			"name": "Yellow A",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Yellow B" },
 			"x": 15,
 			"y": 17,
 			"turned": true,
 			"vital": false,
+			"name": "Yellow A",
+			"id": { "id": 47 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Yellow B" },
 			"cache": {
 				"customizations": [ 2 ]
 			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
-			"name": "Purple B",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Purple A" },
 			"x": 4,
 			"y": 12,
 			"vital": false,
+			"name": "Purple B",
+			"id": { "id": 47 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Purple A" },
 			"cache": {
 				"customizations": [ 0 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
-			"name": "Purple C",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Purple D" },
 			"x": 4,
 			"y": 8,
 			"vital": false,
+			"name": "Purple C",
+			"id": { "id": 47 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Purple D" },
 			"cache": {
 				"customizations": [ 0 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
-			"name": "Purple D",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Purple C" },
 			"y": 3,
 			"vital": false,
+			"name": "Purple D",
+			"id": { "id": 47 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Purple C" },
 			"cache": {
 				"customizations": [ 0 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
-			"name": "Purple A",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Purple B" },
 			"y": 17,
 			"vital": false,
+			"name": "Purple A",
+			"id": { "id": 47 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Purple B" },
 			"cache": {
 				"customizations": [ 0 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			},
 			"type": "TELEPORTER"
 		}
@@ -2052,111 +4106,223 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
-			"name": "Blue A",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Blue B" },
 			"y": 8,
 			"vital": false,
 			"preview": false,
 			"party": "NEUTRAL",
+			"name": "Blue A",
+			"id": { "id": 47 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Blue B" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
-			"name": "Blue B",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Blue A" },
 			"x": 3,
 			"y": 1,
 			"vital": false,
 			"preview": false,
 			"party": "NEUTRAL",
+			"name": "Blue B",
+			"id": { "id": 47 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Blue A" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
-			"name": "Blue D",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Blue C" },
 			"x": 10,
 			"y": 2,
 			"turned": true,
 			"vital": false,
 			"preview": false,
 			"party": "NEUTRAL",
+			"name": "Blue D",
+			"id": { "id": 47 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Blue C" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
-			"name": "Blue C",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Blue D" },
 			"x": 13,
 			"y": 8,
 			"turned": true,
 			"vital": false,
 			"preview": false,
 			"party": "NEUTRAL",
-			"type": "TELEPORTER"
-		},
-		{
-			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"name": "Blue C",
 			"id": { "id": 47 },
-			"name": "Red A",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Red B" },
-			"y": 13,
-			"vital": false,
-			"preview": false,
-			"party": "NEUTRAL",
-			"cache": {
-				"customizations": [ 1 ]
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Blue D" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"y": 13,
+			"vital": false,
+			"preview": false,
+			"party": "NEUTRAL",
+			"name": "Red A",
 			"id": { "id": 47 },
-			"name": "Red B",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Red A" },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Red B" },
+			"cache": {
+				"customizations": [ 1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
+			"type": "TELEPORTER"
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
 			"x": 3,
 			"y": 20,
 			"vital": false,
 			"preview": false,
 			"party": "NEUTRAL",
+			"name": "Red B",
+			"id": { "id": 47 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Red A" },
 			"cache": {
 				"customizations": [ 1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
-			"name": "Red C",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Red D" },
 			"x": 13,
 			"y": 13,
 			"turned": true,
 			"vital": false,
 			"preview": false,
 			"party": "NEUTRAL",
+			"name": "Red C",
+			"id": { "id": 47 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Red D" },
 			"cache": {
 				"customizations": [ 1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			},
 			"type": "TELEPORTER"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 47 },
-			"name": "Red D",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Red C" },
 			"x": 10,
 			"y": 19,
 			"turned": true,
 			"vital": false,
 			"preview": false,
 			"party": "NEUTRAL",
+			"name": "Red D",
+			"id": { "id": 47 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Red C" },
 			"cache": {
 				"customizations": [ 1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			},
 			"type": "TELEPORTER"
 		}
@@ -2178,38 +4344,79 @@
 	"id": { "id": 30 },
 	"dataName": "Punk C4 - Prequel 2",
 	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-	"doubleSide": true,
 	"field": { "id": 30 },
 	"background": { "id": 2 },
 	"music": {},
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 21 },
-			"name": "cress",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 7,
 			"y": 1,
+			"name": "cress",
+			"id": { "id": 21 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"cache": {
 				"customizations": [ -1, -1, -1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"name": "player",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 5,
 			"y": 2,
-			"player": true
+			"player": true,
+			"name": "player",
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 7 },
-			"name": "rozu",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 6,
+			"name": "rozu",
+			"id": { "id": 7 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"cache": {
 				"customizations": [ 4, -1, 2 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		}
 	]
@@ -2225,37 +4432,79 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"name": "player",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 3,
 			"y": 1,
 			"party": "FRIENDLY",
-			"player": true
-		},
-		{
-			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 13 },
-			"name": "agent 1",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Lisa" },
-			"x": 2,
-			"y": 1,
-			"action": { "id": 23 },
-			"cache": {
-				"customizations": [ 3, 2, 0, 1 ]
+			"player": true,
+			"name": "player",
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 2,
+			"y": 1,
+			"name": "agent 1",
 			"id": { "id": 13 },
-			"name": "agent 2",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Jessica" },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Lisa" },
+			"action": { "id": 23 },
+			"cache": {
+				"customizations": [ 3, 2, 0, 1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
 			"x": 4,
 			"y": 1,
 			"turned": true,
+			"name": "agent 2",
+			"id": { "id": 13 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Jessica" },
 			"action": { "id": 44 },
 			"cache": {
 				"patchwork": 1,
 				"customizations": [ 4, 1, 1, 1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		}
 	]
@@ -2265,64 +4514,134 @@
 	"id": { "id": 32 },
 	"dataName": "Arahas - Punks & Del",
 	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-	"field": { "id": 31 },
+	"field": { "id": 30 },
 	"background": { "id": 3 },
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 23 },
-			"name": "punk 1",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 5,
+			"name": "punk 1",
+			"id": { "id": 23 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"cache": {
 				"customizations": [ 11, 3, 3 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 23 },
-			"name": "punk 2",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 4,
 			"y": 1,
+			"name": "punk 2",
+			"id": { "id": 23 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"cache": {
 				"patchwork": 3,
 				"customizations": [ 4, 3, 0, 3 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 23 },
-			"name": "punk 3",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 6,
 			"y": 2,
+			"name": "punk 3",
+			"id": { "id": 23 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"cache": {
 				"patchwork": 2,
 				"customizations": [ 9, 0, 2 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 23 },
-			"name": "flink",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Flink" },
 			"x": 7,
 			"y": 1,
 			"turned": true,
+			"name": "flink",
+			"id": { "id": 23 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Flink" },
 			"cache": {
 				"patchwork": 3,
 				"customizations": [ 0, 2, 1, 3 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 9 },
-			"name": "del",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 8,
 			"y": 1,
-			"turned": true
+			"turned": true,
+			"name": "del",
+			"id": { "id": 9 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		}
 	]
 },
@@ -2337,41 +4656,111 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 16 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 6,
 			"y": 10,
 			"party": "FRIENDLY",
-			"player": true
+			"player": true,
+			"id": { "id": 16 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"y": 9,
+			"party": "FRIENDLY",
 			"id": {},
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-			"y": 9,
-			"party": "FRIENDLY"
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 2 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 2,
 			"y": 12,
-			"party": "FRIENDLY"
+			"party": "FRIENDLY",
+			"id": { "id": 2 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 13,
+			"y": 20,
 			"id": { "id": 3 },
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-			"x": 13,
-			"y": 20
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 3,
+			"y": 20,
 			"id": { "id": 5 },
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-			"x": 3,
-			"y": 20
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
 		}
 	]
 },
@@ -2399,11 +4788,25 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.SpawnedEntityShell",
-			"id": { "id": 34 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 2,
 			"vital": false,
 			"party": "NEUTRAL",
+			"id": { "id": 34 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "ICE_CUBE",
 			"property": {
 				"element": "WATER",
@@ -2416,12 +4819,26 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.SpawnedEntityShell",
-			"id": { "id": 34 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 3,
 			"y": 2,
 			"vital": false,
 			"party": "NEUTRAL",
+			"id": { "id": 34 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "ICE_CUBE",
 			"property": {
 				"element": "WATER",
@@ -2544,75 +4961,145 @@
 	"id": { "id": 50 },
 	"dataName": "Arahas - Punks",
 	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-	"field": { "id": 31 },
+	"field": { "id": 30 },
 	"background": { "id": 3 },
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 23 },
-			"name": "flink",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Flink" },
 			"x": 8,
 			"y": 1,
 			"turned": true,
 			"preview": false,
 			"party": "FRIENDLY",
+			"name": "flink",
+			"id": { "id": 23 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Flink" },
 			"cache": {
 				"patchwork": 3,
 				"customizations": [ 0, 2, 1, 3 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 23 },
-			"name": "punk 1",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 6,
 			"preview": false,
 			"party": "FRIENDLY",
+			"name": "punk 1",
+			"id": { "id": 23 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"cache": {
 				"customizations": [ 11, 3, 3 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 23 },
-			"name": "punk 3",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 5,
 			"preview": false,
 			"party": "FRIENDLY",
+			"name": "punk 3",
+			"id": { "id": 23 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"cache": {
 				"patchwork": 2,
 				"customizations": [ 9, 0, 2 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 23 },
-			"name": "puppy",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Puppy" },
 			"x": 4,
 			"y": 1,
 			"party": "FRIENDLY",
 			"player": true,
+			"name": "puppy",
+			"id": { "id": 23 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Puppy" },
 			"cache": {
 				"patchwork": 3,
 				"customizations": [ 8, 1, 0, 4 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 23 },
-			"name": "punk 2",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 5,
 			"y": 2,
 			"preview": false,
 			"party": "FRIENDLY",
+			"name": "punk 2",
+			"id": { "id": 23 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"cache": {
 				"patchwork": 1,
 				"customizations": [ 4, 3, 0, 3 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
 		}
 	]
@@ -2625,23 +5112,1753 @@
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 46 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 13,
 			"y": 14,
 			"turned": true,
+			"id": { "id": 46 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"type": "RUN_WALL"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"id": { "id": 20 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"x": 33,
 			"y": 13,
 			"turned": true,
+			"id": { "id": 20 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"cache": {
 				"customizations": [ 0 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
 			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 52 },
+	"dataName": "Adventure Teleporter",
+	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"field": { "id": 33 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 1,
+			"turned": true,
+			"vital": false,
+			"party": "NEUTRAL",
+			"id": { "id": 19 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": {
+				"customizations": [ -1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
+			"type": "GHOST"
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 3,
+			"turned": true,
+			"vital": false,
+			"party": "NEUTRAL",
+			"id": { "id": 19 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": {
+				"customizations": [ -1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
+			"type": "GHOST"
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 1,
+			"y": 4,
+			"turned": true,
+			"vital": false,
+			"party": "NEUTRAL",
+			"id": { "id": 19 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": {
+				"customizations": [ -1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
+			"type": "GHOST"
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 3,
+			"y": 4,
+			"turned": true,
+			"vital": false,
+			"party": "NEUTRAL",
+			"id": { "id": 19 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": {
+				"customizations": [ -1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
+			"type": "GHOST"
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 2,
+			"y": 2,
+			"vital": false,
+			"party": "NEUTRAL",
+			"name": "",
+			"id": { "id": 47 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": {
+				"customizations": [ -1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
+			"type": "TELEPORTER"
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 53 },
+	"dataName": "Adventure Treasure",
+	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"field": { "id": 34 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.SpawnedEntityShell",
+			"x": 3,
+			"y": 1,
+			"turned": true,
+			"preview": false,
+			"party": "NEUTRAL",
+			"id": { "id": 45 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
+			"type": "PICKUP"
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 54 },
+	"dataName": "Adventure Treasure Networld",
+	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"field": { "id": 34 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.SpawnedEntityShell",
+			"x": 3,
+			"y": 1,
+			"turned": true,
+			"preview": false,
+			"party": "NEUTRAL",
+			"id": { "id": 14 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": {
+				"customizations": [ 1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
+			"type": "PICKUP"
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 57 },
+	"dataName": "Adventure Voc Upgrade",
+	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"field": { "id": 31 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"vital": false,
+			"party": "NEUTRAL",
+			"id": { "id": 14 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": {
+				"customizations": [ 0 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 4,
+			"vital": false,
+			"party": "NEUTRAL",
+			"id": { "id": 14 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": {
+				"customizations": [ 0 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"y": 6,
+			"vital": false,
+			"party": "NEUTRAL",
+			"id": { "id": 14 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": {
+				"customizations": [ 0 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 4,
+			"y": 6,
+			"vital": false,
+			"party": "NEUTRAL",
+			"id": { "id": 14 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": {
+				"customizations": [ 0 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.SpawnedEntityShell",
+			"x": 2,
+			"y": 3,
+			"vital": false,
+			"party": "NEUTRAL",
+			"id": { "id": 22 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
+			"type": "PICKUP"
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 58 },
+	"dataName": "A-Shop Voxel Mart",
+	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 3,
+			"y": 1,
+			"turned": true,
+			"party": "NEUTRAL",
+			"name": "shopkeeper",
+			"id": { "id": 5 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": {
+				"customizations": [ 1, 1, 2, 1, 1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [
+							{
+								"id": { "id": 1 },
+								"style": null
+							},
+							{
+								"id": { "id": 11 },
+								"style": null
+							},
+							{
+								"id": { "id": 36 },
+								"style": null
+							},
+							{
+								"id": { "id": 10111 },
+								"style": null
+							}
+						]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 3,
+			"turned": true,
+			"vital": false,
+			"party": "NEUTRAL",
+			"id": { "id": 45 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": {
+				"customizations": [ 3 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 4,
+			"turned": true,
+			"vital": false,
+			"party": "NEUTRAL",
+			"id": { "id": 45 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": {
+				"customizations": [ 3 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 4,
+			"y": 1,
+			"turned": true,
+			"vital": false,
+			"party": "NEUTRAL",
+			"id": { "id": 45 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": {
+				"customizations": [ 3 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 55 },
+	"dataName": "Adventure Punks #1",
+	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"field": { "id": 7 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 5,
+			"turned": true,
+			"name": "punk_1",
+			"id": { "id": 23 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": null,
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 3,
+			"y": 1,
+			"name": "punk_3",
+			"id": { "id": 23 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": null,
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 6,
+			"y": 2,
+			"turned": true,
+			"name": "punk_2",
+			"id": { "id": 23 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": null,
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 59 },
+	"dataName": "Adventure Punks #2",
+	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 3,
+			"y": 2,
+			"name": "punk_1",
+			"id": { "id": 23 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": null,
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 4,
+			"y": 1,
+			"turned": true,
+			"name": "punk_2",
+			"id": { "id": 23 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": null,
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 60 },
+	"dataName": "Adventure Punks #3",
+	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"field": { "id": 1 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 3,
+			"name": "punk_1",
+			"id": { "id": 23 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": null,
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 5,
+			"y": 1,
+			"turned": true,
+			"name": "punk_2",
+			"id": { "id": 23 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": null,
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 56 },
+	"dataName": "Adventure Agents #1",
+	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"field": { "id": 7 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 3,
+			"y": 2,
+			"name": "agent_1",
+			"id": { "id": 13 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": null,
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 6,
+			"y": 1,
+			"turned": true,
+			"name": "agent_3",
+			"id": { "id": 13 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": null,
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [
+							{
+								"id": { "id": 10010 },
+								"style": null
+							},
+							null,
+							null,
+							null
+						]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 4,
+			"y": 3,
+			"name": "agent_2",
+			"id": { "id": 13 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": null,
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 61 },
+	"dataName": "Adventure Agents #2",
+	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 2,
+			"y": 2,
+			"name": "agent_1",
+			"id": { "id": 13 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": null,
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 4,
+			"y": 1,
+			"turned": true,
+			"name": "agent_2",
+			"id": { "id": 13 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": null,
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 62 },
+	"dataName": "Adventure Agents #3",
+	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"field": { "id": 1 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 3,
+			"y": 1,
+			"name": "agent_1",
+			"id": { "id": 13 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": null,
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 4,
+			"turned": true,
+			"name": "agent_2",
+			"id": { "id": 13 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": null,
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 63 },
+	"dataName": "A-Shop Vocs",
+	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 3,
+			"y": 1,
+			"turned": true,
+			"name": "shopkeeper",
+			"id": { "id": 5 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": {
+				"customizations": [ 6, 0, 1, 1, 2 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [
+							{
+								"id": { "id": 1 },
+								"style": null
+							},
+							{
+								"id": { "id": 11 },
+								"style": null
+							},
+							{
+								"id": { "id": 36 },
+								"style": null
+							},
+							{
+								"id": { "id": 10111 },
+								"style": null
+							}
+						]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 2,
+			"turned": true,
+			"vital": false,
+			"party": "NEUTRAL",
+			"id": { "id": 50 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": {
+				"customizations": [ 2 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 4,
+			"turned": true,
+			"vital": false,
+			"party": "NEUTRAL",
+			"id": { "id": 50 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": {
+				"customizations": [ 2 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 3,
+			"turned": true,
+			"vital": false,
+			"party": "NEUTRAL",
+			"id": { "id": 50 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": {
+				"customizations": [ 2 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 64 },
+	"dataName": "A-Shop Crimson",
+	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 3,
+			"y": 1,
+			"turned": true,
+			"name": "shopkeeper",
+			"id": { "id": 23 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": null,
+			"configuration": {}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 4,
+			"y": 1,
+			"turned": true,
+			"vital": false,
+			"party": "NEUTRAL",
+			"id": { "id": 45 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": {
+				"customizations": [ 0 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 2,
+			"turned": true,
+			"vital": false,
+			"party": "NEUTRAL",
+			"id": { "id": 45 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": {
+				"customizations": [ 0 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 4,
+			"turned": true,
+			"vital": false,
+			"party": "NEUTRAL",
+			"id": { "id": 45 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": {
+				"customizations": [ 0 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 65 },
+	"dataName": "A-Shop Azure",
+	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 3,
+			"y": 1,
+			"turned": true,
+			"name": "shopkeeper",
+			"id": { "id": 13 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": null,
+			"configuration": {}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 4,
+			"y": 1,
+			"turned": true,
+			"vital": false,
+			"party": "NEUTRAL",
+			"id": { "id": 50 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": {
+				"customizations": [ -1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 3,
+			"turned": true,
+			"vital": false,
+			"party": "NEUTRAL",
+			"id": { "id": 50 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": {
+				"customizations": [ -1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 5,
+			"turned": true,
+			"vital": false,
+			"party": "NEUTRAL",
+			"id": { "id": 50 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": {
+				"customizations": [ -1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 66 },
+	"dataName": "A-Hooded AV.atar",
+	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 4,
+			"y": 1,
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "caped" },
+			"name": "hooded",
+			"id": { "id": 5 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": {
+				"customizations": [ 5, 0, 5, 1, 1 ]
+			},
+			"configuration": {},
+			"pack": {
+				"vocs": [
+					{
+						"items": [
+							{
+								"id": { "id": 64 },
+								"style": null
+							},
+							{
+								"id": { "id": 10032 },
+								"style": null
+							},
+							{
+								"id": { "id": 26 },
+								"style": null
+							},
+							null
+						]
+					},
+					{
+						"items": [
+							{
+								"id": { "id": 65 },
+								"style": null
+							},
+							null,
+							null,
+							null
+						]
+					},
+					{
+						"items": [
+							{
+								"id": { "id": 10100 },
+								"style": null
+							},
+							null,
+							null,
+							null
+						]
+					}
+				]
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 67 },
+	"dataName": "A-Ice Cave Battle",
+	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"field": { "id": 19 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 6,
+			"y": 1,
+			"vital": false,
+			"party": "NEUTRAL",
+			"id": { "id": 51 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"type": "TELEPORTER"
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 7,
+			"y": 1,
+			"vital": false,
+			"party": "NEUTRAL",
+			"id": { "id": 52 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {},
+			"type": "INVINCIBLE"
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 68 },
+	"dataName": "A-TOT AV.Atar",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "" },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 4,
+			"y": 1,
+			"turned": true,
+			"name": "tot",
+			"id": { "id": 5 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"cache": {
+				"customizations": [ 4, 1, 4, 1, 3 ]
+			},
+			"configuration": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 69 },
+	"dataName": "A-Gunslinger AV.Atar",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "" },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"turned": true,
+			"name": "gunslinger",
+			"parent": "",
+			"form": { "id": 17 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 70 },
+	"dataName": "A-Crushlord AV.Atar",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "" },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"turned": true,
+			"name": "crushlord",
+			"form": { "id": 44 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 71 },
+	"dataName": "Double Side Big",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "" },
+	"field": { "id": 8 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 72 },
+	"dataName": "Voc Preview",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "" },
+	"field": { "id": 20 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"y": 1,
+			"party": "FRIENDLY",
+			"player": true,
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 3,
+			"y": 1,
+			"turned": true,
+			"id": { "id": 18 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 73 },
+	"dataName": "Voc Preview 2",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "" },
+	"field": { "id": 20 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"y": 1,
+			"party": "FRIENDLY",
+			"player": true,
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 3,
+			"y": 1,
+			"turned": true,
+			"id": { "id": 18 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 1,
+			"vital": false,
+			"party": "NEUTRAL",
+			"id": { "id": 18 },
+			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+			"configuration": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 74 },
+	"dataName": "Voc Preview 3",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "" },
+	"field": { "id": 35 },
+	"entityShells": [
+		{ "class": "com.one2b3.endcycle.features.battle.EntityFormShell", "y": 1, "party": "FRIENDLY", "player": true },
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 3,
+			"y": 1,
+			"turned": true,
+			"form": { "id": 23 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 75 },
+	"dataName": "A-Hurt AV.atar",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "" },
+	"field": { "id": 34 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 3,
+			"y": 1,
+			"turned": true,
+			"name": "hurt",
+			"form": { "id": 24 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 76 },
+	"dataName": "A-Final Boss Battle",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "" },
+	"field": { "id": 36 },
+	"time": 360,
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 5,
+			"y": 1,
+			"turned": true,
+			"preview": false,
+			"name": "godius",
+			"form": { "id": 28 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 6,
+			"y": 1,
+			"turned": true,
+			"vital": false,
+			"preview": false,
+			"name": "right",
+			"parent": "godius",
+			"form": { "id": 29 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"turned": true,
+			"vital": false,
+			"preview": false,
+			"name": "left",
+			"parent": "godius",
+			"form": { "id": 30 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 77 },
+	"dataName": "A-Cress",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "" },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"turned": true,
+			"name": "cress",
+			"form": { "id": 31 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 78 },
+	"dataName": "A-Boss Spark",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "" },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"turned": true,
+			"name": "spark",
+			"parent": "",
+			"form": { "id": 32 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 79 },
+	"dataName": "A-Shop Tower",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "" },
+	"field": { "id": 34 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 2,
+			"y": 1,
+			"turned": true,
+			"party": "NEUTRAL",
+			"name": "shopkeeper",
+			"form": { "id": 33 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 80 },
+	"dataName": "Gateway Portal",
+	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"turned": true,
+			"party": "NEUTRAL",
+			"name": "teleporter",
+			"form": { "id": 40 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 81 },
+	"dataName": "Gateway Portal Finish",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "" },
+	"field": { "id": 33 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 2,
+			"y": 2,
+			"turned": true,
+			"party": "NEUTRAL",
+			"name": "teleporter",
+			"form": { "id": 40 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 1,
+			"vital": false,
+			"party": "NEUTRAL",
+			"form": { "id": 43 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 3,
+			"vital": false,
+			"party": "NEUTRAL",
+			"form": { "id": 43 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 1,
+			"y": 4,
+			"vital": false,
+			"party": "NEUTRAL",
+			"form": { "id": 43 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 3,
+			"y": 4,
+			"vital": false,
+			"party": "NEUTRAL",
+			"form": { "id": 43 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 82 },
+	"dataName": "Gateway Portal Start",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "" },
+	"field": { "id": 33 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 2,
+			"y": 2,
+			"party": "NEUTRAL",
+			"name": "teleporter",
+			"form": { "id": 40 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 1,
+			"vital": false,
+			"party": "NEUTRAL",
+			"form": { "id": 43 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 3,
+			"vital": false,
+			"party": "NEUTRAL",
+			"form": { "id": 43 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 1,
+			"y": 4,
+			"vital": false,
+			"party": "NEUTRAL",
+			"form": { "id": 43 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 3,
+			"y": 4,
+			"vital": false,
+			"party": "NEUTRAL",
+			"form": { "id": 43 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 83 },
+	"dataName": "Dummy Crush",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "" },
+	"time": 5,
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"turned": true,
+			"name": "dummy",
+			"form": { "id": 45 }
+		}
+	],
+	"entityGoals": [
+		{ "entity": "dummy", "display": "Dummy", "crushes": 1 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 84 },
+	"dataName": "A-Boss Traitor Agent",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "" },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"turned": true,
+			"name": "traitor",
+			"parent": "",
+			"form": { "id": 46 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 85 },
+	"dataName": "A-Del",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "" },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"turned": true,
+			"name": "del",
+			"parent": "",
+			"form": { "id": 47 }
 		}
 	]
 }

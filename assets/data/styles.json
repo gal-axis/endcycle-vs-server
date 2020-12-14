@@ -8,6 +8,7 @@
 	"drawable": {
 		"drawable": { "id": 178 }
 	},
+	"preview": {},
 	"modifications": [
 		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.HealModification" }
 	]
@@ -22,6 +23,7 @@
 	"drawable": {
 		"drawable": { "id": 1107 }
 	},
+	"preview": {},
 	"modifications": [
 		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.ElementChangeModification" }
 	]
@@ -36,6 +38,7 @@
 	"drawable": {
 		"drawable": { "id": 1106 }
 	},
+	"preview": {},
 	"modifications": [
 		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.ElementChangeModification" }
 	]
@@ -50,6 +53,7 @@
 	"drawable": {
 		"drawable": { "id": 1108 }
 	},
+	"preview": {},
 	"modifications": [
 		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.ElementChangeModification" }
 	]
@@ -64,6 +68,7 @@
 	"drawable": {
 		"drawable": { "id": 1105 }
 	},
+	"preview": {},
 	"modifications": [
 		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.ElementChangeModification" }
 	]
@@ -78,6 +83,7 @@
 	"drawable": {
 		"drawable": { "id": 1104 }
 	},
+	"preview": {},
 	"modifications": [
 		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.ElementChangeModification" }
 	]
@@ -90,9 +96,10 @@
 	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.Copy.Description" },
 	"level": 1,
 	"drawable": {
-		"drawable": { "id": 1235 }
+		"drawable": { "id": 651 }
 	},
 	"tagPreference": [ "REQUIRES_ELEMENT" ],
+	"preview": {},
 	"modifications": [
 		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.CopyElementModification" }
 	]
@@ -108,6 +115,7 @@
 		"drawable": { "id": 170 }
 	},
 	"tagPreference": [ "AFFECTS_ENEMY" ],
+	"preview": {},
 	"modifications": [
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
@@ -128,6 +136,7 @@
 		"drawable": { "id": 171 }
 	},
 	"tagPreference": [ "AFFECTS_ALLY" ],
+	"preview": {},
 	"modifications": [
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
@@ -148,6 +157,7 @@
 		"drawable": { "id": 124 }
 	},
 	"tagPreference": [ "AFFECTS_ALLY" ],
+	"preview": {},
 	"modifications": [
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
@@ -168,6 +178,7 @@
 		"drawable": { "id": 125 }
 	},
 	"tagPreference": [ "AFFECTS_ENEMY" ],
+	"preview": {},
 	"modifications": [
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
@@ -188,6 +199,7 @@
 		"drawable": { "id": 1177 }
 	},
 	"tagPreference": [ "AFFECTS_ENEMY" ],
+	"preview": {},
 	"modifications": [
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
@@ -208,6 +220,7 @@
 		"drawable": { "id": 1178 }
 	},
 	"tagPreference": [ "AFFECTS_ENEMY" ],
+	"preview": {},
 	"modifications": [
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
@@ -228,6 +241,7 @@
 		"drawable": { "id": 1233 }
 	},
 	"tagPreference": [ "AFFECTS_ENEMY" ],
+	"preview": {},
 	"modifications": [
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
@@ -248,6 +262,7 @@
 		"drawable": { "id": 1234 }
 	},
 	"tagPreference": [ "AFFECTS_ENEMY" ],
+	"preview": {},
 	"modifications": [
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
@@ -263,13 +278,17 @@
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.RushBack" },
 	"prefix": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.RushBack.Prefix" },
 	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.RushBack.Description" },
+	"rarity": 0.25,
 	"drawable": {
 		"drawable": { "id": 214 }
 	},
-	"rarity": 0.25,
 	"tagPreference": [ "DISABLED" ],
+	"preview": {
+		"playerPosition": { "x": -1 },
+		"enemyPosition": { "x": -1 }
+	},
 	"modifications": [
-		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.RushModification", "xMove": 3, "turn": true, "forward": "MOVING_TILE", "speed": 9 }
+		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.RushModification", "xMove": 3, "turn": true, "forward": "ANIMATED_MOVING_TILE", "speed": 20 }
 	]
 },
 {
@@ -278,13 +297,14 @@
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.Rush2" },
 	"prefix": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.Rush2.Prefix" },
 	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.Rush2.Description" },
+	"rarity": 0.25,
 	"drawable": {
 		"drawable": { "id": 1268 }
 	},
-	"rarity": 0.25,
 	"tagPreference": [ "DISABLED" ],
+	"preview": {},
 	"modifications": [
-		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.RushModification", "xMove": 2, "forward": "MOVING_TILE", "speed": 9 }
+		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.RushModification", "xMove": 2, "forward": "ANIMATED_MOVING_TILE", "speed": 20 }
 	]
 },
 {
@@ -293,13 +313,14 @@
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.Rush3" },
 	"prefix": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.Rush3.Prefix" },
 	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.Rush3.Description" },
+	"rarity": 0.25,
 	"drawable": {
 		"drawable": { "id": 1269 }
 	},
-	"rarity": 0.25,
 	"tagPreference": [ "DISABLED" ],
+	"preview": {},
 	"modifications": [
-		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.RushModification", "xMove": 3, "forward": "MOVING_TILE", "speed": 9 }
+		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.RushModification", "xMove": 3, "forward": "ANIMATED_MOVING_TILE", "speed": 20 }
 	]
 },
 {
@@ -308,13 +329,16 @@
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.RushUp" },
 	"prefix": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.RushUp.Prefix" },
 	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.RushUp.Description" },
+	"rarity": 0.25,
 	"drawable": {
 		"drawable": { "id": 1271 }
 	},
-	"rarity": 0.25,
 	"tagPreference": [ "DISABLED" ],
+	"preview": {
+		"playerPosition": { "x": -1, "y": 1 }
+	},
 	"modifications": [
-		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.RushModification", "xMove": 1, "yMove": -1, "forward": "MOVING_TILE", "speed": 9 }
+		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.RushModification", "xMove": 1, "yMove": -1, "forward": "ANIMATED_MOVING_TILE", "speed": 20 }
 	]
 },
 {
@@ -323,13 +347,16 @@
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.RushDown" },
 	"prefix": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.RushDown.Prefix" },
 	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.RushDown.Description" },
+	"rarity": 0.25,
 	"drawable": {
 		"drawable": { "id": 1270 }
 	},
-	"rarity": 0.25,
 	"tagPreference": [ "DISABLED" ],
+	"preview": {
+		"playerPosition": { "x": -1, "y": -1 }
+	},
 	"modifications": [
-		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.RushModification", "xMove": 1, "yMove": 1, "forward": "MOVING_TILE", "speed": 9 }
+		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.RushModification", "xMove": 1, "yMove": 1, "forward": "ANIMATED_MOVING_TILE", "speed": 20 }
 	]
 },
 {
@@ -343,6 +370,7 @@
 		"drawable": { "id": 213 }
 	},
 	"tagPreference": [ "AFFECTS_ENEMY" ],
+	"preview": {},
 	"modifications": [
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
@@ -362,6 +390,7 @@
 	"drawable": {
 		"drawable": { "id": 211 }
 	},
+	"preview": {},
 	"modifications": [
 		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.SpeedModification", "speed": 1.3 }
 	]
@@ -375,6 +404,7 @@
 	"drawable": {
 		"drawable": { "id": 212 }
 	},
+	"preview": {},
 	"modifications": [
 		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.SpeedModification", "speed": 0.7 }
 	]
@@ -390,6 +420,7 @@
 		"drawable": { "id": 177 }
 	},
 	"tagPreference": [ "AFFECTS_ALLY" ],
+	"preview": {},
 	"modifications": [
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
@@ -410,6 +441,7 @@
 		"drawable": { "id": 176 }
 	},
 	"tagPreference": [ "AFFECTS_ENEMY" ],
+	"preview": {},
 	"modifications": [
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
@@ -430,6 +462,7 @@
 		"drawable": { "id": 172 }
 	},
 	"tagPreference": [ "ATTACK", "COUNTER", "DEBUFF", "AFFECTS_ENEMY" ],
+	"preview": {},
 	"modifications": [
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
@@ -451,6 +484,7 @@
 		"drawable": { "id": 174 }
 	},
 	"tagPreference": [ "AFFECTS_ALLY" ],
+	"preview": {},
 	"modifications": [
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
@@ -471,6 +505,7 @@
 		"drawable": { "id": 179 }
 	},
 	"tagPreference": [ "AFFECTS_ENEMY" ],
+	"preview": {},
 	"modifications": [
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
@@ -490,6 +525,7 @@
 	"drawable": {
 		"drawable": { "id": 1223 }
 	},
+	"preview": {},
 	"modifications": [
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
@@ -510,6 +546,7 @@
 		"drawable": { "id": 316 }
 	},
 	"tagPreference": [ "AFFECTS_ENEMY" ],
+	"preview": {},
 	"modifications": [
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
@@ -530,6 +567,7 @@
 		"drawable": { "id": 315 }
 	},
 	"tagPreference": [ "AFFECTS_ALLY" ],
+	"preview": {},
 	"modifications": [
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
@@ -549,6 +587,7 @@
 	"drawable": {
 		"drawable": { "id": 1222 }
 	},
+	"preview": {},
 	"modifications": [
 		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.SuperArmorModification" }
 	]
@@ -564,6 +603,7 @@
 		"drawable": { "id": 175 }
 	},
 	"tagPreference": [ "AFFECTS_ENEMY" ],
+	"preview": {},
 	"modifications": [
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
@@ -583,6 +623,12 @@
 		"drawable": { "id": 320 }
 	},
 	"tagPreference": [ "DISABLED" ],
+	"preview": {
+		"input": [
+			{ "key": "BATTLE_ATTACK_1" },
+			{ "key": "BATTLE_ATTACK_1", "pressed": false, "delay": 1 }
+		]
+	},
 	"modifications": [
 		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.ChargeModification" }
 	]
@@ -597,6 +643,7 @@
 		"drawable": { "id": 209 }
 	},
 	"tagPreference": [ "ATTACK", "HEAL" ],
+	"preview": {},
 	"modifications": [
 		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.PowerMultiplierModification", "power": 1.25, "crush": 1.25, "selfHurt": 0.2 }
 	]
@@ -607,11 +654,12 @@
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.Flip" },
 	"prefix": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.Flip" },
 	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.Flip.Description" },
+	"rarity": 0,
 	"drawable": {
 		"drawable": { "id": 126 }
 	},
-	"rarity": 0,
 	"tagPreference": [ "DISABLED" ],
+	"preview": {},
 	"modifications": [
 		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.FlipModification" }
 	]
@@ -627,6 +675,7 @@
 		"drawable": { "id": 317 }
 	},
 	"tagPreference": [ "AFFECTS_ALLY" ],
+	"preview": {},
 	"modifications": [
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
@@ -646,6 +695,7 @@
 	"drawable": {
 		"drawable": { "id": 318 }
 	},
+	"preview": {},
 	"modifications": [
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
@@ -666,6 +716,7 @@
 		"drawable": { "id": 319 }
 	},
 	"tagPreference": [ "AFFECTS_ALLY" ],
+	"preview": {},
 	"modifications": [
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
@@ -686,30 +737,26 @@
 		"drawable": { "id": 50 }
 	},
 	"tagPreference": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"preview": {},
 	"modifications": [
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.WrapperModification",
+			"before": {},
 			"wrapper": {
-				"attackName": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AntiAilmentWrapperAttack",
-				"fields": [
-					{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AttackShellWrapper", "attackName": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.EmptyAttack" },
-					null,
-					{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.status.EffectType", "value": "NERF" },
-					{ "class": "java.lang.Boolean", "value": true },
-					{ "class": "java.lang.Boolean", "value": true },
-					{ "class": "java.lang.Boolean", "value": false },
-					{ "class": "java.lang.Boolean", "value": true },
-					{ "class": "java.lang.Float", "value": 1 },
-					{ "class": "java.lang.Float", "value": 0 },
-					{ "class": "java.lang.Float", "value": 0 },
-					{ "class": "java.lang.Integer", "value": 0 },
-					{ "class": "java.lang.Integer", "value": 0 },
-					{ "class": "java.lang.Float", "value": 1 },
-					{ "class": "java.lang.Float", "value": 1 },
-					{ "class": "java.lang.Float", "value": 1 },
-					{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AttackShellWrapper" }
-				]
-			}
+				"attack": {
+					"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AntiAilmentWrapperAttack",
+					"wrapper": {
+						"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.EmptyAttack" }
+					},
+					"seeking": "NERF",
+					"remove": true,
+					"noAilmentPower": 1,
+					"noAilmentCrush": 1,
+					"noAilmentEffect": 1,
+					"other": {}
+				}
+			},
+			"after": {}
 		}
 	]
 },
@@ -723,25 +770,24 @@
 		"drawable": { "id": 51 }
 	},
 	"tagPreference": [ "ATTACK" ],
+	"preview": {},
 	"modifications": [
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.WrapperModification",
+			"before": {},
 			"wrapper": {
-				"attackName": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.MuramasaWrapperAttack",
-				"fields": [
-					{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AttackShellWrapper", "attackName": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.EmptyAttack" },
-					{ "class": "java.lang.Float", "value": 0.3 },
-					{ "class": "java.lang.Float", "value": 0.8 },
-					{ "class": "java.lang.Boolean", "value": false },
-					{ "class": "java.lang.Boolean", "value": true },
-					{ "class": "java.lang.Float", "value": 0.5 },
-					{ "class": "java.lang.Float", "value": 1.5 },
-					{ "class": "java.lang.Boolean", "value": true },
-					{ "class": "java.lang.Boolean", "value": true },
-					{ "class": "java.lang.Float", "value": 1.25 },
-					{ "class": "java.lang.Boolean", "value": true }
-				]
-			}
+				"attack": {
+					"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.MuramasaWrapperAttack",
+					"wrapper": {
+						"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.EmptyAttack" }
+					},
+					"min": 0.3,
+					"max": 0.8,
+					"minBoost": 0.5,
+					"maxBoost": 1.5
+				}
+			},
+			"after": {}
 		}
 	]
 },
@@ -755,25 +801,26 @@
 		"drawable": { "id": 52 }
 	},
 	"tagPreference": [ "ATTACK" ],
+	"preview": {},
 	"modifications": [
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.WrapperModification",
+			"before": {},
 			"wrapper": {
-				"attackName": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.MuramasaWrapperAttack",
-				"fields": [
-					{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AttackShellWrapper", "attackName": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.EmptyAttack" },
-					{ "class": "java.lang.Float", "value": 0.2 },
-					{ "class": "java.lang.Float", "value": 0.7 },
-					{ "class": "java.lang.Boolean", "value": true },
-					{ "class": "java.lang.Boolean", "value": false },
-					{ "class": "java.lang.Float", "value": 0.5 },
-					{ "class": "java.lang.Float", "value": 1.5 },
-					{ "class": "java.lang.Boolean", "value": true },
-					{ "class": "java.lang.Boolean", "value": true },
-					{ "class": "java.lang.Float", "value": 1.25 },
-					{ "class": "java.lang.Boolean", "value": true }
-				]
-			}
+				"attack": {
+					"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.MuramasaWrapperAttack",
+					"wrapper": {
+						"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.EmptyAttack" }
+					},
+					"min": 0.2,
+					"max": 0.7,
+					"crush": true,
+					"invert": false,
+					"minBoost": 0.5,
+					"maxBoost": 1.5
+				}
+			},
+			"after": {}
 		}
 	]
 },
@@ -787,6 +834,7 @@
 	"drawable": {
 		"drawable": { "id": 361 }
 	},
+	"preview": {},
 	"modifications": [
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.WrapperModification",
@@ -798,10 +846,17 @@
 				"ailments": [
 					{ "type": "BLINDED", "intensity": -1, "duration": 1 }
 				],
-				"target": "SELF",
-				"attackName": "com.one2b3.endcycle.screens.battle.attacks.data.status.DirectAttack"
+				"target": {
+					"party": "FRIENDLY",
+					"self": true,
+					"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
+				},
+				"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.status.DirectAttack" }
 			},
-			"wrapper": { "attackName": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.EmptyAttack" }
+			"wrapper": {
+				"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.EmptyAttack" }
+			},
+			"after": {}
 		}
 	]
 },
@@ -815,6 +870,7 @@
 	"drawable": {
 		"drawable": { "id": 362 }
 	},
+	"preview": {},
 	"modifications": [
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.WrapperModification",
@@ -823,18 +879,26 @@
 				"crushPower": 0,
 				"element": "NORMAL",
 				"overrideAilments": true,
-				"attackName": "com.one2b3.endcycle.screens.battle.attacks.data.guarding.GuardAttack",
-				"fields": [
-					{
-						"class": "com.one2b3.endcycle.engine.graphics.DrawableId",
-						"drawable": { "id": 62 }
+				"target": {
+					"self": true,
+					"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
+				},
+				"attack": {
+					"class": "com.one2b3.endcycle.screens.battle.attacks.data.guarding.ShieldAttack",
+					"shieldDuration": 0.25,
+					"particle": {
+						"drawable": {
+							"drawable": { "id": 62 }
+						},
+						"x": 20
 					},
-					{ "class": "java.lang.Float", "value": 0.3 },
-					{ "class": "java.lang.Float", "value": 2 },
-					{ "class": "java.lang.Boolean", "value": false }
-				]
+					"instant": true
+				}
 			},
-			"wrapper": { "attackName": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.EmptyAttack" }
+			"wrapper": {
+				"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.EmptyAttack" }
+			},
+			"after": {}
 		}
 	]
 },
@@ -848,64 +912,87 @@
 	"drawable": {
 		"drawable": { "id": 378 }
 	},
+	"preview": {},
 	"modifications": [
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.WrapperModification",
+			"before": {},
 			"wrapper": {
-				"attackName": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.ConditionalWrapperAttack",
-				"fields": [
-					{
-						"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AttackShellWrapper",
-						"attackName": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.MultiWrapperAttack",
-						"fields": [
-							[
+				"attack": {
+					"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.ConditionalWrapperAttack",
+					"wrapper": {
+						"attack": {
+							"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.MultiWrapperAttack",
+							"wrappers": [
 								{
-									"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AttackShellWrapper",
 									"power": 0,
 									"crushPower": 0,
 									"element": "NORMAL",
 									"overrideAilments": true,
-									"attackName": "com.one2b3.endcycle.screens.battle.attacks.data.field.PanelGrabAttack",
-									"fields": [
-										{ "class": "java.lang.Boolean", "value": true },
-										{ "class": "java.lang.Boolean", "value": false },
-										{ "class": "java.lang.Boolean", "value": false }
-									]
+									"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.field.PanelGrabAttack", "neutralize": true, "animation": false }
 								},
 								{
-									"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AttackShellWrapper",
-									"attackName": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.EmptyAttack",
-									"fields": [
-										{ "class": "java.lang.Boolean", "value": true },
-										{ "class": "java.lang.Boolean", "value": false },
-										{ "class": "java.lang.Boolean", "value": false }
-									]
+									"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.EmptyAttack" }
 								}
 							]
-						]
+						}
 					},
-					{ "class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AttackShellWrapper", "attackName": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.EmptyAttack" },
-					[
-						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": 1 },
-						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": 2 },
-						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": 3 },
-						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": 4 },
-						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": 5 },
-						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": -1 },
-						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": -2 },
-						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": -3 },
-						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": -4 },
-						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": -5 },
-						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": 6 },
-						{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": -6 }
+					"otherwise": {
+						"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.EmptyAttack" }
+					},
+					"panels": [
+						{ "x": 1 },
+						{ "x": 2 },
+						{ "x": 3 },
+						{ "x": 4 },
+						{ "x": 5 },
+						{ "x": -1 },
+						{ "x": -2 },
+						{ "x": -3 },
+						{ "x": -4 },
+						{ "x": -5 },
+						{ "x": 6 },
+						{ "x": -6 }
 					],
-					null,
-					{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.Party", "value": "ENEMY" },
-					{ "class": "java.lang.Boolean", "value": true },
-					{ "class": "java.lang.Boolean", "value": true }
-				]
-			}
+					"panelParty": "ENEMY",
+					"panelConverted": true,
+					"anyPanel": true
+				}
+			},
+			"after": {}
 		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.styles.VocStyle",
+	"id": { "id": 45 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Cyber" },
+	"prefix": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Cyber" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Cyber.Desc" },
+	"level": 1,
+	"drawable": {
+		"drawable": { "id": 1235 }
+	},
+	"preview": {},
+	"modifications": [
+		{
+			"class": "com.one2b3.endcycle.features.vocs.modifications.types.WrapperModification",
+			"before": {},
+			"wrapper": {
+				"attack": {
+					"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.ParallelWrapperAttack",
+					"wrapper": {
+						"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.EmptyAttack" }
+					},
+					"xOffset": 4,
+					"turned": true
+				}
+			},
+			"after": {
+				"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.modifiers.AnimationModifierAttack", "time": 0.2 }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.PowerMultiplierModification", "power": 0.75, "crush": 0.75 }
 	]
 }
 ]

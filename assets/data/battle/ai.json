@@ -2,35 +2,46 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"name": "Q.T. Shoot",
-	"ignoreGauge": true,
-	"targetType": "FARTHEST_ENEMY",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
-			"moves": 3,
+			"moves": 7,
 			"onInterrupt": true,
 			"action": { "id": 1 }
 		}
 	],
-	"moves": [
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.1 },
 		{
-			"time": 0.5,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ChangeStateAct",
 			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_OPEN" }
 		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 },
 		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 22 }
 		},
 		{
-			"time": 1,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ChangeStateAct",
 			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_CLOSE" }
-		}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 1 },
 	"name": "Q.T. Move",
-	"ignoreGauge": true,
-	"targetType": "FARTHEST_ENEMY",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onInterrupt": true,
@@ -39,55 +50,148 @@
 			"action": {}
 		}
 	],
-	"moves": [
-		{ "move": "ANIMATED_MOVING_TILE", "yTile": 1, "moveSpeed": 3, "moveType": "TOWARD_TARGET", "turnType": "TARGET" }
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_MOVING_TILE",
+			"yTile": 1,
+			"moveSpeed": 3,
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 2 },
 	"name": "Bomby Shooter Up",
-	"ignoreGauge": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onInterrupt": true,
 			"action": { "id": 32 }
 		}
 	],
-	"moves": [
+	"acts": [
 		{
-			"time": 2,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10034 }
 		},
-		{ "time": 0.5, "skippable": true, "move": "ANIMATED_TILE", "yTile": -1, "turnType": "TARGET" },
-		{ "time": 0.5, "skippable": true, "move": "ANIMATED_TILE", "yTile": 1 },
-		{ "time": 0.5, "skippable": true, "move": "ANIMATED_TILE", "yTile": 1 },
-		{ "time": 0.5, "skippable": true, "move": "ANIMATED_TILE", "yTile": -1 }
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 2 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": -1,
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": 1,
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": 1,
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": -1,
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 3 },
 	"name": "Bomby Healer",
-	"ignoreGauge": true,
-	"moves": [
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
 		{
-			"time": 4,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
 			"turnType": "TARGET",
-			"voc": { "id": 10110 }
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
 		},
 		{
-			"time": 4,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10110 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 4 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 8 },
 			"style": { "id": 29 }
-		}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 4 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 4 },
 	"name": "Sofa Grabber",
-	"ignoreGauge": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onInterrupt": true,
@@ -95,27 +199,50 @@
 			"action": { "id": 6 }
 		},
 		{
-			"moves": 2,
+			"moves": 5,
 			"action": { "id": 5 }
 		}
 	],
-	"moves": [
+	"acts": [
 		{
-			"time": 2,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
 			"turnType": "TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 27 }
 		},
-		{ "time": 0.5, "move": "ANIMATED_TILE", "xTile": -1 }
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 2 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"xTile": -1,
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 5 },
 	"name": "Sofa Grabber Home In",
-	"ignoreGauge": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
-			"moves": 1,
+			"moves": 2,
 			"action": { "id": 4 }
 		},
 		{
@@ -123,31 +250,69 @@
 			"action": { "id": 33 }
 		}
 	],
-	"moves": [
-		{ "time": 1.5, "move": "ANIMATED_TILE", "yTile": 1, "moveType": "TOWARD_TARGET" }
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": 1,
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.5 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 6 },
 	"name": "Sofa Grabber Reset",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
-			"moves": 1,
+			"moves": 3,
 			"onInterrupt": true,
 			"action": { "id": 4 }
 		}
 	],
-	"moves": [
-		{ "skippable": true, "move": "ANIMATED_MOVING_TILE", "xTile": 1 },
-		{ "time": 0.1, "turnType": "TARGET" }
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_MOVING_TILE",
+			"xTile": 1,
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.1 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 7 },
-	"name": "Bomby Simple Down",
-	"ignoreGauge": true,
+	"name": "Bomby Shoot Down",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onInterrupt": true,
@@ -155,19 +320,43 @@
 			"action": { "id": 8 }
 		}
 	],
-	"moves": [
-		{ "time": 1.6, "move": "ANIMATED_TILE", "yTile": 1, "turnType": "TOWARD_TARGET" },
+	"acts": [
 		{
-			"time": 0.7,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10034 }
-		}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.7 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": 1,
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.6 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 8 },
-	"name": "Bomby Simple Up",
-	"ignoreGauge": true,
+	"name": "Bomby Shoot Up",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onInterrupt": true,
@@ -175,45 +364,103 @@
 			"action": { "id": 7 }
 		}
 	],
-	"moves": [
-		{ "time": 1.6, "move": "ANIMATED_TILE", "yTile": -1, "turnType": "TOWARD_TARGET" },
+	"acts": [
 		{
-			"time": 0.7,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10034 }
-		}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.7 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": -1,
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.6 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 9 },
-	"name": "Greed Protecc",
-	"ignoreGauge": true,
-	"moves": [
-		{ "time": 0.8, "skippable": true, "move": "ANIMATED_TILE", "yTile": 1, "moveType": "TOWARD_TARGET", "turnType": "TOWARD_TARGET" },
+	"name": "Greed Stun",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
 		{
-			"time": 1.4,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": 1,
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10352 }
-		}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.4 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 10 },
-	"name": "Greed Attacc",
-	"ignoreGauge": true,
+	"name": "Greed Froster",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"targetPosition": { "xType": "IGNORE", "yType": "EQUAL" },
 			"action": { "id": 17 }
 		}
 	],
-	"moves": [
+	"acts": [
 		{
-			"time": 0.8,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
 			"turnType": "TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 20 }
 		},
-		{ "time": 1.8, "skippable": true }
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.8 }
 	]
 },
 {
@@ -221,9 +468,14 @@
 	"id": { "id": 11 },
 	"name": "Agent Evade",
 	"randomizeMoves": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
-			"moves": 1,
+			"moves": 2,
 			"action": { "id": 38 }
 		},
 		{
@@ -231,41 +483,80 @@
 			"action": { "id": 39 }
 		}
 	],
-	"moves": [
-		{ "time": 0.4, "skippable": true, "move": "ANIMATED_TILE", "yTile": -1 },
-		{ "time": 0.4, "skippable": true, "move": "ANIMATED_TILE", "yTile": 1 }
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": -1,
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": 1,
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 12 },
 	"name": "Giant Q.T. Dodge",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onAlone": true,
 			"action": { "id": 13 }
 		}
 	],
-	"moves": [
-		{ "time": 1.8, "skippable": true, "move": "ANIMATED_TILE", "yTile": -1, "turnType": "TARGET" },
-		{ "time": 1.8, "skippable": true, "move": "ANIMATED_TILE", "yTile": -1, "turnType": "TARGET" },
-		{ "time": 1.8, "skippable": true, "move": "ANIMATED_TILE", "yTile": 1, "turnType": "TARGET" },
-		{ "time": 1.8, "skippable": true, "move": "ANIMATED_TILE", "yTile": 1, "turnType": "TARGET" }
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "yTile": -1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.8 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "yTile": -1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.8 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "yTile": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.8 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "yTile": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.8 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 13 },
 	"name": "Giant Q.T. Spawn",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onEmpty": true,
 			"action": { "id": 12 }
 		}
 	],
-	"moves": [
-		{ "uses": 1, "resetUses": true, "time": 1.9 },
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "uses": 1, "resetUses": true, "time": 1.9 },
 		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"uses": 1,
 			"resetUses": true,
 			"voc": { "id": 33 }
@@ -276,48 +567,108 @@
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 14 },
 	"name": "Neo Tournament",
-	"ignoreGauge": true,
-	"moves": [
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
 		{
-			"time": 1.4,
-			"skippable": true,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 8 }
 		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.4 },
 		{
-			"time": 1.9,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
 			"yTile": -1,
-			"moveType": "TOWARD_TARGET",
-			"voc": { "id": 10028 }
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
 		},
 		{
-			"time": 1.9,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10028 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.9 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
 			"xTile": -1,
 			"yTile": 1,
-			"moveType": "TOWARD_TARGET",
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
 			"turnType": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10034 },
 			"style": { "id": 11 }
 		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.9 },
 		{
-			"time": 1.9,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
 			"yTile": -1,
-			"moveType": "TOWARD_TARGET",
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10028 }
 		},
-		{ "skippable": true, "move": "ANIMATED_TILE", "xTile": 1, "yTile": 1, "moveType": "TOWARD_TARGET", "turnType": "TOWARD_TARGET" }
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.9 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"xTile": 1,
+			"yTile": 1,
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		}
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 15 },
 	"name": "Q.T. Down",
-	"ignoreGauge": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onInaccessiblePanel": true,
@@ -328,20 +679,44 @@
 			"action": { "id": 15 }
 		}
 	],
-	"moves": [
-		{ "time": 1.5, "move": "ANIMATED_TILE", "yTile": 1 },
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 },
 		{
-			"time": 0.5,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ChangeStateAct",
 			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_OPEN" }
 		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 },
 		{
-			"voc": { "id": 22 },
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ChangeStateAct",
 			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" }
 		},
 		{
-			"time": 0.5,
-			"turnType": "TARGET",
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 22 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ChangeStateAct",
 			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_CLOSE" }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": 1,
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
 		}
 	]
 },
@@ -349,7 +724,11 @@
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 16 },
 	"name": "Q.T. Up",
-	"ignoreGauge": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onInaccessiblePanel": true,
@@ -360,19 +739,40 @@
 			"action": { "id": 16 }
 		}
 	],
-	"moves": [
-		{ "time": 1.5, "move": "ANIMATED_TILE", "yTile": -1 },
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 },
 		{
-			"time": 0.5,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ChangeStateAct",
 			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_OPEN" }
 		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 },
 		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 22 }
 		},
 		{
-			"time": 0.5,
-			"turnType": "TARGET",
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ChangeStateAct",
 			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_CLOSE" }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": -1,
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
 		}
 	]
 },
@@ -380,119 +780,208 @@
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 19 },
 	"name": "Weak boi fin",
-	"ignoreGauge": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onInterrupt": true,
 			"action": { "id": 20 }
 		}
 	],
-	"moves": [
+	"acts": [
 		{
-			"time": 1.6,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10010 }
 		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.6 },
 		{
-			"time": 2,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10031 }
-		}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 2 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 20 },
 	"name": "Fin scared",
-	"ignoreGauge": true,
 	"randomizeMoves": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"moves": 1,
 			"action": { "id": 19 }
 		}
 	],
-	"moves": [
+	"acts": [
 		{
-			"time": 1.6,
-			"yTile": 1,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
 			"turnType": "TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10016 }
-		}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.6 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 21 },
 	"name": "Crimson Rozu",
-	"ignoreGauge": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onInterrupt": true,
 			"action": { "id": 22 }
 		}
 	],
-	"moves": [
+	"acts": [
 		{
-			"time": 0.8,
-			"move": "ANIMATED_TILE",
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
 			"xTile": 4,
 			"yTile": 1,
-			"moveType": "ABSOLUTE",
+			"relation": "ABSOLUTE",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 6 },
 			"style": { "id": 2 }
 		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 },
 		{
-			"time": 1.1,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 21 }
 		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.1 },
 		{
-			"time": 1.6,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
 			"xTile": -1,
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 8 }
 		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.6 },
 		{
-			"time": 0.7,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 30 }
 		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.7 },
 		{
-			"time": 1.6,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
 			"xTile": 1,
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10028 }
 		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.6 },
 		{
-			"time": 1,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
 			"yTile": 1,
-			"voc": { "id": 10031 }
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
 		},
-		{ "skippable": true, "move": "ANIMATED_TILE", "yTile": -1 },
 		{
-			"time": 1,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"yTile": -1,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10031 }
 		},
-		{ "skippable": true, "move": "ANIMATED_TILE", "yTile": 1 }
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": -1,
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": -1,
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10031 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": 1,
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		}
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 22 },
 	"name": "Crimson Rozu 2",
-	"ignoreGauge": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"moves": 1,
+			"onAlone": true,
 			"action": { "id": 21 }
 		}
 	],
-	"moves": [
+	"acts": [
 		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10040 },
 			"style": { "id": 17 }
 		}
@@ -502,140 +991,268 @@
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 25 },
 	"name": "Spark: VS Agent",
-	"ignoreGauge": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onInterrupt": true,
 			"action": { "id": 45 }
 		}
 	],
-	"moves": [
+	"acts": [
 		{
-			"time": 1.4,
-			"skippable": true,
-			"xTile": -1,
-			"yTile": -1,
-			"moveType": "TOWARD_TARGET",
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 41 }
 		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.4 },
 		{
-			"time": 1.9,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 26 },
 			"style": { "id": 16 }
 		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.9 },
 		{
-			"time": 0.9,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 11 }
 		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.9 },
 		{
-			"time": 1.7,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10346 }
 		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.7 },
 		{
-			"time": 0.9,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
 			"xTile": 1,
 			"yTile": 1,
-			"moveType": "TOWARD_TARGET",
-			"turnType": "TOWARD_TARGET",
-			"voc": { "id": 10052 }
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
 		},
 		{
-			"time": 0.8,
-			"move": "ANIMATED_TILE",
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10052 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.9 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
 			"xTile": -1,
 			"yTile": 1,
-			"moveType": "TOWARD_TARGET",
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10423 }
-		}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 26 },
 	"name": "Agent Heal",
-	"targetType": "CLOSEST_ALLY",
-	"moves": [
-		{ "time": 1.1, "skippable": true, "move": "ANIMATED_TILE", "xTile": -1, "moveType": "TARGET_RELATIVE", "turnType": "TARGET" },
+	"target": {
+		"party": "FRIENDLY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "xTile": -1, "relation": "TARGET_RELATIVE" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "xTile": -1, "relation": "TARGET_RELATIVE" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
 		{
-			"time": 1.6,
-			"move": "ANIMATED_TILE",
-			"xTile": -1,
-			"moveType": "TARGET_RELATIVE",
-			"turnType": "TOWARD_TARGET",
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10102 }
 		},
-		{ "time": 1.1, "skippable": true, "move": "ANIMATED_TILE", "xTile": -1, "moveType": "TARGET_RELATIVE" }
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.6 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "xTile": -1, "relation": "TARGET_RELATIVE" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.1 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 27 },
 	"name": "ElectroCannon",
-	"moves": [
-		{ "time": 1, "turnType": "TARGET" },
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
 		{
-			"voc": { "id": 34 },
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ChangeStateAct",
 			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_OPEN" }
 		},
 		{
-			"time": 2.5,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 34 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ChangeStateAct",
 			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_CLOSE" }
-		}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 2.5 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 28 },
 	"name": "Dualeaf Sofa",
-	"ignoreGauge": true,
-	"moves": [
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
 		{
-			"time": 1.5,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
 			"turnType": "TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 11 }
 		},
-		{ "time": 1, "skippable": true, "move": "ANIMATED_TILE", "yTile": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.5 },
 		{
-			"time": 1.5,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": 1,
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
 			"turnType": "TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 11 }
 		},
-		{ "time": 1, "skippable": true, "move": "ANIMATED_TILE", "yTile": -1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.5 },
 		{
-			"time": 1.5,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": -1,
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
 			"turnType": "TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 11 }
 		},
-		{ "time": 1, "skippable": true, "move": "ANIMATED_TILE", "yTile": -1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.5 },
 		{
-			"time": 1.5,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": -1,
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
 			"turnType": "TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 11 }
 		},
-		{ "time": 1, "skippable": true, "move": "ANIMATED_TILE", "yTile": 1 }
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.5 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": 1,
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 29 },
 	"name": "CounterTest",
-	"ignoreGauge": true,
-	"moves": [
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
 		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 35 }
-		}
-	]
-},
-{
-	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
-	"id": { "id": 30 },
-	"name": "Generator Idle",
-	"change": [
-		{
-			"onHit": "ELEC",
-			"action": { "id": 31 }
 		}
 	]
 },
@@ -643,39 +1260,51 @@
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 31 },
 	"name": "Generator Ray",
-	"resetStatus": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onHit": "ELEC",
 			"action": { "id": 31 }
 		}
 	],
-	"moves": [
+	"acts": [
 		{
-			"uses": 1,
-			"resetUses": true,
-			"voc": { "id": 24 },
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ChangeStateAct",
 			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "DEFENDING" }
 		},
 		{
-			"uses": 1,
-			"resetUses": true,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 24 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ChangeStateAct",
 			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" }
-		}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 999 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 32 },
 	"name": "Bomby Explode",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onEmpty": true,
 			"action": { "id": 2 }
 		}
 	],
-	"moves": [
+	"acts": [
 		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"uses": 1,
 			"resetUses": true,
 			"voc": { "id": 48 },
@@ -686,7 +1315,12 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 17 },
-	"name": "Greed Run",
+	"name": "Greed Froster Run",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onInaccessiblePanel": true,
@@ -694,19 +1328,37 @@
 			"action": { "id": 10 }
 		}
 	],
-	"moves": [
-		{ "uses": 1, "resetUses": true, "time": 0.8 },
-		{ "uses": 1, "resetUses": true, "time": 0.6, "move": "ANIMATED_MOVING_TILE", "yTile": -1, "moveType": "TOWARD_TARGET" }
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "uses": 1, "resetUses": true, "time": 0.8 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"uses": 1,
+			"resetUses": true,
+			"moveType": "ANIMATED_MOVING_TILE",
+			"yTile": -1,
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "uses": 1, "resetUses": true, "time": 0.6 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 18 },
 	"name": "Lightmass",
-	"ignoreGauge": true,
-	"moves": [
-		{ "time": 3 },
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 3 },
 		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 49 }
 		}
 	]
@@ -715,6 +1367,11 @@
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 33 },
 	"name": "Sofa Grabber Away",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"moves": 1,
@@ -722,14 +1379,29 @@
 			"action": { "id": 4 }
 		}
 	],
-	"moves": [
-		{ "move": "ANIMATED_TILE", "yTile": -1, "moveType": "TOWARD_TARGET" }
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": -1,
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		}
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 34 },
 	"name": "Q.T. Alone",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onInaccessiblePanel": true,
@@ -738,39 +1410,66 @@
 		{
 			"minHealth": 0.3,
 			"action": { "id": 35 }
+		},
+		{
+			"onInterrupt": true,
+			"action": { "id": 34 }
 		}
 	],
-	"moves": [
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.2 },
 		{
-			"time": 1.4,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 22 }
 		},
-		{ "time": 0.6, "move": "ANIMATED_TILE", "yTile": 1, "moveType": "TOWARD_TARGET" }
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.4 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": 1,
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.6 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 35 },
 	"name": "Q.T. Alone Buff",
-	"ignoreGauge": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onEmpty": true,
 			"action": { "id": 34 }
 		}
 	],
-	"moves": [
+	"acts": [
 		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"uses": 1,
-			"time": 0.8,
 			"voc": { "id": 55 }
-		}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "uses": 1, "time": 0.8 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 36 },
 	"name": "Q.T. Alone Right",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"moves": 1,
@@ -781,14 +1480,28 @@
 			"action": { "id": 37 }
 		}
 	],
-	"moves": [
-		{ "move": "ANIMATED_TILE", "xTile": 1 }
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"xTile": 1,
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		}
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 37 },
 	"name": "Q.T. Alone Left",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"moves": 1,
@@ -796,14 +1509,28 @@
 			"action": { "id": 34 }
 		}
 	],
-	"moves": [
-		{ "move": "ANIMATED_TILE", "xTile": -1 }
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"xTile": -1,
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		}
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 38 },
 	"name": "Agent Observe",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onInterrupt": true,
@@ -819,9 +1546,33 @@
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 39 },
 	"name": "Agent Alone",
-	"moves": [
-		{ "move": "ANIMATED_TILE", "yTile": 1, "turnType": "TOWARD_TARGET" },
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
 		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": 1,
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 12 }
 		}
 	]
@@ -830,31 +1581,43 @@
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 40 },
 	"name": "Agent 1",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"minHealth": 0.5,
 			"action": { "id": 41 }
 		}
 	],
-	"moves": [
+	"acts": [
 		{
-			"time": 1.4,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 11 }
-		}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.4 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 41 },
 	"name": "Agent 1 Reflect",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onEmpty": true,
 			"action": { "id": 40 }
 		}
 	],
-	"moves": [
+	"acts": [
 		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"uses": 1,
 			"voc": { "id": 50 }
 		}
@@ -864,155 +1627,323 @@
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 42 },
 	"name": "Agent 2",
-	"moves": [
-		{ "time": 0.6, "skippable": true, "move": "ANIMATED_TILE", "xTile": 1, "turnType": "TARGET_RELATIVE" },
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
 		{
-			"time": 1.4,
-			"voc": { "id": 10110 }
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"xTile": 1,
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
 		},
 		{
-			"time": 1.9,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TARGET_RELATIVE",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.6 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10110 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.4 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10052 },
 			"style": { "id": 17 }
-		}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.9 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 23 },
 	"name": "Agent Test 1",
-	"ignoreGauge": true,
-	"moves": [
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
 		{
-			"time": 1.3,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10031 }
 		},
-		{ "time": 1, "skippable": true, "move": "ANIMATED_TILE", "yTile": 1, "moveType": "TOWARD_TARGET", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.3 },
 		{
-			"time": 1.1,
-			"moveType": "TOWARD_TARGET",
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": 1,
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10010 }
 		},
-		{ "time": 1.6, "skippable": true, "move": "ANIMATED_TILE", "yTile": -1, "moveType": "TOWARD_TARGET", "turnType": "TOWARD_TARGET" }
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": -1,
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.6 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 43 },
 	"name": "Agent Test 2 Hit",
-	"ignoreGauge": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onEmpty": true,
 			"action": { "id": 44 }
 		}
 	],
-	"moves": [
+	"acts": [
 		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
 			"uses": 1,
 			"resetUses": true,
-			"time": 0.9,
 			"turnType": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"uses": 1,
+			"resetUses": true,
 			"voc": { "id": 30 }
-		}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "uses": 1, "resetUses": true, "time": 0.9 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 44 },
 	"name": "Agent Test 2",
-	"ignoreGauge": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onInterrupt": true,
 			"action": { "id": 43 }
 		}
 	],
-	"moves": [
-		{ "skippable": true, "move": "ANIMATED_TILE", "yTile": 1, "moveType": "TOWARD_TARGET", "turnType": "TOWARD_TARGET" },
-		{ "time": 1, "moveType": null },
+	"acts": [
 		{
-			"time": 1.3,
-			"moveType": null,
-			"turnType": null,
-			"voc": { "id": 36 }
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": 1,
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
 		},
 		{
-			"time": 1.4,
-			"moveType": null,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": null,
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 36 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.3 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 51 }
-		}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.4 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 45 },
 	"name": "Spark: VS Agent Hit",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onEmpty": true,
 			"action": { "id": 25 }
 		}
 	],
-	"moves": [
+	"acts": [
 		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"uses": 1,
 			"resetUses": true,
-			"time": 1.3,
 			"voc": { "id": 10032 },
 			"style": { "id": 16 }
-		}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "uses": 1, "resetUses": true, "time": 1.3 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 46 },
 	"name": "Rozu: VS Agent",
-	"ignoreGauge": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onInterrupt": true,
 			"action": { "id": 47 }
 		}
 	],
-	"moves": [
+	"acts": [
 		{
-			"time": 1.8,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
 			"turnType": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10116 }
 		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.8 },
 		{
-			"time": 1.4,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10423 }
 		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.4 },
 		{
-			"time": 1.4,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
 			"yTile": 1,
-			"moveType": "TOWARD_TARGET",
-			"voc": { "id": 10031 }
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
 		},
 		{
-			"skippable": true,
-			"move": "ANIMATED_TILE",
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10031 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.4 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
 			"xTile": 1,
 			"yTile": 1,
-			"moveType": "TOWARD_TARGET",
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 51 }
 		},
 		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 52 }
 		},
-		{ "skippable": true, "move": "ANIMATED_TILE", "xTile": -1, "yTile": 1, "moveType": "TOWARD_TARGET" }
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"xTile": -1,
+			"yTile": 1,
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		}
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 47 },
 	"name": "Rozu: VS Agent Hit",
-	"ignoreGauge": true,
-	"targetType": "CLOSEST_ALLY",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onInterrupt": true,
@@ -1020,73 +1951,147 @@
 			"action": { "id": 46 }
 		}
 	],
-	"moves": [
-		{ "uses": 1, "resetUses": true, "time": 0.4, "skippable": true, "move": "ANIMATED_TILE", "xTile": -1, "moveType": "TARGET_RELATIVE", "turnType": null },
+	"acts": [
 		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
 			"uses": 1,
 			"resetUses": true,
-			"time": 0.7,
+			"moveType": "ANIMATED_TILE",
+			"xTile": -1,
+			"relation": "TARGET_RELATIVE",
+			"target": {
+				"party": "FRIENDLY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "uses": 1, "resetUses": true, "time": 0.4 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"uses": 1,
+			"resetUses": true,
 			"turnType": "TOWARD_TARGET",
+			"target": {
+				"party": "FRIENDLY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"uses": 1,
+			"resetUses": true,
 			"voc": { "id": 10102 }
-		}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "uses": 1, "resetUses": true, "time": 0.7 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 48 },
 	"name": "Weak boi fin upgrade",
-	"ignoreGauge": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onInterrupt": true,
 			"action": { "id": 49 }
 		}
 	],
-	"moves": [
+	"acts": [
 		{
-			"time": 1.5,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
 			"turnType": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10010 }
 		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.5 },
 		{
-			"time": 0.9,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10031 }
 		},
-		{ "time": 0.9, "skippable": true, "move": "ANIMATED_TILE", "yTile": 1, "moveType": "TOWARD_TARGET" }
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.9 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": 1,
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.9 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 49 },
 	"name": "Fin less scared",
-	"ignoreGauge": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"moves": 2,
 			"action": { "id": 48 }
 		}
 	],
-	"moves": [
+	"acts": [
 		{
-			"time": 1,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
 			"yTile": 1,
-			"moveType": "TOWARD_TARGET",
-			"turnType": "TOWARD_TARGET",
-			"voc": { "id": 10106 }
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
 		},
 		{
-			"time": 1.4,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10106 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10016 }
-		}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.4 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 50 },
 	"name": "Crimson Spark",
-	"ignoreGauge": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onInterrupt": true,
@@ -1097,49 +2102,109 @@
 			"action": { "id": 51 }
 		}
 	],
-	"moves": [
+	"acts": [
 		{
-			"time": 0.6,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
 			"yTile": 1,
-			"moveType": "TOWARD_TARGET",
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
 			"turnType": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": {}
 		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.6 },
 		{
-			"time": 1.1,
-			"skippable": true,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10016 }
 		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.1 },
 		{
-			"time": 0.7,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
 			"turnType": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 11 }
 		},
-		{ "time": 0.7, "skippable": true, "move": "ANIMATED_TILE", "xTile": 4, "yTile": 1, "moveType": "ABSOLUTE", "turn": true, "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.7 },
 		{
-			"time": 1,
-			"xTile": -1,
-			"yTile": -1,
-			"moveType": null,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"xTile": 4,
+			"yTile": 1,
+			"relation": "ABSOLUTE",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turn": true,
+			"turnType": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.7 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10231 }
 		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
 		{
-			"time": 1.2,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
 			"turnType": "TOWARD_TARGET",
-			"voc": { "id": 10111 }
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
 		},
 		{
-			"time": 0.8,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10111 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.2 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10032 }
-		}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 24 },
 	"name": "Crimson Spark Hit",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"moves": 2,
@@ -1150,85 +2215,181 @@
 			"action": { "id": 51 }
 		}
 	],
-	"moves": [
+	"acts": [
 		{
-			"time": 0.4,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
 			"turnType": "TOWARD_TARGET",
-			"voc": { "id": 10106 }
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
 		},
 		{
-			"time": 0.6,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10106 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 39 },
 			"style": {}
-		}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.6 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 51 },
 	"name": "Crimson Spark: CRIMSON JUSTICE!!!",
-	"ignoreGauge": true,
 	"resetStatus": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onEmpty": true,
 			"action": { "id": 50 }
 		}
 	],
-	"moves": [
+	"acts": [
 		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
 			"uses": 1,
-			"time": 0.8,
 			"turnType": "TOWARD_TARGET",
-			"voc": { "id": 10443 }
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
 		},
 		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"uses": 1,
-			"time": 1.1,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
+			"voc": { "id": 10443 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "uses": 1, "time": 0.8 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"uses": 1,
+			"moveType": "ANIMATED_TILE",
 			"xTile": 4,
 			"yTile": 1,
-			"moveType": "ABSOLUTE",
+			"relation": "ABSOLUTE",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"uses": 1,
 			"voc": { "id": 56 }
-		}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "uses": 1, "time": 1.1 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 52 },
 	"name": "Punk Pushing",
-	"ignoreGauge": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onInterrupt": true,
 			"action": { "id": 53 }
 		}
 	],
-	"moves": [
-		{ "time": 0.8, "skippable": true, "move": "ANIMATED_TILE", "xTile": 4, "moveType": "TARGET_RELATIVE", "turnType": "TARGET" },
+	"acts": [
 		{
-			"time": 1.3,
-			"moveType": null,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"xTile": 4,
+			"relation": "TARGET_RELATIVE",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
 			"turnType": null,
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 21 },
 			"style": { "id": 17 }
 		},
-		{ "time": 0.8, "move": "ANIMATED_TILE", "yTile": 1, "moveType": "TOWARD_TARGET", "turnType": "TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.3 },
 		{
-			"time": 1.3,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
 			"yTile": 1,
-			"moveType": null,
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
 			"turnType": null,
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10031 }
-		}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.3 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 53 },
 	"name": "Punk Hurt",
-	"ignoreGauge": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"moves": 2,
@@ -1239,75 +2400,152 @@
 			"action": { "id": 53 }
 		}
 	],
-	"moves": [
+	"acts": [
 		{
-			"time": 0.4,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10352 },
 			"style": { "id": 11 }
 		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 },
 		{
-			"time": 0.7,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 6 }
-		}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.7 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 54 },
 	"name": "Alexsander IceCrawl",
-	"ignoreGauge": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onInterrupt": true,
 			"action": { "id": 55 }
 		}
 	],
-	"moves": [
+	"acts": [
 		{
-			"time": 0.8,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
 			"yTile": 1,
-			"moveType": "TOWARD_TARGET",
-			"turnType": "TARGET",
-			"voc": { "id": 60 }
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
 		},
 		{
-			"time": 0.8,
-			"skippable": true,
-			"move": "ANIMATED_TILE",
-			"yTile": -1,
-			"moveType": "TOWARD_TARGET",
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
 			"turnType": "TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 60 }
 		},
-		{ "time": 0.4, "skippable": true, "move": "ANIMATED_TILE", "yTile": 1, "moveType": "TOWARD_TARGET", "turnType": "TARGET" }
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": -1,
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 60 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": 1,
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 55 },
 	"name": "Alexsander Hurt",
-	"ignoreGauge": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"moves": 2,
 			"action": { "id": 54 }
 		}
 	],
-	"moves": [
-		{ "skippable": true, "move": "ANIMATED_TILE", "xTile": 4, "moveType": "TARGET_RELATIVE" },
+	"acts": [
 		{
-			"time": 1,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"xTile": 4,
+			"relation": "TARGET_RELATIVE",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10101 }
-		}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 56 },
 	"name": "Cress Swords",
-	"ignoreGauge": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onInterrupt": true,
@@ -1318,38 +2556,138 @@
 			"action": { "id": 57 }
 		}
 	],
-	"moves": [
-		{ "time": 0.8, "skippable": true, "move": "ANIMATED_TILE", "yTile": 1, "moveType": "TOWARD_TARGET", "turnType": "TOWARD_TARGET" },
+	"acts": [
 		{
-			"time": 0.8,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": 1,
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10016 }
 		},
-		{ "time": 0.7, "skippable": true, "move": "ANIMATED_TILE", "xTile": 1, "yTile": 1, "moveType": "TOWARD_TARGET", "turnType": "TOWARD_TARGET" },
-		{ "time": 0.4, "skippable": true, "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 },
 		{
-			"time": 1.6,
-			"skippable": true,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"xTile": 1,
+			"yTile": 1,
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.7 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10032 }
-		}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.6 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 57 },
 	"name": "Cress Final",
-	"ignoreGauge": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onEmpty": true,
 			"action": { "id": 56 }
 		}
 	],
-	"moves": [
-		{ "uses": 1, "skippable": true, "move": "ANIMATED_TILE", "xTile": 4, "yTile": 1, "moveType": "ABSOLUTE" },
-		{ "uses": 1, "skippable": true, "move": "ANIMATED_TILE", "xTile": 5, "yTile": 1, "moveType": "ABSOLUTE", "turn": true, "turnType": "ABSOLUTE" },
+	"acts": [
 		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"uses": 1,
+			"moveType": "ANIMATED_TILE",
+			"xTile": 4,
+			"yTile": 1,
+			"relation": "ABSOLUTE",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"uses": 1,
+			"moveType": "ANIMATED_TILE",
+			"xTile": 5,
+			"yTile": 1,
+			"relation": "ABSOLUTE",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"uses": 1,
+			"turn": true,
+			"turnType": "ABSOLUTE",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
 			"uses": 1,
 			"turnType": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"uses": 1,
 			"voc": { "id": 56 }
 		}
 	]
@@ -1358,7 +2696,11 @@
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 58 },
 	"name": "Cress Hurt",
-	"ignoreGauge": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"moves": 3,
@@ -1369,31 +2711,1447 @@
 			"action": { "id": 57 }
 		}
 	],
-	"moves": [
-		{ "time": 0.4, "skippable": true, "move": "ANIMATED_TILE", "xTile": 1, "yTile": 1, "moveType": "TOWARD_TARGET", "turnType": "TOWARD_TARGET" },
-		{ "time": 0.4, "skippable": true, "turnType": "TOWARD_TARGET" },
+	"acts": [
 		{
-			"time": 1,
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"xTile": 1,
+			"yTile": 1,
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 52 }
-		}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 59 },
 	"name": "Q.T. Pre-Buff",
-	"ignoreGauge": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
 	"change": [
 		{
 			"onEmpty": true,
 			"action": { "id": 1 }
 		}
 	],
-	"moves": [
+	"acts": [
 		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"uses": 1,
 			"voc": { "id": 55 }
 		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 60 },
+	"name": "Bombing Bomb Up",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"moves": 3,
+			"action": { "id": 62 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 80 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 61 },
+	"name": "Bombing Bomb Down",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"moves": 3,
+			"action": { "id": 63 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 80 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 62 },
+	"name": "Bombing Moving Down",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"onInterrupt": true,
+			"onInaccessiblePanel": true,
+			"onEmpty": true,
+			"action": { "id": 61 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "uses": 2, "resetUses": true, "time": 0.3 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "uses": 2, "resetUses": true, "moveType": "ANIMATED_TILE", "yTile": -1 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 63 },
+	"name": "Bombing Moving Up",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"onInterrupt": true,
+			"onInaccessiblePanel": true,
+			"onEmpty": true,
+			"action": { "id": 60 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "uses": 2, "resetUses": true, "time": 0.3 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "uses": 2, "resetUses": true, "moveType": "ANIMATED_TILE", "yTile": 1 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 64 },
+	"name": "Stalk Mini-Flamebomb",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 81 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.9 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "yTile": 1, "relation": "TOWARD_TARGET" }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 65 },
+	"name": "Bomb Placing",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"onInterrupt": true,
+			"action": { "id": 66 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 8 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "xTile": 2, "relation": "TARGET" }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 66 },
+	"name": "Bomb Placing Counterattack",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"moves": 2,
+			"action": { "id": 65 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"resetUses": true,
+			"voc": { "id": 10034 },
+			"style": { "id": 11 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 67 },
+	"name": "Bomb FireSlash",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "xTile": 1, "relation": "TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10052 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 68 },
+	"name": "Q.T. PushStun",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "yTile": 1, "relation": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10352 },
+			"style": { "id": 11 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 69 },
+	"name": "Q.T. Elecray Top",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"onEmpty": true,
+			"action": { "id": 70 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "uses": 1, "resetUses": true, "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "uses": 1, "resetUses": true, "time": 0.6 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"uses": 1,
+			"resetUses": true,
+			"voc": { "id": 13 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 70 },
+	"name": "Q.T. Elecray Move Up",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"onInterrupt": true,
+			"onInaccessiblePanel": true,
+			"action": { "id": 71 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "yTile": 1 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 71 },
+	"name": "Q.T. Elecray Bottom",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"onEmpty": true,
+			"action": { "id": 72 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "uses": 1, "resetUses": true, "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "uses": 1, "resetUses": true, "time": 0.6 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"uses": 1,
+			"resetUses": true,
+			"voc": { "id": 13 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 72 },
+	"name": "Q.T. Elecray Move Down",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"onInterrupt": true,
+			"onInaccessiblePanel": true,
+			"action": { "id": 69 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": -1,
+			"target": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 73 },
+	"name": "Greed Poison",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 2, "relation": "TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10346 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 74 },
+	"name": "Boss Bomby Phase 1",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"minHealth": 0.4,
+			"action": { "id": 75 }
+		},
+		{
+			"moves": 20,
+			"onInterrupt": true,
+			"action": { "id": 76 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "xTile": 3, "relation": "TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 80 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "xTile": 3, "relation": "TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 81 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 75 },
+	"name": "Boss Bomby Phase 2",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"moves": 28,
+			"onInterrupt": true,
+			"action": { "id": 77 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "xTile": 3, "relation": "TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 80 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "xTile": 3, "relation": "TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 81 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 2, "relation": "TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 76 },
+	"name": "Boss Bomby Phase 1: Hurt",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"onEmpty": true,
+			"action": { "id": 74 }
+		}
+	],
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"uses": 1,
+			"resetUses": true,
+			"voc": { "id": 82 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "uses": 1, "resetUses": true, "xTile": 1 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 77 },
+	"name": "Boss Bomby Phase 2: Hurt",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"onEmpty": true,
+			"action": { "id": 75 }
+		}
+	],
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"uses": 1,
+			"resetUses": true,
+			"voc": { "id": 82 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "uses": 1, "resetUses": true, "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"uses": 1,
+			"resetUses": true,
+			"voc": { "id": 8 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 78 },
+	"name": "Boss Q.T. Dodge Up",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"onAlone": true,
+			"action": { "id": 79 }
+		},
+		{
+			"onInaccessiblePanel": true,
+			"action": { "id": 80 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.HealthFilterAct",
+			"maxHealth": 0.4,
+			"act": {
+				"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+				"voc": { "id": 12 }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "yTile": -1 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 79 },
+	"name": "Boss Q.T. Spawn Run",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"onInaccessiblePanel": true,
+			"action": { "id": 81 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "xTile": 1 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 80 },
+	"name": "Boss Q.T. Dodge Down",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"onAlone": true,
+			"action": { "id": 79 }
+		},
+		{
+			"onInaccessiblePanel": true,
+			"action": { "id": 78 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.HealthFilterAct",
+			"maxHealth": 0.4,
+			"act": {
+				"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+				"voc": { "id": 12 }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "yTile": 1 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 81 },
+	"name": "Boss Q.T. Spawn",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"onEmpty": true,
+			"action": { "id": 78 }
+		}
+	],
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.HealthFilterAct",
+			"maxHealth": 0.4,
+			"act": {
+				"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+				"uses": 1,
+				"resetUses": true,
+				"voc": { "id": 71 }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "uses": 1, "resetUses": true, "time": 1.9 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"uses": 1,
+			"resetUses": true,
+			"voc": { "id": 33 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 82 },
+	"name": "Boss Alex",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"minHealth": 0.7,
+			"action": { "id": 83 }
+		}
+	],
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": 1,
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 60 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": -1,
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 60 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": 1,
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 83 },
+	"name": "Boss Alex #2",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"xTile": -1,
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"xTile": -1,
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 92 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": 1,
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 60 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": -1,
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 60 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"moveType": "ANIMATED_TILE",
+			"yTile": 1,
+			"relation": "TOWARD_TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turnType": "TARGET",
+			"target": {
+				"party": "ENEMY",
+				"invert": true,
+				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 30 },
+	"name": "Stunwave Round",
+	"rememberMove": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"targetPosition": { "xType": "IGNORE", "yType": "EQUAL" },
+			"action": { "id": 84 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.3 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.3 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.3 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": -1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.3 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": -1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.3 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": -1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.3 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 84 },
+	"name": "Stunwave Shoot",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"onEmpty": true,
+			"action": { "id": 30 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "uses": 1, "resetUses": true, "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"uses": 1,
+			"resetUses": true,
+			"voc": { "id": 10352 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 85 },
+	"name": "Generator 4-Ahead",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"onInterrupt": true,
+			"onInaccessiblePanel": true,
+			"action": { "id": 86 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 3, "relation": "TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.7 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10103 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 86 },
+	"name": "Generator Occupied",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"onEmpty": true,
+			"action": { "id": 85 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "uses": 1, "resetUses": true, "time": 0.6 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"uses": 1,
+			"resetUses": true,
+			"voc": { "id": 10010 },
+			"style": { "id": 4 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 87 },
+	"name": "Rebound Go-Close",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"onInaccessiblePanel": true,
+			"action": { "id": 88 }
+		},
+		{
+			"onInterrupt": true,
+			"action": { "id": 98 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.3 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1, "relation": "TOWARD_TARGET" }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 88 },
+	"name": "Rebound Attack!",
+	"next": { "id": 87 },
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"onInterrupt": true,
+			"action": { "id": 98 }
+		}
+	],
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10040 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10040 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10040 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10423 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 89 },
+	"name": "Rebound Flee!",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"onInaccessiblePanel": true,
+			"action": { "id": 87 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": -1, "relation": "TOWARD_TARGET" }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 90 },
+	"name": "Godius Body",
+	"rememberMove": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"minHealth": 0.6,
+			"action": { "id": 95 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1, "moveSpeed": 1.5, "invertableY": true, "checkAccessible": false },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1, "moveSpeed": 1.5, "invertableY": true, "checkAccessible": false },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 91 },
+	"name": "Godius Right Arm",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"time": 5,
+			"onHurt": true,
+			"action": { "id": 93 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.FollowParentAct", "x": -40, "speed": 300 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 92 },
+	"name": "Godius Left Arm",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"time": 8,
+			"onHurt": true,
+			"action": { "id": 94 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.FollowParentAct", "x": 40, "speed": 300 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 93 },
+	"name": "Godius Right Arm Attack",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"moves": 4,
+			"action": { "id": 91 }
+		}
+	],
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 100 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 94 },
+	"name": "Godius Left Arm Attack",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"moves": 3,
+			"action": { "id": 92 }
+		}
+	],
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 98 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 101 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 95 },
+	"name": "Godius Body Start Copy",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"onEmpty": true,
+			"action": { "id": 90 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.AddSkillAct", "listener": "Copy Voc Hit" }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 96 },
+	"name": "Back-Row Sineball Flee",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"onInaccessiblePanel": true,
+			"action": { "id": 97 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.3 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": -1, "relation": "TOWARD_TARGET" }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 97 },
+	"name": "Back-Row Sineball Attack",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"onInaccessiblePanel": true,
+			"action": { "id": 96 }
+		},
+		{
+			"onInterrupt": true,
+			"action": { "id": 97 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 84 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": -1, "invertableY": true },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": -1, "invertableY": true }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 98 },
+	"name": "Rebound Damaged",
+	"next": { "id": 89 },
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10013 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 99 },
+	"name": "Metal Builder Left",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"onInterrupt": true,
+			"onInaccessiblePanel": true,
+			"action": { "id": 100 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 3 },
+			"style": { "id": 34 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.3 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": true, "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": -1 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 100 },
+	"name": "Metal Builder Hurt",
+	"next": { "id": 99 },
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10352 },
+			"style": { "id": 37 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 101 },
+	"name": "Boss Tankitty Sleep",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"time": 7,
+			"onInterrupt": true,
+			"onHurt": true,
+			"targetPosition": { "xType": "CLOSER", "xDistance": 2, "yType": "IGNORE" },
+			"action": { "id": 103 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ChangeStateAct",
+			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "DEFENDING" }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 60 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 102 },
+	"name": "Boss Tankitty DESTROY",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"moves": 16,
+			"action": { "id": 101 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": -1, "relation": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 84 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.HealthFilterAct",
+			"maxHealth": 0.5,
+			"act": { "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1, "yTile": 1, "relation": "TOWARD_TARGET" }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.HealthFilterAct",
+			"maxHealth": 0.5,
+			"act": {
+				"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+				"voc": { "id": 10031 }
+			}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1, "relation": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10352 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 103 },
+	"name": "Boss Tankitty Wake",
+	"next": { "id": 102 },
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"onInterrupt": true,
+			"onHurt": true,
+			"action": { "id": 102 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ChangeStateAct",
+			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.6 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 104 },
+	"name": "Boss Bella",
+	"rememberMove": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"time": 8,
+			"onInterrupt": true,
+			"onHurt": true,
+			"action": { "id": 105 }
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": -1, "yTile": 1, "relation": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.6 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 12 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1, "yTile": 1, "relation": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.3 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1, "relation": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.3 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10052 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.3 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 105 },
+	"name": "Boss Bella Shield",
+	"next": { "id": 104 },
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10100 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.HealthFilterAct",
+			"minHealth": 0.6,
+			"act": {
+				"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+				"voc": { "id": 84 }
+			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.HealthFilterAct",
+			"maxHealth": 0.4,
+			"act": { "class": "com.one2b3.endcycle.features.battle.ai.moves.UseUltraVocAct" }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 }
 	]
 }
 ]

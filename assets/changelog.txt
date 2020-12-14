@@ -1,74 +1,86 @@
->>> 31st May 2020: Revo.6 <<<
-+ Character unlock conditions are now shown on select screen
-- Removed Extreme difficulty
-* Fixed online multiplayer bugs
-* Fixed crashes when loading mods
+>>> 13th December 2020: Ultra.1 <<<
++ Adventure mode!
+	+ Pick a character, explore Anikka and grow stronger!
+	+ Each character has different dialogue based on their journey!
+	+ There are 19 routes already! Have fun completing them all!
++ Added Ultra VOCs!
+	+ Unleash powerful attacks when your ultra-gauge is full!
+	+ Each character has their own unique ultra VOCs!
++ New noise: "Tankitty" the electric armored feline!
+	+ Charm: Hitting Tankitty inflicts Meak on the attacker
+	+ Ultra "Thunder Cat": Shoots two returning stunning thunderballs!
+	
++ In-game steam workshop support!
+	+ Simply press the "download mods" button to download mods from it
+	+ Upload mods to it with one click from the mod upload dialog!
 
++ Added achievements!
++ Revised tons of sprites
+* Better loading progress display
+* Character select screen now shows portraits instead of sprites
+* Packs in shop have a lower price based on unlocked VOCs
+* Further Revo script mod optimizations
 
->>> 29th May 2020: Revo.5 <<<
-+ "Download Mods" now lets you choose GameBanana or Mod Browser
-+ Newly obtained styles now have "New" tag on inventory screen
-- Removed lock-on function
-* Optimized server discovery speed
-* Fixed bugs
+> Ultra VOCs:
+	+ Fin "Courage": 
+		+ Grants trinity buff and refills all VOC cooldowns!
+	+ Spark "1000-Nova": 
+		+ Traps enemies and delivers devastating combo!
+	+ Rozu "Noise Hunt": 
+		+ Shoots debuffing elemental barrage!
+	+ AV.atar "Cyber Insanity": 
+		+ Clears all debuffs, floats and makes you invincible!
+	+ Azure Agent "Specialist": 
+		+ Launches shockwave that pushes adjacent entities away!
+	+ Del "Hacking Gate":
+		+ Uses a Level 4 VOC based on the type of panel you're on!
+	+ Crimson Punk "Will Power":
+		+ Resets crush gauge and boosts power more the less HP you have!
+	+ Cress "Red Espresso":
+		+ Slows down time for all enemies close to you!
+	+ Q.T. "Mech Rhythm":
+		+ Overclocks and launches powerful gatling barrage!
+	+ Sofa Sogood "Green Haze":
+		+ Creates 2x3 area poison that steals and changes panels to grass!
+	+ Greed "Gooey Stream":
+		+ Rushes ahead 4 times, changing panels to ice and freezing!
+	+ Fossil Fuel "Extinction":
+		+ Meteors fall down on 3x3 area ahead!
+	+ Bombarbara "Devil Trigger":
+		+ Jumps forward and explodes 3 times! Can be steered!
+	+ Alexsander "Calorie Bombs":
+		+ Throws 3 bombs ahead, freezing and slowing the hit area!
+	+ Tankitty "Thunder Cat":
+		+ Shoots piercing thunder ball that returns and stuns!
+	+ Tri-Wing "Tri-Laser":
+		+ Fires powerful laser that stuns enemies!
+	+ Bella "Infinity Slash":
+		+ Press button to lock-on enemies and slash!
+	+ Jeremy "Pieces":
+		+ Strums music notes based on move presses!
 
 > VOCs:
-	* Lv3 MineCake: Can now be placed under enemies or objects
-	* Lv1 Lance: Fixed not hitting twice
-	* Lv1 VinePull: Reduced ending-lag
+	+ Lv1 LifeHook: Pulls health pickup out of enemy in front!
+	+ Lv3 WickedScreen: Damages you, but makes you invincible!
+	+ Lv4 HeatGeyser: Creates slow moving flames ahead that make lava!
+	+ Lv4 SineBall: Shoots a stunning wavy ball of Electricity ahead!
+	+ Lv4 Destruct: Cracks panels in 2x3 area ahead!
+	+ Lv4 LeafBarrage: Shoots leafs vertically upfront!
+	+ Lv4 EarthCross: Launches shots in cross formation 3 panels ahead!
+	* Grenade (Normal) -> Elecnade (Elec)
+	* BoulderBack (Normal) -> FrostBack (Water)
+	* Spreader (Normal) -> VoltSpread (Elec)
+	* Crusher (Normal) -> AquaCrusher (Water)
+	* BigSword (Normal) -> FireSlash (Fire)
+	* Companion (Normal) -> Companion (Nature)
+	* FrontFlare (Normal) -> FrontFlare (Elec)
+	* Barrier (Normal) -> Cybarrier (Elec)
+	* Artillery (Normal) -> Artillery (Fire)
+	* Reworked Eject and EjectAll
+	* PanelGrab now grabs twice
+	* Repair and RepairAll now grant a small HP Regen
+	* PanelLance and PanelSword now create sand panels with Flinch-style
 
+> Styles:
+	+ Lv1 Cyber: Spawns copy ahead that uses attack towards you!
 
->>> 25th May 2020: Revo.4 <<<
-+ Fin ability: Overheal
-+ Spark ability: Fighter
-+ Characters can now be bought in Shop
-+ New noise: The flame-oil behemoth "Fossil Fuel"
-+ You now unlock VOCs permanently instead of having to buy them!
-+ Revamped inventory UI
-+ Revamped VOC design
-+ Improved font legibility
-* Added option to disable flashes
-
-> VOCs:
-	+ Lv1 UpBlade: Slashes field above diagonally downward!
-	+ Lv1 DownBlade: Slashes field below diagonally upward!
-	+ Lv1 Droplet: Big chunk of freezing water falls 2 panels ahead!
-	+ Lv2 PainCrave: Absorb damage, but get hurt if you miss!
-	+ Lv3 PotatoBomb: Sticky projectile that explodes in X!
-	* Counter/charging VOCs can now be used mid-movement
-	* Sword-based attacks: Reduced ending lag
-
-> Modding:
-	+ RevoEngine now supports debugging
-	+ JsonPatch: Mods can stack even better now!
-	* Fixed mods not updating themselves properly
-
-
->>> 27th April 2020: Revo.3 <<<
-+ Improved PC battle UI
-+ Added new Character cards for Sofa and Q.T.
-+ Added EndCyclopedia entries
-* Redesigned panel colors
-* Windowed mode now auto-adjusts to screen resolution
-* Stability fixes
-
->>> 16th April 2020: Revo.2 <<<
-+ Modernized game logo
-+ New title screen
-+ Completely new default menu theme
-+ Added EndCyclopedia entries
-+ Improved campaign voice blips
-* Changed screenshot/gif directory to Documents
-> Modding:
-	+ Added the "RevoEngine" to the toolbox:
-		+ Code your own Revo scripts in-game!
-		+ Create your own Battle Systems!
-		+ Your own unique attack patterns!
-		+ Custom skills that can be anything!
-		+ Revo scripts are compatible on Android + PC!
-	+ Toolbox can be a seperate window by pressing F2!
-
->>> 10th March 2020: Revo.1 <<<
-+ Added character portraits to character select
-+ Redesigned Crush bar
-* Fixed bugs

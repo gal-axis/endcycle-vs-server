@@ -1,0 +1,1620 @@
+[
+{
+	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
+	"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Snow" },
+	"cursorPosition": { "x": 132, "y": 20 },
+	"background": {},
+	"music": { "id": 14 },
+	"pathLength": 7,
+	"pathLengthDeviation": 0,
+	"branchDistanceX": 12,
+	"branchDistanceY": 14,
+	"renderers": [ "Snow" ],
+	"startEvents": [
+		{
+			"events": [
+				{
+					"event": { "id": 2 }
+				}
+			]
+		}
+	],
+	"randomEvents": [
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Noise" },
+			"icon": {
+				"drawable": { "id": 567 }
+			},
+			"events": [
+				{
+					"event": { "id": 25 }
+				},
+				{
+					"event": { "id": 26 }
+				},
+				{
+					"event": { "id": 27 }
+				},
+				{
+					"event": { "id": 28 }
+				},
+				{
+					"event": { "id": 50 }
+				},
+				{
+					"event": { "id": 55 }
+				},
+				{
+					"event": { "id": 56 }
+				},
+				{
+					"event": { "id": 65 }
+				}
+			],
+			"appearChance": 1
+		},
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Crimson" },
+			"events": [
+				{
+					"event": { "id": 7 }
+				},
+				{
+					"event": { "id": 19 }
+				},
+				{
+					"event": { "id": 20 }
+				},
+				{
+					"event": { "id": 31 },
+					"maximum": 1
+				}
+			],
+			"minimum": 2,
+			"maximum": 3
+		},
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Azure" },
+			"events": [
+				{
+					"event": { "id": 8 }
+				},
+				{
+					"event": { "id": 17 }
+				},
+				{
+					"event": { "id": 18 }
+				},
+				{
+					"event": { "id": 30 },
+					"maximum": 1
+				}
+			],
+			"minimum": 1,
+			"maximum": 2
+		},
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Shop" },
+			"icon": {
+				"drawable": { "id": 568 }
+			},
+			"events": [
+				{
+					"event": { "id": 16 }
+				},
+				{
+					"event": { "id": 29 }
+				}
+			],
+			"minimum": 1,
+			"maximum": 1
+		},
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "" },
+			"events": [
+				{
+					"event": { "id": 44 },
+					"maximum": 1
+				},
+				{
+					"event": { "id": 45 },
+					"maximum": 1
+				},
+				{
+					"event": { "id": 47 }
+				},
+				{
+					"event": { "id": 4 }
+				},
+				{
+					"event": { "id": 5 },
+					"chance": 0.5
+				}
+			],
+			"minimum": 2,
+			"maximum": 3
+		}
+	],
+	"finalEvents": [
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Boss" },
+			"events": [
+				{
+					"event": { "id": 34 }
+				}
+			]
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 1 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
+	"id": { "id": 1 },
+	"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Forest" },
+	"cursorPosition": { "x": 123, "y": 32 },
+	"background": { "id": 2 },
+	"music": { "id": 29 },
+	"pathLength": 7,
+	"pathLengthDeviation": 0,
+	"branchDistanceX": 12,
+	"branchDistanceY": 14,
+	"startEvents": [
+		{
+			"events": [
+				{
+					"event": { "id": 2 }
+				}
+			]
+		}
+	],
+	"randomEvents": [
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Noise" },
+			"icon": {
+				"drawable": { "id": 567 }
+			},
+			"events": [
+				{
+					"event": { "id": 9 }
+				},
+				{
+					"event": { "id": 26 }
+				},
+				{
+					"event": { "id": 13 }
+				},
+				{
+					"event": { "id": 28 }
+				},
+				{
+					"event": { "id": 22 }
+				},
+				{
+					"event": { "id": 65 }
+				},
+				{
+					"event": { "id": 25 }
+				},
+				{
+					"event": { "id": 48 }
+				}
+			],
+			"appearChance": 1
+		},
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Crimson" },
+			"events": [
+				{
+					"event": { "id": 7 }
+				},
+				{
+					"event": { "id": 19 }
+				},
+				{
+					"event": { "id": 20 }
+				},
+				{
+					"event": { "id": 31 },
+					"maximum": 1
+				}
+			],
+			"minimum": 1,
+			"maximum": 2
+		},
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Azure" },
+			"events": [
+				{
+					"event": { "id": 8 }
+				},
+				{
+					"event": { "id": 17 }
+				},
+				{
+					"event": { "id": 18 }
+				},
+				{
+					"event": { "id": 30 },
+					"maximum": 1
+				}
+			],
+			"minimum": 1,
+			"maximum": 2
+		},
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Shop" },
+			"icon": {
+				"drawable": { "id": 568 }
+			},
+			"events": [
+				{
+					"event": { "id": 16 }
+				},
+				{
+					"event": { "id": 29 }
+				}
+			],
+			"minimum": 1,
+			"maximum": 1
+		},
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "" },
+			"events": [
+				{
+					"event": { "id": 44 },
+					"maximum": 1
+				},
+				{
+					"event": { "id": 45 },
+					"maximum": 1
+				},
+				{
+					"event": { "id": 47 }
+				},
+				{
+					"event": { "id": 4 }
+				},
+				{
+					"event": { "id": 5 },
+					"chance": 0.5
+				}
+			],
+			"minimum": 3,
+			"maximum": 4
+		}
+	],
+	"finalEvents": [
+		{
+			"icon": {
+				"drawable": { "id": 618 }
+			},
+			"events": [
+				{
+					"event": { "id": 37 }
+				}
+			]
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 1 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
+	"id": { "id": 2 },
+	"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.City" },
+	"cursorPosition": { "x": 114, "y": 72 },
+	"background": { "id": 12 },
+	"music": { "id": 16 },
+	"pathLength": 7,
+	"pathLengthDeviation": 0,
+	"branchDistanceX": 12,
+	"branchDistanceY": 14,
+	"startEvents": [
+		{
+			"events": [
+				{
+					"event": { "id": 2 }
+				}
+			]
+		}
+	],
+	"randomEvents": [
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Noise" },
+			"icon": {
+				"drawable": { "id": 567 }
+			},
+			"events": [
+				{
+					"event": { "id": 23 }
+				},
+				{
+					"event": { "id": 24 }
+				},
+				{
+					"event": { "id": 27 }
+				},
+				{
+					"event": { "id": 28 }
+				},
+				{
+					"event": { "id": 64 }
+				},
+				{
+					"event": { "id": 50 }
+				},
+				{
+					"event": { "id": 26 }
+				},
+				{
+					"event": { "id": 11 }
+				}
+			],
+			"appearChance": 1
+		},
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Crimson" },
+			"events": [
+				{
+					"event": { "id": 7 }
+				},
+				{
+					"event": { "id": 19 }
+				},
+				{
+					"event": { "id": 20 }
+				},
+				{
+					"event": { "id": 31 },
+					"maximum": 1
+				}
+			],
+			"minimum": 2,
+			"maximum": 3
+		},
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Azure" },
+			"events": [
+				{
+					"event": { "id": 8 }
+				},
+				{
+					"event": { "id": 17 }
+				},
+				{
+					"event": { "id": 18 }
+				},
+				{
+					"event": { "id": 30 },
+					"maximum": 1
+				}
+			],
+			"minimum": 1,
+			"maximum": 2
+		},
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Shop" },
+			"icon": {
+				"drawable": { "id": 568 }
+			},
+			"events": [
+				{
+					"event": { "id": 16 }
+				},
+				{
+					"event": { "id": 29 }
+				}
+			],
+			"minimum": 1,
+			"maximum": 1
+		},
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "" },
+			"events": [
+				{
+					"event": { "id": 44 },
+					"maximum": 1
+				},
+				{
+					"event": { "id": 45 },
+					"maximum": 1
+				},
+				{
+					"event": { "id": 4 }
+				},
+				{
+					"event": { "id": 5 },
+					"chance": 0.5
+				}
+			],
+			"minimum": 2,
+			"maximum": 3
+		}
+	],
+	"finalEvents": [
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Boss" },
+			"events": [
+				{
+					"event": { "id": 36 }
+				}
+			]
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 1 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
+	"id": { "id": 3 },
+	"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Clock" },
+	"cursorPosition": { "x": 71, "y": 24 },
+	"background": { "id": 5 },
+	"music": { "id": 24 },
+	"pathLength": 7,
+	"pathLengthDeviation": 0,
+	"branchDistanceX": 12,
+	"branchDistanceY": 14,
+	"startEvents": [
+		{
+			"events": [
+				{
+					"event": { "id": 2 }
+				}
+			]
+		}
+	],
+	"randomEvents": [
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Noise" },
+			"icon": {
+				"drawable": { "id": 567 }
+			},
+			"events": [
+				{
+					"event": { "id": 23 }
+				},
+				{
+					"event": { "id": 24 }
+				},
+				{
+					"event": { "id": 27 }
+				},
+				{
+					"event": { "id": 28 }
+				},
+				{
+					"event": { "id": 48 }
+				},
+				{
+					"event": { "id": 49 }
+				},
+				{
+					"event": { "id": 50 }
+				},
+				{
+					"event": { "id": 55 }
+				},
+				{
+					"event": { "id": 56 }
+				},
+				{
+					"event": { "id": 63 }
+				}
+			],
+			"appearChance": 1
+		},
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Crimson" },
+			"events": [
+				{
+					"event": { "id": 7 }
+				},
+				{
+					"event": { "id": 19 }
+				},
+				{
+					"event": { "id": 20 }
+				},
+				{
+					"event": { "id": 31 },
+					"maximum": 1
+				}
+			],
+			"minimum": 1,
+			"maximum": 2
+		},
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Azure" },
+			"events": [
+				{
+					"event": { "id": 8 }
+				},
+				{
+					"event": { "id": 17 }
+				},
+				{
+					"event": { "id": 18 }
+				},
+				{
+					"event": { "id": 30 },
+					"maximum": 1
+				}
+			],
+			"minimum": 2,
+			"maximum": 3
+		},
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Shop" },
+			"icon": {
+				"drawable": { "id": 568 }
+			},
+			"events": [
+				{
+					"event": { "id": 16 }
+				},
+				{
+					"event": { "id": 29 }
+				}
+			],
+			"minimum": 1,
+			"maximum": 1
+		},
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "" },
+			"events": [
+				{
+					"event": { "id": 44 },
+					"maximum": 1
+				},
+				{
+					"event": { "id": 45 },
+					"maximum": 1
+				},
+				{
+					"event": { "id": 47 },
+					"maximum": 2
+				},
+				{
+					"event": { "id": 4 }
+				},
+				{
+					"event": { "id": 5 },
+					"chance": 0.5
+				}
+			],
+			"minimum": 2,
+			"maximum": 3
+		}
+	],
+	"finalEvents": [
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Boss" },
+			"events": [
+				{
+					"event": { "id": 37 }
+				}
+			]
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 1 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
+	"id": { "id": 4 },
+	"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Desert" },
+	"cursorPosition": { "x": 83, "y": 72 },
+	"background": { "id": 3 },
+	"music": { "id": 21 },
+	"pathLength": 7,
+	"pathLengthDeviation": 0,
+	"branchDistanceX": 12,
+	"branchDistanceY": 14,
+	"renderers": [ "Desert" ],
+	"startEvents": [
+		{
+			"events": [
+				{
+					"event": { "id": 2 }
+				}
+			]
+		}
+	],
+	"randomEvents": [
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Noise" },
+			"icon": {
+				"drawable": { "id": 567 }
+			},
+			"events": [
+				{
+					"event": { "id": 21 }
+				},
+				{
+					"event": { "id": 22 }
+				},
+				{
+					"event": { "id": 11 }
+				},
+				{
+					"event": { "id": 12 }
+				},
+				{
+					"event": { "id": 46 }
+				},
+				{
+					"event": { "id": 13 }
+				},
+				{
+					"event": { "id": 14 }
+				},
+				{
+					"event": { "id": 27 }
+				}
+			],
+			"appearChance": 1
+		},
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Crimson" },
+			"events": [
+				{
+					"event": { "id": 7 }
+				},
+				{
+					"event": { "id": 19 }
+				},
+				{
+					"event": { "id": 20 }
+				},
+				{
+					"event": { "id": 31 },
+					"maximum": 1
+				}
+			],
+			"minimum": 1,
+			"maximum": 2
+		},
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Azure" },
+			"events": [
+				{
+					"event": { "id": 8 }
+				},
+				{
+					"event": { "id": 17 }
+				},
+				{
+					"event": { "id": 18 }
+				},
+				{
+					"event": { "id": 30 },
+					"maximum": 1
+				}
+			],
+			"minimum": 2,
+			"maximum": 3
+		},
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Shop" },
+			"icon": {
+				"drawable": { "id": 568 }
+			},
+			"events": [
+				{
+					"event": { "id": 16 }
+				},
+				{
+					"event": { "id": 29 }
+				}
+			],
+			"minimum": 1,
+			"maximum": 1
+		},
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "" },
+			"events": [
+				{
+					"event": { "id": 44 },
+					"maximum": 1
+				},
+				{
+					"event": { "id": 45 },
+					"maximum": 1
+				},
+				{
+					"event": { "id": 42 },
+					"maximum": 1
+				},
+				{
+					"event": { "id": 47 },
+					"maximum": 2
+				},
+				{
+					"event": { "id": 4 }
+				},
+				{
+					"event": { "id": 5 },
+					"chance": 0.5
+				}
+			],
+			"minimum": 2,
+			"maximum": 3
+		}
+	],
+	"finalEvents": [
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Boss" },
+			"events": [
+				{
+					"event": { "id": 15 }
+				}
+			]
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 1 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
+	"id": { "id": 5 },
+	"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Ruins" },
+	"secret": true,
+	"cursorPosition": { "x": 74, "y": 62 },
+	"background": { "id": 7 },
+	"music": { "id": 28 },
+	"pathLength": 2,
+	"pathLengthDeviation": 0,
+	"branches": 1,
+	"branchDeviation": 0,
+	"branchDistanceX": 12,
+	"branchDistanceY": 14,
+	"randomEvents": [
+		{
+			"icon": {
+				"drawable": { "id": 564 }
+			},
+			"events": [
+				{
+					"event": { "id": 8 }
+				},
+				{
+					"event": { "id": 17 }
+				},
+				{
+					"event": { "id": 18 }
+				}
+			]
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 30 }
+				}
+			],
+			"minimum": 1,
+			"maximum": 1
+		}
+	],
+	"finalEvents": [
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Boss" },
+			"events": [
+				{
+					"event": { "id": 33 }
+				}
+			],
+			"character": { "id": 9 },
+			"characterEqual": true
+		},
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Boss" },
+			"events": [
+				{
+					"event": { "id": 61 }
+				}
+			],
+			"character": { "id": 9 },
+			"characterEqual": false
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 1 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
+	"id": { "id": 6 },
+	"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Beach" },
+	"cursorPosition": { "x": 30, "y": 54 },
+	"background": { "id": 21 },
+	"music": { "id": 12 },
+	"pathLength": 7,
+	"pathLengthDeviation": 0,
+	"branchDistanceX": 12,
+	"branchDistanceY": 14,
+	"startEvents": [
+		{
+			"events": [
+				{
+					"event": { "id": 2 }
+				}
+			]
+		}
+	],
+	"randomEvents": [
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Noise" },
+			"icon": {
+				"drawable": { "id": 567 }
+			},
+			"events": [
+				{
+					"event": { "id": 21 }
+				},
+				{
+					"event": { "id": 22 }
+				},
+				{
+					"event": { "id": 27 }
+				},
+				{
+					"event": { "id": 28 }
+				},
+				{
+					"event": { "id": 10 }
+				},
+				{
+					"event": { "id": 25 }
+				},
+				{
+					"event": { "id": 50 }
+				},
+				{
+					"event": { "id": 48 }
+				},
+				{
+					"event": { "id": 63 }
+				}
+			],
+			"appearChance": 1
+		},
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Crimson" },
+			"events": [
+				{
+					"event": { "id": 7 }
+				},
+				{
+					"event": { "id": 19 }
+				},
+				{
+					"event": { "id": 20 }
+				},
+				{
+					"event": { "id": 31 },
+					"maximum": 1
+				}
+			],
+			"minimum": 2,
+			"maximum": 3
+		},
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Azure" },
+			"events": [
+				{
+					"event": { "id": 8 }
+				},
+				{
+					"event": { "id": 17 }
+				},
+				{
+					"event": { "id": 18 }
+				},
+				{
+					"event": { "id": 30 },
+					"maximum": 1
+				}
+			],
+			"minimum": 2,
+			"maximum": 3
+		},
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Shop" },
+			"icon": {
+				"drawable": { "id": 568 }
+			},
+			"events": [
+				{
+					"event": { "id": 16 }
+				},
+				{
+					"event": { "id": 29 }
+				}
+			],
+			"minimum": 1,
+			"maximum": 1
+		},
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "" },
+			"events": [
+				{
+					"event": { "id": 44 },
+					"maximum": 1
+				},
+				{
+					"event": { "id": 45 },
+					"maximum": 1
+				},
+				{
+					"event": { "id": 4 }
+				},
+				{
+					"event": { "id": 5 },
+					"chance": 0.5
+				}
+			],
+			"minimum": 2,
+			"maximum": 3
+		}
+	],
+	"finalEvents": [
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Boss" },
+			"events": [
+				{
+					"event": { "id": 34 }
+				}
+			]
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 1 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
+	"id": { "id": 7 },
+	"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Everod" },
+	"secret": true,
+	"cursorPosition": { "x": 132, "y": 12 },
+	"background": {},
+	"music": { "id": 13 },
+	"pathLength": 0,
+	"pathLengthDeviation": 0,
+	"branches": 1,
+	"branchDeviation": 0,
+	"branchDistanceX": 12,
+	"branchDistanceY": 14,
+	"startEvents": [
+		{
+			"events": [
+				{
+					"event": { "id": 2 }
+				}
+			]
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 8 }
+				}
+			]
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 7 }
+				}
+			]
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 8 }
+				}
+			]
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 7 }
+				}
+			]
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 8 }
+				}
+			]
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 7 }
+				}
+			]
+		}
+	],
+	"randomEvents": [
+		{
+			"icon": {
+				"drawable": { "id": 568 }
+			},
+			"events": [
+				{
+					"event": { "id": 26 }
+				}
+			],
+			"maximum": 1
+		}
+	],
+	"finalEvents": [
+		{
+			"events": [
+				{
+					"event": { "id": 15 }
+				}
+			]
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 1 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
+	"id": { "id": 8 },
+	"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Dark" },
+	"cursorPosition": { "x": 10, "y": 17 },
+	"background": { "id": 17 },
+	"music": { "id": 22 },
+	"pathLength": 7,
+	"pathLengthDeviation": 0,
+	"branchDistanceY": 14,
+	"startEvents": [
+		{
+			"events": [
+				{
+					"event": { "id": 2 }
+				}
+			]
+		}
+	],
+	"randomEvents": [
+		{
+			"icon": {
+				"drawable": { "id": 567 }
+			},
+			"events": [
+				{
+					"event": { "id": 9 }
+				},
+				{
+					"event": { "id": 10 }
+				},
+				{
+					"event": { "id": 11 }
+				},
+				{
+					"event": { "id": 12 }
+				},
+				{
+					"event": { "id": 13 }
+				},
+				{
+					"event": { "id": 14 }
+				},
+				{
+					"event": { "id": 21 }
+				},
+				{
+					"event": { "id": 22 }
+				},
+				{
+					"event": { "id": 23 }
+				},
+				{
+					"event": { "id": 24 }
+				},
+				{
+					"event": { "id": 25 }
+				},
+				{
+					"event": { "id": 27 }
+				},
+				{
+					"event": { "id": 28 }
+				},
+				{
+					"event": { "id": 48 }
+				},
+				{
+					"event": { "id": 49 }
+				},
+				{
+					"event": { "id": 50 }
+				},
+				{
+					"event": { "id": 55 }
+				},
+				{
+					"event": { "id": 56 }
+				},
+				{
+					"event": { "id": 26 }
+				}
+			]
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 57 }
+				}
+			],
+			"character": { "id": 11 },
+			"characterEqual": false,
+			"minimum": 1,
+			"maximum": 1
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 4 },
+					"chance": 0.5
+				},
+				{
+					"event": { "id": 5 }
+				}
+			],
+			"minimum": 1,
+			"maximum": 3
+		}
+	],
+	"finalEvents": [
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Boss" },
+			"events": [
+				{
+					"event": { "id": 15 }
+				}
+			]
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 1 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
+	"id": { "id": 9 },
+	"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Lunar" },
+	"secret": true,
+	"map": {
+		"drawable": { "id": 600 }
+	},
+	"cursor": {},
+	"background": { "id": 23 },
+	"music": { "id": 8 },
+	"pathLength": 5,
+	"pathLengthDeviation": 0,
+	"branchDistanceX": 12,
+	"branchDistanceY": 14,
+	"randomEvents": [
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Murk" },
+			"icon": {
+				"drawable": { "id": 567 }
+			},
+			"song": { "id": 30 },
+			"events": [
+				{
+					"event": { "id": 9 }
+				},
+				{
+					"event": { "id": 48 }
+				},
+				{
+					"event": { "id": 27 }
+				},
+				{
+					"event": { "id": 21 }
+				},
+				{
+					"event": { "id": 26 }
+				},
+				{
+					"event": { "id": 55 }
+				}
+			],
+			"entityModes": [
+				{
+					"class": "com.one2b3.endcycle.features.battle.mode.ChangeNoiseEntityMode",
+					"mode": { "class": "com.one2b3.endcycle.features.battle.mode.MurkEntityMode" }
+				}
+			]
+		},
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Treasure" },
+			"icon": {
+				"drawable": { "id": 569 }
+			},
+			"events": [
+				{
+					"event": { "id": 4 }
+				},
+				{
+					"event": { "id": 5 }
+				}
+			],
+			"entityModes": [
+				{
+					"class": "com.one2b3.endcycle.features.battle.mode.ChangeNoiseEntityMode",
+					"mode": { "class": "com.one2b3.endcycle.features.battle.mode.MurkEntityMode" }
+				}
+			],
+			"minimum": 1,
+			"maximum": 2
+		}
+	],
+	"finalEvents": [
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Boss" },
+			"events": [
+				{
+					"event": { "id": 40 }
+				}
+			],
+			"character": { "id": 11 },
+			"characterEqual": false
+		},
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Boss" },
+			"events": [
+				{
+					"event": { "id": 58 }
+				}
+			],
+			"character": { "id": 11 },
+			"characterEqual": true
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 59 }
+				}
+			]
+		}
+	],
+	"followUpZones": [
+		{ "id": 12 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
+	"id": { "id": 10 },
+	"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.IceCave" },
+	"secret": true,
+	"cursorPosition": { "x": 110, "y": 8 },
+	"background": { "id": 15 },
+	"music": { "id": 15 },
+	"pathLength": 2,
+	"pathLengthDeviation": 0,
+	"branches": 1,
+	"branchDeviation": 0,
+	"branchDistanceX": 12,
+	"branchDistanceY": 14,
+	"randomEvents": [
+		{
+			"icon": {
+				"drawable": { "id": 565 }
+			},
+			"events": [
+				{
+					"event": { "id": 7 }
+				}
+			]
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 31 }
+				}
+			],
+			"minimum": 1,
+			"maximum": 1
+		}
+	],
+	"finalEvents": [
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Boss" },
+			"events": [
+				{
+					"event": { "id": 51 }
+				}
+			],
+			"character": { "id": 21 },
+			"characterEqual": false
+		},
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Boss" },
+			"events": [
+				{
+					"event": { "id": 52 }
+				}
+			],
+			"character": { "id": 21 },
+			"characterEqual": true
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 1 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
+	"id": { "id": 11 },
+	"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Zone.Final" },
+	"secret": true,
+	"map": {
+		"drawable": { "id": 600 }
+	},
+	"cursor": {},
+	"background": { "id": 8 },
+	"pathLength": 0,
+	"pathLengthDeviation": 0,
+	"branches": 1,
+	"branchDeviation": 0,
+	"branchDistanceX": 12,
+	"branchDistanceY": 14,
+	"startEvents": [
+		{
+			"events": [
+				{
+					"event": { "id": 60 }
+				}
+			]
+		}
+	],
+	"finalEvents": [
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Boss" },
+			"events": [
+				{
+					"event": { "id": 41 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
+	"id": { "id": 12 },
+	"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Networld" },
+	"secret": true,
+	"map": {
+		"drawable": { "id": 563 }
+	},
+	"cursor": {},
+	"background": { "id": 22 },
+	"music": { "id": 23 },
+	"pathLength": 3,
+	"branches": 1,
+	"branchDeviation": 0,
+	"branchDistanceX": 12,
+	"branchDistanceY": 14,
+	"lootBox": { "id": 14 },
+	"lootCache": {
+		"customizations": [ 1 ]
+	},
+	"renderers": [ "Downscale" ],
+	"startEvents": [
+		{
+			"events": [
+				{
+					"event": { "id": 2 }
+				}
+			]
+		}
+	],
+	"randomEvents": [
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Noise" },
+			"icon": {
+				"drawable": { "id": 567 }
+			},
+			"events": [
+				{
+					"event": { "id": 9 }
+				},
+				{
+					"event": { "id": 10 }
+				},
+				{
+					"event": { "id": 11 }
+				},
+				{
+					"event": { "id": 12 }
+				},
+				{
+					"event": { "id": 13 }
+				},
+				{
+					"event": { "id": 14 }
+				},
+				{
+					"event": { "id": 21 }
+				},
+				{
+					"event": { "id": 22 }
+				},
+				{
+					"event": { "id": 23 }
+				},
+				{
+					"event": { "id": 24 }
+				},
+				{
+					"event": { "id": 25 }
+				},
+				{
+					"event": { "id": 26 }
+				},
+				{
+					"event": { "id": 27 }
+				},
+				{
+					"event": { "id": 28 }
+				}
+			],
+			"minimum": 1
+		},
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Event.Treasure" },
+			"icon": {
+				"drawable": { "id": 571 }
+			},
+			"events": [
+				{
+					"event": { "id": 6 }
+				}
+			],
+			"minimum": 2,
+			"maximum": 2
+		}
+	],
+	"finalEvents": [
+		{
+			"events": [
+				{
+					"event": { "id": 1 }
+				}
+			]
+		}
+	],
+	"followUpZones": [
+		{},
+		{ "id": 1 },
+		{ "id": 2 },
+		{ "id": 3 },
+		{ "id": 4 },
+		{ "id": 6 },
+		{ "id": 8 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
+	"id": { "id": 13 },
+	"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Zone.BossRush" },
+	"secret": true,
+	"map": {
+		"drawable": { "id": 600 }
+	},
+	"cursor": {},
+	"background": { "id": 24 },
+	"music": { "id": 11 },
+	"pathLength": 0,
+	"pathLengthDeviation": 0,
+	"branches": 1,
+	"branchDeviation": 0,
+	"branchDistanceX": 14,
+	"branchDistanceY": 14,
+	"randomizeX": 0,
+	"randomizeY": 0,
+	"direction": -30,
+	"lootBox": { "id": 14 },
+	"lootCache": {
+		"customizations": [ 0 ]
+	},
+	"script": {
+		"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureRemoveItemScript",
+		"items": [
+			{
+				"item": { "id": 60 },
+				"amount": 3
+			}
+		],
+		"allRequired": false
+	},
+	"renderers": [ "Tower" ],
+	"startEvents": [
+		{
+			"events": [
+				{
+					"event": { "id": 2 }
+				}
+			]
+		},
+		{
+			"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Shop.Tower" },
+			"icon": {
+				"drawable": { "id": 1221 }
+			},
+			"events": [
+				{
+					"event": { "id": 54 }
+				}
+			]
+		}
+	],
+	"finalEvents": [
+		{
+			"events": [
+				{
+					"event": { "id": 59 }
+				}
+			]
+		}
+	],
+	"followUpZones": [
+		{ "id": 11 }
+	]
+}
+]

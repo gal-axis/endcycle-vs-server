@@ -3,8 +3,6 @@
 	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
 	"name": "Classic",
 	"random": true,
-	"width": 6,
-	"height": 3,
 	"panels": [
 		[
 			{ "party": "FRIENDLY", "fixed": true },
@@ -43,8 +41,6 @@
 	"id": { "id": 1 },
 	"name": "Legacy",
 	"random": true,
-	"width": 6,
-	"height": 3,
 	"panels": [
 		[
 			{ "party": "FRIENDLY", "fixed": true },
@@ -83,7 +79,6 @@
 	"id": { "id": 2 },
 	"name": "Long-Battle A",
 	"width": 8,
-	"height": 3,
 	"panels": [
 		[
 			{ "party": "FRIENDLY", "fixed": true },
@@ -131,7 +126,6 @@
 	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
 	"id": { "id": 3 },
 	"name": "Long-Battle B",
-	"width": 6,
 	"height": 5,
 	"panels": [
 		[
@@ -315,8 +309,6 @@
 	"id": { "id": 6 },
 	"name": "Partyless",
 	"random": true,
-	"width": 6,
-	"height": 3,
 	"panels": [
 		[
 			{ "party": "FRIENDLY", "fixed": true },
@@ -406,8 +398,7 @@
 	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
 	"id": { "id": 97 },
 	"name": "Double Side",
-	"width": 6,
-	"height": 3,
+	"doubleSide": true,
 	"panels": [
 		[
 			{ "party": "ENEMY", "fixed": true },
@@ -444,9 +435,9 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
 	"id": { "id": 8 },
-	"name": "Two-Side",
+	"name": "Double Side Big",
+	"doubleSide": true,
 	"width": 7,
-	"height": 3,
 	"panels": [
 		[
 			{ "party": "ENEMY", "fixed": true },
@@ -487,34 +478,9 @@
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
-	"id": { "id": 9 },
-	"name": "New Panel Test",
-	"width": 5,
-	"height": 1,
-	"panels": [
-		[
-			{ "party": "FRIENDLY", "type": "LAVA", "fixed": true }
-		],
-		[
-			{ "party": "FRIENDLY", "type": "MOVE_RIGHT" }
-		],
-		[
-			{ "type": "GRASS" }
-		],
-		[
-			{ "party": "ENEMY", "type": "SNOW" }
-		],
-		[
-			{ "party": "ENEMY", "type": "METAL", "fixed": true }
-		]
-	]
-},
-{
-	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
 	"id": { "id": 13 },
 	"name": "Fun Square",
 	"width": 5,
-	"height": 3,
 	"panels": [
 		[
 			{ "party": "FRIENDLY", "type": "MOVE_DOWN" },
@@ -546,9 +512,9 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
 	"id": { "id": 14 },
-	"name": "No Enemies",
+	"name": "Small",
+	"random": true,
 	"width": 5,
-	"height": 3,
 	"panels": [
 		[
 			{ "party": "FRIENDLY", "fixed": true },
@@ -556,9 +522,9 @@
 			{ "party": "FRIENDLY", "fixed": true }
 		],
 		[
-			{},
-			{},
-			{}
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" }
 		],
 		[
 			{},
@@ -566,9 +532,9 @@
 			{}
 		],
 		[
-			{},
-			{},
-			{}
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" }
 		],
 		[
 			{ "party": "ENEMY", "fixed": true },
@@ -579,835 +545,8 @@
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
-	"id": { "id": 15 },
-	"name": "Test Run",
-	"width": 30,
-	"height": 20,
-	"panels": [
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY" },
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY" },
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY" },
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY" },
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY" },
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY" },
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			{},
-			{},
-			{},
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			{},
-			{},
-			{},
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			{ "party": "ENEMY" },
-			{ "party": "ENEMY" },
-			{ "party": "ENEMY" },
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			{ "party": "ENEMY" },
-			{ "party": "ENEMY" },
-			{ "party": "ENEMY" },
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			{},
-			{},
-			{},
-			{ "type": "MOVE_DOWN" },
-			{ "type": "MOVE_DOWN" },
-			{ "type": "MOVE_DOWN" },
-			{ "type": "MOVE_DOWN" },
-			{ "type": "MOVE_DOWN" },
-			{ "party": "FRIENDLY", "fixed": true },
-			{ "party": "FRIENDLY", "fixed": true },
-			{ "party": "FRIENDLY", "fixed": true },
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			{},
-			{},
-			{},
-			{},
-			{},
-			{},
-			{},
-			{},
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY" },
-			null
-		],
-		[
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY" },
-			{ "type": "SNOW" },
-			{ "type": "SNOW" },
-			{ "type": "SNOW" },
-			{ "type": "SNOW" },
-			{ "type": "SNOW" },
-			{},
-			{},
-			{},
-			{ "type": "MOVE_UP" },
-			{ "type": "MOVE_UP" },
-			{ "type": "MOVE_UP" },
-			{ "type": "MOVE_UP" },
-			{ "type": "MOVE_UP" },
-			{ "party": "FRIENDLY", "type": "GRASS" },
-			{ "party": "FRIENDLY", "type": "GRASS" },
-			{ "party": "FRIENDLY", "type": "GRASS" },
-			null
-		],
-		[
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY" },
-			null,
-			null,
-			null,
-			null,
-			null,
-			{},
-			{},
-			{},
-			null,
-			null,
-			null,
-			null,
-			{ "type": "MOVE_DOWN" },
-			{ "party": "FRIENDLY", "type": "GRASS" },
-			{ "party": "FRIENDLY", "type": "GRASS" },
-			{ "party": "FRIENDLY", "type": "GRASS" },
-			{ "type": "MOVE_UP" }
-		],
-		[
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY" },
-			null,
-			null,
-			null,
-			null,
-			null,
-			{},
-			{},
-			{},
-			null,
-			null,
-			null,
-			null,
-			{ "type": "MOVE_DOWN" },
-			{ "party": "FRIENDLY", "type": "GRASS" },
-			{ "party": "FRIENDLY", "type": "GRASS" },
-			{ "party": "FRIENDLY", "type": "GRASS" },
-			{ "type": "MOVE_UP" }
-		],
-		[
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY" },
-			null,
-			null,
-			null,
-			null,
-			null,
-			{},
-			{},
-			{},
-			null,
-			null,
-			null,
-			null,
-			{ "type": "MOVE_DOWN" },
-			{ "type": "LAVA" },
-			{ "type": "LAVA" },
-			{ "type": "LAVA" },
-			{ "type": "MOVE_UP" }
-		],
-		[
-			{},
-			{},
-			{},
-			null,
-			null,
-			null,
-			null,
-			null,
-			{ "party": "ENEMY", "fixed": true },
-			{ "party": "ENEMY", "fixed": true },
-			{ "party": "ENEMY", "fixed": true },
-			null,
-			null,
-			null,
-			null,
-			{ "type": "MOVE_DOWN" },
-			{ "party": "ENEMY", "type": "METAL" },
-			{ "party": "ENEMY", "type": "METAL" },
-			{ "party": "ENEMY", "type": "METAL" },
-			{ "type": "MOVE_UP" }
-		],
-		[
-			{ "party": "ENEMY" },
-			{ "party": "ENEMY" },
-			{ "party": "ENEMY" },
-			null,
-			null,
-			null,
-			null,
-			null,
-			{ "party": "ENEMY", "fixed": true },
-			{ "party": "ENEMY", "fixed": true },
-			{ "party": "ENEMY", "fixed": true },
-			null,
-			null,
-			null,
-			null,
-			{ "type": "MOVE_DOWN" },
-			{ "party": "ENEMY", "type": "METAL" },
-			{ "party": "ENEMY", "type": "METAL" },
-			{ "party": "ENEMY", "type": "METAL" },
-			{ "type": "MOVE_UP" }
-		],
-		[
-			{ "party": "ENEMY" },
-			{ "party": "ENEMY" },
-			{ "party": "ENEMY" },
-			null,
-			null,
-			null,
-			null,
-			null,
-			{ "party": "ENEMY", "fixed": true },
-			{ "party": "ENEMY", "fixed": true },
-			{ "party": "ENEMY", "fixed": true },
-			null,
-			null,
-			null,
-			null,
-			null,
-			{ "party": "ENEMY", "type": "METAL" },
-			{ "party": "ENEMY", "type": "METAL" },
-			{ "party": "ENEMY", "type": "METAL" },
-			null
-		],
-		[
-			{ "party": "ENEMY" },
-			{ "party": "ENEMY" },
-			{ "party": "ENEMY" },
-			null,
-			null,
-			null,
-			null,
-			null,
-			{ "party": "ENEMY", "fixed": true },
-			{ "party": "ENEMY", "fixed": true },
-			{ "party": "ENEMY", "fixed": true },
-			null,
-			null,
-			null,
-			null,
-			null,
-			{},
-			{},
-			{},
-			null
-		],
-		[
-			{},
-			{},
-			{},
-			null,
-			null,
-			null,
-			null,
-			null,
-			{ "party": "ENEMY", "fixed": true },
-			{ "party": "ENEMY", "fixed": true },
-			{ "party": "ENEMY", "fixed": true },
-			null,
-			null,
-			null,
-			null,
-			null,
-			{},
-			{},
-			{},
-			null
-		],
-		[
-			{},
-			{},
-			{},
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			{},
-			{},
-			{},
-			null
-		],
-		[
-			{ "party": "ENEMY" },
-			{ "party": "ENEMY" },
-			{ "party": "ENEMY" },
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			{ "party": "ENEMY" },
-			{ "party": "ENEMY" },
-			{ "party": "ENEMY" },
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			{ "party": "ENEMY" },
-			{ "party": "ENEMY" },
-			{ "party": "ENEMY" },
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			{ "party": "ENEMY" },
-			{ "party": "ENEMY" },
-			{ "party": "ENEMY" },
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			{},
-			{},
-			{},
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			{},
-			{},
-			{},
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			{},
-			{},
-			{},
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			{},
-			{},
-			{},
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null
-		]
-	]
-},
-{
-	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
-	"id": { "id": 19 },
-	"name": "Trailer Run",
-	"width": 14,
-	"height": 3,
-	"panels": [
-		[
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY" }
-		],
-		[
-			{ "party": "FRIENDLY", "type": "GRASS" },
-			{ "party": "FRIENDLY", "type": "GRASS" },
-			{ "party": "FRIENDLY", "type": "GRASS" }
-		],
-		[
-			{ "party": "FRIENDLY", "type": "GRASS" },
-			{ "party": "FRIENDLY", "type": "GRASS" },
-			{ "party": "FRIENDLY", "type": "GRASS" }
-		],
-		[
-			{ "party": "FRIENDLY", "type": "GRASS" },
-			{ "party": "FRIENDLY", "type": "GRASS" },
-			{ "party": "FRIENDLY", "type": "GRASS" }
-		],
-		[
-			{ "party": "FRIENDLY", "type": "GRASS" },
-			{ "party": "FRIENDLY", "type": "GRASS" },
-			{ "party": "FRIENDLY", "type": "GRASS" }
-		],
-		[
-			{ "party": "FRIENDLY", "type": "GRASS" },
-			{ "party": "FRIENDLY", "type": "GRASS" },
-			{ "party": "FRIENDLY", "type": "GRASS" }
-		],
-		[
-			{ "party": "FRIENDLY", "type": "GRASS" },
-			{ "party": "FRIENDLY", "type": "GRASS" },
-			{ "party": "FRIENDLY", "type": "GRASS" }
-		],
-		[
-			{ "party": "FRIENDLY", "type": "GRASS" },
-			{ "party": "FRIENDLY", "type": "GRASS" },
-			{ "party": "FRIENDLY", "type": "GRASS" }
-		],
-		[
-			{},
-			{},
-			{}
-		],
-		[
-			{},
-			{},
-			{}
-		],
-		[
-			{},
-			{},
-			{}
-		],
-		[
-			{},
-			{},
-			{}
-		],
-		[
-			{},
-			{},
-			{}
-		],
-		[
-			{},
-			{},
-			{}
-		]
-	]
-},
-{
-	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
-	"id": { "id": 20 },
-	"name": "Trailer Run 2",
-	"width": 14,
-	"height": 3,
-	"panels": [
-		[
-			{ "party": "FRIENDLY", "type": "METAL" },
-			{ "party": "FRIENDLY", "type": "METAL" },
-			{ "party": "FRIENDLY", "type": "METAL" }
-		],
-		[
-			{ "party": "FRIENDLY", "type": "METAL" },
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY", "type": "METAL" }
-		],
-		[
-			{ "party": "FRIENDLY", "type": "METAL" },
-			{ "party": "FRIENDLY", "type": "METAL" },
-			{ "party": "FRIENDLY", "type": "METAL" }
-		],
-		[
-			{ "party": "FRIENDLY", "type": "METAL" },
-			{ "party": "FRIENDLY", "type": "METAL" },
-			{ "party": "FRIENDLY", "type": "METAL" }
-		],
-		[
-			{ "party": "FRIENDLY", "type": "METAL" },
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY", "type": "METAL" }
-		],
-		[
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY", "type": "METAL" },
-			{ "party": "FRIENDLY" }
-		],
-		[
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY", "type": "METAL" }
-		],
-		[
-			{ "type": "METAL" },
-			{ "type": "METAL" },
-			{ "type": "METAL" }
-		],
-		[
-			{ "type": "METAL" },
-			{},
-			{ "type": "METAL" }
-		],
-		[
-			{ "type": "METAL" },
-			{},
-			{}
-		],
-		[
-			{},
-			{},
-			{}
-		],
-		[
-			{},
-			{},
-			{}
-		],
-		[
-			{},
-			{},
-			{}
-		],
-		[
-			{},
-			{},
-			{}
-		]
-	]
-},
-{
-	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
 	"id": { "id": 21 },
-	"name": "Azure Run",
+	"name": "Run: Azure Campaign",
 	"width": 37,
 	"height": 21,
 	"panels": [
@@ -1762,9 +901,9 @@
 			null,
 			null,
 			null,
-			{},
-			{},
-			{},
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "fixed": true },
 			null,
 			null,
 			null,
@@ -1774,10 +913,10 @@
 			null,
 			null,
 			null,
-			{},
-			{},
-			{},
-			{}
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "fixed": true }
 		],
 		[
 			null,
@@ -2223,7 +1362,7 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
 	"id": { "id": 22 },
-	"name": "Bomb Run",
+	"name": "Run: Break The Servers",
 	"width": 44,
 	"height": 20,
 	"panels": [
@@ -3200,7 +2339,7 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
 	"id": { "id": 10 },
-	"name": "Mirrored",
+	"name": "Run: Mirrored",
 	"width": 29,
 	"height": 28,
 	"panels": [
@@ -4079,7 +3218,7 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
 	"id": { "id": 11 },
-	"name": "Disconnected",
+	"name": "Run: Disconnected",
 	"width": 28,
 	"height": 21,
 	"panels": [
@@ -4732,7 +3871,7 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
 	"id": { "id": 12 },
-	"name": "Mid-Side",
+	"name": "Run: Mid-Side",
 	"width": 16,
 	"height": 21,
 	"panels": [
@@ -5109,7 +4248,7 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
 	"id": { "id": 16 },
-	"name": "Roundabout",
+	"name": "Run: Roundabout",
 	"width": 14,
 	"height": 22,
 	"panels": [
@@ -5456,8 +4595,6 @@
 	"id": { "id": 17 },
 	"name": "Ice Middle",
 	"random": true,
-	"width": 6,
-	"height": 3,
 	"panels": [
 		[
 			{ "party": "FRIENDLY", "fixed": true },
@@ -5496,8 +4633,6 @@
 	"id": { "id": 18 },
 	"name": "Lava Edges",
 	"random": true,
-	"width": 6,
-	"height": 3,
 	"panels": [
 		[
 			{ "party": "FRIENDLY", "fixed": true },
@@ -5536,8 +4671,6 @@
 	"id": { "id": 23 },
 	"name": "Grass Corners",
 	"random": true,
-	"width": 6,
-	"height": 3,
 	"panels": [
 		[
 			{ "party": "FRIENDLY", "type": "GRASS", "fixed": true },
@@ -5576,7 +4709,6 @@
 	"id": { "id": 24 },
 	"name": "Hiding Places",
 	"random": true,
-	"width": 6,
 	"height": 5,
 	"panels": [
 		[
@@ -5680,8 +4812,6 @@
 	"id": { "id": 26 },
 	"name": "Sandy Place",
 	"random": true,
-	"width": 6,
-	"height": 3,
 	"panels": [
 		[
 			{ "party": "FRIENDLY", "type": "HOLE", "fixed": true },
@@ -5730,15 +4860,15 @@
 			{ "party": "FRIENDLY", "fixed": true }
 		],
 		[
+			{ "party": "FRIENDLY" },
 			{ "party": "FRIENDLY", "type": "CRACKED" },
 			{ "party": "FRIENDLY", "type": "CRACKED" },
-			{ "party": "FRIENDLY", "type": "CRACKED" },
-			{ "party": "FRIENDLY", "type": "CRACKED" }
+			{ "party": "FRIENDLY" }
 		],
 		[
 			{},
-			{},
-			{},
+			{ "type": "CRACKED" },
+			{ "type": "CRACKED" },
 			{}
 		],
 		[
@@ -5749,15 +4879,15 @@
 		],
 		[
 			{},
-			{},
-			{},
+			{ "type": "CRACKED" },
+			{ "type": "CRACKED" },
 			{}
 		],
 		[
+			{ "party": "ENEMY" },
 			{ "party": "ENEMY", "type": "CRACKED" },
 			{ "party": "ENEMY", "type": "CRACKED" },
-			{ "party": "ENEMY", "type": "CRACKED" },
-			{ "party": "ENEMY", "type": "CRACKED" }
+			{ "party": "ENEMY" }
 		],
 		[
 			{ "party": "ENEMY", "fixed": true },
@@ -5770,9 +4900,8 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
 	"id": { "id": 28 },
-	"name": "Tutorial Run",
+	"name": "Run: Tutorial",
 	"width": 29,
-	"height": 3,
 	"panels": [
 		[
 			{ "party": "FRIENDLY" },
@@ -5922,8 +5051,6 @@
 	"id": { "id": 29 },
 	"name": "Metal Border",
 	"random": true,
-	"width": 6,
-	"height": 3,
 	"panels": [
 		[
 			{ "party": "FRIENDLY", "type": "METAL", "fixed": true },
@@ -5960,155 +5087,80 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
 	"id": { "id": 30 },
-	"name": "Empty",
+	"name": "Cutscene: Empty",
 	"width": 13,
-	"height": 3,
 	"panels": [
 		[
-			{},
-			{},
-			{}
+			{ "type": null },
+			{ "type": null },
+			{ "type": null }
 		],
 		[
-			{},
-			{},
-			{}
+			{ "type": null },
+			{ "type": null },
+			{ "type": null }
 		],
 		[
-			{},
-			{},
-			{}
+			{ "type": null },
+			{ "type": null },
+			{ "type": null }
 		],
 		[
-			{},
-			{},
-			{}
+			{ "type": null },
+			{ "type": null },
+			{ "type": null }
 		],
 		[
-			{},
-			{},
-			{}
+			{ "type": null },
+			{ "type": null },
+			{ "type": null }
 		],
 		[
-			{},
-			{},
-			{}
+			{ "type": null },
+			{ "type": null },
+			{ "type": null }
 		],
 		[
-			{},
-			{},
-			{}
+			{ "type": null },
+			{ "type": null },
+			{ "type": null }
 		],
 		[
-			{},
-			{},
-			{}
+			{ "type": null },
+			{ "type": null },
+			{ "type": null }
 		],
 		[
-			{},
-			{},
-			{}
+			{ "type": null },
+			{ "type": null },
+			{ "type": null }
 		],
 		[
-			{},
-			{},
-			{}
+			{ "type": null },
+			{ "type": null },
+			{ "type": null }
 		],
 		[
-			{},
-			{},
-			{}
+			{ "type": null },
+			{ "type": null },
+			{ "type": null }
 		],
 		[
-			{},
-			{},
-			{}
+			{ "type": null },
+			{ "type": null },
+			{ "type": null }
 		],
 		[
-			{},
-			{},
-			{}
-		]
-	]
-},
-{
-	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
-	"id": { "id": 31 },
-	"name": "Empty Desert",
-	"width": 13,
-	"height": 3,
-	"panels": [
-		[
-			{ "type": "HOLE" },
-			{ "type": "HOLE" },
-			{ "type": "HOLE" }
-		],
-		[
-			{ "type": "HOLE" },
-			{ "type": "HOLE" },
-			{ "type": "HOLE" }
-		],
-		[
-			{ "type": "HOLE" },
-			{ "type": "HOLE" },
-			{ "type": "HOLE" }
-		],
-		[
-			{ "type": "HOLE" },
-			{ "type": "HOLE" },
-			{ "type": "HOLE" }
-		],
-		[
-			{ "type": "HOLE" },
-			{ "type": "HOLE" },
-			{ "type": "HOLE" }
-		],
-		[
-			{ "type": "HOLE" },
-			{ "type": "HOLE" },
-			{ "type": "HOLE" }
-		],
-		[
-			{ "type": "HOLE" },
-			{ "type": "HOLE" },
-			{ "type": "HOLE" }
-		],
-		[
-			{ "type": "HOLE" },
-			{ "type": "HOLE" },
-			{ "type": "HOLE" }
-		],
-		[
-			{ "type": "HOLE" },
-			{ "type": "HOLE" },
-			{ "type": "HOLE" }
-		],
-		[
-			{ "type": "HOLE" },
-			{ "type": "HOLE" },
-			{ "type": "HOLE" }
-		],
-		[
-			{ "type": "HOLE" },
-			{ "type": "HOLE" },
-			{ "type": "HOLE" }
-		],
-		[
-			{ "type": "HOLE" },
-			{ "type": "HOLE" },
-			{ "type": "HOLE" }
-		],
-		[
-			{ "type": "HOLE" },
-			{ "type": "HOLE" },
-			{ "type": "HOLE" }
+			{ "type": null },
+			{ "type": null },
+			{ "type": null }
 		]
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
 	"id": { "id": 32 },
-	"name": "Unnamed",
+	"name": "Test: Unnamed",
 	"width": 34,
 	"height": 17,
 	"panels": [
@@ -6757,6 +5809,378 @@
 			{},
 			null,
 			null
+		]
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
+	"id": { "id": 33 },
+	"name": "Adventure: Zone Finish",
+	"width": 5,
+	"height": 5,
+	"panels": [
+		[
+			null,
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" },
+			null
+		],
+		[
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" }
+		],
+		[
+			null,
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" },
+			null
+		],
+		[
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" }
+		],
+		[
+			null,
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" },
+			null
+		]
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
+	"id": { "id": 34 },
+	"name": "Test: Default Blank",
+	"panels": [
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{},
+			{},
+			{}
+		]
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
+	"id": { "id": 31 },
+	"name": "Adventure: Voc Upgrade",
+	"width": 5,
+	"height": 7,
+	"panels": [
+		[
+			{ "party": "FRIENDLY", "fixed": true },
+			null,
+			null,
+			{ "party": "FRIENDLY", "fixed": true },
+			null,
+			null,
+			{ "party": "FRIENDLY", "fixed": true }
+		],
+		[
+			null,
+			null,
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "fixed": true },
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "fixed": true },
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "fixed": true },
+			null,
+			null
+		],
+		[
+			{ "party": "FRIENDLY", "fixed": true },
+			null,
+			null,
+			{ "party": "FRIENDLY", "fixed": true },
+			null,
+			null,
+			{ "party": "FRIENDLY", "fixed": true }
+		]
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
+	"id": { "id": 15 },
+	"name": "Donut",
+	"random": true,
+	"panels": [
+		[
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "fixed": true }
+		],
+		[
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" }
+		],
+		[
+			{},
+			null,
+			{}
+		],
+		[
+			{},
+			null,
+			{}
+		],
+		[
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" }
+		],
+		[
+			{ "party": "ENEMY", "fixed": true },
+			{ "party": "ENEMY", "fixed": true },
+			{ "party": "ENEMY", "fixed": true }
+		]
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
+	"id": { "id": 9 },
+	"name": "Big Donut",
+	"randomCoop": true,
+	"height": 5,
+	"panels": [
+		[
+			null,
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "fixed": true },
+			null
+		],
+		[
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" }
+		],
+		[
+			{},
+			{},
+			null,
+			{},
+			{}
+		],
+		[
+			{},
+			{},
+			null,
+			{},
+			{}
+		],
+		[
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" }
+		],
+		[
+			null,
+			{ "party": "ENEMY", "fixed": true },
+			{ "party": "ENEMY", "fixed": true },
+			{ "party": "ENEMY", "fixed": true },
+			null
+		]
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
+	"id": { "id": 19 },
+	"name": "Ice Cave Field",
+	"camera": { "maxX": 5, "maxY": 2 },
+	"width": 8,
+	"panels": [
+		[
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "fixed": true }
+		],
+		[
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" }
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" }
+		],
+		[
+			{ "party": "ENEMY", "fixed": true },
+			{ "party": "ENEMY", "fixed": true },
+			{ "party": "ENEMY", "fixed": true }
+		],
+		[
+			{ "party": "ENEMY", "type": null, "fixed": true },
+			{ "party": "ENEMY", "type": null, "fixed": true },
+			null
+		],
+		[
+			{ "party": "ENEMY", "type": null, "fixed": true },
+			{ "party": "ENEMY", "type": null, "fixed": true },
+			null
+		]
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
+	"id": { "id": 20 },
+	"name": "Voc Preview",
+	"width": 4,
+	"panels": [
+		[
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "fixed": true }
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{ "party": "ENEMY", "fixed": true },
+			{ "party": "ENEMY", "fixed": true },
+			{ "party": "ENEMY", "fixed": true }
+		]
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
+	"id": { "id": 35 },
+	"name": "Voc Preview 2",
+	"width": 4,
+	"panels": [
+		[
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "fixed": true }
+		],
+		[
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" }
+		],
+		[
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" }
+		],
+		[
+			{ "party": "ENEMY", "fixed": true },
+			{ "party": "ENEMY", "fixed": true },
+			{ "party": "ENEMY", "fixed": true }
+		]
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
+	"id": { "id": 36 },
+	"name": "A-Final Boss Field",
+	"width": 7,
+	"panels": [
+		[
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "fixed": true }
+		],
+		[
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" }
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" }
+		],
+		[
+			{ "party": "ENEMY", "fixed": true },
+			{ "party": "ENEMY", "fixed": true },
+			{ "party": "ENEMY", "fixed": true }
+		],
+		[
+			{ "party": "ENEMY", "fixed": true },
+			{ "party": "ENEMY", "fixed": true },
+			{ "party": "ENEMY", "fixed": true }
+		],
+		[
+			{ "party": "ENEMY", "fixed": true },
+			{ "party": "ENEMY", "fixed": true },
+			{ "party": "ENEMY", "fixed": true }
 		]
 	]
 }

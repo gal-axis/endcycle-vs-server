@@ -4,7 +4,7 @@
 	"id": { "id": 1 },
 	"name": "The Path Home",
 	"color": { "r": 0.7019608, "g": 0.28627452, "b": 0.16078432, "a": 1 },
-	"description": "A young Noise Hunter pledges to protect the roads of the world, but Rozu must first find his own path.",
+	"description": "In the year 2X83.... a young Noise Hunter pledges to protect the roads of the world, but Rozu must first find his own path.",
 	"victory": "You have brought Rozu one step closer to becoming a great Noise Hunter!",
 	"character": { "id": 7 },
 	"music": { "id": 6 },
@@ -18,13 +18,10 @@
 			"timeTwoStars": 20,
 			"timeOneStar": 30,
 			"onLoad": {
+				"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 				"scripts": [
 					{
-						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
-						"fields": [
-							{ "class": "java.lang.String", "value": "player" },
-							{ "class": "java.lang.Boolean", "value": false }
-						]
+						"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "player" }
 					}
 				]
 			},
@@ -41,20 +38,13 @@
 			"timeTwoStars": 20,
 			"timeOneStar": 30,
 			"onLoad": {
+				"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 				"scripts": [
 					{
-						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
-						"fields": [
-							{ "class": "java.lang.String", "value": "player" },
-							{ "class": "java.lang.Boolean", "value": false }
-						]
+						"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "player" }
 					},
 					{
-						"script": "com.one2b3.endcycle.features.scripts.battle.ShakeEntityScript",
-						"fields": [
-							{ "class": "java.lang.String", "value": "neo" },
-							{ "class": "java.lang.Float", "value": 1 }
-						]
+						"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ShakeEntityScript", "name": "neo", "intensity": 1 }
 					}
 				]
 			},
@@ -79,13 +69,10 @@
 			"dialogue": { "id": 11 },
 			"startAfterDialogue": false,
 			"onLoad": {
+				"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 				"scripts": [
 					{
-						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
-						"fields": [
-							{ "class": "java.lang.String", "value": "player" },
-							{ "class": "java.lang.Boolean", "value": false }
-						]
+						"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "player" }
 					}
 				]
 			},
@@ -103,11 +90,13 @@
 			"onLoad": {},
 			"onWin": {}
 		}
-	]
+	],
+	"unlockCondition": {
+		"onslaughtScore": {}
+	}
 },
 {
 	"class": "com.one2b3.endcycle.features.campaign.CampaignData",
-	"id": {},
 	"name": "Spark's Battle",
 	"color": { "r": 0.92156863, "g": 0.56078434, "b": 0.47843137, "a": 1 },
 	"description": "Tough fighter Spark is looking for a way to use her powers for more than just tournaments. This proves harder than she thought.",
@@ -123,13 +112,10 @@
 			"dialogueAfter": { "id": 15 },
 			"leaveAlive": true,
 			"onLoad": {
+				"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 				"scripts": [
 					{
-						"script": "com.one2b3.endcycle.features.scripts.battle.CreateAudienceScript",
-						"fields": [
-							{ "class": "java.lang.Integer", "value": 12 },
-							{ "class": "java.lang.Float", "value": 0.2 }
-						]
+						"script": { "class": "com.one2b3.endcycle.features.scripts.battle.CreateAudienceScript", "spectatorAmount": 12, "cheerTimer": 0.2 }
 					}
 				]
 			},
@@ -143,27 +129,16 @@
 			"dialogueAfter": { "id": 17 },
 			"startAfterDialogue": false,
 			"onLoad": {
+				"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 				"scripts": [
 					{
-						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
-						"fields": [
-							{ "class": "java.lang.String", "value": "greed" },
-							{ "class": "java.lang.Boolean", "value": false }
-						]
+						"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "greed" }
 					},
 					{
-						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
-						"fields": [
-							{ "class": "java.lang.String", "value": "qt" },
-							{ "class": "java.lang.Boolean", "value": false }
-						]
+						"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "qt" }
 					},
 					{
-						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
-						"fields": [
-							{ "class": "java.lang.String", "value": "fin" },
-							{ "class": "java.lang.Boolean", "value": false }
-						]
+						"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "fin" }
 					}
 				]
 			},
@@ -178,13 +153,10 @@
 			"startAfterDialogue": false,
 			"leaveAlive": true,
 			"onLoad": {
+				"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 				"scripts": [
 					{
-						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
-						"fields": [
-							{ "class": "java.lang.String", "value": "fin" },
-							{ "class": "java.lang.Boolean", "value": false }
-						]
+						"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "fin" }
 					}
 				]
 			},
@@ -199,20 +171,13 @@
 			"startAfterDialogue": false,
 			"endAfterDialogue": false,
 			"onLoad": {
+				"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 				"scripts": [
 					{
-						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
-						"fields": [
-							{ "class": "java.lang.String", "value": "sofa" },
-							{ "class": "java.lang.Boolean", "value": false }
-						]
+						"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "sofa" }
 					},
 					{
-						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
-						"fields": [
-							{ "class": "java.lang.String", "value": "bomb" },
-							{ "class": "java.lang.Boolean", "value": false }
-						]
+						"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "bomb" }
 					}
 				]
 			},
@@ -240,13 +205,10 @@
 			"timeTwoStars": 28,
 			"timeOneStar": 44,
 			"onLoad": {
+				"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 				"scripts": [
 					{
-						"script": "com.one2b3.endcycle.features.scripts.battle.CreateAudienceScript",
-						"fields": [
-							{ "class": "java.lang.Integer", "value": 14 },
-							{ "class": "java.lang.Float", "value": 0.15 }
-						]
+						"script": { "class": "com.one2b3.endcycle.features.scripts.battle.CreateAudienceScript", "spectatorAmount": 14, "cheerTimer": 0.15 }
 					}
 				]
 			},
@@ -254,6 +216,7 @@
 		}
 	],
 	"unlockCondition": {
+		"onslaughtScore": {},
 		"campaigns": [
 			{
 				"campaign": { "id": 1 }
@@ -280,20 +243,13 @@
 			"endAfterDialogue": false,
 			"leaveAlive": true,
 			"onLoad": {
+				"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 				"scripts": [
 					{
-						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
-						"fields": [
-							{ "class": "java.lang.String", "value": "agent1" },
-							{ "class": "java.lang.Boolean", "value": false }
-						]
+						"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "agent1" }
 					},
 					{
-						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
-						"fields": [
-							{ "class": "java.lang.String", "value": "agent2" },
-							{ "class": "java.lang.Boolean", "value": false }
-						]
+						"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "agent2" }
 					}
 				]
 			},
@@ -310,13 +266,10 @@
 			"timeTwoStars": 28,
 			"timeOneStar": 44,
 			"onLoad": {
+				"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 				"scripts": [
 					{
-						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
-						"fields": [
-							{ "class": "java.lang.String", "value": "spark" },
-							{ "class": "java.lang.Boolean", "value": false }
-						]
+						"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "spark" }
 					}
 				]
 			},
@@ -331,13 +284,10 @@
 			"startAfterDialogue": false,
 			"endAfterDialogue": false,
 			"onLoad": {
+				"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 				"scripts": [
 					{
-						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
-						"fields": [
-							{ "class": "java.lang.String", "value": "rozu" },
-							{ "class": "java.lang.Boolean", "value": false }
-						]
+						"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "rozu" }
 					}
 				]
 			},
@@ -376,13 +326,10 @@
 			"endAfterDialogue": false,
 			"leaveAlive": true,
 			"onLoad": {
+				"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 				"scripts": [
 					{
-						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
-						"fields": [
-							{ "class": "java.lang.String", "value": "spark" },
-							{ "class": "java.lang.Boolean", "value": false }
-						]
+						"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "spark" }
 					}
 				]
 			},
@@ -390,6 +337,7 @@
 		}
 	],
 	"unlockCondition": {
+		"onslaughtScore": {},
 		"campaigns": [
 			{
 				"campaign": {}
@@ -420,7 +368,7 @@
 		},
 		{
 			"name": "You lack credentials",
-			"description": "Puppy isn't quite right with the Punks' new leader",
+			"description": "Flink isn't quite right with the Punks' new leader",
 			"battle": { "id": 8 },
 			"dialogue": { "id": 60 },
 			"startAfterDialogue": false,
@@ -428,30 +376,28 @@
 			"leaveAlive": true,
 			"onLoad": {},
 			"onWin": {
+				"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 				"scripts": [
 					{
-						"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
-						"fields": [
-							{ "class": "com.one2b3.endcycle.utils.ID", "id": 87 }
-						]
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+							"dialogue": { "id": 87 }
+						}
 					}
 				]
 			}
 		},
 		{
 			"name": "Rage against the Noise",
-			"description": "Brozu teaches a Puppy the ropes",
+			"description": "Brozu teaches punks the ropes",
 			"battle": { "id": 23 },
 			"dialogue": { "id": 64 },
 			"startAfterDialogue": false,
 			"onLoad": {
+				"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 				"scripts": [
 					{
-						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
-						"fields": [
-							{ "class": "java.lang.String", "value": "noise" },
-							{ "class": "java.lang.Boolean", "value": false }
-						]
+						"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "noise" }
 					}
 				]
 			},
@@ -462,10 +408,10 @@
 					"scripts": {
 						"scripts": [
 							{
-								"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
-								"fields": [
-									{ "class": "com.one2b3.endcycle.utils.ID", "id": 63 }
-								]
+								"script": {
+									"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+									"dialogue": { "id": 63 }
+								}
 							}
 						]
 					}
@@ -477,10 +423,10 @@
 					"scripts": {
 						"scripts": [
 							{
-								"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
-								"fields": [
-									{ "class": "com.one2b3.endcycle.utils.ID", "id": 66 }
-								]
+								"script": {
+									"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+									"dialogue": { "id": 66 }
+								}
 							}
 						]
 					}
@@ -495,13 +441,10 @@
 			"dialogueAfter": { "id": 75 },
 			"startAfterDialogue": false,
 			"onLoad": {
+				"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 				"scripts": [
 					{
-						"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
-						"fields": [
-							{ "class": "java.lang.String", "value": "player" },
-							{ "class": "java.lang.Boolean", "value": false }
-						]
+						"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "player" }
 					}
 				]
 			},
@@ -512,10 +455,10 @@
 					"scripts": {
 						"scripts": [
 							{
-								"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
-								"fields": [
-									{ "class": "com.one2b3.endcycle.utils.ID", "id": 70 }
-								]
+								"script": {
+									"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+									"dialogue": { "id": 70 }
+								}
 							}
 						]
 					}
@@ -525,20 +468,15 @@
 					"scripts": {
 						"scripts": [
 							{
-								"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
 								"delay": 0.6,
-								"fields": [
-									{ "class": "com.one2b3.endcycle.utils.ID", "id": 72 }
-								]
+								"script": {
+									"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+									"dialogue": { "id": 72 }
+								}
 							},
 							{
-								"script": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript",
 								"delay": 0.8,
-								"fields": [
-									{ "class": "java.lang.String", "value": "cress" },
-									{ "class": "java.lang.Boolean", "value": true },
-									{ "class": "java.lang.Boolean", "value": false }
-								]
+								"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "cress", "turned": true }
 							}
 						]
 					}
@@ -550,67 +488,31 @@
 					"scripts": {
 						"scripts": [
 							{
-								"script": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript",
-								"fields": [
-									{ "class": "java.lang.String", "value": "player" },
-									{ "class": "java.lang.Boolean", "value": true },
-									{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.movers.MoveType", "value": "INSTANT_TILE" },
-									{ "class": "java.lang.Integer", "value": 0 },
-									{ "class": "java.lang.Integer", "value": -2 },
-									{ "class": "java.lang.Boolean", "value": false },
-									{ "class": "java.lang.Boolean", "value": false }
-								]
+								"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "player", "relative": true, "moveType": "INSTANT_TILE", "y": -2 }
 							},
 							{
-								"script": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript",
-								"fields": [
-									{ "class": "java.lang.String", "value": "rozu" },
-									{ "class": "java.lang.Boolean", "value": true },
-									{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.movers.MoveType", "value": "INSTANT_TILE" },
-									{ "class": "java.lang.Integer", "value": 0 },
-									{ "class": "java.lang.Integer", "value": 1 },
-									{ "class": "java.lang.Boolean", "value": false },
-									{ "class": "java.lang.Boolean", "value": false }
-								]
+								"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "rozu", "relative": true, "moveType": "INSTANT_TILE", "y": 1 }
 							},
 							{
-								"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
-								"fields": [
-									{ "class": "java.lang.String", "value": "player" },
-									{ "class": "java.lang.Boolean", "value": false }
-								]
+								"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "player" }
 							},
 							{
-								"script": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript",
-								"fields": [
-									{ "class": "java.lang.String", "value": "cress" },
-									{ "class": "java.lang.Boolean", "value": true },
-									{ "class": "java.lang.Boolean", "value": false }
-								]
+								"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "cress", "turned": true }
 							},
 							{
-								"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
 								"delay": 0.6,
-								"fields": [
-									{ "class": "java.lang.String", "value": "player" },
-									{ "class": "java.lang.Boolean", "value": true }
-								]
+								"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "player", "animation": true }
 							},
 							{
-								"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
 								"delay": 1,
-								"fields": [
-									{ "class": "com.one2b3.endcycle.utils.ID", "id": 76 }
-								]
+								"script": {
+									"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+									"dialogue": { "id": 76 }
+								}
 							},
 							{
-								"script": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript",
 								"delay": 1,
-								"fields": [
-									{ "class": "java.lang.String", "value": "rozu" },
-									{ "class": "java.lang.Boolean", "value": true },
-									{ "class": "java.lang.Boolean", "value": false }
-								]
+								"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "rozu", "turned": true }
 							}
 						]
 					}
@@ -625,39 +527,22 @@
 			"startAfterDialogue": false,
 			"endAfterDialogue": false,
 			"onLoad": {
+				"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 				"scripts": [
 					{
-						"script": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript",
 						"delay": 1.2,
-						"fields": [
-							{ "class": "java.lang.String", "value": "puppy" },
-							{ "class": "java.lang.Boolean", "value": true },
-							{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.movers.MoveType", "value": "ANIMATED_TILE" },
-							{ "class": "java.lang.Integer", "value": 1 },
-							{ "class": "java.lang.Integer", "value": 0 },
-							{ "class": "java.lang.Boolean", "value": false },
-							{ "class": "java.lang.Boolean", "value": false }
-						]
+						"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "puppy", "relative": true, "moveType": "ANIMATED_TILE", "x": 1 }
 					},
 					{
-						"script": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript",
 						"delay": 1.9,
-						"fields": [
-							{ "class": "java.lang.String", "value": "noise 1" },
-							{ "class": "java.lang.Boolean", "value": false },
-							{ "class": "com.one2b3.endcycle.screens.battle.entities.attributes.movers.MoveType", "value": "ANIMATED_TILE" },
-							{ "class": "java.lang.Integer", "value": 4 },
-							{ "class": "java.lang.Integer", "value": 1 },
-							{ "class": "java.lang.Boolean", "value": false },
-							{ "class": "java.lang.Boolean", "value": false }
-						]
+						"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "noise 1", "moveType": "ANIMATED_TILE", "x": 4, "y": 1 }
 					},
 					{
-						"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
 						"delay": 2.2,
-						"fields": [
-							{ "class": "com.one2b3.endcycle.utils.ID", "id": 78 }
-						]
+						"script": {
+							"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+							"dialogue": { "id": 78 }
+						}
 					}
 				]
 			},
@@ -668,10 +553,10 @@
 					"scripts": {
 						"scripts": [
 							{
-								"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
-								"fields": [
-									{ "class": "com.one2b3.endcycle.utils.ID", "id": 77 }
-								]
+								"script": {
+									"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+									"dialogue": { "id": 77 }
+								}
 							}
 						]
 					}
@@ -683,18 +568,14 @@
 					"scripts": {
 						"scripts": [
 							{
-								"script": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript",
-								"fields": [
-									{ "class": "java.lang.String", "value": "del" },
-									{ "class": "java.lang.Boolean", "value": false }
-								]
+								"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "del" }
 							},
 							{
-								"script": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
 								"delay": 0.6,
-								"fields": [
-									{ "class": "com.one2b3.endcycle.utils.ID", "id": 84 }
-								]
+								"script": {
+									"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+									"dialogue": { "id": 84 }
+								}
 							}
 						]
 					}
@@ -703,6 +584,7 @@
 		}
 	],
 	"unlockCondition": {
+		"onslaughtScore": {},
 		"campaigns": [
 			{
 				"campaign": { "id": 2 }
@@ -718,6 +600,7 @@
 	"description": "This campaign will be unlocked with a future update, so stay tuned!",
 	"character": { "id": 9 },
 	"unlockCondition": {
+		"onslaughtScore": {},
 		"campaigns": [
 			{
 				"campaign": { "id": 2 }
@@ -747,6 +630,7 @@
 		}
 	],
 	"unlockCondition": {
+		"onslaughtScore": {},
 		"campaigns": [
 			{
 				"campaign": { "id": 2 }

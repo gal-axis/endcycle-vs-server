@@ -2,10 +2,8 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Fin" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/low.wav", "volume": 1, "pitch": 1.3 }
-	},
 	"card": { "id": 405 },
+	"win": { "id": 679 },
 	"patchworks": [
 		{
 			"id": { "id": 74 }
@@ -14,10 +12,101 @@
 	"element": "WATER",
 	"speed": 75,
 	"crush": 50,
+	"skills": [ "Overheal" ],
+	"ultraVoc": {
+		"cutIn": {
+			"drawable": { "id": 58 }
+		},
+		"voc": { "id": 66 }
+	},
+	"voice": {
+		"sound": { "sound": "ui/dialogue/low.wav", "volume": 1, "pitch": 1.3 }
+	},
+	"adventure": {
+		"faction": "Independent",
+		"money": 700,
+		"startZone": {},
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 43 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		},
+		"startScript": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+			"script": { "id": 5 }
+		},
+		"path": { "id": 2 }
+	},
 	"visible": true,
 	"customizable": true,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
-	"skills": [ "Overheal" ],
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
+	"shop": {
+		"enter": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Fin.1" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Fin.2" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Fin.3" }
+			}
+		],
+		"confirm": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Fin.10" }
+			}
+		],
+		"vocBuy": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Fin.4" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Fin.5" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Fin.7" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Fin.8" }
+			}
+		],
+		"otherBuy": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Fin.6" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Fin.9" }
+			}
+		]
+	},
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -35,10 +124,8 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 2 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Spark" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/high.wav", "volume": 1, "pitch": 1.4 }
-	},
 	"card": { "id": 414 },
+	"win": { "id": 678 },
 	"patchworks": [
 		{
 			"id": { "id": 93 }
@@ -48,24 +135,128 @@
 	"health": 900,
 	"power": 150,
 	"speed": 75,
+	"skills": [ "Fighter" ],
+	"ultraVoc": {
+		"cutIn": {
+			"drawable": { "id": 38 }
+		},
+		"voc": { "id": 68 }
+	},
+	"voice": {
+		"sound": { "sound": "ui/dialogue/high.wav", "volume": 1, "pitch": 1.4 }
+	},
+	"adventure": {
+		"faction": "Crimson",
+		"money": 900,
+		"startZone": { "id": 1 },
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": {},
+							"style": null
+						},
+						{
+							"id": { "id": 10016 },
+							"style": null
+						},
+						{
+							"id": { "id": 10102 },
+							"style": null
+						},
+						{
+							"id": { "id": 9 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		},
+		"startScript": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+			"script": { "id": 11 }
+		},
+		"path": { "id": 1 }
+	},
 	"visible": true,
 	"customizable": true,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
-	"skills": [ "Fighter" ],
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
+	"shop": {
+		"enter": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Spark.1" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Spark.2" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Spark.3" },
+				"chance": 0.2
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Spark.4" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Spark.5" }
+			}
+		],
+		"confirm": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Spark.14" }
+			}
+		],
+		"vocBuy": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Spark.8" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Spark.9" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Spark.10" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Spark.12" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Spark.13" }
+			}
+		],
+		"otherBuy": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Spark.6" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Spark.7" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Spark.11" }
+			}
+		]
+	},
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
 	"customizationUnlockCondition": {
 		"onslaughtScore": {},
-		"campaigns": [
-			{
-				"campaign": {}
-			}
-		],
 		"affinities": [
 			{
 				"character": { "id": 2 },
 				"amount": 1
+			}
+		],
+		"campaigns": [
+			{
+				"campaign": {}
 			}
 		]
 	}
@@ -74,10 +265,8 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 7 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Rozu" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"card": { "id": 390 },
+	"win": { "id": 685 },
 	"patchworks": [
 		{
 			"id": { "id": 108 }
@@ -86,10 +275,101 @@
 	"health": 1100,
 	"power": 75,
 	"crush": 75,
+	"skills": [ "Analyst" ],
+	"ultraVoc": {
+		"cutIn": {
+			"drawable": { "id": 56 }
+		},
+		"initialGauge": 15,
+		"voc": { "id": 67 }
+	},
+	"adventure": {
+		"faction": "Crimson",
+		"startZone": { "id": 4 },
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 1 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10114 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		},
+		"startScript": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+			"script": { "id": 12 }
+		},
+		"path": {}
+	},
 	"visible": true,
 	"customizable": true,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
-	"skills": [ "Analyst" ],
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
+	"shop": {
+		"enter": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Rozu.1" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Rozu.2" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Rozu.3" }
+			}
+		],
+		"confirm": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Rozu.11" }
+			}
+		],
+		"vocBuy": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Rozu.4" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Rozu.5" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Rozu.6" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Rozu.9" }
+			}
+		],
+		"otherBuy": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Rozu.7" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Rozu.8" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Rozu.10" }
+			}
+		]
+	},
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -107,9 +387,6 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 5 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Neo" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"card": { "id": 422 },
 	"patchworks": [
 		{
@@ -119,15 +396,76 @@
 	"health": 1100,
 	"speed": 125,
 	"crush": 50,
+	"skills": [ "Virtual" ],
+	"ultraVoc": {
+		"cutIn": {
+			"drawable": { "id": 643 },
+			"scaleX": 7,
+			"scaleY": 7
+		},
+		"voc": { "id": 69 }
+	},
+	"adventure": {
+		"faction": "Independent",
+		"money": 600,
+		"startZone": { "id": 2 },
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10016 },
+							"style": null
+						},
+						{
+							"id": { "id": 10102 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		},
+		"changes": [
+			{
+				"side": "Azure",
+				"character": { "id": 13 },
+				"paletteChanges": [ 0, 3, -1, -1, 1 ]
+			},
+			{
+				"side": "Crimson",
+				"character": { "id": 23 },
+				"paletteChanges": [ 3, 0, -1, 2, 1 ]
+			}
+		],
+		"startScript": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+			"script": { "id": 13 }
+		},
+		"path": { "id": 3 }
+	},
 	"visible": true,
 	"tease": true,
 	"nameable": true,
 	"customizable": true,
 	"price": 4000,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
-	"skills": [ "Virtual" ],
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
-		"battlesFought": 15,
 		"onslaughtScore": {}
 	},
 	"customizationUnlockCondition": {
@@ -138,10 +476,8 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 13 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "ASGrunt" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/high.wav", "volume": 1, "pitch": 1 }
-	},
 	"card": { "id": 397 },
+	"win": { "id": 683 },
 	"patchworks": [
 		{
 			"id": { "id": 3 },
@@ -155,13 +491,124 @@
 	"power": 50,
 	"speed": 150,
 	"crush": 75,
+	"skills": [ "Combos" ],
+	"ultraVoc": {
+		"cutIn": {
+			"drawable": { "id": 645 }
+		},
+		"gaugeRequired": 10,
+		"voc": { "id": 74 }
+	},
+	"voice": {
+		"sound": { "sound": "ui/dialogue/high.wav", "volume": 1, "pitch": 1 }
+	},
+	"adventure": {
+		"faction": "Azure",
+		"money": 1000,
+		"startZone": { "id": 5 },
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 13 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 39 },
+							"style": null
+						},
+						{
+							"id": { "id": 10111 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		},
+		"changes": [
+			{
+				"side": "Crimson",
+				"character": { "id": 23 },
+				"paletteChanges": [ 0, 1, 2, 3 ]
+			}
+		],
+		"startScript": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+			"script": { "id": 14 }
+		},
+		"path": { "id": 12 }
+	},
 	"visible": true,
 	"tease": true,
 	"nameable": true,
 	"customizable": true,
 	"price": 5000,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
-	"skills": [ "Combos" ],
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
+	"shop": {
+		"enter": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Agent.1" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Agent.2" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Agent.3" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Agent.4" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Agent.5" }
+			}
+		],
+		"confirm": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Agent.14" }
+			}
+		],
+		"vocBuy": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Agent.7" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Agent.8" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Agent.9" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Agent.11" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Agent.12" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Agent.13" }
+			}
+		],
+		"otherBuy": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Agent.6" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Agent.10" }
+			}
+		]
+	},
 	"unlockCondition": {
 		"onslaughtScore": {},
 		"campaigns": [
@@ -178,10 +625,8 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 9 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Del" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/low.wav", "volume": 1, "pitch": 1.5 }
-	},
 	"card": { "id": 395 },
+	"win": { "id": 680 },
 	"patchworks": [
 		{
 			"id": {}
@@ -191,23 +636,118 @@
 	"power": 75,
 	"speed": 125,
 	"crush": 50,
+	"skills": [ "Boss" ],
+	"ultraVoc": {
+		"cutIn": {
+			"drawable": { "id": 642 }
+		},
+		"voc": { "id": 93 }
+	},
+	"voice": {
+		"sound": { "sound": "ui/dialogue/low.wav", "volume": 1, "pitch": 1.5 }
+	},
+	"adventure": {
+		"faction": "Azure",
+		"money": 1500,
+		"startZone": { "id": 5 },
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 13 },
+							"style": null
+						},
+						{
+							"id": { "id": 10031 },
+							"style": null
+						},
+						{
+							"id": { "id": 10011 },
+							"style": null
+						},
+						{
+							"id": { "id": 10231 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		},
+		"startScript": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+			"script": { "id": 15 }
+		},
+		"path": { "id": 16 }
+	},
 	"visible": true,
 	"tease": true,
 	"customizable": true,
 	"price": 7000,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
-	"skills": [ "Boss" ],
-	"unlockCondition": {
-		"onslaughtScore": {},
-		"campaigns": [
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
+	"shop": {
+		"enter": [
 			{
-				"campaign": { "id": 5 }
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Del.1" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Del.2" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Del.3" },
+				"chance": 0.5
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Del.4" }
 			}
 		],
+		"confirm": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Del.11" }
+			}
+		],
+		"vocBuy": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Del.5" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Del.6" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Del.8" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Del.10" }
+			}
+		],
+		"otherBuy": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Del.7" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Del.9" }
+			}
+		]
+	},
+	"unlockCondition": {
+		"onslaughtScore": {},
 		"affinities": [
 			{
 				"character": { "id": 13 },
 				"amount": 1
+			}
+		],
+		"campaigns": [
+			{
+				"campaign": { "id": 5 }
 			}
 		]
 	},
@@ -225,10 +765,8 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 23 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "CFGrunt" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/low.wav", "volume": 1, "pitch": 1 }
-	},
 	"card": { "id": 398 },
+	"win": { "id": 682 },
 	"patchworks": [
 		{
 			"id": { "id": 21 },
@@ -250,19 +788,126 @@
 	"power": 75,
 	"speed": 50,
 	"crush": 150,
+	"skills": [ "Determination" ],
+	"ultraVoc": {
+		"cutIn": {
+			"drawable": { "id": 644 }
+		},
+		"voc": { "id": 87 }
+	},
+	"voice": {
+		"sound": { "sound": "ui/dialogue/low.wav", "volume": 1, "pitch": 1 }
+	},
+	"adventure": {
+		"faction": "Crimson",
+		"money": 400,
+		"startZone": { "id": 10 },
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 21 },
+							"style": null
+						},
+						{
+							"id": { "id": 10034 },
+							"style": null
+						},
+						{
+							"id": { "id": 43 },
+							"style": null
+						},
+						{
+							"id": { "id": 9 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		},
+		"changes": [
+			{
+				"side": "Azure",
+				"character": { "id": 13 },
+				"paletteChanges": [ 0, 1, 2, 3 ]
+			}
+		],
+		"startScript": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+			"script": { "id": 16 }
+		},
+		"path": { "id": 7 }
+	},
 	"visible": true,
 	"tease": true,
 	"nameable": true,
 	"customizable": true,
 	"price": 5000,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
-	"skills": [ "Determination" ],
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"customTagAnimations": [
 		{
 			"tag": "THROW",
 			"attack": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" }
 		}
 	],
+	"shop": {
+		"enter": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Punk.1" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Punk.2" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Punk.3" }
+			}
+		],
+		"confirm": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Punk.13" }
+			}
+		],
+		"vocBuy": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Punk.4" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Punk.5" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Punk.6" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Punk.7" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Punk.9" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Punk.10" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Punk.11" }
+			}
+		],
+		"otherBuy": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Punk.8" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Punk.12" }
+			}
+		]
+	},
 	"unlockCondition": {
 		"onslaughtScore": {},
 		"campaigns": [
@@ -279,10 +924,8 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 21 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Cress" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/high.wav", "volume": 1, "pitch": 0.9 }
-	},
 	"card": { "id": 394 },
+	"win": { "id": 684 },
 	"patchworks": [
 		{
 			"id": { "id": 18 }
@@ -293,12 +936,115 @@
 	"power": 125,
 	"speed": 75,
 	"crush": 75,
+	"skills": [ "Leader" ],
+	"ultraVoc": {
+		"cutIn": {
+			"drawable": { "id": 641 }
+		},
+		"voc": { "id": 79 }
+	},
+	"voice": {
+		"sound": { "sound": "ui/dialogue/high.wav", "volume": 1, "pitch": 0.9 }
+	},
+	"adventure": {
+		"faction": "Crimson",
+		"startZone": { "id": 10 },
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 41 },
+							"style": null
+						},
+						{
+							"id": { "id": 10016 },
+							"style": null
+						},
+						{
+							"id": { "id": 44 },
+							"style": null
+						},
+						{
+							"id": { "id": 9 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		},
+		"startScript": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+			"script": { "id": 17 }
+		},
+		"path": { "id": 11 }
+	},
 	"visible": true,
 	"tease": true,
 	"customizable": true,
 	"price": 7000,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
-	"skills": [ "Leader" ],
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
+	"shop": {
+		"enter": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Cress.1" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Cress.2" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Cress.3" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Cress.4" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Cress.5" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Cress.6" },
+				"chance": 0.5
+			}
+		],
+		"confirm": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Cress.14" }
+			}
+		],
+		"vocBuy": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Cress.8" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Cress.10" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Cress.11" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Cress.12" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Cress.13" }
+			}
+		],
+		"otherBuy": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Cress.7" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Cress.9" }
+			}
+		]
+	},
 	"unlockCondition": {
 		"onslaughtScore": {},
 		"campaigns": [
@@ -321,10 +1067,8 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 1 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "QuadTurret" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/low.wav", "volume": 1, "pitch": 0.5 }
-	},
 	"card": { "id": 393 },
+	"win": { "id": 688 },
 	"patchworks": [
 		{
 			"id": { "id": 76 }
@@ -334,13 +1078,67 @@
 	"health": 1200,
 	"power": 75,
 	"crush": 125,
+	"skills": [ "Overdrive" ],
+	"ultraVoc": {
+		"cutIn": {
+			"drawable": { "id": 430 }
+		},
+		"voc": { "id": 71 }
+	},
+	"voice": {
+		"sound": { "sound": "ui/dialogue/low.wav", "volume": 1, "pitch": 0.5 }
+	},
+	"onslaughtTheme": { "id": 3 },
+	"adventure": {
+		"faction": "Noise",
+		"startZone": { "id": 4 },
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 12 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10106 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		},
+		"startScript": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+			"script": { "id": 18 }
+		},
+		"path": { "id": 17 }
+	},
 	"visible": true,
 	"tease": true,
 	"customizable": true,
 	"price": 4000,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
-	"onslaughtTheme": { "id": 3 },
-	"skills": [ "Overdrive" ],
+	"spawnAnimation": {
+		"class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation",
+		"sound": { "sound": "battle/entity/spawn_noise.wav", "volume": 1, "pitch": 1 },
+		"reverse": true
+	},
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"battlesFought": 30,
 		"onslaughtScore": {}
@@ -359,10 +1157,8 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 3 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "SofaSogood" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/low.wav", "volume": 1, "pitch": 0.5 }
-	},
 	"card": { "id": 415 },
+	"win": { "id": 691 },
 	"patchworks": [
 		{
 			"id": { "id": 78 }
@@ -372,13 +1168,67 @@
 	"power": 125,
 	"speed": 75,
 	"crush": 75,
+	"skills": [ "Backstab" ],
+	"ultraVoc": {
+		"cutIn": {
+			"drawable": { "id": 639 }
+		},
+		"voc": { "id": 89 }
+	},
+	"voice": {
+		"sound": { "sound": "ui/dialogue/low.wav", "volume": 1, "pitch": 0.5 }
+	},
+	"onslaughtTheme": { "id": 3 },
+	"adventure": {
+		"faction": "Noise",
+		"startZone": { "id": 1 },
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 27 },
+							"style": null
+						},
+						{
+							"id": { "id": 11 },
+							"style": null
+						},
+						{
+							"id": { "id": 58 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		},
+		"startScript": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+			"script": { "id": 19 }
+		},
+		"path": { "id": 17 }
+	},
 	"visible": true,
 	"tease": true,
 	"customizable": true,
 	"price": 4000,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
-	"onslaughtTheme": { "id": 3 },
-	"skills": [ "Backstab" ],
+	"spawnAnimation": {
+		"class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation",
+		"sound": { "sound": "battle/entity/spawn_noise.wav", "volume": 1, "pitch": 1 },
+		"reverse": true
+	},
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"battlesWon": 15,
 		"onslaughtScore": {}
@@ -397,10 +1247,8 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 4 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Greed" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/low.wav", "volume": 1, "pitch": 0.5 }
-	},
 	"card": { "id": 396 },
+	"win": { "id": 690 },
 	"patchworks": [
 		{
 			"id": { "id": 81 }
@@ -411,13 +1259,67 @@
 	"power": 75,
 	"speed": 125,
 	"crush": 125,
+	"skills": [ "Fluid", "Glide" ],
+	"ultraVoc": {
+		"cutIn": {
+			"drawable": { "id": 637 }
+		},
+		"voc": { "id": 88 }
+	},
+	"voice": {
+		"sound": { "sound": "ui/dialogue/low.wav", "volume": 1, "pitch": 0.5 }
+	},
+	"onslaughtTheme": { "id": 3 },
+	"adventure": {
+		"faction": "Noise",
+		"startZone": {},
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 54 },
+							"style": null
+						},
+						{
+							"id": { "id": 10101 },
+							"style": null
+						},
+						{
+							"id": { "id": 20 },
+							"style": null
+						},
+						{
+							"id": { "id": 10 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		},
+		"startScript": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+			"script": { "id": 20 }
+		},
+		"path": { "id": 17 }
+	},
 	"visible": true,
 	"tease": true,
 	"customizable": true,
 	"price": 4000,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
-	"onslaughtTheme": { "id": 3 },
-	"skills": [ "Fluid", "Glide" ],
+	"spawnAnimation": {
+		"class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation",
+		"sound": { "sound": "battle/entity/spawn_noise.wav", "volume": 1, "pitch": 1 },
+		"reverse": true
+	},
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"enemiesCrushed": 15,
 		"onslaughtScore": {}
@@ -436,10 +1338,8 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 49 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Fossil" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"card": { "id": 481 },
+	"win": { "id": 689 },
 	"patchworks": [
 		{
 			"id": { "id": 31 }
@@ -449,12 +1349,63 @@
 	"health": 1100,
 	"power": 150,
 	"speed": 50,
+	"skills": [ "Ignition" ],
+	"ultraVoc": {
+		"cutIn": {
+			"drawable": { "id": 636 }
+		},
+		"voc": { "id": 76 }
+	},
+	"adventure": {
+		"faction": "Noise",
+		"startZone": { "id": 4 },
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 15 },
+							"style": null
+						},
+						{
+							"id": { "id": 14 },
+							"style": null
+						},
+						{
+							"id": { "id": 26 },
+							"style": { "id": 2 }
+						},
+						{
+							"id": { "id": 10111 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		},
+		"startScript": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+			"script": { "id": 21 }
+		},
+		"path": { "id": 17 }
+	},
 	"visible": true,
 	"tease": true,
 	"customizable": true,
 	"price": 6000,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
-	"skills": [ "Ignition" ],
+	"spawnAnimation": {
+		"class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation",
+		"sound": { "sound": "battle/entity/spawn_noise.wav", "volume": 1, "pitch": 1 },
+		"reverse": true
+	},
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": { "normal": 20000 }
 	},
@@ -472,10 +1423,8 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 6 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Bombarbara" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/low.wav", "volume": 1, "pitch": 0.5 }
-	},
 	"card": { "id": 392 },
+	"win": { "id": 687 },
 	"patchworks": [
 		{
 			"id": { "id": 83 }
@@ -485,13 +1434,67 @@
 	"health": 800,
 	"speed": 150,
 	"crush": 125,
+	"skills": [ "Explosive" ],
+	"ultraVoc": {
+		"cutIn": {
+			"drawable": { "id": 635 }
+		},
+		"voc": { "id": 95 }
+	},
+	"voice": {
+		"sound": { "sound": "ui/dialogue/low.wav", "volume": 1, "pitch": 0.5 }
+	},
+	"onslaughtTheme": { "id": 3 },
+	"adventure": {
+		"faction": "Noise",
+		"startZone": { "id": 4 },
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 16 },
+							"style": null
+						},
+						{
+							"id": { "id": 14 },
+							"style": null
+						},
+						{
+							"id": { "id": 10052 },
+							"style": null
+						},
+						{
+							"id": { "id": 8 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		},
+		"startScript": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+			"script": { "id": 22 }
+		},
+		"path": { "id": 17 }
+	},
 	"visible": true,
 	"tease": true,
 	"customizable": true,
 	"price": 4000,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
-	"onslaughtTheme": { "id": 3 },
-	"skills": [ "Explosive" ],
+	"spawnAnimation": {
+		"class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation",
+		"sound": { "sound": "battle/entity/spawn_noise.wav", "volume": 1, "pitch": 1 },
+		"reverse": true
+	},
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": { "easyWave": 5 }
 	},
@@ -509,10 +1512,8 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 24 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Alexsander" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/low.wav", "volume": 1, "pitch": 0.5 }
-	},
 	"card": { "id": 391 },
+	"win": { "id": 686 },
 	"patchworks": [
 		{
 			"id": { "id": 27 }
@@ -521,12 +1522,66 @@
 	"element": "WATER",
 	"power": 125,
 	"speed": 150,
+	"skills": [ "Melting" ],
+	"ultraVoc": {
+		"cutIn": {
+			"drawable": { "id": 634 }
+		},
+		"voc": { "id": 75 }
+	},
+	"voice": {
+		"sound": { "sound": "ui/dialogue/low.wav", "volume": 1, "pitch": 0.5 }
+	},
+	"adventure": {
+		"faction": "Noise",
+		"startZone": {},
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 60 },
+							"style": null
+						},
+						{
+							"id": { "id": 10101 },
+							"style": null
+						},
+						{
+							"id": { "id": 43 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		},
+		"startScript": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+			"script": { "id": 23 }
+		},
+		"path": { "id": 17 }
+	},
 	"visible": true,
 	"tease": true,
 	"customizable": true,
 	"price": 6000,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
-	"skills": [ "Melting" ],
+	"spawnAnimation": {
+		"class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation",
+		"sound": { "sound": "battle/entity/spawn_noise.wav", "volume": 1, "pitch": 1 },
+		"reverse": true
+	},
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"battlesFought": 60,
 		"onslaughtScore": {}
@@ -543,11 +1598,95 @@
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 12 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Tankitty" },
+	"card": { "id": 520 },
+	"win": { "id": 692 },
+	"patchworks": [
+		{
+			"id": { "id": 4 }
+		}
+	],
+	"element": "ELEC",
+	"health": 900,
+	"power": 125,
+	"speed": 150,
+	"crush": 50,
+	"skills": [ "Glide", "Overcharged" ],
+	"ultraVoc": {
+		"cutIn": {
+			"drawable": { "id": 640 }
+		},
+		"voc": { "id": 77 }
+	},
+	"adventure": {
+		"faction": "Noise",
+		"startZone": { "id": 1 },
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 13 },
+							"style": null
+						},
+						{
+							"id": { "id": 10352 },
+							"style": null
+						},
+						{
+							"id": { "id": 10040 },
+							"style": null
+						},
+						{
+							"id": { "id": 10103 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		},
+		"startScript": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+			"script": { "id": 24 }
+		},
+		"path": { "id": 17 }
+	},
+	"visible": true,
+	"tease": true,
+	"customizable": true,
+	"price": 6000,
+	"spawnAnimation": {
+		"class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation",
+		"sound": { "sound": "battle/entity/spawn_noise.wav", "volume": 1, "pitch": 1 },
+		"reverse": true
+	},
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
+	"unlockCondition": {
+		"battlesWon": 45,
+		"onslaughtScore": {}
+	},
+	"customizationUnlockCondition": {
+		"onslaughtScore": {},
+		"affinities": [
+			{
+				"character": { "id": 12 },
+				"amount": 1
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 8 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "TriWing" },
-	"voice": {
-		"sound": { "sound": "ui/text_click.wav", "volume": 1, "pitch": 1 }
-	},
 	"card": { "id": 399 },
 	"patchworks": [
 		{
@@ -555,15 +1694,98 @@
 		}
 	],
 	"power": 125,
-	"speed": 0,
 	"crush": 150,
+	"skills": [ "OldSchool", "FuelSystem" ],
+	"ultraVoc": {
+		"cutIn": {
+			"drawable": { "id": 638 },
+			"scaleX": 3,
+			"scaleY": 3
+		},
+		"voc": { "id": 72 }
+	},
+	"voice": {
+		"sound": { "sound": "ui/text_click.wav", "volume": 1, "pitch": 1 }
+	},
+	"adventure": {
+		"faction": "Noise",
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10352 },
+							"style": null
+						},
+						{
+							"id": { "id": 39 },
+							"style": null
+						},
+						{
+							"id": { "id": 10106 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		},
+		"startScript": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+			"script": { "id": 25 }
+		},
+		"path": { "id": 9 }
+	},
 	"visible": true,
 	"tease": true,
 	"customizable": true,
 	"guest": true,
 	"price": 10000,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
-	"skills": [ "OldSchool", "FuelSystem" ],
+	"spawnAnimation": {
+		"class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation",
+		"sound": { "sound": "battle/entity/spawn_noise.wav", "volume": 1, "pitch": 1 },
+		"reverse": true
+	},
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
+	"shop": {
+		"enter": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.TriWing.1" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.TriWing.2" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.TriWing.3" }
+			}
+		],
+		"confirm": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.TriWing.7" }
+			}
+		],
+		"otherBuy": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.TriWing.4" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.TriWing.5" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.TriWing.6" }
+			}
+		]
+	},
 	"unlockCondition": {
 		"enemiesCrushed": 25,
 		"onslaughtScore": { "extremeWave": 5 }
@@ -574,12 +1796,134 @@
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 11 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Bella" },
+	"card": { "id": 241 },
+	"win": { "id": 699 },
+	"patchworks": [
+		{
+			"id": { "id": 2 }
+		}
+	],
+	"health": 800,
+	"power": 150,
+	"crush": 50,
+	"skills": [ "Stack" ],
+	"ultraVoc": {
+		"cutIn": {
+			"drawable": { "id": 242 }
+		},
+		"voc": { "id": 73 }
+	},
+	"voice": {
+		"sound": { "sound": "ui/dialogue/high.wav", "volume": 1, "pitch": 0.95 }
+	},
+	"adventure": {
+		"faction": "Independent",
+		"startZone": { "id": 9 },
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10100 },
+							"style": null
+						},
+						{
+							"id": { "id": 12 },
+							"style": null
+						},
+						{
+							"id": { "id": 10052 },
+							"style": null
+						},
+						{
+							"id": { "id": 10443 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		},
+		"startScript": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+			"script": { "id": 26 }
+		},
+		"path": { "id": 19 }
+	},
+	"visible": true,
+	"tease": true,
+	"guest": true,
+	"price": 10000,
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
+	"customTagAnimations": [
+		{
+			"tag": "SHOOT",
+			"attack": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" }
+		},
+		{
+			"tag": "SWORD",
+			"attack": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" }
+		}
+	],
+	"shop": {
+		"enter": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Bella.1" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Bella.2" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Bella.3" }
+			}
+		],
+		"confirm": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Bella.8" }
+			}
+		],
+		"vocBuy": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Bella.5" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Bella.7" }
+			}
+		],
+		"otherBuy": [
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Bella.4" }
+			},
+			{
+				"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Shop.Bella.6" }
+			}
+		]
+	},
+	"unlockCondition": {
+		"onslaughtScore": {},
+		"adventureZones": [
+			{ "id": 9 }
+		]
+	},
+	"customizationUnlockCondition": {
+		"onslaughtScore": {}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 48 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Jeremy" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"card": { "id": 201 },
+	"win": { "id": 681 },
 	"patchworks": [
 		{
 			"id": { "id": 30 }
@@ -588,10 +1932,58 @@
 	"health": 800,
 	"power": 125,
 	"speed": 125,
+	"skills": [ "Barricade" ],
+	"ultraVoc": {
+		"cutIn": {
+			"drawable": { "id": 429 }
+		},
+		"voc": { "id": 70 }
+	},
+	"adventure": {
+		"faction": "Independent",
+		"money": 600,
+		"startZone": { "id": 2 },
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 21 },
+							"style": null
+						},
+						{
+							"id": { "id": 10012 },
+							"style": null
+						},
+						{
+							"id": { "id": 10040 },
+							"style": null
+						},
+						{
+							"id": { "id": 50 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		},
+		"startScript": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+			"script": { "id": 27 }
+		},
+		"path": { "id": 18 }
+	},
 	"visible": true,
 	"guest": true,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
-	"skills": [ "Barricade" ],
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"creditDefeated": "Jeremy",
 		"onslaughtScore": {}
@@ -604,9 +1996,6 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 15 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Bomby Rozu" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"patchworks": [
 		{
 			"id": { "id": 83 }
@@ -614,7 +2003,42 @@
 	],
 	"element": "FIRE",
 	"health": 600,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation", "reverse": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -627,9 +2051,6 @@
 	"id": { "id": 17 },
 	"dataName": "Scaredy Neo",
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Neo" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"patchworks": [
 		{
 			"id": { "id": 86 }
@@ -637,7 +2058,42 @@
 	],
 	"health": 250,
 	"crush": 0,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -649,15 +2105,47 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 18 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Dummy" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"patchworks": [
 		{
 			"id": { "id": 5 }
 		}
 	],
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -670,9 +2158,6 @@
 	"id": { "id": 16 },
 	"dataName": "Weak Fin",
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Fin" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"patchworks": [
 		{
 			"id": { "id": 74 }
@@ -680,7 +2165,42 @@
 	],
 	"health": 300,
 	"crush": -100,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -693,16 +2213,48 @@
 	"id": { "id": 19 },
 	"dataName": "Weak Data Server",
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "DataServer" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"patchworks": [
 		{
 			"id": { "id": 13 }
 		}
 	],
 	"health": 150,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.ExplodingEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -715,16 +2267,48 @@
 	"id": { "id": 20 },
 	"dataName": "Strong Data Server",
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "DataServer" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"patchworks": [
 		{
 			"id": { "id": 13 }
 		}
 	],
 	"health": 800,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.ExplodingEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -737,9 +2321,6 @@
 	"id": { "id": 25 },
 	"dataName": "Spark Boss",
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Spark" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1.4 }
-	},
 	"patchworks": [
 		{
 			"id": { "id": 93 }
@@ -748,8 +2329,46 @@
 	"health": 1500,
 	"power": 150,
 	"crush": 200,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
 	"skills": [ "Determination" ],
+	"ultraVoc": {},
+	"voice": {
+		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1.4 }
+	},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -761,10 +2380,6 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 26 },
 	"dataName": "VOC Generator",
-	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"patchworks": [
 		{
 			"id": { "id": 23 }
@@ -772,7 +2387,42 @@
 	],
 	"element": "ELEC",
 	"health": 6,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -784,17 +2434,48 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 27 },
 	"dataName": "VOC Artillery",
-	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"patchworks": [
 		{
 			"id": { "id": 110 }
 		}
 	],
 	"health": 1,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -806,17 +2487,48 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 28 },
 	"dataName": "VOC NoticeMe",
-	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"patchworks": [
 		{
 			"id": { "id": 100 }
 		}
 	],
 	"health": 99999,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -828,10 +2540,6 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 29 },
 	"dataName": "VOC Lightmass",
-	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"patchworks": [
 		{
 			"id": { "id": 102 }
@@ -839,7 +2547,42 @@
 	],
 	"element": "ELEC",
 	"health": 300,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -851,10 +2594,6 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 30 },
 	"dataName": "VOC Anthem",
-	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"patchworks": [
 		{
 			"id": { "id": 106 }
@@ -862,7 +2601,42 @@
 	],
 	"element": "ELEC",
 	"health": 500,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -874,34 +2648,48 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 31 },
 	"dataName": "VOC Boulder",
-	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"patchworks": [
 		{
 			"id": { "id": 7 }
 		}
 	],
 	"health": 500,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
-	"deathParticles": [
-		{
-			"drawable": { "id": 1191 }
-		},
-		{
-			"drawable": { "id": 1192 }
-		},
-		{
-			"drawable": { "id": 1193 }
-		},
-		{
-			"drawable": { "id": 1194 }
-		},
-		{
-			"drawable": { "id": 1195 }
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
 		}
-	],
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -913,10 +2701,6 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 32 },
 	"dataName": "VOC Mosquito",
-	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"patchworks": [
 		{
 			"id": { "id": 104 }
@@ -924,7 +2708,42 @@
 	],
 	"element": "NATURE",
 	"health": 1,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -936,10 +2755,6 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 33 },
 	"dataName": "VOC Mine",
-	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"patchworks": [
 		{
 			"id": { "id": 105 }
@@ -947,8 +2762,42 @@
 	],
 	"element": "FIRE",
 	"health": 1,
-	"shadow": false,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -960,34 +2809,48 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 34 },
 	"dataName": "VOC Ice Cube",
-	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"patchworks": [
 		{
 			"id": { "id": 107 }
 		}
 	],
 	"health": 600,
-	"deathSound": { "sound": "battle/programs/ice_break.wav", "volume": 1, "pitch": 1 },
-	"deathParticles": [
-		{
-			"drawable": { "id": 336 }
-		},
-		{
-			"drawable": { "id": 337 }
-		},
-		{
-			"drawable": { "id": 338 }
-		},
-		{
-			"drawable": { "id": 339 }
-		},
-		{
-			"drawable": { "id": 340 }
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
 		}
-	],
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -999,17 +2862,48 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 35 },
 	"dataName": "VOC Bomb",
-	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"patchworks": [
 		{
 			"id": { "id": 8 }
 		}
 	],
 	"health": 500,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -1021,10 +2915,6 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 36 },
 	"dataName": "VOC Fire Mantle",
-	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"patchworks": [
 		{
 			"id": { "id": 11 }
@@ -1032,8 +2922,42 @@
 	],
 	"element": "FIRE",
 	"health": 1,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
-	"deathParticles": [],
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -1045,10 +2969,6 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 37 },
 	"dataName": "VOC Fire Gate",
-	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"patchworks": [
 		{
 			"id": { "id": 6 }
@@ -1056,9 +2976,42 @@
 	],
 	"element": "FIRE",
 	"health": 800,
-	"shadow": false,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
-	"deathParticles": [],
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -1070,31 +3023,48 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 38 },
 	"dataName": "VOC Companion",
-	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"patchworks": [
 		{
 			"id": { "id": 14 }
 		}
 	],
 	"health": 500,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
-	"deathParticles": [
-		{
-			"drawable": { "id": 1196 }
-		},
-		{
-			"drawable": { "id": 374 }
-		},
-		{
-			"drawable": { "id": 375 }
-		},
-		{
-			"drawable": { "id": 376 }
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
 		}
-	],
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -1106,18 +3076,48 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 39 },
 	"dataName": "VOC Coffee Bean",
-	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"patchworks": [
 		{
 			"id": { "id": 15 }
 		}
 	],
 	"health": 1,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
-	"deathParticles": [],
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -1129,17 +3129,48 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 40 },
 	"dataName": "VOC Reflector",
-	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"patchworks": [
 		{
 			"id": { "id": 28 }
 		}
 	],
 	"health": 300,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -1151,18 +3182,48 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 41 },
 	"dataName": "VOC Heal",
-	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"patchworks": [
 		{
 			"id": { "id": 9 }
 		}
 	],
 	"health": 1,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
-	"deathParticles": [],
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -1174,18 +3235,48 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 42 },
 	"dataName": "VOC Regen",
-	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"patchworks": [
 		{
 			"id": { "id": 17 }
 		}
 	],
 	"health": 1,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
-	"deathParticles": [],
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -1197,18 +3288,48 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 43 },
 	"dataName": "VOC Spike Trap",
-	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"patchworks": [
 		{
 			"id": { "id": 16 }
 		}
 	],
 	"health": 1,
-	"shadow": false,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -1221,9 +3342,6 @@
 	"id": { "id": 44 },
 	"dataName": "Weak Q.T.",
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "QuadTurret" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"patchworks": [
 		{
 			"id": { "id": 76 }
@@ -1232,7 +3350,42 @@
 	"element": "ELEC",
 	"health": 250,
 	"speed": 50,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation", "reverse": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -1244,17 +3397,48 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 45 },
 	"dataName": "Loot",
-	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"patchworks": [
 		{
 			"id": { "id": 99 }
 		}
 	],
 	"health": 1,
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -1266,16 +3450,47 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 46 },
 	"dataName": "Run Wall",
-	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"patchworks": [
 		{
 			"id": { "id": 98 }
 		}
 	],
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -1287,16 +3502,47 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 47 },
 	"dataName": "Teleporter",
-	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"patchworks": [
 		{
 			"id": { "id": 29 }
 		}
 	],
-	"deathSound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -1308,33 +3554,503 @@
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 10 },
 	"dataName": "Droplet",
-	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-	"voice": {
-		"sound": { "sound": "ui/dialogue/normal.wav", "volume": 1, "pitch": 1 }
-	},
 	"patchworks": [
 		{
 			"id": { "id": 1 }
 		}
 	],
-	"deathSound": { "sound": "battle/panels/break.wav", "volume": 1, "pitch": 1 },
-	"deathFade": false,
-	"deathParticles": [
-		{
-			"drawable": { "id": 1144 }
-		},
-		{
-			"drawable": { "id": 1145 }
-		},
-		{
-			"drawable": { "id": 1146 }
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
 		}
-	],
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
 	"customizationUnlockCondition": {
 		"onslaughtScore": {}
 	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 14 },
+	"dataName": "Data",
+	"patchworks": [
+		{
+			"id": { "id": 12 }
+		}
+	],
+	"health": 1,
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
+	"unlockCondition": {
+		"onslaughtScore": {}
+	},
+	"customizationUnlockCondition": {
+		"onslaughtScore": {}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 22 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Voc Pickup" },
+	"patchworks": [
+		{
+			"id": { "id": 22 }
+		}
+	],
+	"health": 1,
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
+	"unlockCondition": {
+		"onslaughtScore": {}
+	},
+	"customizationUnlockCondition": {
+		"onslaughtScore": {}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 50 },
+	"dataName": "Loot Data Server",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "DataServer" },
+	"patchworks": [
+		{
+			"id": { "id": 13 }
+		}
+	],
+	"health": 1,
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.ExplodingEntityAnimation" },
+	"unlockCondition": {
+		"onslaughtScore": {}
+	},
+	"customizationUnlockCondition": {
+		"onslaughtScore": {}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 51 },
+	"dataName": "Ice Cave Back",
+	"patchworks": [
+		{
+			"id": { "id": 33 }
+		}
+	],
+	"sizeY": 1,
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 52 },
+	"dataName": "Ice Cave Front",
+	"patchworks": [
+		{
+			"id": { "id": 34 }
+		}
+	],
+	"sizeY": 1,
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 53 },
+	"dataName": "Godius Body",
+	"patchworks": [
+		{
+			"id": { "id": 35 }
+		}
+	],
+	"health": 20000,
+	"skills": [ "Glide" ],
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": null,
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": {
+		"class": "com.one2b3.endcycle.features.battle.entities.animations.data.ExplodingEntityAnimation",
+		"sound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 54 },
+	"dataName": "Godius Left Arm",
+	"patchworks": [
+		{
+			"id": { "id": 36 }
+		}
+	],
+	"skills": [ "Absolute Parent" ],
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": {
+		"class": "com.one2b3.endcycle.features.battle.entities.animations.data.ExplodingEntityAnimation",
+		"sound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 55 },
+	"dataName": "Godius Right Arm",
+	"patchworks": [
+		{
+			"id": { "id": 37 }
+		}
+	],
+	"skills": [ "Absolute Parent" ],
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": {
+		"class": "com.one2b3.endcycle.features.battle.entities.animations.data.ExplodingEntityAnimation",
+		"sound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 56 },
+	"dataName": "Gateway Portal",
+	"patchworks": [
+		{
+			"id": { "id": 38 }
+		}
+	],
+	"ultraVoc": {},
+	"adventure": {
+		"startingPack": {
+			"vocs": [
+				{
+					"items": [
+						{
+							"id": { "id": 10010 },
+							"style": null
+						},
+						{
+							"id": { "id": 10110 },
+							"style": null
+						},
+						{
+							"id": { "id": 10013 },
+							"style": null
+						},
+						{
+							"id": { "id": 10423 },
+							"style": null
+						}
+					]
+				},
+				{
+					"items": [ null, null, null, null ]
+				},
+				{
+					"items": [ null, null, null, null ]
+				}
+			]
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" }
 }
 ]

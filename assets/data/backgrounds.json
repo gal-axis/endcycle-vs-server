@@ -1,7 +1,6 @@
 [
 {
 	"class": "com.one2b3.endcycle.features.background.BackgroundData",
-	"id": {},
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Snow" },
 	"visible": true,
 	"neutralFrame": {
@@ -12,6 +11,9 @@
 	},
 	"enemyFrame": {
 		"drawable": { "id": 189 }
+	},
+	"noFrame": {
+		"drawable": { "id": 577 }
 	},
 	"background": { "r": 0.6509804, "g": 0.4, "b": 0.8784314, "a": 1 },
 	"frames": [
@@ -98,6 +100,9 @@
 	"enemyFrame": {
 		"drawable": { "id": 289 }
 	},
+	"noFrame": {
+		"drawable": { "id": 592 }
+	},
 	"background": { "r": 0.58431375, "g": 0.8666667, "b": 0.47843137, "a": 1 },
 	"frames": [
 		{
@@ -178,6 +183,9 @@
 	},
 	"enemyFrame": {
 		"drawable": { "id": 183 }
+	},
+	"noFrame": {
+		"drawable": { "id": 578 }
 	},
 	"background": { "r": 0.57254905, "g": 0.23137255, "b": 0.30588236, "a": 1 },
 	"frames": [
@@ -281,6 +289,9 @@
 	},
 	"enemyFrame": {
 		"drawable": { "id": 1278 }
+	},
+	"noFrame": {
+		"drawable": { "id": 601 }
 	},
 	"frames": [
 		{
@@ -495,7 +506,7 @@
 {
 	"class": "com.one2b3.endcycle.features.background.BackgroundData",
 	"id": { "id": 7 },
-	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Ruins" },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Ruins" },
 	"visible": true,
 	"neutralFrame": {
 		"drawable": { "id": 13 }
@@ -505,6 +516,9 @@
 	},
 	"enemyFrame": {
 		"drawable": { "id": 14 }
+	},
+	"noFrame": {
+		"drawable": { "id": 578 }
 	},
 	"frames": [
 		{
@@ -529,6 +543,10 @@
 	},
 	"enemyFrame": {
 		"drawable": { "id": 188 }
+	},
+	"noFrame": {
+		"drawable": { "id": 595 },
+		"color": { "r": 1, "g": 1, "b": 1, "a": 0.5058824 }
 	},
 	"background": { "r": 0.09803922, "g": 0.07058824, "b": 0.12156863, "a": 1 },
 	"frames": [
@@ -751,6 +769,9 @@
 	"enemyFrame": {
 		"drawable": { "id": 326 }
 	},
+	"noFrame": {
+		"drawable": { "id": 593 }
+	},
 	"frames": [
 		{
 			"drawable": {
@@ -768,6 +789,7 @@
 				"drawable": { "id": 291 }
 			},
 			"y": 21,
+			"offsetXFactor": 0.3,
 			"offsetYFactor": 0.025,
 			"xRepeat": 480,
 			"hAlign": -1,
@@ -783,6 +805,7 @@
 			"tintSpeed": 1,
 			"x": 54,
 			"y": 21,
+			"offsetXFactor": 0.3,
 			"offsetYFactor": 0.025,
 			"xRepeat": 480,
 			"hAlign": -1,
@@ -795,6 +818,7 @@
 				"drawable": { "id": 293 }
 			},
 			"y": 33,
+			"offsetXFactor": 0.45,
 			"offsetYFactor": 0.075,
 			"xRepeat": 480,
 			"hAlign": -1,
@@ -809,6 +833,7 @@
 			"tintSpeed": 0.7,
 			"x": 35,
 			"y": 116,
+			"offsetXFactor": 0.45,
 			"offsetYFactor": 0.075,
 			"xRepeat": 480,
 			"hAlign": -1,
@@ -820,6 +845,7 @@
 				"drawable": { "id": 295 }
 			},
 			"y": 23,
+			"offsetXFactor": 0.6,
 			"offsetYFactor": 0.125,
 			"xRepeat": 480
 		}
@@ -870,6 +896,9 @@
 	},
 	"enemyFrame": {
 		"drawable": { "id": 189 }
+	},
+	"noFrame": {
+		"drawable": { "id": 577 }
 	},
 	"frames": [
 		{
@@ -1021,6 +1050,9 @@
 	"enemyFrame": {
 		"drawable": { "id": 365 }
 	},
+	"noFrame": {
+		"drawable": { "id": 594 }
+	},
 	"frames": [
 		{
 			"drawable": {
@@ -1101,6 +1133,284 @@
 			"yRepeat": 232,
 			"screenHAlign": 0,
 			"screenVAlign": 0
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.background.BackgroundData",
+	"id": { "id": 20 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Menu Lunar" },
+	"background": { "r": 0.0627451, "g": 0.0627451, "b": 0.0627451, "a": 1 },
+	"frames": [
+		{
+			"drawable": {
+				"drawable": { "id": 59 }
+			},
+			"xRepeat": 240,
+			"yRepeat": 190
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.background.BackgroundData",
+	"id": { "id": 21 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Beach" },
+	"visible": true,
+	"neutralFrame": {
+		"drawable": { "id": 532 }
+	},
+	"allyFrame": {
+		"drawable": { "id": 555 }
+	},
+	"enemyFrame": {
+		"drawable": { "id": 530 }
+	},
+	"noFrame": {
+		"drawable": { "id": 596 }
+	},
+	"background": { "r": 0.23529412, "g": 0.7372549, "b": 0.9882353, "a": 1 },
+	"frames": [
+		{
+			"drawable": {
+				"drawable": { "id": 524 }
+			},
+			"tintModulate": 0.15,
+			"tintSpeed": 0.4,
+			"y": 20,
+			"offsetXFactor": 0.25,
+			"offsetYFactor": 0.05,
+			"xRepeat": 361,
+			"hAlign": -1,
+			"vAlign": 1,
+			"screenVAlign": 1
+		},
+		{
+			"drawable": {
+				"drawable": { "id": 529 }
+			},
+			"tintSpeed": 0.4,
+			"y": 10,
+			"offsetXFactor": 0.25,
+			"offsetYFactor": 0.05,
+			"xRepeat": 361,
+			"xSpeed": -1,
+			"screenVAlign": 0
+		},
+		{
+			"drawable": {
+				"drawable": { "id": 525 }
+			},
+			"x": -32,
+			"y": 20,
+			"offsetXFactor": 0,
+			"offsetYFactor": 0,
+			"vAlign": 1,
+			"screenHAlign": 0,
+			"screenVAlign": 1
+		},
+		{
+			"drawable": {
+				"drawable": { "id": 528 }
+			},
+			"y": -20,
+			"offsetYFactor": 0,
+			"xRepeat": 360,
+			"xSpeed": 1,
+			"screenHAlign": 0,
+			"screenVAlign": 1
+		},
+		{
+			"drawable": {
+				"drawable": { "id": 526 }
+			},
+			"x": 60,
+			"y": -40,
+			"offsetYFactor": 0,
+			"xRepeat": 330,
+			"xSpeed": 2,
+			"hAlign": -1,
+			"screenHAlign": 0,
+			"screenVAlign": 1
+		},
+		{
+			"drawable": {
+				"drawable": { "id": 527 }
+			},
+			"x": -40,
+			"y": 46,
+			"offsetYFactor": 0,
+			"xRepeat": 345,
+			"xSpeed": 3,
+			"hAlign": 1,
+			"screenHAlign": 0,
+			"screenVAlign": 1
+		},
+		{
+			"drawable": {
+				"drawable": { "id": 523 }
+			},
+			"y": -60,
+			"offsetXFactor": 0.25,
+			"offsetYFactor": 0.05,
+			"xRepeat": 480,
+			"vAlign": -1,
+			"screenHAlign": 0
+		},
+		{
+			"drawable": {
+				"drawable": { "id": 556 }
+			},
+			"y": 97,
+			"offsetXFactor": 0.25,
+			"offsetYFactor": 0.05,
+			"xRepeat": 480,
+			"vAlign": -1,
+			"screenHAlign": 0
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.background.BackgroundData",
+	"id": { "id": 22 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Networld" },
+	"visible": true,
+	"neutralFrame": {
+		"drawable": { "id": 559 }
+	},
+	"allyFrame": {
+		"drawable": { "id": 560 }
+	},
+	"enemyFrame": {
+		"drawable": { "id": 558 }
+	},
+	"noFrame": {
+		"drawable": { "id": 581 }
+	},
+	"frames": [
+		{
+			"drawable": {
+				"drawable": { "id": 557 },
+				"scaleX": 2,
+				"scaleY": 2
+			},
+			"xRepeat": 64,
+			"yRepeat": 64
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.background.BackgroundData",
+	"id": { "id": 23 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Phantom" },
+	"neutralFrame": {
+		"drawable": { "id": 187 }
+	},
+	"allyFrame": {
+		"drawable": { "id": 186 }
+	},
+	"enemyFrame": {
+		"drawable": { "id": 188 }
+	},
+	"noFrame": {
+		"drawable": { "id": 599 }
+	},
+	"background": { "r": 0.8352941, "g": 0.23529412, "b": 0.41568628, "a": 1 },
+	"frames": [
+		{
+			"drawable": {
+				"drawable": { "id": 597 }
+			},
+			"y": 100,
+			"offsetXFactor": 0,
+			"offsetYFactor": 0.1,
+			"vAlign": 1,
+			"screenHAlign": 0,
+			"screenVAlign": 1
+		},
+		{
+			"drawable": {
+				"drawable": { "id": 598 }
+			},
+			"y": -200,
+			"offsetYFactor": 0.25,
+			"xRepeat": 640,
+			"vAlign": -1,
+			"screenHAlign": 0
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.background.BackgroundData",
+	"id": { "id": 24 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Tower" },
+	"neutralFrame": {
+		"drawable": { "id": 187 }
+	},
+	"allyFrame": {
+		"drawable": { "id": 186 }
+	},
+	"enemyFrame": {
+		"drawable": { "id": 188 }
+	},
+	"noFrame": {
+		"drawable": { "id": 617 }
+	},
+	"background": { "r": 0.09803922, "g": 0.07058824, "b": 0.12156863, "a": 1 },
+	"frames": [
+		{
+			"drawable": {
+				"drawable": { "id": 252 }
+			},
+			"tintModulate": 0.15,
+			"tintSpeed": 0.5,
+			"x": 210,
+			"y": 20,
+			"xRepeat": 416,
+			"yRepeat": 234,
+			"hAlign": -1,
+			"vAlign": -1
+		},
+		{
+			"drawable": {
+				"drawable": { "id": 248 }
+			},
+			"tintModulate": 0.5,
+			"tintSpeed": 1.1,
+			"offsetXFactor": 0.51,
+			"offsetYFactor": 0.51,
+			"xRepeat": 416,
+			"yRepeat": 234
+		},
+		{
+			"drawable": {
+				"drawable": { "id": 250 }
+			},
+			"x": 35,
+			"y": 13,
+			"offsetXFactor": 0.55,
+			"offsetYFactor": 0.55,
+			"xRepeat": 416,
+			"yRepeat": 234
+		},
+		{
+			"drawable": {
+				"drawable": { "id": 251 }
+			},
+			"x": 220,
+			"y": 120,
+			"offsetXFactor": 0.55,
+			"offsetYFactor": 0.55,
+			"xRepeat": 416,
+			"yRepeat": 234
+		},
+		{
+			"drawable": {
+				"drawable": { "id": 616 }
+			},
+			"offsetXFactor": 0.8,
+			"offsetYFactor": 0.8,
+			"xRepeat": 192,
+			"yRepeat": 192
 		}
 	]
 }

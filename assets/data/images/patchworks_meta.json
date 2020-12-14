@@ -18,53 +18,66 @@
 	"cast": {
 		"drawable": { "id": 402 }
 	},
-	"attack": {},
+	"attack": {
+		"drawable": { "id": 509 },
+		"xPos": 10,
+		"yPos": -2
+	},
 	"defend": {},
+	"move": {
+		"drawable": { "id": 676 }
+	},
+	"spawn": {},
 	"shadowY": 4,
 	"keepUncustomized": true,
 	"customizables": [
 		{
 			"name": "Jacket",
 			"replace": [
-				{ "replace": -1573045505 },
+				{ "replace": -2547969 },
 				{
-					"replace": 1712723711,
-					"newColor": { "r": 0.65882355, "g": 0.65882355, "b": 0.65882355, "a": 1 }
+					"replace": -1049358337,
+					"newColor": { "r": 0.49019608, "g": 0.49019608, "b": 0.49019608, "a": 1 }
 				}
 			],
 			"colors": [
 				{ "r": 0.41960785, "g": 0.43137255, "b": 0.81960785, "a": 1 },
 				{ "r": 0.4745098, "g": 0.72156864, "b": 0.3529412, "a": 1 },
-				{ "r": 0.45882353, "g": 0.34901962, "b": 0.19215687, "a": 1 },
-				{ "r": 0.29411766, "g": 0.29411766, "b": 0.2901961, "a": 1 }
+				{ "r": 0.6392157, "g": 0.43529412, "b": 0.3019608, "a": 1 },
+				{ "r": 0.29411766, "g": 0.29411766, "b": 0.2901961, "a": 1 },
+				{ "r": 0.52156866, "g": 0.10980392, "b": 0.10980392, "a": 1 }
 			]
 		},
 		{
-			"name": "Shirt",
+			"name": "Cap + Gloves",
 			"replace": [
-				{ "replace": 1855240703 }
+				{ "replace": 2143720703 },
+				{
+					"replace": 1335788287,
+					"newColor": { "r": 0.7019608, "g": 0.7019608, "b": 0.7019608, "a": 1 }
+				}
 			],
 			"colors": [
 				{ "r": 0.65882355, "g": 0.43137255, "b": 0.7294118, "a": 1 },
 				{ "r": 0.7411765, "g": 0.36862746, "b": 0.34117648, "a": 1 },
 				{ "r": 0.7294118, "g": 0.654902, "b": 0.43137255, "a": 1 },
-				{ "r": 0.4392157, "g": 0.7294118, "b": 0.43137255, "a": 1 },
+				{ "r": 0.20392157, "g": 0.3254902, "b": 0.5686275, "a": 1 },
 				{ "r": 0.85882354, "g": 0.8509804, "b": 0.8509804, "a": 1 }
 			]
 		},
 		{
 			"name": "Pants",
 			"replace": [
-				{ "replace": 1263225599 },
+				{ "replace": 2136684799 },
 				{
-					"replace": 606348287,
-					"newColor": { "r": 0.45882353, "g": 0.45882353, "b": 0.45882353, "a": 1 }
+					"replace": 1580933631,
+					"newColor": { "r": 0.61960787, "g": 0.61960787, "b": 0.61960787, "a": 1 }
 				}
 			],
 			"colors": [
-				{ "r": 0.52156866, "g": 0.34509805, "b": 0.25490198, "a": 1 },
+				{ "r": 0.27058825, "g": 0.2509804, "b": 0.23921569, "a": 1 },
 				{ "r": 0.36862746, "g": 0.27058825, "b": 0.6784314, "a": 1 },
-				{ "r": 0.21960784, "g": 0.3254902, "b": 0.50980395, "a": 1 },
+				{ "r": 0.39607844, "g": 0.5137255, "b": 0.72156864, "a": 1 },
 				{ "r": 0.23137255, "g": 0.41960785, "b": 0.22745098, "a": 1 },
 				{ "r": 0.5803922, "g": 0.5921569, "b": 0.6, "a": 1 }
 			]
@@ -74,7 +87,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
 	"id": { "id": 76 },
-	"name": "Cannon",
+	"name": "QT",
 	"idle": {
 		"drawable": { "id": 406 }
 	},
@@ -94,6 +107,10 @@
 		"drawable": { "id": 409 }
 	},
 	"defend": {},
+	"move": {
+		"drawable": { "id": 674 }
+	},
+	"spawn": {},
 	"attackLeadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_CLOSE" },
 	"shadowY": 3,
 	"extraStates": [
@@ -144,22 +161,6 @@
 },
 {
 	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
-	"id": { "id": 77 },
-	"name": "Fin Proto",
-	"idle": {
-		"drawable": { "id": 414 }
-	},
-	"hurt": {},
-	"stunStart": {},
-	"stunEnd": {},
-	"cast": {},
-	"attack": {
-		"drawable": { "id": 415 }
-	},
-	"defend": {}
-},
-{
-	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
 	"id": { "id": 78 },
 	"name": "Sofa",
 	"idle": {
@@ -179,6 +180,8 @@
 	},
 	"attack": {},
 	"defend": {},
+	"move": {},
+	"spawn": {},
 	"extraStates": [
 		{
 			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "COUCH" },
@@ -242,17 +245,10 @@
 	},
 	"attack": {},
 	"defend": {},
-	"extraStates": [
-		{
-			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
-			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
-			"images": [
-				{
-					"drawable": { "id": 311 }
-				}
-			]
-		}
-	],
+	"move": {
+		"drawable": { "id": 311 }
+	},
+	"spawn": {},
 	"keepUncustomized": true,
 	"customizables": [
 		{
@@ -310,7 +306,30 @@
 		"drawable": { "id": 386 }
 	},
 	"defend": {},
+	"move": {
+		"drawable": { "id": 706 }
+	},
+	"spawn": {},
 	"shadowY": 3,
+	"extraStates": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FALLING" },
+			"images": [
+				{
+					"drawable": { "id": 654 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "LANDED" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 655 }
+				}
+			]
+		}
+	],
 	"keepUncustomized": true,
 	"customizables": [
 		{
@@ -344,7 +363,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
 	"id": { "id": 86 },
-	"name": "Neo",
+	"name": "AV.atar",
 	"idle": {
 		"drawable": { "id": 441 }
 	},
@@ -360,9 +379,28 @@
 	"cast": {
 		"drawable": { "id": 443 }
 	},
-	"attack": {},
+	"attack": {
+		"drawable": { "id": 575 },
+		"xPos": 7,
+		"yPos": 2
+	},
 	"defend": {},
+	"move": {
+		"drawable": { "id": 707 },
+		"yPos": 2
+	},
+	"spawn": {},
 	"shadowY": 1,
+	"extraStates": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "caped" },
+			"images": [
+				{
+					"drawable": { "id": 576 }
+				}
+			]
+		}
+	],
 	"customizables": [
 		{
 			"name": "Body",
@@ -482,62 +520,83 @@
 		"drawable": { "id": 477 }
 	},
 	"cast": {
-		"drawable": { "id": 474 }
+		"drawable": { "id": 474 },
+		"yPos": -3
 	},
 	"attack": {
 		"drawable": { "id": 475 }
 	},
 	"defend": {},
-	"shadowY": 5,
+	"move": {
+		"drawable": { "id": 675 }
+	},
+	"spawn": {},
 	"keepUncustomized": true,
 	"customizables": [
 		{
-			"name": "Jacket",
+			"name": "Hat",
 			"replace": [
-				{ "replace": -591438337 },
+				{ "replace": 1943559679 },
 				{
-					"replace": -1197853441,
+					"replace": 1604870655,
 					"newColor": { "r": 0.8, "g": 0.8, "b": 0.8, "a": 1 }
-				}
+				},
+				{
+					"replace": 1116168447,
+					"newColor": { "r": 0.6117647, "g": 0.6117647, "b": 0.6117647, "a": 1 }
+				},
+				{
+					"replace": 576936191,
+					"newColor": { "r": 0.34117648, "g": 0.34117648, "b": 0.34117648, "a": 1 }
+				},
+				{
+					"replace": 1201566463,
+					"newColor": { "r": 0.7882353, "g": 0.7882353, "b": 0.7882353, "a": 1 }
+				},
+				{ "replace": 2143720703 }
 			],
 			"colors": [
-				{ "r": 0.6784314, "g": 0.8392157, "b": 0.49411765, "a": 1 },
+				{ "r": 0.8509804, "g": 0.7176471, "b": 0.23921569, "a": 1 },
 				{ "r": 0.5176471, "g": 0.8509804, "b": 0.8352941, "a": 1 },
 				{ "r": 0.34117648, "g": 0.59607846, "b": 0.87058824, "a": 1 },
 				{ "r": 0.7176471, "g": 0.46666667, "b": 0.78039217, "a": 1 },
-				{ "r": 0.85882354, "g": 0.3764706, "b": 0.3882353, "a": 1 },
+				{ "r": 0.67058825, "g": 0.22745098, "b": 0.22745098, "a": 1 },
 				{ "r": 0.6117647, "g": 0.40784314, "b": 0.24313726, "a": 1 },
-				{ "r": 0.34117648, "g": 0.33333334, "b": 0.31764707, "a": 1 }
+				{ "r": 0.47843137, "g": 0.47843137, "b": 0.4745098, "a": 1 }
 			]
 		},
 		{
-			"name": "Jacket - Secondary",
+			"name": "Braces",
 			"replace": [
-				{ "replace": -1525147393 },
+				{ "replace": -665770753 },
 				{
-					"replace": -2130311425,
-					"newColor": { "r": 0.78039217, "g": 0.78039217, "b": 0.78039217, "a": 1 }
+					"replace": -1172564737,
+					"newColor": { "r": 0.6784314, "g": 0.6784314, "b": 0.6784314, "a": 1 }
 				}
 			],
 			"colors": [
-				{ "r": 0.7019608, "g": 0.58431375, "b": 0.23921569, "a": 1 },
-				{ "r": 0.31764707, "g": 0.6509804, "b": 0.27450982, "a": 1 },
-				{ "r": 0.1882353, "g": 0.40392157, "b": 0.6313726, "a": 1 },
-				{ "r": 0.43529412, "g": 0.19215687, "b": 0.54901963, "a": 1 },
-				{ "r": 0.7490196, "g": 0.69803923, "b": 0.69803923, "a": 1 }
+				{ "r": 0.92941177, "g": 0.7490196, "b": 0.20392157, "a": 1 },
+				{ "r": 0.32941177, "g": 0.81960785, "b": 0.2627451, "a": 1 },
+				{ "r": 0.23921569, "g": 0.5176471, "b": 0.81960785, "a": 1 },
+				{ "r": 0.5176471, "g": 0.22745098, "b": 0.6509804, "a": 1 },
+				{ "r": 0.7490196, "g": 0.1882353, "b": 0.30980393, "a": 1 }
 			]
 		},
 		{
-			"name": "Pants",
+			"name": "Armor",
 			"replace": [
-				{ "replace": 1263225855 }
+				{ "replace": 1262904319 },
+				{
+					"replace": 925716991,
+					"newColor": { "r": 0.6313726, "g": 0.6313726, "b": 0.6313726, "a": 1 }
+				}
 			],
 			"colors": [
-				{ "r": 0.45882353, "g": 0.36078432, "b": 0.19215687, "a": 1 },
-				{ "r": 0.1254902, "g": 0.3254902, "b": 0.3882353, "a": 1 },
-				{ "r": 0.5019608, "g": 0.19607843, "b": 0.29803923, "a": 1 },
-				{ "r": 0.32941177, "g": 0.4117647, "b": 0.2627451, "a": 1 },
-				{ "r": 0.5294118, "g": 0.5137255, "b": 0.5019608, "a": 1 }
+				{ "r": 0.45882353, "g": 0.27450982, "b": 0.19215687, "a": 1 },
+				{ "r": 0.1254902, "g": 0.3882353, "b": 0.3764706, "a": 1 },
+				{ "r": 0.5019608, "g": 0.19607843, "b": 0.23529412, "a": 1 },
+				{ "r": 0.20784314, "g": 0.3882353, "b": 0.18431373, "a": 1 },
+				{ "r": 0.41960785, "g": 0.3882353, "b": 0.17254902, "a": 1 }
 			]
 		}
 	]
@@ -557,6 +616,8 @@
 	"cast": {},
 	"attack": {},
 	"defend": {},
+	"move": {},
+	"spawn": {},
 	"hurtLeadsInto": null
 },
 {
@@ -573,21 +634,48 @@
 	"stunEnd": {},
 	"cast": {},
 	"attack": {},
-	"defend": {}
+	"defend": {},
+	"move": {},
+	"spawn": {}
 },
 {
 	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
 	"id": { "id": 99 },
 	"name": "Loot Box",
 	"idle": {
-		"drawable": { "id": 488 }
+		"drawable": { "id": 488 },
+		"yPos": -3
 	},
 	"hurt": {},
 	"stunStart": {},
 	"stunEnd": {},
 	"cast": {},
 	"attack": {},
-	"defend": {}
+	"defend": {},
+	"move": {},
+	"spawn": {},
+	"customizables": [
+		{
+			"name": "Color",
+			"replace": [
+				{ "replace": 846116607 },
+				{
+					"replace": 590845183,
+					"newColor": { "r": 0.5411765, "g": 0.5411765, "b": 0.5411765, "a": 1 }
+				},
+				{
+					"replace": 35802111,
+					"newColor": { "r": 0.25882354, "g": 0.25882354, "b": 0.25882354, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.7882353, "g": 0.1254902, "b": 0.1254902, "a": 1 },
+				{ "r": 0.69803923, "b": 1, "a": 1 },
+				{ "r": 1, "g": 0.78431374, "a": 1 },
+				{ "r": 0.31764707, "g": 1, "a": 1 }
+			]
+		}
+	]
 },
 {
 	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
@@ -601,7 +689,9 @@
 	"stunEnd": {},
 	"cast": {},
 	"attack": {},
-	"defend": {}
+	"defend": {},
+	"move": {},
+	"spawn": {}
 },
 {
 	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
@@ -615,7 +705,9 @@
 	"stunEnd": {},
 	"cast": {},
 	"attack": {},
-	"defend": {}
+	"defend": {},
+	"move": {},
+	"spawn": {}
 },
 {
 	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
@@ -631,7 +723,9 @@
 		"drawable": { "id": 494 }
 	},
 	"attack": {},
-	"defend": {}
+	"defend": {},
+	"move": {},
+	"spawn": {}
 },
 {
 	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
@@ -658,6 +752,10 @@
 	"defend": {
 		"drawable": {}
 	},
+	"move": {
+		"drawable": { "id": 633 }
+	},
+	"spawn": {},
 	"keepUncustomized": true,
 	"customizables": [
 		{
@@ -740,6 +838,10 @@
 	},
 	"attack": {},
 	"defend": {},
+	"move": {
+		"drawable": { "id": 702 }
+	},
+	"spawn": {},
 	"extraStates": [
 		{
 			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
@@ -898,6 +1000,11 @@
 			"drawable": { "id": 29 }
 		}
 	],
+	"move": [
+		{
+			"drawable": { "id": 693 }
+		}
+	],
 	"keepUncustomized": true,
 	"customizables": [
 		{
@@ -1000,6 +1107,11 @@
 			"drawable": { "id": 222 }
 		}
 	],
+	"move": [
+		{
+			"drawable": { "id": 673 }
+		}
+	],
 	"defendLeadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
 	"customizables": [
 		{
@@ -1092,7 +1204,8 @@
 				{ "r": 0.87058824, "g": 0.7490196, "b": 0.2627451, "a": 1 },
 				{ "r": 0.7058824, "g": 0.36862746, "b": 1, "a": 1 },
 				{ "r": 0.45882353, "g": 0.8666667, "b": 1, "a": 1 },
-				{ "r": 0.24313726, "g": 0.8117647, "b": 0.3764706, "a": 1 }
+				{ "r": 0.24313726, "g": 0.8117647, "b": 0.3764706, "a": 1 },
+				{ "r": 0.29803923, "g": 0.40784314, "b": 0.45882353, "a": 1 }
 			]
 		}
 	]
@@ -1167,6 +1280,11 @@
 			"drawable": { "id": 230 }
 		}
 	],
+	"move": [
+		{
+			"drawable": { "id": 652 }
+		}
+	],
 	"defendLeadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
 	"customizables": [
 		{
@@ -1259,7 +1377,8 @@
 				{ "r": 0.87058824, "g": 0.7490196, "b": 0.2627451, "a": 1 },
 				{ "r": 0.7058824, "g": 0.36862746, "b": 1, "a": 1 },
 				{ "r": 0.45882353, "g": 0.8666667, "b": 1, "a": 1 },
-				{ "r": 0.24313726, "g": 0.8117647, "b": 0.3764706, "a": 1 }
+				{ "r": 0.24313726, "g": 0.8117647, "b": 0.3764706, "a": 1 },
+				{ "r": 0.29803923, "g": 0.40784314, "b": 0.45882353, "a": 1 }
 			]
 		}
 	]
@@ -1324,6 +1443,12 @@
 			"drawable": { "id": 6 }
 		}
 	],
+	"move": [
+		{
+			"drawable": { "id": 49 }
+		}
+	],
+	"castLeadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FALLING" },
 	"extraStates": [
 		{
 			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FALLING" },
@@ -1334,19 +1459,8 @@
 					"drawable": { "id": 46 }
 				}
 			]
-		},
-		{
-			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
-			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
-			"shadowOffsetY": 1,
-			"images": [
-				{
-					"drawable": { "id": 49 }
-				}
-			]
 		}
 	],
-	"castLeadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FALLING" },
 	"keepUncustomized": true,
 	"customizables": [
 		{
@@ -1454,6 +1568,11 @@
 	"attack": [
 		{
 			"drawable": { "id": 95 }
+		}
+	],
+	"move": [
+		{
+			"drawable": { "id": 657 }
 		}
 	],
 	"customizables": [
@@ -1603,6 +1722,11 @@
 			"drawable": { "id": 108 }
 		}
 	],
+	"move": [
+		{
+			"drawable": { "id": 658 }
+		}
+	],
 	"customizables": [
 		{
 			"name": "Hair",
@@ -1748,6 +1872,11 @@
 	"attack": [
 		{
 			"drawable": { "id": 136 }
+		}
+	],
+	"move": [
+		{
+			"drawable": { "id": 659 }
 		}
 	],
 	"customizables": [
@@ -1897,6 +2026,11 @@
 			"drawable": { "id": 142 }
 		}
 	],
+	"move": [
+		{
+			"drawable": { "id": 660 }
+		}
+	],
 	"customizables": [
 		{
 			"name": "Hair",
@@ -2044,6 +2178,11 @@
 	"attack": [
 		{
 			"drawable": { "id": 121 }
+		}
+	],
+	"move": [
+		{
+			"drawable": { "id": 705 }
 		}
 	],
 	"extraStates": [
@@ -2281,6 +2420,7 @@
 	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleLayeredPatchworkMetaData",
 	"id": { "id": 13 },
 	"name": "Data Server",
+	"offsetY": -4,
 	"idle": [
 		{
 			"drawable": { "id": 246 }
@@ -2293,7 +2433,7 @@
 			"replace": [
 				{ "replace": 846116607 },
 				{
-					"replace": 239173887,
+					"replace": 590845183,
 					"newColor": { "r": 0.5411765, "g": 0.5411765, "b": 0.5411765, "a": 1 }
 				},
 				{
@@ -2302,7 +2442,10 @@
 				}
 			],
 			"colors": [
-				{ "r": 0.7882353, "g": 0.1254902, "b": 0.1254902, "a": 1 }
+				{ "r": 0.7882353, "g": 0.1254902, "b": 0.1254902, "a": 1 },
+				{ "r": 0.69803923, "b": 1, "a": 1 },
+				{ "r": 1, "g": 0.78431374, "a": 1 },
+				{ "r": 0.31764707, "g": 1, "a": 1 }
 			]
 		}
 	]
@@ -2340,6 +2483,39 @@
 		{
 			"drawable": { "id": 307 }
 		}
+	],
+	"move": [
+		{
+			"drawable": { "id": 704 }
+		}
+	],
+	"extraStates": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "Strum" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "Strum Loop" },
+			"images": [
+				{
+					"drawable": { "id": 37 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "Strum Loop" },
+			"images": [
+				{
+					"drawable": { "id": 244 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "Strum End" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 245 }
+				}
+			]
+		}
 	]
 },
 {
@@ -2366,6 +2542,10 @@
 		"xPos": 10
 	},
 	"defend": {},
+	"move": {
+		"drawable": { "id": 703 }
+	},
+	"spawn": {},
 	"keepUncustomized": true,
 	"customizables": [
 		{
@@ -2380,7 +2560,10 @@
 			"colors": [
 				{ "r": 0.30588236, "g": 0.6392157, "b": 0.72156864, "a": 1 },
 				{ "r": 0.8509804, "g": 0.6431373, "b": 0.28235295, "a": 1 },
-				{ "r": 0.49019608, "g": 0.8, "b": 0.34509805, "a": 1 }
+				{ "r": 0.49019608, "g": 0.8, "b": 0.34509805, "a": 1 },
+				{ "r": 0.8352941, "g": 0.6313726, "b": 1, "a": 1 },
+				{ "r": 0.36078432, "g": 0.3019608, "b": 0.3019608, "a": 1 },
+				{ "r": 0.87058824, "g": 0.84705883, "b": 0.81960785, "a": 1 }
 			]
 		}
 	]
@@ -2404,5 +2587,333 @@
 			]
 		}
 	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 2 },
+	"name": "Bella",
+	"idle": {
+		"drawable": { "id": 204 }
+	},
+	"hurt": {
+		"drawable": { "id": 207 }
+	},
+	"stunStart": {
+		"drawable": { "id": 208 }
+	},
+	"stunEnd": {
+		"drawable": { "id": 240 }
+	},
+	"cast": {
+		"drawable": { "id": 206 },
+		"xPos": 8
+	},
+	"attack": {
+		"drawable": { "id": 205 },
+		"yPos": -5
+	},
+	"defend": {},
+	"move": {
+		"drawable": { "id": 677 },
+		"xPos": -8
+	},
+	"spawn": {},
+	"shadowY": 3
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 4 },
+	"name": "Tankitty",
+	"idle": {
+		"drawable": { "id": 513 }
+	},
+	"hurt": {
+		"drawable": { "id": 517 }
+	},
+	"stunStart": {
+		"drawable": { "id": 518 }
+	},
+	"stunEnd": {
+		"drawable": { "id": 519 }
+	},
+	"cast": {
+		"drawable": { "id": 516 }
+	},
+	"attack": {
+		"drawable": { "id": 515 }
+	},
+	"defend": {
+		"drawable": { "id": 700 }
+	},
+	"move": {},
+	"spawn": {},
+	"extraStates": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 514 }
+				}
+			]
+		}
+	],
+	"keepUncustomized": true,
+	"customizables": [
+		{
+			"name": "Breed",
+			"replace": [
+				{ "replace": -34282497 },
+				{ "replace": -658527745 },
+				{ "replace": -23168769 },
+				{ "replace": -579970305 },
+				{ "replace": -243969025 },
+				{ "replace": 1465473279 }
+			],
+			"colors": [
+				{
+					"r": 0.3019608,
+					"g": 0.3019608,
+					"b": 0.3019608,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.18039216, "g": 0.18039216, "b": 0.18039216, "a": 1 },
+						{ "r": 0.3019608, "g": 0.3019608, "b": 0.3019608, "a": 1 },
+						{ "r": 0.18039216, "g": 0.18039216, "b": 0.18039216, "a": 1 },
+						{ "r": 0.5803922, "g": 0.5803922, "b": 0.5803922, "a": 1 },
+						{ "r": 1, "g": 0.95686275, "b": 0.7607843, "a": 1 }
+					],
+					"primary": true
+				},
+				{
+					"r": 0.2,
+					"g": 0.29803923,
+					"b": 0.38039216,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.13725491, "g": 0.18431373, "b": 0.21960784, "a": 1 },
+						{ "r": 0.45490196, "g": 0.5137255, "b": 0.56078434, "a": 1 },
+						{ "r": 0.30980393, "g": 0.3529412, "b": 0.3882353, "a": 1 },
+						{ "r": 0.42745098, "g": 0.49019608, "b": 0.5411765, "a": 1 },
+						{ "r": 1, "g": 0.93333334, "b": 0.8784314, "a": 1 }
+					],
+					"primary": true
+				},
+				{
+					"r": 0.6117647,
+					"g": 0.27058825,
+					"b": 0.15686275,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.43137255, "g": 0.22352941, "b": 0.15294118, "a": 1 },
+						{ "r": 0.7490196, "g": 0.6745098, "b": 0.6509804, "a": 1 },
+						{ "r": 0.50980395, "g": 0.43529412, "b": 0.42352942, "a": 1 },
+						{ "r": 0.83137256, "g": 0.4862745, "b": 0.37254903, "a": 1 },
+						{ "r": 0.21176471, "g": 0.19607843, "b": 0.1882353, "a": 1 }
+					],
+					"primary": true
+				},
+				{
+					"r": 0.92941177,
+					"g": 0.92941177,
+					"b": 0.92941177,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.67058825, "g": 0.67058825, "b": 0.67058825, "a": 1 },
+						{ "r": 0.92941177, "g": 0.92941177, "b": 0.92941177, "a": 1 },
+						{ "r": 0.67058825, "g": 0.67058825, "b": 0.67058825, "a": 1 },
+						{ "r": 0.9490196, "g": 0.32156864, "b": 0.52156866, "a": 1 },
+						{ "r": 0.14509805, "g": 0.56078434, "b": 0.9019608, "a": 1 }
+					],
+					"primary": true
+				},
+				{
+					"r": 0.7607843,
+					"g": 0.5764706,
+					"b": 0.39607844,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.9098039, "g": 0.8509804, "b": 0.7921569, "a": 1 },
+						{ "r": 0.30980393, "g": 0.2784314, "b": 0.26666668, "a": 1 },
+						{ "r": 0.18039216, "g": 0.16078432, "b": 0.15294118, "a": 1 },
+						{ "r": 0.3019608, "g": 0.23137255, "b": 0.20392157, "a": 1 },
+						{ "r": 0.18039216, "g": 0.16862746, "b": 0.15294118, "a": 1 }
+					],
+					"primary": true
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.SimplePatchworkMetaData",
+	"id": { "id": 22 },
+	"name": "Voc Pickup",
+	"drawable": { "id": 584 },
+	"yOfs": 10,
+	"xScale": 2,
+	"yScale": 2
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.SimplePatchworkMetaData",
+	"id": { "id": 32 },
+	"name": "Data Server Ancient",
+	"drawable": { "id": 623 }
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.SimplePatchworkMetaData",
+	"id": { "id": 33 },
+	"name": "Ice Cave Back",
+	"drawable": { "id": 624 },
+	"xOfs": -13,
+	"yOfs": -1,
+	"shadow": false
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.SimplePatchworkMetaData",
+	"id": { "id": 34 },
+	"name": "Ice Cave Front",
+	"drawable": { "id": 625 },
+	"xOfs": -18,
+	"yOfs": -15
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 35 },
+	"name": "Godius Body",
+	"idle": {
+		"drawable": { "id": 661 }
+	},
+	"hurt": {},
+	"stunStart": {},
+	"stunEnd": {},
+	"cast": {},
+	"attack": {},
+	"defend": {
+		"drawable": { "id": 698 }
+	},
+	"move": {},
+	"spawn": {
+		"drawable": { "id": 664 },
+		"yPos": -16
+	},
+	"spawnLeadsInto": null,
+	"extraStates": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_OPEN" },
+			"images": [
+				{
+					"drawable": { "id": 665 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 36 },
+	"name": "Godius Left Arm",
+	"idle": {
+		"drawable": { "id": 662 }
+	},
+	"hurt": {},
+	"stunStart": {},
+	"stunEnd": {},
+	"cast": {
+		"drawable": { "id": 697 },
+		"xPos": -20,
+		"yPos": -20
+	},
+	"attack": {
+		"drawable": { "id": 696 }
+	},
+	"defend": {},
+	"move": {
+		"drawable": { "id": 668 }
+	},
+	"spawn": {
+		"drawable": { "id": 666 }
+	},
+	"attackLeadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+	"moveLeadsInto": null,
+	"extraStates": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FALLING" },
+			"images": [
+				{
+					"drawable": { "id": 670 },
+					"xPos": -34,
+					"yPos": -28
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "LANDED" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 672 },
+					"xPos": -20,
+					"yPos": -20
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.BattleEntityPatchworkMetaData",
+	"id": { "id": 37 },
+	"name": "Godius Right Arm",
+	"idle": {
+		"drawable": { "id": 663 }
+	},
+	"hurt": {},
+	"stunStart": {},
+	"stunEnd": {},
+	"cast": {
+		"drawable": { "id": 669 },
+		"xPos": -20,
+		"yPos": -20
+	},
+	"attack": {
+		"drawable": { "id": 668 }
+	},
+	"defend": {},
+	"move": {},
+	"spawn": {
+		"drawable": { "id": 667 }
+	},
+	"attackLeadsInto": null,
+	"castLeadsInto": null,
+	"extraStates": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FALLING" },
+			"images": [
+				{
+					"drawable": { "id": 670 },
+					"xPos": -34,
+					"yPos": -28
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "LANDED" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 672 },
+					"xPos": -20,
+					"yPos": -20
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.meta.SimplePatchworkMetaData",
+	"id": { "id": 38 },
+	"name": "Gateway Portal",
+	"drawable": { "id": 701 },
+	"shadow": false
 }
 ]

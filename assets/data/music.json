@@ -30,6 +30,7 @@
 	"class": "com.one2b3.endcycle.engine.audio.music.MusicData",
 	"id": { "id": 4 },
 	"filepath": "music/battle/victory_a.ogg",
+	"name": "Victory A",
 	"bpm": 160,
 	"next": { "id": 1 }
 },
@@ -37,20 +38,23 @@
 	"class": "com.one2b3.endcycle.engine.audio.music.MusicData",
 	"id": { "id": 5 },
 	"filepath": "music/battle/player_defeated_a.ogg",
+	"name": "Game Over",
 	"loop": 30,
 	"bpm": 131
 },
 {
 	"class": "com.one2b3.endcycle.engine.audio.music.MusicData",
 	"id": { "id": 9 },
-	"filepath": "music/world/clinic_a.ogg",
+	"filepath": "music/menu/clinic_a.ogg",
+	"name": "Tutorials & Tips",
 	"loop": 10,
 	"bpm": 96
 },
 {
 	"class": "com.one2b3.endcycle.engine.audio.music.MusicData",
 	"id": { "id": 10 },
-	"filepath": "music/world/shop_a.ogg",
+	"filepath": "music/menu/shop_a.ogg",
+	"name": "Voc Menu",
 	"loop": 13.738,
 	"bpm": 140
 },
@@ -68,6 +72,7 @@
 	"class": "com.one2b3.endcycle.engine.audio.music.MusicData",
 	"id": { "id": 18 },
 	"filepath": "music/battle/victory_b.ogg",
+	"name": "Victory B",
 	"bpm": 160,
 	"next": { "id": 1 }
 },
@@ -75,6 +80,7 @@
 	"class": "com.one2b3.endcycle.engine.audio.music.MusicData",
 	"id": { "id": 19 },
 	"filepath": "music/battle/victory_c.ogg",
+	"name": "Victory C",
 	"bpm": 160,
 	"next": { "id": 1 }
 },
@@ -82,13 +88,14 @@
 	"class": "com.one2b3.endcycle.engine.audio.music.MusicData",
 	"id": { "id": 20 },
 	"filepath": "music/battle/triumph_a.ogg",
+	"name": "Victory Perfect!",
 	"loop": 0,
 	"bpm": 160
 },
 {
 	"class": "com.one2b3.endcycle.engine.audio.music.MusicData",
 	"id": { "id": 25 },
-	"filepath": "music/world/crimson_a.ogg",
+	"filepath": "music/menu/crimson_a.ogg",
 	"name": "Main Theme",
 	"loop": 10,
 	"bpm": 192
@@ -102,13 +109,7 @@
 	"bpm": 150,
 	"battle": true
 },
-{
-	"class": "com.one2b3.endcycle.engine.audio.music.MusicData",
-	"id": {},
-	"filepath": "music/world/base_a.ogg",
-	"name": "Campaign",
-	"loop": 0
-},
+{ "class": "com.one2b3.endcycle.engine.audio.music.MusicData", "filepath": "music/menu/base_a.ogg", "name": "Campaign", "loop": 0 },
 {
 	"class": "com.one2b3.endcycle.engine.audio.music.MusicData",
 	"id": { "id": 6 },
@@ -120,9 +121,162 @@
 {
 	"class": "com.one2b3.endcycle.engine.audio.music.MusicData",
 	"id": { "id": 7 },
-	"filepath": "music/world/crimson_b.ogg",
-	"name": "Halloween Main THeme",
+	"filepath": "music/menu/crimson_b.ogg",
+	"name": "Halloween Main Theme",
 	"loop": 24,
 	"bpm": 100
+},
+{
+	"class": "com.one2b3.endcycle.engine.audio.music.MusicData",
+	"id": { "id": 8 },
+	"filepath": "music/phantom_realm.ogg",
+	"name": "Phantom Realm",
+	"loop": 0,
+	"bpm": 135
+},
+{
+	"class": "com.one2b3.endcycle.engine.audio.music.MusicData",
+	"id": { "id": 11 },
+	"filepath": "music/world/core.ogg",
+	"name": "The Core",
+	"loop": 63.499,
+	"bpm": 119
+},
+{
+	"class": "com.one2b3.endcycle.engine.audio.music.MusicData",
+	"id": { "id": 12 },
+	"filepath": "music/world/myste_edun.ogg",
+	"name": "Myste Edun",
+	"loop": 90,
+	"bpm": 128
+},
+{
+	"class": "com.one2b3.endcycle.engine.audio.music.MusicData",
+	"id": { "id": 13 },
+	"filepath": "music/world/everod.ogg",
+	"name": "Everod",
+	"loop": 27.485,
+	"bpm": 105
+},
+{
+	"class": "com.one2b3.endcycle.engine.audio.music.MusicData",
+	"id": { "id": 14 },
+	"filepath": "music/world/glacial_pathways.ogg",
+	"name": "Glacial Pathways",
+	"loop": 0,
+	"bpm": 120
+},
+{
+	"class": "com.one2b3.endcycle.engine.audio.music.MusicData",
+	"id": { "id": 15 },
+	"filepath": "music/world/ice_cavern.ogg",
+	"name": "Ice Cavern",
+	"loop": 46.285,
+	"bpm": 140
+},
+{
+	"class": "com.one2b3.endcycle.engine.audio.music.MusicData",
+	"id": { "id": 16 },
+	"filepath": "music/world/astrat.ogg",
+	"name": "Astrat",
+	"loop": 0,
+	"bpm": 128
+},
+{
+	"class": "com.one2b3.endcycle.engine.audio.music.MusicData",
+	"id": { "id": 21 },
+	"filepath": "music/world/arahas_desert.ogg",
+	"name": "Arahas Desert",
+	"loop": 21.82,
+	"bpm": 132
+},
+{
+	"class": "com.one2b3.endcycle.engine.audio.music.MusicData",
+	"id": { "id": 22 },
+	"filepath": "music/world/midius.ogg",
+	"name": "Midius",
+	"loop": 25.6,
+	"bpm": 75
+},
+{
+	"class": "com.one2b3.endcycle.engine.audio.music.MusicData",
+	"id": { "id": 23 },
+	"filepath": "music/world/networld.ogg",
+	"name": "Networld",
+	"loop": 1.131,
+	"bpm": 144
+},
+{
+	"class": "com.one2b3.endcycle.engine.audio.music.MusicData",
+	"id": { "id": 24 },
+	"filepath": "music/world/clockwork_factory.ogg",
+	"name": "Clockwork Factory",
+	"loop": 21.596,
+	"bpm": 100
+},
+{
+	"class": "com.one2b3.endcycle.engine.audio.music.MusicData",
+	"id": { "id": 27 },
+	"filepath": "music/world/outer_galaxy.ogg",
+	"name": "Outer Galaxy",
+	"loop": 15,
+	"bpm": 128
+},
+{
+	"class": "com.one2b3.endcycle.engine.audio.music.MusicData",
+	"id": { "id": 28 },
+	"filepath": "music/world/ancient_ruins.ogg",
+	"name": "Ancient Ruins",
+	"loop": 0,
+	"bpm": 96
+},
+{
+	"class": "com.one2b3.endcycle.engine.audio.music.MusicData",
+	"id": { "id": 29 },
+	"filepath": "music/world/wooden_passage.ogg",
+	"name": "Wooden Passage",
+	"loop": 29.09,
+	"bpm": 140
+},
+{
+	"class": "com.one2b3.endcycle.engine.audio.music.MusicData",
+	"id": { "id": 30 },
+	"filepath": "music/battle/battle_lunar.ogg",
+	"name": "Battle Lunar",
+	"loop": 0,
+	"bpm": 120,
+	"victory": { "id": 32 }
+},
+{
+	"class": "com.one2b3.endcycle.engine.audio.music.MusicData",
+	"id": { "id": 31 },
+	"filepath": "music/menu/lunar_a.ogg",
+	"name": "Regolithia",
+	"loop": 0
+},
+{
+	"class": "com.one2b3.endcycle.engine.audio.music.MusicData",
+	"id": { "id": 32 },
+	"filepath": "music/battle/victory_lunar.ogg",
+	"name": "Victory Lunar",
+	"loop": 1.712
+},
+{
+	"class": "com.one2b3.endcycle.engine.audio.music.MusicData",
+	"id": { "id": 33 },
+	"filepath": "music/menu/main_a.ogg",
+	"name": "Embark",
+	"loop": 24.005,
+	"bpm": 105
+},
+{
+	"class": "com.one2b3.endcycle.engine.audio.music.MusicData",
+	"id": { "id": 34 },
+	"filepath": "music/battle/battle_b.ogg",
+	"name": "VS Final Boss",
+	"loop": 0,
+	"bpm": 136,
+	"victory": { "id": 25 },
+	"battle": true
 }
 ]

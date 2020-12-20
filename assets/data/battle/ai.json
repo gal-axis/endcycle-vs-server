@@ -4000,7 +4000,6 @@
 			"time": 7,
 			"onInterrupt": true,
 			"onHurt": true,
-			"targetPosition": { "xType": "CLOSER", "xDistance": 2, "yType": "IGNORE" },
 			"action": { "id": 103 }
 		}
 	],
@@ -4034,7 +4033,7 @@
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 84 }
 		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.HealthFilterAct",
 			"maxHealth": 0.5,
@@ -4048,7 +4047,7 @@
 				"voc": { "id": 10031 }
 			}
 		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.6 },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1, "relation": "TOWARD_TARGET" },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",

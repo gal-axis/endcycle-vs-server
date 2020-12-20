@@ -17,7 +17,7 @@ float toAdd(float color){
 }
 
 float apply (float a) {
-	return acos(1 - 2 * a) / PI;
+	return acos(1.0 - 2.0 * a) / PI;
 }
 
 void main() {

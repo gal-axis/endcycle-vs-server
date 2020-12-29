@@ -874,7 +874,7 @@
 			"script": {
 				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
 				"dialogue": { "id": 271 },
-				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 5 }
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 2 }
 			}
 		}
 	]
@@ -892,7 +892,7 @@
 						"dialogue": { "id": 594 }
 					}
 				],
-				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 4 }
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 2 }
 			}
 		}
 	]
@@ -4464,7 +4464,8 @@
 						"dialogue": { "id": 393 },
 						"entity": { "id": 9 }
 					}
-				]
+				],
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
 			}
 		}
 	]
@@ -4786,7 +4787,7 @@
 {
 	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
 	"id": { "id": 120 },
-	"name": "A-Duel Crimson Lose",
+	"name": "A-Duel Crimson Lost",
 	"scripts": [
 		{
 			"script": {
@@ -4813,7 +4814,8 @@
 					{
 						"dialogue": { "id": 413 }
 					}
-				]
+				],
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
 			}
 		}
 	]
@@ -5616,7 +5618,7 @@
 						}
 					}
 				],
-				"defaultScript": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 6 }
+				"defaultScript": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 3 }
 			}
 		}
 	]
@@ -5748,7 +5750,7 @@
 			}
 		},
 		{
-			"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 4 }
+			"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 2 }
 		}
 	]
 },
@@ -5790,7 +5792,7 @@
 						"dialogue": { "id": 586 }
 					}
 				],
-				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 4 }
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 2 }
 			}
 		}
 	]
@@ -5808,7 +5810,7 @@
 						"dialogue": { "id": 587 }
 					}
 				],
-				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 4 }
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 2 }
 			}
 		}
 	]
@@ -5850,7 +5852,7 @@
 			}
 		},
 		{
-			"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 4 }
+			"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 2 }
 		}
 	]
 },
@@ -5867,7 +5869,7 @@
 						"dialogue": { "id": 592 }
 					}
 				],
-				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 4 }
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 2 }
 			}
 		}
 	]
@@ -5927,7 +5929,7 @@
 						"dialogue": { "id": 593 }
 					}
 				],
-				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 4 }
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 2 }
 			}
 		}
 	]
@@ -6672,6 +6674,20 @@
 					}
 				],
 				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 190 },
+	"name": "Final Boss Timeout",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.SetEntityActionScript",
+				"name": "godius",
+				"action": { "id": 106 }
 			}
 		}
 	]

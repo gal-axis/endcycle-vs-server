@@ -180,7 +180,9 @@
 	},
 	"attack": {},
 	"defend": {},
-	"move": {},
+	"move": {
+		"drawable": { "id": 377 }
+	},
 	"spawn": {},
 	"extraStates": [
 		{
@@ -188,15 +190,6 @@
 			"images": [
 				{
 					"drawable": { "id": 421 }
-				}
-			]
-		},
-		{
-			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
-			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
-			"images": [
-				{
-					"drawable": { "id": 377 }
 				}
 			]
 		}
@@ -2787,8 +2780,12 @@
 	"hurt": {},
 	"stunStart": {},
 	"stunEnd": {},
-	"cast": {},
-	"attack": {},
+	"cast": {
+		"drawable": { "id": 698 }
+	},
+	"attack": {
+		"drawable": { "id": 698 }
+	},
 	"defend": {
 		"drawable": { "id": 698 }
 	},
@@ -2835,7 +2832,6 @@
 		"drawable": { "id": 666 }
 	},
 	"attackLeadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
-	"moveLeadsInto": null,
 	"extraStates": [
 		{
 			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FALLING" },

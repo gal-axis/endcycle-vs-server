@@ -880,5 +880,17 @@
 			}
 		]
 	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.items.AdventureItem",
+	"id": { "id": 64 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Item.Escape" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Item.Escape.Desc" },
+	"maximum": 3,
+	"singleUse": true,
+	"resumeBattle": true,
+	"listeners": [
+		{ "class": "com.one2b3.endcycle.features.adventure.items.listeners.EscapeItemListener" }
+	]
 }
 ]

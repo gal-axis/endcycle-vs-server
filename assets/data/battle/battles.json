@@ -544,7 +544,7 @@
 	"class": "com.one2b3.endcycle.features.battle.BattleData",
 	"id": { "id": 9 },
 	"dataName": "Practice",
-	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "Battle.Practice" },
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
@@ -567,6 +567,13 @@
 					}
 				]
 			}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"turned": true,
+			"form": { "id": 48 }
 		}
 	]
 },
@@ -6608,9 +6615,15 @@
 	"class": "com.one2b3.endcycle.features.battle.BattleData",
 	"id": { "id": 76 },
 	"dataName": "A-Final Boss Battle",
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "" },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "Battle.FinalBoss" },
 	"field": { "id": 36 },
-	"time": 360,
+	"background": { "id": 8 },
+	"music": { "id": 34 },
+	"time": 300,
+	"timeoutScript": {
+		"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+		"script": { "id": 190 }
+	},
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",

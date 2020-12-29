@@ -339,7 +339,7 @@
 		"customizations": [ 3 ]
 	},
 	"configuration": {
-		"stats": { "hp": 4000, "strength": 150, "crushStrength": 200, "resistance": 300, "speed": 100 },
+		"stats": { "hp": 4000, "strength": 100, "crushStrength": 150, "resistance": 300, "speed": 100 },
 		"modes": [
 			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" },
 			{ "class": "com.one2b3.endcycle.features.battle.mode.BigEntityMode", "size": 3, "extraWidth": 1, "extraHeight": 1 },
@@ -643,7 +643,7 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
 	"id": { "id": 42 },
-	"dataName": "Boss Bella Murk",
+	"dataName": "Boss Bella Doppelganger",
 	"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Enemy.Boss.Bella2" },
 	"entity": { "id": 11 },
 	"configuration": {
@@ -785,5 +785,13 @@
 		]
 	},
 	"action": { "id": 21 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 48 },
+	"dataName": "Practice Dummy",
+	"entity": { "id": 18 },
+	"type": "DUMMY",
+	"configuration": {}
 }
 ]

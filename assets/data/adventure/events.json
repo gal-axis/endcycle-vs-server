@@ -115,7 +115,7 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
 	"id": { "id": 9 },
-	"dataName": "VS 1x Bombing Bomby",
+	"dataName": "VS Bomby Bombing",
 	"battle": { "id": 35 },
 	"song": { "id": 3 },
 	"trigger": {
@@ -131,7 +131,7 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
 	"id": { "id": 10 },
-	"dataName": "VS 2x Bombing Bomby",
+	"dataName": "VS Bomby Bombing 2",
 	"battle": { "id": 34 },
 	"song": { "id": 3 },
 	"trigger": {
@@ -152,7 +152,7 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
 	"id": { "id": 11 },
-	"dataName": "VS Shooting Bomby",
+	"dataName": "VS Bomby Shooting",
 	"battle": { "id": 34 },
 	"song": { "id": 3 },
 	"trigger": {
@@ -173,7 +173,7 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
 	"id": { "id": 12 },
-	"dataName": "VS Minibomb Bomby",
+	"dataName": "VS Bomby Minibomb",
 	"battle": { "id": 34 },
 	"song": { "id": 3 },
 	"trigger": {
@@ -189,7 +189,7 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
 	"id": { "id": 13 },
-	"dataName": "VS Bombing+Minibomb Bomby #1",
+	"dataName": "VS Bomby Bombing/Minibomb",
 	"battle": { "id": 34 },
 	"song": { "id": 3 },
 	"trigger": {
@@ -211,7 +211,7 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
 	"id": { "id": 14 },
-	"dataName": "VS Bombing+Minibomb Bomby #2",
+	"dataName": "VS Bomby Bombing/Minibomb #2",
 	"battle": { "id": 34 },
 	"song": { "id": 3 },
 	"trigger": {
@@ -232,7 +232,7 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
 	"id": { "id": 15 },
-	"dataName": "Boss Bombarbara",
+	"dataName": "Boss: Annoyed Bombarbara",
 	"icon": {
 		"drawable": { "id": 618 }
 	},
@@ -542,7 +542,7 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
 	"id": { "id": 21 },
-	"dataName": "VS Bombing Placer",
+	"dataName": "VS Bomby Placer",
 	"battle": { "id": 34 },
 	"song": { "id": 3 },
 	"trigger": {
@@ -559,7 +559,7 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
 	"id": { "id": 22 },
-	"dataName": "VS Bombing FireSlash",
+	"dataName": "VS Bomby FireSlash",
 	"battle": { "id": 34 },
 	"song": { "id": 3 },
 	"trigger": {
@@ -912,7 +912,7 @@
 						"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
 						"script": { "id": 153 }
 					},
-					"baseLevel": 6
+					"baseLevel": 0
 				}
 			},
 			{
@@ -1008,7 +1008,7 @@
 					"enter": { "id": 175 },
 					"shop": { "id": 2 },
 					"onAttack": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureBetraySideScript", "side": "Crimson" },
-					"baseLevel": 5
+					"baseLevel": 0
 				}
 			}
 		]
@@ -1049,7 +1049,7 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
 	"id": { "id": 34 },
-	"dataName": "Boss Alexsander",
+	"dataName": "Boss: Dreamy Alexsander",
 	"icon": {
 		"drawable": { "id": 618 }
 	},
@@ -1119,7 +1119,7 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
 	"id": { "id": 36 },
-	"dataName": "Boss Q.T.",
+	"dataName": "Boss: Jealous Q.T.",
 	"icon": {
 		"drawable": { "id": 618 }
 	},
@@ -1154,7 +1154,7 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
 	"id": { "id": 37 },
-	"dataName": "Boss Tankitty",
+	"dataName": "Boss: Lazy Tankitty",
 	"icon": {
 		"drawable": { "id": 618 }
 	},
@@ -1259,7 +1259,7 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
 	"id": { "id": 40 },
-	"dataName": "Boss Phantom Realm",
+	"dataName": "Boss: Bella",
 	"icon": {
 		"drawable": { "id": 618 }
 	},
@@ -1297,13 +1297,14 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
 	"id": { "id": 41 },
-	"dataName": "Final Boss",
+	"dataName": "Final Boss: Godius Alpha",
 	"icon": {
 		"drawable": { "id": 618 }
 	},
 	"battle": { "id": 76 },
 	"song": { "id": 34 },
 	"reward": 500,
+	"practiceData": true,
 	"rewardItems": [
 		{
 			"item": { "id": 50 }
@@ -1442,7 +1443,7 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
 	"id": { "id": 46 },
-	"dataName": "VS Shooting Bomby (Rescue)",
+	"dataName": "VS Bomby Shooting (Rescue)",
 	"battle": { "id": 34 },
 	"song": { "id": 3 },
 	"trigger": {
@@ -1610,7 +1611,7 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
 	"id": { "id": 52 },
-	"dataName": "Boss Spark",
+	"dataName": "Boss: Spark",
 	"icon": {
 		"drawable": { "id": 565 }
 	},
@@ -1706,7 +1707,7 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
 	"id": { "id": 53 },
-	"dataName": "Boss Cress Rogue",
+	"dataName": "Boss: Cress",
 	"song": { "id": 26 },
 	"trigger": {
 		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BossBattleEventTrigger",
@@ -1753,6 +1754,7 @@
 	"id": { "id": 55 },
 	"dataName": "VS Tankitty Sineball",
 	"battle": { "id": 34 },
+	"song": { "id": 3 },
 	"trigger": {
 		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
 		"positions": [
@@ -1769,6 +1771,7 @@
 	"id": { "id": 56 },
 	"dataName": "VS Tankitty Builder",
 	"battle": { "id": 34 },
+	"song": { "id": 3 },
 	"trigger": {
 		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
 		"positions": [
@@ -1818,7 +1821,7 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
 	"id": { "id": 58 },
-	"dataName": "Boss Phantom Realm Murk",
+	"dataName": "Boss: Bella Doppelganger",
 	"icon": {
 		"drawable": { "id": 618 }
 	},
@@ -1870,7 +1873,7 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
 	"id": { "id": 33 },
-	"dataName": "Boss Traitor Agent",
+	"dataName": "Boss: Traitor Agent",
 	"icon": {
 		"drawable": { "id": 564 }
 	},
@@ -2010,7 +2013,7 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
 	"id": { "id": 62 },
-	"dataName": "Boss Del Rogue",
+	"dataName": "Boss: Del",
 	"song": { "id": 26 },
 	"trigger": {
 		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BossBattleEventTrigger",

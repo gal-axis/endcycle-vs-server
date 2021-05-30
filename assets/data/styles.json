@@ -994,5 +994,26 @@
 		},
 		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.PowerMultiplierModification", "power": 0.75, "crush": 0.75 }
 	]
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.styles.VocStyle",
+	"id": { "id": 46 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.Invert" },
+	"prefix": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.Invert" },
+	"description": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Style.Invert.Desc" },
+	"level": 1,
+	"drawable": {
+		"drawable": { "id": 709 }
+	},
+	"tagPreference": [ "AFFECTS_ENEMY" ],
+	"preview": {},
+	"modifications": [
+		{
+			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
+			"inflicts": [
+				{ "type": "FLIP" }
+			]
+		}
+	]
 }
 ]

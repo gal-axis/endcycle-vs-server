@@ -388,6 +388,7 @@
 	"id": { "id": 5 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Neo" },
 	"card": { "id": 422 },
+	"win": { "id": 711 },
 	"patchworks": [
 		{
 			"id": { "id": 86 }
@@ -399,9 +400,7 @@
 	"skills": [ "Virtual" ],
 	"ultraVoc": {
 		"cutIn": {
-			"drawable": { "id": 643 },
-			"scaleX": 7,
-			"scaleY": 7
+			"drawable": { "id": 643 }
 		},
 		"voc": { "id": 69 }
 	},
@@ -443,12 +442,12 @@
 			{
 				"side": "Azure",
 				"character": { "id": 13 },
-				"paletteChanges": [ 0, 3, -1, -1, 1 ]
+				"paletteChanges": [ 0, 2, 1, 0 ]
 			},
 			{
 				"side": "Crimson",
 				"character": { "id": 23 },
-				"paletteChanges": [ 3, 0, -1, 2, 1 ]
+				"paletteChanges": [ 0, 2, 1, 0 ]
 			}
 		],
 		"startScript": {
@@ -554,9 +553,49 @@
 	"nameable": true,
 	"customizable": true,
 	"price": 5000,
-	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"spawnAnimation": {
+		"class": "com.one2b3.endcycle.features.battle.entities.animations.data.TeleportEntityAnimation",
+		"drawable": {
+			"drawable": { "id": 712 }
+		},
+		"animation": {
+			"class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation",
+			"sound": { "sound": "battle/entity/spawn_noise.wav", "volume": 1, "pitch": 1 },
+			"reverse": true,
+			"particles": [
+				{
+					"drawable": { "id": 1138 },
+					"color": { "g": 0.6, "b": 1, "a": 1 }
+				},
+				{
+					"drawable": { "id": 1139 },
+					"color": { "g": 0.6, "b": 1, "a": 1 }
+				}
+			]
+		}
+	},
 	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
-	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
+	"deathAnimation": {
+		"class": "com.one2b3.endcycle.features.battle.entities.animations.data.TeleportEntityAnimation",
+		"sound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
+		"drawable": {
+			"drawable": { "id": 712 }
+		},
+		"invert": true,
+		"animation": {
+			"class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation",
+			"particles": [
+				{
+					"drawable": { "id": 1138 },
+					"color": { "g": 0.6, "b": 1, "a": 1 }
+				},
+				{
+					"drawable": { "id": 1139 },
+					"color": { "g": 0.6, "b": 1, "a": 1 }
+				}
+			]
+		}
+	},
 	"shop": {
 		"enter": [
 			{
@@ -690,9 +729,47 @@
 	"tease": true,
 	"customizable": true,
 	"price": 7000,
-	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"spawnAnimation": {
+		"class": "com.one2b3.endcycle.features.battle.entities.animations.data.TeleportEntityAnimation",
+		"drawable": {
+			"drawable": { "id": 712 }
+		},
+		"animation": {
+			"class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation",
+			"reverse": true,
+			"particles": [
+				{
+					"drawable": { "id": 1138 },
+					"color": { "g": 0.6, "b": 1, "a": 1 }
+				},
+				{
+					"drawable": { "id": 1139 },
+					"color": { "g": 0.6, "b": 1, "a": 1 }
+				}
+			]
+		}
+	},
 	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
-	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
+	"deathAnimation": {
+		"class": "com.one2b3.endcycle.features.battle.entities.animations.data.TeleportEntityAnimation",
+		"drawable": {
+			"drawable": { "id": 712 }
+		},
+		"invert": true,
+		"animation": {
+			"class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation",
+			"particles": [
+				{
+					"drawable": { "id": 1138 },
+					"color": { "g": 0.6, "b": 1, "a": 1 }
+				},
+				{
+					"drawable": { "id": 1139 },
+					"color": { "g": 0.6, "b": 1, "a": 1 }
+				}
+			]
+		}
+	},
 	"shop": {
 		"enter": [
 			{
@@ -850,9 +927,9 @@
 	"nameable": true,
 	"customizable": true,
 	"price": 5000,
-	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.RunInEntityAnimation" },
 	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
-	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.RunInEntityAnimation", "invert": true },
 	"customTagAnimations": [
 		{
 			"tag": "THROW",
@@ -989,9 +1066,9 @@
 	"tease": true,
 	"customizable": true,
 	"price": 7000,
-	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.RunInEntityAnimation" },
 	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
-	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.RunInEntityAnimation", "invert": true },
 	"shop": {
 		"enter": [
 			{
@@ -2049,7 +2126,7 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 17 },
-	"dataName": "Scaredy Neo",
+	"dataName": "Scaredy AVatar",
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleEntityMessages", "key": "Neo" },
 	"patchworks": [
 		{
@@ -2689,7 +2766,35 @@
 	},
 	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
 	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
-	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
+	"deathAnimation": {
+		"class": "com.one2b3.endcycle.features.battle.entities.animations.data.ParticleEntityAnimation",
+		"particles": {
+			"drawables": [
+				{
+					"drawable": { "id": 1191 }
+				},
+				{
+					"drawable": { "id": 1192 }
+				},
+				{
+					"drawable": { "id": 1193 }
+				},
+				{
+					"drawable": { "id": 1194 }
+				},
+				{
+					"drawable": { "id": 1195 }
+				}
+			],
+			"gravity": true,
+			"amount": 8,
+			"speedRangeX": 40,
+			"speedRangeY": 60,
+			"spreadX": 40,
+			"spreadY": 40,
+			"speed": 7
+		}
+	},
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -2850,7 +2955,36 @@
 	},
 	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
 	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
-	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
+	"deathAnimation": {
+		"class": "com.one2b3.endcycle.features.battle.entities.animations.data.ParticleEntityAnimation",
+		"sound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
+		"particles": {
+			"drawables": [
+				{
+					"drawable": { "id": 336 }
+				},
+				{
+					"drawable": { "id": 337 }
+				},
+				{
+					"drawable": { "id": 338 }
+				},
+				{
+					"drawable": { "id": 339 }
+				},
+				{
+					"drawable": { "id": 340 }
+				}
+			],
+			"gravity": true,
+			"amount": 16,
+			"speedRangeX": 25,
+			"speedRangeY": 60,
+			"spreadX": 40,
+			"spreadY": 60,
+			"speed": 6
+		}
+	},
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},
@@ -3064,7 +3198,33 @@
 	},
 	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawn": true },
 	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
-	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
+	"deathAnimation": {
+		"class": "com.one2b3.endcycle.features.battle.entities.animations.data.ParticleEntityAnimation",
+		"sound": { "sound": "battle/entity/defeated.wav", "volume": 1, "pitch": 1 },
+		"particles": {
+			"drawables": [
+				{
+					"drawable": { "id": 1196 }
+				},
+				{
+					"drawable": { "id": 374 }
+				},
+				{
+					"drawable": { "id": 375 }
+				},
+				{
+					"drawable": { "id": 376 }
+				}
+			],
+			"gravity": true,
+			"amount": 26,
+			"speedRangeX": 20,
+			"speedRangeY": 80,
+			"spreadX": 30,
+			"spreadY": 50,
+			"speed": 6
+		}
+	},
 	"unlockCondition": {
 		"onslaughtScore": {}
 	},

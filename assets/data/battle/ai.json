@@ -321,6 +321,7 @@
 		}
 	],
 	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.3 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10034 }
@@ -345,7 +346,7 @@
 				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
 			}
 		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.6 }
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.3 }
 	]
 },
 {
@@ -365,6 +366,7 @@
 		}
 	],
 	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.3 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10034 }
@@ -389,7 +391,7 @@
 				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
 			}
 		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.6 }
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.3 }
 	]
 },
 {
@@ -566,7 +568,7 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 14 },
-	"name": "Neo Tournament",
+	"name": "AV.atar Tournament",
 	"target": {
 		"party": "ENEMY",
 		"invert": true,
@@ -3189,12 +3191,14 @@
 	],
 	"acts": [
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "uses": 1, "resetUses": true, "xTile": -1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "uses": 1, "resetUses": true, "turnType": "TOWARD_TARGET" },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"uses": 1,
 			"resetUses": true,
 			"voc": { "id": 82 }
-		}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "uses": 1, "resetUses": true, "time": 0.3 }
 	]
 },
 {
@@ -4175,6 +4179,23 @@
 			"voc": { "id": 84 }
 		},
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 107 },
+	"name": "Anthem Speaker",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 102 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.4 }
 	]
 }
 ]

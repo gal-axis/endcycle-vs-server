@@ -206,7 +206,10 @@
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
 			"attacks": [
-				{ "class": "com.one2b3.endcycle.utils.objects.Point" }
+				{
+					"xSpeed": 571.4286,
+					"stick": {}
+				}
 			],
 			"repeatCost": 0.2,
 			"speed": 0.07,
@@ -433,7 +436,9 @@
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
 			"attacks": [
-				{ "class": "com.one2b3.endcycle.utils.objects.Point" }
+				{
+					"stick": {}
+				}
 			],
 			"hitEffect": {
 				"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.HitEffect",
@@ -817,7 +822,11 @@
 	"imageIndex": 119,
 	"tags": [ "HEAL", "COUNTER", "BUFF", "AFFECTS_ALLY" ],
 	"optimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
-	"preview": {},
+	"preview": {
+		"enemyInput": [
+			{ "key": "BATTLE_ATTACK_2", "delay": 0.8 }
+		]
+	},
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Barrier.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Barrier.Description" },
@@ -1039,8 +1048,10 @@
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
 			"limiter": { "limit": true, "countGlobal": true },
-			"type": "ANTHEM",
-			"entity": { "id": 30 }
+			"type": "LIGHTMASS",
+			"entity": { "id": 30 },
+			"action": { "id": 107 },
+			"overrideHit": true
 		}
 	}
 },
@@ -2372,7 +2383,10 @@
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
 			"attacks": [
-				{ "class": "com.one2b3.endcycle.utils.objects.Point" }
+				{
+					"xSpeed": 333.33334,
+					"stick": {}
+				}
 			],
 			"speed": 0.12,
 			"projectileDelay": 0,
@@ -2660,9 +2674,9 @@
 					"attack": {
 						"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
 						"limiter": { "limit": true },
-						"type": "VITAL",
 						"entity": { "id": 44 },
 						"spawnedParty": "FRIENDLY",
+						"vital": true,
 						"action": { "id": 1 }
 					}
 				},
@@ -2671,9 +2685,9 @@
 						"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
 						"limiter": {},
 						"xOffset": 2,
-						"type": "VITAL",
 						"entity": { "id": 44 },
 						"spawnedParty": "FRIENDLY",
+						"vital": true,
 						"action": {}
 					}
 				}
@@ -3051,7 +3065,7 @@
 						{ "x": 1, "y": -1 },
 						{ "x": -1 },
 						{ "x": 1 },
-						{ "x": -1 },
+						{ "x": -1, "y": 1 },
 						{ "y": 1 },
 						{ "x": 1, "y": 1 }
 					]
@@ -4238,12 +4252,12 @@
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Ultra.Nova.Desc" },
 		"interruptable": false,
 		"invincible": true,
-		"property": { "element": "NATURE", "power": 40, "crushPower": 50 },
+		"property": { "element": "NATURE", "power": 35, "crushPower": 50 },
 		"targetType": {},
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.guarding.PlantrapAttack",
 			"hitAmount": 3,
-			"holdDuration": 0.9,
+			"holdDuration": 0.5,
 			"hits": [
 				{ "x": 2 },
 				{ "x": 1, "y": 1 },
@@ -4270,7 +4284,7 @@
 					"drawableX": 4,
 					"drawableFade": 0.4,
 					"startDelay": 0,
-					"postDelay": 0.05
+					"postDelay": 0.09
 				}
 			}
 		}
@@ -5660,6 +5674,16 @@
 		},
 		"targetType": {},
 		"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.special.RushHitAttack", "speed": -300, "reset": false }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 102 },
+	"preview": {},
+	"attackShell": {
+		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Speaker Wave" },
+		"targetType": {},
+		"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.special.SpeakerWaveAttack" }
 	}
 }
 ]

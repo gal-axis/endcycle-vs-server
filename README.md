@@ -12,7 +12,7 @@ To start a server with a minimal GUI on windows, simply start the server.bat fil
 * Login to your server via SSH
 * Create a directory anywhere you'd like
 * Update repositories (`sudo apt update`) and install git (`sudo apt install git`)
-* Inside that directory execute `git clone https://github.com/redmatters/endcycle-vs-server.git .`
+* Inside that directory execute `git clone https://github.com/gal-axis/endcycle-vs-server.git .`
   * Before proceeding double check the install scripts content to make sure you didn't download any malicious copy of this software.
   * You can do this by executing `nano install.sh` and reading through the commands it does
 * Now, execute `sudo source install.sh` and input the information the script asks of you
@@ -40,9 +40,9 @@ Add these to a file under the assets/ folder called  server.properties to enable
 Here is an example of how you could configure your server:
 ```
 Discord.Enabled=true
-Discord.Token=YOUR_DISCORD_TOKEN_HERE
-Discord.Server=5134350573369524244
-Discord.Channel.Battle=1235353747254018058
+Discord.Token=YOUR_DISCORD_BOT_TOKEN_HERE
+Discord.Server=RANDOM_DISCORD_SERVER_ID
+Discord.Channel.Battle=CHANNEL_ID
 Client.UDP=17780
 Client.TCP=17781
 ```

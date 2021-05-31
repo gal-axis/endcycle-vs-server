@@ -1,0 +1,30 @@
+Lobby(Object) {
+
+	final List players;
+	final List spectators;
+	final List lobbySlot;
+	final long id;
+	LobbySlot playerSlot;
+	LobbyConfiguration configuration;
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	boolean isHost() {}
+
+	void setSlots(int slots) {}
+
+	boolean isSpectating() {}
+
+	LobbySlot slotUpdate(int slotIndex, LobbySlot slot) {}
+
+	void setConfiguration(LobbyConfiguration configuration) {}
+
+	boolean isCpuSupport() {}
+
+	int getPlayerSlotIndex() {}
+
+}

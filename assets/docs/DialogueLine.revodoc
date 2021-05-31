@@ -1,0 +1,19 @@
+DialogueLine(Object) : Serializable {
+
+	String entity;
+	LocalizedMessage textMessage;
+	DialogueLineOptions options;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void write(Json json) {}
+
+	void read(Json json, JsonValue jsonData) {}
+
+}

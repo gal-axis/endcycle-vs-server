@@ -1,0 +1,32 @@
+VocChain(Object) {
+
+	final BattleEntity entity;
+	int current;
+	VocSet[] vocs;
+	boolean disabled;
+
+	new(BattleEntity entity) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	boolean setCurrent(int current, boolean taint) {}
+
+	Color getColor(int set) {}
+
+	Battle getBattle() {}
+
+	VocSet getCurrentVocs() {}
+
+	int getPackAmount() {}
+
+	boolean moveCurrent(int offset) {}
+
+	void setVocPack(VocPack pack) {}
+
+	VocSet getVocs(int set) {}
+
+}

@@ -1,0 +1,45 @@
+interface AdventureFaction {
+
+	String getName() {}
+
+	void start(AdventureBattle battle) {}
+
+	boolean isValid(AdventureEventList event) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	boolean loot(AdventureFieldNode entry) {}
+
+	void lose() {}
+
+	void finishZone(AdventureFieldData data) {}
+
+	void stopBattle(BattleEntityList entities) {}
+
+	void startBattle(BattleEntityList entities) {}
+
+	void startNode(AdventureFieldNode entry) {}
+
+	void generateFinal(AdventureNodeGraph graph) {}
+
+	void generateBranches(AdventureNodeGraph graph) {}
+
+	void updatePlayer(BattlePlayer player) {}
+
+	void finishNode(AdventureFieldNode entry) {}
+
+	DrawableImage getIcon() {}
+
+	void generateFinish(AdventureNodeGraph graph) {}
+
+	void generateStart(AdventureNodeGraph graph) {}
+
+	void addWinLoot(Looter looter) {}
+
+	void addLoseLoot(Looter looter) {}
+
+	void generateNodes(AdventureNodeGraph graph) {}
+
+	void startZone(AdventureFieldData data) {}
+
+}

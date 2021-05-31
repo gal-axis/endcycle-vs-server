@@ -1,0 +1,75 @@
+MockController(Object) : Controller {
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void clear() {}
+
+	int getKey(KeyCode code) {}
+
+	void load() {}
+
+	void save() {}
+
+	void reset() {}
+
+	List getKeys(KeyCode code) {}
+
+	boolean isKey(KeyCode code, int button) {}
+
+	KeyCode getCode(KeyCodeCategory category, int button) {}
+
+	boolean isChanged() {}
+
+	void clearImages() {}
+
+	List getButtonImages(KeyCode code) {}
+
+	void removeKey(KeyCode code, int key) {}
+
+	Drawable getButtonImage(KeyCode code) {}
+
+	void setKey(KeyCode code, int key) {}
+
+	String getName() {}
+
+	int getPlayerIndex() {}
+
+	boolean isConnected() {}
+
+	int getMaxButtonIndex() {}
+
+	boolean supportsPlayerIndex() {}
+
+	int getMinButtonIndex() {}
+
+	void cancelVibration() {}
+
+	boolean getButton(int buttonCode) {}
+
+	boolean isVibrating() {}
+
+	int getAxisCount() {}
+
+	boolean canVibrate() {}
+
+	void startVibration(int duration, float strength) {}
+
+	float getAxis(int axisCode) {}
+
+	void setPlayerIndex(int index) {}
+
+	String getUniqueId() {}
+
+	void setButton(KeyCode buttonCode, boolean pressed) {}
+
+	void setButton(int buttonCode, boolean pressed) {}
+
+	void clearButtons() {}
+
+}

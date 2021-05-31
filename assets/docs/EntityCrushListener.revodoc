@@ -1,0 +1,21 @@
+EntityCrushListener(Object) : GoalListener {
+
+	final Party party;
+	final String name;
+	final String display;
+	final int crushes;
+	int crushed;
+
+	new(Party party, String name, String display, int crushes) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void handle(GameEvent event) {}
+
+	boolean completed() {}
+
+}

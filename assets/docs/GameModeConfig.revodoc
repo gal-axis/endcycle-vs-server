@@ -1,0 +1,21 @@
+abstract GameModeConfig(Object) {
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	abstract List getProperties();
+
+	void configure(BattleData data) {}
+
+	abstract List getSlots();
+
+	abstract BattleMode createMode();
+
+	boolean startSlots(int allies, int enemies, int neutral) {}
+
+}

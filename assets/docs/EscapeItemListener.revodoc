@@ -1,0 +1,30 @@
+EscapeItemListener(AdventureItemListener) {
+
+	AdventureBattle battle;
+	AdventureBattleItem battleItem;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	AdventureItemListener clone() {}
+
+	void handle(GameEvent event) {}
+
+	void remove(BattlePlayer player) {}
+
+	void apply(BattlePlayer player) {}
+
+	void init(AdventureBattle battle, AdventureBattleItem item) {}
+
+	void dispose() {}
+
+	void use(BattlePlayer player) {}
+
+	boolean isUsable(BattlePlayer player) {}
+
+}

@@ -1,0 +1,26 @@
+ObjectManager(Object) {
+
+	final BattleChangeTracker state;
+	final Object object;
+
+	new(BattleChangeTracker state, Object object) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	Object getValue(int index) {}
+
+	void updateMonitor(int index, Object value) {}
+
+	void setValue(int index, Object value) {}
+
+	ObjectChange update() {}
+
+	void track() {}
+
+	void initMonitors() {}
+
+}

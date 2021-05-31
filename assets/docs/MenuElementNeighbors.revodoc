@@ -1,0 +1,27 @@
+final MenuElementNeighbors(Object) : Comparator {
+
+	new(MenuElement element, Array allElements) {}
+
+	abstract boolean equals(Object arg0);
+
+	String toString() {}
+
+	int hashCode() {}
+
+	int compare(Entry o1, Entry o2) {}
+
+	Comparator reversed() {}
+
+	Comparator thenComparing(Comparator arg0) {}
+
+	float dst(Rectangle rect) {}
+
+	void setNeighbor(Direction direction, MenuElement info, boolean direct) {}
+
+	MenuElementNeighbor getNeighbor(Direction direction) {}
+
+	MenuElementNeighbors setCompareY(float compareY) {}
+
+	MenuElementNeighbors setCompareX(float compareX) {}
+
+}

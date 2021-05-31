@@ -1,0 +1,65 @@
+InputToggleScript(Script) : InputListener {
+
+	boolean enabled;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	Script clone() {}
+
+	void dispose() {}
+
+	void update(float delta) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void hide(GameScreen screen) {}
+
+	void show(GameScreen screen) {}
+
+	byte getLayer() {}
+
+	Origin getOrigin() {}
+
+	float getComparisonKey() {}
+
+	void start(GameScreen screen) {}
+
+	Runnable toRunnable(GameScreen screen) {}
+
+	boolean priority() {}
+
+	void controllerDisconnected(Controller controller) {}
+
+	void controllerConnected(Controller controller) {}
+
+	boolean triggerType(int character) {}
+
+	boolean keyDown(int keycode) {}
+
+	boolean keyTyped(char character) {}
+
+	boolean keyUp(int keycode) {}
+
+	boolean triggerButton(ButtonEvent event) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean triggerTouch(TouchEvent event) {}
+
+}

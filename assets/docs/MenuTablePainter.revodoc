@@ -1,0 +1,15 @@
+interface MenuTablePainter {
+
+	abstract void paint(MenuTablePaintParams params);
+
+	Painter getPainter(MenuTablePaintParams params) {}
+
+	Painter getPainter(MenuTablePaintParams params, int hAlign, int vAlign) {}
+
+	void startPainting(MenuTablePaintParams params) {}
+
+	void paintBG(MenuTablePaintParams params) {}
+
+	void finishPainting(MenuTablePaintParams params) {}
+
+}

@@ -1,0 +1,50 @@
+DialogueLineDisplayer(Object) {
+
+	final Array indicators;
+	final Array voices;
+	final Array toPlay;
+	DialogueLine dialogueLine;
+	BoundedFloat duration;
+	float width;
+	StringCache textCache;
+	StringCache talkingCache;
+	int currentLine;
+	int currentCharacter;
+	Color color;
+	double currentTimer;
+	double charTimer;
+	int soundIndex;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void update(GameScreen screen, float delta) {}
+
+	void start(GameScreen screen, DialogueLine displaying) {}
+
+	void end(GameScreen screen) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs, float position) {}
+
+	void draw(CustomSpriteBatch batch, float x, float y) {}
+
+	boolean isOver() {}
+
+	void updateCache(GameScreen screen) {}
+
+	boolean isDisplayingAllText() {}
+
+	boolean isSkippable() {}
+
+	boolean hasTimeout() {}
+
+	void setTalking(String talking) {}
+
+	void displayAllText() {}
+
+}

@@ -1,0 +1,143 @@
+ChangeGaugeModifierAttack(Attack) {
+
+	Array attackTasks;
+	String name;
+	int level;
+	int gaugeIndex;
+	double gaugeConsume;
+	boolean timerStopped;
+	float timer;
+	float duration;
+	boolean interruptable;
+	boolean moveable;
+	boolean locksControls;
+	boolean locksTurn;
+	KeyCode keyCode;
+	PatchworkStateId castAnimation;
+	PatchworkStateId attackAnimation;
+	Party party;
+	BattleEntity user;
+	BattleEntityList targets;
+	AttackPlan plan;
+	Object origin;
+	WrappedAttackSender wrappedSender;
+	OwnedHitProperty property;
+	Array cooldowns;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	Attack clone() {}
+
+	boolean isActionRollback(Object[] action) {}
+
+	void actionTriggered(Object[] action) {}
+
+	final void actionTriggered(Runnable action) {}
+
+	boolean priority() {}
+
+	void controllerDisconnected(Controller controller) {}
+
+	void controllerConnected(Controller controller) {}
+
+	boolean triggerTouch(TouchEvent event) {}
+
+	boolean keyDown(int keycode) {}
+
+	boolean keyTyped(char character) {}
+
+	boolean keyUp(int keycode) {}
+
+	boolean triggerButton(ButtonEvent event) {}
+
+	boolean triggerType(int character) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	String getName() {}
+
+	void update(float delta) {}
+
+	Attack cast(BattleEntity user, AttackPlan plan) {}
+
+	final BattleField getField() {}
+
+	void start() {}
+
+	final void copy(Attack attack) {}
+
+	BattleEntity getTarget() {}
+
+	void flip() {}
+
+	final float getY(int yTile) {}
+
+	final float getX(int xTile) {}
+
+	void finish() {}
+
+	boolean active() {}
+
+	SoundContainer playSound(SoundInfo sound) {}
+
+	void setAnimationDuration(float duration) {}
+
+	void attackAnimation() {}
+
+	void castAnimation() {}
+
+	final Origin getOrigin(int index) {}
+
+	final void triggerAction(Object[] parameters) {}
+
+	final Controller getController() {}
+
+	boolean fillGauges() {}
+
+	final int getXTile() {}
+
+	final int getYTile() {}
+
+	Attack charge() {}
+
+	void runAction(int action) {}
+
+	AttackPortal getPortal(BattleEntity entity, float portalX, float portalY, float time) {}
+
+	boolean reduceGauge() {}
+
+	boolean reduceGauge(double amount) {}
+
+	boolean acceptsInput(ButtonEvent event) {}
+
+	Attack getWrapped(AttackShellWrapper wrapper, boolean shareHit, boolean gauge) {}
+
+	void scheduleAction(int action, float delay) {}
+
+	void scheduleAction(Runnable action, float delay) {}
+
+	void addWrappers(Array wrappers) {}
+
+	void increaseGauge(double amount) {}
+
+	final int getXTileInFront() {}
+
+	final int getTurn() {}
+
+	double getGaugeProgress() {}
+
+	void updateAttackTasks(float delta) {}
+
+	void setAnimationState(PatchworkStateId state) {}
+
+	boolean hasAnimationState(PatchworkStateId state) {}
+
+	final BattleEntityList getBattleEntities() {}
+
+}

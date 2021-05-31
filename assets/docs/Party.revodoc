@@ -1,0 +1,25 @@
+enum Party {
+
+	ENEMY,
+ 	NEUTRAL,
+ 	FRIENDLY;
+
+	final boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	final int compareTo(Party arg0) {}
+
+	final String name() {}
+
+	final int ordinal() {}
+
+	static Party[] values() {}
+
+	static Party valueOf(String name) {}
+
+	Party invert() {}
+
+}

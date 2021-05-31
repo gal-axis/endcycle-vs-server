@@ -1,0 +1,21 @@
+AdventureItemReward(Object) : RandomChance, Serializable {
+
+	ID item;
+	int amount;
+	float chance;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void write(Json json) {}
+
+	void read(Json json, JsonValue jsonData) {}
+
+	float getRandomChance() {}
+
+}

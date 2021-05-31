@@ -1,0 +1,27 @@
+enum ValueType {
+
+	object,
+ 	array,
+ 	stringValue,
+ 	doubleValue,
+ 	longValue,
+ 	booleanValue,
+ 	nullValue;
+
+	final boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	final int compareTo(ValueType arg0) {}
+
+	final String name() {}
+
+	final int ordinal() {}
+
+	static ValueType[] values() {}
+
+	static ValueType valueOf(String arg0) {}
+
+}

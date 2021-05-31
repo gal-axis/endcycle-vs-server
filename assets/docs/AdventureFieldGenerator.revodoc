@@ -1,0 +1,20 @@
+AdventureFieldGenerator(Object) {
+
+	BattleData fallbackBattle;
+	BattleFieldData fallbackField;
+	BattleFieldData data;
+	Array fields;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	AdventureFieldNode get(AdventureNode node) {}
+
+	AdventureFieldData generate(AdventureFaction faction, AdventureNodeGraph graph, Random random) {}
+
+}

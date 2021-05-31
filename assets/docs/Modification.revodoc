@@ -1,0 +1,11 @@
+interface Modification {
+
+	VocElement getElement(AttackShell shell, VocElement element) {}
+
+	abstract void modify(VocStyle style, AttackPlan plan);
+
+	int calculateCrush(AttackShell shell, int crush) {}
+
+	int calculatePower(AttackShell shell, int power) {}
+
+}

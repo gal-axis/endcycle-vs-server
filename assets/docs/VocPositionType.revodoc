@@ -1,0 +1,26 @@
+enum VocPositionType : DataName {
+
+	CLOSER,
+ 	EQUAL,
+ 	FURTHER,
+ 	IGNORE;
+
+	final boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	final int compareTo(VocPositionType arg0) {}
+
+	final String name() {}
+
+	final int ordinal() {}
+
+	String getDataName() {}
+
+	static VocPositionType[] values() {}
+
+	static VocPositionType valueOf(String name) {}
+
+}

@@ -1,0 +1,30 @@
+PatchworkData(Moddable) : DataName {
+
+	ID id;
+	String name;
+	PatchworkStateId defaultState;
+	Array states;
+	boolean keepUncustomized;
+	Array customizables;
+
+	new() {}
+
+	final boolean equals(Object obj) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	final ID getId() {}
+
+	String getDataName() {}
+
+	static DrawableState create(PatchworkStateDrawableData data) {}
+
+	PatchworkState create(PatchworkStateData data) {}
+
+	Patchwork create() {}
+
+	int findClosestCustomizable(int index, Color color) {}
+
+}

@@ -1,0 +1,37 @@
+final Colors(Object) {
+
+	static final CColor temp;
+	static final CColor MENU_COLOR;
+	static final CColor MENU_SELECT_COLOR;
+	static final CColor MENU_DEFAULT_COLOR;
+	static final CColor MENU_DISABLED_COLOR;
+	static final CColor MENU_TITLE_COLOR;
+	static final CColor PLAYER_OUTLINE_ENEMY;
+	static final CColor PLAYER_OUTLINE_FRIENDLY;
+	static final CColor ENEMY;
+	static final CColor FRIENDLY;
+	static final CColor BLACK_COLOR;
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	static Color get(Party party) {}
+
+	static CColor color(int r, int g, int b, int a) {}
+
+	static RainbowColor getRainbow() {}
+
+	static float difference(float r1, float g1, float b1, float r2, float g2, float b2) {}
+
+	static float difference(int color1, Color color2) {}
+
+	static float difference(Color color1, Color color2) {}
+
+	static CColor darken(Color color) {}
+
+	static CColor multiply(Color color, float factor) {}
+
+}

@@ -1,0 +1,21 @@
+BattleAudioHandler(AudioHandler) {
+
+	Battle battle;
+
+	new(Battle battle) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	SoundContainer play(SoundInfo sound) {}
+
+	SoundContainer play(float x, float y, SoundInfo sound) {}
+
+	SoundContainer play(String sound) {}
+
+	SoundContainer play(Sounds sound) {}
+
+}

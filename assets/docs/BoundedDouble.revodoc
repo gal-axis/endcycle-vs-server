@@ -1,0 +1,61 @@
+final BoundedDouble(Object) {
+
+	new(double max) {}
+
+	new(double min, double max) {}
+
+	new(double min, double max, double speed) {}
+
+	new() {}
+
+	new(double min, double max, double speed, double start) {}
+
+	new(double min, double max, double speed, boolean startAtMin) {}
+
+	boolean equals(Object o) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	BoundedDouble setVal(double val) {}
+
+	BoundedDouble toMin() {}
+
+	boolean increase(double delta) {}
+
+	BoundedDouble toMax() {}
+
+	boolean decrease(double delta) {}
+
+	double getVal() {}
+
+	boolean move(boolean increase, double delta) {}
+
+	boolean atMax() {}
+
+	double getPercentage() {}
+
+	BoundedDouble setMax(double max) {}
+
+	double getMax() {}
+
+	BoundedDouble setSpeed(double speed) {}
+
+	double getSpeed() {}
+
+	boolean atMin() {}
+
+	boolean atLimit() {}
+
+	void setPercentage(double percentage) {}
+
+	void toLimit(boolean increase) {}
+
+	BoundedDouble setFields(double min, double max, double speed, double start) {}
+
+	BoundedDouble setMin(double min) {}
+
+	double getMin() {}
+
+}

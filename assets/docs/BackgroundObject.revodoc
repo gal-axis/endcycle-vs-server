@@ -1,0 +1,82 @@
+BackgroundObject(GameScreenObject) : Background, GameEventListener {
+
+	Origin origin;
+	GameScreen screen;
+	boolean showing;
+	final Matrix4 old;
+	int width;
+	int height;
+	BackgroundData data;
+	Array frames;
+	Drawable neutralFrame;
+	Drawable allyFrame;
+	Drawable enemyFrame;
+	Drawable noFrame;
+	Color color;
+	BoundedFloat intensity;
+	boolean rainbow;
+	boolean battle;
+	float xOffset;
+	float yOffset;
+
+	new(BackgroundData data, boolean battle) {}
+
+	final boolean equals(Object obj) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	void dispose() {}
+
+	void update(float delta) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void hide(GameScreen screen) {}
+
+	void show(GameScreen screen) {}
+
+	byte getLayer() {}
+
+	final Origin getOrigin() {}
+
+	float getComparisonKey() {}
+
+	final void removeObject() {}
+
+	SoundContainer playSound(SoundInfo sound) {}
+
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	final SoundContainer playSound(Sounds sound) {}
+
+	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
+
+	void handle(GameEvent event) {}
+
+	boolean drawBG() {}
+
+	void dim(CustomSpriteBatch batch) {}
+
+	Drawable getFrame(Party party) {}
+
+	Color getColor() {}
+
+	void drawBackground(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void drawBackground(CustomSpriteBatch batch, float xOfs, float yOfs, float width, float height) {}
+
+	void createFrames(BackgroundData data) {}
+
+}

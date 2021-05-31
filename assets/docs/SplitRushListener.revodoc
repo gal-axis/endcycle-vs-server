@@ -1,0 +1,59 @@
+SplitRushListener(Object) : BattleEntityListener, GameEventListener {
+
+	BattleEntity user;
+	DelayedHit hit;
+	Consumer onHit;
+	Consumer onFinish;
+	float timeRemaining;
+	int targetX;
+	int targetY;
+
+	new(BattleEntity user, DelayedHit hit, Consumer onHit, Consumer onFinish, float timeRemaining, int targetX, int targetY) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void handle(GameEvent event) {}
+
+	void add() {}
+
+	void remove() {}
+
+	void update(float delta) {}
+
+	void cast(AttackPlan plan) {}
+
+	void init() {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void dispose() {}
+
+	void inflictPre(OwnedHitProperty property) {}
+
+	void attack(Attack attack) {}
+
+	CColor getTint() {}
+
+	PatchworkStateId setState(PatchworkStateId id) {}
+
+	void inflict(OwnedHitProperty property) {}
+
+	double crush(double amount, int crushStrength) {}
+
+	int hurt(int amount, boolean display) {}
+
+	int heal(int amount, boolean display) {}
+
+	AilmentInflict inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
+
+	void inflictPost(OwnedHitProperty property) {}
+
+	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
+
+	void drawHud(CustomSpriteBatch batch, float xOfs, float yOfs, float width, float height) {}
+
+}

@@ -1,0 +1,7 @@
+interface BECondition {
+
+	static BECondition get(boolean isTrue) {}
+
+	abstract boolean test(BattleEntity entity);
+
+}

@@ -1,0 +1,39 @@
+FrameBuffer {
+
+	new(Format arg0, int arg1, int arg2, boolean arg3, boolean arg4) {}
+
+	new(Format arg0, int arg1, int arg2, boolean arg3) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void dispose() {}
+
+	void end() {}
+
+	void end(int arg0, int arg1, int arg2, int arg3) {}
+
+	int getWidth() {}
+
+	int getHeight() {}
+
+	void begin() {}
+
+	void bind() {}
+
+	Texture getColorBufferTexture() {}
+
+	static void unbind() {}
+
+	int getDepthBufferHandle() {}
+
+	int getFramebufferHandle() {}
+
+	int getStencilBufferHandle() {}
+
+	Array getTextureAttachments() {}
+
+}

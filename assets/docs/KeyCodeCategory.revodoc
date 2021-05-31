@@ -1,0 +1,25 @@
+enum KeyCodeCategory {
+
+	MENU,
+ 	BATTLE,
+ 	MISC;
+
+	final boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	final int compareTo(KeyCodeCategory arg0) {}
+
+	final String name() {}
+
+	final int ordinal() {}
+
+	static KeyCodeCategory[] values() {}
+
+	static KeyCodeCategory valueOf(String name) {}
+
+	LocalizedMessage getCategoryKey() {}
+
+}

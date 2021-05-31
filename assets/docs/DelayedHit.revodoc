@@ -1,0 +1,92 @@
+DelayedHit(Object) : ScreenObject, BannedPanelObject {
+
+	final BattleEntityList tempHit;
+	Battle battle;
+	BattleEntityList passedEntities;
+	BattleEntityList hitEntities;
+	Drawable stickDrawable;
+	float stickDelay;
+	AttackEffect hitEffect;
+	OwnedHitProperty property;
+	Party party;
+	int xTile;
+	int yTile;
+	boolean turned;
+	float delay;
+	float blink;
+	float duration;
+	boolean flicker;
+
+	new() {}
+
+	new(Battle battle, BattleEntityList passedEntities, BattleEntityList hitEntities, Drawable stickDrawable, float stickDelay, AttackEffect hitEffect, OwnedHitProperty property, Party party, int xTile, int yTile, boolean turned, float delay, float blink, float duration, boolean flicker) {}
+
+	new(Attack attack) {}
+
+	new(OwnedHitProperty property) {}
+
+	new(HitProperty property) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	DelayedHit clone() {}
+
+	boolean isBannedPanel(BattleEntity entity, int x, int y) {}
+
+	float getBannedPanelPriority(BattleEntity entity) {}
+
+	boolean isBannedPanelRemove(BattleEntity entity) {}
+
+	void dispose() {}
+
+	void update(float delta) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void hide(GameScreen screen) {}
+
+	void show(GameScreen screen) {}
+
+	byte getLayer() {}
+
+	Origin getOrigin() {}
+
+	float getComparisonKey() {}
+
+	void setPosition(int xTile, int yTile, boolean turned) {}
+
+	void inflict(BattleEntityList entities) {}
+
+	void inflict(BattleEntity entity) {}
+
+	boolean hit() {}
+
+	BattleEntityList hitEntities() {}
+
+	void hitPanel() {}
+
+	void affectPanel(boolean force) {}
+
+	void doHitAction(boolean force) {}
+
+	boolean hasHit() {}
+
+	void startHit() {}
+
+	void inflictSticky(BattleEntity entity) {}
+
+}

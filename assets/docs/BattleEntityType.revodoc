@@ -1,0 +1,32 @@
+enum BattleEntityType {
+
+	NORMAL,
+ 	INVINCIBLE,
+ 	RUN_WALL,
+ 	DATA_SERVER,
+ 	LOOT,
+ 	KILL_ZONE,
+ 	DUMMY,
+ 	HIT_AMOUNT,
+ 	TELEPORTER,
+ 	GHOST;
+
+	final boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	final int compareTo(BattleEntityType arg0) {}
+
+	final String name() {}
+
+	final int ordinal() {}
+
+	static BattleEntityType[] values() {}
+
+	static BattleEntityType valueOf(String name) {}
+
+	BattleEntity getEntity(BattleEntityData data, CustomCache customizations, int x, int y) {}
+
+}

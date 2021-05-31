@@ -1,0 +1,26 @@
+VocPosition(Object) {
+
+	VocPositionType xType;
+	int xDistance;
+	VocPositionType yType;
+	int yDistance;
+
+	new() {}
+
+	new(VocPositionType xType, int xDistance, VocPositionType yType, int yDistance) {}
+
+	boolean equals(Object o) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	int getY(BattleEntity user, BattleEntity target) {}
+
+	int getX(BattleEntity user, BattleEntity target) {}
+
+	boolean isIgnore() {}
+
+	int getDistance(VocPositionType type, int distance, int tile, int tile2) {}
+
+}

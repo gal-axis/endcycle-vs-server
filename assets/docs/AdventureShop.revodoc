@@ -1,0 +1,23 @@
+AdventureShop(Moddable) : DataName {
+
+	ID id;
+	String dataName;
+	LocalizedMessage shopName;
+	int limit;
+	List products;
+
+	new() {}
+
+	final boolean equals(Object obj) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	final ID getId() {}
+
+	String getDataName() {}
+
+	List getProducts(AdventureBattle adventure) {}
+
+}

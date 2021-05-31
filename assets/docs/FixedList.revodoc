@@ -1,0 +1,61 @@
+FixedList(Object) : List {
+
+	new(int size) {}
+
+	new(Object[] elements) {}
+
+	abstract boolean equals(Object arg0);
+
+	String toString() {}
+
+	abstract int hashCode();
+
+	Iterator iterator() {}
+
+	boolean add(Object object) {}
+
+	boolean remove(Object o) {}
+
+	void clear() {}
+
+	boolean contains(Object o) {}
+
+	boolean isEmpty() {}
+
+	int size() {}
+
+	Object[] toArray(Object[] a) {}
+
+	Object[] toArray() {}
+
+	boolean addAll(Collection c) {}
+
+	boolean containsAll(Collection c) {}
+
+	boolean removeAll(Collection c) {}
+
+	boolean retainAll(Collection c) {}
+
+	void add(int index, Object element) {}
+
+	Object remove(int index) {}
+
+	Object get(int index) {}
+
+	int indexOf(Object o) {}
+
+	int lastIndexOf(Object o) {}
+
+	List subList(int fromIndex, int toIndex) {}
+
+	boolean addAll(int index, Collection c) {}
+
+	Object set(int index, Object object) {}
+
+	int count() {}
+
+	void collect() {}
+
+	Object pop() {}
+
+}

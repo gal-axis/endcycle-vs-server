@@ -1,0 +1,36 @@
+DrawableId(Object) : Paintable {
+
+	ID drawable;
+	float scaleX;
+	float scaleY;
+	Color color;
+
+	new() {}
+
+	new(ID drawable, float scaleX, float scaleY, Color color) {}
+
+	new(Drawables drawable) {}
+
+	new(Drawable drawable) {}
+
+	boolean equals(Object o) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	int get(int object, int orElse) {}
+
+	Object get(Object object, Object orElse) {}
+
+	float get(float object, float orElse) {}
+
+	double get(double object, double orElse) {}
+
+	void paint(Painter parameters) {}
+
+	Drawable create() {}
+
+	DrawableImage getImage() {}
+
+}

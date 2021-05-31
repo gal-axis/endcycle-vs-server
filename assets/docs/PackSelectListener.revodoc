@@ -1,0 +1,74 @@
+PackSelectListener(Object) : MenuTableAction, ScreenObject, InputListener {
+
+	final InventoryVocTable vocs;
+	final StyleSelectTable styles;
+	final VocSetContainer menu;
+	final int index;
+
+	new(InventoryVocTable vocs, StyleSelectTable styles, VocSetContainer menu, int index) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	boolean priority() {}
+
+	boolean keyTyped(char character) {}
+
+	boolean keyUp(int keycode) {}
+
+	boolean keyDown(int keycode) {}
+
+	boolean triggerButton(ButtonEvent event) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean triggerType(int character) {}
+
+	boolean triggerTouch(TouchEvent event) {}
+
+	void controllerConnected(Controller controller) {}
+
+	void controllerDisconnected(Controller controller) {}
+
+	void dispose() {}
+
+	void update(float delta) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void hide(GameScreen screen) {}
+
+	void show(GameScreen screen) {}
+
+	byte getLayer() {}
+
+	Origin getOrigin() {}
+
+	float getComparisonKey() {}
+
+	void specialTableSelect(int selection, VocShell selected) {}
+
+	boolean selectTableHeader() {}
+
+	void moveTableSelection(int selection) {}
+
+	void updateTableSelection(int selection) {}
+
+	void clickedTable(int selection, VocShell selected, float x, float y) {}
+
+	void selectTable(int selection, VocShell selected) {}
+
+}

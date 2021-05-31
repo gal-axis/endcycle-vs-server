@@ -1,0 +1,68 @@
+final InputManager(Object) {
+
+	static final KeyboardController KEYBOARD;
+	static final MockController TOUCH_KEYBOARD;
+	static final MockController NO_CONTROLLER;
+	static final int AXIS_ADDER = 420;
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	boolean keyUp(int keycode) {}
+
+	boolean keyTyped(char character) {}
+
+	boolean keyDown(int keycode) {}
+
+	boolean touchDown(int screenX, int screenY, int pointer, int button) {}
+
+	boolean touchDragged(int screenX, int screenY, int pointer) {}
+
+	boolean touchUp(int screenX, int screenY, int pointer, int button) {}
+
+	boolean mouseMoved(int screenX, int screenY) {}
+
+	boolean scrolled(float amountX, float amountY) {}
+
+	void connected(Controller controller) {}
+
+	void disconnected(Controller controller) {}
+
+	boolean axisMoved(Controller controller, int axisCode, float value) {}
+
+	boolean buttonDown(Controller controller, int buttonCode) {}
+
+	boolean buttonUp(Controller controller, int buttonCode) {}
+
+	Controller getLast() {}
+
+	void triggerButton(ButtonEvent event) {}
+
+	void triggerButton(ButtonEvent event, boolean log) {}
+
+	static boolean isPressed(Controller controller, int axisCode) {}
+
+	void triggerTouch(TouchEvent event, boolean log) {}
+
+	void triggerTouch(TouchEvent event) {}
+
+	void addButtonTips(ButtonTipList tips) {}
+
+	boolean isFree() {}
+
+	boolean isLastTouch() {}
+
+	void addPermanentListener(InputListener listener) {}
+
+	boolean removePermanentListener(InputListener listener) {}
+
+	void pressAxis(Controller controller, int axisCode, InputType type) {}
+
+	static ButtonEvent getButtonEvent() {}
+
+	Array getListeners() {}
+
+}

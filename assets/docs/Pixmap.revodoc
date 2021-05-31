@@ -1,0 +1,79 @@
+Pixmap(Object) {
+
+	new(Gdx2DPixmap arg0) {}
+
+	new(int arg0, int arg1, Format arg2) {}
+
+	new(byte[] arg0, int arg1, int arg2) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void dispose() {}
+
+	void fill() {}
+
+	int getWidth() {}
+
+	int getHeight() {}
+
+	void drawRectangle(int arg0, int arg1, int arg2, int arg3) {}
+
+	void setColor(float arg0, float arg1, float arg2, float arg3) {}
+
+	void setColor(Color arg0) {}
+
+	void setColor(int arg0) {}
+
+	void setFilter(Filter arg0) {}
+
+	Blending getBlending() {}
+
+	Filter getFilter() {}
+
+	void fillCircle(int arg0, int arg1, int arg2) {}
+
+	boolean isDisposed() {}
+
+	void drawCircle(int arg0, int arg1, int arg2) {}
+
+	void setPixels(ByteBuffer arg0) {}
+
+	void fillRectangle(int arg0, int arg1, int arg2, int arg3) {}
+
+	void drawLine(int arg0, int arg1, int arg2, int arg3) {}
+
+	int getPixel(int arg0, int arg1) {}
+
+	void drawPixel(int arg0, int arg1) {}
+
+	void drawPixel(int arg0, int arg1, int arg2) {}
+
+	static void downloadFromUrl(String arg0, DownloadPixmapResponseListener arg1) {}
+
+	void fillTriangle(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5) {}
+
+	int getGLInternalFormat() {}
+
+	static Pixmap createFromFrameBuffer(int arg0, int arg1, int arg2, int arg3) {}
+
+	Format getFormat() {}
+
+	void setBlending(Blending arg0) {}
+
+	void drawPixmap(Pixmap arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8) {}
+
+	void drawPixmap(Pixmap arg0, int arg1, int arg2) {}
+
+	void drawPixmap(Pixmap arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6) {}
+
+	int getGLType() {}
+
+	ByteBuffer getPixels() {}
+
+	int getGLFormat() {}
+
+}

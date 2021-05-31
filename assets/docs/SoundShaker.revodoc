@@ -1,0 +1,37 @@
+SoundShaker(Shaker) {
+
+	float shakeX;
+	float shakeY;
+	float shakeDuration;
+	float current;
+	float interp;
+	float lastX;
+	float lastY;
+	float nextX;
+	float nextY;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void update(float delta) {}
+
+	void start(float x, float y, float duration) {}
+
+	void stop() {}
+
+	float getY() {}
+
+	boolean isActive() {}
+
+	float getX() {}
+
+	void setupNext() {}
+
+	float getShakePercent() {}
+
+}

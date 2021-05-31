@@ -1,0 +1,48 @@
+AnimatedTileMove(InstantTileMove) {
+
+	final BattleEntity entity;
+	int newX;
+	int newY;
+	static final float MOVE_DURATION = 0.06666667;
+	static final float AFTER_DURATION = 0.06666667;
+	static final float ANIM_DURATION = 0.06666667;
+	float timerMove;
+	float timerAfter;
+	float speed;
+	boolean diagonal;
+
+	new(BattleEntity parent) {}
+
+	boolean equals(Object o) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void update(float delta) {}
+
+	void init(int xTile, int yTile, float speed) {}
+
+	void start() {}
+
+	void cancel() {}
+
+	boolean over() {}
+
+	Battle getBattle() {}
+
+	void set(int xTile, int yTile, float speed) {}
+
+	void reset() {}
+
+	void moveToTile() {}
+
+	void occupyField() {}
+
+	void freeField() {}
+
+	void finish() {}
+
+	void finishMove() {}
+
+}

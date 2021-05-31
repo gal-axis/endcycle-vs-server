@@ -1,0 +1,42 @@
+final Dragger(Object) {
+
+	final Vector2 clicked;
+	DragListener dragListener;
+	boolean dragging;
+	boolean clickScrolled;
+	int pointer;
+	float x;
+	float y;
+	float dragDistance;
+
+	new() {}
+
+	new(DragListener dragListener, float distance) {}
+
+	new(DragListener dragListener) {}
+
+	new(float distance) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void start(float x, float y) {}
+
+	void start(TouchEvent trigger) {}
+
+	boolean stop(TouchEvent trigger) {}
+
+	void stop() {}
+
+	boolean move(TouchEvent trigger) {}
+
+	boolean move(float x, float y) {}
+
+	float getDeltaY() {}
+
+	float getDeltaX() {}
+
+}

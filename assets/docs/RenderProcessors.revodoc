@@ -1,0 +1,27 @@
+RenderProcessors(Object) {
+
+	static final List processors;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	String getName() {}
+
+	String getValue(RenderProcessorProvider object) {}
+
+	RenderProcessorProvider find(Object currentValue) {}
+
+	List getValues() {}
+
+	static void add(RenderProcessorProvider provider) {}
+
+	static void remove(RenderProcessorProvider provider) {}
+
+	static RenderProcessorProvider get(String id) {}
+
+}

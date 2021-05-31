@@ -1,0 +1,120 @@
+CampaignPlayMessage(SelectMessage) {
+
+	Origin origin;
+	GameScreen screen;
+	boolean showing;
+	GameScreenMessage next;
+	byte layer;
+	float comparisonKey;
+	State state;
+	final MenuThemeDrawable messageImage;
+	final Drawable cursor;
+	float width;
+	float height;
+	int selection;
+	List buttons;
+	Runnable onSkip;
+
+	new(CampaignData data) {}
+
+	final boolean equals(Object obj) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	void dispose() {}
+
+	void update(float delta) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void hide(GameScreen screen) {}
+
+	void show(GameScreen screen) {}
+
+	final Origin getOrigin() {}
+
+	byte getLayer() {}
+
+	float getComparisonKey() {}
+
+	final void removeObject() {}
+
+	final SoundContainer playSound(Sounds sound) {}
+
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	SoundContainer playSound(SoundInfo sound) {}
+
+	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
+
+	final void removeInitializeListener(Runnable runnable) {}
+
+	final void addDisposeListener(Runnable runnable) {}
+
+	final void addInitializeListener(Runnable runnable) {}
+
+	final void removeDisposeListener(Runnable runnable) {}
+
+	void scheduleMessage(GameScreenMessage message) {}
+
+	void finish() {}
+
+	void setSpeed(float speed) {}
+
+	boolean isStaying() {}
+
+	float getPosition() {}
+
+	boolean priority() {}
+
+	void controllerDisconnected(Controller controller) {}
+
+	void controllerConnected(Controller controller) {}
+
+	boolean triggerTouch(TouchEvent event) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean triggerButton(ButtonEvent event) {}
+
+	boolean keyTyped(char character) {}
+
+	boolean keyUp(int keycode) {}
+
+	boolean keyDown(int keycode) {}
+
+	boolean triggerType(int character) {}
+
+	void skip() {}
+
+	void select() {}
+
+	void addButton(String text, String description, Runnable onSelect) {}
+
+	void setMessage(String message) {}
+
+	void setSelection(int selection) {}
+
+	void selectChoice(int choice) {}
+
+	void moveSelection(int offset) {}
+
+	void playCampaign() {}
+
+	void practiceCampaign() {}
+
+	void startCampaign(boolean practice) {}
+
+}

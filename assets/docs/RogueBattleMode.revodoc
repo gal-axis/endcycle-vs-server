@@ -1,0 +1,117 @@
+RogueBattleMode(ScoredBattleMode) : Consumer {
+
+	Battle battle;
+	final BoundedFloat scoreScale;
+	final BoundedFloat waveScale;
+	final StringCache newRecord;
+	final StringCache scoreDisplay;
+	final StringCache waveDisplay;
+	Consumer updateScore;
+	int currentWave;
+	boolean bestWave;
+	int currentScore;
+	int displayedScore;
+	boolean bestScore;
+	boolean hideScore;
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void handle(GameEvent event) {}
+
+	void dispose() {}
+
+	void update(float delta) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	Origin getOrigin() {}
+
+	float getComparisonKey() {}
+
+	byte getLayer() {}
+
+	void show(GameScreen screen) {}
+
+	void hide(GameScreen screen) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void start() {}
+
+	void stop() {}
+
+	void calculateTint(BattleEntity entity, CColor color) {}
+
+	int adjustDamage(BattleEntity entity, int damage) {}
+
+	LocalizedMessage getLoseMessage() {}
+
+	double adjustGaugeSpeed(BattleEntity entity) {}
+
+	void loot(Looter looter) {}
+
+	boolean loot() {}
+
+	boolean isRestart() {}
+
+	BattlePlayer createPlayer(BattleEntity entity) {}
+
+	void initHUD(BattleHUD hud) {}
+
+	boolean isSpawn(BattleEntity entity) {}
+
+	boolean isDespawn(BattleEntity entity) {}
+
+	boolean showStart() {}
+
+	String getBattleName(String name) {}
+
+	String getDiscordMessage(Party winner) {}
+
+	String createTeamName(Party party) {}
+
+	void finish(Party winner) {}
+
+	void sendServerUpdate(List messages) {}
+
+	void updateScoreDisplay(int amount) {}
+
+	String getWaveString() {}
+
+	void saveScore() {}
+
+	void addScore(BattleEntity entity, int score) {}
+
+	void addScore(float x, float y, int score) {}
+
+	void increaseWave() {}
+
+	void playerHeal(BattleEntity entity, int amount) {}
+
+	void enemyHurt(BattleEntity entity, int amount) {}
+
+	void setHideScore(boolean hideScore) {}
+
+	void accept(BattleEntity entity) {}
+
+	void showRewardMessage(int index) {}
+
+	boolean isBoss() {}
+
+	PlayerUpgrades getUpgrades(BattlePlayer controller) {}
+
+	void finishUpgrade(int index) {}
+
+}

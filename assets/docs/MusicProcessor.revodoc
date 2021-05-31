@@ -1,0 +1,7 @@
+interface MusicProcessor {
+
+	abstract void initialize(int sampleRate);
+
+	abstract void process(byte[] inputBytes, int length, ByteBuffer outputBytes);
+
+}

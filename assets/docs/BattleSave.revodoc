@@ -1,0 +1,27 @@
+BattleSave(Object) {
+
+	float time;
+	GameScreenTimerTask[] timerTasks;
+	DuplicateEntityManager duplicateManager;
+	HitShaker hitShaker;
+	BattleField field;
+	ScreenObject[] objects;
+	InputListener[] input;
+	GameEventListener[] event;
+	BattleEntity[] entities;
+	int[] players;
+	int[] serverPlayers;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void apply(Battle battle, NetworkInputDelay inputDelay) {}
+
+	void set(Battle battle) {}
+
+}

@@ -1,0 +1,26 @@
+HitEffect(Object) : AttackEffect {
+
+	float delay;
+	float duration;
+	boolean separate;
+	boolean onHitOriginal;
+	Array panels;
+	AttackEffect onHit;
+
+	new(float delay, float duration, boolean separate, boolean onHitOriginal, Array panels, AttackEffect onHit) {}
+
+	new(float duration, int x, int y, AttackEffect onHit) {}
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void hit(BattleEntity parent, OwnedHitProperty property, BattleEntityList hitEntities, Party party, int xTile, int yTile, boolean turned) {}
+
+	void startHit(BattleEntity parent, OwnedHitProperty property, BattleEntityList hitEntities, Party party, int xTile, int yTile, boolean turned) {}
+
+}

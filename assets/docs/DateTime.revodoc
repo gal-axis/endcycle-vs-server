@@ -1,0 +1,32 @@
+final DateTime(Object) : Comparable {
+
+	final Date date;
+	final Time time;
+
+	new(long millis) {}
+
+	new() {}
+
+	new(Date date, Time time) {}
+
+	boolean equals(Object o) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	int compareTo(DateTime o) {}
+
+	String format() {}
+
+	void set(long millis) {}
+
+	static DateTime from(String dateTime) {}
+
+	String formatFilename() {}
+
+	boolean isAfter(DateTime dateTime) {}
+
+	static DateTime now() {}
+
+}

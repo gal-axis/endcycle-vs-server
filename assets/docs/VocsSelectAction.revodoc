@@ -1,0 +1,25 @@
+VocsSelectAction(Object) : MenuTableAction {
+
+	final VocMenu vocMenu;
+
+	new(VocMenu vocMenu) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void specialTableSelect(int selection, VocShell selected) {}
+
+	boolean selectTableHeader() {}
+
+	void moveTableSelection(int selection) {}
+
+	void updateTableSelection(int selection) {}
+
+	void clickedTable(int selection, VocShell selected, float x, float y) {}
+
+	void selectTable(int selection, VocShell selected) {}
+
+}

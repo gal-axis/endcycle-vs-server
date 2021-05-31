@@ -1,0 +1,25 @@
+final BattleEntitySkill(Object) : DataName {
+
+	final String id;
+	final String group;
+	final boolean reward;
+	final LocalizedMessage name;
+	final LocalizedMessage description;
+
+	new(String id, String group, boolean reward, LocalizedMessage name, LocalizedMessage description, Function listener) {}
+
+	new(String id, boolean reward, LocalizedMessage name, LocalizedMessage description, Function listener) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	String getDataName() {}
+
+	BattleEntityListener getListener(BattleEntity entity) {}
+
+	boolean isGroup(BattleEntitySkill skill) {}
+
+}

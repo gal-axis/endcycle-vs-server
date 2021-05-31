@@ -1,0 +1,36 @@
+HitProperty(Object) {
+
+	ShaderType shader;
+	VocElement element;
+	Array ailments;
+	int power;
+	int crushPower;
+	PanelType panel;
+
+	new(AilmentInflict inflict) {}
+
+	new() {}
+
+	boolean equals(Object o) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	HitProperty clone() {}
+
+	void add(HitProperty property) {}
+
+	void copy(HitProperty property) {}
+
+	Color getTint() {}
+
+	ShaderType getExplosionShader() {}
+
+	AilmentInflict getAilment(AilmentType type) {}
+
+	Color getElementTint() {}
+
+	void copyAilments(HitProperty property) {}
+
+}

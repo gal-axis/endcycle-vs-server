@@ -1,0 +1,28 @@
+enum Role : Named {
+
+	ATTACK,
+ 	GUARD,
+ 	EFFECT,
+ 	EXECUTION;
+
+	Color color;
+
+	final boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	final int compareTo(Role arg0) {}
+
+	final String name() {}
+
+	final int ordinal() {}
+
+	String getName() {}
+
+	static Role[] values() {}
+
+	static Role valueOf(String name) {}
+
+}

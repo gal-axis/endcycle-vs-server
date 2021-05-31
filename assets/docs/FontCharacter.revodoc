@@ -1,0 +1,28 @@
+final FontCharacter(Object) {
+
+	final Font font;
+	final FontCharacterData data;
+	final TextureRegion region;
+	Map kerning;
+
+	new(Font font, FontCharacterData data, TextureRegion region) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	float getWidth() {}
+
+	float getOffsetX() {}
+
+	float getOffsetY() {}
+
+	void setKerning(char character, int kerning) {}
+
+	float getAdvance() {}
+
+	float getKerning(char before) {}
+
+}

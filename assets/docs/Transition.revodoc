@@ -1,0 +1,21 @@
+abstract Transition(Object) {
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	abstract void update(float delta);
+
+	void start(AttachedParticle attachedParticle) {}
+
+	abstract void draw(Painter painter);
+
+	AttachedParticle getAttachedParticle() {}
+
+	abstract boolean isDone();
+
+}

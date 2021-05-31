@@ -1,0 +1,11 @@
+interface MenuTableDragListener {
+
+	void draw(MenuTable container, Object element, int index, float x, float y) {}
+
+	void startDrag(MenuTable container, Object element, int index) {}
+
+	void stopDrag(MenuTable container, Object element, int index, int x, int y) {}
+
+	void drag(MenuTable container, Object element, int index, int x, int y) {}
+
+}

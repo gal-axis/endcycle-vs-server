@@ -1,0 +1,61 @@
+final BattleEntityData(Moddable) : DataName, Comparable, Named {
+
+	ID id;
+	String dataName;
+	LocalizedMessage name;
+	ID card;
+	ID win;
+	List patchworks;
+	VocElement element;
+	int sizeX;
+	int sizeY;
+	int health;
+	int power;
+	int speed;
+	int crush;
+	List skills;
+	BattleEntityUltraData ultraVoc;
+	DialogueVoice voice;
+	ID onslaughtTheme;
+	AdventureStart adventure;
+	boolean visible;
+	boolean tease;
+	boolean nameable;
+	boolean customizable;
+	boolean guest;
+	int price;
+	SoundInfo castSound;
+	SoundInfo attackSound;
+	SoundInfo hurtSound;
+	BattleEntityAnimation spawnAnimation;
+	BattleEntityAnimation despawnAnimation;
+	BattleEntityAnimation deathAnimation;
+	List customTagAnimations;
+	List customAnimations;
+	BattleEntityShopQuotes shop;
+
+	new() {}
+
+	final boolean equals(Object obj) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	final ID getId() {}
+
+	String getName() {}
+
+	int compareTo(BattleEntityData o) {}
+
+	String getDataName() {}
+
+	void setPatchwork(ID patchwork) {}
+
+	Patchwork getPatchwork(CustomCache cache) {}
+
+	PatchworkData getPatchworkData(CustomCache cache) {}
+
+	ID getPatchworkId(CustomCache cache) {}
+
+}

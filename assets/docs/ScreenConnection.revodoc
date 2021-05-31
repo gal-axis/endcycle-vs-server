@@ -1,0 +1,11 @@
+interface ScreenConnection {
+
+	abstract boolean isConnected();
+
+	abstract boolean isClient();
+
+	abstract float getLatency();
+
+	abstract void send(Object object);
+
+}

@@ -1,0 +1,72 @@
+Layers(Object) : UpdateCondition {
+
+	static final byte LAYER_0 = 0;
+	static final byte LAYER_1 = 1;
+	static final byte LAYER_2 = 2;
+	static final byte LAYER_3 = 3;
+	static final byte LAYER_4 = 4;
+	static final byte LAYER_5 = 5;
+	static final byte LAYER_6 = 6;
+	static final byte LAYER_7 = 7;
+	static final byte LAYER_8 = 8;
+	static final byte LAYER_9 = 9;
+	static final byte LAYER_10 = 10;
+	static final byte LAYER_11 = 11;
+	static final byte LAYER_OBJECT_FILTER = 12;
+	static final byte LAYER_HUD = 13;
+	static final byte LAYER_MENU = 14;
+	static final byte LAYER_MESSAGES = 15;
+	static final byte LAYER_INTERFACE_FILTER = 16;
+	static final byte LAYER_MASTER_FILTER = 17;
+	static final Layers global;
+	final GameScreen parent;
+	final Array objects;
+	final Array renderProcessors;
+	final Array updateConditions;
+	static final Comparator DRAW_SORTER;
+
+	new(GameScreen parent) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	boolean isUpdatable(ScreenObject object) {}
+
+	ScreenObject getObject(Object origin, int id) {}
+
+	ScreenObject getObject(String name) {}
+
+	ScreenObject getObject(Origin origin) {}
+
+	boolean isHidden(ScreenObject screenObject) {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void addRenderProcessor(RenderProcessor renderProcessor) {}
+
+	void removeRenderProcessor(RenderProcessor renderProcessor) {}
+
+	ScreenObject addObject(ScreenObject object) {}
+
+	boolean removeObject(ScreenObject object) {}
+
+	void updateObjects(float delta) {}
+
+	void clearObjects() {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void hide() {}
+
+	void show() {}
+
+	void startRendering(CustomSpriteBatch batch, byte layer) {}
+
+	void stopRendering(CustomSpriteBatch batch, byte layer) {}
+
+	ScreenObject getUpdating() {}
+
+}

@@ -1,0 +1,39 @@
+VocDisplay(Object) {
+
+	boolean drawMod;
+
+	new(VocChain chain, HudVocPainter vocPainter, int slot) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void update(float delta) {}
+
+	void reset() {}
+
+	void error() {}
+
+	void draw(CustomSpriteBatch batch, VocEntry voc, float x, float y, float scale, float unlock, float aTint) {}
+
+	void draw(CustomSpriteBatch batch, VocEntry voc, float x, float y) {}
+
+	void shake() {}
+
+	void use() {}
+
+	VocEntry getVoc() {}
+
+	float getScale() {}
+
+	float getUnlock() {}
+
+	void drawMod(CustomSpriteBatch batch, VocEntry voc, float x, float y, float tint, float aTint) {}
+
+	float getATint() {}
+
+	float getErrorOffset() {}
+
+}

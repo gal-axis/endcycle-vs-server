@@ -1,0 +1,26 @@
+AdventureEvent(Moddable) : DataName {
+
+	ID id;
+	String dataName;
+	DrawableId icon;
+	ID battle;
+	ID song;
+	int reward;
+	Boolean practiceData;
+	Array rewardItems;
+	Array entityModes;
+	AdventureEventTrigger trigger;
+
+	new() {}
+
+	final boolean equals(Object obj) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	final ID getId() {}
+
+	String getDataName() {}
+
+}

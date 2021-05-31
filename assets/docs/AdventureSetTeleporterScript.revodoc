@@ -1,0 +1,54 @@
+AdventureSetTeleporterScript(BattleScript) : TeleportEntityAction {
+
+	BattleEntity user;
+	Battle battle;
+	ID zone;
+	boolean increaseLevel;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	Script clone() {}
+
+	void dispose() {}
+
+	void update(float delta) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	final void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void hide(GameScreen screen) {}
+
+	void show(GameScreen screen) {}
+
+	byte getLayer() {}
+
+	Origin getOrigin() {}
+
+	float getComparisonKey() {}
+
+	void start(GameScreen screen) {}
+
+	Runnable toRunnable(GameScreen screen) {}
+
+	void init(Battle battle) {}
+
+	BattleEntity getEntity(String entity) {}
+
+	void teleport(BattleEntity entity, BattleEntity target, Point position) {}
+
+}

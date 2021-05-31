@@ -1,0 +1,38 @@
+DrawableParticle(Object) : GameObjectParticle {
+
+	BattleEntity entity;
+	Drawable drawable;
+	int order;
+	boolean flip;
+	int parentHAlign;
+	int parentVAlign;
+	int hAlign;
+	int vAlign;
+	float x;
+	float y;
+
+	new() {}
+
+	new(BattleEntity entity, Drawable drawable) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	int compareTo(GameObjectParticle o) {}
+
+	boolean remove() {}
+
+	void update(float delta) {}
+
+	void init() {}
+
+	void draw(CustomSpriteBatch batch, float x, float y, float xScale, float yScale, CColor color) {}
+
+	void dispose() {}
+
+	int getOrder() {}
+
+}

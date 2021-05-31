@@ -1,0 +1,23 @@
+ShadowPainter(Object) {
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	static void load() {}
+
+	static List list(DrawableState drawable) {}
+
+	static void dispose() {}
+
+	static void drawShadow(CustomSpriteBatch batch, float xOfs, float yOfs, ShadowEntity entity) {}
+
+	static void drawShadow(CustomSpriteBatch batch, float x, float y, float z, float scaleX, float scaleY, float shearX, double animState, DrawableState drawableState, float alpha) {}
+
+	static void drawShadow(Batch batch, TextureRegion region, float shearX, float x, float y, float z, float scaleX, float scaleY, float alpha) {}
+
+}

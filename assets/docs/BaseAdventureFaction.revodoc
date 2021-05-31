@@ -1,0 +1,80 @@
+BaseAdventureFaction(Object) : AdventureFaction, SpeedSupplier, PickupAction {
+
+	ID networldZone;
+	ID bossRushZone;
+	ID finalZone;
+	DrawableImage fragmentFull;
+	AdventureDataFragment[] fragments;
+	Array remainingZones;
+	Array bossEvents;
+	AdventureBattle battle;
+	boolean networld;
+	boolean hideFragments;
+	int zoneNumber;
+	int fragmentAmount;
+	float difficulty;
+	ID destination;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	boolean pickup(PickupEntity pickup, BattleEntity entity) {}
+
+	double getSpeed(BattleEntity entity) {}
+
+	String getName() {}
+
+	void start(AdventureBattle battle) {}
+
+	boolean isValid(AdventureEventList event) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void lose() {}
+
+	boolean loot(AdventureFieldNode entry) {}
+
+	void stopBattle(BattleEntityList entities) {}
+
+	void startBattle(BattleEntityList entities) {}
+
+	void finishZone(AdventureFieldData entry) {}
+
+	void startNode(AdventureFieldNode entry) {}
+
+	void generateFinal(AdventureNodeGraph graph) {}
+
+	void generateStart(AdventureNodeGraph graph) {}
+
+	void addWinLoot(Looter looter) {}
+
+	void generateFinish(AdventureNodeGraph graph) {}
+
+	void addLoseLoot(Looter looter) {}
+
+	void generateBranches(AdventureNodeGraph graph) {}
+
+	void finishNode(AdventureFieldNode entry) {}
+
+	void updatePlayer(BattlePlayer player) {}
+
+	void startZone(AdventureFieldData data) {}
+
+	DrawableImage getIcon() {}
+
+	void generateNodes(AdventureNodeGraph graph) {}
+
+	boolean canUpgrade() {}
+
+	void generateUpgrade(AdventureNodeGraph graph) {}
+
+	int getStatModifier() {}
+
+	void selectZone(AdventureZone zone) {}
+
+}

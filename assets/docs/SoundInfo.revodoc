@@ -1,0 +1,27 @@
+final SoundInfo(Object) {
+
+	String sound;
+	float volume;
+	float pitch;
+
+	new(String sound, float volume, float pitch) {}
+
+	new() {}
+
+	new(String sound) {}
+
+	new(SoundInfo soundInfo) {}
+
+	boolean equals(Object o) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	SoundInfo volume(float volume) {}
+
+	SoundInfo pitch(float pitch) {}
+
+	SoundInfo volumeAndPitch(float volume, float pitch) {}
+
+}

@@ -1,0 +1,7 @@
+interface AttackEffect {
+
+	void hit(BattleEntity parent, OwnedHitProperty property, BattleEntityList hitEntities, Party party, int xTile, int yTile, boolean turned) {}
+
+	abstract void startHit(BattleEntity parent, OwnedHitProperty property, BattleEntityList hitEntities, Party party, int xTile, int yTile, boolean turned);
+
+}

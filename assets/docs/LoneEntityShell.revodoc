@@ -1,0 +1,54 @@
+abstract LoneEntityShell(EntityShell) {
+
+	int x;
+	int y;
+	boolean turned;
+	boolean vital;
+	boolean preview;
+	Party party;
+	boolean player;
+	boolean mustSurvive;
+	PatchworkStateId state;
+	Controller controller;
+	String name;
+	String parent;
+	ID id;
+	LocalizedMessage talkingName;
+	ID action;
+	CustomCache cache;
+	BattleEntityConfiguration configuration;
+	VocPack pack;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	BattleEntity apply(BattleEntity entity) {}
+
+	BattleEntity create(int x, int y) {}
+
+	void set(Party party, int x, int y, boolean turned) {}
+
+	void set(EntityShell shell) {}
+
+	void setPosition(int x, int y) {}
+
+	List getPatchworkData() {}
+
+	void set(LoneEntityShell shell) {}
+
+	BattleEntity generate(ID id, int x, int y) {}
+
+	abstract BattleEntity generate(int x, int y, BattleEntityData data, CustomCache custom);
+
+	void setAction(BattleEntity entity) {}
+
+	Patchwork getPatchwork() {}
+
+	BattleEntityData findEntityData(ID id) {}
+
+}

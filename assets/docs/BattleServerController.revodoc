@@ -1,0 +1,62 @@
+BattleServerController(Object) : ScreenConnection {
+
+	final GameModeConfig config;
+	final Array players;
+	final Array spectators;
+	final BattleServerSetup setup;
+	final BattleServerDelta rollback;
+	Party winner;
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void send(Object object) {}
+
+	float getLatency() {}
+
+	boolean isClient() {}
+
+	boolean isConnected() {}
+
+	void update(float delta) {}
+
+	void setup() {}
+
+	void start() {}
+
+	void stop() {}
+
+	boolean isActive() {}
+
+	void dispose() {}
+
+	void restart() {}
+
+	boolean isOver() {}
+
+	Battle getBattle() {}
+
+	void sendUpdate(BattleServerFrameData frame) {}
+
+	void sendDelta(float time, byte[] patch) {}
+
+	List getInitialData() {}
+
+	boolean hasBattle() {}
+
+	void queueUpdate() {}
+
+	void sendUDP(Object udp) {}
+
+	void sendUDP(List udp) {}
+
+	void sendTCP(Object tcp) {}
+
+	void sendTCP(List tcp) {}
+
+	void setupConnected() {}
+
+}

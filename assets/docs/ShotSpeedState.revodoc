@@ -1,0 +1,30 @@
+ShotSpeedState(Object) {
+
+	ShotSpeed speed;
+	float sineOffsetX;
+	float sineOffsetY;
+	float speedX;
+	float speedY;
+	float time;
+
+	new() {}
+
+	new(ShotSpeed speed) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void update(float delta) {}
+
+	boolean isActive() {}
+
+	boolean isOver() {}
+
+	float getSpeedX(float current) {}
+
+	float getSpeedY(float current) {}
+
+}

@@ -1,0 +1,25 @@
+final Date(Object) : Comparable {
+
+	int year;
+	short month;
+	short day;
+
+	new() {}
+
+	new(int year, short month, short day) {}
+
+	boolean equals(Object o) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	int compareTo(Date o) {}
+
+	String format() {}
+
+	static Date from(String date) {}
+
+	boolean isAfter(Date date) {}
+
+}

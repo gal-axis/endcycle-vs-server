@@ -1,0 +1,19 @@
+final DynamicObjectPool(Object) {
+
+	final Array objects;
+
+	new(Supplier objectSupplier, int startSize) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	Object getNext() {}
+
+	void free(Object element) {}
+
+	boolean hasFree() {}
+
+}

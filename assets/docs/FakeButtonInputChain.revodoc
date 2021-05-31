@@ -1,0 +1,45 @@
+final FakeButtonInputChain(Object) {
+
+	new(DefaultBattlePlayer controller) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	FakeButtonInputChain release(KeyCode button) {}
+
+	FakeButtonInputChain left() {}
+
+	FakeButtonInputChain right() {}
+
+	FakeButtonInputChain at(float time) {}
+
+	BattleEntity getEntity() {}
+
+	FakeButtonInputChain action(Runnable runnable, float pass) {}
+
+	FakeButtonInputChain turn() {}
+
+	FakeButtonInputChain role(int role) {}
+
+	FakeButtonInputChain up() {}
+
+	FakeButtonInputChain down() {}
+
+	FakeButtonInputChain attack1() {}
+
+	FakeButtonInputChain attack4() {}
+
+	FakeButtonInputChain attack3() {}
+
+	FakeButtonInputChain press(KeyCode button) {}
+
+	FakeButtonInputChain tap(KeyCode button) {}
+
+	FakeButtonInputChain attack2() {}
+
+	FakeButtonInputChain pass(float time) {}
+
+}

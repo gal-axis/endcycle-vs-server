@@ -1,0 +1,31 @@
+AdventureItem(Moddable) : DataName {
+
+	ID id;
+	LocalizedMessage name;
+	LocalizedMessage description;
+	DrawableId icon;
+	int duration;
+	boolean zoneExpire;
+	int maximum;
+	boolean singleUse;
+	boolean resumeBattle;
+	int health;
+	float strength;
+	float speed;
+	float resistance;
+	Script onPickup;
+	Array listeners;
+
+	new() {}
+
+	final boolean equals(Object obj) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	final ID getId() {}
+
+	String getDataName() {}
+
+}

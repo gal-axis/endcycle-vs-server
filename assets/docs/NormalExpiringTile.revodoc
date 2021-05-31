@@ -1,0 +1,57 @@
+NormalExpiringTile(NormalTile) {
+
+	BattleFieldPanel panel;
+	DrawableImage imageNeutral;
+	DrawableImage imageEnemy;
+	DrawableImage imageAlly;
+	final BoundedFloat time;
+
+	new() {}
+
+	new(float time) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void exit(BattleEntity entity) {}
+
+	void update(float delta) {}
+
+	void init() {}
+
+	boolean isAccessible(BattleEntity entity) {}
+
+	void draw(Batch batch, float x, float y, Party party, float shade, float alpha) {}
+
+	int getY() {}
+
+	int getX() {}
+
+	void dispose() {}
+
+	void refresh() {}
+
+	OwnedHitProperty hit(OwnedHitProperty property) {}
+
+	void free() {}
+
+	boolean changeType(PanelType type) {}
+
+	Battle getBattle() {}
+
+	OwnedHitProperty affect(OwnedHitProperty property) {}
+
+	void enter(BattleEntity entity) {}
+
+	DrawableImage getDrawable(Party party) {}
+
+	DrawableImage getDrawable(Party party, DrawableImage neutral, DrawableImage enemy, DrawableImage friendly) {}
+
+	void drawTile(Batch batch, float x, float y, DrawableImage drawable) {}
+
+	boolean isFlickering() {}
+
+}

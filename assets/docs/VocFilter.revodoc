@@ -1,0 +1,26 @@
+VocFilter(Object) {
+
+	Role role;
+	VocType type;
+	VocElement element;
+	String search;
+	Integer slot;
+	Integer level;
+
+	new() {}
+
+	boolean equals(Object o) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	boolean isEmpty() {}
+
+	void set(VocFilter filter) {}
+
+	void set(Integer slot, Integer level, Role role, VocType type, VocElement element, String search) {}
+
+	boolean fits(Voc voc) {}
+
+}

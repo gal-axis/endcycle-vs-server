@@ -1,0 +1,19 @@
+SeekerFarthest(Object) : Comparator, EntitySeeker {
+
+	new() {}
+
+	abstract boolean equals(Object arg0);
+
+	String toString() {}
+
+	int hashCode() {}
+
+	BattleEntityList getEntities(BattleEntityList entities, BattleEntity entity) {}
+
+	int compare(BattleEntity o1, BattleEntity o2) {}
+
+	Comparator reversed() {}
+
+	Comparator thenComparing(Comparator arg0) {}
+
+}

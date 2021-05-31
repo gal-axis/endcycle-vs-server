@@ -1,0 +1,26 @@
+enum LocaleInfo {
+
+	ENGLISH,
+ 	GERMAN;
+
+	final boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	final int compareTo(LocaleInfo arg0) {}
+
+	final String name() {}
+
+	final int ordinal() {}
+
+	static LocaleInfo[] values() {}
+
+	static LocaleInfo valueOf(String name) {}
+
+	static LocaleInfo getDefault() {}
+
+	LocalizedMessage getNameKey() {}
+
+}

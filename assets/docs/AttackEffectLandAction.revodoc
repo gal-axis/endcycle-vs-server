@@ -1,0 +1,18 @@
+AttackEffectLandAction(Object) : FallingLandAction {
+
+	BattleEntity parent;
+	OwnedHitProperty property;
+	boolean turned;
+	AttackEffect effect;
+
+	new(BattleEntity parent, OwnedHitProperty property, boolean turned, AttackEffect effect) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void onLand(FallingObject object) {}
+
+}

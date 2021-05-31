@@ -1,0 +1,25 @@
+PlayerUpgrades(Object) {
+
+	new(BattleEntityData entity) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void apply(BattleEntity entity) {}
+
+	boolean hasSkill(BattleEntitySkill skill) {}
+
+	void addHP() {}
+
+	void addStrength() {}
+
+	void addSpeed() {}
+
+	void addSkill(BattleEntitySkill skill) {}
+
+	BattleEntitySkill getRandomAvailable(Random random) {}
+
+}

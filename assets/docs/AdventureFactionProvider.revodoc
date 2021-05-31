@@ -1,0 +1,21 @@
+final AdventureFactionProvider(Object) : DataName {
+
+	final String name;
+	final String id;
+	final Supplier faction;
+
+	new(String name, String id, Supplier faction) {}
+
+	new(String name, Supplier faction) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	String getDataName() {}
+
+	AdventureFaction create() {}
+
+}

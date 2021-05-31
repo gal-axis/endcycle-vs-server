@@ -1,0 +1,48 @@
+final StylingVoc(VocEntry) {
+
+	Voc voc;
+	VocStyle style;
+
+	new() {}
+
+	boolean equals(Object obj) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void write(Json json) {}
+
+	void read(Json json, JsonValue jsonData) {}
+
+	int getSlot() {}
+
+	boolean isValid() {}
+
+	String getMod() {}
+
+	AttackPlan createPlan(int gauge) {}
+
+	VocStyle setStyle(VocStyle mod) {}
+
+	VocElement getElement() {}
+
+	int getLevel() {}
+
+	int getGauge() {}
+
+	String getFullName() {}
+
+	void setVoc(Voc voc) {}
+
+	boolean isLegal() {}
+
+	int getPower() {}
+
+	int getCrushPower() {}
+
+	void setMissing(String mod, String name, int level, Role role) {}
+
+	String getLabel() {}
+
+}

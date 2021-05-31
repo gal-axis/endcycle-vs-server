@@ -1,0 +1,9 @@
+interface MenuListPositionSetter {
+
+	Vector2 start(MenuListDisplay listDisplay) {}
+
+	void end(MenuListDisplay listDisplay) {}
+
+	abstract void setPosition(MenuListDisplay listDisplay, MenuListObjectPosition position);
+
+}

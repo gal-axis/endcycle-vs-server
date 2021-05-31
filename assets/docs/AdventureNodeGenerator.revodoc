@@ -1,0 +1,20 @@
+AdventureNodeGenerator(Object) {
+
+	final ID player;
+	final Random random;
+
+	new(ID player, Random random) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void append(AdventureNodeGraph graph, List events) {}
+
+	AdventureNodeGraph generate(AdventureFaction faction, AdventureZone zone, int zoneLevel) {}
+
+	boolean isValid(AdventureEventList list) {}
+
+}

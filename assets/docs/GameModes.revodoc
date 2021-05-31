@@ -1,0 +1,33 @@
+GameModes(Object) {
+
+	static final GameModeProvider Singles;
+	static final GameModeProvider Doubles;
+	static final GameModeProvider Onslaught;
+	static final GameModeProvider Rogue;
+	static final GameModeProvider Deathmatch;
+	static final GameModeProvider Flag;
+	static final List providers;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	String getName() {}
+
+	String getValue(GameModeProvider object) {}
+
+	GameModeProvider find(Object currentValue) {}
+
+	List getValues() {}
+
+	static void add(GameModeProvider provider) {}
+
+	static void remove(GameModeProvider provider) {}
+
+	static GameModeProvider get(Object id) {}
+
+}

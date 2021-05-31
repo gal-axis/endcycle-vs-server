@@ -1,0 +1,118 @@
+final Painter(Object) {
+
+	final Object[] singleArg;
+	final Color tint;
+	CustomSpriteBatch batch;
+	Fonts font;
+	float x;
+	float y;
+	float width;
+	float height;
+	float xScale;
+	float yScale;
+	int hAlign;
+	int vAlign;
+	double animState;
+	Object[] arguments;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	Painter size(Drawable drawable) {}
+
+	Painter size(float width, float height) {}
+
+	Object[] arguments() {}
+
+	Painter arguments(Object[] args) {}
+
+	Painter argument(Object arg) {}
+
+	Painter reset(CustomSpriteBatch batch) {}
+
+	void mask() {}
+
+	Painter x(float x) {}
+
+	Painter scale(float scale) {}
+
+	Painter scale(float xScale, float yScale) {}
+
+	Painter batch(CustomSpriteBatch batch) {}
+
+	Painter y(float y) {}
+
+	Painter height(float height) {}
+
+	Painter width(float width) {}
+
+	Painter color(Color color) {}
+
+	Painter at(float x, float y) {}
+
+	Painter center() {}
+
+	Painter vAlign(int vAlign) {}
+
+	Painter hAlign(int hAlign) {}
+
+	Painter align(int hAlign, int vAlign) {}
+
+	Painter align(int align) {}
+
+	Painter paint(Object object) {}
+
+	Painter paint(Object object, ObjectPainter painter) {}
+
+	static Painter on(CustomSpriteBatch batch) {}
+
+	Painter tint(float rTint, float gTint, float bTint, float aTint) {}
+
+	Painter tint(float tint) {}
+
+	Painter tint(float rTint, float gTint, float bTint) {}
+
+	Painter yScale(float yScale) {}
+
+	Painter xScale(float xScale) {}
+
+	Painter clearArguments() {}
+
+	Painter moveX(float x) {}
+
+	Painter moveY(float y) {}
+
+	Painter aTint(float a) {}
+
+	Painter animState(double animState) {}
+
+	Painter font(Fonts font) {}
+
+	Painter mulTint(float tint) {}
+
+	Painter gTint(float g) {}
+
+	Painter invertTint() {}
+
+	Painter centerX() {}
+
+	Painter centerY() {}
+
+	Painter modulateColor(float amount, float speed) {}
+
+	Painter addColor(Color color) {}
+
+	Painter bTint(float b) {}
+
+	Painter rTint(float r) {}
+
+	void unmask() {}
+
+	Painter mulColor(Color color) {}
+
+}

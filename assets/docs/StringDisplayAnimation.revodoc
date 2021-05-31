@@ -1,0 +1,25 @@
+StringDisplayAnimation(Object) : CharacterAnim {
+
+	static final StringDisplayAnimation SCALE_UP;
+	static final StringDisplayAnimation JUMP;
+	static final StringDisplayAnimation BOUNCE;
+	static final StringDisplayAnimation FALL;
+	CharacterAnim anim;
+	float speed;
+	float percentage;
+
+	new(CharacterAnim anim, float speed, float percentage) {}
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void draw(CustomSpriteBatch batch, CharacterCache character, float x, float y, float xScale, float yScale, Color tint, StringDisplayCharacter prop) {}
+
+	void finish(StringDisplayCharacter prop) {}
+
+}

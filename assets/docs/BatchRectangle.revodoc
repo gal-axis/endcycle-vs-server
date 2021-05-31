@@ -1,0 +1,68 @@
+BatchRectangle(Object) : ScreenObject {
+
+	float x;
+	float y;
+	float width;
+	float height;
+	Color tint;
+	byte layer;
+
+	new(float r, float g, float b, float a) {}
+
+	new(byte layer) {}
+
+	new(float width, float height) {}
+
+	new(int x, int y, byte layer, float width, float height) {}
+
+	new(int x, int y, byte layer, float width, float height, float r, float g, float b, float a) {}
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void dispose() {}
+
+	void update(float delta) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void hide(GameScreen screen) {}
+
+	void show(GameScreen screen) {}
+
+	byte getLayer() {}
+
+	Origin getOrigin() {}
+
+	float getComparisonKey() {}
+
+	void draw(Batch batch, float xOfs, float yOfs, float scaleX, float scaleY) {}
+
+	void setTint(float r, float g, float b, float a) {}
+
+	void setTint(Color color) {}
+
+	float getTintB() {}
+
+	float getTintR() {}
+
+	float getTintG() {}
+
+	float getTintA() {}
+
+}

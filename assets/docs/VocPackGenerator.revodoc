@@ -1,0 +1,19 @@
+final VocPackGenerator(Object) {
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	static void generate(int level, Random random, VocPack pack) {}
+
+	static void removeNonBasic(int level, Array vocs, Random random) {}
+
+	static boolean styleFits(VocEntry entry, VocStyle style) {}
+
+	static List getStyles(int level, Random random) {}
+
+	static int rollStyle(List styles, VocEntry entry, int level, Random random) {}
+
+}

@@ -1,0 +1,38 @@
+GameScreenTimer(Object) {
+
+	final Array tasks;
+	float time;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void update(float delta) {}
+
+	void clear() {}
+
+	boolean isEmpty() {}
+
+	GameScreenTimerTask schedule(GameScreenTimerTask task, float delay, float interval, int repeatCount) {}
+
+	GameScreenTimerTask schedule(GameScreenTimerTask task, float delay, float interval) {}
+
+	GameScreenTimerTask schedule(Runnable task, float delay) {}
+
+	GameScreenTimerTask schedule(Runnable task) {}
+
+	GameScreenTimerTask schedule(Runnable task, float delay, float interval) {}
+
+	GameScreenTimerTask schedule(GameScreenTimerTask task, float delay) {}
+
+	GameScreenTimerTask schedule(Runnable task, float delay, float interval, int repeatCount) {}
+
+	void delay(float delay) {}
+
+	boolean cancel(GameScreenTimerTask task) {}
+
+}

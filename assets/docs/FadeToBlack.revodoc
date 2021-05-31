@@ -1,0 +1,46 @@
+FadeToBlack(FadeProcessor) {
+
+	ScreenFader fader;
+	static final float FADE_IN_TIME = 0.15;
+	static final float FADE_STAY_TIME = 0.05;
+	static final float FADE_OUT_TIME = 0.15;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void update(float delta) {}
+
+	void start() {}
+
+	void draw(CustomSpriteBatch batch) {}
+
+	void dispose() {}
+
+	void drawNewScreen(CustomSpriteBatch batch, float x, float y) {}
+
+	void drawNewScreen(CustomSpriteBatch batch) {}
+
+	void setFader(ScreenFader fader) {}
+
+	boolean done() {}
+
+	void updateOldScreen(float delta) {}
+
+	void disposeOldScreen() {}
+
+	void updateNewScreen(float delta) {}
+
+	void initNewScreen() {}
+
+	void drawOldScreen(CustomSpriteBatch batch) {}
+
+	void drawOldScreen(CustomSpriteBatch batch, float x, float y) {}
+
+	void setStep(int step) {}
+
+}

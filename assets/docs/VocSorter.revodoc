@@ -1,0 +1,19 @@
+VocSorter(Object) : Comparator {
+
+	new(String name, Comparator comparator) {}
+
+	abstract boolean equals(Object arg0);
+
+	String toString() {}
+
+	int hashCode() {}
+
+	int compare(Voc o1, Voc o2) {}
+
+	Comparator reversed() {}
+
+	Comparator thenComparing(Comparator arg0) {}
+
+	String getName() {}
+
+}

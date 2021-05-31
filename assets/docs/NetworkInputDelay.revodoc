@@ -1,0 +1,25 @@
+NetworkInputDelay(Object) : GameEventListener {
+
+	new(Battle battle) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void handle(GameEvent event) {}
+
+	void update(float delta) {}
+
+	void input(BattlePlayer player, int serverIndex, Object input) {}
+
+	float getDelay() {}
+
+	FrameData getFrame() {}
+
+	void setClientPlayer(BattlePlayer player, int index, int serverIndex) {}
+
+	void setInputId(int inputId) {}
+
+}

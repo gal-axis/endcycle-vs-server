@@ -1,0 +1,20 @@
+MultiEffect(Object) : AttackEffect {
+
+	int offsetX;
+	int offsetY;
+	float delay;
+	Array effects;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void hit(BattleEntity parent, OwnedHitProperty property, BattleEntityList hitEntities, Party party, int xTile, int yTile, boolean turned) {}
+
+	void startHit(BattleEntity parent, OwnedHitProperty property, BattleEntityList hitEntities, Party party, int xTile, int yTile, boolean turned) {}
+
+}

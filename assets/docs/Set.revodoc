@@ -1,0 +1,33 @@
+interface Set : Collection {
+
+	abstract Iterator iterator();
+
+	abstract boolean add(Object arg0);
+
+	abstract boolean remove(Object arg0);
+
+	abstract boolean equals(Object arg0);
+
+	abstract int hashCode();
+
+	abstract void clear();
+
+	abstract boolean contains(Object arg0);
+
+	abstract boolean isEmpty();
+
+	abstract int size();
+
+	abstract Object[] toArray(Object[] arg0);
+
+	abstract Object[] toArray();
+
+	abstract boolean addAll(Collection arg0);
+
+	abstract boolean containsAll(Collection arg0);
+
+	abstract boolean removeAll(Collection arg0);
+
+	abstract boolean retainAll(Collection arg0);
+
+}

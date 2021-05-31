@@ -1,0 +1,9 @@
+interface DragListener {
+
+	void startDrag(float x, float y) {}
+
+	void stopDrag(float x, float y, float deltaX, float deltaY, boolean clickScrolled) {}
+
+	void drag(float deltaX, float deltaY) {}
+
+}

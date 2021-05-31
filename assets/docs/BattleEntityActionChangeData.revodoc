@@ -1,0 +1,24 @@
+final BattleEntityActionChangeData(Object) {
+
+	float maxHealth;
+	float minHealth;
+	float time;
+	int moves;
+	boolean onInterrupt;
+	boolean onInaccessiblePanel;
+	boolean onAlone;
+	boolean onEmpty;
+	boolean onHurt;
+	VocElement onHit;
+	VocPosition targetPosition;
+	ID action;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+}

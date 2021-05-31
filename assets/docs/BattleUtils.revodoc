@@ -1,0 +1,40 @@
+final BattleUtils(Object) {
+
+	static final int CAMERA_WIDTH = 416;
+	static final int CAMERA_HEIGHT = 234;
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	static boolean isDespawn(Battle battle, BattleEntity entity) {}
+
+	static boolean isSpawn(Battle battle, BattleEntity entity) {}
+
+	static boolean invisible(Battle battle, GameObject object) {}
+
+	static void turnToNearest(BattleEntity user, Array entities) {}
+
+	void turnToTarget(BattleEntity user) {}
+
+	static boolean convertPanel(BattleEntity entity, int y, Party seek, Party newParty) {}
+
+	static boolean inSightForUpdate(BattleCamera camera, GameObject object) {}
+
+	static int convertRow(BattleEntity entity, Party seek, Party newParty) {}
+
+	static void applyPlayer(BattleEntity entity, ID character) {}
+
+	static boolean inSight(BattleCamera camera, GameObject object, float wFactor, float hFactor) {}
+
+	static void inSight(Battle battle, Array entities) {}
+
+	static boolean inSight(GameObject object, float cameraX, float cameraY, float wFactor, float hFactor) {}
+
+	static boolean inSight(BattleEntity focused, BattleEntity entity) {}
+
+	static boolean inSight(BattleEntity entity) {}
+
+}

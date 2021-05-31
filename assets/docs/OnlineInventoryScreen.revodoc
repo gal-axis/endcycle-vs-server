@@ -1,0 +1,139 @@
+OnlineInventoryScreen(VsInventoryScreen) {
+
+	final ButtonTipChecker buttonTips;
+	GameScreenInfo info;
+	AudioHandler audio;
+	Layers layers;
+	GameEventHandler events;
+	ScreenInputHandler input;
+	GameScreenTimer timer;
+	Shaker shaker;
+	ScreenConnection connection;
+	float timeScale;
+	final String title;
+	final MenuHeader menuHeader;
+	MenuElementController elementController;
+	MenuElementGroup objectGroup;
+	FadeType fadeType;
+	ID background;
+	ID song;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	GameScreen get() {}
+
+	void update(float delta) {}
+
+	ScreenObject getObject(String name) {}
+
+	void init() {}
+
+	void resume() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void setPreviousScreen(GameScreen previousScreen) {}
+
+	GameScreen getPreviousScreen() {}
+
+	void addRenderProcessor(RenderProcessor renderProcessor) {}
+
+	void removeRenderProcessor(RenderProcessor renderProcessor) {}
+
+	Array getRenderProcessors() {}
+
+	ScreenObject addObject(ScreenObject object) {}
+
+	void shake(float x, float y, float duration) {}
+
+	boolean removeObject(ScreenObject object) {}
+
+	void resetShake() {}
+
+	void updateObjects(float delta) {}
+
+	void clearObjects() {}
+
+	void draw(CustomSpriteBatch batch) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void setScreen(GameScreen screen, FadeType fade, boolean changesBefore) {}
+
+	void setScreen(GameScreen screen, FadeType fade) {}
+
+	void setScreen(GameScreen screen) {}
+
+	void toPreviousScreen(FadeType type) {}
+
+	void toPreviousScreen() {}
+
+	boolean isShaking() {}
+
+	void drawButtonTips(CustomSpriteBatch batch, float x, float y) {}
+
+	void shakeVibrate(float x, float y, float duration) {}
+
+	void changeTo(GameScreen screen, boolean init) {}
+
+	void changeFrom(GameScreen screen, boolean init) {}
+
+	void updateShake(float delta) {}
+
+	boolean isCurrentScreen() {}
+
+	Array getObjects() {}
+
+	void addScript(Script script, float delay) {}
+
+	void updateTimer(float delta) {}
+
+	void hide() {}
+
+	void show() {}
+
+	void pause() {}
+
+	boolean isLoading() {}
+
+	void resetTimer() {}
+
+	void dispose() {}
+
+	Object[] getTextArguments() {}
+
+	void render(float delta) {}
+
+	void createMenuElements() {}
+
+	void buildControllerNeighbors() {}
+
+	void backButtonPressed() {}
+
+	void enableInput() {}
+
+	void disableInput() {}
+
+	void centerElements() {}
+
+	boolean triggerButton(ButtonEvent event) {}
+
+	Inventory getVocInventory() {}
+
+	void addTabElement(String name, Drawable icon, MenuElement element, MenuElement selected) {}
+
+	void openShop() {}
+
+	void practice() {}
+
+	MenuSidebar getMenuSidebar() {}
+
+	void playSong() {}
+
+}

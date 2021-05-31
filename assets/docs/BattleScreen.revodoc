@@ -1,0 +1,154 @@
+BattleScreen(GameScreen) : InputListener {
+
+	final ButtonTipChecker buttonTips;
+	GameScreenInfo info;
+	AudioHandler audio;
+	Layers layers;
+	GameEventHandler events;
+	ScreenInputHandler input;
+	GameScreenTimer timer;
+	Shaker shaker;
+	ScreenConnection connection;
+	float timeScale;
+	final Battle battle;
+	NetworkInputDelay delay;
+	LowHealthBlink lowHP;
+	PortraitProcessor portrait;
+	GameScreen next;
+	BattleMusicProcessor musicProcessor;
+	BattleHUD hud;
+	BattleCamera camera;
+	boolean paused;
+	boolean pausable;
+
+	new(Battle battle) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	GameScreen get() {}
+
+	void update(float delta) {}
+
+	ScreenObject getObject(String name) {}
+
+	void init() {}
+
+	void resume() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	GameScreen getPreviousScreen() {}
+
+	void addRenderProcessor(RenderProcessor renderProcessor) {}
+
+	void setPreviousScreen(GameScreen previousScreen) {}
+
+	Array getRenderProcessors() {}
+
+	void removeRenderProcessor(RenderProcessor renderProcessor) {}
+
+	void setScreen(GameScreen screen, FadeType fade) {}
+
+	void setScreen(GameScreen screen, FadeType fade, boolean changesBefore) {}
+
+	void setScreen(GameScreen screen) {}
+
+	boolean removeObject(ScreenObject object) {}
+
+	void changeTo(GameScreen screen, boolean init) {}
+
+	void updateShake(float delta) {}
+
+	void drawButtonTips(CustomSpriteBatch batch, float x, float y) {}
+
+	void shake(float x, float y, float duration) {}
+
+	void draw(CustomSpriteBatch batch) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void changeFrom(GameScreen screen, boolean init) {}
+
+	void shakeVibrate(float x, float y, float duration) {}
+
+	boolean isShaking() {}
+
+	void resetShake() {}
+
+	boolean isCurrentScreen() {}
+
+	ScreenObject addObject(ScreenObject object) {}
+
+	void clearObjects() {}
+
+	Array getObjects() {}
+
+	void toPreviousScreen(FadeType type) {}
+
+	void toPreviousScreen() {}
+
+	void updateObjects(float delta) {}
+
+	void hide() {}
+
+	void pause() {}
+
+	void addScript(Script script, float delay) {}
+
+	void render(float delta) {}
+
+	void resetTimer() {}
+
+	Object[] getTextArguments() {}
+
+	void dispose() {}
+
+	void updateTimer(float delta) {}
+
+	void show() {}
+
+	boolean isLoading() {}
+
+	boolean priority() {}
+
+	void controllerDisconnected(Controller controller) {}
+
+	void controllerConnected(Controller controller) {}
+
+	boolean triggerTouch(TouchEvent event) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean triggerButton(ButtonEvent event) {}
+
+	boolean keyTyped(char character) {}
+
+	boolean keyUp(int keycode) {}
+
+	boolean keyDown(int keycode) {}
+
+	boolean triggerType(int character) {}
+
+	void createStarter() {}
+
+	GameScreenMessage showMessage(GameScreenMessage object) {}
+
+	void loadBattle() {}
+
+	void showWinMessage(Party winner) {}
+
+	void endBattle(boolean restart) {}
+
+	void restart() {}
+
+	void goToNext() {}
+
+	void showBattleOverMessage(Party winner, LocalizedMessage message) {}
+
+	void updatePortrait(boolean landscape) {}
+
+}

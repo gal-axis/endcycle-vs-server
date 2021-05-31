@@ -1,0 +1,41 @@
+interface BattleEntityListener {
+
+	void add() {}
+
+	void remove() {}
+
+	void update(float delta) {}
+
+	void cast(AttackPlan plan) {}
+
+	void init() {}
+
+	void dispose() {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	PatchworkStateId setState(PatchworkStateId id) {}
+
+	CColor getTint() {}
+
+	double crush(double amount, int crushStrength) {}
+
+	void attack(Attack attack) {}
+
+	AilmentInflict inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
+
+	void inflictPre(OwnedHitProperty property) {}
+
+	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
+
+	void inflict(OwnedHitProperty property) {}
+
+	int heal(int amount, boolean display) {}
+
+	int hurt(int amount, boolean display) {}
+
+	void inflictPost(OwnedHitProperty property) {}
+
+	void drawHud(CustomSpriteBatch batch, float xOfs, float yOfs, float width, float height) {}
+
+}

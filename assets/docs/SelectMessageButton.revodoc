@@ -1,0 +1,24 @@
+SelectMessageButton(Object) {
+
+	final MenuThemeDrawable button;
+	final float x;
+	final float y;
+	final float width;
+	final float height;
+	final String text;
+	final String description;
+	final Runnable onSelect;
+
+	new(float x, float y, float width, float height, String text, String description, Runnable onSelect) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void draw(CustomSpriteBatch batch, Drawable cursor, float xOfs, float yOfs, boolean selected) {}
+
+	boolean isTouching(float x, float y) {}
+
+}

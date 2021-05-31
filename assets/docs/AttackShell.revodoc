@@ -1,0 +1,31 @@
+final AttackShell(Object) : Named, Serializable {
+
+	LocalizedMessage nameMessage;
+	LocalizedMessage descriptionMessage;
+	boolean interruptable;
+	boolean invincible;
+	boolean singleTarget;
+	double gauge;
+	int level;
+	HitProperty property;
+	Party party;
+	TargetFilter targetType;
+	PatchworkStateId castAnimation;
+	PatchworkStateId attackAnimation;
+	Attack attack;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void write(Json json) {}
+
+	void read(Json json, JsonValue jsonData) {}
+
+	String getName() {}
+
+}

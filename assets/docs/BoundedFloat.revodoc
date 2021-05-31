@@ -1,0 +1,65 @@
+final BoundedFloat(Object) {
+
+	new(float max) {}
+
+	new(float min, float max) {}
+
+	new(float min, float max, float speed) {}
+
+	new() {}
+
+	new(float min, float max, float speed, float start) {}
+
+	new(float min, float max, float speed, boolean startAtMin) {}
+
+	boolean equals(Object o) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	BoundedFloat clone() {}
+
+	BoundedFloat setVal(float val) {}
+
+	BoundedFloat toMin() {}
+
+	boolean increase(float delta) {}
+
+	BoundedFloat toMax() {}
+
+	boolean decrease(float delta) {}
+
+	float getVal() {}
+
+	boolean move(boolean increase, float delta) {}
+
+	boolean atMax() {}
+
+	float getPercentage() {}
+
+	BoundedFloat setMax(float max) {}
+
+	float getMax() {}
+
+	BoundedFloat setSpeed(float speed) {}
+
+	float getSpeed() {}
+
+	boolean atMin() {}
+
+	BoundedFloat setValDirect(float val) {}
+
+	boolean atLimit() {}
+
+	void setPercentage(float percentage) {}
+
+	void toLimit(boolean increase) {}
+
+	BoundedFloat setFields(float min, float max, float speed, float start) {}
+
+	BoundedFloat setMin(float min) {}
+
+	float getMin() {}
+
+}

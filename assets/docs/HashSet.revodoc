@@ -1,0 +1,45 @@
+HashSet : Set {
+
+	new(int arg0) {}
+
+	new(int arg0, float arg1) {}
+
+	new(Collection arg0) {}
+
+	new() {}
+
+	abstract boolean equals(Object arg0);
+
+	String toString() {}
+
+	abstract int hashCode();
+
+	Object clone() {}
+
+	Iterator iterator() {}
+
+	boolean add(Object arg0) {}
+
+	boolean remove(Object arg0) {}
+
+	void clear() {}
+
+	boolean contains(Object arg0) {}
+
+	boolean isEmpty() {}
+
+	int size() {}
+
+	abstract Object[] toArray(Object[] arg0);
+
+	abstract Object[] toArray();
+
+	abstract boolean addAll(Collection arg0);
+
+	abstract boolean containsAll(Collection arg0);
+
+	abstract boolean removeAll(Collection arg0);
+
+	abstract boolean retainAll(Collection arg0);
+
+}

@@ -1,0 +1,47 @@
+BattleSpectatorDisplay(Object) : ScreenObject {
+
+	boolean spectatingEnabled;
+
+	new(Battle battle) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void dispose() {}
+
+	final void update(float delta) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void hide(GameScreen screen) {}
+
+	void show(GameScreen screen) {}
+
+	Origin getOrigin() {}
+
+	float getComparisonKey() {}
+
+	byte getLayer() {}
+
+	void drawRow(CustomSpriteBatch batch, float xOfs, float yOfs, boolean flipped) {}
+
+	int getSpectators() {}
+
+	final void updateSpectators(List spectators) {}
+
+	void removeSpectator(int index) {}
+
+}

@@ -1,0 +1,78 @@
+VocSet(FixedList) : Serializable {
+
+	final Color color;
+	String name;
+
+	new(VocIds[] vocs) {}
+
+	new(ID[] vocs) {}
+
+	new() {}
+
+	abstract boolean equals(Object arg0);
+
+	String toString() {}
+
+	abstract int hashCode();
+
+	Iterator iterator() {}
+
+	boolean add(VocEntry voc) {}
+
+	boolean remove(Object o) {}
+
+	void clear() {}
+
+	boolean contains(Object o) {}
+
+	boolean isEmpty() {}
+
+	int size() {}
+
+	Object[] toArray(Object[] a) {}
+
+	Object[] toArray() {}
+
+	boolean addAll(Collection c) {}
+
+	boolean containsAll(Collection c) {}
+
+	boolean removeAll(Collection c) {}
+
+	boolean retainAll(Collection c) {}
+
+	void add(int index, VocEntry element) {}
+
+	VocEntry remove(int index) {}
+
+	VocEntry get(int index) {}
+
+	int indexOf(Object o) {}
+
+	int lastIndexOf(Object o) {}
+
+	List subList(int fromIndex, int toIndex) {}
+
+	boolean addAll(int index, Collection c) {}
+
+	VocEntry set(int index, VocEntry voc) {}
+
+	int count() {}
+
+	void collect() {}
+
+	VocEntry pop() {}
+
+	void write(Json json) {}
+
+	void read(Json json, JsonValue jsonData) {}
+
+	void set(VocSet set) {}
+
+	VocEntry set(VocEntry voc) {}
+
+	boolean isValid() {}
+
+	int amountOf(Role role) {}
+
+}

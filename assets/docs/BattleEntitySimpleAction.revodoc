@@ -1,0 +1,61 @@
+BattleEntitySimpleAction(Object) : BattleEntityAction {
+
+	final BattleEntityList list;
+	final BattleEntity entity;
+	BattleEntityActionData startData;
+	BattleEntityActionData data;
+	BattleEntity target;
+	int changeCount;
+	Map indexes;
+	Map executors;
+	final Array currentMoves;
+	ActExecutor executor;
+	int executorIndex;
+	float time;
+	int moveNumber;
+
+	new(BattleEntity entity) {}
+
+	new(BattleEntity entity, BattleEntityActionData data) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void add() {}
+
+	void remove() {}
+
+	void update(float delta) {}
+
+	void init() {}
+
+	void interrupt() {}
+
+	void dispose() {}
+
+	void hit(HitProperty hitProperty) {}
+
+	boolean isAuthorative() {}
+
+	boolean isEmpty() {}
+
+	void start() {}
+
+	BattleEntity getTarget(TargetFilter filter) {}
+
+	boolean inaccessiblePanel() {}
+
+	boolean changeIfNeeded() {}
+
+	void progressMove() {}
+
+	boolean requiresChange(BattleEntityActionChangeData change) {}
+
+	void setExecutor(int index) {}
+
+	void setData(BattleEntityActionData data) {}
+
+}

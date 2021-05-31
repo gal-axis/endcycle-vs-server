@@ -1,0 +1,221 @@
+abstract CharacterButton(MenuButton) : Runnable {
+
+	Origin origin;
+	GameScreen screen;
+	boolean showing;
+
+	new() {}
+
+	final boolean equals(Object obj) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	void dispose() {}
+
+	void update(float delta) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void draw(CustomSpriteBatch batch, float x, float y) {}
+
+	void hide(GameScreen screen) {}
+
+	void show(GameScreen screen) {}
+
+	float getComparisonKey() {}
+
+	byte getLayer() {}
+
+	final Origin getOrigin() {}
+
+	final void removeObject() {}
+
+	SoundContainer playSound(SoundInfo sound) {}
+
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	final SoundContainer playSound(Sounds sound) {}
+
+	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
+
+	void actionTriggered(MenuElementAction action) {}
+
+	MenuElementGroup getParent() {}
+
+	MenuElement setParent(MenuElementGroup parent) {}
+
+	void calculateSize() {}
+
+	MenuElement setEnabled(boolean enabled) {}
+
+	float getX() {}
+
+	float getY() {}
+
+	boolean select() {}
+
+	float getHeight() {}
+
+	float getWidth() {}
+
+	MenuElement setHeight(float height) {}
+
+	MenuElement setLayer(byte layer) {}
+
+	MenuElement getAbsoluteParent() {}
+
+	final void triggerAction(MenuElementActionType type) {}
+
+	boolean touch(TouchEvent trigger) {}
+
+	MenuElement setX(float x) {}
+
+	MenuElement setY(float y) {}
+
+	MenuElement setWidth(float width) {}
+
+	MenuElement setFocusable(boolean focusable) {}
+
+	float calcY() {}
+
+	float calcX() {}
+
+	Set getActionListeners() {}
+
+	final void setMenuControllerSelection(MenuElement element) {}
+
+	MenuElement setFocused(boolean focused) {}
+
+	MenuElement setHidden(boolean hidden) {}
+
+	float getAbsoluteX() {}
+
+	boolean isAbsoluteHidden() {}
+
+	float getAbsoluteY() {}
+
+	MenuElement setHAlign(int hAlign) {}
+
+	MenuElement setVAlign(int vAlign) {}
+
+	MenuElement getAnchor() {}
+
+	int getAnchorVAlign() {}
+
+	MenuElement setAnchor(MenuElement anchor) {}
+
+	MenuElement setAnchorHAlign(int anchorHAlign) {}
+
+	int getHAlign() {}
+
+	int getAnchorHAlign() {}
+
+	MenuElement setAnchorVAlign(int anchorVAlign) {}
+
+	boolean canDrawCursor() {}
+
+	int getVAlign() {}
+
+	boolean isFocusable() {}
+
+	void addElements(Array elements, float x, float y) {}
+
+	void setCursor(Rectangle rectangle) {}
+
+	boolean isEnabled() {}
+
+	boolean isFocused() {}
+
+	MenuButtonTips getButtonTips() {}
+
+	boolean isTouching(float x, float y) {}
+
+	MenuButton setOnClick(Runnable onClick) {}
+
+	MenuButton setText(String text) {}
+
+	MenuElement setSelected(boolean selected) {}
+
+	String getText() {}
+
+	MenuButton setBackground(MenuThemeDrawable background) {}
+
+	Color getColor() {}
+
+	void setColor(CustomSpriteBatch batch) {}
+
+	Drawable getDrawable() {}
+
+	Fonts getFont() {}
+
+	MenuButton setDrawable(Drawable drawable) {}
+
+	Runnable getOnClick() {}
+
+	void click() {}
+
+	MenuButton setDisableBackground(boolean disableBackground) {}
+
+	boolean isDisableBackground() {}
+
+	void drawBackground(CustomSpriteBatch batch, float x, float y, float width, float height) {}
+
+	void drawButton(CustomSpriteBatch batch, float x, float y, float width, float height) {}
+
+	MenuButton setFont(Fonts font) {}
+
+	MenuButton setDisabledColor(Color disabledColor) {}
+
+	MenuElementShowAnim getShowAnimation() {}
+
+	boolean isSelected() {}
+
+	MenuButton setSingleClick(boolean singleClick) {}
+
+	BoundedFloat getTaint() {}
+
+	BoundedFloat getTaintDisabled() {}
+
+	MenuButtonClickedAnimation getAnimation() {}
+
+	Color getDisabledColor() {}
+
+	Color getDefaultColor() {}
+
+	Color getSelectedColor() {}
+
+	MenuThemeDrawable getBackground() {}
+
+	void updateText() {}
+
+	void drawOverlay(CustomSpriteBatch batch, float x, float y, float width, float height) {}
+
+	MenuButton setSelectedColor(Color selectedColor) {}
+
+	boolean isSingleClick() {}
+
+	void drawDrawable(Painter painter) {}
+
+	MenuButton setDefaultColor(Color defaultColor) {}
+
+	void run() {}
+
+	abstract ID getCharacter();
+
+	abstract void setCharacter(ID character);
+
+	BattleEntityData getCharacterData() {}
+
+	void updateCharacter() {}
+
+}

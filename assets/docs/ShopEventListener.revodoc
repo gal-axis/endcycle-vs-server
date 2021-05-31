@@ -1,0 +1,25 @@
+ShopEventListener(Object) : InteractListener, Runnable {
+
+	AdventureBattle battle;
+	AdventureFieldNode entry;
+	ShopEventTrigger trigger;
+	AdventureShop shop;
+	List objects;
+
+	new(AdventureBattle battle, AdventureFieldNode entry, ShopEventTrigger trigger) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void run() {}
+
+	boolean interact(BattlePlayer player, BattleEntity entity) {}
+
+	void setShop(AdventureShop shop) {}
+
+	void attacked() {}
+
+}

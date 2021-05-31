@@ -1,0 +1,39 @@
+final ButtonEvent(Object) {
+
+	int buttonId;
+	Controller controller;
+	InputType type;
+
+	new(int buttonId, InputType type) {}
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void setProperties(Controller controller, int buttonId, InputType type) {}
+
+	void setType(InputType type) {}
+
+	boolean isReleased() {}
+
+	boolean isPressed() {}
+
+	boolean isKey(KeyCode code) {}
+
+	Controller getController() {}
+
+	KeyCode getCode(KeyCodeCategory category) {}
+
+	void setController(Controller controller) {}
+
+	void setID(int buttonId) {}
+
+	boolean isMoved() {}
+
+	int getButtonId() {}
+
+}

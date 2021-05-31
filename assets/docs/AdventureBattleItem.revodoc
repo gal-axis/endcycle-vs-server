@@ -1,0 +1,49 @@
+AdventureBattleItem(Object) {
+
+	final AdventureItemInventory inventory;
+	final AdventureItem data;
+	final Drawable icon;
+	final AdventureItemListener[] itemListeners;
+	String name;
+	String description;
+	int amount;
+	int age;
+	Array players;
+
+	new(AdventureItemInventory inventory, AdventureItem item) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void remove() {}
+
+	void apply(BattlePlayer player) {}
+
+	void init(AdventureBattle battle) {}
+
+	void dispose() {}
+
+	void use(BattlePlayer player) {}
+
+	boolean usable(BattlePlayer player) {}
+
+	boolean decreaseAmount() {}
+
+	boolean increaseAmount(AdventureBattle battle) {}
+
+	void removeFrom(BattlePlayer player) {}
+
+	void increaseAge() {}
+
+	boolean isExpired() {}
+
+	void removeListeners() {}
+
+	void removeListeners(BattlePlayer player) {}
+
+	boolean isZoneExpire() {}
+
+}

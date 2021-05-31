@@ -1,0 +1,28 @@
+AdventureNode(Object) {
+
+	long seed;
+	DrawableId icon;
+	ID song;
+	AdventureEvent event;
+	AdventureEventTrigger trigger;
+	Array branches;
+
+	new(long seed) {}
+
+	new(AdventureEvent event, long seed) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void process(BattleEntity entity) {}
+
+	void setEvent(AdventureEvent event) {}
+
+	AdventureNode addBranch(AdventureEvent event, long seed) {}
+
+	void addBranch(AdventureNode node) {}
+
+}

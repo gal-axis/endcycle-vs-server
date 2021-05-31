@@ -1,0 +1,17 @@
+abstract PatchworkMetaData(Moddable) {
+
+	ID id;
+
+	new() {}
+
+	final boolean equals(Object obj) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	final ID getId() {}
+
+	abstract PatchworkData createPatchworkData();
+
+}

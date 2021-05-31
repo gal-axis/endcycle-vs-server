@@ -1,0 +1,57 @@
+NoiseCaptureAnimation(NoiseBEAnimation) : BattleEntityAnimation {
+
+	final BattleEntity entity;
+	final SoundInfo sound;
+	final boolean reverse;
+	float xOffset;
+	float yOffset;
+	Array particles;
+	List drawables;
+	DrawableImage startup;
+	DrawableImage loop;
+	NumDisplay x;
+	NumDisplay y;
+	AdventureBattle adventure;
+	BattleEntity parent;
+	float animation;
+	BoundedFloat speed;
+
+	new(BattleEntity parent, AdventureBattle adventure, BattleEntity entity) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	boolean test(BattleEntity entity) {}
+
+	void dispose() {}
+
+	void update(float delta) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void hide(GameScreen screen) {}
+
+	void show(GameScreen screen) {}
+
+	byte getLayer() {}
+
+	Origin getOrigin() {}
+
+	float getComparisonKey() {}
+
+	ScreenObject start(BattleEntity entity) {}
+
+}

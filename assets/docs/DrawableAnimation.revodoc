@@ -1,0 +1,33 @@
+final DrawableAnimation(Object) {
+
+	DrawableImageFrame[] keyFrames;
+	double frameDuration;
+	int lastFrameNumber;
+	double lastStateTime;
+	PlayMode playMode;
+
+	new(double frameDuration, DrawableImageFrame[] keyFrames) {}
+
+	new(double frameDuration, PlayMode playMode, DrawableImageFrame[] keyFrames) {}
+
+	new(double frameDuration, Array keyFrames, PlayMode playMode) {}
+
+	new(double frameDuration, Array keyFrames) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	boolean isAnimationFinished(double stateTime) {}
+
+	double getAnimationDuration() {}
+
+	DrawableImageFrame getKeyFrame(double stateTime) {}
+
+	DrawableImageFrame getKeyFrame(int frameNumber) {}
+
+	int getKeyFrameIndex(double stateTime) {}
+
+}

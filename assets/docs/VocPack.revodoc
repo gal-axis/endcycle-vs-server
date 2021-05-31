@@ -1,0 +1,43 @@
+VocPack(Object) {
+
+	VocSet[] vocs;
+
+	new(VocIds[] vocs) {}
+
+	new(ID[] vocs) {}
+
+	new(VocSet pack) {}
+
+	new() {}
+
+	new(int size) {}
+
+	new(VocPack pack) {}
+
+	boolean equals(Object o) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	boolean add(VocEntry entry) {}
+
+	VocSet get(int i) {}
+
+	int count() {}
+
+	int indexOf(VocSet rolePack) {}
+
+	void set(VocPack pack) {}
+
+	int capacity() {}
+
+	void swap(int set1, int set2, int index) {}
+
+	boolean isValid() {}
+
+	VocPack shrink() {}
+
+	Color getColor(int pack) {}
+
+}

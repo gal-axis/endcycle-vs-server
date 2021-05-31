@@ -1,0 +1,68 @@
+final MusicHandler(Object) {
+
+	static final MusicHandler instance;
+	static final float SHIFT_SPEED_DEFAULT = 1.0;
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void update(float delta) {}
+
+	void clear() {}
+
+	void stop() {}
+
+	boolean isLocked() {}
+
+	void pause() {}
+
+	MusicContainer play(MusicData m) {}
+
+	MusicContainer play(ID music, boolean pause) {}
+
+	MusicContainer play(ID music) {}
+
+	MusicContainer play(MusicData m, boolean pause) {}
+
+	MusicContainer play(MusicData m, float volume) {}
+
+	void play() {}
+
+	MusicContainer play(MusicData m, float volume, float position, boolean pause) {}
+
+	MusicContainer getCurrent() {}
+
+	float getDefaultVolume() {}
+
+	void transitionTo(MusicData next, float speed, boolean stopLast) {}
+
+	void transitionTo(MusicData next, float speed) {}
+
+	void transitionTo(MusicData next) {}
+
+	void transitionTo(ID next) {}
+
+	void setLocked(boolean locked) {}
+
+	boolean isOnBeat() {}
+
+	void shiftBack() {}
+
+	float getVolume() {}
+
+	float getCurrentVolume() {}
+
+	void setDefaultVolume(float defaultVolume) {}
+
+	void shiftVolume(float volume) {}
+
+	boolean isPlaying() {}
+
+	int beat() {}
+
+	void setCurrentVolume(float volume) {}
+
+}

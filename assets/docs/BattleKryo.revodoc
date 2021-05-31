@@ -1,0 +1,56 @@
+BattleKryo : Comparator {
+
+	BattleReferenceResolver references;
+	ProtoFieldSerializerFactory serializerFactory;
+
+	new() {}
+
+	abstract boolean equals(Object arg0);
+
+	String toString() {}
+
+	int hashCode() {}
+
+	Object copy(Object arg0) {}
+
+	void reset() {}
+
+	void setRegistrationRequired(boolean arg0) {}
+
+	boolean getReferences() {}
+
+	void setAutoReset(boolean arg0) {}
+
+	int getDepth() {}
+
+	void reference(Object arg0) {}
+
+	Object copyShallow(Object arg0) {}
+
+	boolean setReferences(boolean arg0) {}
+
+	void setMaxDepth(int arg0) {}
+
+	boolean isRegistrationRequired() {}
+
+	boolean getWarnUnregisteredClasses() {}
+
+	void setOptimizedGenerics(boolean arg0) {}
+
+	int getNextRegistrationId() {}
+
+	void setCopyReferences(boolean arg0) {}
+
+	void setWarnUnregisteredClasses(boolean arg0) {}
+
+	Comparator reversed() {}
+
+	Comparator thenComparing(Comparator arg0) {}
+
+	String log(Object object) {}
+
+	void setBattle(Battle battle) {}
+
+	void registerJava() {}
+
+}

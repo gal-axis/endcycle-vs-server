@@ -1,0 +1,39 @@
+AdventureFieldNode(Object) {
+
+	int x;
+	int y;
+	boolean active;
+	AdventureNode node;
+	BattleData battle;
+	BattleFieldData field;
+	final BattleEntityList entities;
+	final Array branches;
+	final Set connections;
+
+	new() {}
+
+	new(AdventureNode node, BattleData battle, BattleFieldData field) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	boolean start(AdventureBattle battle) {}
+
+	void fill(BattleFieldData data) {}
+
+	void playSong(AdventureBattle battle) {}
+
+	void addEntity(BattleEntity entity) {}
+
+	Array getEntities(boolean preview) {}
+
+	void addEntities(AdventureBattle battle, boolean animation, Array shells) {}
+
+	void addEntities(AdventureBattle battle, boolean preview, boolean animation) {}
+
+	void changeField(BattleField field, BattleFieldData data) {}
+
+}

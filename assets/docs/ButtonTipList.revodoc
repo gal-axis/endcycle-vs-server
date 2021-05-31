@@ -1,0 +1,23 @@
+final ButtonTipList(Object) {
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void add(KeyCode code, String message) {}
+
+	void add(Controller controller, KeyCode code, LocalizedMessage message) {}
+
+	void add(ButtonTip tip) {}
+
+	void add(KeyCode code, LocalizedMessage message) {}
+
+	ButtonTip get(int index) {}
+
+	void clear() {}
+
+	boolean has(KeyCode code) {}
+
+}

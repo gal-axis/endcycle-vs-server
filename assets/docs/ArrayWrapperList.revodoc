@@ -1,0 +1,55 @@
+ArrayWrapperList(Object) : List {
+
+	final Array array;
+
+	new(Array array) {}
+
+	abstract boolean equals(Object arg0);
+
+	String toString() {}
+
+	abstract int hashCode();
+
+	Iterator iterator() {}
+
+	boolean add(Object element) {}
+
+	boolean remove(Object object) {}
+
+	void clear() {}
+
+	boolean contains(Object object) {}
+
+	boolean isEmpty() {}
+
+	int size() {}
+
+	Object[] toArray(Object[] array) {}
+
+	Object[] toArray() {}
+
+	boolean addAll(Collection c) {}
+
+	boolean containsAll(Collection c) {}
+
+	boolean removeAll(Collection c) {}
+
+	boolean retainAll(Collection c) {}
+
+	void add(int index, Object element) {}
+
+	Object remove(int index) {}
+
+	Object get(int index) {}
+
+	int indexOf(Object object) {}
+
+	int lastIndexOf(Object object) {}
+
+	List subList(int fromIndex, int toIndex) {}
+
+	boolean addAll(int index, Collection c) {}
+
+	Object set(int index, Object element) {}
+
+}

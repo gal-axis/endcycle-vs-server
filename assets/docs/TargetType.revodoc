@@ -1,0 +1,38 @@
+enum TargetType {
+
+	CLOSEST_ENEMY,
+ 	SAME_COL_ENEMY,
+ 	SAME_ROW_ENEMY,
+ 	FARTHEST_ENEMY,
+ 	LOW_HP_ENEMY,
+ 	HIGH_HP_ENEMY,
+ 	CLOSEST_ALLY,
+ 	SAME_COL_ALLY,
+ 	SAME_ROW_ALLY,
+ 	FARTHEST_ALLY,
+ 	LOW_HP_ALLY,
+ 	HIGH_HP_ALLY,
+ 	SELF,
+ 	ALL_ALLIES,
+ 	ALL_ENEMIES,
+ 	ALL;
+
+	final TargetFilter filter;
+
+	final boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	final int compareTo(TargetType arg0) {}
+
+	final String name() {}
+
+	final int ordinal() {}
+
+	static TargetType[] values() {}
+
+	static TargetType valueOf(String name) {}
+
+}

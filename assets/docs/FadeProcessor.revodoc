@@ -1,0 +1,41 @@
+abstract FadeProcessor(Object) {
+
+	ScreenFader fader;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	abstract void update(float delta);
+
+	abstract void start();
+
+	abstract void draw(CustomSpriteBatch batch);
+
+	abstract void dispose();
+
+	void drawNewScreen(CustomSpriteBatch batch, float x, float y) {}
+
+	void drawNewScreen(CustomSpriteBatch batch) {}
+
+	void setFader(ScreenFader fader) {}
+
+	abstract boolean done();
+
+	void updateOldScreen(float delta) {}
+
+	void disposeOldScreen() {}
+
+	void updateNewScreen(float delta) {}
+
+	void initNewScreen() {}
+
+	void drawOldScreen(CustomSpriteBatch batch) {}
+
+	void drawOldScreen(CustomSpriteBatch batch, float x, float y) {}
+
+}

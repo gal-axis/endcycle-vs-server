@@ -1,0 +1,100 @@
+AdventureBattleMode(InstantWinBattleMode) {
+
+	Battle battle;
+	final BoundedFloat moneyScale;
+	final StringCache moneyCache;
+	Consumer updateMoney;
+	int money;
+	int displayMoney;
+	AdventureBattle adventure;
+	AdventureNodeMap map;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void handle(GameEvent event) {}
+
+	void dispose() {}
+
+	void update(float delta) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void hide(GameScreen screen) {}
+
+	void show(GameScreen screen) {}
+
+	Origin getOrigin() {}
+
+	float getComparisonKey() {}
+
+	byte getLayer() {}
+
+	void start() {}
+
+	void stop() {}
+
+	String getBattleName(String name) {}
+
+	int adjustDamage(BattleEntity entity, int damage) {}
+
+	boolean isRestart() {}
+
+	LocalizedMessage getLoseMessage() {}
+
+	void calculateTint(BattleEntity entity, CColor color) {}
+
+	void loot(Looter looter) {}
+
+	boolean loot() {}
+
+	double adjustGaugeSpeed(BattleEntity entity) {}
+
+	BattlePlayer createPlayer(BattleEntity entity) {}
+
+	void initHUD(BattleHUD hud) {}
+
+	boolean isDespawn(BattleEntity entity) {}
+
+	boolean showStart() {}
+
+	boolean isSpawn(BattleEntity entity) {}
+
+	String getDiscordMessage(Party winner) {}
+
+	void finish(Party winner) {}
+
+	String createTeamName(Party party) {}
+
+	void sendServerUpdate(List messages) {}
+
+	Party getWinner() {}
+
+	void setCombat(boolean combat) {}
+
+	int getMoney() {}
+
+	void changeMoney(BattleEntity entity, float x, float y, int amount) {}
+
+	void updateMoney(int money) {}
+
+	void updateMoneyCache() {}
+
+	void setMoney(int money) {}
+
+}

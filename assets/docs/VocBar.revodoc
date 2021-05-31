@@ -1,0 +1,69 @@
+VocBar(HUDButton) {
+
+	final BoundedFloat offset;
+	boolean active;
+	boolean horizontal;
+	int screenHAlign;
+	int screenVAlign;
+	int hAlign;
+	int vAlign;
+	float defX;
+	float defY;
+	float width;
+	float height;
+	boolean proMode;
+	VocDisplay[] vocDisplays;
+
+	new(Battle battle, DefaultBattlePlayer player) {}
+
+	new(Battle battle, VocChain chain) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void update(float delta) {}
+
+	boolean isHidden() {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	float getY() {}
+
+	float getX() {}
+
+	void event(GameEvent event) {}
+
+	boolean touch(TouchEvent trigger) {}
+
+	void button(ButtonEvent trigger) {}
+
+	float calcX() {}
+
+	float calcY() {}
+
+	boolean increaseOffset() {}
+
+	void finishMoving() {}
+
+	boolean finishedMoving() {}
+
+	float getMove() {}
+
+	boolean isTouching(float x, float y) {}
+
+	BattleEntity getPlayer() {}
+
+	void drawVoc(CustomSpriteBatch batch, VocSet pack, int voc, float x, float y) {}
+
+	float getDstX() {}
+
+	void drawRoles(CustomSpriteBatch batch, float xPos, float yPos, Color c, String role, int hAlign) {}
+
+	void drawRoles(CustomSpriteBatch batch, Color c, String role, int hAlign, float x, float y) {}
+
+	float getDstY() {}
+
+}

@@ -1,0 +1,34 @@
+final CharacterCache(Object) {
+
+	Font font;
+	char character;
+	float advance;
+	float xOffset;
+	float yOffset;
+	float lineOffset;
+
+	new() {}
+
+	new(Font font, char character, TextureRegion image, float advance, float xOffset, float yOffset, float lineOffset) {}
+
+	new(CharacterCache characterCache) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void set(CharacterCache characterCache) {}
+
+	void set(Font font, char character) {}
+
+	float getY() {}
+
+	float getWidth() {}
+
+	float getHeight() {}
+
+	TextureRegion getImage() {}
+
+}

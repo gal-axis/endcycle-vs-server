@@ -1,0 +1,27 @@
+AdventureNodeGraph(Object) {
+
+	final AdventureZone zone;
+	Array nodes;
+	Array remaining;
+
+	new(AdventureZone zone) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void generateBranches(Random random) {}
+
+	void addNode(ID id, long seed) {}
+
+	void addNode(AdventureEvent event, long seed) {}
+
+	void addNodeStart(ID id, long seed) {}
+
+	void addEmpty() {}
+
+	void addNodes(AdventureNode[] arr) {}
+
+}

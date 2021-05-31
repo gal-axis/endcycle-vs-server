@@ -1,0 +1,127 @@
+abstract ByteBuffer(Buffer) : Comparable {
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	final Buffer limit(int arg0) {}
+
+	final int limit() {}
+
+	final Buffer clear() {}
+
+	final byte[] array() {}
+
+	final int arrayOffset() {}
+
+	final boolean hasArray() {}
+
+	abstract boolean isDirect();
+
+	final Buffer position(int arg0) {}
+
+	final int position() {}
+
+	final int remaining() {}
+
+	final int capacity() {}
+
+	final Buffer mark() {}
+
+	final Buffer reset() {}
+
+	final Buffer flip() {}
+
+	final boolean hasRemaining() {}
+
+	abstract boolean isReadOnly();
+
+	final Buffer rewind() {}
+
+	int compareTo(ByteBuffer arg0) {}
+
+	abstract byte get(int arg0);
+
+	ByteBuffer get(byte[] arg0, int arg1, int arg2) {}
+
+	abstract byte get();
+
+	ByteBuffer get(byte[] arg0) {}
+
+	ByteBuffer put(byte[] arg0, int arg1, int arg2) {}
+
+	abstract ByteBuffer put(byte arg0);
+
+	ByteBuffer put(ByteBuffer arg0) {}
+
+	abstract ByteBuffer put(int arg0, byte arg1);
+
+	final ByteBuffer put(byte[] arg0) {}
+
+	abstract short getShort();
+
+	abstract short getShort(int arg0);
+
+	abstract ByteBuffer putShort(short arg0);
+
+	abstract ByteBuffer putShort(int arg0, short arg1);
+
+	abstract char getChar(int arg0);
+
+	abstract char getChar();
+
+	abstract ByteBuffer putChar(char arg0);
+
+	abstract ByteBuffer putChar(int arg0, char arg1);
+
+	abstract int getInt(int arg0);
+
+	abstract int getInt();
+
+	abstract ByteBuffer putInt(int arg0, int arg1);
+
+	abstract ByteBuffer putInt(int arg0);
+
+	abstract long getLong();
+
+	abstract long getLong(int arg0);
+
+	abstract ByteBuffer putLong(int arg0, long arg1);
+
+	abstract ByteBuffer putLong(long arg0);
+
+	abstract float getFloat();
+
+	abstract float getFloat(int arg0);
+
+	abstract ByteBuffer putFloat(float arg0);
+
+	abstract ByteBuffer putFloat(int arg0, float arg1);
+
+	abstract double getDouble();
+
+	abstract double getDouble(int arg0);
+
+	abstract ByteBuffer putDouble(double arg0);
+
+	abstract ByteBuffer putDouble(int arg0, double arg1);
+
+	static ByteBuffer wrap(byte[] arg0, int arg1, int arg2) {}
+
+	static ByteBuffer wrap(byte[] arg0) {}
+
+	static ByteBuffer allocate(int arg0) {}
+
+	abstract ByteBuffer duplicate();
+
+	static ByteBuffer allocateDirect(int arg0) {}
+
+	abstract ByteBuffer asReadOnlyBuffer();
+
+	abstract ByteBuffer compact();
+
+	abstract ByteBuffer slice();
+
+}

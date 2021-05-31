@@ -1,0 +1,45 @@
+AdventureZone(Moddable) : Named, DataName {
+
+	ID id;
+	LocalizedMessage message;
+	boolean secret;
+	DrawableId map;
+	DrawableId cursor;
+	Vector2 cursorPosition;
+	ID background;
+	ID music;
+	int pathLength;
+	int pathLengthDeviation;
+	int branches;
+	int branchDeviation;
+	int branchDistanceX;
+	int branchDistanceY;
+	int randomizeX;
+	int randomizeY;
+	int direction;
+	ID lootBox;
+	CustomCache lootCache;
+	Script script;
+	List renderers;
+	List startEvents;
+	List randomEvents;
+	List finalEvents;
+	List followUpZones;
+
+	new() {}
+
+	final boolean equals(Object obj) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	final ID getId() {}
+
+	String getDataName() {}
+
+	String getName() {}
+
+	List getPatchworkData() {}
+
+}

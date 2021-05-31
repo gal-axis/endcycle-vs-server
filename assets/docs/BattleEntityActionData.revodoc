@@ -1,0 +1,32 @@
+final BattleEntityActionData(Moddable) : DataName, Serializable {
+
+	ID id;
+	String name;
+	boolean randomizeMoves;
+	boolean autoTurn;
+	boolean resetStatus;
+	boolean rememberMove;
+	ID next;
+	TargetFilter target;
+	Array change;
+	Array acts;
+
+	new() {}
+
+	final boolean equals(Object obj) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	final ID getId() {}
+
+	void write(Json json) {}
+
+	void read(Json json, JsonValue jsonData) {}
+
+	String getDataName() {}
+
+	String getName() {}
+
+}

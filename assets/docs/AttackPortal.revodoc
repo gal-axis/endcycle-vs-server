@@ -1,0 +1,78 @@
+AttackPortal(GameScreenObject) {
+
+	Origin origin;
+	GameScreen screen;
+	boolean showing;
+	final GameObject object;
+	final boolean flipX;
+	final float x;
+	final float y;
+	final byte layer;
+	final float comparisonKey;
+	final AttackPortalPart foreground;
+	final AttackPortalPart background;
+	boolean mask;
+	float animation;
+	BoundedFloat timer;
+	BoundedFloat alpha;
+	float xOffset;
+	float yOffset;
+	float xScale;
+	float yScale;
+	Color tint;
+
+	new(GameObject object, byte layer, float comparisonKey, float x, float y, boolean flipX, float time) {}
+
+	new(GameObject object, float time, float x, float y) {}
+
+	new(GameObject object, float time) {}
+
+	final boolean equals(Object obj) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	void dispose() {}
+
+	void update(float delta) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void hide(GameScreen screen) {}
+
+	void show(GameScreen screen) {}
+
+	byte getLayer() {}
+
+	final Origin getOrigin() {}
+
+	float getComparisonKey() {}
+
+	final void removeObject() {}
+
+	SoundContainer playSound(SoundInfo sound) {}
+
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	final SoundContainer playSound(Sounds sound) {}
+
+	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
+
+	void stop() {}
+
+	float getTime() {}
+
+	boolean isStopped() {}
+
+}

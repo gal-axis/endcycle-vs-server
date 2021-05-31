@@ -1,0 +1,46 @@
+final ID(Object) : Comparable {
+
+	long group;
+	long id;
+
+	new() {}
+
+	new(long group, long id) {}
+
+	new(long id) {}
+
+	boolean equals(Object obj) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	int compareTo(ID id) {}
+
+	boolean equals(long group, long id) {}
+
+	static boolean equals(ID id1, ID id2) {}
+
+	static int compare(ID id1, ID id2) {}
+
+	void increment() {}
+
+	static ID copy(ID id) {}
+
+	void set(ID id) {}
+
+	static ID temp(long group, long id) {}
+
+	static ID temp(long id) {}
+
+	static IdEntity findObject(List list, ID id) {}
+
+	static IdEntity findObject(Array list, ID id) {}
+
+	static ID fromString(String str) {}
+
+	static int findObjectIndex(List list, ID id) {}
+
+	static int findObjectIndex(Array list, ID id) {}
+
+}

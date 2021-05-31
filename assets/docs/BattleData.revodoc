@@ -1,0 +1,43 @@
+final BattleData(Moddable) : DataName, Named {
+
+	ID id;
+	String dataName;
+	LocalizedMessage name;
+	boolean run;
+	ID field;
+	ID background;
+	ID music;
+	double time;
+	boolean timeWin;
+	Script timeoutScript;
+	Array entityShells;
+	Array entityGoals;
+	Array modes;
+	Array spawnPoints;
+	Array liberations;
+
+	new() {}
+
+	new(BattleData original, boolean copyEntities) {}
+
+	final boolean equals(Object obj) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	final ID getId() {}
+
+	String getName() {}
+
+	String getDataName() {}
+
+	boolean hasPlayer() {}
+
+	String getEnumName() {}
+
+	boolean hasMode(GameModeProvider mode) {}
+
+	void addEntityShell(EntityShell entity) {}
+
+}

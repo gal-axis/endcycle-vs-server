@@ -1,0 +1,23 @@
+final GameModeProvider(Object) : DataName {
+
+	final String name;
+	final String id;
+	final boolean offline;
+	final boolean online;
+	final boolean cpuSupport;
+	final ID battle;
+	final Supplier config;
+
+	new(String name, String id, boolean offline, boolean online, boolean cpuSupport, ID battle, Supplier config) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	String getDataName() {}
+
+	GameModeConfig createConfig() {}
+
+}

@@ -1,0 +1,45 @@
+final BattleEntityPatchworkMetaData(PatchworkMetaData) : DataName {
+
+	ID id;
+	String name;
+	PatchworkStateId defaultState;
+	PatchworkStateDrawableData idle;
+	PatchworkStateDrawableData hurt;
+	PatchworkStateDrawableData stunStart;
+	PatchworkStateDrawableData stunEnd;
+	PatchworkStateDrawableData cast;
+	PatchworkStateDrawableData attack;
+	PatchworkStateDrawableData defend;
+	PatchworkStateDrawableData move;
+	PatchworkStateDrawableData spawn;
+	PatchworkStateId idleLeadsInto;
+	PatchworkStateId hurtLeadsInto;
+	PatchworkStateId stunStartLeadsInto;
+	PatchworkStateId attackLeadsInto;
+	PatchworkStateId castLeadsInto;
+	PatchworkStateId defendLeadsInto;
+	PatchworkStateId moveLeadsInto;
+	PatchworkStateId spawnLeadsInto;
+	float shadowX;
+	float shadowY;
+	Array extraStates;
+	boolean keepUncustomized;
+	Array customizables;
+
+	new() {}
+
+	final boolean equals(Object obj) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	final ID getId() {}
+
+	PatchworkData createPatchworkData() {}
+
+	String getDataName() {}
+
+	PatchworkStateData createSimpleState(PatchworkStateId state, PatchworkStateDrawableData drawable) {}
+
+}

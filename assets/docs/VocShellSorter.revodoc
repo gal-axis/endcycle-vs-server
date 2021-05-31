@@ -1,0 +1,17 @@
+VocShellSorter(Object) : Comparator {
+
+	new(Comparator vocComparator) {}
+
+	abstract boolean equals(Object arg0);
+
+	String toString() {}
+
+	int hashCode() {}
+
+	int compare(VocShell o1, VocShell o2) {}
+
+	Comparator reversed() {}
+
+	Comparator thenComparing(Comparator arg0) {}
+
+}

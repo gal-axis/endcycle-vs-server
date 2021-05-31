@@ -1,0 +1,35 @@
+enum Format {
+
+	Alpha,
+ 	Intensity,
+ 	LuminanceAlpha,
+ 	RGB565,
+ 	RGBA4444,
+ 	RGB888,
+ 	RGBA8888;
+
+	final boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	final int compareTo(Format arg0) {}
+
+	final String name() {}
+
+	final int ordinal() {}
+
+	static Format[] values() {}
+
+	static Format valueOf(String arg0) {}
+
+	static int toGlType(Format arg0) {}
+
+	static int toGlFormat(Format arg0) {}
+
+	static int toGdx2DPixmapFormat(Format arg0) {}
+
+	static Format fromGdx2DPixmapFormat(int arg0) {}
+
+}

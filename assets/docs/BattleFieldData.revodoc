@@ -1,0 +1,29 @@
+final BattleFieldData(Moddable) : DataName {
+
+	ID id;
+	String name;
+	int panelWidth;
+	int panelHeight;
+	boolean random;
+	boolean randomCoop;
+	boolean doubleSide;
+	BattleFieldBorder camera;
+	int width;
+	int height;
+	FieldPanelData[][] panels;
+
+	new() {}
+
+	final boolean equals(Object obj) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	final ID getId() {}
+
+	String getDataName() {}
+
+	BattleFieldData resize(int width, int height) {}
+
+}

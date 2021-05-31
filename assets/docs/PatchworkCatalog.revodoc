@@ -1,0 +1,45 @@
+final PatchworkCatalog(Object) {
+
+	static final PatchworkDataMap patchworkMap;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	String getName() {}
+
+	ID getValue(Moddable object) {}
+
+	Moddable find(Object currentValue) {}
+
+	List getValues() {}
+
+	static Patchwork get(ID id) {}
+
+	static void save() {}
+
+	static Patchwork copy(ID id) {}
+
+	static PatchworkData getData(ID id) {}
+
+	static List getAllData() {}
+
+	static List getAllMetaData() {}
+
+	static void addPatchwork(Patchwork patchwork) {}
+
+	static PatchworkData createNewData() {}
+
+	static PatchworkDataMap getPatchworkMap() {}
+
+	static BattleEntityPatchworkMetaData createBattleMetaData() {}
+
+	static SimplePatchworkMetaData createSimpleMetaData() {}
+
+	static BattleLayeredPatchworkMetaData createLayeredMetaData() {}
+
+}

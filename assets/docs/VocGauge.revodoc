@@ -1,0 +1,59 @@
+VocGauge(Object) {
+
+	static final double DURATION_DEFAULT = 2.5;
+
+	new() {}
+
+	new(BattleEntity entity, double progress, double speed, double duration) {}
+
+	new(BattleEntity entity) {}
+
+	boolean equals(Object o) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void update(double delta) {}
+
+	void fill() {}
+
+	void reset() {}
+
+	boolean empty() {}
+
+	double getProgress() {}
+
+	BattleEntity getEntity() {}
+
+	void increase(double progress) {}
+
+	void hit(BattleEntity entity, HitProperty hit, int damage) {}
+
+	void hurt(int amount) {}
+
+	void crushed() {}
+
+	void idle(double delta) {}
+
+	boolean decrease(double amount) {}
+
+	boolean isFull() {}
+
+	void setSpeed(double speed) {}
+
+	double getSpeed() {}
+
+	double getFillSpeed() {}
+
+	float getFillTime() {}
+
+	double getDuration() {}
+
+	void setDuration(double duration) {}
+
+	void setProgress(double progress) {}
+
+	void increaseSpeed(double speed) {}
+
+}

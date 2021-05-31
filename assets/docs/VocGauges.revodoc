@@ -1,0 +1,38 @@
+VocGauges(Object) {
+
+	BattleEntitySpeed speed;
+	UltraVocGauge ultra;
+
+	new(BattleEntity entity) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void add(VocGauge gauge) {}
+
+	VocGauge get(int gauge) {}
+
+	Array get() {}
+
+	int indexOf(VocGauge gauge) {}
+
+	void update(double delta) {}
+
+	int size() {}
+
+	void fill(boolean ultra) {}
+
+	void hit(BattleEntity entity, HitProperty hit, int damage) {}
+
+	void hurt(int amount) {}
+
+	void crushed() {}
+
+	void idle(double delta) {}
+
+	boolean isFull(int slot) {}
+
+}

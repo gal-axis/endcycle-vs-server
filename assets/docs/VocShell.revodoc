@@ -1,0 +1,33 @@
+final VocShell(Object) : Lootable, Serializable {
+
+	ID id;
+	boolean isNew;
+	String mod;
+	boolean valid;
+	Voc voc;
+
+	new() {}
+
+	new(ID id) {}
+
+	new(Voc voc) {}
+
+	boolean equals(Object o) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void write(Json json) {}
+
+	void read(Json json, JsonValue jsonData) {}
+
+	void addToInventory() {}
+
+	LootDisplayer createDisplayer() {}
+
+	void setVoc(Voc voc) {}
+
+	void setMissing(String mod, String name, int level, Role role) {}
+
+}

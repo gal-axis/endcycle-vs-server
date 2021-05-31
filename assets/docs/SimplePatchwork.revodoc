@@ -1,0 +1,106 @@
+SimplePatchwork(Patchwork) {
+
+	ID id;
+	Array palette;
+	Color tint;
+	Map states;
+	PatchworkStateId state;
+	PatchworkStateId defaultState;
+	PatchworkStateId leadsInto;
+	float sizeX;
+	float sizeY;
+	float maxWidth;
+	float maxHeight;
+	int hAlign;
+	int vAlign;
+	double animationSpeed;
+	double animState;
+	final DrawableState drawable;
+
+	new() {}
+
+	new(DrawableState drawable) {}
+
+	new(Drawable drawable) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	int get(int object, int orElse) {}
+
+	Object get(Object object, Object orElse) {}
+
+	float get(float object, float orElse) {}
+
+	double get(double object, double orElse) {}
+
+	void paint(Painter painter) {}
+
+	ID getId() {}
+
+	void update(float delta) {}
+
+	PatchworkStateId getState() {}
+
+	Patchwork copy() {}
+
+	void draw(Batch batch, float posX, float posY, float scaleX, float scaleY, double animState, int hAlign, int vAlign, Color tint) {}
+
+	void draw(Batch batch, float posX, float posY, float scaleX, float scaleY, Color tint) {}
+
+	float getWidth() {}
+
+	float getHeight() {}
+
+	boolean isFinished() {}
+
+	float getYPosition(float y, float scaleY) {}
+
+	float getYPosition(float y, float scaleY, double animState, int vAlign) {}
+
+	float getXPosition(float x, float scaleX) {}
+
+	float getXPosition(float x, float scaleX, double animState, int hAlign) {}
+
+	void resetAnimation() {}
+
+	boolean inState(PatchworkStateId name) {}
+
+	boolean setState(PatchworkStateId name) {}
+
+	boolean hasState(PatchworkStateId name) {}
+
+	void setPalette(Array palette) {}
+
+	double getAnimationDuration() {}
+
+	boolean hasShadow() {}
+
+	Collection getPatchworkStates() {}
+
+	PatchworkState getPatchworkState() {}
+
+	Patchwork fullCopy() {}
+
+	void copyStates() {}
+
+	void addState(PatchworkStateId name, DrawableState[] images) {}
+
+	PatchworkState addState(PatchworkStateId name, PatchworkState state) {}
+
+	PatchworkState addState(PatchworkStateId name, PatchworkStateId leadsInto, DrawableState[] images) {}
+
+	Array getDrawables() {}
+
+	void calculateSizes() {}
+
+	void setStates(Map states) {}
+
+	void resetSizes() {}
+
+	void setDrawable(DrawableState drawable) {}
+
+}

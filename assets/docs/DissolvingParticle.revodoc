@@ -1,0 +1,55 @@
+DissolvingParticle(Object) : ScreenObject {
+
+	Drawable drawable;
+	float x;
+	float y;
+	float speed;
+	float speedX;
+	float speedY;
+	float fade;
+	float state;
+	byte layer;
+	float comparisonKey;
+	boolean gravity;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void dispose() {}
+
+	void update(float delta) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void hide(GameScreen screen) {}
+
+	void show(GameScreen screen) {}
+
+	byte getLayer() {}
+
+	Origin getOrigin() {}
+
+	float getComparisonKey() {}
+
+	void update(float delta, boolean gravity) {}
+
+	DissolvingParticle init(Drawable drawable, float speed, float speedX, float speedY) {}
+
+	DissolvingParticle setPosition(float x, float y) {}
+
+}

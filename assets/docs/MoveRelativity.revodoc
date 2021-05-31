@@ -1,0 +1,25 @@
+enum MoveRelativity {
+
+	ABSOLUTE,
+ 	RELATIVE,
+ 	TARGET,
+ 	TARGET_RELATIVE,
+ 	TOWARD_TARGET;
+
+	final boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	final int compareTo(MoveRelativity arg0) {}
+
+	final String name() {}
+
+	final int ordinal() {}
+
+	static MoveRelativity[] values() {}
+
+	static MoveRelativity valueOf(String name) {}
+
+}

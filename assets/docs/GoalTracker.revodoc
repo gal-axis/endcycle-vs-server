@@ -1,0 +1,34 @@
+GoalTracker(Object) : GameEventListener {
+
+	final List listeners;
+	final Battle battle;
+	double timeRequired;
+	double timeLeft;
+	boolean timewin;
+	Script timeoutScript;
+	boolean perfect;
+	boolean started;
+	int damageTaken;
+	int attacks;
+
+	new(Battle battle) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void handle(GameEvent event) {}
+
+	void update(float delta) {}
+
+	void start() {}
+
+	void win() {}
+
+	void end() {}
+
+	void updateGoals(BattleData data) {}
+
+}

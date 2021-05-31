@@ -1,0 +1,39 @@
+FieldFlicker(Object) : Comparable {
+
+	final Drawable drawableNeutral;
+	final Drawable drawableAlly;
+	final Drawable drawableEnemy;
+	int x;
+	int y;
+	Party party;
+	boolean flickers;
+	float time;
+	float delay;
+
+	new(Party party, int x, int y) {}
+
+	new() {}
+
+	boolean equals(Object obj) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	int compareTo(FieldFlicker o) {}
+
+	void update(float delta) {}
+
+	void start(Party party, boolean flickers, float time, float delay) {}
+
+	boolean mark() {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	boolean active() {}
+
+	boolean over() {}
+
+	boolean flickers() {}
+
+}

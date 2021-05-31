@@ -1,0 +1,55 @@
+BattleEntityListenerList(Object) {
+
+	final Array listeners;
+	final Array dataListeners;
+	final BattleEntity entity;
+
+	new(BattleEntity entity) {}
+
+	boolean equals(Object obj) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	boolean add(BattleEntityListener listener) {}
+
+	boolean remove(BattleEntityListener listener) {}
+
+	void update(float delta) {}
+
+	void clear() {}
+
+	void cast(AttackPlan plan) {}
+
+	void init() {}
+
+	void set(BattleEntityData info) {}
+
+	void dispose() {}
+
+	CColor getTint(CColor tint) {}
+
+	PatchworkStateId setState(PatchworkStateId name) {}
+
+	void attack(Attack attack) {}
+
+	void inflict(OwnedHitProperty property) {}
+
+	void inflictPre(OwnedHitProperty property) {}
+
+	double crush(double amount, int crushStrength) {}
+
+	int hurt(int amount, boolean display) {}
+
+	Mover move(MoveType type, int xTile, int yTile, float speed, Mover movement) {}
+
+	AilmentInflict inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
+
+	void inflictPost(OwnedHitProperty property) {}
+
+	int heal(int amount, boolean display) {}
+
+	void drawHud(CustomSpriteBatch batch, float xOfs, float yOfs, float width, float height) {}
+
+}

@@ -1,0 +1,25 @@
+enum PatchworkStateType {
+
+	DEFAULT,
+ 	TILE_MOVE_FORWARD,
+ 	TILE_MOVE_BACKWARD;
+
+	final boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	final int compareTo(PatchworkStateType arg0) {}
+
+	final String name() {}
+
+	final int ordinal() {}
+
+	static PatchworkStateType[] values() {}
+
+	static PatchworkStateType valueOf(String name) {}
+
+	PatchworkState create() {}
+
+}

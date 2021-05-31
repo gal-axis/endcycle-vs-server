@@ -1,0 +1,93 @@
+enum MenuMessages : LocalizedMessage {
+
+	Battle_Controller_Message,
+ 	Battle_Lose,
+ 	Battle_Paused,
+ 	Battle_Start,
+ 	Battle_Tie,
+ 	Battle_Win,
+ 	Battle_Win_Blue,
+ 	Battle_Win_Perfect,
+ 	Battle_Win_Red,
+ 	Editor_Tilesets_Created,
+ 	Editor_Tilesets_Deleted,
+ 	Editor_Tilesets_Saved,
+ 	Editor_World_Save_Error,
+ 	Editor_World_Saved,
+ 	Editor_World_Tileset_Apply,
+ 	Inventory_VocsEmpty,
+ 	Online_Battle_Player_LostConnection,
+ 	Online_Battle_Reconnect,
+ 	Online_Battle_Setup_Disconnected,
+ 	Online_Battle_Setup_Error,
+ 	Online_Battle_Setup_Progress,
+ 	Online_Battle_Start,
+ 	Online_Connection_Authentication_BadLogin,
+ 	Online_Connection_Authentication_Success,
+ 	Online_Connection_Authentication_VersionMismatch,
+ 	Online_Connection_Connected,
+ 	Online_Connection_Connecting,
+ 	Online_Connection_ConnectionError,
+ 	Online_Inventory_Save_Error,
+ 	Online_Invite_Declined,
+ 	Online_Invite_Timeout,
+ 	Online_Lobby_Creating,
+ 	Online_Lobby_Joining,
+ 	Online_Lobby_Left,
+ 	Online_Lobby_Shutdown,
+ 	Online_Lobby_Synchronizing,
+ 	Online_Lobby_Synchronizing_Error,
+ 	Online_LostConnection,
+ 	Online_Quickplay_Found,
+ 	Online_Quickplay_NoConnection,
+ 	Online_Quickplay_NoLobby,
+ 	Online_Quickplay_Progress,
+ 	Online_Server_Leave,
+ 	Online_Shop_Access_Error,
+ 	Online_Shop_Access_Progress,
+ 	Online_Shop_Buy_Error,
+ 	Online_Shop_Buy_Progress,
+ 	Online_Shop_Restocking,
+ 	Recipe_Uploading,
+ 	Recipe_Uploading_Duplicate,
+ 	Recipe_Uploading_Success,
+ 	Session_Error,
+ 	Singleplayer_ConvertedData,
+ 	Singleplayer_Data_Get,
+ 	Singleplayer_Item_Get,
+ 	Singleplayer_LevelUp,
+ 	Singleplayer_Mission_Clear,
+ 	Singleplayer_Voc_Get,
+ 	Singleplayer_Vocs_Get;
+
+	final boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	final int compareTo(MenuMessages arg0) {}
+
+	final String name() {}
+
+	final int ordinal() {}
+
+	int get(int object, int orElse) {}
+
+	Object get(Object object, Object orElse) {}
+
+	float get(float object, float orElse) {}
+
+	double get(double object, double orElse) {}
+
+	void paint(Painter painter) {}
+
+	String format(Object[] args) {}
+
+	String getKey() {}
+
+	static MenuMessages[] values() {}
+
+	static MenuMessages valueOf(String name) {}
+
+}

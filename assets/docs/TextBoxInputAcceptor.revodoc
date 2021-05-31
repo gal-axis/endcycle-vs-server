@@ -1,0 +1,7 @@
+interface TextBoxInputAcceptor {
+
+	abstract char getChar(String text, char c);
+
+	TextBoxInputAcceptor and(TextBoxInputAcceptor acceptor) {}
+
+}

@@ -1,0 +1,24 @@
+enum HitType {
+
+	INVINCIBLE,
+ 	WEAK,
+ 	NORMAL,
+ 	RESIST;
+
+	final boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	final int compareTo(HitType arg0) {}
+
+	final String name() {}
+
+	final int ordinal() {}
+
+	static HitType[] values() {}
+
+	static HitType valueOf(String name) {}
+
+}

@@ -1,0 +1,57 @@
+LandscapeRoleButton(MobileRoleButton) {
+
+	new(DefaultBattlePlayer script) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	boolean priority() {}
+
+	void controllerConnected(Controller controller) {}
+
+	void controllerDisconnected(Controller controller) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean keyUp(int keycode) {}
+
+	boolean keyDown(int keycode) {}
+
+	boolean keyTyped(char character) {}
+
+	boolean triggerButton(ButtonEvent event) {}
+
+	boolean triggerTouch(TouchEvent event) {}
+
+	boolean triggerType(int character) {}
+
+	void update(float delta) {}
+
+	boolean isHidden() {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void button(ButtonEvent trigger) {}
+
+	boolean touch(TouchEvent trigger) {}
+
+	float getHeight() {}
+
+	float getWidth() {}
+
+	float getX() {}
+
+	float getY() {}
+
+	void paint(Painter painter, VocSet vocs, boolean small) {}
+
+	boolean isTouching(float positionX, float positionY) {}
+
+	float getButtonSize() {}
+
+	float getSmallButtonSize() {}
+
+}

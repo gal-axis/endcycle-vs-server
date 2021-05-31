@@ -1,0 +1,63 @@
+final StringCache(Object) : Paintable {
+
+	final Array lineCache;
+	final Array parameters;
+	Color color;
+	Font font;
+	float width;
+	float height;
+	int lines;
+
+	new() {}
+
+	new(Color color, Font font, float width, float height, int lines) {}
+
+	new(Fonts fontName, String string) {}
+
+	new(Fonts fontName, String string, float width) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	int get(int object, int orElse) {}
+
+	Object get(Object object, Object orElse) {}
+
+	float get(float object, float orElse) {}
+
+	double get(double object, double orElse) {}
+
+	void paint(Painter parameters) {}
+
+	int length() {}
+
+	void insert(int line, CharacterLineCache cache) {}
+
+	StringCache from(Fonts fontName, String string) {}
+
+	StringCache from(Fonts fontName, String string, float width) {}
+
+	StringCache from(Font font, String string, float width) {}
+
+	void monoSpace() {}
+
+	void splitLines(float maxWidth) {}
+
+	void spreadLines(float maxWidth) {}
+
+	void updateSize() {}
+
+	void packed() {}
+
+	void drawLines(Painter params, float x, float y, int hAlign, double stateTime) {}
+
+	CharacterCache getCharacter(int character) {}
+
+	CharacterLineCache getLine(int line) {}
+
+	void updateLineOffset() {}
+
+}

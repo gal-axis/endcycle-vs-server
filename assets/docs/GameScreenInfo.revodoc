@@ -1,0 +1,27 @@
+GameScreenInfo(Object) {
+
+	String state;
+	String details;
+	long startTimestamp;
+	long endTimestamp;
+	String largeImageKey;
+	String largeImageText;
+	String smallImageKey;
+	String smallImageText;
+	String partyId;
+	int partySize;
+	int partyMax;
+	String spectateSecret;
+	String joinSecret;
+
+	new() {}
+
+	boolean equals(Object o) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void set(GameScreenInfo info) {}
+
+}

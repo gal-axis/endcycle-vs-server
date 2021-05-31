@@ -1,0 +1,31 @@
+BattleReferenceResolver(Object) {
+
+	final Array writtenObjects;
+	final Array readObjects;
+	final Array constants;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void reset() {}
+
+	int getWrittenId(Object object) {}
+
+	int addWrittenObject(Object object) {}
+
+	void setReadObject(int id, Object object) {}
+
+	void addConstant(Object value) {}
+
+	void setBattle(Battle battle) {}
+
+	Object getReadObject(int id) {}
+
+	int getReadId(Object object) {}
+
+}

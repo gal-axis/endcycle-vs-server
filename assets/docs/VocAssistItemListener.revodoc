@@ -1,0 +1,38 @@
+VocAssistItemListener(AdventureItemListener) {
+
+	AdventureBattle battle;
+	AdventureBattleItem battleItem;
+	ID entity;
+	CustomCache cache;
+	VocEntry voc;
+	int x;
+	int y;
+	boolean turned;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	AdventureItemListener clone() {}
+
+	void handle(GameEvent event) {}
+
+	void remove(BattlePlayer player) {}
+
+	void apply(BattlePlayer player) {}
+
+	void init(AdventureBattle battle, AdventureBattleItem item) {}
+
+	void dispose() {}
+
+	void use(BattlePlayer player) {}
+
+	boolean isUsable(BattlePlayer player) {}
+
+	List getPatchworkData() {}
+
+}

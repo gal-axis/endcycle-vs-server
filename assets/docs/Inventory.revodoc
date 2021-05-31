@@ -1,0 +1,53 @@
+final Inventory(Object) {
+
+	final List packs;
+	final List vocs;
+	final List styles;
+	PlayerCustomizations customizations;
+	int packIndex;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	boolean add(VocShell voc) {}
+
+	boolean add(VocStyle style) {}
+
+	boolean add(Voc voc) {}
+
+	void load() {}
+
+	void save() {}
+
+	void merge(Inventory vocInventory) {}
+
+	String getPath() {}
+
+	boolean has(VocStyle style) {}
+
+	boolean has(VocStyleShell voc) {}
+
+	boolean has(VocShell voc) {}
+
+	boolean has(Voc voc) {}
+
+	int getMoney() {}
+
+	boolean removeMoney(int money) {}
+
+	boolean loadLocal() {}
+
+	void loadFallback() {}
+
+	void addDefaultPack() {}
+
+	void addMoney(int money) {}
+
+	void saveLocal() {}
+
+}

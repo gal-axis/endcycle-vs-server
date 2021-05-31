@@ -1,0 +1,30 @@
+final Time(Object) : Comparable {
+
+	byte hour;
+	byte minute;
+	byte second;
+	int millis;
+
+	new() {}
+
+	new(byte hour, byte minute, byte second, int millis) {}
+
+	boolean equals(Object o) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	int compareTo(Time o) {}
+
+	String format() {}
+
+	static Time from(String date) {}
+
+	static String formatTime(double time) {}
+
+	String formatFilename() {}
+
+	boolean isAfter(Time time) {}
+
+}

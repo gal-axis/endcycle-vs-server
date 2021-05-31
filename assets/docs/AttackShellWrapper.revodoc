@@ -1,0 +1,37 @@
+AttackShellWrapper(Object) : Serializable {
+
+	int power;
+	int crushPower;
+	VocElement element;
+	boolean overrideAilments;
+	Array ailments;
+	TargetFilter target;
+	PatchworkStateId castAnimation;
+	PatchworkStateId attackAnimation;
+	Attack attack;
+
+	new() {}
+
+	new(int power, int crushPower, VocElement element, boolean overrideAilments, Array ailments, TargetFilter target, PatchworkStateId castAnimation, PatchworkStateId attackAnimation, Attack attack) {}
+
+	new(Attack attack) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	AttackShellWrapper clone() {}
+
+	void write(Json json) {}
+
+	void read(Json json, JsonValue jsonData) {}
+
+	Attack get(Attack original, boolean shareHit, boolean gauge) {}
+
+	void flip() {}
+
+	boolean isValid() {}
+
+}

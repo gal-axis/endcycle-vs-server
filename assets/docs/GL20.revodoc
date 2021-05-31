@@ -1,0 +1,241 @@
+interface GL20 {
+
+	abstract void glUniform4i(int arg0, int arg1, int arg2, int arg3, int arg4);
+
+	abstract void glUniform1fv(int arg0, int arg1, float[] arg2, int arg3);
+
+	abstract void glCompileShader(int arg0);
+
+	abstract void glUniform4fv(int arg0, int arg1, float[] arg2, int arg3);
+
+	abstract void glDeleteProgram(int arg0);
+
+	abstract void glLinkProgram(int arg0);
+
+	abstract void glUniform3i(int arg0, int arg1, int arg2, int arg3);
+
+	abstract void glUniform1f(int arg0, float arg1);
+
+	abstract int glCreateProgram();
+
+	abstract void glUniform1i(int arg0, int arg1);
+
+	abstract void glShaderSource(int arg0, String arg1);
+
+	abstract void glUseProgram(int arg0);
+
+	abstract void glUniform2f(int arg0, float arg1, float arg2);
+
+	abstract void glUniform2i(int arg0, int arg1, int arg2);
+
+	abstract void glDeleteShader(int arg0);
+
+	abstract void glUniform2fv(int arg0, int arg1, float[] arg2, int arg3);
+
+	abstract void glUniform3f(int arg0, float arg1, float arg2, float arg3);
+
+	abstract void glVertexAttrib4f(int arg0, float arg1, float arg2, float arg3, float arg4);
+
+	abstract void glUniform4f(int arg0, float arg1, float arg2, float arg3, float arg4);
+
+	abstract void glAttachShader(int arg0, int arg1);
+
+	abstract void glUniform3fv(int arg0, int arg1, float[] arg2, int arg3);
+
+	abstract void glDeleteBuffer(int arg0);
+
+	abstract void glViewport(int arg0, int arg1, int arg2, int arg3);
+
+	abstract int glGenFramebuffer();
+
+	abstract void glReadPixels(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, Buffer arg6);
+
+	abstract String glGetShaderInfoLog(int arg0);
+
+	abstract String glGetProgramInfoLog(int arg0);
+
+	abstract int glGetAttribLocation(int arg0, String arg1);
+
+	abstract int glGetUniformLocation(int arg0, String arg1);
+
+	abstract void glDisableVertexAttribArray(int arg0);
+
+	abstract void glEnableVertexAttribArray(int arg0);
+
+	abstract void glVertexAttribPointer(int arg0, int arg1, int arg2, boolean arg3, int arg4, int arg5);
+
+	abstract void glVertexAttribPointer(int arg0, int arg1, int arg2, boolean arg3, int arg4, Buffer arg5);
+
+	abstract void glUniformMatrix4fv(int arg0, int arg1, boolean arg2, float[] arg3, int arg4);
+
+	abstract void glUniformMatrix3fv(int arg0, int arg1, boolean arg2, float[] arg3, int arg4);
+
+	abstract void glFramebufferTexture2D(int arg0, int arg1, int arg2, int arg3, int arg4);
+
+	abstract int glGenRenderbuffer();
+
+	abstract void glBindRenderbuffer(int arg0, int arg1);
+
+	abstract void glRenderbufferStorage(int arg0, int arg1, int arg2, int arg3);
+
+	abstract void glFramebufferRenderbuffer(int arg0, int arg1, int arg2, int arg3);
+
+	abstract void glDeleteFramebuffer(int arg0);
+
+	abstract int glCheckFramebufferStatus(int arg0);
+
+	abstract void glDeleteRenderbuffer(int arg0);
+
+	abstract void glBindFramebuffer(int arg0, int arg1);
+
+	abstract void glStencilOpSeparate(int arg0, int arg1, int arg2, int arg3);
+
+	abstract void glValidateProgram(int arg0);
+
+	abstract void glStencilMaskSeparate(int arg0, int arg1);
+
+	abstract void glGetVertexAttribPointerv(int arg0, int arg1, Buffer arg2);
+
+	abstract void glCompressedTexSubImage2D(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, Buffer arg8);
+
+	abstract void glBlendEquationSeparate(int arg0, int arg1);
+
+	abstract void glReleaseShaderCompiler();
+
+	abstract void glUniformMatrix2fv(int arg0, int arg1, boolean arg2, float[] arg3, int arg4);
+
+	abstract void glStencilFuncSeparate(int arg0, int arg1, int arg2, int arg3);
+
+	abstract void glBindAttribLocation(int arg0, int arg1, String arg2);
+
+	abstract void glCompressedTexImage2D(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, Buffer arg7);
+
+	abstract void glCopyTexSubImage2D(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7);
+
+	abstract void glClearStencil(int arg0);
+
+	abstract void glCopyTexImage2D(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7);
+
+	abstract void glCullFace(int arg0);
+
+	abstract void glBlendFunc(int arg0, int arg1);
+
+	abstract void glDepthFunc(int arg0);
+
+	abstract void glDepthRangef(float arg0, float arg1);
+
+	abstract void glDrawArrays(int arg0, int arg1, int arg2);
+
+	abstract void glClearDepthf(float arg0);
+
+	abstract void glColorMask(boolean arg0, boolean arg1, boolean arg2, boolean arg3);
+
+	abstract void glBufferData(int arg0, int arg1, Buffer arg2, int arg3);
+
+	abstract void glStencilOp(int arg0, int arg1, int arg2);
+
+	abstract int glGetError();
+
+	abstract void glVertexAttrib1f(int arg0, float arg1);
+
+	abstract void glVertexAttrib2f(int arg0, float arg1, float arg2);
+
+	abstract void glFlush();
+
+	abstract void glHint(int arg0, int arg1);
+
+	abstract void glBufferSubData(int arg0, int arg1, int arg2, Buffer arg3);
+
+	abstract void glFrontFace(int arg0);
+
+	abstract boolean glIsTexture(int arg0);
+
+	abstract void glPolygonOffset(float arg0, float arg1);
+
+	abstract void glFinish();
+
+	abstract void glGenerateMipmap(int arg0);
+
+	abstract boolean glIsShader(int arg0);
+
+	abstract void glGetBooleanv(int arg0, Buffer arg1);
+
+	abstract boolean glIsBuffer(int arg0);
+
+	abstract boolean glIsFramebuffer(int arg0);
+
+	abstract boolean glIsRenderbuffer(int arg0);
+
+	abstract void glStencilMask(int arg0);
+
+	abstract void glBlendEquation(int arg0);
+
+	abstract String glGetString(int arg0);
+
+	abstract void glSampleCoverage(float arg0, boolean arg1);
+
+	abstract void glUniform2iv(int arg0, int arg1, int[] arg2, int arg3);
+
+	abstract void glDrawElements(int arg0, int arg1, int arg2, int arg3);
+
+	abstract void glDrawElements(int arg0, int arg1, int arg2, Buffer arg3);
+
+	abstract void glVertexAttrib3f(int arg0, float arg1, float arg2, float arg3);
+
+	abstract boolean glIsEnabled(int arg0);
+
+	abstract void glUniform1iv(int arg0, int arg1, int[] arg2, int arg3);
+
+	abstract void glLineWidth(float arg0);
+
+	abstract void glStencilFunc(int arg0, int arg1, int arg2);
+
+	abstract void glDetachShader(int arg0, int arg1);
+
+	abstract int glGenBuffer();
+
+	abstract boolean glIsProgram(int arg0);
+
+	abstract void glBlendColor(float arg0, float arg1, float arg2, float arg3);
+
+	abstract void glUniform3iv(int arg0, int arg1, int[] arg2, int arg3);
+
+	abstract void glUniform4iv(int arg0, int arg1, int[] arg2, int arg3);
+
+	abstract void glBindBuffer(int arg0, int arg1);
+
+	abstract void glBlendFuncSeparate(int arg0, int arg1, int arg2, int arg3);
+
+	abstract void glDisable(int arg0);
+
+	abstract void glClear(int arg0);
+
+	abstract void glEnable(int arg0);
+
+	abstract void glScissor(int arg0, int arg1, int arg2, int arg3);
+
+	abstract void glClearColor(float arg0, float arg1, float arg2, float arg3);
+
+	abstract void glDepthMask(boolean arg0);
+
+	abstract int glCreateShader(int arg0);
+
+	abstract void glTexParameteri(int arg0, int arg1, int arg2);
+
+	abstract void glDeleteTexture(int arg0);
+
+	abstract void glPixelStorei(int arg0, int arg1);
+
+	abstract void glTexSubImage2D(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, Buffer arg8);
+
+	abstract void glTexParameterf(int arg0, int arg1, float arg2);
+
+	abstract void glBindTexture(int arg0, int arg1);
+
+	abstract void glActiveTexture(int arg0);
+
+	abstract int glGenTexture();
+
+	abstract void glTexImage2D(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, Buffer arg8);
+
+}

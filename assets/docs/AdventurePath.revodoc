@@ -1,0 +1,28 @@
+AdventurePath(Moddable) : Named, DataName {
+
+	ID id;
+	String dataName;
+	LocalizedMessage name;
+	LocalizedMessage hint;
+	ID requiredCharacter;
+	boolean visible;
+	Script endScript;
+	Script completeScript;
+	Array zoneScripts;
+	Array changes;
+
+	new() {}
+
+	final boolean equals(Object obj) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	final ID getId() {}
+
+	String getDataName() {}
+
+	String getName() {}
+
+}

@@ -1,0 +1,63 @@
+MockTexture(Texture) {
+
+	final int glTarget;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void dispose() {}
+
+	int getWidth() {}
+
+	int getHeight() {}
+
+	void bind(int unit) {}
+
+	void bind() {}
+
+	int getDepth() {}
+
+	void setFilter(TextureFilter arg0, TextureFilter arg1) {}
+
+	float getAnisotropicFilter() {}
+
+	float setAnisotropicFilter(float arg0) {}
+
+	int getTextureObjectHandle() {}
+
+	float unsafeSetAnisotropicFilter(float arg0) {}
+
+	float unsafeSetAnisotropicFilter(float arg0, boolean arg1) {}
+
+	TextureFilter getMagFilter() {}
+
+	TextureFilter getMinFilter() {}
+
+	void setWrap(TextureWrap arg0, TextureWrap arg1) {}
+
+	void unsafeSetWrap(TextureWrap arg0, TextureWrap arg1, boolean arg2) {}
+
+	void unsafeSetWrap(TextureWrap arg0, TextureWrap arg1) {}
+
+	void unsafeSetFilter(TextureFilter arg0, TextureFilter arg1, boolean arg2) {}
+
+	void unsafeSetFilter(TextureFilter arg0, TextureFilter arg1) {}
+
+	boolean isManaged() {}
+
+	TextureWrap getUWrap() {}
+
+	TextureWrap getVWrap() {}
+
+	void load(TextureData data) {}
+
+	void draw(Pixmap pixmap, int x, int y) {}
+
+	TextureData getTextureData() {}
+
+}

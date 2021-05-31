@@ -1,0 +1,60 @@
+final Voc(Moddable) : DataName {
+
+	ID id;
+	static int MIN_LEVEL;
+	static int MAX_LEVEL;
+	Role role;
+	VocType vocType;
+	boolean visible;
+	DrawableId drawable;
+	int imageWidth;
+	int imageHeight;
+	int imageIndex;
+	List tags;
+	VocPosition optimalPosition;
+	VocPosition minimalPosition;
+	VocPreview preview;
+	AttackShell attackShell;
+	TextureRegion region;
+
+	new() {}
+
+	new(ID id) {}
+
+	final boolean equals(Object obj) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	final ID getId() {}
+
+	String getDataName() {}
+
+	String name() {}
+
+	int getSlot() {}
+
+	int getSlot(VocStyle style) {}
+
+	String getDescription() {}
+
+	TextureRegion getImage() {}
+
+	VocElement getElement() {}
+
+	VocElement getElement(VocStyle style) {}
+
+	int getLevel() {}
+
+	int getLevel(VocStyle style) {}
+
+	int getPower(VocStyle style) {}
+
+	int getPower() {}
+
+	int getCrushPower() {}
+
+	int getCrushPower(VocStyle style) {}
+
+}

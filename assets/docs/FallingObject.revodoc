@@ -27,27 +27,27 @@ FallingObject(Object) : ScreenObject, ShadowEntity, BannedPanelObject {
 
 	boolean isBannedPanel(BattleEntity entity, int x, int y) {}
 
-	float getBannedPanelPriority(BattleEntity entity) {}
-
 	boolean isBannedPanelRemove(BattleEntity entity) {}
 
-	float getXScale() {}
+	float getBannedPanelPriority(BattleEntity entity) {}
 
-	boolean isFlipY() {}
+	List getShadowDrawables() {}
+
+	float getYScale() {}
 
 	Patchwork getPatchwork() {}
 
 	boolean isFlipX() {}
 
-	float getYScale() {}
+	boolean isFlipY() {}
 
-	List getShadowDrawables() {}
+	float getXScale() {}
 
-	float getShadowX() {}
+	float getShadowAlpha() {}
 
 	float getShadowY() {}
 
-	float getShadowAlpha() {}
+	float getShadowX() {}
 
 	float getShadowZ() {}
 
@@ -65,17 +65,17 @@ FallingObject(Object) : ScreenObject, ShadowEntity, BannedPanelObject {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	void show(GameScreen screen) {}
 
 	void hide(GameScreen screen) {}
 
-	void show(GameScreen screen) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	byte getLayer() {}
+	float getComparisonKey() {}
 
 	Origin getOrigin() {}
 
-	float getComparisonKey() {}
+	byte getLayer() {}
 
 	float getOffsetX() {}
 
@@ -83,12 +83,12 @@ FallingObject(Object) : ScreenObject, ShadowEntity, BannedPanelObject {
 
 	float getDelay() {}
 
-	float getDrawY() {}
-
-	float getFadeout() {}
+	float getOffsetY() {}
 
 	float getDrawX() {}
 
-	float getOffsetY() {}
+	float getFadeout() {}
+
+	float getDrawY() {}
 
 }

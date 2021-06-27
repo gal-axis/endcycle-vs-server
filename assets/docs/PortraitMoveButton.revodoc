@@ -10,19 +10,19 @@ PortraitMoveButton(Object) : MobileButton, InputListener {
 
 	boolean priority() {}
 
+	boolean triggerTouch(TouchEvent event) {}
+
 	boolean keyTyped(char character) {}
 
 	boolean keyUp(int keycode) {}
 
 	boolean keyDown(int keycode) {}
 
-	boolean triggerButton(ButtonEvent event) {}
+	boolean triggerType(int character) {}
 
 	boolean addButtonTips(ButtonTipList tips) {}
 
-	boolean triggerType(int character) {}
-
-	boolean triggerTouch(TouchEvent event) {}
+	boolean triggerButton(ButtonEvent event) {}
 
 	void controllerConnected(Controller controller) {}
 
@@ -38,9 +38,9 @@ PortraitMoveButton(Object) : MobileButton, InputListener {
 
 	void button(ButtonEvent trigger) {}
 
-	float getY() {}
-
 	float getX() {}
+
+	float getY() {}
 
 	float getWidth() {}
 
@@ -50,8 +50,8 @@ PortraitMoveButton(Object) : MobileButton, InputListener {
 
 	boolean isTouching(int posX, int posY) {}
 
-	KeyCode[] getNotKeyCodes() {}
-
 	static KeyCode[] getKeyCodes(int x, int y) {}
+
+	KeyCode[] getNotKeyCodes() {}
 
 }

@@ -31,10 +31,10 @@ ClientPlayer(Object) : GameEventListener {
 
 	void setPlayer(BattlePlayer player) {}
 
-	int applyOldInputs(int input, float time) {}
-
 	void updateServerTime(float serverTime) {}
 
 	void saveState(float time) {}
+
+	int applyOldInputs(int input, float time) {}
 
 }

@@ -36,29 +36,29 @@ CharacterCustomizer(MenuMessage) {
 
 	void show(GameScreen screen) {}
 
-	byte getLayer() {}
-
 	final Origin getOrigin() {}
+
+	byte getLayer() {}
 
 	float getComparisonKey() {}
 
 	final void removeObject() {}
 
-	SoundContainer playSound(SoundInfo sound) {}
+	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
-	final SoundContainer playSound(Sounds sound) {}
+	SoundContainer playSound(SoundInfo sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
-	final void removeInitializeListener(Runnable runnable) {}
-
-	final void addInitializeListener(Runnable runnable) {}
-
 	final void addDisposeListener(Runnable runnable) {}
 
+	final void removeInitializeListener(Runnable runnable) {}
+
 	final void removeDisposeListener(Runnable runnable) {}
+
+	final void addInitializeListener(Runnable runnable) {}
 
 	void scheduleMessage(GameScreenMessage message) {}
 
@@ -66,11 +66,13 @@ CharacterCustomizer(MenuMessage) {
 
 	void setSpeed(float speed) {}
 
-	float getPosition() {}
-
 	boolean isStaying() {}
 
+	float getPosition() {}
+
 	boolean priority() {}
+
+	boolean triggerTouch(TouchEvent event) {}
 
 	boolean keyTyped(char character) {}
 
@@ -78,13 +80,11 @@ CharacterCustomizer(MenuMessage) {
 
 	boolean keyDown(int keycode) {}
 
-	boolean triggerButton(ButtonEvent event) {}
+	boolean triggerType(int character) {}
 
 	boolean addButtonTips(ButtonTipList tips) {}
 
-	boolean triggerType(int character) {}
-
-	boolean triggerTouch(TouchEvent event) {}
+	boolean triggerButton(ButtonEvent event) {}
 
 	void controllerConnected(Controller controller) {}
 
@@ -98,15 +98,15 @@ CharacterCustomizer(MenuMessage) {
 
 	MenuElementController getController() {}
 
-	void setElement(MenuElement menuElement) {}
-
 	MenuElement getMenuElement() {}
-
-	void drawMenu(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	boolean isBackKey(ButtonEvent trigger) {}
 
+	void drawMenu(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
 	float calcOffset() {}
+
+	void setElement(MenuElement menuElement) {}
 
 	void apply() {}
 

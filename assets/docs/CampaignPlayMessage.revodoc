@@ -37,17 +37,17 @@ CampaignPlayMessage(SelectMessage) {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void show(GameScreen screen) {}
+
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void hide(GameScreen screen) {}
 
-	void show(GameScreen screen) {}
-
 	final Origin getOrigin() {}
 
-	byte getLayer() {}
-
 	float getComparisonKey() {}
+
+	byte getLayer() {}
 
 	final void removeObject() {}
 
@@ -59,62 +59,62 @@ CampaignPlayMessage(SelectMessage) {
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
+	final void addInitializeListener(Runnable runnable) {}
+
 	final void removeInitializeListener(Runnable runnable) {}
 
 	final void addDisposeListener(Runnable runnable) {}
-
-	final void addInitializeListener(Runnable runnable) {}
 
 	final void removeDisposeListener(Runnable runnable) {}
 
 	void scheduleMessage(GameScreenMessage message) {}
 
-	void finish() {}
-
-	void setSpeed(float speed) {}
-
 	boolean isStaying() {}
 
 	float getPosition() {}
 
-	boolean priority() {}
+	void finish() {}
 
-	void controllerDisconnected(Controller controller) {}
+	void setSpeed(float speed) {}
+
+	boolean priority() {}
 
 	void controllerConnected(Controller controller) {}
 
-	boolean triggerTouch(TouchEvent event) {}
+	void controllerDisconnected(Controller controller) {}
 
-	boolean addButtonTips(ButtonTipList tips) {}
+	boolean triggerType(int character) {}
 
 	boolean triggerButton(ButtonEvent event) {}
-
-	boolean keyTyped(char character) {}
 
 	boolean keyUp(int keycode) {}
 
 	boolean keyDown(int keycode) {}
 
-	boolean triggerType(int character) {}
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean keyTyped(char character) {}
+
+	boolean triggerTouch(TouchEvent event) {}
 
 	void skip() {}
 
 	void select() {}
 
-	void addButton(String text, String description, Runnable onSelect) {}
-
 	void setMessage(String message) {}
 
-	void setSelection(int selection) {}
+	void addButton(String text, String description, Runnable onSelect) {}
 
 	void selectChoice(int choice) {}
 
 	void moveSelection(int offset) {}
 
+	void setSelection(int selection) {}
+
 	void playCampaign() {}
 
-	void practiceCampaign() {}
-
 	void startCampaign(boolean practice) {}
+
+	void practiceCampaign() {}
 
 }

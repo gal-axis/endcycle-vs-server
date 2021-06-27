@@ -1,7 +1,7 @@
 AffinityLoot(Object) : Lootable {
 
-	final BattleEntityData data;
-	final float amount;
+	BattleEntityData data;
+	float amount;
 
 	new(BattleEntityData data, float amount) {}
 
@@ -10,6 +10,8 @@ AffinityLoot(Object) : Lootable {
 	String toString() {}
 
 	int hashCode() {}
+
+	Lootable split() {}
 
 	void addToInventory() {}
 

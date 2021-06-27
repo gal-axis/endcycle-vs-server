@@ -26,17 +26,17 @@ ChatBox(MenuTextBox) {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void show(GameScreen screen) {}
+
 	void draw(CustomSpriteBatch batch, float x, float y) {}
 
 	void hide(GameScreen screen) {}
 
-	void show(GameScreen screen) {}
-
 	float getComparisonKey() {}
 
-	byte getLayer() {}
-
 	final Origin getOrigin() {}
+
+	byte getLayer() {}
 
 	final void removeObject() {}
 
@@ -58,19 +58,25 @@ ChatBox(MenuTextBox) {
 
 	MenuElement setEnabled(boolean enabled) {}
 
+	boolean select() {}
+
 	float getX() {}
 
 	float getY() {}
 
-	boolean select() {}
-
 	float getHeight() {}
-
-	float getWidth() {}
 
 	MenuElement setHeight(float height) {}
 
+	float getWidth() {}
+
 	MenuElement setLayer(byte layer) {}
+
+	MenuElement setFocusable(boolean focusable) {}
+
+	float calcX() {}
+
+	float calcY() {}
 
 	MenuElement getAbsoluteParent() {}
 
@@ -78,185 +84,179 @@ ChatBox(MenuTextBox) {
 
 	boolean touch(TouchEvent trigger) {}
 
-	MenuElement setX(float x) {}
-
 	MenuElement setY(float y) {}
+
+	MenuElement setX(float x) {}
 
 	MenuElement setWidth(float width) {}
 
-	MenuElement setFocusable(boolean focusable) {}
-
-	float calcY() {}
-
-	float calcX() {}
-
-	Set getActionListeners() {}
-
-	final void setMenuControllerSelection(MenuElement element) {}
-
-	MenuElement setFocused(boolean focused) {}
-
-	MenuElement setHidden(boolean hidden) {}
-
-	float getAbsoluteX() {}
-
-	boolean isAbsoluteHidden() {}
-
-	float getAbsoluteY() {}
-
-	MenuElement setHAlign(int hAlign) {}
-
-	MenuElement setVAlign(int vAlign) {}
-
-	MenuElement getAnchor() {}
-
-	int getAnchorVAlign() {}
-
-	MenuElement setAnchor(MenuElement anchor) {}
-
-	MenuElement setAnchorHAlign(int anchorHAlign) {}
-
-	int getHAlign() {}
+	boolean isTouching(float x, float y) {}
 
 	int getAnchorHAlign() {}
 
+	MenuButtonTips getButtonTips() {}
+
+	int getHAlign() {}
+
+	boolean isEnabled() {}
+
 	MenuElement setAnchorVAlign(int anchorVAlign) {}
 
-	boolean canDrawCursor() {}
+	MenuElement setHidden(boolean hidden) {}
+
+	MenuElement setHAlign(int hAlign) {}
+
+	float getAbsoluteX() {}
+
+	MenuElement setVAlign(int vAlign) {}
+
+	int getAnchorVAlign() {}
+
+	MenuElement setAnchorHAlign(int anchorHAlign) {}
 
 	int getVAlign() {}
 
 	boolean isFocusable() {}
 
-	void addElements(Array elements, float x, float y) {}
+	MenuElement setFocused(boolean focused) {}
 
 	void setCursor(Rectangle rectangle) {}
 
-	boolean isEnabled() {}
+	boolean canDrawCursor() {}
+
+	boolean isAbsoluteHidden() {}
+
+	void addElements(Array elements, float x, float y) {}
 
 	boolean isFocused() {}
 
-	MenuButtonTips getButtonTips() {}
+	MenuElement setAnchor(MenuElement anchor) {}
 
-	boolean isTouching(float x, float y) {}
+	MenuElement getAnchor() {}
+
+	float getAbsoluteY() {}
+
+	final void setMenuControllerSelection(MenuElement element) {}
+
+	Set getActionListeners() {}
 
 	float getScrollAreaWidth() {}
 
 	float getScrollAreaHeight() {}
 
-	float getScrollAreaY() {}
-
 	float getScrollHeight() {}
-
-	boolean canScrollY() {}
-
-	float getScrollWidth() {}
 
 	boolean canScrollX() {}
 
+	boolean canScrollY() {}
+
 	float getScrollAreaX() {}
+
+	float getScrollAreaY() {}
+
+	float getScrollWidth() {}
 
 	char getChar(String text, char c) {}
 
 	TextBoxInputAcceptor and(TextBoxInputAcceptor acceptor) {}
 
-	void draw(CustomSpriteBatch batch, float x, float y, float width, float height) {}
+	MenuTextBox setLabelAndEmptyText(String text) {}
 
-	MenuTextBox setEmptyText(String emptyText) {}
+	MenuTextBox setInputProcessor(MenuTextBoxInputProcessor inputProcessor) {}
+
+	Color getEmptyTextColor() {}
+
+	MenuTextBoxInputProcessor getInputProcessor() {}
+
+	MenuTextBox setEmptyTextColor(Color emptyTextColor) {}
+
+	void draw(CustomSpriteBatch batch, float x, float y, float width, float height) {}
 
 	MenuTextBox setText(String text) {}
 
+	String getText() {}
+
+	MenuTextBox setEmptyText(String emptyText) {}
+
 	MenuElement setSelected(boolean selected) {}
 
-	String getText() {}
+	MenuTextBox setTextHAlign(int textHAlign) {}
 
 	float getBorder() {}
 
 	Fonts getFont() {}
 
-	MenuTextBox setTextHAlign(int textHAlign) {}
+	MenuTextBox setScale(float scale) {}
+
+	void drawBackground(CustomSpriteBatch batch, float x, float y, float width, float height) {}
+
+	float getScale() {}
+
+	MenuTextBox setTextVAlign(int textVAlign) {}
+
+	MenuTextBox setFont(Fonts font) {}
+
+	MenuElementShowAnim getShowAnimation() {}
+
+	int getTextVAlign() {}
+
+	MenuTextBox setBorder(float border) {}
+
+	int getTextHAlign() {}
+
+	MenuTextBox setCursor(int cursor) {}
+
+	boolean isSelected() {}
+
+	MenuThemeDrawable getBackground() {}
+
+	void drawString(CustomSpriteBatch batch, StringCache text, float x, float y) {}
 
 	MenuTextBox setBackgroundColor(Color backgroundColor) {}
 
 	Color getBackgroundColor() {}
 
-	Color getEmptyTextColor() {}
-
-	MenuTextBox setEmptyTextColor(Color emptyTextColor) {}
-
-	MenuTextBox setInputProcessor(MenuTextBoxInputProcessor inputProcessor) {}
-
-	MenuTextBox setLabelAndEmptyText(String text) {}
-
-	MenuTextBoxInputProcessor getInputProcessor() {}
-
-	float getScale() {}
-
-	void drawBackground(CustomSpriteBatch batch, float x, float y, float width, float height) {}
-
-	MenuTextBox setFont(Fonts font) {}
-
-	MenuTextBox setTextVAlign(int textVAlign) {}
-
-	MenuTextBox setBorder(float border) {}
-
-	MenuElementShowAnim getShowAnimation() {}
-
-	boolean isSelected() {}
-
-	void drawString(CustomSpriteBatch batch, StringCache text, float x, float y) {}
-
-	int getTextVAlign() {}
-
-	int getTextHAlign() {}
-
-	MenuThemeDrawable getBackground() {}
-
-	MenuTextBox setCursor(int cursor) {}
-
-	MenuTextBox setScale(float scale) {}
-
-	MenuTextBox setLabel(String text) {}
-
-	void drawLabel(CustomSpriteBatch batch, float x, float y, float width, float height) {}
-
-	String getLabel() {}
+	MenuTextBox setRegex(String regex) {}
 
 	MenuTextBox setHideText(boolean hideText) {}
 
 	boolean addCharacter(char c) {}
 
-	Scroller getScroller() {}
-
-	StringCache getTextCache() {}
-
-	MenuTextBox setInputAcceptor(TextBoxInputAcceptor inputAcceptor) {}
-
-	void clearText() {}
-
-	void deleteCharacter() {}
-
 	int getLimit() {}
-
-	boolean clickText(int positionX, int positionY) {}
 
 	boolean isHideText() {}
 
-	MenuTextBox setRegex(String regex) {}
-
-	MenuTextBox setLimit(int limit) {}
-
-	String getEmptyText() {}
-
 	String getRegex() {}
 
-	int getCursor() {}
-
-	void moveCursor(int offset) {}
+	void deleteCharacter() {}
 
 	void removeCharacter() {}
 
+	MenuTextBox setLimit(int limit) {}
+
+	StringCache getTextCache() {}
+
+	String getEmptyText() {}
+
+	Scroller getScroller() {}
+
 	TextBoxInputAcceptor getInputAcceptor() {}
+
+	int getCursor() {}
+
+	MenuTextBox setInputAcceptor(TextBoxInputAcceptor inputAcceptor) {}
+
+	void moveCursor(int offset) {}
+
+	boolean clickText(int positionX, int positionY) {}
+
+	void clearText() {}
+
+	MenuTextBox setLabel(String text) {}
+
+	String getLabel() {}
+
+	void drawLabel(CustomSpriteBatch batch, float x, float y, float width, float height) {}
 
 	void toggleGroup() {}
 

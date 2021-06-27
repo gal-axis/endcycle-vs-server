@@ -28,9 +28,9 @@ CampaignNodeDisplayer(GameScreenObject) {
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void hide(GameScreen screen) {}
-
 	void show(GameScreen screen) {}
+
+	void hide(GameScreen screen) {}
 
 	byte getLayer() {}
 
@@ -60,20 +60,20 @@ CampaignNodeDisplayer(GameScreenObject) {
 
 	void stopDrag() {}
 
-	CampaignNodePainter getCurrentNode() {}
+	float getNodeOffset() {}
 
-	CampaignBattle startNode(boolean retry) {}
+	List getNodes() {}
+
+	CampaignNodePainter getCurrentNode() {}
 
 	float getNodeX() {}
 
-	float getNodeOffset() {}
+	float getNodeY() {}
+
+	CampaignBattle startNode(boolean retry) {}
 
 	CampaignData getCampaign() {}
 
-	float getNodeY() {}
-
 	List gatherScores() {}
-
-	List getNodes() {}
 
 }

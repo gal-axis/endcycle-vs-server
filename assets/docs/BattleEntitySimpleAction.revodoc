@@ -48,14 +48,14 @@ BattleEntitySimpleAction(Object) : BattleEntityAction {
 
 	boolean inaccessiblePanel() {}
 
-	boolean changeIfNeeded() {}
-
-	void progressMove() {}
+	void setData(BattleEntityActionData data) {}
 
 	boolean requiresChange(BattleEntityActionChangeData change) {}
 
+	void progressMove() {}
+
 	void setExecutor(int index) {}
 
-	void setData(BattleEntityActionData data) {}
+	boolean changeIfNeeded() {}
 
 }

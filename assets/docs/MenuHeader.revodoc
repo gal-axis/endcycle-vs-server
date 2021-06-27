@@ -1,6 +1,7 @@
 final MenuHeader(Object) : ScreenObject, InputListener {
 
 	static final String ONLY_SHOW_BACK;
+	float textOffset;
 
 	new(String text, Runnable back) {}
 
@@ -12,19 +13,19 @@ final MenuHeader(Object) : ScreenObject, InputListener {
 
 	boolean priority() {}
 
+	boolean triggerTouch(TouchEvent event) {}
+
 	boolean keyTyped(char character) {}
 
 	boolean keyUp(int keycode) {}
 
 	boolean keyDown(int keycode) {}
 
-	boolean triggerButton(ButtonEvent event) {}
+	boolean triggerType(int character) {}
 
 	boolean addButtonTips(ButtonTipList tips) {}
 
-	boolean triggerType(int character) {}
-
-	boolean triggerTouch(TouchEvent event) {}
+	boolean triggerButton(ButtonEvent event) {}
 
 	void controllerConnected(Controller controller) {}
 
@@ -50,9 +51,9 @@ final MenuHeader(Object) : ScreenObject, InputListener {
 
 	void show(GameScreen screen) {}
 
-	byte getLayer() {}
-
 	Origin getOrigin() {}
+
+	byte getLayer() {}
 
 	float getComparisonKey() {}
 

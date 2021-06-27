@@ -8,12 +8,12 @@ final VocPackGenerator(Object) {
 
 	static void generate(int level, Random random, VocPack pack) {}
 
-	static void removeNonBasic(int level, Array vocs, Random random) {}
+	static int rollStyle(List styles, VocEntry entry, int level, Random random) {}
 
-	static boolean styleFits(VocEntry entry, VocStyle style) {}
+	static void removeNonBasic(int level, Array vocs, Random random) {}
 
 	static List getStyles(int level, Random random) {}
 
-	static int rollStyle(List styles, VocEntry entry, int level, Random random) {}
+	static boolean styleFits(VocEntry entry, VocStyle style) {}
 
 }

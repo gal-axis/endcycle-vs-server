@@ -4,15 +4,15 @@ interface Scrollable {
 
 	abstract float getScrollAreaHeight();
 
-	abstract float getScrollWidth();
-
-	boolean canScrollX() {}
-
-	abstract float getScrollAreaY();
+	abstract float getScrollAreaX();
 
 	abstract float getScrollHeight();
 
-	abstract float getScrollAreaX();
+	abstract float getScrollWidth();
+
+	abstract float getScrollAreaY();
+
+	boolean canScrollX() {}
 
 	boolean canScrollY() {}
 

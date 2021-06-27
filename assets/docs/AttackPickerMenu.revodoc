@@ -29,25 +29,25 @@ AttackPickerMenu(MenuElementGroup) : MenuTableAction {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void show(GameScreen screen) {}
+
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void hide(GameScreen screen) {}
 
-	void show(GameScreen screen) {}
+	final Origin getOrigin() {}
 
 	float getComparisonKey() {}
 
 	byte getLayer() {}
 
-	final Origin getOrigin() {}
-
 	final void removeObject() {}
 
-	SoundContainer playSound(SoundInfo sound) {}
+	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
-	final SoundContainer playSound(Sounds sound) {}
+	SoundContainer playSound(SoundInfo sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
@@ -61,19 +61,25 @@ AttackPickerMenu(MenuElementGroup) : MenuTableAction {
 
 	MenuElement setEnabled(boolean enabled) {}
 
+	boolean select() {}
+
 	float getX() {}
 
 	float getY() {}
 
-	boolean select() {}
+	MenuElement setFocusable(boolean focusable) {}
 
-	float getHeight() {}
+	float calcX() {}
+
+	float calcY() {}
+
+	MenuElement setLayer(byte layer) {}
 
 	float getWidth() {}
 
-	MenuElement setHeight(float height) {}
+	float getHeight() {}
 
-	MenuElement setLayer(byte layer) {}
+	MenuElement setHeight(float height) {}
 
 	MenuElement getAbsoluteParent() {}
 
@@ -87,61 +93,55 @@ AttackPickerMenu(MenuElementGroup) : MenuTableAction {
 
 	MenuElement setWidth(float width) {}
 
-	MenuElement setFocusable(boolean focusable) {}
-
-	float calcY() {}
-
-	float calcX() {}
-
-	Set getActionListeners() {}
-
-	final void setMenuControllerSelection(MenuElement element) {}
-
 	MenuElement setFocused(boolean focused) {}
+
+	boolean isAbsoluteHidden() {}
 
 	MenuElement setHidden(boolean hidden) {}
 
 	float getAbsoluteX() {}
 
-	boolean isAbsoluteHidden() {}
-
 	float getAbsoluteY() {}
-
-	MenuElement setHAlign(int hAlign) {}
-
-	MenuElement setVAlign(int vAlign) {}
-
-	MenuElement getAnchor() {}
-
-	int getAnchorVAlign() {}
-
-	MenuElement setAnchor(MenuElement anchor) {}
-
-	MenuElement setAnchorHAlign(int anchorHAlign) {}
-
-	int getHAlign() {}
-
-	int getAnchorHAlign() {}
-
-	MenuElement setAnchorVAlign(int anchorVAlign) {}
-
-	boolean canDrawCursor() {}
-
-	int getVAlign() {}
-
-	boolean isFocusable() {}
 
 	void addElements(Array elements, float x, float y) {}
 
-	void setCursor(Rectangle rectangle) {}
+	int getHAlign() {}
 
-	boolean isEnabled() {}
+	MenuElement setAnchorHAlign(int anchorHAlign) {}
+
+	MenuElement setVAlign(int vAlign) {}
+
+	boolean isFocusable() {}
+
+	int getAnchorHAlign() {}
 
 	boolean isFocused() {}
 
+	MenuElement setAnchorVAlign(int anchorVAlign) {}
+
 	MenuButtonTips getButtonTips() {}
 
+	void setCursor(Rectangle rectangle) {}
+
+	MenuElement getAnchor() {}
+
+	MenuElement setAnchor(MenuElement anchor) {}
+
+	MenuElement setHAlign(int hAlign) {}
+
+	boolean isEnabled() {}
+
+	int getAnchorVAlign() {}
+
+	int getVAlign() {}
+
+	boolean canDrawCursor() {}
+
 	boolean isTouching(float x, float y) {}
+
+	final void setMenuControllerSelection(MenuElement element) {}
+
+	Set getActionListeners() {}
 
 	int compare(MenuElement o1, MenuElement o2) {}
 
@@ -149,15 +149,15 @@ AttackPickerMenu(MenuElementGroup) : MenuTableAction {
 
 	Comparator thenComparing(Comparator arg0) {}
 
-	void setDefaultElement(MenuElement defaultElement) {}
-
-	MenuElement getDefaultElement() {}
-
-	MenuElement addObject(MenuElement object) {}
-
 	void removeObject(MenuElement object) {}
 
 	List getObjects() {}
+
+	MenuElement addObject(MenuElement object) {}
+
+	void setDefaultElement(MenuElement defaultElement) {}
+
+	MenuElement getDefaultElement() {}
 
 	void ignoreSize(MenuElement object) {}
 
@@ -167,43 +167,43 @@ AttackPickerMenu(MenuElementGroup) : MenuTableAction {
 
 	float getOffsetY() {}
 
-	void setBackgroundColor(Color backgroundColor) {}
+	void addElements(Array elements, float x, float y, MenuElement object) {}
 
-	Color getBackgroundColor() {}
+	void countSize(MenuElement object) {}
 
 	MenuElementShowAnim getShowAnimation() {}
 
 	MenuThemeDrawable getBackground() {}
 
-	void addElements(Array elements, float x, float y, MenuElement object) {}
-
-	void setCountSize(List countSize) {}
-
 	void setObjects(List objects) {}
 
 	void setOffsetY(float offsetY) {}
 
-	void countSize(MenuElement object) {}
-
-	List getCountSize() {}
+	void setCountSize(List countSize) {}
 
 	float getBgPad() {}
 
-	void setOffsetX(float offsetX) {}
-
 	void setBgPad(float bgPad) {}
 
-	void specialTableSelect(int selection, VocShell selected) {}
+	void setOffsetX(float offsetX) {}
 
-	void updateTableSelection(int selection) {}
+	List getCountSize() {}
+
+	Color getBackgroundColor() {}
+
+	void setBackgroundColor(Color backgroundColor) {}
+
+	void specialTableSelect(int selection, VocShell selected) {}
 
 	boolean selectTableHeader() {}
 
 	void moveTableSelection(int selection) {}
 
-	void clickedTable(int selection, VocShell selected, float x, float y) {}
+	void updateTableSelection(int selection) {}
 
 	void selectTable(int selection, VocShell selected) {}
+
+	void clickedTable(int selection, VocShell selected, float x, float y) {}
 
 	void setSize(float width, float height) {}
 

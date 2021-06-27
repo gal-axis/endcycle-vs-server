@@ -30,17 +30,19 @@ AdventureShopMessage(MenuMessage) : MenuTableAction, MenuTablePainter, MessageAc
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void show(GameScreen screen) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void hide(GameScreen screen) {}
+
 	final Origin getOrigin() {}
 
 	float getComparisonKey() {}
 
 	byte getLayer() {}
 
-	void show(GameScreen screen) {}
-
-	void hide(GameScreen screen) {}
-
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	final void removeObject() {}
 
 	final SoundContainer playSound(Sounds sound) {}
 
@@ -48,27 +50,25 @@ AdventureShopMessage(MenuMessage) : MenuTableAction, MenuTablePainter, MessageAc
 
 	SoundContainer playSound(SoundInfo sound) {}
 
-	final void removeObject() {}
-
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
+
+	final void addInitializeListener(Runnable runnable) {}
+
+	final void removeInitializeListener(Runnable runnable) {}
 
 	final void addDisposeListener(Runnable runnable) {}
 
 	final void removeDisposeListener(Runnable runnable) {}
 
-	final void removeInitializeListener(Runnable runnable) {}
-
-	final void addInitializeListener(Runnable runnable) {}
-
 	void scheduleMessage(GameScreenMessage message) {}
 
-	void finish() {}
+	boolean isStaying() {}
 
 	float getPosition() {}
 
-	void setSpeed(float speed) {}
+	void finish() {}
 
-	boolean isStaying() {}
+	void setSpeed(float speed) {}
 
 	boolean priority() {}
 
@@ -76,37 +76,37 @@ AdventureShopMessage(MenuMessage) : MenuTableAction, MenuTablePainter, MessageAc
 
 	void controllerDisconnected(Controller controller) {}
 
-	boolean addButtonTips(ButtonTipList tips) {}
+	boolean triggerType(int character) {}
+
+	boolean triggerButton(ButtonEvent event) {}
 
 	boolean keyUp(int keycode) {}
 
 	boolean keyDown(int keycode) {}
 
+	boolean addButtonTips(ButtonTipList tips) {}
+
 	boolean keyTyped(char character) {}
 
-	boolean triggerButton(ButtonEvent event) {}
-
 	boolean triggerTouch(TouchEvent event) {}
-
-	boolean triggerType(int character) {}
 
 	void setDefaultElement(MenuElement defaultElement) {}
 
 	MenuElement getDefaultElement() {}
 
-	MenuElementController getController() {}
-
-	void drawScreenTint(CustomSpriteBatch batch, float alpha) {}
-
-	void setElement(MenuElement menuElement) {}
-
-	MenuElement getMenuElement() {}
+	float calcOffset() {}
 
 	void drawMenu(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	float calcOffset() {}
+	MenuElement getMenuElement() {}
+
+	void setElement(MenuElement menuElement) {}
 
 	boolean isBackKey(ButtonEvent trigger) {}
+
+	MenuElementController getController() {}
+
+	void drawScreenTint(CustomSpriteBatch batch, float alpha) {}
 
 	boolean onPress(ContentMessage message) {}
 
@@ -116,23 +116,23 @@ AdventureShopMessage(MenuMessage) : MenuTableAction, MenuTablePainter, MessageAc
 
 	Painter getPainter(MenuTablePaintParams params, int hAlign, int vAlign) {}
 
+	void finishPainting(MenuTablePaintParams params) {}
+
 	void startPainting(MenuTablePaintParams params) {}
 
 	void paintBG(MenuTablePaintParams params) {}
 
-	void finishPainting(MenuTablePaintParams params) {}
+	void specialTableSelect(int selection, CachedProduct selected) {}
+
+	boolean selectTableHeader() {}
 
 	void moveTableSelection(int selection) {}
 
 	void updateTableSelection(int selection) {}
 
-	boolean selectTableHeader() {}
-
-	void specialTableSelect(int selection, CachedProduct selected) {}
+	void selectTable(int selection, CachedProduct selected) {}
 
 	void clickedTable(int selection, CachedProduct selected, float x, float y) {}
-
-	void selectTable(int selection, CachedProduct selected) {}
 
 	void setSelected(CachedProduct selected) {}
 

@@ -20,14 +20,14 @@ final DrawableAnimation(Object) {
 
 	int hashCode() {}
 
-	boolean isAnimationFinished(double stateTime) {}
-
 	double getAnimationDuration() {}
 
-	DrawableImageFrame getKeyFrame(double stateTime) {}
+	boolean isAnimationFinished(double stateTime) {}
+
+	int getKeyFrameIndex(double stateTime) {}
 
 	DrawableImageFrame getKeyFrame(int frameNumber) {}
 
-	int getKeyFrameIndex(double stateTime) {}
+	DrawableImageFrame getKeyFrame(double stateTime) {}
 
 }

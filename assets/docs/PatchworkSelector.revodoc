@@ -26,25 +26,25 @@ PatchworkSelector(MenuChanger) : ObjectPainter {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void show(GameScreen screen) {}
+
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void hide(GameScreen screen) {}
 
-	void show(GameScreen screen) {}
+	final Origin getOrigin() {}
 
 	float getComparisonKey() {}
 
 	byte getLayer() {}
 
-	final Origin getOrigin() {}
-
 	final void removeObject() {}
 
-	SoundContainer playSound(SoundInfo sound) {}
+	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
-	final SoundContainer playSound(Sounds sound) {}
+	SoundContainer playSound(SoundInfo sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
@@ -58,19 +58,25 @@ PatchworkSelector(MenuChanger) : ObjectPainter {
 
 	MenuElement setEnabled(boolean enabled) {}
 
+	boolean select() {}
+
 	float getX() {}
 
 	float getY() {}
 
-	boolean select() {}
+	MenuElement setFocusable(boolean focusable) {}
 
-	float getHeight() {}
+	float calcX() {}
+
+	float calcY() {}
+
+	MenuElement setLayer(byte layer) {}
 
 	float getWidth() {}
 
-	MenuElement setHeight(float height) {}
+	float getHeight() {}
 
-	MenuElement setLayer(byte layer) {}
+	MenuElement setHeight(float height) {}
 
 	MenuElement getAbsoluteParent() {}
 
@@ -84,81 +90,75 @@ PatchworkSelector(MenuChanger) : ObjectPainter {
 
 	MenuElement setWidth(float width) {}
 
-	MenuElement setFocusable(boolean focusable) {}
-
-	float calcY() {}
-
-	float calcX() {}
-
-	Set getActionListeners() {}
-
-	final void setMenuControllerSelection(MenuElement element) {}
-
 	MenuElement setFocused(boolean focused) {}
+
+	boolean isAbsoluteHidden() {}
 
 	MenuElement setHidden(boolean hidden) {}
 
 	float getAbsoluteX() {}
 
-	boolean isAbsoluteHidden() {}
-
 	float getAbsoluteY() {}
-
-	MenuElement setHAlign(int hAlign) {}
-
-	MenuElement setVAlign(int vAlign) {}
-
-	MenuElement getAnchor() {}
-
-	int getAnchorVAlign() {}
-
-	MenuElement setAnchor(MenuElement anchor) {}
-
-	MenuElement setAnchorHAlign(int anchorHAlign) {}
-
-	int getHAlign() {}
-
-	int getAnchorHAlign() {}
-
-	MenuElement setAnchorVAlign(int anchorVAlign) {}
-
-	boolean canDrawCursor() {}
-
-	int getVAlign() {}
-
-	boolean isFocusable() {}
 
 	void addElements(Array elements, float x, float y) {}
 
-	void setCursor(Rectangle rectangle) {}
+	int getHAlign() {}
 
-	boolean isEnabled() {}
+	MenuElement setAnchorHAlign(int anchorHAlign) {}
+
+	MenuElement setVAlign(int vAlign) {}
+
+	boolean isFocusable() {}
+
+	int getAnchorHAlign() {}
 
 	boolean isFocused() {}
 
+	MenuElement setAnchorVAlign(int anchorVAlign) {}
+
 	MenuButtonTips getButtonTips() {}
+
+	void setCursor(Rectangle rectangle) {}
+
+	MenuElement getAnchor() {}
+
+	MenuElement setAnchor(MenuElement anchor) {}
+
+	MenuElement setHAlign(int hAlign) {}
+
+	boolean isEnabled() {}
+
+	int getAnchorVAlign() {}
+
+	int getVAlign() {}
+
+	boolean canDrawCursor() {}
 
 	boolean isTouching(float x, float y) {}
 
-	boolean priority() {}
+	final void setMenuControllerSelection(MenuElement element) {}
 
-	void controllerDisconnected(Controller controller) {}
+	Set getActionListeners() {}
+
+	boolean priority() {}
 
 	void controllerConnected(Controller controller) {}
 
-	boolean keyDown(int keycode) {}
-
-	boolean triggerTouch(TouchEvent event) {}
-
-	boolean addButtonTips(ButtonTipList tips) {}
-
-	boolean triggerButton(ButtonEvent event) {}
+	void controllerDisconnected(Controller controller) {}
 
 	boolean triggerType(int character) {}
 
-	boolean keyTyped(char character) {}
+	boolean triggerButton(ButtonEvent event) {}
 
 	boolean keyUp(int keycode) {}
+
+	boolean keyDown(int keycode) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean keyTyped(char character) {}
+
+	boolean triggerTouch(TouchEvent event) {}
 
 	BattleEntityPatchworkId getSelected() {}
 
@@ -168,7 +168,19 @@ PatchworkSelector(MenuChanger) : ObjectPainter {
 
 	MenuChanger vertical() {}
 
+	MenuElementShowAnim getShowAnimation() {}
+
+	boolean isSelected() {}
+
+	MenuThemeDrawable getBackground() {}
+
+	void moveSelection(int offset) {}
+
+	void setSelection(int selection) {}
+
 	ObjectPainter getPainter() {}
+
+	MenuChanger horizontal() {}
 
 	Color getBackgroundColor() {}
 
@@ -176,63 +188,51 @@ PatchworkSelector(MenuChanger) : ObjectPainter {
 
 	void setSelectedElement(Object element) {}
 
-	MenuElementShowAnim getShowAnimation() {}
-
-	boolean isSelected() {}
-
-	MenuThemeDrawable getBackground() {}
-
-	void setSelection(int selection) {}
-
-	void moveSelection(int offset) {}
-
-	MenuChanger horizontal() {}
-
 	MenuChanger setLabel(String label) {}
+
+	MenuChanger setAutoFocus(boolean autoFocus) {}
+
+	MenuChanger setPainter(ObjectPainter painter) {}
+
+	MenuChanger setArrowDown(Drawable arrowDown) {}
 
 	Drawable getArrowLeft() {}
 
 	MenuChanger setArrowLeft(Drawable arrowLeft) {}
 
-	MenuChanger setHorizontal(boolean horizontal) {}
-
-	MenuChangerSelectAction getSelectAction() {}
-
-	Drawable getArrowUp() {}
-
-	MenuChanger setArrowDown(Drawable arrowDown) {}
-
-	MenuChanger setAutoFocus(boolean autoFocus) {}
-
-	void drawChanger(CustomSpriteBatch batch, float x, float y, float width, float height) {}
-
-	float getArrowOffset() {}
-
-	void drawLabel(CustomSpriteBatch batch, float x, float y, float height) {}
+	Drawable getArrowDown() {}
 
 	MenuChanger setArrowRight(Drawable arrowRight) {}
 
-	Drawable getArrowDown() {}
+	Drawable getArrowRight() {}
 
-	MenuChanger setArrowUp(Drawable arrowUp) {}
+	MenuChanger setHorizontal(boolean horizontal) {}
 
-	MenuChanger setPainter(ObjectPainter painter) {}
-
-	boolean isAutoFocus() {}
-
-	MenuChanger setElements(List elements) {}
-
-	boolean canDrawArrows() {}
-
-	StringCache getLabel() {}
+	int getSelection() {}
 
 	boolean isHorizontal() {}
 
+	void drawChanger(CustomSpriteBatch batch, float x, float y, float width, float height) {}
+
+	MenuChanger setElements(List elements) {}
+
+	Drawable getArrowUp() {}
+
 	MenuChanger setSelectAction(MenuChangerSelectAction selectAction) {}
 
-	Drawable getArrowRight() {}
+	StringCache getLabel() {}
 
-	int getSelection() {}
+	boolean isAutoFocus() {}
+
+	boolean canDrawArrows() {}
+
+	void drawLabel(CustomSpriteBatch batch, float x, float y, float height) {}
+
+	MenuChangerSelectAction getSelectAction() {}
+
+	float getArrowOffset() {}
+
+	MenuChanger setArrowUp(Drawable arrowUp) {}
 
 	List getElements() {}
 

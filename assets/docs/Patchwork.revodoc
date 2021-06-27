@@ -40,25 +40,23 @@ Patchwork(Object) : IdEntity, Paintable {
 
 	void update(float delta) {}
 
-	static PatchworkStateId getState(String name) {}
-
 	PatchworkStateId getState() {}
+
+	static PatchworkStateId getState(String name) {}
 
 	Patchwork copy() {}
 
+	void draw(Batch batch, float posX, float posY, float scaleX, float scaleY, Color tint) {}
+
 	void draw(Batch batch, float posX, float posY, float scaleX, float scaleY, double animState, int hAlign, int vAlign, Color tint) {}
 
-	void draw(Batch batch, float posX, float posY, float scaleX, float scaleY, Color tint) {}
+	boolean isFinished() {}
 
 	float getWidth() {}
 
 	float getHeight() {}
 
-	boolean isFinished() {}
-
-	float getYPosition(float y, float scaleY) {}
-
-	float getYPosition(float y, float scaleY, double animState, int vAlign) {}
+	double getAnimationDuration() {}
 
 	float getXPosition(float x, float scaleX) {}
 
@@ -66,15 +64,17 @@ Patchwork(Object) : IdEntity, Paintable {
 
 	void resetAnimation() {}
 
+	boolean hasState(PatchworkStateId name) {}
+
 	boolean inState(PatchworkStateId name) {}
 
-	boolean setState(PatchworkStateId name) {}
+	float getYPosition(float y, float scaleY, double animState, int vAlign) {}
 
-	boolean hasState(PatchworkStateId name) {}
+	float getYPosition(float y, float scaleY) {}
 
 	void setPalette(Array palette) {}
 
-	double getAnimationDuration() {}
+	boolean setState(PatchworkStateId name) {}
 
 	boolean hasShadow() {}
 
@@ -82,22 +82,22 @@ Patchwork(Object) : IdEntity, Paintable {
 
 	PatchworkState getPatchworkState() {}
 
-	Patchwork fullCopy() {}
+	void resetSizes() {}
 
 	void copyStates() {}
-
-	void addState(PatchworkStateId name, DrawableState[] images) {}
 
 	PatchworkState addState(PatchworkStateId name, PatchworkState state) {}
 
 	PatchworkState addState(PatchworkStateId name, PatchworkStateId leadsInto, DrawableState[] images) {}
 
+	void addState(PatchworkStateId name, DrawableState[] images) {}
+
+	void setStates(Map states) {}
+
 	Array getDrawables() {}
 
 	void calculateSizes() {}
 
-	void setStates(Map states) {}
-
-	void resetSizes() {}
+	Patchwork fullCopy() {}
 
 }

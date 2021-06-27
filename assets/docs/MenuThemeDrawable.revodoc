@@ -12,28 +12,28 @@ final MenuThemeDrawable(Object) {
 
 	int hashCode() {}
 
-	void set(DrawableImage drawable) {}
-
 	void set(MenuThemeDrawableData data) {}
 
+	void set(DrawableImage drawable) {}
+
 	void draw(Batch batch, float x, float y, float width, float height) {}
+
+	void drawOverlay(Batch batch, float x, float y, float width, float height) {}
 
 	void drawNinePatch(Batch batch, float x, float y, float width, float height, Color c, float scale) {}
 
 	void drawNinePatch(Batch batch, float x, float y, float width, float height) {}
 
-	float getCenterX(float width) {}
-
-	float getCenterY(float width) {}
-
-	float getLeft() {}
-
 	float getRight() {}
 
 	float getBottom() {}
 
+	float getLeft() {}
+
 	float getTop() {}
 
-	void drawOverlay(Batch batch, float x, float y, float width, float height) {}
+	float getCenterX(float width) {}
+
+	float getCenterY(float width) {}
 
 }

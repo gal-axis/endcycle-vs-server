@@ -30,31 +30,31 @@ abstract SlideInMessage(GameScreenMessage) {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void show(GameScreen screen) {}
+
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void hide(GameScreen screen) {}
-
-	void show(GameScreen screen) {}
-
-	byte getLayer() {}
 
 	final Origin getOrigin() {}
 
 	float getComparisonKey() {}
 
+	byte getLayer() {}
+
 	final void removeObject() {}
-
-	SoundContainer playSound(SoundInfo sound) {}
-
-	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	final SoundContainer playSound(Sounds sound) {}
 
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	SoundContainer playSound(SoundInfo sound) {}
+
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
-	final void removeInitializeListener(Runnable runnable) {}
-
 	final void addInitializeListener(Runnable runnable) {}
+
+	final void removeInitializeListener(Runnable runnable) {}
 
 	final void addDisposeListener(Runnable runnable) {}
 
@@ -62,12 +62,12 @@ abstract SlideInMessage(GameScreenMessage) {
 
 	void scheduleMessage(GameScreenMessage message) {}
 
-	void finish() {}
-
-	void setSpeed(float speed) {}
+	boolean isStaying() {}
 
 	float getPosition() {}
 
-	boolean isStaying() {}
+	void finish() {}
+
+	void setSpeed(float speed) {}
 
 }

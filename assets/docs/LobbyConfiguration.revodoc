@@ -16,32 +16,28 @@ LobbyConfiguration(Object) {
 
 	ID getBattle() {}
 
-	void setBattle(ID battle) {}
-
 	ID getBackground() {}
+
+	void setBattle(ID battle) {}
 
 	GameModeProvider getGameMode() {}
 
-	void setItems(boolean items) {}
-
-	void setGameMode(GameModeProvider modeType) {}
-
-	void setModeConfig(GameModeConfig modeConfig) {}
-
-	GameModeConfig getModeConfig() {}
-
-	ID getMusic() {}
-
-	void setSpectators(boolean spectators) {}
-
-	boolean isItems() {}
-
-	void setMusic(ID music) {}
+	String getPassword() {}
 
 	boolean isSpectators() {}
 
+	void setModeConfig(GameModeConfig modeConfig) {}
+
 	void setPassword(String password) {}
 
-	String getPassword() {}
+	void setGameMode(GameModeProvider modeType) {}
+
+	void setMusic(ID music) {}
+
+	ID getMusic() {}
+
+	GameModeConfig getModeConfig() {}
+
+	void setSpectators(boolean spectators) {}
 
 }

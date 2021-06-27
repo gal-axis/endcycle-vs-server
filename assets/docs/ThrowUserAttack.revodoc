@@ -35,31 +35,31 @@ ThrowUserAttack(PanelSelectAttack) : LandAction {
 
 	Attack clone() {}
 
-	boolean isActionRollback(Object[] action) {}
+	final void actionTriggered(Runnable action) {}
 
 	void actionTriggered(Object[] action) {}
 
-	final void actionTriggered(Runnable action) {}
+	boolean isActionRollback(Object[] action) {}
 
 	boolean priority() {}
 
-	void controllerDisconnected(Controller controller) {}
-
-	void controllerConnected(Controller controller) {}
-
-	boolean triggerTouch(TouchEvent event) {}
-
-	boolean keyDown(int keycode) {}
+	boolean triggerButton(ButtonEvent event) {}
 
 	boolean keyTyped(char character) {}
 
 	boolean keyUp(int keycode) {}
 
-	boolean triggerButton(ButtonEvent event) {}
+	boolean triggerTouch(TouchEvent event) {}
 
 	boolean triggerType(int character) {}
 
 	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean keyDown(int keycode) {}
+
+	void controllerConnected(Controller controller) {}
+
+	void controllerDisconnected(Controller controller) {}
 
 	String getName() {}
 
@@ -81,57 +81,35 @@ ThrowUserAttack(PanelSelectAttack) : LandAction {
 
 	final float getX(int xTile) {}
 
-	void finish() {}
-
-	boolean active() {}
+	void setAnimationDuration(float duration) {}
 
 	SoundContainer playSound(SoundInfo sound) {}
 
-	void setAnimationDuration(float duration) {}
+	boolean active() {}
 
-	void attackAnimation() {}
-
-	void castAnimation() {}
-
-	final Origin getOrigin(int index) {}
+	void finish() {}
 
 	final void triggerAction(Object[] parameters) {}
 
-	final Controller getController() {}
+	void castAnimation() {}
+
+	void attackAnimation() {}
+
+	final Origin getOrigin(int index) {}
 
 	boolean fillGauges() {}
+
+	final Controller getController() {}
 
 	final int getXTile() {}
 
 	final int getYTile() {}
 
-	Attack charge() {}
-
-	void runAction(int action) {}
-
-	AttackPortal getPortal(BattleEntity entity, float portalX, float portalY, float time) {}
+	boolean reduceGauge(double amount) {}
 
 	boolean reduceGauge() {}
 
-	boolean reduceGauge(double amount) {}
-
-	boolean acceptsInput(ButtonEvent event) {}
-
-	Attack getWrapped(AttackShellWrapper wrapper, boolean shareHit, boolean gauge) {}
-
-	void scheduleAction(int action, float delay) {}
-
-	void scheduleAction(Runnable action, float delay) {}
-
-	void addWrappers(Array wrappers) {}
-
-	void increaseGauge(double amount) {}
-
-	final int getXTileInFront() {}
-
-	final int getTurn() {}
-
-	double getGaugeProgress() {}
+	final BattleEntityList getBattleEntities() {}
 
 	void updateAttackTasks(float delta) {}
 
@@ -139,7 +117,29 @@ ThrowUserAttack(PanelSelectAttack) : LandAction {
 
 	boolean hasAnimationState(PatchworkStateId state) {}
 
-	final BattleEntityList getBattleEntities() {}
+	boolean acceptsInput(ButtonEvent event) {}
+
+	Attack getWrapped(AttackShellWrapper wrapper, boolean shareHit, boolean gauge) {}
+
+	Attack charge() {}
+
+	double getGaugeProgress() {}
+
+	void increaseGauge(double amount) {}
+
+	final int getXTileInFront() {}
+
+	void addWrappers(Array wrappers) {}
+
+	void scheduleAction(int action, float delay) {}
+
+	void scheduleAction(Runnable action, float delay) {}
+
+	void runAction(int action) {}
+
+	AttackPortal getPortal(BattleEntity entity, float portalX, float portalY, float time) {}
+
+	final int getTurn() {}
 
 	void flickerField(BattleField field, int x, int y) {}
 

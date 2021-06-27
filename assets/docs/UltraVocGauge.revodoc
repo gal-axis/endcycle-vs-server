@@ -27,17 +27,17 @@ UltraVocGauge(VocGauge) {
 
 	BattleEntity getEntity() {}
 
-	void increase(double progress) {}
-
-	void hit(BattleEntity entity, HitProperty hit, int damage) {}
-
 	void hurt(int amount) {}
 
 	void crushed() {}
 
-	void idle(double delta) {}
-
 	boolean decrease(double amount) {}
+
+	void increase(double progress) {}
+
+	void hit(BattleEntity entity, HitProperty hit, int damage) {}
+
+	void idle(double delta) {}
 
 	boolean isFull() {}
 
@@ -45,17 +45,17 @@ UltraVocGauge(VocGauge) {
 
 	double getSpeed() {}
 
+	void increaseSpeed(double speed) {}
+
 	double getFillSpeed() {}
-
-	float getFillTime() {}
-
-	double getDuration() {}
 
 	void setDuration(double duration) {}
 
 	void setProgress(double progress) {}
 
-	void increaseSpeed(double speed) {}
+	float getFillTime() {}
+
+	double getDuration() {}
 
 	void set(BattleEntityUltraData ultra) {}
 

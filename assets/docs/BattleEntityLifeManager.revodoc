@@ -17,16 +17,16 @@ BattleEntityLifeManager(Object) {
 
 	boolean isActive() {}
 
-	boolean isActive(int entity) {}
-
-	BattleEntityLife getLife(int index) {}
-
-	float consume(int entity) {}
+	boolean isActive(int index) {}
 
 	int calculateUsed() {}
 
+	int getUsed(int life) {}
+
+	BattleEntityLife getLife(int index) {}
+
 	void setUsed(Array used) {}
 
-	int getUsed(int life) {}
+	float consume(int index) {}
 
 }

@@ -21,21 +21,25 @@ SandTile(NormalTile) : BECondition {
 
 	boolean isAccessible(BattleEntity entity) {}
 
-	void draw(Batch batch, float x, float y, Party party, float shade, float alpha) {}
+	int getX() {}
 
 	int getY() {}
 
-	int getX() {}
+	void draw(Batch batch, float x, float y, Party party, float shade, float alpha) {}
 
 	void dispose() {}
 
 	void refresh() {}
 
+	final void triggerAction(Object[] parameters) {}
+
 	OwnedHitProperty hit(OwnedHitProperty property) {}
+
+	boolean changeType(PanelType type) {}
 
 	void free() {}
 
-	boolean changeType(PanelType type) {}
+	void actionTriggered(Object[] action) {}
 
 	Battle getBattle() {}
 
@@ -53,8 +57,8 @@ SandTile(NormalTile) : BECondition {
 
 	void remove(BattleEntity entity) {}
 
-	void setTimeout(float time) {}
-
 	float getTimeout() {}
+
+	void setTimeout(float time) {}
 
 }

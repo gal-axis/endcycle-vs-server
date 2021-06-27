@@ -45,13 +45,13 @@ final RainbowColor(CColor) {
 
 	CColor sub(Color color) {}
 
-	Color fromHsv(float arg0, float arg1, float arg2) {}
+	float[] toHsv(float[] arg0) {}
 
 	Color fromHsv(float[] arg0) {}
 
-	CColor cpy() {}
+	Color fromHsv(float arg0, float arg1, float arg2) {}
 
-	float[] toHsv(float[] arg0) {}
+	CColor cpy() {}
 
 	CColor mulAlpha(float alpha) {}
 

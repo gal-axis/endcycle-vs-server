@@ -34,6 +34,12 @@ BattleFieldPanel(Object) {
 
 	int hashCode() {}
 
+	boolean isActionRollback(Object[] action) {}
+
+	void actionTriggered(Object[] action) {}
+
+	void actionTriggered(Runnable action) {}
+
 	void update(float delta) {}
 
 	void init() {}
@@ -46,54 +52,56 @@ BattleFieldPanel(Object) {
 
 	void setType(PanelType tile) {}
 
-	void draw(Batch batch, float x, float y, float shader) {}
-
 	void draw(Batch batch, float x, float y) {}
+
+	void draw(Batch batch, float x, float y, float shader) {}
 
 	void playSound(SoundInfo sound) {}
 
+	final void triggerAction(Object[] parameters) {}
+
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
+
+	boolean isBattleClient() {}
 
 	void changeData(FieldPanelData data) {}
 
 	OwnedHitProperty hit(OwnedHitProperty hitProperty) {}
 
-	boolean accessible(boolean free) {}
-
-	boolean free(BattleEntity entity) {}
-
-	void occupy(BattleEntity entity) {}
-
-	boolean setParty(Party party, BattleFieldPanel connectedPanel, boolean sound, boolean mock) {}
+	boolean setParty(Party party, BattleFieldPanel connectedPanel, boolean sound) {}
 
 	boolean setParty(Party party, BattleFieldPanel connectedPanel) {}
 
-	boolean setParty(Party party, BattleFieldPanel connectedPanel, boolean sound) {}
+	boolean setParty(Party party, BattleFieldPanel connectedPanel, boolean sound, boolean mock) {}
 
 	void changeType(PanelType type) {}
 
 	boolean occupiedBy(Party party) {}
 
-	boolean isBattleClient() {}
+	boolean free(BattleEntity entity) {}
+
+	void occupy(BattleEntity entity) {}
+
+	boolean accessible(boolean free) {}
 
 	boolean occupied(boolean ignoreFloat) {}
+
+	boolean isPartyChanged() {}
+
+	OwnedHitProperty affect(OwnedHitProperty hitProperty) {}
+
+	void effectDispose() {}
+
+	void effectInit() {}
+
+	void calculateOffsets() {}
+
+	void effectRefresh() {}
+
+	boolean isTypeChanged() {}
 
 	void resetRevert() {}
 
 	boolean isOccupied() {}
-
-	void effectInit() {}
-
-	boolean isPartyChanged() {}
-
-	void calculateOffsets() {}
-
-	OwnedHitProperty affect(OwnedHitProperty hitProperty) {}
-
-	boolean isTypeChanged() {}
-
-	void effectDispose() {}
-
-	void effectRefresh() {}
 
 }

@@ -14,22 +14,22 @@ PatchworkDataMap(Object) {
 
 	boolean occupied(ID id) {}
 
-	PatchworkData createData() {}
+	List getPatchworkMetaData() {}
+
+	BattleEntityPatchworkMetaData createBattleMetaData() {}
+
+	SimplePatchworkMetaData createSimpleMetaData() {}
+
+	BattleLayeredPatchworkMetaData createBattleLayeredMetaData() {}
 
 	List getAllData() {}
+
+	ID getNextId() {}
 
 	List getPatchworks() {}
 
 	List getAllPatchworks() {}
 
-	ID getNextId() {}
-
-	List getPatchworkMetaData() {}
-
-	BattleEntityPatchworkMetaData createBattleMetaData() {}
-
-	BattleLayeredPatchworkMetaData createBattleLayeredMetaData() {}
-
-	SimplePatchworkMetaData createSimpleMetaData() {}
+	PatchworkData createData() {}
 
 }

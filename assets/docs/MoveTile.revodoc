@@ -23,15 +23,17 @@ MoveTile(NormalExpiringTile) : BECondition {
 
 	boolean isAccessible(BattleEntity entity) {}
 
-	void draw(Batch batch, float x, float y, Party party, float shade, float alpha) {}
+	int getX() {}
 
 	int getY() {}
 
-	int getX() {}
+	void draw(Batch batch, float x, float y, Party party, float shade, float alpha) {}
 
 	void dispose() {}
 
 	void refresh() {}
+
+	final void triggerAction(Object[] parameters) {}
 
 	OwnedHitProperty hit(OwnedHitProperty property) {}
 
@@ -39,11 +41,13 @@ MoveTile(NormalExpiringTile) : BECondition {
 
 	void free() {}
 
+	void actionTriggered(Object[] action) {}
+
 	Battle getBattle() {}
 
-	void enter(BattleEntity entity) {}
-
 	OwnedHitProperty affect(OwnedHitProperty property) {}
+
+	void enter(BattleEntity entity) {}
 
 	DrawableImage getDrawable(Party party) {}
 

@@ -26,14 +26,14 @@ CampaignNodePainter(Object) {
 
 	static Color getColor(float stars) {}
 
-	BoundedFloat getScoreAnimation() {}
-
 	void completeScore() {}
-
-	static void drawStars(CustomSpriteBatch batch, float x, float y, float stars) {}
 
 	boolean isNewHighScore() {}
 
+	static void drawStars(CustomSpriteBatch batch, float x, float y, float stars) {}
+
 	void updateHighScore() {}
+
+	BoundedFloat getScoreAnimation() {}
 
 }

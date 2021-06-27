@@ -17,11 +17,11 @@ abstract Ailment(Object) : Paintable {
 
 	int hashCode() {}
 
-	boolean isActionRollback(Object[] action) {}
+	void actionTriggered(Runnable action) {}
 
 	void actionTriggered(Object[] action) {}
 
-	void actionTriggered(Runnable action) {}
+	boolean isActionRollback(Object[] action) {}
 
 	int get(int object, int orElse) {}
 
@@ -43,22 +43,22 @@ abstract Ailment(Object) : Paintable {
 
 	void end() {}
 
-	boolean draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scale) {}
-
 	void dispose() {}
 
-	boolean over() {}
+	boolean draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scale) {}
 
 	final void triggerAction(Object[] parameters) {}
 
-	void increaseDuration() {}
+	boolean over() {}
 
-	boolean isDisplayed() {}
+	boolean canTarget() {}
 
 	void setIntensity(float intensity) {}
 
+	void increaseDuration() {}
+
 	float getIntensity() {}
 
-	boolean canTarget() {}
+	boolean isDisplayed() {}
 
 }

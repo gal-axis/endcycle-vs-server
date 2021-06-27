@@ -29,13 +29,13 @@ AttackHitProperty(OwnedHitProperty) {
 
 	Color getTint() {}
 
-	ShaderType getExplosionShader() {}
-
 	AilmentInflict getAilment(AilmentType type) {}
 
 	Color getElementTint() {}
 
 	void copyAilments(HitProperty property) {}
+
+	ShaderType getExplosionShader() {}
 
 	void setOwner(BattleEntity owner) {}
 

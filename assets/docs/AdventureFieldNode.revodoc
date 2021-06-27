@@ -28,12 +28,12 @@ AdventureFieldNode(Object) {
 
 	void addEntity(BattleEntity entity) {}
 
+	void changeField(BattleField field, BattleFieldData data) {}
+
 	Array getEntities(boolean preview) {}
 
 	void addEntities(AdventureBattle battle, boolean animation, Array shells) {}
 
 	void addEntities(AdventureBattle battle, boolean preview, boolean animation) {}
-
-	void changeField(BattleField field, BattleFieldData data) {}
 
 }

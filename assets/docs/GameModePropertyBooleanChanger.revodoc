@@ -26,25 +26,25 @@ GameModePropertyBooleanChanger(MenuCheckBox) : GameModePropertyElement {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void show(GameScreen screen) {}
+
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void hide(GameScreen screen) {}
 
-	void show(GameScreen screen) {}
+	final Origin getOrigin() {}
 
 	float getComparisonKey() {}
 
 	byte getLayer() {}
 
-	final Origin getOrigin() {}
-
 	final void removeObject() {}
 
-	SoundContainer playSound(SoundInfo sound) {}
+	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
-	final SoundContainer playSound(Sounds sound) {}
+	SoundContainer playSound(SoundInfo sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
@@ -58,19 +58,25 @@ GameModePropertyBooleanChanger(MenuCheckBox) : GameModePropertyElement {
 
 	MenuElement setEnabled(boolean enabled) {}
 
+	boolean select() {}
+
 	float getX() {}
 
 	float getY() {}
 
-	boolean select() {}
+	MenuElement setFocusable(boolean focusable) {}
 
-	float getHeight() {}
+	float calcX() {}
+
+	float calcY() {}
+
+	MenuElement setLayer(byte layer) {}
 
 	float getWidth() {}
 
-	MenuElement setHeight(float height) {}
+	float getHeight() {}
 
-	MenuElement setLayer(byte layer) {}
+	MenuElement setHeight(float height) {}
 
 	MenuElement getAbsoluteParent() {}
 
@@ -84,95 +90,63 @@ GameModePropertyBooleanChanger(MenuCheckBox) : GameModePropertyElement {
 
 	MenuElement setWidth(float width) {}
 
-	MenuElement setFocusable(boolean focusable) {}
-
-	float calcY() {}
-
-	float calcX() {}
-
-	Set getActionListeners() {}
-
-	final void setMenuControllerSelection(MenuElement element) {}
-
 	MenuElement setFocused(boolean focused) {}
+
+	boolean isAbsoluteHidden() {}
 
 	MenuElement setHidden(boolean hidden) {}
 
 	float getAbsoluteX() {}
 
-	boolean isAbsoluteHidden() {}
-
 	float getAbsoluteY() {}
-
-	MenuElement setHAlign(int hAlign) {}
-
-	MenuElement setVAlign(int vAlign) {}
-
-	MenuElement getAnchor() {}
-
-	int getAnchorVAlign() {}
-
-	MenuElement setAnchor(MenuElement anchor) {}
-
-	MenuElement setAnchorHAlign(int anchorHAlign) {}
-
-	int getHAlign() {}
-
-	int getAnchorHAlign() {}
-
-	MenuElement setAnchorVAlign(int anchorVAlign) {}
-
-	boolean canDrawCursor() {}
-
-	int getVAlign() {}
-
-	boolean isFocusable() {}
 
 	void addElements(Array elements, float x, float y) {}
 
-	void setCursor(Rectangle rectangle) {}
+	int getHAlign() {}
 
-	boolean isEnabled() {}
+	MenuElement setAnchorHAlign(int anchorHAlign) {}
+
+	MenuElement setVAlign(int vAlign) {}
+
+	boolean isFocusable() {}
+
+	int getAnchorHAlign() {}
 
 	boolean isFocused() {}
 
+	MenuElement setAnchorVAlign(int anchorVAlign) {}
+
 	MenuButtonTips getButtonTips() {}
+
+	void setCursor(Rectangle rectangle) {}
+
+	MenuElement getAnchor() {}
+
+	MenuElement setAnchor(MenuElement anchor) {}
+
+	MenuElement setHAlign(int hAlign) {}
+
+	boolean isEnabled() {}
+
+	int getAnchorVAlign() {}
+
+	int getVAlign() {}
+
+	boolean canDrawCursor() {}
 
 	boolean isTouching(float x, float y) {}
 
-	MenuCheckBox setText(String text) {}
+	final void setMenuControllerSelection(MenuElement element) {}
 
-	MenuCheckBox setChecked(boolean checked) {}
+	Set getActionListeners() {}
 
 	boolean isChecked() {}
 
+	MenuCheckBox setChecked(boolean checked) {}
+
 	String getText() {}
 
-	Fonts getFont() {}
-
-	MenuCheckBox setCheckedBackground(MenuThemeDrawable checkedBackground) {}
-
-	MenuCheckBox setDrawableChecked(Drawable drawableChecked) {}
-
-	MenuCheckBox setDrawableUnchecked(Drawable drawableUnchecked) {}
-
-	MenuThemeDrawable getCheckedBackground() {}
-
-	Drawable getDrawableChecked() {}
-
-	MenuCheckBox setUncheckedBackground(MenuThemeDrawable uncheckedBackground) {}
-
-	MenuCheckBox setDisabledBackground(MenuThemeDrawable disabledBackground) {}
-
-	MenuCheckBox setUncheckedColor(Color uncheckedColor) {}
-
-	MenuThemeDrawable getUncheckedBackground() {}
-
-	MenuThemeDrawable getDisabledBackground() {}
-
-	Drawable getDrawableUnchecked() {}
-
-	Color getUncheckedColor() {}
+	MenuCheckBox setText(String text) {}
 
 	MenuCheckBox setFont(Fonts font) {}
 
@@ -180,17 +154,43 @@ GameModePropertyBooleanChanger(MenuCheckBox) : GameModePropertyElement {
 
 	MenuElementShowAnim getShowAnimation() {}
 
+	Color getDisabledColor() {}
+
 	MenuButtonClickedAnimation getAnimation() {}
 
-	Color getDisabledColor() {}
+	Fonts getFont() {}
+
+	MenuCheckBox setUncheckedBackground(MenuThemeDrawable uncheckedBackground) {}
+
+	Color getUncheckedColor() {}
+
+	MenuCheckBox setDrawableChecked(Drawable drawableChecked) {}
+
+	MenuThemeDrawable getDisabledBackground() {}
+
+	MenuCheckBox setDisabledBackground(MenuThemeDrawable disabledBackground) {}
+
+	MenuThemeDrawable getCheckedBackground() {}
+
+	MenuCheckBox setCheckedBackground(MenuThemeDrawable checkedBackground) {}
+
+	MenuCheckBox setDrawableUnchecked(Drawable drawableUnchecked) {}
+
+	Drawable getDrawableChecked() {}
+
+	MenuThemeDrawable getUncheckedBackground() {}
+
+	Drawable getDrawableUnchecked() {}
+
+	MenuCheckBox setUncheckedColor(Color uncheckedColor) {}
+
+	MenuCheckBox setCheckedColor(Color checkedColor) {}
+
+	MenuCheckBox setChangeAction(MenuCheckBoxChangeAction changeAction) {}
 
 	Color getCheckedColor() {}
 
 	MenuCheckBoxChangeAction getChangeAction() {}
-
-	MenuCheckBox setChangeAction(MenuCheckBoxChangeAction changeAction) {}
-
-	MenuCheckBox setCheckedColor(Color checkedColor) {}
 
 	Object get() {}
 

@@ -16,9 +16,9 @@ final MenuElementNeighbors(Object) : Comparator {
 
 	float dst(Rectangle rect) {}
 
-	void setNeighbor(Direction direction, MenuElement info, boolean direct) {}
-
 	MenuElementNeighbor getNeighbor(Direction direction) {}
+
+	void setNeighbor(Direction direction, MenuElement info, boolean direct) {}
 
 	MenuElementNeighbors setCompareY(float compareY) {}
 

@@ -10,16 +10,16 @@ VocUseManager(Object) {
 
 	void update(BattleEntity target, boolean bannedPanel, float delta) {}
 
-	float getOptimalTime() {}
-
 	boolean isOptimal() {}
-
-	void use(VocEntry entry) {}
 
 	boolean isUsing() {}
 
+	int getMoveX() {}
+
+	float getOptimalTime() {}
+
 	int getMoveY() {}
 
-	int getMoveX() {}
+	void use(VocEntry entry) {}
 
 }

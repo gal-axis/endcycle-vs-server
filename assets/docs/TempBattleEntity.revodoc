@@ -94,81 +94,81 @@ final TempBattleEntity(BattleEntity) {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
 	void hide(GameScreen screen) {}
 
 	void show(GameScreen screen) {}
 
-	byte getLayer() {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	final Origin getOrigin() {}
 
 	float getComparisonKey() {}
 
+	byte getLayer() {}
+
 	final void removeObject() {}
-
-	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
-
-	SoundContainer playSound(SoundInfo sound) {}
 
 	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
+	SoundContainer playSound(SoundInfo sound) {}
+
+	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
+
 	final PatchworkStateId getState() {}
 
 	void resetState() {}
 
-	final float getHeight() {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scaleX, float scaleY) {}
 
 	void draw(CustomSpriteBatch batch) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scaleX, float scaleY) {}
+	final float getHeight() {}
 
 	final float getWidth() {}
 
-	final void setAnimationDuration(float duration) {}
-
 	final boolean isAnimationFinished() {}
 
-	final boolean inState(PatchworkStateId name) {}
-
-	final Patchwork getPatchwork() {}
-
-	final float getXScale() {}
-
-	boolean setState(PatchworkStateId name) {}
-
-	final void resetTint() {}
-
-	final boolean hasState(PatchworkStateId name) {}
-
-	final float getYScale() {}
-
-	final boolean isFlipX() {}
-
-	final void resetAnimation() {}
-
-	void updateParticles(float delta) {}
-
-	void updateGraphics(float delta) {}
-
-	final Patchwork setPatchwork(ID id) {}
-
-	Patchwork setPatchwork(Patchwork patchwork) {}
-
-	final boolean isFlipY() {}
+	final void setAnimationDuration(float duration) {}
 
 	CColor calculateTint() {}
 
-	List getShadowDrawables() {}
+	boolean setState(PatchworkStateId name) {}
 
-	float getShadowAlpha() {}
+	final void resetAnimation() {}
+
+	final boolean hasState(PatchworkStateId name) {}
+
+	final void resetTint() {}
+
+	Patchwork setPatchwork(Patchwork patchwork) {}
+
+	final Patchwork setPatchwork(ID id) {}
+
+	void updateParticles(float delta) {}
+
+	final boolean inState(PatchworkStateId name) {}
+
+	void updateGraphics(float delta) {}
+
+	final boolean isFlipY() {}
+
+	final float getXScale() {}
+
+	final float getYScale() {}
+
+	final Patchwork getPatchwork() {}
+
+	final boolean isFlipX() {}
+
+	List getShadowDrawables() {}
 
 	float getShadowX() {}
 
 	float getShadowZ() {}
+
+	float getShadowAlpha() {}
 
 	float getShadowY() {}
 
@@ -188,142 +188,142 @@ final TempBattleEntity(BattleEntity) {
 
 	void setSize(int xSize, int ySize) {}
 
-	void block(OwnedHitProperty hit) {}
-
 	void setAction(BattleEntityAction action) {}
-
-	void spawn() {}
-
-	void startDeath() {}
-
-	void displayHealthText(int amount) {}
 
 	void displayAttackName(String name, Color color) {}
 
-	final BattleEntity getAbsoluteParent() {}
+	void displayHealthText(int amount) {}
 
-	boolean isAccessibleField(BattleField field, int x, int y, boolean free) {}
+	final BattleEntity getAbsoluteParent() {}
 
 	boolean isAccessibleField(int x, int y, boolean free) {}
 
+	boolean isAccessibleField(BattleField field, int x, int y, boolean free) {}
+
 	final boolean isAccessibleField(int x, int y) {}
-
-	void displayText(StringDisplay stringDisplay) {}
-
-	StringDisplay displayText(String attack, Color color, float time) {}
-
-	StringDisplay displayText(String attack, Color color) {}
-
-	void heal(int amount) {}
-
-	void heal(int amount, boolean display) {}
-
-	float getPanelX(BattleField field, int x) {}
-
-	float getPanelY(BattleField field, int y) {}
-
-	void refreshPanel() {}
-
-	void onHit(BattleEntity entity, HitProperty hit, int damage) {}
-
-	void hitApply(OwnedHitProperty hit) {}
-
-	final void freePanel(int x, int y) {}
-
-	final boolean isBattleClient() {}
-
-	boolean isAttacking() {}
-
-	void makeHitParticle(HitType type, Color color) {}
-
-	boolean canInflict(HitProperty hitProperty) {}
-
-	void hurt(int amount) {}
-
-	void hurt(int amount, boolean display) {}
-
-	Ailment inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
-
-	boolean inflict(OwnedHitProperty hit) {}
-
-	void stopAttack() {}
-
-	void semiBlock(OwnedHitProperty hit) {}
-
-	final void occupyPanel(int x, int y) {}
-
-	boolean isMoving() {}
-
-	boolean isMoveable() {}
-
-	final GameObject getAttach() {}
-
-	void kill() {}
-
-	final BattleFieldBorder getFieldBorder() {}
-
-	final void startAnimation(ScreenObject animation) {}
-
-	final boolean isAuthorative() {}
-
-	void cancelMovement() {}
-
-	void updateGauge(double delta) {}
-
-	void updateAttack(float delta) {}
-
-	Mover move(Mover mover) {}
-
-	Mover move(Mover mover, boolean rollback) {}
-
-	Mover move(MoveType type, int xTile, int yTile, float speed) {}
-
-	Mover move(MoveType type, int xTile, int yTile, float speed, boolean rollback) {}
-
-	void move(float delta) {}
-
-	void respawn(int x, int y) {}
-
-	void drawHealth(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	void die() {}
-
-	Vector2 getPanelOffset() {}
-
-	boolean canReachPanel(int x, int y) {}
-
-	void despawn() {}
 
 	void removeAction() {}
 
 	BattlePlayer createPlayer() {}
 
+	void spawn() {}
+
+	void despawn() {}
+
+	void startDeath() {}
+
 	boolean attack(AttackPlan attackPlan) {}
 
 	boolean attack(VocEntry voc, KeyCode code) {}
 
-	void changePalette(CustomCache palette) {}
+	void occupyPanels() {}
 
-	void crush(double amount, int crushStrength) {}
+	void makeHitParticle(HitType type, Color color) {}
 
 	final void setActionData(BattleEntityActionData data) {}
 
-	void setPanelPosition(int x, int y) {}
+	final void changeData(BattleEntityData info, CustomCache customizations) {}
 
-	void setTurned(boolean turned) {}
+	void crush(double amount, int crushStrength) {}
 
 	AttackPlan createPlan(VocEntry voc, KeyCode code) {}
 
-	final void changeData(BattleEntityData info, CustomCache customizations) {}
+	boolean isAttacking() {}
 
-	final BattleEntityAction setActionComplex(int level) {}
+	void setPanelPosition(int x, int y) {}
 
-	void freePanels() {}
+	StringDisplay displayText(String attack, Color color, float time) {}
+
+	void displayText(StringDisplay stringDisplay) {}
+
+	StringDisplay displayText(String attack, Color color) {}
+
+	boolean inflict(OwnedHitProperty hit) {}
+
+	void block(OwnedHitProperty hit) {}
+
+	void setTurned(boolean turned) {}
+
+	void changePalette(CustomCache palette) {}
 
 	boolean occupies(int x, int y) {}
 
 	boolean occupies(BattleEntity entity) {}
 
-	void occupyPanels() {}
+	void freePanels() {}
+
+	void stopAttack() {}
+
+	void semiBlock(OwnedHitProperty hit) {}
+
+	final BattleEntityAction setActionComplex(int level) {}
+
+	boolean canInflict(HitProperty hitProperty) {}
+
+	void hitApply(OwnedHitProperty hit) {}
+
+	final boolean isBattleClient() {}
+
+	void move(float delta) {}
+
+	Mover move(MoveType type, int xTile, int yTile, float speed) {}
+
+	Mover move(Mover mover) {}
+
+	Mover move(Mover mover, boolean rollback) {}
+
+	Mover move(MoveType type, int xTile, int yTile, float speed, boolean rollback) {}
+
+	void cancelMovement() {}
+
+	boolean isMoveable() {}
+
+	final void startAnimation(ScreenObject animation) {}
+
+	float getPanelX(BattleField field, int x) {}
+
+	void kill() {}
+
+	void die() {}
+
+	Ailment inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
+
+	void onHit(BattleEntity entity, HitProperty hit, int damage) {}
+
+	final void freePanel(int x, int y) {}
+
+	float getPanelY(BattleField field, int y) {}
+
+	void hurt(int amount, boolean display) {}
+
+	void hurt(int amount) {}
+
+	final GameObject getAttach() {}
+
+	final void occupyPanel(int x, int y) {}
+
+	boolean isMoving() {}
+
+	void heal(int amount) {}
+
+	void heal(int amount, boolean display) {}
+
+	void updateGauge(double delta) {}
+
+	void refreshPanel() {}
+
+	void updateAttack(float delta) {}
+
+	final BattleFieldBorder getFieldBorder() {}
+
+	final boolean isAuthorative() {}
+
+	boolean canReachPanel(int x, int y) {}
+
+	void drawHealth(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void respawn(int x, int y) {}
+
+	Vector2 getPanelOffset() {}
 
 }

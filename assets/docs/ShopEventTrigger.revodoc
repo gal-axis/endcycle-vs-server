@@ -17,12 +17,12 @@ ShopEventTrigger(Object) : AdventureEventTrigger {
 
 	boolean start(AdventureBattle battle, AdventureFieldNode entry) {}
 
-	void addEntities(AdventureBattle battle, AdventureFieldNode entry) {}
-
 	BattleData toPracticeData(AdventureEvent event) {}
 
-	static void startBattle(AdventureBattle battle, AdventureFieldNode entry, int level) {}
+	void addEntities(AdventureBattle battle, AdventureFieldNode entry) {}
 
 	boolean setShopAction(AdventureBattle battle, AdventureFieldNode entry) {}
+
+	static void startBattle(AdventureBattle battle, AdventureFieldNode entry, int level) {}
 
 }

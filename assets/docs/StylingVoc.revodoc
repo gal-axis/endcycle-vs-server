@@ -25,21 +25,21 @@ final StylingVoc(VocEntry) {
 
 	VocStyle setStyle(VocStyle mod) {}
 
-	VocElement getElement() {}
+	int getGauge() {}
 
 	int getLevel() {}
 
-	int getGauge() {}
-
-	String getFullName() {}
-
-	void setVoc(Voc voc) {}
+	VocElement getElement() {}
 
 	boolean isLegal() {}
 
 	int getPower() {}
 
+	void setVoc(Voc voc) {}
+
 	int getCrushPower() {}
+
+	String getFullName() {}
 
 	void setMissing(String mod, String name, int level, Role role) {}
 

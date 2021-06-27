@@ -12,8 +12,8 @@ MultiMusicProcessor(Object) : MusicProcessor {
 
 	void process(byte[] inputBytes, int length, ByteBuffer outputBytes) {}
 
-	void addProcessor(MusicProcessor musicProcessor) {}
-
 	void removeProcessor(MusicProcessor musicProcessor) {}
+
+	void addProcessor(MusicProcessor musicProcessor) {}
 
 }

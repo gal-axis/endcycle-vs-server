@@ -22,21 +22,19 @@ Texture {
 
 	void dispose() {}
 
-	int getWidth() {}
-
 	int getHeight() {}
 
-	void bind(int arg0) {}
+	int getWidth() {}
+
+	TextureFilter getMinFilter() {}
+
+	TextureFilter getMagFilter() {}
 
 	void bind() {}
 
+	void bind(int arg0) {}
+
 	int getDepth() {}
-
-	void setFilter(TextureFilter arg0, TextureFilter arg1) {}
-
-	float getAnisotropicFilter() {}
-
-	float setAnisotropicFilter(float arg0) {}
 
 	int getTextureObjectHandle() {}
 
@@ -44,25 +42,27 @@ Texture {
 
 	float unsafeSetAnisotropicFilter(float arg0, boolean arg1) {}
 
-	TextureFilter getMagFilter() {}
+	float setAnisotropicFilter(float arg0) {}
 
-	TextureFilter getMinFilter() {}
+	float getAnisotropicFilter() {}
+
+	void setFilter(TextureFilter arg0, TextureFilter arg1) {}
 
 	void setWrap(TextureWrap arg0, TextureWrap arg1) {}
 
-	void unsafeSetWrap(TextureWrap arg0, TextureWrap arg1, boolean arg2) {}
+	TextureWrap getVWrap() {}
 
 	void unsafeSetWrap(TextureWrap arg0, TextureWrap arg1) {}
 
-	void unsafeSetFilter(TextureFilter arg0, TextureFilter arg1, boolean arg2) {}
-
-	void unsafeSetFilter(TextureFilter arg0, TextureFilter arg1) {}
+	void unsafeSetWrap(TextureWrap arg0, TextureWrap arg1, boolean arg2) {}
 
 	boolean isManaged() {}
 
 	TextureWrap getUWrap() {}
 
-	TextureWrap getVWrap() {}
+	void unsafeSetFilter(TextureFilter arg0, TextureFilter arg1) {}
+
+	void unsafeSetFilter(TextureFilter arg0, TextureFilter arg1, boolean arg2) {}
 
 	void load(TextureData arg0) {}
 

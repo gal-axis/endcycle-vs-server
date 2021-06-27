@@ -32,17 +32,17 @@ StartPlayerDialogueScript(BattleScript) {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void show(GameScreen screen) {}
+
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void hide(GameScreen screen) {}
 
-	void show(GameScreen screen) {}
-
-	byte getLayer() {}
-
 	Origin getOrigin() {}
 
 	float getComparisonKey() {}
+
+	byte getLayer() {}
 
 	void start(GameScreen screen) {}
 

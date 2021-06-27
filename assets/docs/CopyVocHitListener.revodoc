@@ -18,31 +18,31 @@ CopyVocHitListener(Object) : BattleEntityListener {
 
 	void init() {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
 	void dispose() {}
 
-	CColor getTint() {}
-
-	PatchworkStateId setState(PatchworkStateId id) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void attack(Attack attack) {}
 
-	void inflict(OwnedHitProperty property) {}
-
-	void inflictPre(OwnedHitProperty property) {}
+	CColor getTint() {}
 
 	double crush(double amount, int crushStrength) {}
 
-	int hurt(int amount, boolean display) {}
+	void inflictPre(OwnedHitProperty property) {}
 
-	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
+	void inflict(OwnedHitProperty property) {}
 
 	AilmentInflict inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
+
+	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
 
 	void inflictPost(OwnedHitProperty property) {}
 
 	int heal(int amount, boolean display) {}
+
+	int hurt(int amount, boolean display) {}
+
+	PatchworkStateId setState(PatchworkStateId id) {}
 
 	void drawHud(CustomSpriteBatch batch, float xOfs, float yOfs, float width, float height) {}
 

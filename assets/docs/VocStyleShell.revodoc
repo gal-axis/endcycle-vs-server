@@ -18,9 +18,11 @@ final VocStyleShell(Object) : Serializable, Lootable, Comparable {
 
 	int compareTo(VocStyleShell o) {}
 
-	void addToInventory() {}
+	Lootable split() {}
 
 	LootDisplayer createDisplayer() {}
+
+	void addToInventory() {}
 
 	void write(Json json) {}
 

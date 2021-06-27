@@ -25,25 +25,25 @@ SimpleAttackObject(Object) : ScreenObject, ShadowEntity {
 
 	boolean isActionRollback(Object[] action) {}
 
+	List getShadowDrawables() {}
+
 	float getXScale() {}
-
-	boolean isFlipY() {}
-
-	Patchwork getPatchwork() {}
-
-	boolean isFlipX() {}
 
 	float getYScale() {}
 
-	List getShadowDrawables() {}
+	Patchwork getPatchwork() {}
 
-	float getShadowX() {}
+	boolean isFlipY() {}
 
-	float getShadowY() {}
+	boolean isFlipX() {}
 
 	float getShadowAlpha() {}
 
+	float getShadowY() {}
+
 	float getShadowZ() {}
+
+	float getShadowX() {}
 
 	void dispose() {}
 
@@ -59,17 +59,17 @@ SimpleAttackObject(Object) : ScreenObject, ShadowEntity {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void show(GameScreen screen) {}
+
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void hide(GameScreen screen) {}
 
-	void show(GameScreen screen) {}
-
-	byte getLayer() {}
-
 	final Origin getOrigin() {}
 
 	float getComparisonKey() {}
+
+	byte getLayer() {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 

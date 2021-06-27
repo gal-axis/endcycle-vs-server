@@ -27,29 +27,29 @@ MobilePortraitController(MobileController) {
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	float getY() {}
-
 	float getX() {}
 
-	void event(GameEvent event) {}
-
-	boolean touch(TouchEvent trigger) {}
-
-	void button(ButtonEvent trigger) {}
+	float getY() {}
 
 	float calcX() {}
 
 	float calcY() {}
 
-	boolean increaseOffset() {}
+	void event(GameEvent event) {}
 
-	void finishMoving() {}
+	void button(ButtonEvent trigger) {}
+
+	boolean touch(TouchEvent trigger) {}
 
 	boolean finishedMoving() {}
 
+	boolean isTouching(float x, float y) {}
+
+	void finishMoving() {}
+
 	float getMove() {}
 
-	boolean isTouching(float x, float y) {}
+	boolean increaseOffset() {}
 
 	void addButton(MobileButton button) {}
 

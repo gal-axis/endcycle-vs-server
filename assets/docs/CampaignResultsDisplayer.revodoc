@@ -26,17 +26,19 @@ CampaignResultsDisplayer(GameScreenObject) {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void show(GameScreen screen) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void hide(GameScreen screen) {}
+
 	final Origin getOrigin() {}
 
 	float getComparisonKey() {}
 
 	byte getLayer() {}
 
-	void show(GameScreen screen) {}
-
-	void hide(GameScreen screen) {}
-
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	final void removeObject() {}
 
 	final SoundContainer playSound(Sounds sound) {}
 
@@ -44,13 +46,11 @@ CampaignResultsDisplayer(GameScreenObject) {
 
 	SoundContainer playSound(SoundInfo sound) {}
 
-	final void removeObject() {}
-
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
-	boolean isFinished() {}
-
 	float getX(float starWidth, int i) {}
+
+	boolean isFinished() {}
 
 	void updateCache() {}
 

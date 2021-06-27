@@ -1,0 +1,7 @@
+interface MenuButtonAction {
+
+	abstract void onClick();
+
+	static Runnable toRunnable(MenuButtonAction action) {}
+
+}

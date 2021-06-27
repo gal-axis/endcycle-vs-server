@@ -1,4 +1,4 @@
-VsChatController(MenuTextBoxInputProcessor) {
+ChatController(MenuTextBoxInputProcessor) {
 
 	new(ChatBox input, boolean blocking) {}
 
@@ -10,32 +10,32 @@ VsChatController(MenuTextBoxInputProcessor) {
 
 	boolean priority() {}
 
+	void controllerConnected(Controller controller) {}
+
 	void controllerDisconnected(Controller controller) {}
 
-	void controllerConnected(Controller controller) {}
+	boolean keyTyped(char character) {}
+
+	boolean triggerType(int keycode) {}
 
 	boolean triggerTouch(TouchEvent event) {}
 
-	boolean keyDown(int keycode) {}
-
-	boolean keyTyped(char character) {}
+	boolean addButtonTips(ButtonTipList tips) {}
 
 	boolean keyUp(int keycode) {}
 
 	boolean triggerButton(ButtonEvent event) {}
 
-	boolean triggerType(int keycode) {}
-
-	boolean addButtonTips(ButtonTipList tips) {}
+	boolean keyDown(int keycode) {}
 
 	void select() {}
 
-	void enter() {}
+	MenuTextBox getTextBox() {}
 
 	void deselect() {}
 
 	boolean addCharacter(char character) {}
 
-	MenuTextBox getTextBox() {}
+	void enter() {}
 
 }

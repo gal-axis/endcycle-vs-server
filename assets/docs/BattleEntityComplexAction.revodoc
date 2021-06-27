@@ -27,23 +27,23 @@ BattleEntityComplexAction(BattlePlayer) {
 
 	boolean priority() {}
 
-	boolean keyTyped(char character) {}
+	void controllerConnected(Controller controller) {}
+
+	void controllerDisconnected(Controller controller) {}
+
+	boolean triggerType(int character) {}
+
+	boolean triggerButton(ButtonEvent event) {}
 
 	boolean keyUp(int keycode) {}
 
 	boolean keyDown(int keycode) {}
 
-	boolean triggerButton(ButtonEvent event) {}
-
 	boolean addButtonTips(ButtonTipList tips) {}
 
-	boolean triggerType(int character) {}
+	boolean keyTyped(char character) {}
 
 	boolean triggerTouch(TouchEvent event) {}
-
-	void controllerConnected(Controller controller) {}
-
-	void controllerDisconnected(Controller controller) {}
 
 	void add() {}
 
@@ -63,38 +63,38 @@ BattleEntityComplexAction(BattlePlayer) {
 
 	void vibrateController(float duration, float strength) {}
 
-	GameScreenMessage createRewardMessage(RandomVocRewards vocs, Random random, boolean skippable) {}
+	void move(int xTile, int yTile) {}
 
 	final Controller getController() {}
 
-	void move(int xTile, int yTile) {}
+	GameScreenMessage createRewardMessage(RandomVocRewards vocs, Random random, boolean skippable) {}
 
-	MockController setKeyPressed(KeyCode code, boolean pressed) {}
+	void createHud(int playerIndex) {}
 
 	void applyInput(float delay, Object input) {}
 
 	boolean applyInput(KeyCode code, boolean pressed, boolean player) {}
 
-	boolean sendClientInput(Object input, boolean local) {}
-
-	void setHudButtons(BattleHUD hud) {}
-
 	void cancelMove() {}
-
-	void clientInput(ButtonEvent event) {}
 
 	boolean canUpgrade() {}
 
-	void upgrade() {}
-
-	void createHud(int playerIndex) {}
+	void setHudButtons(BattleHUD hud) {}
 
 	void setCombat(boolean combat) {}
 
+	void upgrade() {}
+
+	boolean sendClientInput(Object input, boolean local) {}
+
+	void clientInput(ButtonEvent event) {}
+
+	MockController setKeyPressed(KeyCode code, boolean pressed) {}
+
 	BattleEntity getTarget() {}
 
-	void setBehavior(BehaviorType type) {}
-
 	void setVocTags(VocTag[] tags) {}
+
+	void setBehavior(BehaviorType type) {}
 
 }

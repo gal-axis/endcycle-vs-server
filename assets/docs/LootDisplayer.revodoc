@@ -14,11 +14,11 @@ abstract LootDisplayer(Object) {
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void rollPosition() {}
+	boolean isDone() {}
 
 	static void shuffleSectors() {}
 
-	boolean isDone() {}
+	void rollPosition() {}
 
 	abstract void drawImage(CustomSpriteBatch batch, float x, float y, float width, float height);
 

@@ -12,8 +12,8 @@ UpgradeEventTrigger(Object) : AdventureEventTrigger, PickupAction {
 
 	boolean start(AdventureBattle battle, AdventureFieldNode entry) {}
 
-	void addEntities(AdventureBattle battle, AdventureFieldNode entry) {}
-
 	BattleData toPracticeData(AdventureEvent event) {}
+
+	void addEntities(AdventureBattle battle, AdventureFieldNode entry) {}
 
 }

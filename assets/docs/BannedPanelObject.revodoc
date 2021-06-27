@@ -1,9 +1,9 @@
 interface BannedPanelObject {
 
-	float getBannedPanelPriority(BattleEntity entity) {}
+	boolean isBannedPanel(BattleEntity entity, int x, int y) {}
 
 	boolean isBannedPanelRemove(BattleEntity entity) {}
 
-	boolean isBannedPanel(BattleEntity entity, int x, int y) {}
+	float getBannedPanelPriority(BattleEntity entity) {}
 
 }

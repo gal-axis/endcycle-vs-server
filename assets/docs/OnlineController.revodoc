@@ -25,17 +25,17 @@ OnlineController(MockController) {
 
 	KeyCode getCode(KeyCodeCategory category, int button) {}
 
-	boolean isChanged() {}
-
 	void clearImages() {}
-
-	List getButtonImages(KeyCode code) {}
 
 	void removeKey(KeyCode code, int key) {}
 
 	Drawable getButtonImage(KeyCode code) {}
 
+	List getButtonImages(KeyCode code) {}
+
 	void setKey(KeyCode code, int key) {}
+
+	boolean isChanged() {}
 
 	String getName() {}
 
@@ -43,33 +43,33 @@ OnlineController(MockController) {
 
 	boolean isConnected() {}
 
-	int getMaxButtonIndex() {}
+	int getAxisCount() {}
 
-	boolean supportsPlayerIndex() {}
-
-	int getMinButtonIndex() {}
-
-	void cancelVibration() {}
-
-	boolean getButton(int buttonCode) {}
+	String getUniqueId() {}
 
 	boolean isVibrating() {}
-
-	int getAxisCount() {}
 
 	boolean canVibrate() {}
 
 	void startVibration(int duration, float strength) {}
 
+	boolean getButton(int buttonCode) {}
+
 	float getAxis(int axisCode) {}
+
+	void cancelVibration() {}
 
 	void setPlayerIndex(int index) {}
 
-	String getUniqueId() {}
+	boolean supportsPlayerIndex() {}
 
-	void setButton(KeyCode buttonCode, boolean pressed) {}
+	int getMinButtonIndex() {}
+
+	int getMaxButtonIndex() {}
 
 	void setButton(int buttonCode, boolean pressed) {}
+
+	void setButton(KeyCode buttonCode, boolean pressed) {}
 
 	void clearButtons() {}
 

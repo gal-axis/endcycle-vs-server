@@ -27,9 +27,9 @@ final Painter(Object) {
 
 	Painter size(float width, float height) {}
 
-	Object[] arguments() {}
-
 	Painter arguments(Object[] args) {}
+
+	Object[] arguments() {}
 
 	Painter argument(Object arg) {}
 
@@ -45,74 +45,74 @@ final Painter(Object) {
 
 	Painter batch(CustomSpriteBatch batch) {}
 
+	Painter width(float width) {}
+
 	Painter y(float y) {}
 
 	Painter height(float height) {}
 
-	Painter width(float width) {}
-
-	Painter color(Color color) {}
+	Painter center() {}
 
 	Painter at(float x, float y) {}
 
-	Painter center() {}
-
-	Painter vAlign(int vAlign) {}
+	Painter color(Color color) {}
 
 	Painter hAlign(int hAlign) {}
 
-	Painter align(int hAlign, int vAlign) {}
+	Painter vAlign(int vAlign) {}
 
-	Painter align(int align) {}
-
-	Painter paint(Object object) {}
-
-	Painter paint(Object object, ObjectPainter painter) {}
+	Painter xScale(float xScale) {}
 
 	static Painter on(CustomSpriteBatch batch) {}
 
-	Painter tint(float rTint, float gTint, float bTint, float aTint) {}
+	Painter align(int align) {}
+
+	Painter align(int hAlign, int vAlign) {}
+
+	Painter yScale(float yScale) {}
 
 	Painter tint(float tint) {}
 
 	Painter tint(float rTint, float gTint, float bTint) {}
 
-	Painter yScale(float yScale) {}
+	Painter tint(float rTint, float gTint, float bTint, float aTint) {}
 
-	Painter xScale(float xScale) {}
+	Painter paint(Object object, ObjectPainter painter) {}
 
-	Painter clearArguments() {}
+	Painter paint(Object object) {}
 
-	Painter moveX(float x) {}
+	Painter aTint(float a) {}
 
 	Painter moveY(float y) {}
 
-	Painter aTint(float a) {}
+	Painter moveX(float x) {}
+
+	Painter clearArguments() {}
 
 	Painter animState(double animState) {}
 
 	Painter font(Fonts font) {}
 
-	Painter mulTint(float tint) {}
-
-	Painter gTint(float g) {}
-
-	Painter invertTint() {}
-
-	Painter centerX() {}
-
-	Painter centerY() {}
-
-	Painter modulateColor(float amount, float speed) {}
-
-	Painter addColor(Color color) {}
+	Painter rTint(float r) {}
 
 	Painter bTint(float b) {}
 
-	Painter rTint(float r) {}
+	Painter gTint(float g) {}
 
-	void unmask() {}
+	Painter mulTint(float tint) {}
+
+	Painter addColor(Color color) {}
+
+	Painter invertTint() {}
 
 	Painter mulColor(Color color) {}
+
+	Painter modulateColor(float amount, float speed) {}
+
+	Painter centerY() {}
+
+	Painter centerX() {}
+
+	void unmask() {}
 
 }

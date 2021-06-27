@@ -28,30 +28,30 @@ InvincibleHealth(BattleEntityHealth) {
 
 	void syncDisplay() {}
 
-	void setMaxHealth(int health, boolean fillHealth) {}
-
 	void setHealth(int health) {}
+
+	void setMaxHealth(int health, boolean fillHealth) {}
 
 	float getHealthRate() {}
 
-	void hurt(int amount, boolean sync) {}
-
 	void hurt(int amount) {}
 
-	void heal(int amount, boolean sync) {}
+	void hurt(int amount, boolean sync) {}
 
 	void heal(int amount) {}
 
-	void drawAmount(CustomSpriteBatch batch, float xPos, float yPos) {}
+	void heal(int amount, boolean sync) {}
 
-	void changeHealth(int amount, boolean sync) {}
-
-	void drawCrush(CustomSpriteBatch batch, float x, float y) {}
-
-	boolean isSynced() {}
+	float getHealthDisplayRate() {}
 
 	void setHealthDisplay(int display) {}
 
-	float getHealthDisplayRate() {}
+	void changeHealth(int amount, boolean sync) {}
+
+	void drawAmount(CustomSpriteBatch batch, float xPos, float yPos) {}
+
+	boolean isSynced() {}
+
+	void drawCrush(CustomSpriteBatch batch, float x, float y) {}
 
 }

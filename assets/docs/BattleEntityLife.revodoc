@@ -1,6 +1,9 @@
 BattleEntityLife(Object) {
 
-	new(BattleEntityLifeManager lives, int index) {}
+	final BattleEntityLifeManager manager;
+	final int index;
+
+	new(BattleEntityLifeManager manager, int index) {}
 
 	boolean equals(Object arg0) {}
 
@@ -10,8 +13,8 @@ BattleEntityLife(Object) {
 
 	boolean isActive() {}
 
-	float consume() {}
-
 	boolean isTotalActive() {}
+
+	float consume() {}
 
 }

@@ -6,10 +6,10 @@ interface MenuTablePainter {
 
 	Painter getPainter(MenuTablePaintParams params, int hAlign, int vAlign) {}
 
+	void finishPainting(MenuTablePaintParams params) {}
+
 	void startPainting(MenuTablePaintParams params) {}
 
 	void paintBG(MenuTablePaintParams params) {}
-
-	void finishPainting(MenuTablePaintParams params) {}
 
 }

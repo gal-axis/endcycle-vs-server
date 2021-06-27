@@ -36,18 +36,18 @@ JsonWriter(Writer) {
 
 	JsonWriter set(String arg0, Object arg1) {}
 
-	JsonWriter object() {}
+	void setQuoteLongValues(boolean arg0) {}
 
 	JsonWriter object(String arg0) {}
+
+	JsonWriter object() {}
 
 	JsonWriter json(String arg0, String arg1) {}
 
 	JsonWriter json(String arg0) {}
 
-	Writer getWriter() {}
-
 	void setOutputType(OutputType arg0) {}
 
-	void setQuoteLongValues(boolean arg0) {}
+	Writer getWriter() {}
 
 }

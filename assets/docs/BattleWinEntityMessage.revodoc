@@ -22,16 +22,16 @@ BattleWinEntityMessage(Object) : ScreenObject {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void show(GameScreen screen) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void hide(GameScreen screen) {}
+
 	Origin getOrigin() {}
 
 	float getComparisonKey() {}
 
 	byte getLayer() {}
-
-	void show(GameScreen screen) {}
-
-	void hide(GameScreen screen) {}
-
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 }

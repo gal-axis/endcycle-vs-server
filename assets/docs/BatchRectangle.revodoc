@@ -39,17 +39,17 @@ BatchRectangle(Object) : ScreenObject {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void show(GameScreen screen) {}
+
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void hide(GameScreen screen) {}
 
-	void show(GameScreen screen) {}
-
-	byte getLayer() {}
-
 	Origin getOrigin() {}
 
 	float getComparisonKey() {}
+
+	byte getLayer() {}
 
 	void draw(Batch batch, float xOfs, float yOfs, float scaleX, float scaleY) {}
 
@@ -61,8 +61,8 @@ BatchRectangle(Object) : ScreenObject {
 
 	float getTintR() {}
 
-	float getTintG() {}
-
 	float getTintA() {}
+
+	float getTintG() {}
 
 }

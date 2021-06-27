@@ -10,16 +10,16 @@ PlayerUpgrades(Object) {
 
 	void apply(BattleEntity entity) {}
 
-	boolean hasSkill(BattleEntitySkill skill) {}
-
-	void addHP() {}
-
-	void addStrength() {}
+	BattleEntitySkill getRandomAvailable(Random random) {}
 
 	void addSpeed() {}
 
-	void addSkill(BattleEntitySkill skill) {}
+	boolean hasSkill(BattleEntitySkill skill) {}
 
-	BattleEntitySkill getRandomAvailable(Random random) {}
+	void addStrength() {}
+
+	void addHP() {}
+
+	void addSkill(BattleEntitySkill skill) {}
 
 }

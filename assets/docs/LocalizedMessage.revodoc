@@ -14,8 +14,8 @@ interface LocalizedMessage : Paintable {
 
 	abstract String getKey();
 
-	static String createValueFromKey(String value) {}
-
 	static String createKeyFromValue(String value) {}
+
+	static String createValueFromKey(String value) {}
 
 }

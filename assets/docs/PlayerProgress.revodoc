@@ -34,49 +34,53 @@ final PlayerProgress(Object) {
 
 	void merge(PlayerProgress progress) {}
 
-	boolean isCharacterUnlocked(ID id) {}
-
 	boolean isBestScore(GameDifficulty difficulty, boolean coop, int score) {}
 
 	boolean isBestWave(GameDifficulty difficulty, boolean coop, int wave) {}
 
+	float completeCampaign(CampaignData campaign, double time, List scores) {}
+
+	void clearAdventure(AdventurePath adventure) {}
+
+	boolean isCharacterUnlocked(ID id) {}
+
 	boolean isAdventureCleared(ID id) {}
-
-	List getUnlockedCharacters() {}
-
-	List getUnlockedThemes() {}
-
-	Array checkNewCharacters() {}
-
-	Array checkNewCampaigns() {}
-
-	void addDefeatedCredit(String name) {}
 
 	boolean isCampaignUnlocked(ID id) {}
 
+	Array checkNewCampaigns() {}
+
+	List getAffinityEntries() {}
+
 	boolean[] completeOnslaught(GameDifficulty difficulty, boolean coop, int score, int wave) {}
+
+	void addDefeatedCredit(String name) {}
+
+	List getUnlockedCharacters() {}
+
+	boolean isAdventureEventEncountered(ID id) {}
 
 	boolean isAffinityEntryUnlocked(ID id) {}
 
 	boolean checkNewAffinities() {}
 
-	boolean isAdventureEventEncountered(ID id) {}
+	Array checkNewCharacters() {}
+
+	List getUnlockedThemes() {}
 
 	Array checkNewCustomizations() {}
 
-	List getAffinityEntries() {}
-
 	boolean isCharacterCustomizationUnlocked(ID id) {}
+
+	List getUnlockedCampaigns() {}
 
 	void clearAdventureZone(AdventureZone zone) {}
 
 	void adventureEventEncountered(AdventureEvent event) {}
 
-	List getUnlockedCampaigns() {}
-
-	void clearAdventure(AdventurePath adventure) {}
-
 	void saveLocal() {}
+
+	void cheat() {}
 
 	Array checkNewThemes() {}
 
@@ -84,12 +88,8 @@ final PlayerProgress(Object) {
 
 	void checkNew() {}
 
-	void cheat() {}
-
 	boolean isThemeUnlocked(ID id) {}
 
 	void increaseAffinity(ID id, float amount) {}
-
-	float completeCampaign(CampaignData campaign, double time, List scores) {}
 
 }

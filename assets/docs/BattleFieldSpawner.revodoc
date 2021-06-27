@@ -8,16 +8,16 @@ BattleFieldSpawner(Object) {
 
 	int hashCode() {}
 
-	static void setSpawnPositions(BattleData data, BattleFieldData field, GameModeProvider mode, Array shells) {}
-
-	static void setSpawnPositions(BattleFieldData field, Party party, Array shells, Array points) {}
-
-	static Array getSpawnPoints(BattleData data, GameModeProvider mode, Party party) {}
+	static void fillDefault(BattleFieldData field, Array points, Party party, int entities) {}
 
 	static void fillDefault(BattleData data) {}
 
-	static void fillDefault(BattleFieldData field, Array points, Party party, int entities) {}
+	static Array getSpawnPoints(BattleData data, GameModeProvider mode, Party party) {}
 
 	static Map sortIntoParties(Array shells) {}
+
+	static void setSpawnPositions(BattleData data, BattleFieldData field, GameModeProvider mode, Array shells) {}
+
+	static void setSpawnPositions(BattleFieldData field, Party party, Array shells, Array points) {}
 
 }

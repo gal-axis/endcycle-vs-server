@@ -12,34 +12,34 @@ interface AdventureFaction {
 
 	void lose() {}
 
-	void finishZone(AdventureFieldData data) {}
+	void startZone(AdventureFieldData data) {}
+
+	void generateBranches(AdventureNodeGraph graph) {}
+
+	void addLoseLoot(Looter looter) {}
+
+	void updatePlayer(BattlePlayer player) {}
+
+	void generateStart(AdventureNodeGraph graph) {}
+
+	void generateFinal(AdventureNodeGraph graph) {}
+
+	void finishNode(AdventureFieldNode entry) {}
+
+	void generateFinish(AdventureNodeGraph graph) {}
+
+	void generateNodes(AdventureNodeGraph graph) {}
+
+	DrawableImage getIcon() {}
+
+	void addWinLoot(Looter looter) {}
+
+	void startNode(AdventureFieldNode entry) {}
 
 	void stopBattle(BattleEntityList entities) {}
 
 	void startBattle(BattleEntityList entities) {}
 
-	void startNode(AdventureFieldNode entry) {}
-
-	void generateFinal(AdventureNodeGraph graph) {}
-
-	void generateBranches(AdventureNodeGraph graph) {}
-
-	void updatePlayer(BattlePlayer player) {}
-
-	void finishNode(AdventureFieldNode entry) {}
-
-	DrawableImage getIcon() {}
-
-	void generateFinish(AdventureNodeGraph graph) {}
-
-	void generateStart(AdventureNodeGraph graph) {}
-
-	void addWinLoot(Looter looter) {}
-
-	void addLoseLoot(Looter looter) {}
-
-	void generateNodes(AdventureNodeGraph graph) {}
-
-	void startZone(AdventureFieldData data) {}
+	void finishZone(AdventureFieldData data) {}
 
 }

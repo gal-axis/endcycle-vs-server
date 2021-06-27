@@ -47,19 +47,35 @@ Rectangle(Object) {
 
 	float getY() {}
 
+	float getHeight() {}
+
 	float getWidth() {}
 
 	Rectangle setHeight(float arg0) {}
-
-	float getHeight() {}
 
 	Rectangle setPosition(float arg0, float arg1) {}
 
 	Rectangle setPosition(Vector2 arg0) {}
 
-	Rectangle setY(float arg0) {}
+	Rectangle setCenter(Vector2 arg0) {}
+
+	Rectangle setCenter(float arg0, float arg1) {}
+
+	Vector2 getCenter(Vector2 arg0) {}
+
+	boolean overlaps(Rectangle arg0) {}
+
+	float getAspectRatio() {}
+
+	Rectangle fitInside(Rectangle arg0) {}
+
+	float perimeter() {}
+
+	Rectangle fitOutside(Rectangle arg0) {}
 
 	Rectangle setX(float arg0) {}
+
+	Rectangle setY(float arg0) {}
 
 	Rectangle setWidth(float arg0) {}
 
@@ -68,21 +84,5 @@ Rectangle(Object) {
 	Rectangle fromString(String arg0) {}
 
 	float area() {}
-
-	Rectangle fitInside(Rectangle arg0) {}
-
-	Vector2 getCenter(Vector2 arg0) {}
-
-	Rectangle setCenter(float arg0, float arg1) {}
-
-	Rectangle setCenter(Vector2 arg0) {}
-
-	float perimeter() {}
-
-	float getAspectRatio() {}
-
-	boolean overlaps(Rectangle arg0) {}
-
-	Rectangle fitOutside(Rectangle arg0) {}
 
 }

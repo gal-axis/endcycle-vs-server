@@ -16,16 +16,16 @@ BattleReferenceResolver(Object) {
 
 	int getWrittenId(Object object) {}
 
+	void setReadObject(int id, Object object) {}
+
 	int addWrittenObject(Object object) {}
 
-	void setReadObject(int id, Object object) {}
+	int getReadId(Object object) {}
+
+	Object getReadObject(int id) {}
 
 	void addConstant(Object value) {}
 
 	void setBattle(Battle battle) {}
-
-	Object getReadObject(int id) {}
-
-	int getReadId(Object object) {}
 
 }

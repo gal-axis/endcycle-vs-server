@@ -2185,7 +2185,10 @@
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
 			"attacks": [
-				{ "class": "com.one2b3.endcycle.utils.objects.Point" }
+				{
+					"xSpeed": 80,
+					"stick": {}
+				}
 			],
 			"repeatCost": 0.25,
 			"checkFloor": true,
@@ -5088,14 +5091,14 @@
 					"stick": {}
 				},
 				{
-					"x": 1.5,
+					"x": 2.5,
 					"y": -2,
 					"xSpeed": 0,
 					"ySpeed": -300,
 					"stick": {}
 				},
 				{
-					"x": 2.5,
+					"x": 1.5,
 					"y": 2,
 					"xSpeed": 0,
 					"ySpeed": 300,
@@ -5172,10 +5175,11 @@
 			],
 			"limitX": 3,
 			"limitY": 3,
+			"projectileDelay": 0.4,
 			"drawable": {
 				"drawable": { "id": 1226 }
 			},
-			"portalTime": 0.2
+			"portalTime": 0.5
 		}
 	}
 },

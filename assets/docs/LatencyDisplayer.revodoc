@@ -26,16 +26,16 @@ LatencyDisplayer(Object) : ScreenObject {
 
 	void show(GameScreen screen) {}
 
-	byte getLayer() {}
-
 	Origin getOrigin() {}
+
+	byte getLayer() {}
 
 	float getComparisonKey() {}
 
 	LatencyDisplayer setPingTimer(float duration) {}
 
-	void drawLatency(CustomSpriteBatch batch, float x, float y, boolean connected, int latency) {}
-
 	int getPing() {}
+
+	void drawLatency(CustomSpriteBatch batch, float x, float y, boolean connected, int latency) {}
 
 }

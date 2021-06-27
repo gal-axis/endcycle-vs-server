@@ -50,43 +50,43 @@ NoiseAdventureFaction(SideAdventureFaction) {
 
 	void startNode(AdventureFieldNode entry) {}
 
+	void addLoseLoot(Looter looter) {}
+
+	void startZone(AdventureFieldData data) {}
+
 	void generateFinal(AdventureNodeGraph graph) {}
 
 	void generateStart(AdventureNodeGraph graph) {}
 
+	void generateNodes(AdventureNodeGraph graph) {}
+
 	void addWinLoot(Looter looter) {}
 
-	void generateFinish(AdventureNodeGraph graph) {}
-
-	void addLoseLoot(Looter looter) {}
-
 	void generateBranches(AdventureNodeGraph graph) {}
+
+	void generateFinish(AdventureNodeGraph graph) {}
 
 	void finishNode(AdventureFieldNode entry) {}
 
 	void updatePlayer(BattlePlayer player) {}
 
-	void startZone(AdventureFieldData data) {}
-
 	DrawableImage getIcon() {}
-
-	void generateNodes(AdventureNodeGraph graph) {}
 
 	boolean canUpgrade() {}
 
 	void generateUpgrade(AdventureNodeGraph graph) {}
 
-	int getStatModifier() {}
-
 	void selectZone(AdventureZone zone) {}
 
-	boolean canChangeSide(AdventureSide side) {}
-
-	boolean excuse(AdventureSide side) {}
+	int getStatModifier() {}
 
 	void setSide(AdventureSide side) {}
 
 	void betray(AdventureSide side) {}
+
+	boolean excuse(AdventureSide side) {}
+
+	boolean canChangeSide(AdventureSide side) {}
 
 	AdventurePathChange getChange(AdventureSide side) {}
 

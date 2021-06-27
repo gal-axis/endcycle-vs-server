@@ -36,59 +36,55 @@ abstract ScoredBattleMode(BattleMode) {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	Origin getOrigin() {}
-
-	float getComparisonKey() {}
-
-	byte getLayer() {}
-
-	void show(GameScreen screen) {}
-
 	void hide(GameScreen screen) {}
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void show(GameScreen screen) {}
+
+	float getComparisonKey() {}
+
+	Origin getOrigin() {}
+
+	byte getLayer() {}
 
 	void start() {}
 
 	void stop() {}
 
-	void calculateTint(BattleEntity entity, CColor color) {}
-
-	int adjustDamage(BattleEntity entity, int damage) {}
-
-	LocalizedMessage getLoseMessage() {}
-
-	double adjustGaugeSpeed(BattleEntity entity) {}
-
-	void loot(Looter looter) {}
-
-	boolean loot() {}
-
-	boolean isRestart() {}
-
-	BattlePlayer createPlayer(BattleEntity entity) {}
-
-	void initHUD(BattleHUD hud) {}
-
-	boolean isSpawn(BattleEntity entity) {}
-
-	boolean isDespawn(BattleEntity entity) {}
+	String getDiscordMessage(Party winner) {}
 
 	boolean showStart() {}
 
-	String getBattleName(String name) {}
+	boolean isDespawn(BattleEntity entity) {}
 
-	String getDiscordMessage(Party winner) {}
+	boolean isSpawn(BattleEntity entity) {}
 
-	String createTeamName(Party party) {}
+	LocalizedMessage getLoseMessage() {}
 
-	void finish(Party winner) {}
+	int adjustDamage(BattleEntity entity, int damage) {}
+
+	double adjustGaugeSpeed(BattleEntity entity) {}
+
+	boolean isRestart() {}
+
+	void calculateTint(BattleEntity entity, CColor color) {}
+
+	boolean loot() {}
+
+	void loot(Looter looter) {}
+
+	BattlePlayer createPlayer(BattleEntity entity) {}
 
 	void sendServerUpdate(List messages) {}
 
-	void updateScoreDisplay(int amount) {}
+	String getBattleName(String name) {}
 
-	abstract String getWaveString();
+	String createTeamName(Party party) {}
+
+	void initHUD(BattleHUD hud) {}
+
+	void finish(Party winner) {}
 
 	void saveScore() {}
 
@@ -98,10 +94,14 @@ abstract ScoredBattleMode(BattleMode) {
 
 	void increaseWave() {}
 
+	abstract String getWaveString();
+
+	void setHideScore(boolean hideScore) {}
+
 	void playerHeal(BattleEntity entity, int amount) {}
 
 	void enemyHurt(BattleEntity entity, int amount) {}
 
-	void setHideScore(boolean hideScore) {}
+	void updateScoreDisplay(int amount) {}
 
 }

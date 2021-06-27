@@ -38,26 +38,26 @@ final StringCache(Object) : Paintable {
 
 	StringCache from(Fonts fontName, String string) {}
 
-	StringCache from(Fonts fontName, String string, float width) {}
-
 	StringCache from(Font font, String string, float width) {}
+
+	StringCache from(Fonts fontName, String string, float width) {}
 
 	void monoSpace() {}
 
-	void splitLines(float maxWidth) {}
-
 	void spreadLines(float maxWidth) {}
+
+	CharacterLineCache getLine(int line) {}
+
+	void drawLines(Painter params, float x, float y, int hAlign, double stateTime) {}
+
+	void updateLineOffset() {}
+
+	void splitLines(float maxWidth) {}
 
 	void updateSize() {}
 
 	void packed() {}
 
-	void drawLines(Painter params, float x, float y, int hAlign, double stateTime) {}
-
 	CharacterCache getCharacter(int character) {}
-
-	CharacterLineCache getLine(int line) {}
-
-	void updateLineOffset() {}
 
 }

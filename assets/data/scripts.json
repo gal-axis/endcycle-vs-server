@@ -6697,5 +6697,25 @@
 			}
 		}
 	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 191 },
+	"name": "punks_run",
+	"scripts": [
+		{
+			"delay": 0.6,
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "puppy", "animation": true }
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "punk1", "animation": true }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 671 }
+			}
+		}
+	]
 }
 ]

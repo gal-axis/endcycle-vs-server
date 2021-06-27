@@ -637,5 +637,67 @@
 			}
 		]
 	}
+},
+{
+	"class": "com.one2b3.endcycle.features.campaign.CampaignData",
+	"id": { "id": 6 },
+	"name": "Crimson Force",
+	"color": { "r": 0.81960785, "g": 0.105882354, "b": 0.105882354, "a": 1 },
+	"description": "Crimson Force ",
+	"character": { "id": 7 },
+	"music": { "id": 2 },
+	"nodes": [
+		{
+			"name": "Good Morning",
+			"description": "Rozu wakes up",
+			"battle": { "id": 86 },
+			"dialogue": { "id": 669 },
+			"dialogueAfter": { "id": 670 },
+			"startAfterDialogue": false,
+			"scenesAfter": [
+				{
+					"battle": { "id": 6 },
+					"scripts": {
+						"scripts": [
+							{
+								"delay": 0.5,
+								"script": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
+							},
+							{
+								"script": {
+									"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+									"speed": 0,
+									"layer": 12,
+									"color": { "r": 0.92941177, "g": 0.627451, "b": 0.10980392, "a": 0.49019608 }
+								}
+							}
+						]
+					}
+				},
+				{
+					"battle": { "id": 86 },
+					"scripts": {
+						"scripts": [
+							{
+								"script": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "puppy" }
+							},
+							{
+								"script": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "punk1" }
+							},
+							{
+								"script": {
+									"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+									"dialogue": { "id": 672 }
+								}
+							}
+						]
+					}
+				}
+			]
+		}
+	],
+	"unlockCondition": {
+		"onslaughtScore": {}
+	}
 }
 ]

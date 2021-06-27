@@ -54,25 +54,25 @@ BattleParticle(GameObject) : ShadowEntity {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void show(GameScreen screen) {}
+
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void hide(GameScreen screen) {}
-
-	void show(GameScreen screen) {}
-
-	byte getLayer() {}
 
 	final Origin getOrigin() {}
 
 	float getComparisonKey() {}
 
+	byte getLayer() {}
+
 	final void removeObject() {}
 
-	SoundContainer playSound(SoundInfo sound) {}
+	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
-	final SoundContainer playSound(Sounds sound) {}
+	SoundContainer playSound(SoundInfo sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
@@ -88,48 +88,48 @@ BattleParticle(GameObject) : ShadowEntity {
 
 	final float getHeight() {}
 
+	final void setAnimationDuration(float duration) {}
+
+	final boolean isAnimationFinished() {}
+
 	CColor calculateTint() {}
 
 	final float getXScale() {}
-
-	final boolean isFlipY() {}
-
-	final void resetAnimation() {}
-
-	final Patchwork getPatchwork() {}
-
-	final boolean inState(PatchworkStateId name) {}
-
-	boolean setState(PatchworkStateId state) {}
-
-	final boolean hasState(PatchworkStateId name) {}
-
-	final boolean isFlipX() {}
 
 	final float getYScale() {}
 
 	final void resetTint() {}
 
-	final Patchwork setPatchwork(ID id) {}
+	final Patchwork getPatchwork() {}
 
-	Patchwork setPatchwork(Patchwork patchwork) {}
+	final boolean isFlipY() {}
+
+	final boolean isFlipX() {}
+
+	final void resetAnimation() {}
+
+	final boolean hasState(PatchworkStateId name) {}
+
+	final boolean inState(PatchworkStateId name) {}
 
 	void updateGraphics(float delta) {}
 
+	boolean setState(PatchworkStateId state) {}
+
+	Patchwork setPatchwork(Patchwork patchwork) {}
+
+	final Patchwork setPatchwork(ID id) {}
+
 	void updateParticles(float delta) {}
-
-	final boolean isAnimationFinished() {}
-
-	final void setAnimationDuration(float duration) {}
 
 	List getShadowDrawables() {}
 
-	float getShadowX() {}
+	float getShadowAlpha() {}
 
 	float getShadowY() {}
 
-	float getShadowAlpha() {}
-
 	float getShadowZ() {}
+
+	float getShadowX() {}
 
 }

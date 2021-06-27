@@ -24,9 +24,9 @@ HitScanObject(Object) : ScreenObject, BannedPanelObject {
 
 	boolean isBannedPanel(BattleEntity entity, int x, int y) {}
 
-	float getBannedPanelPriority(BattleEntity entity) {}
-
 	boolean isBannedPanelRemove(BattleEntity entity) {}
+
+	float getBannedPanelPriority(BattleEntity entity) {}
 
 	void dispose() {}
 
@@ -42,23 +42,23 @@ HitScanObject(Object) : ScreenObject, BannedPanelObject {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void show(GameScreen screen) {}
+
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void hide(GameScreen screen) {}
-
-	void show(GameScreen screen) {}
-
-	byte getLayer() {}
 
 	Origin getOrigin() {}
 
 	float getComparisonKey() {}
 
+	byte getLayer() {}
+
 	void stop() {}
 
-	float getY() {}
-
 	float getX() {}
+
+	float getY() {}
 
 	void setDrawables(Drawable drawableStart, Drawable drawable, Drawable drawableEnd) {}
 

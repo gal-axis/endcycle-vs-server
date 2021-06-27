@@ -15,25 +15,25 @@ AdventureItemInventory(Object) {
 
 	void dispose() {}
 
+	void applyItems(BattlePlayer player) {}
+
+	boolean canHaveItem(AdventureItem item) {}
+
+	void increaseItemAge() {}
+
+	void removeItems(BattlePlayer player) {}
+
 	AdventureBattleItem getItem(ID id) {}
 
-	AdventureBattleItem addItem(AdventureItem item) {}
+	void removeItem(AdventureBattleItem item) {}
 
 	void removeItem(AdventureBattleItem item, BattlePlayer player) {}
 
-	void removeItem(AdventureBattleItem item) {}
+	AdventureBattleItem addItem(AdventureItem item) {}
 
 	boolean hasItem(ID id, int amount) {}
 
 	void finishZone() {}
-
-	boolean canHaveItem(AdventureItem item) {}
-
-	void removeItems(BattlePlayer player) {}
-
-	void applyItems(BattlePlayer player) {}
-
-	void increaseItemAge() {}
 
 	void applyItem(AdventureBattleItem item, BattlePlayer player) {}
 

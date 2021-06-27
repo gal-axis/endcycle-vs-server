@@ -37,14 +37,14 @@ DialogueLineDisplayer(Object) {
 
 	void updateCache(GameScreen screen) {}
 
-	boolean isDisplayingAllText() {}
-
 	boolean isSkippable() {}
+
+	void displayAllText() {}
 
 	boolean hasTimeout() {}
 
 	void setTalking(String talking) {}
 
-	void displayAllText() {}
+	boolean isDisplayingAllText() {}
 
 }

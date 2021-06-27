@@ -33,14 +33,14 @@ final ID(Object) : Comparable {
 
 	static ID temp(long id) {}
 
-	static IdEntity findObject(List list, ID id) {}
-
-	static IdEntity findObject(Array list, ID id) {}
-
 	static ID fromString(String str) {}
+
+	static int findObjectIndex(Array list, ID id) {}
 
 	static int findObjectIndex(List list, ID id) {}
 
-	static int findObjectIndex(Array list, ID id) {}
+	static IdEntity findObject(Array list, ID id) {}
+
+	static IdEntity findObject(List list, ID id) {}
 
 }

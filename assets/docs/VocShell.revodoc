@@ -22,9 +22,11 @@ final VocShell(Object) : Lootable, Serializable {
 
 	void read(Json json, JsonValue jsonData) {}
 
-	void addToInventory() {}
+	Lootable split() {}
 
 	LootDisplayer createDisplayer() {}
+
+	void addToInventory() {}
 
 	void setVoc(Voc voc) {}
 

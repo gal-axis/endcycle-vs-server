@@ -1,7 +1,7 @@
 BattleZoomProcessor(Object) : RenderProcessor {
 
 	final DrawableImage hitZoom;
-	final BattleCamera camera;
+	final Battle battle;
 	final Affine2 entityZoom;
 	final Matrix4 originalTransform;
 	BattleEntity current;
@@ -12,7 +12,7 @@ BattleZoomProcessor(Object) : RenderProcessor {
 	BoundedFloat zoom;
 	boolean hit;
 
-	new(BattleCamera camera) {}
+	new(Battle battle) {}
 
 	boolean equals(Object arg0) {}
 
@@ -26,19 +26,19 @@ BattleZoomProcessor(Object) : RenderProcessor {
 
 	void dispose() {}
 
+	void startRendering(CustomSpriteBatch batch, byte layer) {}
+
 	void updateRender(float delta) {}
 
 	void stopRendering(CustomSpriteBatch batch, byte layer) {}
-
-	void startRendering(CustomSpriteBatch batch, byte layer) {}
 
 	float getY() {}
 
 	float getX() {}
 
-	void setMaxZoom(float zoom, float speed) {}
-
 	void setCurrent(BattleEntity current, boolean hit) {}
+
+	void setMaxZoom(float zoom, float speed) {}
 
 	boolean isDone() {}
 

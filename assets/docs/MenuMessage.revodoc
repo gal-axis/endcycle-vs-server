@@ -34,31 +34,31 @@ MenuMessage(SlideInMessage) : InputListener {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void show(GameScreen screen) {}
+
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void hide(GameScreen screen) {}
-
-	void show(GameScreen screen) {}
-
-	byte getLayer() {}
 
 	final Origin getOrigin() {}
 
 	float getComparisonKey() {}
 
+	byte getLayer() {}
+
 	final void removeObject() {}
-
-	SoundContainer playSound(SoundInfo sound) {}
-
-	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	final SoundContainer playSound(Sounds sound) {}
 
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	SoundContainer playSound(SoundInfo sound) {}
+
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
-	final void removeInitializeListener(Runnable runnable) {}
-
 	final void addInitializeListener(Runnable runnable) {}
+
+	final void removeInitializeListener(Runnable runnable) {}
 
 	final void addDisposeListener(Runnable runnable) {}
 
@@ -66,50 +66,50 @@ MenuMessage(SlideInMessage) : InputListener {
 
 	void scheduleMessage(GameScreenMessage message) {}
 
+	boolean isStaying() {}
+
+	float getPosition() {}
+
 	void finish() {}
 
 	void setSpeed(float speed) {}
 
-	float getPosition() {}
-
-	boolean isStaying() {}
-
 	boolean priority() {}
-
-	boolean keyTyped(char character) {}
-
-	boolean keyUp(int keycode) {}
-
-	boolean keyDown(int keycode) {}
-
-	boolean triggerButton(ButtonEvent event) {}
-
-	boolean addButtonTips(ButtonTipList tips) {}
-
-	boolean triggerType(int character) {}
-
-	boolean triggerTouch(TouchEvent event) {}
 
 	void controllerConnected(Controller controller) {}
 
 	void controllerDisconnected(Controller controller) {}
 
+	boolean triggerType(int character) {}
+
+	boolean triggerButton(ButtonEvent event) {}
+
+	boolean keyUp(int keycode) {}
+
+	boolean keyDown(int keycode) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean keyTyped(char character) {}
+
+	boolean triggerTouch(TouchEvent event) {}
+
 	void setDefaultElement(MenuElement defaultElement) {}
 
 	MenuElement getDefaultElement() {}
 
-	void drawScreenTint(CustomSpriteBatch batch, float alpha) {}
-
-	MenuElementController getController() {}
-
-	void setElement(MenuElement menuElement) {}
-
-	MenuElement getMenuElement() {}
+	float calcOffset() {}
 
 	void drawMenu(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
+	MenuElement getMenuElement() {}
+
+	void setElement(MenuElement menuElement) {}
+
 	boolean isBackKey(ButtonEvent trigger) {}
 
-	float calcOffset() {}
+	MenuElementController getController() {}
+
+	void drawScreenTint(CustomSpriteBatch batch, float alpha) {}
 
 }

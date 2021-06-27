@@ -4,8 +4,8 @@ interface Modification {
 
 	abstract void modify(VocStyle style, AttackPlan plan);
 
-	int calculateCrush(AttackShell shell, int crush) {}
-
 	int calculatePower(AttackShell shell, int power) {}
+
+	int calculateCrush(AttackShell shell, int crush) {}
 
 }

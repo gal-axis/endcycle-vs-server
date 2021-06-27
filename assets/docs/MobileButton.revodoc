@@ -8,9 +8,9 @@ interface MobileButton {
 
 	abstract void draw(CustomSpriteBatch batch, float xOfs, float yOfs);
 
-	abstract boolean touch(TouchEvent trigger);
-
 	void button(ButtonEvent trigger) {}
+
+	abstract boolean touch(TouchEvent trigger);
 
 	static void pressButtons(BattlePlayer player, KeyCode[] keyCodes) {}
 

@@ -3886,6 +3886,7 @@
 			"y": 8,
 			"turned": true,
 			"vital": false,
+			"party": "NEUTRAL",
 			"name": "Yellow C",
 			"id": { "id": 47 },
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Yellow D" },
@@ -3914,6 +3915,7 @@
 			"y": 3,
 			"turned": true,
 			"vital": false,
+			"party": "NEUTRAL",
 			"name": "Yellow D",
 			"id": { "id": 47 },
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Yellow C" },
@@ -3942,6 +3944,7 @@
 			"y": 12,
 			"turned": true,
 			"vital": false,
+			"party": "NEUTRAL",
 			"name": "Yellow B",
 			"id": { "id": 47 },
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Yellow A" },
@@ -3970,6 +3973,7 @@
 			"y": 17,
 			"turned": true,
 			"vital": false,
+			"party": "NEUTRAL",
 			"name": "Yellow A",
 			"id": { "id": 47 },
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Yellow B" },
@@ -3997,6 +4001,7 @@
 			"x": 4,
 			"y": 12,
 			"vital": false,
+			"party": "NEUTRAL",
 			"name": "Purple B",
 			"id": { "id": 47 },
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Purple A" },
@@ -4024,6 +4029,7 @@
 			"x": 4,
 			"y": 8,
 			"vital": false,
+			"party": "NEUTRAL",
 			"name": "Purple C",
 			"id": { "id": 47 },
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Purple D" },
@@ -4050,6 +4056,7 @@
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
 			"y": 3,
 			"vital": false,
+			"party": "NEUTRAL",
 			"name": "Purple D",
 			"id": { "id": 47 },
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Purple C" },
@@ -4076,6 +4083,7 @@
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
 			"y": 17,
 			"vital": false,
+			"party": "NEUTRAL",
 			"name": "Purple A",
 			"id": { "id": 47 },
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Purple B" },
@@ -5422,7 +5430,8 @@
 						"items": [ null, null, null, null ]
 					}
 				]
-			}
+			},
+			"type": "GHOST"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
@@ -5447,7 +5456,8 @@
 						"items": [ null, null, null, null ]
 					}
 				]
-			}
+			},
+			"type": "GHOST"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
@@ -5472,7 +5482,8 @@
 						"items": [ null, null, null, null ]
 					}
 				]
-			}
+			},
+			"type": "GHOST"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
@@ -5498,7 +5509,8 @@
 						"items": [ null, null, null, null ]
 					}
 				]
-			}
+			},
+			"type": "GHOST"
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.SpawnedEntityShell",
@@ -6928,6 +6940,45 @@
 			"name": "del",
 			"parent": "",
 			"form": { "id": 47 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 86 },
+	"dataName": "CrimsonForce C1",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "" },
+	"field": { "id": 17 },
+	"background": { "id": 15 },
+	"music": { "id": 31 },
+	"entityShells": [
+		{ "class": "com.one2b3.endcycle.features.battle.EntityFormShell", "x": 1, "y": 1, "party": "FRIENDLY", "player": true, "name": "player" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"turned": true,
+			"name": "cress",
+			"form": { "id": 49 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 5,
+			"turned": true,
+			"vital": false,
+			"preview": false,
+			"name": "punk1",
+			"form": { "id": 50 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 5,
+			"y": 2,
+			"turned": true,
+			"vital": false,
+			"preview": false,
+			"name": "puppy",
+			"form": { "id": 51 }
 		}
 	]
 }

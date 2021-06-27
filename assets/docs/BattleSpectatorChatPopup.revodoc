@@ -26,25 +26,25 @@ BattleSpectatorChatPopup(ChatPopup) {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void show(GameScreen screen) {}
+
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void hide(GameScreen screen) {}
 
-	void show(GameScreen screen) {}
-
-	byte getLayer() {}
+	float getComparisonKey() {}
 
 	final Origin getOrigin() {}
 
-	float getComparisonKey() {}
+	byte getLayer() {}
 
 	final void removeObject() {}
 
-	final SoundContainer playSound(Sounds sound) {}
+	SoundContainer playSound(SoundInfo sound) {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
-	SoundContainer playSound(SoundInfo sound) {}
+	final SoundContainer playSound(Sounds sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
@@ -52,17 +52,11 @@ BattleSpectatorChatPopup(ChatPopup) {
 
 	boolean priority() {}
 
-	void controllerDisconnected(Controller controller) {}
-
 	void controllerConnected(Controller controller) {}
 
-	boolean triggerTouch(TouchEvent event) {}
-
-	boolean keyDown(int keycode) {}
+	void controllerDisconnected(Controller controller) {}
 
 	boolean keyTyped(char character) {}
-
-	boolean keyUp(int keycode) {}
 
 	boolean triggerButton(ButtonEvent event) {}
 
@@ -70,30 +64,36 @@ BattleSpectatorChatPopup(ChatPopup) {
 
 	boolean addButtonTips(ButtonTipList tips) {}
 
+	boolean triggerTouch(TouchEvent event) {}
+
+	boolean keyUp(int keycode) {}
+
+	boolean keyDown(int keycode) {}
+
 	void stop() {}
 
-	void hide() {}
+	void setChatController(ChatController controller) {}
 
 	void show() {}
 
+	void hide() {}
+
 	float getButtonSize() {}
-
-	boolean showingChat() {}
-
-	float getButtonX(float size) {}
-
-	boolean isChatting() {}
-
-	float getButtonY(float size) {}
 
 	void showTemporary() {}
 
 	ChatBox getChatBox() {}
 
-	VsChatDisplay getChatDisplay() {}
+	float getButtonX(float size) {}
 
 	void updateHide(float delta) {}
 
-	void setChatController(VsChatController controller) {}
+	boolean showingChat() {}
+
+	float getButtonY(float size) {}
+
+	ChatDisplay getChatDisplay() {}
+
+	boolean isChatting() {}
 
 }

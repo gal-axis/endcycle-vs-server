@@ -33,11 +33,11 @@ HumidityAttack(Attack) : AttackEffect {
 
 	Attack clone() {}
 
-	boolean isActionRollback(Object[] action) {}
+	final void actionTriggered(Runnable action) {}
 
 	void actionTriggered(Object[] action) {}
 
-	final void actionTriggered(Runnable action) {}
+	boolean isActionRollback(Object[] action) {}
 
 	boolean priority() {}
 
@@ -45,19 +45,19 @@ HumidityAttack(Attack) : AttackEffect {
 
 	void controllerConnected(Controller controller) {}
 
-	boolean triggerTouch(TouchEvent event) {}
-
-	boolean keyDown(int keycode) {}
+	boolean triggerType(int character) {}
 
 	boolean keyTyped(char character) {}
 
-	boolean keyUp(int keycode) {}
+	boolean keyDown(int keycode) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean triggerTouch(TouchEvent event) {}
 
 	boolean triggerButton(ButtonEvent event) {}
 
-	boolean triggerType(int character) {}
-
-	boolean addButtonTips(ButtonTipList tips) {}
+	boolean keyUp(int keycode) {}
 
 	String getName() {}
 
@@ -79,13 +79,15 @@ HumidityAttack(Attack) : AttackEffect {
 
 	final float getX(int xTile) {}
 
-	void finish() {}
+	void setAnimationDuration(float duration) {}
 
 	boolean active() {}
 
 	SoundContainer playSound(SoundInfo sound) {}
 
-	void setAnimationDuration(float duration) {}
+	void finish() {}
+
+	final void triggerAction(Object[] parameters) {}
 
 	void attackAnimation() {}
 
@@ -93,51 +95,49 @@ HumidityAttack(Attack) : AttackEffect {
 
 	final Origin getOrigin(int index) {}
 
-	final void triggerAction(Object[] parameters) {}
-
 	final Controller getController() {}
 
 	boolean fillGauges() {}
 
-	final int getXTile() {}
-
 	final int getYTile() {}
+
+	final int getXTile() {}
 
 	Attack charge() {}
 
-	void runAction(int action) {}
+	void increaseGauge(double amount) {}
 
-	AttackPortal getPortal(BattleEntity entity, float portalX, float portalY, float time) {}
+	double getGaugeProgress() {}
 
 	boolean reduceGauge() {}
 
 	boolean reduceGauge(double amount) {}
 
-	boolean acceptsInput(ButtonEvent event) {}
-
-	Attack getWrapped(AttackShellWrapper wrapper, boolean shareHit, boolean gauge) {}
+	void scheduleAction(Runnable action, float delay) {}
 
 	void scheduleAction(int action, float delay) {}
 
-	void scheduleAction(Runnable action, float delay) {}
+	void runAction(int action) {}
 
-	void addWrappers(Array wrappers) {}
-
-	void increaseGauge(double amount) {}
-
-	final int getXTileInFront() {}
+	AttackPortal getPortal(BattleEntity entity, float portalX, float portalY, float time) {}
 
 	final int getTurn() {}
 
-	double getGaugeProgress() {}
+	final int getXTileInFront() {}
+
+	boolean acceptsInput(ButtonEvent event) {}
+
+	void addWrappers(Array wrappers) {}
+
+	Attack getWrapped(AttackShellWrapper wrapper, boolean shareHit, boolean gauge) {}
 
 	void updateAttackTasks(float delta) {}
 
-	void setAnimationState(PatchworkStateId state) {}
+	final BattleEntityList getBattleEntities() {}
 
 	boolean hasAnimationState(PatchworkStateId state) {}
 
-	final BattleEntityList getBattleEntities() {}
+	void setAnimationState(PatchworkStateId state) {}
 
 	void hit(BattleEntity parent, OwnedHitProperty property, BattleEntityList hitEntities, Party party, int xTile, int yTile, boolean turned) {}
 

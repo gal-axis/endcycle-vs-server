@@ -23,16 +23,16 @@ BattlePlayerNetStatus(Object) : GameObjectParticle {
 
 	void init() {}
 
-	void draw(CustomSpriteBatch batch, float x, float y, float xScale, float yScale, CColor color) {}
-
 	void dispose() {}
+
+	void draw(CustomSpriteBatch batch, float x, float y, float xScale, float yScale, CColor color) {}
 
 	int getOrder() {}
 
 	void disconnected() {}
 
-	void reconnected() {}
-
 	void setChatting(boolean chatting) {}
+
+	void reconnected() {}
 
 }

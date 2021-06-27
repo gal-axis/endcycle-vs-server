@@ -1,5 +1,7 @@
 interface Lootable {
 
+	Lootable split() {}
+
 	abstract void addToInventory();
 
 	abstract LootDisplayer createDisplayer();

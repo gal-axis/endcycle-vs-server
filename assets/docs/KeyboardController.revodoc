@@ -14,28 +14,28 @@ final KeyboardController(Object) : Controller {
 
 	boolean isConnected() {}
 
-	int getMaxButtonIndex() {}
+	int getAxisCount() {}
 
-	boolean supportsPlayerIndex() {}
-
-	int getMinButtonIndex() {}
-
-	void cancelVibration() {}
-
-	boolean getButton(int buttonCode) {}
+	String getUniqueId() {}
 
 	boolean isVibrating() {}
-
-	int getAxisCount() {}
 
 	boolean canVibrate() {}
 
 	void startVibration(int duration, float strength) {}
 
+	boolean getButton(int buttonCode) {}
+
 	float getAxis(int axisCode) {}
+
+	void cancelVibration() {}
 
 	void setPlayerIndex(int index) {}
 
-	String getUniqueId() {}
+	boolean supportsPlayerIndex() {}
+
+	int getMinButtonIndex() {}
+
+	int getMaxButtonIndex() {}
 
 }

@@ -12,18 +12,18 @@ MenuCursor(Object) {
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void syncCursor() {}
-
 	void click() {}
 
-	Rectangle getCursor() {}
-
-	void updateElement() {}
+	void syncCursor() {}
 
 	void setNew(MenuElement selected) {}
 
 	void resetCursor() {}
 
+	void updateElement() {}
+
 	boolean finishedTransition() {}
+
+	Rectangle getCursor() {}
 
 }

@@ -33,38 +33,38 @@ BattleMinimap(HUDButton) {
 
 	boolean isHidden() {}
 
-	void event(GameEvent event) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	float getX() {}
 
 	float getY() {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	float calcX() {}
+
+	float calcY() {}
+
+	void event(GameEvent event) {}
 
 	void button(ButtonEvent trigger) {}
 
 	boolean touch(TouchEvent trigger) {}
 
-	float calcX() {}
-
-	float calcY() {}
-
-	boolean increaseOffset() {}
-
-	void finishMoving() {}
-
 	boolean finishedMoving() {}
 
 	boolean isTouching(float x, float y) {}
 
+	void finishMoving() {}
+
 	float getMove() {}
 
-	void drawBackground(CustomSpriteBatch batch, float xOfs, float yOfs, boolean full, float width, float height) {}
+	boolean increaseOffset() {}
 
 	float getCameraX() {}
 
-	void drawMinimap(CustomSpriteBatch batch, float xOfs, float yOfs, boolean full) {}
-
 	float getCameraY() {}
+
+	void drawBackground(CustomSpriteBatch batch, float xOfs, float yOfs, boolean full, float width, float height) {}
+
+	void drawMinimap(CustomSpriteBatch batch, float xOfs, float yOfs, boolean full) {}
 
 }

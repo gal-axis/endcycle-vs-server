@@ -33,9 +33,9 @@ final Voc(Moddable) : DataName {
 
 	String name() {}
 
-	int getSlot() {}
-
 	int getSlot(VocStyle style) {}
+
+	int getSlot() {}
 
 	String getDescription() {}
 
@@ -49,12 +49,14 @@ final Voc(Moddable) : DataName {
 
 	int getLevel(VocStyle style) {}
 
-	int getPower(VocStyle style) {}
-
 	int getPower() {}
+
+	int getPower(VocStyle style) {}
 
 	int getCrushPower() {}
 
 	int getCrushPower(VocStyle style) {}
+
+	int getDefaultPrice() {}
 
 }

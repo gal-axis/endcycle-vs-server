@@ -18,23 +18,23 @@ LandscapeInteractButton(PortraitInteractButton) {
 
 	boolean priority() {}
 
-	boolean keyTyped(char character) {}
+	void controllerConnected(Controller controller) {}
+
+	void controllerDisconnected(Controller controller) {}
+
+	boolean triggerType(int character) {}
+
+	boolean triggerButton(ButtonEvent event) {}
 
 	boolean keyUp(int keycode) {}
 
 	boolean keyDown(int keycode) {}
 
-	boolean triggerButton(ButtonEvent event) {}
-
 	boolean addButtonTips(ButtonTipList tips) {}
 
-	boolean triggerType(int character) {}
+	boolean keyTyped(char character) {}
 
 	boolean triggerTouch(TouchEvent event) {}
-
-	void controllerConnected(Controller controller) {}
-
-	void controllerDisconnected(Controller controller) {}
 
 	void update(float delta) {}
 
@@ -42,18 +42,18 @@ LandscapeInteractButton(PortraitInteractButton) {
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	boolean touch(TouchEvent trigger) {}
-
 	void button(ButtonEvent trigger) {}
 
-	float getY() {}
+	boolean touch(TouchEvent trigger) {}
 
 	float getX() {}
 
+	float getY() {}
+
 	boolean isTouching(int posX, int posY) {}
 
-	float getSizeX() {}
-
 	float getSizeY() {}
+
+	float getSizeX() {}
 
 }

@@ -1,0 +1,213 @@
+InventoryButton(MenuButton) : MenuButtonAction {
+
+	Origin origin;
+	GameScreen screen;
+	boolean showing;
+
+	new() {}
+
+	final boolean equals(Object obj) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	void dispose() {}
+
+	void update(float delta) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void show(GameScreen screen) {}
+
+	void hide(GameScreen screen) {}
+
+	void draw(CustomSpriteBatch batch, float x, float y) {}
+
+	float getComparisonKey() {}
+
+	final Origin getOrigin() {}
+
+	byte getLayer() {}
+
+	final void removeObject() {}
+
+	final SoundContainer playSound(Sounds sound) {}
+
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	SoundContainer playSound(SoundInfo sound) {}
+
+	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
+
+	void actionTriggered(MenuElementAction action) {}
+
+	MenuElementGroup getParent() {}
+
+	MenuElement setParent(MenuElementGroup parent) {}
+
+	void calculateSize() {}
+
+	boolean select() {}
+
+	float getX() {}
+
+	float getY() {}
+
+	MenuElement setEnabled(boolean enabled) {}
+
+	float getHeight() {}
+
+	float getWidth() {}
+
+	MenuElement setHeight(float height) {}
+
+	MenuElement setLayer(byte layer) {}
+
+	MenuElement getAbsoluteParent() {}
+
+	final void triggerAction(MenuElementActionType type) {}
+
+	boolean touch(TouchEvent trigger) {}
+
+	MenuElement setX(float x) {}
+
+	MenuElement setY(float y) {}
+
+	MenuElement setWidth(float width) {}
+
+	float calcY() {}
+
+	float calcX() {}
+
+	MenuButtonAction getAction() {}
+
+	MenuElement setFocusable(boolean focusable) {}
+
+	MenuElement setHidden(boolean hidden) {}
+
+	MenuElement setFocused(boolean focused) {}
+
+	boolean isEnabled() {}
+
+	MenuElement setAnchorVAlign(int anchorVAlign) {}
+
+	MenuElement setHAlign(int hAlign) {}
+
+	int getAnchorVAlign() {}
+
+	boolean isAbsoluteHidden() {}
+
+	boolean canDrawCursor() {}
+
+	MenuElement setAnchorHAlign(int anchorHAlign) {}
+
+	float getAbsoluteY() {}
+
+	MenuButtonTips getButtonTips() {}
+
+	MenuElement setVAlign(int vAlign) {}
+
+	boolean isFocusable() {}
+
+	int getHAlign() {}
+
+	MenuElement getAnchor() {}
+
+	MenuElement setAnchor(MenuElement anchor) {}
+
+	float getAbsoluteX() {}
+
+	int getVAlign() {}
+
+	boolean isFocused() {}
+
+	void setCursor(Rectangle rectangle) {}
+
+	void addElements(Array elements, float x, float y) {}
+
+	int getAnchorHAlign() {}
+
+	final void setMenuControllerSelection(MenuElement element) {}
+
+	Set getActionListeners() {}
+
+	boolean isTouching(float x, float y) {}
+
+	MenuButton setAction(MenuButtonAction action) {}
+
+	String getText() {}
+
+	MenuButton setText(String text) {}
+
+	MenuElement setSelected(boolean selected) {}
+
+	MenuButton setBackground(MenuThemeDrawable background) {}
+
+	Color getColor() {}
+
+	void setColor(CustomSpriteBatch batch) {}
+
+	Drawable getDrawable() {}
+
+	MenuButton setDrawable(Drawable drawable) {}
+
+	Fonts getFont() {}
+
+	void click() {}
+
+	void drawBackground(CustomSpriteBatch batch, float x, float y, float width, float height) {}
+
+	void drawButton(CustomSpriteBatch batch, float x, float y, float width, float height) {}
+
+	MenuButton setFont(Fonts font) {}
+
+	MenuThemeDrawable getBackground() {}
+
+	void drawOverlay(CustomSpriteBatch batch, float x, float y, float width, float height) {}
+
+	boolean isSelected() {}
+
+	void updateText() {}
+
+	MenuElementShowAnim getShowAnimation() {}
+
+	MenuButton setDisabledColor(Color disabledColor) {}
+
+	void drawDrawable(Painter painter) {}
+
+	MenuButton setDefaultColor(Color defaultColor) {}
+
+	MenuButton setSelectedColor(Color selectedColor) {}
+
+	MenuButton setSingleClick(boolean singleClick) {}
+
+	BoundedFloat getTaint() {}
+
+	BoundedFloat getTaintDisabled() {}
+
+	MenuButtonClickedAnimation getAnimation() {}
+
+	Color getDisabledColor() {}
+
+	Color getDefaultColor() {}
+
+	Color getSelectedColor() {}
+
+	boolean isSingleClick() {}
+
+	boolean isDisableBackground() {}
+
+	MenuButton setDisableBackground(boolean disableBackground) {}
+
+	void onClick() {}
+
+}

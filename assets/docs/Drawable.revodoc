@@ -46,33 +46,33 @@ Drawable(Object) : Paintable {
 
 	void draw(Batch batch, float posX, float posY, int hAlign, int vAlign) {}
 
-	void draw(Batch batch, float posX, float posY, double animState) {}
-
 	void draw(Batch batch, float posX, float posY) {}
-
-	void draw(Batch batch, float posX, float posY, Color tint) {}
-
-	void draw(Batch batch, float posX, float posY, float scaleX, float scaleY, double animState, int hAlign, int vAlign, Color tint) {}
 
 	void draw(Batch batch, float posX, float posY, float scaleX, float scaleY) {}
 
-	float getWidth() {}
+	void draw(Batch batch, float posX, float posY, Color tint) {}
+
+	void draw(Batch batch, float posX, float posY, double animState) {}
+
+	void draw(Batch batch, float posX, float posY, float scaleX, float scaleY, double animState, int hAlign, int vAlign, Color tint) {}
 
 	float getWidth(double animState) {}
+
+	float getWidth() {}
 
 	float getHeight(double animState) {}
 
 	float getHeight() {}
 
-	float getYPosition(float y, float scaleY, double animState, int vAlign) {}
+	double getAnimationDuration() {}
 
 	float getXPosition(float x, float scaleX, double animState, int hAlign) {}
 
-	Drawable setTint(Color color) {}
+	float getYPosition(float y, float scaleY, double animState, int vAlign) {}
 
 	Drawable setTint(float r, float g, float b, float a) {}
 
-	double getAnimationDuration() {}
+	Drawable setTint(Color color) {}
 
 	Drawable setScale(float scale) {}
 
@@ -80,12 +80,12 @@ Drawable(Object) : Paintable {
 
 	Drawable setScaleFromSize(float width, float height, boolean aspect) {}
 
-	int getFrames() {}
-
-	double getFrameDuration() {}
+	Drawable setScaleFromWidth(float width) {}
 
 	Drawable setScaleFromHeight(float height) {}
 
-	Drawable setScaleFromWidth(float width) {}
+	double getFrameDuration() {}
+
+	int getFrames() {}
 
 }

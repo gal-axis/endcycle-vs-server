@@ -321,7 +321,7 @@
 		}
 	],
 	"acts": [
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.3 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10034 }
@@ -366,7 +366,7 @@
 		}
 	],
 	"acts": [
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.3 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10034 }
@@ -1550,33 +1550,19 @@
 	"name": "Agent Alone",
 	"target": {
 		"party": "ENEMY",
+		"inSight": false,
 		"invert": true,
 		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
 	},
 	"acts": [
-		{
-			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
-			"moveType": "ANIMATED_TILE",
-			"yTile": 1,
-			"target": {
-				"party": "ENEMY",
-				"invert": true,
-				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
-			}
-		},
-		{
-			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TOWARD_TARGET",
-			"target": {
-				"party": "ENEMY",
-				"invert": true,
-				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
-			}
-		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1, "relation": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.9 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 12 }
-		}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 }
 	]
 },
 {

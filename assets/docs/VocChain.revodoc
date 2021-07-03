@@ -13,20 +13,20 @@ VocChain(Object) {
 
 	int hashCode() {}
 
-	VocSet getVocs(int set) {}
-
 	boolean setCurrent(int current, boolean taint) {}
 
 	Color getColor(int set) {}
 
 	Battle getBattle() {}
 
-	void setVocPack(VocPack pack) {}
+	VocSet getCurrentVocs() {}
 
 	boolean moveCurrent(int offset) {}
 
-	VocSet getCurrentVocs() {}
+	void setVocPack(VocPack pack) {}
 
-	int getPackAmount() {}
+	int getSetAmount() {}
+
+	VocSet getVocs(int set) {}
 
 }

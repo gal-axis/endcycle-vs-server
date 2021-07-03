@@ -12,21 +12,25 @@ MockTexture(Texture) {
 
 	void dispose() {}
 
+	int getWidth() {}
+
 	int getHeight() {}
 
-	int getWidth() {}
+	void bind(int unit) {}
+
+	void bind() {}
+
+	void setFilter(TextureFilter arg0, TextureFilter arg1) {}
+
+	int getDepth() {}
 
 	TextureFilter getMinFilter() {}
 
 	TextureFilter getMagFilter() {}
 
-	void bind() {}
-
-	void bind(int unit) {}
-
-	int getDepth() {}
-
 	int getTextureObjectHandle() {}
+
+	float getAnisotropicFilter() {}
 
 	float unsafeSetAnisotropicFilter(float arg0) {}
 
@@ -34,13 +38,11 @@ MockTexture(Texture) {
 
 	float setAnisotropicFilter(float arg0) {}
 
-	float getAnisotropicFilter() {}
-
-	void setFilter(TextureFilter arg0, TextureFilter arg1) {}
-
 	void setWrap(TextureWrap arg0, TextureWrap arg1) {}
 
-	TextureWrap getVWrap() {}
+	void unsafeSetFilter(TextureFilter arg0, TextureFilter arg1, boolean arg2) {}
+
+	void unsafeSetFilter(TextureFilter arg0, TextureFilter arg1) {}
 
 	void unsafeSetWrap(TextureWrap arg0, TextureWrap arg1) {}
 
@@ -50,9 +52,7 @@ MockTexture(Texture) {
 
 	TextureWrap getUWrap() {}
 
-	void unsafeSetFilter(TextureFilter arg0, TextureFilter arg1) {}
-
-	void unsafeSetFilter(TextureFilter arg0, TextureFilter arg1, boolean arg2) {}
+	TextureWrap getVWrap() {}
 
 	void load(TextureData data) {}
 

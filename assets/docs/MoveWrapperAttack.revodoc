@@ -38,6 +38,7 @@ MoveWrapperAttack(WrapperAttack) : BECondition {
 	int originalY;
 	boolean turned;
 	boolean moved;
+	boolean finished;
 	Mover mover;
 	List events;
 
@@ -53,11 +54,11 @@ MoveWrapperAttack(WrapperAttack) : BECondition {
 
 	Attack clone() {}
 
-	final void actionTriggered(Runnable action) {}
+	boolean isActionRollback(Object[] action) {}
 
 	void actionTriggered(Object[] action) {}
 
-	boolean isActionRollback(Object[] action) {}
+	final void actionTriggered(Runnable action) {}
 
 	boolean priority() {}
 
@@ -65,19 +66,19 @@ MoveWrapperAttack(WrapperAttack) : BECondition {
 
 	void controllerDisconnected(Controller controller) {}
 
-	boolean triggerType(int character) {}
+	boolean keyUp(int keycode) {}
 
 	boolean triggerButton(ButtonEvent event) {}
 
-	boolean keyUp(int keycode) {}
-
-	boolean keyDown(int keycode) {}
+	boolean triggerTouch(TouchEvent event) {}
 
 	boolean addButtonTips(ButtonTipList tips) {}
 
+	boolean keyDown(int keycode) {}
+
 	boolean keyTyped(char character) {}
 
-	boolean triggerTouch(TouchEvent event) {}
+	boolean triggerType(int character) {}
 
 	String getName() {}
 
@@ -95,29 +96,31 @@ MoveWrapperAttack(WrapperAttack) : BECondition {
 
 	void flip() {}
 
-	final float getX(int xTile) {}
-
 	final float getY(int yTile) {}
 
+	final float getX(int xTile) {}
+
+	boolean acceptsInput(ButtonEvent event) {}
+
 	void setAnimationDuration(float duration) {}
+
+	boolean active() {}
 
 	SoundContainer playSound(SoundInfo sound) {}
 
 	void finish() {}
 
-	boolean active() {}
-
 	final void triggerAction(Object[] parameters) {}
-
-	void castAnimation() {}
 
 	void attackAnimation() {}
 
+	void castAnimation() {}
+
 	final Origin getOrigin(int index) {}
 
-	final Controller getController() {}
-
 	boolean fillGauges() {}
+
+	final Controller getController() {}
 
 	final int getYTile() {}
 
@@ -125,47 +128,45 @@ MoveWrapperAttack(WrapperAttack) : BECondition {
 
 	Attack charge() {}
 
-	void updateAttackTasks(float delta) {}
+	Attack getWrapped(AttackShellWrapper wrapper, boolean shareHit, boolean gauge) {}
 
 	final BattleEntityList getBattleEntities() {}
 
-	boolean hasAnimationState(PatchworkStateId state) {}
-
 	void setAnimationState(PatchworkStateId state) {}
 
-	double getGaugeProgress() {}
+	void updateAttackTasks(float delta) {}
 
-	boolean acceptsInput(ButtonEvent event) {}
-
-	final int getTurn() {}
-
-	boolean reduceGauge() {}
-
-	boolean reduceGauge(double amount) {}
-
-	void runAction(int action) {}
+	boolean hasAnimationState(PatchworkStateId state) {}
 
 	void addWrappers(Array wrappers) {}
 
-	final int getXTileInFront() {}
+	AttackPortal getPortal(BattleEntity entity, float portalX, float portalY, float time) {}
 
-	void scheduleAction(int action, float delay) {}
+	boolean reduceGauge(double amount) {}
+
+	boolean reduceGauge() {}
+
+	double getGaugeProgress() {}
+
+	void runAction(int action) {}
 
 	void scheduleAction(Runnable action, float delay) {}
 
+	void scheduleAction(int action, float delay) {}
+
+	final int getTurn() {}
+
+	final int getXTileInFront() {}
+
 	void increaseGauge(double amount) {}
-
-	Attack getWrapped(AttackShellWrapper wrapper, boolean shareHit, boolean gauge) {}
-
-	AttackPortal getPortal(BattleEntity entity, float portalX, float portalY, float time) {}
-
-	boolean isWrappedStarted() {}
 
 	void finishWrapped() {}
 
-	void createAttack() {}
-
 	boolean updateWrapped(float delta) {}
+
+	boolean isWrappedStarted() {}
+
+	void createAttack() {}
 
 	void startWrapped() {}
 

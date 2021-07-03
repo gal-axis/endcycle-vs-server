@@ -34,62 +34,62 @@ final PlayerProgress(Object) {
 
 	void merge(PlayerProgress progress) {}
 
-	boolean isBestScore(GameDifficulty difficulty, boolean coop, int score) {}
-
-	boolean isBestWave(GameDifficulty difficulty, boolean coop, int wave) {}
+	boolean isCharacterUnlocked(ID id) {}
 
 	float completeCampaign(CampaignData campaign, double time, List scores) {}
 
 	void clearAdventure(AdventurePath adventure) {}
 
-	boolean isCharacterUnlocked(ID id) {}
+	boolean isBestWave(GameDifficulty difficulty, boolean coop, int wave) {}
+
+	boolean isBestScore(GameDifficulty difficulty, boolean coop, int score) {}
+
+	void saveLocal() {}
+
+	void increaseAffinity(ID id, float amount) {}
+
+	Array checkNewThemes() {}
+
+	void checkNew() {}
+
+	boolean buyCharacter(BattleEntityData entity) {}
+
+	void cheat() {}
+
+	boolean isThemeUnlocked(ID id) {}
 
 	boolean isAdventureCleared(ID id) {}
 
 	boolean isCampaignUnlocked(ID id) {}
 
-	Array checkNewCampaigns() {}
-
-	List getAffinityEntries() {}
-
-	boolean[] completeOnslaught(GameDifficulty difficulty, boolean coop, int score, int wave) {}
-
-	void addDefeatedCredit(String name) {}
-
 	List getUnlockedCharacters() {}
 
-	boolean isAdventureEventEncountered(ID id) {}
+	Array checkNewCustomizations() {}
 
-	boolean isAffinityEntryUnlocked(ID id) {}
+	Array checkNewCampaigns() {}
 
 	boolean checkNewAffinities() {}
 
 	Array checkNewCharacters() {}
 
+	List getAffinityEntries() {}
+
+	void addDefeatedCredit(String name) {}
+
 	List getUnlockedThemes() {}
 
-	Array checkNewCustomizations() {}
+	boolean isAdventureEventEncountered(ID id) {}
+
+	boolean[] completeOnslaught(GameDifficulty difficulty, boolean coop, int score, int wave) {}
+
+	boolean isAffinityEntryUnlocked(ID id) {}
 
 	boolean isCharacterCustomizationUnlocked(ID id) {}
-
-	List getUnlockedCampaigns() {}
 
 	void clearAdventureZone(AdventureZone zone) {}
 
 	void adventureEventEncountered(AdventureEvent event) {}
 
-	void saveLocal() {}
-
-	void cheat() {}
-
-	Array checkNewThemes() {}
-
-	boolean buyCharacter(BattleEntityData entity) {}
-
-	void checkNew() {}
-
-	boolean isThemeUnlocked(ID id) {}
-
-	void increaseAffinity(ID id, float amount) {}
+	List getUnlockedCampaigns() {}
 
 }

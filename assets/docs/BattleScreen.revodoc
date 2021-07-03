@@ -41,67 +41,71 @@ BattleScreen(GameScreen) : InputListener {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void removeRenderProcessor(RenderProcessor renderProcessor) {}
-
-	void setPreviousScreen(GameScreen previousScreen) {}
-
-	Array getRenderProcessors() {}
-
-	GameScreen getPreviousScreen() {}
-
-	void addRenderProcessor(RenderProcessor renderProcessor) {}
-
-	void setScreen(GameScreen screen, FadeType fade) {}
-
-	void setScreen(GameScreen screen, FadeType fade, boolean changesBefore) {}
-
-	void setScreen(GameScreen screen) {}
-
-	boolean isCurrentScreen() {}
+	void dispose() {}
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void draw(CustomSpriteBatch batch) {}
 
-	void clearObjects() {}
-
-	void render(float delta) {}
-
-	void shakeVibrate(float x, float y, float duration) {}
-
 	void toPreviousScreen() {}
 
 	void toPreviousScreen(FadeType type) {}
 
-	void show() {}
-
-	ScreenObject addObject(ScreenObject object) {}
-
-	void hide() {}
-
-	void dispose() {}
-
-	boolean removeObject(ScreenObject object) {}
-
-	Array getObjects() {}
-
-	void resetShake() {}
-
-	void changeTo(GameScreen screen, boolean init) {}
-
 	void updateTimer(float delta) {}
 
-	void updateObjects(float delta) {}
-
-	boolean isShaking() {}
-
-	void drawButtonTips(CustomSpriteBatch batch, float x, float y) {}
-
-	void updateShake(float delta) {}
+	void changeFrom(GameScreen screen, boolean init) {}
 
 	void shake(float x, float y, float duration) {}
 
-	void changeFrom(GameScreen screen, boolean init) {}
+	void shakeVibrate(float x, float y, float duration) {}
+
+	void show() {}
+
+	Array getObjects() {}
+
+	void hide() {}
+
+	boolean removeObject(ScreenObject object) {}
+
+	void render(float delta) {}
+
+	void changeTo(GameScreen screen, boolean init) {}
+
+	void updateShake(float delta) {}
+
+	ScreenObject addObject(ScreenObject object) {}
+
+	boolean isCurrentScreen() {}
+
+	boolean isShaking() {}
+
+	void resetShake() {}
+
+	void drawButtonTips(CustomSpriteBatch batch, float x, float y) {}
+
+	void updateObjects(float delta) {}
+
+	void clearObjects() {}
+
+	void setScreen(GameScreen screen) {}
+
+	void setScreen(GameScreen screen, FadeType fade) {}
+
+	void setScreen(GameScreen screen, FadeType fade, boolean changesBefore) {}
+
+	void addRenderProcessor(RenderProcessor renderProcessor) {}
+
+	void removeRenderProcessor(RenderProcessor renderProcessor) {}
+
+	void setPreviousScreen(GameScreen previousScreen) {}
+
+	GameScreen getPreviousScreen() {}
+
+	Array getRenderProcessors() {}
+
+	boolean isLoading() {}
+
+	void addScript(Script script, float delay) {}
 
 	void resetTimer() {}
 
@@ -109,19 +113,13 @@ BattleScreen(GameScreen) : InputListener {
 
 	void pause() {}
 
-	boolean isLoading() {}
-
-	void addScript(Script script, float delay) {}
-
 	boolean priority() {}
 
-	boolean keyTyped(char character) {}
+	void controllerConnected(Controller controller) {}
 
-	boolean keyDown(int keycode) {}
+	void controllerDisconnected(Controller controller) {}
 
 	boolean keyUp(int keycode) {}
-
-	boolean triggerType(int character) {}
 
 	boolean triggerButton(ButtonEvent event) {}
 
@@ -129,25 +127,27 @@ BattleScreen(GameScreen) : InputListener {
 
 	boolean addButtonTips(ButtonTipList tips) {}
 
-	void controllerConnected(Controller controller) {}
+	boolean keyDown(int keycode) {}
 
-	void controllerDisconnected(Controller controller) {}
+	boolean keyTyped(char character) {}
+
+	boolean triggerType(int character) {}
 
 	void showBattleOverMessage(Party winner, LocalizedMessage message) {}
-
-	void loadBattle() {}
-
-	void restart() {}
-
-	void goToNext() {}
-
-	void showWinMessage(Party winner) {}
-
-	void endBattle(boolean restart) {}
 
 	void createStarter() {}
 
 	GameScreenMessage showMessage(GameScreenMessage object) {}
+
+	void loadBattle() {}
+
+	void showWinMessage(Party winner) {}
+
+	void goToNext() {}
+
+	void endBattle(boolean restart) {}
+
+	void restart() {}
 
 	void updatePortrait(boolean landscape) {}
 

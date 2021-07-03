@@ -50,12 +50,12 @@ final BattleEntityData(Moddable) : DataName, Comparable, Named {
 
 	String getDataName() {}
 
-	void setPatchwork(ID patchwork) {}
-
 	Patchwork getPatchwork(CustomCache cache) {}
 
-	ID getPatchworkId(CustomCache cache) {}
+	void setPatchwork(ID patchwork) {}
 
 	PatchworkData getPatchworkData(CustomCache cache) {}
+
+	ID getPatchworkId(CustomCache cache) {}
 
 }

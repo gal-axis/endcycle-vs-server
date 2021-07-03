@@ -28,27 +28,27 @@ BattleStarter(GameScreenObject) : Comparator {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void hide(GameScreen screen) {}
+
 	void show(GameScreen screen) {}
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void hide(GameScreen screen) {}
-
 	final Origin getOrigin() {}
-
-	float getComparisonKey() {}
 
 	byte getLayer() {}
 
+	float getComparisonKey() {}
+
 	final void removeObject() {}
+
+	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
 	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	SoundContainer playSound(SoundInfo sound) {}
-
-	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
 	int compare(BattleEntity o1, BattleEntity o2) {}
 

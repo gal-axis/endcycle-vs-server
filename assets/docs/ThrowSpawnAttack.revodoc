@@ -43,13 +43,9 @@ ThrowSpawnAttack(PanelSelectAttack) : LandAction {
 
 	boolean priority() {}
 
-	boolean keyTyped(char character) {}
+	void controllerDisconnected(Controller controller) {}
 
-	boolean keyDown(int keycode) {}
-
-	boolean keyUp(int keycode) {}
-
-	boolean triggerType(int character) {}
+	void controllerConnected(Controller controller) {}
 
 	boolean triggerButton(ButtonEvent event) {}
 
@@ -57,9 +53,13 @@ ThrowSpawnAttack(PanelSelectAttack) : LandAction {
 
 	boolean addButtonTips(ButtonTipList tips) {}
 
-	void controllerConnected(Controller controller) {}
+	boolean triggerType(int character) {}
 
-	void controllerDisconnected(Controller controller) {}
+	boolean keyDown(int keycode) {}
+
+	boolean keyTyped(char character) {}
+
+	boolean keyUp(int keycode) {}
 
 	String getName() {}
 
@@ -91,15 +91,15 @@ ThrowSpawnAttack(PanelSelectAttack) : LandAction {
 
 	final void triggerAction(Object[] parameters) {}
 
-	void attackAnimation() {}
-
 	void castAnimation() {}
+
+	void attackAnimation() {}
 
 	final Origin getOrigin(int index) {}
 
-	final Controller getController() {}
-
 	boolean fillGauges() {}
+
+	final Controller getController() {}
 
 	final int getXTile() {}
 
@@ -107,39 +107,39 @@ ThrowSpawnAttack(PanelSelectAttack) : LandAction {
 
 	Attack charge() {}
 
-	boolean reduceGauge() {}
-
-	boolean reduceGauge(double amount) {}
-
-	void scheduleAction(int action, float delay) {}
-
-	void scheduleAction(Runnable action, float delay) {}
-
-	AttackPortal getPortal(BattleEntity entity, float portalX, float portalY, float time) {}
-
 	boolean acceptsInput(ButtonEvent event) {}
 
 	Attack getWrapped(AttackShellWrapper wrapper, boolean shareHit, boolean gauge) {}
 
-	void increaseGauge(double amount) {}
+	boolean reduceGauge(double amount) {}
 
-	void runAction(int action) {}
-
-	double getGaugeProgress() {}
+	boolean reduceGauge() {}
 
 	final int getXTileInFront() {}
 
+	void increaseGauge(double amount) {}
+
 	final int getTurn() {}
+
+	void runAction(int action) {}
+
+	void scheduleAction(Runnable action, float delay) {}
+
+	void scheduleAction(int action, float delay) {}
+
+	double getGaugeProgress() {}
+
+	AttackPortal getPortal(BattleEntity entity, float portalX, float portalY, float time) {}
 
 	void addWrappers(Array wrappers) {}
 
 	final BattleEntityList getBattleEntities() {}
 
-	boolean hasAnimationState(PatchworkStateId state) {}
-
 	void updateAttackTasks(float delta) {}
 
 	void setAnimationState(PatchworkStateId state) {}
+
+	boolean hasAnimationState(PatchworkStateId state) {}
 
 	void flickerField(BattleField field, int x, int y) {}
 

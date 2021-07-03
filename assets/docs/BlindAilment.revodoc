@@ -17,11 +17,11 @@ BlindAilment(Ailment) : RenderProcessor, BECondition {
 
 	int hashCode() {}
 
-	void actionTriggered(Runnable action) {}
+	boolean isActionRollback(Object[] action) {}
 
 	void actionTriggered(Object[] action) {}
 
-	boolean isActionRollback(Object[] action) {}
+	void actionTriggered(Runnable action) {}
 
 	int get(int object, int orElse) {}
 
@@ -47,12 +47,6 @@ BlindAilment(Ailment) : RenderProcessor, BECondition {
 
 	boolean draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scale) {}
 
-	final void triggerAction(Object[] parameters) {}
-
-	boolean over() {}
-
-	boolean canTarget() {}
-
 	void setIntensity(float intensity) {}
 
 	void increaseDuration() {}
@@ -60,6 +54,12 @@ BlindAilment(Ailment) : RenderProcessor, BECondition {
 	float getIntensity() {}
 
 	boolean isDisplayed() {}
+
+	boolean over() {}
+
+	final void triggerAction(Object[] parameters) {}
+
+	boolean canTarget() {}
 
 	boolean test(BattleEntity entity) {}
 
@@ -69,9 +69,11 @@ BlindAilment(Ailment) : RenderProcessor, BECondition {
 
 	void stopRendering(CustomSpriteBatch batch, byte layer) {}
 
+	void startRendering(CustomSpriteBatch batch, byte layer) {}
+
 	void updateRender(float delta) {}
 
-	void startRendering(CustomSpriteBatch batch, byte layer) {}
+	boolean hideHealth(BattleEntity entity) {}
 
 	boolean isBlind() {}
 

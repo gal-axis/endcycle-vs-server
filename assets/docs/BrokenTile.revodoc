@@ -25,13 +25,13 @@ BrokenTile(NormalExpiringTile) {
 
 	boolean isAccessible(BattleEntity entity) {}
 
-	int getX() {}
-
 	int getY() {}
 
-	void draw(Batch batch, float x, float y, Party party, float shade, float alpha) {}
-
 	void dispose() {}
+
+	int getX() {}
+
+	void draw(Batch batch, float x, float y, Party party, float shade, float alpha) {}
 
 	void refresh() {}
 
@@ -47,9 +47,9 @@ BrokenTile(NormalExpiringTile) {
 
 	Battle getBattle() {}
 
-	OwnedHitProperty affect(OwnedHitProperty property) {}
-
 	void enter(BattleEntity entity) {}
+
+	OwnedHitProperty affect(OwnedHitProperty property) {}
 
 	DrawableImage getDrawable(Party party) {}
 

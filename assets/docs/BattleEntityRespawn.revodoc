@@ -1,8 +1,8 @@
-BattleEntityRespawn(GameScreenTimerTask) : Comparator {
+BattleEntityRespawn(GameScreenTimerTask) {
 
 	new(Battle battle, BattleEntity entity) {}
 
-	abstract boolean equals(Object arg0);
+	boolean equals(Object arg0) {}
 
 	String toString() {}
 
@@ -13,11 +13,5 @@ BattleEntityRespawn(GameScreenTimerTask) : Comparator {
 	void cancel() {}
 
 	boolean isScheduled() {}
-
-	int compare(BattleFieldPanel panel1, BattleFieldPanel panel2) {}
-
-	Comparator reversed() {}
-
-	Comparator thenComparing(Comparator arg0) {}
 
 }

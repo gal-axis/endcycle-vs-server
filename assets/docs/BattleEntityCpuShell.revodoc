@@ -48,13 +48,13 @@ BattleEntityCpuShell(BattleEntityShell) {
 
 	void set(LoneEntityShell shell) {}
 
-	BattleEntity generate(ID id, int x, int y) {}
-
-	BattleEntity generate(int x, int y, BattleEntityData data, CustomCache custom) {}
-
 	void setAction(BattleEntity entity) {}
 
 	Patchwork getPatchwork() {}
+
+	BattleEntity generate(int x, int y, BattleEntityData data, CustomCache custom) {}
+
+	BattleEntity generate(ID id, int x, int y) {}
 
 	BattleEntityData findEntityData(ID id) {}
 

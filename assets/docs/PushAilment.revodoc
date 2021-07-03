@@ -20,11 +20,11 @@ PushAilment(Ailment) : BECondition {
 
 	int hashCode() {}
 
-	void actionTriggered(Runnable action) {}
+	boolean isActionRollback(Object[] action) {}
 
 	void actionTriggered(Object[] action) {}
 
-	boolean isActionRollback(Object[] action) {}
+	void actionTriggered(Runnable action) {}
 
 	int get(int object, int orElse) {}
 
@@ -54,22 +54,22 @@ PushAilment(Ailment) : BECondition {
 
 	boolean over() {}
 
-	boolean canTarget() {}
-
 	void setIntensity(float intensity) {}
-
-	void increaseDuration() {}
 
 	float getIntensity() {}
 
 	boolean isDisplayed() {}
 
+	void increaseDuration() {}
+
+	boolean canTarget() {}
+
 	boolean test(BattleEntity t) {}
 
-	void startMove(int moving) {}
+	boolean isBlocking(BattleFieldPanel panel) {}
 
 	void addTracer(int delay, int amount) {}
 
-	boolean isBlocking(BattleFieldPanel panel) {}
+	void startMove(int moving) {}
 
 }

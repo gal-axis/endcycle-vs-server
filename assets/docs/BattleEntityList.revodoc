@@ -44,13 +44,13 @@ BattleEntityList(Array) {
 
 	BattleEntity[] toArray() {}
 
+	void addAll(Array arg0) {}
+
 	void addAll(Array arg0, int arg1, int arg2) {}
 
 	void addAll(BattleEntity[] arg0, int arg1, int arg2) {}
 
 	void addAll(BattleEntity[] arg0) {}
-
-	void addAll(Array arg0) {}
 
 	BattleEntity pop() {}
 
@@ -88,17 +88,17 @@ BattleEntityList(Array) {
 
 	void insertRange(int arg0, int arg1) {}
 
-	boolean equalsIdentity(Object arg0) {}
-
-	boolean removeValue(BattleEntity arg0, boolean arg1) {}
-
-	BattleEntity removeIndex(int arg0) {}
-
 	boolean notEmpty() {}
 
 	BattleEntity[] shrink() {}
 
 	BattleEntity selectRanked(Comparator arg0, int arg1) {}
+
+	BattleEntity removeIndex(int arg0) {}
+
+	boolean removeValue(BattleEntity arg0, boolean arg1) {}
+
+	boolean equalsIdentity(Object arg0) {}
 
 	boolean containsAny(Array arg0, boolean arg1) {}
 
@@ -114,29 +114,29 @@ BattleEntityList(Array) {
 
 	BattleEntityList beFrom(Party party, boolean neutral) {}
 
-	BattleEntityList beFrom(Party party) {}
-
 	BattleEntityList beFrom(Party party, BattleEntityList collection) {}
 
-	BattleEntityList beFloating(boolean floating) {}
+	BattleEntityList beFrom(Party party) {}
+
+	BattleEntityList beAtCol(int yTile, BattleEntityList collection) {}
+
+	BattleEntityList beAtCol(int yTile) {}
+
+	boolean hasVitalAndAlive(Party party) {}
+
+	BattleEntityList isCrushed(BattleEntityList collection) {}
 
 	BattleEntityList beFloating(boolean floating, BattleEntityList collection) {}
 
-	BattleEntityList beAtRow(int xTile) {}
-
-	BattleEntityList beAtRow(int xTile, BattleEntityList collection) {}
-
-	BattleEntityList isCrushed(BattleEntityList collection) {}
+	BattleEntityList beFloating(boolean floating) {}
 
 	BattleEntityList beNotAt(int xTile, int yTile) {}
 
 	BattleEntityList beNotAt(int xTile, int yTile, BattleEntityList collection) {}
 
-	BattleEntityList beAtCol(int yTile) {}
+	BattleEntityList beAtRow(int xTile) {}
 
-	BattleEntityList beAtCol(int yTile, BattleEntityList collection) {}
-
-	boolean hasVitalAndAlive(Party party) {}
+	BattleEntityList beAtRow(int xTile, BattleEntityList collection) {}
 
 	BattleEntityList beNotFrom(Party party, BattleEntityList collection) {}
 

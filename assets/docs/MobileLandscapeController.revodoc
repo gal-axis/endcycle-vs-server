@@ -27,13 +27,9 @@ MobileLandscapeController(MobileController) {
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	float getX() {}
-
 	float getY() {}
 
-	float calcX() {}
-
-	float calcY() {}
+	float getX() {}
 
 	void event(GameEvent event) {}
 
@@ -41,15 +37,19 @@ MobileLandscapeController(MobileController) {
 
 	boolean touch(TouchEvent trigger) {}
 
-	boolean finishedMoving() {}
+	float calcY() {}
+
+	float calcX() {}
 
 	boolean isTouching(float x, float y) {}
 
 	void finishMoving() {}
 
-	float getMove() {}
-
 	boolean increaseOffset() {}
+
+	boolean finishedMoving() {}
+
+	float getMove() {}
 
 	void addButton(MobileButton button) {}
 

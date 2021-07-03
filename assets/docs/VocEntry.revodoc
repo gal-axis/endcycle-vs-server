@@ -27,6 +27,16 @@ VocEntry(Object) : Serializable {
 
 	String getMod() {}
 
+	int getCrushPower() {}
+
+	boolean isLegal() {}
+
+	void setVoc(Voc voc) {}
+
+	String getFullName() {}
+
+	int getPower() {}
+
 	AttackPlan createPlan(int gauge) {}
 
 	VocStyle setStyle(VocStyle mod) {}
@@ -36,16 +46,6 @@ VocEntry(Object) : Serializable {
 	int getLevel() {}
 
 	VocElement getElement() {}
-
-	boolean isLegal() {}
-
-	int getPower() {}
-
-	void setVoc(Voc voc) {}
-
-	int getCrushPower() {}
-
-	String getFullName() {}
 
 	void setMissing(String mod, String name, int level, Role role) {}
 

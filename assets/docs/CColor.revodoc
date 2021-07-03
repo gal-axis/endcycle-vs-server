@@ -27,27 +27,23 @@ final CColor(Color) {
 
 	Color set(int arg0) {}
 
-	CColor mul(Color color) {}
-
-	CColor mul(float value) {}
-
-	CColor mul(float r, float g, float b, float a) {}
-
 	CColor lerp(float r, float g, float b, float a, float t) {}
 
 	CColor lerp(Color target, float t) {}
 
-	Color clamp() {}
+	CColor mul(float value) {}
 
-	Color premultiplyAlpha() {}
+	CColor mul(Color color) {}
+
+	CColor mul(float r, float g, float b, float a) {}
+
+	Color clamp() {}
 
 	float toFloatBits() {}
 
-	int toIntBits() {}
+	Color premultiplyAlpha() {}
 
-	CColor sub(float r, float g, float b, float a) {}
-
-	CColor sub(Color color) {}
+	CColor cpy() {}
 
 	float[] toHsv(float[] arg0) {}
 
@@ -55,7 +51,11 @@ final CColor(Color) {
 
 	Color fromHsv(float arg0, float arg1, float arg2) {}
 
-	CColor cpy() {}
+	int toIntBits() {}
+
+	CColor sub(Color color) {}
+
+	CColor sub(float r, float g, float b, float a) {}
 
 	CColor mulAlpha(float alpha) {}
 

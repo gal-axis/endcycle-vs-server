@@ -10,23 +10,23 @@ LandscapeMoveButton(PortraitMoveButton) {
 
 	boolean priority() {}
 
-	boolean triggerTouch(TouchEvent event) {}
-
-	boolean keyTyped(char character) {}
-
-	boolean keyUp(int keycode) {}
-
-	boolean keyDown(int keycode) {}
-
-	boolean triggerType(int character) {}
-
-	boolean addButtonTips(ButtonTipList tips) {}
-
-	boolean triggerButton(ButtonEvent event) {}
-
 	void controllerConnected(Controller controller) {}
 
 	void controllerDisconnected(Controller controller) {}
+
+	boolean keyUp(int keycode) {}
+
+	boolean triggerButton(ButtonEvent event) {}
+
+	boolean triggerTouch(TouchEvent event) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean keyDown(int keycode) {}
+
+	boolean keyTyped(char character) {}
+
+	boolean triggerType(int character) {}
 
 	void update(float delta) {}
 
@@ -34,13 +34,13 @@ LandscapeMoveButton(PortraitMoveButton) {
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	boolean touch(TouchEvent trigger) {}
-
 	void button(ButtonEvent trigger) {}
 
-	float getX() {}
+	boolean touch(TouchEvent trigger) {}
 
 	float getY() {}
+
+	float getX() {}
 
 	float getWidth() {}
 

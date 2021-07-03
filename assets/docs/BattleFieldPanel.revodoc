@@ -58,19 +58,19 @@ BattleFieldPanel(Object) {
 
 	void playSound(SoundInfo sound) {}
 
-	final void triggerAction(Object[] parameters) {}
-
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
-	boolean isBattleClient() {}
+	final void triggerAction(Object[] parameters) {}
 
 	void changeData(FieldPanelData data) {}
 
 	OwnedHitProperty hit(OwnedHitProperty hitProperty) {}
 
-	boolean setParty(Party party, BattleFieldPanel connectedPanel, boolean sound) {}
+	boolean isBattleClient() {}
 
 	boolean setParty(Party party, BattleFieldPanel connectedPanel) {}
+
+	boolean setParty(Party party, BattleFieldPanel connectedPanel, boolean sound) {}
 
 	boolean setParty(Party party, BattleFieldPanel connectedPanel, boolean sound, boolean mock) {}
 
@@ -78,27 +78,27 @@ BattleFieldPanel(Object) {
 
 	boolean occupiedBy(Party party) {}
 
-	boolean free(BattleEntity entity) {}
-
 	void occupy(BattleEntity entity) {}
+
+	boolean free(BattleEntity entity) {}
 
 	boolean accessible(boolean free) {}
 
 	boolean occupied(boolean ignoreFloat) {}
 
-	boolean isPartyChanged() {}
+	void effectRefresh() {}
 
 	OwnedHitProperty affect(OwnedHitProperty hitProperty) {}
 
-	void effectDispose() {}
+	void calculateOffsets() {}
 
 	void effectInit() {}
 
-	void calculateOffsets() {}
-
-	void effectRefresh() {}
+	boolean isPartyChanged() {}
 
 	boolean isTypeChanged() {}
+
+	void effectDispose() {}
 
 	void resetRevert() {}
 

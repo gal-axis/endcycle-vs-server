@@ -1,4 +1,4 @@
-DeathmatchMode(TimedBattleMode) {
+DeathmatchMode(DefaultBattleMode) {
 
 	Battle battle;
 	BattleEntityLifeManager allyLives;
@@ -45,55 +45,59 @@ DeathmatchMode(TimedBattleMode) {
 
 	void stop() {}
 
-	String getDiscordMessage(Party winner) {}
+	boolean isDespawn(BattleEntity entity) {}
 
 	boolean isSpawn(BattleEntity entity) {}
 
-	boolean isDespawn(BattleEntity entity) {}
-
-	int adjustDamage(BattleEntity entity, int damage) {}
-
-	LocalizedMessage getLoseMessage() {}
-
 	void calculateTint(BattleEntity entity, CColor color) {}
 
-	boolean loot() {}
-
-	void loot(Looter looter) {}
-
 	double adjustGaugeSpeed(BattleEntity entity) {}
+
+	int adjustDamage(BattleEntity entity, int damage) {}
 
 	boolean isRestart() {}
 
 	BattlePlayer createPlayer(BattleEntity entity) {}
 
-	void sendServerUpdate(List messages) {}
+	LocalizedMessage getLoseMessage() {}
 
-	String createTeamName(Party party) {}
+	boolean loot() {}
 
-	void finish(Party winner) {}
-
-	void initHUD(BattleHUD hud) {}
+	void loot(Looter looter) {}
 
 	String getBattleName(String name) {}
 
+	void finish(Party winner) {}
+
+	void sendServerUpdate(List messages) {}
+
+	void initHUD(BattleHUD hud) {}
+
+	String createTeamName(Party party) {}
+
 	boolean showStart() {}
+
+	String getDiscordMessage(Party winner) {}
 
 	void timeout() {}
 
 	void forceEnd() {}
 
-	Party getWinnerParty() {}
+	float getCurrentTime() {}
 
 	void updateTimeCache() {}
 
-	float getCurrentTime() {}
-
 	void setCurrentTime(float currentTime) {}
 
-	void paintLives(CustomSpriteBatch batch, boolean enemy) {}
+	Party getWinnerParty() {}
+
+	void entityDied(BattleEntity entity) {}
+
+	void updateWinner(float delta) {}
 
 	BattleEntityLifeManager getLives(BattleEntity entity) {}
+
+	void paintLives(CustomSpriteBatch batch, boolean enemy) {}
 
 	void setEntityLives() {}
 

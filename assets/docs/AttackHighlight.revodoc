@@ -1,6 +1,6 @@
 AttackHighlight(Object) : ScreenObject {
 
-	new(BattleEntity entity) {}
+	new(BattleEntity entity, Color color) {}
 
 	boolean equals(Object arg0) {}
 
@@ -22,16 +22,16 @@ AttackHighlight(Object) : ScreenObject {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void show(GameScreen screen) {}
-
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void show(GameScreen screen) {}
 
 	void hide(GameScreen screen) {}
 
-	Origin getOrigin() {}
+	byte getLayer() {}
 
 	float getComparisonKey() {}
 
-	byte getLayer() {}
+	Origin getOrigin() {}
 
 }

@@ -46,45 +46,45 @@ CustomSpriteBatch(SpriteBatch) {
 
 	void begin() {}
 
-	Color getColor() {}
-
 	void setColor(float r, float g, float b, float a) {}
 
 	void setColor(Color tint) {}
 
-	void setBlendFunctionSeparate(int arg0, int arg1, int arg2, int arg3) {}
-
-	Matrix4 getTransformMatrix() {}
-
-	Matrix4 getProjectionMatrix() {}
+	Color getColor() {}
 
 	int getBlendSrcFuncAlpha() {}
 
-	boolean isBlendingEnabled() {}
-
 	int getBlendDstFuncAlpha() {}
 
-	void setProjectionMatrix(Matrix4 arg0) {}
+	Matrix4 getProjectionMatrix() {}
 
 	void setTransformMatrix(Matrix4 transform) {}
 
-	void setPackedColor(float color) {}
+	void setProjectionMatrix(Matrix4 arg0) {}
+
+	boolean isBlendingEnabled() {}
+
+	Matrix4 getTransformMatrix() {}
+
+	void setBlendFunctionSeparate(int arg0, int arg1, int arg2, int arg3) {}
 
 	int getBlendSrcFunc() {}
-
-	void setBlendFunction(int arg0, int arg1) {}
-
-	void disableBlending() {}
-
-	float getPackedColor() {}
 
 	ShaderProgram getShader() {}
 
 	void enableBlending() {}
 
+	void setPackedColor(float color) {}
+
+	void disableBlending() {}
+
+	void setBlendFunction(int arg0, int arg1) {}
+
 	int getBlendDstFunc() {}
 
 	void setShader(ShaderProgram shader) {}
+
+	float getPackedColor() {}
 
 	void clear() {}
 
@@ -96,54 +96,54 @@ CustomSpriteBatch(SpriteBatch) {
 
 	void draw(FrameBuffer frameBuffer, float x, float y) {}
 
-	void startMasking(float x, float y, float width, float height) {}
+	void stopMasking() {}
 
 	void startMasking(float x, float y, float width, float height, boolean relative) {}
 
-	void stopMasking() {}
-
-	void drawScreenTint(float r, float g, float b, float a) {}
-
-	void drawScreenTint(float a) {}
+	void startMasking(float x, float y, float width, float height) {}
 
 	void drawScreenTint(Color c) {}
 
+	void drawScreenTint(float a) {}
+
+	void drawScreenTint(float r, float g, float b, float a) {}
+
 	void clearTransparent() {}
-
-	void setShaderType(ShaderType shader) {}
-
-	final float getTranslationX() {}
-
-	final float getTranslationY() {}
-
-	void updateView(FrameBuffer buffer) {}
 
 	void bind(FrameBuffer buffer) {}
 
-	void drawRectangle(float x, float y, float w, float h, float r, float g, float b, float a) {}
+	void setBlendFunction(int srcRGB, int dstRGB, int srcAlpha, int dstAlpha) {}
 
 	void drawRectangle(float x, float y, float w, float h, Color c) {}
 
-	void setBlendFunction(int srcRGB, int dstRGB, int srcAlpha, int dstAlpha) {}
+	void drawRectangle(float x, float y, float w, float h, float r, float g, float b, float a) {}
 
 	void resetBlendFunction() {}
 
+	void setScale(float scaleX, float scaleY) {}
+
+	FrameBuffer unbind() {}
+
 	final float getScaleY() {}
+
+	final float getScaleX() {}
+
+	void removeTransformMatrix(Matrix4 matrix) {}
 
 	void setScaleTranslation(float x, float y, float scaleX, float scaleY) {}
 
 	void recalculateTransformMatrix() {}
 
-	void addTransformMatrix(Matrix4 matrix) {}
-
-	void removeTransformMatrix(Matrix4 matrix) {}
-
 	BatchRectangle getBatchRectangle() {}
 
-	FrameBuffer unbind() {}
+	void addTransformMatrix(Matrix4 matrix) {}
 
-	void setScale(float scaleX, float scaleY) {}
+	void updateView(FrameBuffer buffer) {}
 
-	final float getScaleX() {}
+	final float getTranslationY() {}
+
+	final float getTranslationX() {}
+
+	void setShaderType(ShaderType shader) {}
 
 }

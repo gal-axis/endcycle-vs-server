@@ -10,32 +10,32 @@ final KeyboardController(Object) : Controller {
 
 	String getName() {}
 
-	int getPlayerIndex() {}
-
 	boolean isConnected() {}
 
-	int getAxisCount() {}
+	int getPlayerIndex() {}
+
+	int getMaxButtonIndex() {}
+
+	int getMinButtonIndex() {}
+
+	boolean supportsPlayerIndex() {}
 
 	String getUniqueId() {}
 
-	boolean isVibrating() {}
-
-	boolean canVibrate() {}
+	void cancelVibration() {}
 
 	void startVibration(int duration, float strength) {}
+
+	void setPlayerIndex(int index) {}
 
 	boolean getButton(int buttonCode) {}
 
 	float getAxis(int axisCode) {}
 
-	void cancelVibration() {}
+	int getAxisCount() {}
 
-	void setPlayerIndex(int index) {}
+	boolean canVibrate() {}
 
-	boolean supportsPlayerIndex() {}
-
-	int getMinButtonIndex() {}
-
-	int getMaxButtonIndex() {}
+	boolean isVibrating() {}
 
 }

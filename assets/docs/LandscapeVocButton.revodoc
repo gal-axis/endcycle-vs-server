@@ -18,19 +18,19 @@ LandscapeVocButton(MobileVocButton) {
 
 	void controllerDisconnected(Controller controller) {}
 
-	boolean triggerType(int character) {}
+	boolean keyUp(int keycode) {}
 
 	boolean triggerButton(ButtonEvent event) {}
 
-	boolean keyUp(int keycode) {}
-
-	boolean keyDown(int keycode) {}
+	boolean triggerTouch(TouchEvent event) {}
 
 	boolean addButtonTips(ButtonTipList tips) {}
 
+	boolean keyDown(int keycode) {}
+
 	boolean keyTyped(char character) {}
 
-	boolean triggerTouch(TouchEvent event) {}
+	boolean triggerType(int character) {}
 
 	void update(float delta) {}
 
@@ -42,9 +42,9 @@ LandscapeVocButton(MobileVocButton) {
 
 	boolean touch(TouchEvent trigger) {}
 
-	float getX() {}
-
 	float getY() {}
+
+	float getX() {}
 
 	VocEntry getVoc(VocSet set) {}
 
@@ -56,12 +56,12 @@ LandscapeVocButton(MobileVocButton) {
 
 	void drawVoc(CustomSpriteBatch batch, VocEntry voc, float x, float y, float scale, Color color) {}
 
-	void drawButton(CustomSpriteBatch batch, float scale, float sizeX, float sizeY, float x, float y) {}
-
-	float getVocSize() {}
-
 	float getSizeY() {}
 
 	float getSizeX() {}
+
+	float getVocSize() {}
+
+	void drawButton(CustomSpriteBatch batch, float scale, float sizeX, float sizeY, float x, float y) {}
 
 }

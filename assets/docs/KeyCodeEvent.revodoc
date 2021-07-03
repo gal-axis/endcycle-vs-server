@@ -3,6 +3,7 @@ final KeyCodeEvent(ButtonEvent) {
 	int buttonId;
 	Controller controller;
 	InputType type;
+	KeyCode code;
 
 	new(KeyCode code, InputType type) {}
 
@@ -18,20 +19,20 @@ final KeyCodeEvent(ButtonEvent) {
 
 	void setController(Controller controller) {}
 
-	Controller getController() {}
-
 	boolean isReleased() {}
-
-	boolean isPressed() {}
 
 	boolean isKey(KeyCode code) {}
 
-	KeyCode getCode(KeyCodeCategory category) {}
+	boolean isPressed() {}
 
-	int getButtonId() {}
+	Controller getController() {}
+
+	KeyCode getCode(KeyCodeCategory category) {}
 
 	boolean isMoved() {}
 
 	void setID(int buttonId) {}
+
+	int getButtonId() {}
 
 }

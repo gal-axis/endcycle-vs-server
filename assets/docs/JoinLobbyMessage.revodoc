@@ -27,57 +27,57 @@ JoinLobbyMessage(LobbyConnectMessage) {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void hide(GameScreen screen) {}
+
 	void show(GameScreen screen) {}
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	void hide(GameScreen screen) {}
-
-	float getComparisonKey() {}
 
 	final Origin getOrigin() {}
 
 	byte getLayer() {}
 
+	float getComparisonKey() {}
+
 	final void removeObject() {}
-
-	SoundContainer playSound(SoundInfo sound) {}
-
-	SoundContainer playSound(float x, float y, SoundInfo sound) {}
-
-	final SoundContainer playSound(Sounds sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
-	final void removeDisposeListener(Runnable runnable) {}
+	final SoundContainer playSound(Sounds sound) {}
+
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	SoundContainer playSound(SoundInfo sound) {}
 
 	final void addInitializeListener(Runnable runnable) {}
 
-	final void addDisposeListener(Runnable runnable) {}
-
 	final void removeInitializeListener(Runnable runnable) {}
+
+	final void removeDisposeListener(Runnable runnable) {}
+
+	final void addDisposeListener(Runnable runnable) {}
 
 	void scheduleMessage(GameScreenMessage message) {}
 
 	boolean priority() {}
 
-	void controllerConnected(Controller controller) {}
-
 	void controllerDisconnected(Controller controller) {}
 
-	boolean keyTyped(char character) {}
-
-	boolean triggerButton(ButtonEvent event) {}
+	void controllerConnected(Controller controller) {}
 
 	boolean triggerType(int character) {}
 
-	boolean addButtonTips(ButtonTipList tips) {}
-
-	boolean triggerTouch(TouchEvent event) {}
+	boolean keyTyped(char character) {}
 
 	boolean keyUp(int keycode) {}
 
+	boolean triggerButton(ButtonEvent event) {}
+
+	boolean triggerTouch(TouchEvent event) {}
+
 	boolean keyDown(int keycode) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
 
 	int getState() {}
 
@@ -89,11 +89,11 @@ JoinLobbyMessage(LobbyConnectMessage) {
 
 	void setState(int state) {}
 
-	void setStayTime(float time) {}
-
 	void setDisplay(String display) {}
 
 	void setDisplay(boolean toUppercase, LocalizedMessage display, Object[] args) {}
+
+	void setStayTime(float time) {}
 
 	void finishError(MenuMessages text) {}
 

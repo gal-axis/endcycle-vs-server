@@ -37,9 +37,9 @@ BattleField(Object) : ScreenObject {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void show(GameScreen screen) {}
-
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void show(GameScreen screen) {}
 
 	void hide(GameScreen screen) {}
 
@@ -65,31 +65,31 @@ BattleField(Object) : ScreenObject {
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
-	void changeType(int x, int y, PanelType tile) {}
-
-	void convertPanel(BattleFieldPanel connectedPanel, int x, int y, Party party) {}
-
-	Party getParty(int x, int y) {}
-
-	float getPanelMiddleX() {}
-
-	float getPanelMiddleY() {}
+	float getPanelX(float x) {}
 
 	float getPanelY(float y) {}
 
+	float getPanelMiddleY() {}
+
 	int getPanelAtX(float x) {}
 
+	float getPanelMiddleX() {}
+
 	int getPanelAtY(float y) {}
-
-	float getPanelX(float x) {}
-
-	void free(int x, int y, BattleEntity be) {}
-
-	void free(BattleEntity be) {}
 
 	BattleFieldBorder getBorder(int x, int y) {}
 
 	void occupy(int x, int y, BattleEntity be) {}
+
+	void free(BattleEntity be) {}
+
+	void free(int x, int y, BattleEntity be) {}
+
+	Party getParty(int x, int y) {}
+
+	void convertPanel(BattleFieldPanel connectedPanel, int x, int y, Party party) {}
+
+	void changeType(int x, int y, PanelType tile) {}
 
 	BattleFieldPanel generate(FieldPanelData data, int x, int y) {}
 
@@ -101,14 +101,14 @@ BattleField(Object) : ScreenObject {
 
 	List getVisiblePanels(float xOfs, float yOfs) {}
 
-	boolean inBoundX(int x) {}
-
-	boolean inBoundY(int y) {}
-
 	void createBorders(Array borderSearch) {}
+
+	void createBorder(Array panels, BattleFieldBorder border, BattleFieldPanel panel) {}
 
 	Party getOriginalParty(int x, int y) {}
 
-	void createBorder(Array panels, BattleFieldBorder border, BattleFieldPanel panel) {}
+	boolean inBoundX(int x) {}
+
+	boolean inBoundY(int y) {}
 
 }

@@ -39,21 +39,21 @@ BattleHUD(HUD) {
 
 	byte getLayer() {}
 
-	Origin getOrigin() {}
-
 	float getComparisonKey() {}
 
-	boolean touch(TouchEvent trigger) {}
+	Origin getOrigin() {}
 
 	void button(ButtonEvent trigger) {}
+
+	boolean touch(TouchEvent trigger) {}
 
 	void add(Array buttons) {}
 
 	void remove(Array buttons) {}
 
-	float getButtonsY() {}
-
 	void addButtonTips(ButtonTipList tips) {}
+
+	float getButtonsY() {}
 
 	boolean setPlayerButtons(int player, Array buttons) {}
 

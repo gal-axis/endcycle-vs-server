@@ -27,19 +27,21 @@ ApplyModsMessage(UncancelableShortMessage) {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void hide(GameScreen screen) {}
+
 	void show(GameScreen screen) {}
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void hide(GameScreen screen) {}
-
 	final Origin getOrigin() {}
-
-	float getComparisonKey() {}
 
 	byte getLayer() {}
 
+	float getComparisonKey() {}
+
 	final void removeObject() {}
+
+	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
 	final SoundContainer playSound(Sounds sound) {}
 
@@ -47,37 +49,35 @@ ApplyModsMessage(UncancelableShortMessage) {
 
 	SoundContainer playSound(SoundInfo sound) {}
 
-	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
-
 	final void addInitializeListener(Runnable runnable) {}
 
 	final void removeInitializeListener(Runnable runnable) {}
 
-	final void addDisposeListener(Runnable runnable) {}
-
 	final void removeDisposeListener(Runnable runnable) {}
+
+	final void addDisposeListener(Runnable runnable) {}
 
 	void scheduleMessage(GameScreenMessage message) {}
 
 	boolean priority() {}
 
-	void controllerConnected(Controller controller) {}
-
 	void controllerDisconnected(Controller controller) {}
+
+	void controllerConnected(Controller controller) {}
 
 	boolean triggerType(int character) {}
 
-	boolean triggerButton(ButtonEvent event) {}
+	boolean keyTyped(char character) {}
 
 	boolean keyUp(int keycode) {}
+
+	boolean triggerButton(ButtonEvent event) {}
+
+	boolean triggerTouch(TouchEvent event) {}
 
 	boolean keyDown(int keycode) {}
 
 	boolean addButtonTips(ButtonTipList tips) {}
-
-	boolean keyTyped(char character) {}
-
-	boolean triggerTouch(TouchEvent event) {}
 
 	int getState() {}
 

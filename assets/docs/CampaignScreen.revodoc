@@ -42,75 +42,75 @@ CampaignScreen(MenuScreen) {
 
 	void dispose() {}
 
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void draw(CustomSpriteBatch batch) {}
+
+	void toPreviousScreen() {}
+
+	void toPreviousScreen(FadeType type) {}
+
+	void updateTimer(float delta) {}
+
+	void changeFrom(GameScreen screen, boolean init) {}
+
+	void shake(float x, float y, float duration) {}
+
+	void shakeVibrate(float x, float y, float duration) {}
+
+	void show() {}
+
+	Array getObjects() {}
+
+	void hide() {}
+
+	boolean removeObject(ScreenObject object) {}
+
+	void render(float delta) {}
+
+	void changeTo(GameScreen screen, boolean init) {}
+
+	void updateShake(float delta) {}
+
+	ScreenObject addObject(ScreenObject object) {}
+
+	boolean isCurrentScreen() {}
+
+	boolean isShaking() {}
+
+	void resetShake() {}
+
+	void drawButtonTips(CustomSpriteBatch batch, float x, float y) {}
+
+	void updateObjects(float delta) {}
+
+	void clearObjects() {}
+
 	void setScreen(GameScreen screen) {}
 
 	void setScreen(GameScreen screen, FadeType fade) {}
 
 	void setScreen(GameScreen screen, FadeType fade, boolean changesBefore) {}
 
-	void resetShake() {}
-
-	boolean removeObject(ScreenObject object) {}
-
-	Array getObjects() {}
-
-	void clearObjects() {}
-
-	boolean isShaking() {}
-
-	void show() {}
-
-	ScreenObject addObject(ScreenObject object) {}
-
-	void changeTo(GameScreen screen, boolean init) {}
-
-	void render(float delta) {}
-
-	void updateTimer(float delta) {}
-
-	void draw(CustomSpriteBatch batch) {}
-
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	void hide() {}
-
-	void shake(float x, float y, float duration) {}
-
-	void toPreviousScreen(FadeType type) {}
-
-	void toPreviousScreen() {}
-
-	void shakeVibrate(float x, float y, float duration) {}
-
-	void updateShake(float delta) {}
-
-	boolean isCurrentScreen() {}
-
-	void changeFrom(GameScreen screen, boolean init) {}
-
-	void updateObjects(float delta) {}
-
-	void drawButtonTips(CustomSpriteBatch batch, float x, float y) {}
-
 	void addRenderProcessor(RenderProcessor renderProcessor) {}
 
 	void removeRenderProcessor(RenderProcessor renderProcessor) {}
-
-	Array getRenderProcessors() {}
 
 	void setPreviousScreen(GameScreen previousScreen) {}
 
 	GameScreen getPreviousScreen() {}
 
-	Object[] getTextArguments() {}
-
-	void pause() {}
-
-	void addScript(Script script, float delay) {}
+	Array getRenderProcessors() {}
 
 	boolean isLoading() {}
 
+	void addScript(Script script, float delay) {}
+
 	void resetTimer() {}
+
+	Object[] getTextArguments() {}
+
+	void pause() {}
 
 	void createMenuElements() {}
 
@@ -118,9 +118,9 @@ CampaignScreen(MenuScreen) {
 
 	void backButtonPressed() {}
 
-	void enableInput() {}
-
 	void centerElements() {}
+
+	void enableInput() {}
 
 	void disableInput() {}
 

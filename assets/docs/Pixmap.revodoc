@@ -16,9 +16,9 @@ Pixmap(Object) {
 
 	void fill() {}
 
-	int getHeight() {}
-
 	int getWidth() {}
+
+	int getHeight() {}
 
 	void setColor(Color arg0) {}
 
@@ -28,52 +28,52 @@ Pixmap(Object) {
 
 	void drawRectangle(int arg0, int arg1, int arg2, int arg3) {}
 
-	int getGLInternalFormat() {}
+	void setFilter(Filter arg0) {}
 
 	static Pixmap createFromFrameBuffer(int arg0, int arg1, int arg2, int arg3) {}
 
-	void setFilter(Filter arg0) {}
-
-	Format getFormat() {}
-
-	void setBlending(Blending arg0) {}
-
-	void drawPixmap(Pixmap arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6) {}
-
-	void drawPixmap(Pixmap arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8) {}
-
-	void drawPixmap(Pixmap arg0, int arg1, int arg2) {}
+	int getGLInternalFormat() {}
 
 	int getGLFormat() {}
 
-	ByteBuffer getPixels() {}
-
 	int getGLType() {}
 
-	void drawLine(int arg0, int arg1, int arg2, int arg3) {}
+	ByteBuffer getPixels() {}
 
-	void fillTriangle(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5) {}
+	Format getFormat() {}
+
+	void drawPixmap(Pixmap arg0, int arg1, int arg2) {}
+
+	void drawPixmap(Pixmap arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8) {}
+
+	void drawPixmap(Pixmap arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6) {}
+
+	void setBlending(Blending arg0) {}
+
+	void fillCircle(int arg0, int arg1, int arg2) {}
 
 	void drawPixel(int arg0, int arg1, int arg2) {}
 
 	void drawPixel(int arg0, int arg1) {}
 
-	static void downloadFromUrl(String arg0, DownloadPixmapResponseListener arg1) {}
-
-	void fillRectangle(int arg0, int arg1, int arg2, int arg3) {}
-
-	void fillCircle(int arg0, int arg1, int arg2) {}
-
-	Filter getFilter() {}
-
-	int getPixel(int arg0, int arg1) {}
-
-	Blending getBlending() {}
+	void drawCircle(int arg0, int arg1, int arg2) {}
 
 	void setPixels(ByteBuffer arg0) {}
 
-	void drawCircle(int arg0, int arg1, int arg2) {}
+	void fillRectangle(int arg0, int arg1, int arg2, int arg3) {}
+
+	void fillTriangle(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5) {}
 
 	boolean isDisposed() {}
+
+	int getPixel(int arg0, int arg1) {}
+
+	Filter getFilter() {}
+
+	static void downloadFromUrl(String arg0, DownloadPixmapResponseListener arg1) {}
+
+	Blending getBlending() {}
+
+	void drawLine(int arg0, int arg1, int arg2, int arg3) {}
 
 }

@@ -39,15 +39,17 @@ final Voc(Moddable) : DataName {
 
 	String getDescription() {}
 
-	TextureRegion getImage() {}
-
 	VocElement getElement() {}
 
 	VocElement getElement(VocStyle style) {}
 
+	TextureRegion getImage() {}
+
 	int getLevel() {}
 
 	int getLevel(VocStyle style) {}
+
+	int getDefaultPrice() {}
 
 	int getPower() {}
 
@@ -56,7 +58,5 @@ final Voc(Moddable) : DataName {
 	int getCrushPower() {}
 
 	int getCrushPower(VocStyle style) {}
-
-	int getDefaultPrice() {}
 
 }

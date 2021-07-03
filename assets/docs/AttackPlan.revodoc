@@ -33,9 +33,9 @@ AttackPlan(Object) {
 
 	void flip() {}
 
-	void finish() {}
-
 	boolean active() {}
+
+	void finish() {}
 
 	boolean isMoveable() {}
 
@@ -43,8 +43,8 @@ AttackPlan(Object) {
 
 	void replaceAttack(Attack attack) {}
 
-	void setAttackShell(AttackShell shell) {}
-
 	void setAttack(Attack attack, boolean clone) {}
+
+	void setAttackShell(AttackShell shell) {}
 
 }

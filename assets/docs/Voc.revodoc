@@ -33,30 +33,30 @@ final Voc(Moddable) : DataName {
 
 	String name() {}
 
-	int getSlot(VocStyle style) {}
-
 	int getSlot() {}
+
+	int getSlot(VocStyle style) {}
 
 	String getDescription() {}
 
-	VocElement getElement() {}
-
-	VocElement getElement(VocStyle style) {}
-
 	TextureRegion getImage() {}
-
-	int getLevel() {}
 
 	int getLevel(VocStyle style) {}
 
-	int getDefaultPrice() {}
+	int getLevel() {}
+
+	VocElement getElement(VocStyle style) {}
+
+	VocElement getElement() {}
+
+	int getCrushPower(VocStyle style) {}
+
+	int getCrushPower() {}
 
 	int getPower() {}
 
 	int getPower(VocStyle style) {}
 
-	int getCrushPower() {}
-
-	int getCrushPower(VocStyle style) {}
+	int getDefaultPrice() {}
 
 }

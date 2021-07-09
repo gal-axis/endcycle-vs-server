@@ -12,16 +12,16 @@ AdventureNodeGraph(Object) {
 
 	int hashCode() {}
 
-	void generateBranches(Random random) {}
+	void addNode(AdventureEvent event, long seed) {}
 
 	void addNode(ID id, long seed) {}
 
-	void addNode(AdventureEvent event, long seed) {}
+	void generateBranches(Random random) {}
 
-	void addEmpty() {}
+	void addNodes(AdventureNode[] arr) {}
 
 	void addNodeStart(ID id, long seed) {}
 
-	void addNodes(AdventureNode[] arr) {}
+	void addEmpty() {}
 
 }

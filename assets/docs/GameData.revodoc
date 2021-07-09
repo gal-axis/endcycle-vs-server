@@ -14,22 +14,22 @@ final GameData(Object) {
 
 	static float getTime() {}
 
-	static boolean isPortable() {}
-
 	static InputManager getInput() {}
+
+	static boolean isPortable() {}
 
 	static PlayerProgress getProgress() {}
 
 	static PlayerCustomizations getCustomizations() {}
 
-	static long getSystemTime() {}
+	static Patchwork getPlayerPatchwork(BattleEntityData data) {}
 
 	static Inventory getInventory() {}
 
 	static double getTimePrecise() {}
 
-	static Integer getModVersion(long id) {}
+	static long getSystemTime() {}
 
-	static Patchwork getPlayerPatchwork(BattleEntityData data) {}
+	static Integer getModVersion(long id) {}
 
 }

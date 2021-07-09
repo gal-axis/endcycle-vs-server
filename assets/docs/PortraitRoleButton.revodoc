@@ -10,13 +10,13 @@ PortraitRoleButton(MobileRoleButton) {
 
 	boolean priority() {}
 
-	void controllerConnected(Controller controller) {}
+	boolean triggerButton(ButtonEvent event) {}
 
-	void controllerDisconnected(Controller controller) {}
+	boolean triggerType(int character) {}
+
+	boolean keyTyped(char character) {}
 
 	boolean keyUp(int keycode) {}
-
-	boolean triggerButton(ButtonEvent event) {}
 
 	boolean triggerTouch(TouchEvent event) {}
 
@@ -24,9 +24,9 @@ PortraitRoleButton(MobileRoleButton) {
 
 	boolean keyDown(int keycode) {}
 
-	boolean keyTyped(char character) {}
+	void controllerDisconnected(Controller controller) {}
 
-	boolean triggerType(int character) {}
+	void controllerConnected(Controller controller) {}
 
 	void update(float delta) {}
 

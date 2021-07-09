@@ -1,8 +1,10 @@
 Random(Object) {
 
-	new() {}
+	static final Random instance;
 
-	new(long arg0) {}
+	new(long seed) {}
+
+	new() {}
 
 	boolean equals(Object arg0) {}
 
@@ -10,22 +12,14 @@ Random(Object) {
 
 	int hashCode() {}
 
+	int nextInt(int bound) {}
+
 	int nextInt() {}
 
-	int nextInt(int arg0) {}
-
-	double nextDouble() {}
-
-	void nextBytes(byte[] arg0) {}
+	boolean nextBoolean() {}
 
 	float nextFloat() {}
 
-	double nextGaussian() {}
-
 	long nextLong() {}
-
-	void setSeed(long arg0) {}
-
-	boolean nextBoolean() {}
 
 }

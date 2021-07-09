@@ -10,10 +10,10 @@ PackDragListener(Object) : MenuTableDragListener {
 
 	void draw(MenuTable container, VocEntry element, int index, float x, float y) {}
 
-	void startDrag(MenuTable container, VocEntry element, int index) {}
+	void drag(MenuTable container, VocEntry element, int index, int x, int y) {}
 
 	void stopDrag(MenuTable container, VocEntry element, int index, int x, int y) {}
 
-	void drag(MenuTable container, VocEntry element, int index, int x, int y) {}
+	void startDrag(MenuTable container, VocEntry element, int index) {}
 
 }

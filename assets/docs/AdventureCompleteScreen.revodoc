@@ -31,77 +31,77 @@ AdventureCompleteScreen(GameScreen) {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void dispose() {}
+	void pause() {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	void removeRenderProcessor(RenderProcessor renderProcessor) {}
 
-	void draw(CustomSpriteBatch batch) {}
+	Array getRenderProcessors() {}
+
+	void addRenderProcessor(RenderProcessor renderProcessor) {}
+
+	GameScreen getPreviousScreen() {}
+
+	void setPreviousScreen(GameScreen previousScreen) {}
+
+	Object[] getTextArguments() {}
+
+	void addScript(Script script, float delay) {}
+
+	boolean isLoading() {}
+
+	void shake(float x, float y, float duration) {}
+
+	ScreenObject addObject(ScreenObject object) {}
+
+	void updateObjects(float delta) {}
 
 	void toPreviousScreen() {}
 
 	void toPreviousScreen(FadeType type) {}
 
+	void render(float delta) {}
+
+	boolean isCurrentScreen() {}
+
+	Array getObjects() {}
+
+	void resetShake() {}
+
+	void shakeVibrate(float x, float y, float duration) {}
+
+	boolean isShaking() {}
+
+	void hide() {}
+
+	void changeTo(GameScreen screen, boolean init) {}
+
+	void drawButtonTips(CustomSpriteBatch batch, float x, float y) {}
+
+	void dispose() {}
+
+	void clearObjects() {}
+
 	void updateTimer(float delta) {}
 
 	void changeFrom(GameScreen screen, boolean init) {}
 
-	void shake(float x, float y, float duration) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void shakeVibrate(float x, float y, float duration) {}
+	void draw(CustomSpriteBatch batch) {}
 
 	void show() {}
 
-	Array getObjects() {}
-
-	void hide() {}
+	void resetTimer() {}
 
 	boolean removeObject(ScreenObject object) {}
 
-	void render(float delta) {}
-
-	void changeTo(GameScreen screen, boolean init) {}
-
 	void updateShake(float delta) {}
-
-	ScreenObject addObject(ScreenObject object) {}
-
-	boolean isCurrentScreen() {}
-
-	boolean isShaking() {}
-
-	void resetShake() {}
-
-	void drawButtonTips(CustomSpriteBatch batch, float x, float y) {}
-
-	void updateObjects(float delta) {}
-
-	void clearObjects() {}
-
-	void setScreen(GameScreen screen) {}
 
 	void setScreen(GameScreen screen, FadeType fade) {}
 
+	void setScreen(GameScreen screen) {}
+
 	void setScreen(GameScreen screen, FadeType fade, boolean changesBefore) {}
-
-	void addRenderProcessor(RenderProcessor renderProcessor) {}
-
-	void removeRenderProcessor(RenderProcessor renderProcessor) {}
-
-	void setPreviousScreen(GameScreen previousScreen) {}
-
-	GameScreen getPreviousScreen() {}
-
-	Array getRenderProcessors() {}
-
-	boolean isLoading() {}
-
-	void addScript(Script script, float delay) {}
-
-	void resetTimer() {}
-
-	Object[] getTextArguments() {}
-
-	void pause() {}
 
 	void goToNext() {}
 

@@ -36,77 +36,77 @@ AdventureScreen(MenuScreen) : Consumer {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void dispose() {}
+	void setPreviousScreen(GameScreen previousScreen) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	GameScreen getPreviousScreen() {}
 
-	void draw(CustomSpriteBatch batch) {}
+	void addRenderProcessor(RenderProcessor renderProcessor) {}
 
-	void toPreviousScreen() {}
+	Array getRenderProcessors() {}
 
-	void toPreviousScreen(FadeType type) {}
+	void removeRenderProcessor(RenderProcessor renderProcessor) {}
 
-	void updateTimer(float delta) {}
-
-	void changeFrom(GameScreen screen, boolean init) {}
-
-	void shake(float x, float y, float duration) {}
-
-	void shakeVibrate(float x, float y, float duration) {}
-
-	void show() {}
-
-	Array getObjects() {}
+	void clearObjects() {}
 
 	void hide() {}
 
 	boolean removeObject(ScreenObject object) {}
 
+	void changeFrom(GameScreen screen, boolean init) {}
+
+	Array getObjects() {}
+
 	void render(float delta) {}
 
+	void pause() {}
+
+	void dispose() {}
+
+	void show() {}
+
+	void updateTimer(float delta) {}
+
+	void toPreviousScreen() {}
+
+	void toPreviousScreen(FadeType type) {}
+
 	void changeTo(GameScreen screen, boolean init) {}
-
-	void updateShake(float delta) {}
-
-	ScreenObject addObject(ScreenObject object) {}
-
-	boolean isCurrentScreen() {}
-
-	boolean isShaking() {}
-
-	void resetShake() {}
-
-	void drawButtonTips(CustomSpriteBatch batch, float x, float y) {}
-
-	void updateObjects(float delta) {}
-
-	void clearObjects() {}
-
-	void setScreen(GameScreen screen) {}
-
-	void setScreen(GameScreen screen, FadeType fade) {}
-
-	void setScreen(GameScreen screen, FadeType fade, boolean changesBefore) {}
-
-	void addRenderProcessor(RenderProcessor renderProcessor) {}
-
-	void removeRenderProcessor(RenderProcessor renderProcessor) {}
-
-	void setPreviousScreen(GameScreen previousScreen) {}
-
-	GameScreen getPreviousScreen() {}
-
-	Array getRenderProcessors() {}
-
-	boolean isLoading() {}
-
-	void addScript(Script script, float delay) {}
 
 	void resetTimer() {}
 
 	Object[] getTextArguments() {}
 
-	void pause() {}
+	void addScript(Script script, float delay) {}
+
+	boolean isLoading() {}
+
+	void updateObjects(float delta) {}
+
+	boolean isCurrentScreen() {}
+
+	ScreenObject addObject(ScreenObject object) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void draw(CustomSpriteBatch batch) {}
+
+	void updateShake(float delta) {}
+
+	void resetShake() {}
+
+	void shake(float x, float y, float duration) {}
+
+	void shakeVibrate(float x, float y, float duration) {}
+
+	void setScreen(GameScreen screen) {}
+
+	void setScreen(GameScreen screen, FadeType fade, boolean changesBefore) {}
+
+	void setScreen(GameScreen screen, FadeType fade) {}
+
+	void drawButtonTips(CustomSpriteBatch batch, float x, float y) {}
+
+	boolean isShaking() {}
 
 	void createMenuElements() {}
 

@@ -10,14 +10,14 @@ AllVocsPainter(Object) : MenuTablePainter {
 
 	void paint(MenuTablePaintParams params) {}
 
+	Painter getPainter(MenuTablePaintParams params, int hAlign, int vAlign) {}
+
 	Painter getPainter(MenuTablePaintParams params) {}
 
-	Painter getPainter(MenuTablePaintParams params, int hAlign, int vAlign) {}
+	void paintBG(MenuTablePaintParams params) {}
 
 	void finishPainting(MenuTablePaintParams params) {}
 
 	void startPainting(MenuTablePaintParams params) {}
-
-	void paintBG(MenuTablePaintParams params) {}
 
 }

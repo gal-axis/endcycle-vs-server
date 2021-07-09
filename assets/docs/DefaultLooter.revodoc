@@ -11,13 +11,13 @@ DefaultLooter(Looter) : InputListener {
 
 	int hashCode() {}
 
-	void onRewardEarned() {}
-
-	void onRewardOpened() {}
+	void onRewardClosed() {}
 
 	void onRewardError() {}
 
-	void onRewardClosed() {}
+	void onRewardOpened() {}
+
+	void onRewardEarned() {}
 
 	void dispose() {}
 
@@ -33,58 +33,58 @@ DefaultLooter(Looter) : InputListener {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
 	void show(GameScreen screen) {}
 
-	void hide(GameScreen screen) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	float getComparisonKey() {}
+	void hide(GameScreen screen) {}
 
 	Origin getOrigin() {}
 
 	byte getLayer() {}
 
+	float getComparisonKey() {}
+
 	boolean hasLoot() {}
-
-	void addLoot(Lootable loot) {}
-
-	void addRandomLoot(int money, boolean items) {}
-
-	boolean hasExtra() {}
-
-	void addRandomStyle() {}
-
-	void addRandomVoc() {}
-
-	void addAffinity(BattleEntity entity, float amount) {}
 
 	void addAffinity(ID entity, float amount) {}
 
-	boolean priority() {}
+	void addAffinity(BattleEntity entity, float amount) {}
 
-	void controllerConnected(Controller controller) {}
+	void addRandomLoot(int money, boolean items) {}
+
+	void addRandomStyle() {}
+
+	boolean hasExtra() {}
+
+	void addRandomVoc() {}
+
+	void addLoot(Lootable loot) {}
+
+	boolean priority() {}
 
 	void controllerDisconnected(Controller controller) {}
 
-	boolean keyUp(int keycode) {}
-
-	boolean triggerButton(ButtonEvent event) {}
-
-	boolean triggerTouch(TouchEvent event) {}
+	void controllerConnected(Controller controller) {}
 
 	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean triggerType(int character) {}
+
+	boolean triggerTouch(TouchEvent event) {}
 
 	boolean keyDown(int keycode) {}
 
 	boolean keyTyped(char character) {}
 
-	boolean triggerType(int character) {}
+	boolean keyUp(int keycode) {}
+
+	boolean triggerButton(ButtonEvent event) {}
 
 	void finish() {}
 
-	void showNextLoot() {}
-
 	void grabExtra() {}
+
+	void showNextLoot() {}
 
 }

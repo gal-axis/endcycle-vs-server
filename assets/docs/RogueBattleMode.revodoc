@@ -36,15 +36,15 @@ RogueBattleMode(ScoredBattleMode) : Consumer {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void hide(GameScreen screen) {}
+	void show(GameScreen screen) {}
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void show(GameScreen screen) {}
-
-	float getComparisonKey() {}
+	void hide(GameScreen screen) {}
 
 	Origin getOrigin() {}
+
+	float getComparisonKey() {}
 
 	byte getLayer() {}
 
@@ -52,15 +52,11 @@ RogueBattleMode(ScoredBattleMode) : Consumer {
 
 	void stop() {}
 
-	String getDiscordMessage(Party winner) {}
-
 	boolean showStart() {}
 
 	boolean isDespawn(BattleEntity entity) {}
 
 	boolean isSpawn(BattleEntity entity) {}
-
-	LocalizedMessage getLoseMessage() {}
 
 	int adjustDamage(BattleEntity entity, int damage) {}
 
@@ -70,48 +66,52 @@ RogueBattleMode(ScoredBattleMode) : Consumer {
 
 	void calculateTint(BattleEntity entity, CColor color) {}
 
+	LocalizedMessage getLoseMessage() {}
+
 	boolean loot() {}
 
 	void loot(Looter looter) {}
 
 	BattlePlayer createPlayer(BattleEntity entity) {}
 
-	void sendServerUpdate(List messages) {}
-
-	String getBattleName(String name) {}
-
-	String createTeamName(Party party) {}
-
 	void initHUD(BattleHUD hud) {}
+
+	void sendServerUpdate(List messages) {}
 
 	void finish(Party winner) {}
 
-	void saveScore() {}
+	String createTeamName(Party party) {}
 
-	void addScore(BattleEntity entity, int score) {}
+	String getBattleName(String name) {}
+
+	String getDiscordMessage(Party winner) {}
 
 	void addScore(float x, float y, int score) {}
+
+	void addScore(BattleEntity entity, int score) {}
 
 	void increaseWave() {}
 
 	String getWaveString() {}
 
+	void saveScore() {}
+
+	void enemyHurt(BattleEntity entity, int amount) {}
+
 	void setHideScore(boolean hideScore) {}
 
 	void playerHeal(BattleEntity entity, int amount) {}
-
-	void enemyHurt(BattleEntity entity, int amount) {}
 
 	void updateScoreDisplay(int amount) {}
 
 	void accept(BattleEntity entity) {}
 
-	boolean isBoss() {}
+	void showRewardMessage(int index) {}
 
 	PlayerUpgrades getUpgrades(BattlePlayer controller) {}
 
 	void finishUpgrade(int index) {}
 
-	void showRewardMessage(int index) {}
+	boolean isBoss() {}
 
 }

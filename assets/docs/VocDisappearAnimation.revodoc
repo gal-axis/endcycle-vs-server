@@ -1,6 +1,6 @@
 VocDisappearAnimation(Object) : ScreenObject {
 
-	new(VocEntry old, VocSetContainer container, int index, InventoryVocTable vocs) {}
+	new(VocEntry old, MenuTable painter, MenuTable oldContainer, int oldIndex, MenuTable newContainer, int newIndex) {}
 
 	boolean equals(Object arg0) {}
 
@@ -22,16 +22,16 @@ VocDisappearAnimation(Object) : ScreenObject {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void hide(GameScreen screen) {}
+	void show(GameScreen screen) {}
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void show(GameScreen screen) {}
-
-	float getComparisonKey() {}
+	void hide(GameScreen screen) {}
 
 	Origin getOrigin() {}
 
 	byte getLayer() {}
+
+	float getComparisonKey() {}
 
 }

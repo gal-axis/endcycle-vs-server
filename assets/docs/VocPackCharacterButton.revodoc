@@ -26,9 +26,9 @@ VocPackCharacterButton(CharacterButton) {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void draw(CustomSpriteBatch batch, float x, float y) {}
-
 	void hide(GameScreen screen) {}
+
+	void draw(CustomSpriteBatch batch, float x, float y) {}
 
 	void show(GameScreen screen) {}
 
@@ -58,23 +58,23 @@ VocPackCharacterButton(CharacterButton) {
 
 	MenuElement setEnabled(boolean enabled) {}
 
-	boolean select() {}
-
 	float getX() {}
 
 	float getY() {}
 
-	float getWidth() {}
+	boolean select() {}
 
-	MenuElement setHeight(float height) {}
+	float getWidth() {}
 
 	float getHeight() {}
 
+	MenuElement setHeight(float height) {}
+
 	MenuElement setLayer(byte layer) {}
 
-	final void triggerAction(MenuElementActionType type) {}
-
 	MenuElement getAbsoluteParent() {}
+
+	final void triggerAction(MenuElementActionType type) {}
 
 	boolean touch(TouchEvent trigger) {}
 
@@ -84,45 +84,29 @@ VocPackCharacterButton(CharacterButton) {
 
 	MenuElement setWidth(float width) {}
 
-	MenuButtonAction getAction() {}
+	float getAbsoluteY() {}
 
-	float calcX() {}
-
-	MenuElement setFocusable(boolean focusable) {}
-
-	float calcY() {}
-
-	boolean isTouching(float x, float y) {}
-
-	MenuElement setAnchor(MenuElement anchor) {}
-
-	MenuElement setAnchorHAlign(int anchorHAlign) {}
+	boolean canDrawCursor() {}
 
 	MenuElement setAnchorVAlign(int anchorVAlign) {}
 
-	MenuElement setHAlign(int hAlign) {}
-
 	MenuElement setVAlign(int vAlign) {}
 
-	MenuElement setFocused(boolean focused) {}
+	MenuElement setAnchorHAlign(int anchorHAlign) {}
+
+	MenuElement setHAlign(int hAlign) {}
 
 	MenuButtonTips getButtonTips() {}
 
 	MenuElement getAnchor() {}
 
-	MenuElement setHidden(boolean hidden) {}
+	int getAnchorHAlign() {}
+
+	int getHAlign() {}
+
+	boolean isEnabled() {}
 
 	void setCursor(Rectangle rectangle) {}
-
-	float getAbsoluteX() {}
-
-	boolean isAbsoluteHidden() {}
-
-	float getAbsoluteY() {}
-
-	void addElements(Array elements, float x, float y) {}
-
-	boolean canDrawCursor() {}
 
 	int getAnchorVAlign() {}
 
@@ -130,17 +114,35 @@ VocPackCharacterButton(CharacterButton) {
 
 	boolean isFocused() {}
 
-	int getHAlign() {}
-
 	int getVAlign() {}
 
-	boolean isEnabled() {}
+	MenuElement setFocused(boolean focused) {}
 
-	int getAnchorHAlign() {}
+	float getAbsoluteX() {}
+
+	boolean isAbsoluteHidden() {}
+
+	void addElements(Array elements, float x, float y) {}
+
+	MenuElement setHidden(boolean hidden) {}
+
+	MenuElement setAnchor(MenuElement anchor) {}
+
+	Set getActionListeners() {}
 
 	final void setMenuControllerSelection(MenuElement element) {}
 
-	Set getActionListeners() {}
+	float calcY() {}
+
+	MenuElement setFocusable(boolean focusable) {}
+
+	MenuButtonAction getAction() {}
+
+	float calcX() {}
+
+	boolean isTouching(float x, float y) {}
+
+	MenuButton setBackground(MenuThemeDrawable background) {}
 
 	MenuButton setText(String text) {}
 
@@ -150,8 +152,6 @@ VocPackCharacterButton(CharacterButton) {
 
 	MenuElement setSelected(boolean selected) {}
 
-	MenuButton setBackground(MenuThemeDrawable background) {}
-
 	Color getColor() {}
 
 	void setColor(CustomSpriteBatch batch) {}
@@ -160,53 +160,53 @@ VocPackCharacterButton(CharacterButton) {
 
 	MenuButton setDrawable(Drawable drawable) {}
 
-	Fonts getFont() {}
+	MenuButton setFont(Fonts font) {}
 
-	void click() {}
+	void updateText() {}
+
+	MenuButton setDisabledColor(Color disabledColor) {}
+
+	MenuButton setSingleClick(boolean singleClick) {}
+
+	Color getSelectedColor() {}
+
+	boolean isSingleClick() {}
+
+	MenuThemeDrawable getBackground() {}
+
+	BoundedFloat getTaintDisabled() {}
+
+	MenuButtonClickedAnimation getAnimation() {}
+
+	boolean isSelected() {}
+
+	void drawDrawable(Painter painter) {}
+
+	MenuButton setDefaultColor(Color defaultColor) {}
+
+	BoundedFloat getTaint() {}
+
+	Color getDisabledColor() {}
+
+	MenuElementShowAnim getShowAnimation() {}
+
+	MenuButton setSelectedColor(Color selectedColor) {}
+
+	void drawOverlay(CustomSpriteBatch batch, float x, float y, float width, float height) {}
+
+	Color getDefaultColor() {}
 
 	void drawBackground(CustomSpriteBatch batch, float x, float y, float width, float height) {}
 
 	void drawButton(CustomSpriteBatch batch, float x, float y, float width, float height) {}
 
-	MenuButton setFont(Fonts font) {}
-
-	MenuButton setDefaultColor(Color defaultColor) {}
-
-	boolean isSingleClick() {}
-
-	MenuButton setDisabledColor(Color disabledColor) {}
-
-	BoundedFloat getTaintDisabled() {}
-
-	Color getDefaultColor() {}
-
-	MenuElementShowAnim getShowAnimation() {}
-
-	MenuButtonClickedAnimation getAnimation() {}
-
-	Color getSelectedColor() {}
-
-	void drawOverlay(CustomSpriteBatch batch, float x, float y, float width, float height) {}
-
-	void drawDrawable(Painter painter) {}
-
-	MenuButton setSelectedColor(Color selectedColor) {}
-
-	MenuButton setSingleClick(boolean singleClick) {}
-
-	boolean isSelected() {}
-
-	Color getDisabledColor() {}
-
-	MenuThemeDrawable getBackground() {}
-
-	void updateText() {}
-
-	BoundedFloat getTaint() {}
-
 	boolean isDisableBackground() {}
 
 	MenuButton setDisableBackground(boolean disableBackground) {}
+
+	void click() {}
+
+	Fonts getFont() {}
 
 	void onClick() {}
 
@@ -214,8 +214,8 @@ VocPackCharacterButton(CharacterButton) {
 
 	void setCharacter(ID character) {}
 
-	void updateCharacter() {}
-
 	BattleEntityData getCharacterData() {}
+
+	void updateCharacter() {}
 
 }

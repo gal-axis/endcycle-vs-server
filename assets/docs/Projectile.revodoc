@@ -63,11 +63,11 @@ Projectile(GameObject) : ShadowEntity, BannedPanelObject {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void show(GameScreen screen) {}
-
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void hide(GameScreen screen) {}
+
+	void show(GameScreen screen) {}
 
 	final Origin getOrigin() {}
 
@@ -75,19 +75,23 @@ Projectile(GameObject) : ShadowEntity, BannedPanelObject {
 
 	byte getLayer() {}
 
-	final void removeObject() {}
-
 	final SoundContainer playSound(Sounds sound) {}
+
+	SoundContainer playSound(SoundInfo sound) {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
-	SoundContainer playSound(SoundInfo sound) {}
+	final void removeObject() {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
 	final PatchworkStateId getState() {}
 
 	void resetState() {}
+
+	final boolean isFlipY() {}
+
+	CColor calculateTint() {}
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scaleX, float scaleY) {}
 
@@ -101,43 +105,41 @@ Projectile(GameObject) : ShadowEntity, BannedPanelObject {
 
 	final boolean isAnimationFinished() {}
 
-	CColor calculateTint() {}
-
-	final float getXScale() {}
-
-	final float getYScale() {}
+	final Patchwork getPatchwork() {}
 
 	final void resetTint() {}
 
-	final Patchwork getPatchwork() {}
-
-	final boolean isFlipY() {}
-
-	final boolean isFlipX() {}
-
-	final void resetAnimation() {}
-
-	final boolean hasState(PatchworkStateId name) {}
-
-	final boolean inState(PatchworkStateId name) {}
-
-	void updateGraphics(float delta) {}
-
-	boolean setState(PatchworkStateId state) {}
+	void updateParticles(float delta) {}
 
 	Patchwork setPatchwork(Patchwork patchwork) {}
 
 	final Patchwork setPatchwork(ID id) {}
 
-	void updateParticles(float delta) {}
+	void updateGraphics(float delta) {}
+
+	final boolean hasState(PatchworkStateId name) {}
+
+	final float getXScale() {}
+
+	boolean setState(PatchworkStateId state) {}
+
+	final void resetAnimation() {}
+
+	final boolean inState(PatchworkStateId name) {}
+
+	final float getYScale() {}
+
+	final boolean isFlipX() {}
 
 	boolean isBannedPanel(BattleEntity entity, int x, int y) {}
 
-	boolean isBannedPanelRemove(BattleEntity entity) {}
-
 	float getBannedPanelPriority(BattleEntity entity) {}
 
+	boolean isBannedPanelRemove(BattleEntity entity) {}
+
 	List getShadowDrawables() {}
+
+	float getShadowX() {}
 
 	float getShadowAlpha() {}
 
@@ -145,7 +147,7 @@ Projectile(GameObject) : ShadowEntity, BannedPanelObject {
 
 	float getShadowZ() {}
 
-	float getShadowX() {}
+	void stop() {}
 
 	void flip() {}
 
@@ -161,9 +163,7 @@ Projectile(GameObject) : ShadowEntity, BannedPanelObject {
 
 	int getXTile() {}
 
-	boolean isSoonOutOfBounds() {}
-
-	void setFluid(boolean fluid) {}
+	void updateDelay() {}
 
 	boolean isOutOfBounds(int xTile, int yTile) {}
 
@@ -173,8 +173,10 @@ Projectile(GameObject) : ShadowEntity, BannedPanelObject {
 
 	void snapTile(int x, int y) {}
 
-	void updateDelay() {}
+	void setFluid(boolean fluid) {}
 
 	void updateTile() {}
+
+	boolean isSoonOutOfBounds() {}
 
 }

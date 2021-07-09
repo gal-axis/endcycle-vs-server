@@ -4013,7 +4013,7 @@
 	},
 	"change": [
 		{
-			"moves": 16,
+			"moves": 18,
 			"action": { "id": 101 }
 		}
 	],
@@ -4023,7 +4023,7 @@
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 84 }
 		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.HealthFilterAct",
 			"maxHealth": 0.5,
@@ -4037,12 +4037,13 @@
 				"voc": { "id": 10031 }
 			}
 		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.6 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.9 },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1, "relation": "TOWARD_TARGET" },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10352 }
-		}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.3 }
 	]
 },
 {
@@ -4068,7 +4069,7 @@
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.ChangeStateAct",
 			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" }
 		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.6 }
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 }
 	]
 },
 {

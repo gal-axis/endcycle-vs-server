@@ -45,19 +45,19 @@ ShootAttack(Attack) {
 
 	void controllerDisconnected(Controller controller) {}
 
-	boolean keyTyped(char character) {}
-
-	boolean triggerButton(ButtonEvent event) {}
-
-	boolean triggerType(int character) {}
+	boolean triggerTouch(TouchEvent event) {}
 
 	boolean addButtonTips(ButtonTipList tips) {}
 
-	boolean triggerTouch(TouchEvent event) {}
+	boolean triggerType(int character) {}
+
+	boolean keyDown(int keycode) {}
+
+	boolean keyTyped(char character) {}
 
 	boolean keyUp(int keycode) {}
 
-	boolean keyDown(int keycode) {}
+	boolean triggerButton(ButtonEvent event) {}
 
 	String getName() {}
 
@@ -75,45 +75,33 @@ ShootAttack(Attack) {
 
 	void flip() {}
 
-	final float getX(int xTile) {}
-
-	final float getY(int yTile) {}
-
-	boolean acceptsInput(ButtonEvent event) {}
-
-	Attack getWrapped(AttackShellWrapper wrapper, boolean shareHit, boolean gauge) {}
-
-	boolean reduceGauge(double amount) {}
-
-	boolean reduceGauge() {}
-
-	double getGaugeProgress() {}
-
-	void increaseGauge(double amount) {}
-
-	void setAnimationDuration(float duration) {}
-
 	void finish() {}
 
 	SoundContainer playSound(SoundInfo sound) {}
 
 	boolean active() {}
 
-	final void triggerAction(Object[] parameters) {}
+	final Origin getOrigin(int index) {}
 
-	void attackAnimation() {}
+	final void triggerAction(Object[] parameters) {}
 
 	void castAnimation() {}
 
-	final Origin getOrigin(int index) {}
+	void attackAnimation() {}
 
-	final Controller getController() {}
+	void setAnimationDuration(float duration) {}
 
 	boolean fillGauges() {}
 
-	final int getYTile() {}
+	final Controller getController() {}
+
+	final float getY(int yTile) {}
+
+	final float getX(int xTile) {}
 
 	final int getXTile() {}
+
+	final int getYTile() {}
 
 	Attack charge() {}
 
@@ -121,34 +109,46 @@ ShootAttack(Attack) {
 
 	void scheduleAction(int action, float delay) {}
 
-	void updateAttackTasks(float delta) {}
+	Attack getWrapped(AttackWrapper wrapper, boolean shareHit, boolean gauge) {}
 
-	boolean hasAnimationState(PatchworkStateId state) {}
+	boolean acceptsInput(ButtonEvent event) {}
 
-	final BattleEntityList getBattleEntities() {}
+	boolean reduceGauge(double amount) {}
 
-	void setAnimationState(PatchworkStateId state) {}
+	boolean reduceGauge() {}
 
-	void addWrappers(Array wrappers) {}
-
-	final int getXTileInFront() {}
-
-	final int getTurn() {}
+	double getGaugeProgress() {}
 
 	void runAction(int action) {}
 
 	AttackPortal getPortal(BattleEntity entity, float portalX, float portalY, float time) {}
 
-	void shoot() {}
+	final int getXTileInFront() {}
 
-	void resetShootTimer() {}
+	void increaseGauge(double amount) {}
 
-	void spawnShot(Battle battle, Shot shotData, int id, Party party, boolean turned, float shotX, float shotY) {}
+	void addWrappers(AttackWrappers wrappers) {}
+
+	final int getTurn() {}
+
+	final BattleEntityList getBattleEntities() {}
+
+	void setAnimationState(PatchworkStateId state) {}
+
+	boolean hasAnimationState(PatchworkStateId state) {}
+
+	void updateAttackTasks(float delta) {}
+
+	void spawnShot(int index) {}
 
 	void spawnShot() {}
 
+	void spawnShot(Battle battle, Shot shotData, int id, Party party, boolean turned, float shotX, float shotY) {}
+
 	void spawnShot(Shot shotData, int id) {}
 
-	void spawnShot(int index) {}
+	void resetShootTimer() {}
+
+	void shoot() {}
 
 }

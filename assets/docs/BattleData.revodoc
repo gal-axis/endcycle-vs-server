@@ -32,12 +32,12 @@ final BattleData(Moddable) : DataName, Named {
 
 	String getDataName() {}
 
-	boolean hasPlayer() {}
+	boolean hasMode(GameModeProvider mode) {}
 
 	String getEnumName() {}
 
-	boolean hasMode(GameModeProvider mode) {}
-
 	void addEntityShell(EntityShell entity) {}
+
+	boolean hasPlayer() {}
 
 }

@@ -123,7 +123,9 @@
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
 			"attacks": [
-				{ "class": "com.one2b3.endcycle.utils.objects.Point" }
+				{
+					"stick": {}
+				}
 			],
 			"hitEffect": {
 				"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.HitEffect",
@@ -839,6 +841,7 @@
 		},
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.guarding.ShieldAttack",
+			"shieldDuration": 8,
 			"particle": {
 				"drawable": {
 					"drawable": { "id": 1142 }
@@ -1205,7 +1208,9 @@
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
 			"attacks": [
-				{ "class": "com.one2b3.endcycle.utils.objects.Point" }
+				{
+					"stick": {}
+				}
 			],
 			"limitX": 4,
 			"piercing": true,

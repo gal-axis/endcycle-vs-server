@@ -11,11 +11,11 @@ Gdx2DPixmap(Object) {
 	static final int GDX2D_BLEND_NONE = 0;
 	static final int GDX2D_BLEND_SRC_OVER = 1;
 
-	new(ByteBuffer arg0, long[] arg1) {}
+	new(int arg0, int arg1, int arg2) {}
 
 	new(byte[] arg0, int arg1, int arg2, int arg3) {}
 
-	new(int arg0, int arg1, int arg2) {}
+	new(ByteBuffer arg0, long[] arg1) {}
 
 	boolean equals(Object arg0) {}
 
@@ -27,52 +27,52 @@ Gdx2DPixmap(Object) {
 
 	void clear(int arg0) {}
 
-	int getWidth() {}
-
 	int getHeight() {}
+
+	int getWidth() {}
 
 	void setScale(int arg0) {}
 
 	int getGLInternalFormat() {}
 
-	int getGLFormat() {}
-
-	int getGLType() {}
-
-	ByteBuffer getPixels() {}
-
-	int getFormat() {}
-
 	void drawPixmap(Gdx2DPixmap arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8) {}
 
 	void drawPixmap(Gdx2DPixmap arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6) {}
 
-	void fillCircle(int arg0, int arg1, int arg2, int arg3) {}
+	int getGLFormat() {}
 
-	void setBlend(int arg0) {}
+	ByteBuffer getPixels() {}
+
+	int getGLType() {}
+
+	int getFormat() {}
+
+	void drawLine(int arg0, int arg1, int arg2, int arg3, int arg4) {}
 
 	void drawCircle(int arg0, int arg1, int arg2, int arg3) {}
+
+	void fillCircle(int arg0, int arg1, int arg2, int arg3) {}
 
 	void fillTriangle(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6) {}
 
 	int getPixel(int arg0, int arg1) {}
 
-	void drawLine(int arg0, int arg1, int arg2, int arg3, int arg4) {}
-
-	void drawRect(int arg0, int arg1, int arg2, int arg3, int arg4) {}
-
 	void fillRect(int arg0, int arg1, int arg2, int arg3, int arg4) {}
 
-	static String getFailureReason() {}
+	void setBlend(int arg0) {}
 
-	void setPixel(int arg0, int arg1, int arg2) {}
+	static int toGlFormat(int arg0) {}
 
 	static Gdx2DPixmap newPixmap(int arg0, int arg1, int arg2) {}
 
-	static int toGlType(int arg0) {}
+	void setPixel(int arg0, int arg1, int arg2) {}
 
 	String getFormatString() {}
 
-	static int toGlFormat(int arg0) {}
+	void drawRect(int arg0, int arg1, int arg2, int arg3, int arg4) {}
+
+	static int toGlType(int arg0) {}
+
+	static String getFailureReason() {}
 
 }

@@ -1,6 +1,46 @@
 [
 {
 	"class": "com.one2b3.endcycle.features.help.HelpData",
+	"id": { "id": 20 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Help.Inventory.Name" },
+	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Inventory.Description" },
+	"drawable": { "id": 395 }
+},
+{
+	"class": "com.one2b3.endcycle.features.help.HelpData",
+	"id": { "id": 11 },
+	"parent": { "id": 20 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Inventory.Tutorial1.Name" },
+	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Inventory.Tutorial1.Description" },
+	"drawable": { "id": 472 },
+	"tutorial": "INVENTORY"
+},
+{
+	"class": "com.one2b3.endcycle.features.help.HelpData",
+	"id": { "id": 43 },
+	"parent": { "id": 20 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Inventory.Tutorial2" },
+	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Inventory.Tutorial2.Desc" },
+	"drawable": { "id": 26 },
+	"tutorial": "INVENTORY_STYLE"
+},
+{
+	"class": "com.one2b3.endcycle.features.help.HelpData",
+	"id": { "id": 42 },
+	"parent": { "id": 20 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Inventory.Roles" },
+	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Inventory.Roles.Desc" }
+},
+{
+	"class": "com.one2b3.endcycle.features.help.HelpData",
+	"id": { "id": 44 },
+	"parent": { "id": 20 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Inventory.Recipes" },
+	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Inventory.Recipes.Desc" },
+	"drawable": { "id": 569 }
+}
+{
+	"class": "com.one2b3.endcycle.features.help.HelpData",
 	"id": { "id": 4 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Help.Battle.Name" },
 	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Help.Battle.Description" },
@@ -173,102 +213,117 @@
 	"class": "com.one2b3.endcycle.features.help.HelpData",
 	"id": { "id": 12 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Vocs" },
-	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Vocs.Description" }
+	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Vocs.Description" },
+	"drawable": { "id": 584 }
 },
 {
 	"class": "com.one2b3.endcycle.features.help.HelpData",
 	"id": { "id": 18 },
 	"parent": { "id": 12 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Vocs.Interactions" },
-	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Vocs.Interactions.Description" }
+	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Vocs.Interactions.Description" },
+	"drawable": { "id": 1169 }
 },
 {
 	"class": "com.one2b3.endcycle.features.help.HelpData",
 	"id": { "id": 21 },
 	"parent": { "id": 12 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Vocs.Types" },
-	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Vocs.Types.Description" }
+	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Vocs.Types.Description" },
+	"drawable": { "id": 1112 }
 },
 {
 	"class": "com.one2b3.endcycle.features.help.HelpData",
 	"id": { "id": 24 },
 	"parent": { "id": 12 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Vocs.Spawning" },
-	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Vocs.Spawning.Description" }
+	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Vocs.Spawning.Description" },
+	"drawable": { "id": 1185 }
 },
 {
 	"class": "com.one2b3.endcycle.features.help.HelpData",
 	"id": { "id": 27 },
 	"parent": { "id": 12 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Vocs.ElementalStyle" },
-	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Vocs.ElementalStyle.Description" }
+	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Vocs.ElementalStyle.Description" },
+	"drawable": { "id": 1104 }
 },
 {
 	"class": "com.one2b3.endcycle.features.help.HelpData",
 	"id": { "id": 26 },
 	"parent": { "id": 12 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Vocs.RushSword.Name" },
-	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Vocs.RushSword.Description" }
+	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Vocs.RushSword.Description" },
+	"drawable": { "id": 675 }
 },
 {
 	"class": "com.one2b3.endcycle.features.help.HelpData",
 	"id": { "id": 32 },
 	"parent": { "id": 12 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.NoticeMe.Name" },
-	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Vocs.NoticeMe" }
+	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Vocs.NoticeMe" },
+	"drawable": { "id": 64 }
 },
 {
 	"class": "com.one2b3.endcycle.features.help.HelpData",
 	"id": { "id": 33 },
 	"parent": { "id": 12 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Vocs.PanelSwords" },
-	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Vocs.PanelSwords.Description" }
+	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Vocs.PanelSwords.Description" },
+	"drawable": { "id": 1159 }
 },
 {
 	"class": "com.one2b3.endcycle.features.help.HelpData",
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Help.Online.Name" },
-	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Help.Online.Description" }
+	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Help.Online.Description" },
+	"drawable": { "id": 563 }
 },
 {
 	"class": "com.one2b3.endcycle.features.help.HelpData",
 	"id": { "id": 13 },
 	"parent": {},
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Online.Nice" },
-	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Online.Nice.Description" }
+	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Online.Nice.Description" },
+	"drawable": { "id": 75 }
 },
 {
 	"class": "com.one2b3.endcycle.features.help.HelpData",
 	"id": { "id": 15 },
 	"parent": {},
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Online.Nobody" },
-	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Online.Nobody.Description" }
+	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Online.Nobody.Description" },
+	"drawable": { "id": 262 }
 },
 {
 	"class": "com.one2b3.endcycle.features.help.HelpData",
 	"id": { "id": 16 },
 	"parent": {},
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Online.Spectate" },
-	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Online.Spectate.Description" }
+	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Online.Spectate.Description" },
+	"drawable": { "id": 33 }
 },
 {
 	"class": "com.one2b3.endcycle.features.help.HelpData",
 	"id": { "id": 17 },
 	"parent": {},
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Online.Emotup" },
-	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Online.Emotup.Description" }
+	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Online.Emotup.Description" },
+	"drawable": { "id": 1202 }
 },
 {
 	"class": "com.one2b3.endcycle.features.help.HelpData",
 	"id": { "id": 40 },
 	"parent": {},
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Online.Selfhost" },
-	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Online.Selfhost.Description" }
+	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Online.Selfhost.Description" },
+	"drawable": { "id": 32 }
 },
 {
 	"class": "com.one2b3.endcycle.features.help.HelpData",
 	"id": { "id": 1 },
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Help.Modding.Name" },
-	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Help.Modding.Description" }
+	"text": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.HelpMessages", "key": "Help.Modding.Description" },
+	"drawable": { "id": 448 }
 },
 {
 	"class": "com.one2b3.endcycle.features.help.HelpData",

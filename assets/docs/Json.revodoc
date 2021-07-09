@@ -16,47 +16,19 @@ Json(Object) {
 
 	void writeFields(Object arg0) {}
 
-	void setUsePrototypes(boolean arg0) {}
-
-	void writeValue(String arg0, Object arg1) {}
-
-	void writeValue(Object arg0) {}
-
-	void setDefaultSerializer(Serializer arg0) {}
-
-	void setIgnoreUnknownFields(boolean arg0) {}
-
-	boolean getIgnoreUnknownFields() {}
-
-	void setReadDeprecated(boolean arg0) {}
-
-	void setQuoteLongValues(boolean arg0) {}
-
-	void setIgnoreDeprecated(boolean arg0) {}
-
-	String prettyPrint(String arg0, PrettyPrintSettings arg1) {}
-
-	String prettyPrint(Object arg0, PrettyPrintSettings arg1) {}
-
-	String prettyPrint(String arg0, int arg1) {}
-
-	String prettyPrint(Object arg0, int arg1) {}
-
-	String prettyPrint(Object arg0) {}
-
-	String prettyPrint(String arg0) {}
-
-	void toJson(Object arg0, Writer arg1) {}
-
-	String toJson(Object arg0) {}
-
-	void setSortFields(boolean arg0) {}
-
 	void setOutputType(OutputType arg0) {}
 
 	void setEnumNames(boolean arg0) {}
 
 	void setTypeName(String arg0) {}
+
+	void setSortFields(boolean arg0) {}
+
+	void writeArrayEnd() {}
+
+	void writeObjectStart(String arg0) {}
+
+	void writeObjectStart() {}
 
 	void setWriter(Writer arg0) {}
 
@@ -66,20 +38,48 @@ Json(Object) {
 
 	void writeArrayStart(String arg0) {}
 
-	void writeField(Object arg0, String arg1, String arg2) {}
-
 	void writeField(Object arg0, String arg1) {}
+
+	void writeField(Object arg0, String arg1, String arg2) {}
 
 	JsonWriter getWriter() {}
 
-	void readField(Object arg0, String arg1, JsonValue arg2) {}
-
 	void readField(Object arg0, String arg1, String arg2, JsonValue arg3) {}
 
-	void writeObjectStart() {}
+	void readField(Object arg0, String arg1, JsonValue arg2) {}
 
-	void writeObjectStart(String arg0) {}
+	void setIgnoreUnknownFields(boolean arg0) {}
 
-	void writeArrayEnd() {}
+	String prettyPrint(String arg0) {}
+
+	String prettyPrint(Object arg0) {}
+
+	String prettyPrint(Object arg0, int arg1) {}
+
+	String prettyPrint(String arg0, int arg1) {}
+
+	String prettyPrint(Object arg0, PrettyPrintSettings arg1) {}
+
+	String prettyPrint(String arg0, PrettyPrintSettings arg1) {}
+
+	void toJson(Object arg0, Writer arg1) {}
+
+	String toJson(Object arg0) {}
+
+	void setUsePrototypes(boolean arg0) {}
+
+	void writeValue(String arg0, Object arg1) {}
+
+	void writeValue(Object arg0) {}
+
+	boolean getIgnoreUnknownFields() {}
+
+	void setQuoteLongValues(boolean arg0) {}
+
+	void setIgnoreDeprecated(boolean arg0) {}
+
+	void setReadDeprecated(boolean arg0) {}
+
+	void setDefaultSerializer(Serializer arg0) {}
 
 }

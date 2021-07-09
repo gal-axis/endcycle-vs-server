@@ -22,13 +22,13 @@ FireTile(NormalExpiringTile) {
 
 	boolean isAccessible(BattleEntity entity) {}
 
-	int getX() {}
-
-	int getY() {}
+	void dispose() {}
 
 	void draw(Batch batch, float x, float y, Party party, float shade, float alpha) {}
 
-	void dispose() {}
+	int getX() {}
+
+	int getY() {}
 
 	void refresh() {}
 
@@ -36,11 +36,11 @@ FireTile(NormalExpiringTile) {
 
 	OwnedHitProperty hit(OwnedHitProperty property) {}
 
+	void actionTriggered(Object[] action) {}
+
 	boolean changeType(PanelType type) {}
 
 	void free() {}
-
-	void actionTriggered(Object[] action) {}
 
 	Battle getBattle() {}
 
@@ -56,8 +56,8 @@ FireTile(NormalExpiringTile) {
 
 	boolean isFlickering() {}
 
-	void spawnFireParticle(BattleEntity entity) {}
-
 	boolean affected(BattleEntity entity) {}
+
+	void spawnFireParticle(BattleEntity entity) {}
 
 }

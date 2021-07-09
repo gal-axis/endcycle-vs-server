@@ -2876,14 +2876,14 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"x": 14,
+			"x": 20,
 			"y": 1,
 			"turned": true,
 			"id": { "id": 3 },
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"action": { "id": 4 },
 			"configuration": {
-				"stats": { "hp": 600, "actionSpeed": 0.8 }
+				"stats": { "hp": 700, "actionSpeed": 0.8 }
 			},
 			"pack": {
 				"vocs": [
@@ -2901,7 +2901,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"x": 19,
+			"x": 14,
 			"y": 1,
 			"turned": true,
 			"name": "",
@@ -2909,7 +2909,7 @@
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"action": {},
 			"configuration": {
-				"stats": { "hp": 800, "actionSpeed": 0.8 }
+				"stats": { "hp": 500, "actionSpeed": 0.6 }
 			},
 			"pack": {
 				"vocs": [
@@ -2953,37 +2953,52 @@
 			}
 		},
 		{
-			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"turned": true,
+			"vital": false,
+			"preview": false,
+			"party": "FRIENDLY",
+			"name": "6:1",
+			"form": { "id": 53 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 9,
+			"y": 1,
+			"turned": true,
+			"vital": false,
+			"party": "NEUTRAL",
+			"name": "11:1",
+			"form": { "id": 54 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 15,
+			"y": 1,
+			"turned": true,
+			"party": "NEUTRAL",
+			"name": "17:1",
+			"form": { "id": 55 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
 			"x": 21,
 			"y": 1,
 			"vital": false,
 			"party": "NEUTRAL",
-			"id": { "id": 47 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "24:1" },
-			"configuration": {},
-			"pack": {
-				"vocs": [
-					{
-						"items": [ null, null, null, null ]
-					},
-					{
-						"items": [ null, null, null, null ]
-					},
-					{
-						"items": [ null, null, null, null ]
-					}
-				]
-			},
-			"type": "TELEPORTER"
+			"name": "24:1",
+			"form": { "id": 56 }
 		}
 	],
 	"entityGoals": [
 		{ "entity": "loot", "display": "Loot", "defeated": 1 }
 	],
 	"liberations": [
-		{ "x": 13, "width": 2, "height": 3 },
-		{ "x": 7, "width": 2, "height": 3 },
-		{ "x": 18, "width": 4, "height": 3 }
+		{ "x": 18, "width": 4, "height": 3 },
+		{ "x": 7, "width": 3, "height": 3 },
+		{ "x": 13, "width": 3, "height": 3 }
 	]
 },
 {
@@ -6987,6 +7002,25 @@
 			"preview": false,
 			"name": "puppy",
 			"form": { "id": 51 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 87 },
+	"dataName": "",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "Battle.Spark" },
+	"background": {},
+	"music": { "id": 26 },
+	"entityShells": [
+		{ "class": "com.one2b3.endcycle.features.battle.EntityFormShell", "x": 1, "y": 1, "party": "FRIENDLY", "player": true },
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"turned": true,
+			"parent": "",
+			"form": { "id": 52 }
 		}
 	]
 }

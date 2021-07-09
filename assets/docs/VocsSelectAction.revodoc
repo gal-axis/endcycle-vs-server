@@ -12,14 +12,14 @@ VocsSelectAction(Object) : MenuTableAction {
 
 	void specialTableSelect(int selection, VocShell selected) {}
 
-	boolean selectTableHeader() {}
-
 	void moveTableSelection(int selection) {}
 
 	void updateTableSelection(int selection) {}
 
-	void selectTable(int selection, VocShell selected) {}
+	boolean selectTableHeader() {}
 
 	void clickedTable(int selection, VocShell selected, float x, float y) {}
+
+	void selectTable(int selection, VocShell selected) {}
 
 }

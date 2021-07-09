@@ -46,19 +46,19 @@ BlockerAttack(Attack) {
 
 	void controllerDisconnected(Controller controller) {}
 
-	boolean keyUp(int keycode) {}
-
-	boolean triggerButton(ButtonEvent event) {}
-
 	boolean triggerTouch(TouchEvent event) {}
 
 	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean triggerType(int character) {}
 
 	boolean keyDown(int keycode) {}
 
 	boolean keyTyped(char character) {}
 
-	boolean triggerType(int character) {}
+	boolean keyUp(int keycode) {}
+
+	boolean triggerButton(ButtonEvent event) {}
 
 	String getName() {}
 
@@ -76,51 +76,43 @@ BlockerAttack(Attack) {
 
 	void flip() {}
 
-	final float getY(int yTile) {}
-
-	final float getX(int xTile) {}
-
-	boolean acceptsInput(ButtonEvent event) {}
-
-	void setAnimationDuration(float duration) {}
-
-	boolean active() {}
+	void finish() {}
 
 	SoundContainer playSound(SoundInfo sound) {}
 
-	void finish() {}
+	boolean active() {}
+
+	final Origin getOrigin(int index) {}
 
 	final void triggerAction(Object[] parameters) {}
 
-	void attackAnimation() {}
-
 	void castAnimation() {}
 
-	final Origin getOrigin(int index) {}
+	void attackAnimation() {}
+
+	void setAnimationDuration(float duration) {}
 
 	boolean fillGauges() {}
 
 	final Controller getController() {}
 
-	final int getYTile() {}
+	final float getY(int yTile) {}
+
+	final float getX(int xTile) {}
 
 	final int getXTile() {}
 
+	final int getYTile() {}
+
 	Attack charge() {}
 
-	Attack getWrapped(AttackShellWrapper wrapper, boolean shareHit, boolean gauge) {}
+	void scheduleAction(Runnable action, float delay) {}
 
-	final BattleEntityList getBattleEntities() {}
+	void scheduleAction(int action, float delay) {}
 
-	void setAnimationState(PatchworkStateId state) {}
+	Attack getWrapped(AttackWrapper wrapper, boolean shareHit, boolean gauge) {}
 
-	void updateAttackTasks(float delta) {}
-
-	boolean hasAnimationState(PatchworkStateId state) {}
-
-	void addWrappers(Array wrappers) {}
-
-	AttackPortal getPortal(BattleEntity entity, float portalX, float portalY, float time) {}
+	boolean acceptsInput(ButtonEvent event) {}
 
 	boolean reduceGauge(double amount) {}
 
@@ -130,15 +122,23 @@ BlockerAttack(Attack) {
 
 	void runAction(int action) {}
 
-	void scheduleAction(Runnable action, float delay) {}
-
-	void scheduleAction(int action, float delay) {}
-
-	final int getTurn() {}
+	AttackPortal getPortal(BattleEntity entity, float portalX, float portalY, float time) {}
 
 	final int getXTileInFront() {}
 
 	void increaseGauge(double amount) {}
+
+	void addWrappers(AttackWrappers wrappers) {}
+
+	final int getTurn() {}
+
+	final BattleEntityList getBattleEntities() {}
+
+	void setAnimationState(PatchworkStateId state) {}
+
+	boolean hasAnimationState(PatchworkStateId state) {}
+
+	void updateAttackTasks(float delta) {}
 
 	void interrupt() {}
 

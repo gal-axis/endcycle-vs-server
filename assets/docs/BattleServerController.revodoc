@@ -13,9 +13,9 @@ BattleServerController(Object) : ScreenConnection {
 
 	int hashCode() {}
 
-	boolean isConnected() {}
-
 	boolean isClient() {}
+
+	boolean isConnected() {}
 
 	float getLatency() {}
 
@@ -29,11 +29,11 @@ BattleServerController(Object) : ScreenConnection {
 
 	void stop() {}
 
-	boolean isActive() {}
+	void restart() {}
 
 	void dispose() {}
 
-	void restart() {}
+	boolean isActive() {}
 
 	Battle getBattle() {}
 
@@ -43,20 +43,20 @@ BattleServerController(Object) : ScreenConnection {
 
 	boolean hasBattle() {}
 
-	void sendTCP(Object tcp) {}
-
-	void sendTCP(List tcp) {}
-
-	void sendUDP(Object udp) {}
-
-	void sendUDP(List udp) {}
-
-	void queueUpdate() {}
-
-	void setupConnected() {}
+	List getInitialData() {}
 
 	void sendDelta(float time, byte[] patch) {}
 
-	List getInitialData() {}
+	void queueUpdate() {}
+
+	void sendUDP(List udp) {}
+
+	void sendUDP(Object udp) {}
+
+	void setupConnected() {}
+
+	void sendTCP(List tcp) {}
+
+	void sendTCP(Object tcp) {}
 
 }

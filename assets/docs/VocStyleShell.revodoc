@@ -20,9 +20,9 @@ final VocStyleShell(Object) : Serializable, Lootable, Comparable {
 
 	Lootable split() {}
 
-	void addToInventory() {}
-
 	LootDisplayer createDisplayer() {}
+
+	void addToInventory() {}
 
 	void write(Json json) {}
 

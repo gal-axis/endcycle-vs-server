@@ -19,6 +19,8 @@ BattleServerDelta(Object) {
 
 	void reset(Battle battle) {}
 
+	void cancel() {}
+
 	void applyInput(float delay, BattleClientInput input) {}
 
 	BattleServerFrameData updateState() {}

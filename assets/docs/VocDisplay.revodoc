@@ -22,17 +22,17 @@ VocDisplay(Object) {
 
 	void shake() {}
 
-	VocEntry getVoc() {}
-
 	void use() {}
+
+	float getUnlock() {}
 
 	float getATint() {}
 
-	void drawMod(CustomSpriteBatch batch, VocEntry voc, float x, float y, float tint, float aTint) {}
-
 	float getErrorOffset() {}
 
-	float getUnlock() {}
+	void drawMod(CustomSpriteBatch batch, VocEntry voc, float x, float y, float tint, float aTint) {}
+
+	VocEntry getVoc() {}
 
 	float getScale() {}
 

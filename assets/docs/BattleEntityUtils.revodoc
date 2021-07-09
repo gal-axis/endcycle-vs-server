@@ -12,10 +12,10 @@ final BattleEntityUtils(Object) {
 
 	static void heal(BattleEntity battleEntity, float health) {}
 
-	static void removeProjectiles(Battle battle, int xTile, int yTile, Consumer onRemove) {}
-
 	static BattleParticle createParticleAhead(BattleEntity entity, Drawable drawable) {}
 
 	static BattleParticle createParticleAhead(BattleEntity battleEntity, ID drawable) {}
+
+	static void removeProjectiles(Battle battle, int xTile, int yTile, Consumer onRemove) {}
 
 }

@@ -33,31 +33,31 @@ ThrowListener(Object) : BattleEntityListener, FloatTimerAction, LandAction {
 
 	void init() {}
 
+	void dispose() {}
+
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void dispose() {}
+	PatchworkStateId setState(PatchworkStateId id) {}
 
 	CColor getTint() {}
 
-	void attack(Attack attack) {}
-
 	double crush(double amount, int crushStrength) {}
 
-	void inflict(OwnedHitProperty property) {}
-
-	void inflictPre(OwnedHitProperty property) {}
-
-	int heal(int amount, boolean display) {}
-
-	int hurt(int amount, boolean display) {}
-
-	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
+	void attack(Attack attack) {}
 
 	AilmentInflict inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
 
 	void inflictPost(OwnedHitProperty property) {}
 
-	PatchworkStateId setState(PatchworkStateId id) {}
+	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
+
+	void inflictPre(OwnedHitProperty property) {}
+
+	void inflict(OwnedHitProperty property) {}
+
+	int hurt(int amount, boolean display) {}
+
+	int heal(int amount, boolean display) {}
 
 	void drawHud(CustomSpriteBatch batch, float xOfs, float yOfs, float width, float height) {}
 

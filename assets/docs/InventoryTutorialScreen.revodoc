@@ -1,0 +1,139 @@
+InventoryTutorialScreen(InventoryScreen) {
+
+	final ButtonTipChecker buttonTips;
+	GameScreenInfo info;
+	AudioHandler audio;
+	Layers layers;
+	GameEventHandler events;
+	ScreenInputHandler input;
+	GameScreenTimer timer;
+	Shaker shaker;
+	ScreenConnection connection;
+	float timeScale;
+	final String title;
+	final MenuHeader menuHeader;
+	MenuElementController elementController;
+	MenuElementGroup objectGroup;
+	FadeType fadeType;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	GameScreen get() {}
+
+	void update(float delta) {}
+
+	ScreenObject getObject(String name) {}
+
+	void init() {}
+
+	void resume() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void setScreen(GameScreen screen) {}
+
+	void setScreen(GameScreen screen, FadeType fade) {}
+
+	void setScreen(GameScreen screen, FadeType fade, boolean changesBefore) {}
+
+	void render(float delta) {}
+
+	void resetTimer() {}
+
+	boolean removeObject(ScreenObject object) {}
+
+	void updateTimer(float delta) {}
+
+	void show() {}
+
+	void updateShake(float delta) {}
+
+	boolean isShaking() {}
+
+	void updateObjects(float delta) {}
+
+	void drawButtonTips(CustomSpriteBatch batch, float x, float y) {}
+
+	void changeFrom(GameScreen screen, boolean init) {}
+
+	void clearObjects() {}
+
+	void resetShake() {}
+
+	ScreenObject addObject(ScreenObject object) {}
+
+	void toPreviousScreen(FadeType type) {}
+
+	void toPreviousScreen() {}
+
+	Array getObjects() {}
+
+	void changeTo(GameScreen screen, boolean init) {}
+
+	void shakeVibrate(float x, float y, float duration) {}
+
+	void hide() {}
+
+	void shake(float x, float y, float duration) {}
+
+	boolean isCurrentScreen() {}
+
+	void dispose() {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void draw(CustomSpriteBatch batch) {}
+
+	void addRenderProcessor(RenderProcessor renderProcessor) {}
+
+	void setPreviousScreen(GameScreen previousScreen) {}
+
+	void removeRenderProcessor(RenderProcessor renderProcessor) {}
+
+	GameScreen getPreviousScreen() {}
+
+	Array getRenderProcessors() {}
+
+	void addScript(Script script, float delay) {}
+
+	Object[] getTextArguments() {}
+
+	boolean isLoading() {}
+
+	void pause() {}
+
+	void createMenuElements() {}
+
+	void backButtonPressed() {}
+
+	void buildControllerNeighbors() {}
+
+	void centerElements() {}
+
+	void enableInput() {}
+
+	void disableInput() {}
+
+	void help() {}
+
+	boolean triggerButton(ButtonEvent event) {}
+
+	void practice() {}
+
+	void openShop() {}
+
+	MenuSidebar getMenuSidebar() {}
+
+	void addTabElement(String name, Drawable icon, MenuElement element, MenuElement selected) {}
+
+	Inventory getInventory() {}
+
+	boolean handle(GameEvent event) {}
+
+}

@@ -22,9 +22,9 @@ IceTile(NormalTile) : BECondition {
 
 	boolean isAccessible(BattleEntity entity) {}
 
-	int getX() {}
-
 	int getY() {}
+
+	int getX() {}
 
 	void draw(Batch batch, float x, float y, Party party, float shade, float alpha) {}
 
@@ -32,9 +32,9 @@ IceTile(NormalTile) : BECondition {
 
 	void refresh() {}
 
-	final void triggerAction(Object[] parameters) {}
-
 	OwnedHitProperty hit(OwnedHitProperty property) {}
+
+	final void triggerAction(Object[] parameters) {}
 
 	boolean changeType(PanelType type) {}
 
@@ -44,9 +44,9 @@ IceTile(NormalTile) : BECondition {
 
 	Battle getBattle() {}
 
-	OwnedHitProperty affect(OwnedHitProperty property) {}
-
 	void enter(BattleEntity entity) {}
+
+	OwnedHitProperty affect(OwnedHitProperty property) {}
 
 	DrawableImage getDrawable(Party party) {}
 

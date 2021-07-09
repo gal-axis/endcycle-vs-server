@@ -10,7 +10,6 @@ final MathUtils(Object) {
 	static final float radDeg = 57.295776;
 	static final float degreesToRadians = 0.017453292;
 	static final float degRad = 0.017453292;
-	static Random random;
 
 	boolean equals(Object arg0) {}
 
@@ -40,11 +39,11 @@ final MathUtils(Object) {
 
 	static float random(float arg0, float arg1) {}
 
+	static int random(int arg0) {}
+
 	static long random(long arg0) {}
 
 	static long random(long arg0, long arg1) {}
-
-	static int random(int arg0) {}
 
 	static int random(int arg0, int arg1) {}
 
@@ -56,17 +55,17 @@ final MathUtils(Object) {
 
 	static float lerp(float arg0, float arg1, float arg2) {}
 
-	static boolean isEqual(float arg0, float arg1, float arg2) {}
-
-	static boolean isEqual(float arg0, float arg1) {}
+	static boolean randomBoolean() {}
 
 	static boolean randomBoolean(float arg0) {}
 
-	static boolean randomBoolean() {}
+	static boolean isEqual(float arg0, float arg1) {}
 
-	static float clamp(float arg0, float arg1, float arg2) {}
+	static boolean isEqual(float arg0, float arg1, float arg2) {}
 
 	static double clamp(double arg0, double arg1, double arg2) {}
+
+	static float clamp(float arg0, float arg1, float arg2) {}
 
 	static short clamp(short arg0, short arg1, short arg2) {}
 
@@ -74,38 +73,38 @@ final MathUtils(Object) {
 
 	static long clamp(long arg0, long arg1, long arg2) {}
 
-	static float norm(float arg0, float arg1, float arg2) {}
-
 	static boolean isZero(float arg0) {}
 
 	static boolean isZero(float arg0, float arg1) {}
+
+	static float norm(float arg0, float arg1, float arg2) {}
 
 	static float sinDeg(float arg0) {}
 
 	static float cosDeg(float arg0) {}
 
+	static boolean isPowerOfTwo(int arg0) {}
+
+	static float lerpAngle(float arg0, float arg1, float arg2) {}
+
+	static int floorPositive(float arg0) {}
+
 	static int ceilPositive(float arg0) {}
 
-	static float randomTriangular(float arg0, float arg1, float arg2) {}
+	static int roundPositive(float arg0) {}
+
+	static float log2(float arg0) {}
+
+	static int nextPowerOfTwo(int arg0) {}
 
 	static float randomTriangular() {}
 
 	static float randomTriangular(float arg0) {}
 
+	static float randomTriangular(float arg0, float arg1, float arg2) {}
+
 	static float randomTriangular(float arg0, float arg1) {}
 
-	static int floorPositive(float arg0) {}
-
-	static boolean isPowerOfTwo(int arg0) {}
-
-	static float lerpAngle(float arg0, float arg1, float arg2) {}
-
 	static float lerpAngleDeg(float arg0, float arg1, float arg2) {}
-
-	static int nextPowerOfTwo(int arg0) {}
-
-	static float log2(float arg0) {}
-
-	static int roundPositive(float arg0) {}
 
 }

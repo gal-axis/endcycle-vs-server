@@ -33,38 +33,38 @@ AdventureNodeMap(BattleMinimap) {
 
 	boolean isHidden() {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	float getY() {}
-
-	float getX() {}
-
-	float calcX() {}
-
-	float calcY() {}
-
 	void event(GameEvent event) {}
 
 	void button(ButtonEvent trigger) {}
 
 	boolean touch(TouchEvent trigger) {}
 
-	boolean increaseOffset() {}
+	float getY() {}
 
-	boolean isTouching(float x, float y) {}
+	float getX() {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	float calcY() {}
+
+	float calcX() {}
 
 	void finishMoving() {}
 
-	boolean finishedMoving() {}
-
 	float getMove() {}
 
-	void drawBackground(CustomSpriteBatch batch, float xOfs, float yOfs, boolean full, float width, float height) {}
+	boolean finishedMoving() {}
 
-	float getCameraY() {}
+	boolean isTouching(float x, float y) {}
+
+	boolean increaseOffset() {}
 
 	float getCameraX() {}
 
 	void drawMinimap(CustomSpriteBatch batch, float xOfs, float yOfs, boolean full) {}
+
+	void drawBackground(CustomSpriteBatch batch, float xOfs, float yOfs, boolean full, float width, float height) {}
+
+	float getCameraY() {}
 
 }

@@ -18,30 +18,32 @@ BattleEntityUltraVocEntry(VocEntry) {
 
 	int getSlot() {}
 
+	boolean isLocked() {}
+
 	boolean isValid() {}
 
 	String getMod() {}
-
-	int getCrushPower() {}
-
-	boolean isLegal() {}
-
-	void setVoc(Voc voc) {}
-
-	String getFullName() {}
-
-	int getPower() {}
 
 	AttackPlan createPlan(int gauge) {}
 
 	VocStyle setStyle(VocStyle mod) {}
 
+	VocElement getElement() {}
+
 	int getGauge() {}
 
 	int getLevel() {}
 
-	VocElement getElement() {}
+	String getFullName() {}
+
+	void setVoc(Voc voc) {}
 
 	void setMissing(String mod, String name, int level, Role role) {}
+
+	boolean isLegal() {}
+
+	int getPower() {}
+
+	int getCrushPower() {}
 
 }

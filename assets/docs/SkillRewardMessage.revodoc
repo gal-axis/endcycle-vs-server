@@ -30,35 +30,35 @@ SkillRewardMessage(MenuMessage) {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void show(GameScreen screen) {}
+
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void hide(GameScreen screen) {}
 
-	void show(GameScreen screen) {}
-
 	final Origin getOrigin() {}
-
-	byte getLayer() {}
 
 	float getComparisonKey() {}
 
+	byte getLayer() {}
+
 	final void removeObject() {}
 
-	final SoundContainer playSound(Sounds sound) {}
-
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(SoundInfo sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
-	final void addDisposeListener(Runnable runnable) {}
+	final void addInitializeListener(Runnable runnable) {}
 
 	final void removeInitializeListener(Runnable runnable) {}
 
-	final void removeDisposeListener(Runnable runnable) {}
+	final void addDisposeListener(Runnable runnable) {}
 
-	final void addInitializeListener(Runnable runnable) {}
+	final void removeDisposeListener(Runnable runnable) {}
 
 	void scheduleMessage(GameScreenMessage message) {}
 
@@ -66,23 +66,23 @@ SkillRewardMessage(MenuMessage) {
 
 	void setSpeed(float speed) {}
 
-	boolean isStaying() {}
-
 	float getPosition() {}
 
+	boolean isStaying() {}
+
 	boolean priority() {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean triggerType(int character) {}
+
+	boolean keyDown(int keycode) {}
+
+	boolean keyUp(int keycode) {}
 
 	boolean triggerTouch(TouchEvent event) {}
 
 	boolean keyTyped(char character) {}
-
-	boolean keyUp(int keycode) {}
-
-	boolean keyDown(int keycode) {}
-
-	boolean triggerType(int character) {}
-
-	boolean addButtonTips(ButtonTipList tips) {}
 
 	boolean triggerButton(ButtonEvent event) {}
 
@@ -98,15 +98,15 @@ SkillRewardMessage(MenuMessage) {
 
 	MenuElementController getController() {}
 
-	MenuElement getMenuElement() {}
-
-	boolean isBackKey(ButtonEvent trigger) {}
+	float calcOffset() {}
 
 	void drawMenu(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	float calcOffset() {}
+	boolean isBackKey(ButtonEvent trigger) {}
 
 	void setElement(MenuElement menuElement) {}
+
+	MenuElement getMenuElement() {}
 
 	void addSkill(Random random, MenuElementGroup group) {}
 

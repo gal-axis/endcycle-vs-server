@@ -35,37 +35,37 @@ Layers(Object) : UpdateCondition {
 
 	boolean isUpdatable(ScreenObject object) {}
 
-	ScreenObject getObject(Object origin, int id) {}
-
 	ScreenObject getObject(String name) {}
 
 	ScreenObject getObject(Origin origin) {}
+
+	ScreenObject getObject(Object origin, int id) {}
 
 	boolean isHidden(ScreenObject screenObject) {}
 
 	void resize(boolean landscape, int width, int height) {}
 
-	boolean removeObject(ScreenObject object) {}
-
-	void clearObjects() {}
-
 	void show() {}
-
-	ScreenObject addObject(ScreenObject object) {}
-
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	void hide() {}
 
 	void updateObjects(float delta) {}
 
-	void addRenderProcessor(RenderProcessor renderProcessor) {}
+	void hide() {}
+
+	void clearObjects() {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	ScreenObject addObject(ScreenObject object) {}
+
+	boolean removeObject(ScreenObject object) {}
 
 	void removeRenderProcessor(RenderProcessor renderProcessor) {}
 
-	void stopRendering(CustomSpriteBatch batch, byte layer) {}
+	void addRenderProcessor(RenderProcessor renderProcessor) {}
 
 	void startRendering(CustomSpriteBatch batch, byte layer) {}
+
+	void stopRendering(CustomSpriteBatch batch, byte layer) {}
 
 	ScreenObject getUpdating() {}
 

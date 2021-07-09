@@ -103,65 +103,65 @@ JsonValue(Object) : Iterable {
 
 	void setName(String arg0) {}
 
-	void set(String arg0) {}
+	void set(long arg0, String arg1) {}
 
 	void set(double arg0, String arg1) {}
 
-	void set(long arg0, String arg1) {}
+	void set(String arg0) {}
 
 	void set(boolean arg0) {}
 
 	boolean isNull() {}
 
-	void setType(ValueType arg0) {}
+	String getString(String arg0) {}
 
 	String getString(int arg0) {}
 
 	String getString(String arg0, String arg1) {}
 
-	String getString(String arg0) {}
-
 	String trace() {}
 
-	JsonValue child() {}
+	void setType(ValueType arg0) {}
 
 	boolean notEmpty() {}
 
+	void setNext(JsonValue arg0) {}
+
+	JsonValue child() {}
+
 	boolean has(String arg0) {}
 
-	void setNext(JsonValue arg0) {}
+	boolean asBoolean() {}
+
+	boolean isBoolean() {}
+
+	double asDouble() {}
+
+	boolean isNumber() {}
+
+	JsonValue getChild(String arg0) {}
+
+	int asInt() {}
+
+	float asFloat() {}
+
+	short asShort() {}
+
+	byte asByte() {}
+
+	void prettyPrint(OutputType arg0, Writer arg1) {}
+
+	String prettyPrint(OutputType arg0, int arg1) {}
+
+	String prettyPrint(PrettyPrintSettings arg0) {}
+
+	String toJson(OutputType arg0) {}
+
+	boolean isObject() {}
 
 	String asString() {}
 
 	long asLong() {}
-
-	boolean isObject() {}
-
-	String prettyPrint(PrettyPrintSettings arg0) {}
-
-	String prettyPrint(OutputType arg0, int arg1) {}
-
-	void prettyPrint(OutputType arg0, Writer arg1) {}
-
-	String toJson(OutputType arg0) {}
-
-	JsonValue getChild(String arg0) {}
-
-	boolean isBoolean() {}
-
-	boolean asBoolean() {}
-
-	byte asByte() {}
-
-	short asShort() {}
-
-	int asInt() {}
-
-	boolean isNumber() {}
-
-	double asDouble() {}
-
-	float asFloat() {}
 
 	boolean isString() {}
 
@@ -169,37 +169,37 @@ JsonValue(Object) : Iterable {
 
 	void addChild(JsonValue arg0) {}
 
-	char[] asCharArray() {}
+	JsonValue require(String arg0) {}
 
-	boolean hasChild(String arg0) {}
+	JsonValue require(int arg0) {}
+
+	boolean[] asBooleanArray() {}
+
+	float[] asFloatArray() {}
 
 	char asChar() {}
 
 	long[] asLongArray() {}
 
-	boolean isDouble() {}
-
 	int[] asIntArray() {}
-
-	String[] asStringArray() {}
-
-	JsonValue require(String arg0) {}
-
-	JsonValue require(int arg0) {}
-
-	double[] asDoubleArray() {}
 
 	byte[] asByteArray() {}
 
-	short[] asShortArray() {}
+	char[] asCharArray() {}
 
-	float[] asFloatArray() {}
+	boolean hasChild(String arg0) {}
 
-	boolean[] asBooleanArray() {}
-
-	boolean isValue() {}
+	boolean isDouble() {}
 
 	boolean isLong() {}
+
+	String[] asStringArray() {}
+
+	double[] asDoubleArray() {}
+
+	short[] asShortArray() {}
+
+	boolean isValue() {}
 
 	void setPrev(JsonValue arg0) {}
 

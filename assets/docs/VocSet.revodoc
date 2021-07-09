@@ -1,7 +1,6 @@
 VocSet(FixedList) : Serializable {
 
 	final Color color;
-	String name;
 
 	new(VocIds[] vocs) {}
 
@@ -71,7 +70,11 @@ VocSet(FixedList) : Serializable {
 
 	VocEntry set(VocEntry voc) {}
 
+	boolean isLocked() {}
+
 	boolean isValid() {}
+
+	void fix() {}
 
 	int amountOf(Role role) {}
 

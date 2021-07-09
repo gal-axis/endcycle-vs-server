@@ -4,9 +4,9 @@ interface TextureData {
 
 	abstract void prepare();
 
-	abstract int getWidth();
-
 	abstract int getHeight();
+
+	abstract int getWidth();
 
 	abstract void consumeCustomData(int arg0);
 
@@ -16,10 +16,10 @@ interface TextureData {
 
 	abstract boolean isPrepared();
 
-	abstract Format getFormat();
+	abstract Pixmap consumePixmap();
 
 	abstract boolean disposePixmap();
 
-	abstract Pixmap consumePixmap();
+	abstract Format getFormat();
 
 }

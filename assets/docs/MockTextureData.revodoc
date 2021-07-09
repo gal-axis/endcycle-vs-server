@@ -12,9 +12,9 @@ MockTextureData(Object) : TextureData {
 
 	void prepare() {}
 
-	int getWidth() {}
-
 	int getHeight() {}
+
+	int getWidth() {}
 
 	void consumeCustomData(int target) {}
 
@@ -24,10 +24,10 @@ MockTextureData(Object) : TextureData {
 
 	boolean isPrepared() {}
 
-	Format getFormat() {}
+	Pixmap consumePixmap() {}
 
 	boolean disposePixmap() {}
 
-	Pixmap consumePixmap() {}
+	Format getFormat() {}
 
 }

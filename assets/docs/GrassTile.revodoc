@@ -22,13 +22,13 @@ GrassTile(NormalExpiringTile) {
 
 	boolean isAccessible(BattleEntity entity) {}
 
-	int getX() {}
-
-	int getY() {}
+	void dispose() {}
 
 	void draw(Batch batch, float x, float y, Party party, float shade, float alpha) {}
 
-	void dispose() {}
+	int getX() {}
+
+	int getY() {}
 
 	void refresh() {}
 
@@ -36,11 +36,11 @@ GrassTile(NormalExpiringTile) {
 
 	OwnedHitProperty hit(OwnedHitProperty property) {}
 
+	void actionTriggered(Object[] action) {}
+
 	boolean changeType(PanelType type) {}
 
 	void free() {}
-
-	void actionTriggered(Object[] action) {}
 
 	Battle getBattle() {}
 

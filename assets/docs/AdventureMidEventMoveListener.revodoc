@@ -18,31 +18,31 @@ AdventureMidEventMoveListener(Object) : BattleEntityListener {
 
 	void init() {}
 
-	void dispose() {}
-
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
 	PatchworkStateId setState(PatchworkStateId id) {}
 
 	CColor getTint() {}
 
 	void attack(Attack attack) {}
 
-	double crush(double amount, int crushStrength) {}
-
 	void inflict(OwnedHitProperty property) {}
+
+	double crush(double amount, int crushStrength) {}
 
 	void inflictPre(OwnedHitProperty property) {}
 
-	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
-
 	AilmentInflict inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
-
-	void inflictPost(OwnedHitProperty property) {}
 
 	int hurt(int amount, boolean display) {}
 
 	int heal(int amount, boolean display) {}
+
+	void inflictPost(OwnedHitProperty property) {}
+
+	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
+
+	void dispose() {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void drawHud(CustomSpriteBatch batch, float xOfs, float yOfs, float width, float height) {}
 

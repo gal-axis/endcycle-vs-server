@@ -55,9 +55,9 @@ AdventureBackground(BackgroundObject) {
 
 	final void removeObject() {}
 
-	final SoundContainer playSound(Sounds sound) {}
-
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(SoundInfo sound) {}
 
@@ -65,17 +65,17 @@ AdventureBackground(BackgroundObject) {
 
 	void handle(GameEvent event) {}
 
+	boolean drawBG() {}
+
 	Drawable getFrame(Party party) {}
 
 	void dim(CustomSpriteBatch batch) {}
 
-	boolean drawBG() {}
-
 	Color getColor() {}
 
-	void drawBackground(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
 	void drawBackground(CustomSpriteBatch batch, float xOfs, float yOfs, float width, float height) {}
+
+	void drawBackground(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void createFrames(BackgroundData data) {}
 

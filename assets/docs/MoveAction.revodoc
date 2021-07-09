@@ -28,17 +28,17 @@ MoveAction(GameScreenObject) : InputListener {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void hide(GameScreen screen) {}
+	void show(GameScreen screen) {}
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void show(GameScreen screen) {}
-
-	float getComparisonKey() {}
+	void hide(GameScreen screen) {}
 
 	final Origin getOrigin() {}
 
 	byte getLayer() {}
+
+	float getComparisonKey() {}
 
 	final void removeObject() {}
 
@@ -56,25 +56,25 @@ MoveAction(GameScreenObject) : InputListener {
 
 	void controllerConnected(Controller controller) {}
 
-	boolean triggerType(int character) {}
-
-	boolean keyTyped(char character) {}
-
-	boolean keyDown(int keycode) {}
-
 	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean triggerType(int character) {}
 
 	boolean triggerTouch(TouchEvent event) {}
 
-	boolean triggerButton(ButtonEvent event) {}
+	boolean keyDown(int keycode) {}
+
+	boolean keyTyped(char character) {}
 
 	boolean keyUp(int keycode) {}
 
+	boolean triggerButton(ButtonEvent event) {}
+
 	void select() {}
 
-	void moveX(int offset) {}
-
 	void cancel() {}
+
+	void moveX(int offset) {}
 
 	void moveVoc() {}
 

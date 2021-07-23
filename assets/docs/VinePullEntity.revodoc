@@ -46,17 +46,17 @@ VinePullEntity(GameScreenObject) {
 
 	void hide(GameScreen screen) {}
 
-	final Origin getOrigin() {}
+	byte getLayer() {}
 
 	float getComparisonKey() {}
 
-	byte getLayer() {}
+	final Origin getOrigin() {}
 
 	final void removeObject() {}
 
-	final SoundContainer playSound(Sounds sound) {}
-
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(SoundInfo sound) {}
 
@@ -68,16 +68,16 @@ VinePullEntity(GameScreenObject) {
 
 	int getPanels() {}
 
-	void setExtend(float extend) {}
-
 	boolean isPushed(BattleEntity entity) {}
 
 	boolean attackDone() {}
 
-	float getExtend() {}
+	void setExtend(float extend) {}
+
+	void hitEntity(int distance, BattleEntity entity) {}
 
 	int getDistance() {}
 
-	void hitEntity(int distance, BattleEntity entity) {}
+	float getExtend() {}
 
 }

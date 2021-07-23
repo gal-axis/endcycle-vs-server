@@ -2,9 +2,9 @@ final Font(Moddable) {
 
 	ID id;
 
-	new(FontData data) {}
+	new(FontData arg0) {}
 
-	final boolean equals(Object obj) {}
+	final boolean equals(Object arg0) {}
 
 	String toString() {}
 
@@ -12,16 +12,16 @@ final Font(Moddable) {
 
 	final ID getId() {}
 
-	FontCharacter get(char c) {}
+	FontCharacter get(char arg0) {}
 
-	TextureRegion getRegion(int character) {}
+	TextureRegion getRegion(int arg0) {}
 
 	int getHeight() {}
 
 	int getLineOffset() {}
 
-	void initalize() {}
-
 	boolean isIgnoreCase() {}
+
+	void initalize() {}
 
 }

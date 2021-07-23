@@ -25,14 +25,14 @@ CharacterDisplayer(Object) {
 
 	void update(float delta) {}
 
+	void drawStats(CustomSpriteBatch batch, float x, float y, float dst) {}
+
 	void drawEffects(CustomSpriteBatch batch, float x, float y) {}
 
 	void drawCard(CustomSpriteBatch batch, float x, float y, float height, boolean unlocked) {}
 
-	void drawStats(CustomSpriteBatch batch, float x, float y, float dst) {}
+	void updateCustom() {}
 
 	boolean setCharacter(ID character) {}
-
-	void updateCustom() {}
 
 }

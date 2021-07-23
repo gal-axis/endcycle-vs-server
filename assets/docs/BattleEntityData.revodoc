@@ -36,7 +36,7 @@ final BattleEntityData(Moddable) : DataName, Comparable, Named {
 
 	new() {}
 
-	final boolean equals(Object obj) {}
+	final boolean equals(Object arg0) {}
 
 	String toString() {}
 
@@ -46,16 +46,16 @@ final BattleEntityData(Moddable) : DataName, Comparable, Named {
 
 	String getName() {}
 
-	int compareTo(BattleEntityData o) {}
+	int compareTo(BattleEntityData arg0) {}
 
 	String getDataName() {}
 
-	Patchwork getPatchwork(CustomCache cache) {}
+	void setPatchwork(ID arg0) {}
 
-	void setPatchwork(ID patchwork) {}
+	Patchwork getPatchwork(CustomCache arg0) {}
 
-	PatchworkData getPatchworkData(CustomCache cache) {}
+	ID getPatchworkId(CustomCache arg0) {}
 
-	ID getPatchworkId(CustomCache cache) {}
+	PatchworkData getPatchworkData(CustomCache arg0) {}
 
 }

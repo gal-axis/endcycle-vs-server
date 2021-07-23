@@ -45,11 +45,11 @@ BatchRectangle(Object) : ScreenObject {
 
 	void hide(GameScreen screen) {}
 
-	Origin getOrigin() {}
+	byte getLayer() {}
 
 	float getComparisonKey() {}
 
-	byte getLayer() {}
+	Origin getOrigin() {}
 
 	void draw(Batch batch, float xOfs, float yOfs, float scaleX, float scaleY) {}
 
@@ -57,9 +57,9 @@ BatchRectangle(Object) : ScreenObject {
 
 	void setTint(Color color) {}
 
-	float getTintB() {}
-
 	float getTintR() {}
+
+	float getTintB() {}
 
 	float getTintA() {}
 

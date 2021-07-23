@@ -25,15 +25,11 @@ abstract MobileController(HUDButton) {
 
 	boolean isHidden() {}
 
+	float getY() {}
+
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	float getX() {}
-
-	float getY() {}
-
-	float calcX() {}
-
-	float calcY() {}
 
 	void event(GameEvent event) {}
 
@@ -41,15 +37,19 @@ abstract MobileController(HUDButton) {
 
 	boolean touch(TouchEvent trigger) {}
 
-	boolean finishedMoving() {}
+	float calcY() {}
 
-	boolean isTouching(float x, float y) {}
-
-	void finishMoving() {}
+	float calcX() {}
 
 	float getMove() {}
 
+	boolean finishedMoving() {}
+
+	void finishMoving() {}
+
 	boolean increaseOffset() {}
+
+	boolean isTouching(float x, float y) {}
 
 	void addButton(MobileButton button) {}
 

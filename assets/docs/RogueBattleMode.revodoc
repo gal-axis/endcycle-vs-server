@@ -20,31 +20,31 @@ RogueBattleMode(ScoredBattleMode) : Consumer {
 
 	int hashCode() {}
 
-	void handle(GameEvent event) {}
+	void handle(GameEvent arg0) {}
 
 	void dispose() {}
 
-	void update(float delta) {}
+	void update(float arg0) {}
 
 	boolean remove() {}
 
 	String getName() {}
 
-	void init(GameScreen screen) {}
+	void init(GameScreen arg0) {}
 
 	boolean isHidden() {}
 
-	void resize(boolean landscape, int width, int height) {}
+	void resize(boolean arg0, int arg1, int arg2) {}
 
-	void show(GameScreen screen) {}
+	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	void show(GameScreen arg0) {}
 
-	void hide(GameScreen screen) {}
-
-	Origin getOrigin() {}
+	void hide(GameScreen arg0) {}
 
 	float getComparisonKey() {}
+
+	Origin getOrigin() {}
 
 	byte getLayer() {}
 
@@ -52,66 +52,68 @@ RogueBattleMode(ScoredBattleMode) : Consumer {
 
 	void stop() {}
 
-	boolean showStart() {}
+	String getDiscordMessage(Party arg0) {}
 
-	boolean isDespawn(BattleEntity entity) {}
+	boolean isDespawn(BattleEntity arg0) {}
 
-	boolean isSpawn(BattleEntity entity) {}
+	double adjustGaugeSpeed(BattleEntity arg0) {}
 
-	int adjustDamage(BattleEntity entity, int damage) {}
+	ScreenObject createStarter() {}
 
-	double adjustGaugeSpeed(BattleEntity entity) {}
-
-	boolean isRestart() {}
-
-	void calculateTint(BattleEntity entity, CColor color) {}
-
-	LocalizedMessage getLoseMessage() {}
+	void loot(Looter arg0) {}
 
 	boolean loot() {}
 
-	void loot(Looter looter) {}
+	int adjustDamage(BattleEntity arg0, int arg1) {}
 
-	BattlePlayer createPlayer(BattleEntity entity) {}
+	BattlePlayer createPlayer(BattleEntity arg0) {}
 
-	void initHUD(BattleHUD hud) {}
+	void calculateTint(BattleEntity arg0, CColor arg1) {}
 
-	void sendServerUpdate(List messages) {}
+	boolean isSpawn(BattleEntity arg0) {}
 
-	void finish(Party winner) {}
+	boolean isRestart() {}
 
-	String createTeamName(Party party) {}
+	boolean showStart() {}
 
-	String getBattleName(String name) {}
+	LocalizedMessage getLoseMessage() {}
 
-	String getDiscordMessage(Party winner) {}
+	String createTeamName(Party arg0) {}
 
-	void addScore(float x, float y, int score) {}
+	void sendServerUpdate(List arg0) {}
 
-	void addScore(BattleEntity entity, int score) {}
+	void finish(Party arg0) {}
+
+	String getBattleName(String arg0) {}
+
+	void initHUD(BattleHUD arg0) {}
+
+	void enemyHurt(BattleEntity arg0, int arg1) {}
+
+	void addScore(BattleEntity arg0, int arg1) {}
+
+	void addScore(float arg0, float arg1, int arg2) {}
+
+	void setHideScore(boolean arg0) {}
+
+	void playerHeal(BattleEntity arg0, int arg1) {}
+
+	void saveScore() {}
 
 	void increaseWave() {}
 
 	String getWaveString() {}
 
-	void saveScore() {}
+	void updateScoreDisplay(int arg0) {}
 
-	void enemyHurt(BattleEntity entity, int amount) {}
+	void accept(BattleEntity arg0) {}
 
-	void setHideScore(boolean hideScore) {}
-
-	void playerHeal(BattleEntity entity, int amount) {}
-
-	void updateScoreDisplay(int amount) {}
-
-	void accept(BattleEntity entity) {}
-
-	void showRewardMessage(int index) {}
-
-	PlayerUpgrades getUpgrades(BattlePlayer controller) {}
-
-	void finishUpgrade(int index) {}
+	void showRewardMessage(int arg0) {}
 
 	boolean isBoss() {}
+
+	PlayerUpgrades getUpgrades(BattlePlayer arg0) {}
+
+	void finishUpgrade(int arg0) {}
 
 }

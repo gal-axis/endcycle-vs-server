@@ -32,19 +32,19 @@ ChatPopup(GameScreenObject) : InputListener {
 
 	void hide(GameScreen screen) {}
 
+	byte getLayer() {}
+
 	float getComparisonKey() {}
 
 	final Origin getOrigin() {}
 
-	byte getLayer() {}
-
 	final void removeObject() {}
-
-	SoundContainer playSound(SoundInfo sound) {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	final SoundContainer playSound(Sounds sound) {}
+
+	SoundContainer playSound(SoundInfo sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
@@ -52,27 +52,25 @@ ChatPopup(GameScreenObject) : InputListener {
 
 	boolean priority() {}
 
-	void controllerConnected(Controller controller) {}
-
-	void controllerDisconnected(Controller controller) {}
-
-	boolean keyTyped(char character) {}
-
 	boolean triggerButton(ButtonEvent event) {}
 
 	boolean triggerType(int character) {}
 
+	boolean keyTyped(char character) {}
+
 	boolean addButtonTips(ButtonTipList tips) {}
-
-	boolean triggerTouch(TouchEvent event) {}
-
-	boolean keyUp(int keycode) {}
 
 	boolean keyDown(int keycode) {}
 
-	void stop() {}
+	boolean keyUp(int keycode) {}
 
-	void setChatController(ChatController controller) {}
+	boolean triggerTouch(TouchEvent event) {}
+
+	void controllerDisconnected(Controller controller) {}
+
+	void controllerConnected(Controller controller) {}
+
+	void stop() {}
 
 	void show() {}
 
@@ -80,20 +78,22 @@ ChatPopup(GameScreenObject) : InputListener {
 
 	float getButtonSize() {}
 
-	void showTemporary() {}
-
-	ChatBox getChatBox() {}
-
-	float getButtonX(float size) {}
-
-	void updateHide(float delta) {}
+	float getButtonY(float size) {}
 
 	boolean showingChat() {}
 
-	float getButtonY(float size) {}
+	float getButtonX(float size) {}
+
+	ChatBox getChatBox() {}
 
 	ChatDisplay getChatDisplay() {}
 
+	void updateHide(float delta) {}
+
 	boolean isChatting() {}
+
+	void showTemporary() {}
+
+	void setChatController(ChatController controller) {}
 
 }

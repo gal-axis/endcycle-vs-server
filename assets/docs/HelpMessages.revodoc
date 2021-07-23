@@ -11,6 +11,8 @@ enum HelpMessages : LocalizedMessage {
  	Battle_Status_PoisonRegen_Description,
  	Battle_Status_Stun,
  	Battle_Status_Stun_Desc,
+ 	Elements,
+ 	Elements_Description,
  	Help_Battle_Basics_Description,
  	Help_Battle_Basics_Name,
  	Help_Battle_Crush_Description,
@@ -73,10 +75,16 @@ enum HelpMessages : LocalizedMessage {
  	Help_Online_Server_Description,
  	Help_Online_Server_Name,
  	Inventory_Description,
+ 	Inventory_Elements,
+ 	Inventory_Elements_Desc,
  	Inventory_Recipes,
  	Inventory_Recipes_Desc,
  	Inventory_Roles,
  	Inventory_Roles_Desc,
+ 	Inventory_Style,
+ 	Inventory_Style_Descriptions,
+ 	Inventory_StyleLevel,
+ 	Inventory_StyleLevel_Description,
  	Inventory_Styling,
  	Inventory_Styling_Description,
  	Inventory_Tutorial1_Description,
@@ -133,22 +141,22 @@ enum HelpMessages : LocalizedMessage {
 
 	final int ordinal() {}
 
-	int get(int object, int orElse) {}
+	int get(int arg0, int arg1) {}
 
-	Object get(Object object, Object orElse) {}
+	Object get(Object arg0, Object arg1) {}
 
-	float get(float object, float orElse) {}
+	float get(float arg0, float arg1) {}
 
-	double get(double object, double orElse) {}
+	double get(double arg0, double arg1) {}
 
-	void paint(Painter painter) {}
+	void paint(Painter arg0) {}
 
-	String format(Object[] args) {}
+	String format(Object[] arg0) {}
 
 	String getKey() {}
 
 	static HelpMessages[] values() {}
 
-	static HelpMessages valueOf(String name) {}
+	static HelpMessages valueOf(String arg0) {}
 
 }

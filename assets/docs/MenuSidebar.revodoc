@@ -33,11 +33,11 @@ final MenuSidebar(MenuElementGroup) : InputListener {
 
 	void hide(GameScreen screen) {}
 
-	final Origin getOrigin() {}
-
 	byte getLayer() {}
 
 	float getComparisonKey() {}
+
+	final Origin getOrigin() {}
 
 	final void removeObject() {}
 
@@ -57,89 +57,89 @@ final MenuSidebar(MenuElementGroup) : InputListener {
 
 	void calculateSize() {}
 
-	MenuElement setEnabled(boolean enabled) {}
+	boolean select() {}
 
 	float getY() {}
 
 	float getX() {}
 
-	boolean select() {}
-
-	MenuElement setLayer(byte layer) {}
-
-	float getWidth() {}
-
-	float getHeight() {}
-
-	MenuElement setHeight(float height) {}
-
-	final void triggerAction(MenuElementActionType type) {}
+	MenuElement setEnabled(boolean enabled) {}
 
 	MenuElement getAbsoluteParent() {}
 
-	boolean touch(TouchEvent trigger) {}
+	float getWidth() {}
 
-	MenuElement setY(float y) {}
+	MenuElement setHeight(float height) {}
+
+	float getHeight() {}
+
+	MenuElement setLayer(byte layer) {}
+
+	final void triggerAction(MenuElementActionType type) {}
+
+	boolean touch(TouchEvent trigger) {}
 
 	MenuElement setX(float x) {}
 
-	MenuElement setWidth(float width) {}
+	MenuElement setY(float y) {}
 
-	float calcX() {}
+	MenuElement setWidth(float width) {}
 
 	MenuElement setFocusable(boolean focusable) {}
 
-	float calcY() {}
+	float calcX() {}
 
-	boolean isTouching(float x, float y) {}
+	float calcY() {}
 
 	final void setMenuControllerSelection(MenuElement element) {}
 
 	Set getActionListeners() {}
 
-	MenuElement setFocused(boolean focused) {}
+	MenuButtonTips getButtonTips() {}
+
+	boolean canDrawCursor() {}
+
+	void setCursor(Rectangle rectangle) {}
+
+	MenuElement setAnchor(MenuElement anchor) {}
+
+	MenuElement setAnchorHAlign(int anchorHAlign) {}
+
+	float getAbsoluteY() {}
+
+	MenuElement setHAlign(int hAlign) {}
+
+	void addElements(Array elements, float x, float y) {}
+
+	MenuElement setVAlign(int vAlign) {}
 
 	MenuElement setHidden(boolean hidden) {}
 
 	boolean isAbsoluteHidden() {}
 
-	float getAbsoluteX() {}
-
-	float getAbsoluteY() {}
-
-	void addElements(Array elements, float x, float y) {}
-
-	void setCursor(Rectangle rectangle) {}
-
-	MenuButtonTips getButtonTips() {}
-
-	boolean canDrawCursor() {}
-
-	MenuElement setAnchorHAlign(int anchorHAlign) {}
-
-	MenuElement getAnchor() {}
-
-	int getVAlign() {}
-
-	MenuElement setVAlign(int vAlign) {}
-
-	boolean isFocusable() {}
+	MenuElement setFocused(boolean focused) {}
 
 	MenuElement setAnchorVAlign(int anchorVAlign) {}
 
-	boolean isEnabled() {}
-
-	MenuElement setAnchor(MenuElement anchor) {}
-
-	MenuElement setHAlign(int hAlign) {}
+	float getAbsoluteX() {}
 
 	boolean isFocused() {}
 
-	int getAnchorVAlign() {}
+	int getVAlign() {}
+
+	int getHAlign() {}
 
 	int getAnchorHAlign() {}
 
-	int getHAlign() {}
+	MenuElement getAnchor() {}
+
+	boolean isEnabled() {}
+
+	int getAnchorVAlign() {}
+
+	boolean isFocusable() {}
+
+	boolean isTouching(float x, float y) {}
 
 	int compare(MenuElement o1, MenuElement o2) {}
 
@@ -147,15 +147,15 @@ final MenuSidebar(MenuElementGroup) : InputListener {
 
 	Comparator thenComparing(Comparator arg0) {}
 
-	void setDefaultElement(MenuElement defaultElement) {}
-
-	MenuElement getDefaultElement() {}
-
-	MenuElement addObject(MenuElement object) {}
+	void removeObject(MenuElement object) {}
 
 	List getObjects() {}
 
-	void removeObject(MenuElement object) {}
+	MenuElement addObject(MenuElement object) {}
+
+	void setDefaultElement(MenuElement defaultElement) {}
+
+	MenuElement getDefaultElement() {}
 
 	void ignoreSize(MenuElement object) {}
 
@@ -169,19 +169,9 @@ final MenuSidebar(MenuElementGroup) : InputListener {
 
 	void setBackgroundColor(Color backgroundColor) {}
 
-	void drawBackground(CustomSpriteBatch batch, float x, float y) {}
-
 	void addElements(Array elements, float x, float y, MenuElement object) {}
 
-	MenuThemeDrawable getBackground() {}
-
-	void countSize(MenuElement object) {}
-
-	float getBgPad() {}
-
-	MenuElementShowAnim getShowAnimation() {}
-
-	void setOffsetX(float offsetX) {}
+	void setOffsetY(float offsetY) {}
 
 	void setObjects(List objects) {}
 
@@ -189,29 +179,39 @@ final MenuSidebar(MenuElementGroup) : InputListener {
 
 	List getCountSize() {}
 
+	void countSize(MenuElement object) {}
+
+	float getBgPad() {}
+
+	void setOffsetX(float offsetX) {}
+
+	MenuThemeDrawable getBackground() {}
+
+	MenuElementShowAnim getShowAnimation() {}
+
 	void setBgPad(float bgPad) {}
 
-	void setOffsetY(float offsetY) {}
+	void drawBackground(CustomSpriteBatch batch, float x, float y) {}
 
 	boolean priority() {}
 
-	void controllerDisconnected(Controller controller) {}
-
 	void controllerConnected(Controller controller) {}
 
-	boolean addButtonTips(ButtonTipList tips) {}
-
-	boolean triggerType(int character) {}
+	void controllerDisconnected(Controller controller) {}
 
 	boolean triggerTouch(TouchEvent event) {}
 
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean triggerButton(ButtonEvent event) {}
+
 	boolean keyDown(int keycode) {}
 
-	boolean keyTyped(char character) {}
+	boolean triggerType(int character) {}
 
 	boolean keyUp(int keycode) {}
 
-	boolean triggerButton(ButtonEvent event) {}
+	boolean keyTyped(char character) {}
 
 	MenuElement getObject(int selection) {}
 
@@ -219,19 +219,19 @@ final MenuSidebar(MenuElementGroup) : InputListener {
 
 	void select(MenuButton button, boolean sound) {}
 
+	MenuSidebarButton addButton(String name, Drawable drawable, MenuElement element, MenuElement defaultSelected) {}
+
 	void setSelected() {}
 
 	void setSelected(MenuElement object) {}
 
 	MenuElement getSelected() {}
 
-	MenuSidebarButton addButton(String name, Drawable drawable, MenuElement element, MenuElement defaultSelected) {}
-
 	boolean isSelected() {}
 
-	void moveSelection(int offset) {}
-
 	void setSelection(int selection) {}
+
+	void moveSelection(int offset) {}
 
 	boolean isTouchingSidebar(float x, float y) {}
 

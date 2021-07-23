@@ -43,39 +43,39 @@ AdventureBackground(BackgroundObject) {
 
 	void show(GameScreen screen) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
 	void hide(GameScreen screen) {}
 
-	final Origin getOrigin() {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	float getComparisonKey() {}
+
+	final Origin getOrigin() {}
 
 	byte getLayer() {}
 
 	final void removeObject() {}
 
+	SoundContainer playSound(SoundInfo sound) {}
+
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	final SoundContainer playSound(Sounds sound) {}
-
-	SoundContainer playSound(SoundInfo sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
 	void handle(GameEvent event) {}
 
-	boolean drawBG() {}
-
 	Drawable getFrame(Party party) {}
+
+	boolean drawBG() {}
 
 	void dim(CustomSpriteBatch batch) {}
 
 	Color getColor() {}
 
-	void drawBackground(CustomSpriteBatch batch, float xOfs, float yOfs, float width, float height) {}
-
 	void drawBackground(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void drawBackground(CustomSpriteBatch batch, float xOfs, float yOfs, float width, float height) {}
 
 	void createFrames(BackgroundData data) {}
 

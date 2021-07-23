@@ -20,31 +20,31 @@ final BoundedDouble(Object) {
 
 	BoundedDouble setVal(double val) {}
 
-	boolean decrease(double delta) {}
-
-	boolean move(boolean increase, double delta) {}
-
 	BoundedDouble toMin() {}
 
 	boolean increase(double delta) {}
 
-	boolean atMax() {}
-
-	double getPercentage() {}
-
 	BoundedDouble toMax() {}
+
+	boolean decrease(double delta) {}
 
 	double getVal() {}
 
-	BoundedDouble setMax(double max) {}
+	boolean atMax() {}
+
+	boolean move(boolean increase, double delta) {}
+
+	double getPercentage() {}
 
 	boolean atMin() {}
 
-	double getMax() {}
+	BoundedDouble setMax(double max) {}
+
+	BoundedDouble setSpeed(double speed) {}
 
 	double getSpeed() {}
 
-	BoundedDouble setSpeed(double speed) {}
+	double getMax() {}
 
 	boolean atLimit() {}
 

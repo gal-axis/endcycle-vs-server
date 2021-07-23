@@ -88,7 +88,11 @@ enum Battles {
  	A_Boss_Traitor_Agent,
  	A_Del,
  	CrimsonForce_C1,
- 	VS_Spark;
+ 	VS_Spark,
+ 	Battle_Wild_West,
+ 	Style_Tutorial_Final,
+ 	Tutorial_Elements,
+ 	Tutorial_Elemental_Fossil;
 
 	final boolean equals(Object arg0) {}
 
@@ -104,7 +108,7 @@ enum Battles {
 
 	static Battles[] values() {}
 
-	static Battles valueOf(String name) {}
+	static Battles valueOf(String arg0) {}
 
 	ID getId() {}
 

@@ -12,7 +12,7 @@ BattleZoomProcessor(Object) : RenderProcessor {
 	BoundedFloat zoom;
 	boolean hit;
 
-	new(Battle battle) {}
+	new(Battle arg0) {}
 
 	boolean equals(Object arg0) {}
 
@@ -20,25 +20,25 @@ BattleZoomProcessor(Object) : RenderProcessor {
 
 	int hashCode() {}
 
-	void init(GameScreen screen) {}
+	void init(GameScreen arg0) {}
 
-	void resize(boolean landscape, int width, int height) {}
+	void resize(boolean arg0, int arg1, int arg2) {}
 
 	void dispose() {}
 
-	void startRendering(CustomSpriteBatch batch, byte layer) {}
+	void updateRender(float arg0) {}
 
-	void updateRender(float delta) {}
+	void stopRendering(CustomSpriteBatch arg0, byte arg1) {}
 
-	void stopRendering(CustomSpriteBatch batch, byte layer) {}
-
-	float getY() {}
+	void startRendering(CustomSpriteBatch arg0, byte arg1) {}
 
 	float getX() {}
 
-	void setCurrent(BattleEntity current, boolean hit) {}
+	float getY() {}
 
-	void setMaxZoom(float zoom, float speed) {}
+	void setCurrent(BattleEntity arg0, boolean arg1) {}
+
+	void setMaxZoom(float arg0, float arg1) {}
 
 	boolean isDone() {}
 

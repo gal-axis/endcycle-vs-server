@@ -1,0 +1,213 @@
+VocPackEditGroup(VocPackGroup) {
+
+	Origin origin;
+	GameScreen screen;
+	boolean showing;
+	boolean interactable;
+	boolean changesPack;
+	final List containers;
+	VocMenu vocMenu;
+	Inventory inventory;
+	VocPackChanger packChanger;
+	VocPackCharacterButton character;
+	float containerWidth;
+	int level;
+	MenuButton autofill;
+
+	new(VocMenu arg0) {}
+
+	final boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	void dispose() {}
+
+	void update(float arg0) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen arg0) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean arg0, int arg1, int arg2) {}
+
+	void hide(GameScreen arg0) {}
+
+	void show(GameScreen arg0) {}
+
+	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
+
+	float getComparisonKey() {}
+
+	byte getLayer() {}
+
+	final Origin getOrigin() {}
+
+	final void removeObject() {}
+
+	SoundContainer playSound(float arg0, float arg1, SoundInfo arg2) {}
+
+	final SoundContainer playSound(Sounds arg0) {}
+
+	SoundContainer playSound(SoundInfo arg0) {}
+
+	void triggerEvent(Object arg0, Object arg1, Object[] arg2) {}
+
+	void actionTriggered(MenuElementAction arg0) {}
+
+	MenuElementGroup getParent() {}
+
+	MenuElement setParent(MenuElementGroup arg0) {}
+
+	void calculateSize() {}
+
+	MenuElement setEnabled(boolean arg0) {}
+
+	float getY() {}
+
+	float getX() {}
+
+	MenuElement setHeight(float arg0) {}
+
+	float getHeight() {}
+
+	float getWidth() {}
+
+	MenuElement setLayer(byte arg0) {}
+
+	boolean select() {}
+
+	MenuElement getAbsoluteParent() {}
+
+	final void triggerAction(MenuElementActionType arg0) {}
+
+	boolean touch(TouchEvent arg0) {}
+
+	MenuElement setY(float arg0) {}
+
+	MenuElement setX(float arg0) {}
+
+	float calcX() {}
+
+	MenuElement setWidth(float arg0) {}
+
+	float calcY() {}
+
+	MenuElement setFocusable(boolean arg0) {}
+
+	MenuElement setFocused(boolean arg0) {}
+
+	MenuElement setHidden(boolean arg0) {}
+
+	boolean isAbsoluteHidden() {}
+
+	float getAbsoluteX() {}
+
+	float getAbsoluteY() {}
+
+	void addElements(Array arg0, float arg1, float arg2) {}
+
+	boolean canDrawCursor() {}
+
+	MenuElement setAnchorHAlign(int arg0) {}
+
+	boolean isFocusable() {}
+
+	void setCursor(Rectangle arg0) {}
+
+	boolean isEnabled() {}
+
+	int getVAlign() {}
+
+	MenuElement setVAlign(int arg0) {}
+
+	MenuElement setAnchorVAlign(int arg0) {}
+
+	boolean isFocused() {}
+
+	MenuElement setAnchor(MenuElement arg0) {}
+
+	int getAnchorVAlign() {}
+
+	MenuElement setHAlign(int arg0) {}
+
+	int getHAlign() {}
+
+	MenuElement getAnchor() {}
+
+	MenuButtonTips getButtonTips() {}
+
+	int getAnchorHAlign() {}
+
+	final void setMenuControllerSelection(MenuElement arg0) {}
+
+	Set getActionListeners() {}
+
+	boolean isTouching(float arg0, float arg1) {}
+
+	int compare(MenuElement arg0, MenuElement arg1) {}
+
+	Comparator reversed() {}
+
+	Comparator thenComparing(Comparator arg0) {}
+
+	void setBgPad(float arg0) {}
+
+	void ignoreSize(MenuElement arg0) {}
+
+	void setDefaultElement(MenuElement arg0) {}
+
+	MenuElement getDefaultElement() {}
+
+	List getObjects() {}
+
+	void removeObject(MenuElement arg0) {}
+
+	MenuElement addObject(MenuElement arg0) {}
+
+	void setBackground(MenuThemeDrawable arg0) {}
+
+	float getOffsetX() {}
+
+	float getOffsetY() {}
+
+	void countSize(MenuElement arg0) {}
+
+	void addElements(Array arg0, float arg1, float arg2, MenuElement arg3) {}
+
+	MenuThemeDrawable getBackground() {}
+
+	MenuElementShowAnim getShowAnimation() {}
+
+	void drawBackground(CustomSpriteBatch arg0, float arg1, float arg2) {}
+
+	Color getBackgroundColor() {}
+
+	void setBackgroundColor(Color arg0) {}
+
+	void setCountSize(List arg0) {}
+
+	void setOffsetX(float arg0) {}
+
+	List getCountSize() {}
+
+	void setObjects(List arg0) {}
+
+	void setOffsetY(float arg0) {}
+
+	float getBgPad() {}
+
+	MenuTable getSetContainer(int arg0) {}
+
+	void setPack(int arg0) {}
+
+	VocEntry getSelectedVoc() {}
+
+	void autofill() {}
+
+}

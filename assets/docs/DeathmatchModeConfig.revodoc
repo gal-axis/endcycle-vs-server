@@ -12,10 +12,10 @@ DeathmatchModeConfig(GameModeConfig) {
 
 	void configure(BattleData data) {}
 
-	List getSlots() {}
+	boolean startSlots(int allies, int enemies, int neutral) {}
 
 	BattleMode createMode() {}
 
-	boolean startSlots(int allies, int enemies, int neutral) {}
+	List getSlots() {}
 
 }

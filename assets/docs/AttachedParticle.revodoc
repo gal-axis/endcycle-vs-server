@@ -24,9 +24,9 @@ AttachedParticle(Object) : ScreenObject {
 
 	new(GameObject object, Drawable drawable, boolean removeOnFinished) {}
 
-	new(BattleEntity entity, Drawable drawable, boolean removeOnFinished) {}
-
 	new(BattleEntity entity, AttachedParticleData info, boolean removeOnFinished) {}
+
+	new(BattleEntity entity, Drawable drawable, boolean removeOnFinished) {}
 
 	boolean equals(Object arg0) {}
 
@@ -50,16 +50,20 @@ AttachedParticle(Object) : ScreenObject {
 
 	void show(GameScreen screen) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
 	void hide(GameScreen screen) {}
 
-	Origin getOrigin() {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	float getComparisonKey() {}
+
+	Origin getOrigin() {}
 
 	byte getLayer() {}
 
 	void set(AttachedParticleData info) {}
+
+	float calcX() {}
+
+	float calcY() {}
 
 }

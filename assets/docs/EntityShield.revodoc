@@ -44,27 +44,31 @@ EntityShield(AttachedParticle) : GameEventListener, BECondition {
 
 	void show(GameScreen screen) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
 	void hide(GameScreen screen) {}
 
-	Origin getOrigin() {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	float getComparisonKey() {}
+
+	Origin getOrigin() {}
 
 	byte getLayer() {}
 
 	void set(AttachedParticleData info) {}
 
+	float calcX() {}
+
+	float calcY() {}
+
 	boolean test(BattleEntity entity) {}
 
 	void handle(GameEvent v) {}
 
-	void actionTriggered(Runnable action) {}
+	boolean isActionRollback(Object[] action) {}
 
 	void actionTriggered(Object[] action) {}
 
-	boolean isActionRollback(Object[] action) {}
+	void actionTriggered(Runnable action) {}
 
 	void stop() {}
 

@@ -11,13 +11,13 @@ PackSaveLooter(DefaultLooter) : MessageAction, TextConfirmAction {
 
 	int hashCode() {}
 
-	void onRewardClosed() {}
+	void onRewardOpened() {}
 
 	void onRewardError() {}
 
-	void onRewardOpened() {}
-
 	void onRewardEarned() {}
+
+	void onRewardClosed() {}
 
 	void dispose() {}
 
@@ -35,15 +35,15 @@ PackSaveLooter(DefaultLooter) : MessageAction, TextConfirmAction {
 
 	void show(GameScreen screen) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
 	void hide(GameScreen screen) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	Origin getOrigin() {}
 
-	byte getLayer() {}
-
 	float getComparisonKey() {}
+
+	byte getLayer() {}
 
 	boolean hasLoot() {}
 
@@ -53,33 +53,33 @@ PackSaveLooter(DefaultLooter) : MessageAction, TextConfirmAction {
 
 	void addRandomLoot(int money, boolean items) {}
 
-	void addRandomStyle() {}
-
 	boolean hasExtra() {}
 
-	void addRandomVoc() {}
+	void addRandomStyle() {}
 
 	void addLoot(Lootable loot) {}
 
+	void addRandomVoc() {}
+
 	boolean priority() {}
-
-	void controllerDisconnected(Controller controller) {}
-
-	void controllerConnected(Controller controller) {}
 
 	boolean addButtonTips(ButtonTipList tips) {}
 
-	boolean triggerType(int character) {}
-
-	boolean triggerTouch(TouchEvent event) {}
+	boolean triggerButton(ButtonEvent event) {}
 
 	boolean keyDown(int keycode) {}
 
 	boolean keyTyped(char character) {}
 
+	boolean triggerTouch(TouchEvent event) {}
+
 	boolean keyUp(int keycode) {}
 
-	boolean triggerButton(ButtonEvent event) {}
+	boolean triggerType(int character) {}
+
+	void controllerDisconnected(Controller controller) {}
+
+	void controllerConnected(Controller controller) {}
 
 	void finish() {}
 

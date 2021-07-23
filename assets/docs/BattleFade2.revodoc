@@ -14,28 +14,28 @@ BattleFade2(FadeProcessor) {
 
 	void start() {}
 
+	void draw(CustomSpriteBatch batch) {}
+
 	void dispose() {}
 
-	void draw(CustomSpriteBatch batch) {}
+	void disposeOldScreen() {}
+
+	void updateOldScreen(float delta) {}
+
+	boolean done() {}
+
+	void initNewScreen() {}
+
+	void updateNewScreen(float delta) {}
+
+	void drawOldScreen(CustomSpriteBatch batch, float x, float y) {}
+
+	void drawOldScreen(CustomSpriteBatch batch) {}
 
 	void drawNewScreen(CustomSpriteBatch batch) {}
 
 	void drawNewScreen(CustomSpriteBatch batch, float x, float y) {}
 
 	void setFader(ScreenFader fader) {}
-
-	void updateOldScreen(float delta) {}
-
-	void initNewScreen() {}
-
-	void drawOldScreen(CustomSpriteBatch batch, float x, float y) {}
-
-	void drawOldScreen(CustomSpriteBatch batch) {}
-
-	boolean done() {}
-
-	void updateNewScreen(float delta) {}
-
-	void disposeOldScreen() {}
 
 }

@@ -10,14 +10,16 @@ VocSetPainter(VocMenuPainter) {
 
 	void paint(MenuTablePaintParams params) {}
 
-	Painter getPainter(MenuTablePaintParams params) {}
+	void paintBG(MenuTablePaintParams params) {}
 
-	Painter getPainter(MenuTablePaintParams params, int hAlign, int vAlign) {}
+	void stopPainting(MenuTablePaintParams params) {}
 
 	void startPainting(MenuTablePaintParams params) {}
 
-	void finishPainting(MenuTablePaintParams params) {}
+	void paintEmpty(MenuTablePaintParams params) {}
 
-	void paintBG(MenuTablePaintParams params) {}
+	Painter getPainter(MenuTablePaintParams params, int hAlign, int vAlign) {}
+
+	Painter getPainter(MenuTablePaintParams params) {}
 
 }

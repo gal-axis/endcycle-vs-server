@@ -1,6 +1,8 @@
-RandomVocRewards(Object) {
+RandomVocRewards(Object) : Serializable {
 
-	new(Random random) {}
+	new() {}
+
+	new(long arg0) {}
 
 	boolean equals(Object arg0) {}
 
@@ -8,8 +10,14 @@ RandomVocRewards(Object) {
 
 	int hashCode() {}
 
-	VocEntry remove(Integer slot, Random random, VocTag preference) {}
+	void write(Json arg0) {}
 
-	void addVoc(Voc voc, VocStyle style) {}
+	void read(Json arg0, JsonValue arg1) {}
+
+	VocEntry remove(Integer arg0, Random arg1, VocTag arg2) {}
+
+	void setSeed(long arg0) {}
+
+	Array getRemoved() {}
 
 }

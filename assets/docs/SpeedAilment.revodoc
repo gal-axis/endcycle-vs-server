@@ -43,23 +43,23 @@ SpeedAilment(Ailment) : SpeedSupplier {
 
 	void end() {}
 
-	void dispose() {}
-
 	boolean draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scale) {}
+
+	void dispose() {}
 
 	final void triggerAction(Object[] parameters) {}
 
 	boolean over() {}
 
-	boolean canTarget() {}
+	void increaseDuration() {}
 
 	void setIntensity(float intensity) {}
 
-	void increaseDuration() {}
+	boolean isDisplayed() {}
 
 	float getIntensity() {}
 
-	boolean isDisplayed() {}
+	boolean canTarget() {}
 
 	double getSpeed(BattleEntity entity) {}
 

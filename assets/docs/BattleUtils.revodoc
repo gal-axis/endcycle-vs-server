@@ -11,9 +11,9 @@ final BattleUtils(Object) {
 
 	static boolean invisible(Battle battle, GameObject object) {}
 
-	static boolean isDespawn(Battle battle, BattleEntity entity) {}
-
 	static boolean isSpawn(Battle battle, BattleEntity entity) {}
+
+	static boolean isDespawn(Battle battle, BattleEntity entity) {}
 
 	static int convertRow(BattleEntity entity, Party seek, Party newParty) {}
 
@@ -25,8 +25,8 @@ final BattleUtils(Object) {
 
 	static boolean inSight(BattleCamera camera, GameObject object, float wFactor, float hFactor) {}
 
-	static boolean convertPanel(BattleEntity entity, int y, Party seek, Party newParty) {}
-
 	static void applyPlayer(BattleEntity entity, ID character) {}
+
+	static boolean convertPanel(BattleEntity entity, int y, Party seek, Party newParty) {}
 
 }

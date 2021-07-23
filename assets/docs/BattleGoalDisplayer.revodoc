@@ -43,11 +43,11 @@ BattleGoalDisplayer(BattleTimeDisplayer) : GameEventListener {
 
 	void hide(GameScreen screen) {}
 
-	Origin getOrigin() {}
+	byte getLayer() {}
 
 	float getComparisonKey() {}
 
-	byte getLayer() {}
+	Origin getOrigin() {}
 
 	boolean isTimed() {}
 
@@ -61,9 +61,9 @@ BattleGoalDisplayer(BattleTimeDisplayer) : GameEventListener {
 
 	void updateGoals() {}
 
-	void updateStatic() {}
-
 	boolean newline(StringBuilder goal) {}
+
+	void updateStatic() {}
 
 	String getGoalString() {}
 

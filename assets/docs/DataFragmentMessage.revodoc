@@ -44,19 +44,19 @@ DataFragmentMessage(GameScreenMessage) : InputListener {
 
 	void hide(GameScreen screen) {}
 
-	final Origin getOrigin() {}
-
 	float getComparisonKey() {}
+
+	final Origin getOrigin() {}
 
 	byte getLayer() {}
 
 	final void removeObject() {}
 
-	final SoundContainer playSound(Sounds sound) {}
+	SoundContainer playSound(SoundInfo sound) {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
-	SoundContainer playSound(SoundInfo sound) {}
+	final SoundContainer playSound(Sounds sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
@@ -72,22 +72,22 @@ DataFragmentMessage(GameScreenMessage) : InputListener {
 
 	boolean priority() {}
 
-	void controllerConnected(Controller controller) {}
+	boolean addButtonTips(ButtonTipList tips) {}
 
-	void controllerDisconnected(Controller controller) {}
+	boolean triggerButton(ButtonEvent event) {}
+
+	boolean keyTyped(char character) {}
 
 	boolean triggerType(int character) {}
 
-	boolean triggerButton(ButtonEvent event) {}
+	boolean triggerTouch(TouchEvent event) {}
 
 	boolean keyUp(int keycode) {}
 
 	boolean keyDown(int keycode) {}
 
-	boolean addButtonTips(ButtonTipList tips) {}
+	void controllerDisconnected(Controller controller) {}
 
-	boolean keyTyped(char character) {}
-
-	boolean triggerTouch(TouchEvent event) {}
+	void controllerConnected(Controller controller) {}
 
 }

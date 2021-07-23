@@ -10,7 +10,7 @@ MockController(Object) : Controller {
 
 	void clear() {}
 
-	int getKey(KeyCode code) {}
+	int getKey(KeyCode arg0) {}
 
 	void load() {}
 
@@ -18,57 +18,57 @@ MockController(Object) : Controller {
 
 	void reset() {}
 
-	List getKeys(KeyCode code) {}
+	List getKeys(KeyCode arg0) {}
 
-	boolean isKey(KeyCode code, int button) {}
+	boolean isKey(KeyCode arg0, int arg1) {}
 
-	KeyCode getCode(KeyCodeCategory category, int button) {}
+	KeyCode getCode(KeyCodeCategory arg0, int arg1) {}
 
-	void setKey(KeyCode code, int key) {}
-
-	void clearImages() {}
+	List getButtonImages(KeyCode arg0) {}
 
 	boolean isChanged() {}
 
-	Drawable getButtonImage(KeyCode code) {}
+	void setKey(KeyCode arg0, int arg1) {}
 
-	List getButtonImages(KeyCode code) {}
+	void removeKey(KeyCode arg0, int arg1) {}
 
-	void removeKey(KeyCode code, int key) {}
+	void clearImages() {}
+
+	Drawable getButtonImage(KeyCode arg0) {}
 
 	String getName() {}
 
-	boolean isConnected() {}
-
 	int getPlayerIndex() {}
 
-	boolean canVibrate() {}
-
-	boolean isVibrating() {}
-
-	boolean getButton(int buttonCode) {}
-
-	void setPlayerIndex(int index) {}
-
-	void cancelVibration() {}
-
-	void startVibration(int duration, float strength) {}
-
-	int getAxisCount() {}
-
-	String getUniqueId() {}
-
-	float getAxis(int axisCode) {}
-
-	boolean supportsPlayerIndex() {}
+	boolean isConnected() {}
 
 	int getMinButtonIndex() {}
 
 	int getMaxButtonIndex() {}
 
-	void setButton(KeyCode buttonCode, boolean pressed) {}
+	boolean supportsPlayerIndex() {}
 
-	void setButton(int buttonCode, boolean pressed) {}
+	String getUniqueId() {}
+
+	int getAxisCount() {}
+
+	boolean canVibrate() {}
+
+	boolean isVibrating() {}
+
+	void startVibration(int arg0, float arg1) {}
+
+	void cancelVibration() {}
+
+	void setPlayerIndex(int arg0) {}
+
+	float getAxis(int arg0) {}
+
+	boolean getButton(int arg0) {}
+
+	void setButton(int arg0, boolean arg1) {}
+
+	void setButton(KeyCode arg0, boolean arg1) {}
 
 	void clearButtons() {}
 

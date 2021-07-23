@@ -20,16 +20,16 @@ interface Background : ScreenObject {
 
 	void hide(GameScreen screen) {}
 
-	Origin getOrigin() {}
+	byte getLayer() {}
 
 	float getComparisonKey() {}
 
-	byte getLayer() {}
+	Origin getOrigin() {}
+
+	boolean drawBG() {}
 
 	Drawable getFrame(Party party) {}
 
 	void dim(CustomSpriteBatch batch) {}
-
-	boolean drawBG() {}
 
 }

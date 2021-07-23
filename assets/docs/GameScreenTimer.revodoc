@@ -17,21 +17,21 @@ GameScreenTimer(Object) {
 
 	boolean isEmpty() {}
 
-	GameScreenTimerTask schedule(GameScreenTimerTask task, float delay, float interval, int repeatCount) {}
-
-	GameScreenTimerTask schedule(GameScreenTimerTask task, float delay, float interval) {}
-
-	GameScreenTimerTask schedule(Runnable task, float delay) {}
-
-	GameScreenTimerTask schedule(Runnable task) {}
+	void delay(float delay) {}
 
 	GameScreenTimerTask schedule(Runnable task, float delay, float interval) {}
 
+	GameScreenTimerTask schedule(Runnable task) {}
+
+	GameScreenTimerTask schedule(Runnable task, float delay) {}
+
+	GameScreenTimerTask schedule(GameScreenTimerTask task, float delay, float interval) {}
+
 	GameScreenTimerTask schedule(GameScreenTimerTask task, float delay) {}
 
-	GameScreenTimerTask schedule(Runnable task, float delay, float interval, int repeatCount) {}
+	GameScreenTimerTask schedule(GameScreenTimerTask task, float delay, float interval, int repeatCount) {}
 
-	void delay(float delay) {}
+	GameScreenTimerTask schedule(Runnable task, float delay, float interval, int repeatCount) {}
 
 	boolean cancel(GameScreenTimerTask task) {}
 

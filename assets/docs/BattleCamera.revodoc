@@ -32,13 +32,13 @@ BattleCamera(Object) : ScreenObject {
 
 	void show(GameScreen screen) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
 	void hide(GameScreen screen) {}
 
-	Origin getOrigin() {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	float getComparisonKey() {}
+
+	Origin getOrigin() {}
 
 	byte getLayer() {}
 
@@ -48,30 +48,30 @@ BattleCamera(Object) : ScreenObject {
 
 	void sync() {}
 
-	float getX() {}
-
 	float getY() {}
 
-	void setPosition(float x, float y) {}
+	float getX() {}
 
 	BattleEntity getCameraFocus() {}
 
-	void moveY(float y) {}
+	void setPosition(float x, float y) {}
 
 	void moveX(float x) {}
+
+	float getFocusY() {}
 
 	boolean isFocusing() {}
 
 	float getFocusX() {}
 
-	float getFocusY() {}
-
 	float getXReal() {}
-
-	float getOffsetX() {}
 
 	float getYReal() {}
 
 	void limitCamera(BattleEntity focused) {}
+
+	void moveY(float y) {}
+
+	float getOffsetX() {}
 
 }

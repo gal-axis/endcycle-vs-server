@@ -5,15 +5,15 @@ final StylingVoc(VocEntry) {
 
 	new() {}
 
-	boolean equals(Object obj) {}
+	boolean equals(Object arg0) {}
 
 	String toString() {}
 
 	int hashCode() {}
 
-	void write(Json json) {}
+	void write(Json arg0) {}
 
-	void read(Json json, JsonValue jsonData) {}
+	void read(Json arg0, JsonValue arg1) {}
 
 	int getSlot() {}
 
@@ -23,25 +23,25 @@ final StylingVoc(VocEntry) {
 
 	String getMod() {}
 
-	AttackPlan createPlan(int gauge) {}
+	AttackPlan createPlan(int arg0) {}
 
-	VocStyle setStyle(VocStyle mod) {}
-
-	VocElement getElement() {}
+	VocStyle setStyle(VocStyle arg0) {}
 
 	int getGauge() {}
 
 	int getLevel() {}
 
+	VocElement getElement() {}
+
+	int getPower() {}
+
+	void setVoc(Voc arg0) {}
+
 	String getFullName() {}
-
-	void setVoc(Voc voc) {}
-
-	void setMissing(String mod, String name, int level, Role role) {}
 
 	boolean isLegal() {}
 
-	int getPower() {}
+	void setMissing(String arg0, String arg1, int arg2, Role arg3) {}
 
 	int getCrushPower() {}
 

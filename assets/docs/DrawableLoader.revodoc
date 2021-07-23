@@ -19,9 +19,9 @@ final DrawableLoader(Object) {
 
 	TextureRegion getRegion(Long mod, String path, int x, int y, int width, int height) {}
 
-	void dispose() {}
-
 	DrawableData getData(ID id) {}
+
+	void dispose() {}
 
 	static DrawableImage getImage(long group, long id) {}
 
@@ -29,12 +29,12 @@ final DrawableLoader(Object) {
 
 	Drawable createDrawable(ID id) {}
 
-	static String getColorblindPath(String path) {}
-
-	static boolean isMock() {}
-
 	static void enableMock() {}
 
 	List getAllData() {}
+
+	static boolean isMock() {}
+
+	static String getColorblindPath(String path) {}
 
 }

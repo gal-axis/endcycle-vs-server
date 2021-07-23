@@ -29,34 +29,34 @@ BattleServerController(Object) : ScreenConnection {
 
 	void stop() {}
 
-	void restart() {}
+	boolean isActive() {}
 
 	void dispose() {}
 
-	boolean isActive() {}
-
-	Battle getBattle() {}
+	void restart() {}
 
 	boolean isOver() {}
 
+	Battle getBattle() {}
+
 	void sendUpdate(BattleServerFrameData frame) {}
-
-	boolean hasBattle() {}
-
-	List getInitialData() {}
-
-	void sendDelta(float time, byte[] patch) {}
-
-	void queueUpdate() {}
-
-	void sendUDP(List udp) {}
 
 	void sendUDP(Object udp) {}
 
-	void setupConnected() {}
+	void sendUDP(List udp) {}
+
+	void sendTCP(Object tcp) {}
 
 	void sendTCP(List tcp) {}
 
-	void sendTCP(Object tcp) {}
+	List getInitialData() {}
+
+	void setupConnected() {}
+
+	void sendDelta(float time, byte[] patch) {}
+
+	boolean hasBattle() {}
+
+	void queueUpdate() {}
 
 }

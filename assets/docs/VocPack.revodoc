@@ -28,6 +28,8 @@ VocPack(Object) {
 
 	int indexOf(VocSet rolePack) {}
 
+	void clear() {}
+
 	void set(VocPack pack) {}
 
 	int capacity() {}
@@ -43,5 +45,7 @@ VocPack(Object) {
 	Color getColor(int pack) {}
 
 	void fix() {}
+
+	int getSetAmount(boolean full) {}
 
 }

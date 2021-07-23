@@ -16,12 +16,12 @@ final MenuElementNeighbors(Object) : Comparator {
 
 	float dst(Rectangle rect) {}
 
-	MenuElementNeighbor getNeighbor(Direction direction) {}
-
 	void setNeighbor(Direction direction, MenuElement info, boolean direct) {}
 
-	MenuElementNeighbors setCompareY(float compareY) {}
+	MenuElementNeighbor getNeighbor(Direction direction) {}
 
 	MenuElementNeighbors setCompareX(float compareX) {}
+
+	MenuElementNeighbors setCompareY(float compareY) {}
 
 }

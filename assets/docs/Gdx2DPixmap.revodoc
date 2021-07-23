@@ -27,52 +27,52 @@ Gdx2DPixmap(Object) {
 
 	void clear(int arg0) {}
 
-	int getHeight() {}
-
 	int getWidth() {}
+
+	int getHeight() {}
 
 	void setScale(int arg0) {}
 
 	int getGLInternalFormat() {}
 
-	void drawPixmap(Gdx2DPixmap arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8) {}
+	void drawCircle(int arg0, int arg1, int arg2, int arg3) {}
 
-	void drawPixmap(Gdx2DPixmap arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6) {}
+	void fillTriangle(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6) {}
 
-	int getGLFormat() {}
+	void setBlend(int arg0) {}
+
+	int getPixel(int arg0, int arg1) {}
+
+	void drawLine(int arg0, int arg1, int arg2, int arg3, int arg4) {}
+
+	void fillCircle(int arg0, int arg1, int arg2, int arg3) {}
+
+	static int toGlType(int arg0) {}
+
+	static Gdx2DPixmap newPixmap(int arg0, int arg1, int arg2) {}
+
+	void drawRect(int arg0, int arg1, int arg2, int arg3, int arg4) {}
+
+	static int toGlFormat(int arg0) {}
+
+	void setPixel(int arg0, int arg1, int arg2) {}
+
+	static String getFailureReason() {}
+
+	String getFormatString() {}
+
+	void fillRect(int arg0, int arg1, int arg2, int arg3, int arg4) {}
+
+	int getFormat() {}
 
 	ByteBuffer getPixels() {}
 
 	int getGLType() {}
 
-	int getFormat() {}
+	int getGLFormat() {}
 
-	void drawLine(int arg0, int arg1, int arg2, int arg3, int arg4) {}
+	void drawPixmap(Gdx2DPixmap arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6) {}
 
-	void drawCircle(int arg0, int arg1, int arg2, int arg3) {}
-
-	void fillCircle(int arg0, int arg1, int arg2, int arg3) {}
-
-	void fillTriangle(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6) {}
-
-	int getPixel(int arg0, int arg1) {}
-
-	void fillRect(int arg0, int arg1, int arg2, int arg3, int arg4) {}
-
-	void setBlend(int arg0) {}
-
-	static int toGlFormat(int arg0) {}
-
-	static Gdx2DPixmap newPixmap(int arg0, int arg1, int arg2) {}
-
-	void setPixel(int arg0, int arg1, int arg2) {}
-
-	String getFormatString() {}
-
-	void drawRect(int arg0, int arg1, int arg2, int arg3, int arg4) {}
-
-	static int toGlType(int arg0) {}
-
-	static String getFailureReason() {}
+	void drawPixmap(Gdx2DPixmap arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8) {}
 
 }

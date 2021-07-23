@@ -6,10 +6,10 @@ interface RenderProcessor {
 
 	void dispose() {}
 
-	abstract void stopRendering(CustomSpriteBatch batch, byte layer);
-
 	void updateRender(float delta) {}
 
 	abstract void startRendering(CustomSpriteBatch batch, byte layer);
+
+	abstract void stopRendering(CustomSpriteBatch batch, byte layer);
 
 }

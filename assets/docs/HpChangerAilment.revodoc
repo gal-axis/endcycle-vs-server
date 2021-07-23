@@ -9,7 +9,7 @@ HpChangerAilment(Ailment) {
 	BattleEntity entity;
 	Drawable image;
 	double timer;
-	boolean ticked;
+	boolean ticking;
 
 	new() {}
 
@@ -59,8 +59,8 @@ HpChangerAilment(Ailment) {
 
 	void increaseDuration() {}
 
-	float getIntensity() {}
-
 	boolean isDisplayed() {}
+
+	float getIntensity() {}
 
 }

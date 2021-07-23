@@ -4846,14 +4846,8 @@
 		{
 			"delay": 1.5,
 			"script": {
-				"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
-				"speed": 0.5,
-				"layer": 14,
-				"color": { "r": 1, "g": 1, "b": 1, "a": 1 },
-				"onFinish": {
-					"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureChangeZoneScript",
-					"zone": { "id": 9 }
-				}
+				"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureChangeZoneScript",
+				"zone": { "id": 9 }
 			}
 		}
 	]
@@ -5768,7 +5762,8 @@
 		{
 			"script": {
 				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
-				"dialogue": { "id": 583 }
+				"dialogue": { "id": 583 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
 			}
 		},
 		{
@@ -5829,7 +5824,8 @@
 		{
 			"script": {
 				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
-				"dialogue": { "id": 588 }
+				"dialogue": { "id": 588 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
 			}
 		},
 		{

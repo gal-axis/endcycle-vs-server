@@ -4,42 +4,44 @@ interface AdventureFaction {
 
 	void start(AdventureBattle battle) {}
 
+	abstract AdventureFactionSave save();
+
 	boolean isValid(AdventureEventList event) {}
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	boolean loot(AdventureFieldNode entry) {}
-
 	void lose() {}
 
-	void startZone(AdventureFieldData data) {}
+	boolean loot(AdventureFieldNode entry) {}
 
-	void generateBranches(AdventureNodeGraph graph) {}
-
-	void addLoseLoot(Looter looter) {}
-
-	void updatePlayer(BattlePlayer player) {}
-
-	void generateStart(AdventureNodeGraph graph) {}
-
-	void generateFinal(AdventureNodeGraph graph) {}
-
-	void finishNode(AdventureFieldNode entry) {}
-
-	void generateFinish(AdventureNodeGraph graph) {}
-
-	void generateNodes(AdventureNodeGraph graph) {}
-
-	DrawableImage getIcon() {}
-
-	void addWinLoot(Looter looter) {}
-
-	void startNode(AdventureFieldNode entry) {}
+	void finishZone(AdventureFieldData data) {}
 
 	void stopBattle(BattleEntityList entities) {}
 
 	void startBattle(BattleEntityList entities) {}
 
-	void finishZone(AdventureFieldData data) {}
+	void startNode(AdventureFieldNode entry) {}
+
+	void startZone(AdventureFieldData data) {}
+
+	void finishNode(AdventureFieldNode entry) {}
+
+	void generateFinish(AdventureNodeGraph graph) {}
+
+	void addWinLoot(Looter looter) {}
+
+	DrawableImage getIcon() {}
+
+	void addLoseLoot(Looter looter) {}
+
+	void generateFinal(AdventureNodeGraph graph) {}
+
+	void generateStart(AdventureNodeGraph graph) {}
+
+	void generateNodes(AdventureNodeGraph graph) {}
+
+	void updatePlayer(BattlePlayer player) {}
+
+	void generateBranches(AdventureNodeGraph graph) {}
 
 }

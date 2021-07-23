@@ -14,23 +14,23 @@ BattlePlayerMockAI(Object) : ScreenObject, InputListener {
 
 	boolean priority() {}
 
-	void controllerConnected(Controller controller) {}
+	boolean addButtonTips(ButtonTipList tips) {}
 
-	void controllerDisconnected(Controller controller) {}
+	boolean triggerButton(ButtonEvent event) {}
+
+	boolean triggerTouch(TouchEvent event) {}
 
 	boolean triggerType(int character) {}
 
-	boolean triggerButton(ButtonEvent event) {}
+	boolean keyTyped(char character) {}
 
 	boolean keyUp(int keycode) {}
 
 	boolean keyDown(int keycode) {}
 
-	boolean addButtonTips(ButtonTipList tips) {}
+	void controllerConnected(Controller controller) {}
 
-	boolean keyTyped(char character) {}
-
-	boolean triggerTouch(TouchEvent event) {}
+	void controllerDisconnected(Controller controller) {}
 
 	void dispose() {}
 
@@ -48,13 +48,13 @@ BattlePlayerMockAI(Object) : ScreenObject, InputListener {
 
 	void show(GameScreen screen) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
 	void hide(GameScreen screen) {}
 
-	Origin getOrigin() {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	float getComparisonKey() {}
+
+	Origin getOrigin() {}
 
 	byte getLayer() {}
 

@@ -16,4 +16,8 @@ interface BattleEntityAction {
 
 	boolean isAuthorative() {}
 
+	void hitEntity(BattleEntity entity, OwnedHitProperty property) {}
+
+	BattleEntityActionSave getSave() {}
+
 }

@@ -41,23 +41,23 @@ SplitRushAttack(Attack) {
 
 	boolean priority() {}
 
-	void controllerConnected(Controller controller) {}
-
-	void controllerDisconnected(Controller controller) {}
-
-	boolean triggerTouch(TouchEvent event) {}
-
 	boolean addButtonTips(ButtonTipList tips) {}
 
-	boolean triggerType(int character) {}
-
-	boolean keyDown(int keycode) {}
-
-	boolean keyTyped(char character) {}
+	boolean triggerButton(ButtonEvent event) {}
 
 	boolean keyUp(int keycode) {}
 
-	boolean triggerButton(ButtonEvent event) {}
+	boolean keyDown(int keycode) {}
+
+	boolean triggerTouch(TouchEvent event) {}
+
+	boolean keyTyped(char character) {}
+
+	boolean triggerType(int character) {}
+
+	void controllerConnected(Controller controller) {}
+
+	void controllerDisconnected(Controller controller) {}
 
 	String getName() {}
 
@@ -75,43 +75,39 @@ SplitRushAttack(Attack) {
 
 	void flip() {}
 
+	final float getX(int xTile) {}
+
+	final float getY(int yTile) {}
+
+	boolean active() {}
+
 	void finish() {}
 
 	SoundContainer playSound(SoundInfo sound) {}
 
-	boolean active() {}
-
 	final Origin getOrigin(int index) {}
-
-	final void triggerAction(Object[] parameters) {}
-
-	void castAnimation() {}
-
-	void attackAnimation() {}
-
-	void setAnimationDuration(float duration) {}
-
-	boolean fillGauges() {}
 
 	final Controller getController() {}
 
-	final float getY(int yTile) {}
+	final void triggerAction(Object[] parameters) {}
 
-	final float getX(int xTile) {}
+	void attackAnimation() {}
 
-	final int getXTile() {}
+	void castAnimation() {}
+
+	boolean fillGauges() {}
+
+	void setAnimationDuration(float duration) {}
 
 	final int getYTile() {}
 
+	final int getXTile() {}
+
 	Attack charge() {}
 
-	void scheduleAction(Runnable action, float delay) {}
-
-	void scheduleAction(int action, float delay) {}
+	boolean acceptsInput(ButtonEvent event) {}
 
 	Attack getWrapped(AttackWrapper wrapper, boolean shareHit, boolean gauge) {}
-
-	boolean acceptsInput(ButtonEvent event) {}
 
 	boolean reduceGauge(double amount) {}
 
@@ -119,25 +115,29 @@ SplitRushAttack(Attack) {
 
 	double getGaugeProgress() {}
 
-	void runAction(int action) {}
-
-	AttackPortal getPortal(BattleEntity entity, float portalX, float portalY, float time) {}
-
-	final int getXTileInFront() {}
-
 	void increaseGauge(double amount) {}
 
 	void addWrappers(AttackWrappers wrappers) {}
 
 	final int getTurn() {}
 
-	final BattleEntityList getBattleEntities() {}
+	AttackPortal getPortal(BattleEntity entity, float portalX, float portalY, float time) {}
+
+	void scheduleAction(int action, float delay) {}
+
+	void scheduleAction(Runnable action, float delay) {}
+
+	void runAction(int action) {}
+
+	final int getXTileInFront() {}
 
 	void setAnimationState(PatchworkStateId state) {}
 
 	boolean hasAnimationState(PatchworkStateId state) {}
 
 	void updateAttackTasks(float delta) {}
+
+	final BattleEntityList getBattleEntities() {}
 
 	BattleEntity getEntity() {}
 

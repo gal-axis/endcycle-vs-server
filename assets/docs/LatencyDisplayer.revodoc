@@ -1,5 +1,13 @@
 LatencyDisplayer(Object) : ScreenObject {
 
+	final DrawableImage[] icons;
+	BoundedFloat pingTimer;
+	int ping;
+	boolean battle;
+	float x;
+	float y;
+	float portraitY;
+
 	boolean equals(Object arg0) {}
 
 	String toString() {}
@@ -20,22 +28,22 @@ LatencyDisplayer(Object) : ScreenObject {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	void show(GameScreen screen) {}
 
 	void hide(GameScreen screen) {}
 
-	void show(GameScreen screen) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	Origin getOrigin() {}
 
-	byte getLayer() {}
-
 	float getComparisonKey() {}
 
-	LatencyDisplayer setPingTimer(float duration) {}
+	byte getLayer() {}
+
+	void drawLatency(CustomSpriteBatch batch, float x, float y, boolean connected, int latency) {}
 
 	int getPing() {}
 
-	void drawLatency(CustomSpriteBatch batch, float x, float y, boolean connected, int latency) {}
+	LatencyDisplayer setPingTimer(float duration) {}
 
 }

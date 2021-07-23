@@ -16,9 +16,9 @@ abstract Mover(Object) {
 
 	abstract void start();
 
-	abstract boolean over();
-
 	abstract void cancel();
+
+	abstract boolean over();
 
 	Battle getBattle() {}
 

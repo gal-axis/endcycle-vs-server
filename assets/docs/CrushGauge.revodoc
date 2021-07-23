@@ -1,6 +1,7 @@
 CrushGauge(Object) {
 
 	final BoundedFloat reduceTimer;
+	final BoundedFloat reduceMultiplier;
 	BattleEntity entity;
 	double amount;
 	double tintTimer;
@@ -26,6 +27,8 @@ CrushGauge(Object) {
 	void crush() {}
 
 	void decrease(double amount) {}
+
+	void uncrush() {}
 
 	void setAmount(double amount) {}
 

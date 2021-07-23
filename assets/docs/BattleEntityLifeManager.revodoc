@@ -7,7 +7,7 @@ BattleEntityLifeManager(Object) {
 
 	new() {}
 
-	new(int amount, float minRespawn, float maxRespawn) {}
+	new(int arg0, float arg1, float arg2) {}
 
 	boolean equals(Object arg0) {}
 
@@ -15,18 +15,24 @@ BattleEntityLifeManager(Object) {
 
 	int hashCode() {}
 
+	int getTotal() {}
+
+	boolean isActive(int arg0) {}
+
 	boolean isActive() {}
 
-	boolean isActive(int index) {}
+	float consume(int arg0) {}
 
-	int calculateUsed() {}
+	void setUsed(Array arg0) {}
 
-	int getUsed(int life) {}
+	BattleEntityLife getLife(int arg0) {}
 
-	BattleEntityLife getLife(int index) {}
+	int getAlive() {}
 
-	void setUsed(Array used) {}
+	int getUsed() {}
 
-	float consume(int index) {}
+	int getUsed(int arg0) {}
+
+	int getPlayers() {}
 
 }

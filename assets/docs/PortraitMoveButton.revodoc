@@ -16,13 +16,13 @@ PortraitMoveButton(Object) : MobileButton, InputListener {
 
 	boolean keyTyped(char character) {}
 
-	boolean keyUp(int keycode) {}
-
-	boolean triggerTouch(TouchEvent event) {}
-
 	boolean addButtonTips(ButtonTipList tips) {}
 
 	boolean keyDown(int keycode) {}
+
+	boolean keyUp(int keycode) {}
+
+	boolean triggerTouch(TouchEvent event) {}
 
 	void controllerDisconnected(Controller controller) {}
 
@@ -48,10 +48,10 @@ PortraitMoveButton(Object) : MobileButton, InputListener {
 
 	Color getColor() {}
 
-	boolean isTouching(int posX, int posY) {}
+	static KeyCode[] getKeyCodes(int x, int y) {}
 
 	KeyCode[] getNotKeyCodes() {}
 
-	static KeyCode[] getKeyCodes(int x, int y) {}
+	boolean isTouching(int posX, int posY) {}
 
 }

@@ -8,9 +8,9 @@ final InputUtils(Object) {
 
 	int hashCode() {}
 
-	static void cancelVibrate(Controller controller) {}
-
 	static void vibrate(Controller controller, float duration, float strength) {}
+
+	static void cancelVibrate(Controller controller) {}
 
 	static boolean isVibrating(Controller controller) {}
 

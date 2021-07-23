@@ -33,9 +33,13 @@ DialogueLineDisplayer(Object) {
 
 	void draw(CustomSpriteBatch batch, float x, float y) {}
 
+	GameObject addEntity(GameScreen screen, String entity) {}
+
 	boolean isOver() {}
 
 	void updateCache(GameScreen screen) {}
+
+	boolean isDisplayingAllText() {}
 
 	boolean isSkippable() {}
 
@@ -43,8 +47,8 @@ DialogueLineDisplayer(Object) {
 
 	boolean hasTimeout() {}
 
-	void setTalking(String talking) {}
+	void addIndicator(GameScreen screen, GameObject talking) {}
 
-	boolean isDisplayingAllText() {}
+	void setTalking(String talking) {}
 
 }

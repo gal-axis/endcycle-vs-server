@@ -48,17 +48,17 @@ HitScanObject(Object) : ScreenObject, BannedPanelObject {
 
 	void hide(GameScreen screen) {}
 
-	Origin getOrigin() {}
+	byte getLayer() {}
 
 	float getComparisonKey() {}
 
-	byte getLayer() {}
+	Origin getOrigin() {}
 
 	void stop() {}
 
-	float getX() {}
-
 	float getY() {}
+
+	float getX() {}
 
 	void setDrawables(Drawable drawableStart, Drawable drawable, Drawable drawableEnd) {}
 

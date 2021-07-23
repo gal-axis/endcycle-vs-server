@@ -10,12 +10,12 @@ abstract GameModeConfig(Object) {
 
 	abstract List getProperties();
 
-	void configure(BattleData data) {}
+	boolean startSlots(int allies, int enemies, int neutral) {}
 
 	abstract List getSlots();
 
 	abstract BattleMode createMode();
 
-	boolean startSlots(int allies, int enemies, int neutral) {}
+	void configure(BattleData data) {}
 
 }

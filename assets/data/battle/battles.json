@@ -2876,31 +2876,6 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"x": 20,
-			"y": 1,
-			"turned": true,
-			"id": { "id": 3 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-			"action": { "id": 4 },
-			"configuration": {
-				"stats": { "hp": 700, "actionSpeed": 0.8 }
-			},
-			"pack": {
-				"vocs": [
-					{
-						"items": [ null, null, null, null ]
-					},
-					{
-						"items": [ null, null, null, null ]
-					},
-					{
-						"items": [ null, null, null, null ]
-					}
-				]
-			}
-		},
-		{
-			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
 			"x": 14,
 			"y": 1,
 			"turned": true,
@@ -2926,37 +2901,9 @@
 			}
 		},
 		{
-			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"x": 28,
-			"y": 1,
-			"turned": true,
-			"mustSurvive": true,
-			"id": { "id": 5 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-			"action": { "id": 7 },
-			"cache": null,
-			"configuration": {
-				"stats": { "actionSpeed": 0.6 }
-			},
-			"pack": {
-				"vocs": [
-					{
-						"items": [ null, null, null, null ]
-					},
-					{
-						"items": [ null, null, null, null ]
-					},
-					{
-						"items": [ null, null, null, null ]
-					}
-				]
-			}
-		},
-		{
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
 			"x": 4,
 			"y": 1,
-			"turned": true,
 			"vital": false,
 			"preview": false,
 			"party": "FRIENDLY",
@@ -2967,8 +2914,8 @@
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
 			"x": 9,
 			"y": 1,
-			"turned": true,
 			"vital": false,
+			"preview": false,
 			"party": "NEUTRAL",
 			"name": "11:1",
 			"form": { "id": 54 }
@@ -2977,27 +2924,54 @@
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
 			"x": 15,
 			"y": 1,
-			"turned": true,
+			"vital": false,
+			"preview": false,
 			"party": "NEUTRAL",
-			"name": "17:1",
+			"name": "21:1",
 			"form": { "id": 55 }
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
-			"x": 21,
+			"x": 18,
 			"y": 1,
+			"form": { "id": 58 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 17,
+			"y": 1,
+			"turned": true,
 			"vital": false,
+			"preview": false,
 			"party": "NEUTRAL",
-			"name": "24:1",
+			"name": "23:01",
 			"form": { "id": 56 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 35,
+			"y": 1,
+			"turned": true,
+			"form": { "id": 60 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 26,
+			"y": 1,
+			"turned": true,
+			"vital": false,
+			"preview": false,
+			"party": "NEUTRAL",
+			"name": "30:1",
+			"form": { "id": 59 }
 		}
 	],
 	"entityGoals": [
 		{ "entity": "loot", "display": "Loot", "defeated": 1 }
 	],
 	"liberations": [
-		{ "x": 18, "width": 4, "height": 3 },
 		{ "x": 7, "width": 3, "height": 3 },
+		{ "x": 17, "width": 3, "height": 3 },
 		{ "x": 13, "width": 3, "height": 3 }
 	]
 },
@@ -7021,6 +6995,89 @@
 			"turned": true,
 			"parent": "",
 			"form": { "id": 52 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 88 },
+	"dataName": "Battle Wild West",
+	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Wild West" },
+	"field": { "id": 37 },
+	"background": { "id": 3 },
+	"music": { "id": 21 },
+	"modes": [ "Singles" ],
+	"spawnPoints": [
+		{ "party": "FRIENDLY" },
+		{ "party": "ENEMY", "x": 5, "turn": true }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 89 },
+	"dataName": "Style Tutorial Final",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "" },
+	"entityShells": [
+		{ "class": "com.one2b3.endcycle.features.battle.EntityFormShell", "x": 1, "y": 1, "party": "FRIENDLY", "player": true },
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"turned": true,
+			"parent": "",
+			"form": { "id": 57 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 90 },
+	"dataName": "Tutorial Elements",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "" },
+	"field": { "id": 38 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 1,
+			"party": "NEUTRAL",
+			"form": { "id": 61 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 3,
+			"turned": true,
+			"party": "NEUTRAL",
+			"form": { "id": 62 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 2,
+			"y": 1,
+			"turned": true,
+			"party": "NEUTRAL",
+			"form": { "id": 63 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"y": 1,
+			"party": "NEUTRAL",
+			"form": { "id": 64 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 91 },
+	"dataName": "Tutorial Elemental Fossil",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "" },
+	"entityShells": [
+		{ "class": "com.one2b3.endcycle.features.battle.EntityFormShell", "x": 1, "y": 1, "party": "FRIENDLY", "player": true },
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"turned": true,
+			"form": { "id": 65 }
 		}
 	]
 }

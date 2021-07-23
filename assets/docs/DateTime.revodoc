@@ -23,10 +23,10 @@ final DateTime(Object) : Comparable {
 
 	static DateTime from(String dateTime) {}
 
-	String formatFilename() {}
+	static DateTime now() {}
 
 	boolean isAfter(DateTime dateTime) {}
 
-	static DateTime now() {}
+	String formatFilename() {}
 
 }

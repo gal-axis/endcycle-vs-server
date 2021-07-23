@@ -24,16 +24,16 @@ AdventureFieldNode(Object) {
 
 	void fill(BattleFieldData data) {}
 
-	void addEntity(BattleEntity entity) {}
-
 	void playSong(AdventureBattle battle) {}
 
-	void changeField(BattleField field, BattleFieldData data) {}
+	void addEntity(BattleEntity entity) {}
 
-	void addEntities(AdventureBattle battle, boolean preview, boolean animation) {}
+	Array getEntities(boolean preview) {}
 
 	void addEntities(AdventureBattle battle, boolean animation, Array shells) {}
 
-	Array getEntities(boolean preview) {}
+	void addEntities(AdventureBattle battle, boolean preview, boolean animation) {}
+
+	void changeField(BattleField field, BattleFieldData data) {}
 
 }

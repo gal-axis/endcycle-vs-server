@@ -22,29 +22,27 @@ VocGauge(Object) {
 
 	boolean empty() {}
 
+	BattleEntity getEntity() {}
+
 	double getProgress() {}
 
-	BattleEntity getEntity() {}
+	void increase(double progress) {}
+
+	void hit(BattleEntity entity, HitProperty hit, int damage) {}
 
 	boolean decrease(double amount) {}
 
-	void hit(BattleEntity entity, HitProperty hit, int damage) {}
+	void idle(double delta) {}
 
 	void crushed() {}
 
 	void hurt(int amount) {}
 
-	void increase(double progress) {}
-
-	void idle(double delta) {}
-
-	boolean isFull() {}
+	void setSpeed(double speed) {}
 
 	double getSpeed() {}
 
-	void setSpeed(double speed) {}
-
-	void setDuration(double duration) {}
+	boolean isFull() {}
 
 	void setProgress(double progress) {}
 
@@ -52,8 +50,10 @@ VocGauge(Object) {
 
 	double getFillSpeed() {}
 
+	double getDuration() {}
+
 	float getFillTime() {}
 
-	double getDuration() {}
+	void setDuration(double duration) {}
 
 }

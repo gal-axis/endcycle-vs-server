@@ -28,9 +28,9 @@ GameModeMenuChanger(MenuChanger) {
 
 	void show(GameScreen screen) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
 	void hide(GameScreen screen) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	final Origin getOrigin() {}
 
@@ -40,9 +40,9 @@ GameModeMenuChanger(MenuChanger) {
 
 	final void removeObject() {}
 
-	final SoundContainer playSound(Sounds sound) {}
-
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(SoundInfo sound) {}
 
@@ -60,181 +60,181 @@ GameModeMenuChanger(MenuChanger) {
 
 	boolean select() {}
 
-	float getX() {}
-
 	float getY() {}
 
-	MenuElement setFocusable(boolean focusable) {}
-
-	float calcX() {}
-
-	float calcY() {}
+	float getX() {}
 
 	MenuElement setLayer(byte layer) {}
-
-	float getWidth() {}
 
 	float getHeight() {}
 
 	MenuElement setHeight(float height) {}
 
-	MenuElement getAbsoluteParent() {}
+	float getWidth() {}
 
 	final void triggerAction(MenuElementActionType type) {}
 
 	boolean touch(TouchEvent trigger) {}
 
+	MenuElement getAbsoluteParent() {}
+
 	MenuElement setX(float x) {}
 
 	MenuElement setY(float y) {}
 
+	float calcX() {}
+
+	float calcY() {}
+
 	MenuElement setWidth(float width) {}
+
+	boolean isTouching(float x, float y) {}
+
+	MenuElement setFocusable(boolean focusable) {}
+
+	Set getActionListeners() {}
+
+	final void setMenuControllerSelection(MenuElement element) {}
 
 	MenuElement setFocused(boolean focused) {}
 
-	boolean isAbsoluteHidden() {}
-
 	MenuElement setHidden(boolean hidden) {}
-
-	float getAbsoluteX() {}
-
-	float getAbsoluteY() {}
-
-	void addElements(Array elements, float x, float y) {}
 
 	int getHAlign() {}
 
-	MenuElement setAnchorHAlign(int anchorHAlign) {}
+	boolean canDrawCursor() {}
 
 	MenuElement setVAlign(int vAlign) {}
+
+	MenuButtonTips getButtonTips() {}
+
+	float getAbsoluteY() {}
+
+	boolean isAbsoluteHidden() {}
+
+	float getAbsoluteX() {}
+
+	int getAnchorVAlign() {}
+
+	boolean isFocused() {}
+
+	boolean isEnabled() {}
+
+	void addElements(Array elements, float x, float y) {}
+
+	MenuElement setAnchor(MenuElement anchor) {}
+
+	MenuElement setAnchorVAlign(int anchorVAlign) {}
+
+	MenuElement getAnchor() {}
+
+	MenuElement setHAlign(int hAlign) {}
+
+	int getVAlign() {}
 
 	boolean isFocusable() {}
 
 	int getAnchorHAlign() {}
 
-	boolean isFocused() {}
-
-	MenuElement setAnchorVAlign(int anchorVAlign) {}
-
-	MenuButtonTips getButtonTips() {}
-
 	void setCursor(Rectangle rectangle) {}
 
-	MenuElement getAnchor() {}
-
-	MenuElement setAnchor(MenuElement anchor) {}
-
-	MenuElement setHAlign(int hAlign) {}
-
-	boolean isEnabled() {}
-
-	int getAnchorVAlign() {}
-
-	int getVAlign() {}
-
-	boolean canDrawCursor() {}
-
-	boolean isTouching(float x, float y) {}
-
-	final void setMenuControllerSelection(MenuElement element) {}
-
-	Set getActionListeners() {}
+	MenuElement setAnchorHAlign(int anchorHAlign) {}
 
 	boolean priority() {}
 
-	void controllerConnected(Controller controller) {}
-
-	void controllerDisconnected(Controller controller) {}
-
-	boolean triggerType(int character) {}
+	boolean addButtonTips(ButtonTipList tips) {}
 
 	boolean triggerButton(ButtonEvent event) {}
 
-	boolean keyUp(int keycode) {}
-
 	boolean keyDown(int keycode) {}
-
-	boolean addButtonTips(ButtonTipList tips) {}
 
 	boolean keyTyped(char character) {}
 
 	boolean triggerTouch(TouchEvent event) {}
 
+	boolean keyUp(int keycode) {}
+
+	boolean triggerType(int character) {}
+
+	void controllerDisconnected(Controller controller) {}
+
+	void controllerConnected(Controller controller) {}
+
+	MenuChanger setBackground(MenuThemeDrawable background) {}
+
 	GameModeProvider getSelected() {}
 
 	MenuElement setSelected(boolean selected) {}
 
-	MenuChanger setBackground(MenuThemeDrawable background) {}
-
 	MenuChanger vertical() {}
-
-	MenuElementShowAnim getShowAnimation() {}
-
-	boolean isSelected() {}
-
-	MenuThemeDrawable getBackground() {}
-
-	void moveSelection(int offset) {}
-
-	void setSelection(int selection) {}
-
-	ObjectPainter getPainter() {}
 
 	MenuChanger horizontal() {}
 
-	Color getBackgroundColor() {}
-
-	boolean isMobile() {}
+	ObjectPainter getPainter() {}
 
 	void setSelectedElement(Object element) {}
 
-	MenuChanger setLabel(String label) {}
-
-	MenuChanger setAutoFocus(boolean autoFocus) {}
-
-	MenuChanger setPainter(ObjectPainter painter) {}
-
-	MenuChanger setArrowDown(Drawable arrowDown) {}
-
-	Drawable getArrowLeft() {}
-
-	MenuChanger setArrowLeft(Drawable arrowLeft) {}
-
-	Drawable getArrowDown() {}
-
 	MenuChanger setArrowRight(Drawable arrowRight) {}
 
-	Drawable getArrowRight() {}
-
-	MenuChanger setHorizontal(boolean horizontal) {}
-
-	int getSelection() {}
+	float getArrowOffset() {}
 
 	boolean isHorizontal() {}
 
-	void drawChanger(CustomSpriteBatch batch, float x, float y, float width, float height) {}
-
-	MenuChanger setElements(List elements) {}
-
-	Drawable getArrowUp() {}
-
-	MenuChanger setSelectAction(MenuChangerSelectAction selectAction) {}
+	MenuChanger setArrowLeft(Drawable arrowLeft) {}
 
 	StringCache getLabel() {}
 
-	boolean isAutoFocus() {}
+	MenuChanger setArrowDown(Drawable arrowDown) {}
 
-	boolean canDrawArrows() {}
+	Drawable getArrowRight() {}
+
+	boolean isAutoFocus() {}
 
 	void drawLabel(CustomSpriteBatch batch, float x, float y, float height) {}
 
 	MenuChangerSelectAction getSelectAction() {}
 
-	float getArrowOffset() {}
+	Drawable getArrowLeft() {}
+
+	Drawable getArrowDown() {}
+
+	int getSelection() {}
+
+	MenuChanger setHorizontal(boolean horizontal) {}
+
+	Drawable getArrowUp() {}
+
+	MenuChanger setSelectAction(MenuChangerSelectAction selectAction) {}
 
 	MenuChanger setArrowUp(Drawable arrowUp) {}
 
+	void drawChanger(CustomSpriteBatch batch, float x, float y, float width, float height) {}
+
+	boolean canDrawArrows() {}
+
 	List getElements() {}
+
+	MenuChanger setElements(List elements) {}
+
+	MenuChanger setAutoFocus(boolean autoFocus) {}
+
+	MenuChanger setPainter(ObjectPainter painter) {}
+
+	Color getBackgroundColor() {}
+
+	MenuChanger setLabel(String label) {}
+
+	MenuThemeDrawable getBackground() {}
+
+	MenuElementShowAnim getShowAnimation() {}
+
+	boolean isSelected() {}
+
+	boolean moveSelection(int offset) {}
+
+	void setSelection(int selection) {}
+
+	boolean isMobile() {}
 
 	void paintGameMode(GameModeProvider mode, Painter parameters) {}
 

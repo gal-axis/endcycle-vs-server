@@ -24,8 +24,8 @@ abstract GameModeProperty(Object) : ObjectPainter {
 
 	void setValue(Object value) {}
 
-	abstract List getValues();
-
 	GameModePropertyElement createElement() {}
+
+	abstract List getValues();
 
 }

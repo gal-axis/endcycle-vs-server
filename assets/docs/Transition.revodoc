@@ -14,8 +14,8 @@ abstract Transition(Object) {
 
 	abstract void draw(Painter painter);
 
-	AttachedParticle getAttachedParticle() {}
-
 	abstract boolean isDone();
+
+	AttachedParticle getAttachedParticle() {}
 
 }

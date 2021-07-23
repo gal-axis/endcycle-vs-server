@@ -18,22 +18,22 @@ final ButtonEvent(Object) {
 
 	void setType(InputType type) {}
 
-	void setController(Controller controller) {}
-
-	Controller getController() {}
-
 	boolean isReleased() {}
-
-	boolean isPressed() {}
 
 	boolean isKey(KeyCode code) {}
 
+	boolean isPressed() {}
+
+	Controller getController() {}
+
 	KeyCode getCode(KeyCodeCategory category) {}
 
-	int getButtonId() {}
+	void setController(Controller controller) {}
+
+	void setID(int buttonId) {}
 
 	boolean isMoved() {}
 
-	void setID(int buttonId) {}
+	int getButtonId() {}
 
 }

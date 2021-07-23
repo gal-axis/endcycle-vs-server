@@ -10,16 +10,16 @@ AdventureSideEventTrigger(Object) : AdventureEventTrigger, Serializable {
 
 	int hashCode() {}
 
-	void write(Json json) {}
+	void write(Json arg0) {}
 
-	void read(Json json, JsonValue jsonData) {}
+	void read(Json arg0, JsonValue arg1) {}
 
-	boolean start(AdventureBattle battle, AdventureFieldNode entry) {}
+	boolean start(AdventureBattle arg0, AdventureFieldNode arg1) {}
 
-	void addEntities(AdventureBattle battle, AdventureFieldNode entry) {}
+	void addEntities(AdventureBattle arg0, AdventureFieldNode arg1) {}
 
-	BattleData toPracticeData(AdventureEvent event) {}
+	BattleData toPracticeData(AdventureEvent arg0) {}
 
-	AdventureEventTrigger getTrigger(AdventureBattle battle) {}
+	AdventureEventTrigger getTrigger(AdventureBattle arg0) {}
 
 }

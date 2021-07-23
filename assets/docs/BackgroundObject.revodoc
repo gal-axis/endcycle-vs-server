@@ -43,23 +43,23 @@ BackgroundObject(GameScreenObject) : Background, GameEventListener {
 
 	void show(GameScreen screen) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
 	void hide(GameScreen screen) {}
 
-	final Origin getOrigin() {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	float getComparisonKey() {}
+
+	final Origin getOrigin() {}
 
 	byte getLayer() {}
 
 	final void removeObject() {}
 
-	final SoundContainer playSound(Sounds sound) {}
+	SoundContainer playSound(SoundInfo sound) {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
-	SoundContainer playSound(SoundInfo sound) {}
+	final SoundContainer playSound(Sounds sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
@@ -67,9 +67,9 @@ BackgroundObject(GameScreenObject) : Background, GameEventListener {
 
 	Drawable getFrame(Party party) {}
 
-	void dim(CustomSpriteBatch batch) {}
-
 	boolean drawBG() {}
+
+	void dim(CustomSpriteBatch batch) {}
 
 	Color getColor() {}
 

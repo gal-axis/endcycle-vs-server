@@ -14,18 +14,18 @@ PortraitProcessor(Object) {
 
 	void stop(CustomSpriteBatch batch) {}
 
+	void dispose() {}
+
 	void startUpdate() {}
 
 	void stopUpdate() {}
 
-	void dispose() {}
-
-	int getPortraitWidth() {}
+	int getPortraitHeight() {}
 
 	int getPortraitScale() {}
 
 	boolean isMobile() {}
 
-	int getPortraitHeight() {}
+	int getPortraitWidth() {}
 
 }

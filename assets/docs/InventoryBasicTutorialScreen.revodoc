@@ -1,0 +1,164 @@
+InventoryBasicTutorialScreen(InventoryTutorialScreen) {
+
+	final ButtonTipChecker buttonTips;
+	GameScreenInfo info;
+	AudioHandler audio;
+	Layers layers;
+	GameEventHandler events;
+	ScreenInputHandler input;
+	GameScreenTimer timer;
+	Shaker shaker;
+	ScreenConnection connection;
+	float timeScale;
+	final String title;
+	final MenuHeader menuHeader;
+	MenuElementController elementController;
+	MenuElementGroup objectGroup;
+	FadeType fadeType;
+	final Inventory inventory;
+	MenuSidebar menuSidebar;
+	VocMenu vocMenu;
+	PackMenu packMenu;
+	Array tabElements;
+	MenuSidebarButton shopButton;
+	MenuSidebarButton testButton;
+	MenuSidebarButton helpButton;
+	Battle scheduled;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	GameScreen get() {}
+
+	void update(float arg0) {}
+
+	ScreenObject getObject(String arg0) {}
+
+	void init() {}
+
+	void resume() {}
+
+	void resize(boolean arg0, int arg1, int arg2) {}
+
+	void hide() {}
+
+	void show() {}
+
+	boolean isCurrentScreen() {}
+
+	void updateTimer(float arg0) {}
+
+	void render(float arg0) {}
+
+	void addScript(Script arg0, float arg1) {}
+
+	void resetTimer() {}
+
+	Object[] getTextArguments() {}
+
+	void pause() {}
+
+	boolean isLoading() {}
+
+	void dispose() {}
+
+	void removeRenderProcessor(RenderProcessor arg0) {}
+
+	Array getRenderProcessors() {}
+
+	GameScreen getPreviousScreen() {}
+
+	void setPreviousScreen(GameScreen arg0) {}
+
+	void addRenderProcessor(RenderProcessor arg0) {}
+
+	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
+
+	void draw(CustomSpriteBatch arg0) {}
+
+	void updateShake(float arg0) {}
+
+	boolean isShaking() {}
+
+	void resetShake() {}
+
+	void toPreviousScreen(FadeType arg0) {}
+
+	void toPreviousScreen() {}
+
+	Array getObjects() {}
+
+	void changeTo(GameScreen arg0, boolean arg1) {}
+
+	void changeFrom(GameScreen arg0, boolean arg1) {}
+
+	boolean removeObject(ScreenObject arg0) {}
+
+	void shakeVibrate(float arg0, float arg1, float arg2) {}
+
+	void drawButtonTips(CustomSpriteBatch arg0, float arg1, float arg2) {}
+
+	void setScreen(GameScreen arg0) {}
+
+	void setScreen(GameScreen arg0, FadeType arg1, boolean arg2) {}
+
+	void setScreen(GameScreen arg0, FadeType arg1) {}
+
+	ScreenObject addObject(ScreenObject arg0) {}
+
+	void updateObjects(float arg0) {}
+
+	void clearObjects() {}
+
+	void shake(float arg0, float arg1, float arg2) {}
+
+	void enableInput() {}
+
+	void disableInput() {}
+
+	void centerElements() {}
+
+	void createMenuElements() {}
+
+	void backButtonPressed() {}
+
+	void buildControllerNeighbors() {}
+
+	void help() {}
+
+	boolean triggerButton(ButtonEvent arg0) {}
+
+	TutorialPracticeBattle createPracticeBattle() {}
+
+	void addTabElement(String arg0, Drawable arg1, MenuElement arg2, MenuElement arg3) {}
+
+	void practice() {}
+
+	boolean hasVocs() {}
+
+	void openShop() {}
+
+	void practice(LocalizedMessage arg0, Battles arg1, TutorialBattleCommands arg2) {}
+
+	void practice(LocalizedMessage arg0, TutorialBattleCommands arg1) {}
+
+	void practice(LocalizedMessage arg0, Battle arg1) {}
+
+	void createTutorial() {}
+
+	VocSet getEventSet() {}
+
+	void addStyles(VocStyles[] arg0) {}
+
+	void highlightLevel(VocEntry arg0) {}
+
+	void addVocs(VocIds[] arg0) {}
+
+	boolean handle(GameEvent arg0) {}
+
+}

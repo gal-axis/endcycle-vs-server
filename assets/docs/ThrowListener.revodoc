@@ -45,19 +45,19 @@ ThrowListener(Object) : BattleEntityListener, FloatTimerAction, LandAction {
 
 	void attack(Attack attack) {}
 
-	AilmentInflict inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
+	int hurt(BattleEntity origin, int amount, boolean display) {}
 
 	void inflictPost(OwnedHitProperty property) {}
 
-	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
+	void inflict(OwnedHitProperty property) {}
 
 	void inflictPre(OwnedHitProperty property) {}
 
-	void inflict(OwnedHitProperty property) {}
+	AilmentInflict inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
 
-	int hurt(int amount, boolean display) {}
+	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
 
-	int heal(int amount, boolean display) {}
+	int heal(BattleEntity origin, int amount, boolean display) {}
 
 	void drawHud(CustomSpriteBatch batch, float xOfs, float yOfs, float width, float height) {}
 

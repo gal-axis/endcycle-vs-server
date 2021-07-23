@@ -28,23 +28,23 @@ RecordLabel(MenuLabel) {
 
 	void show(GameScreen screen) {}
 
-	void draw(CustomSpriteBatch batch, float x, float y) {}
-
 	void hide(GameScreen screen) {}
 
-	final Origin getOrigin() {}
+	void draw(CustomSpriteBatch batch, float x, float y) {}
 
 	float getComparisonKey() {}
+
+	final Origin getOrigin() {}
 
 	byte getLayer() {}
 
 	final void removeObject() {}
 
-	final SoundContainer playSound(Sounds sound) {}
+	SoundContainer playSound(SoundInfo sound) {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
-	SoundContainer playSound(SoundInfo sound) {}
+	final SoundContainer playSound(Sounds sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
@@ -56,133 +56,133 @@ RecordLabel(MenuLabel) {
 
 	void calculateSize() {}
 
-	MenuElement setEnabled(boolean enabled) {}
-
-	boolean select() {}
+	float getY() {}
 
 	float getX() {}
 
-	float getY() {}
+	boolean select() {}
 
-	MenuElement setFocusable(boolean focusable) {}
-
-	float calcX() {}
-
-	float calcY() {}
-
-	MenuElement setLayer(byte layer) {}
-
-	float getWidth() {}
+	MenuElement setEnabled(boolean enabled) {}
 
 	float getHeight() {}
 
+	float getWidth() {}
+
 	MenuLabel setHeight(float height) {}
 
-	MenuElement getAbsoluteParent() {}
+	MenuElement setLayer(byte layer) {}
+
+	boolean touch(TouchEvent trigger) {}
 
 	final void triggerAction(MenuElementActionType type) {}
 
-	boolean touch(TouchEvent trigger) {}
+	MenuElement getAbsoluteParent() {}
 
 	MenuElement setX(float x) {}
 
 	MenuElement setY(float y) {}
 
+	float calcX() {}
+
+	float calcY() {}
+
 	MenuLabel setWidth(float width) {}
 
-	MenuElement setFocused(boolean focused) {}
-
-	boolean isAbsoluteHidden() {}
-
-	MenuElement setHidden(boolean hidden) {}
-
-	float getAbsoluteX() {}
-
-	float getAbsoluteY() {}
-
-	void addElements(Array elements, float x, float y) {}
-
-	int getHAlign() {}
-
-	MenuElement setAnchorHAlign(int anchorHAlign) {}
-
-	MenuElement setVAlign(int vAlign) {}
-
-	boolean isFocusable() {}
-
-	int getAnchorHAlign() {}
+	boolean isTouching(float x, float y) {}
 
 	boolean isFocused() {}
 
-	MenuElement setAnchorVAlign(int anchorVAlign) {}
+	MenuElement getAnchor() {}
 
-	MenuButtonTips getButtonTips() {}
+	float getAbsoluteY() {}
 
 	void setCursor(Rectangle rectangle) {}
 
-	MenuElement getAnchor() {}
-
-	MenuElement setAnchor(MenuElement anchor) {}
-
-	MenuElement setHAlign(int hAlign) {}
+	MenuElement setVAlign(int vAlign) {}
 
 	boolean isEnabled() {}
+
+	int getHAlign() {}
+
+	MenuElement setFocused(boolean focused) {}
 
 	int getAnchorVAlign() {}
 
 	int getVAlign() {}
 
+	MenuElement setHAlign(int hAlign) {}
+
 	boolean canDrawCursor() {}
 
-	boolean isTouching(float x, float y) {}
+	MenuElement setAnchorHAlign(int anchorHAlign) {}
+
+	MenuElement setAnchorVAlign(int anchorVAlign) {}
+
+	int getAnchorHAlign() {}
+
+	MenuButtonTips getButtonTips() {}
+
+	MenuElement setHidden(boolean hidden) {}
+
+	MenuElement setAnchor(MenuElement anchor) {}
+
+	boolean isAbsoluteHidden() {}
+
+	float getAbsoluteX() {}
+
+	void addElements(Array elements, float x, float y) {}
+
+	boolean isFocusable() {}
 
 	final void setMenuControllerSelection(MenuElement element) {}
 
 	Set getActionListeners() {}
 
+	MenuElement setFocusable(boolean focusable) {}
+
 	StringCache getCache() {}
-
-	float getPosition(int align, float size) {}
-
-	String getText() {}
-
-	MenuLabel setText(String text) {}
 
 	MenuLabel setBackground(MenuThemeDrawable background) {}
 
+	MenuLabel setText(String text) {}
+
+	String getText() {}
+
 	float getBorder() {}
+
+	Fonts getFont() {}
 
 	MenuLabel setFont(Fonts font) {}
 
 	MenuLabel setTextVAlign(int textVAlign) {}
 
-	float getTextWidth() {}
-
-	int getTextVAlign() {}
-
-	boolean isMonoSpace() {}
-
-	MenuLabel setBorder(float border) {}
-
 	void drawString(CustomSpriteBatch batch, float x, float y) {}
-
-	MenuElementShowAnim getShowAnimation() {}
-
-	MenuThemeDrawable getBackground() {}
-
-	int getTextHAlign() {}
 
 	void updateCache() {}
 
+	MenuLabel setBorder(float border) {}
+
 	MenuLabel setMonoSpace(boolean monoSpace) {}
 
-	Fonts getFont() {}
+	MenuThemeDrawable getBackground() {}
 
-	MenuLabel setCache(StringCache cache) {}
+	int getTextVAlign() {}
+
+	float getTextWidth() {}
+
+	int getTextHAlign() {}
+
+	boolean isMonoSpace() {}
+
+	MenuElementShowAnim getShowAnimation() {}
+
+	void drawBackground(CustomSpriteBatch batch, float x, float y, float width, float height) {}
 
 	MenuLabel setTextHAlign(int textHAlign) {}
 
-	void drawBackground(CustomSpriteBatch batch, float x, float y, float width, float height) {}
+	float getPosition(int align, float size) {}
+
+	MenuLabel setCache(StringCache cache) {}
 
 	MenuLabel setText(String text, boolean record) {}
 

@@ -92,25 +92,25 @@ final TeleporterEntity(BattleEntity) : BannedPanelObject, TeleportEntityAction {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	void show(GameScreen screen) {}
 
 	void hide(GameScreen screen) {}
 
-	void show(GameScreen screen) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	final Origin getOrigin() {}
 
+	byte getLayer() {}
+
 	float getComparisonKey() {}
 
-	byte getLayer() {}
+	final void removeObject() {}
 
 	final SoundContainer playSound(Sounds sound) {}
 
-	SoundContainer playSound(SoundInfo sound) {}
-
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
-	final void removeObject() {}
+	SoundContainer playSound(SoundInfo sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
@@ -118,27 +118,37 @@ final TeleporterEntity(BattleEntity) : BannedPanelObject, TeleportEntityAction {
 
 	void resetState() {}
 
-	final boolean isFlipY() {}
-
-	CColor calculateTint() {}
-
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scaleX, float scaleY) {}
 
 	void draw(CustomSpriteBatch batch) {}
+
+	CColor calculateTint() {}
 
 	final float getWidth() {}
 
 	final float getHeight() {}
 
-	final void setAnimationDuration(float duration) {}
+	final boolean inState(PatchworkStateId name) {}
 
-	final boolean isAnimationFinished() {}
+	final boolean isFlipY() {}
 
-	final Patchwork getPatchwork() {}
+	void updateParticles(float delta) {}
 
 	final void resetTint() {}
 
-	void updateParticles(float delta) {}
+	final void resetAnimation() {}
+
+	final float getXScale() {}
+
+	final float getYScale() {}
+
+	boolean setState(PatchworkStateId name) {}
+
+	final boolean isFlipX() {}
+
+	final Patchwork getPatchwork() {}
+
+	final boolean hasState(PatchworkStateId name) {}
 
 	Patchwork setPatchwork(Patchwork patchwork) {}
 
@@ -146,29 +156,19 @@ final TeleporterEntity(BattleEntity) : BannedPanelObject, TeleportEntityAction {
 
 	void updateGraphics(float delta) {}
 
-	final boolean hasState(PatchworkStateId name) {}
+	final boolean isAnimationFinished() {}
 
-	final float getXScale() {}
-
-	boolean setState(PatchworkStateId name) {}
-
-	final void resetAnimation() {}
-
-	final boolean inState(PatchworkStateId name) {}
-
-	final float getYScale() {}
-
-	final boolean isFlipX() {}
+	final void setAnimationDuration(double duration) {}
 
 	List getShadowDrawables() {}
 
 	float getShadowX() {}
 
+	float getShadowZ() {}
+
 	float getShadowAlpha() {}
 
 	float getShadowY() {}
-
-	float getShadowZ() {}
 
 	final String getTalking() {}
 
@@ -188,148 +188,154 @@ final TeleporterEntity(BattleEntity) : BannedPanelObject, TeleportEntityAction {
 
 	void spawn() {}
 
-	void startDeath() {}
+	void startDeath(BattleEntity killer) {}
 
 	void despawn() {}
 
-	void removeAction() {}
-
 	BattlePlayer createPlayer() {}
+
+	void removeAction() {}
 
 	void setAction(BattleEntityAction action) {}
 
-	boolean attack(AttackPlan attackPlan) {}
-
-	boolean attack(VocEntry voc, KeyCode code) {}
+	final boolean isAuthorative() {}
 
 	void occupyPanels() {}
 
-	void crush(double amount, int crushStrength) {}
-
-	final BattleEntityAction setActionComplex(int level) {}
-
-	void setPanelPosition(int x, int y) {}
-
-	void freePanels() {}
-
-	void setTurned(boolean turned) {}
-
 	final void changeData(BattleEntityData info, CustomCache customizations) {}
 
-	boolean occupies(BattleEntity entity) {}
+	void crush(double amount, int crushStrength) {}
 
-	boolean occupies(int x, int y) {}
+	boolean attack(VocEntry voc, KeyCode code) {}
 
-	void changePalette(CustomCache palette) {}
-
-	final void setActionData(BattleEntityActionData data) {}
-
-	void block(OwnedHitProperty hit) {}
-
-	StringDisplay displayText(String attack, Color color, float time) {}
-
-	StringDisplay displayText(String attack, Color color) {}
-
-	void displayText(StringDisplay stringDisplay) {}
-
-	AttackPlan createPlan(VocEntry voc, KeyCode code) {}
-
-	void stopAttack() {}
-
-	boolean inflict(OwnedHitProperty hit) {}
-
-	boolean canInflict(HitProperty hitProperty) {}
-
-	void semiBlock(OwnedHitProperty hit) {}
-
-	void hitApply(OwnedHitProperty hit) {}
-
-	boolean isAttacking() {}
-
-	void displayAttackName(String name, Color color) {}
-
-	void displayHealthText(int amount) {}
+	boolean attack(AttackPlan attackPlan) {}
 
 	final BattleEntity getAbsoluteParent() {}
 
-	boolean isAccessibleField(BattleField field, int x, int y, boolean free) {}
+	void displayHealthText(int amount) {}
 
 	final boolean isAccessibleField(int x, int y) {}
 
 	boolean isAccessibleField(int x, int y, boolean free) {}
 
-	boolean isMoving() {}
+	boolean isAccessibleField(BattleField field, int x, int y, boolean checkFree, boolean checkParty) {}
 
-	boolean isMoveable() {}
+	boolean isAccessibleField(BattleField field, int x, int y, boolean checkFree) {}
 
-	void die() {}
+	boolean isAccessibleField(int x, int y, boolean checkFree, boolean checkParty) {}
 
-	float getPanelY(BattleField field, int y) {}
+	void displayAttackName(String name, Color color) {}
 
-	final void occupyPanel(int x, int y) {}
-
-	float getPanelX(BattleField field, int x) {}
-
-	void heal(int amount) {}
-
-	void heal(int amount, boolean display) {}
-
-	void refreshPanel() {}
-
-	Mover move(MoveType type, int xTile, int yTile, float speed) {}
-
-	void move(float delta) {}
-
-	Mover move(MoveType type, int xTile, int yTile, float speed, boolean rollback) {}
-
-	Mover move(Mover mover, boolean rollback) {}
-
-	Mover move(Mover mover) {}
-
-	void cancelMovement() {}
-
-	final void freePanel(int x, int y) {}
-
-	void drawHealth(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	boolean canReachPanel(int x, int y) {}
-
-	Vector2 getPanelOffset() {}
-
-	void updateGauge(double delta) {}
-
-	final void startAnimation(ScreenObject animation) {}
-
-	void updateAttack(float delta) {}
-
-	void kill() {}
-
-	final GameObject getAttach() {}
-
-	final boolean isAuthorative() {}
-
-	final boolean isBattleClient() {}
-
-	Ailment inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
-
-	void onHit(BattleEntity entity, HitProperty hit, int damage) {}
-
-	void hurt(int amount, boolean display) {}
-
-	void hurt(int amount) {}
-
-	void makeHitParticle(HitType type, Color color) {}
+	final BattleFieldBorder getFieldBorder() {}
 
 	final void respawn(int x, int y) {}
 
-	final BattleFieldBorder getFieldBorder() {}
+	boolean canReachPanel(int x, int y) {}
+
+	boolean isAttacking() {}
+
+	void changePalette(CustomCache palette) {}
+
+	void hurt(BattleEntity origin, int amount) {}
+
+	void hurt(BattleEntity origin, int amount, boolean display) {}
+
+	void onHit(BattleEntity entity, HitProperty hit, int damage) {}
+
+	final void setActionData(BattleEntityActionData data) {}
+
+	AttackPlan createPlan(VocEntry voc, KeyCode code) {}
+
+	final BattleEntityAction setActionComplex(int level) {}
+
+	void displayText(StringDisplay stringDisplay) {}
+
+	StringDisplay displayText(String attack, Color color, float time) {}
+
+	StringDisplay displayText(String attack, Color color) {}
+
+	void stopAttack() {}
+
+	boolean inflict(OwnedHitProperty hit) {}
+
+	void setTurned(boolean turned) {}
+
+	void block(OwnedHitProperty hit) {}
+
+	void hitApply(OwnedHitProperty hit) {}
+
+	boolean occupies(int x, int y) {}
+
+	boolean occupies(BattleEntity entity) {}
+
+	void setPanelPosition(int x, int y) {}
+
+	boolean canInflict(HitProperty hitProperty) {}
+
+	void makeHitParticle(HitType type, Color color) {}
+
+	final boolean isBattleClient() {}
+
+	void onInflict(BattleEntity entity, OwnedHitProperty property) {}
+
+	void semiBlock(OwnedHitProperty hit) {}
+
+	void freePanels() {}
+
+	Ailment inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
+
+	Mover move(Mover mover) {}
+
+	Mover move(MoveType type, int xTile, int yTile, float speed) {}
+
+	Mover move(Mover mover, boolean rollback) {}
+
+	Mover move(MoveType type, int xTile, int yTile, float speed, boolean rollback) {}
+
+	void move(float delta) {}
+
+	void updateGauge(double delta) {}
+
+	final GameObject getAttach() {}
+
+	void refreshPanel() {}
+
+	final void freePanel(int x, int y) {}
+
+	final void occupyPanel(int x, int y) {}
+
+	Vector2 getPanelOffset() {}
+
+	boolean isMoveable() {}
+
+	boolean isMoving() {}
+
+	void updateAttack(float delta) {}
+
+	void drawHealth(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void heal(BattleEntity origin, int amount) {}
+
+	void heal(BattleEntity origin, int amount, boolean display) {}
+
+	void kill(BattleEntity killer) {}
+
+	final void startAnimation(ScreenObject animation) {}
+
+	void cancelMovement() {}
+
+	float getPanelY(BattleField field, int y) {}
+
+	void die(BattleEntity killer) {}
+
+	float getPanelX(BattleField field, int x) {}
 
 	void teleport(BattleEntity entity, BattleEntity target, Point point) {}
 
 	boolean isBannedPanel(BattleEntity entity, int x, int y) {}
 
-	float getBannedPanelPriority(BattleEntity entity) {}
-
 	boolean isBannedPanelRemove(BattleEntity entity) {}
+
+	float getBannedPanelPriority(BattleEntity entity) {}
 
 }

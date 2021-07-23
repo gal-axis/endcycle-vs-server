@@ -15,6 +15,14 @@ OnlineInventoryScreen(VsInventoryScreen) {
 	MenuElementController elementController;
 	MenuElementGroup objectGroup;
 	FadeType fadeType;
+	final Inventory inventory;
+	MenuSidebar menuSidebar;
+	VocMenu vocMenu;
+	PackMenu packMenu;
+	Array tabElements;
+	MenuSidebarButton shopButton;
+	MenuSidebarButton testButton;
+	MenuSidebarButton helpButton;
 	ID background;
 	ID song;
 
@@ -38,69 +46,71 @@ OnlineInventoryScreen(VsInventoryScreen) {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void setScreen(GameScreen screen) {}
+	void pause() {}
 
 	void setScreen(GameScreen screen, FadeType fade) {}
 
 	void setScreen(GameScreen screen, FadeType fade, boolean changesBefore) {}
 
-	void render(float delta) {}
-
-	void resetTimer() {}
-
-	boolean removeObject(ScreenObject object) {}
-
-	void updateTimer(float delta) {}
-
-	void show() {}
-
-	void updateShake(float delta) {}
-
-	boolean isShaking() {}
-
-	void updateObjects(float delta) {}
+	void setScreen(GameScreen screen) {}
 
 	void drawButtonTips(CustomSpriteBatch batch, float x, float y) {}
 
-	void changeFrom(GameScreen screen, boolean init) {}
+	void draw(CustomSpriteBatch batch) {}
 
-	void clearObjects() {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void resetShake() {}
 
-	ScreenObject addObject(ScreenObject object) {}
+	void changeTo(GameScreen screen, boolean init) {}
 
-	void toPreviousScreen(FadeType type) {}
+	void updateShake(float delta) {}
 
-	void toPreviousScreen() {}
+	boolean isCurrentScreen() {}
 
 	Array getObjects() {}
 
-	void changeTo(GameScreen screen, boolean init) {}
-
 	void shakeVibrate(float x, float y, float duration) {}
+
+	boolean isShaking() {}
+
+	void changeFrom(GameScreen screen, boolean init) {}
+
+	void render(float delta) {}
 
 	void hide() {}
 
 	void shake(float x, float y, float duration) {}
 
-	boolean isCurrentScreen() {}
+	boolean removeObject(ScreenObject object) {}
+
+	void clearObjects() {}
 
 	void dispose() {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	void resetTimer() {}
 
-	void draw(CustomSpriteBatch batch) {}
+	ScreenObject addObject(ScreenObject object) {}
+
+	void show() {}
+
+	void updateTimer(float delta) {}
+
+	void updateObjects(float delta) {}
+
+	void toPreviousScreen(FadeType type) {}
+
+	void toPreviousScreen() {}
 
 	void addRenderProcessor(RenderProcessor renderProcessor) {}
 
-	void setPreviousScreen(GameScreen previousScreen) {}
+	Array getRenderProcessors() {}
 
-	void removeRenderProcessor(RenderProcessor renderProcessor) {}
+	void setPreviousScreen(GameScreen previousScreen) {}
 
 	GameScreen getPreviousScreen() {}
 
-	Array getRenderProcessors() {}
+	void removeRenderProcessor(RenderProcessor renderProcessor) {}
 
 	void addScript(Script script, float delay) {}
 
@@ -108,19 +118,17 @@ OnlineInventoryScreen(VsInventoryScreen) {
 
 	boolean isLoading() {}
 
-	void pause() {}
-
 	void createMenuElements() {}
 
 	void backButtonPressed() {}
 
 	void buildControllerNeighbors() {}
 
-	void centerElements() {}
+	void disableInput() {}
 
 	void enableInput() {}
 
-	void disableInput() {}
+	void centerElements() {}
 
 	void help() {}
 
@@ -128,13 +136,11 @@ OnlineInventoryScreen(VsInventoryScreen) {
 
 	void practice() {}
 
+	boolean hasVocs() {}
+
 	void openShop() {}
 
-	MenuSidebar getMenuSidebar() {}
-
 	void addTabElement(String name, Drawable icon, MenuElement element, MenuElement selected) {}
-
-	Inventory getInventory() {}
 
 	void playSong() {}
 

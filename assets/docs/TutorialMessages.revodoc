@@ -25,11 +25,27 @@ enum TutorialMessages : LocalizedMessage {
  	Crush_03,
  	Crush_04,
  	Crush_05,
+ 	Element_01,
+ 	Element_02,
+ 	Element_03,
+ 	Element_04,
+ 	Element_05,
+ 	Element_06,
+ 	Element_07,
+ 	Element_08,
+ 	Element_09,
+ 	Element_10,
+ 	Element_11,
+ 	Element_12,
+ 	Element_13,
+ 	Element_Help_01,
  	Immersive_Help_01,
  	Immersive_Help_02,
  	Immersive_Help_03,
  	Immersive_Help_04,
  	Immersive_Help_05,
+ 	Immersive_Help_07,
+ 	Quit,
  	Select_01,
  	Select_02,
  	Select_03,
@@ -44,15 +60,32 @@ enum TutorialMessages : LocalizedMessage {
  	Select_12,
  	Select_13,
  	Select_14,
- 	Styles_01,
- 	Styles_02,
- 	Styles_03,
- 	Styles_04,
- 	Styles_05,
- 	Styles_06,
- 	Styles_07,
- 	Styles_Help_01,
- 	Styles_Help_02,
+ 	Style_01,
+ 	Style_02,
+ 	Style_03,
+ 	Style_04,
+ 	Style_05,
+ 	Style_06,
+ 	Style_07,
+ 	Style_08,
+ 	Style_09,
+ 	Style_10,
+ 	Style_11,
+ 	Style_12,
+ 	Style_13,
+ 	Style_14,
+ 	Style_15,
+ 	Style_16,
+ 	Style_17,
+ 	Style_18,
+ 	Style_Help_01,
+ 	Style_Help_02,
+ 	Style_Help_03,
+ 	Style_Help_04,
+ 	Style_Help_05,
+ 	Style_Help_06,
+ 	Style_Help_07,
+ 	Style_Help_08,
  	Vocs_01,
  	Vocs_02,
  	Vocs_03,
@@ -81,22 +114,22 @@ enum TutorialMessages : LocalizedMessage {
 
 	final int ordinal() {}
 
-	int get(int object, int orElse) {}
+	int get(int arg0, int arg1) {}
 
-	Object get(Object object, Object orElse) {}
+	Object get(Object arg0, Object arg1) {}
 
-	float get(float object, float orElse) {}
+	float get(float arg0, float arg1) {}
 
-	double get(double object, double orElse) {}
+	double get(double arg0, double arg1) {}
 
-	void paint(Painter painter) {}
+	void paint(Painter arg0) {}
 
-	String format(Object[] args) {}
+	String format(Object[] arg0) {}
 
 	String getKey() {}
 
 	static TutorialMessages[] values() {}
 
-	static TutorialMessages valueOf(String name) {}
+	static TutorialMessages valueOf(String arg0) {}
 
 }

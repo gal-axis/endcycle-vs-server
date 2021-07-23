@@ -36,14 +36,14 @@ BattleMusicProcessor(MultiMusicProcessor) : ScreenObject {
 
 	void hide(GameScreen screen) {}
 
-	Origin getOrigin() {}
+	byte getLayer() {}
 
 	float getComparisonKey() {}
 
-	byte getLayer() {}
-
-	void setCrushed(boolean crushed) {}
+	Origin getOrigin() {}
 
 	void setLowHP(boolean lowHP) {}
+
+	void setCrushed(boolean crushed) {}
 
 }

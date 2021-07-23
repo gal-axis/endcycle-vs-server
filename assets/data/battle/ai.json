@@ -204,30 +204,13 @@
 		}
 	],
 	"acts": [
-		{
-			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TARGET",
-			"target": {
-				"party": "ENEMY",
-				"invert": true,
-				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
-			}
-		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TARGET" },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 27 }
 		},
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 2 },
-		{
-			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
-			"moveType": "ANIMATED_TILE",
-			"xTile": -1,
-			"target": {
-				"party": "ENEMY",
-				"invert": true,
-				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
-			}
-		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "xTile": -1, "relation": "TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 }
 	]
 },
@@ -282,25 +265,8 @@
 		}
 	],
 	"acts": [
-		{
-			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
-			"moveType": "ANIMATED_MOVING_TILE",
-			"xTile": 1,
-			"target": {
-				"party": "ENEMY",
-				"invert": true,
-				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
-			}
-		},
-		{
-			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TARGET",
-			"target": {
-				"party": "ENEMY",
-				"invert": true,
-				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
-			}
-		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_MOVING_TILE", "xTile": -1, "relation": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.1 }
 	]
 },

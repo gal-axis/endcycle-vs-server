@@ -27,57 +27,57 @@ abstract LobbyConnectMessage(UncancelableShortMessage) {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void hide(GameScreen screen) {}
-
 	void show(GameScreen screen) {}
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	final Origin getOrigin() {}
+	void hide(GameScreen screen) {}
 
 	byte getLayer() {}
 
 	float getComparisonKey() {}
 
+	final Origin getOrigin() {}
+
 	final void removeObject() {}
-
-	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
-
-	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
+	final SoundContainer playSound(Sounds sound) {}
+
 	SoundContainer playSound(SoundInfo sound) {}
 
-	final void addInitializeListener(Runnable runnable) {}
+	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
 	final void removeInitializeListener(Runnable runnable) {}
 
-	final void removeDisposeListener(Runnable runnable) {}
+	final void addInitializeListener(Runnable runnable) {}
 
 	final void addDisposeListener(Runnable runnable) {}
+
+	final void removeDisposeListener(Runnable runnable) {}
 
 	void scheduleMessage(GameScreenMessage message) {}
 
 	boolean priority() {}
 
-	void controllerDisconnected(Controller controller) {}
-
-	void controllerConnected(Controller controller) {}
+	boolean triggerButton(ButtonEvent event) {}
 
 	boolean triggerType(int character) {}
 
 	boolean keyTyped(char character) {}
 
-	boolean keyUp(int keycode) {}
-
-	boolean triggerButton(ButtonEvent event) {}
-
-	boolean triggerTouch(TouchEvent event) {}
+	boolean addButtonTips(ButtonTipList tips) {}
 
 	boolean keyDown(int keycode) {}
 
-	boolean addButtonTips(ButtonTipList tips) {}
+	boolean keyUp(int keycode) {}
+
+	boolean triggerTouch(TouchEvent event) {}
+
+	void controllerDisconnected(Controller controller) {}
+
+	void controllerConnected(Controller controller) {}
 
 	int getState() {}
 
@@ -89,11 +89,11 @@ abstract LobbyConnectMessage(UncancelableShortMessage) {
 
 	void setState(int state) {}
 
+	void setStayTime(float time) {}
+
 	void setDisplay(String display) {}
 
 	void setDisplay(boolean toUppercase, LocalizedMessage display, Object[] args) {}
-
-	void setStayTime(float time) {}
 
 	void finishError(MenuMessages text) {}
 

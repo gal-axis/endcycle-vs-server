@@ -32,11 +32,11 @@ InputToggleScript(Script) : InputListener {
 
 	void hide(GameScreen screen) {}
 
-	Origin getOrigin() {}
+	byte getLayer() {}
 
 	float getComparisonKey() {}
 
-	byte getLayer() {}
+	Origin getOrigin() {}
 
 	void start(GameScreen screen) {}
 
@@ -44,22 +44,22 @@ InputToggleScript(Script) : InputListener {
 
 	boolean priority() {}
 
-	void controllerConnected(Controller controller) {}
-
-	void controllerDisconnected(Controller controller) {}
+	boolean triggerButton(ButtonEvent event) {}
 
 	boolean triggerType(int character) {}
 
-	boolean triggerButton(ButtonEvent event) {}
-
-	boolean keyUp(int keycode) {}
-
-	boolean keyDown(int keycode) {}
+	boolean keyTyped(char character) {}
 
 	boolean addButtonTips(ButtonTipList tips) {}
 
-	boolean keyTyped(char character) {}
+	boolean keyDown(int keycode) {}
+
+	boolean keyUp(int keycode) {}
 
 	boolean triggerTouch(TouchEvent event) {}
+
+	void controllerDisconnected(Controller controller) {}
+
+	void controllerConnected(Controller controller) {}
 
 }

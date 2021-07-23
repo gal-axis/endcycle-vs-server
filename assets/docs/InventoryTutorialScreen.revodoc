@@ -1,4 +1,4 @@
-InventoryTutorialScreen(InventoryScreen) {
+abstract InventoryTutorialScreen(InventoryScreen) {
 
 	final ButtonTipChecker buttonTips;
 	GameScreenInfo info;
@@ -15,6 +15,15 @@ InventoryTutorialScreen(InventoryScreen) {
 	MenuElementController elementController;
 	MenuElementGroup objectGroup;
 	FadeType fadeType;
+	final Inventory inventory;
+	MenuSidebar menuSidebar;
+	VocMenu vocMenu;
+	PackMenu packMenu;
+	Array tabElements;
+	MenuSidebarButton shopButton;
+	MenuSidebarButton testButton;
+	MenuSidebarButton helpButton;
+	Battle scheduled;
 
 	new() {}
 
@@ -36,53 +45,31 @@ InventoryTutorialScreen(InventoryScreen) {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void setScreen(GameScreen screen) {}
-
-	void setScreen(GameScreen screen, FadeType fade) {}
-
-	void setScreen(GameScreen screen, FadeType fade, boolean changesBefore) {}
-
-	void render(float delta) {}
-
-	void resetTimer() {}
+	void updateTimer(float delta) {}
 
 	boolean removeObject(ScreenObject object) {}
 
-	void updateTimer(float delta) {}
-
-	void show() {}
-
-	void updateShake(float delta) {}
-
-	boolean isShaking() {}
-
 	void updateObjects(float delta) {}
-
-	void drawButtonTips(CustomSpriteBatch batch, float x, float y) {}
-
-	void changeFrom(GameScreen screen, boolean init) {}
 
 	void clearObjects() {}
 
-	void resetShake() {}
+	boolean isShaking() {}
 
-	ScreenObject addObject(ScreenObject object) {}
+	void drawButtonTips(CustomSpriteBatch batch, float x, float y) {}
+
+	void changeTo(GameScreen screen, boolean init) {}
+
+	void show() {}
+
+	void shake(float x, float y, float duration) {}
+
+	void render(float delta) {}
+
+	Array getObjects() {}
 
 	void toPreviousScreen(FadeType type) {}
 
 	void toPreviousScreen() {}
-
-	Array getObjects() {}
-
-	void changeTo(GameScreen screen, boolean init) {}
-
-	void shakeVibrate(float x, float y, float duration) {}
-
-	void hide() {}
-
-	void shake(float x, float y, float duration) {}
-
-	boolean isCurrentScreen() {}
 
 	void dispose() {}
 
@@ -90,23 +77,45 @@ InventoryTutorialScreen(InventoryScreen) {
 
 	void draw(CustomSpriteBatch batch) {}
 
+	void resetShake() {}
+
+	void updateShake(float delta) {}
+
+	void shakeVibrate(float x, float y, float duration) {}
+
+	void hide() {}
+
+	boolean isCurrentScreen() {}
+
+	ScreenObject addObject(ScreenObject object) {}
+
+	void changeFrom(GameScreen screen, boolean init) {}
+
+	void setScreen(GameScreen screen, FadeType fade) {}
+
+	void setScreen(GameScreen screen) {}
+
+	void setScreen(GameScreen screen, FadeType fade, boolean changesBefore) {}
+
+	void resetTimer() {}
+
+	Array getRenderProcessors() {}
+
+	void removeRenderProcessor(RenderProcessor renderProcessor) {}
+
 	void addRenderProcessor(RenderProcessor renderProcessor) {}
 
 	void setPreviousScreen(GameScreen previousScreen) {}
 
-	void removeRenderProcessor(RenderProcessor renderProcessor) {}
-
 	GameScreen getPreviousScreen() {}
 
-	Array getRenderProcessors() {}
+	void pause() {}
+
+	boolean isLoading() {}
 
 	void addScript(Script script, float delay) {}
 
 	Object[] getTextArguments() {}
-
-	boolean isLoading() {}
-
-	void pause() {}
 
 	void createMenuElements() {}
 
@@ -114,26 +123,40 @@ InventoryTutorialScreen(InventoryScreen) {
 
 	void buildControllerNeighbors() {}
 
+	void disableInput() {}
+
 	void centerElements() {}
 
 	void enableInput() {}
-
-	void disableInput() {}
 
 	void help() {}
 
 	boolean triggerButton(ButtonEvent event) {}
 
+	void addTabElement(String name, Drawable icon, MenuElement element, MenuElement selected) {}
+
 	void practice() {}
+
+	boolean hasVocs() {}
 
 	void openShop() {}
 
-	MenuSidebar getMenuSidebar() {}
+	TutorialPracticeBattle createPracticeBattle() {}
 
-	void addTabElement(String name, Drawable icon, MenuElement element, MenuElement selected) {}
+	void practice(LocalizedMessage help, Battle battle) {}
 
-	Inventory getInventory() {}
+	void practice(LocalizedMessage help, Battles battle, TutorialBattleCommands tutorial) {}
 
-	boolean handle(GameEvent event) {}
+	void practice(LocalizedMessage help, TutorialBattleCommands tutorial) {}
+
+	void createTutorial() {}
+
+	VocSet getEventSet() {}
+
+	void addVocs(VocIds[] vocs) {}
+
+	void highlightLevel(VocEntry entry) {}
+
+	void addStyles(VocStyles[] styles) {}
 
 }

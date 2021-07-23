@@ -18,23 +18,23 @@ abstract PanelEffect(Object) {
 
 	boolean isAccessible(BattleEntity entity) {}
 
-	int getX() {}
-
 	int getY() {}
 
 	abstract void draw(Batch batch, float x, float y, Party party, float shade, float alpha);
+
+	int getX() {}
 
 	void dispose() {}
 
 	void refresh() {}
 
-	final void triggerAction(Object[] parameters) {}
-
 	OwnedHitProperty hit(OwnedHitProperty property) {}
 
-	boolean changeType(PanelType type) {}
+	final void triggerAction(Object[] parameters) {}
 
 	void free() {}
+
+	boolean changeType(PanelType type) {}
 
 	void actionTriggered(Object[] action) {}
 

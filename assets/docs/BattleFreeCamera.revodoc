@@ -30,11 +30,11 @@ BattleFreeCamera(BattleCamera) : GameEventListener, InputListener, DragListener 
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void show(GameScreen screen) {}
+
 	void hide(GameScreen screen) {}
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	void show(GameScreen screen) {}
 
 	float getComparisonKey() {}
 
@@ -56,54 +56,54 @@ BattleFreeCamera(BattleCamera) : GameEventListener, InputListener, DragListener 
 
 	void setPosition(float x, float y) {}
 
-	void limitCamera(BattleEntity focused) {}
-
-	void moveY(float y) {}
-
-	float getFocusX() {}
-
-	boolean isFocusing() {}
-
-	float getOffsetX() {}
-
 	void moveX(float x) {}
 
 	float getFocusY() {}
+
+	boolean isFocusing() {}
+
+	float getFocusX() {}
 
 	float getXReal() {}
 
 	float getYReal() {}
 
-	void stopDrag(float x, float y, float deltaX, float deltaY, boolean clickScrolled) {}
+	void limitCamera(BattleEntity focused) {}
 
-	void startDrag(float x, float y) {}
+	void moveY(float y) {}
+
+	float getOffsetX() {}
 
 	void drag(float deltaX, float deltaY) {}
 
+	void startDrag(float x, float y) {}
+
+	void stopDrag(float x, float y, float deltaX, float deltaY, boolean clickScrolled) {}
+
 	boolean priority() {}
 
-	void controllerDisconnected(Controller controller) {}
+	boolean addButtonTips(ButtonTipList tips) {}
 
-	void controllerConnected(Controller controller) {}
+	boolean triggerButton(ButtonEvent event) {}
+
+	boolean triggerTouch(TouchEvent event) {}
 
 	boolean triggerType(int character) {}
 
 	boolean keyTyped(char character) {}
 
+	boolean keyUp(int keycode) {}
+
 	boolean keyDown(int keycode) {}
 
-	boolean addButtonTips(ButtonTipList tips) {}
+	void controllerConnected(Controller controller) {}
 
-	boolean triggerTouch(TouchEvent event) {}
-
-	boolean triggerButton(ButtonEvent event) {}
-
-	boolean keyUp(int keycode) {}
+	void controllerDisconnected(Controller controller) {}
 
 	void handle(GameEvent event) {}
 
-	BattleEntity getFollowing() {}
-
 	void toggleCamera() {}
+
+	BattleEntity getFollowing() {}
 
 }

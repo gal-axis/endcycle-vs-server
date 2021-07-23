@@ -1,4 +1,4 @@
-AdventureItemInventory(Object) {
+AdventureItemInventory(Object) : Serializable {
 
 	final Array items;
 	AdventureBattle battle;
@@ -11,30 +11,34 @@ AdventureItemInventory(Object) {
 
 	int hashCode() {}
 
-	void init(AdventureBattle battle) {}
+	void write(Json arg0) {}
+
+	void read(Json arg0, JsonValue arg1) {}
+
+	void init(AdventureBattle arg0) {}
 
 	void dispose() {}
 
-	void applyItems(BattlePlayer player) {}
+	AdventureBattleItem getItem(ID arg0) {}
 
-	boolean canHaveItem(AdventureItem item) {}
+	void removeItem(AdventureBattleItem arg0, BattlePlayer arg1) {}
 
-	void increaseItemAge() {}
+	void removeItem(AdventureBattleItem arg0) {}
 
-	void removeItems(BattlePlayer player) {}
-
-	AdventureBattleItem getItem(ID id) {}
-
-	void removeItem(AdventureBattleItem item) {}
-
-	void removeItem(AdventureBattleItem item, BattlePlayer player) {}
-
-	AdventureBattleItem addItem(AdventureItem item) {}
-
-	boolean hasItem(ID id, int amount) {}
+	AdventureBattleItem addItem(AdventureItem arg0) {}
 
 	void finishZone() {}
 
-	void applyItem(AdventureBattleItem item, BattlePlayer player) {}
+	boolean hasItem(ID arg0, int arg1) {}
+
+	void applyItem(AdventureBattleItem arg0, BattlePlayer arg1) {}
+
+	boolean canHaveItem(AdventureItem arg0) {}
+
+	void applyItems(BattlePlayer arg0) {}
+
+	void increaseItemAge() {}
+
+	void removeItems(BattlePlayer arg0) {}
 
 }

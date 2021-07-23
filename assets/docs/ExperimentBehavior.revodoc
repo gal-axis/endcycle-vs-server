@@ -24,4 +24,8 @@ ExperimentBehavior(BasicBehavior) {
 
 	boolean isAuthorative() {}
 
+	void hitEntity(BattleEntity entity, OwnedHitProperty property) {}
+
+	BattleEntityActionSave getSave() {}
+
 }

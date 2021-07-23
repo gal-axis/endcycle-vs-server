@@ -17,51 +17,51 @@ final MusicHandler(Object) {
 
 	boolean isLocked() {}
 
+	void pause() {}
+
+	float getDefaultVolume() {}
+
+	void transitionTo(MusicData next, float speed) {}
+
+	void transitionTo(ID next) {}
+
+	void transitionTo(MusicData next) {}
+
+	void transitionTo(MusicData next, float speed, boolean stopLast) {}
+
+	MusicContainer getCurrent() {}
+
+	MusicContainer play(MusicData m, float volume) {}
+
 	MusicContainer play(MusicData m) {}
 
 	MusicContainer play(ID music, boolean pause) {}
 
-	MusicContainer play(ID music) {}
-
 	MusicContainer play(MusicData m, boolean pause) {}
-
-	MusicContainer play(MusicData m, float volume) {}
 
 	void play() {}
 
 	MusicContainer play(MusicData m, float volume, float position, boolean pause) {}
 
-	void pause() {}
+	MusicContainer play(ID music) {}
 
-	float getDefaultVolume() {}
+	void shiftBack() {}
 
-	MusicContainer getCurrent() {}
-
-	void transitionTo(MusicData next, float speed, boolean stopLast) {}
-
-	void transitionTo(MusicData next, float speed) {}
-
-	void transitionTo(MusicData next) {}
-
-	void transitionTo(ID next) {}
+	void setDefaultVolume(float defaultVolume) {}
 
 	float getVolume() {}
 
-	int beat() {}
-
 	void setLocked(boolean locked) {}
 
-	boolean isOnBeat() {}
-
 	boolean isPlaying() {}
+
+	int beat() {}
 
 	void shiftVolume(float volume) {}
 
 	void setCurrentVolume(float volume) {}
 
-	void setDefaultVolume(float defaultVolume) {}
-
-	void shiftBack() {}
+	boolean isOnBeat() {}
 
 	float getCurrentVolume() {}
 

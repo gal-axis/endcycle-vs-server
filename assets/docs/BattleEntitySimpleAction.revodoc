@@ -36,9 +36,13 @@ BattleEntitySimpleAction(Object) : BattleEntityAction {
 
 	void dispose() {}
 
+	void hit(HitProperty hitProperty) {}
+
 	boolean isAuthorative() {}
 
-	void hit(HitProperty hitProperty) {}
+	void hitEntity(BattleEntity entity, OwnedHitProperty property) {}
+
+	BattleEntityActionSave getSave() {}
 
 	boolean isEmpty() {}
 
@@ -50,12 +54,12 @@ BattleEntitySimpleAction(Object) : BattleEntityAction {
 
 	boolean requiresChange(BattleEntityActionChangeData change) {}
 
-	boolean changeIfNeeded() {}
-
-	void progressMove() {}
+	void setExecutor(int index) {}
 
 	void setData(BattleEntityActionData data) {}
 
-	void setExecutor(int index) {}
+	void progressMove() {}
+
+	boolean changeIfNeeded() {}
 
 }

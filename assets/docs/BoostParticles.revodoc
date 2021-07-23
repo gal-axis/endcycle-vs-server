@@ -25,9 +25,9 @@ BoostParticles(Object) : GameObjectParticle {
 
 	void init() {}
 
-	void dispose() {}
-
 	void draw(CustomSpriteBatch batch, float x, float y, float xScale, float yScale, CColor color) {}
+
+	void dispose() {}
 
 	int getOrder() {}
 
@@ -37,13 +37,13 @@ BoostParticles(Object) : GameObjectParticle {
 
 	void invert() {}
 
-	static BoostParticles getBuff(BattleEntity entity, Color color) {}
-
 	static BoostParticles getHeal(BattleEntity entity, Color color) {}
 
-	static BoostParticles getSpeedUp(BattleEntity entity) {}
+	static BoostParticles getBuff(BattleEntity entity, Color color) {}
 
 	static BoostParticles getNerf(BattleEntity entity, Color color) {}
+
+	static BoostParticles getSpeedUp(BattleEntity entity) {}
 
 	static BoostParticles getSpeedDown(BattleEntity entity) {}
 

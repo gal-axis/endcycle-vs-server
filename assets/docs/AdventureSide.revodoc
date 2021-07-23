@@ -6,6 +6,8 @@ enum AdventureSide {
 
 	final LocalizedMessage name;
 	ID icon;
+	String joinMessage;
+	String betrayMessage;
 
 	final boolean equals(Object arg0) {}
 
@@ -21,6 +23,6 @@ enum AdventureSide {
 
 	static AdventureSide[] values() {}
 
-	static AdventureSide valueOf(String name) {}
+	static AdventureSide valueOf(String arg0) {}
 
 }

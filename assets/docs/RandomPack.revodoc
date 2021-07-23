@@ -20,6 +20,8 @@ final RandomPack {
 
 	int indexOf(VocSet rolePack) {}
 
+	void clear() {}
+
 	void set(VocPack pack) {}
 
 	int capacity() {}
@@ -30,11 +32,11 @@ final RandomPack {
 
 	boolean isValid() {}
 
-	VocPack shrink() {}
-
 	Color getColor(int pack) {}
 
 	void fix() {}
+
+	int getSetAmount(boolean full) {}
 
 	String getName() {}
 

@@ -28,16 +28,16 @@ BattleLiberation(Object) : ScreenObject {
 
 	void hide(GameScreen screen) {}
 
-	Origin getOrigin() {}
+	byte getLayer() {}
 
 	float getComparisonKey() {}
 
-	byte getLayer() {}
-
-	boolean onTile(BattleEntity entity) {}
+	Origin getOrigin() {}
 
 	void liberate() {}
 
 	void changeParty(Party party) {}
+
+	boolean onTile(BattleEntity entity) {}
 
 }

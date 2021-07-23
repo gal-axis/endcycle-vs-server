@@ -6,14 +6,14 @@ final ScreenShotFactory(Object) {
 
 	int hashCode() {}
 
-	static Pixmap captureScreen() {}
+	static Pixmap saveScreenshot() {}
 
 	static Pixmap saveScreenshot(boolean createTex) {}
 
-	static Pixmap saveScreenshot() {}
+	static Drawable getScreenshot() {}
 
 	static void setScreenshot(Drawable screenshot) {}
 
-	static Drawable getScreenshot() {}
+	static Pixmap captureScreen() {}
 
 }

@@ -28,25 +28,25 @@ BattleChangeTracker(Object) {
 
 	boolean isRewinding() {}
 
-	void ignoreEntities() {}
-
-	void addAction(ScreenAction action) {}
-
-	void clearIgnored() {}
-
 	void startTracking(Object object) {}
-
-	void stopTracking(Object object) {}
-
-	boolean isTracking(Object object) {}
 
 	boolean isTracking() {}
 
-	void clearTracking() {}
+	boolean isTracking(Object object) {}
+
+	void clearIgnored() {}
+
+	void addAction(ScreenAction action) {}
+
+	void stopTracking(Object object) {}
+
+	void ignoreEntities() {}
 
 	boolean isTrackable(Object value) {}
 
 	void stopIgnoring(Object object) {}
+
+	void clearTracking() {}
 
 	void track(Object value) {}
 

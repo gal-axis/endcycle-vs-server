@@ -20,10 +20,10 @@ abstract IIRFilter(FloatMusicProcessor) {
 
 	abstract void calculateCoefficients();
 
-	void setBCoeffecients(float[] bCoeffecient) {}
+	int getSampleRate() {}
 
 	void setACoeffecients(float[] aCoeffecient) {}
 
-	int getSampleRate() {}
+	void setBCoeffecients(float[] bCoeffecient) {}
 
 }

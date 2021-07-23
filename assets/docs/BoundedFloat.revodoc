@@ -22,35 +22,35 @@ final BoundedFloat(Object) {
 
 	BoundedFloat setVal(float val) {}
 
-	boolean decrease(float delta) {}
-
-	boolean move(boolean increase, float delta) {}
-
 	BoundedFloat toMin() {}
 
 	boolean increase(float delta) {}
 
-	boolean atMax() {}
-
-	float getPercentage() {}
-
 	BoundedFloat toMax() {}
+
+	boolean decrease(float delta) {}
 
 	float getVal() {}
 
-	BoundedFloat setMax(float max) {}
+	boolean atMax() {}
+
+	boolean move(boolean increase, float delta) {}
+
+	float getPercentage() {}
 
 	boolean atMin() {}
 
-	float getMax() {}
-
-	float getSpeed() {}
+	BoundedFloat setMax(float max) {}
 
 	BoundedFloat setSpeed(float speed) {}
 
-	boolean atLimit() {}
+	float getSpeed() {}
+
+	float getMax() {}
 
 	BoundedFloat setValDirect(float val) {}
+
+	boolean atLimit() {}
 
 	void setPercentage(float percentage) {}
 

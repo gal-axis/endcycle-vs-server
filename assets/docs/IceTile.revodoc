@@ -24,9 +24,9 @@ IceTile(NormalTile) : BECondition {
 
 	int getY() {}
 
-	int getX() {}
-
 	void draw(Batch batch, float x, float y, Party party, float shade, float alpha) {}
+
+	int getX() {}
 
 	void dispose() {}
 
@@ -36,17 +36,17 @@ IceTile(NormalTile) : BECondition {
 
 	final void triggerAction(Object[] parameters) {}
 
-	boolean changeType(PanelType type) {}
-
 	void free() {}
+
+	boolean changeType(PanelType type) {}
 
 	void actionTriggered(Object[] action) {}
 
 	Battle getBattle() {}
 
-	void enter(BattleEntity entity) {}
-
 	OwnedHitProperty affect(OwnedHitProperty property) {}
+
+	void enter(BattleEntity entity) {}
 
 	DrawableImage getDrawable(Party party) {}
 

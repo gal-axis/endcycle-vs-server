@@ -17,11 +17,11 @@ BlindAilment(Ailment) : RenderProcessor, BECondition {
 
 	int hashCode() {}
 
-	boolean isActionRollback(Object[] action) {}
+	void actionTriggered(Runnable action) {}
 
 	void actionTriggered(Object[] action) {}
 
-	void actionTriggered(Runnable action) {}
+	boolean isActionRollback(Object[] action) {}
 
 	int get(int object, int orElse) {}
 
@@ -43,21 +43,21 @@ BlindAilment(Ailment) : RenderProcessor, BECondition {
 
 	void end() {}
 
-	void dispose() {}
-
 	boolean draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scale) {}
 
-	void setIntensity(float intensity) {}
+	void dispose() {}
 
-	void increaseDuration() {}
-
-	float getIntensity() {}
-
-	boolean isDisplayed() {}
+	final void triggerAction(Object[] parameters) {}
 
 	boolean over() {}
 
-	final void triggerAction(Object[] parameters) {}
+	void increaseDuration() {}
+
+	void setIntensity(float intensity) {}
+
+	boolean isDisplayed() {}
+
+	float getIntensity() {}
 
 	boolean canTarget() {}
 
@@ -67,11 +67,11 @@ BlindAilment(Ailment) : RenderProcessor, BECondition {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void stopRendering(CustomSpriteBatch batch, byte layer) {}
+	void updateRender(float delta) {}
 
 	void startRendering(CustomSpriteBatch batch, byte layer) {}
 
-	void updateRender(float delta) {}
+	void stopRendering(CustomSpriteBatch batch, byte layer) {}
 
 	boolean hideHealth(BattleEntity entity) {}
 

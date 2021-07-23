@@ -40,11 +40,11 @@ DissolvingParticle(Object) : ScreenObject {
 
 	void hide(GameScreen screen) {}
 
-	Origin getOrigin() {}
+	byte getLayer() {}
 
 	float getComparisonKey() {}
 
-	byte getLayer() {}
+	Origin getOrigin() {}
 
 	void update(float delta, boolean gravity) {}
 

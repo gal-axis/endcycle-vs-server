@@ -20,13 +20,13 @@ GameObject(GameScreenObject) : ScreenObject, Named {
 	float yOffset;
 	Rectangle mask;
 
-	new(String name, float x, float y, ID patchwork) {}
+	new(String name, float x, float y) {}
 
 	new(String name) {}
 
 	new() {}
 
-	new(String name, float x, float y) {}
+	new(String name, float x, float y, ID patchwork) {}
 
 	final boolean equals(Object obj) {}
 
@@ -50,23 +50,23 @@ GameObject(GameScreenObject) : ScreenObject, Named {
 
 	void show(GameScreen screen) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
 	void hide(GameScreen screen) {}
 
-	final Origin getOrigin() {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	float getComparisonKey() {}
+
+	final Origin getOrigin() {}
 
 	byte getLayer() {}
 
 	final void removeObject() {}
 
-	final SoundContainer playSound(Sounds sound) {}
+	SoundContainer playSound(SoundInfo sound) {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
-	SoundContainer playSound(SoundInfo sound) {}
+	final SoundContainer playSound(Sounds sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
@@ -74,46 +74,46 @@ GameObject(GameScreenObject) : ScreenObject, Named {
 
 	void resetState() {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scaleX, float scaleY) {}
-
 	void draw(CustomSpriteBatch batch) {}
 
-	final float getWidth() {}
-
-	final float getHeight() {}
-
-	final void setAnimationDuration(float duration) {}
-
-	final boolean isAnimationFinished() {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scaleX, float scaleY) {}
 
 	CColor calculateTint() {}
 
-	final float getXScale() {}
+	final float getHeight() {}
 
-	final float getYScale() {}
+	final float getWidth() {}
 
-	final void resetTint() {}
+	final Patchwork setPatchwork(ID id) {}
 
-	final Patchwork getPatchwork() {}
-
-	final boolean isFlipY() {}
-
-	final boolean isFlipX() {}
+	Patchwork setPatchwork(Patchwork patchwork) {}
 
 	final void resetAnimation() {}
 
 	final boolean hasState(PatchworkStateId name) {}
 
+	final float getXScale() {}
+
 	final boolean inState(PatchworkStateId name) {}
 
-	void updateGraphics(float delta) {}
+	final void resetTint() {}
+
+	final Patchwork getPatchwork() {}
 
 	boolean setState(PatchworkStateId state) {}
 
-	Patchwork setPatchwork(Patchwork patchwork) {}
+	final boolean isFlipX() {}
 
-	final Patchwork setPatchwork(ID id) {}
+	final float getYScale() {}
+
+	void updateGraphics(float delta) {}
 
 	void updateParticles(float delta) {}
+
+	final boolean isFlipY() {}
+
+	final void setAnimationDuration(double duration) {}
+
+	final boolean isAnimationFinished() {}
 
 }

@@ -12,8 +12,8 @@ FinishZoneEventTrigger(Object) : AdventureEventTrigger, TeleportEntityAction {
 
 	boolean start(AdventureBattle battle, AdventureFieldNode entry) {}
 
-	BattleData toPracticeData(AdventureEvent event) {}
-
 	void addEntities(AdventureBattle battle, AdventureFieldNode entry) {}
+
+	BattleData toPracticeData(AdventureEvent event) {}
 
 }

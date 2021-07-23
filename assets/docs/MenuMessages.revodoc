@@ -72,22 +72,22 @@ enum MenuMessages : LocalizedMessage {
 
 	final int ordinal() {}
 
-	int get(int object, int orElse) {}
+	int get(int arg0, int arg1) {}
 
-	Object get(Object object, Object orElse) {}
+	Object get(Object arg0, Object arg1) {}
 
-	float get(float object, float orElse) {}
+	float get(float arg0, float arg1) {}
 
-	double get(double object, double orElse) {}
+	double get(double arg0, double arg1) {}
 
-	void paint(Painter painter) {}
+	void paint(Painter arg0) {}
 
-	String format(Object[] args) {}
+	String format(Object[] arg0) {}
 
 	String getKey() {}
 
 	static MenuMessages[] values() {}
 
-	static MenuMessages valueOf(String name) {}
+	static MenuMessages valueOf(String arg0) {}
 
 }

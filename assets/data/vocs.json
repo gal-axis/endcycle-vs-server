@@ -300,7 +300,10 @@
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
 			"attacks": [
-				{ "class": "com.one2b3.endcycle.utils.objects.Point" }
+				{
+					"xSpeed": 320,
+					"stick": {}
+				}
 			],
 			"piercing": true,
 			"speed": 0.125,
@@ -1253,7 +1256,9 @@
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
 			"attacks": [
-				{ "class": "com.one2b3.endcycle.utils.objects.Point" }
+				{
+					"stick": {}
+				}
 			],
 			"limitX": 4,
 			"piercing": true,
@@ -1929,8 +1934,16 @@
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
 			"attacks": [
-				{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": -1, "y": 1 },
-				{ "class": "com.one2b3.endcycle.utils.objects.Point", "x": -1, "y": -1 }
+				{
+					"x": -1,
+					"y": 1,
+					"stick": {}
+				},
+				{
+					"x": -1,
+					"y": -1,
+					"stick": {}
+				}
 			],
 			"limitX": 4,
 			"projectileDelay": 0.15,
@@ -3649,6 +3662,7 @@
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Yoink.Desc" },
 		"level": 1,
 		"property": {
+			"element": "WATER",
 			"ailments": [
 				{ "type": "AILMENT_STEAL", "intensity": 1 }
 			],
@@ -4162,7 +4176,7 @@
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Ultra.NoiseHunt.Desc" },
 		"interruptable": false,
 		"invincible": true,
-		"property": { "power": 100, "crushPower": 100 },
+		"property": { "power": 95, "crushPower": 100 },
 		"targetType": {},
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.MultiWrapperAttack",
@@ -4210,7 +4224,7 @@
 				{
 					"element": "NATURE",
 					"ailments": [
-						{ "type": "HP_CHANGER", "intensity": -20, "duration": 15 }
+						{ "type": "HP_CHANGER", "intensity": -15, "duration": 15 }
 					],
 					"attack": {
 						"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
@@ -5357,7 +5371,7 @@
 		"invincible": true,
 		"property": {
 			"ailments": [
-				{ "type": "FREEZE", "duration": 1.9 }
+				{ "type": "FREEZE", "duration": 1.4 }
 			],
 			"power": 120,
 			"crushPower": 180

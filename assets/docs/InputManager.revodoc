@@ -11,21 +11,21 @@ final InputManager(Object) {
 
 	int hashCode() {}
 
-	boolean keyUp(int keycode) {}
-
 	boolean keyDown(int keycode) {}
 
 	boolean keyTyped(char character) {}
+
+	boolean keyUp(int keycode) {}
 
 	boolean scrolled(float amountX, float amountY) {}
 
 	boolean touchUp(int screenX, int screenY, int pointer, int button) {}
 
-	boolean touchDragged(int screenX, int screenY, int pointer) {}
+	boolean mouseMoved(int screenX, int screenY) {}
 
 	boolean touchDown(int screenX, int screenY, int pointer, int button) {}
 
-	boolean mouseMoved(int screenX, int screenY) {}
+	boolean touchDragged(int screenX, int screenY, int pointer) {}
 
 	void connected(Controller controller) {}
 
@@ -33,21 +33,19 @@ final InputManager(Object) {
 
 	boolean axisMoved(Controller controller, int axisCode, float value) {}
 
-	boolean buttonDown(Controller controller, int buttonCode) {}
-
 	boolean buttonUp(Controller controller, int buttonCode) {}
+
+	boolean buttonDown(Controller controller, int buttonCode) {}
 
 	Controller getLast() {}
 
-	boolean isLastTouch() {}
-
-	static boolean isPressed(Controller controller, int axisCode) {}
+	void addButtonTips(ButtonTipList tips) {}
 
 	void triggerButton(ButtonEvent event, boolean log) {}
 
 	void triggerButton(ButtonEvent event) {}
 
-	void addButtonTips(ButtonTipList tips) {}
+	static boolean isPressed(Controller controller, int axisCode) {}
 
 	void triggerTouch(TouchEvent event) {}
 
@@ -55,14 +53,16 @@ final InputManager(Object) {
 
 	boolean isFree() {}
 
+	boolean isLastTouch() {}
+
 	void addPermanentListener(InputListener listener) {}
 
 	boolean removePermanentListener(InputListener listener) {}
 
-	void pressAxis(Controller controller, int axisCode, InputType type) {}
+	Array getListeners() {}
 
 	static ButtonEvent getButtonEvent() {}
 
-	Array getListeners() {}
+	void pressAxis(Controller controller, int axisCode, InputType type) {}
 
 }

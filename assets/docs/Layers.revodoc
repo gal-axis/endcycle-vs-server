@@ -49,19 +49,19 @@ Layers(Object) : UpdateCondition {
 
 	void updateObjects(float delta) {}
 
-	void hide() {}
-
-	void clearObjects() {}
-
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	ScreenObject addObject(ScreenObject object) {}
+	void hide() {}
 
 	boolean removeObject(ScreenObject object) {}
 
-	void removeRenderProcessor(RenderProcessor renderProcessor) {}
+	ScreenObject addObject(ScreenObject object) {}
+
+	void clearObjects() {}
 
 	void addRenderProcessor(RenderProcessor renderProcessor) {}
+
+	void removeRenderProcessor(RenderProcessor renderProcessor) {}
 
 	void startRendering(CustomSpriteBatch batch, byte layer) {}
 

@@ -20,11 +20,11 @@ PushAilment(Ailment) : BECondition {
 
 	int hashCode() {}
 
-	boolean isActionRollback(Object[] action) {}
+	void actionTriggered(Runnable action) {}
 
 	void actionTriggered(Object[] action) {}
 
-	void actionTriggered(Runnable action) {}
+	boolean isActionRollback(Object[] action) {}
 
 	int get(int object, int orElse) {}
 
@@ -46,21 +46,21 @@ PushAilment(Ailment) : BECondition {
 
 	void end() {}
 
-	void dispose() {}
-
 	boolean draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scale) {}
+
+	void dispose() {}
 
 	final void triggerAction(Object[] parameters) {}
 
 	boolean over() {}
 
-	void setIntensity(float intensity) {}
+	void increaseDuration() {}
 
-	float getIntensity() {}
+	void setIntensity(float intensity) {}
 
 	boolean isDisplayed() {}
 
-	void increaseDuration() {}
+	float getIntensity() {}
 
 	boolean canTarget() {}
 
@@ -68,8 +68,8 @@ PushAilment(Ailment) : BECondition {
 
 	boolean isBlocking(BattleFieldPanel panel) {}
 
-	void addTracer(int delay, int amount) {}
-
 	void startMove(int moving) {}
+
+	void addTracer(int delay, int amount) {}
 
 }

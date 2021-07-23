@@ -55,13 +55,13 @@ DrawableImage(Object) : Paintable {
 
 	Texture getTexture(double animState) {}
 
-	DrawableAnimation getAnimation() {}
-
-	void drawNinePatch(Batch batch, float x, float y, float width, float height) {}
-
 	int getFrame(double animState) {}
 
 	DrawableImageFrame getFrame(int index) {}
+
+	void drawNinePatch(Batch batch, float x, float y, float width, float height) {}
+
+	DrawableAnimation getAnimation() {}
 
 	void setAnimation(DrawableAnimation animation) {}
 

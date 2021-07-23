@@ -61,31 +61,31 @@ DelayedHit(Object) : ScreenObject, BannedPanelObject {
 
 	void hide(GameScreen screen) {}
 
-	Origin getOrigin() {}
+	byte getLayer() {}
 
 	float getComparisonKey() {}
 
-	byte getLayer() {}
+	Origin getOrigin() {}
 
 	void setPosition(int xTile, int yTile, boolean turned) {}
+
+	boolean hit() {}
 
 	void inflict(BattleEntityList entities) {}
 
 	void inflict(BattleEntity entity) {}
 
-	boolean hit() {}
-
-	BattleEntityList hitEntities() {}
-
-	void affectPanel(boolean force) {}
+	void hitPanel() {}
 
 	boolean hasHit() {}
 
+	void affectPanel(boolean force) {}
+
 	void doHitAction(boolean force) {}
 
-	void hitPanel() {}
-
 	void startHit() {}
+
+	BattleEntityList hitEntities() {}
 
 	void inflictSticky(BattleEntity entity) {}
 

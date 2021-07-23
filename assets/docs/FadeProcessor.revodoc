@@ -14,28 +14,28 @@ abstract FadeProcessor(Object) {
 
 	abstract void start();
 
+	abstract void draw(CustomSpriteBatch batch);
+
 	abstract void dispose();
 
-	abstract void draw(CustomSpriteBatch batch);
+	void disposeOldScreen() {}
+
+	void updateOldScreen(float delta) {}
+
+	abstract boolean done();
+
+	void initNewScreen() {}
+
+	void updateNewScreen(float delta) {}
+
+	void drawOldScreen(CustomSpriteBatch batch, float x, float y) {}
+
+	void drawOldScreen(CustomSpriteBatch batch) {}
 
 	void drawNewScreen(CustomSpriteBatch batch) {}
 
 	void drawNewScreen(CustomSpriteBatch batch, float x, float y) {}
 
 	void setFader(ScreenFader fader) {}
-
-	void updateOldScreen(float delta) {}
-
-	void initNewScreen() {}
-
-	void drawOldScreen(CustomSpriteBatch batch, float x, float y) {}
-
-	void drawOldScreen(CustomSpriteBatch batch) {}
-
-	abstract boolean done();
-
-	void updateNewScreen(float delta) {}
-
-	void disposeOldScreen() {}
 
 }

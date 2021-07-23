@@ -27,29 +27,29 @@ BrokenTile(NormalExpiringTile) {
 
 	int getY() {}
 
-	void dispose() {}
+	void draw(Batch batch, float x, float y, Party party, float shade, float alpha) {}
 
 	int getX() {}
 
-	void draw(Batch batch, float x, float y, Party party, float shade, float alpha) {}
+	void dispose() {}
 
 	void refresh() {}
 
-	final void triggerAction(Object[] parameters) {}
-
 	OwnedHitProperty hit(OwnedHitProperty property) {}
 
-	boolean changeType(PanelType type) {}
+	final void triggerAction(Object[] parameters) {}
 
 	void free() {}
+
+	boolean changeType(PanelType type) {}
 
 	void actionTriggered(Object[] action) {}
 
 	Battle getBattle() {}
 
-	void enter(BattleEntity entity) {}
-
 	OwnedHitProperty affect(OwnedHitProperty property) {}
+
+	void enter(BattleEntity entity) {}
 
 	DrawableImage getDrawable(Party party) {}
 

@@ -8,9 +8,9 @@ final BattleEntityUtils(Object) {
 
 	int hashCode() {}
 
-	static void heal(BattleEntity entity, int health) {}
+	static void heal(BattleEntity origin, BattleEntity entity, int health) {}
 
-	static void heal(BattleEntity battleEntity, float health) {}
+	static void heal(BattleEntity origin, BattleEntity battleEntity, float health) {}
 
 	static BattleParticle createParticleAhead(BattleEntity entity, Drawable drawable) {}
 

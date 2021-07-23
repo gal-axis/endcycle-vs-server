@@ -1,4 +1,4 @@
-AdventureBattleItem(Object) {
+final AdventureBattleItem(Object) {
 
 	final AdventureItemInventory inventory;
 	final AdventureItem data;
@@ -30,20 +30,20 @@ AdventureBattleItem(Object) {
 
 	void use(BattlePlayer player) {}
 
-	boolean decreaseAmount() {}
-
 	boolean increaseAmount(AdventureBattle battle) {}
 
-	void increaseAge() {}
+	boolean decreaseAmount() {}
 
 	void removeFrom(BattlePlayer player) {}
 
-	void removeListeners(BattlePlayer player) {}
-
 	void removeListeners() {}
 
-	boolean isZoneExpire() {}
+	void removeListeners(BattlePlayer player) {}
 
 	boolean isExpired() {}
+
+	void increaseAge() {}
+
+	boolean isZoneExpire() {}
 
 }

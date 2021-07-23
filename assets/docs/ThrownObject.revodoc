@@ -64,19 +64,19 @@ ThrownObject(GameObject) : ShadowEntity, BannedPanelObject {
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	final Origin getOrigin() {}
-
 	float getComparisonKey() {}
+
+	final Origin getOrigin() {}
 
 	byte getLayer() {}
 
 	final void removeObject() {}
 
+	SoundContainer playSound(SoundInfo sound) {}
+
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	final SoundContainer playSound(Sounds sound) {}
-
-	SoundContainer playSound(SoundInfo sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
@@ -84,75 +84,75 @@ ThrownObject(GameObject) : ShadowEntity, BannedPanelObject {
 
 	void resetState() {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scaleX, float scaleY) {}
-
 	void draw(CustomSpriteBatch batch) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scaleX, float scaleY) {}
 
 	CColor calculateTint() {}
 
-	final float getWidth() {}
-
 	final float getHeight() {}
 
-	Patchwork setPatchwork(Patchwork patchwork) {}
+	final float getWidth() {}
 
 	final Patchwork setPatchwork(ID id) {}
 
-	final boolean inState(PatchworkStateId name) {}
+	Patchwork setPatchwork(Patchwork patchwork) {}
 
 	final void resetAnimation() {}
-
-	boolean setState(PatchworkStateId state) {}
-
-	final boolean isFlipY() {}
-
-	void updateParticles(float delta) {}
-
-	void updateGraphics(float delta) {}
 
 	final boolean hasState(PatchworkStateId name) {}
 
 	final float getXScale() {}
 
-	final boolean isFlipX() {}
-
-	final float getYScale() {}
+	final boolean inState(PatchworkStateId name) {}
 
 	final void resetTint() {}
 
 	final Patchwork getPatchwork() {}
 
-	final void setAnimationDuration(float duration) {}
+	boolean setState(PatchworkStateId state) {}
+
+	final boolean isFlipX() {}
+
+	final float getYScale() {}
+
+	void updateGraphics(float delta) {}
+
+	void updateParticles(float delta) {}
+
+	final boolean isFlipY() {}
+
+	final void setAnimationDuration(double duration) {}
 
 	final boolean isAnimationFinished() {}
 
 	boolean isBannedPanel(BattleEntity entity, int x, int y) {}
 
-	boolean isBannedPanelRemove(BattleEntity entity) {}
-
 	float getBannedPanelPriority(BattleEntity entity) {}
+
+	boolean isBannedPanelRemove(BattleEntity entity) {}
 
 	List getShadowDrawables() {}
 
-	float getShadowZ() {}
-
-	float getShadowY() {}
-
 	float getShadowX() {}
+
+	float getShadowZ() {}
 
 	float getShadowAlpha() {}
 
+	float getShadowY() {}
+
 	void setupParticles(List particles, float speedX, float speedY, float timer) {}
-
-	void setSound(SoundInfo sound) {}
-
-	void setLandActions(FloatTimerAction action) {}
 
 	float getParticleTimer() {}
 
 	void updatePos() {}
 
 	SoundInfo getSound() {}
+
+	void setLandActions(FloatTimerAction action) {}
+
+	void setSound(SoundInfo sound) {}
 
 	boolean isOnTile() {}
 

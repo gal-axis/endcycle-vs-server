@@ -159,14 +159,10 @@ enum Drawables {
  	Voc_Container,
  	_12B3_Logo,
  	Normal_Tile_Neutral,
- 	full_noise_bars_0,
- 	full_noise_bars_1,
- 	full_noise_bars_2,
- 	full_noise_bars_3,
- 	empty_noise_bars_0,
- 	empty_noise_bars_1,
- 	empty_noise_bars_2,
- 	empty_noise_bars_3,
+ 	Connection_0,
+ 	Connection_1,
+ 	Connection_2,
+ 	Connection_3,
  	Cracked_Tile_Neutral,
  	Broken_Tile_Neutral,
  	Hole_Tile,
@@ -901,7 +897,8 @@ enum Drawables {
  	Icon_Deathmatch_Life_Player,
  	Icon_Deathmatch_Life_Border,
  	Icon_Trophy,
- 	Lite_Lock_Mini;
+ 	Lite_Lock_Mini,
+ 	Hit_Marker;
 
 	final boolean equals(Object arg0) {}
 
@@ -919,9 +916,9 @@ enum Drawables {
 
 	static Drawables[] values() {}
 
-	static Drawables valueOf(String name) {}
+	static Drawables valueOf(String arg0) {}
 
-	static Drawable[] array(Drawables[] drawables) {}
+	static Drawable[] array(Drawables[] arg0) {}
 
 	ID getId() {}
 

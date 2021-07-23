@@ -11,13 +11,13 @@ abstract Looter(Object) : ScreenObject {
 
 	int hashCode() {}
 
+	void onRewardEarned() {}
+
 	void onRewardClosed() {}
 
 	void onRewardError() {}
 
 	void onRewardOpened() {}
-
-	void onRewardEarned() {}
 
 	void dispose() {}
 
@@ -39,26 +39,26 @@ abstract Looter(Object) : ScreenObject {
 
 	void hide(GameScreen screen) {}
 
-	Origin getOrigin() {}
-
 	byte getLayer() {}
 
 	float getComparisonKey() {}
 
+	Origin getOrigin() {}
+
 	boolean hasLoot() {}
+
+	void addRandomLoot(int money, boolean items) {}
 
 	void addAffinity(ID entity, float amount) {}
 
 	void addAffinity(BattleEntity entity, float amount) {}
 
-	void addRandomLoot(int money, boolean items) {}
-
-	void addRandomStyle() {}
+	void addLoot(Lootable loot) {}
 
 	boolean hasExtra() {}
 
-	void addRandomVoc() {}
+	void addRandomStyle() {}
 
-	void addLoot(Lootable loot) {}
+	void addRandomVoc() {}
 
 }

@@ -6,30 +6,30 @@ final GameData(Object) {
 
 	int hashCode() {}
 
-	static String toString(Object object) {}
+	static String toString(Object arg0) {}
 
-	static Object load(String path) {}
+	static Object load(String arg0) {}
 
-	static boolean save(String path, Object object) {}
+	static boolean save(String arg0, Object arg1) {}
 
 	static float getTime() {}
 
 	static InputManager getInput() {}
 
-	static boolean isPortable() {}
-
 	static PlayerProgress getProgress() {}
+
+	static boolean isPortable() {}
 
 	static PlayerCustomizations getCustomizations() {}
 
-	static Patchwork getPlayerPatchwork(BattleEntityData data) {}
+	static Patchwork getPlayerPatchwork(BattleEntityData arg0) {}
 
 	static Inventory getInventory() {}
 
-	static double getTimePrecise() {}
+	static Integer getModVersion(long arg0) {}
 
 	static long getSystemTime() {}
 
-	static Integer getModVersion(long id) {}
+	static double getTimePrecise() {}
 
 }

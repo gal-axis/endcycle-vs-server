@@ -1,6 +1,7 @@
 AttackPlan(Object) {
 
 	final AttackHitProperty property;
+	VocEntry entry;
 	Voc voc;
 	VocStyle style;
 	TargetFilter target;
@@ -11,13 +12,7 @@ AttackPlan(Object) {
 
 	new(AttackPlan plan) {}
 
-	new(Attack attack, int gauge) {}
-
-	new(Voc voc, int gauge) {}
-
-	new(Voc voc, VocStyle style, int gauge) {}
-
-	new(AttackShell shell, int gauge) {}
+	new(VocEntry entry, int gauge) {}
 
 	boolean equals(Object arg0) {}
 
@@ -33,9 +28,9 @@ AttackPlan(Object) {
 
 	void flip() {}
 
-	boolean active() {}
-
 	void finish() {}
+
+	boolean active() {}
 
 	boolean isMoveable() {}
 
@@ -43,8 +38,8 @@ AttackPlan(Object) {
 
 	void replaceAttack(Attack attack) {}
 
-	void setAttack(Attack attack, boolean clone) {}
-
 	void setAttackShell(AttackShell shell) {}
+
+	void setAttack(Attack attack, boolean clone) {}
 
 }

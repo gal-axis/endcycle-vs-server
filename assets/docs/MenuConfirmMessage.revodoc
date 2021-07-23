@@ -48,25 +48,25 @@ MenuConfirmMessage(ContentMessage) {
 
 	void hide(GameScreen screen) {}
 
-	final Origin getOrigin() {}
+	byte getLayer() {}
 
 	float getComparisonKey() {}
 
-	byte getLayer() {}
+	final Origin getOrigin() {}
 
 	final void removeObject() {}
 
-	final SoundContainer playSound(Sounds sound) {}
-
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(SoundInfo sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
-	final void addInitializeListener(Runnable runnable) {}
-
 	final void removeInitializeListener(Runnable runnable) {}
+
+	final void addInitializeListener(Runnable runnable) {}
 
 	final void addDisposeListener(Runnable runnable) {}
 
@@ -76,41 +76,41 @@ MenuConfirmMessage(ContentMessage) {
 
 	boolean priority() {}
 
-	void controllerConnected(Controller controller) {}
-
-	void controllerDisconnected(Controller controller) {}
+	boolean triggerButton(ButtonEvent event) {}
 
 	boolean triggerType(int character) {}
 
-	boolean triggerButton(ButtonEvent event) {}
-
-	boolean keyUp(int keycode) {}
-
-	boolean keyDown(int keycode) {}
+	boolean keyTyped(char character) {}
 
 	boolean addButtonTips(ButtonTipList tips) {}
 
-	boolean keyTyped(char character) {}
+	boolean keyDown(int keycode) {}
+
+	boolean keyUp(int keycode) {}
 
 	boolean triggerTouch(TouchEvent event) {}
 
-	void select(int selection) {}
+	void controllerDisconnected(Controller controller) {}
+
+	void controllerConnected(Controller controller) {}
 
 	void select() {}
 
-	float calcX() {}
+	void select(int selection) {}
+
+	boolean active() {}
 
 	float calcY() {}
 
-	boolean active() {}
+	float calcX() {}
 
 	void setActions(MessageAction[] actions) {}
 
 	void moveSelection(int offset) {}
 
-	void setChoices(String[] choices) {}
-
 	void drawContent(CustomSpriteBatch batch, float x, float y, float width, float height) {}
+
+	void setChoices(String[] choices) {}
 
 	int getChoiceAmount() {}
 

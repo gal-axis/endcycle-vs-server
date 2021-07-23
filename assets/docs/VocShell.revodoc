@@ -8,28 +8,28 @@ final VocShell(Object) : Lootable, Serializable {
 
 	new() {}
 
-	new(ID id) {}
+	new(Voc arg0) {}
 
-	new(Voc voc) {}
+	new(ID arg0) {}
 
-	boolean equals(Object o) {}
+	boolean equals(Object arg0) {}
 
 	String toString() {}
 
 	int hashCode() {}
 
-	void write(Json json) {}
+	void write(Json arg0) {}
 
-	void read(Json json, JsonValue jsonData) {}
+	void read(Json arg0, JsonValue arg1) {}
 
 	Lootable split() {}
 
-	LootDisplayer createDisplayer() {}
-
 	void addToInventory() {}
 
-	void setVoc(Voc voc) {}
+	LootDisplayer createDisplayer() {}
 
-	void setMissing(String mod, String name, int level, Role role) {}
+	void setVoc(Voc arg0) {}
+
+	void setMissing(String arg0, String arg1, int arg2, Role arg3) {}
 
 }

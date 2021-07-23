@@ -22,34 +22,34 @@ final DeterminationListener(Object) : BattleEntityListener, GameEventListener, B
 
 	void init() {}
 
-	void dispose() {}
-
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void attack(Attack attack) {}
+	void dispose() {}
 
 	CColor getTint() {}
 
+	PatchworkStateId setState(PatchworkStateId id) {}
+
 	double crush(double amount, int crushStrength) {}
+
+	void attack(Attack attack) {}
 
 	void inflictPre(OwnedHitProperty property) {}
 
-	void inflict(OwnedHitProperty property) {}
-
 	AilmentInflict inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
 
-	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
+	void inflict(OwnedHitProperty property) {}
+
+	int hurt(BattleEntity origin, int amount, boolean display) {}
 
 	void inflictPost(OwnedHitProperty property) {}
 
-	int heal(int amount, boolean display) {}
+	int heal(BattleEntity origin, int amount, boolean display) {}
 
-	int hurt(int amount, boolean display) {}
-
-	PatchworkStateId setState(PatchworkStateId id) {}
+	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
 
 	void drawHud(CustomSpriteBatch batch, float xOfs, float yOfs, float width, float height) {}
 
-	void startDeath() {}
+	void startDeath(BattleEntity killer) {}
 
 }

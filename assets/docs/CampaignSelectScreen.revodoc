@@ -36,77 +36,77 @@ CampaignSelectScreen(MenuScreen) : MenuTableAction {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void setPreviousScreen(GameScreen previousScreen) {}
-
-	GameScreen getPreviousScreen() {}
-
-	void addRenderProcessor(RenderProcessor renderProcessor) {}
-
-	Array getRenderProcessors() {}
-
-	void removeRenderProcessor(RenderProcessor renderProcessor) {}
-
-	void clearObjects() {}
-
-	void hide() {}
-
-	boolean removeObject(ScreenObject object) {}
-
-	void changeFrom(GameScreen screen, boolean init) {}
-
-	Array getObjects() {}
-
-	void render(float delta) {}
-
 	void pause() {}
-
-	void dispose() {}
-
-	void show() {}
-
-	void updateTimer(float delta) {}
-
-	void toPreviousScreen() {}
-
-	void toPreviousScreen(FadeType type) {}
-
-	void changeTo(GameScreen screen, boolean init) {}
-
-	void resetTimer() {}
-
-	Object[] getTextArguments() {}
-
-	void addScript(Script script, float delay) {}
-
-	boolean isLoading() {}
-
-	void updateObjects(float delta) {}
-
-	boolean isCurrentScreen() {}
-
-	ScreenObject addObject(ScreenObject object) {}
-
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	void draw(CustomSpriteBatch batch) {}
-
-	void updateShake(float delta) {}
-
-	void resetShake() {}
-
-	void shake(float x, float y, float duration) {}
-
-	void shakeVibrate(float x, float y, float duration) {}
-
-	void setScreen(GameScreen screen) {}
 
 	void setScreen(GameScreen screen, FadeType fade, boolean changesBefore) {}
 
 	void setScreen(GameScreen screen, FadeType fade) {}
 
-	void drawButtonTips(CustomSpriteBatch batch, float x, float y) {}
+	void setScreen(GameScreen screen) {}
+
+	void updateShake(float delta) {}
 
 	boolean isShaking() {}
+
+	void show() {}
+
+	void updateObjects(float delta) {}
+
+	void draw(CustomSpriteBatch batch) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void hide() {}
+
+	boolean isCurrentScreen() {}
+
+	boolean removeObject(ScreenObject object) {}
+
+	ScreenObject addObject(ScreenObject object) {}
+
+	void drawButtonTips(CustomSpriteBatch batch, float x, float y) {}
+
+	Array getObjects() {}
+
+	void shake(float x, float y, float duration) {}
+
+	void shakeVibrate(float x, float y, float duration) {}
+
+	void changeTo(GameScreen screen, boolean init) {}
+
+	void render(float delta) {}
+
+	void updateTimer(float delta) {}
+
+	void clearObjects() {}
+
+	void resetShake() {}
+
+	void changeFrom(GameScreen screen, boolean init) {}
+
+	void dispose() {}
+
+	void toPreviousScreen(FadeType type) {}
+
+	void toPreviousScreen() {}
+
+	void resetTimer() {}
+
+	void addRenderProcessor(RenderProcessor renderProcessor) {}
+
+	Array getRenderProcessors() {}
+
+	GameScreen getPreviousScreen() {}
+
+	void removeRenderProcessor(RenderProcessor renderProcessor) {}
+
+	void setPreviousScreen(GameScreen previousScreen) {}
+
+	void addScript(Script script, float delay) {}
+
+	boolean isLoading() {}
+
+	Object[] getTextArguments() {}
 
 	void createMenuElements() {}
 
@@ -114,19 +114,19 @@ CampaignSelectScreen(MenuScreen) : MenuTableAction {
 
 	void backButtonPressed() {}
 
+	void disableInput() {}
+
 	void centerElements() {}
 
 	void enableInput() {}
 
-	void disableInput() {}
-
 	void moveTableSelection(int selection) {}
+
+	void specialTableSelect(int selection, CampaignData selected) {}
 
 	void updateTableSelection(int selection) {}
 
 	boolean selectTableHeader() {}
-
-	void specialTableSelect(int selection, CampaignData selected) {}
 
 	void clickedTable(int selection, CampaignData selected, float x, float y) {}
 

@@ -16,13 +16,13 @@ PortraitRoleButton(MobileRoleButton) {
 
 	boolean keyTyped(char character) {}
 
-	boolean keyUp(int keycode) {}
-
-	boolean triggerTouch(TouchEvent event) {}
-
 	boolean addButtonTips(ButtonTipList tips) {}
 
 	boolean keyDown(int keycode) {}
+
+	boolean keyUp(int keycode) {}
+
+	boolean triggerTouch(TouchEvent event) {}
 
 	void controllerDisconnected(Controller controller) {}
 
@@ -48,10 +48,10 @@ PortraitRoleButton(MobileRoleButton) {
 
 	void paint(Painter painter, VocSet vocs, boolean small) {}
 
-	boolean isTouching(float positionX, float positionY) {}
+	float getSmallButtonSize() {}
 
 	float getButtonSize() {}
 
-	float getSmallButtonSize() {}
+	boolean isTouching(float positionX, float positionY) {}
 
 }

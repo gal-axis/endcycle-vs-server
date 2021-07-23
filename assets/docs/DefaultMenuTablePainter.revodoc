@@ -10,14 +10,16 @@ DefaultMenuTablePainter(Object) : MenuTablePainter {
 
 	void paint(MenuTablePaintParams params) {}
 
-	Painter getPainter(MenuTablePaintParams params) {}
+	void paintBG(MenuTablePaintParams params) {}
 
-	Painter getPainter(MenuTablePaintParams params, int hAlign, int vAlign) {}
-
-	void finishPainting(MenuTablePaintParams params) {}
+	void stopPainting(MenuTablePaintParams params) {}
 
 	void startPainting(MenuTablePaintParams params) {}
 
-	void paintBG(MenuTablePaintParams params) {}
+	void paintEmpty(MenuTablePaintParams params) {}
+
+	Painter getPainter(MenuTablePaintParams params, int hAlign, int vAlign) {}
+
+	Painter getPainter(MenuTablePaintParams params) {}
 
 }

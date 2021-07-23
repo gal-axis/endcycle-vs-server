@@ -28,16 +28,16 @@ TileMovePatchworkState(PatchworkState) {
 
 	PatchworkState fullCopy() {}
 
-	void updateAnimationDuration() {}
-
-	float calcScaleX(double animState) {}
+	float calcScaleY(double animState) {}
 
 	float calcShadowX(double animState) {}
+
+	float calcScaleX(double animState) {}
 
 	float calcShadowY(double animState) {}
 
 	float calcShadowZ(double animState) {}
 
-	float calcScaleY(double animState) {}
+	void updateAnimationDuration() {}
 
 }

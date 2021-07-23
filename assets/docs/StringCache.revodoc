@@ -44,20 +44,20 @@ final StringCache(Object) : Paintable {
 
 	void monoSpace() {}
 
-	void spreadLines(float maxWidth) {}
+	void splitLines(float maxWidth) {}
+
+	void updateLineOffset() {}
 
 	CharacterLineCache getLine(int line) {}
 
 	void drawLines(Painter params, float x, float y, int hAlign, double stateTime) {}
 
-	void updateLineOffset() {}
+	CharacterCache getCharacter(int character) {}
 
-	void splitLines(float maxWidth) {}
+	void spreadLines(float maxWidth) {}
 
 	void updateSize() {}
 
 	void packed() {}
-
-	CharacterCache getCharacter(int character) {}
 
 }

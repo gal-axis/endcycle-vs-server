@@ -8,9 +8,9 @@ interface GameObjectParticle : Comparable {
 
 	void init() {}
 
-	void dispose() {}
-
 	abstract void draw(CustomSpriteBatch batch, float x, float y, float xScale, float yScale, CColor color);
+
+	void dispose() {}
 
 	int getOrder() {}
 

@@ -24,30 +24,30 @@ MobilePortraitBackground(HUDButton) {
 
 	boolean isHidden() {}
 
-	float getX() {}
+	float getY() {}
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	float getY() {}
+	float getX() {}
 
 	void event(GameEvent event) {}
 
-	boolean touch(TouchEvent trigger) {}
-
 	void button(ButtonEvent trigger) {}
 
-	float calcX() {}
+	boolean touch(TouchEvent trigger) {}
 
 	float calcY() {}
 
-	void finishMoving() {}
+	float calcX() {}
 
 	float getMove() {}
 
 	boolean finishedMoving() {}
 
-	boolean isTouching(float x, float y) {}
+	void finishMoving() {}
 
 	boolean increaseOffset() {}
+
+	boolean isTouching(float x, float y) {}
 
 }

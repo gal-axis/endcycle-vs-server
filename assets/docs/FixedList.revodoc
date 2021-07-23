@@ -52,7 +52,13 @@ FixedList(Object) : List {
 
 	Object set(int index, Object object) {}
 
+	int remove(Object o, boolean identity) {}
+
 	int count() {}
+
+	int indexOf(Object o, boolean identity) {}
+
+	int lastIndexOf(Object o, boolean identity) {}
 
 	void collect() {}
 

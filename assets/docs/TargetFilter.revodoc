@@ -10,7 +10,7 @@ TargetFilter(Object) : Serializable {
 
 	new() {}
 
-	new(TargetType type) {}
+	new(TargetType arg0) {}
 
 	boolean equals(Object arg0) {}
 
@@ -18,16 +18,16 @@ TargetFilter(Object) : Serializable {
 
 	int hashCode() {}
 
-	void write(Json json) {}
+	void write(Json arg0) {}
 
-	void read(Json json, JsonValue jsonData) {}
+	void read(Json arg0, JsonValue arg1) {}
 
-	void set(TargetFilter filter) {}
+	void set(TargetFilter arg0) {}
 
-	void filter(BattleEntityList entities, BattleEntity user) {}
+	void filter(BattleEntityList arg0, BattleEntity arg1) {}
 
-	static BattleEntity getEntity(TargetFilter filter, BattleEntity entity) {}
+	static BattleEntity getEntity(TargetFilter arg0, BattleEntity arg1) {}
 
-	Party getParty(BattleEntity entity) {}
+	Party getParty(BattleEntity arg0) {}
 
 }

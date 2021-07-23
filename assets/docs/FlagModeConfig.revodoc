@@ -10,12 +10,12 @@ FlagModeConfig(GameModeConfig) {
 
 	List getProperties() {}
 
-	void configure(BattleData data) {}
+	boolean startSlots(int allies, int enemies, int neutral) {}
 
 	List getSlots() {}
 
 	BattleMode createMode() {}
 
-	boolean startSlots(int allies, int enemies, int neutral) {}
+	void configure(BattleData data) {}
 
 }

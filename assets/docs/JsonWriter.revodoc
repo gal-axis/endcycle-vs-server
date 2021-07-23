@@ -40,14 +40,14 @@ JsonWriter(Writer) {
 
 	JsonWriter object(String arg0) {}
 
-	void setOutputType(OutputType arg0) {}
-
-	Writer getWriter() {}
+	JsonWriter json(String arg0, String arg1) {}
 
 	JsonWriter json(String arg0) {}
 
-	JsonWriter json(String arg0, String arg1) {}
-
 	void setQuoteLongValues(boolean arg0) {}
+
+	void setOutputType(OutputType arg0) {}
+
+	Writer getWriter() {}
 
 }

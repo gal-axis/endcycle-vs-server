@@ -33,25 +33,25 @@ PlantrapEntity(SimpleAttackObject) : BECondition {
 
 	boolean isActionRollback(Object[] action) {}
 
-	List getShadowDrawables() {}
-
-	float getXScale() {}
-
-	float getYScale() {}
+	boolean isFlipX() {}
 
 	Patchwork getPatchwork() {}
 
+	float getXScale() {}
+
 	boolean isFlipY() {}
 
-	boolean isFlipX() {}
+	float getYScale() {}
+
+	float getShadowX() {}
 
 	float getShadowAlpha() {}
 
-	float getShadowY() {}
-
 	float getShadowZ() {}
 
-	float getShadowX() {}
+	float getShadowY() {}
+
+	List getShadowDrawables() {}
 
 	void dispose() {}
 
@@ -73,11 +73,11 @@ PlantrapEntity(SimpleAttackObject) : BECondition {
 
 	void hide(GameScreen screen) {}
 
-	final Origin getOrigin() {}
+	byte getLayer() {}
 
 	float getComparisonKey() {}
 
-	byte getLayer() {}
+	final Origin getOrigin() {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
@@ -89,8 +89,8 @@ PlantrapEntity(SimpleAttackObject) : BECondition {
 
 	void hit() {}
 
-	void updateReducedSize() {}
-
 	float getHitHold() {}
+
+	void updateReducedSize() {}
 
 }

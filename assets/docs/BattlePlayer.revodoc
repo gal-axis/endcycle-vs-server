@@ -15,23 +15,23 @@ BattlePlayer(Object) : BattleEntityAction, InputListener {
 
 	boolean priority() {}
 
-	void controllerConnected(Controller controller) {}
-
-	void controllerDisconnected(Controller controller) {}
-
-	boolean triggerTouch(TouchEvent event) {}
+	boolean triggerButton(ButtonEvent event) {}
 
 	boolean addButtonTips(ButtonTipList tips) {}
 
-	boolean triggerType(int character) {}
-
 	boolean keyDown(int keycode) {}
+
+	boolean triggerTouch(TouchEvent event) {}
+
+	boolean triggerType(int character) {}
 
 	boolean keyTyped(char character) {}
 
 	boolean keyUp(int keycode) {}
 
-	boolean triggerButton(ButtonEvent event) {}
+	void controllerDisconnected(Controller controller) {}
+
+	void controllerConnected(Controller controller) {}
 
 	void add() {}
 
@@ -43,40 +43,44 @@ BattlePlayer(Object) : BattleEntityAction, InputListener {
 
 	void interrupt() {}
 
+	void dispose() {}
+
 	void hit(HitProperty hitProperty) {}
+
+	void hitEntity(BattleEntity entity, OwnedHitProperty property) {}
+
+	BattleEntityActionSave getSave() {}
 
 	boolean isAuthorative() {}
 
-	void dispose() {}
-
-	void move(int xTile, int yTile) {}
+	final Controller getController() {}
 
 	void vibrateController(float duration, float strength) {}
 
-	final Controller getController() {}
+	void move(int xTile, int yTile) {}
 
 	GameScreenMessage createRewardMessage(RandomVocRewards vocs, Random random, boolean skippable) {}
-
-	void setHudButtons(BattleHUD hud) {}
-
-	boolean canUpgrade() {}
-
-	void createHud(int playerIndex) {}
-
-	boolean sendClientInput(Object input, boolean local) {}
-
-	MockController setKeyPressed(KeyCode code, boolean pressed) {}
-
-	void setCombat(boolean combat) {}
-
-	void cancelMove() {}
-
-	void upgrade() {}
 
 	boolean applyInput(KeyCode code, boolean pressed, boolean player) {}
 
 	void applyInput(float delay, Object input) {}
 
+	void setHudButtons(BattleHUD hud) {}
+
+	boolean canUpgrade() {}
+
+	MockController setKeyPressed(KeyCode code, boolean pressed) {}
+
+	void cancelMove() {}
+
+	void setCombat(boolean combat) {}
+
+	boolean sendClientInput(Object input, boolean local) {}
+
+	void upgrade() {}
+
 	void clientInput(ButtonEvent event) {}
+
+	void createHud(int playerIndex) {}
 
 }

@@ -18,12 +18,12 @@ final AilmentInflict(Object) {
 
 	static AilmentInflict get(Array ailments, AilmentType type) {}
 
-	static void boost(Array ailments, float duration, float intensityHeal, float intensityDebuff) {}
-
 	static void invertAilments(Array ailments) {}
+
+	static void changeInflict(AilmentInflict inflict, float intensity, float duration) {}
 
 	static void addInflict(Array ailments, AilmentInflict ai) {}
 
-	static void changeInflict(AilmentInflict inflict, float intensity, float duration) {}
+	static void boost(Array ailments, float duration, float intensityHeal, float intensityDebuff) {}
 
 }

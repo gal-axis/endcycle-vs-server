@@ -44,7 +44,7 @@ BattleFieldPanel(Object) {
 
 	void init() {}
 
-	boolean isAccessible(BattleEntity entity, boolean free) {}
+	boolean isAccessible(BattleEntity entity, boolean checkFree) {}
 
 	PanelType getType() {}
 
@@ -52,41 +52,43 @@ BattleFieldPanel(Object) {
 
 	void setType(PanelType tile) {}
 
-	void draw(Batch batch, float x, float y) {}
-
 	void draw(Batch batch, float x, float y, float shader) {}
 
+	void draw(Batch batch, float x, float y) {}
+
 	void playSound(SoundInfo sound) {}
+
+	boolean isOccupied() {}
+
+	OwnedHitProperty hit(OwnedHitProperty hitProperty) {}
+
+	void changeData(FieldPanelData data) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
 	final void triggerAction(Object[] parameters) {}
 
-	void changeData(FieldPanelData data) {}
-
-	OwnedHitProperty hit(OwnedHitProperty hitProperty) {}
-
-	boolean isBattleClient() {}
-
-	boolean setParty(Party party, BattleFieldPanel connectedPanel) {}
+	void occupy(BattleEntity entity) {}
 
 	boolean setParty(Party party, BattleFieldPanel connectedPanel, boolean sound) {}
+
+	boolean setParty(Party party, BattleFieldPanel connectedPanel) {}
 
 	boolean setParty(Party party, BattleFieldPanel connectedPanel, boolean sound, boolean mock) {}
 
 	void changeType(PanelType type) {}
 
-	boolean occupiedBy(Party party) {}
-
-	void occupy(BattleEntity entity) {}
+	boolean isBattleClient() {}
 
 	boolean free(BattleEntity entity) {}
+
+	boolean occupiedBy(Party party) {}
 
 	boolean accessible(boolean free) {}
 
 	boolean occupied(boolean ignoreFloat) {}
 
-	void effectRefresh() {}
+	void resetRevert() {}
 
 	OwnedHitProperty affect(OwnedHitProperty hitProperty) {}
 
@@ -96,12 +98,10 @@ BattleFieldPanel(Object) {
 
 	boolean isPartyChanged() {}
 
-	boolean isTypeChanged() {}
-
 	void effectDispose() {}
 
-	void resetRevert() {}
+	void effectRefresh() {}
 
-	boolean isOccupied() {}
+	boolean isTypeChanged() {}
 
 }

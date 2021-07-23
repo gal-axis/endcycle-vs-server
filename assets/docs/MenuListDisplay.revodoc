@@ -40,17 +40,17 @@ MenuListDisplay(MenuElement) : Scrollable {
 
 	void hide(GameScreen screen) {}
 
-	final Origin getOrigin() {}
+	byte getLayer() {}
 
 	float getComparisonKey() {}
 
-	byte getLayer() {}
+	final Origin getOrigin() {}
 
 	final void removeObject() {}
 
-	final SoundContainer playSound(Sounds sound) {}
-
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(SoundInfo sound) {}
 
@@ -68,41 +68,45 @@ MenuListDisplay(MenuElement) : Scrollable {
 
 	boolean select() {}
 
-	float getX() {}
-
 	float getY() {}
 
-	MenuElement setFocusable(boolean focusable) {}
+	float getX() {}
 
-	float calcX() {}
-
-	float calcY() {}
-
-	MenuElement setLayer(byte layer) {}
+	MenuElement setHeight(float height) {}
 
 	float getWidth() {}
 
 	float getHeight() {}
 
-	MenuElement setHeight(float height) {}
-
-	MenuElement getAbsoluteParent() {}
+	MenuElement setLayer(byte layer) {}
 
 	final void triggerAction(MenuElementActionType type) {}
 
 	boolean touch(TouchEvent trigger) {}
 
-	MenuElement setX(float x) {}
+	MenuElement getAbsoluteParent() {}
 
 	MenuElement setY(float y) {}
 
+	MenuElement setX(float x) {}
+
 	MenuElement setWidth(float width) {}
+
+	MenuElement setFocusable(boolean focusable) {}
+
+	float calcY() {}
+
+	float calcX() {}
+
+	final void setMenuControllerSelection(MenuElement element) {}
+
+	Set getActionListeners() {}
 
 	MenuElement setFocused(boolean focused) {}
 
-	boolean isAbsoluteHidden() {}
-
 	MenuElement setHidden(boolean hidden) {}
+
+	boolean isAbsoluteHidden() {}
 
 	float getAbsoluteX() {}
 
@@ -110,59 +114,55 @@ MenuListDisplay(MenuElement) : Scrollable {
 
 	void addElements(Array elements, float x, float y) {}
 
-	int getHAlign() {}
-
-	MenuElement setAnchorHAlign(int anchorHAlign) {}
-
-	MenuElement setVAlign(int vAlign) {}
-
-	boolean isFocusable() {}
-
-	int getAnchorHAlign() {}
-
-	boolean isFocused() {}
-
-	MenuElement setAnchorVAlign(int anchorVAlign) {}
-
-	MenuButtonTips getButtonTips() {}
-
 	void setCursor(Rectangle rectangle) {}
-
-	MenuElement getAnchor() {}
-
-	MenuElement setAnchor(MenuElement anchor) {}
-
-	MenuElement setHAlign(int hAlign) {}
-
-	boolean isEnabled() {}
-
-	int getAnchorVAlign() {}
-
-	int getVAlign() {}
 
 	boolean canDrawCursor() {}
 
+	int getAnchorVAlign() {}
+
+	MenuElement setHAlign(int hAlign) {}
+
+	int getHAlign() {}
+
+	int getAnchorHAlign() {}
+
+	MenuElement setAnchorHAlign(int anchorHAlign) {}
+
+	boolean isFocused() {}
+
+	int getVAlign() {}
+
+	MenuButtonTips getButtonTips() {}
+
+	boolean isEnabled() {}
+
+	MenuElement setAnchor(MenuElement anchor) {}
+
+	boolean isFocusable() {}
+
+	MenuElement getAnchor() {}
+
+	MenuElement setVAlign(int vAlign) {}
+
+	MenuElement setAnchorVAlign(int anchorVAlign) {}
+
 	boolean isTouching(float x, float y) {}
-
-	final void setMenuControllerSelection(MenuElement element) {}
-
-	Set getActionListeners() {}
-
-	float getScrollAreaWidth() {}
-
-	float getScrollAreaHeight() {}
-
-	float getScrollAreaX() {}
-
-	float getScrollHeight() {}
 
 	float getScrollWidth() {}
 
+	boolean canScrollY() {}
+
 	float getScrollAreaY() {}
+
+	float getScrollAreaX() {}
 
 	boolean canScrollX() {}
 
-	boolean canScrollY() {}
+	float getScrollHeight() {}
+
+	float getScrollAreaHeight() {}
+
+	float getScrollAreaWidth() {}
 
 	MenuThemeDrawable getMessage() {}
 
@@ -178,56 +178,56 @@ MenuListDisplay(MenuElement) : Scrollable {
 
 	MenuThemeDrawable getPack() {}
 
+	void setPainter(MenuObjectPainter painter) {}
+
+	Scroller getScroller() {}
+
+	Color getNameColor() {}
+
+	MenuObjectPainter getPainter() {}
+
+	void setBackgroundColor(CColor backgroundColor) {}
+
+	CColor getBackgroundColor() {}
+
 	MenuElementShowAnim getShowAnimation() {}
 
 	void setObjects(List objects) {}
 
-	MenuObjectPainter getPainter() {}
-
-	CColor getBackgroundColor() {}
-
-	void setBackgroundColor(CColor backgroundColor) {}
-
-	Color getNameColor() {}
-
-	MenuListDisplay setElementOffsetX(int elementOffsetX) {}
-
-	int getElementOffsetY() {}
-
-	MenuListPositionSetter getPositionSetter() {}
-
-	List getObjectPositions() {}
-
-	int getElementOffsetX() {}
-
-	void setPositionSetter(MenuListPositionSetter positionSetter) {}
-
-	void setPainter(MenuObjectPainter painter) {}
-
-	MenuListDisplay setPaddingY(int paddingY) {}
-
 	MenuListDisplay setPaddingX(int paddingX) {}
 
-	int getPaddingY() {}
-
-	void drawContainer(CustomSpriteBatch batch, float x, float y) {}
-
-	Supplier getListName() {}
-
-	int getPaddingX() {}
-
-	MenuListDisplay setNameColor(Color nameColor) {}
+	MenuListDisplay setPaddingY(int paddingY) {}
 
 	MenuListDisplay setListName(Supplier name) {}
 
 	float getNameOffset() {}
 
-	void refreshPositions(boolean force) {}
-
-	void drawObjects(CustomSpriteBatch batch, float x, float y) {}
+	Supplier getListName() {}
 
 	Rectangle getDrawRectangle() {}
 
-	Scroller getScroller() {}
+	int getPaddingY() {}
+
+	MenuListDisplay setNameColor(Color nameColor) {}
+
+	void drawObjects(CustomSpriteBatch batch, float x, float y) {}
+
+	int getPaddingX() {}
+
+	void refreshPositions(boolean force) {}
+
+	void drawContainer(CustomSpriteBatch batch, float x, float y) {}
+
+	int getElementOffsetY() {}
+
+	void setPositionSetter(MenuListPositionSetter positionSetter) {}
+
+	List getObjectPositions() {}
+
+	int getElementOffsetX() {}
+
+	MenuListDisplay setElementOffsetX(int elementOffsetX) {}
+
+	MenuListPositionSetter getPositionSetter() {}
 
 }

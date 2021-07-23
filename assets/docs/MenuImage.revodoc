@@ -36,17 +36,17 @@ MenuImage(SimpleMenuElement) {
 
 	void hide(GameScreen screen) {}
 
-	final Origin getOrigin() {}
+	byte getLayer() {}
 
 	float getComparisonKey() {}
 
-	byte getLayer() {}
+	final Origin getOrigin() {}
 
 	final void removeObject() {}
 
-	final SoundContainer playSound(Sounds sound) {}
-
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(SoundInfo sound) {}
 
@@ -64,41 +64,45 @@ MenuImage(SimpleMenuElement) {
 
 	boolean select() {}
 
-	float getX() {}
-
 	float getY() {}
 
-	MenuElement setFocusable(boolean focusable) {}
+	float getX() {}
 
-	float calcX() {}
-
-	float calcY() {}
-
-	MenuElement setLayer(byte layer) {}
+	MenuElement setHeight(float height) {}
 
 	float getWidth() {}
 
 	float getHeight() {}
 
-	MenuElement setHeight(float height) {}
-
-	MenuElement getAbsoluteParent() {}
+	MenuElement setLayer(byte layer) {}
 
 	final void triggerAction(MenuElementActionType type) {}
 
 	boolean touch(TouchEvent trigger) {}
 
-	MenuElement setX(float x) {}
+	MenuElement getAbsoluteParent() {}
 
 	MenuElement setY(float y) {}
 
+	MenuElement setX(float x) {}
+
 	MenuElement setWidth(float width) {}
+
+	MenuElement setFocusable(boolean focusable) {}
+
+	float calcY() {}
+
+	float calcX() {}
+
+	final void setMenuControllerSelection(MenuElement element) {}
+
+	Set getActionListeners() {}
 
 	MenuElement setFocused(boolean focused) {}
 
-	boolean isAbsoluteHidden() {}
-
 	MenuElement setHidden(boolean hidden) {}
+
+	boolean isAbsoluteHidden() {}
 
 	float getAbsoluteX() {}
 
@@ -106,43 +110,39 @@ MenuImage(SimpleMenuElement) {
 
 	void addElements(Array elements, float x, float y) {}
 
-	int getHAlign() {}
-
-	MenuElement setAnchorHAlign(int anchorHAlign) {}
-
-	MenuElement setVAlign(int vAlign) {}
-
-	boolean isFocusable() {}
-
-	int getAnchorHAlign() {}
-
-	boolean isFocused() {}
-
-	MenuElement setAnchorVAlign(int anchorVAlign) {}
-
-	MenuButtonTips getButtonTips() {}
-
 	void setCursor(Rectangle rectangle) {}
-
-	MenuElement getAnchor() {}
-
-	MenuElement setAnchor(MenuElement anchor) {}
-
-	MenuElement setHAlign(int hAlign) {}
-
-	boolean isEnabled() {}
-
-	int getAnchorVAlign() {}
-
-	int getVAlign() {}
 
 	boolean canDrawCursor() {}
 
+	int getAnchorVAlign() {}
+
+	MenuElement setHAlign(int hAlign) {}
+
+	int getHAlign() {}
+
+	int getAnchorHAlign() {}
+
+	MenuElement setAnchorHAlign(int anchorHAlign) {}
+
+	boolean isFocused() {}
+
+	int getVAlign() {}
+
+	MenuButtonTips getButtonTips() {}
+
+	boolean isEnabled() {}
+
+	MenuElement setAnchor(MenuElement anchor) {}
+
+	boolean isFocusable() {}
+
+	MenuElement getAnchor() {}
+
+	MenuElement setVAlign(int vAlign) {}
+
+	MenuElement setAnchorVAlign(int anchorVAlign) {}
+
 	boolean isTouching(float x, float y) {}
-
-	final void setMenuControllerSelection(MenuElement element) {}
-
-	Set getActionListeners() {}
 
 	void drawElement(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
@@ -150,26 +150,26 @@ MenuImage(SimpleMenuElement) {
 
 	float getBorder() {}
 
-	Drawable getDrawable() {}
-
 	MenuImage setDrawable(Drawable drawable) {}
 
-	MenuImage setBorder(float border) {}
-
-	MenuThemeDrawable getBackground() {}
+	Drawable getDrawable() {}
 
 	void drawBackground(CustomSpriteBatch batch, float x, float y, float width, float height) {}
 
+	MenuThemeDrawable getBackground() {}
+
+	MenuImage setBorder(float border) {}
+
 	double getAnimState() {}
 
-	boolean isStretch() {}
-
-	boolean isFitScale() {}
+	MenuImage setFitScale(boolean fitScale) {}
 
 	MenuImage setAnimState(double animState) {}
 
+	boolean isStretch() {}
+
 	MenuImage setStretch(boolean stretch) {}
 
-	MenuImage setFitScale(boolean fitScale) {}
+	boolean isFitScale() {}
 
 }

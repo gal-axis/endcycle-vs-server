@@ -1,4 +1,4 @@
-BaseAdventureFaction(Object) : AdventureFaction, SpeedSupplier, PickupAction {
+BaseAdventureFaction(Object) : AdventureFaction, SpeedSupplier, PickupAction, AdventureFactionSave {
 
 	ID networldZone;
 	ID bossRushZone;
@@ -8,8 +8,8 @@ BaseAdventureFaction(Object) : AdventureFaction, SpeedSupplier, PickupAction {
 	Array remainingZones;
 	Array bossEvents;
 	AdventureBattle battle;
-	boolean networld;
 	boolean hideFragments;
+	boolean networld;
 	int zoneNumber;
 	int fragmentAmount;
 	float difficulty;
@@ -23,6 +23,8 @@ BaseAdventureFaction(Object) : AdventureFaction, SpeedSupplier, PickupAction {
 
 	int hashCode() {}
 
+	AdventureFaction load(AdventureBattle battle) {}
+
 	boolean pickup(PickupEntity pickup, BattleEntity entity) {}
 
 	double getSpeed(BattleEntity entity) {}
@@ -30,6 +32,8 @@ BaseAdventureFaction(Object) : AdventureFaction, SpeedSupplier, PickupAction {
 	String getName() {}
 
 	void start(AdventureBattle battle) {}
+
+	AdventureFactionSave save() {}
 
 	boolean isValid(AdventureEventList event) {}
 
@@ -43,31 +47,31 @@ BaseAdventureFaction(Object) : AdventureFaction, SpeedSupplier, PickupAction {
 
 	void startBattle(BattleEntityList entities) {}
 
-	void finishZone(AdventureFieldData entry) {}
-
 	void startNode(AdventureFieldNode entry) {}
 
 	void addLoseLoot(Looter looter) {}
-
-	void startZone(AdventureFieldData data) {}
-
-	void generateFinal(AdventureNodeGraph graph) {}
-
-	void generateStart(AdventureNodeGraph graph) {}
 
 	void generateNodes(AdventureNodeGraph graph) {}
 
 	void addWinLoot(Looter looter) {}
 
-	void generateBranches(AdventureNodeGraph graph) {}
-
-	void generateFinish(AdventureNodeGraph graph) {}
-
-	void finishNode(AdventureFieldNode entry) {}
+	void generateStart(AdventureNodeGraph graph) {}
 
 	void updatePlayer(BattlePlayer player) {}
 
+	void startZone(AdventureFieldData data) {}
+
+	void generateFinish(AdventureNodeGraph graph) {}
+
+	void generateFinal(AdventureNodeGraph graph) {}
+
+	void generateBranches(AdventureNodeGraph graph) {}
+
 	DrawableImage getIcon() {}
+
+	void finishNode(AdventureFieldNode entry) {}
+
+	void finishZone(AdventureFieldData entry) {}
 
 	boolean canUpgrade() {}
 
@@ -76,5 +80,7 @@ BaseAdventureFaction(Object) : AdventureFaction, SpeedSupplier, PickupAction {
 	void selectZone(AdventureZone zone) {}
 
 	int getStatModifier() {}
+
+	void goToZone(ID zoneId) {}
 
 }

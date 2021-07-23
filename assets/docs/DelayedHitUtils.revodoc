@@ -13,10 +13,10 @@ final DelayedHitUtils(Object) {
 
 	int hashCode() {}
 
-	static AttackEffect getExplosion(int explosionRadius) {}
-
 	static List getParticles(float x, float y, Drawable drawable, ShaderType shader, Color tint, int amount, float offsetX, float offsetY) {}
 
 	static List getParticles(Battle battle, int xTile, int yTile, Drawable drawable, ShaderType shader, Color tint, int explosions, float offsetX, float offsetY) {}
+
+	static AttackEffect getExplosion(int explosionRadius) {}
 
 }

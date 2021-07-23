@@ -13,17 +13,17 @@ Lobby(Object) {
 
 	int hashCode() {}
 
-	boolean isHost() {}
-
 	void setSlots(int slots) {}
 
-	boolean isSpectating() {}
+	void setConfiguration(LobbyConfiguration configuration) {}
+
+	boolean isHost() {}
 
 	boolean isCpuSupport() {}
 
-	LobbySlot slotUpdate(int slotIndex, LobbySlot slot) {}
+	boolean isSpectating() {}
 
-	void setConfiguration(LobbyConfiguration configuration) {}
+	LobbySlot slotUpdate(int slotIndex, LobbySlot slot) {}
 
 	int getPlayerSlotIndex() {}
 

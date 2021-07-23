@@ -11,13 +11,13 @@ DefaultLooter(Looter) : InputListener {
 
 	int hashCode() {}
 
-	void onRewardClosed() {}
-
-	void onRewardError() {}
+	void onRewardEarned() {}
 
 	void onRewardOpened() {}
 
-	void onRewardEarned() {}
+	void onRewardClosed() {}
+
+	void onRewardError() {}
 
 	void dispose() {}
 
@@ -35,56 +35,56 @@ DefaultLooter(Looter) : InputListener {
 
 	void show(GameScreen screen) {}
 
+	void hide(GameScreen screen) {}
+
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void hide(GameScreen screen) {}
+	float getComparisonKey() {}
 
 	Origin getOrigin() {}
 
 	byte getLayer() {}
 
-	float getComparisonKey() {}
-
 	boolean hasLoot() {}
-
-	void addAffinity(ID entity, float amount) {}
 
 	void addAffinity(BattleEntity entity, float amount) {}
 
+	void addAffinity(ID entity, float amount) {}
+
 	void addRandomLoot(int money, boolean items) {}
-
-	void addRandomStyle() {}
-
-	boolean hasExtra() {}
 
 	void addRandomVoc() {}
 
+	void addRandomStyle() {}
+
 	void addLoot(Lootable loot) {}
+
+	boolean hasExtra() {}
 
 	boolean priority() {}
 
-	void controllerDisconnected(Controller controller) {}
-
-	void controllerConnected(Controller controller) {}
-
 	boolean addButtonTips(ButtonTipList tips) {}
 
-	boolean triggerType(int character) {}
+	boolean triggerButton(ButtonEvent event) {}
 
 	boolean triggerTouch(TouchEvent event) {}
 
-	boolean keyDown(int keycode) {}
+	boolean triggerType(int character) {}
 
 	boolean keyTyped(char character) {}
 
 	boolean keyUp(int keycode) {}
 
-	boolean triggerButton(ButtonEvent event) {}
+	boolean keyDown(int keycode) {}
+
+	void controllerConnected(Controller controller) {}
+
+	void controllerDisconnected(Controller controller) {}
 
 	void finish() {}
 
-	void grabExtra() {}
-
 	void showNextLoot() {}
+
+	void grabExtra() {}
 
 }

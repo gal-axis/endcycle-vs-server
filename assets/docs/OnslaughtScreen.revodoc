@@ -36,63 +36,63 @@ OnslaughtScreen(MenuScreen) : CoopBattleScreen {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void setScreen(GameScreen screen) {}
+
 	void setScreen(GameScreen screen, FadeType fade) {}
 
 	void setScreen(GameScreen screen, FadeType fade, boolean changesBefore) {}
 
-	void setScreen(GameScreen screen) {}
-
-	void changeFrom(GameScreen screen, boolean init) {}
-
-	void resetShake() {}
-
-	void changeTo(GameScreen screen, boolean init) {}
-
-	ScreenObject addObject(ScreenObject object) {}
-
-	boolean isCurrentScreen() {}
-
-	boolean removeObject(ScreenObject object) {}
-
-	void updateTimer(float delta) {}
-
-	void clearObjects() {}
-
-	void render(float delta) {}
-
-	void hide() {}
+	void dispose() {}
 
 	boolean isShaking() {}
 
-	void draw(CustomSpriteBatch batch) {}
+	ScreenObject addObject(ScreenObject object) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	void updateTimer(float delta) {}
 
-	void shakeVibrate(float x, float y, float duration) {}
-
-	void updateObjects(float delta) {}
+	void resetTimer() {}
 
 	Array getObjects() {}
 
-	void updateShake(float delta) {}
+	void shakeVibrate(float x, float y, float duration) {}
+
+	boolean isCurrentScreen() {}
 
 	void shake(float x, float y, float duration) {}
 
-	void dispose() {}
+	boolean removeObject(ScreenObject object) {}
+
+	void updateObjects(float delta) {}
 
 	void drawButtonTips(CustomSpriteBatch batch, float x, float y) {}
+
+	void changeFrom(GameScreen screen, boolean init) {}
+
+	void clearObjects() {}
 
 	void toPreviousScreen(FadeType type) {}
 
 	void toPreviousScreen() {}
 
+	void render(float delta) {}
+
+	void resetShake() {}
+
+	void updateShake(float delta) {}
+
+	void changeTo(GameScreen screen, boolean init) {}
+
 	void show() {}
 
-	void resetTimer() {}
+	void hide() {}
 
-	Array getRenderProcessors() {}
+	void draw(CustomSpriteBatch batch) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void removeRenderProcessor(RenderProcessor renderProcessor) {}
+
+	Array getRenderProcessors() {}
 
 	GameScreen getPreviousScreen() {}
 
@@ -100,13 +100,13 @@ OnslaughtScreen(MenuScreen) : CoopBattleScreen {
 
 	void setPreviousScreen(GameScreen previousScreen) {}
 
-	boolean isLoading() {}
-
-	Object[] getTextArguments() {}
+	void pause() {}
 
 	void addScript(Script script, float delay) {}
 
-	void pause() {}
+	boolean isLoading() {}
+
+	Object[] getTextArguments() {}
 
 	void createMenuElements() {}
 
@@ -116,8 +116,8 @@ OnslaughtScreen(MenuScreen) : CoopBattleScreen {
 
 	void disableInput() {}
 
-	void enableInput() {}
-
 	void centerElements() {}
+
+	void enableInput() {}
 
 }

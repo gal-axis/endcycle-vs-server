@@ -37,7 +37,9 @@ enum BattleFields {
  	Ice_Cave_Field,
  	Voc_Preview,
  	Voc_Preview_2,
- 	A_Final_Boss_Field;
+ 	A_Final_Boss_Field,
+ 	WildWestField,
+ 	Tutorial_Elements;
 
 	final boolean equals(Object arg0) {}
 
@@ -53,7 +55,7 @@ enum BattleFields {
 
 	static BattleFields[] values() {}
 
-	static BattleFields valueOf(String name) {}
+	static BattleFields valueOf(String arg0) {}
 
 	ID getId() {}
 

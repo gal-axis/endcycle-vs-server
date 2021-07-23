@@ -10,23 +10,23 @@ MenuTableItemDrag(Object) : ScreenObject, InputListener {
 
 	boolean priority() {}
 
-	void controllerConnected(Controller controller) {}
-
-	void controllerDisconnected(Controller controller) {}
+	boolean triggerButton(ButtonEvent event) {}
 
 	boolean triggerType(int character) {}
 
-	boolean triggerButton(ButtonEvent event) {}
-
-	boolean keyUp(int keycode) {}
-
-	boolean keyDown(int keycode) {}
+	boolean keyTyped(char character) {}
 
 	boolean addButtonTips(ButtonTipList tips) {}
 
-	boolean keyTyped(char character) {}
+	boolean keyDown(int keycode) {}
+
+	boolean keyUp(int keycode) {}
 
 	boolean triggerTouch(TouchEvent event) {}
+
+	void controllerDisconnected(Controller controller) {}
+
+	void controllerConnected(Controller controller) {}
 
 	void dispose() {}
 
@@ -48,11 +48,11 @@ MenuTableItemDrag(Object) : ScreenObject, InputListener {
 
 	void hide(GameScreen screen) {}
 
-	Origin getOrigin() {}
+	byte getLayer() {}
 
 	float getComparisonKey() {}
 
-	byte getLayer() {}
+	Origin getOrigin() {}
 
 	void start(int index, Object touching, int pointer, int x, int y) {}
 
@@ -62,21 +62,21 @@ MenuTableItemDrag(Object) : ScreenObject, InputListener {
 
 	int getIndex() {}
 
-	int getX() {}
-
 	int getY() {}
 
-	BoundedFloat getDragTimer() {}
-
-	MenuTableDragListener getDragListener() {}
+	int getX() {}
 
 	int getPointer() {}
 
 	Object getTouching() {}
 
-	void setDragListener(MenuTableDragListener dragListener) {}
+	BoundedFloat getDragTimer() {}
+
+	MenuTableDragListener getDragListener() {}
 
 	Object getDragging() {}
+
+	void setDragListener(MenuTableDragListener dragListener) {}
 
 	MenuTable getContainer() {}
 

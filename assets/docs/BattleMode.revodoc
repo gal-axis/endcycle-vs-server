@@ -10,27 +10,27 @@ abstract BattleMode(Object) : ScreenObject, GameEventListener {
 
 	int hashCode() {}
 
-	void handle(GameEvent event) {}
+	void handle(GameEvent arg0) {}
 
 	void dispose() {}
 
-	void update(float delta) {}
+	void update(float arg0) {}
 
 	boolean remove() {}
 
 	String getName() {}
 
-	void init(GameScreen screen) {}
+	void init(GameScreen arg0) {}
 
 	boolean isHidden() {}
 
-	void resize(boolean landscape, int width, int height) {}
+	void resize(boolean arg0, int arg1, int arg2) {}
 
-	void hide(GameScreen screen) {}
+	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	void show(GameScreen arg0) {}
 
-	void show(GameScreen screen) {}
+	void hide(GameScreen arg0) {}
 
 	float getComparisonKey() {}
 
@@ -42,38 +42,40 @@ abstract BattleMode(Object) : ScreenObject, GameEventListener {
 
 	void stop() {}
 
-	String getDiscordMessage(Party winner) {}
+	String getDiscordMessage(Party arg0) {}
 
-	boolean showStart() {}
+	boolean isDespawn(BattleEntity arg0) {}
 
-	boolean isDespawn(BattleEntity entity) {}
+	double adjustGaugeSpeed(BattleEntity arg0) {}
 
-	boolean isSpawn(BattleEntity entity) {}
+	ScreenObject createStarter() {}
 
-	LocalizedMessage getLoseMessage() {}
-
-	int adjustDamage(BattleEntity entity, int damage) {}
-
-	double adjustGaugeSpeed(BattleEntity entity) {}
-
-	boolean isRestart() {}
-
-	void calculateTint(BattleEntity entity, CColor color) {}
+	void loot(Looter arg0) {}
 
 	boolean loot() {}
 
-	void loot(Looter looter) {}
+	int adjustDamage(BattleEntity arg0, int arg1) {}
 
-	BattlePlayer createPlayer(BattleEntity entity) {}
+	BattlePlayer createPlayer(BattleEntity arg0) {}
 
-	void sendServerUpdate(List messages) {}
+	void calculateTint(BattleEntity arg0, CColor arg1) {}
 
-	String getBattleName(String name) {}
+	boolean isSpawn(BattleEntity arg0) {}
 
-	String createTeamName(Party party) {}
+	boolean isRestart() {}
 
-	void initHUD(BattleHUD hud) {}
+	boolean showStart() {}
 
-	void finish(Party winner) {}
+	LocalizedMessage getLoseMessage() {}
+
+	String createTeamName(Party arg0) {}
+
+	void sendServerUpdate(List arg0) {}
+
+	void finish(Party arg0) {}
+
+	String getBattleName(String arg0) {}
+
+	void initHUD(BattleHUD arg0) {}
 
 }

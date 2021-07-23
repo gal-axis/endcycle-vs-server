@@ -24,9 +24,9 @@ BattleEntityCpuShell(BattleEntityShell) {
 
 	new() {}
 
-	new(int level, Random random) {}
+	new(int arg0, Random arg1) {}
 
-	new(int level) {}
+	new(int arg0) {}
 
 	boolean equals(Object arg0) {}
 
@@ -34,28 +34,30 @@ BattleEntityCpuShell(BattleEntityShell) {
 
 	int hashCode() {}
 
-	BattleEntity apply(BattleEntity entity) {}
+	BattleEntity apply(BattleEntity arg0) {}
 
-	BattleEntity create(int x, int y) {}
+	BattleEntity create(int arg0, int arg1) {}
 
-	void set(Party party, int x, int y, boolean turned) {}
+	void set(Party arg0, int arg1, int arg2, boolean arg3) {}
 
-	void set(EntityShell shell) {}
+	void set(EntityShell arg0) {}
 
-	void setPosition(int x, int y) {}
+	void setPosition(int arg0, int arg1) {}
 
 	List getPatchworkData() {}
 
-	void set(LoneEntityShell shell) {}
+	void set(LoneEntityShell arg0) {}
 
-	void setAction(BattleEntity entity) {}
+	BattleEntity generate(ID arg0, int arg1, int arg2) {}
+
+	BattleEntity generate(int arg0, int arg1, BattleEntityData arg2, CustomCache arg3) {}
+
+	void setAction(BattleEntity arg0) {}
 
 	Patchwork getPatchwork() {}
 
-	BattleEntity generate(int x, int y, BattleEntityData data, CustomCache custom) {}
+	BattleEntityData findEntityData(ID arg0) {}
 
-	BattleEntity generate(ID id, int x, int y) {}
-
-	BattleEntityData findEntityData(ID id) {}
+	static String getName(BattleEntity arg0, int arg1) {}
 
 }

@@ -18,9 +18,9 @@ final BattleData(Moddable) : DataName, Named {
 
 	new() {}
 
-	new(BattleData original, boolean copyEntities) {}
+	new(BattleData arg0, boolean arg1) {}
 
-	final boolean equals(Object obj) {}
+	final boolean equals(Object arg0) {}
 
 	String toString() {}
 
@@ -32,12 +32,12 @@ final BattleData(Moddable) : DataName, Named {
 
 	String getDataName() {}
 
-	boolean hasMode(GameModeProvider mode) {}
+	boolean hasPlayer() {}
+
+	boolean hasMode(GameModeProvider arg0) {}
 
 	String getEnumName() {}
 
-	void addEntityShell(EntityShell entity) {}
-
-	boolean hasPlayer() {}
+	void addEntityShell(EntityShell arg0) {}
 
 }

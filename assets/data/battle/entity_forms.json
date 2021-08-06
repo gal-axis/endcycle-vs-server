@@ -955,5 +955,28 @@
 	"entity": { "id": 49 },
 	"configuration": {},
 	"action": { "id": 60 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 66 },
+	"dataName": "Placeable SpikeTrap",
+	"entity": { "id": 43 },
+	"type": "GHOST",
+	"configuration": {
+		"modes": [
+			{
+				"class": "com.one2b3.endcycle.features.battle.mode.HazardEntityMode",
+				"property": {
+					"ailments": [
+						{ "type": "FLINCHING" }
+					],
+					"power": 200,
+					"crushPower": 100
+				},
+				"cooldown": 0.1
+			},
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" }
+		]
+	}
 }
 ]

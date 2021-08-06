@@ -24,16 +24,16 @@ VocDisplay(Object) {
 
 	void use() {}
 
-	VocEntry getVoc() {}
-
-	void drawMod(CustomSpriteBatch batch, VocEntry voc, float x, float y, float tint, float aTint) {}
+	float getScale() {}
 
 	float getUnlock() {}
 
-	float getErrorOffset() {}
-
 	float getATint() {}
 
-	float getScale() {}
+	void drawMod(CustomSpriteBatch batch, VocEntry voc, float x, float y, float tint, float aTint) {}
+
+	float getErrorOffset() {}
+
+	VocEntry getVoc() {}
 
 }

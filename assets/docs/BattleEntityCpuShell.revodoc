@@ -1,4 +1,4 @@
-BattleEntityCpuShell(BattleEntityShell) {
+BattleEntityCpuShell(PlayerEntityShell) {
 
 	int x;
 	int y;
@@ -12,21 +12,15 @@ BattleEntityCpuShell(BattleEntityShell) {
 	Controller controller;
 	String name;
 	String parent;
-	ID id;
-	LocalizedMessage talkingName;
-	ID action;
-	CustomCache cache;
-	BattleEntityConfiguration configuration;
-	VocPack pack;
-	BattleEntityType type;
 	int level;
 	boolean singleSet;
+	CustomCache palette;
 
 	new() {}
 
-	new(int arg0, Random arg1) {}
+	new(int level, Random random) {}
 
-	new(int arg0) {}
+	new(int level) {}
 
 	boolean equals(Object arg0) {}
 
@@ -34,30 +28,22 @@ BattleEntityCpuShell(BattleEntityShell) {
 
 	int hashCode() {}
 
-	BattleEntity apply(BattleEntity arg0) {}
+	BattleEntity apply(BattleEntity entity) {}
 
-	BattleEntity create(int arg0, int arg1) {}
+	BattleEntity create(int x, int y) {}
 
-	void set(Party arg0, int arg1, int arg2, boolean arg3) {}
+	void set(Party party, int x, int y, boolean turned) {}
 
-	void set(EntityShell arg0) {}
+	void set(EntityShell shell) {}
 
-	void setPosition(int arg0, int arg1) {}
+	void setPosition(int x, int y) {}
 
-	List getPatchworkData() {}
+	BattleEntityData getData() {}
 
-	void set(LoneEntityShell arg0) {}
+	CustomCache getPalette(BattleEntityData data) {}
 
-	BattleEntity generate(ID arg0, int arg1, int arg2) {}
+	static String getName(BattleEntity entity, int level) {}
 
-	BattleEntity generate(int arg0, int arg1, BattleEntityData arg2, CustomCache arg3) {}
-
-	void setAction(BattleEntity arg0) {}
-
-	Patchwork getPatchwork() {}
-
-	BattleEntityData findEntityData(ID arg0) {}
-
-	static String getName(BattleEntity arg0, int arg1) {}
+	void setCharacter(ID character, CustomCache palette) {}
 
 }

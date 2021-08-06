@@ -1,4 +1,4 @@
-BannedPanelManager(Object) : GameEventListener {
+DangerManager(Object) {
 
 	new(BattleEntity entity, Random random, int level) {}
 
@@ -8,16 +8,14 @@ BannedPanelManager(Object) : GameEventListener {
 
 	int hashCode() {}
 
-	void handle(GameEvent event) {}
+	void add(Danger object) {}
+
+	void remove(Danger object) {}
 
 	void update(float delta) {}
 
 	boolean isBanned() {}
 
 	boolean isBanned(int x, int y) {}
-
-	void addBannedPanel(BannedPanel panel) {}
-
-	boolean isDangerous() {}
 
 }

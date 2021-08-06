@@ -13,6 +13,7 @@ CampaignCutsceneBattle(Battle) {
 	final Array players;
 	final GoalTracker goalTracker;
 	BattleScreen screen;
+	DangerListener dangers;
 	DuplicateEntityManager duplicateManager;
 	BattleEntityList entities;
 	BackgroundObject background;
@@ -26,6 +27,7 @@ CampaignCutsceneBattle(Battle) {
 	BattleMode mode;
 	Looter looter;
 	boolean run;
+	boolean simple;
 	boolean versus;
 	BattleState state;
 	BattleSubState substate;
@@ -50,37 +52,49 @@ CampaignCutsceneBattle(Battle) {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void shake(float x, float y, float duration) {}
+	void removeRenderProcessor(RenderProcessor renderProcessor) {}
 
-	void changeTo(GameScreen screen, boolean init) {}
+	void setPreviousScreen(GameScreen previousScreen) {}
 
-	void render(float delta) {}
+	void addRenderProcessor(RenderProcessor renderProcessor) {}
 
-	void show() {}
+	GameScreen getPreviousScreen() {}
 
-	void updateShake(float delta) {}
+	Array getRenderProcessors() {}
 
-	void changeFrom(GameScreen screen, boolean init) {}
+	void setScreen(GameScreen screen, FadeType fade, boolean changesBefore) {}
+
+	void setScreen(GameScreen screen) {}
+
+	void setScreen(GameScreen screen, FadeType fade) {}
+
+	ScreenObject addObject(ScreenObject object) {}
+
+	boolean removeObject(ScreenObject object) {}
 
 	void updateObjects(float delta) {}
 
-	void hide() {}
+	void changeTo(GameScreen screen, boolean init) {}
+
+	void shake(float x, float y, float duration) {}
+
+	void render(float delta) {}
+
+	Array getObjects() {}
+
+	void changeFrom(GameScreen screen, boolean init) {}
+
+	void updateTimer(float delta) {}
 
 	void drawButtonTips(CustomSpriteBatch batch, float x, float y) {}
 
 	boolean isShaking() {}
 
-	void resetShake() {}
+	void show() {}
 
-	void draw(CustomSpriteBatch batch) {}
+	void hide() {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	boolean removeObject(ScreenObject object) {}
-
-	Array getObjects() {}
-
-	void dispose() {}
+	boolean isCurrentScreen() {}
 
 	void clearObjects() {}
 
@@ -88,39 +102,27 @@ CampaignCutsceneBattle(Battle) {
 
 	void toPreviousScreen() {}
 
-	boolean isCurrentScreen() {}
+	void updateShake(float delta) {}
 
 	void shakeVibrate(float x, float y, float duration) {}
 
-	void updateTimer(float delta) {}
+	void draw(CustomSpriteBatch batch) {}
 
-	ScreenObject addObject(ScreenObject object) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void setScreen(GameScreen screen, FadeType fade, boolean changesBefore) {}
+	void resetShake() {}
 
-	void setScreen(GameScreen screen, FadeType fade) {}
+	void pause() {}
 
-	void setScreen(GameScreen screen) {}
-
-	Array getRenderProcessors() {}
-
-	void addRenderProcessor(RenderProcessor renderProcessor) {}
-
-	GameScreen getPreviousScreen() {}
-
-	void setPreviousScreen(GameScreen previousScreen) {}
-
-	void removeRenderProcessor(RenderProcessor renderProcessor) {}
+	boolean isLoading() {}
 
 	void resetTimer() {}
 
 	Object[] getTextArguments() {}
 
+	void dispose() {}
+
 	void addScript(Script script, float delay) {}
-
-	void pause() {}
-
-	boolean isLoading() {}
 
 	boolean isUpdatable(ScreenObject object) {}
 
@@ -134,41 +136,27 @@ CampaignCutsceneBattle(Battle) {
 
 	void win(Party winner) {}
 
-	BattleEntity getEntity(String name) {}
+	BattlePauseMessage createPauseMessage() {}
 
-	Battle setBattleData(BattleData data) {}
+	void vibrateControllers(float duration, float strength) {}
 
-	final Battle setBattleData(ID data) {}
+	BattleEntityList getPlayerEntities() {}
 
-	void removeEntity(BattleEntity entity) {}
+	void addEntityShells(Array shells, int x, int y, boolean animation) {}
 
-	BattleEntity loadEntity(EntityShell shell, int x, int y) {}
+	void setBackground(ID id) {}
 
-	boolean isDespawn(BattleEntity entity) {}
-
-	BattlePlayer setPlayerEntity(int index, BattleEntity entity) {}
-
-	int getPlayerIndex(BattleEntity entity) {}
-
-	boolean isMultiplayer() {}
-
-	void setField(BattleFieldData data) {}
-
-	void setField(BattleField field) {}
-
-	BattleEntity getPlayerEntity() {}
-
-	BattleEntity getCameraFocus() {}
-
-	void addEntity(BattleEntity entity) {}
-
-	void killZoom(BattleEntity killer, BattleEntity entity) {}
-
-	void startDeath(BattleEntity killer, BattleEntity entity) {}
+	void setBackground(BackgroundObject background) {}
 
 	void startRecording() {}
 
+	void addEntity(BattleEntity entity) {}
+
+	int getPlayerIndex(BattleEntity entity) {}
+
 	Party getPlayerParty() {}
+
+	BattlePlayer addPlayer(BattleEntity entity) {}
 
 	boolean isVersus() {}
 
@@ -176,47 +164,83 @@ CampaignCutsceneBattle(Battle) {
 
 	DefaultBattlePlayer getPlayer() {}
 
-	void hitZoom(BattleEntity entity, float zoom, float time, float speed) {}
+	boolean isMultiplayer() {}
 
-	void killEntity(BattleEntity killer, BattleEntity entity) {}
+	BattlePlayer setPlayerEntity(int index, BattleEntity entity) {}
 
-	BattlePlayer addPlayer(BattleEntity entity) {}
-
-	void hitStop(float time, Runnable after) {}
+	void setBattleMode(BattleMode mode) {}
 
 	boolean isSpawn(BattleEntity entity) {}
 
-	void lose(Party winner) {}
+	Battle setBattleData(BattleData data) {}
 
-	MusicContainer playVictoryTheme() {}
+	final Battle setBattleData(ID data) {}
 
-	void restart() {}
-
-	BattlePlayer createPlayer(BattleEntity entity) {}
-
-	void loot() {}
-
-	void quit() {}
-
-	boolean isDisplayText() {}
-
-	void calculateTint(BattleEntity entity, CColor color) {}
-
-	boolean canPause() {}
-
-	void goToNext() {}
-
-	int adjustDamage(BattleEntity entity, int damage) {}
-
-	double adjustGaugeSpeed(BattleEntity entity) {}
-
-	void endBattle() {}
+	BattleEntity getEntity(String name) {}
 
 	BattleHUD createHUD() {}
 
-	boolean isAutoRecord() {}
+	void stopRecording() {}
 
-	void addEntityShells(Array shells, int x, int y, boolean animation) {}
+	BattleEntity loadEntity(EntityShell shell, int x, int y) {}
+
+	void loadField(ID map) {}
+
+	void removeEntity(BattleEntity entity) {}
+
+	void setField(BattleFieldData data) {}
+
+	void setField(BattleField field) {}
+
+	boolean isDespawn(BattleEntity entity) {}
+
+	void saveRecording() {}
+
+	BattleEntity getCameraFocus() {}
+
+	MusicContainer playVictoryTheme() {}
+
+	void lose(Party winner) {}
+
+	void loot() {}
+
+	void killEntity(BattleEntity killer, BattleEntity entity) {}
+
+	void startDeath(BattleEntity killer, BattleEntity entity) {}
+
+	void killZoom(BattleEntity killer, BattleEntity entity) {}
+
+	void quit() {}
+
+	boolean canPause() {}
+
+	BattlePlayer createPlayer(BattleEntity entity) {}
+
+	void endBattle() {}
+
+	double adjustGaugeSpeed(BattleEntity entity) {}
+
+	int adjustDamage(BattleEntity entity, int damage) {}
+
+	boolean isDisplayText() {}
+
+	void goToNext() {}
+
+	void restart() {}
+
+	void hitZoom(BattleEntity entity, float zoom, float time, float speed) {}
+
+	void hitStop(float time, Runnable after) {}
+
+	void calculateTint(BattleEntity entity, CColor color) {}
+
+	BattleEntity getPlayerEntity() {}
+
+	boolean canCreateStarter() {}
+
+	void createStarter() {}
+
+	boolean isAutoRecord() {}
 
 	void showStartMessage() {}
 
@@ -227,29 +251,5 @@ CampaignCutsceneBattle(Battle) {
 	MusicContainer playSong(ID song) {}
 
 	void playSong() {}
-
-	Looter createLooter() {}
-
-	void stopRecording() {}
-
-	void saveRecording() {}
-
-	void setBattleMode(BattleMode mode) {}
-
-	void setBackground(BackgroundObject background) {}
-
-	void setBackground(ID id) {}
-
-	boolean canCreateStarter() {}
-
-	void createStarter() {}
-
-	void loadField(ID map) {}
-
-	BattleEntityList getPlayerEntities() {}
-
-	BattlePauseMessage createPauseMessage() {}
-
-	void vibrateControllers(float duration, float strength) {}
 
 }

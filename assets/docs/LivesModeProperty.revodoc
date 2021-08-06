@@ -1,5 +1,8 @@
 LivesModeProperty(GameModeProperty) {
 
+	final String name;
+	Integer value;
+
 	new() {}
 
 	boolean equals(Object o) {}
@@ -17,10 +20,6 @@ LivesModeProperty(GameModeProperty) {
 	double get(double object, double orElse) {}
 
 	void paint(Integer object, Painter parameters) {}
-
-	String getName() {}
-
-	Integer getValue() {}
 
 	void setValue(Object value) {}
 

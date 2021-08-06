@@ -6,7 +6,7 @@ BattleEntityComplexAction(BattlePlayer) {
 	Battle battle;
 	Random random;
 	int level;
-	BannedPanelManager bannedPanelManager;
+	DangerManager dangerManager;
 	MoveManager moveManager;
 	TargetManager targetManager;
 	TurnManager turnManager;
@@ -15,9 +15,9 @@ BattleEntityComplexAction(BattlePlayer) {
 	HashMap actions;
 	BattleEntityAction action;
 
-	new(BattleEntity entity, int level) {}
+	new(BattleEntity entity, int level, boolean ultra) {}
 
-	new(BattleEntity entity, Random random, int level) {}
+	new(BattleEntity entity, Random random, int level, boolean ultra) {}
 
 	boolean equals(Object arg0) {}
 
@@ -25,25 +25,25 @@ BattleEntityComplexAction(BattlePlayer) {
 
 	int hashCode() {}
 
-	boolean priority() {}
+	void controllerDisconnected(Controller controller) {}
 
-	boolean triggerButton(ButtonEvent event) {}
-
-	boolean addButtonTips(ButtonTipList tips) {}
-
-	boolean keyDown(int keycode) {}
+	void controllerConnected(Controller controller) {}
 
 	boolean triggerTouch(TouchEvent event) {}
+
+	boolean triggerButton(ButtonEvent event) {}
 
 	boolean triggerType(int character) {}
 
 	boolean keyTyped(char character) {}
 
+	boolean keyDown(int keycode) {}
+
 	boolean keyUp(int keycode) {}
 
-	void controllerDisconnected(Controller controller) {}
+	boolean addButtonTips(ButtonTipList tips) {}
 
-	void controllerConnected(Controller controller) {}
+	int getInputPriority() {}
 
 	void add() {}
 
@@ -65,35 +65,35 @@ BattleEntityComplexAction(BattlePlayer) {
 
 	boolean isAuthorative() {}
 
-	final Controller getController() {}
-
 	void vibrateController(float duration, float strength) {}
-
-	void move(int xTile, int yTile) {}
 
 	GameScreenMessage createRewardMessage(RandomVocRewards vocs, Random random, boolean skippable) {}
 
-	boolean applyInput(KeyCode code, boolean pressed, boolean player) {}
+	void move(int xTile, int yTile) {}
+
+	final Controller getController() {}
 
 	void applyInput(float delay, Object input) {}
 
+	boolean applyInput(KeyCode code, boolean pressed, boolean player) {}
+
 	void setHudButtons(BattleHUD hud) {}
 
-	boolean canUpgrade() {}
-
-	MockController setKeyPressed(KeyCode code, boolean pressed) {}
+	void createHud(int playerIndex) {}
 
 	void cancelMove() {}
 
 	void setCombat(boolean combat) {}
 
-	boolean sendClientInput(Object input, boolean local) {}
+	boolean canUpgrade() {}
 
 	void upgrade() {}
 
+	boolean sendClientInput(Object input, boolean local) {}
+
 	void clientInput(ButtonEvent event) {}
 
-	void createHud(int playerIndex) {}
+	MockController setKeyPressed(KeyCode code, boolean pressed) {}
 
 	BattleEntity getTarget() {}
 

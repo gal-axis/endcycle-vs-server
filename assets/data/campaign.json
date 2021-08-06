@@ -368,7 +368,7 @@
 		},
 		{
 			"name": "You lack credentials",
-			"description": "Flink isn't quite right with the Punks' new leader",
+			"description": "Not everyone welcomes the Punks' new leader",
 			"battle": { "id": 8 },
 			"dialogue": { "id": 60 },
 			"startAfterDialogue": false,
@@ -389,7 +389,7 @@
 		},
 		{
 			"name": "Rage against the Noise",
-			"description": "Brozu teaches punks the ropes",
+			"description": "Brozu teaches his first student",
 			"battle": { "id": 23 },
 			"dialogue": { "id": 64 },
 			"startAfterDialogue": false,
@@ -405,7 +405,8 @@
 			"scenesBefore": [
 				{
 					"battle": { "id": 26 },
-					"scripts": {
+					"script": {
+						"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 						"scripts": [
 							{
 								"script": {
@@ -420,7 +421,8 @@
 			"scenesAfter": [
 				{
 					"battle": { "id": 26 },
-					"scripts": {
+					"script": {
+						"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 						"scripts": [
 							{
 								"script": {
@@ -452,7 +454,8 @@
 			"scenesBefore": [
 				{
 					"battle": { "id": 24 },
-					"scripts": {
+					"script": {
+						"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 						"scripts": [
 							{
 								"script": {
@@ -465,7 +468,8 @@
 				},
 				{
 					"battle": { "id": 30 },
-					"scripts": {
+					"script": {
+						"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 						"scripts": [
 							{
 								"delay": 0.6,
@@ -485,7 +489,8 @@
 			"scenesAfter": [
 				{
 					"battle": { "id": 30 },
-					"scripts": {
+					"script": {
+						"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 						"scripts": [
 							{
 								"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "player", "relative": true, "moveType": "INSTANT_TILE", "y": -2 }
@@ -550,7 +555,8 @@
 			"scenesBefore": [
 				{
 					"battle": { "id": 50 },
-					"scripts": {
+					"script": {
+						"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 						"scripts": [
 							{
 								"script": {
@@ -565,7 +571,8 @@
 			"scenesAfter": [
 				{
 					"battle": { "id": 32 },
-					"scripts": {
+					"script": {
+						"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 						"scripts": [
 							{
 								"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "del" }
@@ -634,6 +641,52 @@
 		"campaigns": [
 			{
 				"campaign": { "id": 2 }
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.campaign.CampaignData",
+	"id": { "id": 6 },
+	"name": "Crimson Force",
+	"color": { "r": 0.43137255, "g": 0.015686275, "b": 0.015686275, "a": 1 },
+	"available": false,
+	"description": "Getting into Crimson Force is one thing but surviving the job is an entirely different beast alltogether.",
+	"victory": "Did we win?",
+	"character": { "id": 7 },
+	"nodes": [
+		{
+			"name": "Wake Up Noise Hunter",
+			"description": "Rozu finds himself surrounded by red beefy dudes",
+			"battle": { "id": 86 },
+			"dialogue": { "id": 669 },
+			"dialogueAfter": { "id": 670 },
+			"startAfterDialogue": false,
+			"leaveAlive": true,
+			"scenesAfter": [
+				{
+					"battle": { "id": 6 },
+					"script": {
+						"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+						"scripts": [
+							{
+								"script": {
+									"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+									"script": { "id": 193 }
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{ "name": "The Spark Of War", "description": "After the battle in the Araha Desert the Punks regroup..." }
+	],
+	"unlockCondition": {
+		"onslaughtScore": {},
+		"campaigns": [
+			{
+				"campaign": { "id": 5 }
 			}
 		]
 	}

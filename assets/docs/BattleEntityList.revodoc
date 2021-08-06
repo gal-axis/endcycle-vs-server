@@ -44,13 +44,13 @@ BattleEntityList(Array) {
 
 	BattleEntity[] toArray() {}
 
-	void addAll(Array arg0, int arg1, int arg2) {}
+	void addAll(BattleEntity[] arg0, int arg1, int arg2) {}
 
 	void addAll(Array arg0) {}
 
-	void addAll(BattleEntity[] arg0) {}
+	void addAll(Array arg0, int arg1, int arg2) {}
 
-	void addAll(BattleEntity[] arg0, int arg1, int arg2) {}
+	void addAll(BattleEntity[] arg0) {}
 
 	BattleEntity pop() {}
 
@@ -88,21 +88,21 @@ BattleEntityList(Array) {
 
 	int selectRankedIndex(Comparator arg0, int arg1) {}
 
-	boolean removeValue(BattleEntity arg0, boolean arg1) {}
-
 	BattleEntity removeIndex(int arg0) {}
-
-	boolean containsAny(Array arg0, boolean arg1) {}
 
 	boolean notEmpty() {}
 
-	BattleEntity selectRanked(Comparator arg0, int arg1) {}
+	void insertRange(int arg0, int arg1) {}
 
 	BattleEntity[] shrink() {}
 
-	void insertRange(int arg0, int arg1) {}
-
 	boolean equalsIdentity(Object arg0) {}
+
+	boolean containsAny(Array arg0, boolean arg1) {}
+
+	boolean removeValue(BattleEntity arg0, boolean arg1) {}
+
+	BattleEntity selectRanked(Comparator arg0, int arg1) {}
 
 	BattleEntity get(String arg0) {}
 
@@ -110,13 +110,23 @@ BattleEntityList(Array) {
 
 	Party getWinner() {}
 
+	BattleEntityList beFrom(Party arg0, BattleEntityList arg1) {}
+
 	BattleEntityList beFrom(Party arg0, boolean arg1) {}
 
-	BattleEntityList beFrom(Party arg0, BattleEntityList arg1) {}
+	BattleEntityList beFrom(Party arg0, boolean arg1, BattleEntityList arg2) {}
 
 	BattleEntityList beFrom(Party arg0) {}
 
-	BattleEntityList beFrom(Party arg0, boolean arg1, BattleEntityList arg2) {}
+	BattleEntityList beFloating(boolean arg0) {}
+
+	BattleEntityList beFloating(boolean arg0, BattleEntityList arg1) {}
+
+	BattleEntityList beNotAt(int arg0, int arg1) {}
+
+	BattleEntityList beNotAt(int arg0, int arg1, BattleEntityList arg2) {}
+
+	BattleEntityList isCrushed(BattleEntityList arg0) {}
 
 	BattleEntityList beNotFrom(Party arg0, BattleEntityList arg1) {}
 
@@ -126,20 +136,10 @@ BattleEntityList(Array) {
 
 	BattleEntityList beAtCol(int arg0, BattleEntityList arg1) {}
 
-	BattleEntityList beNotAt(int arg0, int arg1, BattleEntityList arg2) {}
-
-	BattleEntityList beNotAt(int arg0, int arg1) {}
-
 	boolean hasVitalAndAlive(Party arg0) {}
-
-	BattleEntityList beAtRow(int arg0, BattleEntityList arg1) {}
 
 	BattleEntityList beAtRow(int arg0) {}
 
-	BattleEntityList isCrushed(BattleEntityList arg0) {}
-
-	BattleEntityList beFloating(boolean arg0, BattleEntityList arg1) {}
-
-	BattleEntityList beFloating(boolean arg0) {}
+	BattleEntityList beAtRow(int arg0, BattleEntityList arg1) {}
 
 }

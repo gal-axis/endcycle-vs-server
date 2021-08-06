@@ -12,32 +12,20 @@ LobbyConfiguration(Object) {
 
 	void setName(String name) {}
 
-	void setBackground(ID background) {}
-
-	ID getBattle() {}
-
-	GameModeProvider getGameMode() {}
-
-	void setPassword(String password) {}
-
-	GameModeConfig getModeConfig() {}
-
-	void setGameMode(GameModeProvider modeType) {}
-
-	String getPassword() {}
+	GameMode getGameMode() {}
 
 	boolean isSpectators() {}
 
-	void setMusic(ID music) {}
+	String getPassword() {}
 
-	ID getMusic() {}
+	void setGameMode(GameMode modeType) {}
 
 	void setSpectators(boolean spectators) {}
 
 	void setModeConfig(GameModeConfig modeConfig) {}
 
-	void setBattle(ID battle) {}
+	GameModeConfig getModeConfig() {}
 
-	ID getBackground() {}
+	void setPassword(String password) {}
 
 }

@@ -1,6 +1,11 @@
-FlagModeConfig(GameModeConfig) {
+FlagModeConfig(BattleModeConfig) {
+
+	BattleModeProperty battle;
+	MusicModeProperty music;
 
 	new() {}
+
+	new(GameMode arg0) {}
 
 	boolean equals(Object arg0) {}
 
@@ -10,12 +15,14 @@ FlagModeConfig(GameModeConfig) {
 
 	List getProperties() {}
 
-	boolean startSlots(int allies, int enemies, int neutral) {}
+	Party[] getSlotParties() {}
 
-	List getSlots() {}
+	boolean supports(Array arg0) {}
+
+	BattleData createData(PlayerConfigurator arg0) {}
 
 	BattleMode createMode() {}
 
-	void configure(BattleData data) {}
+	void configure(Battle arg0, PlayerConfigurator arg1) {}
 
 }

@@ -1,5 +1,8 @@
 OnslaughtDifficultyModeProperty(GameModeProperty) {
 
+	final String name;
+	GameDifficulty value;
+
 	new() {}
 
 	boolean equals(Object o) {}
@@ -17,10 +20,6 @@ OnslaughtDifficultyModeProperty(GameModeProperty) {
 	double get(double object, double orElse) {}
 
 	void paint(GameDifficulty object, Painter parameters) {}
-
-	String getName() {}
-
-	GameDifficulty getValue() {}
 
 	void setValue(Object value) {}
 

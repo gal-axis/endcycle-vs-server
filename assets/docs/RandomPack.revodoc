@@ -6,40 +6,42 @@ final RandomPack {
 
 	new() {}
 
-	boolean equals(Object o) {}
+	boolean equals(Object arg0) {}
 
 	String toString() {}
 
 	int hashCode() {}
 
-	boolean add(VocEntry entry) {}
+	boolean add(VocEntry arg0) {}
 
-	VocSet get(int i) {}
+	VocSet get(int arg0) {}
 
 	int count() {}
 
-	int indexOf(VocSet rolePack) {}
+	int indexOf(VocSet arg0) {}
 
 	void clear() {}
 
-	void set(VocPack pack) {}
+	void set(VocPack arg0) {}
 
 	int capacity() {}
 
-	void swap(int set1, int set2, int index) {}
+	void swap(int arg0, int arg1, int arg2) {}
 
 	boolean isLocked() {}
 
 	boolean isValid() {}
 
-	Color getColor(int pack) {}
+	Color getColor(int arg0) {}
+
+	int getSetAmount(boolean arg0) {}
 
 	void fix() {}
 
-	int getSetAmount(boolean full) {}
-
 	String getName() {}
 
-	boolean setName(String name) {}
+	boolean contains(VocEntry arg0) {}
+
+	boolean setName(String arg0) {}
 
 }

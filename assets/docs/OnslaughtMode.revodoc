@@ -6,6 +6,7 @@ OnslaughtMode(ScoredBattleMode) : Consumer {
 	final StringCache newRecord;
 	final StringCache scoreDisplay;
 	final StringCache waveDisplay;
+	final GameDifficulty difficulty;
 	Consumer updateScore;
 	int currentWave;
 	boolean bestWave;
@@ -14,112 +15,120 @@ OnslaughtMode(ScoredBattleMode) : Consumer {
 	boolean bestScore;
 	boolean hideScore;
 
+	new(GameDifficulty difficulty, String seed) {}
+
 	boolean equals(Object arg0) {}
 
 	String toString() {}
 
 	int hashCode() {}
 
-	void handle(GameEvent arg0) {}
+	void handle(GameEvent event) {}
 
 	void dispose() {}
 
-	void update(float arg0) {}
+	void update(float delta) {}
 
 	boolean remove() {}
 
 	String getName() {}
 
-	void init(GameScreen arg0) {}
+	void init(GameScreen screen) {}
 
 	boolean isHidden() {}
 
-	void resize(boolean arg0, int arg1, int arg2) {}
+	void resize(boolean landscape, int width, int height) {}
 
-	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void show(GameScreen arg0) {}
+	void show(GameScreen screen) {}
 
-	void hide(GameScreen arg0) {}
-
-	float getComparisonKey() {}
+	void hide(GameScreen screen) {}
 
 	Origin getOrigin() {}
 
 	byte getLayer() {}
 
+	float getComparisonKey() {}
+
 	void start() {}
 
 	void stop() {}
 
-	String getDiscordMessage(Party arg0) {}
-
-	boolean isDespawn(BattleEntity arg0) {}
-
-	double adjustGaugeSpeed(BattleEntity arg0) {}
+	boolean showStart() {}
 
 	ScreenObject createStarter() {}
 
-	void loot(Looter arg0) {}
+	boolean isSpawn(BattleEntity entity) {}
+
+	boolean isDespawn(BattleEntity entity) {}
+
+	String getDiscordMessage(Party winner) {}
+
+	Looter createLooter() {}
+
+	BattlePlayer createPlayer(BattleEntity entity) {}
+
+	void addLoot(Looter looter) {}
+
+	void calculateTint(BattleEntity entity, CColor color) {}
 
 	boolean loot() {}
 
-	int adjustDamage(BattleEntity arg0, int arg1) {}
-
-	BattlePlayer createPlayer(BattleEntity arg0) {}
-
-	void calculateTint(BattleEntity arg0, CColor arg1) {}
-
-	boolean isSpawn(BattleEntity arg0) {}
-
-	boolean isRestart() {}
-
-	boolean showStart() {}
+	int adjustDamage(BattleEntity entity, int damage) {}
 
 	LocalizedMessage getLoseMessage() {}
 
-	String createTeamName(Party arg0) {}
+	double adjustGaugeSpeed(BattleEntity entity) {}
 
-	void sendServerUpdate(List arg0) {}
+	boolean isRestart() {}
 
-	void finish(Party arg0) {}
+	void initHUD(BattleHUD hud) {}
 
-	String getBattleName(String arg0) {}
+	String getBattleName(String name) {}
 
-	void initHUD(BattleHUD arg0) {}
+	void finish(Party winner) {}
 
-	void enemyHurt(BattleEntity arg0, int arg1) {}
+	void sendServerUpdate(List messages) {}
 
-	void addScore(BattleEntity arg0, int arg1) {}
+	String createTeamName(Party party) {}
 
-	void addScore(BattleEntity arg0, float arg1, float arg2, int arg3) {}
+	void updateScoreDisplay(int amount) {}
 
-	void addScore(float arg0, float arg1, int arg2) {}
+	void playerHeal(BattleEntity entity, int amount) {}
 
-	void setHideScore(boolean arg0) {}
+	void initScore() {}
 
-	void playerHeal(BattleEntity arg0, int arg1) {}
+	void setHideScore(boolean hideScore) {}
+
+	String getWaveString() {}
+
+	void enemyHurt(BattleEntity entity, int amount) {}
 
 	void saveScore() {}
 
 	void increaseWave() {}
 
-	String getWaveString() {}
+	void addScore(float x, float y, int score) {}
 
-	void updateScoreDisplay(int arg0) {}
+	void addScore(BattleEntity entity, int score) {}
 
-	void accept(BattleEntity arg0) {}
+	void addScore(BattleEntity entity, float x, float y, int score) {}
+
+	void entityDefeat(boolean playersDefeated, boolean enemyDefeated) {}
+
+	void accept(BattleEntity entity) {}
 
 	void win() {}
 
-	void lose() {}
-
 	void updateTimeCache() {}
 
-	BoundedFloat getNextTimer() {}
+	void lose() {}
+
+	void startNextWaveTimer() {}
 
 	float getWaveTimer() {}
 
-	void startNextWaveTimer() {}
+	BoundedFloat getNextTimer() {}
 
 }

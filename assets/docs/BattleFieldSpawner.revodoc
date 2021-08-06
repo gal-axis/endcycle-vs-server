@@ -10,13 +10,13 @@ BattleFieldSpawner(Object) {
 
 	static Map sortIntoParties(Array shells) {}
 
-	static Array getSpawnPoints(BattleData data, GameModeProvider mode, Party party) {}
-
 	static void fillDefault(BattleFieldData field, Array points, Party party, int entities) {}
 
 	static void fillDefault(BattleData data) {}
 
-	static void setSpawnPositions(BattleData data, BattleFieldData field, GameModeProvider mode, Array shells) {}
+	static Array getSpawnPoints(BattleData data, GameMode mode, Party party) {}
+
+	static void setSpawnPositions(BattleData data, BattleFieldData field, GameMode mode, Array shells) {}
 
 	static void setSpawnPositions(BattleFieldData field, Party party, Array shells, Array points) {}
 

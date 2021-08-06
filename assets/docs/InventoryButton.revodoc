@@ -31,23 +31,23 @@ InventoryButton(MenuButton) : MenuButtonAction, InventoryScreenProvider {
 
 	void draw(CustomSpriteBatch batch, float x, float y) {}
 
-	void hide(GameScreen screen) {}
-
 	void show(GameScreen screen) {}
 
-	byte getLayer() {}
-
-	float getComparisonKey() {}
+	void hide(GameScreen screen) {}
 
 	final Origin getOrigin() {}
 
-	final void removeObject() {}
+	float getComparisonKey() {}
+
+	byte getLayer() {}
+
+	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(SoundInfo sound) {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
-	final SoundContainer playSound(Sounds sound) {}
+	final void removeObject() {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
@@ -67,19 +67,19 @@ InventoryButton(MenuButton) : MenuButtonAction, InventoryScreenProvider {
 
 	float getY() {}
 
-	MenuElement setLayer(byte layer) {}
+	MenuElement getAbsoluteParent() {}
 
-	float getHeight() {}
+	MenuElement setLayer(byte layer) {}
 
 	float getWidth() {}
 
-	MenuElement setHeight(float height) {}
+	float getHeight() {}
 
-	boolean touch(TouchEvent trigger) {}
+	MenuElement setHeight(float height) {}
 
 	final void triggerAction(MenuElementActionType type) {}
 
-	MenuElement getAbsoluteParent() {}
+	boolean touch(TouchEvent trigger) {}
 
 	MenuElement setX(float x) {}
 
@@ -91,55 +91,55 @@ InventoryButton(MenuButton) : MenuButtonAction, InventoryScreenProvider {
 
 	float calcY() {}
 
+	boolean isTouching(float x, float y) {}
+
 	MenuElement setFocusable(boolean focusable) {}
 
 	MenuButtonAction getAction() {}
 
-	boolean isTouching(float x, float y) {}
-
-	MenuElement getAnchor() {}
-
-	int getAnchorVAlign() {}
-
-	MenuButtonTips getButtonTips() {}
-
-	int getVAlign() {}
-
-	boolean isFocusable() {}
-
-	float getAbsoluteY() {}
-
-	MenuElement setAnchorHAlign(int anchorHAlign) {}
-
-	boolean isEnabled() {}
-
 	MenuElement setFocused(boolean focused) {}
-
-	MenuElement setAnchorVAlign(int anchorVAlign) {}
-
-	MenuElement setHAlign(int hAlign) {}
-
-	float getAbsoluteX() {}
 
 	MenuElement setHidden(boolean hidden) {}
 
-	boolean isAbsoluteHidden() {}
+	boolean isFocusable() {}
 
-	MenuElement setAnchor(MenuElement anchor) {}
-
-	boolean canDrawCursor() {}
-
-	MenuElement setVAlign(int vAlign) {}
-
-	int getAnchorHAlign() {}
-
-	int getHAlign() {}
-
-	void addElements(Array elements, float x, float y) {}
+	MenuElement getAnchor() {}
 
 	void setCursor(Rectangle rectangle) {}
 
+	MenuButtonTips getButtonTips() {}
+
+	float getAbsoluteX() {}
+
+	MenuElement setHAlign(int hAlign) {}
+
 	boolean isFocused() {}
+
+	MenuElement setVAlign(int vAlign) {}
+
+	boolean isAbsoluteHidden() {}
+
+	int getAnchorHAlign() {}
+
+	int getAnchorVAlign() {}
+
+	int getHAlign() {}
+
+	MenuElement setAnchorHAlign(int anchorHAlign) {}
+
+	boolean canDrawCursor() {}
+
+	boolean isEnabled() {}
+
+	float getAbsoluteY() {}
+
+	MenuElement setAnchorVAlign(int anchorVAlign) {}
+
+	void addElements(Array elements, float x, float y) {}
+
+	int getVAlign() {}
+
+	MenuElement setAnchor(MenuElement anchor) {}
 
 	final void setMenuControllerSelection(MenuElement element) {}
 
@@ -151,9 +151,9 @@ InventoryButton(MenuButton) : MenuButtonAction, InventoryScreenProvider {
 
 	MenuButton setAction(MenuButtonAction action) {}
 
-	MenuButton setText(String text) {}
-
 	String getText() {}
+
+	MenuButton setText(String text) {}
 
 	Color getColor() {}
 
@@ -167,45 +167,53 @@ InventoryButton(MenuButton) : MenuButtonAction, InventoryScreenProvider {
 
 	void click() {}
 
+	boolean drawBG(float width, float height) {}
+
 	void drawBackground(CustomSpriteBatch batch, float x, float y, float width, float height) {}
 
 	void drawButton(CustomSpriteBatch batch, float x, float y, float width, float height) {}
 
 	MenuButton setFont(Fonts font) {}
 
-	MenuButton setSelectedColor(Color selectedColor) {}
-
-	BoundedFloat getTaint() {}
-
-	Color getSelectedColor() {}
-
-	BoundedFloat getTaintDisabled() {}
-
-	MenuButton setSingleClick(boolean singleClick) {}
-
-	MenuButton setDisabledColor(Color disabledColor) {}
-
-	void updateText() {}
-
-	MenuButtonClickedAnimation getAnimation() {}
+	boolean isSelected() {}
 
 	MenuElementShowAnim getShowAnimation() {}
 
-	Color getDisabledColor() {}
+	void updateText() {}
 
-	void drawOverlay(CustomSpriteBatch batch, float x, float y, float width, float height) {}
-
-	void drawDrawable(Painter painter) {}
-
-	Color getDefaultColor() {}
-
-	boolean isSingleClick() {}
-
-	MenuButton setDefaultColor(Color defaultColor) {}
+	void drawText(Painter painter, String text) {}
 
 	MenuThemeDrawable getBackground() {}
 
-	boolean isSelected() {}
+	void drawDrawable(Painter painter) {}
+
+	void drawOverlay(CustomSpriteBatch batch, float x, float y, float width, float height) {}
+
+	Color getSelectedColor() {}
+
+	MenuButton setDisabledColor(Color disabledColor) {}
+
+	BoundedFloat getTaintDisabled() {}
+
+	MenuButton setSelectedColor(Color selectedColor) {}
+
+	MenuButton setDefaultColor(Color defaultColor) {}
+
+	Color getDefaultColor() {}
+
+	MenuButtonClickedAnimation getAnimation() {}
+
+	boolean isSingleClick() {}
+
+	boolean isFitDrawable() {}
+
+	Color getDisabledColor() {}
+
+	MenuButton setSingleClick(boolean singleClick) {}
+
+	MenuButton setFitDrawable(boolean fitDrawable) {}
+
+	BoundedFloat getTaint() {}
 
 	MenuButton setDisableBackground(boolean disableBackground) {}
 

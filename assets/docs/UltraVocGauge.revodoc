@@ -7,15 +7,15 @@ UltraVocGauge(VocGauge) {
 	double hurtSelfFill;
 	double hurtOtherFill;
 
-	new(BattleEntity entity) {}
+	new(BattleEntity arg0) {}
 
-	boolean equals(Object o) {}
+	boolean equals(Object arg0) {}
 
 	String toString() {}
 
 	int hashCode() {}
 
-	void update(double delta) {}
+	void update(double arg0) {}
 
 	void fill() {}
 
@@ -23,41 +23,41 @@ UltraVocGauge(VocGauge) {
 
 	boolean empty() {}
 
-	BattleEntity getEntity() {}
-
 	double getProgress() {}
 
-	void increase(double progress) {}
+	BattleEntity getEntity() {}
 
-	void hit(BattleEntity entity, HitProperty hit, int damage) {}
-
-	boolean decrease(double amount) {}
-
-	void idle(double delta) {}
+	void hit(BattleEntity arg0, HitProperty arg1, int arg2) {}
 
 	void crushed() {}
 
-	void hurt(int amount) {}
+	void increase(double arg0) {}
 
-	void setSpeed(double speed) {}
+	void hurt(int arg0) {}
+
+	void idle(double arg0) {}
+
+	boolean decrease(double arg0) {}
 
 	double getSpeed() {}
 
+	void setSpeed(double arg0) {}
+
 	boolean isFull() {}
 
-	void setProgress(double progress) {}
-
-	void increaseSpeed(double speed) {}
+	void setProgress(double arg0) {}
 
 	double getFillSpeed() {}
 
 	double getDuration() {}
 
+	void setDuration(double arg0) {}
+
 	float getFillTime() {}
 
-	void setDuration(double duration) {}
+	void increaseSpeed(double arg0) {}
 
-	void set(BattleEntityUltraData ultra) {}
+	void set(BattleEntityUltraData arg0) {}
 
 	boolean exists() {}
 

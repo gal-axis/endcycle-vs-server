@@ -1,4 +1,4 @@
-final JumperJetEntity(SpawnedEntity) : BannedPanelObject {
+final JumperJetEntity(SpawnedEntity) : Danger {
 
 	Origin origin;
 	GameScreen screen;
@@ -93,11 +93,11 @@ final JumperJetEntity(SpawnedEntity) : BannedPanelObject {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
 	void show(GameScreen screen) {}
 
 	void hide(GameScreen screen) {}
-
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	final Origin getOrigin() {}
 
@@ -105,13 +105,13 @@ final JumperJetEntity(SpawnedEntity) : BannedPanelObject {
 
 	byte getLayer() {}
 
-	final void removeObject() {}
-
-	SoundContainer playSound(float x, float y, SoundInfo sound) {}
-
 	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(SoundInfo sound) {}
+
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	final void removeObject() {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
@@ -119,55 +119,55 @@ final JumperJetEntity(SpawnedEntity) : BannedPanelObject {
 
 	void resetState() {}
 
+	CColor calculateTint() {}
+
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scaleX, float scaleY) {}
 
 	void draw(CustomSpriteBatch batch) {}
 
-	CColor calculateTint() {}
+	final boolean isAnimationFinished() {}
 
-	final float getHeight() {}
+	final void setAnimationDuration(double duration) {}
 
 	final float getWidth() {}
 
-	final void resetAnimation() {}
+	final float getHeight() {}
 
 	final float getYScale() {}
-
-	final boolean isFlipY() {}
-
-	final void resetTint() {}
-
-	final Patchwork getPatchwork() {}
 
 	final boolean hasState(PatchworkStateId name) {}
 
 	final boolean isFlipX() {}
 
+	final void resetAnimation() {}
+
+	final void resetTint() {}
+
 	final boolean inState(PatchworkStateId name) {}
 
-	final float getXScale() {}
+	final boolean isFlipY() {}
+
+	void updateParticles(float delta) {}
 
 	Patchwork setPatchwork(Patchwork patchwork) {}
 
 	final Patchwork setPatchwork(ID id) {}
 
-	void updateParticles(float delta) {}
-
-	boolean setState(PatchworkStateId name) {}
+	final float getXScale() {}
 
 	void updateGraphics(float delta) {}
 
-	final void setAnimationDuration(double duration) {}
+	boolean setState(PatchworkStateId name) {}
 
-	final boolean isAnimationFinished() {}
+	final Patchwork getPatchwork() {}
 
 	List getShadowDrawables() {}
 
-	float getShadowAlpha() {}
+	float getShadowX() {}
 
 	float getShadowY() {}
 
-	float getShadowX() {}
+	float getShadowAlpha() {}
 
 	float getShadowZ() {}
 
@@ -187,35 +187,21 @@ final JumperJetEntity(SpawnedEntity) : BannedPanelObject {
 
 	void setSize(int xSize, int ySize) {}
 
+	void removeAction() {}
+
+	BattlePlayer createPlayer() {}
+
 	void startDeath(BattleEntity killer) {}
+
+	float getPanelX(BattleField field, int x) {}
 
 	void despawn() {}
 
 	void spawn() {}
 
-	BattlePlayer createPlayer() {}
-
-	void removeAction() {}
-
-	void setAction(BattleEntityAction action) {}
-
-	final boolean isAuthorative() {}
-
-	final void changeData(BattleEntityData info, CustomCache customizations) {}
-
-	void crush(double amount, int crushStrength) {}
-
-	void occupyPanels() {}
-
-	boolean attack(AttackPlan attackPlan) {}
-
-	boolean attack(VocEntry voc, KeyCode code) {}
-
 	void displayAttackName(String name, Color color) {}
 
 	void displayHealthText(int amount) {}
-
-	final BattleEntity getAbsoluteParent() {}
 
 	boolean isAccessibleField(int x, int y, boolean checkFree, boolean checkParty) {}
 
@@ -223,33 +209,61 @@ final JumperJetEntity(SpawnedEntity) : BannedPanelObject {
 
 	boolean isAccessibleField(BattleField field, int x, int y, boolean checkFree, boolean checkParty) {}
 
-	boolean isAccessibleField(int x, int y, boolean free) {}
-
 	final boolean isAccessibleField(int x, int y) {}
 
-	final void respawn(int x, int y) {}
+	boolean isAccessibleField(int x, int y, boolean free) {}
 
-	void drawHealth(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	final BattleEntity getAbsoluteParent() {}
 
-	boolean canReachPanel(int x, int y) {}
+	void setAction(BattleEntityAction action) {}
 
-	final BattleFieldBorder getFieldBorder() {}
-
-	void changePalette(CustomCache palette) {}
-
-	void stopAttack() {}
-
-	void block(OwnedHitProperty hit) {}
+	void freePanels() {}
 
 	void setPanelPosition(int x, int y) {}
 
-	AttackPlan createPlan(VocEntry voc, KeyCode code) {}
+	void setTurned(boolean turned) {}
+
+	final BattleEntityAction setActionComplex(int level, boolean ultra) {}
+
+	void crush(double amount, int crushStrength) {}
+
+	void changePalette(CustomCache palette) {}
+
+	void occupyPanels() {}
+
+	final void changeData(BattleEntityData info, CustomCache customizations) {}
 
 	boolean occupies(int x, int y) {}
 
 	boolean occupies(BattleEntity entity) {}
 
+	final void setActionData(BattleEntityActionData data) {}
+
+	boolean attack(VocEntry voc, KeyCode code) {}
+
+	boolean attack(AttackPlan attackPlan) {}
+
+	AttackPlan createPlan(VocEntry voc, KeyCode code) {}
+
+	void hitApply(OwnedHitProperty hit) {}
+
+	void block(OwnedHitProperty hit) {}
+
+	void hurt(BattleEntity origin, int amount) {}
+
+	void hurt(BattleEntity origin, int amount, boolean display) {}
+
+	void stopAttack() {}
+
+	void onInflict(BattleEntity entity, OwnedHitProperty property) {}
+
 	void makeHitParticle(HitType type, Color color) {}
+
+	void heal(BattleEntity origin, int amount, boolean display) {}
+
+	void heal(BattleEntity origin, int amount) {}
+
+	boolean inflict(OwnedHitProperty hit) {}
 
 	StringDisplay displayText(String attack, Color color) {}
 
@@ -257,45 +271,35 @@ final JumperJetEntity(SpawnedEntity) : BannedPanelObject {
 
 	void displayText(StringDisplay stringDisplay) {}
 
-	boolean canInflict(HitProperty hitProperty) {}
-
-	void hitApply(OwnedHitProperty hit) {}
-
-	void setTurned(boolean turned) {}
+	void semiBlock(OwnedHitProperty hit) {}
 
 	final boolean isBattleClient() {}
 
-	void semiBlock(OwnedHitProperty hit) {}
-
-	void onInflict(BattleEntity entity, OwnedHitProperty property) {}
-
-	boolean inflict(OwnedHitProperty hit) {}
-
-	boolean isAttacking() {}
-
 	Ailment inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
-
-	void hurt(BattleEntity origin, int amount) {}
-
-	void hurt(BattleEntity origin, int amount, boolean display) {}
-
-	void freePanels() {}
 
 	void onHit(BattleEntity entity, HitProperty hit, int damage) {}
 
-	final void setActionData(BattleEntityActionData data) {}
+	boolean canInflict(HitProperty hitProperty) {}
 
-	final BattleEntityAction setActionComplex(int level) {}
+	boolean isAttacking() {}
 
-	void heal(BattleEntity origin, int amount) {}
+	void kill(BattleEntity killer) {}
 
-	void heal(BattleEntity origin, int amount, boolean display) {}
+	boolean canReachPanel(int x, int y) {}
+
+	void drawHealth(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	final void startAnimation(ScreenObject animation) {}
 
-	boolean isMoveable() {}
-
 	void refreshPanel() {}
+
+	final void freePanel(int x, int y) {}
+
+	final GameObject getAttach() {}
+
+	final void respawn(int x, int y) {}
+
+	float getPanelY(BattleField field, int y) {}
 
 	void updateGauge(double delta) {}
 
@@ -303,43 +307,39 @@ final JumperJetEntity(SpawnedEntity) : BannedPanelObject {
 
 	Vector2 getPanelOffset() {}
 
-	float getPanelX(BattleField field, int x) {}
-
-	final void freePanel(int x, int y) {}
-
-	final GameObject getAttach() {}
-
-	float getPanelY(BattleField field, int y) {}
-
-	final void occupyPanel(int x, int y) {}
-
-	boolean isMoving() {}
-
-	void die(BattleEntity killer) {}
-
-	void move(float delta) {}
-
 	Mover move(Mover mover) {}
-
-	Mover move(MoveType type, int xTile, int yTile, float speed, boolean rollback) {}
 
 	Mover move(MoveType type, int xTile, int yTile, float speed) {}
 
+	Mover move(MoveType type, int xTile, int yTile, float speed, boolean rollback) {}
+
+	void move(float delta) {}
+
 	Mover move(Mover mover, boolean rollback) {}
 
-	void kill(BattleEntity killer) {}
+	boolean isMoving() {}
+
+	boolean isMoveable() {}
+
+	void die(BattleEntity killer) {}
+
+	final void occupyPanel(int x, int y) {}
 
 	void updateAttack(float delta) {}
+
+	final BattleFieldBorder getFieldBorder() {}
+
+	final boolean isAuthorative() {}
 
 	void finishFade() {}
 
 	boolean isSpawning() {}
 
-	boolean isBannedPanel(BattleEntity entity, int x, int y) {}
+	float getDangerIgnore(int level) {}
 
-	boolean isBannedPanelRemove(BattleEntity entity) {}
+	boolean isDangerous(BattleEntity entity, int x, int y) {}
 
-	float getBannedPanelPriority(BattleEntity entity) {}
+	float getDangerPriority(BattleEntity entity) {}
 
 	void move(int y) {}
 

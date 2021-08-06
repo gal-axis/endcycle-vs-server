@@ -1,5 +1,8 @@
 SharedLivesModeProperty(GameModeProperty) {
 
+	final String name;
+	Boolean value;
+
 	new() {}
 
 	boolean equals(Object o) {}
@@ -17,10 +20,6 @@ SharedLivesModeProperty(GameModeProperty) {
 	double get(double object, double orElse) {}
 
 	void paint(Boolean object, Painter parameters) {}
-
-	String getName() {}
-
-	Boolean getValue() {}
 
 	void setValue(Object value) {}
 

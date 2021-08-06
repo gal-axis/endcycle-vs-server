@@ -1,4 +1,4 @@
-OnlineSettingsMenu {
+ZoneMenuScreen(MenuScreen) {
 
 	final ButtonTipChecker buttonTips;
 	GameScreenInfo info;
@@ -15,8 +15,10 @@ OnlineSettingsMenu {
 	MenuElementController elementController;
 	MenuElementGroup objectGroup;
 	FadeType fadeType;
+	AdventureZone zone;
+	BackgroundObject background;
 
-	new() {}
+	new(String name) {}
 
 	boolean equals(Object arg0) {}
 
@@ -36,77 +38,77 @@ OnlineSettingsMenu {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void clearObjects() {}
-
-	void changeTo(GameScreen screen, boolean init) {}
-
-	void render(float delta) {}
-
-	boolean isCurrentScreen() {}
-
-	void toPreviousScreen() {}
-
-	void toPreviousScreen(FadeType type) {}
-
-	void updateTimer(float delta) {}
-
-	ScreenObject addObject(ScreenObject object) {}
-
-	boolean removeObject(ScreenObject object) {}
-
-	void show() {}
-
-	void changeFrom(GameScreen screen, boolean init) {}
-
-	void hide() {}
-
-	void shakeVibrate(float x, float y, float duration) {}
-
-	void dispose() {}
-
-	void shake(float x, float y, float duration) {}
-
-	Array getObjects() {}
-
-	void resetShake() {}
-
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	void draw(CustomSpriteBatch batch) {}
-
-	void drawButtonTips(CustomSpriteBatch batch, float x, float y) {}
-
-	void updateObjects(float delta) {}
-
-	boolean isShaking() {}
-
-	void updateShake(float delta) {}
-
 	void setScreen(GameScreen screen, FadeType fade) {}
 
 	void setScreen(GameScreen screen) {}
 
 	void setScreen(GameScreen screen, FadeType fade, boolean changesBefore) {}
 
-	void addRenderProcessor(RenderProcessor renderProcessor) {}
+	void updateShake(float delta) {}
+
+	void updateObjects(float delta) {}
+
+	void toPreviousScreen() {}
+
+	void toPreviousScreen(FadeType type) {}
+
+	boolean removeObject(ScreenObject object) {}
+
+	void changeFrom(GameScreen screen, boolean init) {}
+
+	void render(float delta) {}
+
+	void changeTo(GameScreen screen, boolean init) {}
+
+	void resetShake() {}
+
+	void shakeVibrate(float x, float y, float duration) {}
+
+	ScreenObject addObject(ScreenObject object) {}
+
+	void updateTimer(float delta) {}
+
+	void show() {}
+
+	void shake(float x, float y, float duration) {}
+
+	boolean isShaking() {}
+
+	void draw(CustomSpriteBatch batch) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void clearObjects() {}
+
+	Array getObjects() {}
+
+	void drawButtonTips(CustomSpriteBatch batch, float x, float y) {}
+
+	boolean isCurrentScreen() {}
 
 	void removeRenderProcessor(RenderProcessor renderProcessor) {}
 
+	void setPreviousScreen(GameScreen previousScreen) {}
+
 	Array getRenderProcessors() {}
 
-	void setPreviousScreen(GameScreen previousScreen) {}
+	void addRenderProcessor(RenderProcessor renderProcessor) {}
 
 	GameScreen getPreviousScreen() {}
 
-	void resetTimer() {}
-
 	void addScript(Script script, float delay) {}
-
-	void pause() {}
 
 	boolean isLoading() {}
 
 	Object[] getTextArguments() {}
+
+	void hide() {}
+
+	void pause() {}
+
+	void resetTimer() {}
+
+	void dispose() {}
 
 	void createMenuElements() {}
 
@@ -116,8 +118,12 @@ OnlineSettingsMenu {
 
 	void disableInput() {}
 
+	void centerElements() {}
+
 	void enableInput() {}
 
-	void centerElements() {}
+	void changeZone() {}
+
+	AdventureZone getRandomZone() {}
 
 }

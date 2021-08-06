@@ -8,7 +8,7 @@ BattleCamera(Object) : ScreenObject {
 	boolean locked;
 	Vector2 focus;
 
-	new(Battle battle) {}
+	new(Battle arg0) {}
 
 	boolean equals(Object arg0) {}
 
@@ -18,33 +18,33 @@ BattleCamera(Object) : ScreenObject {
 
 	void dispose() {}
 
-	void update(float delta) {}
+	void update(float arg0) {}
 
 	boolean remove() {}
 
 	String getName() {}
 
-	void init(GameScreen screen) {}
+	void init(GameScreen arg0) {}
 
 	boolean isHidden() {}
 
-	void resize(boolean landscape, int width, int height) {}
+	void resize(boolean arg0, int arg1, int arg2) {}
 
-	void show(GameScreen screen) {}
+	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
 
-	void hide(GameScreen screen) {}
+	void hide(GameScreen arg0) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	float getComparisonKey() {}
+	void show(GameScreen arg0) {}
 
 	Origin getOrigin() {}
+
+	float getComparisonKey() {}
 
 	byte getLayer() {}
 
 	void reset() {}
 
-	float getOffset(int size) {}
+	float getOffset(int arg0) {}
 
 	void sync() {}
 
@@ -54,24 +54,24 @@ BattleCamera(Object) : ScreenObject {
 
 	BattleEntity getCameraFocus() {}
 
-	void setPosition(float x, float y) {}
+	void setPosition(float arg0, float arg1) {}
 
-	void moveX(float x) {}
+	void moveX(float arg0) {}
 
-	float getFocusY() {}
+	void moveY(float arg0) {}
+
+	float getOffsetX() {}
 
 	boolean isFocusing() {}
-
-	float getFocusX() {}
 
 	float getXReal() {}
 
 	float getYReal() {}
 
-	void limitCamera(BattleEntity focused) {}
+	float getFocusX() {}
 
-	void moveY(float y) {}
+	void limitCamera(BattleEntity arg0) {}
 
-	float getOffsetX() {}
+	float getFocusY() {}
 
 }

@@ -1,11 +1,11 @@
 GameModes(Object) {
 
-	static final GameModeProvider Singles;
-	static final GameModeProvider Doubles;
-	static final GameModeProvider Onslaught;
-	static final GameModeProvider Rogue;
-	static final GameModeProvider Deathmatch;
-	static final GameModeProvider Flag;
+	static final GameMode Singles;
+	static final GameMode Doubles;
+	static final GameMode Onslaught;
+	static final GameMode Rogue;
+	static final GameMode Deathmatch;
+	static final GameMode Flag;
 	static final List providers;
 
 	new() {}
@@ -18,16 +18,16 @@ GameModes(Object) {
 
 	String getName() {}
 
-	String getValue(GameModeProvider object) {}
+	String getValue(GameMode object) {}
 
-	GameModeProvider find(Object currentValue) {}
+	GameMode find(Object currentValue) {}
 
 	List getValues() {}
 
-	static void add(GameModeProvider provider) {}
+	static void add(GameMode provider) {}
 
-	static void remove(GameModeProvider provider) {}
+	static void remove(GameMode provider) {}
 
-	static GameModeProvider get(Object id) {}
+	static GameMode get(Object id) {}
 
 }

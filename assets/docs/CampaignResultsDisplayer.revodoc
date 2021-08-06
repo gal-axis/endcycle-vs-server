@@ -26,25 +26,25 @@ CampaignResultsDisplayer(GameScreenObject) {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
 	void show(GameScreen screen) {}
 
 	void hide(GameScreen screen) {}
-
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	float getComparisonKey() {}
 
 	final Origin getOrigin() {}
 
 	byte getLayer() {}
 
-	final void removeObject() {}
-
-	SoundContainer playSound(SoundInfo sound) {}
+	float getComparisonKey() {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	final SoundContainer playSound(Sounds sound) {}
+
+	SoundContainer playSound(SoundInfo sound) {}
+
+	final void removeObject() {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 

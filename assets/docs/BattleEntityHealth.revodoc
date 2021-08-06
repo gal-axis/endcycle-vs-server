@@ -36,30 +36,30 @@ BattleEntityHealth(Object) {
 
 	float getHealthRate() {}
 
-	void setHealth(int health) {}
+	void heal(int amount, boolean sync) {}
 
-	void syncDisplay() {}
-
-	void setMaxHealth(int health, boolean fillHealth) {}
+	void heal(int amount) {}
 
 	void hurt(int amount, boolean sync) {}
 
 	void hurt(int amount) {}
 
-	void heal(int amount, boolean sync) {}
+	void setMaxHealth(int health, boolean fillHealth) {}
 
-	void heal(int amount) {}
+	void setHealth(int health) {}
+
+	void syncDisplay() {}
 
 	float getHealthDisplayRate() {}
+
+	void drawAmount(CustomSpriteBatch batch, float xPos, float yPos) {}
+
+	void drawCrush(CustomSpriteBatch batch, float x, float y) {}
 
 	void setHealthDisplay(int display) {}
 
 	void changeHealth(int amount, boolean sync) {}
 
 	boolean isSynced() {}
-
-	void drawCrush(CustomSpriteBatch batch, float x, float y) {}
-
-	void drawAmount(CustomSpriteBatch batch, float xPos, float yPos) {}
 
 }

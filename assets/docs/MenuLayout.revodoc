@@ -16,58 +16,58 @@ final MenuLayout(Object) {
 
 	MenuLayout right() {}
 
+	MenuLayout center() {}
+
+	MenuLayout at(float x, float y) {}
+
+	MenuLayout leftOf(MenuElement other, float distance) {}
+
+	MenuLayout topOf(MenuElement other, float distance) {}
+
+	MenuLayout rightOf(MenuElement other, float distance) {}
+
+	static MenuLayout layout(MenuElement element) {}
+
+	MenuLayout y(float y) {}
+
+	MenuLayout width(MenuElement other, float percent) {}
+
+	MenuLayout width(MenuElement other) {}
+
+	MenuLayout width(float width) {}
+
+	MenuLayout height(MenuElement other, float percent) {}
+
 	MenuLayout height(float height) {}
 
 	MenuLayout height(MenuElement other) {}
 
-	MenuLayout height(MenuElement other, float percent) {}
-
-	MenuLayout y(float y) {}
-
-	MenuLayout width(MenuElement other) {}
-
-	MenuLayout width(MenuElement other, float percent) {}
-
-	MenuLayout width(float width) {}
-
-	static MenuLayout layout(MenuElement element) {}
-
-	MenuLayout topOf(MenuElement other, float distance) {}
-
-	MenuLayout leftOf(MenuElement other, float distance) {}
-
-	MenuLayout rightOf(MenuElement other, float distance) {}
-
-	MenuLayout at(float x, float y) {}
-
-	MenuLayout center() {}
+	MenuLayout moveX(float x) {}
 
 	MenuLayout moveY(float y) {}
-
-	MenuLayout moveX(float x) {}
 
 	MenuLayout leftInner() {}
 
 	MenuLayout bottomOf(MenuElement other, float distance) {}
 
-	MenuLayout topLine(MenuElement other, float distance) {}
-
-	MenuLayout bottom() {}
-
-	MenuLayout top() {}
-
-	MenuLayout resetAnchor() {}
-
 	MenuLayout topInner() {}
 
 	MenuLayout rightInner() {}
 
-	MenuLayout vertically(MenuElement other) {}
+	MenuLayout resetAnchor() {}
 
-	MenuLayout bottomInner() {}
+	MenuLayout top() {}
+
+	MenuLayout bottom() {}
 
 	MenuLayout horizontally(MenuElement other) {}
 
+	MenuLayout vertically(MenuElement other) {}
+
 	MenuLayout bottomLine(MenuElement other, float distance) {}
+
+	MenuLayout bottomInner() {}
+
+	MenuLayout topLine(MenuElement other, float distance) {}
 
 }

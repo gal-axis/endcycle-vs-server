@@ -2,7 +2,7 @@ VocPlanManager(Object) {
 
 	VocTag[] usingTags;
 
-	new(VocUseManager useManager, BattleEntity entity, Random random, int level) {}
+	new(VocUseManager useManager, BattleEntity entity, Random random, int level, boolean ultra) {}
 
 	boolean equals(Object arg0) {}
 
@@ -12,12 +12,12 @@ VocPlanManager(Object) {
 
 	void update(BattleEntity target, float delta) {}
 
-	float getVocTimer() {}
+	boolean isFakeOut() {}
 
 	boolean switchRoles() {}
 
-	void findNext(BattleEntity target) {}
+	float getVocTimer() {}
 
-	boolean isFakeOut() {}
+	void findNext(BattleEntity target) {}
 
 }

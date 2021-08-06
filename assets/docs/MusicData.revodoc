@@ -1,4 +1,4 @@
-final MusicData(Moddable) : DataName {
+final MusicData(Moddable) : Named, DataName {
 
 	ID id;
 	String filepath;
@@ -20,5 +20,7 @@ final MusicData(Moddable) : DataName {
 	final ID getId() {}
 
 	String getDataName() {}
+
+	String getName() {}
 
 }

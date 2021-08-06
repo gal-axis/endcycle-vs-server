@@ -1,4 +1,4 @@
-ThrownObject(GameObject) : ShadowEntity, BannedPanelObject {
+ThrownObject(GameObject) : ShadowEntity, Danger {
 
 	Origin origin;
 	GameScreen screen;
@@ -58,17 +58,17 @@ ThrownObject(GameObject) : ShadowEntity, BannedPanelObject {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
 	void show(GameScreen screen) {}
 
 	void hide(GameScreen screen) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	float getComparisonKey() {}
-
 	final Origin getOrigin() {}
 
 	byte getLayer() {}
+
+	float getComparisonKey() {}
 
 	final void removeObject() {}
 
@@ -84,73 +84,73 @@ ThrownObject(GameObject) : ShadowEntity, BannedPanelObject {
 
 	void resetState() {}
 
-	void draw(CustomSpriteBatch batch) {}
-
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scaleX, float scaleY) {}
-
-	CColor calculateTint() {}
-
 	final float getHeight() {}
 
 	final float getWidth() {}
 
-	final Patchwork setPatchwork(ID id) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scaleX, float scaleY) {}
 
-	Patchwork setPatchwork(Patchwork patchwork) {}
-
-	final void resetAnimation() {}
-
-	final boolean hasState(PatchworkStateId name) {}
-
-	final float getXScale() {}
-
-	final boolean inState(PatchworkStateId name) {}
-
-	final void resetTint() {}
-
-	final Patchwork getPatchwork() {}
-
-	boolean setState(PatchworkStateId state) {}
-
-	final boolean isFlipX() {}
-
-	final float getYScale() {}
-
-	void updateGraphics(float delta) {}
-
-	void updateParticles(float delta) {}
-
-	final boolean isFlipY() {}
+	void draw(CustomSpriteBatch batch) {}
 
 	final void setAnimationDuration(double duration) {}
 
 	final boolean isAnimationFinished() {}
 
-	boolean isBannedPanel(BattleEntity entity, int x, int y) {}
+	CColor calculateTint() {}
 
-	float getBannedPanelPriority(BattleEntity entity) {}
+	boolean setState(PatchworkStateId state) {}
 
-	boolean isBannedPanelRemove(BattleEntity entity) {}
+	final boolean hasState(PatchworkStateId name) {}
+
+	final void resetTint() {}
+
+	final Patchwork setPatchwork(ID id) {}
+
+	Patchwork setPatchwork(Patchwork patchwork) {}
+
+	void updateGraphics(float delta) {}
+
+	final boolean isFlipY() {}
+
+	final Patchwork getPatchwork() {}
+
+	final boolean inState(PatchworkStateId name) {}
+
+	final float getXScale() {}
+
+	final void resetAnimation() {}
+
+	final float getYScale() {}
+
+	final boolean isFlipX() {}
+
+	void updateParticles(float delta) {}
+
+	float getDangerIgnore(int level) {}
+
+	boolean isDangerous(BattleEntity entity, int x, int y) {}
+
+	float getDangerPriority(BattleEntity entity) {}
 
 	List getShadowDrawables() {}
 
-	float getShadowX() {}
-
 	float getShadowZ() {}
 
-	float getShadowAlpha() {}
-
 	float getShadowY() {}
+
+	float getShadowX() {}
+
+	float getShadowAlpha() {}
 
 	void setupParticles(List particles, float speedX, float speedY, float timer) {}
 
 	float getParticleTimer() {}
 
+	void setLandActions(FloatTimerAction action) {}
+
 	void updatePos() {}
 
 	SoundInfo getSound() {}
-
-	void setLandActions(FloatTimerAction action) {}
 
 	void setSound(SoundInfo sound) {}
 

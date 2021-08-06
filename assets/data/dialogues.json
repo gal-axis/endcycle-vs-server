@@ -486,6 +486,10 @@
 			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.3.4" }
 		},
 		{
+			"entity": "fin",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.3.12" }
+		},
+		{
 			"entity": "player",
 			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.3.5" }
 		},
@@ -557,7 +561,12 @@
 		},
 		{
 			"entity": "fin",
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.4.6" }
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.4.6" },
+			"options": { "duration": 0.6 }
+		},
+		{
+			"entity": "fin",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.4.11" }
 		}
 	],
 	"end": {
@@ -758,6 +767,10 @@
 		{
 			"entity": "player",
 			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.5.5" }
+		},
+		{
+			"entity": "player",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.5.9" }
 		}
 	],
 	"end": {
@@ -1025,6 +1038,10 @@
 		{
 			"entity": "spark",
 			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.5.5" }
+		},
+		{
+			"entity": "spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.5.9" }
 		}
 	],
 	"end": {
@@ -3205,7 +3222,17 @@
 	"lines": [
 		{
 			"entity": "cress",
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Punk.116" }
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "OK you've had your fun but now it's time to-" },
+			"options": { "emotup": "ANNOYED" }
+		},
+		{
+			"entity": "cress",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Punk.116" },
+			"options": {
+				"voice": {},
+				"emotup": "SURPRISE_MARK",
+				"charTimer": 60
+			}
 		}
 	],
 	"start": {
@@ -4039,7 +4066,8 @@
 			"entity": "shopkeeper",
 			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Adventure.Shop.Noise.1" },
 			"options": {
-				"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Adventure.Shopkeeper" }
+				"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Adventure.Shopkeeper" },
+				"emotup": "F"
 			}
 		}
 	]
@@ -11376,7 +11404,7 @@
 		},
 		{
 			"entity": "puppy",
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "That's actually not that much big sis." }
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "That's actually not that long big sis." }
 		},
 		{
 			"entity": "cress",
@@ -11410,15 +11438,7 @@
 		},
 		{
 			"entity": "cress",
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Guess we're not that famous yet. At least not with the noise tribe." }
-		},
-		{
-			"entity": "player",
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Can... can I leave? I was heading... somewhere..." }
-		},
-		{
-			"entity": "cress",
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "You've been exiled werent you." }
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Guess we're not that famous yet. At least not with the noise hunters.\nThought an exiled one might know us though." }
 		},
 		{
 			"entity": "player",
@@ -11480,5 +11500,47 @@
 		}
 	],
 	"end": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 673 },
+	"name": "Crimson Force",
+	"lines": [
+		{
+			"entity": "cress",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "It's been 24 hours... I'm sorry everyone. Puppy is gone and the rest got captured..." }
+		},
+		{
+			"entity": "punks",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "..." },
+			"options": { "emotup": "SAD", "charTimer": 20 }
+		},
+		{
+			"entity": "cress",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "How many Punks are left?" }
+		},
+		{
+			"entity": "flink",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "20" }
+		},
+		{
+			"entity": "cress",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Darn... " }
+		},
+		{
+			"entity": "flink",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Cress... I think we should head home" },
+			"options": {
+				"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "flink" },
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityScript",
+					"shell": {
+						"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
+						"configuration": {}
+					}
+				}
+			}
+		}
+	]
 }
 ]

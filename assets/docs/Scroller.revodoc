@@ -14,25 +14,25 @@ final Scroller(Object) : InputListener, DragListener {
 
 	void startDrag(float x, float y) {}
 
-	boolean priority() {}
+	void controllerConnected(Controller controller) {}
 
-	boolean triggerButton(ButtonEvent event) {}
+	void controllerDisconnected(Controller controller) {}
 
 	boolean triggerType(int character) {}
 
-	boolean keyTyped(char character) {}
+	int getInputPriority() {}
+
+	boolean triggerTouch(TouchEvent event) {}
+
+	boolean triggerButton(ButtonEvent event) {}
 
 	boolean addButtonTips(ButtonTipList tips) {}
 
 	boolean keyDown(int keycode) {}
 
+	boolean keyTyped(char character) {}
+
 	boolean keyUp(int keycode) {}
-
-	boolean triggerTouch(TouchEvent event) {}
-
-	void controllerDisconnected(Controller controller) {}
-
-	void controllerConnected(Controller controller) {}
 
 	void stop() {}
 
@@ -40,19 +40,15 @@ final Scroller(Object) : InputListener, DragListener {
 
 	boolean touch(TouchEvent trigger, boolean touching) {}
 
-	float getScrollX() {}
+	boolean isTouching(float x, float y) {}
 
 	void setScrollX(float scrollX) {}
+
+	float getScrollX() {}
 
 	void updateScroll(boolean clamp) {}
 
 	float getScrollY() {}
-
-	boolean isTouching(float x, float y) {}
-
-	void moveScroll(float x, float y) {}
-
-	void moveScroll(float offset) {}
 
 	boolean isDragging() {}
 
@@ -60,8 +56,12 @@ final Scroller(Object) : InputListener, DragListener {
 
 	boolean isClickScrolled() {}
 
+	boolean isScrollingY() {}
+
 	boolean isScrollingX() {}
 
-	boolean isScrollingY() {}
+	void moveScroll(float offset) {}
+
+	void moveScroll(float x, float y) {}
 
 }

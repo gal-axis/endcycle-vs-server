@@ -46,61 +46,55 @@ OnlineInventoryScreen(VsInventoryScreen) {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void pause() {}
-
 	void setScreen(GameScreen screen, FadeType fade) {}
 
 	void setScreen(GameScreen screen, FadeType fade, boolean changesBefore) {}
 
 	void setScreen(GameScreen screen) {}
 
-	void drawButtonTips(CustomSpriteBatch batch, float x, float y) {}
+	void clearObjects() {}
+
+	void resetShake() {}
+
+	Array getObjects() {}
 
 	void draw(CustomSpriteBatch batch) {}
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void resetShake() {}
-
-	void changeTo(GameScreen screen, boolean init) {}
-
-	void updateShake(float delta) {}
-
-	boolean isCurrentScreen() {}
-
-	Array getObjects() {}
+	boolean removeObject(ScreenObject object) {}
 
 	void shakeVibrate(float x, float y, float duration) {}
 
-	boolean isShaking() {}
-
-	void changeFrom(GameScreen screen, boolean init) {}
-
-	void render(float delta) {}
-
-	void hide() {}
-
-	void shake(float x, float y, float duration) {}
-
-	boolean removeObject(ScreenObject object) {}
-
-	void clearObjects() {}
-
-	void dispose() {}
-
-	void resetTimer() {}
-
 	ScreenObject addObject(ScreenObject object) {}
 
-	void show() {}
-
-	void updateTimer(float delta) {}
+	boolean isShaking() {}
 
 	void updateObjects(float delta) {}
 
-	void toPreviousScreen(FadeType type) {}
+	void render(float delta) {}
+
+	void updateShake(float delta) {}
+
+	void show() {}
+
+	void drawButtonTips(CustomSpriteBatch batch, float x, float y) {}
+
+	void changeTo(GameScreen screen, boolean init) {}
+
+	void shake(float x, float y, float duration) {}
+
+	boolean isCurrentScreen() {}
 
 	void toPreviousScreen() {}
+
+	void toPreviousScreen(FadeType type) {}
+
+	void changeFrom(GameScreen screen, boolean init) {}
+
+	void updateTimer(float delta) {}
+
+	void hide() {}
 
 	void addRenderProcessor(RenderProcessor renderProcessor) {}
 
@@ -112,11 +106,17 @@ OnlineInventoryScreen(VsInventoryScreen) {
 
 	void removeRenderProcessor(RenderProcessor renderProcessor) {}
 
-	void addScript(Script script, float delay) {}
+	void dispose() {}
 
 	Object[] getTextArguments() {}
 
 	boolean isLoading() {}
+
+	void pause() {}
+
+	void addScript(Script script, float delay) {}
+
+	void resetTimer() {}
 
 	void createMenuElements() {}
 
@@ -138,9 +138,9 @@ OnlineInventoryScreen(VsInventoryScreen) {
 
 	boolean hasVocs() {}
 
-	void openShop() {}
-
 	void addTabElement(String name, Drawable icon, MenuElement element, MenuElement selected) {}
+
+	void openShop() {}
 
 	void playSong() {}
 

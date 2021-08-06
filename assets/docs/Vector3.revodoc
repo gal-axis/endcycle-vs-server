@@ -38,77 +38,77 @@ Vector3(Object) {
 
 	float len() {}
 
-	boolean hasOppositeDirection(Vector3 arg0) {}
-
-	boolean isCollinearOpposite(Vector3 arg0, float arg1) {}
-
-	boolean isCollinearOpposite(Vector3 arg0) {}
-
 	Vector3 lerp(Vector3 arg0, float arg1) {}
 
 	Vector3 clamp(float arg0, float arg1) {}
-
-	Vector3 setToRandomDirection() {}
-
-	Vector3 nor() {}
-
-	float dst(Vector3 arg0) {}
 
 	Vector3 sub(Vector3 arg0) {}
 
 	Vector3 cpy() {}
 
-	boolean isZero(float arg0) {}
+	Vector3 nor() {}
 
-	boolean isZero() {}
+	float dst(Vector3 arg0) {}
 
-	float dot(Vector3 arg0) {}
-
-	float len2() {}
-
-	boolean isOnLine(Vector3 arg0) {}
-
-	boolean isOnLine(Vector3 arg0, float arg1) {}
+	boolean epsilonEquals(Vector3 arg0, float arg1) {}
 
 	Vector3 setZero() {}
 
-	boolean hasSameDirection(Vector3 arg0) {}
-
-	float dst2(Vector3 arg0) {}
-
-	boolean isUnit() {}
-
-	boolean isUnit(float arg0) {}
-
-	boolean isPerpendicular(Vector3 arg0, float arg1) {}
-
-	boolean isPerpendicular(Vector3 arg0) {}
+	Vector3 limit2(float arg0) {}
 
 	Vector3 setLength2(float arg0) {}
 
-	Vector3 limit2(float arg0) {}
+	float len2() {}
+
+	boolean isZero(float arg0) {}
+
+	boolean isZero() {}
 
 	Vector3 mulAdd(Vector3 arg0, float arg1) {}
 
 	Vector3 mulAdd(Vector3 arg0, Vector3 arg1) {}
 
-	boolean epsilonEquals(Vector3 arg0, float arg1) {}
+	float dst2(Vector3 arg0) {}
 
-	boolean isCollinear(Vector3 arg0) {}
+	float dot(Vector3 arg0) {}
+
+	boolean hasSameDirection(Vector3 arg0) {}
+
+	boolean isOnLine(Vector3 arg0) {}
+
+	boolean isOnLine(Vector3 arg0, float arg1) {}
+
+	boolean isUnit(float arg0) {}
+
+	boolean isUnit() {}
 
 	boolean isCollinear(Vector3 arg0, float arg1) {}
 
-	Vector3 add(float arg0) {}
+	boolean isCollinear(Vector3 arg0) {}
+
+	boolean isPerpendicular(Vector3 arg0) {}
+
+	boolean isPerpendicular(Vector3 arg0, float arg1) {}
+
+	boolean isCollinearOpposite(Vector3 arg0, float arg1) {}
+
+	boolean isCollinearOpposite(Vector3 arg0) {}
+
+	boolean hasOppositeDirection(Vector3 arg0) {}
+
+	Vector3 setToRandomDirection() {}
 
 	Vector3 add(float arg0, float arg1, float arg2) {}
 
+	Vector3 add(float arg0) {}
+
 	Vector3 scl(float arg0, float arg1, float arg2) {}
 
-	Vector3 set(Vector2 arg0, float arg1) {}
+	Vector3 set(float arg0, float arg1, float arg2) {}
 
 	Vector3 set(float[] arg0) {}
 
-	Vector3 set(float arg0, float arg1, float arg2) {}
+	Vector3 set(Vector2 arg0, float arg1) {}
 
 	Vector3 rotate(Vector3 arg0, float arg1) {}
 
@@ -120,13 +120,21 @@ Vector3(Object) {
 
 	Vector3 mul(Matrix3 arg0) {}
 
+	Vector3 sub(float arg0) {}
+
+	Vector3 sub(float arg0, float arg1, float arg2) {}
+
 	float dst(float arg0, float arg1, float arg2) {}
 
 	static float dst(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5) {}
 
-	Vector3 sub(float arg0) {}
+	boolean epsilonEquals(Vector3 arg0) {}
 
-	Vector3 sub(float arg0, float arg1, float arg2) {}
+	boolean epsilonEquals(float arg0, float arg1, float arg2) {}
+
+	boolean epsilonEquals(float arg0, float arg1, float arg2, float arg3) {}
+
+	Vector3 fromString(String arg0) {}
 
 	boolean idt(Vector3 arg0) {}
 
@@ -134,15 +142,29 @@ Vector3(Object) {
 
 	Vector3 rot(Matrix4 arg0) {}
 
+	static float len2(float arg0, float arg1, float arg2) {}
+
+	Vector3 rotateRad(float arg0, float arg1, float arg2, float arg3) {}
+
+	Vector3 rotateRad(Vector3 arg0, float arg1) {}
+
+	Vector3 slerp(Vector3 arg0, float arg1) {}
+
 	Vector3 crs(float arg0, float arg1, float arg2) {}
 
 	Vector3 crs(Vector3 arg0) {}
 
-	Vector3 rotateRad(Vector3 arg0, float arg1) {}
+	static float dst2(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5) {}
 
-	Vector3 rotateRad(float arg0, float arg1, float arg2, float arg3) {}
+	float dst2(float arg0, float arg1, float arg2) {}
 
-	Vector3 slerp(Vector3 arg0, float arg1) {}
+	Vector3 mul4x3(float[] arg0) {}
+
+	Vector3 traMul(Matrix3 arg0) {}
+
+	Vector3 traMul(Matrix4 arg0) {}
+
+	Vector3 unrotate(Matrix4 arg0) {}
 
 	float dot(float arg0, float arg1, float arg2) {}
 
@@ -150,28 +172,6 @@ Vector3(Object) {
 
 	Vector3 setFromSpherical(float arg0, float arg1) {}
 
-	static float len2(float arg0, float arg1, float arg2) {}
-
-	Vector3 mul4x3(float[] arg0) {}
-
-	static float dst2(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5) {}
-
-	float dst2(float arg0, float arg1, float arg2) {}
-
-	Vector3 fromString(String arg0) {}
-
-	Vector3 traMul(Matrix4 arg0) {}
-
-	Vector3 traMul(Matrix3 arg0) {}
-
-	Vector3 unrotate(Matrix4 arg0) {}
-
 	Vector3 untransform(Matrix4 arg0) {}
-
-	boolean epsilonEquals(float arg0, float arg1, float arg2) {}
-
-	boolean epsilonEquals(Vector3 arg0) {}
-
-	boolean epsilonEquals(float arg0, float arg1, float arg2, float arg3) {}
 
 }

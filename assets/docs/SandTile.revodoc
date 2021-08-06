@@ -13,17 +13,17 @@ SandTile(NormalTile) : BECondition {
 
 	int hashCode() {}
 
-	void exit(BattleEntity entity) {}
+	void exit(BattleEntity arg0) {}
 
-	void update(float delta) {}
+	void update(float arg0) {}
 
 	void init() {}
 
-	boolean isAccessible(BattleEntity entity) {}
+	boolean isAccessible(BattleEntity arg0, boolean arg1) {}
+
+	void draw(Batch arg0, float arg1, float arg2, Party arg3, float arg4, float arg5) {}
 
 	int getY() {}
-
-	void draw(Batch batch, float x, float y, Party party, float shade, float alpha) {}
 
 	int getX() {}
 
@@ -31,34 +31,38 @@ SandTile(NormalTile) : BECondition {
 
 	void refresh() {}
 
-	OwnedHitProperty hit(OwnedHitProperty property) {}
+	final void triggerAction(Object[] arg0) {}
 
-	final void triggerAction(Object[] parameters) {}
+	OwnedHitProperty hit(OwnedHitProperty arg0) {}
+
+	BattleFieldBorder getCameraBorder(BattleEntity arg0) {}
+
+	boolean changeType(PanelType arg0) {}
 
 	void free() {}
 
-	boolean changeType(PanelType type) {}
-
-	void actionTriggered(Object[] action) {}
-
 	Battle getBattle() {}
 
-	OwnedHitProperty affect(OwnedHitProperty property) {}
+	void actionTriggered(Object[] arg0) {}
 
-	void enter(BattleEntity entity) {}
+	boolean shareBorder(BattleFieldPanel arg0) {}
 
-	DrawableImage getDrawable(Party party) {}
+	OwnedHitProperty affect(OwnedHitProperty arg0) {}
 
-	DrawableImage getDrawable(Party party, DrawableImage neutral, DrawableImage enemy, DrawableImage friendly) {}
+	void enter(BattleEntity arg0) {}
 
-	void drawTile(Batch batch, float x, float y, DrawableImage drawable) {}
+	DrawableImage getDrawable(Party arg0) {}
 
-	boolean test(BattleEntity entity) {}
+	DrawableImage getDrawable(Party arg0, DrawableImage arg1, DrawableImage arg2, DrawableImage arg3) {}
 
-	void remove(BattleEntity entity) {}
+	void drawTile(Batch arg0, float arg1, float arg2, DrawableImage arg3) {}
+
+	boolean test(BattleEntity arg0) {}
+
+	void remove(BattleEntity arg0) {}
 
 	float getTimeout() {}
 
-	void setTimeout(float time) {}
+	void setTimeout(float arg0) {}
 
 }

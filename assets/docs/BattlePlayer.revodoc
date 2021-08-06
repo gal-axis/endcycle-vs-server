@@ -13,7 +13,15 @@ BattlePlayer(Object) : BattleEntityAction, InputListener {
 
 	int hashCode() {}
 
-	boolean priority() {}
+	void controllerConnected(Controller controller) {}
+
+	void controllerDisconnected(Controller controller) {}
+
+	boolean triggerType(int character) {}
+
+	int getInputPriority() {}
+
+	boolean triggerTouch(TouchEvent event) {}
 
 	boolean triggerButton(ButtonEvent event) {}
 
@@ -21,17 +29,9 @@ BattlePlayer(Object) : BattleEntityAction, InputListener {
 
 	boolean keyDown(int keycode) {}
 
-	boolean triggerTouch(TouchEvent event) {}
-
-	boolean triggerType(int character) {}
-
 	boolean keyTyped(char character) {}
 
 	boolean keyUp(int keycode) {}
-
-	void controllerDisconnected(Controller controller) {}
-
-	void controllerConnected(Controller controller) {}
 
 	void add() {}
 
@@ -49,25 +49,17 @@ BattlePlayer(Object) : BattleEntityAction, InputListener {
 
 	void hitEntity(BattleEntity entity, OwnedHitProperty property) {}
 
-	BattleEntityActionSave getSave() {}
-
 	boolean isAuthorative() {}
 
-	final Controller getController() {}
+	BattleEntityActionSave getSave() {}
 
 	void vibrateController(float duration, float strength) {}
 
 	void move(int xTile, int yTile) {}
 
-	GameScreenMessage createRewardMessage(RandomVocRewards vocs, Random random, boolean skippable) {}
+	final Controller getController() {}
 
-	boolean applyInput(KeyCode code, boolean pressed, boolean player) {}
-
-	void applyInput(float delay, Object input) {}
-
-	void setHudButtons(BattleHUD hud) {}
-
-	boolean canUpgrade() {}
+	boolean sendClientInput(Object input, boolean local) {}
 
 	MockController setKeyPressed(KeyCode code, boolean pressed) {}
 
@@ -75,12 +67,20 @@ BattlePlayer(Object) : BattleEntityAction, InputListener {
 
 	void setCombat(boolean combat) {}
 
-	boolean sendClientInput(Object input, boolean local) {}
+	boolean canUpgrade() {}
 
 	void upgrade() {}
 
+	boolean applyInput(KeyCode code, boolean pressed, boolean player) {}
+
+	void applyInput(float delay, Object input) {}
+
 	void clientInput(ButtonEvent event) {}
 
+	void setHudButtons(BattleHUD hud) {}
+
 	void createHud(int playerIndex) {}
+
+	GameScreenMessage createRewardMessage(RandomVocRewards vocs, Random random, boolean skippable) {}
 
 }

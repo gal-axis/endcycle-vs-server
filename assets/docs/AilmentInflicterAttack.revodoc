@@ -33,61 +33,65 @@ AilmentInflicterAttack(Attack) {
 
 	Attack clone() {}
 
-	final void actionTriggered(Runnable action) {}
+	boolean isActionRollback(Object[] arg0) {}
 
-	void actionTriggered(Object[] action) {}
+	void actionTriggered(Object[] arg0) {}
 
-	boolean isActionRollback(Object[] action) {}
+	final void actionTriggered(Runnable arg0) {}
 
-	boolean priority() {}
+	void controllerDisconnected(Controller arg0) {}
 
-	boolean triggerButton(ButtonEvent event) {}
+	void controllerConnected(Controller arg0) {}
 
-	boolean triggerType(int character) {}
+	boolean triggerButton(ButtonEvent arg0) {}
 
-	boolean keyTyped(char character) {}
+	boolean keyDown(int arg0) {}
 
-	boolean addButtonTips(ButtonTipList tips) {}
+	boolean keyTyped(char arg0) {}
 
-	boolean keyDown(int keycode) {}
+	boolean triggerTouch(TouchEvent arg0) {}
 
-	boolean keyUp(int keycode) {}
+	boolean triggerType(int arg0) {}
 
-	boolean triggerTouch(TouchEvent event) {}
+	boolean addButtonTips(ButtonTipList arg0) {}
 
-	void controllerDisconnected(Controller controller) {}
+	boolean keyUp(int arg0) {}
 
-	void controllerConnected(Controller controller) {}
+	int getInputPriority() {}
 
 	String getName() {}
 
-	void update(float delta) {}
+	void update(float arg0) {}
 
-	Attack cast(BattleEntity user, AttackPlan plan) {}
+	Attack cast(BattleEntity arg0, AttackPlan arg1) {}
 
 	final BattleField getField() {}
 
 	void start() {}
 
-	final void copy(Attack attack) {}
+	final void copy(Attack arg0) {}
 
 	BattleEntity getTarget() {}
 
 	void flip() {}
 
-	final float getY(int yTile) {}
+	final float getY(int arg0) {}
 
-	final float getX(int xTile) {}
+	final float getX(int arg0) {}
 
-	void finish() {}
+	void setAnimationDuration(float arg0) {}
 
-	SoundContainer playSound(SoundInfo sound) {}
+	SoundContainer playSound(SoundInfo arg0) {}
 
 	boolean active() {}
 
-	final Origin getOrigin(int index) {}
+	final void triggerAction(Object[] arg0) {}
 
-	final void triggerAction(Object[] parameters) {}
+	void finish() {}
+
+	final Origin getOrigin(int arg0) {}
+
+	final Controller getController() {}
 
 	void attackAnimation() {}
 
@@ -95,49 +99,45 @@ AilmentInflicterAttack(Attack) {
 
 	boolean fillGauges() {}
 
-	final Controller getController() {}
-
-	void setAnimationDuration(float duration) {}
-
 	final int getXTile() {}
 
 	final int getYTile() {}
 
 	Attack charge() {}
 
-	boolean acceptsInput(ButtonEvent event) {}
-
-	Attack getWrapped(AttackWrapper wrapper, boolean shareHit, boolean gauge) {}
-
-	AttackPortal getPortal(BattleEntity entity, float portalX, float portalY, float time) {}
-
-	double getGaugeProgress() {}
-
-	boolean reduceGauge(double amount) {}
-
-	boolean reduceGauge() {}
-
-	void increaseGauge(double amount) {}
-
-	void addWrappers(AttackWrappers wrappers) {}
+	Attack getWrapped(AttackWrapper arg0, boolean arg1, boolean arg2) {}
 
 	final int getTurn() {}
 
-	void scheduleAction(int action, float delay) {}
+	void addWrappers(AttackWrappers arg0) {}
 
-	void scheduleAction(Runnable action, float delay) {}
+	void increaseGauge(double arg0) {}
+
+	boolean acceptsInput(ButtonEvent arg0) {}
+
+	double getGaugeProgress() {}
+
+	void scheduleAction(Runnable arg0, float arg1) {}
+
+	void scheduleAction(int arg0, float arg1) {}
+
+	void runAction(int arg0) {}
+
+	AttackPortal getPortal(BattleEntity arg0, float arg1, float arg2, float arg3) {}
 
 	final int getXTileInFront() {}
 
-	void runAction(int action) {}
+	boolean reduceGauge() {}
 
-	boolean hasAnimationState(PatchworkStateId state) {}
+	boolean reduceGauge(double arg0) {}
 
-	void updateAttackTasks(float delta) {}
-
-	void setAnimationState(PatchworkStateId state) {}
+	void updateAttackTasks(float arg0) {}
 
 	final BattleEntityList getBattleEntities() {}
+
+	boolean hasAnimationState(PatchworkStateId arg0) {}
+
+	void setAnimationState(PatchworkStateId arg0) {}
 
 	void inflict() {}
 

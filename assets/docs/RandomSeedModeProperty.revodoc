@@ -1,5 +1,8 @@
 RandomSeedModeProperty(GameModeProperty) {
 
+	final String name;
+	String value;
+
 	new() {}
 
 	boolean equals(Object o) {}
@@ -17,10 +20,6 @@ RandomSeedModeProperty(GameModeProperty) {
 	double get(double object, double orElse) {}
 
 	void paint(String object, Painter parameters) {}
-
-	String getName() {}
-
-	String getValue() {}
 
 	void setValue(Object value) {}
 

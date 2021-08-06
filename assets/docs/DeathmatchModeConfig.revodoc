@@ -1,6 +1,11 @@
-DeathmatchModeConfig(GameModeConfig) {
+DeathmatchModeConfig(BattleModeConfig) {
+
+	BattleModeProperty battle;
+	MusicModeProperty music;
 
 	new() {}
+
+	new(GameMode arg0) {}
 
 	boolean equals(Object arg0) {}
 
@@ -10,12 +15,14 @@ DeathmatchModeConfig(GameModeConfig) {
 
 	List getProperties() {}
 
-	void configure(BattleData data) {}
+	Party[] getSlotParties() {}
 
-	boolean startSlots(int allies, int enemies, int neutral) {}
+	boolean supports(Array arg0) {}
+
+	BattleData createData(PlayerConfigurator arg0) {}
 
 	BattleMode createMode() {}
 
-	List getSlots() {}
+	void configure(Battle arg0, PlayerConfigurator arg1) {}
 
 }

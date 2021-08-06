@@ -1,4 +1,4 @@
-DelayedHit(Object) : ScreenObject, BannedPanelObject {
+DelayedHit(Object) : ScreenObject, Danger {
 
 	final BattleEntityList tempHit;
 	Battle battle;
@@ -35,11 +35,11 @@ DelayedHit(Object) : ScreenObject, BannedPanelObject {
 
 	DelayedHit clone() {}
 
-	boolean isBannedPanel(BattleEntity entity, int x, int y) {}
+	float getDangerIgnore(int level) {}
 
-	boolean isBannedPanelRemove(BattleEntity entity) {}
+	boolean isDangerous(BattleEntity entity, int x, int y) {}
 
-	float getBannedPanelPriority(BattleEntity entity) {}
+	float getDangerPriority(BattleEntity entity) {}
 
 	void dispose() {}
 
@@ -55,37 +55,37 @@ DelayedHit(Object) : ScreenObject, BannedPanelObject {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void show(GameScreen screen) {}
-
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
+	void show(GameScreen screen) {}
+
 	void hide(GameScreen screen) {}
+
+	Origin getOrigin() {}
 
 	byte getLayer() {}
 
 	float getComparisonKey() {}
 
-	Origin getOrigin() {}
-
 	void setPosition(int xTile, int yTile, boolean turned) {}
-
-	boolean hit() {}
 
 	void inflict(BattleEntityList entities) {}
 
 	void inflict(BattleEntity entity) {}
 
-	void hitPanel() {}
+	boolean hit() {}
+
+	void startHit() {}
+
+	BattleEntityList hitEntities() {}
 
 	boolean hasHit() {}
 
 	void affectPanel(boolean force) {}
 
+	void hitPanel() {}
+
 	void doHitAction(boolean force) {}
-
-	void startHit() {}
-
-	BattleEntityList hitEntities() {}
 
 	void inflictSticky(BattleEntity entity) {}
 

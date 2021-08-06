@@ -1,4 +1,4 @@
-ReboundObject(Object) : ScreenObject, ShadowEntity, BannedPanelObject {
+ReboundObject(Object) : ScreenObject, ShadowEntity, Danger {
 
 	new(BattleEntity parent, OwnedHitProperty property, DrawableState drawable, int xTile, int yTile, float yOffset, float speed, float radius, float timeOffset, boolean shadow) {}
 
@@ -8,31 +8,31 @@ ReboundObject(Object) : ScreenObject, ShadowEntity, BannedPanelObject {
 
 	int hashCode() {}
 
-	boolean isBannedPanel(BattleEntity entity, int x, int y) {}
+	float getDangerIgnore(int level) {}
 
-	boolean isBannedPanelRemove(BattleEntity entity) {}
+	boolean isDangerous(BattleEntity entity, int x, int y) {}
 
-	float getBannedPanelPriority(BattleEntity entity) {}
+	float getDangerPriority(BattleEntity entity) {}
 
-	boolean isFlipX() {}
+	List getShadowDrawables() {}
+
+	boolean isFlipY() {}
 
 	Patchwork getPatchwork() {}
 
 	float getXScale() {}
 
-	boolean isFlipY() {}
-
 	float getYScale() {}
 
-	float getShadowX() {}
-
-	float getShadowAlpha() {}
+	boolean isFlipX() {}
 
 	float getShadowZ() {}
 
 	float getShadowY() {}
 
-	List getShadowDrawables() {}
+	float getShadowX() {}
+
+	float getShadowAlpha() {}
 
 	void dispose() {}
 
@@ -48,17 +48,17 @@ ReboundObject(Object) : ScreenObject, ShadowEntity, BannedPanelObject {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void show(GameScreen screen) {}
-
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
+	void show(GameScreen screen) {}
+
 	void hide(GameScreen screen) {}
+
+	Origin getOrigin() {}
 
 	byte getLayer() {}
 
 	float getComparisonKey() {}
-
-	Origin getOrigin() {}
 
 	OwnedHitProperty getProperty() {}
 
@@ -74,42 +74,42 @@ ReboundObject(Object) : ScreenObject, ShadowEntity, BannedPanelObject {
 
 	float getX() {}
 
-	float getSpeed() {}
-
 	Battle getBattle() {}
 
-	int getXTile() {}
+	float getSpeed() {}
+
+	OwnedHitProperty getCurrentProperty() {}
 
 	int getYTile() {}
 
-	int getCurrentX() {}
-
-	Map getHitEntities() {}
-
-	float getDelay() {}
-
-	float getRadius() {}
-
-	DrawableState getDrawable() {}
-
-	void updatePosition() {}
-
-	float getYOffset() {}
-
-	float getTimeOffset() {}
-
-	int getCurrentPanel() {}
+	int getXTile() {}
 
 	int getCurrentY() {}
 
-	FieldFlicker getFlicker() {}
-
-	ShaderManager getShaderManager() {}
+	Map getHitEntities() {}
 
 	void clearHits() {}
 
-	boolean isShadow() {}
+	float getRadius() {}
 
-	OwnedHitProperty getCurrentProperty() {}
+	void updatePosition() {}
+
+	float getDelay() {}
+
+	FieldFlicker getFlicker() {}
+
+	int getCurrentPanel() {}
+
+	float getTimeOffset() {}
+
+	int getCurrentX() {}
+
+	DrawableState getDrawable() {}
+
+	ShaderManager getShaderManager() {}
+
+	float getYOffset() {}
+
+	boolean isShadow() {}
 
 }

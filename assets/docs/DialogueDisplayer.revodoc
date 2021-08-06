@@ -11,7 +11,6 @@ DialogueDisplayer(ListenableGameScreenObject) : Named, InputListener {
 	Dialogue dialogue;
 	DialogueLineDisplayer lineDisplayer;
 	int lineIndex;
-	Function customAction;
 
 	new() {}
 
@@ -35,17 +34,17 @@ DialogueDisplayer(ListenableGameScreenObject) : Named, InputListener {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	void show(GameScreen screen) {}
 
 	void hide(GameScreen screen) {}
 
-	void show(GameScreen screen) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	byte getLayer() {}
+	final Origin getOrigin() {}
 
 	float getComparisonKey() {}
 
-	final Origin getOrigin() {}
+	byte getLayer() {}
 
 	final void removeObject() {}
 
@@ -57,33 +56,33 @@ DialogueDisplayer(ListenableGameScreenObject) : Named, InputListener {
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
-	final void addInitializeListener(Runnable runnable) {}
-
 	final void removeDisposeListener(Runnable runnable) {}
 
 	final void addDisposeListener(Runnable runnable) {}
 
+	final void addInitializeListener(Runnable runnable) {}
+
 	final void removeInitializeListener(Runnable runnable) {}
-
-	boolean priority() {}
-
-	boolean addButtonTips(ButtonTipList tips) {}
-
-	boolean triggerButton(ButtonEvent event) {}
-
-	boolean triggerTouch(TouchEvent event) {}
-
-	boolean keyUp(int keycode) {}
-
-	boolean keyDown(int keycode) {}
-
-	boolean keyTyped(char character) {}
-
-	boolean triggerType(int character) {}
 
 	void controllerConnected(Controller controller) {}
 
 	void controllerDisconnected(Controller controller) {}
+
+	boolean keyDown(int keycode) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean keyUp(int keycode) {}
+
+	int getInputPriority() {}
+
+	boolean triggerTouch(TouchEvent event) {}
+
+	boolean triggerType(int character) {}
+
+	boolean keyTyped(char character) {}
+
+	boolean triggerButton(ButtonEvent event) {}
 
 	static DialogueDisplayer get(GameScreen screen) {}
 
@@ -95,12 +94,12 @@ DialogueDisplayer(ListenableGameScreenObject) : Named, InputListener {
 
 	DialogueDisplayer startDialogue(ID dialogue) {}
 
-	void startCurrentLine() {}
-
-	void toNextLine() {}
-
 	void endCurrentLine() {}
 
+	void startCurrentLine() {}
+
 	void displayAllText() {}
+
+	void toNextLine() {}
 
 }

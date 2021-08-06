@@ -7,23 +7,25 @@ Lobby(Object) {
 	LobbySlot playerSlot;
 	LobbyConfiguration configuration;
 
+	new() {}
+
 	boolean equals(Object arg0) {}
 
 	String toString() {}
 
 	int hashCode() {}
 
-	void setSlots(int slots) {}
+	boolean isCpuSupport() {}
 
-	void setConfiguration(LobbyConfiguration configuration) {}
+	LobbySlot slotUpdate(int slotIndex, LobbySlot slot) {}
+
+	void setSlots(int slots) {}
 
 	boolean isHost() {}
 
-	boolean isCpuSupport() {}
+	void setConfiguration(LobbyConfiguration configuration) {}
 
 	boolean isSpectating() {}
-
-	LobbySlot slotUpdate(int slotIndex, LobbySlot slot) {}
 
 	int getPlayerSlotIndex() {}
 

@@ -1,0 +1,66 @@
+RunTile(PanelEffect) : BECondition {
+
+	BattleFieldPanel panel;
+	DrawableImage drawable;
+	DrawableImage drawableClosed;
+	DrawableImage drawableOpen;
+	int xMove;
+	int yMove;
+
+	new(Drawables arg0, Drawables arg1, Drawables arg2, int arg3, int arg4) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void exit(BattleEntity arg0) {}
+
+	void update(float arg0) {}
+
+	void init() {}
+
+	boolean isAccessible(BattleEntity arg0, boolean arg1) {}
+
+	void draw(Batch arg0, float arg1, float arg2, Party arg3, float arg4, float arg5) {}
+
+	int getY() {}
+
+	int getX() {}
+
+	void dispose() {}
+
+	void refresh() {}
+
+	final void triggerAction(Object[] arg0) {}
+
+	OwnedHitProperty hit(OwnedHitProperty arg0) {}
+
+	BattleFieldBorder getCameraBorder(BattleEntity arg0) {}
+
+	boolean changeType(PanelType arg0) {}
+
+	void free() {}
+
+	Battle getBattle() {}
+
+	void actionTriggered(Object[] arg0) {}
+
+	boolean shareBorder(BattleFieldPanel arg0) {}
+
+	OwnedHitProperty affect(OwnedHitProperty arg0) {}
+
+	void enter(BattleEntity arg0) {}
+
+	boolean test(BattleEntity arg0) {}
+
+	void move(BattleEntity arg0) {}
+
+	boolean canMoveToGoal(BattleEntity arg0) {}
+
+	Point getGoal(BattleEntity arg0, boolean arg1) {}
+
+	boolean isMove(int arg0, int arg1) {}
+
+}

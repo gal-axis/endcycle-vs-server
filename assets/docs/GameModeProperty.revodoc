@@ -1,5 +1,8 @@
 abstract GameModeProperty(Object) : ObjectPainter {
 
+	final String name;
+	Object value;
+
 	new(String name) {}
 
 	boolean equals(Object o) {}
@@ -17,10 +20,6 @@ abstract GameModeProperty(Object) : ObjectPainter {
 	double get(double object, double orElse) {}
 
 	void paint(Object object, Painter parameters) {}
-
-	String getName() {}
-
-	Object getValue() {}
 
 	void setValue(Object value) {}
 

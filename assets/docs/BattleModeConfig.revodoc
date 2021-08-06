@@ -1,0 +1,28 @@
+abstract BattleModeConfig(GameModeConfig) {
+
+	BattleModeProperty battle;
+	MusicModeProperty music;
+
+	new() {}
+
+	new(GameMode arg0) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	List getProperties() {}
+
+	abstract Party[] getSlotParties();
+
+	boolean supports(Array arg0) {}
+
+	BattleData createData(PlayerConfigurator arg0) {}
+
+	abstract BattleMode createMode();
+
+	void configure(Battle arg0, PlayerConfigurator arg1) {}
+
+}

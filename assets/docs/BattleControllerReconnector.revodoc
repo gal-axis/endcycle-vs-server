@@ -6,7 +6,7 @@ BattleControllerReconnector(GameScreenObject) : InputListener {
 
 	new() {}
 
-	final boolean equals(Object obj) {}
+	final boolean equals(Object arg0) {}
 
 	String toString() {}
 
@@ -14,64 +14,64 @@ BattleControllerReconnector(GameScreenObject) : InputListener {
 
 	void dispose() {}
 
-	void update(float delta) {}
+	void update(float arg0) {}
 
 	boolean remove() {}
 
 	String getName() {}
 
-	void init(GameScreen screen) {}
+	void init(GameScreen arg0) {}
 
 	boolean isHidden() {}
 
-	void resize(boolean landscape, int width, int height) {}
+	void resize(boolean arg0, int arg1, int arg2) {}
 
-	void show(GameScreen screen) {}
+	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
 
-	void hide(GameScreen screen) {}
+	void hide(GameScreen arg0) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	float getComparisonKey() {}
+	void show(GameScreen arg0) {}
 
 	final Origin getOrigin() {}
+
+	float getComparisonKey() {}
 
 	byte getLayer() {}
 
 	final void removeObject() {}
 
-	SoundContainer playSound(SoundInfo sound) {}
+	SoundContainer playSound(SoundInfo arg0) {}
 
-	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+	SoundContainer playSound(float arg0, float arg1, SoundInfo arg2) {}
 
-	final SoundContainer playSound(Sounds sound) {}
+	final SoundContainer playSound(Sounds arg0) {}
 
-	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
+	void triggerEvent(Object arg0, Object arg1, Object[] arg2) {}
 
-	boolean priority() {}
+	void controllerDisconnected(Controller arg0) {}
 
-	boolean addButtonTips(ButtonTipList tips) {}
+	void controllerConnected(Controller arg0) {}
 
-	boolean triggerButton(ButtonEvent event) {}
+	boolean keyDown(int arg0) {}
 
-	boolean triggerTouch(TouchEvent event) {}
+	boolean triggerTouch(TouchEvent arg0) {}
 
-	boolean triggerType(int character) {}
+	boolean addButtonTips(ButtonTipList arg0) {}
 
-	boolean keyTyped(char character) {}
+	int getInputPriority() {}
 
-	boolean keyUp(int keycode) {}
+	boolean keyTyped(char arg0) {}
 
-	boolean keyDown(int keycode) {}
+	boolean keyUp(int arg0) {}
 
-	void controllerConnected(Controller controller) {}
+	boolean triggerButton(ButtonEvent arg0) {}
 
-	void controllerDisconnected(Controller controller) {}
+	boolean triggerType(int arg0) {}
 
 	void finish() {}
 
-	void addController(Controller controller) {}
+	void addController(Controller arg0) {}
 
-	BattleReconnectCursor removeController(Controller controller) {}
+	BattleReconnectCursor removeController(Controller arg0) {}
 
 }

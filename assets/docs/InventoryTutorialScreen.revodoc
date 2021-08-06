@@ -45,77 +45,77 @@ abstract InventoryTutorialScreen(InventoryScreen) {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void updateTimer(float delta) {}
+	void setScreen(GameScreen screen, FadeType fade) {}
 
-	boolean removeObject(ScreenObject object) {}
+	void setScreen(GameScreen screen, FadeType fade, boolean changesBefore) {}
 
-	void updateObjects(float delta) {}
+	void setScreen(GameScreen screen) {}
 
 	void clearObjects() {}
 
+	void resetShake() {}
+
+	Array getObjects() {}
+
+	void draw(CustomSpriteBatch batch) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	boolean removeObject(ScreenObject object) {}
+
+	void shakeVibrate(float x, float y, float duration) {}
+
+	ScreenObject addObject(ScreenObject object) {}
+
 	boolean isShaking() {}
+
+	void updateObjects(float delta) {}
+
+	void render(float delta) {}
+
+	void updateShake(float delta) {}
+
+	void show() {}
 
 	void drawButtonTips(CustomSpriteBatch batch, float x, float y) {}
 
 	void changeTo(GameScreen screen, boolean init) {}
 
-	void show() {}
-
 	void shake(float x, float y, float duration) {}
-
-	void render(float delta) {}
-
-	Array getObjects() {}
-
-	void toPreviousScreen(FadeType type) {}
-
-	void toPreviousScreen() {}
-
-	void dispose() {}
-
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	void draw(CustomSpriteBatch batch) {}
-
-	void resetShake() {}
-
-	void updateShake(float delta) {}
-
-	void shakeVibrate(float x, float y, float duration) {}
-
-	void hide() {}
 
 	boolean isCurrentScreen() {}
 
-	ScreenObject addObject(ScreenObject object) {}
+	void toPreviousScreen() {}
+
+	void toPreviousScreen(FadeType type) {}
 
 	void changeFrom(GameScreen screen, boolean init) {}
 
-	void setScreen(GameScreen screen, FadeType fade) {}
+	void updateTimer(float delta) {}
 
-	void setScreen(GameScreen screen) {}
-
-	void setScreen(GameScreen screen, FadeType fade, boolean changesBefore) {}
-
-	void resetTimer() {}
-
-	Array getRenderProcessors() {}
-
-	void removeRenderProcessor(RenderProcessor renderProcessor) {}
+	void hide() {}
 
 	void addRenderProcessor(RenderProcessor renderProcessor) {}
+
+	Array getRenderProcessors() {}
 
 	void setPreviousScreen(GameScreen previousScreen) {}
 
 	GameScreen getPreviousScreen() {}
 
-	void pause() {}
+	void removeRenderProcessor(RenderProcessor renderProcessor) {}
+
+	void dispose() {}
+
+	Object[] getTextArguments() {}
 
 	boolean isLoading() {}
 
+	void pause() {}
+
 	void addScript(Script script, float delay) {}
 
-	Object[] getTextArguments() {}
+	void resetTimer() {}
 
 	void createMenuElements() {}
 
@@ -125,38 +125,38 @@ abstract InventoryTutorialScreen(InventoryScreen) {
 
 	void disableInput() {}
 
-	void centerElements() {}
-
 	void enableInput() {}
+
+	void centerElements() {}
 
 	void help() {}
 
 	boolean triggerButton(ButtonEvent event) {}
 
-	void addTabElement(String name, Drawable icon, MenuElement element, MenuElement selected) {}
+	TutorialPracticeBattle createPracticeBattle() {}
 
 	void practice() {}
 
 	boolean hasVocs() {}
 
+	void addTabElement(String name, Drawable icon, MenuElement element, MenuElement selected) {}
+
 	void openShop() {}
-
-	TutorialPracticeBattle createPracticeBattle() {}
-
-	void practice(LocalizedMessage help, Battle battle) {}
-
-	void practice(LocalizedMessage help, Battles battle, TutorialBattleCommands tutorial) {}
-
-	void practice(LocalizedMessage help, TutorialBattleCommands tutorial) {}
 
 	void createTutorial() {}
 
 	VocSet getEventSet() {}
 
-	void addVocs(VocIds[] vocs) {}
-
 	void highlightLevel(VocEntry entry) {}
 
 	void addStyles(VocStyles[] styles) {}
+
+	void addVocs(VocIds[] vocs) {}
+
+	void practice(LocalizedMessage help, Battle battle) {}
+
+	void practice(LocalizedMessage help, TutorialBattleCommands tutorial) {}
+
+	void practice(LocalizedMessage help, Battles battle, TutorialBattleCommands tutorial) {}
 
 }

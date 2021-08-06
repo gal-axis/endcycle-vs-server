@@ -24,24 +24,24 @@ BattleSpectatorDisplay(Object) : ScreenObject {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void show(GameScreen screen) {}
-
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
+	void show(GameScreen screen) {}
+
 	void hide(GameScreen screen) {}
+
+	Origin getOrigin() {}
 
 	byte getLayer() {}
 
 	float getComparisonKey() {}
 
-	Origin getOrigin() {}
-
-	void drawRow(CustomSpriteBatch batch, float xOfs, float yOfs, boolean flipped) {}
+	int getSpectators() {}
 
 	final void updateSpectators(List spectators) {}
 
 	void removeSpectator(int index) {}
 
-	int getSpectators() {}
+	void drawRow(CustomSpriteBatch batch, float xOfs, float yOfs, boolean flipped) {}
 
 }

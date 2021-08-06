@@ -1,4 +1,4 @@
-OnslaughtScreen(MenuScreen) : CoopBattleScreen {
+OnslaughtScreen(MenuScreen) : PlayerConfigurator {
 
 	final ButtonTipChecker buttonTips;
 	GameScreenInfo info;
@@ -36,88 +36,96 @@ OnslaughtScreen(MenuScreen) : CoopBattleScreen {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void toPreviousScreen() {}
+
+	void toPreviousScreen(FadeType type) {}
+
+	void updateShake(float delta) {}
+
+	boolean isShaking() {}
+
+	void draw(CustomSpriteBatch batch) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void drawButtonTips(CustomSpriteBatch batch, float x, float y) {}
+
+	boolean isCurrentScreen() {}
+
+	void updateObjects(float delta) {}
+
+	boolean removeObject(ScreenObject object) {}
+
+	void changeTo(GameScreen screen, boolean init) {}
+
+	void shake(float x, float y, float duration) {}
+
+	void shakeVibrate(float x, float y, float duration) {}
+
+	Array getObjects() {}
+
+	void changeFrom(GameScreen screen, boolean init) {}
+
+	void render(float delta) {}
+
+	ScreenObject addObject(ScreenObject object) {}
+
+	void resetShake() {}
+
+	void clearObjects() {}
+
+	void updateTimer(float delta) {}
+
 	void setScreen(GameScreen screen) {}
 
 	void setScreen(GameScreen screen, FadeType fade) {}
 
 	void setScreen(GameScreen screen, FadeType fade, boolean changesBefore) {}
 
-	void dispose() {}
-
-	boolean isShaking() {}
-
-	ScreenObject addObject(ScreenObject object) {}
-
-	void updateTimer(float delta) {}
-
-	void resetTimer() {}
-
-	Array getObjects() {}
-
-	void shakeVibrate(float x, float y, float duration) {}
-
-	boolean isCurrentScreen() {}
-
-	void shake(float x, float y, float duration) {}
-
-	boolean removeObject(ScreenObject object) {}
-
-	void updateObjects(float delta) {}
-
-	void drawButtonTips(CustomSpriteBatch batch, float x, float y) {}
-
-	void changeFrom(GameScreen screen, boolean init) {}
-
-	void clearObjects() {}
-
-	void toPreviousScreen(FadeType type) {}
-
-	void toPreviousScreen() {}
-
-	void render(float delta) {}
-
-	void resetShake() {}
-
-	void updateShake(float delta) {}
-
-	void changeTo(GameScreen screen, boolean init) {}
-
-	void show() {}
-
-	void hide() {}
-
-	void draw(CustomSpriteBatch batch) {}
-
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	void removeRenderProcessor(RenderProcessor renderProcessor) {}
-
 	Array getRenderProcessors() {}
-
-	GameScreen getPreviousScreen() {}
 
 	void addRenderProcessor(RenderProcessor renderProcessor) {}
 
+	GameScreen getPreviousScreen() {}
+
+	void removeRenderProcessor(RenderProcessor renderProcessor) {}
+
 	void setPreviousScreen(GameScreen previousScreen) {}
+
+	Object[] getTextArguments() {}
+
+	boolean isLoading() {}
+
+	void hide() {}
+
+	void resetTimer() {}
+
+	void show() {}
+
+	void dispose() {}
 
 	void pause() {}
 
 	void addScript(Script script, float delay) {}
 
-	boolean isLoading() {}
-
-	Object[] getTextArguments() {}
-
 	void createMenuElements() {}
+
+	void backButtonPressed() {}
 
 	void buildControllerNeighbors() {}
 
-	void backButtonPressed() {}
+	void enableInput() {}
 
 	void disableInput() {}
 
 	void centerElements() {}
 
-	void enableInput() {}
+	void configurePlayers(BattleData data) {}
+
+	void play() {}
+
+	void startBattle() {}
+
+	void coop() {}
 
 }

@@ -33,22 +33,22 @@ VocEntry(Object) : Serializable {
 
 	VocStyle setStyle(VocStyle arg0) {}
 
-	int getGauge() {}
+	VocElement getElement() {}
 
 	int getLevel() {}
 
-	VocElement getElement() {}
+	int getGauge() {}
+
+	void setVoc(Voc arg0) {}
 
 	int getPower() {}
 
-	void setVoc(Voc arg0) {}
+	int getCrushPower() {}
 
 	String getFullName() {}
 
 	boolean isLegal() {}
 
 	void setMissing(String arg0, String arg1, int arg2, Role arg3) {}
-
-	int getCrushPower() {}
 
 }

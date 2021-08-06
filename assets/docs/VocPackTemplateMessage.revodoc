@@ -7,10 +7,16 @@ VocPackTemplateMessage(MenuMessage) : MenuTableAction {
 	byte layer;
 	float comparisonKey;
 	State state;
+	Consumer select;
+	Consumer special;
+	Inventory inventory;
+	MenuTable packs;
+	MenuElementGroup group;
+	VocPackGroup packDisplayer;
 
-	new(Inventory inventory, Consumer select) {}
+	new(Inventory arg0, Consumer arg1) {}
 
-	final boolean equals(Object obj) {}
+	final boolean equals(Object arg0) {}
 
 	String toString() {}
 
@@ -18,100 +24,104 @@ VocPackTemplateMessage(MenuMessage) : MenuTableAction {
 
 	void dispose() {}
 
-	void update(float delta) {}
+	void update(float arg0) {}
 
 	boolean remove() {}
 
 	String getName() {}
 
-	void init(GameScreen screen) {}
+	void init(GameScreen arg0) {}
 
 	boolean isHidden() {}
 
-	void resize(boolean landscape, int width, int height) {}
+	void resize(boolean arg0, int arg1, int arg2) {}
 
-	void show(GameScreen screen) {}
+	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	void hide(GameScreen arg0) {}
 
-	void hide(GameScreen screen) {}
-
-	byte getLayer() {}
-
-	float getComparisonKey() {}
+	void show(GameScreen arg0) {}
 
 	final Origin getOrigin() {}
 
+	float getComparisonKey() {}
+
+	byte getLayer() {}
+
 	final void removeObject() {}
 
-	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+	SoundContainer playSound(SoundInfo arg0) {}
 
-	final SoundContainer playSound(Sounds sound) {}
+	SoundContainer playSound(float arg0, float arg1, SoundInfo arg2) {}
 
-	SoundContainer playSound(SoundInfo sound) {}
+	final SoundContainer playSound(Sounds arg0) {}
 
-	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
+	void triggerEvent(Object arg0, Object arg1, Object[] arg2) {}
 
-	final void removeInitializeListener(Runnable runnable) {}
+	final void addDisposeListener(Runnable arg0) {}
 
-	final void addInitializeListener(Runnable runnable) {}
+	final void addInitializeListener(Runnable arg0) {}
 
-	final void addDisposeListener(Runnable runnable) {}
+	final void removeDisposeListener(Runnable arg0) {}
 
-	final void removeDisposeListener(Runnable runnable) {}
+	final void removeInitializeListener(Runnable arg0) {}
 
-	void scheduleMessage(GameScreenMessage message) {}
+	void scheduleMessage(GameScreenMessage arg0) {}
 
 	void finish() {}
 
-	void setSpeed(float speed) {}
+	void setSpeed(float arg0) {}
 
 	float getPosition() {}
 
 	boolean isStaying() {}
 
-	boolean priority() {}
+	void controllerDisconnected(Controller arg0) {}
 
-	boolean triggerButton(ButtonEvent event) {}
+	void controllerConnected(Controller arg0) {}
 
-	boolean triggerType(int character) {}
+	boolean keyDown(int arg0) {}
 
-	boolean keyTyped(char character) {}
+	boolean triggerTouch(TouchEvent arg0) {}
 
-	boolean addButtonTips(ButtonTipList tips) {}
+	boolean addButtonTips(ButtonTipList arg0) {}
 
-	boolean keyDown(int keycode) {}
+	int getInputPriority() {}
 
-	boolean keyUp(int keycode) {}
+	boolean keyTyped(char arg0) {}
 
-	boolean triggerTouch(TouchEvent event) {}
+	boolean keyUp(int arg0) {}
 
-	void controllerDisconnected(Controller controller) {}
+	boolean triggerButton(ButtonEvent arg0) {}
 
-	void controllerConnected(Controller controller) {}
+	boolean triggerType(int arg0) {}
 
 	MenuElement getDefaultElement() {}
 
-	void setDefaultElement(MenuElement defaultElement) {}
-
-	void drawScreenTint(CustomSpriteBatch batch, float alpha) {}
+	void setDefaultElement(MenuElement arg0) {}
 
 	MenuElementController getController() {}
 
-	float calcOffset() {}
-
-	void drawMenu(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	boolean isBackKey(ButtonEvent trigger) {}
-
-	void setElement(MenuElement menuElement) {}
+	void drawScreenTint(CustomSpriteBatch arg0, float arg1) {}
 
 	MenuElement getMenuElement() {}
 
-	void moveTableSelection(int selection) {}
+	float calcOffset() {}
 
-	void updateTableSelection(int selection) {}
+	boolean isBackKey(ButtonEvent arg0) {}
+
+	void setElement(MenuElement arg0) {}
+
+	void drawMenu(CustomSpriteBatch arg0, float arg1, float arg2) {}
+
+	void updateTableSelection(int arg0) {}
+
+	void moveTableSelection(int arg0) {}
 
 	boolean selectTableHeader() {}
+
+	void setSpecial(String arg0, Consumer arg1) {}
+
+	List getAvailablePacks() {}
 
 }

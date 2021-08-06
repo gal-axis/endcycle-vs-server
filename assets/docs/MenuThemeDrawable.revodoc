@@ -6,6 +6,8 @@ final MenuThemeDrawable(Object) {
 
 	new() {}
 
+	new(Drawables drawable) {}
+
 	boolean equals(Object arg0) {}
 
 	String toString() {}
@@ -18,22 +20,22 @@ final MenuThemeDrawable(Object) {
 
 	void draw(Batch batch, float x, float y, float width, float height) {}
 
-	float getCenterX(float width) {}
+	void drawNinePatch(Batch batch, float x, float y, float width, float height, Color c, float scale) {}
+
+	void drawNinePatch(Batch batch, float x, float y, float width, float height) {}
+
+	float getTop() {}
 
 	float getLeft() {}
 
 	float getBottom() {}
 
-	float getRight() {}
-
-	float getTop() {}
-
 	float getCenterY(float width) {}
 
+	float getRight() {}
+
+	float getCenterX(float width) {}
+
 	void drawOverlay(Batch batch, float x, float y, float width, float height) {}
-
-	void drawNinePatch(Batch batch, float x, float y, float width, float height) {}
-
-	void drawNinePatch(Batch batch, float x, float y, float width, float height, Color c, float scale) {}
 
 }

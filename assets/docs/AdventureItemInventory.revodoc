@@ -21,24 +21,24 @@ AdventureItemInventory(Object) : Serializable {
 
 	AdventureBattleItem getItem(ID arg0) {}
 
+	AdventureBattleItem addItem(AdventureItem arg0) {}
+
 	void removeItem(AdventureBattleItem arg0, BattlePlayer arg1) {}
 
 	void removeItem(AdventureBattleItem arg0) {}
-
-	AdventureBattleItem addItem(AdventureItem arg0) {}
-
-	void finishZone() {}
-
-	boolean hasItem(ID arg0, int arg1) {}
-
-	void applyItem(AdventureBattleItem arg0, BattlePlayer arg1) {}
 
 	boolean canHaveItem(AdventureItem arg0) {}
 
 	void applyItems(BattlePlayer arg0) {}
 
+	void removeItems(BattlePlayer arg0) {}
+
 	void increaseItemAge() {}
 
-	void removeItems(BattlePlayer arg0) {}
+	void applyItem(AdventureBattleItem arg0, BattlePlayer arg1) {}
+
+	boolean hasItem(ID arg0, int arg1) {}
+
+	void finishZone() {}
 
 }

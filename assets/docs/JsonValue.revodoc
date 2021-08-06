@@ -103,17 +103,15 @@ JsonValue(Object) : Iterable {
 
 	void setName(String arg0) {}
 
-	void set(String arg0) {}
-
-	void set(double arg0, String arg1) {}
+	void set(boolean arg0) {}
 
 	void set(long arg0, String arg1) {}
 
-	void set(boolean arg0) {}
+	void set(double arg0, String arg1) {}
+
+	void set(String arg0) {}
 
 	boolean isNull() {}
-
-	void setType(ValueType arg0) {}
 
 	String getString(int arg0) {}
 
@@ -123,19 +121,21 @@ JsonValue(Object) : Iterable {
 
 	String trace() {}
 
+	void setType(ValueType arg0) {}
+
+	JsonValue child() {}
+
 	boolean notEmpty() {}
 
 	boolean has(String arg0) {}
 
-	JsonValue child() {}
-
 	void setNext(JsonValue arg0) {}
+
+	long asLong() {}
 
 	boolean isObject() {}
 
 	String asString() {}
-
-	long asLong() {}
 
 	String toJson(OutputType arg0) {}
 
@@ -145,62 +145,62 @@ JsonValue(Object) : Iterable {
 
 	String prettyPrint(OutputType arg0, int arg1) {}
 
-	boolean isString() {}
-
-	void addChild(String arg0, JsonValue arg1) {}
-
-	void addChild(JsonValue arg0) {}
+	boolean isDouble() {}
 
 	boolean isValue() {}
 
-	boolean[] asBooleanArray() {}
-
-	boolean asBoolean() {}
-
 	int[] asIntArray() {}
 
-	short asShort() {}
+	boolean[] asBooleanArray() {}
 
-	char[] asCharArray() {}
-
-	boolean isBoolean() {}
-
-	boolean isNumber() {}
-
-	int asInt() {}
-
-	String[] asStringArray() {}
-
-	float[] asFloatArray() {}
+	void setPrev(JsonValue arg0) {}
 
 	short[] asShortArray() {}
 
 	boolean hasChild(String arg0) {}
 
+	byte[] asByteArray() {}
+
+	char[] asCharArray() {}
+
+	boolean isLong() {}
+
+	void addChild(JsonValue arg0) {}
+
+	void addChild(String arg0, JsonValue arg1) {}
+
+	long[] asLongArray() {}
+
+	float asFloat() {}
+
+	boolean asBoolean() {}
+
 	JsonValue require(int arg0) {}
 
 	JsonValue require(String arg0) {}
 
-	float asFloat() {}
+	char asChar() {}
+
+	String[] asStringArray() {}
+
+	float[] asFloatArray() {}
 
 	JsonValue getChild(String arg0) {}
 
-	char asChar() {}
-
-	long[] asLongArray() {}
-
-	byte[] asByteArray() {}
-
-	double asDouble() {}
+	int asInt() {}
 
 	byte asByte() {}
 
 	double[] asDoubleArray() {}
 
-	boolean isDouble() {}
+	boolean isNumber() {}
 
-	boolean isLong() {}
+	double asDouble() {}
 
-	void setPrev(JsonValue arg0) {}
+	short asShort() {}
+
+	boolean isBoolean() {}
+
+	boolean isString() {}
 
 }

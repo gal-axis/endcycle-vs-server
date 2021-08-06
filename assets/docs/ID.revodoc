@@ -1,46 +1,50 @@
-final ID(Object) : Comparable {
+final ID(Object) : Comparable, Serializable {
 
 	long group;
 	long id;
 
 	new() {}
 
-	new(long group, long id) {}
+	new(long arg0) {}
 
-	new(long id) {}
+	new(long arg0, long arg1) {}
 
-	boolean equals(Object obj) {}
+	boolean equals(Object arg0) {}
 
 	String toString() {}
 
 	int hashCode() {}
 
-	int compareTo(ID id) {}
+	void write(Json arg0) {}
 
-	boolean equals(long group, long id) {}
+	void read(Json arg0, JsonValue arg1) {}
 
-	static boolean equals(ID id1, ID id2) {}
+	int compareTo(ID arg0) {}
 
-	static int compare(ID id1, ID id2) {}
+	boolean equals(long arg0, long arg1) {}
+
+	static boolean equals(ID arg0, ID arg1) {}
+
+	static int compare(ID arg0, ID arg1) {}
 
 	void increment() {}
 
-	static ID copy(ID id) {}
+	static ID copy(ID arg0) {}
 
-	void set(ID id) {}
+	void set(ID arg0) {}
 
-	static ID temp(long group, long id) {}
+	static ID temp(long arg0, long arg1) {}
 
-	static ID temp(long id) {}
+	static ID temp(long arg0) {}
 
-	static ID fromString(String str) {}
+	static ID fromString(String arg0) {}
 
-	static int findObjectIndex(Array list, ID id) {}
+	static IdEntity findObject(List arg0, ID arg1) {}
 
-	static int findObjectIndex(List list, ID id) {}
+	static IdEntity findObject(Array arg0, ID arg1) {}
 
-	static IdEntity findObject(Array list, ID id) {}
+	static int findObjectIndex(Array arg0, ID arg1) {}
 
-	static IdEntity findObject(List list, ID id) {}
+	static int findObjectIndex(List arg0, ID arg1) {}
 
 }

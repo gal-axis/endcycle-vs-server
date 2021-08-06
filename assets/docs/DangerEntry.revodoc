@@ -1,8 +1,8 @@
-BannedPanel(Object) {
+DangerEntry(Object) {
 
 	boolean ignored;
 
-	new(BattleEntity entity, BannedPanelObject object) {}
+	new(BattleEntity entity, Danger object) {}
 
 	boolean equals(Object arg0) {}
 
@@ -15,7 +15,5 @@ BannedPanel(Object) {
 	float getPriority() {}
 
 	boolean is(int x, int y) {}
-
-	boolean isRemove() {}
 
 }

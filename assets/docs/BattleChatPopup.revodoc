@@ -32,17 +32,17 @@ BattleChatPopup(ChatPopup) {
 
 	void hide(GameScreen screen) {}
 
-	byte getLayer() {}
-
 	float getComparisonKey() {}
 
 	final Origin getOrigin() {}
 
+	byte getLayer() {}
+
 	final void removeObject() {}
 
-	SoundContainer playSound(float x, float y, SoundInfo sound) {}
-
 	final SoundContainer playSound(Sounds sound) {}
+
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	SoundContainer playSound(SoundInfo sound) {}
 
@@ -50,25 +50,25 @@ BattleChatPopup(ChatPopup) {
 
 	void messageReceived(ChatMessage message) {}
 
-	boolean priority() {}
+	void controllerConnected(Controller controller) {}
 
-	boolean triggerButton(ButtonEvent event) {}
+	void controllerDisconnected(Controller controller) {}
 
 	boolean triggerType(int character) {}
 
-	boolean keyTyped(char character) {}
+	int getInputPriority() {}
+
+	boolean triggerTouch(TouchEvent event) {}
+
+	boolean triggerButton(ButtonEvent event) {}
 
 	boolean addButtonTips(ButtonTipList tips) {}
 
 	boolean keyDown(int keycode) {}
 
+	boolean keyTyped(char character) {}
+
 	boolean keyUp(int keycode) {}
-
-	boolean triggerTouch(TouchEvent event) {}
-
-	void controllerDisconnected(Controller controller) {}
-
-	void controllerConnected(Controller controller) {}
 
 	void stop() {}
 
@@ -78,22 +78,22 @@ BattleChatPopup(ChatPopup) {
 
 	float getButtonSize() {}
 
-	float getButtonY(float size) {}
+	void setChatController(ChatController controller) {}
 
-	boolean showingChat() {}
+	float getButtonY(float size) {}
 
 	float getButtonX(float size) {}
 
 	ChatBox getChatBox() {}
 
+	void showTemporary() {}
+
 	ChatDisplay getChatDisplay() {}
 
-	void updateHide(float delta) {}
+	boolean showingChat() {}
 
 	boolean isChatting() {}
 
-	void showTemporary() {}
-
-	void setChatController(ChatController controller) {}
+	void updateHide(float delta) {}
 
 }

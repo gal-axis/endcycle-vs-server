@@ -28,11 +28,11 @@ VocBar(HUDButton) {
 
 	boolean isHidden() {}
 
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
 	float getY() {}
 
 	float getX() {}
-
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void event(GameEvent event) {}
 
@@ -40,30 +40,30 @@ VocBar(HUDButton) {
 
 	boolean touch(TouchEvent trigger) {}
 
+	float calcY() {}
+
 	float calcX() {}
 
-	float calcY() {}
+	boolean finishedMoving() {}
+
+	boolean isTouching(float x, float y) {}
+
+	float getMove() {}
 
 	boolean increaseOffset() {}
 
 	void finishMoving() {}
 
-	boolean finishedMoving() {}
-
-	float getMove() {}
-
-	boolean isTouching(float x, float y) {}
-
 	BattleEntity getPlayer() {}
 
 	void drawVoc(CustomSpriteBatch batch, VocSet pack, int voc, float x, float y) {}
-
-	float getDstX() {}
 
 	void drawRoles(CustomSpriteBatch batch, Color c, String text, int hAlign, float x, float y) {}
 
 	void drawRoles(CustomSpriteBatch batch, float xPos, float yPos, Color c, int hAlign) {}
 
 	float getDstY() {}
+
+	float getDstX() {}
 
 }

@@ -48,13 +48,13 @@ Array(Object) : Iterable {
 
 	Object[] toArray() {}
 
-	void addAll(Array arg0, int arg1, int arg2) {}
+	void addAll(Object[] arg0, int arg1, int arg2) {}
 
 	void addAll(Array arg0) {}
 
-	void addAll(Object[] arg0) {}
+	void addAll(Array arg0, int arg1, int arg2) {}
 
-	void addAll(Object[] arg0, int arg1, int arg2) {}
+	void addAll(Object[] arg0) {}
 
 	Object pop() {}
 
@@ -92,22 +92,22 @@ Array(Object) : Iterable {
 
 	int selectRankedIndex(Comparator arg0, int arg1) {}
 
-	boolean removeValue(Object arg0, boolean arg1) {}
-
 	Object removeIndex(int arg0) {}
-
-	boolean containsAny(Array arg0, boolean arg1) {}
 
 	boolean notEmpty() {}
 
-	Object selectRanked(Comparator arg0, int arg1) {}
+	void insertRange(int arg0, int arg1) {}
 
 	Object[] shrink() {}
 
+	boolean equalsIdentity(Object arg0) {}
+
+	boolean containsAny(Array arg0, boolean arg1) {}
+
 	static Array with(Object[] arg0) {}
 
-	void insertRange(int arg0, int arg1) {}
+	boolean removeValue(Object arg0, boolean arg1) {}
 
-	boolean equalsIdentity(Object arg0) {}
+	Object selectRanked(Comparator arg0, int arg1) {}
 
 }

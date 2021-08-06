@@ -1,4 +1,4 @@
-HitExplodeListener(Object) : BattleEntityListener, BannedPanelObject {
+HitExplodeListener(Object) : BattleEntityListener, Danger {
 
 	new(BattleEntity user, VocElement elementHit, int amount, HitProperty property, AttackEffect effect) {}
 
@@ -8,11 +8,11 @@ HitExplodeListener(Object) : BattleEntityListener, BannedPanelObject {
 
 	int hashCode() {}
 
-	boolean isBannedPanel(BattleEntity entity, int x, int y) {}
+	float getDangerIgnore(int level) {}
 
-	float getBannedPanelPriority(BattleEntity entity) {}
+	boolean isDangerous(BattleEntity entity, int x, int y) {}
 
-	boolean isBannedPanelRemove(BattleEntity entity) {}
+	float getDangerPriority(BattleEntity entity) {}
 
 	boolean isActionRollback(Object[] action) {}
 
@@ -30,31 +30,31 @@ HitExplodeListener(Object) : BattleEntityListener, BannedPanelObject {
 
 	void init() {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
 	void dispose() {}
 
-	CColor getTint() {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	PatchworkStateId setState(PatchworkStateId id) {}
-
-	double crush(double amount, int crushStrength) {}
-
-	void attack(Attack attack) {}
-
-	void inflictPre(OwnedHitProperty property) {}
-
-	AilmentInflict inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
-
-	void inflict(OwnedHitProperty property) {}
-
-	int hurt(BattleEntity origin, int amount, boolean display) {}
-
-	void inflictPost(OwnedHitProperty property) {}
+	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
 
 	int heal(BattleEntity origin, int amount, boolean display) {}
 
-	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
+	void inflictPost(OwnedHitProperty property) {}
+
+	int hurt(BattleEntity origin, int amount, boolean display) {}
+
+	void inflict(OwnedHitProperty property) {}
+
+	AilmentInflict inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
+
+	void inflictPre(OwnedHitProperty property) {}
+
+	void attack(Attack attack) {}
+
+	double crush(double amount, int crushStrength) {}
+
+	PatchworkStateId setState(PatchworkStateId id) {}
+
+	CColor getTint() {}
 
 	void drawHud(CustomSpriteBatch batch, float xOfs, float yOfs, float width, float height) {}
 

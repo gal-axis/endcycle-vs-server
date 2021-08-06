@@ -32,9 +32,9 @@ AdventureCompletionMessage(MenuMessage) : MenuTablePainter {
 
 	void show(GameScreen screen) {}
 
-	void hide(GameScreen screen) {}
-
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void hide(GameScreen screen) {}
 
 	float getComparisonKey() {}
 
@@ -44,13 +44,15 @@ AdventureCompletionMessage(MenuMessage) : MenuTablePainter {
 
 	final void removeObject() {}
 
-	SoundContainer playSound(SoundInfo sound) {}
+	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
-	final SoundContainer playSound(Sounds sound) {}
+	SoundContainer playSound(SoundInfo sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
+
+	final void addDisposeListener(Runnable runnable) {}
 
 	final void removeInitializeListener(Runnable runnable) {}
 
@@ -58,37 +60,35 @@ AdventureCompletionMessage(MenuMessage) : MenuTablePainter {
 
 	final void addInitializeListener(Runnable runnable) {}
 
-	final void addDisposeListener(Runnable runnable) {}
-
 	void scheduleMessage(GameScreenMessage message) {}
 
 	void finish() {}
 
 	void setSpeed(float speed) {}
 
-	boolean isStaying() {}
-
 	float getPosition() {}
 
-	boolean priority() {}
-
-	boolean addButtonTips(ButtonTipList tips) {}
-
-	boolean triggerButton(ButtonEvent event) {}
-
-	boolean triggerTouch(TouchEvent event) {}
-
-	boolean triggerType(int character) {}
-
-	boolean keyTyped(char character) {}
-
-	boolean keyUp(int keycode) {}
-
-	boolean keyDown(int keycode) {}
+	boolean isStaying() {}
 
 	void controllerConnected(Controller controller) {}
 
 	void controllerDisconnected(Controller controller) {}
+
+	boolean triggerType(int character) {}
+
+	int getInputPriority() {}
+
+	boolean triggerTouch(TouchEvent event) {}
+
+	boolean triggerButton(ButtonEvent event) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean keyDown(int keycode) {}
+
+	boolean keyTyped(char character) {}
+
+	boolean keyUp(int keycode) {}
 
 	void setDefaultElement(MenuElement defaultElement) {}
 
@@ -98,11 +98,11 @@ AdventureCompletionMessage(MenuMessage) : MenuTablePainter {
 
 	void drawScreenTint(CustomSpriteBatch batch, float alpha) {}
 
-	float calcOffset() {}
-
 	void setElement(MenuElement menuElement) {}
 
 	MenuElement getMenuElement() {}
+
+	float calcOffset() {}
 
 	void drawMenu(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
@@ -116,10 +116,10 @@ AdventureCompletionMessage(MenuMessage) : MenuTablePainter {
 
 	void startPainting(MenuTablePaintParams params) {}
 
-	void paintBG(MenuTablePaintParams params) {}
+	void stopPainting(MenuTablePaintParams params) {}
 
 	void paintEmpty(MenuTablePaintParams params) {}
 
-	void stopPainting(MenuTablePaintParams params) {}
+	void paintBG(MenuTablePaintParams params) {}
 
 }

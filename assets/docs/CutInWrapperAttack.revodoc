@@ -29,7 +29,7 @@ CutInWrapperAttack(WrapperAttack) {
 	Drawable cutIn;
 	SoundInfo sound;
 
-	new(Attack attack, Drawable cutIn, SoundInfo sound) {}
+	new(Attack arg0, Drawable arg1, SoundInfo arg2) {}
 
 	boolean equals(Object arg0) {}
 
@@ -39,120 +39,120 @@ CutInWrapperAttack(WrapperAttack) {
 
 	Attack clone() {}
 
-	boolean isActionRollback(Object[] action) {}
+	boolean isActionRollback(Object[] arg0) {}
 
-	void actionTriggered(Object[] action) {}
+	void actionTriggered(Object[] arg0) {}
 
-	final void actionTriggered(Runnable action) {}
+	final void actionTriggered(Runnable arg0) {}
 
-	boolean priority() {}
+	void controllerDisconnected(Controller arg0) {}
 
-	boolean keyUp(int keycode) {}
+	void controllerConnected(Controller arg0) {}
 
-	boolean triggerTouch(TouchEvent event) {}
+	boolean triggerButton(ButtonEvent arg0) {}
 
-	boolean keyDown(int keycode) {}
+	boolean keyDown(int arg0) {}
 
-	boolean triggerType(int character) {}
+	boolean keyTyped(char arg0) {}
 
-	boolean keyTyped(char character) {}
+	boolean triggerTouch(TouchEvent arg0) {}
 
-	boolean addButtonTips(ButtonTipList tips) {}
+	boolean triggerType(int arg0) {}
 
-	boolean triggerButton(ButtonEvent event) {}
+	boolean addButtonTips(ButtonTipList arg0) {}
 
-	void controllerDisconnected(Controller controller) {}
+	boolean keyUp(int arg0) {}
 
-	void controllerConnected(Controller controller) {}
+	int getInputPriority() {}
 
 	String getName() {}
 
-	void update(float delta) {}
+	void update(float arg0) {}
 
-	Attack cast(BattleEntity user, AttackPlan plan) {}
+	Attack cast(BattleEntity arg0, AttackPlan arg1) {}
 
 	final BattleField getField() {}
 
 	void start() {}
 
-	final void copy(Attack attack) {}
+	final void copy(Attack arg0) {}
 
 	BattleEntity getTarget() {}
 
 	void flip() {}
 
-	final float getY(int yTile) {}
+	final float getY(int arg0) {}
 
-	final float getX(int xTile) {}
+	final float getX(int arg0) {}
+
+	void setAnimationDuration(float arg0) {}
+
+	SoundContainer playSound(SoundInfo arg0) {}
 
 	boolean active() {}
 
-	SoundContainer playSound(SoundInfo sound) {}
+	final void triggerAction(Object[] arg0) {}
 
 	void finish() {}
 
-	final Controller getController() {}
+	final Origin getOrigin(int arg0) {}
 
-	final void triggerAction(Object[] parameters) {}
+	final Controller getController() {}
 
 	void attackAnimation() {}
 
 	void castAnimation() {}
 
-	final Origin getOrigin(int index) {}
-
 	boolean fillGauges() {}
-
-	void setAnimationDuration(float duration) {}
 
 	final int getXTile() {}
 
 	final int getYTile() {}
 
-	void setAnimationState(PatchworkStateId state) {}
-
-	final BattleEntityList getBattleEntities() {}
-
-	void updateAttackTasks(float delta) {}
-
-	boolean hasAnimationState(PatchworkStateId state) {}
-
 	Attack charge() {}
 
-	Attack getWrapped(AttackWrapper wrapper, boolean shareHit, boolean gauge) {}
-
-	void addWrappers(AttackWrappers wrappers) {}
-
-	boolean acceptsInput(ButtonEvent event) {}
-
-	AttackPortal getPortal(BattleEntity entity, float portalX, float portalY, float time) {}
+	Attack getWrapped(AttackWrapper arg0, boolean arg1, boolean arg2) {}
 
 	final int getTurn() {}
 
+	void addWrappers(AttackWrappers arg0) {}
+
+	void increaseGauge(double arg0) {}
+
+	boolean acceptsInput(ButtonEvent arg0) {}
+
 	double getGaugeProgress() {}
 
-	void scheduleAction(int action, float delay) {}
+	void scheduleAction(Runnable arg0, float arg1) {}
 
-	void scheduleAction(Runnable action, float delay) {}
+	void scheduleAction(int arg0, float arg1) {}
+
+	void runAction(int arg0) {}
+
+	AttackPortal getPortal(BattleEntity arg0, float arg1, float arg2, float arg3) {}
 
 	final int getXTileInFront() {}
 
-	void increaseGauge(double amount) {}
-
-	void runAction(int action) {}
-
-	boolean reduceGauge(double amount) {}
-
 	boolean reduceGauge() {}
 
-	void finishWrapped() {}
+	boolean reduceGauge(double arg0) {}
+
+	void updateAttackTasks(float arg0) {}
+
+	final BattleEntityList getBattleEntities() {}
+
+	boolean hasAnimationState(PatchworkStateId arg0) {}
+
+	void setAnimationState(PatchworkStateId arg0) {}
 
 	void createAttack() {}
 
-	boolean updateWrapped(float delta) {}
+	void startWrapped() {}
+
+	boolean updateWrapped(float arg0) {}
 
 	boolean isWrappedStarted() {}
 
-	void startWrapped() {}
+	void finishWrapped() {}
 
 }

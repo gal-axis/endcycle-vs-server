@@ -8,25 +8,25 @@ BattleEntityInteractAction(Object) : BattleEntityAction, GameEventListener, Inpu
 
 	int hashCode() {}
 
-	boolean priority() {}
+	void controllerConnected(Controller controller) {}
 
-	boolean addButtonTips(ButtonTipList tips) {}
+	void controllerDisconnected(Controller controller) {}
 
-	boolean triggerButton(ButtonEvent event) {}
+	boolean triggerType(int character) {}
+
+	int getInputPriority() {}
 
 	boolean triggerTouch(TouchEvent event) {}
 
-	boolean triggerType(int character) {}
+	boolean triggerButton(ButtonEvent event) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean keyDown(int keycode) {}
 
 	boolean keyTyped(char character) {}
 
 	boolean keyUp(int keycode) {}
-
-	boolean keyDown(int keycode) {}
-
-	void controllerConnected(Controller controller) {}
-
-	void controllerDisconnected(Controller controller) {}
 
 	void handle(GameEvent event) {}
 
@@ -44,9 +44,9 @@ BattleEntityInteractAction(Object) : BattleEntityAction, GameEventListener, Inpu
 
 	void hit(HitProperty hitProperty) {}
 
-	boolean isAuthorative() {}
-
 	void hitEntity(BattleEntity entity, OwnedHitProperty property) {}
+
+	boolean isAuthorative() {}
 
 	BattleEntityActionSave getSave() {}
 

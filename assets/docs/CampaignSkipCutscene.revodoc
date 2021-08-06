@@ -36,17 +36,17 @@ CampaignSkipCutscene(ScreenFlash) : InputBlocker, Runnable {
 
 	void hide(GameScreen screen) {}
 
-	byte getLayer() {}
-
 	float getComparisonKey() {}
 
 	final Origin getOrigin() {}
 
+	byte getLayer() {}
+
 	final void removeObject() {}
 
-	SoundContainer playSound(float x, float y, SoundInfo sound) {}
-
 	final SoundContainer playSound(Sounds sound) {}
+
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	SoundContainer playSound(SoundInfo sound) {}
 
@@ -56,25 +56,25 @@ CampaignSkipCutscene(ScreenFlash) : InputBlocker, Runnable {
 
 	void run() {}
 
-	boolean priority() {}
+	void controllerConnected(Controller controller) {}
 
-	boolean triggerButton(ButtonEvent event) {}
+	void controllerDisconnected(Controller controller) {}
 
 	boolean triggerType(int character) {}
 
-	boolean keyTyped(char character) {}
+	int getInputPriority() {}
+
+	boolean triggerTouch(TouchEvent event) {}
+
+	boolean triggerButton(ButtonEvent event) {}
 
 	boolean addButtonTips(ButtonTipList tips) {}
 
 	boolean keyDown(int keycode) {}
 
+	boolean keyTyped(char character) {}
+
 	boolean keyUp(int keycode) {}
-
-	boolean triggerTouch(TouchEvent event) {}
-
-	void controllerDisconnected(Controller controller) {}
-
-	void controllerConnected(Controller controller) {}
 
 	void add(Battle battle) {}
 

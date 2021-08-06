@@ -14,11 +14,11 @@ final Inventory(Object) {
 
 	int hashCode() {}
 
-	boolean add(VocShell arg0) {}
+	boolean add(Voc arg0) {}
 
 	boolean add(VocStyle arg0) {}
 
-	boolean add(Voc arg0) {}
+	boolean add(VocShell arg0) {}
 
 	void load() {}
 
@@ -36,18 +36,18 @@ final Inventory(Object) {
 
 	boolean has(Voc arg0) {}
 
-	int getMoney() {}
-
-	boolean removeMoney(int arg0) {}
-
-	void addMoney(int arg0) {}
+	void saveLocal() {}
 
 	void addDefaultPack() {}
+
+	void addMoney(int arg0) {}
 
 	boolean loadLocal() {}
 
 	void loadFallback() {}
 
-	void saveLocal() {}
+	boolean removeMoney(int arg0) {}
+
+	int getMoney() {}
 
 }

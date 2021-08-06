@@ -41,64 +41,64 @@ final PlayerProgress(Object) {
 
 	boolean isTutorialComplete(int arg0) {}
 
-	boolean isCharacterUnlocked(ID arg0) {}
+	boolean isBestWave(GameDifficulty arg0, boolean arg1, int arg2) {}
 
 	boolean isBestScore(GameDifficulty arg0, boolean arg1, int arg2) {}
 
-	boolean isBestWave(GameDifficulty arg0, boolean arg1, int arg2) {}
-
-	boolean isCharacterCustomizationUnlocked(ID arg0) {}
-
-	boolean isAdventureEventEncountered(ID arg0) {}
-
-	List getUnlockedCampaigns() {}
-
-	void adventureEventEncountered(AdventureEvent arg0) {}
-
-	void clearAdventureZone(AdventureZone arg0) {}
-
-	boolean isAdventureCleared(ID arg0) {}
-
-	List getAffinityEntries() {}
-
-	boolean isCampaignUnlocked(ID arg0) {}
-
-	Array checkNewCampaigns() {}
-
-	boolean checkNewAffinities() {}
-
-	Array checkNewCharacters() {}
-
-	boolean isAffinityEntryUnlocked(ID arg0) {}
-
-	boolean[] completeOnslaught(GameDifficulty arg0, boolean arg1, int arg2, int arg3) {}
-
-	List getUnlockedCharacters() {}
-
-	void addDefeatedCredit(String arg0) {}
-
-	List getUnlockedThemes() {}
-
-	Array checkNewCustomizations() {}
-
 	float completeCampaign(CampaignData arg0, double arg1, List arg2) {}
+
+	void clearAdventure(AdventurePath arg0) {}
+
+	void saveLocal() {}
 
 	void cheat() {}
 
-	void increaseAffinity(ID arg0, float arg1) {}
+	void completeTutorial(int arg0) {}
 
 	boolean buyCharacter(BattleEntityData arg0) {}
+
+	void increaseAffinity(ID arg0, float arg1) {}
+
+	void checkNew() {}
 
 	boolean isThemeUnlocked(ID arg0) {}
 
 	Array checkNewThemes() {}
 
-	void saveLocal() {}
+	boolean isCharacterUnlocked(ID arg0) {}
 
-	void completeTutorial(int arg0) {}
+	boolean isCharacterCustomizationUnlocked(ID arg0) {}
 
-	void checkNew() {}
+	boolean isAdventureEventEncountered(ID arg0) {}
 
-	void clearAdventure(AdventurePath arg0) {}
+	void adventureEventEncountered(AdventureEvent arg0) {}
+
+	List getUnlockedCampaigns() {}
+
+	void clearAdventureZone(AdventureZone arg0) {}
+
+	boolean isAdventureCleared(ID arg0) {}
+
+	Array checkNewCharacters() {}
+
+	boolean[] completeOnslaught(GameDifficulty arg0, boolean arg1, int arg2, int arg3) {}
+
+	boolean checkNewAffinities() {}
+
+	Array checkNewCustomizations() {}
+
+	boolean isCampaignUnlocked(ID arg0) {}
+
+	void addDefeatedCredit(String arg0) {}
+
+	List getUnlockedThemes() {}
+
+	List getAffinityEntries() {}
+
+	boolean isAffinityEntryUnlocked(ID arg0) {}
+
+	List getUnlockedCharacters() {}
+
+	Array checkNewCampaigns() {}
 
 }

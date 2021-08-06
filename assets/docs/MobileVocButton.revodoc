@@ -12,25 +12,25 @@ abstract MobileVocButton(Object) : MobileButton, InputListener {
 
 	int hashCode() {}
 
-	boolean priority() {}
+	void controllerConnected(Controller controller) {}
 
-	boolean triggerButton(ButtonEvent event) {}
+	void controllerDisconnected(Controller controller) {}
 
 	boolean triggerType(int character) {}
 
-	boolean keyTyped(char character) {}
+	int getInputPriority() {}
+
+	boolean triggerTouch(TouchEvent event) {}
+
+	boolean triggerButton(ButtonEvent event) {}
 
 	boolean addButtonTips(ButtonTipList tips) {}
 
 	boolean keyDown(int keycode) {}
 
+	boolean keyTyped(char character) {}
+
 	boolean keyUp(int keycode) {}
-
-	boolean triggerTouch(TouchEvent event) {}
-
-	void controllerDisconnected(Controller controller) {}
-
-	void controllerConnected(Controller controller) {}
 
 	void update(float delta) {}
 
@@ -38,9 +38,9 @@ abstract MobileVocButton(Object) : MobileButton, InputListener {
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void button(ButtonEvent trigger) {}
-
 	boolean touch(TouchEvent trigger) {}
+
+	void button(ButtonEvent trigger) {}
 
 	abstract float getY();
 
@@ -54,14 +54,14 @@ abstract MobileVocButton(Object) : MobileButton, InputListener {
 
 	abstract float getSizeY();
 
-	abstract float getSizeX();
-
 	abstract float getVocSize();
+
+	abstract float getSizeX();
 
 	void drawButton(CustomSpriteBatch batch, float scale, float sizeX, float sizeY, float x, float y) {}
 
-	void drawVoc(CustomSpriteBatch batch, VocEntry voc, float x, float y, float scale, Color color) {}
-
 	boolean isTouching(int posX, int posY) {}
+
+	void drawVoc(CustomSpriteBatch batch, VocEntry voc, float x, float y, float scale, Color color) {}
 
 }

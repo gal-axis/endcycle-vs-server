@@ -24,9 +24,9 @@ abstract HUDButton(Object) {
 
 	boolean isHidden() {}
 
-	float getY() {}
-
 	abstract void draw(CustomSpriteBatch batch, float xOfs, float yOfs);
+
+	float getY() {}
 
 	float getX() {}
 
@@ -40,14 +40,14 @@ abstract HUDButton(Object) {
 
 	float calcX() {}
 
-	float getMove() {}
-
 	boolean finishedMoving() {}
 
-	void finishMoving() {}
+	boolean isTouching(float x, float y) {}
+
+	float getMove() {}
 
 	boolean increaseOffset() {}
 
-	boolean isTouching(float x, float y) {}
+	void finishMoving() {}
 
 }

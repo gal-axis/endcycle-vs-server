@@ -1,5 +1,8 @@
 TimeModeProperty(GameModeProperty) {
 
+	final String name;
+	Float value;
+
 	new() {}
 
 	boolean equals(Object o) {}
@@ -17,10 +20,6 @@ TimeModeProperty(GameModeProperty) {
 	double get(double object, double orElse) {}
 
 	void paint(Float object, Painter parameters) {}
-
-	String getName() {}
-
-	Float getValue() {}
 
 	void setValue(Object value) {}
 

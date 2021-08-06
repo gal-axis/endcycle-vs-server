@@ -16,64 +16,64 @@ Pixmap(Object) {
 
 	void fill() {}
 
-	int getWidth() {}
-
 	int getHeight() {}
 
-	void setColor(Color arg0) {}
-
-	void setColor(int arg0) {}
-
-	void setColor(float arg0, float arg1, float arg2, float arg3) {}
+	int getWidth() {}
 
 	void drawRectangle(int arg0, int arg1, int arg2, int arg3) {}
 
+	void setColor(Color arg0) {}
+
+	void setColor(float arg0, float arg1, float arg2, float arg3) {}
+
+	void setColor(int arg0) {}
+
 	void setFilter(Filter arg0) {}
+
+	int getGLFormat() {}
+
+	ByteBuffer getPixels() {}
+
+	int getGLType() {}
+
+	void drawPixmap(Pixmap arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8) {}
+
+	void drawPixmap(Pixmap arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6) {}
+
+	void drawPixmap(Pixmap arg0, int arg1, int arg2) {}
+
+	Format getFormat() {}
+
+	void setBlending(Blending arg0) {}
+
+	void drawLine(int arg0, int arg1, int arg2, int arg3) {}
+
+	static void downloadFromUrl(String arg0, DownloadPixmapResponseListener arg1) {}
+
+	boolean isDisposed() {}
+
+	void fillTriangle(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5) {}
+
+	void fillCircle(int arg0, int arg1, int arg2) {}
+
+	int getPixel(int arg0, int arg1) {}
+
+	void drawCircle(int arg0, int arg1, int arg2) {}
+
+	void setPixels(ByteBuffer arg0) {}
+
+	Blending getBlending() {}
+
+	Filter getFilter() {}
+
+	void drawPixel(int arg0, int arg1) {}
+
+	void drawPixel(int arg0, int arg1, int arg2) {}
+
+	void fillRectangle(int arg0, int arg1, int arg2, int arg3) {}
 
 	static Pixmap createFromFrameBuffer(int arg0, int arg1, int arg2, int arg3) {}
 
 	int getGLInternalFormat() {}
-
-	boolean isDisposed() {}
-
-	void drawPixel(int arg0, int arg1, int arg2) {}
-
-	void drawPixel(int arg0, int arg1) {}
-
-	void drawCircle(int arg0, int arg1, int arg2) {}
-
-	void fillTriangle(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5) {}
-
-	Blending getBlending() {}
-
-	void setPixels(ByteBuffer arg0) {}
-
-	int getPixel(int arg0, int arg1) {}
-
-	void drawLine(int arg0, int arg1, int arg2, int arg3) {}
-
-	void fillRectangle(int arg0, int arg1, int arg2, int arg3) {}
-
-	Filter getFilter() {}
-
-	static void downloadFromUrl(String arg0, DownloadPixmapResponseListener arg1) {}
-
-	void fillCircle(int arg0, int arg1, int arg2) {}
-
-	Format getFormat() {}
-
-	ByteBuffer getPixels() {}
-
-	void setBlending(Blending arg0) {}
-
-	int getGLType() {}
-
-	int getGLFormat() {}
-
-	void drawPixmap(Pixmap arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6) {}
-
-	void drawPixmap(Pixmap arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8) {}
-
-	void drawPixmap(Pixmap arg0, int arg1, int arg2) {}
 
 }

@@ -8,11 +8,15 @@ VocSet(FixedList) : Serializable {
 
 	new() {}
 
-	abstract boolean equals(Object arg0);
+	boolean equals(Object arg0) {}
 
 	String toString() {}
 
 	abstract int hashCode();
+
+	void write(Json arg0) {}
+
+	void read(Json arg0, JsonValue arg1) {}
 
 	Iterator iterator() {}
 
@@ -67,10 +71,6 @@ VocSet(FixedList) : Serializable {
 	void collect() {}
 
 	VocEntry pop() {}
-
-	void write(Json arg0) {}
-
-	void read(Json arg0, JsonValue arg1) {}
 
 	void set(VocSet arg0) {}
 

@@ -6,28 +6,28 @@ interface Controller {
 
 	abstract boolean isConnected();
 
-	abstract int getMinButtonIndex();
-
 	abstract int getMaxButtonIndex();
+
+	abstract int getMinButtonIndex();
 
 	abstract boolean supportsPlayerIndex();
 
-	abstract String getUniqueId();
-
-	abstract int getAxisCount();
-
 	abstract boolean canVibrate();
 
-	abstract boolean isVibrating();
-
-	abstract void startVibration(int arg0, float arg1);
+	abstract boolean getButton(int arg0);
 
 	abstract void cancelVibration();
 
-	abstract void setPlayerIndex(int arg0);
+	abstract String getUniqueId();
+
+	abstract boolean isVibrating();
 
 	abstract float getAxis(int arg0);
 
-	abstract boolean getButton(int arg0);
+	abstract int getAxisCount();
+
+	abstract void setPlayerIndex(int arg0);
+
+	abstract void startVibration(int arg0, float arg1);
 
 }

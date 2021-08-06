@@ -1,4 +1,4 @@
-final DamagePanelsListener(Object) : BattleEntityListener, BECondition {
+final DamagePanelsListener(Object) : BattleEntityListener, Danger, BECondition {
 
 	new(BattleEntity user, int selfHurt, OwnedHitProperty hurtProperty) {}
 
@@ -10,6 +10,12 @@ final DamagePanelsListener(Object) : BattleEntityListener, BECondition {
 
 	boolean test(BattleEntity entity) {}
 
+	float getDangerIgnore(int level) {}
+
+	boolean isDangerous(BattleEntity entity, int x, int y) {}
+
+	float getDangerPriority(BattleEntity entity) {}
+
 	void add() {}
 
 	void remove() {}
@@ -20,31 +26,31 @@ final DamagePanelsListener(Object) : BattleEntityListener, BECondition {
 
 	void init() {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
 	void dispose() {}
 
-	CColor getTint() {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	PatchworkStateId setState(PatchworkStateId id) {}
-
-	double crush(double amount, int crushStrength) {}
-
-	void attack(Attack attack) {}
-
-	void inflictPre(OwnedHitProperty property) {}
-
-	AilmentInflict inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
-
-	void inflict(OwnedHitProperty property) {}
-
-	int hurt(BattleEntity origin, int amount, boolean display) {}
-
-	void inflictPost(OwnedHitProperty property) {}
+	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
 
 	int heal(BattleEntity origin, int amount, boolean display) {}
 
-	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
+	void inflictPost(OwnedHitProperty property) {}
+
+	int hurt(BattleEntity origin, int amount, boolean display) {}
+
+	void inflict(OwnedHitProperty property) {}
+
+	AilmentInflict inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
+
+	void inflictPre(OwnedHitProperty property) {}
+
+	void attack(Attack attack) {}
+
+	double crush(double amount, int crushStrength) {}
+
+	PatchworkStateId setState(PatchworkStateId id) {}
+
+	CColor getTint() {}
 
 	void drawHud(CustomSpriteBatch batch, float xOfs, float yOfs, float width, float height) {}
 

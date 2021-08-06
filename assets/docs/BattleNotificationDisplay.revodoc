@@ -28,33 +28,31 @@ BattleNotificationDisplay(Object) : ScreenObject {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
 	void show(GameScreen screen) {}
 
 	void hide(GameScreen screen) {}
-
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	float getComparisonKey() {}
 
 	Origin getOrigin() {}
 
 	byte getLayer() {}
 
-	BattleNotificationData get(String text, Color color) {}
+	float getComparisonKey() {}
 
-	void show(BattleNotificationData data) {}
+	BattleNotificationData get(String text, Color color) {}
 
 	void show(String text, BattleEntity entity) {}
 
 	void show(String text, Color color) {}
+
+	void show(BattleNotificationData data) {}
 
 	void kill(BattleEntity entity, BattleEntity killed) {}
 
 	void killed(BattleEntity killer, BattleEntity entity) {}
 
 	void winning(Party party) {}
-
-	void friendlyFire(BattleEntity entity, BattleEntity killed) {}
 
 	void killstreak(BattleEntity entity, int streak) {}
 
@@ -63,5 +61,7 @@ BattleNotificationDisplay(Object) : ScreenObject {
 	void revenge(BattleEntity entity, BattleEntity killed) {}
 
 	void killjoy(BattleEntity entity, BattleEntity killer) {}
+
+	void friendlyFire(BattleEntity entity, BattleEntity killed) {}
 
 }

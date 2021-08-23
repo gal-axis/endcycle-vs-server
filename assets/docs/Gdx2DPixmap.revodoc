@@ -33,11 +33,7 @@ Gdx2DPixmap(Object) {
 
 	void setScale(int arg0) {}
 
-	int getGLType() {}
-
 	ByteBuffer getPixels() {}
-
-	int getGLFormat() {}
 
 	int getFormat() {}
 
@@ -45,34 +41,38 @@ Gdx2DPixmap(Object) {
 
 	void drawPixmap(Gdx2DPixmap arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8) {}
 
-	int getGLInternalFormat() {}
+	int getGLType() {}
 
-	void fillRect(int arg0, int arg1, int arg2, int arg3, int arg4) {}
-
-	void setPixel(int arg0, int arg1, int arg2) {}
+	int getGLFormat() {}
 
 	void drawCircle(int arg0, int arg1, int arg2, int arg3) {}
 
-	void drawLine(int arg0, int arg1, int arg2, int arg3, int arg4) {}
-
-	int getPixel(int arg0, int arg1) {}
-
 	void fillTriangle(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6) {}
+
+	void drawLine(int arg0, int arg1, int arg2, int arg3, int arg4) {}
 
 	void setBlend(int arg0) {}
 
-	void fillCircle(int arg0, int arg1, int arg2, int arg3) {}
+	void fillRect(int arg0, int arg1, int arg2, int arg3, int arg4) {}
 
 	void drawRect(int arg0, int arg1, int arg2, int arg3, int arg4) {}
+
+	void setPixel(int arg0, int arg1, int arg2) {}
+
+	void fillCircle(int arg0, int arg1, int arg2, int arg3) {}
+
+	int getPixel(int arg0, int arg1) {}
+
+	static int toGlFormat(int arg0) {}
 
 	String getFormatString() {}
 
 	static int toGlType(int arg0) {}
 
-	static int toGlFormat(int arg0) {}
+	static Gdx2DPixmap newPixmap(int arg0, int arg1, int arg2) {}
 
 	static String getFailureReason() {}
 
-	static Gdx2DPixmap newPixmap(int arg0, int arg1, int arg2) {}
+	int getGLInternalFormat() {}
 
 }

@@ -44,39 +44,39 @@ SideAdventureFaction(BaseAdventureFaction) {
 
 	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
 
-	boolean loot(AdventureFieldNode arg0) {}
-
 	void lose() {}
 
-	void finishZone(AdventureFieldData arg0) {}
-
-	void stopBattle(BattleEntityList arg0) {}
+	boolean loot(AdventureFieldNode arg0) {}
 
 	void startBattle(BattleEntityList arg0) {}
 
+	void stopBattle(BattleEntityList arg0) {}
+
+	void finishZone(AdventureFieldData arg0) {}
+
 	void startNode(AdventureFieldNode arg0) {}
-
-	void startZone(AdventureFieldData arg0) {}
-
-	void finishNode(AdventureFieldNode arg0) {}
-
-	void addWinLoot(Looter arg0) {}
 
 	void generateStart(AdventureNodeGraph arg0) {}
 
+	void generateFinal(AdventureNodeGraph arg0) {}
+
 	DrawableImage getIcon() {}
 
-	void addLoseLoot(Looter arg0) {}
-
-	void updatePlayer(BattlePlayer arg0) {}
+	void startZone(AdventureFieldData arg0) {}
 
 	void generateNodes(AdventureNodeGraph arg0) {}
 
-	void generateFinal(AdventureNodeGraph arg0) {}
+	void addLoseLoot(Looter arg0) {}
+
+	void finishNode(AdventureFieldNode arg0) {}
 
 	void generateBranches(AdventureNodeGraph arg0) {}
 
+	void addWinLoot(Looter arg0) {}
+
 	void generateFinish(AdventureNodeGraph arg0) {}
+
+	void updatePlayer(BattlePlayer arg0) {}
 
 	boolean canUpgrade() {}
 
@@ -84,17 +84,17 @@ SideAdventureFaction(BaseAdventureFaction) {
 
 	int getStatModifier() {}
 
-	void generateUpgrade(AdventureNodeGraph arg0) {}
-
 	void selectZone(AdventureZone arg0) {}
+
+	void generateUpgrade(AdventureNodeGraph arg0) {}
 
 	void setSide(AdventureSide arg0) {}
 
-	void betray(AdventureSide arg0) {}
+	boolean excuse(AdventureSide arg0) {}
 
 	boolean canChangeSide(AdventureSide arg0) {}
 
-	boolean excuse(AdventureSide arg0) {}
+	void betray(AdventureSide arg0) {}
 
 	AdventurePathChange getChange(AdventureSide arg0) {}
 

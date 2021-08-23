@@ -1,4 +1,4 @@
-final AdventureEventTriggers(Object) {
+final AdventureEventTriggers {
 
 	new() {}
 
@@ -8,14 +8,18 @@ final AdventureEventTriggers(Object) {
 
 	int hashCode() {}
 
-	List getIdentifiers() {}
-
 	String shortenName(String name) {}
+
+	List getIdentifiers() {}
 
 	boolean isSingle() {}
 
-	static void add(AdventureEventTriggerIdentifier provider) {}
+	AdventureEventTrigger get(String name) {}
 
-	static void remove(AdventureEventTriggerIdentifier provider) {}
+	void sort() {}
+
+	void setSuffix(String suffix) {}
+
+	List getAll() {}
 
 }

@@ -8,6 +8,7 @@ VocPackEditGroup(VocPackGroup) : InputListener {
 	final List containers;
 	VocMenu vocMenu;
 	Inventory inventory;
+	VocPack pack;
 	VocPackChanger packChanger;
 	VocPackCharacterButton character;
 	float containerWidth;
@@ -42,25 +43,25 @@ VocPackEditGroup(VocPackGroup) : InputListener {
 
 	void hide(GameScreen screen) {}
 
-	void show(GameScreen screen) {}
-
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void show(GameScreen screen) {}
 
 	float getComparisonKey() {}
 
-	final Origin getOrigin() {}
-
 	byte getLayer() {}
 
-	SoundContainer playSound(float x, float y, SoundInfo sound) {}
-
-	final SoundContainer playSound(Sounds sound) {}
-
-	SoundContainer playSound(SoundInfo sound) {}
+	final Origin getOrigin() {}
 
 	final void addObject(ScreenObject object) {}
 
 	final void removeObject() {}
+
+	final SoundContainer playSound(Sounds sound) {}
+
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	SoundContainer playSound(SoundInfo sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
@@ -74,29 +75,29 @@ VocPackEditGroup(VocPackGroup) : InputListener {
 
 	MenuElement setEnabled(boolean enabled) {}
 
-	MenuElement setLayer(byte layer) {}
+	float getX() {}
 
-	float getWidth() {}
+	float getY() {}
+
+	boolean select() {}
 
 	float getHeight() {}
 
 	MenuElement setHeight(float height) {}
 
+	float getWidth() {}
+
+	MenuElement setLayer(byte layer) {}
+
 	MenuElement getAbsoluteParent() {}
-
-	boolean select() {}
-
-	float getY() {}
-
-	float getX() {}
 
 	final void triggerAction(MenuElementActionType type) {}
 
 	boolean touch(TouchEvent trigger) {}
 
-	MenuElement setX(float x) {}
-
 	MenuElement setY(float y) {}
+
+	MenuElement setX(float x) {}
 
 	float calcX() {}
 
@@ -106,55 +107,55 @@ VocPackEditGroup(VocPackGroup) : InputListener {
 
 	MenuElement setFocusable(boolean focusable) {}
 
-	boolean isTouching(float x, float y) {}
-
-	Set getActionListeners() {}
-
-	final void setMenuControllerSelection(MenuElement element) {}
-
-	float getAbsoluteX() {}
-
 	float getAbsoluteY() {}
-
-	boolean canDrawCursor() {}
-
-	MenuElement setAnchor(MenuElement anchor) {}
-
-	int getVAlign() {}
-
-	MenuElement setAnchorVAlign(int anchorVAlign) {}
-
-	MenuElement setVAlign(int vAlign) {}
-
-	void addElements(Array elements, float x, float y) {}
 
 	boolean isEnabled() {}
 
 	MenuElement setHAlign(int hAlign) {}
 
-	MenuElement getAnchor() {}
+	MenuElement setAnchorVAlign(int anchorVAlign) {}
 
-	MenuButtonTips getButtonTips() {}
+	void addElements(Array elements, float x, float y) {}
 
-	MenuElement setFocused(boolean focused) {}
-
-	MenuElement setAnchorHAlign(int anchorHAlign) {}
-
-	boolean isFocusable() {}
-
-	void setCursor(Rectangle rectangle) {}
-
-	boolean isFocused() {}
-
-	MenuElement setHidden(boolean hidden) {}
+	boolean canDrawCursor() {}
 
 	int getAnchorHAlign() {}
 
-	int getAnchorVAlign() {}
+	boolean isFocused() {}
+
+	boolean isAbsoluteHidden() {}
+
+	MenuElement setFocused(boolean focused) {}
+
+	MenuElement setAnchor(MenuElement anchor) {}
+
+	MenuElement setHidden(boolean hidden) {}
 
 	int getHAlign() {}
 
-	boolean isAbsoluteHidden() {}
+	int getVAlign() {}
+
+	MenuElement setVAlign(int vAlign) {}
+
+	float getAbsoluteX() {}
+
+	MenuElement setAnchorHAlign(int anchorHAlign) {}
+
+	int getAnchorVAlign() {}
+
+	MenuButtonTips getButtonTips() {}
+
+	void setCursor(Rectangle rectangle) {}
+
+	MenuElement getAnchor() {}
+
+	boolean isFocusable() {}
+
+	boolean isTouching(float x, float y) {}
+
+	final void setMenuControllerSelection(MenuElement element) {}
+
+	Set getActionListeners() {}
 
 	int compare(MenuElement o1, MenuElement o2) {}
 
@@ -162,9 +163,9 @@ VocPackEditGroup(VocPackGroup) : InputListener {
 
 	Comparator thenComparing(Comparator arg0) {}
 
-	void ignoreSize(MenuElement object) {}
+	void setDefaultElement(MenuElement defaultElement) {}
 
-	void setBackground(MenuThemeDrawable background) {}
+	MenuElement getDefaultElement() {}
 
 	MenuElement addObject(MenuElement object) {}
 
@@ -172,17 +173,15 @@ VocPackEditGroup(VocPackGroup) : InputListener {
 
 	List getObjects() {}
 
-	void setDefaultElement(MenuElement defaultElement) {}
+	void ignoreSize(MenuElement object) {}
 
-	MenuElement getDefaultElement() {}
+	void setBackground(MenuThemeDrawable background) {}
 
 	float getOffsetX() {}
 
 	float getOffsetY() {}
 
-	Color getBackgroundColor() {}
-
-	void setBackgroundColor(Color backgroundColor) {}
+	void drawBackground(CustomSpriteBatch batch, float x, float y) {}
 
 	void addElements(Array elements, float x, float y, MenuElement object) {}
 
@@ -190,27 +189,31 @@ VocPackEditGroup(VocPackGroup) : InputListener {
 
 	MenuElementShowAnim getShowAnimation() {}
 
-	void countSize(MenuElement object) {}
-
-	void setObjects(List objects) {}
+	void setBgPad(float bgPad) {}
 
 	void setCountSize(List countSize) {}
 
+	void setOffsetY(float offsetY) {}
+
 	float getBgPad() {}
 
-	void setOffsetY(float offsetY) {}
+	void setObjects(List objects) {}
 
 	void setOffsetX(float offsetX) {}
 
+	void countSize(MenuElement object) {}
+
 	List getCountSize() {}
 
-	void setBgPad(float bgPad) {}
+	Color getBackgroundColor() {}
 
-	void drawBackground(CustomSpriteBatch batch, float x, float y) {}
+	void setBackgroundColor(Color backgroundColor) {}
 
 	MenuTable getSetContainer(int set) {}
 
 	void setPack(int index) {}
+
+	void setPack(VocPack pack) {}
 
 	VocEntry getSelectedVoc() {}
 
@@ -218,21 +221,21 @@ VocPackEditGroup(VocPackGroup) : InputListener {
 
 	void controllerConnected(Controller controller) {}
 
-	boolean addButtonTips(ButtonTipList tips) {}
+	boolean keyTyped(char character) {}
 
 	boolean triggerButton(ButtonEvent event) {}
 
-	boolean triggerTouch(TouchEvent event) {}
+	boolean keyDown(int keycode) {}
 
 	boolean triggerType(int character) {}
 
 	int getInputPriority() {}
 
-	boolean keyDown(int keycode) {}
-
 	boolean keyUp(int keycode) {}
 
-	boolean keyTyped(char character) {}
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean triggerTouch(TouchEvent event) {}
 
 	void autofill() {}
 

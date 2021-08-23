@@ -17,43 +17,43 @@ BlindAilment(Ailment) : RenderProcessor, BECondition {
 
 	int hashCode() {}
 
-	void actionTriggered(Runnable action) {}
+	void actionTriggered(Runnable arg0) {}
 
-	void actionTriggered(Object[] action) {}
+	void actionTriggered(Object[] arg0) {}
 
-	boolean isActionRollback(Object[] action) {}
+	boolean isActionRollback(Object[] arg0) {}
 
-	int get(int object, int orElse) {}
+	int get(int arg0, int arg1) {}
 
-	Object get(Object object, Object orElse) {}
+	Object get(Object arg0, Object arg1) {}
 
-	float get(float object, float orElse) {}
+	float get(float arg0, float arg1) {}
 
-	double get(double object, double orElse) {}
+	double get(double arg0, double arg1) {}
 
-	void paint(Painter parameters) {}
+	void paint(Painter arg0) {}
 
-	void update(float delta) {}
+	void update(float arg0) {}
 
 	void init() {}
 
-	void start(BattleEntity entity, BattleEntity owner, AilmentInflict inflict) {}
+	void start(BattleEntity arg0, BattleEntity arg1, AilmentInflict arg2) {}
 
 	void interrupt() {}
 
 	void end() {}
 
-	boolean draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scale) {}
+	boolean draw(CustomSpriteBatch arg0, float arg1, float arg2, float arg3) {}
 
 	void dispose() {}
 
-	final void triggerAction(Object[] parameters) {}
+	final void triggerAction(Object[] arg0) {}
 
 	boolean over() {}
 
 	void increaseDuration() {}
 
-	void setIntensity(float intensity) {}
+	void setIntensity(float arg0) {}
 
 	boolean isDisplayed() {}
 
@@ -61,19 +61,19 @@ BlindAilment(Ailment) : RenderProcessor, BECondition {
 
 	boolean canTarget() {}
 
-	boolean test(BattleEntity entity) {}
+	boolean test(BattleEntity arg0) {}
 
-	void init(GameScreen screen) {}
+	void init(GameScreen arg0) {}
 
-	void resize(boolean landscape, int width, int height) {}
+	void resize(boolean arg0, int arg1, int arg2) {}
 
-	void updateRender(float delta) {}
+	void updateRender(float arg0) {}
 
-	void startRendering(CustomSpriteBatch batch, byte layer) {}
+	void startRendering(CustomSpriteBatch arg0, byte arg1) {}
 
-	void stopRendering(CustomSpriteBatch batch, byte layer) {}
+	void stopRendering(CustomSpriteBatch arg0, byte arg1) {}
 
-	boolean hideHealth(BattleEntity entity) {}
+	boolean hideHealth(BattleEntity arg0) {}
 
 	boolean isBlind() {}
 

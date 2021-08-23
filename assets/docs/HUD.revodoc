@@ -3,7 +3,7 @@ abstract HUD(Object) : ScreenObject, GameEventListener {
 	final GameScreen screen;
 	final Array buttons;
 
-	new(GameScreen screen) {}
+	new(GameScreen arg0) {}
 
 	boolean equals(Object arg0) {}
 
@@ -11,36 +11,36 @@ abstract HUD(Object) : ScreenObject, GameEventListener {
 
 	int hashCode() {}
 
-	void handle(GameEvent event) {}
+	void handle(GameEvent arg0) {}
 
 	void dispose() {}
 
-	void update(float delta) {}
+	void update(float arg0) {}
 
 	boolean remove() {}
 
 	String getName() {}
 
-	void init(GameScreen screen) {}
+	void init(GameScreen arg0) {}
 
 	boolean isHidden() {}
 
-	void resize(boolean landscape, int width, int height) {}
+	void resize(boolean arg0, int arg1, int arg2) {}
 
-	void show(GameScreen screen) {}
+	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	void hide(GameScreen arg0) {}
 
-	void hide(GameScreen screen) {}
-
-	byte getLayer() {}
+	void show(GameScreen arg0) {}
 
 	float getComparisonKey() {}
 
 	Origin getOrigin() {}
 
-	void button(ButtonEvent trigger) {}
+	byte getLayer() {}
 
-	boolean touch(TouchEvent trigger) {}
+	void button(ButtonEvent arg0) {}
+
+	boolean touch(TouchEvent arg0) {}
 
 }

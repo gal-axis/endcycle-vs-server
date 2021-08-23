@@ -10,14 +10,16 @@ final StringUtil(Object) {
 
 	static String unescape(String st) {}
 
+	static String cut(String str, String ending) {}
+
 	static String repeat(String normal, String repeat, int times) {}
+
+	static boolean startsWithIgnoreCase(String str, String prefix) {}
 
 	static StringBuilder padNumber(StringBuilder stringBuilder, int number, int digits) {}
 
 	static String padNumber(int number, int digits) {}
 
-	static String cut(String str, String ending) {}
-
-	static boolean startsWithIgnoreCase(String str, String prefix) {}
+	static String prettyName(String name) {}
 
 }

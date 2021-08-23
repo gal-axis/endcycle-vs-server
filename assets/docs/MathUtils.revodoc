@@ -51,9 +51,9 @@ final MathUtils(Object) {
 
 	static float map(float arg0, float arg1, float arg2, float arg3, float arg4) {}
 
-	static float lerp(float arg0, float arg1, float arg2) {}
-
 	static int randomSign() {}
+
+	static float lerp(float arg0, float arg1, float arg2) {}
 
 	static boolean isEqual(float arg0, float arg1, float arg2) {}
 
@@ -73,15 +73,15 @@ final MathUtils(Object) {
 
 	static boolean randomBoolean(float arg0) {}
 
+	static float norm(float arg0, float arg1, float arg2) {}
+
 	static boolean isZero(float arg0) {}
 
 	static boolean isZero(float arg0, float arg1) {}
 
-	static float norm(float arg0, float arg1, float arg2) {}
+	static float sinDeg(float arg0) {}
 
 	static float cosDeg(float arg0) {}
-
-	static float sinDeg(float arg0) {}
 
 	static int nextPowerOfTwo(int arg0) {}
 
@@ -89,22 +89,22 @@ final MathUtils(Object) {
 
 	static float randomTriangular(float arg0, float arg1) {}
 
-	static float randomTriangular(float arg0, float arg1, float arg2) {}
-
 	static float randomTriangular(float arg0) {}
 
 	static float randomTriangular() {}
 
+	static float randomTriangular(float arg0, float arg1, float arg2) {}
+
+	static int roundPositive(float arg0) {}
+
+	static int ceilPositive(float arg0) {}
+
 	static int floorPositive(float arg0) {}
+
+	static float lerpAngleDeg(float arg0, float arg1, float arg2) {}
 
 	static float log2(float arg0) {}
 
 	static float lerpAngle(float arg0, float arg1, float arg2) {}
-
-	static int roundPositive(float arg0) {}
-
-	static float lerpAngleDeg(float arg0, float arg1, float arg2) {}
-
-	static int ceilPositive(float arg0) {}
 
 }

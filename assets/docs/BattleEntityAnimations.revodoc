@@ -1,4 +1,4 @@
-final BattleEntityAnimations(Object) {
+final BattleEntityAnimations {
 
 	new() {}
 
@@ -8,14 +8,18 @@ final BattleEntityAnimations(Object) {
 
 	int hashCode() {}
 
-	List getIdentifiers() {}
-
 	String shortenName(String name) {}
+
+	List getIdentifiers() {}
 
 	boolean isSingle() {}
 
-	static void add(BattleEntityAnimationIdentifier provider) {}
+	BattleEntityAnimation get(String name) {}
 
-	static void remove(BattleEntityAnimationIdentifier provider) {}
+	void sort() {}
+
+	void setSuffix(String suffix) {}
+
+	List getAll() {}
 
 }

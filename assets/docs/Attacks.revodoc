@@ -1,4 +1,4 @@
-final Attacks(Object) {
+final Attacks {
 
 	new() {}
 
@@ -8,20 +8,18 @@ final Attacks(Object) {
 
 	int hashCode() {}
 
-	List getIdentifiers() {}
-
 	String shortenName(String name) {}
+
+	List getIdentifiers() {}
 
 	boolean isSingle() {}
 
-	static void add(AttackIdentifier identifier) {}
+	Attack get(String name) {}
 
-	static void remove(AttackIdentifier identifier) {}
+	void sort() {}
 
-	static Attack get(String name) {}
+	void setSuffix(String suffix) {}
 
-	static AttackIdentifier getIdentifier(String name) {}
-
-	static List getAll() {}
+	List getAll() {}
 
 }

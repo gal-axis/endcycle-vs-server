@@ -20,34 +20,38 @@ MobilePortraitBackground(HUDButton) {
 
 	int hashCode() {}
 
-	void update(float delta) {}
+	final int compareTo(HUDButton arg0) {}
+
+	void update(float arg0) {}
 
 	boolean isHidden() {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	float getY() {}
+	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
 
 	float getX() {}
 
-	void event(GameEvent event) {}
+	float getY() {}
 
-	void button(ButtonEvent trigger) {}
+	void event(GameEvent arg0) {}
 
-	boolean touch(TouchEvent trigger) {}
+	void button(ButtonEvent arg0) {}
 
-	float calcY() {}
+	boolean touch(TouchEvent arg0) {}
 
 	float calcX() {}
 
-	boolean finishedMoving() {}
+	float calcY() {}
 
-	boolean isTouching(float x, float y) {}
-
-	float getMove() {}
+	int getOrder() {}
 
 	boolean increaseOffset() {}
 
 	void finishMoving() {}
+
+	float getMove() {}
+
+	boolean finishedMoving() {}
+
+	boolean isTouching(float arg0, float arg1) {}
 
 }

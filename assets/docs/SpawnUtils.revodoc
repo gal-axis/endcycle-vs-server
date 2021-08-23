@@ -6,10 +6,10 @@ final SpawnUtils(Object) {
 
 	int hashCode() {}
 
-	static void searchFreePanels(Battle battle, Array availablePanels, Array backupPanels, Party party) {}
+	static void searchFreePanels(Battle arg0, Array arg1, Array arg2, Party arg3) {}
 
-	static void respawnPlayers(Battle battle, Random aiRandom) {}
+	static boolean spawnEntities(Battle arg0, int arg1, int arg2, boolean arg3, int arg4, Random arg5, Random arg6, boolean arg7, Consumer arg8) {}
 
-	static boolean spawnEntities(Battle battle, int spawns, int currentWave, boolean singleSet, int currentLevel, Random dataRandom, Random aiRandom, boolean noise, Consumer entityAdjust) {}
+	static void respawnPlayers(Battle arg0, Random arg1) {}
 
 }

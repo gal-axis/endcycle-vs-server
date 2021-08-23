@@ -25,57 +25,43 @@ final Affine2(Object) {
 
 	Affine2 rotate(float arg0) {}
 
-	Affine2 scale(Vector2 arg0) {}
-
 	Affine2 scale(float arg0, float arg1) {}
 
-	Affine2 mul(Affine2 arg0) {}
+	Affine2 scale(Vector2 arg0) {}
 
 	Affine2 translate(Vector2 arg0) {}
 
 	Affine2 translate(float arg0, float arg1) {}
 
-	Affine2 rotateRad(float arg0) {}
+	Affine2 mul(Affine2 arg0) {}
 
-	Vector2 getTranslation(Vector2 arg0) {}
+	float det() {}
 
-	Affine2 setToScaling(Vector2 arg0) {}
+	Affine2 setToRotationRad(float arg0) {}
 
-	Affine2 setToScaling(float arg0, float arg1) {}
+	Affine2 setToTranslation(Vector2 arg0) {}
+
+	Affine2 setToTranslation(float arg0, float arg1) {}
+
+	Affine2 idt() {}
+
+	Affine2 inv() {}
 
 	Affine2 setToRotation(float arg0) {}
 
 	Affine2 setToRotation(float arg0, float arg1) {}
 
-	Affine2 inv() {}
+	Vector2 getTranslation(Vector2 arg0) {}
 
-	Affine2 idt() {}
+	Affine2 rotateRad(float arg0) {}
 
-	Affine2 setToRotationRad(float arg0) {}
+	Affine2 setToScaling(float arg0, float arg1) {}
 
-	float det() {}
+	Affine2 setToScaling(Vector2 arg0) {}
 
-	Affine2 setToTranslation(float arg0, float arg1) {}
+	Affine2 setToTrnScl(Vector2 arg0, Vector2 arg1) {}
 
-	Affine2 setToTranslation(Vector2 arg0) {}
-
-	void applyTo(Vector2 arg0) {}
-
-	Affine2 preRotate(float arg0) {}
-
-	Affine2 preTranslate(float arg0, float arg1) {}
-
-	Affine2 preTranslate(Vector2 arg0) {}
-
-	Affine2 setToTrnRotRadScl(float arg0, float arg1, float arg2, float arg3, float arg4) {}
-
-	Affine2 setToTrnRotRadScl(Vector2 arg0, float arg1, Vector2 arg2) {}
-
-	Affine2 preShear(float arg0, float arg1) {}
-
-	Affine2 preShear(Vector2 arg0) {}
-
-	boolean isIdt() {}
+	Affine2 setToTrnScl(float arg0, float arg1, float arg2, float arg3) {}
 
 	Affine2 preRotateRad(float arg0) {}
 
@@ -83,26 +69,40 @@ final Affine2(Object) {
 
 	Affine2 setToTrnRotScl(float arg0, float arg1, float arg2, float arg3, float arg4) {}
 
-	boolean isTranslation() {}
-
 	Affine2 preMul(Affine2 arg0) {}
 
-	Affine2 setToProduct(Affine2 arg0, Affine2 arg1) {}
+	Affine2 preScale(float arg0, float arg1) {}
+
+	Affine2 preScale(Vector2 arg0) {}
 
 	Affine2 shear(float arg0, float arg1) {}
 
 	Affine2 shear(Vector2 arg0) {}
 
-	Affine2 setToTrnScl(float arg0, float arg1, float arg2, float arg3) {}
+	Affine2 setToProduct(Affine2 arg0, Affine2 arg1) {}
 
-	Affine2 setToTrnScl(Vector2 arg0, Vector2 arg1) {}
-
-	Affine2 preScale(Vector2 arg0) {}
-
-	Affine2 preScale(float arg0, float arg1) {}
+	Affine2 setToShearing(Vector2 arg0) {}
 
 	Affine2 setToShearing(float arg0, float arg1) {}
 
-	Affine2 setToShearing(Vector2 arg0) {}
+	boolean isTranslation() {}
+
+	Affine2 preShear(Vector2 arg0) {}
+
+	Affine2 preShear(float arg0, float arg1) {}
+
+	boolean isIdt() {}
+
+	Affine2 setToTrnRotRadScl(float arg0, float arg1, float arg2, float arg3, float arg4) {}
+
+	Affine2 setToTrnRotRadScl(Vector2 arg0, float arg1, Vector2 arg2) {}
+
+	void applyTo(Vector2 arg0) {}
+
+	Affine2 preTranslate(float arg0, float arg1) {}
+
+	Affine2 preTranslate(Vector2 arg0) {}
+
+	Affine2 preRotate(float arg0) {}
 
 }

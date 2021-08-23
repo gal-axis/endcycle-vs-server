@@ -37,11 +37,11 @@ BattleHUD(HUD) {
 
 	void show(GameScreen arg0) {}
 
+	float getComparisonKey() {}
+
 	Origin getOrigin() {}
 
 	byte getLayer() {}
-
-	float getComparisonKey() {}
 
 	void button(ButtonEvent arg0) {}
 
@@ -51,9 +51,9 @@ BattleHUD(HUD) {
 
 	void remove(Array arg0) {}
 
-	void addButtonTips(ButtonTipList arg0) {}
-
 	float getButtonsY() {}
+
+	void addButtonTips(ButtonTipList arg0) {}
 
 	boolean setPlayerButtons(int arg0, Array arg1) {}
 

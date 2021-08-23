@@ -18,15 +18,15 @@ MockTextureData(Object) : TextureData {
 
 	boolean useMipMaps() {}
 
-	boolean isManaged() {}
-
-	boolean disposePixmap() {}
-
-	Pixmap consumePixmap() {}
-
 	boolean isPrepared() {}
 
 	Format getFormat() {}
+
+	Pixmap consumePixmap() {}
+
+	boolean disposePixmap() {}
+
+	boolean isManaged() {}
 
 	void consumeCustomData(int arg0) {}
 

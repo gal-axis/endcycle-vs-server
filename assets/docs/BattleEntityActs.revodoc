@@ -1,4 +1,4 @@
-final BattleEntityActs(Object) {
+final BattleEntityActs {
 
 	new() {}
 
@@ -8,14 +8,18 @@ final BattleEntityActs(Object) {
 
 	int hashCode() {}
 
-	List getIdentifiers() {}
-
 	String shortenName(String name) {}
+
+	List getIdentifiers() {}
 
 	boolean isSingle() {}
 
-	static void add(BattleEntityActIdentifier provider) {}
+	BattleEntityAct get(String name) {}
 
-	static void remove(BattleEntityActIdentifier provider) {}
+	void sort() {}
+
+	void setSuffix(String suffix) {}
+
+	List getAll() {}
 
 }

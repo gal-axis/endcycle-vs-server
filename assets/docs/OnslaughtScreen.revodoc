@@ -36,81 +36,85 @@ OnslaughtScreen(MenuScreen) : PlayerConfigurator {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void render(float delta) {}
-
-	void addScript(Script script, float delay) {}
-
-	boolean isLoading() {}
-
-	void updateTimer(float delta) {}
-
-	void resetTimer() {}
-
-	void dispose() {}
-
 	void hide() {}
 
-	Object[] getTextArguments() {}
+	void removeRenderProcessor(RenderProcessor renderProcessor) {}
 
-	void show() {}
+	void setPreviousScreen(GameScreen previousScreen) {}
 
-	void pause() {}
+	Array getRenderProcessors() {}
 
-	void setScreen(GameScreen screen, FadeType fade, boolean changesBefore) {}
+	GameScreen getPreviousScreen() {}
 
-	void setScreen(GameScreen screen) {}
-
-	void setScreen(GameScreen screen, FadeType fade) {}
-
-	ScreenObject addObject(ScreenObject object) {}
-
-	boolean removeObject(ScreenObject object) {}
+	void addRenderProcessor(RenderProcessor renderProcessor) {}
 
 	void drawButtonTips(CustomSpriteBatch batch, float x, float y) {}
 
-	void shakeVibrate(float x, float y, float duration) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void shake(float x, float y, float duration) {}
+	void draw(CustomSpriteBatch batch) {}
 
-	boolean isShaking() {}
-
-	Array getObjects() {}
-
-	void changeTo(GameScreen screen, boolean init) {}
-
-	boolean isCurrentScreen() {}
-
-	void clearObjects() {}
-
-	void drawSpecial(CustomSpriteBatch batch) {}
-
-	void updateObjects(float delta) {}
-
-	void changeFrom(GameScreen screen, boolean init) {}
+	void updateShake(float delta) {}
 
 	void toPreviousScreen() {}
 
 	void toPreviousScreen(FadeType type) {}
 
-	void draw(CustomSpriteBatch batch) {}
+	void changeTo(GameScreen screen, boolean init) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	boolean isCurrentScreen() {}
 
-	void updateShake(float delta) {}
+	void render(float delta) {}
+
+	void updateTimer(float delta) {}
+
+	void show() {}
+
+	void clearObjects() {}
+
+	ScreenObject addObject(ScreenObject object) {}
+
+	void updateObjects(float delta) {}
+
+	void drawSpecial(CustomSpriteBatch batch) {}
+
+	void changeFrom(GameScreen screen, boolean init) {}
+
+	void shake(float x, float y, float duration) {}
+
+	void shakeVibrate(float x, float y, float duration) {}
 
 	void resetShake() {}
 
-	void removeRenderProcessor(RenderProcessor renderProcessor) {}
+	boolean isShaking() {}
 
-	GameScreen getPreviousScreen() {}
+	boolean removeObject(ScreenObject object) {}
 
-	Array getRenderProcessors() {}
+	Array getObjects() {}
 
-	void addRenderProcessor(RenderProcessor renderProcessor) {}
+	void setScreen(GameScreen screen, FadeType fade) {}
 
-	void setPreviousScreen(GameScreen previousScreen) {}
+	void setScreen(GameScreen screen) {}
 
-	void enableInput() {}
+	void setScreen(GameScreen screen, FadeType fade, boolean changesBefore) {}
+
+	void dispose() {}
+
+	Object[] getTextArguments() {}
+
+	boolean isLoading() {}
+
+	void pause() {}
+
+	void addScript(Script script, float delay) {}
+
+	void resetTimer() {}
+
+	void createMenuElements() {}
+
+	void buildControllerNeighbors() {}
+
+	void backButtonPressed() {}
 
 	void disableInput() {}
 
@@ -118,11 +122,7 @@ OnslaughtScreen(MenuScreen) : PlayerConfigurator {
 
 	void centerElements(float x, float y) {}
 
-	void createMenuElements() {}
-
-	void backButtonPressed() {}
-
-	void buildControllerNeighbors() {}
+	void enableInput() {}
 
 	void configurePlayers(BattleData data) {}
 

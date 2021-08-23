@@ -26,6 +26,7 @@ enum EventType {
  	ENTITY_GAUGE_DECREASE,
  	ENTITY_GAUGE_EMPTY,
  	ENTITY_GAUGE_FILL,
+ 	ENTITY_CONTROLLER_CHANGED,
  	BATTLE_HEAL,
  	BATTLE_DAMAGE_BLOCK,
  	BATTLE_CHANGE_CRUSH,
@@ -100,6 +101,6 @@ enum EventType {
 
 	static EventType[] values() {}
 
-	static EventType valueOf(String name) {}
+	static EventType valueOf(String arg0) {}
 
 }

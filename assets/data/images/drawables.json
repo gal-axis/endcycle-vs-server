@@ -4610,7 +4610,7 @@
 	"id": { "id": 279 },
 	"name": "Move Up",
 	"frames": [
-		{ "texturePath": "general/input/arrow_up.png", "width": 12, "height": 14 }
+		{ "texturePath": "general/input/arrow_up.png", "width": 12, "height": 16 }
 	]
 },
 {
@@ -4618,7 +4618,7 @@
 	"id": { "id": 280 },
 	"name": "Move Down",
 	"frames": [
-		{ "texturePath": "general/input/arrow_up.png", "width": 12, "height": -14 }
+		{ "texturePath": "general/input/arrow_up.png", "width": 12, "height": -16 }
 	]
 },
 {
@@ -4626,7 +4626,7 @@
 	"id": { "id": 281 },
 	"name": "Move Turn",
 	"frames": [
-		{ "texturePath": "general/input/turn.png", "width": 10, "height": -16 }
+		{ "texturePath": "general/input/turn.png", "width": 16, "height": -18 }
 	]
 },
 {
@@ -4764,8 +4764,8 @@
 	"speed": 0.05,
 	"playMode": "LOOP_PINGPONG",
 	"frames": [
-		{ "texturePath": "battle/blinded/1.png", "width": 126, "height": 106 },
-		{ "texturePath": "battle/blinded/2.png", "width": 130, "height": 106 },
+		{ "texturePath": "battle/blinded/1.png", "width": 126, "height": 106, "xOffset": 5 },
+		{ "texturePath": "battle/blinded/2.png", "width": 130, "height": 106, "xOffset": 3 },
 		{ "texturePath": "battle/blinded/3.png", "width": 140, "height": 106 }
 	]
 },
@@ -10462,6 +10462,18 @@
 	"name": "Farmadile Cut-In",
 	"frames": [
 		{ "texturePath": "battle/entities/farmadile/cut_in.png", "width": 241, "height": 160 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 757 },
+	"name": "Blinded Reverse",
+	"speed": 0.05,
+	"playMode": "LOOP_PINGPONG",
+	"frames": [
+		{ "texturePath": "battle/blinded/4.png", "width": 126, "height": 106, "xOffset": 5 },
+		{ "texturePath": "battle/blinded/5.png", "width": 130, "height": 106, "xOffset": 3 },
+		{ "texturePath": "battle/blinded/6.png", "width": 140, "height": 106 }
 	]
 }
 ]

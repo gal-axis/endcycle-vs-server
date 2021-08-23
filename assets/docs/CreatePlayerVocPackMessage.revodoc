@@ -1,4 +1,4 @@
-AdventurePauseMessage(BattlePauseMessage) : MenuTableAction, MenuTablePainter {
+CreatePlayerVocPackMessage(MenuMessage) : MenuTablePainter, MenuTableAction {
 
 	Origin origin;
 	GameScreen screen;
@@ -7,19 +7,8 @@ AdventurePauseMessage(BattlePauseMessage) : MenuTableAction, MenuTablePainter {
 	byte layer;
 	float comparisonKey;
 	State state;
-	final Battle battle;
-	MenuElementGroup group;
-	MenuLabel label;
-	MenuButton resume;
-	MenuButton reconnectControllers;
-	MenuButton settings;
-	MenuButton quit;
-	MenuTable battles;
-	VocPackGroup vocs;
-	MenuTable items;
-	MenuLabel description;
 
-	new(AdventureBattle battle) {}
+	new(PackMenu menu, List packs) {}
 
 	final boolean equals(Object obj) {}
 
@@ -121,15 +110,11 @@ AdventurePauseMessage(BattlePauseMessage) : MenuTableAction, MenuTablePainter {
 
 	float calcOffset() {}
 
-	void layout() {}
+	void updateTableSelection(int selection) {}
 
-	void quit() {}
+	boolean selectTableHeader() {}
 
-	void settings() {}
-
-	boolean forceQuit() {}
-
-	void reconnectControllers() {}
+	void moveTableSelection(int selection) {}
 
 	void paint(MenuTablePaintParams params) {}
 
@@ -144,17 +129,5 @@ AdventurePauseMessage(BattlePauseMessage) : MenuTableAction, MenuTablePainter {
 	void stopPainting(MenuTablePaintParams params) {}
 
 	void startPainting(MenuTablePaintParams params) {}
-
-	void specialTableSelect(int selection, AdventureBattleItem selected) {}
-
-	void updateTableSelection(int selection) {}
-
-	boolean selectTableHeader() {}
-
-	void moveTableSelection(int selection) {}
-
-	void clickedTable(int selection, AdventureBattleItem selected, float x, float y) {}
-
-	void selectTable(int selection, AdventureBattleItem selected) {}
 
 }

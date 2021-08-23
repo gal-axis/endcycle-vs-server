@@ -16,20 +16,20 @@ Animation(Object) {
 
 	float getAnimationDuration() {}
 
-	float getFrameDuration() {}
-
-	Object getKeyFrame(float arg0, boolean arg1) {}
-
-	Object getKeyFrame(float arg0) {}
-
-	int getKeyFrameIndex(float arg0) {}
-
-	Object[] getKeyFrames() {}
+	PlayMode getPlayMode() {}
 
 	void setPlayMode(PlayMode arg0) {}
 
 	void setFrameDuration(float arg0) {}
 
-	PlayMode getPlayMode() {}
+	Object[] getKeyFrames() {}
+
+	float getFrameDuration() {}
+
+	Object getKeyFrame(float arg0) {}
+
+	Object getKeyFrame(float arg0, boolean arg1) {}
+
+	int getKeyFrameIndex(float arg0) {}
 
 }

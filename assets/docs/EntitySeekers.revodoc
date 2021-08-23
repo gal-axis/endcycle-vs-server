@@ -1,4 +1,4 @@
-final EntitySeekers(Object) {
+final EntitySeekers {
 
 	new() {}
 
@@ -8,14 +8,18 @@ final EntitySeekers(Object) {
 
 	int hashCode() {}
 
-	List getIdentifiers() {}
-
 	String shortenName(String name) {}
+
+	List getIdentifiers() {}
 
 	boolean isSingle() {}
 
-	static void add(EntitySeekerIdentifier provider) {}
+	EntitySeeker get(String name) {}
 
-	static void remove(EntitySeekerIdentifier provider) {}
+	void sort() {}
+
+	void setSuffix(String suffix) {}
+
+	List getAll() {}
 
 }

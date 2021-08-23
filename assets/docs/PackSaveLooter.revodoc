@@ -3,7 +3,7 @@ PackSaveLooter(DefaultLooter) : MessageAction, TextConfirmAction {
 	final List loot;
 	final List extra;
 
-	new(Battle battle, String suffix, Runnable done) {}
+	new(Battle arg0, String arg1, Runnable arg2) {}
 
 	boolean equals(Object arg0) {}
 
@@ -11,33 +11,33 @@ PackSaveLooter(DefaultLooter) : MessageAction, TextConfirmAction {
 
 	int hashCode() {}
 
-	void onRewardEarned() {}
-
-	void onRewardOpened() {}
+	void onRewardClosed() {}
 
 	void onRewardError() {}
 
-	void onRewardClosed() {}
+	void onRewardOpened() {}
+
+	void onRewardEarned() {}
 
 	void dispose() {}
 
-	void update(float delta) {}
+	void update(float arg0) {}
 
 	boolean remove() {}
 
 	String getName() {}
 
-	void init(GameScreen screen) {}
+	void init(GameScreen arg0) {}
 
 	boolean isHidden() {}
 
-	void resize(boolean landscape, int width, int height) {}
+	void resize(boolean arg0, int arg1, int arg2) {}
 
-	void show(GameScreen screen) {}
+	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	void hide(GameScreen arg0) {}
 
-	void hide(GameScreen screen) {}
+	void show(GameScreen arg0) {}
 
 	float getComparisonKey() {}
 
@@ -45,41 +45,41 @@ PackSaveLooter(DefaultLooter) : MessageAction, TextConfirmAction {
 
 	byte getLayer() {}
 
-	void addLoot(Lootable loot) {}
+	void addLoot(Lootable arg0) {}
 
 	boolean hasLoot() {}
 
-	void addAffinity(ID entity, float amount) {}
+	void addAffinity(ID arg0, float arg1) {}
 
-	void addAffinity(BattleEntity entity, float amount) {}
+	void addAffinity(BattleEntity arg0, float arg1) {}
 
-	void addRandomLoot(int money, boolean items) {}
+	void addRandomLoot(int arg0, boolean arg1) {}
 
 	void addRandomVoc() {}
 
-	boolean hasExtra() {}
-
 	void addRandomStyle() {}
 
-	void controllerConnected(Controller controller) {}
+	boolean hasExtra() {}
 
-	void controllerDisconnected(Controller controller) {}
+	void controllerDisconnected(Controller arg0) {}
 
-	boolean triggerType(int character) {}
+	void controllerConnected(Controller arg0) {}
+
+	boolean keyDown(int arg0) {}
+
+	boolean keyTyped(char arg0) {}
+
+	boolean keyUp(int arg0) {}
+
+	boolean triggerButton(ButtonEvent arg0) {}
 
 	int getInputPriority() {}
 
-	boolean triggerTouch(TouchEvent event) {}
+	boolean addButtonTips(ButtonTipList arg0) {}
 
-	boolean triggerButton(ButtonEvent event) {}
+	boolean triggerTouch(TouchEvent arg0) {}
 
-	boolean addButtonTips(ButtonTipList tips) {}
-
-	boolean keyDown(int keycode) {}
-
-	boolean keyTyped(char character) {}
-
-	boolean keyUp(int keycode) {}
+	boolean triggerType(int arg0) {}
 
 	void finish() {}
 
@@ -87,8 +87,8 @@ PackSaveLooter(DefaultLooter) : MessageAction, TextConfirmAction {
 
 	void showNextLoot() {}
 
-	boolean apply(String name) {}
+	boolean apply(String arg0) {}
 
-	boolean onPress(ContentMessage message) {}
+	boolean onPress(ContentMessage arg0) {}
 
 }

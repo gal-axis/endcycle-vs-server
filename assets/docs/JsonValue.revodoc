@@ -105,11 +105,11 @@ JsonValue(Object) : Iterable {
 
 	void set(boolean arg0) {}
 
-	void set(long arg0, String arg1) {}
-
 	void set(double arg0, String arg1) {}
 
 	void set(String arg0) {}
+
+	void set(long arg0, String arg1) {}
 
 	boolean isNull() {}
 
@@ -125,82 +125,82 @@ JsonValue(Object) : Iterable {
 
 	JsonValue child() {}
 
-	boolean notEmpty() {}
-
 	boolean has(String arg0) {}
+
+	boolean notEmpty() {}
 
 	void setNext(JsonValue arg0) {}
 
-	long asLong() {}
+	String asString() {}
 
 	boolean isObject() {}
 
-	String asString() {}
-
-	String toJson(OutputType arg0) {}
-
-	void prettyPrint(OutputType arg0, Writer arg1) {}
+	long asLong() {}
 
 	String prettyPrint(PrettyPrintSettings arg0) {}
 
 	String prettyPrint(OutputType arg0, int arg1) {}
 
-	boolean isDouble() {}
+	void prettyPrint(OutputType arg0, Writer arg1) {}
 
-	boolean isValue() {}
+	String toJson(OutputType arg0) {}
 
-	int[] asIntArray() {}
-
-	boolean[] asBooleanArray() {}
-
-	void setPrev(JsonValue arg0) {}
-
-	short[] asShortArray() {}
-
-	boolean hasChild(String arg0) {}
-
-	byte[] asByteArray() {}
-
-	char[] asCharArray() {}
-
-	boolean isLong() {}
-
-	void addChild(JsonValue arg0) {}
+	boolean isString() {}
 
 	void addChild(String arg0, JsonValue arg1) {}
 
-	long[] asLongArray() {}
-
-	float asFloat() {}
-
-	boolean asBoolean() {}
-
-	JsonValue require(int arg0) {}
-
-	JsonValue require(String arg0) {}
-
-	char asChar() {}
-
-	String[] asStringArray() {}
-
-	float[] asFloatArray() {}
+	void addChild(JsonValue arg0) {}
 
 	JsonValue getChild(String arg0) {}
 
-	int asInt() {}
-
-	byte asByte() {}
-
-	double[] asDoubleArray() {}
-
-	boolean isNumber() {}
+	boolean asBoolean() {}
 
 	double asDouble() {}
 
 	short asShort() {}
 
+	char asChar() {}
+
+	int[] asIntArray() {}
+
+	byte asByte() {}
+
+	String[] asStringArray() {}
+
+	float[] asFloatArray() {}
+
+	long[] asLongArray() {}
+
+	double[] asDoubleArray() {}
+
+	boolean[] asBooleanArray() {}
+
+	float asFloat() {}
+
+	JsonValue require(int arg0) {}
+
+	JsonValue require(String arg0) {}
+
+	int asInt() {}
+
 	boolean isBoolean() {}
 
-	boolean isString() {}
+	byte[] asByteArray() {}
+
+	short[] asShortArray() {}
+
+	char[] asCharArray() {}
+
+	boolean hasChild(String arg0) {}
+
+	boolean isLong() {}
+
+	boolean isValue() {}
+
+	boolean isDouble() {}
+
+	boolean isNumber() {}
+
+	void setPrev(JsonValue arg0) {}
 
 }

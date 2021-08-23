@@ -25,13 +25,13 @@ Rectangle(Object) {
 
 	boolean contains(Rectangle arg0) {}
 
-	Rectangle merge(Vector2 arg0) {}
-
 	Rectangle merge(float arg0, float arg1) {}
+
+	Rectangle merge(Vector2[] arg0) {}
 
 	Rectangle merge(Rectangle arg0) {}
 
-	Rectangle merge(Vector2[] arg0) {}
+	Rectangle merge(Vector2 arg0) {}
 
 	Rectangle set(float arg0, float arg1, float arg2, float arg3) {}
 
@@ -39,19 +39,19 @@ Rectangle(Object) {
 
 	Vector2 getSize(Vector2 arg0) {}
 
-	Rectangle setSize(float arg0, float arg1) {}
-
 	Rectangle setSize(float arg0) {}
 
-	float getHeight() {}
+	Rectangle setSize(float arg0, float arg1) {}
+
+	float getX() {}
+
+	float getY() {}
 
 	Rectangle setHeight(float arg0) {}
 
 	float getWidth() {}
 
-	float getY() {}
-
-	float getX() {}
+	float getHeight() {}
 
 	Rectangle setPosition(Vector2 arg0) {}
 
@@ -61,28 +61,28 @@ Rectangle(Object) {
 
 	Rectangle setY(float arg0) {}
 
-	Rectangle fromString(String arg0) {}
-
 	Rectangle setWidth(float arg0) {}
 
 	Vector2 getPosition(Vector2 arg0) {}
 
-	Rectangle fitOutside(Rectangle arg0) {}
+	Rectangle fromString(String arg0) {}
 
-	boolean overlaps(Rectangle arg0) {}
+	float area() {}
 
 	float getAspectRatio() {}
 
-	Vector2 getCenter(Vector2 arg0) {}
-
 	Rectangle fitInside(Rectangle arg0) {}
+
+	Vector2 getCenter(Vector2 arg0) {}
 
 	Rectangle setCenter(Vector2 arg0) {}
 
 	Rectangle setCenter(float arg0, float arg1) {}
 
-	float perimeter() {}
+	Rectangle fitOutside(Rectangle arg0) {}
 
-	float area() {}
+	boolean overlaps(Rectangle arg0) {}
+
+	float perimeter() {}
 
 }

@@ -26,17 +26,17 @@ CampaignNodeDisplayer(GameScreenObject) {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	void hide(GameScreen screen) {}
 
 	void show(GameScreen screen) {}
 
-	void hide(GameScreen screen) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	float getComparisonKey() {}
 
 	final Origin getOrigin() {}
 
 	byte getLayer() {}
-
-	float getComparisonKey() {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
@@ -44,15 +44,17 @@ CampaignNodeDisplayer(GameScreenObject) {
 
 	SoundContainer playSound(SoundInfo sound) {}
 
+	final void addObject(ScreenObject object) {}
+
 	final void removeObject() {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
-	int getCurrent() {}
-
 	float getWidth() {}
 
 	float getHeight() {}
+
+	int getCurrent() {}
 
 	boolean change(int offset) {}
 
@@ -60,20 +62,20 @@ CampaignNodeDisplayer(GameScreenObject) {
 
 	void drag(float x) {}
 
+	CampaignData getCampaign() {}
+
 	CampaignNodePainter getCurrentNode() {}
 
 	List gatherScores() {}
 
 	List getNodes() {}
 
-	float getNodeY() {}
-
 	float getNodeX() {}
 
-	CampaignData getCampaign() {}
+	CampaignBattle startNode(boolean retry) {}
 
 	float getNodeOffset() {}
 
-	CampaignBattle startNode(boolean retry) {}
+	float getNodeY() {}
 
 }

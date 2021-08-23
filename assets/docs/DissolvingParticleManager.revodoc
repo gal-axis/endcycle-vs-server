@@ -1,0 +1,46 @@
+DissolvingParticleManager(Object) : ScreenObject {
+
+	byte layer;
+	float comparisonKey;
+	final Array particles;
+	boolean gravity;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void dispose() {}
+
+	void update(float delta) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void hide(GameScreen screen) {}
+
+	void show(GameScreen screen) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	float getComparisonKey() {}
+
+	Origin getOrigin() {}
+
+	byte getLayer() {}
+
+	DissolvingParticle add(Drawable drawable, float speed, float speedX, float speedY) {}
+
+	DissolvingParticle[] burst(int amount, float speed, float speedRangeX, float speedRangeY, float spreadX, float spreadY, Drawable[] drawables) {}
+
+}

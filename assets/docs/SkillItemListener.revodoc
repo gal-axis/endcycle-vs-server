@@ -13,18 +13,18 @@ SkillItemListener(AdventureItemListener) {
 
 	AdventureItemListener clone() {}
 
-	void handle(GameEvent event) {}
+	void handle(GameEvent arg0) {}
 
-	void remove(BattlePlayer player) {}
+	void remove(BattlePlayer arg0) {}
 
-	void apply(BattlePlayer player) {}
+	void apply(BattlePlayer arg0) {}
 
-	void init(AdventureBattle battle, AdventureBattleItem item) {}
+	void init(AdventureBattle arg0, AdventureBattleItem arg1) {}
 
 	void dispose() {}
 
-	void use(BattlePlayer player) {}
+	void use(BattlePlayer arg0) {}
 
-	boolean isUsable(BattlePlayer player) {}
+	boolean isUsable(BattlePlayer arg0) {}
 
 }

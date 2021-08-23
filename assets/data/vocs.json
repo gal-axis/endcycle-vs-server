@@ -358,14 +358,7 @@
 					{ "y": 1 }
 				],
 				"onHit": { "class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.ParticleEffect", "tintElement": true }
-			},
-			"particleTimer": 0.06,
-			"particleSpeedY": -2,
-			"particles": [
-				{
-					"drawable": { "id": 101 }
-				}
-			]
+			}
 		}
 	}
 },
@@ -759,6 +752,7 @@
 			"remove": true,
 			"noAilmentPower": 1,
 			"noAilmentCrush": 1,
+			"noAilmentEffect": 1,
 			"other": {}
 		}
 	}
@@ -814,6 +808,7 @@
 			"single": false,
 			"noAilmentPower": 1,
 			"noAilmentCrush": 1,
+			"noAilmentEffect": 1,
 			"other": {}
 		}
 	}
@@ -2106,7 +2101,9 @@
 				"attack": {
 					"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
 					"attacks": [
-						{ "class": "com.one2b3.endcycle.utils.objects.Point" }
+						{
+							"stick": {}
+						}
 					],
 					"limitX": 7,
 					"projectileDelay": 0.15,
@@ -2334,14 +2331,13 @@
 					"sound": { "sound": "battle/programs/ice_break.wav", "volume": 1, "pitch": 1 }
 				}
 			},
-			"particleTimer": 0.05,
-			"particleSpeedY": -5,
-			"particles": [
+			"throwParticles": [
 				{
-					"drawable": { "id": 16 }
-				},
-				{
-					"drawable": { "id": 17 }
+					"drawable": {
+						"drawable": { "id": 746 }
+					},
+					"speedY": -5,
+					"fade": 6
 				}
 			]
 		}
@@ -4922,13 +4918,7 @@
 					{ "x": 1, "y": 1 }
 				],
 				"onHit": { "class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.ParticleEffect", "tintElement": true }
-			},
-			"particleTimer": 0.06,
-			"particles": [
-				{
-					"drawable": { "id": 100 }
-				}
-			]
+			}
 		}
 	}
 },
@@ -4964,13 +4954,7 @@
 					{ "x": 1, "y": 1 }
 				],
 				"onHit": { "class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.ParticleEffect", "tintElement": true }
-			},
-			"particleTimer": 0.06,
-			"particles": [
-				{
-					"drawable": { "id": 100 }
-				}
-			]
+			}
 		}
 	}
 },
@@ -5740,6 +5724,49 @@
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Speaker Wave" },
 		"targetType": {},
 		"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.special.SpeakerWaveAttack" }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 103 },
+	"preview": {},
+	"attackShell": {
+		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Ultra.Farmadile" },
+		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Ultra.Farmadile.Desc" },
+		"interruptable": false,
+		"invincible": true,
+		"property": {
+			"element": "NATURE",
+			"ailments": [
+				{ "type": "FLINCHING" }
+			],
+			"power": 70,
+			"crushPower": 70
+		},
+		"targetType": {},
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.ConditionalWrapperAttack",
+			"wrapper": {
+				"attack": {
+					"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.OtherVocAttack",
+					"voc": { "id": 17 }
+				}
+			},
+			"otherwise": {
+				"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.modifiers.AnimationModifierAttack" }
+			},
+			"panels": [
+				{},
+				{ "y": -1 },
+				{ "y": 1 },
+				{ "x": 1 },
+				{ "x": 1, "y": -1 },
+				{ "x": 1, "y": 1 }
+			],
+			"panelType": "GRASS",
+			"anyPanel": true,
+			"parallel": true
+		}
 	}
 }
 ]

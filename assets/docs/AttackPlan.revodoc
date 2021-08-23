@@ -10,9 +10,9 @@ AttackPlan(Object) {
 
 	new() {}
 
-	new(AttackPlan arg0) {}
+	new(AttackPlan plan) {}
 
-	new(VocEntry arg0, int arg1) {}
+	new(VocEntry entry, int gauge) {}
 
 	boolean equals(Object arg0) {}
 
@@ -20,9 +20,9 @@ AttackPlan(Object) {
 
 	int hashCode() {}
 
-	void update(float arg0) {}
+	void update(float delta) {}
 
-	void cast(BattleEntity arg0) {}
+	void cast(BattleEntity entity) {}
 
 	void start() {}
 
@@ -34,12 +34,12 @@ AttackPlan(Object) {
 
 	boolean isMoveable() {}
 
-	void modify(VocStyle arg0) {}
+	void modify(VocStyle style) {}
 
-	void replaceAttack(Attack arg0) {}
+	void replaceAttack(Attack attack) {}
 
-	void setAttack(Attack arg0, boolean arg1) {}
+	void setAttack(Attack attack, boolean clone) {}
 
-	void setAttackShell(AttackShell arg0) {}
+	void setAttackShell(AttackShell shell) {}
 
 }

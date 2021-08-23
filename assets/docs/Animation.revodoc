@@ -16,13 +16,7 @@ Animation(Object) {
 
 	float getAnimationDuration() {}
 
-	PlayMode getPlayMode() {}
-
-	void setFrameDuration(float arg0) {}
-
-	Object[] getKeyFrames() {}
-
-	void setPlayMode(PlayMode arg0) {}
+	float getFrameDuration() {}
 
 	Object getKeyFrame(float arg0, boolean arg1) {}
 
@@ -30,6 +24,12 @@ Animation(Object) {
 
 	int getKeyFrameIndex(float arg0) {}
 
-	float getFrameDuration() {}
+	Object[] getKeyFrames() {}
+
+	void setPlayMode(PlayMode arg0) {}
+
+	void setFrameDuration(float arg0) {}
+
+	PlayMode getPlayMode() {}
 
 }

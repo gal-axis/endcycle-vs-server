@@ -14,56 +14,56 @@ MockRegion(TextureRegion) {
 
 	void flip(boolean arg0, boolean arg1) {}
 
-	boolean isFlipX() {}
-
 	boolean isFlipY() {}
 
-	Texture getTexture() {}
+	boolean isFlipX() {}
 
-	void setTexture(Texture arg0) {}
+	void setRegion(float arg0, float arg1, float arg2, float arg3) {}
 
-	float getU() {}
+	void setRegion(int arg0, int arg1, int arg2, int arg3) {}
 
-	float getV() {}
+	void setRegion(TextureRegion arg0) {}
+
+	void setRegion(TextureRegion arg0, int arg1, int arg2, int arg3, int arg4) {}
+
+	void setRegion(Texture arg0) {}
 
 	int getRegionHeight() {}
 
 	void setV(float arg0) {}
 
-	float getU2() {}
+	int getRegionX() {}
 
-	void setU2(float arg0) {}
-
-	void setU(float arg0) {}
-
-	float getV2() {}
+	int getRegionWidth() {}
 
 	void setV2(float arg0) {}
 
-	int getRegionX() {}
+	float getU() {}
 
-	void setRegion(int arg0, int arg1, int arg2, int arg3) {}
+	float getV2() {}
 
-	void setRegion(TextureRegion arg0, int arg1, int arg2, int arg3, int arg4) {}
+	void scroll(float arg0, float arg1) {}
 
-	void setRegion(float arg0, float arg1, float arg2, float arg3) {}
+	void setTexture(Texture arg0) {}
 
-	void setRegion(Texture arg0) {}
-
-	void setRegion(TextureRegion arg0) {}
+	void setRegionX(int arg0) {}
 
 	void setRegionHeight(int arg0) {}
+
+	int getRegionY() {}
+
+	void setU2(float arg0) {}
 
 	void setRegionWidth(int arg0) {}
 
 	void setRegionY(int arg0) {}
 
-	void scroll(float arg0, float arg1) {}
+	Texture getTexture() {}
 
-	void setRegionX(int arg0) {}
+	float getU2() {}
 
-	int getRegionWidth() {}
+	float getV() {}
 
-	int getRegionY() {}
+	void setU(float arg0) {}
 
 }

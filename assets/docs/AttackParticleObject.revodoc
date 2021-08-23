@@ -1,0 +1,39 @@
+interface AttackParticleObject : ScreenObject {
+
+	void dispose() {}
+
+	void update(float delta) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void hide(GameScreen screen) {}
+
+	void show(GameScreen screen) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	float getComparisonKey() {}
+
+	Origin getOrigin() {}
+
+	byte getLayer() {}
+
+	abstract float getWidth();
+
+	abstract float getHeight();
+
+	abstract void addObject(ScreenObject object);
+
+	abstract float getCenterX();
+
+	abstract float getCenterY();
+
+}

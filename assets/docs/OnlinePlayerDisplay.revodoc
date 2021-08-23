@@ -31,25 +31,27 @@ OnlinePlayerDisplay(MenuElementGroup) : MenuTablePainter, MenuTableAction {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
 	void hide(GameScreen screen) {}
 
 	void show(GameScreen screen) {}
 
-	byte getLayer() {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	float getComparisonKey() {}
 
 	final Origin getOrigin() {}
 
-	final void removeObject() {}
-
-	SoundContainer playSound(SoundInfo sound) {}
+	byte getLayer() {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	final SoundContainer playSound(Sounds sound) {}
+
+	SoundContainer playSound(SoundInfo sound) {}
+
+	final void addObject(ScreenObject object) {}
+
+	final void removeObject() {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
@@ -63,87 +65,87 @@ OnlinePlayerDisplay(MenuElementGroup) : MenuTablePainter, MenuTableAction {
 
 	MenuElement setEnabled(boolean enabled) {}
 
-	boolean select() {}
-
-	float getX() {}
-
-	float getY() {}
-
 	MenuElement setLayer(byte layer) {}
-
-	float getHeight() {}
 
 	float getWidth() {}
 
+	float getHeight() {}
+
 	MenuElement setHeight(float height) {}
 
-	boolean touch(TouchEvent trigger) {}
+	MenuElement getAbsoluteParent() {}
+
+	boolean select() {}
+
+	float getY() {}
+
+	float getX() {}
 
 	final void triggerAction(MenuElementActionType type) {}
 
-	MenuElement getAbsoluteParent() {}
+	boolean touch(TouchEvent trigger) {}
 
 	MenuElement setX(float x) {}
 
 	MenuElement setY(float y) {}
 
-	MenuElement setWidth(float width) {}
-
 	float calcX() {}
 
 	float calcY() {}
+
+	MenuElement setWidth(float width) {}
 
 	MenuElement setFocusable(boolean focusable) {}
 
 	boolean isTouching(float x, float y) {}
 
-	MenuElement getAnchor() {}
+	Set getActionListeners() {}
 
-	int getAnchorVAlign() {}
-
-	MenuButtonTips getButtonTips() {}
-
-	int getVAlign() {}
-
-	boolean isFocusable() {}
-
-	float getAbsoluteY() {}
-
-	MenuElement setAnchorHAlign(int anchorHAlign) {}
-
-	boolean isEnabled() {}
-
-	MenuElement setFocused(boolean focused) {}
-
-	MenuElement setAnchorVAlign(int anchorVAlign) {}
-
-	MenuElement setHAlign(int hAlign) {}
+	final void setMenuControllerSelection(MenuElement element) {}
 
 	float getAbsoluteX() {}
 
-	MenuElement setHidden(boolean hidden) {}
-
-	boolean isAbsoluteHidden() {}
-
-	MenuElement setAnchor(MenuElement anchor) {}
+	float getAbsoluteY() {}
 
 	boolean canDrawCursor() {}
 
+	MenuElement setAnchor(MenuElement anchor) {}
+
+	int getVAlign() {}
+
+	MenuElement setAnchorVAlign(int anchorVAlign) {}
+
 	MenuElement setVAlign(int vAlign) {}
 
-	int getAnchorHAlign() {}
-
-	int getHAlign() {}
-
 	void addElements(Array elements, float x, float y) {}
+
+	boolean isEnabled() {}
+
+	MenuElement setHAlign(int hAlign) {}
+
+	MenuElement getAnchor() {}
+
+	MenuButtonTips getButtonTips() {}
+
+	MenuElement setFocused(boolean focused) {}
+
+	MenuElement setAnchorHAlign(int anchorHAlign) {}
+
+	boolean isFocusable() {}
 
 	void setCursor(Rectangle rectangle) {}
 
 	boolean isFocused() {}
 
-	final void setMenuControllerSelection(MenuElement element) {}
+	MenuElement setHidden(boolean hidden) {}
 
-	Set getActionListeners() {}
+	int getAnchorHAlign() {}
+
+	int getAnchorVAlign() {}
+
+	int getHAlign() {}
+
+	boolean isAbsoluteHidden() {}
 
 	int compare(MenuElement o1, MenuElement o2) {}
 
@@ -151,71 +153,71 @@ OnlinePlayerDisplay(MenuElementGroup) : MenuTablePainter, MenuTableAction {
 
 	Comparator thenComparing(Comparator arg0) {}
 
-	List getObjects() {}
+	void ignoreSize(MenuElement object) {}
+
+	void setBackground(MenuThemeDrawable background) {}
+
+	MenuElement addObject(MenuElement object) {}
 
 	void removeObject(MenuElement object) {}
 
-	MenuElement addObject(MenuElement object) {}
+	List getObjects() {}
 
 	void setDefaultElement(MenuElement defaultElement) {}
 
 	MenuElement getDefaultElement() {}
 
-	void setBackground(MenuThemeDrawable background) {}
-
-	void ignoreSize(MenuElement object) {}
-
 	float getOffsetX() {}
 
 	float getOffsetY() {}
 
-	void drawBackground(CustomSpriteBatch batch, float x, float y) {}
+	Color getBackgroundColor() {}
+
+	void setBackgroundColor(Color backgroundColor) {}
 
 	void addElements(Array elements, float x, float y, MenuElement object) {}
 
-	float getBgPad() {}
+	MenuThemeDrawable getBackground() {}
 
-	void setBgPad(float bgPad) {}
+	MenuElementShowAnim getShowAnimation() {}
+
+	void countSize(MenuElement object) {}
+
+	void setObjects(List objects) {}
 
 	void setCountSize(List countSize) {}
+
+	float getBgPad() {}
+
+	void setOffsetY(float offsetY) {}
 
 	void setOffsetX(float offsetX) {}
 
 	List getCountSize() {}
 
-	void countSize(MenuElement object) {}
+	void setBgPad(float bgPad) {}
 
-	MenuElementShowAnim getShowAnimation() {}
-
-	void setOffsetY(float offsetY) {}
-
-	void setObjects(List objects) {}
-
-	MenuThemeDrawable getBackground() {}
-
-	void setBackgroundColor(Color backgroundColor) {}
-
-	Color getBackgroundColor() {}
-
-	void moveTableSelection(int selection) {}
+	void drawBackground(CustomSpriteBatch batch, float x, float y) {}
 
 	void updateTableSelection(int selection) {}
+
+	void moveTableSelection(int selection) {}
 
 	boolean selectTableHeader() {}
 
 	void paint(MenuTablePaintParams params) {}
 
+	Painter getPainter(MenuTablePaintParams params) {}
+
+	Painter getPainter(MenuTablePaintParams params, int hAlign, int vAlign) {}
+
+	void startPainting(MenuTablePaintParams params) {}
+
 	void paintBG(MenuTablePaintParams params) {}
 
 	void stopPainting(MenuTablePaintParams params) {}
 
-	void startPainting(MenuTablePaintParams params) {}
-
 	void paintEmpty(MenuTablePaintParams params) {}
-
-	Painter getPainter(MenuTablePaintParams params, int hAlign, int vAlign) {}
-
-	Painter getPainter(MenuTablePaintParams params) {}
 
 	void add(MenuScreen screen) {}
 

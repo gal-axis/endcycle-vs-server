@@ -16,25 +16,29 @@ Pixmap(Object) {
 
 	void fill() {}
 
-	int getHeight() {}
-
 	int getWidth() {}
+
+	int getHeight() {}
 
 	void drawRectangle(int arg0, int arg1, int arg2, int arg3) {}
 
 	void setColor(Color arg0) {}
 
-	void setColor(float arg0, float arg1, float arg2, float arg3) {}
-
 	void setColor(int arg0) {}
+
+	void setColor(float arg0, float arg1, float arg2, float arg3) {}
 
 	void setFilter(Filter arg0) {}
 
-	int getGLFormat() {}
+	int getGLType() {}
 
 	ByteBuffer getPixels() {}
 
-	int getGLType() {}
+	void setBlending(Blending arg0) {}
+
+	int getGLFormat() {}
+
+	Format getFormat() {}
 
 	void drawPixmap(Pixmap arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8) {}
 
@@ -42,38 +46,34 @@ Pixmap(Object) {
 
 	void drawPixmap(Pixmap arg0, int arg1, int arg2) {}
 
-	Format getFormat() {}
-
-	void setBlending(Blending arg0) {}
-
-	void drawLine(int arg0, int arg1, int arg2, int arg3) {}
-
-	static void downloadFromUrl(String arg0, DownloadPixmapResponseListener arg1) {}
-
-	boolean isDisposed() {}
-
-	void fillTriangle(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5) {}
-
-	void fillCircle(int arg0, int arg1, int arg2) {}
-
-	int getPixel(int arg0, int arg1) {}
-
-	void drawCircle(int arg0, int arg1, int arg2) {}
-
-	void setPixels(ByteBuffer arg0) {}
-
-	Blending getBlending() {}
-
-	Filter getFilter() {}
+	int getGLInternalFormat() {}
 
 	void drawPixel(int arg0, int arg1) {}
 
 	void drawPixel(int arg0, int arg1, int arg2) {}
 
+	void drawCircle(int arg0, int arg1, int arg2) {}
+
+	static void downloadFromUrl(String arg0, DownloadPixmapResponseListener arg1) {}
+
+	void drawLine(int arg0, int arg1, int arg2, int arg3) {}
+
+	boolean isDisposed() {}
+
+	void setPixels(ByteBuffer arg0) {}
+
+	int getPixel(int arg0, int arg1) {}
+
+	void fillTriangle(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5) {}
+
+	Blending getBlending() {}
+
 	void fillRectangle(int arg0, int arg1, int arg2, int arg3) {}
 
-	static Pixmap createFromFrameBuffer(int arg0, int arg1, int arg2, int arg3) {}
+	Filter getFilter() {}
 
-	int getGLInternalFormat() {}
+	void fillCircle(int arg0, int arg1, int arg2) {}
+
+	static Pixmap createFromFrameBuffer(int arg0, int arg1, int arg2, int arg3) {}
 
 }

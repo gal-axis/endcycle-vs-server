@@ -24,25 +24,27 @@ VsShopRefresher(GameScreenObject) {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void hide(GameScreen screen) {}
+
 	void show(GameScreen screen) {}
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	void hide(GameScreen screen) {}
-
-	byte getLayer() {}
 
 	float getComparisonKey() {}
 
 	final Origin getOrigin() {}
 
-	final void removeObject() {}
+	byte getLayer() {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(SoundInfo sound) {}
+
+	final void addObject(ScreenObject object) {}
+
+	final void removeObject() {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 

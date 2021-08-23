@@ -1,9 +1,10 @@
-VinePullEntity(GameScreenObject) {
+VinePullEntity(GameScreenObject) : AttackParticleObject {
 
 	Origin origin;
 	GameScreen screen;
 	boolean showing;
 	final BattleEntityList entityList;
+	AttackParticleSpawner particles;
 	DrawableImage image;
 	int x;
 	int y;
@@ -18,9 +19,9 @@ VinePullEntity(GameScreenObject) {
 	boolean hit;
 	Battle battle;
 
-	new(BattleEntity parent, int x, int y, float visualX, float visualY, int panels, float speed, boolean inverted, AilmentInflict ailment, VinePullResponse response) {}
+	new(BattleEntity arg0, int arg1, int arg2, float arg3, float arg4, int arg5, float arg6, boolean arg7, AilmentInflict arg8, VinePullResponse arg9) {}
 
-	final boolean equals(Object obj) {}
+	final boolean equals(Object arg0) {}
 
 	String toString() {}
 
@@ -28,56 +29,66 @@ VinePullEntity(GameScreenObject) {
 
 	void dispose() {}
 
-	void update(float delta) {}
+	void update(float arg0) {}
 
 	boolean remove() {}
 
 	String getName() {}
 
-	void init(GameScreen screen) {}
+	void init(GameScreen arg0) {}
 
 	boolean isHidden() {}
 
-	void resize(boolean landscape, int width, int height) {}
+	void resize(boolean arg0, int arg1, int arg2) {}
 
-	void show(GameScreen screen) {}
+	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	void hide(GameScreen arg0) {}
 
-	void hide(GameScreen screen) {}
+	void show(GameScreen arg0) {}
+
+	final Origin getOrigin() {}
 
 	byte getLayer() {}
 
 	float getComparisonKey() {}
 
-	final Origin getOrigin() {}
+	final void addObject(ScreenObject arg0) {}
 
 	final void removeObject() {}
 
-	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+	final SoundContainer playSound(Sounds arg0) {}
 
-	final SoundContainer playSound(Sounds sound) {}
+	SoundContainer playSound(float arg0, float arg1, SoundInfo arg2) {}
 
-	SoundContainer playSound(SoundInfo sound) {}
+	SoundContainer playSound(SoundInfo arg0) {}
 
-	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
+	void triggerEvent(Object arg0, Object arg1, Object[] arg2) {}
+
+	float getHeight() {}
+
+	float getWidth() {}
+
+	float getCenterX() {}
+
+	float getCenterY() {}
 
 	void hit() {}
 
+	void hitEntity(int arg0, BattleEntity arg1) {}
+
 	float getSpeed() {}
 
-	int getPanels() {}
-
-	boolean isPushed(BattleEntity entity) {}
-
-	boolean attackDone() {}
-
-	void setExtend(float extend) {}
-
-	void hitEntity(int distance, BattleEntity entity) {}
+	float getExtend() {}
 
 	int getDistance() {}
 
-	float getExtend() {}
+	void setExtend(float arg0) {}
+
+	boolean attackDone() {}
+
+	int getPanels() {}
+
+	boolean isPushed(BattleEntity arg0) {}
 
 }

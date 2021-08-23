@@ -18,12 +18,13 @@ ScreenFader(GameScreen) {
 	boolean disposes;
 	boolean inits;
 	boolean changesBefore;
+	boolean specialDraw;
 
-	new(GameScreen out, GameScreen in, FadeType fadingType, boolean disposes) {}
+	new(GameScreen arg0, GameScreen arg1, FadeType arg2, boolean arg3) {}
 
-	new(GameScreen out, GameScreen in, FadeType fadingType) {}
+	new(GameScreen arg0, GameScreen arg1, FadeType arg2) {}
 
-	new(GameScreen in, FadeType fadingType) {}
+	new(GameScreen arg0, FadeType arg1) {}
 
 	boolean equals(Object arg0) {}
 
@@ -33,114 +34,116 @@ ScreenFader(GameScreen) {
 
 	GameScreen get() {}
 
-	void update(float delta) {}
+	void update(float arg0) {}
 
-	ScreenObject getObject(String name) {}
+	ScreenObject getObject(String arg0) {}
 
 	void init() {}
 
 	void resume() {}
 
-	void resize(boolean landscape, int width, int height) {}
-
-	void pause() {}
-
-	void setScreen(GameScreen screen, FadeType fade, boolean changesBefore) {}
-
-	void setScreen(GameScreen screen, FadeType fade) {}
-
-	void setScreen(GameScreen screen) {}
-
-	void updateShake(float delta) {}
-
-	boolean isShaking() {}
+	void resize(boolean arg0, int arg1, int arg2) {}
 
 	void show() {}
 
-	void updateObjects(float delta) {}
+	void dispose() {}
 
-	void draw(CustomSpriteBatch batch) {}
-
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	void pause() {}
 
 	void hide() {}
 
 	boolean isCurrentScreen() {}
 
-	boolean removeObject(ScreenObject object) {}
+	Object[] getTextArguments() {}
 
-	ScreenObject addObject(ScreenObject object) {}
+	void updateTimer(float arg0) {}
 
-	void drawButtonTips(CustomSpriteBatch batch, float x, float y) {}
-
-	Array getObjects() {}
-
-	void shake(float x, float y, float duration) {}
-
-	void shakeVibrate(float x, float y, float duration) {}
-
-	void changeTo(GameScreen screen, boolean init) {}
-
-	void render(float delta) {}
-
-	void updateTimer(float delta) {}
-
-	void clearObjects() {}
-
-	void resetShake() {}
-
-	void changeFrom(GameScreen screen, boolean init) {}
-
-	void dispose() {}
-
-	void toPreviousScreen(FadeType type) {}
-
-	void toPreviousScreen() {}
+	void addScript(Script arg0, float arg1) {}
 
 	void resetTimer() {}
 
-	void addRenderProcessor(RenderProcessor renderProcessor) {}
-
-	Array getRenderProcessors() {}
-
-	GameScreen getPreviousScreen() {}
-
-	void removeRenderProcessor(RenderProcessor renderProcessor) {}
-
-	void setPreviousScreen(GameScreen before) {}
-
-	void addScript(Script script, float delay) {}
+	void render(float arg0) {}
 
 	boolean isLoading() {}
 
-	Object[] getTextArguments() {}
+	void updateShake(float arg0) {}
 
-	ScreenFader setChangesBefore(boolean changesBefore) {}
+	ScreenObject addObject(ScreenObject arg0) {}
 
-	void disposeOldScreen() {}
+	boolean isShaking() {}
 
-	void updateOldScreen(float delta) {}
+	void updateObjects(float arg0) {}
 
-	void initNewScreen() {}
+	void resetShake() {}
 
-	void updateNewScreen(float delta) {}
+	void drawButtonTips(CustomSpriteBatch arg0, float arg1, float arg2) {}
 
-	ScreenFader setDisposes(boolean disposes) {}
+	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
+
+	void draw(CustomSpriteBatch arg0) {}
+
+	Array getObjects() {}
+
+	void toPreviousScreen() {}
+
+	void toPreviousScreen(FadeType arg0) {}
+
+	void setScreen(GameScreen arg0, FadeType arg1) {}
+
+	void setScreen(GameScreen arg0, FadeType arg1, boolean arg2) {}
+
+	void setScreen(GameScreen arg0) {}
+
+	void changeTo(GameScreen arg0, boolean arg1) {}
+
+	void changeFrom(GameScreen arg0, boolean arg1) {}
+
+	boolean removeObject(ScreenObject arg0) {}
+
+	void clearObjects() {}
+
+	void shakeVibrate(float arg0, float arg1, float arg2) {}
+
+	void shake(float arg0, float arg1, float arg2) {}
+
+	void drawSpecial(CustomSpriteBatch arg0) {}
+
+	void addRenderProcessor(RenderProcessor arg0) {}
+
+	void removeRenderProcessor(RenderProcessor arg0) {}
+
+	Array getRenderProcessors() {}
+
+	void setPreviousScreen(GameScreen arg0) {}
+
+	GameScreen getPreviousScreen() {}
+
+	ScreenFader setChangesBefore(boolean arg0) {}
+
+	void updateNewScreen(float arg0) {}
 
 	GameScreen getInScreen() {}
 
-	void drawOldScreen(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	void setOutScreen(GameScreen arg0) {}
 
-	void drawOldScreen(CustomSpriteBatch batch) {}
+	void updateOldScreen(float arg0) {}
 
-	void drawNewScreen(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	void setInScreen(GameScreen arg0) {}
 
-	void drawNewScreen(CustomSpriteBatch batch) {}
+	void disposeOldScreen() {}
 
-	ScreenFader setInits(boolean inits) {}
+	void drawNewScreen(CustomSpriteBatch arg0, float arg1, float arg2) {}
 
-	void setOutScreen(GameScreen out) {}
+	void drawNewScreen(CustomSpriteBatch arg0) {}
 
-	void setInScreen(GameScreen in) {}
+	void initNewScreen() {}
+
+	ScreenFader setInits(boolean arg0) {}
+
+	void drawOldScreen(CustomSpriteBatch arg0, float arg1, float arg2) {}
+
+	void drawOldScreen(CustomSpriteBatch arg0) {}
+
+	ScreenFader setDisposes(boolean arg0) {}
 
 }

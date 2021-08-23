@@ -15,9 +15,9 @@ BattleEntityComplexAction(BattlePlayer) {
 	HashMap actions;
 	BattleEntityAction action;
 
-	new(BattleEntity entity, int level, boolean ultra) {}
+	new(BattleEntity arg0, int arg1, boolean arg2) {}
 
-	new(BattleEntity entity, Random random, int level, boolean ultra) {}
+	new(BattleEntity arg0, Random arg1, int arg2, boolean arg3) {}
 
 	boolean equals(Object arg0) {}
 
@@ -25,23 +25,23 @@ BattleEntityComplexAction(BattlePlayer) {
 
 	int hashCode() {}
 
-	void controllerDisconnected(Controller controller) {}
+	void controllerConnected(Controller arg0) {}
 
-	void controllerConnected(Controller controller) {}
+	void controllerDisconnected(Controller arg0) {}
 
-	boolean triggerTouch(TouchEvent event) {}
+	boolean keyTyped(char arg0) {}
 
-	boolean triggerButton(ButtonEvent event) {}
+	boolean triggerButton(ButtonEvent arg0) {}
 
-	boolean triggerType(int character) {}
+	boolean keyDown(int arg0) {}
 
-	boolean keyTyped(char character) {}
+	boolean addButtonTips(ButtonTipList arg0) {}
 
-	boolean keyDown(int keycode) {}
+	boolean triggerTouch(TouchEvent arg0) {}
 
-	boolean keyUp(int keycode) {}
+	boolean triggerType(int arg0) {}
 
-	boolean addButtonTips(ButtonTipList tips) {}
+	boolean keyUp(int arg0) {}
 
 	int getInputPriority() {}
 
@@ -49,7 +49,7 @@ BattleEntityComplexAction(BattlePlayer) {
 
 	void remove() {}
 
-	void update(float delta) {}
+	void update(float arg0) {}
 
 	void init() {}
 
@@ -57,48 +57,48 @@ BattleEntityComplexAction(BattlePlayer) {
 
 	void dispose() {}
 
-	void hit(HitProperty hitProperty) {}
-
-	void hitEntity(BattleEntity entity, OwnedHitProperty property) {}
-
-	BattleEntityActionSave getSave() {}
+	void hit(HitProperty arg0) {}
 
 	boolean isAuthorative() {}
 
-	void vibrateController(float duration, float strength) {}
+	void hitEntity(BattleEntity arg0, OwnedHitProperty arg1) {}
 
-	GameScreenMessage createRewardMessage(RandomVocRewards vocs, Random random, boolean skippable) {}
+	BattleEntityActionSave getSave() {}
 
-	void move(int xTile, int yTile) {}
+	void vibrateController(float arg0, float arg1) {}
 
 	final Controller getController() {}
 
-	void applyInput(float delay, Object input) {}
+	void move(int arg0, int arg1) {}
 
-	boolean applyInput(KeyCode code, boolean pressed, boolean player) {}
+	GameScreenMessage createRewardMessage(RandomVocRewards arg0, Random arg1, boolean arg2) {}
 
-	void setHudButtons(BattleHUD hud) {}
-
-	void createHud(int playerIndex) {}
-
-	void cancelMove() {}
-
-	void setCombat(boolean combat) {}
+	boolean sendClientInput(Object arg0, boolean arg1) {}
 
 	boolean canUpgrade() {}
 
+	void setCombat(boolean arg0) {}
+
+	void setHudButtons(BattleHUD arg0) {}
+
 	void upgrade() {}
 
-	boolean sendClientInput(Object input, boolean local) {}
+	MockController setKeyPressed(KeyCode arg0, boolean arg1) {}
 
-	void clientInput(ButtonEvent event) {}
+	void createHud(int arg0) {}
 
-	MockController setKeyPressed(KeyCode code, boolean pressed) {}
+	void clientInput(ButtonEvent arg0) {}
+
+	boolean applyInput(KeyCode arg0, boolean arg1, boolean arg2) {}
+
+	void applyInput(float arg0, Object arg1) {}
+
+	void cancelMove() {}
 
 	BattleEntity getTarget() {}
 
-	void setBehavior(BehaviorType type) {}
+	void setBehavior(BehaviorType arg0) {}
 
-	void setVocTags(VocTag[] tags) {}
+	void setVocTags(VocTag[] arg0) {}
 
 }

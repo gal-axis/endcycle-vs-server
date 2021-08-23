@@ -58,47 +58,47 @@ BattleFieldPanel(Object) {
 
 	void playSound(SoundInfo arg0) {}
 
-	void triggerEvent(Object arg0, Object arg1, Object[] arg2) {}
-
 	final void triggerAction(Object[] arg0) {}
 
-	OwnedHitProperty hit(OwnedHitProperty arg0) {}
+	void triggerEvent(Object arg0, Object arg1, Object[] arg2) {}
 
 	void changeData(FieldPanelData arg0) {}
 
-	BattleFieldBorder getCameraBorder(BattleEntity arg0) {}
+	OwnedHitProperty hit(OwnedHitProperty arg0) {}
 
-	void changeType(PanelType arg0) {}
-
-	boolean setParty(Party arg0, BattleFieldPanel arg1) {}
-
-	boolean setParty(Party arg0, BattleFieldPanel arg1, boolean arg2) {}
-
-	boolean setParty(Party arg0, BattleFieldPanel arg1, boolean arg2, boolean arg3) {}
+	boolean occupiedBy(Party arg0) {}
 
 	boolean free(BattleEntity arg0) {}
 
 	boolean isBattleClient() {}
 
+	BattleFieldBorder getCameraBorder(BattleEntity arg0) {}
+
 	void occupy(BattleEntity arg0) {}
 
-	boolean occupiedBy(Party arg0) {}
+	boolean setParty(Party arg0, BattleFieldPanel arg1) {}
+
+	boolean setParty(Party arg0, BattleFieldPanel arg1, boolean arg2, boolean arg3) {}
+
+	boolean setParty(Party arg0, BattleFieldPanel arg1, boolean arg2) {}
+
+	void changeType(PanelType arg0) {}
 
 	boolean accessible(boolean arg0) {}
 
 	boolean occupied(boolean arg0) {}
 
+	void resetRevert() {}
+
 	boolean isOccupied() {}
 
 	boolean isOccupied(BattleEntity arg0) {}
 
-	void resetRevert() {}
+	OwnedHitProperty affect(OwnedHitProperty arg0) {}
 
-	void effectDispose() {}
+	boolean isPartyChanged() {}
 
 	void effectInit() {}
-
-	OwnedHitProperty affect(OwnedHitProperty arg0) {}
 
 	void effectRefresh() {}
 
@@ -106,6 +106,6 @@ BattleFieldPanel(Object) {
 
 	boolean isTypeChanged() {}
 
-	boolean isPartyChanged() {}
+	void effectDispose() {}
 
 }

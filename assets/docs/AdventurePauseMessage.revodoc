@@ -15,12 +15,13 @@ AdventurePauseMessage(BattlePauseMessage) : MenuTableAction, MenuTablePainter {
 	MenuButton settings;
 	MenuButton quit;
 	MenuTable battles;
+	VocPackGroup vocs;
 	MenuTable items;
 	MenuLabel description;
 
-	new(AdventureBattle battle) {}
+	new(AdventureBattle arg0) {}
 
-	final boolean equals(Object obj) {}
+	final boolean equals(Object arg0) {}
 
 	String toString() {}
 
@@ -28,95 +29,97 @@ AdventurePauseMessage(BattlePauseMessage) : MenuTableAction, MenuTablePainter {
 
 	void dispose() {}
 
-	void update(float delta) {}
+	void update(float arg0) {}
 
 	boolean remove() {}
 
 	String getName() {}
 
-	void init(GameScreen screen) {}
+	void init(GameScreen arg0) {}
 
 	boolean isHidden() {}
 
-	void resize(boolean landscape, int width, int height) {}
+	void resize(boolean arg0, int arg1, int arg2) {}
 
-	void show(GameScreen screen) {}
+	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	void hide(GameScreen arg0) {}
 
-	void hide(GameScreen screen) {}
-
-	float getComparisonKey() {}
+	void show(GameScreen arg0) {}
 
 	final Origin getOrigin() {}
 
 	byte getLayer() {}
 
+	float getComparisonKey() {}
+
+	final void addObject(ScreenObject arg0) {}
+
 	final void removeObject() {}
 
-	final SoundContainer playSound(Sounds sound) {}
+	final SoundContainer playSound(Sounds arg0) {}
 
-	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+	SoundContainer playSound(float arg0, float arg1, SoundInfo arg2) {}
 
-	SoundContainer playSound(SoundInfo sound) {}
+	SoundContainer playSound(SoundInfo arg0) {}
 
-	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
+	void triggerEvent(Object arg0, Object arg1, Object[] arg2) {}
 
-	final void addDisposeListener(Runnable runnable) {}
+	final void removeDisposeListener(Runnable arg0) {}
 
-	final void removeInitializeListener(Runnable runnable) {}
+	final void removeInitializeListener(Runnable arg0) {}
 
-	final void removeDisposeListener(Runnable runnable) {}
+	final void addDisposeListener(Runnable arg0) {}
 
-	final void addInitializeListener(Runnable runnable) {}
+	final void addInitializeListener(Runnable arg0) {}
 
-	void scheduleMessage(GameScreenMessage message) {}
+	void scheduleMessage(GameScreenMessage arg0) {}
 
 	void finish() {}
 
-	void setSpeed(float speed) {}
-
-	float getPosition() {}
+	void setSpeed(float arg0) {}
 
 	boolean isStaying() {}
 
-	void controllerConnected(Controller controller) {}
+	float getPosition() {}
 
-	void controllerDisconnected(Controller controller) {}
+	void controllerConnected(Controller arg0) {}
 
-	boolean triggerType(int character) {}
+	void controllerDisconnected(Controller arg0) {}
+
+	boolean keyTyped(char arg0) {}
+
+	boolean triggerButton(ButtonEvent arg0) {}
+
+	boolean keyDown(int arg0) {}
+
+	boolean addButtonTips(ButtonTipList arg0) {}
+
+	boolean triggerTouch(TouchEvent arg0) {}
+
+	boolean triggerType(int arg0) {}
+
+	boolean keyUp(int arg0) {}
 
 	int getInputPriority() {}
 
-	boolean triggerTouch(TouchEvent event) {}
-
-	boolean triggerButton(ButtonEvent event) {}
-
-	boolean addButtonTips(ButtonTipList tips) {}
-
-	boolean keyDown(int keycode) {}
-
-	boolean keyTyped(char character) {}
-
-	boolean keyUp(int keycode) {}
-
-	void setDefaultElement(MenuElement defaultElement) {}
-
 	MenuElement getDefaultElement() {}
+
+	void setDefaultElement(MenuElement arg0) {}
 
 	MenuElementController getController() {}
 
-	void drawScreenTint(CustomSpriteBatch batch, float alpha) {}
+	void setElement(MenuElement arg0) {}
 
-	void setElement(MenuElement menuElement) {}
-
-	MenuElement getMenuElement() {}
+	boolean isBackKey(ButtonEvent arg0) {}
 
 	float calcOffset() {}
 
-	void drawMenu(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	MenuElement getMenuElement() {}
 
-	boolean isBackKey(ButtonEvent trigger) {}
+	void drawMenu(CustomSpriteBatch arg0, float arg1, float arg2) {}
+
+	void drawScreenTint(CustomSpriteBatch arg0, float arg1) {}
 
 	void layout() {}
 
@@ -128,30 +131,30 @@ AdventurePauseMessage(BattlePauseMessage) : MenuTableAction, MenuTablePainter {
 
 	void reconnectControllers() {}
 
-	void paint(MenuTablePaintParams params) {}
+	void paint(MenuTablePaintParams arg0) {}
 
-	Painter getPainter(MenuTablePaintParams params) {}
+	Painter getPainter(MenuTablePaintParams arg0) {}
 
-	Painter getPainter(MenuTablePaintParams params, int hAlign, int vAlign) {}
+	Painter getPainter(MenuTablePaintParams arg0, int arg1, int arg2) {}
 
-	void startPainting(MenuTablePaintParams params) {}
+	void stopPainting(MenuTablePaintParams arg0) {}
 
-	void stopPainting(MenuTablePaintParams params) {}
+	void paintEmpty(MenuTablePaintParams arg0) {}
 
-	void paintEmpty(MenuTablePaintParams params) {}
+	void startPainting(MenuTablePaintParams arg0) {}
 
-	void paintBG(MenuTablePaintParams params) {}
+	void paintBG(MenuTablePaintParams arg0) {}
 
-	void updateTableSelection(int selection) {}
+	void specialTableSelect(int arg0, AdventureBattleItem arg1) {}
+
+	void updateTableSelection(int arg0) {}
 
 	boolean selectTableHeader() {}
 
-	void specialTableSelect(int selection, AdventureBattleItem selected) {}
+	void moveTableSelection(int arg0) {}
 
-	void moveTableSelection(int selection) {}
+	void selectTable(int arg0, AdventureBattleItem arg1) {}
 
-	void selectTable(int selection, AdventureBattleItem selected) {}
-
-	void clickedTable(int selection, AdventureBattleItem selected, float x, float y) {}
+	void clickedTable(int arg0, AdventureBattleItem arg1, float arg2, float arg3) {}
 
 }

@@ -10,6 +10,7 @@ final VocStyle(Moddable) : DataName {
 	DrawableId drawable;
 	List tagPreference;
 	VocStylePreview preview;
+	AttackParticle particle;
 	List modifications;
 
 	new() {}
@@ -26,10 +27,10 @@ final VocStyle(Moddable) : DataName {
 
 	VocElement getElement(AttackShell arg0, HitProperty arg1) {}
 
-	int getDefaultPrice() {}
-
 	int calculatePower(AttackShell arg0, HitProperty arg1) {}
 
 	int calculateCrush(AttackShell arg0, HitProperty arg1) {}
+
+	int getDefaultPrice() {}
 
 }

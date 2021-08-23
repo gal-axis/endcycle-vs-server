@@ -22,6 +22,7 @@ VinePullAttack(Attack) {
 	Object origin;
 	WrappedAttackSender wrappedSender;
 	OwnedHitProperty property;
+	Array particles;
 	VinePullEntity entity;
 
 	new() {}
@@ -34,27 +35,27 @@ VinePullAttack(Attack) {
 
 	Attack clone() {}
 
-	boolean isActionRollback(Object[] arg0) {}
+	final void actionTriggered(Runnable arg0) {}
 
 	void actionTriggered(Object[] arg0) {}
 
-	final void actionTriggered(Runnable arg0) {}
+	boolean isActionRollback(Object[] arg0) {}
+
+	void controllerConnected(Controller arg0) {}
 
 	void controllerDisconnected(Controller arg0) {}
 
-	void controllerConnected(Controller arg0) {}
+	boolean keyTyped(char arg0) {}
 
 	boolean triggerButton(ButtonEvent arg0) {}
 
 	boolean keyDown(int arg0) {}
 
-	boolean keyTyped(char arg0) {}
+	boolean addButtonTips(ButtonTipList arg0) {}
 
 	boolean triggerTouch(TouchEvent arg0) {}
 
 	boolean triggerType(int arg0) {}
-
-	boolean addButtonTips(ButtonTipList arg0) {}
 
 	boolean keyUp(int arg0) {}
 
@@ -80,51 +81,55 @@ VinePullAttack(Attack) {
 
 	final float getX(int arg0) {}
 
-	void setAnimationDuration(float arg0) {}
+	boolean active() {}
 
 	SoundContainer playSound(SoundInfo arg0) {}
 
-	boolean active() {}
-
-	final void triggerAction(Object[] arg0) {}
-
-	void finish() {}
-
-	final Origin getOrigin(int arg0) {}
+	void setAnimationDuration(float arg0) {}
 
 	final Controller getController() {}
 
-	void attackAnimation() {}
+	final void triggerAction(Object[] arg0) {}
+
+	final Origin getOrigin(int arg0) {}
+
+	void finish() {}
 
 	void castAnimation() {}
 
+	void attackAnimation() {}
+
 	boolean fillGauges() {}
-
-	final int getXTile() {}
-
-	final int getYTile() {}
 
 	Attack charge() {}
 
-	Attack getWrapped(AttackWrapper arg0, boolean arg1, boolean arg2) {}
+	final int getYTile() {}
 
-	final int getTurn() {}
+	final int getXTile() {}
+
+	void updateAttackTasks(float arg0) {}
+
+	void setAnimationState(PatchworkStateId arg0) {}
+
+	boolean hasAnimationState(PatchworkStateId arg0) {}
+
+	void runAction(int arg0) {}
 
 	void addWrappers(AttackWrappers arg0) {}
 
-	void increaseGauge(double arg0) {}
+	double getGaugeProgress() {}
 
 	boolean acceptsInput(ButtonEvent arg0) {}
-
-	double getGaugeProgress() {}
 
 	void scheduleAction(Runnable arg0, float arg1) {}
 
 	void scheduleAction(int arg0, float arg1) {}
 
-	void runAction(int arg0) {}
+	void increaseGauge(double arg0) {}
 
-	AttackPortal getPortal(BattleEntity arg0, float arg1, float arg2, float arg3) {}
+	final int getTurn() {}
+
+	Attack getWrapped(AttackWrapper arg0, boolean arg1, boolean arg2) {}
 
 	final int getXTileInFront() {}
 
@@ -132,12 +137,8 @@ VinePullAttack(Attack) {
 
 	boolean reduceGauge(double arg0) {}
 
-	void updateAttackTasks(float arg0) {}
+	AttackPortal getPortal(BattleEntity arg0, float arg1, float arg2, float arg3) {}
 
 	final BattleEntityList getBattleEntities() {}
-
-	boolean hasAnimationState(PatchworkStateId arg0) {}
-
-	void setAnimationState(PatchworkStateId arg0) {}
 
 }

@@ -22,6 +22,7 @@ LaunchFallingAttack(Attack) {
 	Object origin;
 	WrappedAttackSender wrappedSender;
 	OwnedHitProperty property;
+	Array particles;
 
 	new() {}
 
@@ -33,110 +34,110 @@ LaunchFallingAttack(Attack) {
 
 	Attack clone() {}
 
-	boolean isActionRollback(Object[] arg0) {}
+	boolean isActionRollback(Object[] action) {}
 
-	void actionTriggered(Object[] arg0) {}
+	void actionTriggered(Object[] action) {}
 
-	final void actionTriggered(Runnable arg0) {}
+	final void actionTriggered(Runnable action) {}
 
-	void controllerDisconnected(Controller arg0) {}
+	void controllerDisconnected(Controller controller) {}
 
-	void controllerConnected(Controller arg0) {}
+	void controllerConnected(Controller controller) {}
 
-	boolean triggerButton(ButtonEvent arg0) {}
+	boolean addButtonTips(ButtonTipList tips) {}
 
-	boolean keyDown(int arg0) {}
+	boolean triggerButton(ButtonEvent event) {}
 
-	boolean keyTyped(char arg0) {}
+	boolean triggerTouch(TouchEvent event) {}
 
-	boolean triggerTouch(TouchEvent arg0) {}
-
-	boolean triggerType(int arg0) {}
-
-	boolean addButtonTips(ButtonTipList arg0) {}
-
-	boolean keyUp(int arg0) {}
+	boolean triggerType(int character) {}
 
 	int getInputPriority() {}
 
+	boolean keyDown(int keycode) {}
+
+	boolean keyUp(int keycode) {}
+
+	boolean keyTyped(char character) {}
+
 	String getName() {}
 
-	void update(float arg0) {}
+	void update(float delta) {}
 
-	Attack cast(BattleEntity arg0, AttackPlan arg1) {}
+	Attack cast(BattleEntity user, AttackPlan plan) {}
 
 	final BattleField getField() {}
 
 	void start() {}
 
-	final void copy(Attack arg0) {}
+	final void copy(Attack attack) {}
 
 	BattleEntity getTarget() {}
 
 	void flip() {}
 
-	final float getY(int arg0) {}
-
-	final float getX(int arg0) {}
-
-	void setAnimationDuration(float arg0) {}
-
-	SoundContainer playSound(SoundInfo arg0) {}
+	SoundContainer playSound(SoundInfo sound) {}
 
 	boolean active() {}
 
-	final void triggerAction(Object[] arg0) {}
+	void setAnimationDuration(float duration) {}
 
-	void finish() {}
+	final float getY(int yTile) {}
 
-	final Origin getOrigin(int arg0) {}
-
-	final Controller getController() {}
-
-	void attackAnimation() {}
+	final float getX(int xTile) {}
 
 	void castAnimation() {}
 
+	void attackAnimation() {}
+
+	void finish() {}
+
+	final Origin getOrigin(int index) {}
+
+	final void triggerAction(Object[] parameters) {}
+
 	boolean fillGauges() {}
 
-	final int getXTile() {}
+	final Controller getController() {}
 
 	final int getYTile() {}
 
+	final int getXTile() {}
+
 	Attack charge() {}
-
-	Attack getWrapped(AttackWrapper arg0, boolean arg1, boolean arg2) {}
-
-	final int getTurn() {}
-
-	void addWrappers(AttackWrappers arg0) {}
-
-	void increaseGauge(double arg0) {}
-
-	boolean acceptsInput(ButtonEvent arg0) {}
-
-	double getGaugeProgress() {}
-
-	void scheduleAction(Runnable arg0, float arg1) {}
-
-	void scheduleAction(int arg0, float arg1) {}
-
-	void runAction(int arg0) {}
-
-	AttackPortal getPortal(BattleEntity arg0, float arg1, float arg2, float arg3) {}
 
 	final int getXTileInFront() {}
 
+	double getGaugeProgress() {}
+
+	void increaseGauge(double amount) {}
+
+	boolean acceptsInput(ButtonEvent event) {}
+
+	void addWrappers(AttackWrappers wrappers) {}
+
+	Attack getWrapped(AttackWrapper wrapper, boolean shareHit, boolean gauge) {}
+
+	void scheduleAction(Runnable action, float delay) {}
+
+	void scheduleAction(int action, float delay) {}
+
+	boolean reduceGauge(double amount) {}
+
 	boolean reduceGauge() {}
 
-	boolean reduceGauge(double arg0) {}
+	AttackPortal getPortal(BattleEntity entity, float portalX, float portalY, float time) {}
 
-	void updateAttackTasks(float arg0) {}
+	final int getTurn() {}
+
+	void runAction(int action) {}
 
 	final BattleEntityList getBattleEntities() {}
 
-	boolean hasAnimationState(PatchworkStateId arg0) {}
+	void setAnimationState(PatchworkStateId state) {}
 
-	void setAnimationState(PatchworkStateId arg0) {}
+	void updateAttackTasks(float delta) {}
+
+	boolean hasAnimationState(PatchworkStateId state) {}
 
 }

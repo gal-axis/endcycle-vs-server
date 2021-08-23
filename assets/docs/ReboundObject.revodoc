@@ -1,4 +1,6 @@
-ReboundObject(Object) : ScreenObject, ShadowEntity, Danger {
+ReboundObject(Object) : ScreenObject, ShadowEntity, Danger, AttackParticleObject {
+
+	AttackParticleSpawner particles;
 
 	new(BattleEntity parent, OwnedHitProperty property, DrawableState drawable, int xTile, int yTile, float yOffset, float speed, float radius, float timeOffset, boolean shadow) {}
 
@@ -7,32 +9,6 @@ ReboundObject(Object) : ScreenObject, ShadowEntity, Danger {
 	String toString() {}
 
 	int hashCode() {}
-
-	float getDangerIgnore(int level) {}
-
-	boolean isDangerous(BattleEntity entity, int x, int y) {}
-
-	float getDangerPriority(BattleEntity entity) {}
-
-	List getShadowDrawables() {}
-
-	boolean isFlipY() {}
-
-	Patchwork getPatchwork() {}
-
-	float getXScale() {}
-
-	float getYScale() {}
-
-	boolean isFlipX() {}
-
-	float getShadowZ() {}
-
-	float getShadowY() {}
-
-	float getShadowX() {}
-
-	float getShadowAlpha() {}
 
 	void dispose() {}
 
@@ -48,17 +24,53 @@ ReboundObject(Object) : ScreenObject, ShadowEntity, Danger {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	void hide(GameScreen screen) {}
 
 	void show(GameScreen screen) {}
 
-	void hide(GameScreen screen) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	float getComparisonKey() {}
 
 	Origin getOrigin() {}
 
 	byte getLayer() {}
 
-	float getComparisonKey() {}
+	float getWidth() {}
+
+	float getHeight() {}
+
+	void addObject(ScreenObject object) {}
+
+	float getCenterX() {}
+
+	float getCenterY() {}
+
+	boolean isDangerous(BattleEntity entity, int x, int y) {}
+
+	float getDangerIgnore(int level) {}
+
+	float getDangerPriority(BattleEntity entity) {}
+
+	List getShadowDrawables() {}
+
+	boolean isFlipX() {}
+
+	float getYScale() {}
+
+	boolean isFlipY() {}
+
+	Patchwork getPatchwork() {}
+
+	float getXScale() {}
+
+	float getShadowX() {}
+
+	float getShadowAlpha() {}
+
+	float getShadowZ() {}
+
+	float getShadowY() {}
 
 	OwnedHitProperty getProperty() {}
 
@@ -68,15 +80,15 @@ ReboundObject(Object) : ScreenObject, ShadowEntity, Danger {
 
 	float getTime() {}
 
-	boolean isActive() {}
-
 	float getY() {}
 
 	float getX() {}
 
-	Battle getBattle() {}
+	boolean isActive() {}
 
 	float getSpeed() {}
+
+	Battle getBattle() {}
 
 	OwnedHitProperty getCurrentProperty() {}
 
@@ -84,32 +96,34 @@ ReboundObject(Object) : ScreenObject, ShadowEntity, Danger {
 
 	int getXTile() {}
 
-	int getCurrentY() {}
+	DrawableState getDrawable() {}
 
-	Map getHitEntities() {}
+	float getDelay() {}
+
+	int getCurrentX() {}
+
+	int getCurrentPanel() {}
+
+	float getYOffset() {}
 
 	void clearHits() {}
 
 	float getRadius() {}
 
-	void updatePosition() {}
-
-	float getDelay() {}
-
-	FieldFlicker getFlicker() {}
-
-	int getCurrentPanel() {}
+	ShaderManager getShaderManager() {}
 
 	float getTimeOffset() {}
 
-	int getCurrentX() {}
-
-	DrawableState getDrawable() {}
-
-	ShaderManager getShaderManager() {}
-
-	float getYOffset() {}
-
 	boolean isShadow() {}
+
+	AttackParticleSpawner getParticles() {}
+
+	int getCurrentY() {}
+
+	void updatePosition() {}
+
+	Map getHitEntities() {}
+
+	FieldFlicker getFlicker() {}
 
 }

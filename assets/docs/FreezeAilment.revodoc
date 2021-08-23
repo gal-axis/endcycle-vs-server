@@ -17,11 +17,11 @@ FreezeAilment(Ailment) : BECondition, GameEventListener {
 
 	int hashCode() {}
 
-	void actionTriggered(Runnable action) {}
+	boolean isActionRollback(Object[] action) {}
 
 	void actionTriggered(Object[] action) {}
 
-	boolean isActionRollback(Object[] action) {}
+	void actionTriggered(Runnable action) {}
 
 	int get(int object, int orElse) {}
 
@@ -43,21 +43,21 @@ FreezeAilment(Ailment) : BECondition, GameEventListener {
 
 	void end() {}
 
-	boolean draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scale) {}
-
 	void dispose() {}
+
+	boolean draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scale) {}
 
 	final void triggerAction(Object[] parameters) {}
 
 	boolean over() {}
-
-	void increaseDuration() {}
 
 	void setIntensity(float intensity) {}
 
 	boolean isDisplayed() {}
 
 	float getIntensity() {}
+
+	void increaseDuration() {}
 
 	boolean canTarget() {}
 

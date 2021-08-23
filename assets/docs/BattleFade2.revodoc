@@ -10,32 +10,32 @@ BattleFade2(FadeProcessor) {
 
 	int hashCode() {}
 
-	void update(float delta) {}
+	void update(float arg0) {}
 
 	void start() {}
 
-	void draw(CustomSpriteBatch batch) {}
-
 	void dispose() {}
+
+	void updateNewScreen(float arg0) {}
+
+	void draw(CustomSpriteBatch arg0) {}
+
+	void updateOldScreen(float arg0) {}
 
 	void disposeOldScreen() {}
 
-	void updateOldScreen(float delta) {}
+	void drawNewScreen(CustomSpriteBatch arg0, float arg1, float arg2) {}
 
-	boolean done() {}
+	void drawNewScreen(CustomSpriteBatch arg0) {}
 
 	void initNewScreen() {}
 
-	void updateNewScreen(float delta) {}
+	void setFader(ScreenFader arg0) {}
 
-	void drawOldScreen(CustomSpriteBatch batch, float x, float y) {}
+	void drawOldScreen(CustomSpriteBatch arg0, float arg1, float arg2) {}
 
-	void drawOldScreen(CustomSpriteBatch batch) {}
+	void drawOldScreen(CustomSpriteBatch arg0) {}
 
-	void drawNewScreen(CustomSpriteBatch batch) {}
-
-	void drawNewScreen(CustomSpriteBatch batch, float x, float y) {}
-
-	void setFader(ScreenFader fader) {}
+	boolean done() {}
 
 }

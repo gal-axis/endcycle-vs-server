@@ -8,8 +8,8 @@ final SpawnUtils(Object) {
 
 	static void searchFreePanels(Battle battle, Array availablePanels, Array backupPanels, Party party) {}
 
-	static boolean spawnEntities(Battle battle, int spawns, int currentWave, boolean singleSet, int currentLevel, Random dataRandom, Random aiRandom, boolean noise, Consumer entityAdjust) {}
-
 	static void respawnPlayers(Battle battle, Random aiRandom) {}
+
+	static boolean spawnEntities(Battle battle, int spawns, int currentWave, boolean singleSet, int currentLevel, Random dataRandom, Random aiRandom, boolean noise, Consumer entityAdjust) {}
 
 }

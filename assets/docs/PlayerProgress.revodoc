@@ -41,55 +41,55 @@ final PlayerProgress(Object) {
 
 	boolean isTutorialComplete(int arg0) {}
 
-	boolean isBestWave(GameDifficulty arg0, boolean arg1, int arg2) {}
+	boolean isCharacterUnlocked(ID arg0) {}
 
 	boolean isBestScore(GameDifficulty arg0, boolean arg1, int arg2) {}
+
+	boolean isBestWave(GameDifficulty arg0, boolean arg1, int arg2) {}
 
 	float completeCampaign(CampaignData arg0, double arg1, List arg2) {}
 
 	void clearAdventure(AdventurePath arg0) {}
 
-	void saveLocal() {}
-
-	void cheat() {}
-
-	void completeTutorial(int arg0) {}
-
-	boolean buyCharacter(BattleEntityData arg0) {}
-
-	void increaseAffinity(ID arg0, float arg1) {}
-
-	void checkNew() {}
-
 	boolean isThemeUnlocked(ID arg0) {}
 
 	Array checkNewThemes() {}
 
-	boolean isCharacterUnlocked(ID arg0) {}
+	void cheat() {}
+
+	boolean buyCharacter(BattleEntityData arg0) {}
+
+	void completeTutorial(int arg0) {}
+
+	void increaseAffinity(ID arg0, float arg1) {}
+
+	void saveLocal() {}
+
+	void checkNew() {}
 
 	boolean isCharacterCustomizationUnlocked(ID arg0) {}
 
 	boolean isAdventureEventEncountered(ID arg0) {}
 
-	void adventureEventEncountered(AdventureEvent arg0) {}
-
 	List getUnlockedCampaigns() {}
+
+	void adventureEventEncountered(AdventureEvent arg0) {}
 
 	void clearAdventureZone(AdventureZone arg0) {}
 
 	boolean isAdventureCleared(ID arg0) {}
 
+	Array checkNewCampaigns() {}
+
+	boolean checkNewAffinities() {}
+
+	void addDefeatedCredit(String arg0) {}
+
 	Array checkNewCharacters() {}
 
 	boolean[] completeOnslaught(GameDifficulty arg0, boolean arg1, int arg2, int arg3) {}
 
-	boolean checkNewAffinities() {}
-
-	Array checkNewCustomizations() {}
-
-	boolean isCampaignUnlocked(ID arg0) {}
-
-	void addDefeatedCredit(String arg0) {}
+	List getUnlockedCharacters() {}
 
 	List getUnlockedThemes() {}
 
@@ -97,8 +97,8 @@ final PlayerProgress(Object) {
 
 	boolean isAffinityEntryUnlocked(ID arg0) {}
 
-	List getUnlockedCharacters() {}
+	boolean isCampaignUnlocked(ID arg0) {}
 
-	Array checkNewCampaigns() {}
+	Array checkNewCustomizations() {}
 
 }

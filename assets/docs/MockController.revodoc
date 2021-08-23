@@ -26,13 +26,13 @@ MockController(Object) : Controller {
 
 	List getButtonImages(KeyCode arg0) {}
 
+	void removeKey(KeyCode arg0, int arg1) {}
+
 	void setKey(KeyCode arg0, int arg1) {}
 
 	void clearImages() {}
 
 	boolean isChanged() {}
-
-	void removeKey(KeyCode arg0, int arg1) {}
 
 	Drawable getButtonImage(KeyCode arg0) {}
 
@@ -48,23 +48,23 @@ MockController(Object) : Controller {
 
 	boolean supportsPlayerIndex() {}
 
+	int getAxisCount() {}
+
+	String getUniqueId() {}
+
 	boolean canVibrate() {}
 
 	boolean getButton(int arg0) {}
 
-	void cancelVibration() {}
-
-	String getUniqueId() {}
-
-	boolean isVibrating() {}
-
-	float getAxis(int arg0) {}
-
-	int getAxisCount() {}
-
 	void setPlayerIndex(int arg0) {}
 
 	void startVibration(int arg0, float arg1) {}
+
+	float getAxis(int arg0) {}
+
+	void cancelVibration() {}
+
+	boolean isVibrating() {}
 
 	void setButton(KeyCode arg0, boolean arg1) {}
 

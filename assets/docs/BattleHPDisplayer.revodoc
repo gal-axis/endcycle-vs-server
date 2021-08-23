@@ -22,16 +22,16 @@ BattleHPDisplayer(Object) : ScreenObject {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void hide(GameScreen screen) {}
+
 	void show(GameScreen screen) {}
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void hide(GameScreen screen) {}
-
-	byte getLayer() {}
-
 	float getComparisonKey() {}
 
 	Origin getOrigin() {}
+
+	byte getLayer() {}
 
 }

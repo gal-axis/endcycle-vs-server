@@ -14,9 +14,9 @@ VocPackTemplateMessage(MenuMessage) : MenuTableAction {
 	MenuElementGroup group;
 	VocPackGroup packDisplayer;
 
-	new(Inventory arg0, Consumer arg1) {}
+	new(Inventory inventory, Consumer select) {}
 
-	final boolean equals(Object arg0) {}
+	final boolean equals(Object obj) {}
 
 	String toString() {}
 
@@ -24,104 +24,108 @@ VocPackTemplateMessage(MenuMessage) : MenuTableAction {
 
 	void dispose() {}
 
-	void update(float arg0) {}
+	void update(float delta) {}
 
 	boolean remove() {}
 
 	String getName() {}
 
-	void init(GameScreen arg0) {}
+	void init(GameScreen screen) {}
 
 	boolean isHidden() {}
 
-	void resize(boolean arg0, int arg1, int arg2) {}
+	void resize(boolean landscape, int width, int height) {}
 
-	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
+	void hide(GameScreen screen) {}
 
-	void hide(GameScreen arg0) {}
+	void show(GameScreen screen) {}
 
-	void show(GameScreen arg0) {}
-
-	final Origin getOrigin() {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	float getComparisonKey() {}
 
+	final Origin getOrigin() {}
+
 	byte getLayer() {}
+
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	final SoundContainer playSound(Sounds sound) {}
+
+	SoundContainer playSound(SoundInfo sound) {}
+
+	final void addObject(ScreenObject object) {}
 
 	final void removeObject() {}
 
-	SoundContainer playSound(SoundInfo arg0) {}
+	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
-	SoundContainer playSound(float arg0, float arg1, SoundInfo arg2) {}
+	final void addInitializeListener(Runnable runnable) {}
 
-	final SoundContainer playSound(Sounds arg0) {}
+	final void removeDisposeListener(Runnable runnable) {}
 
-	void triggerEvent(Object arg0, Object arg1, Object[] arg2) {}
+	final void removeInitializeListener(Runnable runnable) {}
 
-	final void addDisposeListener(Runnable arg0) {}
+	final void addDisposeListener(Runnable runnable) {}
 
-	final void addInitializeListener(Runnable arg0) {}
-
-	final void removeDisposeListener(Runnable arg0) {}
-
-	final void removeInitializeListener(Runnable arg0) {}
-
-	void scheduleMessage(GameScreenMessage arg0) {}
+	void scheduleMessage(GameScreenMessage message) {}
 
 	void finish() {}
 
-	void setSpeed(float arg0) {}
-
-	float getPosition() {}
+	void setSpeed(float speed) {}
 
 	boolean isStaying() {}
 
-	void controllerDisconnected(Controller arg0) {}
+	float getPosition() {}
 
-	void controllerConnected(Controller arg0) {}
+	void controllerDisconnected(Controller controller) {}
 
-	boolean keyDown(int arg0) {}
+	void controllerConnected(Controller controller) {}
 
-	boolean triggerTouch(TouchEvent arg0) {}
+	boolean addButtonTips(ButtonTipList tips) {}
 
-	boolean addButtonTips(ButtonTipList arg0) {}
+	boolean triggerButton(ButtonEvent event) {}
+
+	boolean triggerTouch(TouchEvent event) {}
+
+	boolean triggerType(int character) {}
 
 	int getInputPriority() {}
 
-	boolean keyTyped(char arg0) {}
+	boolean keyDown(int keycode) {}
 
-	boolean keyUp(int arg0) {}
+	boolean keyUp(int keycode) {}
 
-	boolean triggerButton(ButtonEvent arg0) {}
+	boolean keyTyped(char character) {}
 
-	boolean triggerType(int arg0) {}
+	void setDefaultElement(MenuElement defaultElement) {}
 
 	MenuElement getDefaultElement() {}
 
-	void setDefaultElement(MenuElement arg0) {}
-
 	MenuElementController getController() {}
 
-	void drawScreenTint(CustomSpriteBatch arg0, float arg1) {}
+	void drawScreenTint(CustomSpriteBatch batch, float alpha) {}
+
+	void setElement(MenuElement menuElement) {}
 
 	MenuElement getMenuElement() {}
 
+	void drawMenu(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	boolean isBackKey(ButtonEvent trigger) {}
+
 	float calcOffset() {}
 
-	boolean isBackKey(ButtonEvent arg0) {}
+	void updateTableSelection(int selection) {}
 
-	void setElement(MenuElement arg0) {}
-
-	void drawMenu(CustomSpriteBatch arg0, float arg1, float arg2) {}
-
-	void updateTableSelection(int arg0) {}
-
-	void moveTableSelection(int arg0) {}
+	void moveTableSelection(int selection) {}
 
 	boolean selectTableHeader() {}
 
-	void setSpecial(String arg0, Consumer arg1) {}
-
 	List getAvailablePacks() {}
+
+	void setSpecial(String specialString, Consumer special) {}
+
+	void setConPacks() {}
 
 }

@@ -34,55 +34,57 @@ DialogueDisplayer(ListenableGameScreenObject) : Named, InputListener {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void show(GameScreen screen) {}
-
 	void hide(GameScreen screen) {}
+
+	void show(GameScreen screen) {}
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	final Origin getOrigin() {}
-
 	float getComparisonKey() {}
 
+	final Origin getOrigin() {}
+
 	byte getLayer() {}
-
-	final void removeObject() {}
-
-	SoundContainer playSound(SoundInfo sound) {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	final SoundContainer playSound(Sounds sound) {}
 
+	SoundContainer playSound(SoundInfo sound) {}
+
+	final void addObject(ScreenObject object) {}
+
+	final void removeObject() {}
+
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
-
-	final void removeDisposeListener(Runnable runnable) {}
-
-	final void addDisposeListener(Runnable runnable) {}
 
 	final void addInitializeListener(Runnable runnable) {}
 
+	final void removeDisposeListener(Runnable runnable) {}
+
 	final void removeInitializeListener(Runnable runnable) {}
 
-	void controllerConnected(Controller controller) {}
+	final void addDisposeListener(Runnable runnable) {}
 
 	void controllerDisconnected(Controller controller) {}
 
-	boolean keyDown(int keycode) {}
+	void controllerConnected(Controller controller) {}
 
 	boolean addButtonTips(ButtonTipList tips) {}
 
-	boolean keyUp(int keycode) {}
-
-	int getInputPriority() {}
+	boolean triggerButton(ButtonEvent event) {}
 
 	boolean triggerTouch(TouchEvent event) {}
 
 	boolean triggerType(int character) {}
 
-	boolean keyTyped(char character) {}
+	int getInputPriority() {}
 
-	boolean triggerButton(ButtonEvent event) {}
+	boolean keyDown(int keycode) {}
+
+	boolean keyUp(int keycode) {}
+
+	boolean keyTyped(char character) {}
 
 	static DialogueDisplayer get(GameScreen screen) {}
 
@@ -90,16 +92,16 @@ DialogueDisplayer(ListenableGameScreenObject) : Named, InputListener {
 
 	static DialogueDisplayer start(GameScreen screen, Dialogue dialogue) {}
 
-	DialogueDisplayer startDialogue(Dialogue dialogue, int lineNumber) {}
-
-	DialogueDisplayer startDialogue(ID dialogue) {}
-
-	void endCurrentLine() {}
-
 	void startCurrentLine() {}
 
 	void displayAllText() {}
 
+	void endCurrentLine() {}
+
 	void toNextLine() {}
+
+	DialogueDisplayer startDialogue(Dialogue dialogue, int lineNumber) {}
+
+	DialogueDisplayer startDialogue(ID dialogue) {}
 
 }

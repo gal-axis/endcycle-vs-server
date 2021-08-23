@@ -33,19 +33,17 @@ BattleOverMessage(GameScreenMessage) {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void hide(GameScreen screen) {}
+
 	void show(GameScreen screen) {}
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	void hide(GameScreen screen) {}
-
-	byte getLayer() {}
 
 	float getComparisonKey() {}
 
 	final Origin getOrigin() {}
 
-	final void removeObject() {}
+	byte getLayer() {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
@@ -53,15 +51,19 @@ BattleOverMessage(GameScreenMessage) {
 
 	SoundContainer playSound(SoundInfo sound) {}
 
-	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
+	final void addObject(ScreenObject object) {}
 
-	final void removeInitializeListener(Runnable runnable) {}
+	final void removeObject() {}
+
+	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
 	final void addInitializeListener(Runnable runnable) {}
 
-	final void addDisposeListener(Runnable runnable) {}
-
 	final void removeDisposeListener(Runnable runnable) {}
+
+	final void removeInitializeListener(Runnable runnable) {}
+
+	final void addDisposeListener(Runnable runnable) {}
 
 	void scheduleMessage(GameScreenMessage message) {}
 

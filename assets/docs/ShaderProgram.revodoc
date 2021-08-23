@@ -29,33 +29,29 @@ ShaderProgram(Object) {
 
 	void bind() {}
 
-	static String getManagedStatus() {}
+	void setAttributef(String arg0, float arg1, float arg2, float arg3, float arg4) {}
 
-	void setUniform2fv(String arg0, float[] arg1, int arg2, int arg3) {}
+	int getUniformType(String arg0) {}
 
-	void setUniform2fv(int arg0, float[] arg1, int arg2, int arg3) {}
+	String[] getUniforms() {}
 
-	void setUniformf(String arg0, float arg1, float arg2, float arg3, float arg4) {}
+	int getAttributeSize(String arg0) {}
 
-	void setUniformf(int arg0, float arg1, float arg2, float arg3) {}
+	void setUniform4fv(int arg0, float[] arg1, int arg2, int arg3) {}
 
-	void setUniformf(String arg0, float arg1, float arg2, float arg3) {}
+	void setUniform4fv(String arg0, float[] arg1, int arg2, int arg3) {}
 
-	void setUniformf(int arg0, float arg1, float arg2) {}
+	void setUniform3fv(int arg0, float[] arg1, int arg2, int arg3) {}
 
-	void setUniformf(String arg0, Vector2 arg1) {}
+	void setUniform3fv(String arg0, float[] arg1, int arg2, int arg3) {}
 
-	void setUniformf(int arg0, Vector2 arg1) {}
+	boolean hasAttribute(String arg0) {}
 
-	void setUniformf(String arg0, Vector3 arg1) {}
-
-	void setUniformf(int arg0, float arg1, float arg2, float arg3, float arg4) {}
-
-	void setUniformf(int arg0, Color arg1) {}
+	int getAttributeType(String arg0) {}
 
 	void setUniformf(String arg0, Color arg1) {}
 
-	void setUniformf(int arg0, Vector3 arg1) {}
+	void setUniformf(int arg0, Color arg1) {}
 
 	void setUniformf(String arg0, float arg1, float arg2) {}
 
@@ -63,98 +59,102 @@ ShaderProgram(Object) {
 
 	void setUniformf(String arg0, float arg1) {}
 
-	void setUniform4fv(String arg0, float[] arg1, int arg2, int arg3) {}
+	void setUniformf(String arg0, Vector2 arg1) {}
 
-	void setUniform4fv(int arg0, float[] arg1, int arg2, int arg3) {}
+	void setUniformf(int arg0, float arg1, float arg2) {}
 
-	void setUniform3fv(int arg0, float[] arg1, int arg2, int arg3) {}
+	void setUniformf(String arg0, Vector3 arg1) {}
 
-	void setUniform3fv(String arg0, float[] arg1, int arg2, int arg3) {}
+	void setUniformf(int arg0, Vector3 arg1) {}
+
+	void setUniformf(int arg0, float arg1, float arg2, float arg3, float arg4) {}
+
+	void setUniformf(String arg0, float arg1, float arg2, float arg3, float arg4) {}
+
+	void setUniformf(int arg0, Vector2 arg1) {}
+
+	void setUniformf(int arg0, float arg1, float arg2, float arg3) {}
+
+	void setUniformf(String arg0, float arg1, float arg2, float arg3) {}
+
+	void setUniform2fv(String arg0, float[] arg1, int arg2, int arg3) {}
+
+	void setUniform2fv(int arg0, float[] arg1, int arg2, int arg3) {}
+
+	boolean hasUniform(String arg0) {}
+
+	int getUniformSize(String arg0) {}
 
 	void setUniform1fv(String arg0, float[] arg1, int arg2, int arg3) {}
 
 	void setUniform1fv(int arg0, float[] arg1, int arg2, int arg3) {}
 
-	int getUniformType(String arg0) {}
+	static String getManagedStatus() {}
 
-	int getUniformSize(String arg0) {}
+	void setUniformi(String arg0, int arg1, int arg2, int arg3, int arg4) {}
 
-	boolean hasAttribute(String arg0) {}
-
-	void setAttributef(String arg0, float arg1, float arg2, float arg3, float arg4) {}
-
-	boolean hasUniform(String arg0) {}
-
-	int getAttributeSize(String arg0) {}
-
-	int getAttributeType(String arg0) {}
-
-	String[] getUniforms() {}
-
-	String getLog() {}
-
-	void setUniformi(int arg0, int arg1, int arg2) {}
-
-	void setUniformi(String arg0, int arg1, int arg2, int arg3) {}
-
-	void setUniformi(String arg0, int arg1, int arg2) {}
+	void setUniformi(int arg0, int arg1, int arg2, int arg3, int arg4) {}
 
 	void setUniformi(String arg0, int arg1) {}
 
 	void setUniformi(int arg0, int arg1) {}
 
-	void setUniformi(int arg0, int arg1, int arg2, int arg3, int arg4) {}
-
-	void setUniformi(String arg0, int arg1, int arg2, int arg3, int arg4) {}
+	void setUniformi(String arg0, int arg1, int arg2, int arg3) {}
 
 	void setUniformi(int arg0, int arg1, int arg2, int arg3) {}
 
-	void setUniformMatrix(int arg0, Matrix4 arg1) {}
+	void setUniformi(String arg0, int arg1, int arg2) {}
 
-	void setUniformMatrix(int arg0, Matrix4 arg1, boolean arg2) {}
+	void setUniformi(int arg0, int arg1, int arg2) {}
+
+	String getLog() {}
 
 	void setUniformMatrix(String arg0, Matrix3 arg1) {}
 
-	void setUniformMatrix(int arg0, Matrix3 arg1, boolean arg2) {}
+	void setUniformMatrix(String arg0, Matrix3 arg1, boolean arg2) {}
 
 	void setUniformMatrix(int arg0, Matrix3 arg1) {}
 
-	void setUniformMatrix(String arg0, Matrix3 arg1, boolean arg2) {}
+	void setUniformMatrix(int arg0, Matrix3 arg1, boolean arg2) {}
 
 	void setUniformMatrix(String arg0, Matrix4 arg1) {}
 
 	void setUniformMatrix(String arg0, Matrix4 arg1, boolean arg2) {}
 
-	static int getNumManagedShaderPrograms() {}
+	void setUniformMatrix(int arg0, Matrix4 arg1, boolean arg2) {}
 
-	int getAttributeLocation(String arg0) {}
+	void setUniformMatrix(int arg0, Matrix4 arg1) {}
 
-	int getUniformLocation(String arg0) {}
-
-	String getVertexShaderSource() {}
-
-	void setVertexAttribute(String arg0, int arg1, int arg2, boolean arg3, int arg4, int arg5) {}
-
-	void setVertexAttribute(int arg0, int arg1, int arg2, boolean arg3, int arg4, int arg5) {}
-
-	void setVertexAttribute(String arg0, int arg1, int arg2, boolean arg3, int arg4, Buffer arg5) {}
-
-	void setVertexAttribute(int arg0, int arg1, int arg2, boolean arg3, int arg4, Buffer arg5) {}
-
-	int fetchUniformLocation(String arg0, boolean arg1) {}
-
-	String getFragmentShaderSource() {}
-
-	void setUniformMatrix4fv(String arg0, float[] arg1, int arg2, int arg3) {}
-
-	void setUniformMatrix4fv(int arg0, float[] arg1, int arg2, int arg3) {}
+	void disableVertexAttribute(int arg0) {}
 
 	void disableVertexAttribute(String arg0) {}
 
-	void disableVertexAttribute(int arg0) {}
+	static int getNumManagedShaderPrograms() {}
+
+	String getVertexShaderSource() {}
+
+	String getFragmentShaderSource() {}
+
+	int fetchUniformLocation(String arg0, boolean arg1) {}
 
 	void enableVertexAttribute(String arg0) {}
 
 	void enableVertexAttribute(int arg0) {}
+
+	int getAttributeLocation(String arg0) {}
+
+	void setVertexAttribute(String arg0, int arg1, int arg2, boolean arg3, int arg4, Buffer arg5) {}
+
+	void setVertexAttribute(int arg0, int arg1, int arg2, boolean arg3, int arg4, int arg5) {}
+
+	void setVertexAttribute(String arg0, int arg1, int arg2, boolean arg3, int arg4, int arg5) {}
+
+	void setVertexAttribute(int arg0, int arg1, int arg2, boolean arg3, int arg4, Buffer arg5) {}
+
+	int getUniformLocation(String arg0) {}
+
+	void setUniformMatrix4fv(String arg0, float[] arg1, int arg2, int arg3) {}
+
+	void setUniformMatrix4fv(int arg0, float[] arg1, int arg2, int arg3) {}
 
 }

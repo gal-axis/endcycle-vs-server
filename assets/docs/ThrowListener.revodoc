@@ -15,9 +15,9 @@ ThrowListener(Object) : BattleEntityListener, FloatTimerAction, LandAction {
 
 	int hashCode() {}
 
-	void land(int x, int y, boolean turned) {}
-
 	boolean isBannedPanel(BattleEntity entity, int x, int y, int targetX, int targetY) {}
+
+	void land(int x, int y, boolean turned) {}
 
 	void updateTimer(float timer) {}
 
@@ -37,27 +37,27 @@ ThrowListener(Object) : BattleEntityListener, FloatTimerAction, LandAction {
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
-
-	int heal(BattleEntity origin, int amount, boolean display) {}
-
-	void inflictPost(OwnedHitProperty property) {}
+	AilmentInflict inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
 
 	int hurt(BattleEntity origin, int amount, boolean display) {}
 
-	void inflict(OwnedHitProperty property) {}
-
-	AilmentInflict inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
+	void inflictPost(OwnedHitProperty property) {}
 
 	void inflictPre(OwnedHitProperty property) {}
 
-	void attack(Attack attack) {}
+	void inflict(OwnedHitProperty property) {}
 
-	double crush(double amount, int crushStrength) {}
+	CColor getTint() {}
 
 	PatchworkStateId setState(PatchworkStateId id) {}
 
-	CColor getTint() {}
+	double crush(double amount, int crushStrength) {}
+
+	void attack(Attack attack) {}
+
+	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
+
+	int heal(BattleEntity origin, int amount, boolean display) {}
 
 	void drawHud(CustomSpriteBatch batch, float xOfs, float yOfs, float width, float height) {}
 

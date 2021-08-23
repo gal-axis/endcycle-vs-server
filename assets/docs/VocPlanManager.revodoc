@@ -12,12 +12,12 @@ VocPlanManager(Object) {
 
 	void update(BattleEntity target, float delta) {}
 
-	boolean isFakeOut() {}
-
-	boolean switchRoles() {}
+	void findNext(BattleEntity target) {}
 
 	float getVocTimer() {}
 
-	void findNext(BattleEntity target) {}
+	boolean switchRoles() {}
+
+	boolean isFakeOut() {}
 
 }

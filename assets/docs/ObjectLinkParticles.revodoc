@@ -1,0 +1,43 @@
+ObjectLinkParticles(Object) : ScreenObject {
+
+	final GameObject entity1;
+	final GameObject entity2;
+	final Drawable particle;
+
+	new(GameObject entity1, GameObject entity2, Drawable particle) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void dispose() {}
+
+	void update(float delta) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void hide(GameScreen screen) {}
+
+	void show(GameScreen screen) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	float getComparisonKey() {}
+
+	Origin getOrigin() {}
+
+	byte getLayer() {}
+
+	Vector2 getPosition(GameObject entity) {}
+
+}

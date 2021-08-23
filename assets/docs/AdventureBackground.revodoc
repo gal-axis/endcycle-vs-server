@@ -41,9 +41,9 @@ AdventureBackground(BackgroundObject) {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void show(GameScreen screen) {}
-
 	void hide(GameScreen screen) {}
+
+	void show(GameScreen screen) {}
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
@@ -53,13 +53,15 @@ AdventureBackground(BackgroundObject) {
 
 	byte getLayer() {}
 
-	final void removeObject() {}
-
-	SoundContainer playSound(SoundInfo sound) {}
-
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	final SoundContainer playSound(Sounds sound) {}
+
+	SoundContainer playSound(SoundInfo sound) {}
+
+	final void addObject(ScreenObject object) {}
+
+	final void removeObject() {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
@@ -67,20 +69,20 @@ AdventureBackground(BackgroundObject) {
 
 	Drawable getFrame(Party party) {}
 
-	boolean drawBG() {}
-
 	void dim(CustomSpriteBatch batch) {}
+
+	boolean drawBG() {}
 
 	Color getColor() {}
 
-	void drawBackground(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	void createFrames(BackgroundData data) {}
 
 	void drawBackground(CustomSpriteBatch batch, float xOfs, float yOfs, float width, float height) {}
 
-	void createFrames(BackgroundData data) {}
-
-	void applyNext() {}
+	void drawBackground(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void createNext() {}
+
+	void applyNext() {}
 
 }

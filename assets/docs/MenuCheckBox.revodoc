@@ -26,25 +26,27 @@ MenuCheckBox(MenuElement) {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void hide(GameScreen screen) {}
+
 	void show(GameScreen screen) {}
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	void hide(GameScreen screen) {}
-
-	byte getLayer() {}
 
 	float getComparisonKey() {}
 
 	final Origin getOrigin() {}
 
-	final void removeObject() {}
+	byte getLayer() {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(SoundInfo sound) {}
+
+	final void addObject(ScreenObject object) {}
+
+	final void removeObject() {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
@@ -58,117 +60,97 @@ MenuCheckBox(MenuElement) {
 
 	MenuElement setEnabled(boolean enabled) {}
 
+	MenuElement setLayer(byte layer) {}
+
+	float getWidth() {}
+
+	float getHeight() {}
+
+	MenuElement setHeight(float height) {}
+
+	MenuElement getAbsoluteParent() {}
+
 	boolean select() {}
 
 	float getY() {}
 
 	float getX() {}
 
-	MenuElement setHeight(float height) {}
-
-	float getWidth() {}
-
-	float getHeight() {}
-
-	MenuElement setLayer(byte layer) {}
-
 	final void triggerAction(MenuElementActionType type) {}
 
 	boolean touch(TouchEvent trigger) {}
 
-	MenuElement getAbsoluteParent() {}
+	MenuElement setX(float x) {}
 
 	MenuElement setY(float y) {}
 
-	MenuElement setX(float x) {}
+	float calcX() {}
+
+	float calcY() {}
 
 	MenuElement setWidth(float width) {}
 
 	MenuElement setFocusable(boolean focusable) {}
 
-	float calcY() {}
-
-	float calcX() {}
-
-	final void setMenuControllerSelection(MenuElement element) {}
+	boolean isTouching(float x, float y) {}
 
 	Set getActionListeners() {}
 
-	MenuElement setFocused(boolean focused) {}
-
-	MenuElement setHidden(boolean hidden) {}
-
-	boolean isAbsoluteHidden() {}
+	final void setMenuControllerSelection(MenuElement element) {}
 
 	float getAbsoluteX() {}
 
 	float getAbsoluteY() {}
 
-	void addElements(Array elements, float x, float y) {}
-
-	void setCursor(Rectangle rectangle) {}
-
 	boolean canDrawCursor() {}
-
-	int getAnchorVAlign() {}
-
-	MenuElement setHAlign(int hAlign) {}
-
-	int getHAlign() {}
-
-	int getAnchorHAlign() {}
-
-	MenuElement setAnchorHAlign(int anchorHAlign) {}
-
-	boolean isFocused() {}
-
-	int getVAlign() {}
-
-	MenuButtonTips getButtonTips() {}
-
-	boolean isEnabled() {}
 
 	MenuElement setAnchor(MenuElement anchor) {}
 
-	boolean isFocusable() {}
-
-	MenuElement getAnchor() {}
-
-	MenuElement setVAlign(int vAlign) {}
+	int getVAlign() {}
 
 	MenuElement setAnchorVAlign(int anchorVAlign) {}
 
-	boolean isTouching(float x, float y) {}
+	MenuElement setVAlign(int vAlign) {}
+
+	void addElements(Array elements, float x, float y) {}
+
+	boolean isEnabled() {}
+
+	MenuElement setHAlign(int hAlign) {}
+
+	MenuElement getAnchor() {}
+
+	MenuButtonTips getButtonTips() {}
+
+	MenuElement setFocused(boolean focused) {}
+
+	MenuElement setAnchorHAlign(int anchorHAlign) {}
+
+	boolean isFocusable() {}
+
+	void setCursor(Rectangle rectangle) {}
+
+	boolean isFocused() {}
+
+	MenuElement setHidden(boolean hidden) {}
+
+	int getAnchorHAlign() {}
+
+	int getAnchorVAlign() {}
+
+	int getHAlign() {}
+
+	boolean isAbsoluteHidden() {}
+
+	String getText() {}
+
+	boolean isChecked() {}
 
 	MenuCheckBox setChecked(boolean checked) {}
 
 	MenuCheckBox setText(String text) {}
 
-	boolean isChecked() {}
-
-	String getText() {}
-
-	Color getCheckedColor() {}
-
-	MenuCheckBoxChangeAction getChangeAction() {}
-
-	MenuCheckBox setChangeAction(MenuCheckBoxChangeAction changeAction) {}
-
-	MenuCheckBox setCheckedColor(Color checkedColor) {}
-
-	MenuCheckBox setDisabledBackground(MenuThemeDrawable disabledBackground) {}
-
-	MenuThemeDrawable getUncheckedBackground() {}
-
-	MenuThemeDrawable getDisabledBackground() {}
-
-	Drawable getDrawableChecked() {}
-
-	Drawable getDrawableUnchecked() {}
-
-	Color getUncheckedColor() {}
-
-	MenuCheckBox setCheckedBackground(MenuThemeDrawable checkedBackground) {}
+	MenuCheckBox setUncheckedColor(Color uncheckedColor) {}
 
 	MenuCheckBox setUncheckedBackground(MenuThemeDrawable uncheckedBackground) {}
 
@@ -176,19 +158,39 @@ MenuCheckBox(MenuElement) {
 
 	MenuCheckBox setDrawableUnchecked(Drawable drawableUnchecked) {}
 
-	MenuCheckBox setUncheckedColor(Color uncheckedColor) {}
+	MenuCheckBox setCheckedBackground(MenuThemeDrawable checkedBackground) {}
+
+	MenuCheckBox setDisabledBackground(MenuThemeDrawable disabledBackground) {}
+
+	MenuThemeDrawable getUncheckedBackground() {}
 
 	MenuThemeDrawable getCheckedBackground() {}
 
+	MenuThemeDrawable getDisabledBackground() {}
+
+	Drawable getDrawableUnchecked() {}
+
+	Drawable getDrawableChecked() {}
+
+	Color getUncheckedColor() {}
+
 	Fonts getFont() {}
 
+	MenuCheckBoxChangeAction getChangeAction() {}
+
+	MenuCheckBox setChangeAction(MenuCheckBoxChangeAction changeAction) {}
+
+	Color getCheckedColor() {}
+
+	MenuCheckBox setCheckedColor(Color checkedColor) {}
+
 	MenuCheckBox setFont(Fonts font) {}
+
+	MenuElementShowAnim getShowAnimation() {}
 
 	MenuCheckBox setDisabledColor(Color disabledColor) {}
 
 	Color getDisabledColor() {}
-
-	MenuElementShowAnim getShowAnimation() {}
 
 	MenuButtonClickedAnimation getAnimation() {}
 

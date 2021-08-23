@@ -4,9 +4,9 @@ LobbyConfigurationDisplay(MenuElementGroup) {
 	GameScreen screen;
 	boolean showing;
 
-	new(Runnable arg0, boolean arg1) {}
+	new(Runnable updateConfig, boolean online) {}
 
-	final boolean equals(Object arg0) {}
+	final boolean equals(Object obj) {}
 
 	String toString() {}
 
@@ -14,49 +14,61 @@ LobbyConfigurationDisplay(MenuElementGroup) {
 
 	void dispose() {}
 
-	void update(float arg0) {}
+	void update(float delta) {}
 
 	boolean remove() {}
 
 	String getName() {}
 
-	void init(GameScreen arg0) {}
+	void init(GameScreen screen) {}
 
 	boolean isHidden() {}
 
-	void resize(boolean arg0, int arg1, int arg2) {}
+	void resize(boolean landscape, int width, int height) {}
 
-	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
+	void hide(GameScreen screen) {}
 
-	void hide(GameScreen arg0) {}
+	void show(GameScreen screen) {}
 
-	void show(GameScreen arg0) {}
-
-	final Origin getOrigin() {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	float getComparisonKey() {}
 
+	final Origin getOrigin() {}
+
 	byte getLayer() {}
+
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	final SoundContainer playSound(Sounds sound) {}
+
+	SoundContainer playSound(SoundInfo sound) {}
+
+	final void addObject(ScreenObject object) {}
 
 	final void removeObject() {}
 
-	SoundContainer playSound(SoundInfo arg0) {}
+	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
-	SoundContainer playSound(float arg0, float arg1, SoundInfo arg2) {}
-
-	final SoundContainer playSound(Sounds arg0) {}
-
-	void triggerEvent(Object arg0, Object arg1, Object[] arg2) {}
-
-	void actionTriggered(MenuElementAction arg0) {}
+	void actionTriggered(MenuElementAction action) {}
 
 	MenuElementGroup getParent() {}
 
-	MenuElement setParent(MenuElementGroup arg0) {}
+	MenuElement setParent(MenuElementGroup parent) {}
 
 	void calculateSize() {}
 
-	MenuElement setEnabled(boolean arg0) {}
+	MenuElement setEnabled(boolean enabled) {}
+
+	MenuElement setLayer(byte layer) {}
+
+	float getWidth() {}
+
+	float getHeight() {}
+
+	MenuElement setHeight(float height) {}
+
+	MenuElement getAbsoluteParent() {}
 
 	boolean select() {}
 
@@ -64,148 +76,138 @@ LobbyConfigurationDisplay(MenuElementGroup) {
 
 	float getX() {}
 
-	MenuElement setHeight(float arg0) {}
+	final void triggerAction(MenuElementActionType type) {}
 
-	MenuElement setLayer(byte arg0) {}
+	boolean touch(TouchEvent trigger) {}
 
-	float getHeight() {}
+	MenuElement setX(float x) {}
 
-	float getWidth() {}
-
-	MenuElement getAbsoluteParent() {}
-
-	boolean touch(TouchEvent arg0) {}
-
-	final void triggerAction(MenuElementActionType arg0) {}
-
-	MenuElement setX(float arg0) {}
-
-	MenuElement setY(float arg0) {}
+	MenuElement setY(float y) {}
 
 	float calcX() {}
 
 	float calcY() {}
 
-	MenuElement setWidth(float arg0) {}
+	MenuElement setWidth(float width) {}
 
-	MenuElement setFocusable(boolean arg0) {}
+	MenuElement setFocusable(boolean focusable) {}
 
-	boolean isTouching(float arg0, float arg1) {}
-
-	final void setMenuControllerSelection(MenuElement arg0) {}
+	boolean isTouching(float x, float y) {}
 
 	Set getActionListeners() {}
 
-	MenuElement setAnchor(MenuElement arg0) {}
-
-	void addElements(Array arg0, float arg1, float arg2) {}
-
-	boolean isFocusable() {}
-
-	int getHAlign() {}
-
-	MenuElement setAnchorVAlign(int arg0) {}
-
-	boolean isEnabled() {}
-
-	MenuElement setHidden(boolean arg0) {}
+	final void setMenuControllerSelection(MenuElement element) {}
 
 	float getAbsoluteX() {}
 
-	MenuElement setFocused(boolean arg0) {}
-
-	int getAnchorHAlign() {}
-
-	MenuElement setAnchorHAlign(int arg0) {}
-
 	float getAbsoluteY() {}
-
-	MenuButtonTips getButtonTips() {}
-
-	MenuElement setHAlign(int arg0) {}
-
-	void setCursor(Rectangle arg0) {}
-
-	MenuElement setVAlign(int arg0) {}
-
-	int getVAlign() {}
 
 	boolean canDrawCursor() {}
 
+	MenuElement setAnchor(MenuElement anchor) {}
+
+	int getVAlign() {}
+
+	MenuElement setAnchorVAlign(int anchorVAlign) {}
+
+	MenuElement setVAlign(int vAlign) {}
+
+	void addElements(Array elements, float x, float y) {}
+
+	boolean isEnabled() {}
+
+	MenuElement setHAlign(int hAlign) {}
+
 	MenuElement getAnchor() {}
 
-	int getAnchorVAlign() {}
+	MenuButtonTips getButtonTips() {}
+
+	MenuElement setFocused(boolean focused) {}
+
+	MenuElement setAnchorHAlign(int anchorHAlign) {}
+
+	boolean isFocusable() {}
+
+	void setCursor(Rectangle rectangle) {}
 
 	boolean isFocused() {}
 
+	MenuElement setHidden(boolean hidden) {}
+
+	int getAnchorHAlign() {}
+
+	int getAnchorVAlign() {}
+
+	int getHAlign() {}
+
 	boolean isAbsoluteHidden() {}
 
-	int compare(MenuElement arg0, MenuElement arg1) {}
+	int compare(MenuElement o1, MenuElement o2) {}
 
 	Comparator reversed() {}
 
 	Comparator thenComparing(Comparator arg0) {}
 
-	MenuElement getDefaultElement() {}
+	void ignoreSize(MenuElement object) {}
 
-	void setDefaultElement(MenuElement arg0) {}
+	void setBackground(MenuThemeDrawable background) {}
 
-	MenuElement addObject(MenuElement arg0) {}
+	MenuElement addObject(MenuElement object) {}
 
-	void removeObject(MenuElement arg0) {}
+	void removeObject(MenuElement object) {}
 
 	List getObjects() {}
 
-	void ignoreSize(MenuElement arg0) {}
+	void setDefaultElement(MenuElement defaultElement) {}
 
-	void setBackground(MenuThemeDrawable arg0) {}
+	MenuElement getDefaultElement() {}
 
 	float getOffsetX() {}
 
 	float getOffsetY() {}
 
-	void drawBackground(CustomSpriteBatch arg0, float arg1, float arg2) {}
-
-	void setBackgroundColor(Color arg0) {}
-
 	Color getBackgroundColor() {}
 
-	void addElements(Array arg0, float arg1, float arg2, MenuElement arg3) {}
+	void setBackgroundColor(Color backgroundColor) {}
+
+	void addElements(Array elements, float x, float y, MenuElement object) {}
 
 	MenuThemeDrawable getBackground() {}
 
 	MenuElementShowAnim getShowAnimation() {}
 
-	void countSize(MenuElement arg0) {}
+	void countSize(MenuElement object) {}
 
-	void setOffsetX(float arg0) {}
+	void setObjects(List objects) {}
 
-	void setObjects(List arg0) {}
-
-	void setCountSize(List arg0) {}
-
-	List getCountSize() {}
-
-	void setBgPad(float arg0) {}
+	void setCountSize(List countSize) {}
 
 	float getBgPad() {}
 
-	void setOffsetY(float arg0) {}
+	void setOffsetY(float offsetY) {}
 
-	MenuButton getOptionsButton() {}
+	void setOffsetX(float offsetX) {}
+
+	List getCountSize() {}
+
+	void setBgPad(float bgPad) {}
+
+	void drawBackground(CustomSpriteBatch batch, float x, float y) {}
+
+	void updateConfiguration(LobbyConfiguration config) {}
+
+	void setMode(GameMode gameMode) {}
 
 	GameMode getMode() {}
 
+	void updateValues(boolean host, LobbyConfiguration configuration) {}
+
 	void goToSettings() {}
 
-	void updateValues(boolean arg0, LobbyConfiguration arg1) {}
+	MenuButton getOptionsButton() {}
 
-	void updateRules(int arg0, GameMode arg1) {}
+	void updateRules(int selection, GameMode gameMode) {}
 
 	void editGameMode() {}
-
-	void setMode(GameMode arg0) {}
-
-	void updateConfiguration(LobbyConfiguration arg0) {}
 
 }

@@ -4378,6 +4378,7 @@
 	"id": { "id": 98 },
 	"dataName": "Invader",
 	"name": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Invader" },
+	"run": true,
 	"field": { "id": 45 },
 	"background": {},
 	"modes": [ "Deathmatch", "" ],
@@ -4408,6 +4409,91 @@
 			"name": "cress",
 			"form": { "id": 49 }
 		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 100 },
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "" },
+	"field": { "id": 46 },
+	"background": {},
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"turned": true,
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" },
+			"name": "Fossile Fule",
+			"form": { "id": 39 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.EntityFormShell", "y": 1, "party": "FRIENDLY", "player": true, "mustSurvive": true, "name": "player" }
+	],
+	"modes": [ "" ]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 101 },
+	"dataName": "PanelGrab Test",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "" },
+	"run": true,
+	"field": { "id": 48 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 2,
+			"party": "NEUTRAL",
+			"name": "9:1",
+			"form": { "id": 55 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 9,
+			"party": "NEUTRAL",
+			"name": "9:5",
+			"form": { "id": 54 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 9,
+			"y": 4,
+			"party": "NEUTRAL",
+			"name": "3:5",
+			"form": { "id": 53 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 4,
+			"party": "NEUTRAL",
+			"name": "3:9",
+			"form": { "id": 56 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 2,
+			"y": 8,
+			"party": "NEUTRAL",
+			"name": "7:8",
+			"form": { "id": 59 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 8,
+			"y": 8,
+			"party": "NEUTRAL",
+			"name": "8:13",
+			"form": { "id": 55 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 9,
+			"y": 12,
+			"party": "NEUTRAL",
+			"name": "2:1",
+			"form": { "id": 53 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.EntityFormShell", "x": 1, "y": 1, "party": "FRIENDLY", "player": true }
 	]
 }
 ]

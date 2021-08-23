@@ -1,4 +1,4 @@
-BattleParticle(GameObject) : ShadowEntity {
+BattleParticle(GameObject) : ShadowEntity, Turnable {
 
 	Origin origin;
 	GameScreen screen;
@@ -54,9 +54,9 @@ BattleParticle(GameObject) : ShadowEntity {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void show(GameScreen screen) {}
-
 	void hide(GameScreen screen) {}
+
+	void show(GameScreen screen) {}
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
@@ -66,69 +66,77 @@ BattleParticle(GameObject) : ShadowEntity {
 
 	byte getLayer() {}
 
-	final void removeObject() {}
-
-	SoundContainer playSound(SoundInfo sound) {}
-
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	final SoundContainer playSound(Sounds sound) {}
 
+	SoundContainer playSound(SoundInfo sound) {}
+
+	final void addObject(ScreenObject object) {}
+
+	final void removeObject() {}
+
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
+
+	final float getWidth() {}
+
+	final float getHeight() {}
+
+	float getCenterX() {}
+
+	float getCenterY() {}
 
 	final PatchworkStateId getState() {}
 
 	void resetState() {}
 
-	void draw(CustomSpriteBatch batch) {}
-
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scaleX, float scaleY) {}
-
 	CColor calculateTint() {}
-
-	final float getHeight() {}
-
-	final float getWidth() {}
-
-	final Patchwork setPatchwork(ID id) {}
-
-	Patchwork setPatchwork(Patchwork patchwork) {}
-
-	final void resetAnimation() {}
-
-	final boolean hasState(PatchworkStateId name) {}
-
-	final float getXScale() {}
-
-	final boolean inState(PatchworkStateId name) {}
-
-	final void resetTint() {}
-
-	final Patchwork getPatchwork() {}
-
-	boolean setState(PatchworkStateId state) {}
-
-	final boolean isFlipX() {}
-
-	final float getYScale() {}
-
-	void updateGraphics(float delta) {}
-
-	void updateParticles(float delta) {}
-
-	final boolean isFlipY() {}
 
 	final void setAnimationDuration(double duration) {}
 
 	final boolean isAnimationFinished() {}
 
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scaleX, float scaleY) {}
+
+	void draw(CustomSpriteBatch batch) {}
+
+	final boolean isFlipX() {}
+
+	final void resetAnimation() {}
+
+	final Patchwork setPatchwork(ID id) {}
+
+	Patchwork setPatchwork(Patchwork patchwork) {}
+
+	final float getYScale() {}
+
+	final boolean inState(PatchworkStateId name) {}
+
+	final boolean isFlipY() {}
+
+	void updateGraphics(float delta) {}
+
+	void updateParticles(float delta) {}
+
+	final void resetTint() {}
+
+	boolean setState(PatchworkStateId state) {}
+
+	final Patchwork getPatchwork() {}
+
+	final boolean hasState(PatchworkStateId name) {}
+
+	final float getXScale() {}
+
+	boolean isTurned() {}
+
 	List getShadowDrawables() {}
 
 	float getShadowX() {}
 
-	float getShadowZ() {}
-
 	float getShadowAlpha() {}
+
+	float getShadowZ() {}
 
 	float getShadowY() {}
 

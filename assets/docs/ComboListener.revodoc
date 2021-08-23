@@ -1,4 +1,4 @@
-final ComboListener(Object) : BattleEntityListener {
+final ComboListener(Object) : BattleEntityListener, GameEventListener {
 
 	new(BattleEntity user) {}
 
@@ -7,6 +7,8 @@ final ComboListener(Object) : BattleEntityListener {
 	String toString() {}
 
 	int hashCode() {}
+
+	void handle(GameEvent event) {}
 
 	void add() {}
 
@@ -18,9 +20,19 @@ final ComboListener(Object) : BattleEntityListener {
 
 	void init() {}
 
+	void dispose() {}
+
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void dispose() {}
+	AilmentInflict inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
+
+	int hurt(BattleEntity origin, int amount, boolean display) {}
+
+	void inflictPost(OwnedHitProperty property) {}
+
+	void inflictPre(OwnedHitProperty property) {}
+
+	void inflict(OwnedHitProperty property) {}
 
 	CColor getTint() {}
 
@@ -30,22 +42,12 @@ final ComboListener(Object) : BattleEntityListener {
 
 	void attack(Attack attack) {}
 
-	void inflictPre(OwnedHitProperty property) {}
-
-	AilmentInflict inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
-
-	void inflict(OwnedHitProperty property) {}
-
-	int hurt(BattleEntity origin, int amount, boolean display) {}
-
-	void inflictPost(OwnedHitProperty property) {}
+	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
 
 	int heal(BattleEntity origin, int amount, boolean display) {}
 
-	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
-
 	void drawHud(CustomSpriteBatch batch, float xOfs, float yOfs, float width, float height) {}
 
-	void powerupAttack() {}
+	void powerupAttack(HitProperty property) {}
 
 }

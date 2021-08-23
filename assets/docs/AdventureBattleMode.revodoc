@@ -33,59 +33,59 @@ AdventureBattleMode(InstantWinBattleMode) {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	void hide(GameScreen screen) {}
 
 	void show(GameScreen screen) {}
 
-	void hide(GameScreen screen) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	float getComparisonKey() {}
 
 	Origin getOrigin() {}
 
 	byte getLayer() {}
 
-	float getComparisonKey() {}
-
 	void start() {}
 
 	void stop() {}
 
+	void initHUD(BattleHUD hud) {}
+
 	boolean showStart() {}
-
-	ScreenObject createStarter() {}
-
-	boolean isSpawn(BattleEntity entity) {}
 
 	boolean isDespawn(BattleEntity entity) {}
 
-	String getDiscordMessage(Party winner) {}
+	boolean isSpawn(BattleEntity entity) {}
 
-	Looter createLooter() {}
-
-	BattlePlayer createPlayer(BattleEntity entity) {}
-
-	void addLoot(Looter looter) {}
-
-	void calculateTint(BattleEntity entity, CColor color) {}
-
-	boolean loot() {}
-
-	int adjustDamage(BattleEntity entity, int damage) {}
-
-	LocalizedMessage getLoseMessage() {}
-
-	double adjustGaugeSpeed(BattleEntity entity) {}
+	ScreenObject createStarter() {}
 
 	boolean isRestart() {}
 
-	void initHUD(BattleHUD hud) {}
+	void addLoot(Looter looter) {}
 
-	String getBattleName(String name) {}
+	BattlePlayer createPlayer(BattleEntity entity) {}
 
-	void finish(Party winner) {}
+	void calculateTint(BattleEntity entity, CColor color) {}
+
+	double adjustGaugeSpeed(BattleEntity entity) {}
+
+	int adjustDamage(BattleEntity entity, int damage) {}
+
+	boolean loot() {}
+
+	LocalizedMessage getLoseMessage() {}
+
+	Looter createLooter() {}
+
+	String getDiscordMessage(Party winner) {}
 
 	void sendServerUpdate(List messages) {}
 
+	String getBattleName(String name) {}
+
 	String createTeamName(Party party) {}
+
+	void finish(Party winner) {}
 
 	Party getWinner() {}
 
@@ -95,9 +95,9 @@ AdventureBattleMode(InstantWinBattleMode) {
 
 	void changeMoney(BattleEntity entity, float x, float y, int amount) {}
 
-	void setMoney(int money) {}
-
 	void updateMoney(int money) {}
+
+	void setMoney(int money) {}
 
 	void updateMoneyCache() {}
 

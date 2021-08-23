@@ -28,11 +28,11 @@ MenuChanger(MenuElement) : InputListener {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void hide(GameScreen screen) {}
+
 	void show(GameScreen screen) {}
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	void hide(GameScreen screen) {}
 
 	float getComparisonKey() {}
 
@@ -40,13 +40,15 @@ MenuChanger(MenuElement) : InputListener {
 
 	byte getLayer() {}
 
-	final void removeObject() {}
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	final SoundContainer playSound(Sounds sound) {}
 
-	SoundContainer playSound(float x, float y, SoundInfo sound) {}
-
 	SoundContainer playSound(SoundInfo sound) {}
+
+	final void addObject(ScreenObject object) {}
+
+	final void removeObject() {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
@@ -58,184 +60,184 @@ MenuChanger(MenuElement) : InputListener {
 
 	void calculateSize() {}
 
+	MenuElement setEnabled(boolean enabled) {}
+
+	MenuElement setLayer(byte layer) {}
+
+	float getWidth() {}
+
+	float getHeight() {}
+
+	MenuElement setHeight(float height) {}
+
+	MenuElement getAbsoluteParent() {}
+
+	boolean select() {}
+
 	float getY() {}
 
 	float getX() {}
 
-	boolean select() {}
-
-	MenuElement setEnabled(boolean enabled) {}
-
-	float getWidth() {}
-
-	MenuElement setHeight(float height) {}
-
-	float getHeight() {}
-
-	MenuElement setLayer(byte layer) {}
-
-	MenuElement getAbsoluteParent() {}
+	final void triggerAction(MenuElementActionType type) {}
 
 	boolean touch(TouchEvent trigger) {}
-
-	final void triggerAction(MenuElementActionType type) {}
 
 	MenuElement setX(float x) {}
 
 	MenuElement setY(float y) {}
 
-	float calcY() {}
-
 	float calcX() {}
+
+	float calcY() {}
 
 	MenuElement setWidth(float width) {}
 
 	MenuElement setFocusable(boolean focusable) {}
 
-	MenuElement setVAlign(int vAlign) {}
+	boolean isTouching(float x, float y) {}
 
-	MenuElement getAnchor() {}
+	Set getActionListeners() {}
 
-	MenuElement setHidden(boolean hidden) {}
+	final void setMenuControllerSelection(MenuElement element) {}
+
+	float getAbsoluteX() {}
+
+	float getAbsoluteY() {}
 
 	boolean canDrawCursor() {}
 
-	MenuElement setHAlign(int hAlign) {}
-
 	MenuElement setAnchor(MenuElement anchor) {}
 
-	int getAnchorHAlign() {}
+	int getVAlign() {}
 
-	boolean isFocusable() {}
+	MenuElement setAnchorVAlign(int anchorVAlign) {}
 
-	boolean isFocused() {}
-
-	void setCursor(Rectangle rectangle) {}
-
-	MenuElement setAnchorHAlign(int anchorHAlign) {}
-
-	int getHAlign() {}
-
-	boolean isAbsoluteHidden() {}
-
-	float getAbsoluteY() {}
+	MenuElement setVAlign(int vAlign) {}
 
 	void addElements(Array elements, float x, float y) {}
 
 	boolean isEnabled() {}
 
-	float getAbsoluteX() {}
+	MenuElement setHAlign(int hAlign) {}
+
+	MenuElement getAnchor() {}
 
 	MenuButtonTips getButtonTips() {}
 
-	int getVAlign() {}
-
 	MenuElement setFocused(boolean focused) {}
+
+	MenuElement setAnchorHAlign(int anchorHAlign) {}
+
+	boolean isFocusable() {}
+
+	void setCursor(Rectangle rectangle) {}
+
+	boolean isFocused() {}
+
+	MenuElement setHidden(boolean hidden) {}
+
+	int getAnchorHAlign() {}
 
 	int getAnchorVAlign() {}
 
-	MenuElement setAnchorVAlign(int anchorVAlign) {}
+	int getHAlign() {}
 
-	boolean isTouching(float x, float y) {}
+	boolean isAbsoluteHidden() {}
 
-	final void setMenuControllerSelection(MenuElement element) {}
-
-	Set getActionListeners() {}
+	void controllerDisconnected(Controller controller) {}
 
 	void controllerConnected(Controller controller) {}
 
-	void controllerDisconnected(Controller controller) {}
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean triggerButton(ButtonEvent event) {}
+
+	boolean triggerTouch(TouchEvent event) {}
 
 	boolean triggerType(int character) {}
 
 	int getInputPriority() {}
 
-	boolean triggerTouch(TouchEvent event) {}
-
-	boolean triggerButton(ButtonEvent event) {}
-
-	boolean addButtonTips(ButtonTipList tips) {}
-
 	boolean keyDown(int keycode) {}
-
-	boolean keyTyped(char character) {}
 
 	boolean keyUp(int keycode) {}
 
-	MenuElement setSelected(boolean selected) {}
+	boolean keyTyped(char character) {}
 
 	Object getSelected() {}
+
+	MenuElement setSelected(boolean selected) {}
 
 	MenuChanger setBackground(MenuThemeDrawable background) {}
 
 	MenuChanger vertical() {}
 
+	void setSelectedElement(Object element) {}
+
 	ObjectPainter getPainter() {}
-
-	MenuChanger setLabel(String label) {}
-
-	boolean isSelected() {}
-
-	MenuThemeDrawable getBackground() {}
-
-	MenuElementShowAnim getShowAnimation() {}
-
-	void setSelection(int selection) {}
-
-	boolean moveSelection(int offset) {}
-
-	boolean isMobile() {}
 
 	MenuChanger horizontal() {}
 
 	Color getBackgroundColor() {}
 
-	void setSelectedElement(Object element) {}
-
-	MenuChanger setPainter(ObjectPainter painter) {}
-
-	MenuChangerSelectAction getSelectAction() {}
-
 	float getArrowOffset() {}
-
-	int getSelection() {}
-
-	void drawLabel(CustomSpriteBatch batch, float x, float y, float height) {}
-
-	Drawable getArrowLeft() {}
-
-	MenuChanger setArrowUp(Drawable arrowUp) {}
-
-	MenuChanger setArrowDown(Drawable arrowDown) {}
 
 	boolean isHorizontal() {}
 
-	MenuChanger setArrowLeft(Drawable arrowLeft) {}
-
-	MenuChanger setAutoFocus(boolean autoFocus) {}
-
-	boolean canDrawArrows() {}
-
-	Drawable getArrowRight() {}
-
-	Drawable getArrowUp() {}
-
-	MenuChanger setElements(List elements) {}
-
 	MenuChanger setArrowRight(Drawable arrowRight) {}
-
-	void drawChanger(CustomSpriteBatch batch, float x, float y, float width, float height) {}
-
-	MenuChanger setSelectAction(MenuChangerSelectAction selectAction) {}
-
-	Drawable getArrowDown() {}
-
-	List getElements() {}
 
 	MenuChanger setHorizontal(boolean horizontal) {}
 
 	boolean isAutoFocus() {}
 
+	void drawChanger(CustomSpriteBatch batch, float x, float y, float width, float height) {}
+
+	MenuChanger setArrowDown(Drawable arrowDown) {}
+
+	MenuChanger setElements(List elements) {}
+
+	Drawable getArrowUp() {}
+
+	MenuChanger setAutoFocus(boolean autoFocus) {}
+
+	boolean canDrawArrows() {}
+
+	void drawLabel(CustomSpriteBatch batch, float x, float y, float height) {}
+
+	MenuChanger setArrowLeft(Drawable arrowLeft) {}
+
+	MenuChanger setSelectAction(MenuChangerSelectAction selectAction) {}
+
+	Drawable getArrowLeft() {}
+
+	MenuChanger setPainter(ObjectPainter painter) {}
+
+	Drawable getArrowRight() {}
+
+	Drawable getArrowDown() {}
+
+	MenuChanger setArrowUp(Drawable arrowUp) {}
+
 	StringCache getLabel() {}
+
+	int getSelection() {}
+
+	List getElements() {}
+
+	MenuChangerSelectAction getSelectAction() {}
+
+	MenuChanger setLabel(String label) {}
+
+	MenuThemeDrawable getBackground() {}
+
+	MenuElementShowAnim getShowAnimation() {}
+
+	boolean isSelected() {}
+
+	boolean moveSelection(int offset) {}
+
+	boolean isMobile() {}
+
+	void setSelection(int selection) {}
 
 }

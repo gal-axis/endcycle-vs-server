@@ -1,4 +1,4 @@
-HitScanObject(Object) : ScreenObject, Danger {
+HitScanObject(Object) : ScreenObject, Danger, Turnable, AttackParticleObject {
 
 	final int originX;
 	final int originY;
@@ -13,6 +13,7 @@ HitScanObject(Object) : ScreenObject, Danger {
 	float drawableY;
 	boolean active;
 	double animState;
+	AttackParticleSpawner particles;
 
 	new(int originX, int originY, int rangeX, int rangeY, boolean turned) {}
 
@@ -21,12 +22,6 @@ HitScanObject(Object) : ScreenObject, Danger {
 	String toString() {}
 
 	int hashCode() {}
-
-	float getDangerIgnore(int level) {}
-
-	boolean isDangerous(BattleEntity entity, int x, int y) {}
-
-	float getDangerPriority(BattleEntity entity) {}
 
 	void dispose() {}
 
@@ -42,17 +37,35 @@ HitScanObject(Object) : ScreenObject, Danger {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	void hide(GameScreen screen) {}
 
 	void show(GameScreen screen) {}
 
-	void hide(GameScreen screen) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	float getComparisonKey() {}
 
 	Origin getOrigin() {}
 
 	byte getLayer() {}
 
-	float getComparisonKey() {}
+	float getWidth() {}
+
+	float getHeight() {}
+
+	void addObject(ScreenObject object) {}
+
+	float getCenterX() {}
+
+	float getCenterY() {}
+
+	boolean isTurned() {}
+
+	boolean isDangerous(BattleEntity entity, int x, int y) {}
+
+	float getDangerIgnore(int level) {}
+
+	float getDangerPriority(BattleEntity entity) {}
 
 	void stop() {}
 

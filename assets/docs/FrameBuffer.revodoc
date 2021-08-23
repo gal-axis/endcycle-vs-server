@@ -18,22 +18,22 @@ FrameBuffer {
 
 	void bind() {}
 
-	int getHeight() {}
-
 	int getWidth() {}
+
+	int getHeight() {}
 
 	void begin() {}
 
-	static void unbind() {}
-
 	Texture getColorBufferTexture() {}
 
-	Array getTextureAttachments() {}
+	static void unbind() {}
 
-	int getFramebufferHandle() {}
+	Array getTextureAttachments() {}
 
 	int getDepthBufferHandle() {}
 
 	int getStencilBufferHandle() {}
+
+	int getFramebufferHandle() {}
 
 }

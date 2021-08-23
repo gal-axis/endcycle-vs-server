@@ -10,9 +10,9 @@ LobbySlotContainer(MenuTable) : MenuTablePainter {
 	final Lobby lobby;
 	Array playerPacks;
 
-	new(Lobby arg0) {}
+	new(Lobby lobby) {}
 
-	final boolean equals(Object arg0) {}
+	final boolean equals(Object obj) {}
 
 	String toString() {}
 
@@ -20,49 +20,61 @@ LobbySlotContainer(MenuTable) : MenuTablePainter {
 
 	void dispose() {}
 
-	void update(float arg0) {}
+	void update(float delta) {}
 
 	boolean remove() {}
 
 	String getName() {}
 
-	void init(GameScreen arg0) {}
+	void init(GameScreen screen) {}
 
 	boolean isHidden() {}
 
-	void resize(boolean arg0, int arg1, int arg2) {}
+	void resize(boolean landscape, int width, int height) {}
 
-	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
+	void hide(GameScreen screen) {}
 
-	void hide(GameScreen arg0) {}
+	void show(GameScreen screen) {}
 
-	void show(GameScreen arg0) {}
-
-	final Origin getOrigin() {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	float getComparisonKey() {}
 
+	final Origin getOrigin() {}
+
 	byte getLayer() {}
+
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	final SoundContainer playSound(Sounds sound) {}
+
+	SoundContainer playSound(SoundInfo sound) {}
+
+	final void addObject(ScreenObject object) {}
 
 	final void removeObject() {}
 
-	SoundContainer playSound(SoundInfo arg0) {}
+	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
-	SoundContainer playSound(float arg0, float arg1, SoundInfo arg2) {}
-
-	final SoundContainer playSound(Sounds arg0) {}
-
-	void triggerEvent(Object arg0, Object arg1, Object[] arg2) {}
-
-	void actionTriggered(MenuElementAction arg0) {}
+	void actionTriggered(MenuElementAction action) {}
 
 	MenuElementGroup getParent() {}
 
-	MenuElement setParent(MenuElementGroup arg0) {}
+	MenuElement setParent(MenuElementGroup parent) {}
 
 	void calculateSize() {}
 
-	MenuElement setEnabled(boolean arg0) {}
+	MenuElement setEnabled(boolean enabled) {}
+
+	MenuElement setLayer(byte layer) {}
+
+	float getWidth() {}
+
+	float getHeight() {}
+
+	MenuElement setHeight(float height) {}
+
+	MenuElement getAbsoluteParent() {}
 
 	boolean select() {}
 
@@ -70,396 +82,386 @@ LobbySlotContainer(MenuTable) : MenuTablePainter {
 
 	float getX() {}
 
-	MenuElement setHeight(float arg0) {}
+	final void triggerAction(MenuElementActionType type) {}
 
-	MenuElement setLayer(byte arg0) {}
+	boolean touch(TouchEvent trigger) {}
 
-	float getHeight() {}
+	MenuElement setX(float x) {}
 
-	float getWidth() {}
-
-	MenuElement getAbsoluteParent() {}
-
-	boolean touch(TouchEvent arg0) {}
-
-	final void triggerAction(MenuElementActionType arg0) {}
-
-	MenuElement setX(float arg0) {}
-
-	MenuElement setY(float arg0) {}
+	MenuElement setY(float y) {}
 
 	float calcX() {}
 
 	float calcY() {}
 
-	MenuElement setWidth(float arg0) {}
+	MenuElement setWidth(float width) {}
 
-	MenuElement setFocusable(boolean arg0) {}
+	MenuElement setFocusable(boolean focusable) {}
 
 	MenuTableAction getAction() {}
 
-	boolean isTouching(float arg0, float arg1) {}
-
-	final void setMenuControllerSelection(MenuElement arg0) {}
+	boolean isTouching(float x, float y) {}
 
 	Set getActionListeners() {}
 
-	MenuElement setAnchor(MenuElement arg0) {}
-
-	void addElements(Array arg0, float arg1, float arg2) {}
-
-	boolean isFocusable() {}
-
-	int getHAlign() {}
-
-	MenuElement setAnchorVAlign(int arg0) {}
-
-	boolean isEnabled() {}
-
-	MenuElement setHidden(boolean arg0) {}
+	final void setMenuControllerSelection(MenuElement element) {}
 
 	float getAbsoluteX() {}
 
-	MenuElement setFocused(boolean arg0) {}
-
-	int getAnchorHAlign() {}
-
-	MenuElement setAnchorHAlign(int arg0) {}
-
 	float getAbsoluteY() {}
-
-	MenuButtonTips getButtonTips() {}
-
-	MenuElement setHAlign(int arg0) {}
-
-	void setCursor(Rectangle arg0) {}
-
-	MenuElement setVAlign(int arg0) {}
-
-	int getVAlign() {}
 
 	boolean canDrawCursor() {}
 
+	MenuElement setAnchor(MenuElement anchor) {}
+
+	int getVAlign() {}
+
+	MenuElement setAnchorVAlign(int anchorVAlign) {}
+
+	MenuElement setVAlign(int vAlign) {}
+
+	void addElements(Array elements, float x, float y) {}
+
+	boolean isEnabled() {}
+
+	MenuElement setHAlign(int hAlign) {}
+
 	MenuElement getAnchor() {}
 
-	int getAnchorVAlign() {}
+	MenuButtonTips getButtonTips() {}
+
+	MenuElement setFocused(boolean focused) {}
+
+	MenuElement setAnchorHAlign(int anchorHAlign) {}
+
+	boolean isFocusable() {}
+
+	void setCursor(Rectangle rectangle) {}
 
 	boolean isFocused() {}
 
+	MenuElement setHidden(boolean hidden) {}
+
+	int getAnchorHAlign() {}
+
+	int getAnchorVAlign() {}
+
+	int getHAlign() {}
+
 	boolean isAbsoluteHidden() {}
-
-	float getScrollHeight() {}
-
-	float getScrollAreaX() {}
-
-	float getScrollAreaY() {}
-
-	float getScrollWidth() {}
-
-	boolean canScrollY() {}
-
-	boolean canScrollX() {}
-
-	float getScrollAreaWidth() {}
 
 	float getScrollAreaHeight() {}
 
-	void controllerDisconnected(Controller arg0) {}
+	float getScrollAreaWidth() {}
 
-	void controllerConnected(Controller arg0) {}
+	boolean canScrollY() {}
 
-	boolean keyDown(int arg0) {}
+	float getScrollHeight() {}
 
-	boolean triggerTouch(TouchEvent arg0) {}
+	boolean canScrollX() {}
 
-	boolean addButtonTips(ButtonTipList arg0) {}
+	float getScrollAreaX() {}
+
+	float getScrollWidth() {}
+
+	float getScrollAreaY() {}
+
+	void controllerDisconnected(Controller controller) {}
+
+	void controllerConnected(Controller controller) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean triggerButton(ButtonEvent event) {}
+
+	boolean triggerTouch(TouchEvent event) {}
+
+	boolean triggerType(int character) {}
 
 	int getInputPriority() {}
 
-	boolean keyTyped(char arg0) {}
+	boolean keyDown(int keycode) {}
 
-	boolean keyUp(int arg0) {}
+	boolean keyUp(int keycode) {}
 
-	boolean triggerButton(ButtonEvent arg0) {}
+	boolean keyTyped(char character) {}
 
-	boolean triggerType(int arg0) {}
-
-	void setName(String arg0) {}
-
-	MenuTable setElementOffsetY(float arg0) {}
-
-	void select(int arg0, LobbySlot arg1) {}
-
-	List getObjects() {}
-
-	float getY(int arg0) {}
-
-	MenuTable setAction(MenuTableAction arg0) {}
-
-	float getX(int arg0) {}
-
-	void setSelectString(String arg0) {}
-
-	void setSpecialString(String arg0) {}
-
-	MenuTable setElementHeight(float arg0) {}
-
-	MenuTable setElementWidth(float arg0) {}
-
-	float getTotalPaddingX() {}
-
-	MenuTable setFromAmount(int arg0, int arg1) {}
+	void setName(String name) {}
 
 	LobbySlot getSelected() {}
 
-	boolean moveX(int arg0) {}
+	void setSelectString(String selectString) {}
 
-	boolean moveY(int arg0) {}
+	MenuTable setAction(MenuTableAction action) {}
 
-	void setBackgroundColor(Color arg0) {}
+	MenuTable setElementHeight(float elementHeight) {}
+
+	MenuTable setElementWidth(float elementWidth) {}
+
+	MenuTable setFromAmount(int sizeX, int sizeY) {}
+
+	void setSpecialString(String specialString) {}
+
+	float getTotalPaddingX() {}
+
+	void select(int selection, LobbySlot selected) {}
+
+	float getY(int pos) {}
+
+	float getX(int pos) {}
+
+	List getObjects() {}
+
+	MenuTable setElementOffsetY(float elementOffsetY) {}
+
+	boolean moveY(int y) {}
+
+	boolean moveX(int x) {}
+
+	Color getNameColor() {}
 
 	Color getBackgroundColor() {}
 
-	Scroller getScroller() {}
+	void setBackgroundColor(Color backgroundColor) {}
 
-	int getSelection() {}
+	void drawObjectBG(LobbySlot object, int index, float x, float y) {}
 
-	void updateScroll() {}
-
-	boolean deselect() {}
-
-	MenuTable setPaddingX(float arg0) {}
-
-	MenuTable setPaddingY(float arg0) {}
-
-	MenuTable setFromSize(float arg0, float arg1, boolean arg2, boolean arg3) {}
-
-	float getElementWidth() {}
-
-	void setSeamlessY(boolean arg0) {}
-
-	void setSeamlessX(boolean arg0) {}
-
-	float getElementHeight() {}
-
-	MenuTable setNameColor(Color arg0) {}
-
-	void setObjectPainter(MenuTablePainter arg0) {}
-
-	void drawContainer(CustomSpriteBatch arg0, float arg1, float arg2, float arg3) {}
-
-	float getNameOffset() {}
-
-	void drawName(CustomSpriteBatch arg0, float arg1, float arg2, float arg3) {}
-
-	boolean selectHeader() {}
-
-	MenuTable setElementSize(float arg0) {}
-
-	void highlight(int arg0, boolean arg1) {}
-
-	int getMovedX(int arg0, int arg1) {}
-
-	float getTotalPaddingY() {}
-
-	void drawObject(LobbySlot arg0, int arg1, float arg2, float arg3) {}
-
-	void drawEmptyObjects(CustomSpriteBatch arg0, float arg1, float arg2, float arg3) {}
-
-	boolean specialSelect() {}
-
-	void stopHighlight() {}
-
-	void drawObjectBG(LobbySlot arg0, int arg1, float arg2, float arg3) {}
-
-	int getMovedY(int arg0, int arg1) {}
-
-	void drawTouchButton(CustomSpriteBatch arg0, float arg1, float arg2, String arg3, MenuButtonClickedAnimation arg4, float arg5, boolean arg6) {}
-
-	MenuTableItemDrag getDrag() {}
-
-	MenuThemeDrawable getContainer() {}
-
-	NumDisplay getVisualScrollY() {}
-
-	void drawElements(CustomSpriteBatch arg0, float arg1, float arg2) {}
-
-	boolean isTouchButton() {}
-
-	void clampSelection() {}
-
-	int getItemAt(float arg0, float arg1) {}
-
-	void clicked(float arg0, float arg1) {}
-
-	int getObjectAmount() {}
-
-	BoundedFloat getHighlightFade() {}
-
-	NumDisplay getVisualScrollX() {}
-
-	void setDragListener(MenuTableDragListener arg0) {}
-
-	void scrollTo(int arg0) {}
-
-	void setTitleData(MenuTableTitleData arg0) {}
-
-	float getPadLeft() {}
-
-	void setPadBottom(float arg0) {}
-
-	boolean isSpecialEnabled() {}
-
-	boolean isHighlight() {}
-
-	InputRepeater getInputRepeater() {}
-
-	float getPadBottom() {}
-
-	void setItemDrag(boolean arg0) {}
-
-	void setSelectEnabled(boolean arg0) {}
-
-	boolean isSeamlessY() {}
-
-	void setNameFont(Fonts arg0) {}
-
-	void setOnlyDrag(boolean arg0) {}
-
-	void setHighlight(boolean arg0) {}
-
-	float getPadRight() {}
-
-	boolean isOnlyDrag() {}
-
-	String getSelectString() {}
-
-	String getSpecialString() {}
-
-	void setPadLeft(float arg0) {}
-
-	MenuTablePainter getObjectPainter() {}
-
-	void setLastSelection(int arg0) {}
+	void setPadRight(float padRight) {}
 
 	MenuTableTitleData getTitleData() {}
 
-	boolean isSelectEnabled() {}
+	void setPadTop(float padTop) {}
 
-	void setPadTop(float arg0) {}
-
-	boolean isSeamlessX() {}
+	void drawElements(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	Fonts getNameFont() {}
 
-	int getLastSelection() {}
+	boolean isSeamlessX() {}
+
+	MenuThemeDrawable getContainer() {}
+
+	int getMovedX(int selection, int offset) {}
+
+	NumDisplay getVisualScrollX() {}
+
+	NumDisplay getVisualScrollY() {}
+
+	String getSelectString() {}
+
+	float getTotalPaddingY() {}
 
 	float getPadTop() {}
 
 	boolean isItemDrag() {}
 
-	void setPadRight(float arg0) {}
+	BoundedFloat getHighlightFade() {}
 
-	void setContainer(MenuThemeDrawable arg0) {}
+	MenuTablePainter getObjectPainter() {}
 
-	void setSelection(int arg0) {}
+	void drawObject(LobbySlot object, int index, float x, float y) {}
 
-	void setSelection(LobbySlot arg0) {}
+	boolean isOnlyDrag() {}
 
-	void setSelection(int arg0, boolean arg1) {}
+	void setContainer(MenuThemeDrawable container) {}
 
-	float getAbsoluteX(int arg0) {}
+	void setTitleData(MenuTableTitleData titleData) {}
 
-	float getAbsoluteY(int arg0) {}
+	void setSelectEnabled(boolean selectEnabled) {}
 
-	void setCursor(Rectangle arg0, int arg1) {}
+	void setNameFont(Fonts nameFont) {}
 
-	boolean isSelected() {}
+	String getSpecialString() {}
 
-	MenuElementShowAnim getShowAnimation() {}
+	boolean isTouchButton() {}
 
-	void setObjects(Array arg0) {}
+	float getPadLeft() {}
 
-	void setObjects(List arg0) {}
+	boolean isSelectEnabled() {}
 
-	void setDisabledColor(Color arg0) {}
+	void drawName(CustomSpriteBatch batch, float x, float y, float h) {}
 
-	Color getDisabledColor() {}
+	boolean isHighlight() {}
 
-	Color getNameColor() {}
+	void setPadLeft(float padLeft) {}
 
-	boolean isOverviewSelectable() {}
+	boolean isSeamlessY() {}
+
+	void drawTouchButton(CustomSpriteBatch batch, float x, float y, String str, MenuButtonClickedAnimation anim, float w, boolean enabled) {}
+
+	InputRepeater getInputRepeater() {}
+
+	MenuTableItemDrag getDrag() {}
+
+	boolean isSpecialEnabled() {}
+
+	float getPadRight() {}
+
+	int getMovedY(int selection, int offset) {}
+
+	float getPadBottom() {}
+
+	void setPadBottom(float padBottom) {}
+
+	void setItemDrag(boolean itemDrag) {}
+
+	void setOnlyDrag(boolean onlyDrag) {}
+
+	void drawEmptyObjects(CustomSpriteBatch batch, float x, float y, float h) {}
+
+	void setHighlight(boolean highlight) {}
+
+	int getSelection() {}
+
+	boolean deselect() {}
+
+	Scroller getScroller() {}
+
+	void updateScroll() {}
+
+	MenuTable setFromSize(float width, float height, boolean directWidth, boolean directHeight) {}
+
+	float getElementWidth() {}
+
+	float getNameOffset() {}
+
+	MenuTable setPaddingX(float paddingX) {}
+
+	void setObjectPainter(MenuTablePainter objectPainter) {}
+
+	MenuTable setNameColor(Color nameColor) {}
+
+	void setSeamlessX(boolean seamlessX) {}
+
+	MenuTable setPaddingY(float paddingY) {}
+
+	float getElementHeight() {}
+
+	void setSeamlessY(boolean seamlessY) {}
+
+	void drawContainer(CustomSpriteBatch batch, float x, float y, float h) {}
+
+	void scrollTo(int selection) {}
+
+	void stopHighlight() {}
+
+	void setLastSelection(int lastSelection) {}
+
+	boolean selectHeader() {}
+
+	void clicked(float x, float y) {}
+
+	boolean specialSelect() {}
+
+	void clampSelection() {}
+
+	void setDragListener(MenuTableDragListener dragListener) {}
+
+	int getObjectAmount() {}
+
+	MenuTable setElementSize(float size) {}
+
+	int getLastSelection() {}
+
+	void highlight(int index, boolean exclude) {}
+
+	int getItemAt(float x, float y) {}
 
 	float getTotalElementHeight() {}
 
-	LocalizedMessage getSelectButtonTip() {}
-
-	boolean isTouchButtonOutside() {}
-
-	boolean isHighlightExclude() {}
-
-	int getHighlightIndex() {}
-
-	void setContainerTitle(MenuThemeDrawable arg0) {}
-
-	void setSpecialEnabled(boolean arg0) {}
-
-	void setSpecialButtonTip(LocalizedMessage arg0) {}
-
-	void setTouchButtonSize(float arg0) {}
-
-	float getElementOffsetY() {}
-
-	MenuButtonClickedAnimation getSelectAnimation() {}
-
-	float getElementOffsetX() {}
-
-	LobbySlot getMobileSelected() {}
-
-	MenuTablePaintParams getPaintParameters() {}
+	LocalizedMessage getHeaderButtonTip() {}
 
 	float getTouchButtonSize() {}
 
-	void setSelectButtonTip(LocalizedMessage arg0) {}
-
-	void setTouchButtonOutside(boolean arg0) {}
-
-	void setHighlightExclude(boolean arg0) {}
-
-	LocalizedMessage getSpecialButtonTip() {}
-
-	void setHighlightIndex(int arg0) {}
-
-	float getTotalElementWidth() {}
-
-	void setHeaderButtonTip(LocalizedMessage arg0) {}
-
-	void setOverviewSelectable(boolean arg0) {}
-
-	MenuTable setElementOffsetX(float arg0) {}
-
-	int getMobileSelection() {}
-
-	MenuButtonClickedAnimation getSpecialAnimation() {}
-
-	MenuThemeDrawable getContainerTitle() {}
+	void setSpecialEnabled(boolean specialEnabled) {}
 
 	float calcTouchButtonSize() {}
 
-	LocalizedMessage getHeaderButtonTip() {}
+	void setOverviewSelectable(boolean overviewSelectable) {}
 
-	void paint(MenuTablePaintParams arg0) {}
+	MenuTable setElementOffsetX(float elementOffsetX) {}
 
-	Painter getPainter(MenuTablePaintParams arg0) {}
+	void setContainerTitle(MenuThemeDrawable containerTitle) {}
 
-	Painter getPainter(MenuTablePaintParams arg0, int arg1, int arg2) {}
+	float getTotalElementWidth() {}
 
-	void startPainting(MenuTablePaintParams arg0) {}
+	MenuThemeDrawable getContainerTitle() {}
 
-	void paintEmpty(MenuTablePaintParams arg0) {}
+	LocalizedMessage getSpecialButtonTip() {}
 
-	void paintBG(MenuTablePaintParams arg0) {}
+	MenuTablePaintParams getPaintParameters() {}
 
-	void stopPainting(MenuTablePaintParams arg0) {}
+	float getElementOffsetY() {}
+
+	LocalizedMessage getSelectButtonTip() {}
+
+	float getElementOffsetX() {}
+
+	boolean isOverviewSelectable() {}
+
+	boolean isTouchButtonOutside() {}
+
+	void setHeaderButtonTip(LocalizedMessage headerButtonTip) {}
+
+	void setSpecialButtonTip(LocalizedMessage specialButtonTip) {}
+
+	void setTouchButtonSize(float touchButtonSize) {}
+
+	void setTouchButtonOutside(boolean touchButtonOutside) {}
+
+	boolean isHighlightExclude() {}
+
+	MenuButtonClickedAnimation getSpecialAnimation() {}
+
+	int getHighlightIndex() {}
+
+	void setHighlightExclude(boolean highlightExclude) {}
+
+	int getMobileSelection() {}
+
+	LobbySlot getMobileSelected() {}
+
+	MenuButtonClickedAnimation getSelectAnimation() {}
+
+	void setHighlightIndex(int highlightIndex) {}
+
+	void setSelectButtonTip(LocalizedMessage selectButtonTip) {}
+
+	float getAbsoluteX(int index) {}
+
+	float getAbsoluteY(int index) {}
+
+	void setCursor(Rectangle rectangle, int selection) {}
+
+	MenuElementShowAnim getShowAnimation() {}
+
+	boolean isSelected() {}
+
+	void setDisabledColor(Color disabledColor) {}
+
+	Color getDisabledColor() {}
+
+	void setObjects(Array array) {}
+
+	void setObjects(List list) {}
+
+	void setSelection(LobbySlot object) {}
+
+	void setSelection(int selection) {}
+
+	void setSelection(int selection, boolean updateScroll) {}
+
+	void paint(MenuTablePaintParams params) {}
+
+	Painter getPainter(MenuTablePaintParams params) {}
+
+	Painter getPainter(MenuTablePaintParams params, int hAlign, int vAlign) {}
+
+	void startPainting(MenuTablePaintParams params) {}
+
+	void paintBG(MenuTablePaintParams params) {}
+
+	void stopPainting(MenuTablePaintParams params) {}
+
+	void paintEmpty(MenuTablePaintParams params) {}
 
 }

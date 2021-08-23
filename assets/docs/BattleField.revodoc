@@ -15,7 +15,7 @@ BattleField(Object) : ScreenObject {
 	Array panelArray;
 	Battle battle;
 
-	new(BattleFieldData data) {}
+	new(BattleFieldData arg0) {}
 
 	boolean equals(Object arg0) {}
 
@@ -25,23 +25,23 @@ BattleField(Object) : ScreenObject {
 
 	void dispose() {}
 
-	void update(float delta) {}
+	void update(float arg0) {}
 
 	boolean remove() {}
 
 	String getName() {}
 
-	void init(GameScreen screen) {}
+	void init(GameScreen arg0) {}
 
 	boolean isHidden() {}
 
-	void resize(boolean landscape, int width, int height) {}
+	void resize(boolean arg0, int arg1, int arg2) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
 
-	void show(GameScreen screen) {}
+	void hide(GameScreen arg0) {}
 
-	void hide(GameScreen screen) {}
+	void show(GameScreen arg0) {}
 
 	Origin getOrigin() {}
 
@@ -49,66 +49,66 @@ BattleField(Object) : ScreenObject {
 
 	float getComparisonKey() {}
 
-	BattleFieldPanel get(int x, int y) {}
+	BattleFieldPanel get(int arg0, int arg1) {}
 
-	boolean isAccessible(int x, int y, boolean isFree) {}
+	boolean isAccessible(int arg0, int arg1, boolean arg2) {}
 
-	boolean isAccessible(int x, int y) {}
+	boolean isAccessible(int arg0, int arg1) {}
 
-	PanelType getType(int x, int y) {}
+	PanelType getType(int arg0, int arg1) {}
 
-	void set(int x, int y, BattleFieldPanel panel) {}
+	void set(int arg0, int arg1, BattleFieldPanel arg2) {}
 
-	float getShade(float y) {}
+	BattleFieldPanel generate(FieldPanelData arg0, int arg1, int arg2) {}
 
-	int getPanelAtY(float y) {}
+	float getShade(float arg0) {}
 
-	void free(int x, int y, BattleEntity be) {}
+	void triggerEvent(Object arg0, Object arg1, Object[] arg2) {}
 
-	void free(BattleEntity be) {}
+	void free(int arg0, int arg1, BattleEntity arg2) {}
 
-	float getPanelMiddleX() {}
+	void free(BattleEntity arg0) {}
+
+	float getPanelY(float arg0) {}
+
+	float getPanelX(float arg0) {}
 
 	float getPanelMiddleY() {}
 
-	float getPanelX(float x) {}
+	int getPanelAtX(float arg0) {}
 
-	float getPanelY(float y) {}
+	float getPanelMiddleX() {}
 
-	int getPanelAtX(float x) {}
+	int getPanelAtY(float arg0) {}
 
-	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
+	void occupy(int arg0, int arg1, BattleEntity arg2) {}
 
-	BattleFieldBorder getBorder(int x, int y) {}
+	BattleFieldBorder getBorder(int arg0, int arg1) {}
 
-	void occupy(int x, int y, BattleEntity be) {}
+	void changeType(int arg0, int arg1, PanelType arg2) {}
 
-	void changeType(int x, int y, PanelType tile) {}
+	Party getParty(int arg0, int arg1) {}
 
-	BattleFieldPanel generate(FieldPanelData data, int x, int y) {}
+	void convertPanel(BattleFieldPanel arg0, int arg1, int arg2, Party arg3) {}
 
-	void convertPanel(BattleFieldPanel connectedPanel, int x, int y, Party party) {}
+	boolean inBounds(int arg0, int arg1) {}
 
-	Party getParty(int x, int y) {}
+	FieldFlicker flickerField(Party arg0, int arg1, int arg2, boolean arg3, float arg4, float arg5) {}
 
-	boolean inBounds(int x, int y) {}
+	Vector2 getPosition(int arg0, int arg1, Vector2 arg2) {}
 
-	boolean occupied(int x, int y) {}
+	boolean occupied(int arg0, int arg1) {}
 
-	FieldFlicker flickerField(Party party, int x, int y, boolean flicker, float time, float delay) {}
+	boolean inBoundX(int arg0) {}
 
-	Vector2 getPosition(int x, int y, Vector2 position) {}
+	void createBorder(Array arg0, BattleFieldBorder arg1, BattleFieldPanel arg2) {}
 
-	List getVisiblePanels(float xOfs, float yOfs) {}
+	List getVisiblePanels(float arg0, float arg1) {}
 
-	boolean inBoundX(int x) {}
+	Party getOriginalParty(int arg0, int arg1) {}
 
-	boolean inBoundY(int y) {}
+	boolean inBoundY(int arg0) {}
 
-	Party getOriginalParty(int x, int y) {}
-
-	void createBorders(Array borderSearch) {}
-
-	void createBorder(Array panels, BattleFieldBorder border, BattleFieldPanel panel) {}
+	void createBorders(Array arg0) {}
 
 }

@@ -2,8 +2,8 @@ interface Lootable {
 
 	Lootable split() {}
 
-	abstract LootDisplayer createDisplayer();
-
 	abstract void addToInventory();
+
+	abstract LootDisplayer createDisplayer();
 
 }

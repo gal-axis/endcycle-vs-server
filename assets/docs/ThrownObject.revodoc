@@ -1,4 +1,4 @@
-ThrownObject(GameObject) : ShadowEntity, Danger {
+ThrownObject(GameObject) : ShadowEntity, Turnable, Danger {
 
 	Origin origin;
 	GameScreen screen;
@@ -29,9 +29,6 @@ ThrownObject(GameObject) : ShadowEntity, Danger {
 	float position;
 	LandAction action;
 	float yTippingPoint;
-	float particleSpeedX;
-	float particleSpeedY;
-	List followParticles;
 	Battle battle;
 	boolean scale;
 	boolean mock;
@@ -58,102 +55,106 @@ ThrownObject(GameObject) : ShadowEntity, Danger {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	void hide(GameScreen screen) {}
 
 	void show(GameScreen screen) {}
 
-	void hide(GameScreen screen) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	float getComparisonKey() {}
 
 	final Origin getOrigin() {}
 
 	byte getLayer() {}
 
-	float getComparisonKey() {}
-
-	final void removeObject() {}
-
-	SoundContainer playSound(SoundInfo sound) {}
-
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	final SoundContainer playSound(Sounds sound) {}
 
+	SoundContainer playSound(SoundInfo sound) {}
+
+	final void addObject(ScreenObject object) {}
+
+	final void removeObject() {}
+
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
+
+	final float getWidth() {}
+
+	final float getHeight() {}
+
+	float getCenterX() {}
+
+	float getCenterY() {}
 
 	final PatchworkStateId getState() {}
 
 	void resetState() {}
 
-	final float getHeight() {}
-
-	final float getWidth() {}
-
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scaleX, float scaleY) {}
-
-	void draw(CustomSpriteBatch batch) {}
+	CColor calculateTint() {}
 
 	final void setAnimationDuration(double duration) {}
 
 	final boolean isAnimationFinished() {}
 
-	CColor calculateTint() {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scaleX, float scaleY) {}
 
-	boolean setState(PatchworkStateId state) {}
+	void draw(CustomSpriteBatch batch) {}
 
-	final boolean hasState(PatchworkStateId name) {}
+	final boolean isFlipX() {}
 
-	final void resetTint() {}
+	final void resetAnimation() {}
 
 	final Patchwork setPatchwork(ID id) {}
 
 	Patchwork setPatchwork(Patchwork patchwork) {}
 
-	void updateGraphics(float delta) {}
-
-	final boolean isFlipY() {}
-
-	final Patchwork getPatchwork() {}
+	final float getYScale() {}
 
 	final boolean inState(PatchworkStateId name) {}
 
-	final float getXScale() {}
+	final boolean isFlipY() {}
 
-	final void resetAnimation() {}
-
-	final float getYScale() {}
-
-	final boolean isFlipX() {}
+	void updateGraphics(float delta) {}
 
 	void updateParticles(float delta) {}
 
-	float getDangerIgnore(int level) {}
+	final void resetTint() {}
+
+	boolean setState(PatchworkStateId state) {}
+
+	final Patchwork getPatchwork() {}
+
+	final boolean hasState(PatchworkStateId name) {}
+
+	final float getXScale() {}
 
 	boolean isDangerous(BattleEntity entity, int x, int y) {}
 
+	float getDangerIgnore(int level) {}
+
 	float getDangerPriority(BattleEntity entity) {}
 
+	boolean isTurned() {}
+
 	List getShadowDrawables() {}
-
-	float getShadowZ() {}
-
-	float getShadowY() {}
 
 	float getShadowX() {}
 
 	float getShadowAlpha() {}
 
-	void setupParticles(List particles, float speedX, float speedY, float timer) {}
+	float getShadowZ() {}
 
-	float getParticleTimer() {}
+	float getShadowY() {}
 
-	void setLandActions(FloatTimerAction action) {}
-
-	void updatePos() {}
-
-	SoundInfo getSound() {}
+	boolean isOnTile() {}
 
 	void setSound(SoundInfo sound) {}
 
-	boolean isOnTile() {}
+	void setLandActions(FloatTimerAction action) {}
+
+	SoundInfo getSound() {}
+
+	void updatePos() {}
 
 }

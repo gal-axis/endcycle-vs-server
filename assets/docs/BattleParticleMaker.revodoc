@@ -10,8 +10,8 @@ BattleParticleMaker(Object) {
 
 	int hashCode() {}
 
-	void add(Battle battle, float x, float y, ShaderType shader, Color tint, float duration) {}
+	void add(Battle battle, float x, float y, ShaderType shader, Color tint, float duration, Array particles) {}
 
-	void add(Battle battle, int xTile, int yTile, ShaderType shader, Color tint, float duration) {}
+	void add(Battle battle, int xTile, int yTile, ShaderType shader, Color tint, float duration, Array particles) {}
 
 }

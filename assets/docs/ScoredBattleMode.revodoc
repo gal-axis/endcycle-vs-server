@@ -39,80 +39,80 @@ abstract ScoredBattleMode(BattleMode) {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	void hide(GameScreen screen) {}
 
 	void show(GameScreen screen) {}
 
-	void hide(GameScreen screen) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	float getComparisonKey() {}
 
 	Origin getOrigin() {}
 
 	byte getLayer() {}
 
-	float getComparisonKey() {}
-
 	void start() {}
 
 	void stop() {}
 
+	void initHUD(BattleHUD hud) {}
+
 	boolean showStart() {}
-
-	ScreenObject createStarter() {}
-
-	boolean isSpawn(BattleEntity entity) {}
 
 	boolean isDespawn(BattleEntity entity) {}
 
-	String getDiscordMessage(Party winner) {}
+	boolean isSpawn(BattleEntity entity) {}
 
-	Looter createLooter() {}
-
-	BattlePlayer createPlayer(BattleEntity entity) {}
-
-	void addLoot(Looter looter) {}
-
-	void calculateTint(BattleEntity entity, CColor color) {}
-
-	boolean loot() {}
-
-	int adjustDamage(BattleEntity entity, int damage) {}
-
-	LocalizedMessage getLoseMessage() {}
-
-	double adjustGaugeSpeed(BattleEntity entity) {}
+	ScreenObject createStarter() {}
 
 	boolean isRestart() {}
 
-	void initHUD(BattleHUD hud) {}
+	void addLoot(Looter looter) {}
 
-	String getBattleName(String name) {}
+	BattlePlayer createPlayer(BattleEntity entity) {}
 
-	void finish(Party winner) {}
+	void calculateTint(BattleEntity entity, CColor color) {}
+
+	double adjustGaugeSpeed(BattleEntity entity) {}
+
+	int adjustDamage(BattleEntity entity, int damage) {}
+
+	boolean loot() {}
+
+	LocalizedMessage getLoseMessage() {}
+
+	Looter createLooter() {}
+
+	String getDiscordMessage(Party winner) {}
 
 	void sendServerUpdate(List messages) {}
 
+	String getBattleName(String name) {}
+
 	String createTeamName(Party party) {}
+
+	void finish(Party winner) {}
 
 	void updateScoreDisplay(int amount) {}
 
-	void playerHeal(BattleEntity entity, int amount) {}
-
-	void initScore() {}
-
-	void setHideScore(boolean hideScore) {}
-
-	abstract String getWaveString();
-
-	void enemyHurt(BattleEntity entity, int amount) {}
-
-	void saveScore() {}
-
-	void increaseWave() {}
+	void addScore(BattleEntity entity, int score) {}
 
 	void addScore(float x, float y, int score) {}
 
-	void addScore(BattleEntity entity, int score) {}
-
 	abstract void entityDefeat(boolean playersDefeated, boolean enemyDefeated);
+
+	abstract String getWaveString();
+
+	void initScore() {}
+
+	void increaseWave() {}
+
+	void saveScore() {}
+
+	void setHideScore(boolean hideScore) {}
+
+	void enemyHurt(BattleEntity entity, int amount) {}
+
+	void playerHeal(BattleEntity entity, int amount) {}
 
 }

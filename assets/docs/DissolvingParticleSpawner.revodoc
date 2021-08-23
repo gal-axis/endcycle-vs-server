@@ -1,21 +1,20 @@
-DissolvingParticles(Object) : ScreenObject {
+DissolvingParticleSpawner(DissolvingParticleManager) {
 
+	byte layer;
+	float comparisonKey;
+	final Array particles;
+	boolean gravity;
 	final Drawable[] drawables;
 	final int amount;
 	final float originX;
 	final float originY;
-	final byte layer;
 	float spreadX;
 	float spreadY;
 	float speed;
 	float speedRangeX;
 	float speedRangeY;
-	float comparisonKey;
-	final List particles;
-	boolean gravity;
-	boolean remove;
 
-	new(Drawable[] drawables, int amount, float originX, float originY, byte layer) {}
+	new(Drawable[] drawables, int amount, float originX, float originY) {}
 
 	boolean equals(Object arg0) {}
 
@@ -37,16 +36,20 @@ DissolvingParticles(Object) : ScreenObject {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void hide(GameScreen screen) {}
+
 	void show(GameScreen screen) {}
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void hide(GameScreen screen) {}
-
-	byte getLayer() {}
-
 	float getComparisonKey() {}
 
 	Origin getOrigin() {}
+
+	byte getLayer() {}
+
+	DissolvingParticle add(Drawable drawable, float speed, float speedX, float speedY) {}
+
+	DissolvingParticle[] burst(int amount, float speed, float speedRangeX, float speedRangeY, float spreadX, float spreadY, Drawable[] drawables) {}
 
 }

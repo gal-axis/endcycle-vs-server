@@ -10205,7 +10205,7 @@
 	"id": { "id": 730 },
 	"name": "Farmadile Card",
 	"frames": [
-		{ "texturePath": "battle/entities/farmadile/farmadile_win.png", "x": 20, "width": 232, "height": 191 }
+		{ "texturePath": "battle/entities/farmadile/card.png", "width": 199, "height": 150 }
 	]
 },
 {
@@ -10307,6 +10307,161 @@
 	"name": "gicon",
 	"frames": [
 		{ "texturePath": "general/logos/google_logo.png", "width": 132, "height": 138 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 741 },
+	"name": "Particle Push Right",
+	"frames": [
+		{ "texturePath": "battle/visuals/push_right.png", "width": 7, "height": 7 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 742 },
+	"name": "Particle Push Left",
+	"frames": [
+		{ "texturePath": "battle/visuals/push_right.png", "width": -7, "height": 7 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 743 },
+	"name": "Particle Push Down",
+	"frames": [
+		{ "texturePath": "battle/visuals/push_down.png", "width": 7, "height": 7 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 744 },
+	"name": "Particle Push Up",
+	"frames": [
+		{ "texturePath": "battle/visuals/push_down.png", "width": 7, "height": -7 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 745 },
+	"name": "Particle Poison",
+	"speed": 0.08,
+	"frames": [
+		{ "texturePath": "battle/visuals/poison.png", "x": 8, "width": 7, "height": 7 },
+		{ "texturePath": "battle/visuals/poison.png", "x": 16, "width": 7, "height": 7 },
+		{ "texturePath": "battle/visuals/poison.png", "x": 24, "width": 7, "height": 7 },
+		{ "texturePath": "battle/visuals/poison.png", "x": 32, "width": 7, "height": 7 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 746 },
+	"name": "Particle Freeze",
+	"speed": 0.1,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/vocs/water_bomb/particle_a.png", "width": 4, "height": 4 },
+		{ "texturePath": "battle/vocs/water_bomb/particle_a.png", "x": 5, "width": 4, "height": 4 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 747 },
+	"name": "Particle Eject",
+	"frames": [
+		{ "texturePath": "battle/visuals/particle_eject.png", "width": 7, "height": 7 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 748 },
+	"name": "Particle Turn",
+	"speed": 0.09,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/visuals/particle_turn.png", "width": 9, "height": 9 },
+		{ "texturePath": "battle/visuals/particle_turn_3.png", "width": 9, "height": 9 },
+		{ "texturePath": "battle/visuals/particle_turn_2.png", "width": 9, "height": 9 },
+		{ "texturePath": "battle/visuals/particle_turn_4.png", "width": 9, "height": 9 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 749 },
+	"name": "Particle Invert",
+	"frames": [
+		{ "texturePath": "battle/visuals/particle_invert.png", "width": 8, "height": 7 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 750 },
+	"name": "Particle Flash",
+	"speed": 0.05,
+	"frames": [
+		{ "texturePath": "battle/visuals/particle_flash.png", "width": 8, "height": 8 },
+		{ "texturePath": "battle/visuals/particle_flash.png", "x": 8, "width": 8, "height": 8 },
+		{ "texturePath": "battle/visuals/particle_flash.png", "x": 17, "width": 8, "height": 8 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 751 },
+	"name": "Particle Flinch",
+	"speed": 0.08,
+	"frames": [
+		{ "texturePath": "battle/visuals/particle_flinch.png", "width": 8, "height": 8 },
+		{ "texturePath": "battle/visuals/particle_flinch.png", "x": 8, "width": 8, "height": 8 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 752 },
+	"name": "Particle Panel",
+	"speed": 0.04,
+	"frames": [
+		{ "texturePath": "battle/visuals/particle_panel.png", "width": 6, "height": 5 },
+		{ "texturePath": "battle/visuals/particle_panel.png", "x": 7, "width": 6, "height": 5 },
+		{ "texturePath": "battle/visuals/particle_panel.png", "x": 14, "width": 6, "height": 5 },
+		{ "texturePath": "battle/visuals/particle_panel.png", "x": 22, "width": 6, "height": 5 },
+		{ "texturePath": "battle/visuals/particle_panel.png", "x": 30, "width": 6, "height": 5 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 753 },
+	"name": "Particle Anti",
+	"speed": 0.08,
+	"playMode": "REVERSED",
+	"frames": [
+		{ "texturePath": "battle/visuals/particle_flash.png", "width": 8, "height": 8 },
+		{ "texturePath": "battle/visuals/particle_flash.png", "x": 8, "width": 8, "height": 8 },
+		{ "texturePath": "battle/visuals/particle_flash.png", "x": 17, "width": 8, "height": 8 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 754 },
+	"name": "Particle Copy",
+	"speed": 0.08,
+	"frames": [
+		{ "texturePath": "battle/visuals/particle_copy.png", "width": 10, "height": 6 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 755 },
+	"name": "Farmadile Win",
+	"frames": [
+		{ "texturePath": "battle/entities/farmadile/win.png", "width": 349, "height": 280 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 756 },
+	"name": "Farmadile Cut-In",
+	"frames": [
+		{ "texturePath": "battle/entities/farmadile/cut_in.png", "width": 241, "height": 160 }
 	]
 }
 ]

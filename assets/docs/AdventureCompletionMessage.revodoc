@@ -30,11 +30,11 @@ AdventureCompletionMessage(MenuMessage) : MenuTablePainter {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void hide(GameScreen screen) {}
+
 	void show(GameScreen screen) {}
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	void hide(GameScreen screen) {}
 
 	float getComparisonKey() {}
 
@@ -42,23 +42,25 @@ AdventureCompletionMessage(MenuMessage) : MenuTablePainter {
 
 	byte getLayer() {}
 
-	final void removeObject() {}
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	final SoundContainer playSound(Sounds sound) {}
 
-	SoundContainer playSound(float x, float y, SoundInfo sound) {}
-
 	SoundContainer playSound(SoundInfo sound) {}
+
+	final void addObject(ScreenObject object) {}
+
+	final void removeObject() {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
-	final void addDisposeListener(Runnable runnable) {}
-
-	final void removeInitializeListener(Runnable runnable) {}
+	final void addInitializeListener(Runnable runnable) {}
 
 	final void removeDisposeListener(Runnable runnable) {}
 
-	final void addInitializeListener(Runnable runnable) {}
+	final void removeInitializeListener(Runnable runnable) {}
+
+	final void addDisposeListener(Runnable runnable) {}
 
 	void scheduleMessage(GameScreenMessage message) {}
 
@@ -66,29 +68,29 @@ AdventureCompletionMessage(MenuMessage) : MenuTablePainter {
 
 	void setSpeed(float speed) {}
 
+	boolean isStaying() {}
+
 	float getPosition() {}
 
-	boolean isStaying() {}
+	void controllerDisconnected(Controller controller) {}
 
 	void controllerConnected(Controller controller) {}
 
-	void controllerDisconnected(Controller controller) {}
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean triggerButton(ButtonEvent event) {}
+
+	boolean triggerTouch(TouchEvent event) {}
 
 	boolean triggerType(int character) {}
 
 	int getInputPriority() {}
 
-	boolean triggerTouch(TouchEvent event) {}
-
-	boolean triggerButton(ButtonEvent event) {}
-
-	boolean addButtonTips(ButtonTipList tips) {}
-
 	boolean keyDown(int keycode) {}
 
-	boolean keyTyped(char character) {}
-
 	boolean keyUp(int keycode) {}
+
+	boolean keyTyped(char character) {}
 
 	void setDefaultElement(MenuElement defaultElement) {}
 
@@ -102,11 +104,11 @@ AdventureCompletionMessage(MenuMessage) : MenuTablePainter {
 
 	MenuElement getMenuElement() {}
 
-	float calcOffset() {}
-
 	void drawMenu(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	boolean isBackKey(ButtonEvent trigger) {}
+
+	float calcOffset() {}
 
 	void paint(MenuTablePaintParams params) {}
 
@@ -116,10 +118,10 @@ AdventureCompletionMessage(MenuMessage) : MenuTablePainter {
 
 	void startPainting(MenuTablePaintParams params) {}
 
+	void paintBG(MenuTablePaintParams params) {}
+
 	void stopPainting(MenuTablePaintParams params) {}
 
 	void paintEmpty(MenuTablePaintParams params) {}
-
-	void paintBG(MenuTablePaintParams params) {}
 
 }

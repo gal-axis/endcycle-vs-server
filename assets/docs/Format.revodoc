@@ -24,12 +24,12 @@ enum Format {
 
 	static Format valueOf(String arg0) {}
 
-	static int toGlFormat(Format arg0) {}
-
-	static int toGlType(Format arg0) {}
+	static int toGdx2DPixmapFormat(Format arg0) {}
 
 	static Format fromGdx2DPixmapFormat(int arg0) {}
 
-	static int toGdx2DPixmapFormat(Format arg0) {}
+	static int toGlType(Format arg0) {}
+
+	static int toGlFormat(Format arg0) {}
 
 }

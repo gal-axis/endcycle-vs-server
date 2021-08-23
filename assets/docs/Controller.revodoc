@@ -12,22 +12,22 @@ interface Controller {
 
 	abstract boolean supportsPlayerIndex();
 
+	abstract int getAxisCount();
+
+	abstract String getUniqueId();
+
 	abstract boolean canVibrate();
 
 	abstract boolean getButton(int arg0);
 
-	abstract void cancelVibration();
-
-	abstract String getUniqueId();
-
-	abstract boolean isVibrating();
-
-	abstract float getAxis(int arg0);
-
-	abstract int getAxisCount();
-
 	abstract void setPlayerIndex(int arg0);
 
 	abstract void startVibration(int arg0, float arg1);
+
+	abstract float getAxis(int arg0);
+
+	abstract void cancelVibration();
+
+	abstract boolean isVibrating();
 
 }

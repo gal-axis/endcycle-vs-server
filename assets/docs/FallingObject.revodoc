@@ -1,4 +1,4 @@
-FallingObject(Object) : ScreenObject, ShadowEntity, Danger {
+FallingObject(Object) : ScreenObject, ShadowEntity, Danger, AttackParticleObject {
 
 	final DrawableState drawable;
 	final int targetX;
@@ -11,6 +11,7 @@ FallingObject(Object) : ScreenObject, ShadowEntity, Danger {
 	final float offsetX;
 	final float offsetY;
 	FallingLandAction landAction;
+	AttackParticleSpawner particles;
 	Color tint;
 	Battle battle;
 	float tileX;
@@ -24,32 +25,6 @@ FallingObject(Object) : ScreenObject, ShadowEntity, Danger {
 	String toString() {}
 
 	int hashCode() {}
-
-	float getDangerIgnore(int level) {}
-
-	boolean isDangerous(BattleEntity entity, int x, int y) {}
-
-	float getDangerPriority(BattleEntity entity) {}
-
-	List getShadowDrawables() {}
-
-	boolean isFlipY() {}
-
-	Patchwork getPatchwork() {}
-
-	float getXScale() {}
-
-	float getYScale() {}
-
-	boolean isFlipX() {}
-
-	float getShadowZ() {}
-
-	float getShadowY() {}
-
-	float getShadowX() {}
-
-	float getShadowAlpha() {}
 
 	void dispose() {}
 
@@ -65,30 +40,66 @@ FallingObject(Object) : ScreenObject, ShadowEntity, Danger {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	void hide(GameScreen screen) {}
 
 	void show(GameScreen screen) {}
 
-	void hide(GameScreen screen) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	float getComparisonKey() {}
 
 	Origin getOrigin() {}
 
 	byte getLayer() {}
 
-	float getComparisonKey() {}
+	float getWidth() {}
+
+	float getHeight() {}
+
+	void addObject(ScreenObject object) {}
+
+	float getCenterX() {}
+
+	float getCenterY() {}
+
+	boolean isDangerous(BattleEntity entity, int x, int y) {}
+
+	float getDangerIgnore(int level) {}
+
+	float getDangerPriority(BattleEntity entity) {}
+
+	List getShadowDrawables() {}
+
+	boolean isFlipX() {}
+
+	float getYScale() {}
+
+	boolean isFlipY() {}
+
+	Patchwork getPatchwork() {}
+
+	float getXScale() {}
+
+	float getShadowX() {}
+
+	float getShadowAlpha() {}
+
+	float getShadowZ() {}
+
+	float getShadowY() {}
 
 	float getOffsetX() {}
 
 	float getSpeed() {}
 
+	float getDelay() {}
+
 	float getDrawX() {}
 
 	float getDrawY() {}
 
-	float getFadeout() {}
-
 	float getOffsetY() {}
 
-	float getDelay() {}
+	float getFadeout() {}
 
 }

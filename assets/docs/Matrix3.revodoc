@@ -39,55 +39,55 @@ Matrix3(Object) {
 
 	Matrix3 rotate(float arg0) {}
 
-	Matrix3 scale(float arg0, float arg1) {}
-
 	Matrix3 scale(Vector2 arg0) {}
+
+	Matrix3 scale(float arg0, float arg1) {}
 
 	Matrix3 mul(Matrix3 arg0) {}
 
-	float[] getValues() {}
+	Matrix3 translate(Vector2 arg0) {}
 
-	Matrix3 inv() {}
-
-	Matrix3 trn(Vector2 arg0) {}
-
-	Matrix3 trn(float arg0, float arg1) {}
-
-	Matrix3 trn(Vector3 arg0) {}
-
-	Matrix3 mulLeft(Matrix3 arg0) {}
-
-	Matrix3 idt() {}
-
-	Matrix3 setToTranslation(Vector2 arg0) {}
-
-	Matrix3 setToTranslation(float arg0, float arg1) {}
-
-	Matrix3 setToRotation(Vector3 arg0, float arg1, float arg2) {}
-
-	Matrix3 setToRotation(Vector3 arg0, float arg1) {}
-
-	Matrix3 setToRotation(float arg0) {}
-
-	Vector2 getTranslation(Vector2 arg0) {}
+	Matrix3 translate(float arg0, float arg1) {}
 
 	float getRotation() {}
 
 	Vector2 getScale(Vector2 arg0) {}
 
-	float det() {}
+	Matrix3 rotateRad(float arg0) {}
+
+	Vector2 getTranslation(Vector2 arg0) {}
 
 	Matrix3 setToScaling(Vector2 arg0) {}
 
 	Matrix3 setToScaling(float arg0, float arg1) {}
 
+	Matrix3 setToRotation(Vector3 arg0, float arg1) {}
+
+	Matrix3 setToRotation(Vector3 arg0, float arg1, float arg2) {}
+
+	Matrix3 setToRotation(float arg0) {}
+
+	Matrix3 mulLeft(Matrix3 arg0) {}
+
+	Matrix3 inv() {}
+
+	Matrix3 idt() {}
+
 	Matrix3 setToRotationRad(float arg0) {}
 
-	Matrix3 rotateRad(float arg0) {}
+	float det() {}
 
-	Matrix3 translate(Vector2 arg0) {}
+	Matrix3 setToTranslation(Vector2 arg0) {}
 
-	Matrix3 translate(float arg0, float arg1) {}
+	Matrix3 setToTranslation(float arg0, float arg1) {}
+
+	Matrix3 trn(Vector2 arg0) {}
+
+	Matrix3 trn(Vector3 arg0) {}
+
+	Matrix3 trn(float arg0, float arg1) {}
+
+	float[] getValues() {}
 
 	Matrix3 transpose() {}
 

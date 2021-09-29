@@ -26,7 +26,7 @@ DefaultBattlePlayer(BattlePlayer) {
 	VocEntry buffered;
 	float vocBufferTime;
 
-	new(BattleEntity arg0) {}
+	new(BattleEntity entity) {}
 
 	boolean equals(Object arg0) {}
 
@@ -34,31 +34,31 @@ DefaultBattlePlayer(BattlePlayer) {
 
 	int hashCode() {}
 
-	void controllerConnected(Controller arg0) {}
+	void controllerDisconnected(Controller controller) {}
 
-	void controllerDisconnected(Controller arg0) {}
-
-	boolean keyTyped(char arg0) {}
-
-	boolean triggerButton(ButtonEvent arg0) {}
-
-	boolean keyDown(int arg0) {}
-
-	boolean addButtonTips(ButtonTipList arg0) {}
-
-	boolean triggerTouch(TouchEvent arg0) {}
-
-	boolean triggerType(int arg0) {}
-
-	boolean keyUp(int arg0) {}
+	void controllerConnected(Controller controller) {}
 
 	int getInputPriority() {}
+
+	boolean keyTyped(char character) {}
+
+	boolean triggerTouch(TouchEvent event) {}
+
+	boolean triggerButton(ButtonEvent event) {}
+
+	boolean triggerType(int character) {}
+
+	boolean keyDown(int keycode) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean keyUp(int keycode) {}
 
 	void add() {}
 
 	void remove() {}
 
-	void update(float arg0) {}
+	void update(float delta) {}
 
 	void init() {}
 
@@ -66,100 +66,100 @@ DefaultBattlePlayer(BattlePlayer) {
 
 	void dispose() {}
 
-	void hit(HitProperty arg0) {}
-
 	boolean isAuthorative() {}
 
-	void hitEntity(BattleEntity arg0, OwnedHitProperty arg1) {}
+	void hit(HitProperty hitProperty) {}
+
+	void hitEntity(BattleEntity entity, OwnedHitProperty property) {}
 
 	BattleEntityActionSave getSave() {}
 
-	void vibrateController(float arg0, float arg1) {}
+	void vibrateController(float duration, float strength) {}
 
 	final Controller getController() {}
 
-	void move(int arg0, int arg1) {}
-
-	GameScreenMessage createRewardMessage(RandomVocRewards arg0, Random arg1, boolean arg2) {}
-
-	boolean sendClientInput(Object arg0, boolean arg1) {}
-
-	boolean canUpgrade() {}
-
-	void setCombat(boolean arg0) {}
-
-	void setHudButtons(BattleHUD arg0) {}
-
-	void upgrade() {}
-
-	MockController setKeyPressed(KeyCode arg0, boolean arg1) {}
-
-	void createHud(int arg0) {}
-
-	void clientInput(ButtonEvent arg0) {}
-
-	boolean applyInput(KeyCode arg0, boolean arg1, boolean arg2) {}
-
-	void applyInput(float arg0, Object arg1) {}
+	void move(int xTile, int yTile) {}
 
 	void cancelMove() {}
 
-	void cast(VocEntry arg0, KeyCode arg1) {}
+	void setHudButtons(BattleHUD hud) {}
 
-	void buffer(VocEntry arg0, KeyCode arg1) {}
+	MockController setKeyPressed(KeyCode code, boolean pressed) {}
+
+	void applyInput(float delay, Object input) {}
+
+	boolean applyInput(KeyCode code, boolean pressed, boolean player) {}
+
+	boolean sendClientInput(Object input, boolean local) {}
+
+	void createHud(int playerIndex) {}
+
+	void upgrade() {}
+
+	boolean canUpgrade() {}
+
+	void setCombat(boolean combat) {}
+
+	void clientInput(ButtonEvent event) {}
+
+	GameScreenMessage createRewardMessage(RandomVocRewards vocs, Random random, boolean skippable) {}
+
+	void cast(VocEntry used, KeyCode keyCode) {}
+
+	void buffer(VocEntry voc, KeyCode keyCode) {}
 
 	int xTile() {}
 
 	int yTile() {}
 
-	boolean use(VocEntry arg0, KeyCode arg1) {}
+	boolean use(VocEntry voc, KeyCode keyCode) {}
 
-	boolean use(int arg0, KeyCode arg1, VocEntry arg2) {}
+	boolean use(int index, KeyCode keyCode, VocEntry voc) {}
 
 	void turn() {}
 
-	void startMove(int arg0, int arg1) {}
+	void updateVoc(float delta) {}
 
-	void moveCurrentSet(int arg0) {}
+	void addMove(int xMove, int yMove) {}
 
-	void updateMove() {}
-
-	void updateMove(float arg0) {}
-
-	void updateMove(int arg0, int arg1) {}
-
-	void updateVoc(float arg0) {}
-
-	void wiggleCrushGauge() {}
-
-	void resetVocBuffer() {}
-
-	boolean canAttack() {}
+	void resetMoveBuffer() {}
 
 	void updateButtons() {}
 
 	void resetButtons() {}
 
-	void addMove(int arg0, int arg1) {}
+	void wiggleCrushGauge() {}
 
-	boolean canBuffer(VocEntry arg0) {}
+	boolean canBuffer(VocEntry voc) {}
 
-	boolean triggerMove(ButtonEvent arg0) {}
+	void updateMove(float delta) {}
 
-	boolean triggerVoc(ButtonEvent arg0) {}
+	void updateMove() {}
 
-	boolean triggerSet(ButtonEvent arg0) {}
+	void updateMove(int xMove, int yMove) {}
 
-	boolean useVoc(int arg0, KeyCode arg1) {}
+	void resetVocBuffer() {}
 
-	void updateCurrentSet(boolean arg0) {}
+	boolean canAttack() {}
 
-	void setCurrentSet(int arg0, boolean arg1) {}
+	void bufferMove(int bufferedX, int bufferedY) {}
 
-	void resetMoveBuffer() {}
+	void setCurrentSet(int current, boolean tint) {}
 
-	void bufferMove(int arg0, int arg1) {}
+	void updateCurrentSet(boolean rightPriority) {}
 
-	boolean useUltra(KeyCode arg0) {}
+	boolean triggerMove(ButtonEvent event) {}
+
+	boolean useVoc(int index, KeyCode keyCode) {}
+
+	boolean triggerVoc(ButtonEvent event) {}
+
+	boolean useUltra(KeyCode keyCode) {}
+
+	void moveCurrentSet(int offset) {}
+
+	boolean triggerSet(ButtonEvent event) {}
+
+	void startMove(int xMove, int yMove) {}
 
 }

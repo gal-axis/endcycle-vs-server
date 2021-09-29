@@ -34,7 +34,7 @@ LobbyScreen(ZoneMenuScreen) : InventoryScreenProvider {
 	ExitConfirmMessage exitConfirmMessage;
 	PlayerDisplayMessage playerDisplayMessage;
 
-	new(Lobby arg0) {}
+	new(Lobby lobby) {}
 
 	boolean equals(Object arg0) {}
 
@@ -44,87 +44,87 @@ LobbyScreen(ZoneMenuScreen) : InventoryScreenProvider {
 
 	GameScreen get() {}
 
-	void update(float arg0) {}
+	void update(float delta) {}
 
-	ScreenObject getObject(String arg0) {}
+	ScreenObject getObject(String name) {}
 
 	void init() {}
 
 	void resume() {}
 
-	void resize(boolean arg0, int arg1, int arg2) {}
+	void resize(boolean landscape, int width, int height) {}
 
-	void addRenderProcessor(RenderProcessor arg0) {}
+	void setScreen(GameScreen screen, FadeType fade) {}
 
-	void removeRenderProcessor(RenderProcessor arg0) {}
+	void setScreen(GameScreen screen) {}
 
-	Array getRenderProcessors() {}
-
-	GameScreen getPreviousScreen() {}
-
-	void setPreviousScreen(GameScreen arg0) {}
-
-	void drawButtonTips(CustomSpriteBatch arg0, float arg1, float arg2) {}
-
-	boolean isShaking() {}
-
-	ScreenObject addObject(ScreenObject arg0) {}
-
-	boolean removeObject(ScreenObject arg0) {}
-
-	void updateObjects(float arg0) {}
+	void setScreen(GameScreen screen, FadeType fade, boolean changesBefore) {}
 
 	void resetShake() {}
 
-	Array getObjects() {}
+	boolean removeObject(ScreenObject object) {}
 
-	void clearObjects() {}
+	void updateTimer(float delta) {}
 
-	void shake(float arg0, float arg1, float arg2) {}
+	void shake(float x, float y, float duration) {}
 
-	void shakeVibrate(float arg0, float arg1, float arg2) {}
-
-	void toPreviousScreen() {}
-
-	void toPreviousScreen(FadeType arg0) {}
-
-	void drawSpecial(CustomSpriteBatch arg0) {}
-
-	void updateShake(float arg0) {}
-
-	void changeTo(GameScreen arg0, boolean arg1) {}
-
-	void changeFrom(GameScreen arg0, boolean arg1) {}
-
-	void draw(CustomSpriteBatch arg0) {}
-
-	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
-
-	void setScreen(GameScreen arg0, FadeType arg1, boolean arg2) {}
-
-	void setScreen(GameScreen arg0, FadeType arg1) {}
-
-	void setScreen(GameScreen arg0) {}
+	ScreenObject addObject(ScreenObject object) {}
 
 	boolean isCurrentScreen() {}
 
-	void hide() {}
+	void drawButtonTips(CustomSpriteBatch batch, float x, float y) {}
+
+	void updateShake(float delta) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void draw(CustomSpriteBatch batch) {}
+
+	Array getObjects() {}
+
+	void drawSpecial(CustomSpriteBatch batch) {}
+
+	void changeFrom(GameScreen screen, boolean init) {}
+
+	void toPreviousScreen(FadeType type) {}
+
+	void toPreviousScreen() {}
+
+	void render(float delta) {}
+
+	boolean isShaking() {}
+
+	void shakeVibrate(float x, float y, float duration) {}
+
+	void clearObjects() {}
+
+	void changeTo(GameScreen screen, boolean init) {}
+
+	void updateObjects(float delta) {}
+
+	GameScreen getPreviousScreen() {}
+
+	Array getRenderProcessors() {}
+
+	void removeRenderProcessor(RenderProcessor renderProcessor) {}
+
+	void addRenderProcessor(RenderProcessor renderProcessor) {}
+
+	void setPreviousScreen(GameScreen previousScreen) {}
 
 	void pause() {}
 
-	void show() {}
-
-	void updateTimer(float arg0) {}
+	boolean isLoading() {}
 
 	Object[] getTextArguments() {}
 
-	boolean isLoading() {}
+	void addScript(Script script, float delay) {}
 
-	void addScript(Script arg0, float arg1) {}
+	void show() {}
+
+	void hide() {}
 
 	void dispose() {}
-
-	void render(float arg0) {}
 
 	void resetTimer() {}
 
@@ -134,13 +134,13 @@ LobbyScreen(ZoneMenuScreen) : InventoryScreenProvider {
 
 	void backButtonPressed() {}
 
+	void enableInput() {}
+
 	void centerElements() {}
 
-	void centerElements(float arg0, float arg1) {}
+	void centerElements(float x, float y) {}
 
 	void disableInput() {}
-
-	void enableInput() {}
 
 	void changeZone() {}
 
@@ -150,9 +150,35 @@ LobbyScreen(ZoneMenuScreen) : InventoryScreenProvider {
 
 	void start() {}
 
-	boolean triggerButton(ButtonEvent arg0) {}
+	boolean triggerButton(ButtonEvent event) {}
 
-	void updateConfigurationDisplay() {}
+	void onBattleEnded() {}
+
+	boolean playersReady() {}
+
+	void onBattleStarted() {}
+
+	void onHostChange() {}
+
+	void updateVocsButton() {}
+
+	void onBattleWaiting() {}
+
+	void onSlotUpdate() {}
+
+	void removeHandlers() {}
+
+	void joinLobbySlot(int selection, LobbySlot selected) {}
+
+	void leaveLobbySlot() {}
+
+	void watch() {}
+
+	void selectLobbySlot(int selection, LobbySlot selected) {}
+
+	void showPlayers() {}
+
+	void joinBattle() {}
 
 	void updateConfiguration() {}
 
@@ -162,32 +188,6 @@ LobbyScreen(ZoneMenuScreen) : InventoryScreenProvider {
 
 	void updateStartButton() {}
 
-	void watch() {}
-
-	void onBattleEnded() {}
-
-	void onHostChange() {}
-
-	void selectLobbySlot(int arg0, LobbySlot arg1) {}
-
-	void leaveLobbySlot() {}
-
-	void onBattleStarted() {}
-
-	void updateVocsButton() {}
-
-	void joinLobbySlot(int arg0, LobbySlot arg1) {}
-
-	void onBattleWaiting() {}
-
-	void removeHandlers() {}
-
-	void joinBattle() {}
-
-	void onSlotUpdate() {}
-
-	boolean playersReady() {}
-
-	void showPlayers() {}
+	void updateConfigurationDisplay() {}
 
 }

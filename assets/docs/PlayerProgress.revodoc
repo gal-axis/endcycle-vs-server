@@ -37,68 +37,68 @@ final PlayerProgress(Object) {
 
 	void save() {}
 
-	void merge(PlayerProgress arg0) {}
+	void merge(PlayerProgress progress) {}
 
-	boolean isTutorialComplete(int arg0) {}
+	boolean isTutorialComplete(int tutorial) {}
 
-	boolean isBestScore(GameDifficulty arg0, boolean arg1, int arg2) {}
+	boolean isBestScore(GameDifficulty difficulty, boolean coop, int score) {}
 
-	boolean isBestWave(GameDifficulty arg0, boolean arg1, int arg2) {}
+	boolean isBestWave(GameDifficulty difficulty, boolean coop, int wave) {}
 
-	boolean isCharacterUnlocked(ID arg0) {}
+	boolean isCharacterUnlocked(ID id) {}
 
-	void increaseAffinity(ID arg0, float arg1) {}
+	boolean isAdventureEventEncountered(ID id) {}
 
-	boolean buyCharacter(BattleEntityData arg0) {}
+	boolean isCharacterCustomizationUnlocked(ID id) {}
 
-	boolean isThemeUnlocked(ID arg0) {}
+	boolean isCampaignUnlocked(ID id) {}
 
-	void checkNew() {}
+	List getUnlockedCampaigns() {}
 
-	Array checkNewThemes() {}
+	void clearAdventureZone(AdventureZone zone) {}
+
+	void adventureEventEncountered(AdventureEvent event) {}
+
+	boolean isAdventureCleared(ID id) {}
+
+	boolean buyCharacter(BattleEntityData entity) {}
+
+	boolean isThemeUnlocked(ID id) {}
 
 	void cheat() {}
 
 	void saveLocal() {}
 
-	void completeTutorial(int arg0) {}
+	void completeTutorial(int tutorial) {}
 
-	List getUnlockedThemes() {}
+	void increaseAffinity(ID id, float amount) {}
 
-	List getAffinityEntries() {}
+	Array checkNewThemes() {}
 
-	boolean isCampaignUnlocked(ID arg0) {}
+	void checkNew() {}
 
-	boolean isAffinityEntryUnlocked(ID arg0) {}
+	float completeCampaign(CampaignData campaign, double time, List scores) {}
 
-	Array checkNewCharacters() {}
+	void clearAdventure(AdventurePath adventure) {}
 
 	boolean checkNewAffinities() {}
 
 	Array checkNewCustomizations() {}
 
-	List getUnlockedCharacters() {}
+	boolean isAffinityEntryUnlocked(ID id) {}
 
-	boolean[] completeOnslaught(GameDifficulty arg0, boolean arg1, int arg2, int arg3) {}
+	boolean[] completeOnslaught(GameDifficulty difficulty, boolean coop, int score, int wave) {}
 
 	Array checkNewCampaigns() {}
 
-	void addDefeatedCredit(String arg0) {}
+	void addDefeatedCredit(String name) {}
 
-	boolean isCharacterCustomizationUnlocked(ID arg0) {}
+	List getUnlockedCharacters() {}
 
-	boolean isAdventureEventEncountered(ID arg0) {}
+	Array checkNewCharacters() {}
 
-	void clearAdventureZone(AdventureZone arg0) {}
+	List getAffinityEntries() {}
 
-	void adventureEventEncountered(AdventureEvent arg0) {}
-
-	List getUnlockedCampaigns() {}
-
-	boolean isAdventureCleared(ID arg0) {}
-
-	float completeCampaign(CampaignData arg0, double arg1, List arg2) {}
-
-	void clearAdventure(AdventurePath arg0) {}
+	List getUnlockedThemes() {}
 
 }

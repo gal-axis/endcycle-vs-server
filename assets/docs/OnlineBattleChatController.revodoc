@@ -1,6 +1,6 @@
 OnlineBattleChatController(ChatController) {
 
-	new(ChatBox arg0) {}
+	new(ChatBox chatBox) {}
 
 	boolean equals(Object arg0) {}
 
@@ -8,38 +8,38 @@ OnlineBattleChatController(ChatController) {
 
 	int hashCode() {}
 
-	void controllerDisconnected(Controller arg0) {}
+	void controllerDisconnected(Controller controller) {}
 
-	void controllerConnected(Controller arg0) {}
-
-	boolean keyDown(int arg0) {}
-
-	boolean triggerTouch(TouchEvent arg0) {}
-
-	boolean addButtonTips(ButtonTipList arg0) {}
+	void controllerConnected(Controller controller) {}
 
 	int getInputPriority() {}
 
-	boolean keyTyped(char arg0) {}
+	boolean keyTyped(char character) {}
 
-	boolean keyUp(int arg0) {}
+	boolean triggerTouch(TouchEvent event) {}
 
-	boolean triggerButton(ButtonEvent arg0) {}
+	boolean triggerButton(ButtonEvent event) {}
 
-	boolean triggerType(int arg0) {}
+	boolean triggerType(int keycode) {}
+
+	boolean keyDown(int keycode) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean keyUp(int keycode) {}
 
 	void select() {}
 
-	void enter() {}
-
-	boolean addCharacter(char arg0) {}
-
 	void deselect() {}
+
+	boolean addCharacter(char character) {}
+
+	void enter() {}
 
 	MenuTextBox getTextBox() {}
 
-	void sendText(String arg0) {}
+	void sendText(String text) {}
 
-	void sendMessage(Object arg0) {}
+	void sendMessage(Object object) {}
 
 }

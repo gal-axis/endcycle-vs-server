@@ -1,4 +1,4 @@
-BattleEntityVocAnimation(Object) {
+BattleEntityVocAnimation(Object) : Named {
 
 	ID voc;
 	PatchworkStateId attack;
@@ -11,5 +11,7 @@ BattleEntityVocAnimation(Object) {
 	String toString() {}
 
 	int hashCode() {}
+
+	String getName() {}
 
 }

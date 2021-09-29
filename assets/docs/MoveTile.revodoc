@@ -7,7 +7,7 @@ MoveTile(NormalExpiringTile) : BECondition {
 	final BoundedFloat time;
 	DrawableImage drawable;
 
-	new(Drawables arg0, int arg1, int arg2) {}
+	new(Drawables drawable, int xMove, int yMove) {}
 
 	boolean equals(Object arg0) {}
 
@@ -15,56 +15,56 @@ MoveTile(NormalExpiringTile) : BECondition {
 
 	int hashCode() {}
 
-	void exit(BattleEntity arg0) {}
+	void exit(BattleEntity entity) {}
 
-	void update(float arg0) {}
+	void update(float delta) {}
 
 	void init() {}
 
-	boolean isAccessible(BattleEntity arg0, boolean arg1) {}
-
-	void draw(Batch arg0, float arg1, float arg2, Party arg3, float arg4, float arg5) {}
-
-	int getY() {}
+	boolean isAccessible(BattleEntity entity, boolean checkFree) {}
 
 	int getX() {}
 
-	void dispose() {}
+	void draw(Batch batch, float x, float y, Party party, float shade, float alpha) {}
+
+	int getY() {}
 
 	void refresh() {}
 
-	final void triggerAction(Object[] arg0) {}
+	void dispose() {}
 
-	OwnedHitProperty hit(OwnedHitProperty arg0) {}
+	OwnedHitProperty hit(OwnedHitProperty property) {}
 
-	BattleFieldBorder getCameraBorder(BattleEntity arg0) {}
+	final void triggerAction(Object[] parameters) {}
 
-	boolean changeType(PanelType arg0) {}
+	boolean changeType(PanelType type) {}
 
 	void free() {}
 
+	BattleFieldBorder getCameraBorder(BattleEntity focused) {}
+
+	void actionTriggered(Object[] action) {}
+
 	Battle getBattle() {}
 
-	void actionTriggered(Object[] arg0) {}
+	boolean shareBorder(BattleFieldPanel panel2) {}
 
-	boolean shareBorder(BattleFieldPanel arg0) {}
+	void enter(BattleEntity entity) {}
 
-	OwnedHitProperty affect(OwnedHitProperty arg0) {}
+	OwnedHitProperty affect(OwnedHitProperty property) {}
 
-	void enter(BattleEntity arg0) {}
+	DrawableImage getDrawable(Party party) {}
 
-	DrawableImage getDrawable(Party arg0) {}
+	DrawableImage getDrawable(Party party, DrawableImage neutral, DrawableImage enemy, DrawableImage friendly) {}
 
-	DrawableImage getDrawable(Party arg0, DrawableImage arg1, DrawableImage arg2, DrawableImage arg3) {}
-
-	void drawTile(Batch arg0, float arg1, float arg2, DrawableImage arg3) {}
+	void drawTile(Batch batch, float x, float y, DrawableImage drawable) {}
 
 	boolean isFlickering() {}
 
-	boolean test(BattleEntity arg0) {}
+	boolean test(BattleEntity entity) {}
 
-	void move(BattleEntity arg0) {}
+	void move(BattleEntity entity) {}
 
-	boolean canMoveToGoal(BattleEntity arg0) {}
+	boolean canMoveToGoal(BattleEntity entity) {}
 
 }

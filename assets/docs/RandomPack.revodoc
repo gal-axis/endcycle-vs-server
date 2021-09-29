@@ -12,13 +12,11 @@ final RandomPack {
 
 	int hashCode() {}
 
-	boolean add(VocEntry entry) {}
+	VocPackPosition add(VocEntry entry) {}
 
 	VocSet get(int i) {}
 
 	int count() {}
-
-	int indexOf(VocSet rolePack) {}
 
 	void clear() {}
 
@@ -36,14 +34,16 @@ final RandomPack {
 
 	int getSetAmount(boolean full) {}
 
-	void fix() {}
-
-	Color getColor(int pack) {}
-
 	String getName() {}
 
 	boolean contains(VocEntry entry) {}
 
 	boolean setName(String name) {}
+
+	VocPackGroup createEdit(VocMenu vocMenu) {}
+
+	VocPackGroup createDisplayer(Inventory inventory) {}
+
+	MenuElementGroup createMenu() {}
 
 }

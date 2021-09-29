@@ -29,11 +29,11 @@ final DrawableLoader(Object) {
 
 	Drawable createDrawable(ID id) {}
 
+	static boolean isMock() {}
+
 	static void enableMock() {}
 
 	List getAllData() {}
-
-	static boolean isMock() {}
 
 	static String getColorblindPath(String path) {}
 

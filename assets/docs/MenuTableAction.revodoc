@@ -1,12 +1,12 @@
 interface MenuTableAction {
 
-	void moveTableSelection(int selection) {}
+	boolean selectTableHeader() {}
 
 	void specialTableSelect(int selection, Object selected) {}
 
-	void updateTableSelection(int selection) {}
+	void moveTableSelection(int selection) {}
 
-	boolean selectTableHeader() {}
+	void updateTableSelection(int selection) {}
 
 	void clickedTable(int selection, Object selected, float x, float y) {}
 

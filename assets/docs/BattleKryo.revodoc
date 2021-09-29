@@ -17,31 +17,31 @@ BattleKryo : Comparator {
 
 	void reference(Object arg0) {}
 
-	int getNextRegistrationId() {}
-
-	boolean isRegistrationRequired() {}
+	void setRegistrationRequired(boolean arg0) {}
 
 	void setWarnUnregisteredClasses(boolean arg0) {}
 
-	void setRegistrationRequired(boolean arg0) {}
-
 	boolean getWarnUnregisteredClasses() {}
-
-	void setCopyReferences(boolean arg0) {}
 
 	void setOptimizedGenerics(boolean arg0) {}
 
+	boolean isRegistrationRequired() {}
+
+	int getNextRegistrationId() {}
+
+	void setCopyReferences(boolean arg0) {}
+
 	Object copyShallow(Object arg0) {}
 
-	boolean setReferences(boolean arg0) {}
+	void setMaxDepth(int arg0) {}
 
-	void setAutoReset(boolean arg0) {}
+	boolean setReferences(boolean arg0) {}
 
 	int getDepth() {}
 
 	boolean getReferences() {}
 
-	void setMaxDepth(int arg0) {}
+	void setAutoReset(boolean arg0) {}
 
 	Comparator reversed() {}
 
@@ -49,8 +49,8 @@ BattleKryo : Comparator {
 
 	String log(Object object) {}
 
-	void setBattle(Battle battle) {}
-
 	void registerJava() {}
+
+	void setBattle(Battle battle) {}
 
 }

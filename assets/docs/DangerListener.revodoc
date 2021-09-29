@@ -8,14 +8,14 @@ DangerListener(Object) : GameEventListener {
 
 	int hashCode() {}
 
-	void handle(GameEvent arg0) {}
+	void handle(GameEvent event) {}
 
-	void add(Danger arg0) {}
+	void add(Danger object) {}
 
-	void remove(Danger arg0) {}
+	void remove(Danger object) {}
 
-	void removeManager(DangerManager arg0) {}
+	void addManager(DangerManager manager) {}
 
-	void addManager(DangerManager arg0) {}
+	void removeManager(DangerManager manager) {}
 
 }

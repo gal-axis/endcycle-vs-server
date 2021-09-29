@@ -43,9 +43,13 @@ final Painter(Object) {
 
 	Painter scale(float scale) {}
 
-	Painter at(float x, float y) {}
+	Painter batch(CustomSpriteBatch batch) {}
+
+	Painter y(float y) {}
 
 	Painter center() {}
+
+	Painter at(float x, float y) {}
 
 	Painter color(Color color) {}
 
@@ -53,9 +57,23 @@ final Painter(Object) {
 
 	Painter height(float height) {}
 
-	Painter y(float y) {}
+	Painter tint(float rTint, float gTint, float bTint) {}
 
-	Painter batch(CustomSpriteBatch batch) {}
+	Painter tint(float tint) {}
+
+	Painter tint(float rTint, float gTint, float bTint, float aTint) {}
+
+	Painter paint(Object object) {}
+
+	Painter paint(Object object, ObjectPainter painter) {}
+
+	Painter yScale(float yScale) {}
+
+	Painter xScale(float xScale) {}
+
+	Painter vAlign(int vAlign) {}
+
+	Painter hAlign(int hAlign) {}
 
 	static Painter on(CustomSpriteBatch batch) {}
 
@@ -63,23 +81,9 @@ final Painter(Object) {
 
 	Painter align(int hAlign, int vAlign) {}
 
-	Painter paint(Object object) {}
+	Painter aTint(float a) {}
 
-	Painter paint(Object object, ObjectPainter painter) {}
-
-	Painter tint(float tint) {}
-
-	Painter tint(float rTint, float gTint, float bTint) {}
-
-	Painter tint(float rTint, float gTint, float bTint, float aTint) {}
-
-	Painter yScale(float yScale) {}
-
-	Painter xScale(float xScale) {}
-
-	Painter hAlign(int hAlign) {}
-
-	Painter vAlign(int vAlign) {}
+	Painter animState(double animState) {}
 
 	Painter clearArguments() {}
 
@@ -87,44 +91,40 @@ final Painter(Object) {
 
 	Painter moveX(float x) {}
 
-	Painter aTint(float a) {}
-
 	Painter font(Fonts font) {}
-
-	Painter animState(double animState) {}
-
-	void unmask() {}
-
-	Painter bTint(float b) {}
-
-	Painter paintRectangle(float r, float g, float b, float a) {}
-
-	Painter paintRectangle(Color color) {}
-
-	Painter paintRectangle(float width, float height, Color color) {}
-
-	Painter paintRectangle() {}
-
-	Painter paintRectangle(float width, float height) {}
-
-	Painter paintRectangle(float width, float height, float r, float g, float b, float a) {}
-
-	Painter modulateColor(float amount, float speed) {}
-
-	Painter mulTint(float tint) {}
 
 	Painter addColor(Color color) {}
 
+	Painter rTint(float r) {}
+
+	Painter gTint(float g) {}
+
+	Painter mulTint(float tint) {}
+
 	Painter mulColor(Color color) {}
+
+	Painter bTint(float b) {}
 
 	Painter invertTint() {}
 
-	Painter centerX() {}
-
-	Painter rTint(float r) {}
+	Painter modulateColor(float amount, float speed) {}
 
 	Painter centerY() {}
 
-	Painter gTint(float g) {}
+	Painter paintRectangle(Color color) {}
+
+	Painter paintRectangle(float r, float g, float b, float a) {}
+
+	Painter paintRectangle(float width, float height, Color color) {}
+
+	Painter paintRectangle(float width, float height) {}
+
+	Painter paintRectangle() {}
+
+	Painter paintRectangle(float width, float height, float r, float g, float b, float a) {}
+
+	void unmask() {}
+
+	Painter centerX() {}
 
 }

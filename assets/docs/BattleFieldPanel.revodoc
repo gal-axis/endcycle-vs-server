@@ -1,4 +1,4 @@
-BattleFieldPanel(Object) {
+BattleFieldPanel(Object) : SpeedSupplier {
 
 	final BoundedFloat revert;
 	final BattleField field;
@@ -22,11 +22,11 @@ BattleFieldPanel(Object) {
 	float animation;
 	Array entities;
 
-	new(BattleField arg0, int arg1, int arg2, FieldPanelData arg3) {}
+	new(BattleField field, int x, int y, FieldPanelData data) {}
 
-	new(BattleField arg0, int arg1, int arg2) {}
+	new(BattleField field, int x, int y) {}
 
-	new(BattleField arg0, int arg1, int arg2, Party arg3, PanelType arg4, boolean arg5) {}
+	new(BattleField field, int x, int y, Party party, PanelType tileType, boolean fixed) {}
 
 	boolean equals(Object arg0) {}
 
@@ -34,78 +34,88 @@ BattleFieldPanel(Object) {
 
 	int hashCode() {}
 
-	void actionTriggered(Runnable arg0) {}
+	double getSpeed(BattleEntity entity) {}
 
-	void actionTriggered(Object[] arg0) {}
+	void actionTriggered(Runnable action) {}
 
-	boolean isActionRollback(Object[] arg0) {}
+	void actionTriggered(Object[] action) {}
 
-	void update(float arg0) {}
+	boolean isActionRollback(Object[] action) {}
+
+	void update(float delta) {}
 
 	void init() {}
 
-	boolean isAccessible(BattleEntity arg0, boolean arg1) {}
+	boolean isAccessible(BattleEntity entity, boolean checkFree, boolean checkParty) {}
 
 	PanelType getType() {}
 
-	Vector2 getOffset(BattleEntity arg0) {}
+	Vector2 getOffset(BattleEntity entity) {}
 
-	void setType(PanelType arg0) {}
+	void setType(PanelType tile) {}
 
-	void draw(Batch arg0, float arg1, float arg2) {}
+	void draw(Batch batch, float x, float y) {}
 
-	void draw(Batch arg0, float arg1, float arg2, float arg3) {}
+	void draw(Batch batch, float x, float y, float shader) {}
 
-	void playSound(SoundInfo arg0) {}
+	void playSound(SoundInfo sound) {}
 
-	final void triggerAction(Object[] arg0) {}
+	OwnedHitProperty hit(OwnedHitProperty hitProperty) {}
 
-	void triggerEvent(Object arg0, Object arg1, Object[] arg2) {}
+	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
-	void changeData(FieldPanelData arg0) {}
+	final void triggerAction(Object[] parameters) {}
 
-	OwnedHitProperty hit(OwnedHitProperty arg0) {}
+	void changeData(FieldPanelData data) {}
 
-	boolean occupiedBy(Party arg0) {}
+	void changeType(PanelType type) {}
 
-	boolean free(BattleEntity arg0) {}
+	boolean setParty(Party party, BattleFieldPanel connected) {}
+
+	boolean setParty(Party party, BattleFieldPanel connected, boolean sound, boolean mock) {}
+
+	boolean setParty(Party party, BattleFieldPanel connected, boolean sound) {}
+
+	boolean changeParty(Party newParty, BattleFieldPanel connected) {}
 
 	boolean isBattleClient() {}
 
-	BattleFieldBorder getCameraBorder(BattleEntity arg0) {}
+	void occupy(BattleEntity entity) {}
 
-	void occupy(BattleEntity arg0) {}
+	boolean free(BattleEntity entity) {}
 
-	boolean setParty(Party arg0, BattleFieldPanel arg1) {}
+	BattleFieldBorder getCameraBorder(BattleEntity focused) {}
 
-	boolean setParty(Party arg0, BattleFieldPanel arg1, boolean arg2, boolean arg3) {}
+	boolean accessible(boolean free) {}
 
-	boolean setParty(Party arg0, BattleFieldPanel arg1, boolean arg2) {}
+	boolean occupied(boolean ignoreFloat) {}
 
-	void changeType(PanelType arg0) {}
-
-	boolean accessible(boolean arg0) {}
-
-	boolean occupied(boolean arg0) {}
-
-	void resetRevert() {}
+	boolean isOccupied(BattleEntity entity) {}
 
 	boolean isOccupied() {}
 
-	boolean isOccupied(BattleEntity arg0) {}
+	void resetRevert() {}
 
-	OwnedHitProperty affect(OwnedHitProperty arg0) {}
+	void calculateOffsets() {}
 
 	boolean isPartyChanged() {}
 
+	boolean canRevertParty(Party direction) {}
+
+	void revertPanel() {}
+
+	boolean occupiedBy(Party party) {}
+
+	OwnedHitProperty affect(OwnedHitProperty hitProperty) {}
+
 	void effectInit() {}
-
-	void effectRefresh() {}
-
-	void calculateOffsets() {}
 
 	boolean isTypeChanged() {}
 
 	void effectDispose() {}
+
+	void effectRefresh() {}
+
+	boolean isShared() {}
 
 }

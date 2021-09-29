@@ -17,11 +17,11 @@ final Voc(Moddable) : DataName {
 	AttackShell attackShell;
 	TextureRegion region;
 
-	new(ID arg0) {}
-
 	new() {}
 
-	final boolean equals(Object arg0) {}
+	new(ID id) {}
+
+	final boolean equals(Object obj) {}
 
 	String toString() {}
 
@@ -35,27 +35,27 @@ final Voc(Moddable) : DataName {
 
 	int getSlot() {}
 
-	int getSlot(VocStyle arg0) {}
+	int getSlot(VocStyle style) {}
 
 	String getDescription() {}
 
 	TextureRegion getImage() {}
 
+	int getLevel(VocStyle style) {}
+
 	int getLevel() {}
 
-	int getLevel(VocStyle arg0) {}
-
-	VocElement getElement(VocStyle arg0) {}
+	VocElement getElement(VocStyle style) {}
 
 	VocElement getElement() {}
 
 	int getPower() {}
 
-	int getPower(VocStyle arg0) {}
+	int getPower(VocStyle style) {}
+
+	int getCrushPower(VocStyle style) {}
 
 	int getCrushPower() {}
-
-	int getCrushPower(VocStyle arg0) {}
 
 	int getDefaultPrice() {}
 

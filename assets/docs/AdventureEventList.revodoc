@@ -1,6 +1,6 @@
-AdventureEventList(Object) {
+AdventureEventList(Object) : Named {
 
-	LocalizedMessage name;
+	String name;
 	DrawableId icon;
 	ID song;
 	List events;
@@ -15,5 +15,7 @@ AdventureEventList(Object) {
 	String toString() {}
 
 	int hashCode() {}
+
+	String getName() {}
 
 }

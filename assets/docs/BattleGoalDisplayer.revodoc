@@ -37,17 +37,17 @@ BattleGoalDisplayer(BattleTimeDisplayer) : GameEventListener {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void show(GameScreen screen) {}
-
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
+	void show(GameScreen screen) {}
+
 	void hide(GameScreen screen) {}
+
+	Origin getOrigin() {}
 
 	byte getLayer() {}
 
 	float getComparisonKey() {}
-
-	Origin getOrigin() {}
 
 	boolean isTimed() {}
 
@@ -61,10 +61,10 @@ BattleGoalDisplayer(BattleTimeDisplayer) : GameEventListener {
 
 	void updateGoals() {}
 
+	String getGoalString() {}
+
 	boolean newline(StringBuilder goal) {}
 
 	void updateStatic() {}
-
-	String getGoalString() {}
 
 }

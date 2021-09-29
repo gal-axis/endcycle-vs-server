@@ -107,7 +107,29 @@ enum BattleEntityActions {
  	Boss_Bella,
  	Boss_Bella_Shield,
  	Godius_Body_Berserk,
- 	Anthem_Speaker;
+ 	Anthem_Speaker,
+ 	Fossile_Fule_Adventure_No1,
+ 	Fossile_Fule_Boss_Minion,
+ 	Boss_Fossile_Fule,
+ 	Fossile_Fule_Adventure_No2,
+ 	Fossile_Fule_Adventure_No2b,
+ 	Fossile_Fule_Adventure_No3,
+ 	Farmadile_Adventure_No1,
+ 	Farmadile_Adventure_No1b,
+ 	Farmadile_Adventure_No2,
+ 	Farmadile_Adventure_No3,
+ 	Farmadile_Boss,
+ 	Farmadile_Boss_Phase_2,
+ 	Alexsander_Adventure_No1,
+ 	Alexsander_Adventure_No2,
+ 	Alexsander_Adventure_No3,
+ 	Alexsander_Adventure_No3b,
+ 	Boss_Greed,
+ 	Mini_Boss_Greed,
+ 	Farmadile_Adventure_No4,
+ 	RushSwordCress,
+ 	Crimson_Force_2_Spark,
+ 	CCress1;
 
 	final boolean equals(Object arg0) {}
 
@@ -123,7 +145,7 @@ enum BattleEntityActions {
 
 	static BattleEntityActions[] values() {}
 
-	static BattleEntityActions valueOf(String arg0) {}
+	static BattleEntityActions valueOf(String name) {}
 
 	ID getId() {}
 

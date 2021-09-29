@@ -25,7 +25,7 @@ CharacterDisplayer(Object) {
 
 	void update(float delta) {}
 
-	void drawStats(CustomSpriteBatch batch, float x, float y, float dst) {}
+	boolean setCharacter(ID character) {}
 
 	void drawEffects(CustomSpriteBatch batch, float x, float y) {}
 
@@ -33,6 +33,6 @@ CharacterDisplayer(Object) {
 
 	void updateCustom() {}
 
-	boolean setCharacter(ID character) {}
+	void drawStats(CustomSpriteBatch batch, float x, float y, float dst) {}
 
 }

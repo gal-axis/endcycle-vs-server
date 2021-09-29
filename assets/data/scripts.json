@@ -60,7 +60,6 @@
 							"branches": [
 								{
 									"item": { "id": 54 },
-									"amount": 1,
 									"script": {
 										"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
 										"script": { "id": 99 }
@@ -3473,7 +3472,7 @@
 					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 					"scripts": [
 						{
-							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "companion", "relativeEntity": "player", "relative": true, "moveType": "INSTANT_TILE", "x": 1 }
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "companion", "relative": true, "relativeEntity": "player", "moveType": "INSTANT_TILE", "x": 1 }
 						},
 						{
 							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnAllToEntityScript", "name": "player" }
@@ -5310,7 +5309,7 @@
 	"name": "A-Crushlord Battle Setup",
 	"scripts": [
 		{
-			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "crushlord", "relativeEntity": "", "relative": true, "moveType": "ANIMATED_TILE", "x": 1, "y": 1 }
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "crushlord", "relative": true, "relativeEntity": "", "moveType": "ANIMATED_TILE", "x": 1, "y": 1 }
 		},
 		{
 			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.SetEntityActionScript", "name": "crushlord" }
@@ -6727,6 +6726,44 @@
 		{
 			"delay": 2,
 			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.EndBattleScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 194 },
+	"name": "punk assembly",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityScript",
+				"shell": {
+					"y": 1,
+					"party": "FRIENDLY",
+					"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "" },
+					"name": "cress",
+					"id": { "id": 21 },
+					"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Cress" },
+					"configuration": {}
+				}
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityScript",
+				"shell": {
+					"x": 2,
+					"y": 1,
+					"turned": true,
+					"name": "flink",
+					"id": { "id": 23 },
+					"talkingName": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "" },
+					"cache": {
+						"customizations": [ 0 ]
+					},
+					"configuration": {}
+				}
+			}
 		}
 	]
 }

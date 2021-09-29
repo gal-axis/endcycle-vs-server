@@ -1,20 +1,20 @@
-EntityForm(Moddable) : DataName {
+EntityForm {
 
 	ID id;
 	String dataName;
-	LocalizedMessage talkingName;
 	ID entity;
+	LocalizedMessage talkingName;
 	CustomCache cache;
 	BattleEntityType type;
 	BattleEntityConfiguration configuration;
 	ID action;
+	VocPack pack;
 	int levelChange;
 	boolean ultra;
-	VocPack pack;
 
 	new() {}
 
-	final boolean equals(Object arg0) {}
+	final boolean equals(Object obj) {}
 
 	String toString() {}
 
@@ -24,10 +24,10 @@ EntityForm(Moddable) : DataName {
 
 	String getDataName() {}
 
-	List getPatchworkData() {}
-
 	String getName() {}
 
-	BattleEntity getEntity(int arg0, int arg1, int arg2) {}
+	List getPatchworkData() {}
+
+	BattleEntity getEntity(int level, int x, int y) {}
 
 }

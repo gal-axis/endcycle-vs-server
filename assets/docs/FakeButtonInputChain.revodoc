@@ -14,32 +14,32 @@ final FakeButtonInputChain(Object) {
 
 	FakeButtonInputChain right() {}
 
-	FakeButtonInputChain action(Runnable runnable, float pass) {}
+	FakeButtonInputChain at(float time) {}
 
 	BattleEntity getEntity() {}
 
-	FakeButtonInputChain at(float time) {}
+	FakeButtonInputChain action(Runnable runnable, float pass) {}
 
 	FakeButtonInputChain turn() {}
 
-	FakeButtonInputChain down() {}
-
 	FakeButtonInputChain role(int role) {}
+
+	FakeButtonInputChain down() {}
 
 	FakeButtonInputChain up() {}
 
+	FakeButtonInputChain press(KeyCode button) {}
+
 	FakeButtonInputChain attack4() {}
 
-	FakeButtonInputChain attack3() {}
+	FakeButtonInputChain attack1() {}
 
 	FakeButtonInputChain tap(KeyCode button) {}
 
-	FakeButtonInputChain attack2() {}
-
 	FakeButtonInputChain pass(float time) {}
 
-	FakeButtonInputChain press(KeyCode button) {}
+	FakeButtonInputChain attack3() {}
 
-	FakeButtonInputChain attack1() {}
+	FakeButtonInputChain attack2() {}
 
 }

@@ -4,7 +4,7 @@ ScreenInputHandler(InputHandler) {
 	boolean lastTouch;
 	Array listeners;
 
-	new(GameScreen arg0) {}
+	new(GameScreen screen) {}
 
 	boolean equals(Object arg0) {}
 
@@ -12,42 +12,42 @@ ScreenInputHandler(InputHandler) {
 
 	int hashCode() {}
 
-	void controllerDisconnected(Controller arg0) {}
+	void controllerDisconnected(Controller controller) {}
 
-	void controllerConnected(Controller arg0) {}
-
-	boolean keyDown(int arg0) {}
-
-	boolean triggerTouch(TouchEvent arg0) {}
-
-	boolean addButtonTips(ButtonTipList arg0) {}
+	void controllerConnected(Controller controller) {}
 
 	int getInputPriority() {}
 
-	boolean keyTyped(char arg0) {}
+	boolean keyTyped(char character) {}
 
-	boolean keyUp(int arg0) {}
+	boolean triggerTouch(TouchEvent event) {}
 
-	boolean triggerButton(ButtonEvent arg0) {}
+	boolean triggerButton(ButtonEvent event) {}
 
-	boolean triggerType(int arg0) {}
+	boolean triggerType(int character) {}
 
-	void add(InputListener arg0) {}
+	boolean keyDown(int keycode) {}
 
-	boolean remove(InputListener arg0) {}
+	boolean addButtonTips(ButtonTipList tips) {}
 
-	InputListener type(int arg0) {}
+	boolean keyUp(int keycode) {}
+
+	void add(InputListener listener) {}
+
+	boolean remove(InputListener listener) {}
+
+	InputListener type(int character) {}
 
 	void clear() {}
 
-	InputListener touch(TouchEvent arg0) {}
+	InputListener button(ButtonEvent event) {}
 
-	InputListener button(ButtonEvent arg0) {}
+	InputListener touch(TouchEvent event) {}
 
 	boolean isFree() {}
 
-	InputListener up(int arg0) {}
+	InputListener down(int keycode) {}
 
-	InputListener down(int arg0) {}
+	InputListener up(int keycode) {}
 
 }

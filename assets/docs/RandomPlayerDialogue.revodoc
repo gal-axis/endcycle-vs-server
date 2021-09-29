@@ -1,4 +1,4 @@
-RandomPlayerDialogue(Object) : Serializable {
+RandomPlayerDialogue(Object) : Serializable, Named {
 
 	ID dialogue;
 	ID entity;
@@ -12,8 +12,10 @@ RandomPlayerDialogue(Object) : Serializable {
 
 	int hashCode() {}
 
-	void write(Json arg0) {}
+	String getName() {}
 
-	void read(Json arg0, JsonValue arg1) {}
+	void write(Json json) {}
+
+	void read(Json json, JsonValue jsonData) {}
 
 }

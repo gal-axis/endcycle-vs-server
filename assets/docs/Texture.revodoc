@@ -22,55 +22,55 @@ Texture {
 
 	void dispose() {}
 
-	void bind() {}
-
 	void bind(int arg0) {}
 
-	int getWidth() {}
+	void bind() {}
 
 	int getHeight() {}
 
-	void setFilter(TextureFilter arg0, TextureFilter arg1) {}
+	int getWidth() {}
 
 	int getDepth() {}
 
-	void setWrap(TextureWrap arg0, TextureWrap arg1) {}
-
-	TextureWrap getUWrap() {}
-
-	void unsafeSetWrap(TextureWrap arg0, TextureWrap arg1) {}
-
-	void unsafeSetWrap(TextureWrap arg0, TextureWrap arg1, boolean arg2) {}
-
-	void unsafeSetFilter(TextureFilter arg0, TextureFilter arg1, boolean arg2) {}
-
-	void unsafeSetFilter(TextureFilter arg0, TextureFilter arg1) {}
-
-	TextureWrap getVWrap() {}
-
-	boolean isManaged() {}
-
-	float unsafeSetAnisotropicFilter(float arg0, boolean arg1) {}
-
-	float unsafeSetAnisotropicFilter(float arg0) {}
-
-	float getAnisotropicFilter() {}
-
-	int getTextureObjectHandle() {}
-
-	float setAnisotropicFilter(float arg0) {}
+	void setFilter(TextureFilter arg0, TextureFilter arg1) {}
 
 	TextureFilter getMinFilter() {}
 
 	TextureFilter getMagFilter() {}
 
+	void setWrap(TextureWrap arg0, TextureWrap arg1) {}
+
+	void unsafeSetFilter(TextureFilter arg0, TextureFilter arg1) {}
+
+	void unsafeSetFilter(TextureFilter arg0, TextureFilter arg1, boolean arg2) {}
+
+	void unsafeSetWrap(TextureWrap arg0, TextureWrap arg1, boolean arg2) {}
+
+	void unsafeSetWrap(TextureWrap arg0, TextureWrap arg1) {}
+
+	boolean isManaged() {}
+
+	TextureWrap getUWrap() {}
+
+	TextureWrap getVWrap() {}
+
+	float unsafeSetAnisotropicFilter(float arg0, boolean arg1) {}
+
+	float unsafeSetAnisotropicFilter(float arg0) {}
+
+	int getTextureObjectHandle() {}
+
+	float setAnisotropicFilter(float arg0) {}
+
+	float getAnisotropicFilter() {}
+
 	void load(TextureData arg0) {}
 
 	void draw(Pixmap arg0, int arg1, int arg2) {}
 
-	TextureData getTextureData() {}
-
 	static String getManagedStatus() {}
+
+	TextureData getTextureData() {}
 
 	static int getNumManagedTextures() {}
 

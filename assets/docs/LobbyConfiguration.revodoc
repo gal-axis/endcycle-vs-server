@@ -12,20 +12,20 @@ LobbyConfiguration(Object) {
 
 	void setName(String name) {}
 
-	GameMode getGameMode() {}
+	void setGameMode(GameMode modeType) {}
 
 	boolean isSpectators() {}
 
-	String getPassword() {}
-
-	void setGameMode(GameMode modeType) {}
-
-	void setSpectators(boolean spectators) {}
+	void setPassword(String password) {}
 
 	void setModeConfig(GameModeConfig modeConfig) {}
 
+	void setSpectators(boolean spectators) {}
+
 	GameModeConfig getModeConfig() {}
 
-	void setPassword(String password) {}
+	GameMode getGameMode() {}
+
+	String getPassword() {}
 
 }

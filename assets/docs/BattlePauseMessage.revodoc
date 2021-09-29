@@ -38,17 +38,21 @@ BattlePauseMessage(MenuMessage) {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void hide(GameScreen screen) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void show(GameScreen screen) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	float getComparisonKey() {}
+	void hide(GameScreen screen) {}
 
 	final Origin getOrigin() {}
 
 	byte getLayer() {}
+
+	float getComparisonKey() {}
+
+	final void removeObject() {}
+
+	final void addObject(ScreenObject object) {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
@@ -56,19 +60,15 @@ BattlePauseMessage(MenuMessage) {
 
 	SoundContainer playSound(SoundInfo sound) {}
 
-	final void addObject(ScreenObject object) {}
-
-	final void removeObject() {}
-
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
+
+	final void addDisposeListener(Runnable runnable) {}
 
 	final void addInitializeListener(Runnable runnable) {}
 
-	final void removeDisposeListener(Runnable runnable) {}
-
 	final void removeInitializeListener(Runnable runnable) {}
 
-	final void addDisposeListener(Runnable runnable) {}
+	final void removeDisposeListener(Runnable runnable) {}
 
 	void scheduleMessage(GameScreenMessage message) {}
 
@@ -78,27 +78,29 @@ BattlePauseMessage(MenuMessage) {
 
 	boolean isStaying() {}
 
+	void setStay() {}
+
 	float getPosition() {}
 
 	void controllerDisconnected(Controller controller) {}
 
 	void controllerConnected(Controller controller) {}
 
-	boolean addButtonTips(ButtonTipList tips) {}
+	int getInputPriority() {}
 
-	boolean triggerButton(ButtonEvent event) {}
+	boolean keyTyped(char character) {}
 
 	boolean triggerTouch(TouchEvent event) {}
 
-	boolean triggerType(int character) {}
+	boolean triggerButton(ButtonEvent event) {}
 
-	int getInputPriority() {}
+	boolean triggerType(int character) {}
 
 	boolean keyDown(int keycode) {}
 
-	boolean keyUp(int keycode) {}
+	boolean addButtonTips(ButtonTipList tips) {}
 
-	boolean keyTyped(char character) {}
+	boolean keyUp(int keycode) {}
 
 	void setDefaultElement(MenuElement defaultElement) {}
 
@@ -108,15 +110,15 @@ BattlePauseMessage(MenuMessage) {
 
 	void drawScreenTint(CustomSpriteBatch batch, float alpha) {}
 
-	void setElement(MenuElement menuElement) {}
+	float calcOffset() {}
 
-	MenuElement getMenuElement() {}
+	void setElement(MenuElement menuElement) {}
 
 	void drawMenu(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	boolean isBackKey(ButtonEvent trigger) {}
 
-	float calcOffset() {}
+	MenuElement getMenuElement() {}
 
 	void layout() {}
 

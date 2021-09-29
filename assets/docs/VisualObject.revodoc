@@ -26,27 +26,27 @@ abstract VisualObject(GameScreenObject) : Named {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void hide(GameScreen screen) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void show(GameScreen screen) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	float getComparisonKey() {}
+	void hide(GameScreen screen) {}
 
 	final Origin getOrigin() {}
 
 	byte getLayer() {}
+
+	float getComparisonKey() {}
+
+	final void removeObject() {}
+
+	final void addObject(ScreenObject object) {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(SoundInfo sound) {}
-
-	final void addObject(ScreenObject object) {}
-
-	final void removeObject() {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 

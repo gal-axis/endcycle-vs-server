@@ -1,4 +1,4 @@
-SimpleDrawableData(Object) {
+SimpleDrawableData(Object) : Named {
 
 	ID drawable;
 	float xOffset;
@@ -11,5 +11,7 @@ SimpleDrawableData(Object) {
 	String toString() {}
 
 	int hashCode() {}
+
+	String getName() {}
 
 }

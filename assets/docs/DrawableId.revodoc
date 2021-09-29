@@ -1,17 +1,17 @@
-DrawableId(Object) : Paintable {
+DrawableId(Object) : Named, Paintable {
 
 	ID drawable;
+	Color color;
 	float scaleX;
 	float scaleY;
-	Color color;
+
+	new(ID drawable, Color color, float scaleX, float scaleY) {}
 
 	new() {}
 
-	new(ID drawable, float scaleX, float scaleY, Color color) {}
+	new(Drawable drawable) {}
 
 	new(Drawables drawable) {}
-
-	new(Drawable drawable) {}
 
 	boolean equals(Object o) {}
 
@@ -28,6 +28,8 @@ DrawableId(Object) : Paintable {
 	double get(double object, double orElse) {}
 
 	void paint(Painter parameters) {}
+
+	String getName() {}
 
 	Drawable create() {}
 

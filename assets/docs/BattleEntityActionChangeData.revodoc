@@ -1,5 +1,6 @@
-final BattleEntityActionChangeData(Object) {
+final BattleEntityActionChangeData(Object) : Named {
 
+	ID action;
 	float maxHealth;
 	float minHealth;
 	float time;
@@ -11,7 +12,6 @@ final BattleEntityActionChangeData(Object) {
 	boolean onHurt;
 	VocElement onHit;
 	VocPosition targetPosition;
-	ID action;
 
 	new() {}
 
@@ -20,5 +20,7 @@ final BattleEntityActionChangeData(Object) {
 	String toString() {}
 
 	int hashCode() {}
+
+	String getName() {}
 
 }

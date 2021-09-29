@@ -1,4 +1,4 @@
-MessageChoice(Object) {
+MessageChoice(Object) : Named {
 
 	LocalizedMessage title;
 	LocalizedMessage description;
@@ -11,5 +11,7 @@ MessageChoice(Object) {
 	String toString() {}
 
 	int hashCode() {}
+
+	String getName() {}
 
 }

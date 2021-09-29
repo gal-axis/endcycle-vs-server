@@ -13,7 +13,7 @@ MobileLandscapeController(MobileController) {
 	float height;
 	final BattlePlayer player;
 
-	new(DefaultBattlePlayer arg0, VocDisplay[] arg1) {}
+	new(DefaultBattlePlayer player, VocDisplay[] displays) {}
 
 	boolean equals(Object arg0) {}
 
@@ -21,42 +21,42 @@ MobileLandscapeController(MobileController) {
 
 	int hashCode() {}
 
-	final int compareTo(HUDButton arg0) {}
+	final int compareTo(HUDButton o) {}
 
-	void update(float arg0) {}
+	void update(float delta) {}
 
 	boolean isHidden() {}
 
-	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
-
 	float getX() {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	float getY() {}
 
-	void event(GameEvent arg0) {}
+	void event(GameEvent event) {}
 
-	void button(ButtonEvent arg0) {}
+	void button(ButtonEvent trigger) {}
 
-	boolean touch(TouchEvent arg0) {}
-
-	float calcX() {}
-
-	float calcY() {}
+	boolean touch(TouchEvent trigger) {}
 
 	int getOrder() {}
 
-	boolean increaseOffset() {}
+	float calcY() {}
 
-	void finishMoving() {}
-
-	float getMove() {}
+	float calcX() {}
 
 	boolean finishedMoving() {}
 
-	boolean isTouching(float arg0, float arg1) {}
+	void finishMoving() {}
 
-	void addButton(MobileButton arg0) {}
+	boolean increaseOffset() {}
 
-	boolean clickPanel(TouchEvent arg0) {}
+	float getMove() {}
+
+	boolean isTouching(float x, float y) {}
+
+	void addButton(MobileButton button) {}
+
+	boolean clickPanel(TouchEvent trigger) {}
 
 }

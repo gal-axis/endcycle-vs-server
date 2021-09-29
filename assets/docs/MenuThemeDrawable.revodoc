@@ -14,28 +14,32 @@ final MenuThemeDrawable(Object) {
 
 	int hashCode() {}
 
-	void set(DrawableImage drawable) {}
-
 	void set(MenuThemeDrawableData data) {}
 
+	void set(DrawableImage drawable) {}
+
 	void draw(Batch batch, float x, float y, float width, float height) {}
+
+	void startMasking(CustomSpriteBatch batch, float x, float y, float width, float height) {}
+
+	void stopMasking(CustomSpriteBatch batch, float x, float y, float width, float height) {}
+
+	float getCenterX(float width) {}
+
+	float getCenterY(float width) {}
 
 	void drawNinePatch(Batch batch, float x, float y, float width, float height, Color c, float scale) {}
 
 	void drawNinePatch(Batch batch, float x, float y, float width, float height) {}
 
-	float getTop() {}
+	void drawOverlay(Batch batch, float x, float y, float width, float height) {}
 
 	float getLeft() {}
 
 	float getBottom() {}
 
-	float getCenterY(float width) {}
+	float getTop() {}
 
 	float getRight() {}
-
-	float getCenterX(float width) {}
-
-	void drawOverlay(Batch batch, float x, float y, float width, float height) {}
 
 }

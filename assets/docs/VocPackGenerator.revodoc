@@ -10,14 +10,14 @@ final VocPackGenerator(Object) {
 
 	static void generate(int level, Random random, VocPack pack) {}
 
-	static boolean styleFits(VocEntry entry, VocStyle style) {}
-
-	static void removeNonBasic(int level, Array vocs, Random random) {}
-
 	static Array getStyles(int level, Random random) {}
 
 	static int rollStyle(Array styles, VocEntry entry, int level, Random random) {}
 
+	static void removeNonBasic(int level, Array vocs, Random random) {}
+
 	static int getStyleAmount(int level, Random random) {}
+
+	static boolean styleFits(VocEntry entry, VocStyle style) {}
 
 }

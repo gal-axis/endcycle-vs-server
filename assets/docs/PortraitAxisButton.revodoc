@@ -1,0 +1,51 @@
+PortraitAxisButton(Object) : MobileButton, DragListener, InputListener {
+
+	new(BattlePlayer player) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void controllerDisconnected(Controller controller) {}
+
+	void controllerConnected(Controller controller) {}
+
+	int getInputPriority() {}
+
+	boolean keyTyped(char character) {}
+
+	boolean triggerTouch(TouchEvent event) {}
+
+	boolean triggerButton(ButtonEvent event) {}
+
+	boolean triggerType(int character) {}
+
+	boolean keyDown(int keycode) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean keyUp(int keycode) {}
+
+	void startDrag(float x, float y) {}
+
+	void drag(float deltaX, float deltaY) {}
+
+	void stopDrag(float x, float y, float deltaX, float deltaY, boolean clickScrolled) {}
+
+	void update(float delta) {}
+
+	boolean isHidden() {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void button(ButtonEvent trigger) {}
+
+	boolean touch(TouchEvent trigger) {}
+
+	boolean drawPriority() {}
+
+	void setCurrent(KeyCode[] codes) {}
+
+}

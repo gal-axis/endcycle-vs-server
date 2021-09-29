@@ -37,23 +37,23 @@ HitScanObject(Object) : ScreenObject, Danger, Turnable, AttackParticleObject {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void hide(GameScreen screen) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void show(GameScreen screen) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	float getComparisonKey() {}
+	void hide(GameScreen screen) {}
 
 	Origin getOrigin() {}
 
 	byte getLayer() {}
 
-	float getWidth() {}
+	float getComparisonKey() {}
+
+	void addObject(ScreenObject object) {}
 
 	float getHeight() {}
 
-	void addObject(ScreenObject object) {}
+	float getWidth() {}
 
 	float getCenterX() {}
 
@@ -69,9 +69,9 @@ HitScanObject(Object) : ScreenObject, Danger, Turnable, AttackParticleObject {
 
 	void stop() {}
 
-	float getY() {}
-
 	float getX() {}
+
+	float getY() {}
 
 	void setDrawables(Drawable drawableStart, Drawable drawable, Drawable drawableEnd) {}
 

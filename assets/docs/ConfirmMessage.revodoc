@@ -42,17 +42,21 @@ ConfirmMessage(ContentMessage) {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void hide(GameScreen screen) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void show(GameScreen screen) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	float getComparisonKey() {}
+	void hide(GameScreen screen) {}
 
 	final Origin getOrigin() {}
 
 	byte getLayer() {}
+
+	float getComparisonKey() {}
+
+	final void removeObject() {}
+
+	final void addObject(ScreenObject object) {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
@@ -60,19 +64,15 @@ ConfirmMessage(ContentMessage) {
 
 	SoundContainer playSound(SoundInfo sound) {}
 
-	final void addObject(ScreenObject object) {}
-
-	final void removeObject() {}
-
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
+
+	final void addDisposeListener(Runnable runnable) {}
 
 	final void addInitializeListener(Runnable runnable) {}
 
-	final void removeDisposeListener(Runnable runnable) {}
-
 	final void removeInitializeListener(Runnable runnable) {}
 
-	final void addDisposeListener(Runnable runnable) {}
+	final void removeDisposeListener(Runnable runnable) {}
 
 	void scheduleMessage(GameScreenMessage message) {}
 
@@ -80,40 +80,40 @@ ConfirmMessage(ContentMessage) {
 
 	void controllerConnected(Controller controller) {}
 
-	boolean addButtonTips(ButtonTipList tips) {}
-
-	boolean triggerButton(ButtonEvent event) {}
-
-	boolean triggerTouch(TouchEvent event) {}
-
-	boolean triggerType(int character) {}
-
 	int getInputPriority() {}
-
-	boolean keyDown(int keycode) {}
-
-	boolean keyUp(int keycode) {}
 
 	boolean keyTyped(char character) {}
 
-	boolean active() {}
+	boolean triggerTouch(TouchEvent event) {}
+
+	boolean triggerButton(ButtonEvent event) {}
+
+	boolean triggerType(int character) {}
+
+	boolean keyDown(int keycode) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean keyUp(int keycode) {}
 
 	void select() {}
 
 	void select(int selection) {}
 
-	float calcX() {}
+	boolean active() {}
 
 	float calcY() {}
 
-	void setChoices(String[] choices) {}
-
-	void drawContent(CustomSpriteBatch batch, float x, float y, float width, float height) {}
-
-	int getChoiceAmount() {}
+	float calcX() {}
 
 	void setActions(MessageAction[] actions) {}
 
 	void moveSelection(int offset) {}
+
+	void drawContent(CustomSpriteBatch batch, float x, float y, float width, float height) {}
+
+	void setChoices(String[] choices) {}
+
+	int getChoiceAmount() {}
 
 }

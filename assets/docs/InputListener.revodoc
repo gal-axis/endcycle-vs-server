@@ -1,22 +1,22 @@
 interface InputListener {
 
-	void controllerConnected(Controller controller) {}
-
 	void controllerDisconnected(Controller controller) {}
 
-	boolean triggerType(int character) {}
+	void controllerConnected(Controller controller) {}
 
 	int getInputPriority() {}
+
+	boolean keyTyped(char character) {}
 
 	boolean triggerTouch(TouchEvent event) {}
 
 	boolean triggerButton(ButtonEvent event) {}
 
-	boolean addButtonTips(ButtonTipList tips) {}
+	boolean triggerType(int character) {}
 
 	boolean keyDown(int keycode) {}
 
-	boolean keyTyped(char character) {}
+	boolean addButtonTips(ButtonTipList tips) {}
 
 	boolean keyUp(int keycode) {}
 

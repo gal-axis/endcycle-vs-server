@@ -2,10 +2,11 @@ ShotSticky(Object) {
 
 	DrawableId drawable;
 	float time;
+	boolean damage;
 
 	new() {}
 
-	new(DrawableId drawable, float time) {}
+	new(DrawableId drawable, float time, boolean damage) {}
 
 	boolean equals(Object arg0) {}
 

@@ -11418,5 +11418,145 @@
 			}
 		}
 	]
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 674 },
+	"lines": [
+		{
+			"entity": "cress",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "... how many Punks do we have left?" },
+			"options": { "charTimer": 20 }
+		},
+		{
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 675 },
+	"name": "Crimson Force 2",
+	"lines": [
+		{
+			"entity": "",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Immediately after the desert incident..." }
+		},
+		{
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "This little maneuver cost us way too many Punks... how many are left?" }
+		},
+		{
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "20" }
+		},
+		{
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Darn" }
+		},
+		{
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "21!" }
+		}
+	],
+	"start": {
+		"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityFormScript",
+		"shell": {
+			"name": "Spark",
+			"form": { "id": 84 }
+		},
+		"animation": true
+	}
+},
+null,
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 677 },
+	"name": "Crimson Force 3b",
+	"lines": [
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Well if this Crimson Force thing doesn't work out I might just join your hunting clan instead haha" }
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "...it's not really MY tribe anymore." }
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "But you wear their uniform?" }
+		},
+		{
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Well I hope that I'll earn my name back somehow" }
+		},
+		{
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Oh? What's your name?" },
+			"options": { "emotup": "WHAT" }
+		},
+		{
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Rozu" }
+		},
+		{
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "...but we call you that already?" },
+			"options": { "emotup": "WHY" }
+		},
+		{
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "But back at home they don't." }
+		},
+		{
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "If it's okay to ask... why did they kick you out?" }
+		},
+		{
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "..." }
+		},
+		{
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "..." }
+		},
+		{
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "They caught me with my neighbour" }
+		},
+		{
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Yeah?" }
+		},
+		{
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "...who is a dude" }
+		},
+		{
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Ok?" }
+		},
+		{
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "They caught us kissing" }
+		},
+		{
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "I got that cool story, but I asked why they kicked you out." }
+		},
+		{
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "I... I just told you. I'm gay." }
+		},
+		{
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "?" }
+		},
+		{
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Please don't tell Cress and the others...." }
+		},
+		{
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "lol dude they already know, everyone does" }
+		},
+		{
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "???" }
+		},
+		{
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Yeah so Jeff from accounting asked if you were single and I said \"ye\" and he said \"that's great\" and I told him to back off since he isn't your type, I know you prefer smoother dudes and he got upset so I..." }
+		},
+		{
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "WHAT" }
+		},
+		{
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "And then I said \"Try a shave\" and boy he really didn't like that and I said \"OK then don't even bother\" and then Cress came along and" },
+			"options": { "charTimer": 80 }
+		},
+		{
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "WHAT" }
+		},
+		{
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "... and Cress told him that he should definitely shave not just for your sake and then Tim came along and he thought that HE might have a shot but I laughed and sauf" }
+		}
+	]
 }
 ]

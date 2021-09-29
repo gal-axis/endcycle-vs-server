@@ -45,15 +45,15 @@ HpChangerAilment(Ailment) {
 
 	void end() {}
 
-	void dispose() {}
-
 	boolean draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scale) {}
+
+	void dispose() {}
 
 	final void triggerAction(Object[] parameters) {}
 
 	boolean over() {}
 
-	boolean canTarget() {}
+	float getIntensity() {}
 
 	void setIntensity(float intensity) {}
 
@@ -61,6 +61,6 @@ HpChangerAilment(Ailment) {
 
 	boolean isDisplayed() {}
 
-	float getIntensity() {}
+	boolean canTarget() {}
 
 }

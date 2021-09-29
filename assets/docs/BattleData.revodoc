@@ -1,4 +1,4 @@
-final BattleData(Moddable) : DataName, Named {
+final BattleData {
 
 	ID id;
 	String dataName;
@@ -18,9 +18,9 @@ final BattleData(Moddable) : DataName, Named {
 
 	new() {}
 
-	new(BattleData arg0, boolean arg1) {}
+	new(BattleData original, boolean copyEntities) {}
 
-	final boolean equals(Object arg0) {}
+	final boolean equals(Object obj) {}
 
 	String toString() {}
 
@@ -28,18 +28,16 @@ final BattleData(Moddable) : DataName, Named {
 
 	final ID getId() {}
 
-	String getName() {}
-
 	String getDataName() {}
 
+	String getName() {}
+
+	void addEntityShell(EntityShell entity) {}
+
+	boolean hasMode(GameMode mode) {}
+
+	boolean hasMode(String mode) {}
+
 	boolean hasPlayer() {}
-
-	void addEntityShell(EntityShell arg0) {}
-
-	String getEnumName() {}
-
-	boolean hasMode(GameMode arg0) {}
-
-	boolean hasMode(String arg0) {}
 
 }

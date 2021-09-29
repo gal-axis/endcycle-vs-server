@@ -23,11 +23,11 @@ final GameEventHandler(Object) : GameEventListener {
 
 	boolean contains(GameEventListener listener) {}
 
-	static void clearStaticListeners() {}
-
 	static void addStaticListener(GameEventListener listener) {}
 
 	static void removeStaticListener(GameEventListener listener) {}
+
+	static void clearStaticListeners() {}
 
 	static void triggerStatic(Object type, Object trigger, Object[] parameters) {}
 

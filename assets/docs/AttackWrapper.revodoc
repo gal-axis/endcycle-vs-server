@@ -1,4 +1,4 @@
-AttackWrapper(Object) : Serializable {
+AttackWrapper(Object) : Named, Serializable {
 
 	int power;
 	int crushPower;
@@ -12,9 +12,9 @@ AttackWrapper(Object) : Serializable {
 
 	new() {}
 
-	new(int arg0, int arg1, VocElement arg2, boolean arg3, Array arg4, TargetFilter arg5, PatchworkStateId arg6, PatchworkStateId arg7, Attack arg8) {}
+	new(int power, int crushPower, VocElement element, boolean overrideAilments, Array ailments, TargetFilter target, PatchworkStateId castAnimation, PatchworkStateId attackAnimation, Attack attack) {}
 
-	new(Attack arg0) {}
+	new(Attack attack) {}
 
 	boolean equals(Object arg0) {}
 
@@ -24,11 +24,13 @@ AttackWrapper(Object) : Serializable {
 
 	AttackWrapper clone() {}
 
-	void write(Json arg0) {}
+	void write(Json json) {}
 
-	void read(Json arg0, JsonValue arg1) {}
+	void read(Json json, JsonValue jsonData) {}
 
-	Attack get(Attack arg0, boolean arg1, boolean arg2) {}
+	String getName() {}
+
+	Attack get(Attack original, boolean shareHit, boolean gauge) {}
 
 	void flip() {}
 

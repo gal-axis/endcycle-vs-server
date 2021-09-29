@@ -39,23 +39,27 @@ OnslaughtMode(ScoredBattleMode) : Consumer {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void hide(GameScreen screen) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void show(GameScreen screen) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	float getComparisonKey() {}
+	void hide(GameScreen screen) {}
 
 	Origin getOrigin() {}
 
 	byte getLayer() {}
 
+	float getComparisonKey() {}
+
 	void start() {}
 
 	void stop() {}
 
-	void initHUD(BattleHUD hud) {}
+	String getDiscordMessage(Party winner) {}
+
+	Looter createLooter() {}
+
+	ScreenObject createStarter() {}
 
 	boolean showStart() {}
 
@@ -63,27 +67,23 @@ OnslaughtMode(ScoredBattleMode) : Consumer {
 
 	boolean isSpawn(BattleEntity entity) {}
 
-	ScreenObject createStarter() {}
-
 	boolean isRestart() {}
-
-	void addLoot(Looter looter) {}
-
-	BattlePlayer createPlayer(BattleEntity entity) {}
 
 	void calculateTint(BattleEntity entity, CColor color) {}
 
 	double adjustGaugeSpeed(BattleEntity entity) {}
 
-	int adjustDamage(BattleEntity entity, int damage) {}
+	LocalizedMessage getLoseMessage() {}
+
+	void addLoot(Looter looter) {}
+
+	BattlePlayer createPlayer(BattleEntity entity) {}
 
 	boolean loot() {}
 
-	LocalizedMessage getLoseMessage() {}
+	int adjustDamage(BattleEntity entity, int damage) {}
 
-	Looter createLooter() {}
-
-	String getDiscordMessage(Party winner) {}
+	void initHUD(BattleHUD hud) {}
 
 	void sendServerUpdate(List messages) {}
 
@@ -93,29 +93,29 @@ OnslaughtMode(ScoredBattleMode) : Consumer {
 
 	void finish(Party winner) {}
 
-	void updateScoreDisplay(int amount) {}
-
-	void addScore(BattleEntity entity, float x, float y, int score) {}
-
-	void addScore(BattleEntity entity, int score) {}
-
-	void addScore(float x, float y, int score) {}
-
-	void entityDefeat(boolean playersDefeated, boolean enemyDefeated) {}
+	void initScore() {}
 
 	String getWaveString() {}
 
-	void initScore() {}
-
 	void increaseWave() {}
 
-	void saveScore() {}
+	void addScore(float x, float y, int score) {}
 
-	void setHideScore(boolean hideScore) {}
+	void addScore(BattleEntity entity, int score) {}
+
+	void addScore(BattleEntity entity, float x, float y, int score) {}
+
+	void playerHeal(BattleEntity entity, int amount) {}
+
+	void entityDefeat(boolean playersDefeated, boolean enemyDefeated) {}
 
 	void enemyHurt(BattleEntity entity, int amount) {}
 
-	void playerHeal(BattleEntity entity, int amount) {}
+	void setHideScore(boolean hideScore) {}
+
+	void saveScore() {}
+
+	void updateScoreDisplay(int amount) {}
 
 	void accept(BattleEntity entity) {}
 
@@ -125,10 +125,10 @@ OnslaughtMode(ScoredBattleMode) : Consumer {
 
 	void updateTimeCache() {}
 
-	void startNextWaveTimer() {}
-
 	BoundedFloat getNextTimer() {}
 
 	float getWaveTimer() {}
+
+	void startNextWaveTimer() {}
 
 }

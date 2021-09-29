@@ -13,23 +13,23 @@ final MenuHeader(Object) : ScreenObject, InputListener {
 
 	int hashCode() {}
 
-	void controllerConnected(Controller controller) {}
-
 	void controllerDisconnected(Controller controller) {}
 
-	boolean triggerType(int character) {}
+	void controllerConnected(Controller controller) {}
 
 	int getInputPriority() {}
+
+	boolean keyTyped(char character) {}
 
 	boolean triggerTouch(TouchEvent event) {}
 
 	boolean triggerButton(ButtonEvent event) {}
 
-	boolean addButtonTips(ButtonTipList tips) {}
+	boolean triggerType(int character) {}
 
 	boolean keyDown(int keycode) {}
 
-	boolean keyTyped(char character) {}
+	boolean addButtonTips(ButtonTipList tips) {}
 
 	boolean keyUp(int keycode) {}
 
@@ -47,24 +47,24 @@ final MenuHeader(Object) : ScreenObject, InputListener {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void show(GameScreen screen) {}
-
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void hide(GameScreen screen) {}
+	void show(GameScreen screen) {}
 
-	float getComparisonKey() {}
+	void hide(GameScreen screen) {}
 
 	Origin getOrigin() {}
 
 	byte getLayer() {}
 
-	void setBackText(LocalizedMessage backText) {}
+	float getComparisonKey() {}
 
 	DrawableImage getHeader() {}
 
-	DrawableImage getHeaderBar() {}
+	void setBackText(LocalizedMessage backText) {}
 
 	DrawableImage getHeaderBack() {}
+
+	DrawableImage getHeaderBar() {}
 
 }

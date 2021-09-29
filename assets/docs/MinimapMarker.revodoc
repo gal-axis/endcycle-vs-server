@@ -17,10 +17,10 @@ abstract MinimapMarker(Object) {
 
 	void update(float delta) {}
 
-	abstract float getY();
+	abstract float getX();
 
 	void draw(CustomSpriteBatch batch, float x, float y) {}
 
-	abstract float getX();
+	abstract float getY();
 
 }

@@ -26,23 +26,27 @@ DefaultBattleMode(TimedBattleMode) {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void hide(GameScreen screen) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void show(GameScreen screen) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	float getComparisonKey() {}
+	void hide(GameScreen screen) {}
 
 	Origin getOrigin() {}
 
 	byte getLayer() {}
 
+	float getComparisonKey() {}
+
 	void start() {}
 
 	void stop() {}
 
-	void initHUD(BattleHUD hud) {}
+	String getDiscordMessage(Party winner) {}
+
+	Looter createLooter() {}
+
+	ScreenObject createStarter() {}
 
 	boolean showStart() {}
 
@@ -50,27 +54,23 @@ DefaultBattleMode(TimedBattleMode) {
 
 	boolean isSpawn(BattleEntity entity) {}
 
-	ScreenObject createStarter() {}
-
 	boolean isRestart() {}
-
-	void addLoot(Looter looter) {}
-
-	BattlePlayer createPlayer(BattleEntity entity) {}
 
 	void calculateTint(BattleEntity entity, CColor color) {}
 
 	double adjustGaugeSpeed(BattleEntity entity) {}
 
-	int adjustDamage(BattleEntity entity, int damage) {}
+	LocalizedMessage getLoseMessage() {}
+
+	void addLoot(Looter looter) {}
+
+	BattlePlayer createPlayer(BattleEntity entity) {}
 
 	boolean loot() {}
 
-	LocalizedMessage getLoseMessage() {}
+	int adjustDamage(BattleEntity entity, int damage) {}
 
-	Looter createLooter() {}
-
-	String getDiscordMessage(Party winner) {}
+	void initHUD(BattleHUD hud) {}
 
 	void sendServerUpdate(List messages) {}
 
@@ -82,15 +82,15 @@ DefaultBattleMode(TimedBattleMode) {
 
 	void timeout() {}
 
-	void updateTimeCache() {}
+	float getCurrentTime() {}
 
 	void setCurrentTime(float currentTime) {}
+
+	void updateTimeCache() {}
 
 	void forceEnd() {}
 
 	Party getWinnerParty() {}
-
-	float getCurrentTime() {}
 
 	void updateWinner(float delta) {}
 

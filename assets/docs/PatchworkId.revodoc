@@ -1,4 +1,4 @@
-PatchworkId(Object) : DataName {
+PatchworkId(Object) : DataName, Named {
 
 	ID id;
 
@@ -9,6 +9,8 @@ PatchworkId(Object) : DataName {
 	String toString() {}
 
 	int hashCode() {}
+
+	String getName() {}
 
 	String getDataName() {}
 

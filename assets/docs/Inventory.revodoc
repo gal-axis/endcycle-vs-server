@@ -14,40 +14,46 @@ final Inventory(Object) {
 
 	int hashCode() {}
 
-	boolean add(VocShell arg0) {}
+	boolean add(VocShell voc) {}
 
-	boolean add(VocStyle arg0) {}
+	boolean add(VocStyleShell style) {}
 
-	boolean add(Voc arg0) {}
+	boolean add(VocStyle style) {}
+
+	boolean add(Voc voc) {}
 
 	void load() {}
 
 	void save() {}
 
-	void merge(Inventory arg0) {}
+	void merge(Inventory vocInventory) {}
 
 	String getPath() {}
 
-	boolean has(VocStyle arg0) {}
+	boolean has(VocStyle style) {}
 
-	boolean has(VocStyleShell arg0) {}
+	boolean has(VocStyleShell voc) {}
 
-	boolean has(VocShell arg0) {}
+	boolean has(VocShell voc) {}
 
-	boolean has(Voc arg0) {}
+	boolean has(Voc voc) {}
+
+	boolean removeMoney(int money) {}
 
 	int getMoney() {}
-
-	boolean removeMoney(int arg0) {}
 
 	boolean loadLocal() {}
 
 	void loadFallback() {}
 
-	void addDefaultPack() {}
-
-	void addMoney(int arg0) {}
-
 	void saveLocal() {}
+
+	void addMoney(int money) {}
+
+	boolean canAdd(VocShell voc) {}
+
+	boolean canAdd(VocStyleShell style) {}
+
+	void addDefaultPack() {}
 
 }

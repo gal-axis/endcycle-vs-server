@@ -21,11 +21,11 @@ DesertRenderProcessor(Object) : RenderProcessor {
 
 	void dispose() {}
 
+	void stopRendering(CustomSpriteBatch batch, byte layer) {}
+
 	void updateRender(float delta) {}
 
 	void startRendering(CustomSpriteBatch batch, byte layer) {}
-
-	void stopRendering(CustomSpriteBatch batch, byte layer) {}
 
 	void randomizeTime() {}
 

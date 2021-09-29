@@ -1,8 +1,8 @@
 interface Danger {
 
-	float getDangerIgnore(int level) {}
-
 	boolean isDangerous(BattleEntity entity, int x, int y) {}
+
+	float getDangerIgnore(int level) {}
 
 	float getDangerPriority(BattleEntity entity) {}
 

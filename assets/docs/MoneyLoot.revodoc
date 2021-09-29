@@ -2,7 +2,7 @@ MoneyLoot(Object) : Lootable {
 
 	int money;
 
-	new(int arg0) {}
+	new(int money) {}
 
 	boolean equals(Object arg0) {}
 
@@ -12,8 +12,8 @@ MoneyLoot(Object) : Lootable {
 
 	Lootable split() {}
 
-	void addToInventory() {}
-
 	LootDisplayer createDisplayer() {}
+
+	void addToInventory() {}
 
 }

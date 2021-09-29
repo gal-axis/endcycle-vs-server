@@ -1,9 +1,9 @@
 PackSelectAction(Object) : MenuTableAction {
 
-	final VocMenu vocMenu;
-	final VocSetContainer menu;
+	final PlayerVocPackGroup pack;
+	final VocSetTable menu;
 
-	new(VocMenu vocMenu, VocSetContainer menu) {}
+	new(PlayerVocPackGroup pack, VocSetTable menu) {}
 
 	boolean equals(Object arg0) {}
 
@@ -11,13 +11,13 @@ PackSelectAction(Object) : MenuTableAction {
 
 	int hashCode() {}
 
-	void moveTableSelection(int selection) {}
+	boolean selectTableHeader() {}
 
 	void specialTableSelect(int selection, VocEntry selected) {}
 
-	void updateTableSelection(int selection) {}
+	void moveTableSelection(int selection) {}
 
-	boolean selectTableHeader() {}
+	void updateTableSelection(int selection) {}
 
 	void clickedTable(int selection, VocEntry selected, float x, float y) {}
 

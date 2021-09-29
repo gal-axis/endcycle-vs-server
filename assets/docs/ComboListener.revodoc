@@ -20,31 +20,31 @@ final ComboListener(Object) : BattleEntityListener, GameEventListener {
 
 	void init() {}
 
-	void dispose() {}
-
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	AilmentInflict inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
-
-	int hurt(BattleEntity origin, int amount, boolean display) {}
-
-	void inflictPost(OwnedHitProperty property) {}
-
-	void inflictPre(OwnedHitProperty property) {}
-
-	void inflict(OwnedHitProperty property) {}
-
-	CColor getTint() {}
+	void dispose() {}
 
 	PatchworkStateId setState(PatchworkStateId id) {}
 
-	double crush(double amount, int crushStrength) {}
+	CColor getTint() {}
 
 	void attack(Attack attack) {}
 
-	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
+	double crush(double amount, int crushStrength) {}
+
+	void inflictPre(OwnedHitProperty property) {}
+
+	void inflictPost(OwnedHitProperty property) {}
+
+	AilmentInflict inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
 
 	int heal(BattleEntity origin, int amount, boolean display) {}
+
+	int hurt(BattleEntity origin, int amount, boolean display) {}
+
+	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
+
+	void inflict(OwnedHitProperty property) {}
 
 	void drawHud(CustomSpriteBatch batch, float xOfs, float yOfs, float width, float height) {}
 

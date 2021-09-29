@@ -1,4 +1,4 @@
-AdventureShop(Moddable) : DataName {
+AdventureShop {
 
 	ID id;
 	String dataName;
@@ -8,7 +8,7 @@ AdventureShop(Moddable) : DataName {
 
 	new() {}
 
-	final boolean equals(Object arg0) {}
+	final boolean equals(Object obj) {}
 
 	String toString() {}
 
@@ -18,6 +18,8 @@ AdventureShop(Moddable) : DataName {
 
 	String getDataName() {}
 
-	List getProducts(AdventureBattle arg0) {}
+	String getName() {}
+
+	List getProducts(AdventureBattle adventure) {}
 
 }

@@ -4,21 +4,21 @@ interface TextureData {
 
 	abstract void prepare();
 
-	abstract int getWidth();
-
 	abstract int getHeight();
+
+	abstract int getWidth();
 
 	abstract boolean useMipMaps();
 
+	abstract boolean isManaged();
+
 	abstract boolean isPrepared();
+
+	abstract boolean disposePixmap();
 
 	abstract Format getFormat();
 
 	abstract Pixmap consumePixmap();
-
-	abstract boolean disposePixmap();
-
-	abstract boolean isManaged();
 
 	abstract void consumeCustomData(int arg0);
 

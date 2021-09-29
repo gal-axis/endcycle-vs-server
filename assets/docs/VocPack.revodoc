@@ -20,13 +20,11 @@ VocPack(Object) {
 
 	int hashCode() {}
 
-	boolean add(VocEntry entry) {}
+	VocPackPosition add(VocEntry entry) {}
 
 	VocSet get(int i) {}
 
 	int count() {}
-
-	int indexOf(VocSet rolePack) {}
 
 	void clear() {}
 
@@ -45,9 +43,5 @@ VocPack(Object) {
 	BattlePlayer createPlayer(BattleEntity entity) {}
 
 	int getSetAmount(boolean full) {}
-
-	void fix() {}
-
-	Color getColor(int pack) {}
 
 }

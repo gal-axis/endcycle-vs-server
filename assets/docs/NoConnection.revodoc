@@ -8,12 +8,12 @@ final NoConnection(Object) : ScreenConnection {
 
 	int hashCode() {}
 
-	void send(Object object) {}
-
-	float getLatency() {}
+	boolean isClient() {}
 
 	boolean isConnected() {}
 
-	boolean isClient() {}
+	float getLatency() {}
+
+	void send(Object object) {}
 
 }

@@ -15,7 +15,7 @@ final VocStyle(Moddable) : DataName {
 
 	new() {}
 
-	final boolean equals(Object arg0) {}
+	final boolean equals(Object obj) {}
 
 	String toString() {}
 
@@ -25,11 +25,11 @@ final VocStyle(Moddable) : DataName {
 
 	String getDataName() {}
 
-	VocElement getElement(AttackShell arg0, HitProperty arg1) {}
+	VocElement getElement(AttackShell shell, HitProperty property) {}
 
-	int calculatePower(AttackShell arg0, HitProperty arg1) {}
+	int calculatePower(AttackShell shell, HitProperty property) {}
 
-	int calculateCrush(AttackShell arg0, HitProperty arg1) {}
+	int calculateCrush(AttackShell shell, HitProperty property) {}
 
 	int getDefaultPrice() {}
 

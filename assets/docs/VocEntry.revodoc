@@ -3,23 +3,23 @@ VocEntry(Object) : Serializable {
 	Voc voc;
 	VocStyle style;
 
-	new(Voc arg0, VocStyle arg1) {}
+	new(Voc voc, VocStyle style) {}
 
-	new(VocEntry arg0) {}
-
-	new(Voc arg0) {}
+	new(Voc voc) {}
 
 	new() {}
 
-	boolean equals(Object arg0) {}
+	new(VocEntry entry) {}
+
+	boolean equals(Object obj) {}
 
 	String toString() {}
 
 	int hashCode() {}
 
-	void write(Json arg0) {}
+	void write(Json json) {}
 
-	void read(Json arg0, JsonValue arg1) {}
+	void read(Json json, JsonValue jsonData) {}
 
 	int getSlot() {}
 
@@ -29,26 +29,26 @@ VocEntry(Object) : Serializable {
 
 	String getMod() {}
 
-	AttackPlan createPlan(int arg0) {}
+	AttackPlan createPlan(int gauge) {}
 
-	VocStyle setStyle(VocStyle arg0) {}
-
-	int getGauge() {}
-
-	int getLevel() {}
+	VocStyle setStyle(VocStyle mod) {}
 
 	VocElement getElement() {}
 
-	void setVoc(Voc arg0) {}
+	int getLevel() {}
 
-	int getPower() {}
+	int getGauge() {}
 
 	boolean isLegal() {}
 
-	void setMissing(String arg0, String arg1, int arg2, Role arg3) {}
+	int getCrushPower() {}
+
+	void setVoc(Voc voc) {}
 
 	String getFullName() {}
 
-	int getCrushPower() {}
+	int getPower() {}
+
+	void setMissing(String mod, String name, int level, Role role) {}
 
 }

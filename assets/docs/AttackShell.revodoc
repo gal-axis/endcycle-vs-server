@@ -4,7 +4,6 @@ final AttackShell(Object) : Named, Serializable {
 	LocalizedMessage descriptionMessage;
 	boolean interruptable;
 	boolean invincible;
-	boolean singleTarget;
 	double gauge;
 	int level;
 	HitProperty property;
@@ -22,9 +21,9 @@ final AttackShell(Object) : Named, Serializable {
 
 	int hashCode() {}
 
-	void write(Json arg0) {}
+	void write(Json json) {}
 
-	void read(Json arg0, JsonValue arg1) {}
+	void read(Json json, JsonValue jsonData) {}
 
 	String getName() {}
 

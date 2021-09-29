@@ -50,45 +50,45 @@ SpriteBatch(Object) : Batch {
 
 	void setTransformMatrix(Matrix4 arg0) {}
 
-	boolean isDrawing() {}
-
 	void begin() {}
 
+	boolean isDrawing() {}
+
 	Color getColor() {}
+
+	boolean isBlendingEnabled() {}
+
+	int getBlendDstFuncAlpha() {}
+
+	int getBlendSrcFuncAlpha() {}
+
+	void setBlendFunctionSeparate(int arg0, int arg1, int arg2, int arg3) {}
 
 	Matrix4 getProjectionMatrix() {}
 
 	void setProjectionMatrix(Matrix4 arg0) {}
 
-	void setBlendFunctionSeparate(int arg0, int arg1, int arg2, int arg3) {}
-
-	int getBlendDstFuncAlpha() {}
-
-	boolean isBlendingEnabled() {}
-
-	int getBlendSrcFuncAlpha() {}
+	void setBlendFunction(int arg0, int arg1) {}
 
 	void setColor(float arg0, float arg1, float arg2, float arg3) {}
 
 	void setColor(Color arg0) {}
 
-	void setPackedColor(float arg0) {}
-
-	int getBlendSrcFunc() {}
-
 	float getPackedColor() {}
-
-	ShaderProgram getShader() {}
 
 	void disableBlending() {}
 
-	void setShader(ShaderProgram arg0) {}
+	void setPackedColor(float arg0) {}
 
 	void enableBlending() {}
 
+	int getBlendSrcFunc() {}
+
+	ShaderProgram getShader() {}
+
 	int getBlendDstFunc() {}
 
-	void setBlendFunction(int arg0, int arg1) {}
+	void setShader(ShaderProgram arg0) {}
 
 	static ShaderProgram createDefaultShader() {}
 

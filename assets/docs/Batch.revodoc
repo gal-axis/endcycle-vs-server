@@ -34,44 +34,44 @@ interface Batch {
 
 	abstract void setTransformMatrix(Matrix4 arg0);
 
-	abstract boolean isDrawing();
-
 	abstract void begin();
 
+	abstract boolean isDrawing();
+
 	abstract Color getColor();
+
+	abstract boolean isBlendingEnabled();
+
+	abstract int getBlendDstFuncAlpha();
+
+	abstract int getBlendSrcFuncAlpha();
+
+	abstract void setBlendFunctionSeparate(int arg0, int arg1, int arg2, int arg3);
 
 	abstract Matrix4 getProjectionMatrix();
 
 	abstract void setProjectionMatrix(Matrix4 arg0);
 
-	abstract void setBlendFunctionSeparate(int arg0, int arg1, int arg2, int arg3);
-
-	abstract int getBlendDstFuncAlpha();
-
-	abstract boolean isBlendingEnabled();
-
-	abstract int getBlendSrcFuncAlpha();
+	abstract void setBlendFunction(int arg0, int arg1);
 
 	abstract void setColor(float arg0, float arg1, float arg2, float arg3);
 
 	abstract void setColor(Color arg0);
 
-	abstract void setPackedColor(float arg0);
-
-	abstract int getBlendSrcFunc();
-
 	abstract float getPackedColor();
-
-	abstract ShaderProgram getShader();
 
 	abstract void disableBlending();
 
-	abstract void setShader(ShaderProgram arg0);
+	abstract void setPackedColor(float arg0);
 
 	abstract void enableBlending();
 
+	abstract int getBlendSrcFunc();
+
+	abstract ShaderProgram getShader();
+
 	abstract int getBlendDstFunc();
 
-	abstract void setBlendFunction(int arg0, int arg1);
+	abstract void setShader(ShaderProgram arg0);
 
 }

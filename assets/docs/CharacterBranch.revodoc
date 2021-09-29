@@ -1,4 +1,4 @@
-CharacterBranch(Object) {
+CharacterBranch(Object) : Named {
 
 	ID character;
 	Script script;
@@ -10,5 +10,7 @@ CharacterBranch(Object) {
 	String toString() {}
 
 	int hashCode() {}
+
+	String getName() {}
 
 }

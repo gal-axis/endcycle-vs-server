@@ -7,7 +7,7 @@ BattleHUD(HUD) {
 	Array playerButtons;
 	LocalizedMessage pauseMessage;
 
-	new(Battle arg0) {}
+	new(Battle battle) {}
 
 	boolean equals(Object arg0) {}
 
@@ -15,47 +15,47 @@ BattleHUD(HUD) {
 
 	int hashCode() {}
 
-	void handle(GameEvent arg0) {}
+	void handle(GameEvent event) {}
 
 	void dispose() {}
 
-	void update(float arg0) {}
+	void update(float delta) {}
 
 	boolean remove() {}
 
 	String getName() {}
 
-	void init(GameScreen arg0) {}
+	void init(GameScreen screen) {}
 
 	boolean isHidden() {}
 
-	void resize(boolean arg0, int arg1, int arg2) {}
+	void resize(boolean landscape, int width, int height) {}
 
-	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void hide(GameScreen arg0) {}
+	void show(GameScreen screen) {}
 
-	void show(GameScreen arg0) {}
-
-	float getComparisonKey() {}
+	void hide(GameScreen screen) {}
 
 	Origin getOrigin() {}
 
 	byte getLayer() {}
 
-	void button(ButtonEvent arg0) {}
+	float getComparisonKey() {}
 
-	boolean touch(TouchEvent arg0) {}
+	void button(ButtonEvent trigger) {}
 
-	void add(Array arg0) {}
+	boolean touch(TouchEvent trigger) {}
 
-	void remove(Array arg0) {}
+	void add(Array buttons) {}
+
+	void remove(Array buttons) {}
 
 	float getButtonsY() {}
 
-	void addButtonTips(ButtonTipList arg0) {}
+	void addButtonTips(ButtonTipList tips) {}
 
-	boolean setPlayerButtons(int arg0, Array arg1) {}
+	boolean setPlayerButtons(int player, Array buttons) {}
 
 	void createButtons() {}
 

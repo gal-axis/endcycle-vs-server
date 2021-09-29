@@ -17,40 +17,40 @@ AdventureSideScript(BattleScript) : Serializable {
 
 	void dispose() {}
 
-	void update(float arg0) {}
+	void update(float delta) {}
 
 	boolean remove() {}
 
 	String getName() {}
 
-	final void init(GameScreen arg0) {}
+	final void init(GameScreen screen) {}
 
 	boolean isHidden() {}
 
-	void resize(boolean arg0, int arg1, int arg2) {}
+	void resize(boolean landscape, int width, int height) {}
 
-	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void hide(GameScreen arg0) {}
+	void hide(GameScreen screen) {}
 
-	void show(GameScreen arg0) {}
-
-	float getComparisonKey() {}
+	void show(GameScreen screen) {}
 
 	Origin getOrigin() {}
 
 	byte getLayer() {}
 
-	void start(GameScreen arg0) {}
+	float getComparisonKey() {}
 
-	Runnable toRunnable(GameScreen arg0) {}
+	void start(GameScreen screen) {}
 
-	void init(Battle arg0) {}
+	Runnable toRunnable(GameScreen screen) {}
 
-	BattleEntity getEntity(String arg0) {}
+	void init(Battle battle) {}
 
-	void write(Json arg0) {}
+	BattleEntity getEntity(String entity) {}
 
-	void read(Json arg0, JsonValue arg1) {}
+	void write(Json json) {}
+
+	void read(Json json, JsonValue jsonData) {}
 
 }

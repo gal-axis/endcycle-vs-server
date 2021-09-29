@@ -1,4 +1,4 @@
-CampaignDataNode(Object) {
+CampaignDataNode(Object) : Named {
 
 	String name;
 	String description;
@@ -11,8 +11,8 @@ CampaignDataNode(Object) {
 	boolean autoWin;
 	boolean leaveAlive;
 	int attackStar;
-	double timeTwoStars;
 	double timeOneStar;
+	double timeTwoStars;
 	Script onLoad;
 	Script onWin;
 	List scenesBefore;
@@ -25,5 +25,7 @@ CampaignDataNode(Object) {
 	String toString() {}
 
 	int hashCode() {}
+
+	String getName() {}
 
 }

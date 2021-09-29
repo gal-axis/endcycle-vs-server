@@ -1,13 +1,15 @@
 HitEffect(Object) : AttackEffect {
 
+	Array panels;
 	float delay;
 	float duration;
 	boolean separate;
-	boolean onHitOriginal;
-	Array panels;
+	float powerMultiplier;
+	float crushMultiplier;
 	AttackEffect onHit;
+	boolean onHitOriginal;
 
-	new(float delay, float duration, boolean separate, boolean onHitOriginal, Array panels, AttackEffect onHit) {}
+	new(Array panels, float delay, float duration, boolean separate, float powerMultiplier, float crushMultiplier, AttackEffect onHit, boolean onHitOriginal) {}
 
 	new(float duration, int x, int y, AttackEffect onHit) {}
 

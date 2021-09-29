@@ -10,42 +10,42 @@ abstract PanelEffect(Object) {
 
 	int hashCode() {}
 
-	void exit(BattleEntity arg0) {}
+	void exit(BattleEntity entity) {}
 
-	void update(float arg0) {}
+	void update(float delta) {}
 
 	void init() {}
 
-	boolean isAccessible(BattleEntity arg0, boolean arg1) {}
-
-	abstract void draw(Batch arg0, float arg1, float arg2, Party arg3, float arg4, float arg5);
-
-	int getY() {}
+	boolean isAccessible(BattleEntity entity, boolean checkFree) {}
 
 	int getX() {}
 
-	void dispose() {}
+	abstract void draw(Batch batch, float x, float y, Party party, float shade, float alpha);
+
+	int getY() {}
 
 	void refresh() {}
 
-	final void triggerAction(Object[] arg0) {}
+	void dispose() {}
 
-	OwnedHitProperty hit(OwnedHitProperty arg0) {}
+	OwnedHitProperty hit(OwnedHitProperty property) {}
 
-	BattleFieldBorder getCameraBorder(BattleEntity arg0) {}
+	final void triggerAction(Object[] parameters) {}
 
-	boolean changeType(PanelType arg0) {}
+	boolean changeType(PanelType type) {}
 
 	void free() {}
 
+	BattleFieldBorder getCameraBorder(BattleEntity focused) {}
+
+	void actionTriggered(Object[] action) {}
+
 	Battle getBattle() {}
 
-	void actionTriggered(Object[] arg0) {}
+	boolean shareBorder(BattleFieldPanel panel2) {}
 
-	boolean shareBorder(BattleFieldPanel arg0) {}
+	void enter(BattleEntity entity) {}
 
-	OwnedHitProperty affect(OwnedHitProperty arg0) {}
-
-	void enter(BattleEntity arg0) {}
+	OwnedHitProperty affect(OwnedHitProperty property) {}
 
 }

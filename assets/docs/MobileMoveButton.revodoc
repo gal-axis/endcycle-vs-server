@@ -1,6 +1,6 @@
-PortraitRoleButton(MobileRoleButton) {
+MobileMoveButton(PortraitMoveButton) {
 
-	new(DefaultBattlePlayer script) {}
+	new(BattlePlayer player, int x, int y) {}
 
 	boolean equals(Object arg0) {}
 
@@ -8,23 +8,23 @@ PortraitRoleButton(MobileRoleButton) {
 
 	int hashCode() {}
 
-	void controllerConnected(Controller controller) {}
-
 	void controllerDisconnected(Controller controller) {}
 
-	boolean triggerType(int character) {}
+	void controllerConnected(Controller controller) {}
 
 	int getInputPriority() {}
+
+	boolean keyTyped(char character) {}
 
 	boolean triggerTouch(TouchEvent event) {}
 
 	boolean triggerButton(ButtonEvent event) {}
 
-	boolean addButtonTips(ButtonTipList tips) {}
+	boolean triggerType(int character) {}
 
 	boolean keyDown(int keycode) {}
 
-	boolean keyTyped(char character) {}
+	boolean addButtonTips(ButtonTipList tips) {}
 
 	boolean keyUp(int keycode) {}
 
@@ -34,24 +34,24 @@ PortraitRoleButton(MobileRoleButton) {
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	boolean touch(TouchEvent trigger) {}
-
 	void button(ButtonEvent trigger) {}
 
-	float getY() {}
+	boolean touch(TouchEvent trigger) {}
+
+	boolean drawPriority() {}
 
 	float getX() {}
 
-	float getWidth() {}
+	float getY() {}
 
 	float getHeight() {}
 
-	void paint(Painter painter, VocSet vocs, boolean small) {}
+	float getWidth() {}
 
-	float getButtonSize() {}
+	Color getColor() {}
 
-	boolean isTouching(float positionX, float positionY) {}
+	boolean isTouching(int posX, int posY) {}
 
-	float getSmallButtonSize() {}
+	KeyCode[] getNotKeyCodes() {}
 
 }

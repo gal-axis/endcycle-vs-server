@@ -44,9 +44,9 @@ AdventureForceBattleScript(BattleScript) {
 
 	Origin getOrigin() {}
 
-	float getComparisonKey() {}
-
 	byte getLayer() {}
+
+	float getComparisonKey() {}
 
 	void start(GameScreen screen) {}
 
@@ -56,8 +56,8 @@ AdventureForceBattleScript(BattleScript) {
 
 	BattleEntity getEntity(String entity) {}
 
-	void setupEntities(AdventureBattle adventure, AdventureFieldNode node) {}
-
 	Array getAvailable(AdventureBattle adventure) {}
+
+	void setupEntities(AdventureBattle adventure, AdventureFieldNode node) {}
 
 }

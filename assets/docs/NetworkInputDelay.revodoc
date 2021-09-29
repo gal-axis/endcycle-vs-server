@@ -16,9 +16,9 @@ NetworkInputDelay(Object) : GameEventListener {
 
 	void input(BattlePlayer player, int serverIndex, Object input) {}
 
-	float getDelay() {}
-
 	FrameData getFrame() {}
+
+	float getDelay() {}
 
 	void setClientPlayer(BattlePlayer player, int index, int serverIndex) {}
 

@@ -54,21 +54,21 @@ PushAilment(Ailment) : BECondition {
 
 	boolean over() {}
 
-	void increaseDuration() {}
+	float getIntensity() {}
 
 	void setIntensity(float intensity) {}
 
-	boolean isDisplayed() {}
+	void increaseDuration() {}
 
-	float getIntensity() {}
+	boolean isDisplayed() {}
 
 	boolean canTarget() {}
 
 	boolean test(BattleEntity t) {}
 
-	boolean isBlocking(BattleFieldPanel panel) {}
-
 	void startMove(int moving) {}
+
+	boolean isBlocking(BattleFieldPanel panel) {}
 
 	void addTracer(int delay, int amount) {}
 

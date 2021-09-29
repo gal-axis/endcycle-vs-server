@@ -41,17 +41,21 @@ final StringDisplay(GameScreenObject) {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void hide(GameScreen screen) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void show(GameScreen screen) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	float getComparisonKey() {}
+	void hide(GameScreen screen) {}
 
 	final Origin getOrigin() {}
 
 	byte getLayer() {}
+
+	float getComparisonKey() {}
+
+	final void removeObject() {}
+
+	final void addObject(ScreenObject object) {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
@@ -59,26 +63,22 @@ final StringDisplay(GameScreenObject) {
 
 	SoundContainer playSound(SoundInfo sound) {}
 
-	final void addObject(ScreenObject object) {}
-
-	final void removeObject() {}
-
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
 	void init(Fonts font, String display, float x, float y, float time) {}
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scaleX, float scaleY) {}
 
-	void setTint(Color color) {}
-
 	void setTint(float r, float g, float b, float alpha) {}
 
-	void finish() {}
+	void setTint(Color color) {}
 
-	float getCharacterSpeed() {}
+	void finish() {}
 
 	void setCharacterSpeed(float speed) {}
 
 	void setDisplay(String display) {}
+
+	float getCharacterSpeed() {}
 
 }

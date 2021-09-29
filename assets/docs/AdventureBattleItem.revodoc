@@ -26,24 +26,24 @@ final AdventureBattleItem(Object) {
 
 	void dispose() {}
 
-	boolean usable(BattlePlayer player) {}
-
 	void use(BattlePlayer player) {}
+
+	boolean usable(BattlePlayer player) {}
 
 	boolean increaseAmount(AdventureBattle battle) {}
 
 	boolean decreaseAmount() {}
 
-	void removeFrom(BattlePlayer player) {}
+	void removeListeners(BattlePlayer player) {}
 
 	void removeListeners() {}
 
-	void removeListeners(BattlePlayer player) {}
-
 	boolean isExpired() {}
 
-	void increaseAge() {}
-
 	boolean isZoneExpire() {}
+
+	void removeFrom(BattlePlayer player) {}
+
+	void increaseAge() {}
 
 }

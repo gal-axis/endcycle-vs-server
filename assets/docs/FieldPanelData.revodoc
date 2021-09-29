@@ -1,4 +1,4 @@
-FieldPanelData(Object) {
+FieldPanelData(Object) : Named {
 
 	Party party;
 	PanelType type;
@@ -13,5 +13,7 @@ FieldPanelData(Object) {
 	String toString() {}
 
 	int hashCode() {}
+
+	String getName() {}
 
 }

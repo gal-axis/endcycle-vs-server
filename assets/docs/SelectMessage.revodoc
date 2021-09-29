@@ -37,17 +37,21 @@ SelectMessage(SlideInMessage) : InputListener {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void hide(GameScreen screen) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void show(GameScreen screen) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	float getComparisonKey() {}
+	void hide(GameScreen screen) {}
 
 	final Origin getOrigin() {}
 
 	byte getLayer() {}
+
+	float getComparisonKey() {}
+
+	final void removeObject() {}
+
+	final void addObject(ScreenObject object) {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
@@ -55,19 +59,15 @@ SelectMessage(SlideInMessage) : InputListener {
 
 	SoundContainer playSound(SoundInfo sound) {}
 
-	final void addObject(ScreenObject object) {}
-
-	final void removeObject() {}
-
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
+
+	final void addDisposeListener(Runnable runnable) {}
 
 	final void addInitializeListener(Runnable runnable) {}
 
-	final void removeDisposeListener(Runnable runnable) {}
-
 	final void removeInitializeListener(Runnable runnable) {}
 
-	final void addDisposeListener(Runnable runnable) {}
+	final void removeDisposeListener(Runnable runnable) {}
 
 	void scheduleMessage(GameScreenMessage message) {}
 
@@ -77,29 +77,33 @@ SelectMessage(SlideInMessage) : InputListener {
 
 	boolean isStaying() {}
 
+	void setStay() {}
+
 	float getPosition() {}
 
 	void controllerDisconnected(Controller controller) {}
 
 	void controllerConnected(Controller controller) {}
 
-	boolean addButtonTips(ButtonTipList tips) {}
-
-	boolean triggerButton(ButtonEvent event) {}
-
-	boolean triggerTouch(TouchEvent event) {}
-
-	boolean triggerType(int character) {}
-
 	int getInputPriority() {}
-
-	boolean keyDown(int keycode) {}
-
-	boolean keyUp(int keycode) {}
 
 	boolean keyTyped(char character) {}
 
+	boolean triggerTouch(TouchEvent event) {}
+
+	boolean triggerButton(ButtonEvent event) {}
+
+	boolean triggerType(int character) {}
+
+	boolean keyDown(int keycode) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean keyUp(int keycode) {}
+
 	void skip() {}
+
+	void select() {}
 
 	void setMessage(String message, boolean crop) {}
 
@@ -107,12 +111,10 @@ SelectMessage(SlideInMessage) : InputListener {
 
 	void addButton(String text, String description, Runnable onSelect) {}
 
-	void select() {}
+	void setSelection(int selection) {}
 
 	void moveSelection(int offset) {}
 
 	void selectChoice(int choice) {}
-
-	void setSelection(int selection) {}
 
 }

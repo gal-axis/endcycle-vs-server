@@ -25,18 +25,18 @@ final Dragger(Object) {
 
 	void start(float x, float y) {}
 
-	void start(TouchEvent trigger) {}
+	void start(TouchEvent event) {}
 
-	boolean stop(TouchEvent trigger) {}
+	boolean stop(TouchEvent event) {}
 
 	void stop() {}
 
-	boolean move(TouchEvent trigger) {}
+	boolean move(TouchEvent event) {}
 
 	boolean move(float x, float y) {}
 
-	float getDeltaY() {}
-
 	float getDeltaX() {}
+
+	float getDeltaY() {}
 
 }

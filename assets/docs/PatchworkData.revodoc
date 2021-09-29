@@ -9,7 +9,7 @@ PatchworkData(Moddable) : DataName {
 
 	new() {}
 
-	final boolean equals(Object arg0) {}
+	final boolean equals(Object obj) {}
 
 	String toString() {}
 
@@ -19,12 +19,12 @@ PatchworkData(Moddable) : DataName {
 
 	String getDataName() {}
 
-	static DrawableState create(PatchworkStateDrawableData arg0) {}
+	static DrawableState create(PatchworkStateDrawableData data) {}
 
-	PatchworkState create(PatchworkStateData arg0) {}
+	PatchworkState create(PatchworkStateData data) {}
 
 	Patchwork create() {}
 
-	int findClosestCustomizable(int arg0, Color arg1) {}
+	int findClosestCustomizable(int index, Color color) {}
 
 }

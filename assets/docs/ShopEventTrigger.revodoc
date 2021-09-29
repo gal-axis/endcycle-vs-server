@@ -17,9 +17,9 @@ ShopEventTrigger(Object) : AdventureEventTrigger {
 
 	boolean start(AdventureBattle battle, AdventureFieldNode entry) {}
 
-	BattleData toPracticeData(AdventureEvent event) {}
-
 	void addEntities(AdventureBattle battle, AdventureFieldNode entry) {}
+
+	BattleData toPracticeData(AdventureEvent event) {}
 
 	static void startBattle(AdventureBattle battle, AdventureFieldNode entry, int level) {}
 

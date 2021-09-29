@@ -8,7 +8,7 @@ BattleFreeCamera(BattleCamera) : GameEventListener, InputListener, DragListener 
 	boolean locked;
 	Vector2 focus;
 
-	new(Battle arg0) {}
+	new(Battle battle) {}
 
 	boolean equals(Object arg0) {}
 
@@ -18,89 +18,89 @@ BattleFreeCamera(BattleCamera) : GameEventListener, InputListener, DragListener 
 
 	void dispose() {}
 
-	void update(float arg0) {}
+	void update(float delta) {}
 
 	boolean remove() {}
 
 	String getName() {}
 
-	void init(GameScreen arg0) {}
+	void init(GameScreen screen) {}
 
 	boolean isHidden() {}
 
-	void resize(boolean arg0, int arg1, int arg2) {}
+	void resize(boolean landscape, int width, int height) {}
 
-	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void hide(GameScreen arg0) {}
+	void show(GameScreen screen) {}
 
-	void show(GameScreen arg0) {}
+	void hide(GameScreen screen) {}
 
 	Origin getOrigin() {}
 
-	float getComparisonKey() {}
-
 	byte getLayer() {}
+
+	float getComparisonKey() {}
 
 	void reset() {}
 
-	float getOffset(int arg0) {}
+	float getOffset(int size) {}
 
 	void sync() {}
 
+	float getX() {}
+
 	float getY() {}
 
-	float getX() {}
+	void setPosition(float x, float y) {}
 
 	BattleEntity getCameraFocus() {}
 
-	void setPosition(float arg0, float arg1) {}
-
-	void moveX(float arg0) {}
-
-	void moveY(float arg0) {}
-
 	float getOffsetX() {}
 
-	boolean isFocusing() {}
-
-	float getXReal() {}
-
-	float getYReal() {}
-
-	float getFocusX() {}
-
-	void limitCamera(BattleEntity arg0) {}
+	void limitCamera(BattleEntity focused) {}
 
 	float getFocusY() {}
 
-	void drag(float arg0, float arg1) {}
+	void moveY(float y) {}
 
-	void stopDrag(float arg0, float arg1, float arg2, float arg3, boolean arg4) {}
+	float getXReal() {}
 
-	void startDrag(float arg0, float arg1) {}
+	float getFocusX() {}
 
-	void controllerDisconnected(Controller arg0) {}
+	void moveX(float x) {}
 
-	void controllerConnected(Controller arg0) {}
+	boolean isFocusing() {}
 
-	boolean keyDown(int arg0) {}
+	float getYReal() {}
 
-	boolean triggerTouch(TouchEvent arg0) {}
+	void startDrag(float x, float y) {}
 
-	boolean addButtonTips(ButtonTipList arg0) {}
+	void drag(float deltaX, float deltaY) {}
+
+	void stopDrag(float x, float y, float deltaX, float deltaY, boolean clickScrolled) {}
+
+	void controllerDisconnected(Controller controller) {}
+
+	void controllerConnected(Controller controller) {}
 
 	int getInputPriority() {}
 
-	boolean keyTyped(char arg0) {}
+	boolean keyTyped(char character) {}
 
-	boolean keyUp(int arg0) {}
+	boolean triggerTouch(TouchEvent event) {}
 
-	boolean triggerButton(ButtonEvent arg0) {}
+	boolean triggerButton(ButtonEvent event) {}
 
-	boolean triggerType(int arg0) {}
+	boolean triggerType(int character) {}
 
-	void handle(GameEvent arg0) {}
+	boolean keyDown(int keycode) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean keyUp(int keycode) {}
+
+	void handle(GameEvent event) {}
 
 	void toggleCamera() {}
 

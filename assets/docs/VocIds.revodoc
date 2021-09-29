@@ -38,8 +38,7 @@ enum VocIds {
  	Compensation,
  	Berserk,
  	Exchange,
- 	SandHole,
- 	PanelCrack,
+ 	SandHoles,
  	RepairPlus,
  	RepairAll,
  	BoulderDrop,
@@ -47,8 +46,6 @@ enum VocIds {
  	IceSpear,
  	VinePull,
  	Mosquito,
- 	BuildMetal,
- 	BuildIce,
  	MineCake,
  	IceCube,
  	Swap,
@@ -59,7 +56,7 @@ enum VocIds {
  	Gatling,
  	ElectroRay,
  	Meteors,
- 	ChargeFlame,
+ 	X_Flame,
  	HotMagic,
  	LogLaunch,
  	Plantrap,
@@ -67,7 +64,7 @@ enum VocIds {
  	Froster,
  	Push,
  	Q_T__Shot,
- 	BuildGrass,
+ 	PanelFist,
  	BuildMove,
  	PanelSword,
  	SofaGrab,
@@ -107,7 +104,7 @@ enum VocIds {
  	IceCrawl,
  	PainCrave,
  	PotatoBomb,
- 	Droplet,
+ 	Droplets,
  	UpBlade,
  	DownBlade,
  	Courage,
@@ -147,7 +144,8 @@ enum VocIds {
  	Godius_Hammer,
  	Godius_Sickle_Back,
  	Speaker_Wave,
- 	Holz_Walz;
+ 	Holz_Walz,
+ 	Frostag;
 
 	final boolean equals(Object arg0) {}
 
@@ -165,7 +163,7 @@ enum VocIds {
 
 	static VocIds[] values() {}
 
-	static VocIds valueOf(String arg0) {}
+	static VocIds valueOf(String name) {}
 
 	ID getId() {}
 

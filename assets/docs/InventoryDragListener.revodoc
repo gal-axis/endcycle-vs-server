@@ -1,6 +1,6 @@
 InventoryDragListener(Object) : MenuTableDragListener {
 
-	new(VocMenu menu) {}
+	new(PlayerVocPackGroup menu) {}
 
 	boolean equals(Object arg0) {}
 
@@ -10,10 +10,10 @@ InventoryDragListener(Object) : MenuTableDragListener {
 
 	void draw(MenuTable container, VocShell element, int index, float x, float y) {}
 
+	void startDrag(MenuTable container, VocShell element, int index) {}
+
 	void drag(MenuTable container, VocShell element, int index, int x, int y) {}
 
 	void stopDrag(MenuTable container, VocShell element, int index, int x, int y) {}
-
-	void startDrag(MenuTable container, VocShell element, int index) {}
 
 }

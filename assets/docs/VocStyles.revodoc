@@ -33,7 +33,6 @@ enum VocStyles {
  	Repair,
  	SuperArmor,
  	Flinch,
- 	Charge,
  	Infuse,
  	Flip,
  	Metal,
@@ -64,7 +63,7 @@ enum VocStyles {
 
 	static VocStyles[] values() {}
 
-	static VocStyles valueOf(String arg0) {}
+	static VocStyles valueOf(String name) {}
 
 	ID getId() {}
 

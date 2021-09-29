@@ -57,7 +57,8 @@ enum BattleEntities {
  	Godius_Body,
  	Godius_Left_Arm,
  	Godius_Right_Arm,
- 	Gateway_Portal;
+ 	Gateway_Portal,
+ 	Water_Bomb;
 
 	final boolean equals(Object arg0) {}
 
@@ -73,7 +74,7 @@ enum BattleEntities {
 
 	static BattleEntities[] values() {}
 
-	static BattleEntities valueOf(String arg0) {}
+	static BattleEntities valueOf(String name) {}
 
 	ID getId() {}
 

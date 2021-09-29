@@ -1,4 +1,4 @@
-final GameMode(Object) : DataName {
+final GameMode(Object) : Named, DataName {
 
 	final String name;
 	final String id;
@@ -16,6 +16,8 @@ final GameMode(Object) : DataName {
 	int hashCode() {}
 
 	String getDataName() {}
+
+	String getName() {}
 
 	GameModeConfig createConfig() {}
 

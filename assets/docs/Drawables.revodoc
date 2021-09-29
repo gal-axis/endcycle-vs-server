@@ -937,7 +937,11 @@ enum Drawables {
  	Particle_Copy,
  	Farmadile_Win,
  	Farmadile_Cut_In,
- 	Blinded_Reverse;
+ 	Blinded_Reverse,
+ 	Dialogue_9P,
+ 	Panel_Fist,
+ 	Mobile_Axis,
+ 	Mobile_Axis_Touch;
 
 	final boolean equals(Object arg0) {}
 
@@ -955,9 +959,9 @@ enum Drawables {
 
 	static Drawables[] values() {}
 
-	static Drawables valueOf(String arg0) {}
+	static Drawables valueOf(String name) {}
 
-	static Drawable[] array(Drawables[] arg0) {}
+	static Drawable[] array(Drawables[] drawables) {}
 
 	ID getId() {}
 

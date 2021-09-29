@@ -1,6 +1,6 @@
 HitShaker(Object) : GameEventListener {
 
-	new(Battle arg0) {}
+	new(Battle screen) {}
 
 	boolean equals(Object arg0) {}
 
@@ -8,11 +8,11 @@ HitShaker(Object) : GameEventListener {
 
 	int hashCode() {}
 
-	void handle(GameEvent arg0) {}
+	void handle(GameEvent event) {}
 
-	boolean update(float arg0) {}
+	boolean update(float delta) {}
 
-	void stop(float arg0, Runnable arg1) {}
+	void stop(float time, Runnable runnable) {}
 
 	boolean isStopped() {}
 

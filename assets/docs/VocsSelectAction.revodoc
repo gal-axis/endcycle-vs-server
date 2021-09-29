@@ -1,8 +1,8 @@
 VocsSelectAction(Object) : MenuTableAction {
 
-	final VocMenu vocMenu;
+	final PlayerVocPackGroup group;
 
-	new(VocMenu vocMenu) {}
+	new(PlayerVocPackGroup group) {}
 
 	boolean equals(Object arg0) {}
 
@@ -10,13 +10,13 @@ VocsSelectAction(Object) : MenuTableAction {
 
 	int hashCode() {}
 
-	void moveTableSelection(int selection) {}
+	boolean selectTableHeader() {}
 
 	void specialTableSelect(int selection, VocShell selected) {}
 
-	void updateTableSelection(int selection) {}
+	void moveTableSelection(int selection) {}
 
-	boolean selectTableHeader() {}
+	void updateTableSelection(int selection) {}
 
 	void clickedTable(int selection, VocShell selected, float x, float y) {}
 

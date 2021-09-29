@@ -2,86 +2,90 @@ VocSet(FixedList) : Serializable {
 
 	final Color color;
 
-	new(VocIds[] arg0) {}
+	new(VocIds[] vocs) {}
 
-	new(ID[] arg0) {}
+	new(ID[] vocs) {}
+
+	new(int amount) {}
 
 	new() {}
 
-	boolean equals(Object arg0) {}
+	boolean equals(Object obj) {}
 
 	String toString() {}
 
 	abstract int hashCode();
 
-	void write(Json arg0) {}
+	void write(Json json) {}
 
-	void read(Json arg0, JsonValue arg1) {}
+	void read(Json json, JsonValue jsonData) {}
 
 	Iterator iterator() {}
 
-	boolean add(VocEntry arg0) {}
+	boolean add(VocEntry voc) {}
 
-	boolean remove(Object arg0) {}
+	boolean remove(Object o) {}
 
 	void clear() {}
 
-	boolean contains(Object arg0) {}
+	boolean contains(Object o) {}
 
 	boolean isEmpty() {}
 
 	int size() {}
 
-	Object[] toArray(Object[] arg0) {}
+	Object[] toArray(Object[] a) {}
 
 	Object[] toArray() {}
 
-	boolean addAll(Collection arg0) {}
+	boolean addAll(Collection c) {}
 
-	boolean containsAll(Collection arg0) {}
+	boolean containsAll(Collection c) {}
 
-	boolean removeAll(Collection arg0) {}
+	boolean removeAll(Collection c) {}
 
-	boolean retainAll(Collection arg0) {}
+	boolean retainAll(Collection c) {}
 
-	void add(int arg0, VocEntry arg1) {}
+	void add(int index, VocEntry element) {}
 
-	VocEntry remove(int arg0) {}
+	VocEntry remove(int index) {}
 
-	VocEntry get(int arg0) {}
+	VocEntry get(int index) {}
 
-	int indexOf(Object arg0) {}
+	int indexOf(Object o) {}
 
-	int lastIndexOf(Object arg0) {}
+	int lastIndexOf(Object o) {}
 
-	List subList(int arg0, int arg1) {}
+	List subList(int fromIndex, int toIndex) {}
 
-	boolean addAll(int arg0, Collection arg1) {}
+	boolean addAll(int index, Collection c) {}
 
-	VocEntry set(int arg0, VocEntry arg1) {}
+	VocEntry set(int index, VocEntry voc) {}
 
-	int remove(Object arg0, boolean arg1) {}
+	int remove(Object o, boolean identity) {}
 
 	int count() {}
 
-	int indexOf(Object arg0, boolean arg1) {}
+	int indexOf(Object o, boolean identity) {}
 
-	int lastIndexOf(Object arg0, boolean arg1) {}
+	int lastIndexOf(Object o, boolean identity) {}
 
 	void collect() {}
 
 	VocEntry pop() {}
 
-	void set(VocSet arg0) {}
+	void copy(FixedList list) {}
 
-	VocEntry set(VocEntry arg0) {}
+	void resize(int size) {}
+
+	void set(VocSet set) {}
+
+	VocEntry set(VocEntry voc) {}
 
 	boolean isLocked() {}
 
 	boolean isValid() {}
 
-	void fix() {}
-
-	int amountOf(Role arg0) {}
+	int amountOf(Role role) {}
 
 }

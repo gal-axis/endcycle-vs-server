@@ -12,6 +12,8 @@ interface MobileButton {
 
 	abstract boolean touch(TouchEvent trigger);
 
+	boolean drawPriority() {}
+
 	static void pressButtons(BattlePlayer player, KeyCode[] keyCodes) {}
 
 }

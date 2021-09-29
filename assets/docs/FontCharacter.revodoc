@@ -19,10 +19,10 @@ final FontCharacter(Object) {
 
 	float getOffsetY() {}
 
-	float getKerning(char before) {}
+	float getAdvance() {}
 
 	void setKerning(char character, int kerning) {}
 
-	float getAdvance() {}
+	float getKerning(char before) {}
 
 }

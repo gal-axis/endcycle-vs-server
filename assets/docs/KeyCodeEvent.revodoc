@@ -17,22 +17,22 @@ final KeyCodeEvent(ButtonEvent) {
 
 	void setType(InputType type) {}
 
-	boolean isReleased() {}
-
 	boolean isKey(KeyCode code) {}
-
-	boolean isPressed() {}
 
 	Controller getController() {}
 
-	KeyCode getCode(KeyCodeCategory category) {}
+	boolean isPressed() {}
 
 	void setController(Controller controller) {}
 
+	KeyCode getCode(KeyCodeCategory category) {}
+
+	boolean isReleased() {}
+
 	void setID(int buttonId) {}
 
-	boolean isMoved() {}
-
 	int getButtonId() {}
+
+	boolean isMoved() {}
 
 }

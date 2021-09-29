@@ -1,4 +1,4 @@
-PatchworkStateDrawableData(Object) {
+PatchworkStateDrawableData(Object) : Named {
 
 	ID drawable;
 	float xPos;
@@ -17,5 +17,7 @@ PatchworkStateDrawableData(Object) {
 	String toString() {}
 
 	int hashCode() {}
+
+	String getName() {}
 
 }

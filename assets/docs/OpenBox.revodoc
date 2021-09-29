@@ -10,32 +10,32 @@ OpenBox(FadeProcessor) {
 
 	int hashCode() {}
 
-	void update(float arg0) {}
+	void update(float delta) {}
 
 	void start() {}
 
+	void draw(CustomSpriteBatch batch) {}
+
 	void dispose() {}
 
-	void updateNewScreen(float arg0) {}
+	void setFader(ScreenFader fader) {}
 
-	void draw(CustomSpriteBatch arg0) {}
+	boolean done() {}
 
-	void updateOldScreen(float arg0) {}
+	void drawOldScreen(CustomSpriteBatch batch, float x, float y) {}
+
+	void drawOldScreen(CustomSpriteBatch batch) {}
+
+	void drawNewScreen(CustomSpriteBatch batch) {}
+
+	void drawNewScreen(CustomSpriteBatch batch, float x, float y) {}
+
+	void updateOldScreen(float delta) {}
 
 	void disposeOldScreen() {}
 
-	void drawNewScreen(CustomSpriteBatch arg0, float arg1, float arg2) {}
-
-	void drawNewScreen(CustomSpriteBatch arg0) {}
+	void updateNewScreen(float delta) {}
 
 	void initNewScreen() {}
-
-	void setFader(ScreenFader arg0) {}
-
-	void drawOldScreen(CustomSpriteBatch arg0, float arg1, float arg2) {}
-
-	void drawOldScreen(CustomSpriteBatch arg0) {}
-
-	boolean done() {}
 
 }

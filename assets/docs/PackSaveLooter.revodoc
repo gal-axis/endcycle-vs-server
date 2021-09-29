@@ -3,7 +3,7 @@ PackSaveLooter(DefaultLooter) : MessageAction, TextConfirmAction {
 	final List loot;
 	final List extra;
 
-	new(Battle arg0, String arg1, Runnable arg2) {}
+	new(Battle battle, String suffix, Runnable done) {}
 
 	boolean equals(Object arg0) {}
 
@@ -11,84 +11,84 @@ PackSaveLooter(DefaultLooter) : MessageAction, TextConfirmAction {
 
 	int hashCode() {}
 
-	void onRewardClosed() {}
-
 	void onRewardError() {}
 
-	void onRewardOpened() {}
+	void onRewardClosed() {}
 
 	void onRewardEarned() {}
 
+	void onRewardOpened() {}
+
 	void dispose() {}
 
-	void update(float arg0) {}
+	void update(float delta) {}
 
 	boolean remove() {}
 
 	String getName() {}
 
-	void init(GameScreen arg0) {}
+	void init(GameScreen screen) {}
 
 	boolean isHidden() {}
 
-	void resize(boolean arg0, int arg1, int arg2) {}
+	void resize(boolean landscape, int width, int height) {}
 
-	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void hide(GameScreen arg0) {}
+	void show(GameScreen screen) {}
 
-	void show(GameScreen arg0) {}
-
-	float getComparisonKey() {}
+	void hide(GameScreen screen) {}
 
 	Origin getOrigin() {}
 
 	byte getLayer() {}
 
-	void addLoot(Lootable arg0) {}
+	float getComparisonKey() {}
 
 	boolean hasLoot() {}
 
-	void addAffinity(ID arg0, float arg1) {}
+	void addLoot(Lootable loot) {}
 
-	void addAffinity(BattleEntity arg0, float arg1) {}
+	void addAffinity(BattleEntity entity, float amount) {}
 
-	void addRandomLoot(int arg0, boolean arg1) {}
+	void addAffinity(ID entity, float amount) {}
 
-	void addRandomVoc() {}
+	void addRandomLoot(int money, boolean items) {}
 
 	void addRandomStyle() {}
 
 	boolean hasExtra() {}
 
-	void controllerDisconnected(Controller arg0) {}
+	void addRandomVoc() {}
 
-	void controllerConnected(Controller arg0) {}
+	void controllerDisconnected(Controller controller) {}
 
-	boolean keyDown(int arg0) {}
-
-	boolean keyTyped(char arg0) {}
-
-	boolean keyUp(int arg0) {}
-
-	boolean triggerButton(ButtonEvent arg0) {}
+	void controllerConnected(Controller controller) {}
 
 	int getInputPriority() {}
 
-	boolean addButtonTips(ButtonTipList arg0) {}
+	boolean keyTyped(char character) {}
 
-	boolean triggerTouch(TouchEvent arg0) {}
+	boolean triggerTouch(TouchEvent event) {}
 
-	boolean triggerType(int arg0) {}
+	boolean triggerButton(ButtonEvent event) {}
+
+	boolean triggerType(int character) {}
+
+	boolean keyDown(int keycode) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean keyUp(int keycode) {}
 
 	void finish() {}
 
-	void grabExtra() {}
-
 	void showNextLoot() {}
 
-	boolean apply(String arg0) {}
+	void grabExtra() {}
 
-	boolean onPress(ContentMessage arg0) {}
+	boolean apply(String name) {}
+
+	boolean onPress(ContentMessage message) {}
 
 }

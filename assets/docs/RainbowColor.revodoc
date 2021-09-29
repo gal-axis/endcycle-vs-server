@@ -7,55 +7,55 @@ final RainbowColor(CColor) {
 
 	new() {}
 
-	boolean equals(Object arg0) {}
+	boolean equals(Object o) {}
 
 	String toString() {}
 
 	int hashCode() {}
 
-	CColor add(float arg0, float arg1, float arg2, float arg3) {}
+	CColor add(float r, float g, float b, float a) {}
 
-	CColor add(Color arg0) {}
-
-	CColor set(Color arg0) {}
-
-	CColor set(float arg0, float arg1, float arg2, float arg3) {}
+	CColor add(Color color) {}
 
 	Color set(int arg0) {}
 
-	CColor mul(Color arg0) {}
+	CColor set(float r, float g, float b, float a) {}
 
-	CColor mul(float arg0) {}
+	CColor set(Color color) {}
 
-	CColor mul(float arg0, float arg1, float arg2, float arg3) {}
+	CColor mul(float value) {}
 
-	CColor lerp(float arg0, float arg1, float arg2, float arg3, float arg4) {}
+	CColor mul(Color color) {}
 
-	CColor lerp(Color arg0, float arg1) {}
+	CColor mul(float r, float g, float b, float a) {}
+
+	CColor lerp(float r, float g, float b, float a, float t) {}
+
+	CColor lerp(Color target, float t) {}
 
 	Color clamp() {}
 
-	Color premultiplyAlpha() {}
+	CColor sub(float r, float g, float b, float a) {}
+
+	CColor sub(Color color) {}
 
 	int toIntBits() {}
-
-	CColor sub(float arg0, float arg1, float arg2, float arg3) {}
-
-	CColor sub(Color arg0) {}
-
-	float toFloatBits() {}
 
 	float[] toHsv(float[] arg0) {}
 
 	CColor cpy() {}
 
+	Color premultiplyAlpha() {}
+
+	float toFloatBits() {}
+
 	Color fromHsv(float[] arg0) {}
 
 	Color fromHsv(float arg0, float arg1, float arg2) {}
 
-	CColor mulAlpha(float arg0) {}
+	CColor mulAlpha(float alpha) {}
 
-	void update(float arg0) {}
+	void update(float seed) {}
 
 	void update() {}
 

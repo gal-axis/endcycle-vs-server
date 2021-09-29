@@ -3,8 +3,8 @@ final MoveEntityScript(BattleScript) {
 	BattleEntity user;
 	Battle battle;
 	String name;
-	String relativeEntity;
 	boolean relative;
+	String relativeEntity;
 	MoveType moveType;
 	int x;
 	int y;
@@ -35,17 +35,17 @@ final MoveEntityScript(BattleScript) {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void show(GameScreen screen) {}
-
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
+	void show(GameScreen screen) {}
+
 	void hide(GameScreen screen) {}
+
+	Origin getOrigin() {}
 
 	byte getLayer() {}
 
 	float getComparisonKey() {}
-
-	Origin getOrigin() {}
 
 	void start(GameScreen screen) {}
 

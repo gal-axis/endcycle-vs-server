@@ -4,11 +4,11 @@ BattleEntityList(Array) {
 	int size;
 	boolean ordered;
 
-	new(Array arg0) {}
+	new(Array battleEntities) {}
 
-	new(BattleEntity[] arg0) {}
+	new(BattleEntity[] battleEntities) {}
 
-	new(int arg0) {}
+	new(int capacity) {}
 
 	new() {}
 
@@ -44,13 +44,13 @@ BattleEntityList(Array) {
 
 	BattleEntity[] toArray() {}
 
-	void addAll(Array arg0, int arg1, int arg2) {}
+	void addAll(Array arg0) {}
 
-	void addAll(BattleEntity[] arg0, int arg1, int arg2) {}
+	void addAll(Array arg0, int arg1, int arg2) {}
 
 	void addAll(BattleEntity[] arg0) {}
 
-	void addAll(Array arg0) {}
+	void addAll(BattleEntity[] arg0, int arg1, int arg2) {}
 
 	BattleEntity pop() {}
 
@@ -76,9 +76,9 @@ BattleEntityList(Array) {
 
 	BattleEntity[] setSize(int arg0) {}
 
-	void sort() {}
-
 	void sort(Comparator arg0) {}
+
+	void sort() {}
 
 	void shuffle() {}
 
@@ -88,58 +88,58 @@ BattleEntityList(Array) {
 
 	int selectRankedIndex(Comparator arg0, int arg1) {}
 
-	boolean removeValue(BattleEntity arg0, boolean arg1) {}
-
-	boolean equalsIdentity(Object arg0) {}
-
 	BattleEntity removeIndex(int arg0) {}
+
+	boolean removeValue(BattleEntity arg0, boolean arg1) {}
 
 	void insertRange(int arg0, int arg1) {}
 
-	BattleEntity[] shrink() {}
+	boolean containsAny(Array arg0, boolean arg1) {}
 
 	boolean notEmpty() {}
 
 	BattleEntity selectRanked(Comparator arg0, int arg1) {}
 
-	boolean containsAny(Array arg0, boolean arg1) {}
+	BattleEntity[] shrink() {}
 
-	BattleEntity get(String arg0) {}
+	boolean equalsIdentity(Object arg0) {}
 
-	BattleEntityList check(BattleEntityList arg0, BECondition arg1) {}
+	BattleEntity get(String name) {}
+
+	BattleEntityList check(BattleEntityList collection, BECondition filter) {}
 
 	Party getWinner() {}
 
-	BattleEntityList beFrom(Party arg0) {}
+	BattleEntityList beFrom(Party party, BattleEntityList collection) {}
 
-	BattleEntityList beFrom(Party arg0, BattleEntityList arg1) {}
+	BattleEntityList beFrom(Party party, boolean neutral, BattleEntityList collection) {}
 
-	BattleEntityList beFrom(Party arg0, boolean arg1) {}
+	BattleEntityList beFrom(Party party, boolean neutral) {}
 
-	BattleEntityList beFrom(Party arg0, boolean arg1, BattleEntityList arg2) {}
+	BattleEntityList beFrom(Party party) {}
 
-	BattleEntityList beNotAt(int arg0, int arg1, BattleEntityList arg2) {}
+	BattleEntityList beAtCol(int yTile) {}
 
-	BattleEntityList beNotAt(int arg0, int arg1) {}
+	BattleEntityList beAtCol(int yTile, BattleEntityList collection) {}
 
-	BattleEntityList beAtRow(int arg0, BattleEntityList arg1) {}
+	BattleEntityList beNotAt(int xTile, int yTile, BattleEntityList collection) {}
 
-	BattleEntityList beAtRow(int arg0) {}
+	BattleEntityList beNotAt(int xTile, int yTile) {}
 
-	BattleEntityList isCrushed(BattleEntityList arg0) {}
+	boolean hasVitalAndAlive(Party party) {}
 
-	BattleEntityList beNotFrom(Party arg0, BattleEntityList arg1) {}
+	BattleEntityList beAtRow(int xTile) {}
 
-	BattleEntityList beNotFrom(Party arg0) {}
+	BattleEntityList beAtRow(int xTile, BattleEntityList collection) {}
 
-	BattleEntityList beFloating(boolean arg0, BattleEntityList arg1) {}
+	BattleEntityList isCrushed(BattleEntityList collection) {}
 
-	BattleEntityList beFloating(boolean arg0) {}
+	BattleEntityList beFloating(boolean floating, BattleEntityList collection) {}
 
-	BattleEntityList beAtCol(int arg0) {}
+	BattleEntityList beFloating(boolean floating) {}
 
-	BattleEntityList beAtCol(int arg0, BattleEntityList arg1) {}
+	BattleEntityList beNotFrom(Party party) {}
 
-	boolean hasVitalAndAlive(Party arg0) {}
+	BattleEntityList beNotFrom(Party party, BattleEntityList collection) {}
 
 }

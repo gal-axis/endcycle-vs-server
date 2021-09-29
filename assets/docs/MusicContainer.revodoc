@@ -12,6 +12,10 @@ final MusicContainer(Object) : CompletionListener {
 
 	void load() {}
 
+	void setMusicProcessor(MusicProcessor processor) {}
+
+	void play() {}
+
 	void pause() {}
 
 	void dispose() {}
@@ -20,28 +24,24 @@ final MusicContainer(Object) : CompletionListener {
 
 	void setNext(ID next) {}
 
-	void play() {}
-
-	void setMusicProcessor(MusicProcessor processor) {}
-
 	float getPosition() {}
+
+	void setVolume(float volume) {}
+
+	boolean isPlaying() {}
+
+	void setCachePcm(boolean cache) {}
+
+	float getVolume() {}
+
+	boolean isLooping() {}
+
+	void setLooping(boolean looping) {}
+
+	void setPan(float pan, float volume) {}
 
 	MusicProcessor getMusicProcessor() {}
 
 	void setOnLoopListener(LoopListener listener) {}
-
-	float getVolume() {}
-
-	void setPan(float pan, float volume) {}
-
-	boolean isLooping() {}
-
-	boolean isPlaying() {}
-
-	void setLooping(boolean looping) {}
-
-	void setCachePcm(boolean cache) {}
-
-	void setVolume(float volume) {}
 
 }

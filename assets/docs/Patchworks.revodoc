@@ -8,6 +8,7 @@ enum Patchworks {
  	Jet,
  	Spikes,
  	Data,
+ 	Kevin,
  	Fin,
  	QT,
  	Sofa,
@@ -59,7 +60,8 @@ enum Patchworks {
  	Godius_Left_Arm,
  	Godius_Right_Arm,
  	Gateway_Portal,
- 	Farmadile;
+ 	Farmadile,
+ 	Water_Bomb;
 
 	final boolean equals(Object arg0) {}
 
@@ -75,7 +77,7 @@ enum Patchworks {
 
 	static Patchworks[] values() {}
 
-	static Patchworks valueOf(String arg0) {}
+	static Patchworks valueOf(String name) {}
 
 	ID getId() {}
 

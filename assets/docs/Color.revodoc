@@ -62,82 +62,82 @@ Color(Object) {
 
 	static Color valueOf(String arg0, Color arg1) {}
 
-	Color set(Color arg0) {}
+	Color set(int arg0) {}
 
 	Color set(float arg0, float arg1, float arg2, float arg3) {}
 
-	Color set(int arg0) {}
-
-	Color mul(Color arg0) {}
+	Color set(Color arg0) {}
 
 	Color mul(float arg0) {}
 
+	Color mul(Color arg0) {}
+
 	Color mul(float arg0, float arg1, float arg2, float arg3) {}
+
+	static int alpha(float arg0) {}
 
 	Color lerp(float arg0, float arg1, float arg2, float arg3, float arg4) {}
 
 	Color lerp(Color arg0, float arg1) {}
 
-	static int alpha(float arg0) {}
-
 	Color clamp() {}
-
-	Color premultiplyAlpha() {}
-
-	static int toIntBits(int arg0, int arg1, int arg2, int arg3) {}
-
-	int toIntBits() {}
-
-	Color sub(float arg0, float arg1, float arg2, float arg3) {}
-
-	Color sub(Color arg0) {}
 
 	static int rgba8888(float arg0, float arg1, float arg2, float arg3) {}
 
 	static int rgba8888(Color arg0) {}
 
-	static float toFloatBits(int arg0, int arg1, int arg2, int arg3) {}
+	Color sub(float arg0, float arg1, float arg2, float arg3) {}
 
-	static float toFloatBits(float arg0, float arg1, float arg2, float arg3) {}
+	Color sub(Color arg0) {}
 
-	float toFloatBits() {}
+	static int toIntBits(int arg0, int arg1, int arg2, int arg3) {}
+
+	int toIntBits() {}
 
 	static int luminanceAlpha(float arg0, float arg1) {}
 
-	static int rgb565(Color arg0) {}
-
-	static int rgb565(float arg0, float arg1, float arg2) {}
-
-	static int rgba4444(Color arg0) {}
-
-	static int rgba4444(float arg0, float arg1, float arg2, float arg3) {}
+	static void rgba4444ToColor(Color arg0, int arg1) {}
 
 	static void rgb565ToColor(Color arg0, int arg1) {}
 
-	static void rgba8888ToColor(Color arg0, int arg1) {}
+	static int rgba4444(float arg0, float arg1, float arg2, float arg3) {}
 
-	static void rgb888ToColor(Color arg0, int arg1) {}
-
-	float[] toHsv(float[] arg0) {}
-
-	Color cpy() {}
-
-	static int rgb888(Color arg0) {}
-
-	static int rgb888(float arg0, float arg1, float arg2) {}
-
-	static void rgba4444ToColor(Color arg0, int arg1) {}
-
-	static void abgr8888ToColor(Color arg0, float arg1) {}
+	static int rgba4444(Color arg0) {}
 
 	static int argb8888(float arg0, float arg1, float arg2, float arg3) {}
 
 	static int argb8888(Color arg0) {}
 
+	float[] toHsv(float[] arg0) {}
+
+	static void rgba8888ToColor(Color arg0, int arg1) {}
+
+	Color cpy() {}
+
+	static void argb8888ToColor(Color arg0, int arg1) {}
+
+	static void rgb888ToColor(Color arg0, int arg1) {}
+
+	Color premultiplyAlpha() {}
+
+	float toFloatBits() {}
+
+	static float toFloatBits(int arg0, int arg1, int arg2, int arg3) {}
+
+	static float toFloatBits(float arg0, float arg1, float arg2, float arg3) {}
+
+	static void abgr8888ToColor(Color arg0, float arg1) {}
+
 	Color fromHsv(float[] arg0) {}
 
 	Color fromHsv(float arg0, float arg1, float arg2) {}
 
-	static void argb8888ToColor(Color arg0, int arg1) {}
+	static int rgb888(float arg0, float arg1, float arg2) {}
+
+	static int rgb888(Color arg0) {}
+
+	static int rgb565(float arg0, float arg1, float arg2) {}
+
+	static int rgb565(Color arg0) {}
 
 }

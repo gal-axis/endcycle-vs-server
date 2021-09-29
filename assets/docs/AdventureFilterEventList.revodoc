@@ -1,6 +1,6 @@
 AdventureFilterEventList(AdventureEventList) : RandomChance {
 
-	LocalizedMessage name;
+	String name;
 	DrawableId icon;
 	ID song;
 	List events;
@@ -19,6 +19,8 @@ AdventureFilterEventList(AdventureEventList) : RandomChance {
 	String toString() {}
 
 	int hashCode() {}
+
+	String getName() {}
 
 	float getRandomChance() {}
 

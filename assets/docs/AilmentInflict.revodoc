@@ -1,4 +1,4 @@
-final AilmentInflict(Object) {
+final AilmentInflict(Object) : Named {
 
 	AilmentType type;
 	float intensity;
@@ -16,14 +16,16 @@ final AilmentInflict(Object) {
 
 	int hashCode() {}
 
+	String getName() {}
+
 	static AilmentInflict get(Array ailments, AilmentType type) {}
+
+	static void boost(Array ailments, float duration, float intensityHeal, float intensityDebuff) {}
 
 	static void invertAilments(Array ailments) {}
 
 	static void changeInflict(AilmentInflict inflict, float intensity, float duration) {}
 
 	static void addInflict(Array ailments, AilmentInflict ai) {}
-
-	static void boost(Array ailments, float duration, float intensityHeal, float intensityDebuff) {}
 
 }

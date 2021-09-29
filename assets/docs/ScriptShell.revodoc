@@ -1,20 +1,22 @@
-final ScriptShell(Object) : Serializable {
+final ScriptShell(Object) : Named, Serializable {
 
 	float delay;
 	Script script;
 
 	new() {}
 
-	new(Script arg0) {}
+	new(Script script) {}
 
-	boolean equals(Object arg0) {}
+	boolean equals(Object o) {}
 
 	String toString() {}
 
 	int hashCode() {}
 
-	void write(Json arg0) {}
+	void write(Json json) {}
 
-	void read(Json arg0, JsonValue arg1) {}
+	void read(Json json, JsonValue jsonData) {}
+
+	String getName() {}
 
 }

@@ -18,12 +18,12 @@ abstract IIRFilter(FloatMusicProcessor) {
 
 	byte[] getBytes(float f) {}
 
-	abstract void calculateCoefficients();
-
-	int getSampleRate() {}
-
 	void setACoeffecients(float[] aCoeffecient) {}
 
 	void setBCoeffecients(float[] bCoeffecient) {}
+
+	int getSampleRate() {}
+
+	abstract void calculateCoefficients();
 
 }

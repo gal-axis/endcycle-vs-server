@@ -38,11 +38,11 @@ Vector2(Object) {
 
 	Vector2 sub(Vector2 arg0) {}
 
+	float dst(Vector2 arg0) {}
+
 	Vector2 cpy() {}
 
 	Vector2 nor() {}
-
-	float dst(Vector2 arg0) {}
 
 	float len2() {}
 
@@ -50,47 +50,47 @@ Vector2(Object) {
 
 	Vector2 setToRandomDirection() {}
 
-	boolean hasOppositeDirection(Vector2 arg0) {}
-
 	boolean isCollinearOpposite(Vector2 arg0) {}
 
 	boolean isCollinearOpposite(Vector2 arg0, float arg1) {}
 
-	float dot(Vector2 arg0) {}
+	boolean hasOppositeDirection(Vector2 arg0) {}
 
 	boolean isZero() {}
 
 	boolean isZero(float arg0) {}
 
-	Vector2 mulAdd(Vector2 arg0, float arg1) {}
-
-	Vector2 mulAdd(Vector2 arg0, Vector2 arg1) {}
+	float dot(Vector2 arg0) {}
 
 	boolean hasSameDirection(Vector2 arg0) {}
 
-	boolean isCollinear(Vector2 arg0) {}
-
 	boolean isCollinear(Vector2 arg0, float arg1) {}
 
-	Vector2 limit2(float arg0) {}
-
-	boolean isPerpendicular(Vector2 arg0, float arg1) {}
+	boolean isCollinear(Vector2 arg0) {}
 
 	boolean isPerpendicular(Vector2 arg0) {}
 
+	boolean isPerpendicular(Vector2 arg0, float arg1) {}
+
 	Vector2 setLength2(float arg0) {}
 
-	Vector2 setZero() {}
+	Vector2 limit2(float arg0) {}
 
 	boolean epsilonEquals(Vector2 arg0, float arg1) {}
 
-	boolean isUnit() {}
+	Vector2 mulAdd(Vector2 arg0, Vector2 arg1) {}
+
+	Vector2 mulAdd(Vector2 arg0, float arg1) {}
+
+	Vector2 setZero() {}
 
 	boolean isUnit(float arg0) {}
 
-	boolean isOnLine(Vector2 arg0) {}
+	boolean isUnit() {}
 
 	boolean isOnLine(Vector2 arg0, float arg1) {}
+
+	boolean isOnLine(Vector2 arg0) {}
 
 	Vector2 add(float arg0, float arg1) {}
 
@@ -104,9 +104,9 @@ Vector2(Object) {
 
 	Vector2 sub(float arg0, float arg1) {}
 
-	static float dst(float arg0, float arg1, float arg2, float arg3) {}
-
 	float dst(float arg0, float arg1) {}
+
+	static float dst(float arg0, float arg1, float arg2, float arg3) {}
 
 	static float len2(float arg0, float arg1) {}
 
@@ -114,27 +114,23 @@ Vector2(Object) {
 
 	float dst2(float arg0, float arg1) {}
 
-	static float dot(float arg0, float arg1, float arg2, float arg3) {}
-
-	float dot(float arg0, float arg1) {}
+	Vector2 rotateRad(float arg0) {}
 
 	float crs(Vector2 arg0) {}
 
 	float crs(float arg0, float arg1) {}
 
-	Vector2 rotateRad(float arg0) {}
+	static float dot(float arg0, float arg1, float arg2, float arg3) {}
 
-	Vector2 fromString(String arg0) {}
+	float dot(float arg0, float arg1) {}
 
-	boolean epsilonEquals(float arg0, float arg1, float arg2) {}
+	Vector2 rotateAroundRad(Vector2 arg0, float arg1) {}
 
-	boolean epsilonEquals(Vector2 arg0) {}
+	float angleRad(Vector2 arg0) {}
 
-	boolean epsilonEquals(float arg0, float arg1) {}
+	float angleRad() {}
 
-	Vector2 setAngleDeg(float arg0) {}
-
-	Vector2 rotateAroundDeg(Vector2 arg0, float arg1) {}
+	Vector2 rotateDeg(float arg0) {}
 
 	float angleDeg(Vector2 arg0) {}
 
@@ -142,14 +138,18 @@ Vector2(Object) {
 
 	Vector2 setAngleRad(float arg0) {}
 
-	float angleRad() {}
+	Vector2 rotateAroundDeg(Vector2 arg0, float arg1) {}
 
-	float angleRad(Vector2 arg0) {}
-
-	Vector2 rotateDeg(float arg0) {}
-
-	Vector2 rotateAroundRad(Vector2 arg0, float arg1) {}
+	Vector2 setAngleDeg(float arg0) {}
 
 	Vector2 rotate90(int arg0) {}
+
+	Vector2 fromString(String arg0) {}
+
+	boolean epsilonEquals(Vector2 arg0) {}
+
+	boolean epsilonEquals(float arg0, float arg1, float arg2) {}
+
+	boolean epsilonEquals(float arg0, float arg1) {}
 
 }

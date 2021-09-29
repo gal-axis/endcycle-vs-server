@@ -42,11 +42,11 @@ BattleNotificationDisplay(Object) : ScreenObject {
 
 	BattleNotificationData get(String text, Color color) {}
 
+	void show(BattleNotificationData data) {}
+
 	void show(String text, BattleEntity entity) {}
 
 	void show(String text, Color color) {}
-
-	void show(BattleNotificationData data) {}
 
 	void kill(BattleEntity entity, BattleEntity killed) {}
 
@@ -54,13 +54,13 @@ BattleNotificationDisplay(Object) : ScreenObject {
 
 	void winning(Party party) {}
 
-	void killstreak(BattleEntity entity, int streak) {}
-
-	void multikill(BattleEntity entity, int amount) {}
+	void killjoy(BattleEntity entity, BattleEntity killer) {}
 
 	void revenge(BattleEntity entity, BattleEntity killed) {}
 
-	void killjoy(BattleEntity entity, BattleEntity killer) {}
+	void multikill(BattleEntity entity, int amount) {}
+
+	void killstreak(BattleEntity entity, int streak) {}
 
 	void friendlyFire(BattleEntity entity, BattleEntity killed) {}
 

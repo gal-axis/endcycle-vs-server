@@ -43,44 +43,44 @@ BaseAdventureFaction(Object) : AdventureFaction, SpeedSupplier, PickupAction, Ad
 
 	boolean loot(AdventureFieldNode entry) {}
 
-	void stopBattle(BattleEntityList entities) {}
+	DrawableImage getIcon() {}
 
 	void startBattle(BattleEntityList entities) {}
 
+	void stopBattle(BattleEntityList entities) {}
+
+	void finishZone(AdventureFieldData entry) {}
+
 	void startNode(AdventureFieldNode entry) {}
 
-	void addLoseLoot(Looter looter) {}
-
-	void generateNodes(AdventureNodeGraph graph) {}
+	void generateStart(AdventureNodeGraph graph) {}
 
 	void addWinLoot(Looter looter) {}
 
-	void generateStart(AdventureNodeGraph graph) {}
+	void generateFinish(AdventureNodeGraph graph) {}
+
+	void finishNode(AdventureFieldNode entry) {}
 
 	void updatePlayer(BattlePlayer player) {}
 
 	void startZone(AdventureFieldData data) {}
 
-	void generateFinish(AdventureNodeGraph graph) {}
+	void generateBranches(AdventureNodeGraph graph) {}
+
+	void generateNodes(AdventureNodeGraph graph) {}
+
+	void addLoseLoot(Looter looter) {}
 
 	void generateFinal(AdventureNodeGraph graph) {}
 
-	void generateBranches(AdventureNodeGraph graph) {}
-
-	DrawableImage getIcon() {}
-
-	void finishNode(AdventureFieldNode entry) {}
-
-	void finishZone(AdventureFieldData entry) {}
-
 	boolean canUpgrade() {}
+
+	void goToZone(ID zoneId) {}
 
 	void generateUpgrade(AdventureNodeGraph graph) {}
 
 	void selectZone(AdventureZone zone) {}
 
 	int getStatModifier() {}
-
-	void goToZone(ID zoneId) {}
 
 }

@@ -49,7 +49,8 @@ enum BattleFields {
  	Invader,
  	FossilFight,
  	Unnamed,
- 	PanelGrab_Test;
+ 	PanelGrab_Test,
+ 	Mobile_Test;
 
 	final boolean equals(Object arg0) {}
 
@@ -65,7 +66,7 @@ enum BattleFields {
 
 	static BattleFields[] values() {}
 
-	static BattleFields valueOf(String arg0) {}
+	static BattleFields valueOf(String name) {}
 
 	ID getId() {}
 

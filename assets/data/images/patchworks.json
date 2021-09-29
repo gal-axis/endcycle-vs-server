@@ -249,5 +249,4816 @@
 			]
 		}
 	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 40 },
+	"name": "Kevin",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 74 },
+	"name": "Fin",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 4,
+			"images": [
+				{
+					"drawable": { "id": 400 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 4,
+			"images": [
+				{
+					"drawable": { "id": 401 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_START" },
+			"shadowOffsetY": 4,
+			"images": [
+				{
+					"drawable": { "id": 403 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_END" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 4,
+			"images": [
+				{
+					"drawable": { "id": 404 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetX": 5,
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 509 },
+					"xPos": 10,
+					"yPos": -2
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 4,
+			"images": [
+				{
+					"drawable": { "id": 402 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"shadowOffsetY": 4,
+			"images": [
+				{
+					"drawable": { "id": 676 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"shadowOffsetY": 4,
+			"images": [
+				{
+					"drawable": { "id": 400 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 4,
+			"images": [
+				{
+					"drawable": { "id": 400 }
+				}
+			]
+		}
+	],
+	"keepUncustomized": true,
+	"customizables": [
+		{
+			"name": "Jacket",
+			"replace": [
+				{ "replace": -2547969 },
+				{
+					"replace": -1049358337,
+					"newColor": { "r": 0.49019608, "g": 0.49019608, "b": 0.49019608, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.41960785, "g": 0.43137255, "b": 0.81960785, "a": 1 },
+				{ "r": 0.4745098, "g": 0.72156864, "b": 0.3529412, "a": 1 },
+				{ "r": 0.6392157, "g": 0.43529412, "b": 0.3019608, "a": 1 },
+				{ "r": 0.29411766, "g": 0.29411766, "b": 0.2901961, "a": 1 },
+				{ "r": 0.52156866, "g": 0.10980392, "b": 0.10980392, "a": 1 }
+			]
+		},
+		{
+			"name": "Cap + Gloves",
+			"replace": [
+				{ "replace": 2143720703 },
+				{
+					"replace": 1335788287,
+					"newColor": { "r": 0.7019608, "g": 0.7019608, "b": 0.7019608, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.65882355, "g": 0.43137255, "b": 0.7294118, "a": 1 },
+				{ "r": 0.7411765, "g": 0.36862746, "b": 0.34117648, "a": 1 },
+				{ "r": 0.7294118, "g": 0.654902, "b": 0.43137255, "a": 1 },
+				{ "r": 0.20392157, "g": 0.3254902, "b": 0.5686275, "a": 1 },
+				{ "r": 0.85882354, "g": 0.8509804, "b": 0.8509804, "a": 1 }
+			]
+		},
+		{
+			"name": "Pants",
+			"replace": [
+				{ "replace": 2136684799 },
+				{
+					"replace": 1580933631,
+					"newColor": { "r": 0.61960787, "g": 0.61960787, "b": 0.61960787, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.27058825, "g": 0.2509804, "b": 0.23921569, "a": 1 },
+				{ "r": 0.36862746, "g": 0.27058825, "b": 0.6784314, "a": 1 },
+				{ "r": 0.39607844, "g": 0.5137255, "b": 0.72156864, "a": 1 },
+				{ "r": 0.23137255, "g": 0.41960785, "b": 0.22745098, "a": 1 },
+				{ "r": 0.5803922, "g": 0.5921569, "b": 0.6, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 76 },
+	"name": "QT",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 406 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 407 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_START" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 410 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_END" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 411 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_CLOSE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 409 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 408 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 674 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_OPEN" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 412 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_CLOSE" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 413 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 406 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 406 }
+				}
+			]
+		}
+	],
+	"keepUncustomized": true,
+	"customizables": [
+		{
+			"name": "Color",
+			"replace": [
+				{
+					"replace": -1086046977,
+					"newColor": { "r": 0.7490196, "g": 0.7490196, "b": 0.7490196, "a": 1 }
+				},
+				{
+					"replace": -1876806657,
+					"newColor": { "r": 0.56078434, "g": 0.56078434, "b": 0.56078434, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.8392157, "g": 0.30980393, "b": 0.6627451, "a": 1 },
+				{ "r": 0.92941177, "g": 0.70980394, "b": 0.15686275, "a": 1 },
+				{ "r": 0.3019608, "g": 0.70980394, "b": 0.2, "a": 1 },
+				{ "r": 0.2, "g": 0.65882355, "b": 0.70980394, "a": 1 },
+				{ "r": 0.42745098, "g": 0.27450982, "b": 0.56078434, "a": 1 },
+				{ "r": 0.41960785, "g": 0.3882353, "b": 0.3882353, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 78 },
+	"name": "Sofa",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 416 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 417 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_START" },
+			"images": [
+				{
+					"drawable": { "id": 419 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_END" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 420 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 418 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"images": [
+				{
+					"drawable": { "id": 377 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "COUCH" },
+			"images": [
+				{
+					"drawable": { "id": 421 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"images": [
+				{
+					"drawable": { "id": 416 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 416 }
+				}
+			]
+		}
+	],
+	"keepUncustomized": true,
+	"customizables": [
+		{
+			"name": "Color",
+			"replace": [
+				{ "replace": 1803259903 },
+				{
+					"replace": 1247374079,
+					"newColor": { "r": 0.6509804, "g": 0.6509804, "b": 0.6509804, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.8117647, "g": 0.25882354, "b": 0.2784314, "a": 1 },
+				{ "r": 0.53333336, "g": 0.41960785, "b": 0.56078434, "a": 1 },
+				{ "r": 0.6392157, "g": 0.4627451, "b": 0.37254903, "a": 1 },
+				{ "r": 0.6117647, "g": 0.5882353, "b": 0.28627452, "a": 1 },
+				{ "r": 0.39607844, "g": 0.6313726, "b": 0.30980393, "a": 1 },
+				{ "r": 0.32156864, "g": 0.61960787, "b": 0.5803922, "a": 1 },
+				{ "r": 0.75686276, "g": 0.78039217, "b": 0.7254902, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 81 },
+	"name": "Greed",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 424 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 425 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_START" },
+			"images": [
+				{
+					"drawable": { "id": 427 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_END" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 428 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 426 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"images": [
+				{
+					"drawable": { "id": 311 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"images": [
+				{
+					"drawable": { "id": 424 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 424 }
+				}
+			]
+		}
+	],
+	"keepUncustomized": true,
+	"customizables": [
+		{
+			"name": "Color",
+			"replace": [
+				{
+					"replace": -50343425,
+					"newColor": { "r": 0.92941177, "g": 0.92941177, "b": 0.92941177, "a": 1 }
+				},
+				{
+					"replace": -872443393,
+					"newColor": { "r": 0.7882353, "g": 0.7882353, "b": 0.7882353, "a": 1 }
+				},
+				{
+					"replace": 2059706623,
+					"newColor": { "r": 0.4392157, "g": 0.4392157, "b": 0.4392157, "a": 1 }
+				},
+				{
+					"replace": 1285203455,
+					"newColor": { "r": 0.2784314, "g": 0.2784314, "b": 0.2784314, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.9411765, "g": 0.57254905, "b": 0.57254905, "a": 1 },
+				{ "r": 0.9019608, "g": 0.7647059, "b": 0.4509804, "a": 1 },
+				{ "r": 0.627451, "g": 0.8509804, "b": 0.67058825, "a": 1 },
+				{ "r": 0.38431373, "g": 0.5921569, "b": 0.8901961, "a": 1 },
+				{ "r": 0.5921569, "g": 0.38431373, "b": 0.8901961, "a": 1 },
+				{ "r": 0.32156864, "g": 0.32156864, "b": 0.32941177, "a": 1 },
+				{ "r": 0.78039217, "g": 0.73333335, "b": 0.73333335, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 83 },
+	"name": "Bomby",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 434 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 435 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_START" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 437 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_END" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 438 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 386 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 436 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 706 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FALLING" },
+			"images": [
+				{
+					"drawable": { "id": 654 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "LANDED" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 655 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 434 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 434 }
+				}
+			]
+		}
+	],
+	"keepUncustomized": true,
+	"customizables": [
+		{
+			"name": "Color",
+			"replace": [
+				{ "replace": -97537 },
+				{ "replace": -1147137 },
+				{
+					"replace": -5287681,
+					"newColor": { "r": 0.78039217, "g": 0.78039217, "b": 0.78039217, "a": 1 }
+				},
+				{
+					"replace": -818004225,
+					"newColor": { "r": 0.56078434, "g": 0.56078434, "b": 0.56078434, "a": 1 }
+				},
+				{
+					"replace": -1725468161,
+					"newColor": { "r": 0.2901961, "g": 0.2901961, "b": 0.2901961, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.96862745, "g": 0.36078432, "b": 0.36078432, "a": 1 },
+				{ "r": 0.6156863, "g": 1, "b": 0.34117648, "a": 1 },
+				{ "r": 0.36862746, "g": 0.95686275, "b": 1, "a": 1 },
+				{ "r": 0.78039217, "g": 0.43137255, "b": 1, "a": 1 },
+				{ "r": 1, "g": 0.9411765, "b": 0.9098039, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 86 },
+	"name": "AV.atar",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 441 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 442 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_START" },
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 444 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_END" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 445 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetX": 3.5,
+			"shadowOffsetY": 2,
+			"images": [
+				{
+					"drawable": { "id": 575 },
+					"xPos": 7,
+					"yPos": 2
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 443 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"shadowOffsetY": 2,
+			"images": [
+				{
+					"drawable": { "id": 707 },
+					"yPos": 2
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "caped" },
+			"images": [
+				{
+					"drawable": { "id": 576 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 441 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 441 }
+				}
+			]
+		}
+	],
+	"keepUncustomized": true,
+	"customizables": [
+		{
+			"name": "Armor 1",
+			"replace": [
+				{ "replace": -2003932161 },
+				{
+					"replace": 1415989247,
+					"newColor": { "r": 0.70980394, "g": 0.70980394, "b": 0.70980394, "a": 1 }
+				},
+				{
+					"replace": 1279404287,
+					"newColor": { "r": 0.49019608, "g": 0.49019608, "b": 0.49019608, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.6156863, "g": 0.70980394, "b": 0.36078432, "a": 1 },
+				{ "r": 0.31764707, "g": 0.5294118, "b": 0.42745098, "a": 1 },
+				{ "r": 0.30588236, "g": 0.44313726, "b": 0.6784314, "a": 1 },
+				{ "r": 0.36862746, "g": 0.30588236, "b": 0.5294118, "a": 1 },
+				{ "r": 0.50980395, "g": 0.22352941, "b": 0.49019608, "a": 1 },
+				{ "r": 0.5882353, "g": 0.23137255, "b": 0.24313726, "a": 1 },
+				{ "r": 0.6392157, "g": 0.40392157, "b": 0.23529412, "a": 1 },
+				{ "r": 0.7019608, "g": 0.6627451, "b": 0.30980393, "a": 1 }
+			]
+		},
+		{
+			"name": "Armor 2",
+			"replace": [
+				{ "replace": -1435005697 },
+				{
+					"replace": 2085572607,
+					"newColor": { "r": 0.8784314, "g": 0.8784314, "b": 0.8784314, "a": 1 }
+				},
+				{
+					"replace": 1664893951,
+					"newColor": { "r": 0.65882355, "g": 0.65882355, "b": 0.65882355, "a": 1 }
+				},
+				{
+					"replace": 975320575,
+					"newColor": { "r": 0.45882353, "g": 0.45882353, "b": 0.45882353, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.25882354, "g": 0.25882354, "b": 0.25882354, "a": 1 },
+				{ "r": 0.9098039, "g": 0.9098039, "b": 0.9098039, "a": 1 },
+				{ "r": 0.3764706, "g": 0.32156864, "b": 0.21176471, "a": 1 },
+				{ "r": 0.41960785, "g": 0.47843137, "b": 0.23921569, "a": 1 },
+				{ "r": 0.2784314, "g": 0.56078434, "b": 0.3254902, "a": 1 },
+				{ "r": 0.25490198, "g": 0.5568628, "b": 0.5803922, "a": 1 },
+				{ "r": 0.19215687, "g": 0.3019608, "b": 0.5294118, "a": 1 },
+				{ "r": 0.5411765, "g": 0.4117647, "b": 0.72156864, "a": 1 },
+				{ "r": 0.52156866, "g": 0.17254902, "b": 0.28627452, "a": 1 },
+				{ "r": 0.76862746, "g": 0.3764706, "b": 0.23137255, "a": 1 },
+				{ "r": 0.5882353, "g": 0.5294118, "b": 0.21960784, "a": 1 }
+			]
+		},
+		{
+			"name": "Skin",
+			"replace": [
+				{ "replace": -321930497 },
+				{
+					"replace": -610628097,
+					"newColor": { "r": 0.6901961, "g": 0.6901961, "b": 0.6901961, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.92156863, "g": 0.69411767, "b": 0.5803922, "a": 1 },
+				{ "r": 0.67058825, "g": 0.44313726, "b": 0.32941177, "a": 1 },
+				{ "r": 0.45882353, "g": 0.30588236, "b": 0.23137255, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 93 },
+	"name": "Spark",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 472 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 473 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_START" },
+			"images": [
+				{
+					"drawable": { "id": 476 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_END" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 477 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 475 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": -1.5,
+			"images": [
+				{
+					"drawable": { "id": 474 },
+					"yPos": -3
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"images": [
+				{
+					"drawable": { "id": 675 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"images": [
+				{
+					"drawable": { "id": 472 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 472 }
+				}
+			]
+		}
+	],
+	"keepUncustomized": true,
+	"customizables": [
+		{
+			"name": "Hat",
+			"replace": [
+				{ "replace": 1943559679 },
+				{
+					"replace": 1604870655,
+					"newColor": { "r": 0.8, "g": 0.8, "b": 0.8, "a": 1 }
+				},
+				{
+					"replace": 1116168447,
+					"newColor": { "r": 0.6117647, "g": 0.6117647, "b": 0.6117647, "a": 1 }
+				},
+				{
+					"replace": 576936191,
+					"newColor": { "r": 0.34117648, "g": 0.34117648, "b": 0.34117648, "a": 1 }
+				},
+				{
+					"replace": 1201566463,
+					"newColor": { "r": 0.7882353, "g": 0.7882353, "b": 0.7882353, "a": 1 }
+				},
+				{ "replace": 2143720703 }
+			],
+			"colors": [
+				{ "r": 0.8509804, "g": 0.7176471, "b": 0.23921569, "a": 1 },
+				{ "r": 0.5176471, "g": 0.8509804, "b": 0.8352941, "a": 1 },
+				{ "r": 0.34117648, "g": 0.59607846, "b": 0.87058824, "a": 1 },
+				{ "r": 0.7176471, "g": 0.46666667, "b": 0.78039217, "a": 1 },
+				{ "r": 0.67058825, "g": 0.22745098, "b": 0.22745098, "a": 1 },
+				{ "r": 0.6117647, "g": 0.40784314, "b": 0.24313726, "a": 1 },
+				{ "r": 0.47843137, "g": 0.47843137, "b": 0.4745098, "a": 1 }
+			]
+		},
+		{
+			"name": "Braces",
+			"replace": [
+				{ "replace": -665770753 },
+				{
+					"replace": -1172564737,
+					"newColor": { "r": 0.6784314, "g": 0.6784314, "b": 0.6784314, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.92941177, "g": 0.7490196, "b": 0.20392157, "a": 1 },
+				{ "r": 0.32941177, "g": 0.81960785, "b": 0.2627451, "a": 1 },
+				{ "r": 0.23921569, "g": 0.5176471, "b": 0.81960785, "a": 1 },
+				{ "r": 0.5176471, "g": 0.22745098, "b": 0.6509804, "a": 1 },
+				{ "r": 0.7490196, "g": 0.1882353, "b": 0.30980393, "a": 1 }
+			]
+		},
+		{
+			"name": "Armor",
+			"replace": [
+				{ "replace": 1262904319 },
+				{
+					"replace": 925716991,
+					"newColor": { "r": 0.6313726, "g": 0.6313726, "b": 0.6313726, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.45882353, "g": 0.27450982, "b": 0.19215687, "a": 1 },
+				{ "r": 0.1254902, "g": 0.3882353, "b": 0.3764706, "a": 1 },
+				{ "r": 0.5019608, "g": 0.19607843, "b": 0.23529412, "a": 1 },
+				{ "r": 0.20784314, "g": 0.3882353, "b": 0.18431373, "a": 1 },
+				{ "r": 0.41960785, "g": 0.3882353, "b": 0.17254902, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 97 },
+	"name": "Finish Line",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 481 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" },
+			"images": [
+				{
+					"drawable": { "id": 482 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"images": [
+				{
+					"drawable": { "id": 481 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 481 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 98 },
+	"name": "Run Door",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 484 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 485 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"images": [
+				{
+					"drawable": { "id": 484 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 484 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 99 },
+	"name": "Loot Box",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": -1.5,
+			"images": [
+				{
+					"drawable": { "id": 488 },
+					"yPos": -3
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"shadowOffsetY": -1.5,
+			"images": [
+				{
+					"drawable": { "id": 488 },
+					"yPos": -3
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": -1.5,
+			"images": [
+				{
+					"drawable": { "id": 488 },
+					"yPos": -3
+				}
+			]
+		}
+	],
+	"customizables": [
+		{
+			"name": "Color",
+			"replace": [
+				{ "replace": 846116607 },
+				{
+					"replace": 590845183,
+					"newColor": { "r": 0.5411765, "g": 0.5411765, "b": 0.5411765, "a": 1 }
+				},
+				{
+					"replace": 35802111,
+					"newColor": { "r": 0.25882354, "g": 0.25882354, "b": 0.25882354, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.7882353, "g": 0.1254902, "b": 0.1254902, "a": 1 },
+				{ "r": 0.69803923, "b": 1, "a": 1 },
+				{ "r": 1, "g": 0.78431374, "a": 1 },
+				{ "r": 0.31764707, "g": 1, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 100 },
+	"name": "Notice Me",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 64 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"images": [
+				{
+					"drawable": { "id": 64 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 64 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 102 },
+	"name": "Lightmass",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 491 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"images": [
+				{
+					"drawable": { "id": 491 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 491 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 103 },
+	"name": "Lukor",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 493 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 494 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"images": [
+				{
+					"drawable": { "id": 493 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 493 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 108 },
+	"name": "Rozu",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 1228 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 1250 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_START" },
+			"images": [
+				{
+					"drawable": { "id": 1251 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_END" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 1250 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 1249 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 1248 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "DEFENDING" },
+			"images": [
+				{
+					"drawable": {}
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"images": [
+				{
+					"drawable": { "id": 633 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"images": [
+				{
+					"drawable": { "id": 1228 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 1228 }
+				}
+			]
+		}
+	],
+	"keepUncustomized": true,
+	"customizables": [
+		{
+			"name": "Coat",
+			"replace": [
+				{
+					"replace": -1586868993,
+					"newColor": { "r": 0.81960785, "g": 0.81960785, "b": 0.81960785, "a": 1 }
+				},
+				{
+					"replace": 2119054079,
+					"newColor": { "r": 0.70980394, "g": 0.70980394, "b": 0.70980394, "a": 1 }
+				},
+				{
+					"replace": 1310727935,
+					"newColor": { "r": 0.4117647, "g": 0.4117647, "b": 0.4117647, "a": 1 }
+				},
+				{ "replace": 2102875647 }
+			],
+			"colors": [
+				{ "r": 0.87058824, "g": 0.78039217, "b": 0.20784314, "a": 1 },
+				{ "r": 0.29803923, "g": 0.6313726, "b": 0.31764707, "a": 1 },
+				{ "r": 0.29803923, "g": 0.59607846, "b": 0.6313726, "a": 1 },
+				{ "r": 0.39607844, "g": 0.29803923, "b": 0.6313726, "a": 1 },
+				{ "r": 0.92156863, "g": 0.29411766, "b": 0.30588236, "a": 1 },
+				{ "r": 0.36862746, "g": 0.36078432, "b": 0.34901962, "a": 1 },
+				{ "r": 0.58431375, "g": 0.7176471, "b": 0.78039217, "a": 1 }
+			]
+		},
+		{
+			"name": "Coat - Secondary",
+			"replace": [
+				{ "replace": -186524673 },
+				{
+					"replace": -356865793,
+					"newColor": { "r": 0.76862746, "g": 0.76862746, "b": 0.76862746, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.627451, "g": 0.81960785, "b": 0.45882353, "a": 1 },
+				{ "r": 0.45882353, "g": 0.81960785, "b": 0.7294118, "a": 1 },
+				{ "r": 0.54509807, "g": 0.45882353, "b": 0.81960785, "a": 1 },
+				{ "r": 0.81960785, "g": 0.45882353, "b": 0.46666667, "a": 1 },
+				{ "r": 0.81960785, "g": 0.78431374, "b": 0.45882353, "a": 1 }
+			]
+		},
+		{
+			"name": "Voxel Generator",
+			"replace": [
+				{ "replace": -1914047489 }
+			],
+			"colors": [
+				{ "r": 0.87058824, "g": 0.5529412, "b": 0.9490196, "a": 1 },
+				{ "r": 0.9607843, "g": 0.27058825, "b": 0.2784314, "a": 1 },
+				{ "r": 0.9490196, "g": 0.7137255, "b": 0.24705882, "a": 1 },
+				{ "r": 0.3137255, "g": 0.9019608, "b": 0.3529412, "a": 1 },
+				{ "r": 0.93333334, "g": 0.89411765, "b": 0.9490196, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 109 },
+	"name": "Tri-Wing",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 1229 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 1231 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_START" },
+			"images": [
+				{
+					"drawable": { "id": 1231 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_END" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 1231 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 1230 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"images": [
+				{
+					"drawable": { "id": 702 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"images": [
+				{
+					"drawable": { "id": 1236 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"images": [
+				{
+					"drawable": { "id": 1237 }
+				}
+			]
+		}
+	],
+	"customizables": [
+		{
+			"name": "Helmet",
+			"replace": [
+				{ "replace": 2013255679 },
+				{
+					"replace": 113545471,
+					"newColor": { "r": 0.8627451, "g": 0.8627451, "b": 0.8627451, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.46666667, "g": 1, "b": 0.84313726, "a": 1 },
+				{ "r": 0.49411765, "g": 0.5058824, "b": 0.5019608, "a": 1 },
+				{ "r": 0.2784314, "g": 0.2784314, "b": 0.2784314, "a": 1 },
+				{ "r": 0.92156863, "g": 0.92156863, "b": 0.92156863, "a": 1 },
+				{ "r": 0.38431373, "g": 0.60784316, "b": 0.36862746, "a": 1 },
+				{ "r": 0.972549, "g": 0.93333334, "b": 0.34117648, "a": 1 },
+				{ "r": 1, "g": 0.56078434, "b": 0.13333334, "a": 1 },
+				{ "r": 0.9647059, "g": 0.25490198, "b": 0.25490198, "a": 1 },
+				{ "r": 1, "g": 0.74509805, "b": 0.9607843, "a": 1 },
+				{ "r": 0.16078432, "g": 0.05882353, "b": 0.3019608, "a": 1 },
+				{ "r": 0.039215688, "g": 0.46666667, "b": 0.9019608, "a": 1 },
+				{ "r": 0.6156863, "g": 0.8392157, "b": 0.89411765, "a": 1 }
+			]
+		},
+		{
+			"name": "Body",
+			"replace": [
+				{ "replace": -2139062017 },
+				{
+					"replace": 1532713983,
+					"newColor": { "r": 0.7411765, "g": 0.7411765, "b": 0.7411765, "a": 1 }
+				},
+				{
+					"replace": 1077952767,
+					"newColor": { "r": 0.45882353, "g": 0.45882353, "b": 0.45882353, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.5019608, "g": 0.5019608, "b": 0.5019608, "a": 1 },
+				{ "r": 0.30588236, "g": 0.30588236, "b": 0.30588236, "a": 1 },
+				{ "r": 0.9490196, "g": 0.9490196, "b": 0.9490196, "a": 1 },
+				{ "r": 0.45490196, "g": 0.41568628, "b": 0.38431373, "a": 1 },
+				{ "r": 0.7294118, "g": 0.6, "b": 0.40784314, "a": 1 },
+				{ "r": 1, "g": 0.54901963, "b": 0.27450982, "a": 1 },
+				{ "r": 0.5254902, "b": 0.16078432, "a": 1 },
+				{ "r": 0.7647059, "g": 0.35686275, "b": 0.5764706, "a": 1 },
+				{ "r": 0.42352942, "g": 0.28235295, "b": 0.3647059, "a": 1 },
+				{ "r": 0.20392157, "g": 0.17254902, "b": 0.34117648, "a": 1 },
+				{ "r": 0.019607844, "g": 0.44313726, "b": 0.6627451, "a": 1 },
+				{ "r": 0.48235294, "g": 0.9490196, "b": 0.7921569, "a": 1 },
+				{ "r": 0.23921569, "g": 0.2901961, "b": 0.23529412, "a": 1 },
+				{ "r": 0.34117648, "g": 0.36078432, "b": 0.26666668, "a": 1 }
+			]
+		},
+		{
+			"name": "Body - Secondary",
+			"replace": [
+				{ "replace": -606348289 },
+				{
+					"replace": -1077952513,
+					"newColor": { "r": 0.78039217, "g": 0.78039217, "b": 0.78039217, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.85882354, "g": 0.85882354, "b": 0.85882354, "a": 1 },
+				{ "r": 0.5921569, "g": 0.5921569, "b": 0.5921569, "a": 1 },
+				{ "r": 0.29803923, "g": 0.29803923, "b": 0.29803923, "a": 1 },
+				{ "r": 0.2, "g": 0.12941177, "b": 0.12941177, "a": 1 },
+				{ "r": 0.4745098, "g": 0.3137255, "b": 0.13725491, "a": 1 },
+				{ "r": 0.8156863, "g": 0.28627452, "b": 0.078431375, "a": 1 },
+				{ "r": 0.70980394, "g": 0.03137255, "b": 0.03137255, "a": 1 },
+				{ "r": 0.65882355, "g": 0.19607843, "b": 0.19607843, "a": 1 },
+				{ "r": 0.20784314, "g": 0.015686275, "b": 0.38431373, "a": 1 },
+				{ "r": 0.9490196, "g": 0.3764706, "b": 0.6039216, "a": 1 },
+				{ "r": 0.43137255, "g": 0.7254902, "b": 0.5058824, "a": 1 },
+				{ "r": 0.09411765, "g": 0.8666667, "b": 0.7294118, "a": 1 },
+				{ "r": 0.039215688, "g": 0.46666667, "b": 0.9019608, "a": 1 },
+				{ "r": 0.3372549, "g": 0.6313726, "b": 0.92941177, "a": 1 }
+			]
+		},
+		{
+			"name": "Energy",
+			"replace": [
+				{ "replace": -50210561 },
+				{
+					"replace": -1979681025,
+					"newColor": { "r": 0.6901961, "g": 0.6901961, "b": 0.6901961, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.4627451, "g": 1, "b": 0.84313726, "a": 1 },
+				{ "r": 1, "g": 1, "b": 1, "a": 1 },
+				{ "r": 0.32941177, "g": 0.91764706, "b": 0.38431373, "a": 1 },
+				{ "r": 0.5647059, "g": 0.7058824, "b": 0.19215687, "a": 1 },
+				{ "r": 0.93333334, "g": 0.9019608, "b": 0.12156863, "a": 1 },
+				{ "r": 1, "g": 0.72156864, "b": 0.18039216, "a": 1 },
+				{ "r": 0.9843137, "g": 0.3137255, "b": 0.3137255, "a": 1 },
+				{ "r": 0.34509805, "g": 0.8627451, "b": 0.89411765, "a": 1 },
+				{ "r": 0.34509805, "g": 0.57254905, "b": 0.7490196, "a": 1 },
+				{ "r": 1, "g": 0.7019608, "b": 0.9529412, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"name": "Del",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 26 },
+					"yPos": 2
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 27 },
+					"yPos": 2
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_START" },
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 30 },
+					"yPos": 2
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_END" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 31 },
+					"yPos": 2
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 29 },
+					"yPos": 2
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 28 },
+					"yPos": 2
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 693 },
+					"yPos": 2
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 26 },
+					"yPos": 2
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 26 },
+					"yPos": 2
+				}
+			]
+		}
+	],
+	"keepUncustomized": true,
+	"customizables": [
+		{
+			"name": "Body",
+			"replace": [
+				{ "replace": 664386559 },
+				{
+					"replace": 239163391,
+					"newColor": { "r": 0.6784314, "g": 0.6784314, "b": 0.6784314, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.50980395, "g": 0.7294118, "b": 0.7254902, "a": 1 },
+				{ "r": 0.15294118, "g": 0.7294118, "b": 0.47843137, "a": 1 },
+				{ "r": 0.26666668, "g": 0.26666668, "b": 0.78039217, "a": 1 },
+				{ "r": 0.58431375, "g": 0.27058825, "b": 0.9019608, "a": 1 },
+				{ "r": 0.24313726, "g": 0.24313726, "b": 0.34901962, "a": 1 }
+			]
+		},
+		{
+			"name": "Body - Secondary",
+			"replace": [
+				{ "replace": 1280800255 },
+				{
+					"replace": 758400511,
+					"newColor": { "r": 0.7411765, "g": 0.7411765, "b": 0.7411765, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.3529412, "g": 0.6784314, "b": 0.6745098, "a": 1 },
+				{ "r": 0.43137255, "g": 0.27450982, "b": 0.5686275, "a": 1 },
+				{ "r": 0.19215687, "g": 0.40784314, "b": 0.47843137, "a": 1 },
+				{ "r": 0.3137255, "g": 0.46666667, "b": 0.78039217, "a": 1 }
+			]
+		},
+		{
+			"name": "Equipment",
+			"replace": [
+				{ "replace": -388046849 },
+				{
+					"replace": -1146117121,
+					"newColor": { "r": 0.8784314, "g": 0.8784314, "b": 0.8784314, "a": 1 }
+				},
+				{
+					"replace": -1920694785,
+					"newColor": { "r": 0.6784314, "g": 0.6784314, "b": 0.6784314, "a": 1 }
+				},
+				{
+					"replace": 1885956863,
+					"newColor": { "r": 0.50980395, "g": 0.50980395, "b": 0.50980395, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.9607843, "g": 0.92156863, "b": 0.35686275, "a": 1 },
+				{ "r": 0.9607843, "g": 0.5568628, "b": 0.35686275, "a": 1 },
+				{ "r": 0.43529412, "g": 0.8235294, "b": 0.9490196, "a": 1 },
+				{ "r": 0.5529412, "g": 0.4117647, "b": 0.9411765, "a": 1 },
+				{ "r": 0.29411766, "g": 0.81960785, "b": 0.37254903, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 3 },
+	"name": "Agent",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 202 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 218 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_START" },
+			"images": [
+				{
+					"drawable": { "id": 219 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_END" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 220 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 217 },
+					"xPos": 15
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 221 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "DEFENDING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 222 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"images": [
+				{
+					"drawable": { "id": 673 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"images": [
+				{
+					"drawable": { "id": 202 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 202 }
+				}
+			]
+		}
+	],
+	"customizables": [
+		{
+			"name": "Hair",
+			"replace": [
+				{ "replace": -847546881 },
+				{
+					"replace": -1454615041,
+					"newColor": { "r": 0.61960787, "g": 0.61960787, "b": 0.61960787, "a": 1 }
+				},
+				{
+					"replace": -1555475713,
+					"newColor": { "r": 0.61960787, "g": 0.61960787, "b": 0.61960787, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.85882354, "g": 0.85882354, "b": 0.85882354, "a": 1 },
+				{ "r": 0.5921569, "g": 0.5921569, "b": 0.5921569, "a": 1 },
+				{ "r": 0.29803923, "g": 0.29803923, "b": 0.29803923, "a": 1 },
+				{ "r": 0.38039216, "g": 0.23529412, "b": 0.08235294, "a": 1 },
+				{ "r": 1, "g": 0.92156863, "b": 0.41960785, "a": 1 },
+				{ "r": 0.8156863, "g": 0.28627452, "b": 0.078431375, "a": 1 },
+				{ "r": 0.2, "g": 0.12941177, "b": 0.12941177, "a": 1 },
+				{ "r": 0.36862746, "g": 0.14509805, "b": 0.14509805, "a": 1 },
+				{ "r": 0.65882355, "g": 0.19607843, "b": 0.19607843, "a": 1 },
+				{ "r": 0.5176471, "g": 0.34509805, "b": 0.6784314, "a": 1 },
+				{ "r": 0.9490196, "g": 0.3764706, "b": 0.6039216, "a": 1 },
+				{ "r": 0.22745098, "g": 0.7294118, "b": 0.3529412, "a": 1 },
+				{ "r": 0.09411765, "g": 0.8666667, "b": 0.7294118, "a": 1 },
+				{ "r": 0.039215688, "g": 0.46666667, "b": 0.9019608, "a": 1 },
+				{ "r": 0.3372549, "g": 0.6313726, "b": 0.92941177, "a": 1 },
+				{ "r": 0.14509805, "g": 0.16862746, "b": 0.36862746, "a": 1 }
+			]
+		},
+		{
+			"name": "Skin",
+			"replace": [
+				{ "replace": -321930497 },
+				{
+					"replace": -610628097,
+					"newColor": { "r": 0.6901961, "g": 0.6901961, "b": 0.6901961, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.9411765, "g": 0.7647059, "b": 0.6392157, "a": 1 },
+				{ "r": 0.92156863, "g": 0.69411767, "b": 0.5803922, "a": 1 },
+				{ "r": 0.67058825, "g": 0.44313726, "b": 0.32941177, "a": 1 },
+				{ "r": 0.45882353, "g": 0.30588236, "b": 0.23137255, "a": 1 }
+			]
+		},
+		{
+			"name": "Armor",
+			"replace": [
+				{ "replace": 1116388095 },
+				{
+					"replace": 1280800255,
+					"newColor": { "r": 0.6509804, "g": 0.6509804, "b": 0.6509804, "a": 1 }
+				},
+				{
+					"replace": 758400511,
+					"newColor": { "r": 0.34901962, "g": 0.34901962, "b": 0.34901962, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.25882354, "g": 0.5411765, "b": 0.7294118, "a": 1 },
+				{ "r": 0.15294118, "g": 0.34901962, "b": 0.3882353, "a": 1 },
+				{ "r": 0.23921569, "g": 0.7019608, "b": 0.6627451, "a": 1 },
+				{ "r": 0.4392157, "g": 0.27058825, "b": 0.9019608, "a": 1 }
+			]
+		},
+		{
+			"name": "Armor - Secondary",
+			"replace": [
+				{ "replace": -769 },
+				{
+					"replace": -337254401,
+					"newColor": { "r": 0.92156863, "g": 0.92156863, "b": 0.92156863, "a": 1 }
+				},
+				{
+					"replace": -1397571073,
+					"newColor": { "r": 0.7607843, "g": 0.7607843, "b": 0.7607843, "a": 1 }
+				},
+				{
+					"replace": 2004583935,
+					"newColor": { "r": 0.52156866, "g": 0.52156866, "b": 0.52156866, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.8901961, "g": 0.92156863, "b": 1, "a": 1 },
+				{ "r": 0.87058824, "g": 0.7490196, "b": 0.2627451, "a": 1 },
+				{ "r": 0.7058824, "g": 0.36862746, "b": 1, "a": 1 },
+				{ "r": 0.45882353, "g": 0.8666667, "b": 1, "a": 1 },
+				{ "r": 0.24313726, "g": 0.8117647, "b": 0.3764706, "a": 1 },
+				{ "r": 0.29803923, "g": 0.40784314, "b": 0.45882353, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 7 },
+	"name": "Boulder",
+	"states": [
+		{
+			"images": [
+				{
+					"drawable": { "id": 63 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 5 },
+	"name": "Dummy",
+	"states": [
+		{
+			"images": [
+				{
+					"drawable": { "id": 215 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 6 },
+	"name": "FireGate",
+	"states": [
+		{
+			"images": [
+				{
+					"drawable": { "id": 216 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 8 },
+	"name": "Bomboyage",
+	"states": [
+		{
+			"images": [
+				{
+					"drawable": { "id": 1169 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 9 },
+	"name": "Pickup",
+	"states": [
+		{
+			"images": [
+				{
+					"drawable": { "id": 10 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 10 },
+	"name": "Agent 2",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 223 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 218 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_START" },
+			"images": [
+				{
+					"drawable": { "id": 226 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_END" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 227 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 224 },
+					"xPos": 15
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 228 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "DEFENDING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 230 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"images": [
+				{
+					"drawable": { "id": 652 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"images": [
+				{
+					"drawable": { "id": 223 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 223 }
+				}
+			]
+		}
+	],
+	"customizables": [
+		{
+			"name": "Hair",
+			"replace": [
+				{ "replace": -847546881 },
+				{
+					"replace": -1454615041,
+					"newColor": { "r": 0.61960787, "g": 0.61960787, "b": 0.61960787, "a": 1 }
+				},
+				{
+					"replace": -1555475713,
+					"newColor": { "r": 0.61960787, "g": 0.61960787, "b": 0.61960787, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.85882354, "g": 0.85882354, "b": 0.85882354, "a": 1 },
+				{ "r": 0.5921569, "g": 0.5921569, "b": 0.5921569, "a": 1 },
+				{ "r": 0.29803923, "g": 0.29803923, "b": 0.29803923, "a": 1 },
+				{ "r": 0.38039216, "g": 0.23529412, "b": 0.08235294, "a": 1 },
+				{ "r": 1, "g": 0.92156863, "b": 0.41960785, "a": 1 },
+				{ "r": 0.8156863, "g": 0.28627452, "b": 0.078431375, "a": 1 },
+				{ "r": 0.2, "g": 0.12941177, "b": 0.12941177, "a": 1 },
+				{ "r": 0.36862746, "g": 0.14509805, "b": 0.14509805, "a": 1 },
+				{ "r": 0.65882355, "g": 0.19607843, "b": 0.19607843, "a": 1 },
+				{ "r": 0.5176471, "g": 0.34509805, "b": 0.6784314, "a": 1 },
+				{ "r": 0.9490196, "g": 0.3764706, "b": 0.6039216, "a": 1 },
+				{ "r": 0.22745098, "g": 0.7294118, "b": 0.3529412, "a": 1 },
+				{ "r": 0.09411765, "g": 0.8666667, "b": 0.7294118, "a": 1 },
+				{ "r": 0.039215688, "g": 0.46666667, "b": 0.9019608, "a": 1 },
+				{ "r": 0.3372549, "g": 0.6313726, "b": 0.92941177, "a": 1 },
+				{ "r": 0.14509805, "g": 0.16862746, "b": 0.36862746, "a": 1 }
+			]
+		},
+		{
+			"name": "Skin",
+			"replace": [
+				{ "replace": -321930497 },
+				{
+					"replace": -610628097,
+					"newColor": { "r": 0.6901961, "g": 0.6901961, "b": 0.6901961, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.9411765, "g": 0.7647059, "b": 0.6392157, "a": 1 },
+				{ "r": 0.92156863, "g": 0.69411767, "b": 0.5803922, "a": 1 },
+				{ "r": 0.67058825, "g": 0.44313726, "b": 0.32941177, "a": 1 },
+				{ "r": 0.45882353, "g": 0.30588236, "b": 0.23137255, "a": 1 }
+			]
+		},
+		{
+			"name": "Armor",
+			"replace": [
+				{ "replace": 1116388095 },
+				{
+					"replace": 1280800255,
+					"newColor": { "r": 0.6509804, "g": 0.6509804, "b": 0.6509804, "a": 1 }
+				},
+				{
+					"replace": 758400511,
+					"newColor": { "r": 0.34901962, "g": 0.34901962, "b": 0.34901962, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.25882354, "g": 0.5411765, "b": 0.7294118, "a": 1 },
+				{ "r": 0.15294118, "g": 0.34901962, "b": 0.3882353, "a": 1 },
+				{ "r": 0.23921569, "g": 0.7019608, "b": 0.6627451, "a": 1 },
+				{ "r": 0.4392157, "g": 0.27058825, "b": 0.9019608, "a": 1 }
+			]
+		},
+		{
+			"name": "Armor - Secondary",
+			"replace": [
+				{ "replace": -769 },
+				{
+					"replace": -337254401,
+					"newColor": { "r": 0.92156863, "g": 0.92156863, "b": 0.92156863, "a": 1 }
+				},
+				{
+					"replace": -1397571073,
+					"newColor": { "r": 0.7607843, "g": 0.7607843, "b": 0.7607843, "a": 1 }
+				},
+				{
+					"replace": 2004583935,
+					"newColor": { "r": 0.52156866, "g": 0.52156866, "b": 0.52156866, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.8901961, "g": 0.92156863, "b": 1, "a": 1 },
+				{ "r": 0.87058824, "g": 0.7490196, "b": 0.2627451, "a": 1 },
+				{ "r": 0.7058824, "g": 0.36862746, "b": 1, "a": 1 },
+				{ "r": 0.45882353, "g": 0.8666667, "b": 1, "a": 1 },
+				{ "r": 0.24313726, "g": 0.8117647, "b": 0.3764706, "a": 1 },
+				{ "r": 0.29803923, "g": 0.40784314, "b": 0.45882353, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 11 },
+	"name": "Fire Mantle",
+	"states": [
+		{
+			"images": [
+				{
+					"drawable": { "id": 1257 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 14 },
+	"name": "Companion",
+	"states": [
+		{
+			"images": [
+				{
+					"drawable": { "id": 313 },
+					"yPos": -4
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 15 },
+	"name": "Coffee Bean",
+	"states": [
+		{
+			"images": [
+				{
+					"drawable": { "id": 322 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 17 },
+	"name": "Regen Pickup",
+	"states": [
+		{
+			"images": [
+				{
+					"drawable": { "id": 329 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 18 },
+	"name": "Cress",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 5 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 43 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_START" },
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 44 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_END" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 45 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 6 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FALLING" },
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 7 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 49 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 5 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 5 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FALLING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 46 }
+				}
+			]
+		}
+	],
+	"keepUncustomized": true,
+	"customizables": [
+		{
+			"name": "Body",
+			"replace": [
+				{ "replace": -617535745 },
+				{
+					"replace": -1726795777,
+					"newColor": { "r": 0.5882353, "g": 0.5882353, "b": 0.5882353, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.87058824, "g": 0.4, "b": 0.08627451, "a": 1 },
+				{ "r": 0.98039216, "g": 0.69803923, "b": 0.24313726, "a": 1 },
+				{ "r": 0.5803922, "g": 0.12941177, "b": 0.13333334, "a": 1 },
+				{ "r": 0.6901961, "g": 0.1254902, "b": 0.3882353, "a": 1 },
+				{ "r": 0.9098039, "g": 0.8352941, "b": 0.8392157, "a": 1 }
+			]
+		},
+		{
+			"name": "Body - Secondary",
+			"replace": [
+				{ "replace": -273544449 },
+				{
+					"replace": -696512513,
+					"newColor": { "r": 0.56078434, "g": 0.56078434, "b": 0.56078434, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.96862745, "g": 0.3882353, "b": 0.6313726, "a": 1 },
+				{ "r": 1, "g": 0.16078432, "b": 0.24313726, "a": 1 },
+				{ "r": 0.5921569, "g": 0.39215687, "b": 0.9607843, "a": 1 },
+				{ "r": 0.6392157, "g": 0.5764706, "b": 0.15294118, "a": 1 }
+			]
+		},
+		{
+			"name": "Pants",
+			"replace": [
+				{ "replace": 1683116799 },
+				{
+					"replace": 1345929471,
+					"newColor": { "r": 0.5803922, "g": 0.5803922, "b": 0.5803922, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.56078434, "g": 0.22352941, "b": 0.36862746, "a": 1 },
+				{ "r": 0.42745098, "g": 0.22352941, "b": 0.56078434, "a": 1 },
+				{ "r": 0.32941177, "g": 0.3882353, "b": 0.13725491, "a": 1 },
+				{ "r": 0.45882353, "g": 0.3529412, "b": 0.15686275, "a": 1 },
+				{ "r": 0.54901963, "g": 0.22745098, "b": 0.22745098, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 20 },
+	"name": "Bomb 2",
+	"states": [
+		{
+			"images": [
+				{
+					"drawable": { "id": 47 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 23 },
+	"name": "Resistor",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 48 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "DEFENDING" },
+			"images": [
+				{
+					"drawable": { "id": 92 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"images": [
+				{
+					"drawable": { "id": 48 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 48 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 21 },
+	"name": "Punk 00",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 94 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 97 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_START" },
+			"images": [
+				{
+					"drawable": { "id": 98 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_END" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 104 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 95 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 96 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"images": [
+				{
+					"drawable": { "id": 657 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"images": [
+				{
+					"drawable": { "id": 94 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 94 }
+				}
+			]
+		}
+	],
+	"customizables": [
+		{
+			"name": "Hair",
+			"replace": [
+				{ "replace": -1301721345 },
+				{
+					"replace": -1857670657,
+					"newColor": { "r": 0.61960787, "g": 0.61960787, "b": 0.61960787, "a": 1 }
+				},
+				{
+					"replace": 1110914559,
+					"newColor": { "r": 0.30980393, "g": 0.30980393, "b": 0.30980393, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.85882354, "g": 0.85882354, "b": 0.85882354, "a": 1 },
+				{ "r": 0.5921569, "g": 0.5921569, "b": 0.5921569, "a": 1 },
+				{ "r": 0.29803923, "g": 0.29803923, "b": 0.29803923, "a": 1 },
+				{ "r": 0.38039216, "g": 0.23529412, "b": 0.08235294, "a": 1 },
+				{ "r": 1, "g": 0.92156863, "b": 0.41960785, "a": 1 },
+				{ "r": 0.8156863, "g": 0.28627452, "b": 0.078431375, "a": 1 },
+				{ "r": 0.2, "g": 0.12941177, "b": 0.12941177, "a": 1 },
+				{ "r": 0.36862746, "g": 0.14509805, "b": 0.14509805, "a": 1 },
+				{ "r": 0.65882355, "g": 0.19607843, "b": 0.19607843, "a": 1 },
+				{ "r": 0.5176471, "g": 0.34509805, "b": 0.6784314, "a": 1 },
+				{ "r": 0.9490196, "g": 0.3764706, "b": 0.6039216, "a": 1 },
+				{ "r": 0.22745098, "g": 0.7294118, "b": 0.3529412, "a": 1 },
+				{ "r": 0.09411765, "g": 0.8666667, "b": 0.7294118, "a": 1 },
+				{ "r": 0.039215688, "g": 0.46666667, "b": 0.9019608, "a": 1 },
+				{ "r": 0.3372549, "g": 0.6313726, "b": 0.92941177, "a": 1 },
+				{ "r": 0.14509805, "g": 0.16862746, "b": 0.36862746, "a": 1 }
+			]
+		},
+		{
+			"name": "Skin",
+			"replace": [
+				{ "replace": -255613953 },
+				{
+					"replace": -477665793,
+					"newColor": { "r": 0.6901961, "g": 0.6901961, "b": 0.6901961, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.9411765, "g": 0.7647059, "b": 0.6392157, "a": 1 },
+				{ "r": 0.92156863, "g": 0.69411767, "b": 0.5803922, "a": 1 },
+				{ "r": 0.67058825, "g": 0.44313726, "b": 0.32941177, "a": 1 },
+				{ "r": 0.45882353, "g": 0.30588236, "b": 0.23137255, "a": 1 }
+			]
+		},
+		{
+			"name": "Clothes",
+			"replace": [
+				{ "replace": -1523501825 },
+				{ "replace": -545477121 }
+			],
+			"colors": [
+				{
+					"r": 0.64705884,
+					"g": 0.19215687,
+					"b": 0.20392157,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.8745098, "g": 0.4862745, "b": 0.6784314, "a": 1 }
+					]
+				},
+				{
+					"r": 0.1254902,
+					"g": 0.10980392,
+					"b": 0.10980392,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.64705884, "g": 0.19215687, "b": 0.20392157, "a": 1 }
+					]
+				},
+				{
+					"r": 0.5019608,
+					"g": 0.21568628,
+					"b": 0.14509805,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.8784314, "g": 0.45882353, "b": 0.15686275, "a": 1 }
+					]
+				},
+				{
+					"r": 0.3019608,
+					"g": 0.039215688,
+					"b": 0.13333334,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.72156864, "g": 0.49803922, "b": 0.13725491, "a": 1 }
+					]
+				}
+			]
+		},
+		{
+			"name": "Clothes - Secondary",
+			"replace": [
+				{ "replace": 1326062847 },
+				{
+					"replace": 671160831,
+					"newColor": { "r": 0.61960787, "g": 0.61960787, "b": 0.61960787, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.30980393, "g": 0.039215688, "b": 0.10980392, "a": 1 },
+				{ "r": 0.18039216, "g": 0.18039216, "b": 0.1882353, "a": 1 },
+				{ "r": 0.5686275, "g": 0.2, "b": 0.19215687, "a": 1 },
+				{ "r": 0.16862746, "g": 0.09803922, "b": 0.08235294, "a": 1 },
+				{ "r": 0.32156864, "g": 0.18039216, "b": 0.09803922, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 24 },
+	"name": "Punk 01",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 105 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 130 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_START" },
+			"images": [
+				{
+					"drawable": { "id": 131 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_END" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 133 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 108 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 109 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"images": [
+				{
+					"drawable": { "id": 658 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"images": [
+				{
+					"drawable": { "id": 105 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 105 }
+				}
+			]
+		}
+	],
+	"customizables": [
+		{
+			"name": "Hair",
+			"replace": [
+				{ "replace": -1301721345 },
+				{
+					"replace": -1857670657,
+					"newColor": { "r": 0.61960787, "g": 0.61960787, "b": 0.61960787, "a": 1 }
+				},
+				{
+					"replace": 1110914559,
+					"newColor": { "r": 0.30980393, "g": 0.30980393, "b": 0.30980393, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.85882354, "g": 0.85882354, "b": 0.85882354, "a": 1 },
+				{ "r": 0.5921569, "g": 0.5921569, "b": 0.5921569, "a": 1 },
+				{ "r": 0.29803923, "g": 0.29803923, "b": 0.29803923, "a": 1 },
+				{ "r": 0.38039216, "g": 0.23529412, "b": 0.08235294, "a": 1 },
+				{ "r": 1, "g": 0.92156863, "b": 0.41960785, "a": 1 },
+				{ "r": 0.8156863, "g": 0.28627452, "b": 0.078431375, "a": 1 },
+				{ "r": 0.2, "g": 0.12941177, "b": 0.12941177, "a": 1 },
+				{ "r": 0.36862746, "g": 0.14509805, "b": 0.14509805, "a": 1 },
+				{ "r": 0.65882355, "g": 0.19607843, "b": 0.19607843, "a": 1 },
+				{ "r": 0.5176471, "g": 0.34509805, "b": 0.6784314, "a": 1 },
+				{ "r": 0.9490196, "g": 0.3764706, "b": 0.6039216, "a": 1 },
+				{ "r": 0.22745098, "g": 0.7294118, "b": 0.3529412, "a": 1 },
+				{ "r": 0.09411765, "g": 0.8666667, "b": 0.7294118, "a": 1 },
+				{ "r": 0.039215688, "g": 0.46666667, "b": 0.9019608, "a": 1 },
+				{ "r": 0.3372549, "g": 0.6313726, "b": 0.92941177, "a": 1 },
+				{ "r": 0.14509805, "g": 0.16862746, "b": 0.36862746, "a": 1 }
+			]
+		},
+		{
+			"name": "Skin",
+			"replace": [
+				{ "replace": -255613953 },
+				{
+					"replace": -477665793,
+					"newColor": { "r": 0.6901961, "g": 0.6901961, "b": 0.6901961, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.9411765, "g": 0.7647059, "b": 0.6392157, "a": 1 },
+				{ "r": 0.92156863, "g": 0.69411767, "b": 0.5803922, "a": 1 },
+				{ "r": 0.67058825, "g": 0.44313726, "b": 0.32941177, "a": 1 },
+				{ "r": 0.45882353, "g": 0.30588236, "b": 0.23137255, "a": 1 }
+			]
+		},
+		{
+			"name": "Clothes",
+			"replace": [
+				{ "replace": -1523501825 },
+				{ "replace": -545477121 }
+			],
+			"colors": [
+				{
+					"r": 0.64705884,
+					"g": 0.19215687,
+					"b": 0.20392157,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.8745098, "g": 0.4862745, "b": 0.6784314, "a": 1 }
+					]
+				},
+				{
+					"r": 0.1254902,
+					"g": 0.10980392,
+					"b": 0.10980392,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.64705884, "g": 0.19215687, "b": 0.20392157, "a": 1 }
+					]
+				},
+				{
+					"r": 0.5019608,
+					"g": 0.21568628,
+					"b": 0.14509805,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.8784314, "g": 0.45882353, "b": 0.15686275, "a": 1 }
+					]
+				},
+				{
+					"r": 0.3019608,
+					"g": 0.039215688,
+					"b": 0.13333334,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.72156864, "g": 0.49803922, "b": 0.13725491, "a": 1 }
+					]
+				}
+			]
+		},
+		{
+			"name": "Clothes - Secondary",
+			"replace": [
+				{ "replace": 1326062847 },
+				{
+					"replace": 671160831,
+					"newColor": { "r": 0.61960787, "g": 0.61960787, "b": 0.61960787, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.30980393, "g": 0.039215688, "b": 0.10980392, "a": 1 },
+				{ "r": 0.18039216, "g": 0.18039216, "b": 0.1882353, "a": 1 },
+				{ "r": 0.5686275, "g": 0.2, "b": 0.19215687, "a": 1 },
+				{ "r": 0.16862746, "g": 0.09803922, "b": 0.08235294, "a": 1 },
+				{ "r": 0.32156864, "g": 0.18039216, "b": 0.09803922, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 25 },
+	"name": "Punk 10",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 134 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 138 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_START" },
+			"images": [
+				{
+					"drawable": { "id": 139 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_END" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 140 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 136 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 137 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"images": [
+				{
+					"drawable": { "id": 659 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"images": [
+				{
+					"drawable": { "id": 134 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 134 }
+				}
+			]
+		}
+	],
+	"customizables": [
+		{
+			"name": "Hair",
+			"replace": [
+				{ "replace": -1301721345 },
+				{
+					"replace": -1857670657,
+					"newColor": { "r": 0.61960787, "g": 0.61960787, "b": 0.61960787, "a": 1 }
+				},
+				{
+					"replace": 1110914559,
+					"newColor": { "r": 0.30980393, "g": 0.30980393, "b": 0.30980393, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.85882354, "g": 0.85882354, "b": 0.85882354, "a": 1 },
+				{ "r": 0.5921569, "g": 0.5921569, "b": 0.5921569, "a": 1 },
+				{ "r": 0.29803923, "g": 0.29803923, "b": 0.29803923, "a": 1 },
+				{ "r": 0.38039216, "g": 0.23529412, "b": 0.08235294, "a": 1 },
+				{ "r": 1, "g": 0.92156863, "b": 0.41960785, "a": 1 },
+				{ "r": 0.8156863, "g": 0.28627452, "b": 0.078431375, "a": 1 },
+				{ "r": 0.2, "g": 0.12941177, "b": 0.12941177, "a": 1 },
+				{ "r": 0.36862746, "g": 0.14509805, "b": 0.14509805, "a": 1 },
+				{ "r": 0.65882355, "g": 0.19607843, "b": 0.19607843, "a": 1 },
+				{ "r": 0.5176471, "g": 0.34509805, "b": 0.6784314, "a": 1 },
+				{ "r": 0.9490196, "g": 0.3764706, "b": 0.6039216, "a": 1 },
+				{ "r": 0.22745098, "g": 0.7294118, "b": 0.3529412, "a": 1 },
+				{ "r": 0.09411765, "g": 0.8666667, "b": 0.7294118, "a": 1 },
+				{ "r": 0.039215688, "g": 0.46666667, "b": 0.9019608, "a": 1 },
+				{ "r": 0.3372549, "g": 0.6313726, "b": 0.92941177, "a": 1 },
+				{ "r": 0.14509805, "g": 0.16862746, "b": 0.36862746, "a": 1 }
+			]
+		},
+		{
+			"name": "Skin",
+			"replace": [
+				{ "replace": -255613953 },
+				{
+					"replace": -477665793,
+					"newColor": { "r": 0.6901961, "g": 0.6901961, "b": 0.6901961, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.9411765, "g": 0.7647059, "b": 0.6392157, "a": 1 },
+				{ "r": 0.92156863, "g": 0.69411767, "b": 0.5803922, "a": 1 },
+				{ "r": 0.67058825, "g": 0.44313726, "b": 0.32941177, "a": 1 },
+				{ "r": 0.45882353, "g": 0.30588236, "b": 0.23137255, "a": 1 }
+			]
+		},
+		{
+			"name": "Clothes",
+			"replace": [
+				{ "replace": -1523501825 },
+				{ "replace": -545477121 }
+			],
+			"colors": [
+				{
+					"r": 0.64705884,
+					"g": 0.19215687,
+					"b": 0.20392157,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.8745098, "g": 0.4862745, "b": 0.6784314, "a": 1 }
+					]
+				},
+				{
+					"r": 0.1254902,
+					"g": 0.10980392,
+					"b": 0.10980392,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.64705884, "g": 0.19215687, "b": 0.20392157, "a": 1 }
+					]
+				},
+				{
+					"r": 0.5019608,
+					"g": 0.21568628,
+					"b": 0.14509805,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.8784314, "g": 0.45882353, "b": 0.15686275, "a": 1 }
+					]
+				},
+				{
+					"r": 0.3019608,
+					"g": 0.039215688,
+					"b": 0.13333334,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.72156864, "g": 0.49803922, "b": 0.13725491, "a": 1 }
+					]
+				}
+			]
+		},
+		{
+			"name": "Clothes - Secondary",
+			"replace": [
+				{ "replace": 1326062847 },
+				{
+					"replace": 671160831,
+					"newColor": { "r": 0.61960787, "g": 0.61960787, "b": 0.61960787, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.30980393, "g": 0.039215688, "b": 0.10980392, "a": 1 },
+				{ "r": 0.18039216, "g": 0.18039216, "b": 0.1882353, "a": 1 },
+				{ "r": 0.5686275, "g": 0.2, "b": 0.19215687, "a": 1 },
+				{ "r": 0.16862746, "g": 0.09803922, "b": 0.08235294, "a": 1 },
+				{ "r": 0.32156864, "g": 0.18039216, "b": 0.09803922, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 26 },
+	"name": "Punk 11",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 141 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 154 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_START" },
+			"images": [
+				{
+					"drawable": { "id": 193 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_END" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 198 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 142 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 143 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"images": [
+				{
+					"drawable": { "id": 660 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"images": [
+				{
+					"drawable": { "id": 141 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 141 }
+				}
+			]
+		}
+	],
+	"customizables": [
+		{
+			"name": "Hair",
+			"replace": [
+				{ "replace": -1301721345 },
+				{
+					"replace": -1857670657,
+					"newColor": { "r": 0.61960787, "g": 0.61960787, "b": 0.61960787, "a": 1 }
+				},
+				{
+					"replace": 1110914559,
+					"newColor": { "r": 0.30980393, "g": 0.30980393, "b": 0.30980393, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.85882354, "g": 0.85882354, "b": 0.85882354, "a": 1 },
+				{ "r": 0.5921569, "g": 0.5921569, "b": 0.5921569, "a": 1 },
+				{ "r": 0.29803923, "g": 0.29803923, "b": 0.29803923, "a": 1 },
+				{ "r": 0.38039216, "g": 0.23529412, "b": 0.08235294, "a": 1 },
+				{ "r": 1, "g": 0.92156863, "b": 0.41960785, "a": 1 },
+				{ "r": 0.8156863, "g": 0.28627452, "b": 0.078431375, "a": 1 },
+				{ "r": 0.2, "g": 0.12941177, "b": 0.12941177, "a": 1 },
+				{ "r": 0.36862746, "g": 0.14509805, "b": 0.14509805, "a": 1 },
+				{ "r": 0.65882355, "g": 0.19607843, "b": 0.19607843, "a": 1 },
+				{ "r": 0.5176471, "g": 0.34509805, "b": 0.6784314, "a": 1 },
+				{ "r": 0.9490196, "g": 0.3764706, "b": 0.6039216, "a": 1 },
+				{ "r": 0.22745098, "g": 0.7294118, "b": 0.3529412, "a": 1 },
+				{ "r": 0.09411765, "g": 0.8666667, "b": 0.7294118, "a": 1 },
+				{ "r": 0.039215688, "g": 0.46666667, "b": 0.9019608, "a": 1 },
+				{ "r": 0.3372549, "g": 0.6313726, "b": 0.92941177, "a": 1 },
+				{ "r": 0.14509805, "g": 0.16862746, "b": 0.36862746, "a": 1 }
+			]
+		},
+		{
+			"name": "Skin",
+			"replace": [
+				{ "replace": -255613953 },
+				{
+					"replace": -477665793,
+					"newColor": { "r": 0.6901961, "g": 0.6901961, "b": 0.6901961, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.9411765, "g": 0.7647059, "b": 0.6392157, "a": 1 },
+				{ "r": 0.92156863, "g": 0.69411767, "b": 0.5803922, "a": 1 },
+				{ "r": 0.67058825, "g": 0.44313726, "b": 0.32941177, "a": 1 },
+				{ "r": 0.45882353, "g": 0.30588236, "b": 0.23137255, "a": 1 }
+			]
+		},
+		{
+			"name": "Clothes",
+			"replace": [
+				{ "replace": -1523501825 },
+				{ "replace": -545477121 }
+			],
+			"colors": [
+				{
+					"r": 0.64705884,
+					"g": 0.19215687,
+					"b": 0.20392157,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.8745098, "g": 0.4862745, "b": 0.6784314, "a": 1 }
+					]
+				},
+				{
+					"r": 0.1254902,
+					"g": 0.10980392,
+					"b": 0.10980392,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.64705884, "g": 0.19215687, "b": 0.20392157, "a": 1 }
+					]
+				},
+				{
+					"r": 0.5019608,
+					"g": 0.21568628,
+					"b": 0.14509805,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.8784314, "g": 0.45882353, "b": 0.15686275, "a": 1 }
+					]
+				},
+				{
+					"r": 0.3019608,
+					"g": 0.039215688,
+					"b": 0.13333334,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.72156864, "g": 0.49803922, "b": 0.13725491, "a": 1 }
+					]
+				}
+			]
+		},
+		{
+			"name": "Clothes - Secondary",
+			"replace": [
+				{ "replace": 1326062847 },
+				{
+					"replace": 671160831,
+					"newColor": { "r": 0.61960787, "g": 0.61960787, "b": 0.61960787, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.30980393, "g": 0.039215688, "b": 0.10980392, "a": 1 },
+				{ "r": 0.18039216, "g": 0.18039216, "b": 0.1882353, "a": 1 },
+				{ "r": 0.5686275, "g": 0.2, "b": 0.19215687, "a": 1 },
+				{ "r": 0.16862746, "g": 0.09803922, "b": 0.08235294, "a": 1 },
+				{ "r": 0.32156864, "g": 0.18039216, "b": 0.09803922, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 27 },
+	"name": "Alexsander",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 357 },
+					"yPos": -4
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 257 },
+					"yPos": -4
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_START" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 347 },
+					"yPos": -4
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_END" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 348 },
+					"yPos": -4
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 121 },
+					"yPos": -4
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 358 },
+					"yPos": -4
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 705 },
+					"yPos": -4
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 357 },
+					"yPos": -4
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 357 },
+					"yPos": -4
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_OPEN" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 349 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_CLOSE" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-IDLE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 350 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-IDLE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 351 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-FLINCH" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-IDLE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 353 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-STUN_START" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 354 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-STUN_END" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-IDLE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 355 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-CASTING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-IDLE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 352 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-ATTACKING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-IDLE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 352 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 351 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "M-IDLE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 351 }
+				}
+			]
+		}
+	],
+	"keepUncustomized": true,
+	"customizables": [
+		{
+			"name": "Ice Cream",
+			"replace": [
+				{ "replace": -3219201 },
+				{ "replace": -855809 },
+				{
+					"replace": -224863233,
+					"newColor": { "r": 0.8392157, "g": 0.8392157, "b": 0.8392157, "a": 1 }
+				}
+			],
+			"colors": [
+				{
+					"r": 0.9411765,
+					"g": 0.8980392,
+					"b": 0.7882353,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.9882353, "g": 0.9764706, "b": 0.9019608, "a": 1 }
+					],
+					"primary": true
+				},
+				{
+					"r": 0.7372549,
+					"g": 0.9019608,
+					"b": 0.6392157,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.87058824, "g": 0.98039216, "b": 0.8039216, "a": 1 }
+					],
+					"primary": true
+				},
+				{
+					"r": 0.54901963,
+					"g": 0.8392157,
+					"b": 0.87058824,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.83137256, "g": 0.9843137, "b": 1, "a": 1 }
+					],
+					"primary": true
+				},
+				{
+					"r": 0.6,
+					"g": 0.40784314,
+					"b": 0.20392157,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.76862746, "g": 0.61960787, "b": 0.4627451, "a": 1 }
+					],
+					"primary": true
+				},
+				{
+					"r": 0.6784314,
+					"g": 0.53333336,
+					"b": 0.81960785,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.90588236, "g": 0.84313726, "b": 0.96862745, "a": 1 }
+					],
+					"primary": true
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 28 },
+	"name": "Mirror",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 119 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"images": [
+				{
+					"drawable": { "id": 119 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 119 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_OPEN" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 359 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_CLOSE" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 360 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 29 },
+	"name": "Teleporter",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 383 },
+					"yPos": -4
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"images": [
+				{
+					"drawable": { "id": 383 },
+					"yPos": -4
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 383 },
+					"yPos": -4
+				}
+			]
+		}
+	],
+	"keepUncustomized": true,
+	"customizables": [
+		{
+			"replace": [
+				{ "replace": 1050469375 },
+				{
+					"replace": 728022271,
+					"newColor": { "r": 0.67058825, "g": 0.67058825, "b": 0.67058825, "a": 1 }
+				},
+				{
+					"replace": 724798207,
+					"newColor": { "r": 0.38039216, "g": 0.38039216, "b": 0.38039216, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.69803923, "b": 1, "a": 1 },
+				{ "r": 1, "a": 1 },
+				{ "r": 1, "g": 0.78431374, "a": 1 },
+				{ "r": 0.31764707, "g": 1, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 13 },
+	"name": "Data Server",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 246 },
+					"yPos": -4
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"images": [
+				{
+					"drawable": { "id": 246 },
+					"yPos": -4
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 246 },
+					"yPos": -4
+				}
+			]
+		}
+	],
+	"keepUncustomized": true,
+	"customizables": [
+		{
+			"name": "Color",
+			"replace": [
+				{ "replace": 846116607 },
+				{
+					"replace": 590845183,
+					"newColor": { "r": 0.5411765, "g": 0.5411765, "b": 0.5411765, "a": 1 }
+				},
+				{
+					"replace": 35802111,
+					"newColor": { "r": 0.25882354, "g": 0.25882354, "b": 0.25882354, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.7882353, "g": 0.1254902, "b": 0.1254902, "a": 1 },
+				{ "r": 0.69803923, "b": 1, "a": 1 },
+				{ "r": 1, "g": 0.78431374, "a": 1 },
+				{ "r": 0.31764707, "g": 1, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 30 },
+	"name": "Jeremy",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 234 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 466 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_START" },
+			"images": [
+				{
+					"drawable": { "id": 468 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_END" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 469 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 307 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 312 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"images": [
+				{
+					"drawable": { "id": 704 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"images": [
+				{
+					"drawable": { "id": 234 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 234 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "Strum" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "Strum Loop" },
+			"images": [
+				{
+					"drawable": { "id": 37 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "Strum Loop" },
+			"images": [
+				{
+					"drawable": { "id": 244 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "Strum End" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 245 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 31 },
+	"name": "Fossil Fuel",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 482 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 487 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_START" },
+			"images": [
+				{
+					"drawable": { "id": 489 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_END" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 490 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetX": 5,
+			"images": [
+				{
+					"drawable": { "id": 486 },
+					"xPos": 10
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 483 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"images": [
+				{
+					"drawable": { "id": 703 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"images": [
+				{
+					"drawable": { "id": 482 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 482 }
+				}
+			]
+		}
+	],
+	"keepUncustomized": true,
+	"customizables": [
+		{
+			"name": "Color",
+			"replace": [
+				{ "replace": -898671873 },
+				{
+					"replace": -1909050881,
+					"newColor": { "r": 0.6117647, "g": 0.6117647, "b": 0.6117647, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "r": 0.30588236, "g": 0.6392157, "b": 0.72156864, "a": 1 },
+				{ "r": 0.8509804, "g": 0.6431373, "b": 0.28235295, "a": 1 },
+				{ "r": 0.49019608, "g": 0.8, "b": 0.34509805, "a": 1 },
+				{ "r": 0.8352941, "g": 0.6313726, "b": 1, "a": 1 },
+				{ "r": 0.36078432, "g": 0.3019608, "b": 0.3019608, "a": 1 },
+				{ "r": 0.87058824, "g": 0.84705883, "b": 0.81960785, "a": 1 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 1 },
+	"name": "Droplet",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 479 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"images": [
+				{
+					"drawable": { "id": 479 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 479 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "LANDED" },
+			"images": [
+				{
+					"drawable": { "id": 480 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 2 },
+	"name": "Bella",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 204 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 207 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_START" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 208 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_END" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 240 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 0.5,
+			"images": [
+				{
+					"drawable": { "id": 205 },
+					"yPos": -5
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetX": 4,
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 206 },
+					"xPos": 8
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"shadowOffsetX": -4,
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 677 },
+					"xPos": -8
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 204 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 3,
+			"images": [
+				{
+					"drawable": { "id": 204 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 4 },
+	"name": "Tankitty",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 513 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 517 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_START" },
+			"images": [
+				{
+					"drawable": { "id": 518 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_END" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 519 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 515 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 516 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "DEFENDING" },
+			"images": [
+				{
+					"drawable": { "id": 700 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 514 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"images": [
+				{
+					"drawable": { "id": 513 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 513 }
+				}
+			]
+		}
+	],
+	"keepUncustomized": true,
+	"customizables": [
+		{
+			"name": "Breed",
+			"replace": [
+				{ "replace": -34282497 },
+				{ "replace": -658527745 },
+				{ "replace": -23168769 },
+				{ "replace": -579970305 },
+				{ "replace": -243969025 },
+				{ "replace": 1465473279 }
+			],
+			"colors": [
+				{
+					"r": 0.3019608,
+					"g": 0.3019608,
+					"b": 0.3019608,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.18039216, "g": 0.18039216, "b": 0.18039216, "a": 1 },
+						{ "r": 0.3019608, "g": 0.3019608, "b": 0.3019608, "a": 1 },
+						{ "r": 0.18039216, "g": 0.18039216, "b": 0.18039216, "a": 1 },
+						{ "r": 0.5803922, "g": 0.5803922, "b": 0.5803922, "a": 1 },
+						{ "r": 1, "g": 0.95686275, "b": 0.7607843, "a": 1 }
+					],
+					"primary": true
+				},
+				{
+					"r": 0.2,
+					"g": 0.29803923,
+					"b": 0.38039216,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.13725491, "g": 0.18431373, "b": 0.21960784, "a": 1 },
+						{ "r": 0.45490196, "g": 0.5137255, "b": 0.56078434, "a": 1 },
+						{ "r": 0.30980393, "g": 0.3529412, "b": 0.3882353, "a": 1 },
+						{ "r": 0.42745098, "g": 0.49019608, "b": 0.5411765, "a": 1 },
+						{ "r": 1, "g": 0.93333334, "b": 0.8784314, "a": 1 }
+					],
+					"primary": true
+				},
+				{
+					"r": 0.6117647,
+					"g": 0.27058825,
+					"b": 0.15686275,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.43137255, "g": 0.22352941, "b": 0.15294118, "a": 1 },
+						{ "r": 0.7490196, "g": 0.6745098, "b": 0.6509804, "a": 1 },
+						{ "r": 0.50980395, "g": 0.43529412, "b": 0.42352942, "a": 1 },
+						{ "r": 0.83137256, "g": 0.4862745, "b": 0.37254903, "a": 1 },
+						{ "r": 0.21176471, "g": 0.19607843, "b": 0.1882353, "a": 1 }
+					],
+					"primary": true
+				},
+				{
+					"r": 0.92941177,
+					"g": 0.92941177,
+					"b": 0.92941177,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.67058825, "g": 0.67058825, "b": 0.67058825, "a": 1 },
+						{ "r": 0.92941177, "g": 0.92941177, "b": 0.92941177, "a": 1 },
+						{ "r": 0.67058825, "g": 0.67058825, "b": 0.67058825, "a": 1 },
+						{ "r": 0.9490196, "g": 0.32156864, "b": 0.52156866, "a": 1 },
+						{ "r": 0.14509805, "g": 0.56078434, "b": 0.9019608, "a": 1 }
+					],
+					"primary": true
+				},
+				{
+					"r": 0.7607843,
+					"g": 0.5764706,
+					"b": 0.39607844,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.9098039, "g": 0.8509804, "b": 0.7921569, "a": 1 },
+						{ "r": 0.30980393, "g": 0.2784314, "b": 0.26666668, "a": 1 },
+						{ "r": 0.18039216, "g": 0.16078432, "b": 0.15294118, "a": 1 },
+						{ "r": 0.3019608, "g": 0.23137255, "b": 0.20392157, "a": 1 },
+						{ "r": 0.18039216, "g": 0.16862746, "b": 0.15294118, "a": 1 }
+					],
+					"primary": true
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 22 },
+	"name": "Voc Pickup",
+	"states": [
+		{
+			"images": [
+				{
+					"drawable": { "id": 584 },
+					"yPos": 10,
+					"scaleX": 2,
+					"scaleY": 2
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 32 },
+	"name": "Data Server Ancient",
+	"states": [
+		{
+			"images": [
+				{
+					"drawable": { "id": 623 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 33 },
+	"name": "Ice Cave Back",
+	"states": [
+		{
+			"images": [
+				{
+					"drawable": { "id": 624 },
+					"xPos": -13,
+					"yPos": -1,
+					"shadow": false
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 34 },
+	"name": "Ice Cave Front",
+	"states": [
+		{
+			"images": [
+				{
+					"drawable": { "id": 625 },
+					"xPos": -18,
+					"yPos": -15
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 35 },
+	"name": "Godius Body",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 661 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 698 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 698 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "DEFENDING" },
+			"images": [
+				{
+					"drawable": { "id": 698 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "SPAWN" },
+			"shadowOffsetY": -8,
+			"images": [
+				{
+					"drawable": { "id": 664 },
+					"yPos": -16
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_OPEN" },
+			"images": [
+				{
+					"drawable": { "id": 665 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"images": [
+				{
+					"drawable": { "id": 661 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 661 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 36 },
+	"name": "Godius Left Arm",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 662 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"images": [
+				{
+					"drawable": { "id": 696 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetX": -10,
+			"shadowOffsetY": -10,
+			"images": [
+				{
+					"drawable": { "id": 697 },
+					"xPos": -20,
+					"yPos": -20
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"images": [
+				{
+					"drawable": { "id": 668 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "SPAWN" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 666 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FALLING" },
+			"images": [
+				{
+					"drawable": { "id": 670 },
+					"xPos": -34,
+					"yPos": -28
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "LANDED" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 672 },
+					"xPos": -20,
+					"yPos": -20
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"images": [
+				{
+					"drawable": { "id": 662 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 662 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 37 },
+	"name": "Godius Right Arm",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 663 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" },
+			"images": [
+				{
+					"drawable": { "id": 668 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" },
+			"shadowOffsetX": -10,
+			"shadowOffsetY": -10,
+			"images": [
+				{
+					"drawable": { "id": 669 },
+					"xPos": -20,
+					"yPos": -20
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "SPAWN" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 667 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FALLING" },
+			"images": [
+				{
+					"drawable": { "id": 670 },
+					"xPos": -34,
+					"yPos": -28
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "LANDED" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 672 },
+					"xPos": -20,
+					"yPos": -20
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"images": [
+				{
+					"drawable": { "id": 663 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 663 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 38 },
+	"name": "Gateway Portal",
+	"states": [
+		{
+			"images": [
+				{
+					"drawable": { "id": 701 },
+					"shadow": false
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 39 },
+	"name": "Farmadile",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 4,
+			"images": [
+				{
+					"drawable": { "id": 724 },
+					"yPos": -6
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 4,
+			"images": [
+				{
+					"drawable": { "id": 725 },
+					"xPos": -8,
+					"yPos": -6
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_START" },
+			"shadowOffsetY": 4,
+			"images": [
+				{
+					"drawable": { "id": 726 },
+					"xPos": -8,
+					"yPos": -6
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_END" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 4,
+			"images": [
+				{
+					"drawable": { "id": 727 },
+					"xPos": -8,
+					"yPos": -6
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 4,
+			"images": [
+				{
+					"drawable": { "id": 729 },
+					"yPos": -6
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 4,
+			"images": [
+				{
+					"drawable": { "id": 728 },
+					"yPos": -6
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"shadowOffsetY": 4,
+			"images": [
+				{
+					"drawable": { "id": 724 },
+					"yPos": -6
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"shadowOffsetY": 4,
+			"images": [
+				{
+					"drawable": { "id": 724 },
+					"yPos": -6
+				}
+			]
+		}
+	],
+	"keepUncustomized": true,
+	"customizables": [
+		{
+			"name": "Clothes",
+			"replace": [
+				{ "replace": -39695873 },
+				{ "replace": -664654849 },
+				{ "replace": -1503841537 },
+				{ "replace": -1942544129 }
+			],
+			"colors": [
+				{
+					"r": 0.3019608,
+					"g": 0.90588236,
+					"b": 1,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.2509804, "g": 0.6039216, "b": 0.8392157, "a": 1 },
+						{ "r": 0.1254902, "g": 0.54901963, "b": 0.7294118, "a": 1 },
+						{ "r": 0.10980392, "g": 0.26666668, "b": 0.45882353, "a": 1 }
+					],
+					"primary": true
+				},
+				{
+					"r": 0.57254905,
+					"g": 0.30588236,
+					"b": 0.78039217,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.39215687, "g": 0.17254902, "b": 0.50980395, "a": 1 },
+						{ "r": 0.6745098, "g": 0.7294118, "b": 0.24705882, "a": 1 },
+						{ "r": 0.5803922, "g": 0.5176471, "b": 0.17254902, "a": 1 }
+					],
+					"primary": true
+				},
+				{
+					"r": 0.9019608,
+					"g": 0.2627451,
+					"b": 0.4509804,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.5019608, "g": 0.11372549, "b": 0.3764706, "a": 1 },
+						{ "r": 0.18039216, "g": 0.14509805, "b": 0.43137255, "a": 1 },
+						{ "r": 0.14117648, "g": 0.09411765, "b": 0.3019608, "a": 1 }
+					],
+					"primary": true
+				},
+				{
+					"r": 0.9372549,
+					"g": 1,
+					"b": 0.4509804,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.5137255, "g": 0.56078434, "b": 0.16078432, "a": 1 },
+						{ "r": 0.6, "g": 0.21568628, "b": 0.22352941, "a": 1 },
+						{ "r": 0.34117648, "g": 0.16862746, "b": 0.08627451, "a": 1 }
+					],
+					"primary": true
+				},
+				{
+					"r": 0.4745098,
+					"g": 0.5019608,
+					"b": 0.45882353,
+					"a": 1,
+					"extraColors": [
+						{ "r": 0.26666668, "g": 0.3019608, "b": 0.27058825, "a": 1 },
+						{ "r": 0.9490196, "g": 0.9372549, "b": 0.92156863, "a": 1 },
+						{ "r": 0.7607843, "g": 0.7294118, "b": 0.72156864, "a": 1 }
+					],
+					"primary": true
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 41 },
+	"name": "Water Bomb",
+	"states": [
+		{
+			"images": [
+				{
+					"drawable": { "id": 15 }
+				}
+			]
+		}
+	]
 }
 ]

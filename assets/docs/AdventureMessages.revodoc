@@ -173,22 +173,22 @@ enum AdventureMessages : LocalizedMessage {
 
 	final int ordinal() {}
 
-	int get(int arg0, int arg1) {}
+	int get(int object, int orElse) {}
 
-	Object get(Object arg0, Object arg1) {}
+	Object get(Object object, Object orElse) {}
 
-	float get(float arg0, float arg1) {}
+	float get(float object, float orElse) {}
 
-	double get(double arg0, double arg1) {}
+	double get(double object, double orElse) {}
 
-	void paint(Painter arg0) {}
+	void paint(Painter painter) {}
 
-	String format(Object[] arg0) {}
+	String format(Object[] args) {}
 
 	String getKey() {}
 
 	static AdventureMessages[] values() {}
 
-	static AdventureMessages valueOf(String arg0) {}
+	static AdventureMessages valueOf(String name) {}
 
 }

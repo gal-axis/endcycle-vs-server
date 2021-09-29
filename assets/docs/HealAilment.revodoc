@@ -17,11 +17,11 @@ HealAilment(Ailment) {
 
 	int hashCode() {}
 
-	boolean isActionRollback(Object[] action) {}
+	void actionTriggered(Runnable action) {}
 
 	void actionTriggered(Object[] action) {}
 
-	void actionTriggered(Runnable action) {}
+	boolean isActionRollback(Object[] action) {}
 
 	int get(int object, int orElse) {}
 
@@ -51,13 +51,13 @@ HealAilment(Ailment) {
 
 	boolean over() {}
 
-	boolean isDisplayed() {}
+	float getIntensity() {}
 
 	void setIntensity(float intensity) {}
 
-	float getIntensity() {}
-
 	void increaseDuration() {}
+
+	boolean isDisplayed() {}
 
 	boolean canTarget() {}
 

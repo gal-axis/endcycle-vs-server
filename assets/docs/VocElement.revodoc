@@ -4,10 +4,7 @@ enum VocElement : DataName {
  	FIRE,
  	WATER,
  	NATURE,
- 	ELEC,
- 	DARKNESS,
- 	LIGHT,
- 	SPECIAL;
+ 	ELEC;
 
 	final boolean equals(Object arg0) {}
 
@@ -27,9 +24,11 @@ enum VocElement : DataName {
 
 	static VocElement valueOf(String name) {}
 
+	Color getColor() {}
+
 	boolean beats(VocElement e) {}
 
-	Color getColor() {}
+	DrawableImage getIcon() {}
 
 	Color getPortalColor() {}
 

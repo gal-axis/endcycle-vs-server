@@ -1,4 +1,4 @@
-AdventureItemBranch(Object) {
+AdventureItemBranch(Object) : Named {
 
 	ID item;
 	int amount;
@@ -11,5 +11,7 @@ AdventureItemBranch(Object) {
 	String toString() {}
 
 	int hashCode() {}
+
+	String getName() {}
 
 }

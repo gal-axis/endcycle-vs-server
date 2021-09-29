@@ -63,17 +63,21 @@ Projectile(GameObject) : ShadowEntity, Turnable, Danger {
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void hide(GameScreen screen) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void show(GameScreen screen) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	float getComparisonKey() {}
+	void hide(GameScreen screen) {}
 
 	final Origin getOrigin() {}
 
 	byte getLayer() {}
+
+	float getComparisonKey() {}
+
+	final void removeObject() {}
+
+	final void addObject(ScreenObject object) {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
@@ -81,15 +85,11 @@ Projectile(GameObject) : ShadowEntity, Turnable, Danger {
 
 	SoundContainer playSound(SoundInfo sound) {}
 
-	final void addObject(ScreenObject object) {}
-
-	final void removeObject() {}
-
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
-	final float getWidth() {}
-
 	final float getHeight() {}
+
+	final float getWidth() {}
 
 	float getCenterX() {}
 
@@ -99,43 +99,43 @@ Projectile(GameObject) : ShadowEntity, Turnable, Danger {
 
 	void resetState() {}
 
-	CColor calculateTint() {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scaleX, float scaleY) {}
+
+	void draw(CustomSpriteBatch batch) {}
 
 	final void setAnimationDuration(double duration) {}
 
 	final boolean isAnimationFinished() {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scaleX, float scaleY) {}
+	CColor calculateTint() {}
 
-	void draw(CustomSpriteBatch batch) {}
-
-	final boolean isFlipX() {}
-
-	final void resetAnimation() {}
-
-	final Patchwork setPatchwork(ID id) {}
-
-	Patchwork setPatchwork(Patchwork patchwork) {}
+	final float getXScale() {}
 
 	final float getYScale() {}
 
-	final boolean inState(PatchworkStateId name) {}
+	Patchwork setPatchwork(Patchwork patchwork) {}
+
+	final Patchwork setPatchwork(ID id) {}
+
+	final boolean isFlipX() {}
+
+	void updateParticles(float delta) {}
+
+	boolean setState(PatchworkStateId state) {}
 
 	final boolean isFlipY() {}
 
 	void updateGraphics(float delta) {}
 
-	void updateParticles(float delta) {}
-
 	final void resetTint() {}
-
-	boolean setState(PatchworkStateId state) {}
-
-	final Patchwork getPatchwork() {}
 
 	final boolean hasState(PatchworkStateId name) {}
 
-	final float getXScale() {}
+	final boolean inState(PatchworkStateId name) {}
+
+	final void resetAnimation() {}
+
+	final Patchwork getPatchwork() {}
 
 	boolean isDangerous(BattleEntity entity, int x, int y) {}
 
@@ -145,23 +145,23 @@ Projectile(GameObject) : ShadowEntity, Turnable, Danger {
 
 	boolean isTurned() {}
 
-	List getShadowDrawables() {}
-
 	float getShadowX() {}
+
+	float getShadowY() {}
 
 	float getShadowAlpha() {}
 
 	float getShadowZ() {}
 
-	float getShadowY() {}
+	List getShadowDrawables() {}
 
 	void stop() {}
 
 	void flip() {}
 
-	void hit(int x, int y, boolean moved) {}
-
 	void hit(BattleEntityList entities) {}
+
+	void hit(int x, int y, boolean moved) {}
 
 	void move(float delta) {}
 
@@ -169,22 +169,22 @@ Projectile(GameObject) : ShadowEntity, Turnable, Danger {
 
 	boolean hitDone() {}
 
-	int getYTile() {}
-
 	int getXTile() {}
 
-	void snapTile(int x, int y) {}
-
-	void snapTile() {}
+	int getYTile() {}
 
 	void updateTile() {}
 
-	boolean isFluid() {}
-
 	void updateDelay() {}
 
-	boolean isOutOfBounds(int xTile, int yTile) {}
+	void snapTile() {}
+
+	void snapTile(int x, int y) {}
 
 	void setFluid(boolean fluid) {}
+
+	boolean isFluid() {}
+
+	boolean isOutOfBounds(int xTile, int yTile) {}
 
 }

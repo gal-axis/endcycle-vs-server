@@ -4,17 +4,16 @@ PackMenu(MenuElementGroup) : MenuTableAction, MenuTablePainter, MenuTableDragLis
 	GameScreen screen;
 	boolean showing;
 	final Inventory inventory;
-	final VocMenu vocMenu;
-	final MenuSidebar sidebar;
+	final Consumer editAction;
 	MenuTable packs;
 	MenuButton newPack;
 	MenuButton delete;
 	MenuButton edit;
 	MenuButton recipes;
-	VocPackGroup vocs;
+	VocPackDisplayer vocs;
 	int selectionPack;
 
-	new(Inventory inventory, VocMenu menu, MenuSidebar sidebar) {}
+	new(Inventory inventory, Consumer editAction) {}
 
 	final boolean equals(Object obj) {}
 
@@ -36,25 +35,25 @@ PackMenu(MenuElementGroup) : MenuTableAction, MenuTablePainter, MenuTableDragLis
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void hide(GameScreen screen) {}
-
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void show(GameScreen screen) {}
 
-	float getComparisonKey() {}
-
-	byte getLayer() {}
+	void hide(GameScreen screen) {}
 
 	final Origin getOrigin() {}
 
-	final void addObject(ScreenObject object) {}
+	byte getLayer() {}
+
+	float getComparisonKey() {}
 
 	final void removeObject() {}
 
-	final SoundContainer playSound(Sounds sound) {}
+	final void addObject(ScreenObject object) {}
 
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(SoundInfo sound) {}
 
@@ -70,87 +69,87 @@ PackMenu(MenuElementGroup) : MenuTableAction, MenuTablePainter, MenuTableDragLis
 
 	MenuElement setEnabled(boolean enabled) {}
 
+	boolean select() {}
+
 	float getX() {}
 
 	float getY() {}
 
-	boolean select() {}
-
-	float getHeight() {}
-
-	MenuElement setHeight(float height) {}
-
-	float getWidth() {}
+	MenuElement getAbsoluteParent() {}
 
 	MenuElement setLayer(byte layer) {}
 
-	MenuElement getAbsoluteParent() {}
+	float getHeight() {}
 
-	final void triggerAction(MenuElementActionType type) {}
+	float getWidth() {}
+
+	MenuElement setHeight(float height) {}
 
 	boolean touch(TouchEvent trigger) {}
 
-	MenuElement setY(float y) {}
+	final void triggerAction(MenuElementActionType type) {}
 
 	MenuElement setX(float x) {}
 
-	float calcX() {}
+	MenuElement setY(float y) {}
 
 	float calcY() {}
 
+	float calcX() {}
+
 	MenuElement setWidth(float width) {}
+
+	final void setMenuControllerSelection(MenuElement element) {}
+
+	Set getActionListeners() {}
 
 	MenuElement setFocusable(boolean focusable) {}
 
-	float getAbsoluteY() {}
-
-	boolean isEnabled() {}
-
-	MenuElement setHAlign(int hAlign) {}
-
-	MenuElement setAnchorVAlign(int anchorVAlign) {}
-
-	void addElements(Array elements, float x, float y) {}
-
-	boolean canDrawCursor() {}
+	boolean isTouching(float x, float y) {}
 
 	int getAnchorHAlign() {}
 
-	boolean isFocused() {}
-
-	boolean isAbsoluteHidden() {}
+	int getAnchorVAlign() {}
 
 	MenuElement setFocused(boolean focused) {}
 
+	MenuElement setHidden(boolean hidden) {}
+
+	float getAbsoluteX() {}
+
+	float getAbsoluteY() {}
+
+	boolean canDrawCursor() {}
+
+	void addElements(Array elements, float x, float y) {}
+
+	void setCursor(Rectangle rectangle) {}
+
 	MenuElement setAnchor(MenuElement anchor) {}
 
-	MenuElement setHidden(boolean hidden) {}
+	boolean isAbsoluteHidden() {}
+
+	MenuElement setAnchorHAlign(int anchorHAlign) {}
+
+	MenuElement setAnchorVAlign(int anchorVAlign) {}
+
+	MenuElement setHAlign(int hAlign) {}
+
+	MenuElement setVAlign(int vAlign) {}
+
+	MenuButtonTips getButtonTips() {}
+
+	MenuElement getAnchor() {}
+
+	boolean isEnabled() {}
+
+	boolean isFocused() {}
 
 	int getHAlign() {}
 
 	int getVAlign() {}
 
-	MenuElement setVAlign(int vAlign) {}
-
-	float getAbsoluteX() {}
-
-	MenuElement setAnchorHAlign(int anchorHAlign) {}
-
-	int getAnchorVAlign() {}
-
-	MenuButtonTips getButtonTips() {}
-
-	void setCursor(Rectangle rectangle) {}
-
-	MenuElement getAnchor() {}
-
 	boolean isFocusable() {}
-
-	boolean isTouching(float x, float y) {}
-
-	final void setMenuControllerSelection(MenuElement element) {}
-
-	Set getActionListeners() {}
 
 	int compare(MenuElement o1, MenuElement o2) {}
 
@@ -158,15 +157,15 @@ PackMenu(MenuElementGroup) : MenuTableAction, MenuTablePainter, MenuTableDragLis
 
 	Comparator thenComparing(Comparator arg0) {}
 
-	void setDefaultElement(MenuElement defaultElement) {}
-
-	MenuElement getDefaultElement() {}
+	void removeObject(MenuElement object) {}
 
 	MenuElement addObject(MenuElement object) {}
 
-	void removeObject(MenuElement object) {}
-
 	List getObjects() {}
+
+	void setDefaultElement(MenuElement defaultElement) {}
+
+	MenuElement getDefaultElement() {}
 
 	void ignoreSize(MenuElement object) {}
 
@@ -174,84 +173,84 @@ PackMenu(MenuElementGroup) : MenuTableAction, MenuTablePainter, MenuTableDragLis
 
 	float getOffsetX() {}
 
+	void setBackgroundColor(Color backgroundColor) {}
+
+	Color getBackgroundColor() {}
+
 	float getOffsetY() {}
 
-	void drawBackground(CustomSpriteBatch batch, float x, float y) {}
-
 	void addElements(Array elements, float x, float y, MenuElement object) {}
+
+	void setObjects(List objects) {}
+
+	void setCountSize(List countSize) {}
+
+	List getCountSize() {}
 
 	MenuThemeDrawable getBackground() {}
 
 	MenuElementShowAnim getShowAnimation() {}
 
-	void setBgPad(float bgPad) {}
-
-	void setCountSize(List countSize) {}
-
-	void setOffsetY(float offsetY) {}
+	void countSize(MenuElement object) {}
 
 	float getBgPad() {}
 
-	void setObjects(List objects) {}
+	void setBgPad(float bgPad) {}
 
 	void setOffsetX(float offsetX) {}
 
-	void countSize(MenuElement object) {}
+	void setOffsetY(float offsetY) {}
 
-	List getCountSize() {}
-
-	Color getBackgroundColor() {}
-
-	void setBackgroundColor(Color backgroundColor) {}
+	void drawBackground(CustomSpriteBatch batch, float x, float y) {}
 
 	void controllerDisconnected(Controller controller) {}
 
 	void controllerConnected(Controller controller) {}
 
-	boolean keyTyped(char character) {}
-
-	boolean triggerButton(ButtonEvent event) {}
-
-	boolean keyDown(int keycode) {}
-
-	boolean triggerType(int character) {}
-
 	int getInputPriority() {}
 
-	boolean keyUp(int keycode) {}
-
-	boolean addButtonTips(ButtonTipList tips) {}
+	boolean keyTyped(char character) {}
 
 	boolean triggerTouch(TouchEvent event) {}
 
-	void paint(MenuTablePaintParams params) {}
+	boolean triggerButton(ButtonEvent event) {}
 
-	Painter getPainter(MenuTablePaintParams params, int hAlign, int vAlign) {}
+	boolean triggerType(int character) {}
+
+	boolean keyDown(int keycode) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean keyUp(int keycode) {}
+
+	void paint(MenuTablePaintParams params) {}
 
 	Painter getPainter(MenuTablePaintParams params) {}
 
-	void paintBG(MenuTablePaintParams params) {}
-
-	void paintEmpty(MenuTablePaintParams params) {}
+	Painter getPainter(MenuTablePaintParams params, int hAlign, int vAlign) {}
 
 	void stopPainting(MenuTablePaintParams params) {}
 
 	void startPainting(MenuTablePaintParams params) {}
 
-	void updateTableSelection(int selection) {}
+	void paintBG(MenuTablePaintParams params) {}
+
+	void paintEmpty(MenuTablePaintParams params) {}
 
 	boolean selectTableHeader() {}
 
 	void moveTableSelection(int selection) {}
 
+	void updateTableSelection(int selection) {}
+
 	void delete() {}
 
 	void recipes() {}
 
-	void newFromTemplate() {}
-
 	void editPack() {}
 
 	void newPack() {}
+
+	void newFromTemplate() {}
 
 }

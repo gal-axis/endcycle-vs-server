@@ -22,23 +22,23 @@ final TouchEvent(Object) {
 
 	void set(TouchEvent trigger) {}
 
+	boolean isPressed() {}
+
+	int getButton() {}
+
+	boolean isLeftMouse() {}
+
 	boolean isIn(float x, float y, float width, float height) {}
 
 	boolean isReleased() {}
 
-	boolean isPressed() {}
-
-	boolean isLeftMouse() {}
-
-	int getButton() {}
-
-	boolean isMoved() {}
+	boolean isRightMouse() {}
 
 	boolean isScroll() {}
 
-	int getPointer() {}
+	boolean isMoved() {}
 
-	boolean isRightMouse() {}
+	int getPointer() {}
 
 	boolean isMiddleMouse() {}
 

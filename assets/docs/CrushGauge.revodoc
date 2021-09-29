@@ -20,18 +20,18 @@ CrushGauge(Object) {
 
 	void reset() {}
 
-	void increase(double amount, int crushStrength) {}
+	void crush() {}
 
 	void increase(double amount) {}
+
+	void increase(double amount, int crushStrength) {}
 
 	void decrease(double amount) {}
 
 	void uncrush() {}
 
-	void crush() {}
+	void setAmount(double amount) {}
 
 	void setGauges(boolean filled) {}
-
-	void setAmount(double amount) {}
 
 }

@@ -38,10 +38,10 @@ BattleSpectatorDisplay(Object) : ScreenObject {
 
 	int getSpectators() {}
 
-	final void updateSpectators(List spectators) {}
-
 	void removeSpectator(int index) {}
 
 	void drawRow(CustomSpriteBatch batch, float xOfs, float yOfs, boolean flipped) {}
+
+	final void updateSpectators(List spectators) {}
 
 }

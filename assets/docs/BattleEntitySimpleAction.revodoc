@@ -36,9 +36,9 @@ BattleEntitySimpleAction(Object) : BattleEntityAction {
 
 	void dispose() {}
 
-	void hit(HitProperty hitProperty) {}
-
 	boolean isAuthorative() {}
+
+	void hit(HitProperty hitProperty) {}
 
 	void hitEntity(BattleEntity entity, OwnedHitProperty property) {}
 
@@ -52,14 +52,14 @@ BattleEntitySimpleAction(Object) : BattleEntityAction {
 
 	boolean inaccessiblePanel() {}
 
-	boolean requiresChange(BattleEntityActionChangeData change) {}
+	boolean changeIfNeeded() {}
 
 	void setExecutor(int index) {}
+
+	boolean requiresChange(BattleEntityActionChangeData change) {}
 
 	void setData(BattleEntityActionData data) {}
 
 	void progressMove() {}
-
-	boolean changeIfNeeded() {}
 
 }

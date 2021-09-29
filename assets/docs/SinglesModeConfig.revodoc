@@ -5,7 +5,7 @@ SinglesModeConfig(BattleModeConfig) {
 
 	new() {}
 
-	new(GameMode arg0) {}
+	new(GameMode mode) {}
 
 	boolean equals(Object arg0) {}
 
@@ -15,14 +15,14 @@ SinglesModeConfig(BattleModeConfig) {
 
 	List getProperties() {}
 
-	Party[] getSlotParties() {}
-
-	boolean supports(Array arg0) {}
-
-	BattleData createData(PlayerConfigurator arg0) {}
+	BattleData createData(PlayerConfigurator configurator) {}
 
 	BattleMode createMode() {}
 
-	void configure(Battle arg0, PlayerConfigurator arg1) {}
+	boolean supports(Array parties) {}
+
+	Party[] getSlotParties() {}
+
+	void configure(Battle battle, PlayerConfigurator configurator) {}
 
 }

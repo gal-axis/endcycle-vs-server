@@ -1,8 +1,8 @@
 AttackParticleSpawner(Object) : GameObjectParticle {
 
-	new() {}
-
 	new(AttackParticleObject parent, Turnable turnable, Array particles, float speed) {}
+
+	new() {}
 
 	boolean equals(Object arg0) {}
 
@@ -18,11 +18,13 @@ AttackParticleSpawner(Object) : GameObjectParticle {
 
 	void init() {}
 
-	void dispose() {}
-
 	void draw(CustomSpriteBatch batch, float x, float y, float xScale, float yScale, CColor color) {}
 
+	void dispose() {}
+
 	int getOrder() {}
+
+	static AttackParticleSpawner create(AttackParticleObject parent, Turnable turnable, Array particles, float speed) {}
 
 	void spawn() {}
 

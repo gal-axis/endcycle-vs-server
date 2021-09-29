@@ -3,7 +3,7 @@ AffinityLoot(Object) : Lootable {
 	BattleEntityData data;
 	float amount;
 
-	new(BattleEntityData arg0, float arg1) {}
+	new(BattleEntityData data, float amount) {}
 
 	boolean equals(Object arg0) {}
 
@@ -13,8 +13,8 @@ AffinityLoot(Object) : Lootable {
 
 	Lootable split() {}
 
-	void addToInventory() {}
-
 	LootDisplayer createDisplayer() {}
+
+	void addToInventory() {}
 
 }

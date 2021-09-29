@@ -1,4 +1,4 @@
-BattleEntityTagAnimation(Object) {
+BattleEntityTagAnimation(Object) : Named {
 
 	VocTag tag;
 	PatchworkStateId attack;
@@ -11,5 +11,7 @@ BattleEntityTagAnimation(Object) {
 	String toString() {}
 
 	int hashCode() {}
+
+	String getName() {}
 
 }

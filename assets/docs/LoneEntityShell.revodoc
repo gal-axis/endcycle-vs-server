@@ -41,15 +41,15 @@ abstract LoneEntityShell(EntityShell) {
 
 	void set(LoneEntityShell shell) {}
 
-	BattleEntity generate(ID id, int x, int y) {}
-
-	abstract BattleEntity generate(int x, int y, BattleEntityData data, CustomCache custom);
-
 	BattleEntityData getData(ID id) {}
 
 	void setAction(BattleEntity entity) {}
 
 	Patchwork getPatchwork() {}
+
+	abstract BattleEntity generate(int x, int y, BattleEntityData data, CustomCache custom);
+
+	BattleEntity generate(ID id, int x, int y) {}
 
 	BattleEntityData findEntityData(ID id) {}
 

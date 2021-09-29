@@ -22,15 +22,15 @@ IceTile(NormalTile) : BECondition {
 
 	boolean isAccessible(BattleEntity entity, boolean checkFree) {}
 
-	void refresh() {}
-
-	void dispose() {}
-
-	int getY() {}
-
 	int getX() {}
 
 	void draw(Batch batch, float x, float y, Party party, float shade, float alpha) {}
+
+	int getY() {}
+
+	void refresh() {}
+
+	void dispose() {}
 
 	OwnedHitProperty hit(OwnedHitProperty property) {}
 
@@ -46,9 +46,9 @@ IceTile(NormalTile) : BECondition {
 
 	Battle getBattle() {}
 
-	void enter(BattleEntity entity) {}
-
 	boolean shareBorder(BattleFieldPanel panel2) {}
+
+	void enter(BattleEntity entity) {}
 
 	OwnedHitProperty affect(OwnedHitProperty property) {}
 

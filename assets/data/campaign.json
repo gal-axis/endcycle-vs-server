@@ -15,8 +15,8 @@
 			"battle": { "id": 3 },
 			"dialogue": { "id": 3 },
 			"dialogueAfter": { "id": 5 },
-			"timeTwoStars": 20,
 			"timeOneStar": 30,
+			"timeTwoStars": 20,
 			"onLoad": {
 				"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 				"scripts": [
@@ -35,8 +35,8 @@
 			"dialogueDelay": 0.6,
 			"dialogueAfter": { "id": 7 },
 			"endAfterDialogue": false,
-			"timeTwoStars": 20,
 			"timeOneStar": 30,
+			"timeTwoStars": 20,
 			"onLoad": {
 				"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 				"scripts": [
@@ -57,8 +57,8 @@
 			"dialogue": { "id": 9 },
 			"dialogueAfter": { "id": 10 },
 			"startAfterDialogue": false,
-			"timeTwoStars": 20,
 			"timeOneStar": 30,
+			"timeTwoStars": 20,
 			"onLoad": {},
 			"onWin": {}
 		},
@@ -85,15 +85,13 @@
 			"dialogue": { "id": 13 },
 			"dialogueAfter": { "id": 14 },
 			"attackStar": 30,
-			"timeTwoStars": 75,
 			"timeOneStar": 100,
+			"timeTwoStars": 75,
 			"onLoad": {},
 			"onWin": {}
 		}
 	],
-	"unlockCondition": {
-		"onslaughtScore": {}
-	}
+	"unlockCondition": {}
 },
 {
 	"class": "com.one2b3.endcycle.features.campaign.CampaignData",
@@ -202,8 +200,8 @@
 			"dialogue": { "id": 32 },
 			"dialogueAfter": { "id": 33 },
 			"leaveAlive": true,
-			"timeTwoStars": 28,
 			"timeOneStar": 44,
+			"timeTwoStars": 28,
 			"onLoad": {
 				"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 				"scripts": [
@@ -216,7 +214,6 @@
 		}
 	],
 	"unlockCondition": {
-		"onslaughtScore": {},
 		"campaigns": [
 			{
 				"campaign": { "id": 1 }
@@ -263,8 +260,8 @@
 			"dialogueAfter": { "id": 38 },
 			"startAfterDialogue": false,
 			"endAfterDialogue": false,
-			"timeTwoStars": 28,
 			"timeOneStar": 44,
+			"timeTwoStars": 28,
 			"onLoad": {
 				"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 				"scripts": [
@@ -311,8 +308,8 @@
 			"dialogue": { "id": 47 },
 			"dialogueAfter": { "id": 48 },
 			"attackStar": 60,
-			"timeTwoStars": 110,
 			"timeOneStar": 180,
+			"timeTwoStars": 110,
 			"onLoad": {},
 			"onWin": {}
 		},
@@ -337,7 +334,6 @@
 		}
 	],
 	"unlockCondition": {
-		"onslaughtScore": {},
 		"campaigns": [
 			{
 				"campaign": {}
@@ -591,7 +587,6 @@
 		}
 	],
 	"unlockCondition": {
-		"onslaughtScore": {},
 		"campaigns": [
 			{
 				"campaign": { "id": 2 }
@@ -607,7 +602,6 @@
 	"description": "This campaign will be unlocked with a future update, so stay tuned!",
 	"character": { "id": 9 },
 	"unlockCondition": {
-		"onslaughtScore": {},
 		"campaigns": [
 			{
 				"campaign": { "id": 2 }
@@ -630,14 +624,13 @@
 			"description": "Destroy the servers as fast as you can!",
 			"battle": { "id": 22 },
 			"attackStar": 60,
-			"timeTwoStars": 160,
 			"timeOneStar": 300,
+			"timeTwoStars": 160,
 			"onLoad": {},
 			"onWin": {}
 		}
 	],
 	"unlockCondition": {
-		"onslaughtScore": {},
 		"campaigns": [
 			{
 				"campaign": { "id": 2 }
@@ -651,7 +644,7 @@
 	"name": "Crimson Force",
 	"color": { "r": 0.43137255, "g": 0.015686275, "b": 0.015686275, "a": 1 },
 	"available": false,
-	"description": "Getting into Crimson Force is one thing but surviving the job is an entirely different beast alltogether.",
+	"description": "Crimson Force, here to save the day. But who will save them?",
 	"victory": "Did we win?",
 	"character": { "id": 7 },
 	"nodes": [
@@ -680,10 +673,12 @@
 				}
 			]
 		},
-		{ "name": "The Spark Of War", "description": "After the battle in the Araha Desert the Punks regroup..." }
+		{ "name": "The Spark Of War", "description": "After the battle in the Araha Desert the Punks regroup..." },
+		{
+			"dialogue": { "id": 675 }
+		}
 	],
 	"unlockCondition": {
-		"onslaughtScore": {},
 		"campaigns": [
 			{
 				"campaign": { "id": 5 }

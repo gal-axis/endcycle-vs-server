@@ -1,4 +1,4 @@
-PatchworkStateData(Object) {
+PatchworkStateData(Object) : Named {
 
 	PatchworkStateId state;
 	PatchworkStateType type;
@@ -18,5 +18,7 @@ PatchworkStateData(Object) {
 	String toString() {}
 
 	int hashCode() {}
+
+	String getName() {}
 
 }

@@ -29,11 +29,11 @@ DialogueLineDisplayer(Object) {
 
 	void end(GameScreen screen) {}
 
-	GameObject addEntity(GameScreen screen, String entity) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs, float position) {}
 
 	void draw(CustomSpriteBatch batch, float x, float y) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs, float position) {}
+	GameObject addEntity(GameScreen screen, String entity) {}
 
 	boolean isOver() {}
 
@@ -41,14 +41,14 @@ DialogueLineDisplayer(Object) {
 
 	boolean isDisplayingAllText() {}
 
+	boolean isSkippable() {}
+
+	void addIndicator(GameScreen screen, GameObject talking) {}
+
 	boolean hasTimeout() {}
 
 	void setTalking(String talking) {}
 
 	void displayAllText() {}
-
-	void addIndicator(GameScreen screen, GameObject talking) {}
-
-	boolean isSkippable() {}
 
 }

@@ -559,7 +559,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
 	"id": { "id": 78 },
-	"name": "Sofa",
+	"name": "Sofa Noise",
 	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
 	"states": [
 		{
@@ -4970,6 +4970,15 @@
 					"yPos": -6
 				}
 			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"images": [
+				{
+					"drawable": { "id": 763 },
+					"yPos": -3
+				}
+			]
 		}
 	],
 	"keepUncustomized": true,
@@ -5056,6 +5065,20 @@
 			"images": [
 				{
 					"drawable": { "id": 15 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 42 },
+	"name": "Sofa Decoration",
+	"states": [
+		{
+			"images": [
+				{
+					"drawable": { "id": 762 }
 				}
 			]
 		}

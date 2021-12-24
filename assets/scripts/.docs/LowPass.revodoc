@@ -1,0 +1,29 @@
+final LowPass(IIRFilter) {
+
+	float frequency;
+
+	new(float frequency) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void initialize(int sampleRate) {}
+
+	void process(byte[] inputBytes, int length, ByteBuffer outputBytes) {}
+
+	float getFloat(byte[] buff, int position) {}
+
+	byte[] getBytes(float f) {}
+
+	void setBCoeffecients(float[] bCoeffecient) {}
+
+	void setACoeffecients(float[] aCoeffecient) {}
+
+	int getSampleRate() {}
+
+	void calculateCoefficients() {}
+
+}

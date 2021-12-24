@@ -1,0 +1,31 @@
+GameObjectParticles(Object) {
+
+	Array particles;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void add(GameObjectParticle particle) {}
+
+	void remove(int index) {}
+
+	boolean remove(GameObjectParticle particle) {}
+
+	GameObjectParticle get(int index) {}
+
+	void update(float delta) {}
+
+	void clear() {}
+
+	int size() {}
+
+	void drawBehind(CustomSpriteBatch batch, float xOfs, float yOfs, float scaleX, float scaleY, CColor tint) {}
+
+	void drawFront(CustomSpriteBatch batch, float xOfs, float yOfs, float scaleX, float scaleY, CColor tint) {}
+
+}

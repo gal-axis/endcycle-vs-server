@@ -1,0 +1,25 @@
+TurnAct(LimitedAct) : Serializable {
+
+	int uses;
+	boolean resetUses;
+	float time;
+	TurnRelativity turn;
+	TargetFilter target;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	ActExecutor createExecutor() {}
+
+	void write(Json arg0) {}
+
+	void read(Json arg0, JsonValue arg1) {}
+
+	void setFrom(MoveRelativity arg0, boolean arg1) {}
+
+}

@@ -1,0 +1,11 @@
+interface Danger {
+
+	float getDangerPriority(BattleEntity entity) {}
+
+	boolean isDangerous(BattleEntity entity, int x, int y) {}
+
+	void disappear(int x, int y, DangerDisappearListener onDisappear) {}
+
+	float getDangerIgnore(int level) {}
+
+}

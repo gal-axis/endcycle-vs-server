@@ -1,0 +1,197 @@
+Matrix4(Object) {
+
+	static final int M00 = 0;
+	static final int M01 = 4;
+	static final int M02 = 8;
+	static final int M03 = 12;
+	static final int M10 = 1;
+	static final int M11 = 5;
+	static final int M12 = 9;
+	static final int M13 = 13;
+	static final int M20 = 2;
+	static final int M21 = 6;
+	static final int M22 = 10;
+	static final int M23 = 14;
+	static final int M30 = 3;
+	static final int M31 = 7;
+	static final int M32 = 11;
+	static final int M33 = 15;
+	final float[] val;
+
+	new(float[] arg0) {}
+
+	new(Matrix4 arg0) {}
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	Matrix4 scl(Vector3 arg0) {}
+
+	Matrix4 scl(float arg0) {}
+
+	Matrix4 scl(float arg0, float arg1, float arg2) {}
+
+	Matrix4 set(Vector3 arg0, Vector3 arg1, Vector3 arg2, Vector3 arg3) {}
+
+	Matrix4 set(Matrix4 arg0) {}
+
+	Matrix4 set(Affine2 arg0) {}
+
+	Matrix4 set(Matrix3 arg0) {}
+
+	Matrix4 set(float[] arg0) {}
+
+	Matrix4 set(float arg0, float arg1, float arg2, float arg3) {}
+
+	Matrix4 set(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9) {}
+
+	Matrix4 set(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6) {}
+
+	Matrix4 rotate(Vector3 arg0, Vector3 arg1) {}
+
+	Matrix4 rotate(Vector3 arg0, float arg1) {}
+
+	Matrix4 rotate(float arg0, float arg1, float arg2, float arg3) {}
+
+	Matrix4 scale(float arg0, float arg1, float arg2) {}
+
+	Matrix4 mul(Matrix4 arg0) {}
+
+	static void mul(float[] arg0, float[] arg1) {}
+
+	Matrix4 translate(float arg0, float arg1, float arg2) {}
+
+	Matrix4 translate(Vector3 arg0) {}
+
+	Matrix4 lerp(Matrix4 arg0, float arg1) {}
+
+	Matrix4 cpy() {}
+
+	float getScaleY() {}
+
+	Matrix4 setFromEulerAngles(float arg0, float arg1, float arg2) {}
+
+	Matrix4 setFromEulerAnglesRad(float arg0, float arg1, float arg2) {}
+
+	Matrix4 setToTranslationAndScaling(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5) {}
+
+	Matrix4 setToTranslationAndScaling(Vector3 arg0, Vector3 arg1) {}
+
+	Matrix4 rotateTowardDirection(Vector3 arg0, Vector3 arg1) {}
+
+	Matrix4 rotateTowardTarget(Vector3 arg0, Vector3 arg1) {}
+
+	boolean hasRotationOrScaling() {}
+
+	float[] getValues() {}
+
+	Matrix4 setToProjection(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5) {}
+
+	Matrix4 setToProjection(float arg0, float arg1, float arg2, float arg3) {}
+
+	Matrix4 setTranslation(Vector3 arg0) {}
+
+	Matrix4 setTranslation(float arg0, float arg1, float arg2) {}
+
+	Matrix4 setToTranslation(Vector3 arg0) {}
+
+	Matrix4 setToTranslation(float arg0, float arg1, float arg2) {}
+
+	Matrix4 mulLeft(Matrix4 arg0) {}
+
+	Matrix4 idt() {}
+
+	Matrix4 setToOrtho(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5) {}
+
+	Matrix4 setToRotation(float arg0, float arg1, float arg2, float arg3) {}
+
+	Matrix4 setToRotation(Vector3 arg0, float arg1) {}
+
+	Matrix4 setToRotation(Vector3 arg0, Vector3 arg1) {}
+
+	Matrix4 setToRotation(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5) {}
+
+	Matrix4 tra() {}
+
+	Matrix4 trn(Vector3 arg0) {}
+
+	Matrix4 trn(float arg0, float arg1, float arg2) {}
+
+	Matrix4 setToRotationRad(float arg0, float arg1, float arg2, float arg3) {}
+
+	Matrix4 setToRotationRad(Vector3 arg0, float arg1) {}
+
+	float det3x3() {}
+
+	Matrix4 setToOrtho2D(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5) {}
+
+	Matrix4 setToOrtho2D(float arg0, float arg1, float arg2, float arg3) {}
+
+	static boolean inv(float[] arg0) {}
+
+	Matrix4 inv() {}
+
+	float det() {}
+
+	static float det(float[] arg0) {}
+
+	float getScaleYSquared() {}
+
+	Matrix4 setToScaling(float arg0, float arg1, float arg2) {}
+
+	Matrix4 setToScaling(Vector3 arg0) {}
+
+	float getScaleZ() {}
+
+	Vector3 getScale(Vector3 arg0) {}
+
+	void extract4x3Matrix(float[] arg0) {}
+
+	Matrix4 toNormalMatrix() {}
+
+	Matrix4 setToWorld(Vector3 arg0, Vector3 arg1, Vector3 arg2) {}
+
+	static void mulVec(float[] arg0, float[] arg1) {}
+
+	static void mulVec(float[] arg0, float[] arg1, int arg2, int arg3, int arg4) {}
+
+	Vector3 getTranslation(Vector3 arg0) {}
+
+	float getScaleX() {}
+
+	static void rot(float[] arg0, float[] arg1, int arg2, int arg3, int arg4) {}
+
+	static void rot(float[] arg0, float[] arg1) {}
+
+	float getScaleZSquared() {}
+
+	Matrix4 rotateRad(float arg0, float arg1, float arg2, float arg3) {}
+
+	Matrix4 rotateRad(Vector3 arg0, float arg1) {}
+
+	Matrix4 avg(Matrix4[] arg0) {}
+
+	Matrix4 avg(Matrix4 arg0, float arg1) {}
+
+	Matrix4 avg(Matrix4[] arg0, float[] arg1) {}
+
+	Matrix4 setAsAffine(Matrix4 arg0) {}
+
+	Matrix4 setAsAffine(Affine2 arg0) {}
+
+	float getScaleXSquared() {}
+
+	static void prj(float[] arg0, float[] arg1) {}
+
+	static void prj(float[] arg0, float[] arg1, int arg2, int arg3, int arg4) {}
+
+	Matrix4 setToLookAt(Vector3 arg0, Vector3 arg1, Vector3 arg2) {}
+
+	Matrix4 setToLookAt(Vector3 arg0, Vector3 arg1) {}
+
+}

@@ -1,0 +1,25 @@
+interface TextureData {
+
+	abstract TextureDataType getType();
+
+	abstract void prepare();
+
+	abstract int getWidth();
+
+	abstract int getHeight();
+
+	abstract boolean useMipMaps();
+
+	abstract void consumeCustomData(int arg0);
+
+	abstract boolean isManaged();
+
+	abstract boolean isPrepared();
+
+	abstract Pixmap consumePixmap();
+
+	abstract Format getFormat();
+
+	abstract boolean disposePixmap();
+
+}

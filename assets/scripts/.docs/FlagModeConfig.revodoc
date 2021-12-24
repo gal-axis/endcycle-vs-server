@@ -1,0 +1,28 @@
+FlagModeConfig(BattleModeConfig) {
+
+	BattleModeProperty battle;
+	MusicModeProperty music;
+
+	new() {}
+
+	new(GameMode mode) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	List getProperties() {}
+
+	void configure(Battle battle, PlayerConfigurator configurator) {}
+
+	BattleMode createMode() {}
+
+	boolean supports(Array parties) {}
+
+	BattleData createData(PlayerConfigurator configurator) {}
+
+	Party[] getSlotParties() {}
+
+}

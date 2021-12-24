@@ -1,0 +1,26 @@
+final DrawableImageFrame(Object) {
+
+	TextureRegion region;
+	TextureRegion colorblindRegion;
+	float xOffset;
+	float yOffset;
+	TextureFilter filter;
+	TextureWrap wrap;
+
+	new(TextureRegion region, TextureRegion colorblindRegion, float xOffset, float yOffset, TextureFilter filter, TextureWrap wrap) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	TextureRegion getRegion(boolean colorblind) {}
+
+	int getWidth() {}
+
+	int getHeight() {}
+
+	Texture getTexture() {}
+
+}

@@ -1,0 +1,71 @@
+IceTile(NormalTile) : BECondition {
+
+	BattleFieldPanel panel;
+	DrawableImage imageNeutral;
+	DrawableImage imageEnemy;
+	DrawableImage imageAlly;
+	int moves;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void exit(BattleEntity entity) {}
+
+	void update(float delta) {}
+
+	void init() {}
+
+	boolean isAccessible(BattleEntity entity, boolean checkFree, boolean checkParty) {}
+
+	void dispose() {}
+
+	int getY() {}
+
+	void draw(Batch batch, float x, float y, float shade) {}
+
+	void draw(Batch batch, float x, float y, Party party, float shade, float alpha) {}
+
+	int getX() {}
+
+	void refresh() {}
+
+	OwnedHitProperty hit(OwnedHitProperty property) {}
+
+	final void triggerAction(Object[] parameters) {}
+
+	void free() {}
+
+	BattleFieldBorder getCameraBorder(BattleEntity focused) {}
+
+	boolean changeType(PanelType type) {}
+
+	void actionTriggered(Object[] action) {}
+
+	Battle getBattle() {}
+
+	boolean shareBorder(BattleFieldPanel panel2) {}
+
+	OwnedHitProperty affect(OwnedHitProperty property) {}
+
+	void enter(BattleEntity entity) {}
+
+	DrawableImage getDrawable(Party party) {}
+
+	DrawableImage getDrawable(Party party, DrawableImage neutral, DrawableImage enemy, DrawableImage friendly) {}
+
+	void drawTile(Batch batch, float x, float y, DrawableImage drawable) {}
+
+	boolean test(BattleEntity entity) {}
+
+	void remove(IceTileMover mover) {}
+
+	boolean isAccessible(BattleEntity entity, int x, int y) {}
+
+	void reduceUses() {}
+
+}

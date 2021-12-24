@@ -1,0 +1,107 @@
+DialogDisplayer(ListenableGameScreenObject) : Named, InputListener {
+
+	Origin origin;
+	GameScreen screen;
+	boolean showing;
+	final BoundedFloat position;
+	final ScriptList onFinish;
+	int state;
+	boolean active;
+	GameScreen realScreen;
+	Dialogue dialogue;
+	DialogLineDisplayer lineDisplayer;
+	int lineIndex;
+
+	new() {}
+
+	final boolean equals(Object obj) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	void dispose() {}
+
+	void update(float delta) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void hide(GameScreen screen) {}
+
+	void show(GameScreen screen) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	final Origin getOrigin() {}
+
+	byte getLayer() {}
+
+	float getComparisonKey() {}
+
+	final void addObject(ScreenObject object) {}
+
+	final void removeObject() {}
+
+	final SoundContainer playSound(Sounds sound) {}
+
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	SoundContainer playSound(SoundInfo sound) {}
+
+	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
+
+	final void removeInitializeListener(Runnable runnable) {}
+
+	final void removeDisposeListener(Runnable runnable) {}
+
+	final void addInitializeListener(Runnable runnable) {}
+
+	final void addDisposeListener(Runnable runnable) {}
+
+	void controllerDisconnected(Controller controller) {}
+
+	void controllerConnected(Controller controller) {}
+
+	boolean keyTyped(char character) {}
+
+	boolean triggerTouch(TouchEvent event) {}
+
+	boolean triggerType(int character) {}
+
+	boolean keyUp(int keycode) {}
+
+	boolean triggerButton(ButtonEvent event) {}
+
+	int getInputPriority() {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean keyDown(int keycode) {}
+
+	static DialogDisplayer get(GameScreen screen) {}
+
+	static DialogDisplayer start(GameScreen screen, ID dialogue) {}
+
+	static DialogDisplayer start(GameScreen screen, Dialogue dialogue) {}
+
+	void startCurrentLine() {}
+
+	void toNextLine() {}
+
+	void displayAllText() {}
+
+	void endCurrentLine() {}
+
+	DialogDisplayer startDialogue(ID dialogue) {}
+
+	DialogDisplayer startDialogue(Dialogue dialogue, int lineNumber) {}
+
+}

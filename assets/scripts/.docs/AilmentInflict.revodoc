@@ -1,0 +1,31 @@
+final AilmentInflict(Object) : Named {
+
+	AilmentType type;
+	float intensity;
+	float duration;
+
+	new(AilmentType type, float intensity, float duration) {}
+
+	new() {}
+
+	new(AilmentInflict inflict) {}
+
+	boolean equals(Object o) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	String getName() {}
+
+	static AilmentInflict get(Array ailments, AilmentType type) {}
+
+	static void addInflict(Array ailments, AilmentInflict ai) {}
+
+	static void boost(Array ailments, float duration, float intensityHeal, float intensityDebuff) {}
+
+	static void changeInflict(AilmentInflict inflict, float intensity, float duration) {}
+
+	static void invertAilments(Array ailments) {}
+
+}

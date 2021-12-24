@@ -1,0 +1,95 @@
+abstract TimedBattleMode(BattleMode) {
+
+	Battle battle;
+
+	new(Float time) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void handle(GameEvent event) {}
+
+	void dispose() {}
+
+	void update(float delta) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void show(GameScreen screen) {}
+
+	void hide(GameScreen screen) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	float getComparisonKey() {}
+
+	byte getLayer() {}
+
+	Origin getOrigin() {}
+
+	void start() {}
+
+	void stop() {}
+
+	Looter createLooter() {}
+
+	ScreenObject createStarter() {}
+
+	boolean showStart() {}
+
+	boolean isSpawn(BattleEntity entity) {}
+
+	boolean isDespawn(BattleEntity entity) {}
+
+	BattlePlayer createPlayer(BattleEntity entity) {}
+
+	void calculateTint(BattleEntity entity, CColor color) {}
+
+	boolean isRestart() {}
+
+	int adjustDamage(BattleEntity entity, int damage) {}
+
+	boolean loot() {}
+
+	double adjustGaugeSpeed(BattleEntity entity) {}
+
+	LocalizedMessage getLoseMessage() {}
+
+	void addLoot(Looter looter) {}
+
+	String createTeamName(Party party) {}
+
+	void initHUD(BattleHUD hud) {}
+
+	void finish(Party winner) {}
+
+	String getBattleName(String name) {}
+
+	void sendServerUpdate(List messages) {}
+
+	String getDiscordMessage(Party winner) {}
+
+	void timeout() {}
+
+	void updateTimeCache() {}
+
+	void setCurrentTime(float currentTime) {}
+
+	Party getWinnerParty() {}
+
+	float getCurrentTime() {}
+
+	void forceEnd() {}
+
+}

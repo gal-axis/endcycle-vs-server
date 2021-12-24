@@ -508,6 +508,18 @@
 		{
 			"entity": "player",
 			"textMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.DialogueMessages", "key": "Spark.3.11" }
+		},
+		{
+			"entity": "fin",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Crushed?" }
+		},
+		{
+			"entity": "player",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Yeah! Basically you won't be able to move for a while.\nI'll show you. I'm gonna crush you 3 times!" }
+		},
+		{
+			"entity": "fin",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "That sounds painful." }
 		}
 	],
 	"end": {
@@ -11241,7 +11253,7 @@
 {
 	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
 	"id": { "id": 669 },
-	"name": "Crimson Force 1.1",
+	"name": "C-Crimson C1B1",
 	"lines": [
 		{
 			"entity": "cress",
@@ -11257,7 +11269,7 @@
 		},
 		{
 			"entity": "cress",
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Hey Noise hunter boy" }
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Hey Noise hunter boy!" }
 		},
 		{
 			"entity": "player",
@@ -11265,18 +11277,18 @@
 		},
 		{
 			"entity": "cress",
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "ROZU" }
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "ROZU!!!" }
 		},
 		{
 			"entity": "player",
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "AH WHAT NOISES AH" },
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "AH! WHAT! NOISES! AH!" },
 			"options": {
 				"script": { "class": "com.one2b3.endcycle.features.scripts.general.EmotupScript", "name": "player", "emotup": "SURPRISE" }
 			}
 		},
 		{
 			"entity": "cress",
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "How long can a guy sleep. It's been like 4 hours already" }
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "How long can a guy sleep. It's been like 4 hours already." }
 		},
 		{
 			"entity": "puppy",
@@ -11288,7 +11300,7 @@
 		},
 		{
 			"entity": "puppy",
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "But you're drinking one right now" }
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "But you're drinking one right now." }
 		},
 		{
 			"entity": "cress",
@@ -11318,7 +11330,7 @@
 		},
 		{
 			"entity": "player",
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "... is there something you want from me?" }
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "... Is there something you want from me?" }
 		},
 		{
 			"entity": "cress",
@@ -11327,7 +11339,7 @@
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
-		"script": { "id": 191 }
+		"script": { "id": 204 }
 	}
 },
 {
@@ -11352,7 +11364,7 @@
 {
 	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
 	"id": { "id": 671 },
-	"name": "CrimsonForce 1.1.1",
+	"name": "C-Crimson C1B2",
 	"lines": [
 		{
 			"entity": "cress",
@@ -11443,120 +11455,994 @@
 			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Immediately after the desert incident..." }
 		},
 		{
+			"entity": "Cress",
 			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "This little maneuver cost us way too many Punks... how many are left?" }
 		},
 		{
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "20" }
+			"entity": "Flink",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "20." }
 		},
 		{
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Darn" }
+			"entity": "Cress",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Darn!!!" }
 		},
-		{
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "21!" }
-		}
-	],
-	"start": {
-		"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityFormScript",
-		"shell": {
-			"name": "Spark",
-			"form": { "id": 84 }
-		},
-		"animation": true
-	}
-},
-null,
-{
-	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
-	"id": { "id": 677 },
-	"name": "Crimson Force 3b",
-	"lines": [
 		{
 			"entity": "Spark",
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Well if this Crimson Force thing doesn't work out I might just join your hunting clan instead haha" }
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "21!" },
+			"options": {
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "Spark", "animation": true }
+			}
+		},
+		{
+			"entity": "Cress",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Wow. I've never seen anybody come a week late to their job." }
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "I'm here, that's what counts. Tell me what to do!" }
+		},
+		{
+			"entity": "Cress",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Rozu, go and show her the ropes. We'll need some time to regroup..." },
+			"options": {
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "Rozu", "animation": true }
+			}
 		},
 		{
 			"entity": "Rozu",
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "...it's not really MY tribe anymore." }
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Roger." }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 676 },
+	"name": "CF 3 -1",
+	"lines": [
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Sooo .... why are we here?" }
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Ugh. This village doesn't have any Noise protection installed. That's why." },
+			"options": { "emotup": "ANNOYED" }
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Shouldn't Noise Hunters be... taking care of that?" }
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Well obviously an isolated place like this shouldn't be getting any Noises in the first place." },
+			"options": { "emotup": "ANNOYED" }
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Ok mr. grumpy pants sorry for asking I guess. Is that a Noise?" },
+			"options": {
+				"emotup": "QUESTION",
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityFormScript",
+					"shell": {
+						"x": 3,
+						"y": 2,
+						"name": "Sofa",
+						"parent": "",
+						"form": { "id": 90 }
+					}
+				}
+			}
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "No, that's a couch." },
+			"options": {
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "Sofa" }
+			}
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Is that a Noise?" },
+			"options": {
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityFormScript",
+					"shell": {
+						"x": 3,
+						"y": 2,
+						"vital": false,
+						"preview": false,
+						"name": "rock",
+						"form": { "id": 91 }
+					}
+				}
+			}
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Rock." }
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Wow, being a Noise Hunter is tough!" },
+			"options": {
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "rock" }
+			}
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "... Yeah." }
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Is that burning dinosaur skeleton a Noise?" },
+			"options": {
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "Fossil Boss", "animation": true }
+						}
+					]
+				}
+			}
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "WHOA!" },
+			"options": {
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "Bomb CF 5.3", "animation": true }
+						},
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "Fossil Minion", "animation": true }
+						},
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "Rozu", "turned": true }
+						}
+					]
+				}
+			}
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Oh no there are more behind us." }
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "You can leave these skellies to me!" }
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "If you say so..." }
+		}
+	],
+	"end": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "Rozu", "moveType": "PLAYER", "x": -257, "y": -257 }
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 677 },
+	"name": "CF 3-2",
+	"lines": [
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Well if this Crimson Force thing doesn't work out I might just join your hunting clan instead, haha." }
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "... It's not really MY tribe anymore." }
 		},
 		{
 			"entity": "Spark",
 			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "But you wear their uniform?" }
 		},
 		{
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Well I hope that I'll earn my name back somehow" }
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Well I hope that I'll earn my name back somehow." }
 		},
 		{
+			"entity": "Spark",
 			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Oh? What's your name?" },
 			"options": { "emotup": "WHAT" }
 		},
 		{
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Rozu" }
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Rozu." }
 		},
 		{
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "...but we call you that already?" },
-			"options": { "emotup": "WHY" }
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Rozu?" }
 		},
 		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Rozu." }
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "I KNOW YOUR NAME IS ROZU!" },
+			"options": { "emotup": "ANGRY" }
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "We call you that already." },
+			"options": { "emotup": "ANNOYED" }
+		},
+		{
+			"entity": "Rozu",
 			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "But back at home they don't." }
 		},
 		{
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "If it's okay to ask... why did they kick you out?" }
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Oh. I never asked but... why did they kick you out?" },
+			"options": { "emotup": "SWEAT" }
 		},
 		{
+			"entity": "Rozu",
 			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "..." }
 		},
 		{
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "..." }
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "..." },
+			"options": { "emotup": "QUESTION" }
 		},
 		{
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "They caught me with my neighbour" }
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "They caught me with my neighbour." }
 		},
 		{
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Yeah?" }
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Smoochin'?" }
 		},
 		{
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "...who is a dude" }
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "... Who is a dude." }
 		},
 		{
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Ok?" }
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Sooo... you were a' smoochin'?" }
 		},
 		{
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "They caught us kissing" }
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Yes my father caught us... kissing." }
 		},
 		{
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "I got that cool story, but I asked why they kicked you out." }
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Very cool story man. But I asked why they kicked you out." },
+			"options": { "emotup": "ANNOYED" }
 		},
 		{
+			"entity": "Rozu",
 			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "I... I just told you. I'm gay." }
 		},
 		{
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "?" }
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Uh?" },
+			"options": { "emotup": "QUESTION" }
 		},
 		{
+			"entity": "Rozu",
 			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Please don't tell Cress and the others...." }
 		},
 		{
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "lol dude they already know, everyone does" }
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Haha dude, they already know. Everyone does." }
 		},
 		{
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "???" }
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "What???" },
+			"options": { "emotup": "QUESTION" }
 		},
 		{
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Yeah so Jeff from accounting asked if you were single and I said \"ye\" and he said \"that's great\" and I told him to back off since he isn't your type, I know you prefer smoother dudes and he got upset so I..." }
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Yeah, so Amari from accounting asked if you were single and I said \"ye\" and he said \"that's great\" and I told him to back off since he isn't your type, I know you prefer smoother dudes and he got upset so I..." },
+			"options": { "charTimer": 60, "duration": 0.1 }
 		},
 		{
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "WHAT" }
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "WHAT!!!" }
 		},
 		{
+			"entity": "Spark",
 			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "And then I said \"Try a shave\" and boy he really didn't like that and I said \"OK then don't even bother\" and then Cress came along and" },
-			"options": { "charTimer": 80 }
+			"options": { "charTimer": 90, "duration": 0.1 }
 		},
 		{
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "WHAT" }
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "WHAT???" }
 		},
 		{
-			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "... and Cress told him that he should definitely shave not just for your sake and then Tim came along and he thought that HE might have a shot but I laughed and sauf" }
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "... and Cress told him that he should definitely shave not just for your sake and then Tim came along and he thought that HE might have a shot but I laughed and sauf" },
+			"options": { "charTimer": 110, "duration": 0.1 }
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "S P A R K" },
+			"options": {
+				"talkingMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Rozu" },
+				"voice": {},
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ShakeEntityScript", "name": "Rozu", "intensity": 2 }
+			}
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Ye?" }
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "How'd you know?" }
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Uh, dunno. Guess I just know how you feel." }
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "And Cress doesn't mind?" }
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "..." }
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "..." }
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Wow, these Noise Hunters really had it backwards didn't they." }
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "... Well..." },
+			"options": {
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ShakeEntityScript", "name": "Rozu" }
+			}
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Let's go home Brozu." }
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Sounds good yeah." }
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "..." },
+			"options": {
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "Spark", "animation": true }
+			}
+		}
+	],
+	"start": {
+		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+		"scripts": [
+			{
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "Rozu", "moveType": "PLAYER", "x": 4, "y": 1 }
+			},
+			{
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "Spark", "moveType": "PLAYER", "x": 2, "y": 2 }
+			},
+			{
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "Rozu", "turned": true }
+			}
+		]
+	},
+	"end": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "Rozu", "animation": true }
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 678 },
+	"name": "CF 4",
+	"lines": [
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Fin don't worry. It's gonna be fun!" },
+			"options": {
+				"voice": {}
+			}
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "This isn't supposed to be fun." }
+		},
+		{
+			"entity": "Fin",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Listen to Rozu!" }
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "I listen to no one! Now give your brother a big fat kiss on his cheek for me and lemme work! Love you!" }
+		},
+		{
+			"entity": "Fin",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Wait what? Spark I love y-" }
+		},
+		{
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "*beep*" }
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "You good?" },
+			"options": {
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "Rozu", "flip": true }
+			}
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Let's do this!" },
+			"options": {
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "Spark", "flip": true }
+			}
+		},
+		{
+			"entity": "Cress",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Rozu. Go take care of the Noise-Generator." },
+			"options": {
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "Rozu" }
+			}
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Understood." }
+		},
+		{
+			"entity": "Cress",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Spark." }
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Decoy-duty let's go!" }
+		},
+		{
+			"entity": "Cress",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Let's hope this works... destroying this factory might be our last chance to untangle this mess." }
+		}
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+		"script": { "id": 212 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 679 },
+	"name": "Crimson Force 5.1",
+	"lines": [
+		{
+			"entity": "Flink",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Alright gang let's head out!" }
+		},
+		{
+			"entity": "punk2",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Are these patrols really necessary?" }
+		},
+		{
+			"entity": "Flink",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Cress, Spark and Rozu are attacking that factory. Azure Shield should be busy but... you can never be too careful." }
+		},
+		{
+			"entity": "punk1",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Flink admit it, you just want to visit your girlfriend." }
+		},
+		{
+			"entity": "punk2",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "You're right. I can see it in their eyes!" }
+		},
+		{
+			"entity": "Flink",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Ey you're a bum, you know that? Get ready everyone, let's have a safe and chill patrol." }
+		},
+		{
+			"entity": "Flink",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Afterwards I'm getting some hot buns!" }
+		},
+		{
+			"entity": "punk1",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "I bet you are." },
+			"options": { "emotup": "CHEEKY" }
+		},
+		{
+			"entity": "punk2",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Har har har!" },
+			"options": { "emotup": "LAUGHING" }
+		}
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+		"script": { "id": 213 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 680 },
+	"name": "CF 5.2",
+	"lines": [
+		{
+			"entity": "",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Later..." },
+			"options": {
+				"color": { "r": 1, "g": 1, "b": 1, "a": 1 },
+				"charTimer": 20,
+				"skippable": false
+			}
+		}
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+		"scripts": [
+			{
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+					"dialogue": { "id": 681 }
+				}
+			},
+			{
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript", "stop": true }
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 681 },
+	"name": "Crimson Force 5.3",
+	"lines": [
+		{
+			"entity": "Flink",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Well, that was a waste of time." }
+		},
+		{
+			"entity": "punk2",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "What is Cress-Sis even worried about?" }
+		},
+		{
+			"entity": "punk2",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "There haven't been any Azure Agents here since Spark beat up those 2 avocados that got lost here." }
+		},
+		{
+			"entity": "punk1",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "How do you even get lost here? Everod is so far removed from any other city..." }
+		},
+		{
+			"entity": "Flink",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Ya have to have a reason to come to this frozen hole." }
+		},
+		{
+			"entity": "punk1",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Yeah, but maybe we shouldn't have attacked their thing in response? Feels a bit extreme." }
+		},
+		{
+			"entity": "punk2",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Maybe we should talk to them Azure guys and gals for once?" }
+		},
+		{
+			"entity": "Flink",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Wait. Did you hear that?" },
+			"options": {
+				"script": { "class": "com.one2b3.endcycle.features.scripts.general.ShakeScreenScript", "x": 5, "y": 5, "duration": 1 }
+			}
+		},
+		{
+			"entity": "punk1",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "We just had to jinx it...." },
+			"options": {
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "punk1" }
+						},
+						{
+							"delay": 0.1,
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "punk2" }
+						},
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.general.ShakeScreenScript", "x": 8, "y": 8, "duration": 2 }
+						}
+					]
+				}
+			}
+		},
+		{
+			"entity": "Flink",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "NOISES ARE APPROACHING EVEROD! EVERYBODY MOVE!" },
+			"options": {
+				"script": { "class": "com.one2b3.endcycle.features.scripts.general.ShakeScreenScript", "x": 10, "y": 10, "duration": 2 }
+			}
+		}
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+		"scripts": [
+			{
+				"delay": 0.1,
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "punk2", "animation": true }
+			},
+			{
+				"delay": 0.2,
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "punk1", "moveType": "PLAYER", "x": -200, "y": -200 }
+			},
+			{
+				"delay": 0.7,
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignStartBattleScript" }
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 683 },
+	"name": "Crimson Force 5.4",
+	"lines": [
+		{
+			"entity": "Sarah",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "True that, but still... was it really necessary to attack them in the desert?" }
+		},
+		{
+			"entity": "Flink",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "They killed Puppy, dude." }
+		},
+		{
+			"entity": "Sarah",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "We have no idea what really happened. Don't forget we attacked first! What if we just tried talking to-" }
+		},
+		{
+			"entity": "Flink",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Ah." }
+		},
+		{
+			"entity": "Jeff",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "You just had to jinx it." }
+		},
+		{
+			"entity": "Flink",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "EVERYBODY MOVE! DON'T LET THESE THINGS COME ANY CLOSER TO THE CITY!!!!" }
+		}
+	],
+	"start": {
+		"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityFormScript",
+		"shell": {
+			"x": 2,
+			"y": 2,
+			"form": { "id": 50 }
+		}
+	},
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+		"scripts": [
+			{
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityFormScript",
+					"shell": {
+						"x": 3,
+						"form": { "id": 61 }
+					}
+				}
+			},
+			{
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityFormScript",
+					"shell": {
+						"x": 3,
+						"y": 1,
+						"form": { "id": 1 }
+					}
+				}
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 682 },
+	"name": "Crimson Force 5.5",
+	"lines": [
+		{
+			"entity": "Flink",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "THERE ARE TOO MANY! START EVACUATING THE CITY!" }
+		},
+		{
+			"entity": "punk1",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "ROGE-" }
+		}
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+		"scripts": [
+			{
+				"script": { "class": "com.one2b3.endcycle.features.scripts.general.ShakeScreenScript", "x": 10, "y": 10, "duration": 4 }
+			},
+			{
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+					"color": { "r": 0.3019608, "g": 0.3019608, "b": 1, "a": 1 },
+					"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
+				}
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 684 },
+	"name": "CF 2.6",
+	"lines": [
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Wow they're using Noises? That's pretty cool why don't we do that?" }
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Because it's wrong!" }
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Seems useful to me..." }
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Then you don't know anything!" }
 		}
 	]
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 685 },
+	"name": "CF 3.2",
+	"lines": [
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Nice! If that Crimson Force thing doesn't work out I might just join your clan instead!" }
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "... well it's not really MINE anymore...." }
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "But you still wear their uniform?" }
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Well....I'm hoping to earn my name back someday." }
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "What is your name?" }
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Rozu" }
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Rozu?" }
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Rozu" }
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "But we call you that already!" }
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "But the other hunters don't!" }
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "We've been partners for over a month now...." }
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Feels a lot longer...." },
+			"options": { "hidden": true, "emotup": "THINK" }
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "...but I never asked: Why do the Noise Hunters not want you there?" }
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "..." }
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "...well maybe they have a good reason?" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 686 },
+	"name": "CF 1.3",
+	"lines": [
+		{
+			"entity": "player",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "How do you know about that?" }
+		},
+		{
+			"entity": "cress",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "It's time to guard much more than just the roads." }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 687 },
+	"name": "CF 2.2",
+	"lines": [
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Sooo... where are you from?" }
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Secret monastery. Not supposed to talk about it. It's secret." }
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Ah I understand." }
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "When do we fight?" }
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Oh we're just on patrol we're not really supposed to fight" }
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "What do you do?" }
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "...you mean Crimson Force?" }
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Ye." }
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "I gave you a brochure. Did you just join without knowing anything about us?" }
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "I fight real good." }
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "I...see. Well our main goal is to stop Azure Shield from collecting certain artifacts that-" }
+		}
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+		"script": { "id": 209 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 688 },
+	"name": "CF 2.4",
+	"lines": [
+		{
+			"entity": "agent1",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Oh my word, it's her." }
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "You are Azure Shield!" }
+		},
+		{
+			"entity": "agent2",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "... No we're not." }
+		},
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Do you know what Crimson Force does? We beat you up!" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 689 },
+	"name": "CF 2.3",
+	"lines": [
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Hold up! I know those two!" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 690 },
+	"name": "CF 2.5",
+	"lines": [
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "What is up with that girl??? She'll get us in trouble!" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 691 },
+	"name": "CF 4.2",
+	"lines": [
+		{
+			"entity": "Spark",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Oh welp I was just supposed to distract you, see ya!" }
+		}
+	],
+	"end": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "Player", "animation": true }
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 692 },
+	"name": "CF 4.3",
+	"lines": [
+		{
+			"entity": "player",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Nice, another day another ebi-" },
+			"options": {
+				"emotup": "GRIN",
+				"duration": 0.5,
+				"skippable": false,
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"delay": 2,
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.battle.FlashBattleScript",
+								"color": { "r": 0.8509804, "g": 0.05882353, "b": 0.05882353, "a": 1 }
+							}
+						},
+						{
+							"delay": 2,
+							"script": { "class": "com.one2b3.endcycle.features.scripts.general.ShakeScreenScript", "x": 2, "y": 2, "duration": 2 }
+						}
+					]
+				}
+			}
+		},
+		{
+			"entity": "player",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "What was that? Why is my Voxel Generator making that noise?" }
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Spark!" },
+			"options": {
+				"emotup": "BIG_SURPRISE",
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityFormScript",
+					"shell": {
+						"x": 2,
+						"y": 1,
+						"turned": true,
+						"name": "Rozu",
+						"parent": "",
+						"form": { "id": 89 }
+					},
+					"animation": true
+				}
+			}
+		},
+		{
+			"entity": "Rozu",
+			"textMessage": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage", "text": "Azure Shield is attacking Everod!!!" }
+		}
+	],
+	"end": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
 }
 ]

@@ -81,41 +81,11 @@
 	"music": { "id": 3 },
 	"entityShells": [
 		{
-			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"x": 1,
-			"y": 1,
-			"party": "FRIENDLY",
-			"player": true,
-			"name": "player",
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-			"configuration": {},
-			"pack": {}
-		},
-		{
-			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"x": 5,
-			"name": "bomb1",
-			"id": { "id": 15 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-			"action": { "id": 7 },
-			"configuration": {
-				"stats": { "hp": 800, "actionSpeed": 0.6 }
-			},
-			"pack": {}
-		},
-		{
-			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
 			"x": 4,
-			"y": 2,
-			"name": "bomb2",
-			"id": { "id": 15 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-			"action": { "id": 8 },
-			"configuration": {
-				"stats": { "hp": 600, "actionSpeed": 0.6 }
-			},
-			"pack": {}
-		}
+			"form": { "id": 1 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.PlayerEntityShell", "x": 2, "y": 1, "party": "FRIENDLY", "name": "player" }
 	]
 },
 {
@@ -176,7 +146,7 @@
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"action": { "id": 4 },
 			"configuration": {
-				"stats": { "hp": 800, "actionSpeed": 0.8 }
+				"stats": { "hp": 800, "actionSpeed": 0.6 }
 			},
 			"pack": {}
 		}
@@ -249,7 +219,9 @@
 				"patchwork": 1,
 				"customizations": [ 8, 2, 1, 0 ]
 			},
-			"configuration": {},
+			"configuration": {
+				"stats": { "hp": 700 }
+			},
 			"pack": {}
 		},
 		{
@@ -261,7 +233,9 @@
 			"id": { "id": 4 },
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"action": { "id": 9 },
-			"configuration": {},
+			"configuration": {
+				"stats": { "hp": 700, "actionSpeed": 0.8 }
+			},
 			"pack": {}
 		},
 		{
@@ -276,7 +250,9 @@
 			"cache": {
 				"customizations": [ 0 ]
 			},
-			"configuration": {},
+			"configuration": {
+				"stats": { "hp": 500, "actionSpeed": 0.8 }
+			},
 			"pack": {}
 		}
 	]
@@ -396,7 +372,9 @@
 			"name": "fin",
 			"id": { "id": 16 },
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-			"configuration": {},
+			"configuration": {
+				"stats": {}
+			},
 			"pack": {}
 		},
 		{
@@ -466,7 +444,9 @@
 			"id": { "id": 16 },
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"action": { "id": 19 },
-			"configuration": {},
+			"configuration": {
+				"stats": { "resistance": -100, "actionSpeed": 0.8 }
+			},
 			"pack": {},
 			"type": "INVINCIBLE"
 		}
@@ -898,17 +878,6 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"x": 19,
-			"y": 6,
-			"turned": true,
-			"id": { "id": 4 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-			"action": { "id": 9 },
-			"configuration": {},
-			"pack": {}
-		},
-		{
-			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
 			"x": 27,
 			"turned": true,
 			"id": { "id": 1 },
@@ -942,7 +911,9 @@
 			"id": { "id": 6 },
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
 			"action": { "id": 7 },
-			"configuration": {},
+			"configuration": {
+				"stats": { "hp": 600, "actionSpeed": 0.8 }
+			},
 			"pack": {}
 		},
 		{
@@ -952,7 +923,7 @@
 			"turned": true,
 			"id": { "id": 4 },
 			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-			"action": { "id": 9 },
+			"action": { "id": 131 },
 			"configuration": {},
 			"pack": {}
 		},
@@ -968,7 +939,9 @@
 				"patchwork": 2,
 				"customizations": [ 11, 2, 2, 1 ]
 			},
-			"configuration": {},
+			"configuration": {
+				"stats": { "hp": 800 }
+			},
 			"pack": {}
 		},
 		{
@@ -985,25 +958,28 @@
 			"pack": {}
 		},
 		{
-			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"x": 20,
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 21,
 			"y": 5,
 			"turned": true,
-			"id": { "id": 6 },
-			"talkingName": { "class": "com.one2b3.endcycle.engine.language.UnlocalizedMessage" },
-			"action": { "id": 7 },
-			"configuration": {},
-			"pack": {}
+			"form": { "id": 4 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 20,
+			"y": 6,
+			"turned": true,
+			"form": { "id": 15 }
 		}
 	],
 	"liberations": [
 		{ "x": 12, "y": 17, "width": 3, "height": 4 },
-		{ "x": 13, "y": 5, "width": 2, "height": 3 },
 		{ "x": 18, "y": 5, "width": 4, "height": 3 },
 		{ "x": 7, "y": 11, "width": 4, "height": 3 },
-		{ "x": 18, "y": 17, "width": 4, "height": 4 },
 		{ "x": 25, "y": 11, "width": 4, "height": 3 },
-		{ "x": 25, "width": 4, "height": 4 }
+		{ "x": 25, "width": 4, "height": 4 },
+		{ "x": 13, "y": 5, "width": 2, "height": 3 },
+		{ "x": 18, "y": 17, "width": 3, "height": 4 }
 	]
 },
 {
@@ -1038,7 +1014,9 @@
 			"cache": {
 				"customizations": [ 4, -1, 3 ]
 			},
-			"configuration": {},
+			"configuration": {
+				"stats": { "actionSpeed": 0.7 }
+			},
 			"pack": {}
 		}
 	]
@@ -1596,9 +1574,10 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
-			"x": 35,
+			"x": 34,
 			"y": 1,
 			"turned": true,
+			"name": "final",
 			"form": { "id": 60 }
 		},
 		{
@@ -2338,11 +2317,11 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.BattleData",
 	"id": { "id": 86 },
-	"dataName": "C - CrimsonForce 1",
+	"dataName": "C - Crimson Force 1",
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "" },
-	"field": { "id": 17 },
+	"field": { "id": 56 },
 	"background": { "id": 15 },
-	"music": { "id": 31 },
+	"music": { "id": 26 },
 	"entityShells": [
 		{ "class": "com.one2b3.endcycle.features.battle.EntityFormShell", "x": 1, "y": 1, "party": "FRIENDLY", "player": true, "name": "player" },
 		{
@@ -2350,6 +2329,7 @@
 			"x": 4,
 			"y": 1,
 			"turned": true,
+			"mustSurvive": true,
 			"name": "cress",
 			"form": { "id": 49 }
 		},
@@ -2358,7 +2338,6 @@
 			"x": 5,
 			"turned": true,
 			"vital": false,
-			"preview": false,
 			"name": "punk1",
 			"form": { "id": 50 }
 		},
@@ -2368,7 +2347,6 @@
 			"y": 2,
 			"turned": true,
 			"vital": false,
-			"preview": false,
 			"name": "puppy",
 			"form": { "id": 51 }
 		}
@@ -2376,26 +2354,842 @@
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.BattleData",
-	"id": { "id": 99 },
-	"dataName": "C - Crimson Force 1",
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "" },
+	"id": { "id": 125 },
+	"dataName": "C - Crimson Force 2 - Prologue",
+	"background": {},
+	"music": { "id": 14 },
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 1,
 			"y": 1,
+			"vital": false,
+			"preview": false,
+			"party": "NEUTRAL",
+			"name": "Cress",
+			"form": { "id": 31 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 3,
+			"y": 1,
+			"turned": true,
+			"name": "Flink",
+			"form": { "id": 85 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 2,
+			"y": 1,
+			"turned": true,
+			"name": "Spark",
+			"form": { "id": 52 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 2,
+			"turned": true,
+			"player": true,
+			"name": "Rozu",
+			"form": { "id": 89 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 33 },
+	"dataName": "C - Crimson Force 2",
+	"run": true,
+	"field": { "id": 52 },
+	"background": { "id": 2 },
+	"music": { "id": 29 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 43,
+			"y": 9,
+			"vital": false,
+			"party": "NEUTRAL",
+			"form": { "id": 91 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 53,
+			"y": 9,
+			"vital": false,
+			"party": "NEUTRAL",
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.AlwaysSpawnCondition" },
+			"form": { "id": 91 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 59,
+			"y": 10,
+			"vital": false,
+			"party": "NEUTRAL",
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.AlwaysSpawnCondition" },
+			"form": { "id": 91 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 57,
+			"y": 10,
+			"vital": false,
+			"party": "NEUTRAL",
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.AlwaysSpawnCondition" },
+			"form": { "id": 91 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 58,
+			"y": 10,
+			"vital": false,
+			"party": "NEUTRAL",
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.AlwaysSpawnCondition" },
+			"form": { "id": 91 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 59,
+			"y": 7,
+			"vital": false,
+			"party": "NEUTRAL",
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.AlwaysSpawnCondition" },
+			"form": { "id": 91 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 57,
+			"y": 7,
+			"vital": false,
+			"party": "NEUTRAL",
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.AlwaysSpawnCondition" },
+			"form": { "id": 91 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 58,
+			"y": 7,
+			"vital": false,
+			"party": "NEUTRAL",
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.AlwaysSpawnCondition" },
+			"form": { "id": 91 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 33,
+			"y": 10,
+			"turned": true,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
+			"form": { "id": 74 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 35,
+			"y": 8,
+			"turned": true,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
+			"form": { "id": 93 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 53,
+			"y": 7,
+			"turned": true,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
+			"form": { "id": 93 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 54,
+			"y": 9,
+			"turned": true,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
+			"form": { "id": 97 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 58,
+			"y": 1,
+			"vital": false,
+			"preview": false,
+			"party": "NEUTRAL",
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.AlwaysSpawnCondition" },
+			"form": { "id": 110 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 59,
+			"y": 2,
+			"vital": false,
+			"preview": false,
+			"party": "NEUTRAL",
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.AlwaysSpawnCondition" },
+			"form": { "id": 110 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 59,
+			"vital": false,
+			"preview": false,
+			"party": "NEUTRAL",
+			"form": { "id": 110 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 59,
+			"y": 1,
+			"vital": false,
+			"preview": false,
+			"party": "NEUTRAL",
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.AlwaysSpawnCondition" },
+			"form": { "id": 110 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 57,
+			"y": 2,
+			"vital": false,
+			"preview": false,
+			"party": "NEUTRAL",
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.AlwaysSpawnCondition" },
+			"form": { "id": 110 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 57,
+			"y": 1,
+			"vital": false,
+			"preview": false,
+			"party": "NEUTRAL",
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.AlwaysSpawnCondition" },
+			"form": { "id": 110 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 57,
+			"vital": false,
+			"preview": false,
+			"party": "NEUTRAL",
+			"form": { "id": 110 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 68,
+			"y": 8,
+			"turned": true,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
+			"form": { "id": 92 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 61,
+			"y": 8,
+			"vital": false,
+			"party": "NEUTRAL",
+			"form": { "id": 91 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 64,
+			"y": 6,
+			"vital": false,
+			"party": "NEUTRAL",
+			"form": { "id": 91 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 65,
+			"y": 10,
+			"vital": false,
+			"party": "NEUTRAL",
+			"form": { "id": 91 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 15,
+			"y": 9,
+			"turned": true,
+			"form": { "id": 93 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 23,
+			"y": 9,
+			"turned": true,
+			"form": { "id": 74 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 1,
+			"y": 12,
 			"party": "FRIENDLY",
 			"player": true,
-			"name": "player",
-			"form": { "id": 83 }
+			"name": "Rozu",
+			"form": { "id": 89 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 67,
+			"y": 6,
+			"turned": true,
+			"form": { "id": 74 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 66,
+			"y": 9,
+			"turned": true,
+			"form": { "id": 93 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 2,
+			"y": 12,
+			"turned": true,
+			"vital": false,
+			"preview": false,
+			"party": "FRIENDLY",
+			"name": "Spark",
+			"form": { "id": 52 }
+		}
+	],
+	"liberations": [
+		{ "x": 33, "y": 8, "width": 3, "height": 3 },
+		{ "x": 53, "y": 7, "width": 3, "height": 3 },
+		{ "x": 14, "y": 9, "width": 3, "height": 2 },
+		{ "x": 23, "y": 8, "width": 2, "height": 3 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 104 },
+	"dataName": "C - Crimson Force 3",
+	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "" },
+	"field": { "id": 53 },
+	"background": { "id": 2 },
+	"music": { "id": 3 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.PlayerEntityShell",
+			"y": 2,
+			"party": "FRIENDLY",
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.AlwaysSpawnCondition" },
+			"entity": { "id": 2 }
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
 			"x": 4,
 			"y": 1,
 			"turned": true,
+			"name": "Fossil Minion",
+			"form": { "id": 69 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 3,
+			"turned": true,
+			"name": "Bomb CF 5.3",
+			"form": { "id": 2 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 6,
+			"y": 2,
+			"turned": true,
+			"name": "Fossil Boss",
+			"form": { "id": 68 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 1,
+			"y": 1,
+			"vital": false,
 			"preview": false,
-			"name": "cress",
-			"form": { "id": 49 }
+			"party": "FRIENDLY",
+			"name": "Rozu",
+			"form": { "id": 89 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 124 },
+	"dataName": "C - Crimson Force 4",
+	"run": true,
+	"field": { "id": 50 },
+	"background": { "id": 5 },
+	"music": { "id": 17 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 2,
+			"y": 22,
+			"turned": true,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
+			"form": { "id": 98 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 23,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
+			"form": { "id": 99 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 2,
+			"y": 24,
+			"turned": true,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
+			"form": { "id": 100 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 17,
+			"y": 4,
+			"turned": true,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
+			"form": { "id": 103 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 32,
+			"y": 13,
+			"turned": true,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.OnLiberationSpawnCondition" },
+			"form": { "id": 103 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 21,
+			"y": 33,
+			"vital": false,
+			"form": { "id": 104 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 25,
+			"y": 35,
+			"turned": true,
+			"vital": false,
+			"form": { "id": 104 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 21,
+			"y": 37,
+			"vital": false,
+			"form": { "id": 104 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 9,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.OnLiberationSpawnCondition" },
+			"form": { "id": 102 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 7,
+			"y": 5,
+			"turned": true,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.OnLiberationSpawnCondition" },
+			"form": { "id": 102 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 27,
+			"y": 16,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.OnLiberationSpawnCondition" },
+			"form": { "id": 102 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 27,
+			"y": 4,
+			"turned": true,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
+			"form": { "id": 103 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 12,
+			"y": 27,
+			"turned": true,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.InSightSpawnCondition" },
+			"form": { "id": 100 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 32,
+			"y": 20,
+			"vital": false,
+			"preview": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
+			"form": { "id": 105 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 36,
+			"y": 21,
+			"turned": true,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
+			"form": { "id": 107 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 34,
+			"y": 24,
+			"turned": true,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
+			"form": { "id": 107 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 24,
+			"y": 28,
+			"turned": true,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.InSightSpawnCondition" },
+			"form": { "id": 107 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 22,
+			"y": 29,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.InSightSpawnCondition" },
+			"form": { "id": 107 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 24,
+			"y": 30,
+			"turned": true,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.InSightSpawnCondition" },
+			"form": { "id": 107 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 24,
+			"y": 32,
+			"turned": true,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.InSightSpawnCondition" },
+			"parent": "",
+			"form": { "id": 107 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 22,
+			"y": 31,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.InSightSpawnCondition" },
+			"form": { "id": 107 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 25,
+			"y": 10,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
+			"form": { "id": 107 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 7,
+			"y": 25,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
+			"form": { "id": 99 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 2,
+			"y": 26,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
+			"form": { "id": 101 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 11,
+			"y": 24,
+			"turned": true,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.InSightSpawnCondition" },
+			"form": { "id": 106 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"y": 19,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.OnLiberationSpawnCondition" },
+			"form": { "id": 108 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 38,
+			"y": 13,
+			"vital": false,
+			"preview": false,
+			"party": "FRIENDLY",
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.AlwaysSpawnCondition" },
+			"form": { "id": 110 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 39,
+			"y": 12,
+			"vital": false,
+			"preview": false,
+			"party": "FRIENDLY",
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.AlwaysSpawnCondition" },
+			"form": { "id": 110 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 39,
+			"y": 14,
+			"vital": false,
+			"preview": false,
+			"party": "FRIENDLY",
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.AlwaysSpawnCondition" },
+			"form": { "id": 110 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 37,
+			"y": 14,
+			"vital": false,
+			"preview": false,
+			"party": "FRIENDLY",
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.AlwaysSpawnCondition" },
+			"form": { "id": 110 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 37,
+			"y": 12,
+			"vital": false,
+			"preview": false,
+			"party": "FRIENDLY",
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.AlwaysSpawnCondition" },
+			"form": { "id": 110 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 38,
+			"y": 38,
+			"turned": true,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
+			"form": { "id": 109 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 32,
+			"y": 7,
+			"turned": true,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
+			"form": { "id": 107 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 31,
+			"y": 26,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
+			"form": { "id": 106 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 12,
+			"y": 29,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.OnLiberationSpawnCondition" },
+			"form": { "id": 98 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 12,
+			"y": 32,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.OnLiberationSpawnCondition" },
+			"form": { "id": 98 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 11,
+			"y": 31,
+			"turned": true,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.OnLiberationSpawnCondition" },
+			"form": { "id": 108 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 27,
+			"y": 6,
+			"turned": true,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
+			"form": { "id": 97 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 31,
+			"y": 23,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
+			"form": { "id": 105 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.PlayerEntityShell",
+			"x": 15,
+			"y": 19,
+			"turned": true,
+			"party": "FRIENDLY",
+			"mustSurvive": true,
+			"entity": { "id": 2 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 6,
+			"y": 19,
+			"turned": true,
+			"vital": false,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.OnLiberationSpawnCondition" },
+			"form": { "id": 108 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 16,
+			"y": 17,
+			"vital": false,
+			"preview": false,
+			"party": "FRIENDLY",
+			"name": "Rozu",
+			"form": { "id": 89 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 1,
+			"y": 42,
+			"vital": false,
+			"preview": false,
+			"party": "NEUTRAL",
+			"name": "Fin",
+			"form": { "id": 114 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 17,
+			"y": 18,
+			"turned": true,
+			"vital": false,
+			"preview": false,
+			"party": "FRIENDLY",
+			"name": "Cress",
+			"form": { "id": 115 }
+		}
+	],
+	"spawnPoints": [
+		{ "party": "FRIENDLY", "x": 1, "y": 4 }
+	],
+	"liberations": [
+		{ "x": 3, "y": 5, "width": 5, "height": 6 },
+		{ "x": 27, "y": 13, "width": 7, "height": 4 },
+		{ "x": 36, "y": 20, "height": 2 },
+		{ "x": 30, "y": 7, "width": 3 },
+		{ "x": 11, "y": 27, "width": 2 },
+		{ "y": 18, "width": 7, "height": 4 },
+		{ "x": 32, "y": 20, "width": 5, "height": 3 },
+		{ "x": 11, "y": 24, "width": 6, "height": 4 },
+		{ "x": 11, "y": 4, "width": 8, "height": 3 },
+		{ "x": 23, "y": 4, "width": 6, "height": 3 },
+		{ "x": 33, "y": 23, "width": 2, "height": 4 },
+		{ "x": 31, "y": 23, "width": 2, "height": 3 },
+		{ "x": 30, "y": 26, "width": 2 },
+		{ "x": 8, "y": 29, "width": 6, "height": 4 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 122 },
+	"dataName": "C - Crimson Force 5",
+	"run": true,
+	"field": { "id": 51 },
+	"background": {},
+	"music": { "id": 3 },
+	"time": 60,
+	"timeWin": true,
+	"startScript": {
+		"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+		"script": { "id": 215 }
+	},
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"y": 1,
+			"vital": false,
+			"preview": false,
+			"party": "FRIENDLY",
+			"mustSurvive": true,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.AlwaysSpawnCondition" },
+			"name": "Everod",
+			"form": { "id": 112 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 8,
+			"y": 1,
+			"party": "FRIENDLY",
+			"player": true,
+			"name": "Flink",
+			"form": { "id": 85 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 9,
+			"turned": true,
+			"vital": false,
+			"preview": false,
+			"party": "FRIENDLY",
+			"name": "punk2",
+			"form": { "id": 113 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 10,
+			"y": 2,
+			"turned": true,
+			"vital": false,
+			"preview": false,
+			"party": "FRIENDLY",
+			"name": "punk1",
+			"parent": "",
+			"form": { "id": 86 }
 		}
 	]
 },
@@ -4468,43 +5262,6 @@
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.BattleData",
-	"id": { "id": 104 },
-	"dataName": "A - VS Fossil Fuel Boss",
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "" },
-	"field": { "id": 24 },
-	"entityShells": [
-		{
-			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
-			"x": 4,
-			"y": 3,
-			"turned": true,
-			"form": { "id": 69 }
-		},
-		{
-			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
-			"x": 4,
-			"y": 1,
-			"turned": true,
-			"form": { "id": 69 }
-		},
-		{
-			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
-			"x": 5,
-			"y": 2,
-			"turned": true,
-			"form": { "id": 68 }
-		},
-		{
-			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
-			"y": 2,
-			"party": "FRIENDLY",
-			"player": true,
-			"form": { "id": 63 }
-		}
-	]
-},
-{
-	"class": "com.one2b3.endcycle.features.battle.BattleData",
 	"id": { "id": 105 },
 	"dataName": "A - Fossil Fuel #2",
 	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "" },
@@ -4850,6 +5607,112 @@
 			"y": 2,
 			"turned": true,
 			"form": { "id": 78 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 128 },
+	"dataName": "C - R&B 1",
+	"background": { "id": 3 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"turned": true,
+			"form": { "id": 31 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 1,
+			"y": 1,
+			"party": "FRIENDLY",
+			"form": { "id": 47 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 126 },
+	"dataName": "C - R&B 2",
+	"field": { "id": 54 },
+	"background": { "id": 12 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 127 },
+	"dataName": "C - R&B 3",
+	"field": { "id": 55 },
+	"background": { "id": 1 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 129 },
+	"dataName": "C - R&B 4"
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 130 },
+	"dataName": "C - R&B 5"
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 131 },
+	"dataName": "C - R&B 6"
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 99 },
+	"dataName": "Target Preview",
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.PlayerEntityShell",
+			"x": 3,
+			"y": 1,
+			"party": "FRIENDLY",
+			"entity": { "id": 7 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 1,
+			"vital": false,
+			"party": "FRIENDLY",
+			"form": { "id": 91 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"y": 1,
+			"party": "FRIENDLY",
+			"form": { "id": 115 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": -1,
+			"y": 2,
+			"party": "FRIENDLY",
+			"form": { "id": 85 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 2,
+			"y": 2,
+			"turned": true,
+			"vital": false,
+			"form": { "id": 23 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"turned": true,
+			"form": { "id": 6 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 5,
+			"y": 1,
+			"turned": true,
+			"form": { "id": 47 }
 		}
 	]
 }

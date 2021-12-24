@@ -1,0 +1,39 @@
+CampaignNodePainter(Object) {
+
+	Runnable onScoreComplete;
+
+	new(CampaignData campaign, CampaignDataNode node) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void update(GameScreen screen, float delta) {}
+
+	boolean isHidden() {}
+
+	CampaignDataNode getNode() {}
+
+	void unlock() {}
+
+	int getIndex() {}
+
+	void draw(CustomSpriteBatch batch, float x, float y, float width, float height) {}
+
+	void setSelected(boolean selected) {}
+
+	static Color getColor(float stars) {}
+
+	BoundedFloat getScoreAnimation() {}
+
+	static void drawStars(CustomSpriteBatch batch, float x, float y, float stars) {}
+
+	boolean isNewHighScore() {}
+
+	void completeScore() {}
+
+	void updateHighScore() {}
+
+}

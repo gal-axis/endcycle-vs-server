@@ -1,0 +1,68 @@
+UltraVocGauge(VocGauge) {
+
+	VocEntry voc;
+	BattleEntitySpeed speed;
+	double crushFill;
+	double idleSpeed;
+	double hurtSelfFill;
+	double hurtOtherFill;
+
+	new(BattleEntity entity) {}
+
+	boolean equals(Object o) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void update(double delta) {}
+
+	void fill() {}
+
+	void reset() {}
+
+	boolean empty() {}
+
+	double getProgress() {}
+
+	BattleEntity getEntity() {}
+
+	void increase(double progress) {}
+
+	void hit(BattleEntity entity, HitProperty hit, int damage) {}
+
+	boolean decrease(double amount) {}
+
+	void crushed() {}
+
+	void hurt(int amount) {}
+
+	boolean isFull() {}
+
+	void idle(double delta) {}
+
+	double getMax() {}
+
+	double getSpeed() {}
+
+	void setSpeed(double speed) {}
+
+	void setDuration(double duration) {}
+
+	boolean isUsable(VocEntry entry) {}
+
+	double getFillSpeed() {}
+
+	double getDuration() {}
+
+	void setProgress(double progress) {}
+
+	void increaseSpeed(double speed) {}
+
+	float getFillTime() {}
+
+	void set(BattleEntityUltraData ultra) {}
+
+	boolean exists() {}
+
+}

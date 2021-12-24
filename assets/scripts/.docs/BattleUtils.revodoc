@@ -1,0 +1,28 @@
+final BattleUtils(Object) {
+
+	static final int CAMERA_WIDTH = 416;
+	static final int CAMERA_HEIGHT = 234;
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	static boolean isSpawn(Battle battle, BattleEntity entity) {}
+
+	static boolean isDespawn(Battle battle, BattleEntity entity) {}
+
+	static boolean inSight(GameObject object, float cameraX, float cameraY, float wFactor, float hFactor) {}
+
+	static boolean inSight(BattleCamera camera, GameObject object, float wFactor, float hFactor) {}
+
+	static boolean inSight(BattleEntity entity) {}
+
+	static boolean inSight(BattleEntity focused, BattleEntity entity) {}
+
+	static boolean invisible(Battle battle, GameObject object) {}
+
+	static void applyPlayer(BattleEntity entity, ID character) {}
+
+}

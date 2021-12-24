@@ -1,0 +1,48 @@
+MovingTileMove(InstantTileMove) {
+
+	final BattleEntity entity;
+	int newX;
+	int newY;
+	BoundedDouble mover;
+	float speed;
+	float originX;
+	float originY;
+	float goalX;
+	float goalY;
+	Array next;
+
+	new(BattleEntity arg0) {}
+
+	new(BattleEntity arg0, float arg1) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void update(float arg0) {}
+
+	void init(int arg0, int arg1, float arg2) {}
+
+	void start() {}
+
+	void cancel() {}
+
+	boolean over() {}
+
+	Battle getBattle() {}
+
+	void set(int arg0, int arg1, float arg2) {}
+
+	void reset() {}
+
+	void moveToTile() {}
+
+	void occupyField() {}
+
+	void freeField() {}
+
+	void setSpeed(float arg0) {}
+
+}

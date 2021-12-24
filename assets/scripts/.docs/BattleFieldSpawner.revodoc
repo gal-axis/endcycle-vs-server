@@ -1,0 +1,23 @@
+BattleFieldSpawner(Object) {
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	static void fillDefault(BattleFieldData field, Array points, Party party, int entities) {}
+
+	static void fillDefault(BattleData data) {}
+
+	static Map sortIntoParties(Array shells) {}
+
+	static Array getSpawnPoints(BattleData data, GameMode mode, Party party) {}
+
+	static void setSpawnPositions(BattleData data, BattleFieldData field, GameMode mode, Array shells) {}
+
+	static void setSpawnPositions(BattleFieldData field, Party party, Array shells, Array points) {}
+
+}

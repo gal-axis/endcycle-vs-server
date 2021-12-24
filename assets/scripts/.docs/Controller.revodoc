@@ -1,0 +1,33 @@
+interface Controller {
+
+	abstract String getName();
+
+	abstract int getPlayerIndex();
+
+	abstract boolean isConnected();
+
+	abstract int getMaxButtonIndex();
+
+	abstract boolean supportsPlayerIndex();
+
+	abstract int getMinButtonIndex();
+
+	abstract float getAxis(int arg0);
+
+	abstract String getUniqueId();
+
+	abstract int getAxisCount();
+
+	abstract boolean isVibrating();
+
+	abstract void startVibration(int arg0, float arg1);
+
+	abstract boolean getButton(int arg0);
+
+	abstract boolean canVibrate();
+
+	abstract void cancelVibration();
+
+	abstract void setPlayerIndex(int arg0);
+
+}

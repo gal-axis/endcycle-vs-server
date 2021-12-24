@@ -1,0 +1,45 @@
+AttackPlan(Object) {
+
+	final AttackHitProperty property;
+	VocEntry entry;
+	Voc voc;
+	VocStyle style;
+	TargetFilter target;
+	Attack attack;
+	boolean started;
+
+	new() {}
+
+	new(AttackPlan plan) {}
+
+	new(VocEntry entry, int gauge) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void update(float delta) {}
+
+	void cast(BattleEntity entity) {}
+
+	void start() {}
+
+	void flip() {}
+
+	void finish() {}
+
+	boolean active() {}
+
+	boolean isMoveable() {}
+
+	void modify(VocStyle style) {}
+
+	void setAttack(Attack attack, boolean clone) {}
+
+	void setAttackShell(AttackShell shell) {}
+
+	void replaceAttack(Attack attack) {}
+
+}

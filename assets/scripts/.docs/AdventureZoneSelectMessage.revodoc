@@ -1,0 +1,134 @@
+AdventureZoneSelectMessage(MenuMessage) : MenuTableAction {
+
+	Origin origin;
+	GameScreen screen;
+	boolean showing;
+	GameScreenMessage next;
+	byte layer;
+	float comparisonKey;
+	State state;
+	AdventureZone current;
+	BackgroundObject background;
+	float backgroundUpdate;
+	Consumer onSelect;
+	MenuElementGroup group;
+	AdventureMapMenuElement map;
+	MenuTable zones;
+
+	new(List arg0, Consumer arg1) {}
+
+	final boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	void dispose() {}
+
+	void update(float arg0) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen arg0) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean arg0, int arg1, int arg2) {}
+
+	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
+
+	void show(GameScreen arg0) {}
+
+	void hide(GameScreen arg0) {}
+
+	final Origin getOrigin() {}
+
+	byte getLayer() {}
+
+	float getComparisonKey() {}
+
+	final void addObject(ScreenObject arg0) {}
+
+	final void removeObject() {}
+
+	final SoundContainer playSound(Sounds arg0) {}
+
+	SoundContainer playSound(float arg0, float arg1, SoundInfo arg2) {}
+
+	SoundContainer playSound(SoundInfo arg0) {}
+
+	void triggerEvent(Object arg0, Object arg1, Object[] arg2) {}
+
+	final void removeDisposeListener(Runnable arg0) {}
+
+	final void addDisposeListener(Runnable arg0) {}
+
+	final void addInitializeListener(Runnable arg0) {}
+
+	final void removeInitializeListener(Runnable arg0) {}
+
+	void scheduleMessage(GameScreenMessage arg0) {}
+
+	void finish() {}
+
+	void setSpeed(float arg0) {}
+
+	float getPosition() {}
+
+	boolean isStaying() {}
+
+	void setStay() {}
+
+	boolean triggerButton(ButtonEvent arg0) {}
+
+	boolean keyDown(int arg0) {}
+
+	boolean triggerTouch(TouchEvent arg0) {}
+
+	boolean addButtonTips(ButtonTipList arg0) {}
+
+	boolean keyTyped(char arg0) {}
+
+	boolean triggerType(int arg0) {}
+
+	int getInputPriority() {}
+
+	boolean keyUp(int arg0) {}
+
+	void controllerConnected(Controller arg0) {}
+
+	void controllerDisconnected(Controller arg0) {}
+
+	void setDefaultElement(MenuElement arg0) {}
+
+	MenuElementController getController() {}
+
+	MenuElement getDefaultElement() {}
+
+	void drawScreenTint(CustomSpriteBatch arg0, float arg1) {}
+
+	float calcOffset() {}
+
+	void setElement(MenuElement arg0) {}
+
+	MenuElement getMenuElement() {}
+
+	boolean isBackKey(ButtonEvent arg0) {}
+
+	void drawMenu(CustomSpriteBatch arg0, float arg1, float arg2) {}
+
+	void moveTableSelection(int arg0) {}
+
+	void updateTableSelection(int arg0) {}
+
+	boolean selectTableHeader() {}
+
+	void specialTableSelect(int arg0, AdventureZone arg1) {}
+
+	void selectTable(int arg0, AdventureZone arg1) {}
+
+	void clickedTable(int arg0, AdventureZone arg1, float arg2, float arg3) {}
+
+}

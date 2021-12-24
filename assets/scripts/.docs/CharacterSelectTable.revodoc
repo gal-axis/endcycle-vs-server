@@ -1,0 +1,492 @@
+CharacterSelectTable(MenuTable) : MenuTableAction, MenuTablePainter {
+
+	Origin origin;
+	GameScreen screen;
+	boolean showing;
+	final Array titles;
+	final Array descriptions;
+	Consumer finish;
+
+	new(ID current) {}
+
+	final boolean equals(Object obj) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	void dispose() {}
+
+	void update(float delta) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void show(GameScreen screen) {}
+
+	void hide(GameScreen screen) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	final Origin getOrigin() {}
+
+	float getComparisonKey() {}
+
+	byte getLayer() {}
+
+	final void addObject(ScreenObject object) {}
+
+	final void removeObject() {}
+
+	final SoundContainer playSound(Sounds sound) {}
+
+	SoundContainer playSound(SoundInfo sound) {}
+
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
+
+	void actionTriggered(MenuElementAction action) {}
+
+	MenuElementGroup getParent() {}
+
+	MenuElement setParent(MenuElementGroup parent) {}
+
+	void calculateSize() {}
+
+	MenuElement setEnabled(boolean enabled) {}
+
+	boolean select() {}
+
+	float getY() {}
+
+	float getX() {}
+
+	float getWidth() {}
+
+	float getHeight() {}
+
+	MenuElement setHeight(float height) {}
+
+	MenuElement setLayer(byte layer) {}
+
+	MenuElement getAbsoluteParent() {}
+
+	boolean touch(TouchEvent trigger) {}
+
+	final void triggerAction(MenuElementActionType type) {}
+
+	MenuElement setX(float x) {}
+
+	MenuElement setY(float y) {}
+
+	MenuElement setWidth(float width) {}
+
+	float calcY() {}
+
+	float calcX() {}
+
+	MenuElement getAnchor() {}
+
+	boolean isFocusable() {}
+
+	MenuElement setFocused(boolean focused) {}
+
+	boolean isFocused() {}
+
+	MenuElement setVAlign(int vAlign) {}
+
+	int getAnchorHAlign() {}
+
+	int getHAlign() {}
+
+	MenuElement setHidden(boolean hidden) {}
+
+	MenuElement setAnchorHAlign(int anchorHAlign) {}
+
+	float getAbsoluteX() {}
+
+	boolean isAbsoluteHidden() {}
+
+	MenuElement setHAlign(int hAlign) {}
+
+	void setCursor(Rectangle rectangle) {}
+
+	int getAnchorVAlign() {}
+
+	void addElements(Array elements, float x, float y) {}
+
+	float getAbsoluteY() {}
+
+	MenuElement setAnchor(MenuElement anchor) {}
+
+	MenuElement setAnchorVAlign(int anchorVAlign) {}
+
+	MenuButtonTips getButtonTips() {}
+
+	boolean canDrawCursor() {}
+
+	boolean isEnabled() {}
+
+	int getVAlign() {}
+
+	Set getActionListeners() {}
+
+	final void setMenuControllerSelection(MenuElement element) {}
+
+	MenuTableAction getAction() {}
+
+	MenuElement setFocusable(boolean focusable) {}
+
+	boolean isTouching(float x, float y) {}
+
+	float getScrollAreaX() {}
+
+	boolean canScrollX() {}
+
+	float getScrollAreaY() {}
+
+	float getScrollWidth() {}
+
+	boolean canScrollY() {}
+
+	float getScrollHeight() {}
+
+	float getScrollAreaWidth() {}
+
+	float getScrollAreaHeight() {}
+
+	void controllerConnected(Controller controller) {}
+
+	void controllerDisconnected(Controller controller) {}
+
+	int getInputPriority() {}
+
+	boolean keyUp(int keycode) {}
+
+	boolean keyDown(int keycode) {}
+
+	boolean keyTyped(char character) {}
+
+	boolean triggerButton(ButtonEvent event) {}
+
+	boolean triggerTouch(TouchEvent event) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean triggerType(int character) {}
+
+	void setName(String name) {}
+
+	MenuTable setElementOffsetY(float elementOffsetY) {}
+
+	void select(int selection, BattleEntityData selected) {}
+
+	float getY(int pos) {}
+
+	List getObjects() {}
+
+	float getX(int pos) {}
+
+	MenuTable setFromAmount(int sizeX, int sizeY) {}
+
+	void setSelectString(String selectString) {}
+
+	float getTotalPaddingX() {}
+
+	MenuTable setElementWidth(float elementWidth) {}
+
+	void setSpecialString(String specialString) {}
+
+	MenuTable setAction(MenuTableAction action) {}
+
+	MenuTable setElementHeight(float elementHeight) {}
+
+	BattleEntityData getSelected() {}
+
+	boolean moveY(int y) {}
+
+	boolean moveX(int x) {}
+
+	Color getNameColor() {}
+
+	MenuElementShowAnim getShowAnimation() {}
+
+	float getAbsoluteX(int index) {}
+
+	void setCursor(Rectangle rectangle, int selection) {}
+
+	float getAbsoluteY(int index) {}
+
+	boolean isSelected() {}
+
+	void setObjects(List list) {}
+
+	void setObjects(Array array) {}
+
+	void setDisabledColor(Color disabledColor) {}
+
+	Color getDisabledColor() {}
+
+	void setSelection(BattleEntityData object) {}
+
+	void setSelection(int selection, boolean updateScroll) {}
+
+	void setSelection(int selection) {}
+
+	void clicked(float x, float y) {}
+
+	Color getBackgroundColor() {}
+
+	void setBackgroundColor(Color backgroundColor) {}
+
+	MenuTable setPaddingX(float paddingX) {}
+
+	MenuTable setNameColor(Color nameColor) {}
+
+	float getNameOffset() {}
+
+	void drawContainer(CustomSpriteBatch batch, float x, float y, float h) {}
+
+	void setSeamlessY(boolean seamlessY) {}
+
+	MenuTable setPaddingY(float paddingY) {}
+
+	void setSeamlessX(boolean seamlessX) {}
+
+	void scrollTo(int selection) {}
+
+	float getElementHeight() {}
+
+	MenuTable setElementSize(float size) {}
+
+	void clampSelection() {}
+
+	void setDragListener(MenuTableDragListener dragListener) {}
+
+	int getObjectAmount() {}
+
+	void stopHighlight() {}
+
+	int getColumns() {}
+
+	int getLastSelection() {}
+
+	int getItemAt(float x, float y) {}
+
+	boolean selectHeader() {}
+
+	void setObjectPainter(MenuTablePainter objectPainter) {}
+
+	void highlight(int index, boolean exclude) {}
+
+	void setLastSelection(int lastSelection) {}
+
+	NumDisplay getVisualScrollY() {}
+
+	float getPadRight() {}
+
+	boolean isItemDrag() {}
+
+	void setTitleData(MenuTableTitleData titleData) {}
+
+	void setNameFont(Fonts nameFont) {}
+
+	boolean isSeamlessX() {}
+
+	int getMovedY(int selection, int offset) {}
+
+	void drawTouchButton(CustomSpriteBatch batch, float x, float y, String str, MenuButtonClickedAnimation anim, float w, boolean enabled) {}
+
+	BoundedFloat getHighlightFade() {}
+
+	String getSelectString() {}
+
+	float getPadTop() {}
+
+	MenuTableTitleData getTitleData() {}
+
+	void drawElements(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	String getSpecialString() {}
+
+	void drawObjectBG(BattleEntityData object, int index, float x, float y) {}
+
+	void drawObject(BattleEntityData object, int index, float x, float y) {}
+
+	void drawEmptyObjects(CustomSpriteBatch batch, float x, float y, float h) {}
+
+	boolean specialSelect() {}
+
+	MenuTableItemDrag getDrag() {}
+
+	boolean isSpecialEnabled() {}
+
+	MenuTablePainter getObjectPainter() {}
+
+	boolean isOnlyDrag() {}
+
+	void setContainer(MenuThemeDrawable container) {}
+
+	int getMovedX(int selection, int offset) {}
+
+	void setSelectEnabled(boolean selectEnabled) {}
+
+	InputRepeater getInputRepeater() {}
+
+	void setPadRight(float padRight) {}
+
+	void setPadBottom(float padBottom) {}
+
+	boolean isHighlight() {}
+
+	void setItemDrag(boolean itemDrag) {}
+
+	void setPadLeft(float padLeft) {}
+
+	void drawName(CustomSpriteBatch batch, float x, float y, float h) {}
+
+	Fonts getNameFont() {}
+
+	float getPadBottom() {}
+
+	void setOnlyDrag(boolean onlyDrag) {}
+
+	boolean isSelectEnabled() {}
+
+	void setPadTop(float padTop) {}
+
+	boolean isTouchButton() {}
+
+	NumDisplay getVisualScrollX() {}
+
+	boolean isSeamlessY() {}
+
+	float getPadLeft() {}
+
+	float getTotalPaddingY() {}
+
+	void setHighlight(boolean highlight) {}
+
+	int getSelection() {}
+
+	void updateScroll() {}
+
+	Scroller getScroller() {}
+
+	boolean deselect() {}
+
+	MenuTable setFromSize(float width, float height, boolean directWidth, boolean directHeight) {}
+
+	float getElementWidth() {}
+
+	float getElementOffsetX() {}
+
+	float getElementOffsetY() {}
+
+	void setOverviewSelectable(boolean overviewSelectable) {}
+
+	BattleEntityData getMobileSelected() {}
+
+	MenuTable setElementOffsetX(float elementOffsetX) {}
+
+	int getMobileSelection() {}
+
+	float calcTouchButtonSize() {}
+
+	float getTotalElementWidth() {}
+
+	MenuButtonClickedAnimation getSelectAnimation() {}
+
+	void setHighlightExclude(boolean highlightExclude) {}
+
+	MenuThemeDrawable getContainerTitle() {}
+
+	boolean isHighlightExclude() {}
+
+	void setHeaderButtonTip(LocalizedMessage headerButtonTip) {}
+
+	boolean isTouchButtonOutside() {}
+
+	void setContainerTitle(MenuThemeDrawable containerTitle) {}
+
+	void setHighlightIndex(int highlightIndex) {}
+
+	void setTouchButtonSize(float touchButtonSize) {}
+
+	LocalizedMessage getSpecialButtonTip() {}
+
+	LocalizedMessage getSelectButtonTip() {}
+
+	MenuButtonClickedAnimation getSpecialAnimation() {}
+
+	void setSpecialEnabled(boolean specialEnabled) {}
+
+	void setTouchButtonOutside(boolean touchButtonOutside) {}
+
+	float getTotalElementHeight() {}
+
+	int getHighlightIndex() {}
+
+	boolean isOverviewSelectable() {}
+
+	LocalizedMessage getHeaderButtonTip() {}
+
+	MenuTablePaintParams getPaintParameters() {}
+
+	void setSelectButtonTip(LocalizedMessage selectButtonTip) {}
+
+	void setSpecialButtonTip(LocalizedMessage specialButtonTip) {}
+
+	float getTouchButtonSize() {}
+
+	MenuThemeDrawable getContainer() {}
+
+	void paint(MenuTablePaintParams params) {}
+
+	Painter getPainter(MenuTablePaintParams params) {}
+
+	Painter getPainter(MenuTablePaintParams params, int hAlign, int vAlign) {}
+
+	void stopPainting(MenuTablePaintParams params) {}
+
+	void startPainting(MenuTablePaintParams params) {}
+
+	void paintBG(MenuTablePaintParams params) {}
+
+	void paintEmpty(MenuTablePaintParams params) {}
+
+	void specialTableSelect(int selection, BattleEntityData selected) {}
+
+	void moveTableSelection(int selection) {}
+
+	boolean selectTableHeader() {}
+
+	void updateTableSelection(int selection) {}
+
+	void selectTable(int selection, BattleEntityData selected) {}
+
+	void clickedTable(int selection, BattleEntityData selected, float x, float y) {}
+
+	void customize() {}
+
+	List getEntities() {}
+
+	boolean isCustomizationUnlocked() {}
+
+	boolean isCustomizationUnlocked(BattleEntityData data) {}
+
+	void drawDescriptions(CustomSpriteBatch batch, float x, float y, float width) {}
+
+	void selectCharacter() {}
+
+	boolean isUnlocked() {}
+
+}

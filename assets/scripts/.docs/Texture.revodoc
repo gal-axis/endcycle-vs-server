@@ -1,0 +1,77 @@
+Texture {
+
+	final int glTarget;
+
+	new(Pixmap arg0, boolean arg1) {}
+
+	new(Pixmap arg0, Format arg1, boolean arg2) {}
+
+	new(int arg0, int arg1, Format arg2) {}
+
+	new(TextureData arg0) {}
+
+	new(String arg0) {}
+
+	new(Pixmap arg0) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void dispose() {}
+
+	void bind(int arg0) {}
+
+	void bind() {}
+
+	int getWidth() {}
+
+	int getHeight() {}
+
+	void setFilter(TextureFilter arg0, TextureFilter arg1) {}
+
+	int getDepth() {}
+
+	void setWrap(TextureWrap arg0, TextureWrap arg1) {}
+
+	TextureFilter getMinFilter() {}
+
+	TextureFilter getMagFilter() {}
+
+	float unsafeSetAnisotropicFilter(float arg0) {}
+
+	float unsafeSetAnisotropicFilter(float arg0, boolean arg1) {}
+
+	float setAnisotropicFilter(float arg0) {}
+
+	float getAnisotropicFilter() {}
+
+	int getTextureObjectHandle() {}
+
+	boolean isManaged() {}
+
+	void unsafeSetFilter(TextureFilter arg0, TextureFilter arg1) {}
+
+	void unsafeSetFilter(TextureFilter arg0, TextureFilter arg1, boolean arg2) {}
+
+	TextureWrap getVWrap() {}
+
+	TextureWrap getUWrap() {}
+
+	void unsafeSetWrap(TextureWrap arg0, TextureWrap arg1) {}
+
+	void unsafeSetWrap(TextureWrap arg0, TextureWrap arg1, boolean arg2) {}
+
+	void load(TextureData arg0) {}
+
+	void draw(Pixmap arg0, int arg1, int arg2) {}
+
+	static int getNumManagedTextures() {}
+
+	TextureData getTextureData() {}
+
+	static String getManagedStatus() {}
+
+}

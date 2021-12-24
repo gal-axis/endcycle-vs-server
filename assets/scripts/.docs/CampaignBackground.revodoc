@@ -1,0 +1,86 @@
+CampaignBackground(BackgroundObject) {
+
+	Origin origin;
+	GameScreen screen;
+	boolean showing;
+	final Matrix4 old;
+	int width;
+	int height;
+	BackgroundData data;
+	Array frames;
+	Drawable neutralFrame;
+	Drawable allyFrame;
+	Drawable enemyFrame;
+	Drawable noFrame;
+	Color color;
+	BoundedFloat intensity;
+	boolean rainbow;
+	boolean battle;
+	float xOffset;
+	float yOffset;
+
+	new() {}
+
+	final boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	void dispose() {}
+
+	void update(float arg0) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen arg0) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean arg0, int arg1, int arg2) {}
+
+	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
+
+	void show(GameScreen arg0) {}
+
+	void hide(GameScreen arg0) {}
+
+	final Origin getOrigin() {}
+
+	byte getLayer() {}
+
+	float getComparisonKey() {}
+
+	final void addObject(ScreenObject arg0) {}
+
+	final void removeObject() {}
+
+	final SoundContainer playSound(Sounds arg0) {}
+
+	SoundContainer playSound(float arg0, float arg1, SoundInfo arg2) {}
+
+	SoundContainer playSound(SoundInfo arg0) {}
+
+	void triggerEvent(Object arg0, Object arg1, Object[] arg2) {}
+
+	void handle(GameEvent arg0) {}
+
+	Drawable getFrame(Party arg0) {}
+
+	void dim(CustomSpriteBatch arg0) {}
+
+	boolean drawBG() {}
+
+	Color getColor() {}
+
+	void createFrames(BackgroundData arg0) {}
+
+	void drawBackground(CustomSpriteBatch arg0, float arg1, float arg2, float arg3, float arg4) {}
+
+	void drawBackground(CustomSpriteBatch arg0, float arg1, float arg2) {}
+
+	void setNode(CampaignDataNode arg0) {}
+
+}

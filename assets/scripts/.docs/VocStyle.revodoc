@@ -1,0 +1,37 @@
+final VocStyle(Moddable) : DataName {
+
+	ID id;
+	LocalizedMessage name;
+	LocalizedMessage prefix;
+	LocalizedMessage description;
+	int level;
+	VocElement element;
+	float rarity;
+	DrawableId drawable;
+	List tagPreference;
+	List tags;
+	VocStylePreview preview;
+	AttackParticle particle;
+	List modifications;
+
+	new() {}
+
+	final boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	final ID getId() {}
+
+	String getDataName() {}
+
+	VocElement getElement(AttackShell arg0, HitProperty arg1) {}
+
+	int calculatePower(AttackShell arg0, HitProperty arg1) {}
+
+	int calculateCrush(AttackShell arg0, HitProperty arg1) {}
+
+	int getDefaultPrice() {}
+
+}

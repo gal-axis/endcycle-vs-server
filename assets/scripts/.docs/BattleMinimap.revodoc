@@ -1,0 +1,74 @@
+BattleMinimap(HUDButton) {
+
+	final BoundedFloat offset;
+	boolean active;
+	boolean horizontal;
+	int screenHAlign;
+	int screenVAlign;
+	int hAlign;
+	int vAlign;
+	float defX;
+	float defY;
+	float width;
+	float height;
+	DrawableImage panel;
+	DrawableImage marker;
+	DrawableImage death;
+	final Battle battle;
+	final BattlePlayer player;
+	final List markers;
+	int mapHAlign;
+	int mapVAlign;
+	Vector2 offset;
+
+	new(BattleCamera arg0, BattlePlayer arg1) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	final int compareTo(HUDButton arg0) {}
+
+	void update(float arg0) {}
+
+	boolean isHidden() {}
+
+	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
+
+	float getY() {}
+
+	float getX() {}
+
+	void event(GameEvent arg0) {}
+
+	boolean button(ButtonEvent arg0) {}
+
+	boolean touch(TouchEvent arg0) {}
+
+	int getOrder() {}
+
+	float calcX() {}
+
+	float calcY() {}
+
+	void finishMoving() {}
+
+	boolean finishedMoving() {}
+
+	boolean isTouching(float arg0, float arg1) {}
+
+	boolean increaseOffset() {}
+
+	float getMove() {}
+
+	void drawBackground(CustomSpriteBatch arg0, float arg1, float arg2, boolean arg3, float arg4, float arg5) {}
+
+	void drawMinimap(CustomSpriteBatch arg0, float arg1, float arg2, boolean arg3) {}
+
+	float getCameraX() {}
+
+	float getCameraY() {}
+
+}

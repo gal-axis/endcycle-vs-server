@@ -1,0 +1,21 @@
+TargetPositionChangeCondition(Object) : BattleEntityActionChangeCondition {
+
+	new() {}
+
+	new(VocPosition position) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	boolean onHit(BattleEntitySimpleAction action, HitProperty hit) {}
+
+	boolean onInaccessiblePanel(BattleEntitySimpleAction action) {}
+
+	boolean onInterrupt(BattleEntitySimpleAction action) {}
+
+	Boolean fulfilled(BattleEntitySimpleAction action, boolean onAction) {}
+
+}

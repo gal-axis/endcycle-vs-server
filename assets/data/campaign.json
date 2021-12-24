@@ -344,7 +344,7 @@
 {
 	"class": "com.one2b3.endcycle.features.campaign.CampaignData",
 	"id": { "id": 5 },
-	"name": "Crimson Uprising",
+	"name": "Punk Uprising",
 	"color": { "r": 0.6784314, "g": 0.09019608, "b": 0.16862746, "a": 1 },
 	"description": "Sturdy, broad and loyal: The punks live a carefree life... until a certain young woman breaks into their base one day and forces them to become more than just outlaws. How will they cope?",
 	"victory": "The fight against Azure Shield has officially begun... the punks finally found a goal worth fighting for.",
@@ -596,18 +596,196 @@
 },
 {
 	"class": "com.one2b3.endcycle.features.campaign.CampaignData",
-	"id": { "id": 3 },
-	"name": "Leader of Azure Shield",
-	"color": { "r": 0.20784314, "g": 0.28235295, "b": 0.9490196, "a": 1 },
-	"description": "This campaign will be unlocked with a future update, so stay tuned!",
-	"character": { "id": 9 },
+	"id": { "id": 6 },
+	"name": "Crimson Force",
+	"color": { "r": 0.43137255, "g": 0.015686275, "b": 0.015686275, "a": 1 },
+	"description": "Crimson Force's mission is to save Anikka. But who will save them?",
+	"victory": "With the Punks and Everod destroyed, the future of Crimson Force and Anikka lies on the shoulders of those that remained. But what can they achieve on their own?",
+	"character": { "id": 7 },
+	"music": { "id": 33 },
+	"nodes": [
+		{
+			"name": "Wake Up Noise Hunter",
+			"description": "Rozu finds himself surrounded by red beefy dudes",
+			"battle": { "id": 86 },
+			"dialogue": { "id": 669 },
+			"startAfterDialogue": false,
+			"endAfterDialogue": false,
+			"leaveAlive": true,
+			"onWin": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 205 }
+			}
+		},
+		{
+			"name": "The Spark Of War",
+			"description": "After the battle in the Araha Desert the Punks regroup...",
+			"battle": { "id": 33 },
+			"dialogue": { "id": 687 },
+			"startAfterDialogue": false,
+			"endAfterDialogue": false,
+			"attackStar": 30,
+			"timeOneStar": 180,
+			"timeTwoStars": 90,
+			"onLoad": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 208 }
+			},
+			"onWin": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 211 }
+			},
+			"scenesBefore": [
+				{
+					"battle": { "id": 125 },
+					"script": {
+						"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+						"scripts": [
+							{
+								"script": {
+									"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+									"dialogue": { "id": 675 },
+									"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
+								}
+							},
+							{
+								"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "Spark" }
+							},
+							{
+								"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "Rozu" }
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "A Hunters Name",
+			"description": "Spark finds it unusually hard to befriend her new companion",
+			"battle": { "id": 104 },
+			"dialogue": { "id": 676 },
+			"dialogueAfter": { "id": 677 },
+			"onLoad": {
+				"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+				"scripts": [
+					{
+						"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "Fossil Boss" }
+					},
+					{
+						"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "Fossil Minion" }
+					},
+					{
+						"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "Bomb CF 5.3" }
+					}
+				]
+			}
+		},
+		{
+			"name": "The distraction manoeuver begins!",
+			"description": "Spark might just be irritating enough for this plan to work",
+			"battle": { "id": 124 },
+			"dialogue": { "id": 678 },
+			"dialogueAfter": { "id": 691 },
+			"startAfterDialogue": false,
+			"leaveAlive": true,
+			"attackStar": 30,
+			"timeOneStar": 180,
+			"timeTwoStars": 120,
+			"scenesAfter": [
+				{
+					"battle": { "id": 37 },
+					"script": {
+						"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+						"scripts": [
+							{
+								"script": {
+									"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityFormScript",
+									"shell": {
+										"x": 1,
+										"y": 1,
+										"name": "player",
+										"parent": "",
+										"form": { "id": 84 }
+									}
+								}
+							},
+							{
+								"delay": 0.5,
+								"script": {
+									"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+									"dialogue": { "id": 692 }
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Crimson Loss",
+			"description": "What starts out as a simple patrol mission quickly turns into disaster",
+			"battle": { "id": 122 },
+			"dialogue": { "id": 679 },
+			"dialogueAfter": { "id": 682 },
+			"startAfterDialogue": false,
+			"endAfterDialogue": false,
+			"attackStar": 45,
+			"timeOneStar": 65,
+			"timeTwoStars": 65
+		}
+	],
 	"unlockCondition": {
 		"campaigns": [
 			{
-				"campaign": { "id": 2 }
+				"campaign": { "id": 5 }
 			}
 		]
 	}
+},
+{
+	"class": "com.one2b3.endcycle.features.campaign.CampaignData",
+	"id": { "id": 7 },
+	"name": "Red & Blue",
+	"color": { "r": 0.92941177, "g": 0.14901961, "b": 0.92941177, "a": 1 },
+	"available": false,
+	"description": "How should we proceed? What will we learn from the past to secure our future?",
+	"victory": "Bongo Rongo my name is Chongo",
+	"character": { "id": 21 },
+	"nodes": [
+		{
+			"name": "Red & Blue",
+			"description": "So an archeologist and a programer enter a bar",
+			"battle": { "id": 128 }
+		},
+		{
+			"name": "Cress VS all the Punks",
+			"description": "Who ya gotta fight to become the boss?",
+			"battle": { "id": 126 },
+			"endAfterDialogue": false,
+			"leaveAlive": true
+		},
+		{
+			"name": "Two ruins beneath the stars",
+			"description": "Which part of your home-town remains when all you have is it's memory",
+			"battle": { "id": 127 }
+		},
+		{
+			"name": "The Mother Unit",
+			"description": "Noises aren't mean to be controlled... or are they",
+			"battle": { "id": 129 }
+		},
+		{
+			"name": "Crimson attack",
+			"description": "Del gets visited by some unwelcome guests",
+			"battle": { "id": 130 }
+		},
+		{
+			"name": "Everod in ruins",
+			"description": "After the attack on Everod Cress returns to find in the centre of its ruin a familiar face.",
+			"battle": { "id": 131 }
+		}
+	],
+	"unlockCondition": {}
 },
 {
 	"class": "com.one2b3.endcycle.features.campaign.CampaignData",
@@ -634,54 +812,6 @@
 		"campaigns": [
 			{
 				"campaign": { "id": 2 }
-			}
-		]
-	}
-},
-{
-	"class": "com.one2b3.endcycle.features.campaign.CampaignData",
-	"id": { "id": 6 },
-	"name": "Crimson Force",
-	"color": { "r": 0.43137255, "g": 0.015686275, "b": 0.015686275, "a": 1 },
-	"available": false,
-	"description": "Crimson Force, here to save the day. But who will save them?",
-	"victory": "Did we win?",
-	"character": { "id": 7 },
-	"nodes": [
-		{
-			"name": "Wake Up Noise Hunter",
-			"description": "Rozu finds himself surrounded by red beefy dudes",
-			"battle": { "id": 86 },
-			"dialogue": { "id": 669 },
-			"dialogueAfter": { "id": 670 },
-			"startAfterDialogue": false,
-			"leaveAlive": true,
-			"scenesAfter": [
-				{
-					"battle": { "id": 6 },
-					"script": {
-						"class": "com.one2b3.endcycle.features.scripts.ScriptList",
-						"scripts": [
-							{
-								"script": {
-									"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
-									"script": { "id": 193 }
-								}
-							}
-						]
-					}
-				}
-			]
-		},
-		{ "name": "The Spark Of War", "description": "After the battle in the Araha Desert the Punks regroup..." },
-		{
-			"dialogue": { "id": 675 }
-		}
-	],
-	"unlockCondition": {
-		"campaigns": [
-			{
-				"campaign": { "id": 5 }
 			}
 		]
 	}

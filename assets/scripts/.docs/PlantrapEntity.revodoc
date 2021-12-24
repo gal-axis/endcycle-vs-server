@@ -1,0 +1,107 @@
+PlantrapEntity(SimpleAttackObject) : BECondition {
+
+	final DrawableState drawable;
+	final OwnedHitProperty property;
+	final int panelX;
+	final int panelY;
+	final ShaderManager shaderManager;
+	AttackParticleSpawner particles;
+	Origin origin;
+	Color color;
+	Battle battle;
+	float x;
+	float y;
+	static final byte ACTION_HIT = 0;
+	static final byte ACTION_TRAP = 1;
+	static final byte ACTION_STOP = 2;
+	final BoundedFloat hitTimer;
+	BoundedFloat summonTimer;
+	BattleEntity trapped;
+	int hit;
+	int toHit;
+
+	new(DrawableState drawable, OwnedHitProperty property, int toHit, float hitHold, int xTile, int yTile) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void dispose() {}
+
+	void update(float delta) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void show(GameScreen screen) {}
+
+	void hide(GameScreen screen) {}
+
+	final Origin getOrigin() {}
+
+	byte getLayer() {}
+
+	float getComparisonKey() {}
+
+	void addObject(ScreenObject object) {}
+
+	float getWidth() {}
+
+	float getHeight() {}
+
+	float getCenterY() {}
+
+	float getCenterX() {}
+
+	void actionTriggered(Runnable action) {}
+
+	void actionTriggered(Object[] action) {}
+
+	boolean isActionRollback(Object[] action) {}
+
+	float getYScale() {}
+
+	boolean isFlipX() {}
+
+	Patchwork getPatchwork() {}
+
+	boolean isFlipY() {}
+
+	float getXScale() {}
+
+	float getShadowX() {}
+
+	float getShadowY() {}
+
+	float getShadowZ() {}
+
+	float getShadowAlpha() {}
+
+	List getShadowDrawables() {}
+
+	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
+
+	boolean test(BattleEntity t) {}
+
+	void start(BattleEntity entity) {}
+
+	void stop() {}
+
+	void hit() {}
+
+	void updateReducedSize() {}
+
+	float getHitHold() {}
+
+}

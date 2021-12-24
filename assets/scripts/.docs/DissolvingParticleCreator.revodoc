@@ -1,0 +1,32 @@
+DissolvingParticleCreator {
+
+	ID id;
+	String dataName;
+	Array drawables;
+	float offsetX;
+	float offsetY;
+	boolean gravity;
+	int amount;
+	float speedRangeX;
+	float speedRangeY;
+	float spreadX;
+	float spreadY;
+	float speed;
+
+	new() {}
+
+	final boolean equals(Object obj) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	final ID getId() {}
+
+	String getDataName() {}
+
+	String getName() {}
+
+	DissolvingParticleSpawner create(float originX, float originY, byte layer, float comparisonKey) {}
+
+}

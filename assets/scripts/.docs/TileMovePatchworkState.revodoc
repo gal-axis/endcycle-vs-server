@@ -1,0 +1,50 @@
+TileMovePatchworkState(PatchworkState) {
+
+	final Array drawables;
+	int hAlign;
+	int vAlign;
+	float scaleX;
+	float scaleY;
+	float shadowOffsetX;
+	float shadowOffsetY;
+	PatchworkStateId leadsInto;
+
+	new() {}
+
+	new(boolean arg0) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void update() {}
+
+	PatchworkState copy() {}
+
+	Rectangle getBounds(Patchwork arg0) {}
+
+	void draw(Batch arg0, Patchwork arg1, float arg2, float arg3, float arg4, float arg5, double arg6, Color arg7) {}
+
+	boolean isFinished(Patchwork arg0, double arg1) {}
+
+	boolean hasShadow(Patchwork arg0) {}
+
+	double getAnimationDuration(Patchwork arg0) {}
+
+	PatchworkState fullCopy() {}
+
+	Array getDrawables(Patchwork arg0) {}
+
+	float calcShadowX(double arg0) {}
+
+	float calcShadowY(double arg0) {}
+
+	float calcShadowZ(double arg0) {}
+
+	float calcScaleX(double arg0) {}
+
+	float calcScaleY(double arg0) {}
+
+}

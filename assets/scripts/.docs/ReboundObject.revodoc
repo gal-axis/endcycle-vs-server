@@ -1,0 +1,131 @@
+ReboundObject(Object) : ScreenObject, ShadowEntity, Danger, AttackParticleObject {
+
+	AttackParticleSpawner particles;
+
+	new(BattleEntity parent, OwnedHitProperty property, DrawableState drawable, int xTile, int yTile, float yOffset, float speed, float radius, float timeOffset, boolean shadow) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void dispose() {}
+
+	void update(float delta) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void show(GameScreen screen) {}
+
+	void hide(GameScreen screen) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	float getComparisonKey() {}
+
+	byte getLayer() {}
+
+	Origin getOrigin() {}
+
+	float getWidth() {}
+
+	float getHeight() {}
+
+	void addObject(ScreenObject object) {}
+
+	float getCenterY() {}
+
+	float getCenterX() {}
+
+	float getDangerPriority(BattleEntity entity) {}
+
+	boolean isDangerous(BattleEntity entity, int x, int y) {}
+
+	void disappear(int x, int y, DangerDisappearListener onDisappear) {}
+
+	float getDangerIgnore(int level) {}
+
+	float getYScale() {}
+
+	float getXScale() {}
+
+	Patchwork getPatchwork() {}
+
+	boolean isFlipY() {}
+
+	boolean isFlipX() {}
+
+	List getShadowDrawables() {}
+
+	float getShadowZ() {}
+
+	float getShadowX() {}
+
+	float getShadowAlpha() {}
+
+	float getShadowY() {}
+
+	OwnedHitProperty getProperty() {}
+
+	BattleEntity getParent() {}
+
+	void stop() {}
+
+	float getTime() {}
+
+	float getX() {}
+
+	boolean isActive() {}
+
+	float getY() {}
+
+	float getSpeed() {}
+
+	Battle getBattle() {}
+
+	OwnedHitProperty getCurrentProperty() {}
+
+	void updatePosition() {}
+
+	AttackParticleSpawner getParticles() {}
+
+	float getTimeOffset() {}
+
+	FieldFlicker getFlicker() {}
+
+	int getXTile() {}
+
+	int getCurrentPanel() {}
+
+	DrawableState getDrawable() {}
+
+	boolean isShadow() {}
+
+	int getCurrentX() {}
+
+	void clearHits() {}
+
+	float getDelay() {}
+
+	Map getHitEntities() {}
+
+	int getYTile() {}
+
+	ShaderManager getShaderManager() {}
+
+	float getYOffset() {}
+
+	int getCurrentY() {}
+
+	float getRadius() {}
+
+}

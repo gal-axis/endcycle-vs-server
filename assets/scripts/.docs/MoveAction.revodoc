@@ -1,0 +1,85 @@
+MoveAction(GameScreenObject) : InputListener {
+
+	Origin origin;
+	GameScreen screen;
+	boolean showing;
+
+	new(PlayerVocPackGroup menu, VocSetTable original, int selection) {}
+
+	new(PlayerVocPackGroup menu, VocEntry voc) {}
+
+	final boolean equals(Object obj) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	void dispose() {}
+
+	void update(float delta) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void hide(GameScreen screen) {}
+
+	void show(GameScreen screen) {}
+
+	final Origin getOrigin() {}
+
+	byte getLayer() {}
+
+	float getComparisonKey() {}
+
+	final SoundContainer playSound(Sounds sound) {}
+
+	SoundContainer playSound(SoundInfo sound) {}
+
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	final void removeObject() {}
+
+	final void addObject(ScreenObject object) {}
+
+	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
+
+	boolean triggerButton(ButtonEvent event) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean keyTyped(char character) {}
+
+	boolean keyDown(int keycode) {}
+
+	boolean triggerTouch(TouchEvent event) {}
+
+	int getInputPriority() {}
+
+	boolean triggerType(int character) {}
+
+	boolean keyUp(int keycode) {}
+
+	void controllerDisconnected(Controller controller) {}
+
+	void controllerConnected(Controller controller) {}
+
+	void select() {}
+
+	void cancel() {}
+
+	void moveX(int offset) {}
+
+	void moveY(int offset) {}
+
+	void moveVoc() {}
+
+}

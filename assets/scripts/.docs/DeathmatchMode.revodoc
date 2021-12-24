@@ -1,0 +1,109 @@
+DeathmatchMode(DefaultBattleMode) {
+
+	Battle battle;
+	BattleEntityLifeManager allyLives;
+	BattleEntityLifeManager enemyLives;
+	boolean shared;
+	BattleNotificationDisplay display;
+
+	new(Float time, int lives, boolean shared) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void handle(GameEvent event) {}
+
+	void dispose() {}
+
+	void update(float delta) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void show(GameScreen screen) {}
+
+	void hide(GameScreen screen) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	float getComparisonKey() {}
+
+	byte getLayer() {}
+
+	Origin getOrigin() {}
+
+	void start() {}
+
+	void stop() {}
+
+	String getDiscordMessage(Party winner) {}
+
+	void initHUD(BattleHUD hud) {}
+
+	String getBattleName(String name) {}
+
+	void finish(Party winner) {}
+
+	void sendServerUpdate(List messages) {}
+
+	boolean showStart() {}
+
+	ScreenObject createStarter() {}
+
+	Looter createLooter() {}
+
+	boolean isDespawn(BattleEntity entity) {}
+
+	boolean isSpawn(BattleEntity entity) {}
+
+	int adjustDamage(BattleEntity entity, int damage) {}
+
+	BattlePlayer createPlayer(BattleEntity entity) {}
+
+	boolean isRestart() {}
+
+	boolean loot() {}
+
+	void calculateTint(BattleEntity entity, CColor color) {}
+
+	void addLoot(Looter looter) {}
+
+	double adjustGaugeSpeed(BattleEntity entity) {}
+
+	LocalizedMessage getLoseMessage() {}
+
+	String createTeamName(Party party) {}
+
+	void timeout() {}
+
+	void setCurrentTime(float currentTime) {}
+
+	void forceEnd() {}
+
+	void updateTimeCache() {}
+
+	Party getWinnerParty() {}
+
+	float getCurrentTime() {}
+
+	void updateWinner(float delta) {}
+
+	void entityDied(BattleEntity killer, BattleEntity entity) {}
+
+	void paintLives(CustomSpriteBatch batch, boolean enemy) {}
+
+	BattleEntityLifeManager getLives(BattleEntity entity) {}
+
+	void setEntityLives() {}
+
+}

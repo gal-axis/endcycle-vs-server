@@ -1,0 +1,52 @@
+BoostParticles(Object) : GameObjectParticle {
+
+	final BattleEntity entity;
+	SoundInfo sound;
+	float speed;
+	float xSpeed;
+	float ySpeed;
+	int vAlign;
+	boolean loop;
+	Array particles;
+
+	new(BattleEntity entity) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	int compareTo(GameObjectParticle o) {}
+
+	boolean remove() {}
+
+	void update(float delta) {}
+
+	void init() {}
+
+	void draw(CustomSpriteBatch batch, float x, float y, float xScale, float yScale, CColor color) {}
+
+	void dispose() {}
+
+	int getOrder() {}
+
+	void add(Drawable drawable, int amount) {}
+
+	void add(DrawableImage image, Color color, int amount) {}
+
+	void invert() {}
+
+	static BoostParticles getHeal(BattleEntity entity, Color color) {}
+
+	static BoostParticles getNerf(BattleEntity entity, Color color) {}
+
+	static BoostParticles getBuff(BattleEntity entity, Color color) {}
+
+	static BoostParticles getSpeedUp(BattleEntity entity) {}
+
+	static BoostParticles getSpeedDown(BattleEntity entity) {}
+
+	static BoostParticles getStars(BattleEntity entity) {}
+
+}

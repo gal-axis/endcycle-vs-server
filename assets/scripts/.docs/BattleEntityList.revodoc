@@ -1,0 +1,145 @@
+BattleEntityList(Array) {
+
+	BattleEntity[] items;
+	int size;
+	boolean ordered;
+
+	new(Array arg0) {}
+
+	new(BattleEntity[] arg0) {}
+
+	new(int arg0) {}
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	ArrayIterator iterator() {}
+
+	void add(BattleEntity arg0, BattleEntity arg1, BattleEntity arg2) {}
+
+	void add(BattleEntity arg0, BattleEntity arg1, BattleEntity arg2, BattleEntity arg3) {}
+
+	void add(BattleEntity arg0, BattleEntity arg1) {}
+
+	void add(BattleEntity arg0) {}
+
+	BattleEntity get(int arg0) {}
+
+	String toString(String arg0) {}
+
+	int indexOf(BattleEntity arg0, boolean arg1) {}
+
+	void clear() {}
+
+	boolean contains(BattleEntity arg0, boolean arg1) {}
+
+	boolean isEmpty() {}
+
+	int lastIndexOf(BattleEntity arg0, boolean arg1) {}
+
+	BattleEntity[] toArray() {}
+
+	void addAll(Array arg0, int arg1, int arg2) {}
+
+	void addAll(BattleEntity[] arg0) {}
+
+	void addAll(Array arg0) {}
+
+	void addAll(BattleEntity[] arg0, int arg1, int arg2) {}
+
+	BattleEntity pop() {}
+
+	BattleEntity first() {}
+
+	void set(int arg0, BattleEntity arg1) {}
+
+	void insert(int arg0, BattleEntity arg1) {}
+
+	BattleEntity[] ensureCapacity(int arg0) {}
+
+	void reverse() {}
+
+	BattleEntity peek() {}
+
+	void truncate(int arg0) {}
+
+	boolean containsAll(Array arg0, boolean arg1) {}
+
+	boolean removeAll(Array arg0, boolean arg1) {}
+
+	void removeRange(int arg0, int arg1) {}
+
+	BattleEntity[] setSize(int arg0) {}
+
+	void sort(Comparator arg0) {}
+
+	void sort() {}
+
+	void shuffle() {}
+
+	void swap(int arg0, int arg1) {}
+
+	BattleEntity random() {}
+
+	int selectRankedIndex(Comparator arg0, int arg1) {}
+
+	BattleEntity selectRanked(Comparator arg0, int arg1) {}
+
+	BattleEntity removeIndex(int arg0) {}
+
+	BattleEntity[] shrink() {}
+
+	void insertRange(int arg0, int arg1) {}
+
+	boolean notEmpty() {}
+
+	boolean removeValue(BattleEntity arg0, boolean arg1) {}
+
+	boolean containsAny(Array arg0, boolean arg1) {}
+
+	boolean equalsIdentity(Object arg0) {}
+
+	BattleEntity get(String arg0) {}
+
+	BattleEntityList check(BattleEntityList arg0, BECondition arg1) {}
+
+	Party getWinner() {}
+
+	BattleEntityList beFrom(Party arg0) {}
+
+	BattleEntityList beFrom(Party arg0, boolean arg1) {}
+
+	BattleEntityList beFrom(Party arg0, BattleEntityList arg1) {}
+
+	BattleEntityList beFrom(Party arg0, boolean arg1, BattleEntityList arg2) {}
+
+	BattleEntityList beAtCol(int arg0, BattleEntityList arg1) {}
+
+	BattleEntityList beAtCol(int arg0) {}
+
+	boolean hasVitalAndAlive(Party arg0) {}
+
+	BattleEntityList beAtRow(int arg0, BattleEntityList arg1) {}
+
+	BattleEntityList beAtRow(int arg0) {}
+
+	BattleEntityList beFloating(boolean arg0) {}
+
+	BattleEntityList beFloating(boolean arg0, BattleEntityList arg1) {}
+
+	BattleEntityList isCrushed(BattleEntityList arg0) {}
+
+	BattleEntityList beNotFrom(Party arg0, BattleEntityList arg1) {}
+
+	BattleEntityList beNotFrom(Party arg0) {}
+
+	BattleEntityList beNotAt(int arg0, int arg1) {}
+
+	BattleEntityList beNotAt(int arg0, int arg1, BattleEntityList arg2) {}
+
+}

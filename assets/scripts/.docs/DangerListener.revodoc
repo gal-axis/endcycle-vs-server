@@ -1,0 +1,23 @@
+DangerListener(Object) : GameEventListener {
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void handle(GameEvent event) {}
+
+	void add(Danger object) {}
+
+	void remove(Danger object) {}
+
+	void addManager(DangerManager manager) {}
+
+	void removeManager(DangerManager manager) {}
+
+	void disappear(int xTile, int yTile, DangerDisappearListener onDisappear) {}
+
+}

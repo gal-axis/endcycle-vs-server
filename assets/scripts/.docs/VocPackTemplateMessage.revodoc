@@ -1,0 +1,137 @@
+VocPackTemplateMessage(MenuMessage) : MenuTableAction {
+
+	Origin origin;
+	GameScreen screen;
+	boolean showing;
+	GameScreenMessage next;
+	byte layer;
+	float comparisonKey;
+	State state;
+	Consumer select;
+	Consumer special;
+	Inventory inventory;
+	MenuTable packs;
+	MenuElementGroup group;
+	VocPackDisplayer packDisplayer;
+
+	new(Inventory inventory, Consumer select) {}
+
+	final boolean equals(Object obj) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	void dispose() {}
+
+	void update(float delta) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void show(GameScreen screen) {}
+
+	void hide(GameScreen screen) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	float getComparisonKey() {}
+
+	byte getLayer() {}
+
+	final Origin getOrigin() {}
+
+	final void addObject(ScreenObject object) {}
+
+	final void removeObject() {}
+
+	final SoundContainer playSound(Sounds sound) {}
+
+	SoundContainer playSound(SoundInfo sound) {}
+
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
+
+	final void removeDisposeListener(Runnable runnable) {}
+
+	final void addInitializeListener(Runnable runnable) {}
+
+	final void addDisposeListener(Runnable runnable) {}
+
+	final void removeInitializeListener(Runnable runnable) {}
+
+	void scheduleMessage(GameScreenMessage message) {}
+
+	void finish() {}
+
+	void setSpeed(float speed) {}
+
+	void setStay() {}
+
+	boolean isStaying() {}
+
+	float getPosition() {}
+
+	void controllerConnected(Controller controller) {}
+
+	void controllerDisconnected(Controller controller) {}
+
+	boolean keyDown(int keycode) {}
+
+	int getInputPriority() {}
+
+	boolean keyUp(int keycode) {}
+
+	boolean triggerTouch(TouchEvent event) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean keyTyped(char character) {}
+
+	boolean triggerButton(ButtonEvent event) {}
+
+	boolean triggerType(int character) {}
+
+	void setDefaultElement(MenuElement defaultElement) {}
+
+	MenuElement getDefaultElement() {}
+
+	MenuElementController getController() {}
+
+	void drawScreenTint(CustomSpriteBatch batch, float alpha) {}
+
+	float calcOffset() {}
+
+	void drawMenu(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	boolean isBackKey(ButtonEvent trigger) {}
+
+	MenuElement getMenuElement() {}
+
+	void setElement(MenuElement menuElement) {}
+
+	void specialTableSelect(int selection, PlayerVocPack selected) {}
+
+	boolean selectTableHeader() {}
+
+	void updateTableSelection(int selection) {}
+
+	void moveTableSelection(int selection) {}
+
+	void selectTable(int selection, PlayerVocPack selected) {}
+
+	void clickedTable(int selection, PlayerVocPack selected, float x, float y) {}
+
+	List getAvailablePacks() {}
+
+	void setSpecial(String specialString, Consumer special) {}
+
+}

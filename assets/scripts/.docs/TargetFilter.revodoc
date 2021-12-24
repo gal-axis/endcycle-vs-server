@@ -1,0 +1,34 @@
+TargetFilter(Object) : Serializable {
+
+	Party party;
+	int limit;
+	boolean self;
+	Boolean vital;
+	boolean inSight;
+	Boolean facing;
+	boolean invert;
+	EntitySeeker seeker;
+
+	new() {}
+
+	new(TargetType arg0) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void write(Json arg0) {}
+
+	void read(Json arg0, JsonValue arg1) {}
+
+	void set(TargetFilter arg0) {}
+
+	void filter(BattleEntityList arg0, BattleEntity arg1, boolean arg2) {}
+
+	static BattleEntity getEntity(TargetFilter arg0, BattleEntity arg1, boolean arg2) {}
+
+	Party getParty(BattleEntity arg0) {}
+
+}

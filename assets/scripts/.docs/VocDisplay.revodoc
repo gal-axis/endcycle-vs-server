@@ -1,0 +1,43 @@
+VocDisplay(Object) {
+
+	boolean drawMod;
+
+	new(DefaultBattlePlayer player, HudVocPainter vocPainter, int slot) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void update(float delta) {}
+
+	void reset() {}
+
+	void error() {}
+
+	void draw(CustomSpriteBatch batch, VocEntry voc, float x, float y) {}
+
+	void draw(CustomSpriteBatch batch, VocEntry voc, float x, float y, float scale, float unlock, float aTint) {}
+
+	void shake() {}
+
+	int getGauge() {}
+
+	void use() {}
+
+	float getScale() {}
+
+	boolean isUsable() {}
+
+	float getUnlock() {}
+
+	void drawMod(CustomSpriteBatch batch, VocEntry voc, float x, float y, float tint, float aTint) {}
+
+	float getErrorOffset() {}
+
+	float getATint() {}
+
+	VocEntry getVoc() {}
+
+}

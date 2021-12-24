@@ -1,0 +1,143 @@
+Color(Object) {
+
+	static final Color WHITE;
+	static final Color LIGHT_GRAY;
+	static final Color GRAY;
+	static final Color DARK_GRAY;
+	static final Color BLACK;
+	static final float WHITE_FLOAT_BITS = -1.7014117E38;
+	static final Color CLEAR;
+	static final Color BLUE;
+	static final Color NAVY;
+	static final Color ROYAL;
+	static final Color SLATE;
+	static final Color SKY;
+	static final Color CYAN;
+	static final Color TEAL;
+	static final Color GREEN;
+	static final Color CHARTREUSE;
+	static final Color LIME;
+	static final Color FOREST;
+	static final Color OLIVE;
+	static final Color YELLOW;
+	static final Color GOLD;
+	static final Color GOLDENROD;
+	static final Color ORANGE;
+	static final Color BROWN;
+	static final Color TAN;
+	static final Color FIREBRICK;
+	static final Color RED;
+	static final Color SCARLET;
+	static final Color CORAL;
+	static final Color SALMON;
+	static final Color PINK;
+	static final Color MAGENTA;
+	static final Color PURPLE;
+	static final Color VIOLET;
+	static final Color MAROON;
+	float r;
+	float g;
+	float b;
+	float a;
+
+	new(Color arg0) {}
+
+	new(float arg0, float arg1, float arg2, float arg3) {}
+
+	new(int arg0) {}
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	Color add(float arg0, float arg1, float arg2, float arg3) {}
+
+	Color add(Color arg0) {}
+
+	static Color valueOf(String arg0, Color arg1) {}
+
+	static Color valueOf(String arg0) {}
+
+	Color set(Color arg0) {}
+
+	Color set(float arg0, float arg1, float arg2, float arg3) {}
+
+	Color set(int arg0) {}
+
+	static int alpha(float arg0) {}
+
+	Color mul(Color arg0) {}
+
+	Color mul(float arg0, float arg1, float arg2, float arg3) {}
+
+	Color mul(float arg0) {}
+
+	Color lerp(Color arg0, float arg1) {}
+
+	Color lerp(float arg0, float arg1, float arg2, float arg3, float arg4) {}
+
+	Color clamp() {}
+
+	Color sub(Color arg0) {}
+
+	Color sub(float arg0, float arg1, float arg2, float arg3) {}
+
+	static int rgba8888(Color arg0) {}
+
+	static int rgba8888(float arg0, float arg1, float arg2, float arg3) {}
+
+	Color cpy() {}
+
+	static int argb8888(Color arg0) {}
+
+	static int argb8888(float arg0, float arg1, float arg2, float arg3) {}
+
+	static void argb8888ToColor(Color arg0, int arg1) {}
+
+	static int rgba4444(float arg0, float arg1, float arg2, float arg3) {}
+
+	static int rgba4444(Color arg0) {}
+
+	int toIntBits() {}
+
+	static int toIntBits(int arg0, int arg1, int arg2, int arg3) {}
+
+	Color fromHsv(float[] arg0) {}
+
+	Color fromHsv(float arg0, float arg1, float arg2) {}
+
+	static float toFloatBits(int arg0, int arg1, int arg2, int arg3) {}
+
+	float toFloatBits() {}
+
+	static float toFloatBits(float arg0, float arg1, float arg2, float arg3) {}
+
+	static void rgb565ToColor(Color arg0, int arg1) {}
+
+	static void rgba4444ToColor(Color arg0, int arg1) {}
+
+	Color premultiplyAlpha() {}
+
+	static int rgb565(float arg0, float arg1, float arg2) {}
+
+	static int rgb565(Color arg0) {}
+
+	static int luminanceAlpha(float arg0, float arg1) {}
+
+	static void abgr8888ToColor(Color arg0, float arg1) {}
+
+	float[] toHsv(float[] arg0) {}
+
+	static int rgb888(Color arg0) {}
+
+	static int rgb888(float arg0, float arg1, float arg2) {}
+
+	static void rgb888ToColor(Color arg0, int arg1) {}
+
+	static void rgba8888ToColor(Color arg0, int arg1) {}
+
+}

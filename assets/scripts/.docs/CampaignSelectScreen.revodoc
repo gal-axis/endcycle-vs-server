@@ -1,0 +1,142 @@
+CampaignSelectScreen(MenuScreen) : MenuTableAction {
+
+	final ButtonTipChecker buttonTips;
+	GameScreenInfo info;
+	AudioHandler audio;
+	Layers layers;
+	GameEventHandler events;
+	ScreenInputHandler input;
+	GameScreenTimer timer;
+	Shaker shaker;
+	ScreenConnection connection;
+	boolean lockLandscape;
+	float timeScale;
+	final String title;
+	final MenuHeader menuHeader;
+	MenuElementController elementController;
+	MenuElementGroup objectGroup;
+	FadeType fadeType;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	GameScreen get() {}
+
+	void update(float arg0) {}
+
+	ScreenObject getObject(String arg0) {}
+
+	void init() {}
+
+	void resume() {}
+
+	void resize(boolean arg0, int arg1, int arg2) {}
+
+	GameScreen getPreviousScreen() {}
+
+	Array getRenderProcessors() {}
+
+	void setPreviousScreen(GameScreen arg0) {}
+
+	void addRenderProcessor(RenderProcessor arg0) {}
+
+	void removeRenderProcessor(RenderProcessor arg0) {}
+
+	void setScreen(GameScreen arg0) {}
+
+	void setScreen(GameScreen arg0, FadeType arg1, boolean arg2) {}
+
+	void setScreen(GameScreen arg0, FadeType arg1) {}
+
+	void shakeVibrate(float arg0, float arg1, float arg2) {}
+
+	void updateShake(float arg0) {}
+
+	boolean isShaking() {}
+
+	void draw(CustomSpriteBatch arg0) {}
+
+	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
+
+	void shake(float arg0, float arg1, float arg2) {}
+
+	void drawSpecial(CustomSpriteBatch arg0) {}
+
+	void drawButtonTips(CustomSpriteBatch arg0, float arg1, float arg2) {}
+
+	ScreenObject addObject(ScreenObject arg0) {}
+
+	boolean removeObject(ScreenObject arg0) {}
+
+	void clearObjects() {}
+
+	void resetShake() {}
+
+	void toPreviousScreen() {}
+
+	void toPreviousScreen(FadeType arg0) {}
+
+	void updateObjects(float arg0) {}
+
+	Array getObjects() {}
+
+	boolean isCurrentScreen() {}
+
+	void changeTo(GameScreen arg0, boolean arg1) {}
+
+	void dispose() {}
+
+	void changeFrom(GameScreen arg0, boolean arg1) {}
+
+	void resetTimer() {}
+
+	void addScript(Script arg0, float arg1) {}
+
+	boolean isLoading() {}
+
+	void render(float arg0) {}
+
+	void show() {}
+
+	void pause() {}
+
+	Object[] getTextArguments() {}
+
+	void updateTimer(float arg0) {}
+
+	void hide() {}
+
+	void backButtonPressed() {}
+
+	void buildControllerNeighbors() {}
+
+	void createMenuElements() {}
+
+	void centerElements() {}
+
+	void centerElements(float arg0, float arg1) {}
+
+	void enableInput() {}
+
+	void disableInput() {}
+
+	void moveTableSelection(int arg0) {}
+
+	void updateTableSelection(int arg0) {}
+
+	boolean selectTableHeader() {}
+
+	void specialTableSelect(int arg0, CampaignData arg1) {}
+
+	void selectTable(int arg0, CampaignData arg1) {}
+
+	void clickedTable(int arg0, CampaignData arg1, float arg2, float arg3) {}
+
+	void vocs() {}
+
+}

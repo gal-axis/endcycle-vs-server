@@ -1,0 +1,23 @@
+interface ShadowEntity {
+
+	float getYScale() {}
+
+	boolean isFlipX() {}
+
+	Patchwork getPatchwork() {}
+
+	boolean isFlipY() {}
+
+	float getXScale() {}
+
+	abstract float getShadowX();
+
+	abstract float getShadowY();
+
+	abstract float getShadowZ();
+
+	float getShadowAlpha() {}
+
+	List getShadowDrawables() {}
+
+}

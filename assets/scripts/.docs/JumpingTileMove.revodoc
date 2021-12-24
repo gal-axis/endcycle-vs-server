@@ -1,0 +1,41 @@
+JumpingTileMove(InstantTileMove) {
+
+	final BattleEntity entity;
+	int newX;
+	int newY;
+
+	new(BattleEntity parent) {}
+
+	new(BattleEntity parent, float speed) {}
+
+	boolean equals(Object o) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void update(float delta) {}
+
+	void init(int xTile, int yTile, float speed) {}
+
+	void start() {}
+
+	void cancel() {}
+
+	boolean over() {}
+
+	Battle getBattle() {}
+
+	void set(int xTile, int yTile, float speed) {}
+
+	void reset() {}
+
+	void moveToTile() {}
+
+	void occupyField() {}
+
+	void freeField() {}
+
+	void setSpeed(float speed) {}
+
+}

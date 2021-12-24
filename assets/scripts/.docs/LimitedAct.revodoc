@@ -1,0 +1,17 @@
+abstract LimitedAct(Object) : BattleEntityAct {
+
+	int uses;
+	boolean resetUses;
+	float time;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	abstract ActExecutor createExecutor();
+
+}

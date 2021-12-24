@@ -1,0 +1,45 @@
+final MenuThemeDrawable(Object) {
+
+	DrawableImage drawable;
+	DrawableImage overlay;
+	MenuThemeDrawableData data;
+
+	new() {}
+
+	new(Drawables drawable) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void set(DrawableImage drawable) {}
+
+	void set(MenuThemeDrawableData data) {}
+
+	void draw(Batch batch, float x, float y, float width, float height) {}
+
+	void startMasking(CustomSpriteBatch batch, float x, float y, float width, float height) {}
+
+	float getCenterY(float width) {}
+
+	float getCenterX(float width) {}
+
+	void stopMasking(CustomSpriteBatch batch, float x, float y, float width, float height) {}
+
+	void drawOverlay(Batch batch, float x, float y, float width, float height) {}
+
+	void drawNinePatch(Batch batch, float x, float y, float width, float height, Color c, float scale) {}
+
+	void drawNinePatch(Batch batch, float x, float y, float width, float height) {}
+
+	float getLeft() {}
+
+	float getBottom() {}
+
+	float getRight() {}
+
+	float getTop() {}
+
+}

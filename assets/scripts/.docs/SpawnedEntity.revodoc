@@ -1,0 +1,355 @@
+SpawnedEntity(BattleEntity) {
+
+	Origin origin;
+	GameScreen screen;
+	boolean showing;
+	ShaderManager shaderManager;
+	GameObjectParticles particles;
+	String name;
+	float x;
+	float y;
+	byte layer;
+	boolean flipX;
+	boolean flipY;
+	CColor tint;
+	TintManager tintManager;
+	Patchwork patchwork;
+	float xScale;
+	float yScale;
+	float xOffset;
+	float yOffset;
+	Rectangle mask;
+	Battle battle;
+	final BEConditions hideHealth;
+	final BEConditions floating;
+	final BEConditions invincible;
+	final BEConditions semiInvincible;
+	final BEConditions ghost;
+	final BEConditions invisible;
+	final BEConditions locked;
+	final BEConditions immovable;
+	final BEConditions uncastable;
+	final BattleEntityListenerList listeners;
+	VocGauges gauges;
+	final CrushGauge crushGauge;
+	final BattleEntitySpeed updateSpeed;
+	final BattleEntitySpeed actionSpeed;
+	final StatusManager status;
+	boolean hide;
+	GameObject attachObject;
+	BattleEntity parent;
+	BattleEntityLife life;
+	LocalizedMessage talkingName;
+	BattleEntityData data;
+	CustomCache palette;
+	BattleEntityHealth health;
+	VocElement element;
+	Party party;
+	int panelX;
+	int panelY;
+	int xSize;
+	int ySize;
+	Mover movement;
+	BattleEntityAction action;
+	Controller controller;
+	AttackPlan attack;
+	int strength;
+	int crushStrength;
+	int speed;
+	int resistance;
+	boolean turned;
+	boolean controlled;
+	boolean vital;
+	boolean occupyPanels;
+	boolean mustSurvive;
+	boolean cracksPanel;
+	BattleEntityAnimation spawnAnimation;
+	BattleEntityAnimation despawnAnimation;
+	BattleEntityAnimation deathAnimation;
+	ScreenObject lastAnimation;
+	VocPack pack;
+	SpawnCondition spawnCondition;
+	boolean spawned;
+	BoundedFloat alpha;
+
+	new(BattleEntityData data, CustomCache palette, Party party, VocElement element, int x, int y) {}
+
+	new(BattleEntityData data, CustomCache palette, HitProperty property, Party party, int x, int y) {}
+
+	final boolean equals(Object obj) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	void dispose() {}
+
+	void update(float delta) {}
+
+	boolean remove() {}
+
+	final String getName() {}
+
+	final void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void show(GameScreen screen) {}
+
+	void hide(GameScreen screen) {}
+
+	final Origin getOrigin() {}
+
+	byte getLayer() {}
+
+	float getComparisonKey() {}
+
+	final void addObject(ScreenObject object) {}
+
+	final void removeObject() {}
+
+	final SoundContainer playSound(Sounds sound) {}
+
+	SoundContainer playSound(SoundInfo sound) {}
+
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
+
+	final float getHeight() {}
+
+	final float getWidth() {}
+
+	float getCenterY() {}
+
+	float getCenterX() {}
+
+	final PatchworkStateId getState() {}
+
+	void resetState() {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scaleX, float scaleY) {}
+
+	void draw(CustomSpriteBatch batch) {}
+
+	final boolean isAnimationFinished() {}
+
+	final void setAnimationDuration(double duration) {}
+
+	CColor calculateTint() {}
+
+	final Patchwork setPatchwork(ID id) {}
+
+	Patchwork setPatchwork(Patchwork patchwork) {}
+
+	final boolean isFlipX() {}
+
+	void updateParticles(float delta) {}
+
+	boolean setState(PatchworkStateId name) {}
+
+	final void resetAnimation() {}
+
+	final boolean hasState(PatchworkStateId name) {}
+
+	final float getXScale() {}
+
+	final float getYScale() {}
+
+	final boolean isFlipY() {}
+
+	void updateGraphics(float delta) {}
+
+	final Patchwork getPatchwork() {}
+
+	final boolean inState(PatchworkStateId name) {}
+
+	final void resetTint() {}
+
+	boolean isTurned() {}
+
+	float getShadowX() {}
+
+	float getShadowY() {}
+
+	float getShadowAlpha() {}
+
+	float getShadowZ() {}
+
+	List getShadowDrawables() {}
+
+	final String getTalking() {}
+
+	final DialogueVoice getVoice() {}
+
+	final BattleField getField() {}
+
+	void init(Battle battle) {}
+
+	void interrupt() {}
+
+	final boolean isAlive() {}
+
+	void reset() {}
+
+	void setSize(int xSize, int ySize) {}
+
+	void setAction(BattleEntityAction action) {}
+
+	void displayAttackName(String name, Color color) {}
+
+	void displayHealthText(int amount) {}
+
+	void spawn() {}
+
+	void despawn() {}
+
+	void removeAction() {}
+
+	BattlePlayer createPlayer() {}
+
+	void startDeath(BattleEntity killer) {}
+
+	final void setActionData(BattleEntityActionData data) {}
+
+	final BattleEntityAction setActionComplex(int level, boolean ultra) {}
+
+	boolean occupies(BattleEntity entity) {}
+
+	boolean occupies(int x, int y) {}
+
+	boolean occupies(BattleLiberationData liberation) {}
+
+	AttackPlan createPlan(VocEntry voc, int gauge, KeyCode code) {}
+
+	void occupyPanels() {}
+
+	final void changeData(BattleEntityData info, CustomCache customizations) {}
+
+	void setTurned(boolean turned) {}
+
+	void setPanelPosition(int x, int y) {}
+
+	boolean attack(AttackPlan attackPlan) {}
+
+	boolean attack(VocEntry voc, int gauge, KeyCode code) {}
+
+	void freePanels() {}
+
+	void crush(double amount, int crushStrength) {}
+
+	void setController(Controller controller) {}
+
+	void changePalette(CustomCache palette) {}
+
+	final boolean isAuthorative() {}
+
+	void onInflict(BattleEntity entity, OwnedHitProperty property) {}
+
+	Ailment inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
+
+	void onHit(BattleEntity entity, HitProperty hit, int damage) {}
+
+	StringDisplay displayText(String attack, Color color) {}
+
+	StringDisplay displayText(String attack, Color color, float time) {}
+
+	void displayText(StringDisplay stringDisplay) {}
+
+	void hitApply(OwnedHitProperty hit) {}
+
+	void block(OwnedHitProperty hit) {}
+
+	void semiBlock(OwnedHitProperty hit) {}
+
+	boolean canInflict(HitProperty hitProperty) {}
+
+	final boolean isBattleClient() {}
+
+	boolean inflict(OwnedHitProperty hit) {}
+
+	void hurt(BattleEntity origin, int amount, boolean display) {}
+
+	void hurt(BattleEntity origin, int amount) {}
+
+	void stopAttack() {}
+
+	boolean isAttacking() {}
+
+	void makeHitParticle(HitType type, Color color) {}
+
+	void heal(BattleEntity origin, int amount) {}
+
+	void heal(BattleEntity origin, int amount, boolean display) {}
+
+	float getPanelX(BattleField field, int x) {}
+
+	float getPanelY(BattleField field, int y) {}
+
+	void refreshPanel() {}
+
+	final void occupyPanel(int x, int y) {}
+
+	final void freePanel(int x, int y) {}
+
+	boolean isMoving() {}
+
+	void kill(BattleEntity killer) {}
+
+	Vector2 getPanelOffset() {}
+
+	void updateAttack(float delta) {}
+
+	boolean canReachPanel(int x, int y) {}
+
+	boolean isMoveable() {}
+
+	void die(BattleEntity killer) {}
+
+	void cancelMovement() {}
+
+	void updateGauge(double delta) {}
+
+	Mover move(Mover mover, boolean rollback) {}
+
+	void move(float delta) {}
+
+	Mover move(MoveType type, int xTile, int yTile, float speed) {}
+
+	Mover move(MoveType type, int xTile, int yTile, float speed, boolean rollback) {}
+
+	Mover move(Mover mover) {}
+
+	void drawUltra(CustomSpriteBatch batch, float xOfs, float yOfs, float scaleX, float scaleY) {}
+
+	void drawHealth(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	final void startAnimation(ScreenObject animation) {}
+
+	final GameObject getAttach() {}
+
+	final void respawn(int x, int y) {}
+
+	final BattleFieldBorder getFieldBorder() {}
+
+	boolean isAccessibleField(int x, int y, boolean checkFree) {}
+
+	final boolean isAccessibleField(int x, int y) {}
+
+	boolean isAccessibleField(BattleField field, int x, int y, boolean checkFree, boolean checkParty) {}
+
+	boolean isAccessibleField(int x, int y, boolean checkFree, boolean checkParty) {}
+
+	boolean isAccessibleField(BattleField field, int x, int y, boolean checkFree) {}
+
+	final BattleEntity getAbsoluteParent() {}
+
+	boolean isSpawning() {}
+
+	void finishFade() {}
+
+}

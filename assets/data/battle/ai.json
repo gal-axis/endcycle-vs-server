@@ -10,8 +10,11 @@
 	"change": [
 		{
 			"action": { "id": 1 },
-			"moves": 7,
-			"onInterrupt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 7 },
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -20,7 +23,7 @@
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.ChangeStateAct",
 			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_OPEN" }
 		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
@@ -45,9 +48,15 @@
 	"change": [
 		{
 			"action": {},
-			"onInterrupt": true,
-			"onInaccessiblePanel": true,
-			"targetPosition": { "xType": "IGNORE", "yType": "EQUAL" }
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" },
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" },
+				{
+					"class": "com.one2b3.endcycle.features.battle.ai.changes.TargetPositionChangeCondition",
+					"position": { "xType": "IGNORE", "yType": "EQUAL" }
+				}
+			]
 		}
 	],
 	"acts": [
@@ -65,7 +74,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -87,7 +96,10 @@
 	"change": [
 		{
 			"action": { "id": 32 },
-			"onInterrupt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -108,7 +120,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -163,7 +175,7 @@
 	"acts": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -195,16 +207,22 @@
 	"change": [
 		{
 			"action": { "id": 6 },
-			"onInterrupt": true,
-			"onInaccessiblePanel": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" },
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" }
+			]
 		},
 		{
 			"action": { "id": 5 },
-			"moves": 5
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 5 }
+			]
 		}
 	],
 	"acts": [
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 27 }
@@ -226,11 +244,17 @@
 	"change": [
 		{
 			"action": { "id": 4 },
-			"moves": 2
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 2 }
+			]
 		},
 		{
 			"action": { "id": 33 },
-			"onInaccessiblePanel": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -260,13 +284,16 @@
 	"change": [
 		{
 			"action": { "id": 4 },
-			"moves": 3,
-			"onInterrupt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 3 },
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" }
+			]
 		}
 	],
 	"acts": [
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_MOVING_TILE", "xTile": -1, "relation": "TOWARD_TARGET" },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.1 }
 	]
 },
@@ -274,16 +301,15 @@
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 7 },
 	"name": "Bomby Shoot Down",
-	"target": {
-		"party": "ENEMY",
-		"invert": true,
-		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
-	},
+	"target": { "party": "ENEMY", "invert": true },
 	"change": [
 		{
 			"action": { "id": 8 },
-			"onInterrupt": true,
-			"onInaccessiblePanel": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" },
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -295,7 +321,6 @@
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.7 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
-			"moveType": "ANIMATED_TILE",
 			"yTile": 1,
 			"target": {
 				"party": "ENEMY",
@@ -305,7 +330,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TOWARD_TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -327,8 +352,11 @@
 	"change": [
 		{
 			"action": { "id": 7 },
-			"onInterrupt": true,
-			"onInaccessiblePanel": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" },
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -340,7 +368,6 @@
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.7 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
-			"moveType": "ANIMATED_TILE",
 			"yTile": -1,
 			"target": {
 				"party": "ENEMY",
@@ -350,7 +377,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TOWARD_TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -383,7 +410,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TOWARD_TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -391,9 +418,11 @@
 			}
 		},
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": -1 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
-			"voc": { "id": 10352 }
+			"voc": { "id": 10101 },
+			"style": { "id": 32 }
 		},
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.4 }
 	]
@@ -410,13 +439,19 @@
 	"change": [
 		{
 			"action": { "id": 17 },
-			"targetPosition": { "xType": "IGNORE", "yType": "EQUAL" }
+			"requireSingle": true,
+			"conditions": [
+				{
+					"class": "com.one2b3.endcycle.features.battle.ai.changes.TargetPositionChangeCondition",
+					"position": { "xType": "IGNORE", "yType": "EQUAL" }
+				}
+			]
 		}
 	],
 	"acts": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -425,10 +460,11 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
-			"voc": { "id": 20 }
+			"voc": { "id": 1 }
 		},
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.8 }
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.8 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1 }
 	]
 },
 {
@@ -444,11 +480,17 @@
 	"change": [
 		{
 			"action": { "id": 38 },
-			"moves": 2
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 2 }
+			]
 		},
 		{
 			"action": { "id": 39 },
-			"onAlone": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnAloneChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -488,21 +530,24 @@
 	"change": [
 		{
 			"action": { "id": 13 },
-			"onAlone": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnAloneChangeCondition" }
+			]
 		}
 	],
 	"acts": [
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "yTile": -1 },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.8 },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "yTile": -1 },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.8 },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "yTile": 1 },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.8 },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "yTile": 1 },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.8 }
 	]
 },
@@ -518,7 +563,10 @@
 	"change": [
 		{
 			"action": { "id": 12 },
-			"onEmpty": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnEmptyChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -576,7 +624,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TOWARD_TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -619,7 +667,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TOWARD_TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -640,11 +688,17 @@
 	"change": [
 		{
 			"action": { "id": 16 },
-			"onInaccessiblePanel": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" }
+			]
 		},
 		{
 			"action": { "id": 15 },
-			"onInterrupt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -668,7 +722,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -700,11 +754,17 @@
 	"change": [
 		{
 			"action": { "id": 15 },
-			"onInaccessiblePanel": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" }
+			]
 		},
 		{
 			"action": { "id": 16 },
-			"onInterrupt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -724,7 +784,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -756,7 +816,10 @@
 	"change": [
 		{
 			"action": { "id": 20 },
-			"onInterrupt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -785,13 +848,16 @@
 	"change": [
 		{
 			"action": { "id": 19 },
-			"moves": 1
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition" }
+			]
 		}
 	],
 	"acts": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -817,7 +883,10 @@
 	"change": [
 		{
 			"action": { "id": 22 },
-			"onInterrupt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -943,8 +1012,11 @@
 	"change": [
 		{
 			"action": { "id": 21 },
-			"moves": 1,
-			"onAlone": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition" },
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnAloneChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -967,7 +1039,10 @@
 	"change": [
 		{
 			"action": { "id": 45 },
-			"onInterrupt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -1006,7 +1081,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TOWARD_TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -1048,10 +1123,10 @@
 	},
 	"acts": [
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "xTile": -1, "relation": "TARGET_RELATIVE" },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.1 },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "xTile": -1, "relation": "TARGET_RELATIVE" },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10102 }
@@ -1073,7 +1148,7 @@
 	"acts": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -1108,7 +1183,7 @@
 	"acts": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -1133,7 +1208,7 @@
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -1158,7 +1233,7 @@
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -1183,7 +1258,7 @@
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -1236,7 +1311,10 @@
 	"change": [
 		{
 			"action": { "id": 31 },
-			"onHit": "ELEC"
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnHitCondition", "element": "ELEC" }
+			]
 		}
 	],
 	"acts": [
@@ -1267,7 +1345,10 @@
 	"change": [
 		{
 			"action": { "id": 2 },
-			"onEmpty": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnEmptyChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -1292,8 +1373,11 @@
 	"change": [
 		{
 			"action": { "id": 10 },
-			"onInaccessiblePanel": true,
-			"onEmpty": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" },
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnEmptyChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -1343,8 +1427,11 @@
 	"change": [
 		{
 			"action": { "id": 4 },
-			"moves": 1,
-			"onInaccessiblePanel": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition" },
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -1373,15 +1460,24 @@
 	"change": [
 		{
 			"action": { "id": 36 },
-			"onInaccessiblePanel": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" }
+			]
 		},
 		{
 			"action": { "id": 35 },
-			"minHealth": 0.3
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.BelowHealthChangeCondition", "health": 0.3 }
+			]
 		},
 		{
 			"action": { "id": 34 },
-			"onInterrupt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -1417,7 +1513,10 @@
 	"change": [
 		{
 			"action": { "id": 34 },
-			"onEmpty": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnEmptyChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -1441,11 +1540,17 @@
 	"change": [
 		{
 			"action": { "id": 34 },
-			"moves": 1
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition" }
+			]
 		},
 		{
 			"action": { "id": 37 },
-			"onInaccessiblePanel": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -1473,8 +1578,11 @@
 	"change": [
 		{
 			"action": { "id": 34 },
-			"moves": 1,
-			"onInaccessiblePanel": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition" },
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -1502,11 +1610,17 @@
 	"change": [
 		{
 			"action": { "id": 11 },
-			"onInterrupt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" }
+			]
 		},
 		{
 			"action": { "id": 39 },
-			"onAlone": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnAloneChangeCondition" }
+			]
 		}
 	]
 },
@@ -1522,7 +1636,7 @@
 	},
 	"acts": [
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1, "relation": "TOWARD_TARGET" },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.9 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
@@ -1543,7 +1657,10 @@
 	"change": [
 		{
 			"action": { "id": 41 },
-			"minHealth": 0.5
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.BelowHealthChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -1566,7 +1683,10 @@
 	"change": [
 		{
 			"action": { "id": 40 },
-			"onEmpty": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnEmptyChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -1599,7 +1719,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TARGET_RELATIVE",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -1648,7 +1768,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TOWARD_TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -1674,7 +1794,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TOWARD_TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -1696,7 +1816,10 @@
 	"change": [
 		{
 			"action": { "id": 44 },
-			"onEmpty": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnEmptyChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -1704,7 +1827,7 @@
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
 			"uses": 1,
 			"resetUses": true,
-			"turnType": "TOWARD_TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -1732,7 +1855,10 @@
 	"change": [
 		{
 			"action": { "id": 43 },
-			"onInterrupt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -1749,7 +1875,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TOWARD_TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -1759,7 +1885,6 @@
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": null,
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -1790,7 +1915,10 @@
 	"change": [
 		{
 			"action": { "id": 25 },
-			"onEmpty": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnEmptyChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -1816,13 +1944,16 @@
 	"change": [
 		{
 			"action": { "id": 47 },
-			"onInterrupt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" }
+			]
 		}
 	],
 	"acts": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TOWARD_TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -1901,8 +2032,11 @@
 	"change": [
 		{
 			"action": { "id": 46 },
-			"onInterrupt": true,
-			"onEmpty": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" },
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnEmptyChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -1924,7 +2058,7 @@
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
 			"uses": 1,
 			"resetUses": true,
-			"turnType": "TOWARD_TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "FRIENDLY",
 				"invert": true,
@@ -1952,13 +2086,16 @@
 	"change": [
 		{
 			"action": { "id": 49 },
-			"onInterrupt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" }
+			]
 		}
 	],
 	"acts": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TOWARD_TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -2001,7 +2138,10 @@
 	"change": [
 		{
 			"action": { "id": 48 },
-			"moves": 2
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 2 }
+			]
 		}
 	],
 	"acts": [
@@ -2018,7 +2158,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TOWARD_TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -2049,11 +2189,17 @@
 	"change": [
 		{
 			"action": { "id": 24 },
-			"onInterrupt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" }
+			]
 		},
 		{
 			"action": { "id": 51 },
-			"minHealth": 0.4
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.BelowHealthChangeCondition", "health": 0.3 }
+			]
 		}
 	],
 	"acts": [
@@ -2070,7 +2216,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TOWARD_TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -2089,7 +2235,7 @@
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.1 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TOWARD_TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -2115,8 +2261,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turn": true,
-			"turnType": "TOWARD_TARGET",
+			"turn": "AWAY_FROM_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -2131,7 +2276,7 @@
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TOWARD_TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -2140,12 +2285,8 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
-			"voc": { "id": 10111 }
-		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.2 },
-		{
-			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
-			"voc": { "id": 10032 }
+			"voc": { "id": 10010 },
+			"style": { "id": 40 }
 		},
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 }
 	]
@@ -2162,17 +2303,23 @@
 	"change": [
 		{
 			"action": { "id": 50 },
-			"moves": 2
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 2 }
+			]
 		},
 		{
 			"action": { "id": 51 },
-			"minHealth": 0.4
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.BelowHealthChangeCondition", "health": 0.4 }
+			]
 		}
 	],
 	"acts": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TOWARD_TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -2205,14 +2352,17 @@
 	"change": [
 		{
 			"action": { "id": 50 },
-			"onEmpty": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnEmptyChangeCondition" }
+			]
 		}
 	],
 	"acts": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
 			"uses": 1,
-			"turnType": "TOWARD_TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -2258,7 +2408,10 @@
 	"change": [
 		{
 			"action": { "id": 53 },
-			"onInterrupt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -2275,7 +2428,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -2285,7 +2438,6 @@
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": null,
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -2311,7 +2463,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -2321,7 +2473,6 @@
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": null,
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -2347,11 +2498,17 @@
 	"change": [
 		{
 			"action": { "id": 52 },
-			"moves": 2
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 2 }
+			]
 		},
 		{
 			"action": { "id": 53 },
-			"onInterrupt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -2380,7 +2537,10 @@
 	"change": [
 		{
 			"action": { "id": 55 },
-			"onInterrupt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -2397,7 +2557,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -2422,7 +2582,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -2447,7 +2607,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -2469,7 +2629,10 @@
 	"change": [
 		{
 			"action": { "id": 54 },
-			"moves": 2
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 2 }
+			]
 		}
 	],
 	"acts": [
@@ -2503,11 +2666,17 @@
 	"change": [
 		{
 			"action": { "id": 58 },
-			"onInterrupt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" }
+			]
 		},
 		{
 			"action": { "id": 57 },
-			"minHealth": 0.4
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.BelowHealthChangeCondition", "health": 0.4 }
+			]
 		}
 	],
 	"acts": [
@@ -2524,7 +2693,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TOWARD_TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -2551,7 +2720,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TOWARD_TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -2561,7 +2730,7 @@
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.7 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TOWARD_TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -2588,7 +2757,10 @@
 	"change": [
 		{
 			"action": { "id": 56 },
-			"onEmpty": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnEmptyChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -2621,8 +2793,7 @@
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
 			"uses": 1,
-			"turn": true,
-			"turnType": "ABSOLUTE",
+			"turn": "LEFT",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -2632,7 +2803,7 @@
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
 			"uses": 1,
-			"turnType": "TOWARD_TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -2658,11 +2829,17 @@
 	"change": [
 		{
 			"action": { "id": 56 },
-			"moves": 3
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 3 }
+			]
 		},
 		{
 			"action": { "id": 57 },
-			"minHealth": 0.4
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.BelowHealthChangeCondition", "health": 0.4 }
+			]
 		}
 	],
 	"acts": [
@@ -2680,7 +2857,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TOWARD_TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -2690,7 +2867,7 @@
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TOWARD_TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -2717,7 +2894,10 @@
 	"change": [
 		{
 			"action": { "id": 1 },
-			"onEmpty": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnEmptyChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -2740,11 +2920,19 @@
 	"change": [
 		{
 			"action": { "id": 62 },
-			"moves": 3
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 4 }
+			]
 		}
 	],
 	"acts": [
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ParticleAct",
+			"particles": { "id": 2 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1, "relation": "TOWARD_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
@@ -2764,11 +2952,18 @@
 	"change": [
 		{
 			"action": { "id": 63 },
-			"moves": 3
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 4 }
+			]
 		}
 	],
 	"acts": [
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ParticleAct",
+			"particles": { "id": 2 }
+		},
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
@@ -2788,9 +2983,12 @@
 	"change": [
 		{
 			"action": { "id": 61 },
-			"onInterrupt": true,
-			"onInaccessiblePanel": true,
-			"onEmpty": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" },
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" },
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnEmptyChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -2810,9 +3008,12 @@
 	"change": [
 		{
 			"action": { "id": 60 },
-			"onInterrupt": true,
-			"onInaccessiblePanel": true,
-			"onEmpty": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" },
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" },
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnEmptyChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -2830,7 +3031,7 @@
 		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
 	},
 	"acts": [
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
@@ -2852,11 +3053,14 @@
 	"change": [
 		{
 			"action": { "id": 66 },
-			"onInterrupt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" }
+			]
 		}
 	],
 	"acts": [
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
@@ -2877,7 +3081,10 @@
 	"change": [
 		{
 			"action": { "id": 65 },
-			"moves": 2
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 2 }
+			]
 		}
 	],
 	"acts": [
@@ -2901,7 +3108,7 @@
 	},
 	"acts": [
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "xTile": 1, "relation": "TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
 		{
@@ -2920,7 +3127,7 @@
 		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
 	},
 	"acts": [
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "yTile": 1, "relation": "TOWARD_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 },
@@ -2943,11 +3150,14 @@
 	"change": [
 		{
 			"action": { "id": 70 },
-			"onEmpty": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnEmptyChangeCondition" }
+			]
 		}
 	],
 	"acts": [
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "uses": 1, "resetUses": true, "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "uses": 1, "resetUses": true, "turn": "TOWARD_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "uses": 1, "resetUses": true, "time": 0.6 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
@@ -2969,8 +3179,11 @@
 	"change": [
 		{
 			"action": { "id": 71 },
-			"onInterrupt": true,
-			"onInaccessiblePanel": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" },
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -2990,11 +3203,14 @@
 	"change": [
 		{
 			"action": { "id": 72 },
-			"onEmpty": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnEmptyChangeCondition" }
+			]
 		}
 	],
 	"acts": [
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "uses": 1, "resetUses": true, "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "uses": 1, "resetUses": true, "turn": "TOWARD_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "uses": 1, "resetUses": true, "time": 0.6 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
@@ -3016,8 +3232,11 @@
 	"change": [
 		{
 			"action": { "id": 69 },
-			"onInterrupt": true,
-			"onInaccessiblePanel": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" },
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -3041,7 +3260,7 @@
 	},
 	"acts": [
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 2, "relation": "TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
 		{
@@ -3062,17 +3281,23 @@
 	"change": [
 		{
 			"action": { "id": 75 },
-			"minHealth": 0.4
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.BelowHealthChangeCondition", "health": 0.4 }
+			]
 		},
 		{
 			"action": { "id": 76 },
-			"moves": 20,
-			"onInterrupt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 20 },
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" }
+			]
 		}
 	],
 	"acts": [
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "xTile": 3, "relation": "TARGET" },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
@@ -3080,7 +3305,7 @@
 		},
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "xTile": 3, "relation": "TARGET" },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
@@ -3101,13 +3326,16 @@
 	"change": [
 		{
 			"action": { "id": 77 },
-			"moves": 28,
-			"onInterrupt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 28 },
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" }
+			]
 		}
 	],
 	"acts": [
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "xTile": 3, "relation": "TARGET" },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
@@ -3115,7 +3343,7 @@
 		},
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "ANIMATED_TILE", "xTile": 3, "relation": "TARGET" },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
@@ -3123,7 +3351,7 @@
 		},
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 2, "relation": "TARGET" },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" }
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" }
 	]
 },
 {
@@ -3138,12 +3366,15 @@
 	"change": [
 		{
 			"action": { "id": 74 },
-			"onEmpty": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnEmptyChangeCondition" }
+			]
 		}
 	],
 	"acts": [
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "uses": 1, "resetUses": true, "xTile": -1 },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "uses": 1, "resetUses": true, "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "uses": 1, "resetUses": true, "turn": "TOWARD_TARGET" },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"uses": 1,
@@ -3165,7 +3396,10 @@
 	"change": [
 		{
 			"action": { "id": 75 },
-			"onEmpty": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnEmptyChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -3196,16 +3430,22 @@
 	"change": [
 		{
 			"action": { "id": 79 },
-			"onAlone": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnAloneChangeCondition" }
+			]
 		},
 		{
 			"action": { "id": 80 },
-			"onInaccessiblePanel": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" }
+			]
 		}
 	],
 	"acts": [
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.HealthFilterAct",
 			"maxHealth": 0.4,
@@ -3229,7 +3469,10 @@
 	"change": [
 		{
 			"action": { "id": 81 },
-			"onInaccessiblePanel": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -3248,16 +3491,22 @@
 	"change": [
 		{
 			"action": { "id": 79 },
-			"onAlone": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnAloneChangeCondition" }
+			]
 		},
 		{
 			"action": { "id": 78 },
-			"onInaccessiblePanel": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" }
+			]
 		}
 	],
 	"acts": [
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.HealthFilterAct",
 			"maxHealth": 0.4,
@@ -3281,7 +3530,10 @@
 	"change": [
 		{
 			"action": { "id": 78 },
-			"onEmpty": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnEmptyChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -3316,7 +3568,10 @@
 	"change": [
 		{
 			"action": { "id": 83 },
-			"minHealth": 0.7
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.BelowHealthChangeCondition", "health": 0.7 }
+			]
 		}
 	],
 	"acts": [
@@ -3333,7 +3588,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -3358,7 +3613,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -3383,7 +3638,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -3444,7 +3699,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -3469,7 +3724,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -3494,7 +3749,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"turnType": "TARGET",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -3516,7 +3771,13 @@
 	"change": [
 		{
 			"action": { "id": 84 },
-			"targetPosition": { "xType": "IGNORE", "yType": "EQUAL" }
+			"requireSingle": true,
+			"conditions": [
+				{
+					"class": "com.one2b3.endcycle.features.battle.ai.changes.TargetPositionChangeCondition",
+					"position": { "xType": "IGNORE", "yType": "EQUAL" }
+				}
+			]
 		}
 	],
 	"acts": [
@@ -3546,7 +3807,10 @@
 	"change": [
 		{
 			"action": { "id": 30 },
-			"onEmpty": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnEmptyChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -3571,8 +3835,11 @@
 	"change": [
 		{
 			"action": { "id": 86 },
-			"onInterrupt": true,
-			"onInaccessiblePanel": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" },
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -3597,7 +3864,10 @@
 	"change": [
 		{
 			"action": { "id": 85 },
-			"onEmpty": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnEmptyChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -3623,11 +3893,17 @@
 	"change": [
 		{
 			"action": { "id": 88 },
-			"onInaccessiblePanel": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" }
+			]
 		},
 		{
 			"action": { "id": 98 },
-			"onInterrupt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -3648,7 +3924,10 @@
 	"change": [
 		{
 			"action": { "id": 98 },
-			"onInterrupt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -3686,7 +3965,10 @@
 	"change": [
 		{
 			"action": { "id": 87 },
-			"onInaccessiblePanel": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -3706,13 +3988,16 @@
 	"change": [
 		{
 			"action": { "id": 95 },
-			"minHealth": 0.6
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.BelowHealthChangeCondition", "health": 0.6 }
+			]
 		}
 	],
 	"acts": [
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1, "moveSpeed": 1.5, "invertableY": true, "checkAccessible": false },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1, "moveSpeed": 1.5, "invertableY": true, "checkAccessible": false },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" }
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" }
 	]
 },
 {
@@ -3727,8 +4012,11 @@
 	"change": [
 		{
 			"action": { "id": 93 },
-			"time": 5,
-			"onHurt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.TimeoutChangeCondition", "time": 5 },
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnHitCondition", "condition": true }
+			]
 		}
 	],
 	"acts": [
@@ -3747,8 +4035,11 @@
 	"change": [
 		{
 			"action": { "id": 94 },
-			"time": 8,
-			"onHurt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.TimeoutChangeCondition", "time": 8 },
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnHitCondition", "condition": true }
+			]
 		}
 	],
 	"acts": [
@@ -3767,7 +4058,10 @@
 	"change": [
 		{
 			"action": { "id": 91 },
-			"moves": 4
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 4 }
+			]
 		}
 	],
 	"acts": [
@@ -3790,7 +4084,10 @@
 	"change": [
 		{
 			"action": { "id": 92 },
-			"moves": 3
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 3 }
+			]
 		}
 	],
 	"acts": [
@@ -3817,7 +4114,10 @@
 	"change": [
 		{
 			"action": { "id": 90 },
-			"onEmpty": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnEmptyChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -3836,7 +4136,10 @@
 	"change": [
 		{
 			"action": { "id": 97 },
-			"onInaccessiblePanel": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -3856,20 +4159,26 @@
 	"change": [
 		{
 			"action": { "id": 96 },
-			"onInaccessiblePanel": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" }
+			]
 		},
 		{
 			"action": { "id": 97 },
-			"onInterrupt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" }
+			]
 		}
 	],
 	"acts": [
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.2 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 84 }
 		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.9 },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": -1, "invertableY": true },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": -1, "invertableY": true }
 	]
@@ -3904,8 +4213,11 @@
 	"change": [
 		{
 			"action": { "id": 100 },
-			"onInterrupt": true,
-			"onInaccessiblePanel": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" },
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -3916,7 +4228,7 @@
 			"style": { "id": 34 }
 		},
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.3 },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": true, "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "AWAY_FROM_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": -1 }
 	]
 },
@@ -3931,7 +4243,7 @@
 		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
 	},
 	"acts": [
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
@@ -3954,9 +4266,12 @@
 	"change": [
 		{
 			"action": { "id": 103 },
-			"time": 7,
-			"onInterrupt": true,
-			"onHurt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.TimeoutChangeCondition", "time": 7 },
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" },
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnHitCondition", "condition": true }
+			]
 		}
 	],
 	"acts": [
@@ -3980,7 +4295,10 @@
 	"change": [
 		{
 			"action": { "id": 101 },
-			"moves": 18
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 18 }
+			]
 		}
 	],
 	"acts": [
@@ -3989,7 +4307,7 @@
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 84 }
 		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.3 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.HealthFilterAct",
 			"maxHealth": 0.5,
@@ -4003,13 +4321,13 @@
 				"voc": { "id": 10031 }
 			}
 		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.9 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.2 },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1, "relation": "TOWARD_TARGET" },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10352 }
 		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.3 }
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 }
 	]
 },
 {
@@ -4025,17 +4343,20 @@
 	"change": [
 		{
 			"action": { "id": 102 },
-			"onInterrupt": true,
-			"onHurt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" },
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnHitCondition", "condition": true }
+			]
 		}
 	],
 	"acts": [
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.ChangeStateAct",
 			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" }
 		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 }
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.2 }
 	]
 },
 {
@@ -4051,15 +4372,18 @@
 	"change": [
 		{
 			"action": { "id": 105 },
-			"time": 8,
-			"onInterrupt": true,
-			"onHurt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.TimeoutChangeCondition", "time": 8 },
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" },
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnHitCondition", "condition": true }
+			]
 		}
 	],
 	"acts": [
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": -1, "yTile": 1, "relation": "TOWARD_TARGET" },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.6 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
@@ -4069,7 +4393,7 @@
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1, "yTile": 1, "relation": "TOWARD_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.3 },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1, "relation": "TOWARD_TARGET" },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.3 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
@@ -4089,7 +4413,7 @@
 		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
 	},
 	"acts": [
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10100 }
@@ -4131,7 +4455,7 @@
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 84 }
 		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turnType": "TOWARD_TARGET" }
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" }
 	]
 },
 {
@@ -4154,7 +4478,7 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 108 },
-	"name": "Fossile Fule Adventure #1",
+	"name": "Fossil Fuel Adventure #1",
 	"target": {
 		"party": "ENEMY",
 		"invert": true,
@@ -4191,63 +4515,117 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 109 },
-	"name": "Fossile Fule Boss Minion",
+	"name": "Fossil Fuel Boss Minion",
 	"target": {
 		"party": "ENEMY",
 		"invert": true,
 		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
 	},
+	"change": [
+		{
+			"action": { "id": 144 },
+			"requireSingle": true,
+			"conditions": [
+				{
+					"class": "com.one2b3.endcycle.features.battle.ai.changes.TargetPositionChangeCondition",
+					"position": { "xType": "CLOSER", "xDistance": 2, "yType": "IGNORE" }
+				}
+			]
+		}
+	],
 	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1, "yTile": 1, "relation": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ParticleAct",
+			"particles": { "id": 1 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.6 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
-			"voc": { "id": 10016 },
+			"voc": {},
 			"style": { "id": 2 }
 		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 3 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": -1, "relation": "ABSOLUTE" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ParticleAct",
+			"particles": { "id": 1 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 2 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
-			"voc": { "id": 10016 },
+			"voc": {},
 			"style": { "id": 2 }
 		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": -1 },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1, "yTile": -1 },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": -1, "yTile": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1, "yTile": 1, "relation": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ParticleAct",
+			"particles": { "id": 1 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
-			"voc": { "id": 14 },
-			"style": { "id": 22 }
+			"voc": { "id": 10052 },
+			"style": { "id": 2 }
 		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": -1 }
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": -1, "yTile": 1, "relation": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 3 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 110 },
-	"name": "Boss Fossile Fule",
+	"name": "Boss Fossil Fuel",
 	"next": { "id": 110 },
 	"target": {
 		"party": "ENEMY",
 		"invert": true,
 		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
 	},
+	"change": [
+		{
+			"action": { "id": 145 },
+			"requireSingle": true,
+			"conditions": [
+				{
+					"class": "com.one2b3.endcycle.features.battle.ai.changes.TargetPositionChangeCondition",
+					"position": { "xType": "CLOSER", "xDistance": 2, "yType": "IGNORE" }
+				}
+			]
+		}
+	],
 	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 2, "relation": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 2 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ParticleAct",
+			"particles": { "id": 1 }
+		},
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.UseUltraVocAct" },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 2 },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 2 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1, "relation": "TOWARD_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.UseUltraVocAct" },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 2 },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 2 },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.UseUltraVocAct" },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": -1 },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct" },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": -1 }
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ParticleAct",
+			"particles": { "id": 1 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10034 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1, "relation": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.UseUltraVocAct" }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 111 },
-	"name": "Fossile Fule Adventure #2",
+	"name": "Fossil Fuel Adventure #2",
 	"target": {
 		"party": "ENEMY",
 		"invert": true,
@@ -4256,7 +4634,10 @@
 	"change": [
 		{
 			"action": { "id": 126 },
-			"onHurt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnHitCondition", "condition": true }
+			]
 		}
 	],
 	"acts": [
@@ -4265,12 +4646,12 @@
 			"voc": { "id": 10016 },
 			"style": { "id": 34 }
 		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": -1, "moveSpeed": 0.05 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1, "moveSpeed": 0.05, "relation": "TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.2 },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1, "moveSpeed": 0.05 },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": -1, "moveSpeed": 0.05 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1, "moveSpeed": 0.05, "relation": "TARGET_RELATIVE" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.2 },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1, "moveSpeed": 0.05 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1, "moveSpeed": 0.05 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10016 },
@@ -4281,7 +4662,7 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 126 },
-	"name": "Fossile Fule Adventure #2b",
+	"name": "Fossil Fuel Adventure #2b",
 	"next": { "id": 111 },
 	"target": {
 		"party": "ENEMY",
@@ -4291,7 +4672,10 @@
 	"change": [
 		{
 			"action": { "id": 111 },
-			"onEmpty": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnEmptyChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -4315,7 +4699,7 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 112 },
-	"name": "Fossile Fule Adventure #3",
+	"name": "Fossil Fuel Adventure #3",
 	"target": {
 		"party": "ENEMY",
 		"invert": true,
@@ -4358,7 +4742,10 @@
 	"change": [
 		{
 			"action": { "id": 125 },
-			"minHealth": 0.5
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.BelowHealthChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -4429,35 +4816,27 @@
 		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
 	},
 	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.8, "yTile": 1, "relation": "TOWARD_TARGET" },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 0.5,
 			"voc": { "id": 11 },
-			"style": { "id": 18 }
+			"style": { "id": 22 }
 		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.3 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1, "yTile": 1, "relation": "TOWARD_TARGET" },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
-			"voc": { "id": 11 },
-			"style": { "id": 19 }
+			"voc": { "id": 62 },
+			"style": { "id": 13 }
 		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.4 },
-		{
-			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
-			"voc": {}
-		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.3 },
-		{
-			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
-			"voc": { "id": 26 },
-			"style": { "id": 40 }
-		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1, "relation": "TOWARD_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 115 },
-	"name": "Farmadile Adventure #3",
+	"name": "Farmadile - PotatoBomb / Leafcross",
 	"autoTurn": true,
 	"target": {
 		"party": "ENEMY",
@@ -4494,7 +4873,10 @@
 	"change": [
 		{
 			"action": { "id": 124 },
-			"minHealth": 0.5
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.BelowHealthChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -4671,7 +5053,10 @@
 	"change": [
 		{
 			"action": { "id": 117 },
-			"onInterrupt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -4709,8 +5094,11 @@
 	"change": [
 		{
 			"action": { "id": 122 },
-			"minHealth": 0.5,
-			"onHit": "ELEC"
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.BelowHealthChangeCondition" },
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnHitCondition", "element": "ELEC" }
+			]
 		}
 	],
 	"acts": [
@@ -4769,7 +5157,7 @@
 		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
 	},
 	"change": [
-		{}
+		{ "requireSingle": true }
 	],
 	"acts": [
 		{
@@ -4804,7 +5192,10 @@
 	"change": [
 		{
 			"action": { "id": 107 },
-			"onEmpty": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnEmptyChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -4853,12 +5244,21 @@
 	"change": [
 		{
 			"action": { "id": 127 },
-			"maxHealth": 0.5,
-			"targetPosition": { "xType": "CLOSER", "xDistance": 2, "yType": "IGNORE" }
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.AboveHealthChangeCondition" },
+				{
+					"class": "com.one2b3.endcycle.features.battle.ai.changes.TargetPositionChangeCondition",
+					"position": { "xType": "CLOSER", "xDistance": 2, "yType": "IGNORE" }
+				}
+			]
 		},
 		{
 			"action": { "id": 128 },
-			"onInterrupt": true
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" }
+			]
 		}
 	],
 	"acts": [
@@ -4895,6 +5295,1041 @@
 			"style": { "id": 4 }
 		},
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1, "yTile": 1 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 131 },
+	"target": {
+		"party": "ENEMY",
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerSameCol" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 20 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": -1 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 132 },
+	"name": "Runway QT",
+	"target": {
+		"party": "ENEMY",
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerSameRow" }
+	},
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"uses": 10,
+			"voc": { "id": 10010 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 134 },
+	"name": "Crimson Force 2.2 Farmadile 2",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"action": { "id": 125 },
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.BelowHealthChangeCondition" }
+			]
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"xTile": -1,
+			"target": {}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": {}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 135 },
+	"name": "Crimson Force 2 Azure Agent",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 2 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 5 },
+			"style": { "id": 16 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1, "yTile": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 2 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"yTile": -1,
+			"target": {}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10446 },
+			"style": { "id": 16 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 136 },
+	"name": "Farmadile - Vinepull",
+	"autoTurn": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"action": { "id": 133 },
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnHitCondition", "condition": true }
+			]
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1, "relation": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": {}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1, "relation": "TOWARD_TARGET" }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 133 },
+	"name": "Farmadile - Vinepull Hurt",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"action": { "id": 136 },
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 6 }
+			]
+		}
+	],
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 1,
+			"voc": { "id": 18 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.6, "xTile": 1, "relation": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 1,
+			"voc": { "id": 17 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.6, "xTile": 1, "yTile": 1, "relation": "TOWARD_TARGET" }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 137 },
+	"name": "Greed CF 2",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 2 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10010 },
+			"style": { "id": 40 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct" }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 138 },
+	"name": "Farmadile - Vinepull Swords",
+	"autoTurn": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1, "yTile": 1, "relation": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": {}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.3, "xTile": 1, "yTile": 1, "relation": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10032 },
+			"style": { "id": 40 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1, "relation": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 139 },
+	"name": "Greed Factory",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10022 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1, "xTile": 1, "yTile": 1, "relation": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10446 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1, "relation": "TOWARD_TARGET" }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 140 },
+	"name": "Factory QT",
+	"autoTurn": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerSameRow" }
+	},
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10010 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turn": "TOWARD_TARGET",
+			"target": { "party": "FRIENDLY", "inSight": false }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 2.5 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 141 },
+	"name": "Tankkitty Factory #1",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10040 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "FREE", "xTile": 1, "moveSpeed": 100 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10040 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10040 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": -1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10013 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": -3 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 142 },
+	"name": "Factory Agent",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 2, "relation": "TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10446 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": -1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 2, "yTile": 1, "relation": "TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10111 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 143 },
+	"name": "Factory Tankkitty #2",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10016 },
+			"style": { "id": 4 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 144 },
+	"name": "Fossil Fuel Minion Act Change",
+	"next": { "id": 109 },
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ParticleAct",
+			"particles": { "id": 1 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10052 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1, "relation": "TOWARD_TARGET" }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 145 },
+	"name": "Fossil Fuel Boss Act Change",
+	"next": { "id": 110 },
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10052 },
+			"style": { "id": 43 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 146 },
+	"name": "Factory Agent 2",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 0.5,
+			"voc": { "id": 10446 },
+			"style": { "id": 22 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 147 },
+	"name": "Factory Agent 3",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ChangeStateAct",
+			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10016 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 148 },
+	"name": "Factory Agent 3.a",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ChangeStateAct",
+			"time": 0.9,
+			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10022 },
+			"style": { "id": 45 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 149 },
+	"name": "Factory Bomb",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1, "relation": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 2,
+			"voc": { "id": 8 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10022 },
+			"style": { "id": 2 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 2, "yTile": 1, "relation": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10034 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 150 },
+	"name": "Factory Agent Boss",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"action": { "id": 151 },
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" }
+			]
+		},
+		{
+			"action": { "id": 152 },
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.BelowHealthChangeCondition" }
+			]
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1, "yTile": 1, "relation": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ChangeStateAct",
+			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 1,
+			"voc": { "id": 10032 },
+			"style": { "id": 45 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": -1, "yTile": 1, "relation": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ChangeStateAct",
+			"time": 1,
+			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10446 },
+			"style": { "id": 12 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10052 },
+			"style": { "id": 31 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 151 },
+	"name": "Factory Agent Boss 2",
+	"next": { "id": 150 },
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ChangeStateAct",
+			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10016 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1, "yTile": 2 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ChangeStateAct",
+			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10111 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 152 },
+	"name": "Factory Agent 3",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1, "yTile": -1, "relation": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": -2, "yTile": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ChangeStateAct",
+			"time": 0.5,
+			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 0.5,
+			"voc": { "id": 10022 },
+			"style": { "id": 45 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10040 },
+			"style": { "id": 21 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": -2 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ChangeStateAct",
+			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1, "yTile": 2 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": -2 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10446 },
+			"style": { "id": 21 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 153 },
+	"name": "Crimson Force Cress",
+	"next": { "id": 154 },
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" },
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" }
+			]
+		},
+		{
+			"action": { "id": 155 },
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.BelowHealthChangeCondition" }
+			]
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1, "relation": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ChangeStateAct",
+			"time": 1,
+			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 0.5,
+			"voc": { "id": 10016 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 2, "yTile": 1, "relation": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ChangeStateAct",
+			"time": 1,
+			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 1,
+			"voc": { "id": 7 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ParticleAct",
+			"time": 0.5,
+			"particles": { "id": 3 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1, "xTile": 1, "yTile": -2 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 51 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 1,
+			"voc": { "id": 10032 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 154 },
+	"name": "Cress Swaparoo",
+	"next": { "id": 153 },
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 7 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ParticleAct",
+			"time": 1,
+			"particles": { "id": 3 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 7 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ParticleAct",
+			"time": 1,
+			"particles": { "id": 3 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 155 },
+	"name": "Cress Sword-Swap",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.5 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ParticleAct",
+			"time": 0.5,
+			"particles": { "id": 2 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10016 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 7 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ParticleAct",
+			"time": 0.5,
+			"particles": { "id": 2 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1, "relation": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ParticleAct",
+			"time": 1.5,
+			"particles": { "id": 2 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 1,
+			"voc": { "id": 10052 },
+			"style": { "id": 45 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 156 },
+	"name": "Bombarbara CF 5",
+	"target": {
+		"party": "ENEMY",
+		"inSight": false,
+		"facing": true,
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"action": { "id": 157 },
+			"requireSingle": true,
+			"conditions": [
+				{
+					"class": "com.one2b3.endcycle.features.battle.ai.changes.TargetPositionChangeCondition",
+					"position": { "xType": "EQUAL", "xDistance": 1, "yType": "EQUAL" }
+				}
+			]
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.3, "moveType": "ANIMATED_MOVING_TILE", "xTile": -1, "moveSpeed": 2.2 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "LEFT" }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 157 },
+	"name": "Bombicide CF 5",
+	"resetStatus": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 104 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 158 },
+	"name": "Farmadile - Swords",
+	"autoTurn": true,
+	"target": {
+		"party": "ENEMY",
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1, "yTile": -1, "moveSpeed": 1, "relation": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10032 },
+			"style": { "id": 40 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10016 },
+			"style": { "id": 40 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 159 },
+	"name": "Punk Punch",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 3 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1, "relation": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 2,
+			"voc": { "id": 21 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1, "xTile": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 46 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 160 },
+	"name": "Tankitty Factory Move Down",
+	"autoTurn": true,
+	"rememberMove": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"action": { "id": 162 },
+			"conditions": [
+				{
+					"class": "com.one2b3.endcycle.features.battle.ai.changes.TargetPositionChangeCondition",
+					"position": { "xType": "FURTHER", "xDistance": 1, "yType": "EQUAL" }
+				},
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 2 }
+			]
+		},
+		{
+			"action": { "id": 165 },
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" }
+			]
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1, "yTile": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10040 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 161 },
+	"name": "Factory Tankitty Rebound",
+	"next": { "id": 160 },
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 1,
+			"voc": { "id": 10040 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 162 },
+	"name": "Factory Tankitty Voltspread Down",
+	"autoTurn": true,
+	"rememberMove": true,
+	"next": { "id": 160 },
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 2,
+			"voc": { "id": 10013 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 163 },
+	"name": "Factory Tankitty Move Up",
+	"autoTurn": true,
+	"rememberMove": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"action": { "id": 164 },
+			"conditions": [
+				{
+					"class": "com.one2b3.endcycle.features.battle.ai.changes.TargetPositionChangeCondition",
+					"position": { "xType": "FURTHER", "xDistance": 1, "yType": "EQUAL" }
+				},
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 2 }
+			]
+		},
+		{
+			"action": { "id": 166 },
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" }
+			]
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1, "yTile": -1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10040 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1, "yTile": -1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10040 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1, "yTile": -1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10040 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1, "yTile": -1 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 164 },
+	"name": "Factory Tankitty Voltspread Up",
+	"autoTurn": true,
+	"rememberMove": true,
+	"next": { "id": 163 },
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 2,
+			"voc": { "id": 10013 },
+			"style": { "id": 13 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 165 },
+	"name": "Factory Tankitty Move Left",
+	"next": { "id": 163 },
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": -1 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 166 },
+	"name": "Factory Tankitty Move Right",
+	"next": { "id": 160 },
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1 }
 	]
 }
 ]

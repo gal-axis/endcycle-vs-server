@@ -1,0 +1,30 @@
+DrawableId(Object) : Named, Paintable {
+
+	ID drawable;
+	Color color;
+	float scaleX;
+	float scaleY;
+
+	new(ID drawable, Color color, float scaleX, float scaleY) {}
+
+	new() {}
+
+	new(Drawable drawable) {}
+
+	new(Drawables drawable) {}
+
+	boolean equals(Object o) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void paint(Painter parameters) {}
+
+	String getName() {}
+
+	Drawable create() {}
+
+	DrawableImage getImage() {}
+
+}

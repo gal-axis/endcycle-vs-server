@@ -1,0 +1,143 @@
+BattleParticle(GameObject) : ShadowEntity, Turnable {
+
+	Origin origin;
+	GameScreen screen;
+	boolean showing;
+	ShaderManager shaderManager;
+	GameObjectParticles particles;
+	String name;
+	float x;
+	float y;
+	byte layer;
+	boolean flipX;
+	boolean flipY;
+	CColor tint;
+	TintManager tintManager;
+	Patchwork patchwork;
+	float xScale;
+	float yScale;
+	float xOffset;
+	float yOffset;
+	Rectangle mask;
+	boolean shadow;
+	float appearTimer;
+	float fadeTimer;
+	float fadeOut;
+	float xSpeed;
+	float ySpeed;
+
+	new(Drawable drawable, float x, float y, float xOffset, float yOffset, int hAlign, int vAlign) {}
+
+	new(Drawable drawable, float x, float y, int hAlign, int vAlign) {}
+
+	new(Drawable drawable, float x, float y) {}
+
+	new(Drawable drawable) {}
+
+	final boolean equals(Object obj) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	void dispose() {}
+
+	void update(float delta) {}
+
+	boolean remove() {}
+
+	final String getName() {}
+
+	void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void hide(GameScreen screen) {}
+
+	void show(GameScreen screen) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	byte getLayer() {}
+
+	final Origin getOrigin() {}
+
+	float getComparisonKey() {}
+
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	final SoundContainer playSound(Sounds sound) {}
+
+	SoundContainer playSound(SoundInfo sound) {}
+
+	final void addObject(ScreenObject object) {}
+
+	final void removeObject() {}
+
+	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
+
+	final float getHeight() {}
+
+	final float getWidth() {}
+
+	float getCenterX() {}
+
+	float getCenterY() {}
+
+	final PatchworkStateId getState() {}
+
+	void resetState() {}
+
+	CColor calculateTint() {}
+
+	final void setAnimationDuration(double duration) {}
+
+	final boolean isAnimationFinished() {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scaleX, float scaleY) {}
+
+	void draw(CustomSpriteBatch batch) {}
+
+	void updateParticles(float delta) {}
+
+	final void resetAnimation() {}
+
+	final void resetTint() {}
+
+	final boolean hasState(PatchworkStateId name) {}
+
+	final boolean isFlipX() {}
+
+	void updateGraphics(float delta) {}
+
+	boolean setState(PatchworkStateId state) {}
+
+	Patchwork setPatchwork(Patchwork patchwork) {}
+
+	final Patchwork setPatchwork(ID id) {}
+
+	final float getXScale() {}
+
+	final Patchwork getPatchwork() {}
+
+	final boolean inState(PatchworkStateId name) {}
+
+	final boolean isFlipY() {}
+
+	final float getYScale() {}
+
+	boolean isTurned() {}
+
+	List getShadowDrawables() {}
+
+	float getShadowAlpha() {}
+
+	float getShadowY() {}
+
+	float getShadowZ() {}
+
+	float getShadowX() {}
+
+}

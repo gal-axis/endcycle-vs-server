@@ -1,0 +1,47 @@
+final MusicContainer(Object) : CompletionListener {
+
+	final MusicData data;
+
+	new(MusicData musicData) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void load() {}
+
+	void setPosition(float position) {}
+
+	void setNext(ID next) {}
+
+	void setMusicProcessor(MusicProcessor processor) {}
+
+	void play() {}
+
+	void pause() {}
+
+	void dispose() {}
+
+	float getPosition() {}
+
+	MusicProcessor getMusicProcessor() {}
+
+	void setOnLoopListener(LoopListener listener) {}
+
+	boolean isPlaying() {}
+
+	boolean isLooping() {}
+
+	void setLooping(boolean looping) {}
+
+	void setCachePcm(boolean cache) {}
+
+	void setPan(float pan, float volume) {}
+
+	void setVolume(float volume) {}
+
+	float getVolume() {}
+
+}

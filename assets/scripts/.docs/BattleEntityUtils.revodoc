@@ -1,0 +1,19 @@
+final BattleEntityUtils(Object) {
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	static void heal(BattleEntity origin, BattleEntity entity, int health) {}
+
+	static void heal(BattleEntity origin, BattleEntity battleEntity, float health) {}
+
+	static BattleParticle createParticleAhead(BattleEntity battleEntity, ID drawable) {}
+
+	static BattleParticle createParticleAhead(BattleEntity entity, Drawable drawable) {}
+
+}

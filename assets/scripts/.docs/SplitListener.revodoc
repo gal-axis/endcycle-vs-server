@@ -1,0 +1,51 @@
+SplitListener(Object) : BattleEntityListener {
+
+	new(BattleEntityMode arg0, BattleEntity arg1) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void add() {}
+
+	void remove() {}
+
+	void update(float arg0) {}
+
+	void cast(AttackPlan arg0) {}
+
+	void init() {}
+
+	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
+
+	void dispose() {}
+
+	CColor getTint() {}
+
+	PatchworkStateId setState(PatchworkStateId arg0) {}
+
+	void inflict(OwnedHitProperty arg0) {}
+
+	void attack(Attack arg0) {}
+
+	double crush(double arg0, int arg1) {}
+
+	AilmentInflict inflictAilment(BattleEntity arg0, AilmentInflict arg1) {}
+
+	Mover move(MoveType arg0, int arg1, int arg2, float arg3, Mover arg4) {}
+
+	int hurt(BattleEntity arg0, int arg1, boolean arg2) {}
+
+	int heal(BattleEntity arg0, int arg1, boolean arg2) {}
+
+	void inflictPost(OwnedHitProperty arg0) {}
+
+	void inflictPre(OwnedHitProperty arg0) {}
+
+	void drawHud(CustomSpriteBatch arg0, float arg1, float arg2, float arg3, float arg4) {}
+
+	void createCopy(float arg0, float arg1, float arg2) {}
+
+}

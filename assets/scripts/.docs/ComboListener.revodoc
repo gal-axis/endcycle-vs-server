@@ -1,0 +1,53 @@
+final ComboListener(Object) : BattleEntityListener, GameEventListener {
+
+	new(BattleEntity user) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void handle(GameEvent event) {}
+
+	void add() {}
+
+	void remove() {}
+
+	void update(float delta) {}
+
+	void cast(AttackPlan plan) {}
+
+	void init() {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void dispose() {}
+
+	CColor getTint() {}
+
+	PatchworkStateId setState(PatchworkStateId id) {}
+
+	void attack(Attack attack) {}
+
+	double crush(double amount, int crushStrength) {}
+
+	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
+
+	void inflictPost(OwnedHitProperty property) {}
+
+	int heal(BattleEntity origin, int amount, boolean display) {}
+
+	AilmentInflict inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
+
+	void inflict(OwnedHitProperty property) {}
+
+	void inflictPre(OwnedHitProperty property) {}
+
+	int hurt(BattleEntity origin, int amount, boolean display) {}
+
+	void drawHud(CustomSpriteBatch batch, float xOfs, float yOfs, float width, float height) {}
+
+	void powerupAttack(HitProperty property) {}
+
+}

@@ -1,0 +1,23 @@
+abstract GameModeConfig(Object) {
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	abstract List getProperties();
+
+	void configure(Battle battle, PlayerConfigurator configurator) {}
+
+	abstract BattleMode createMode();
+
+	boolean supports(Array parties) {}
+
+	abstract BattleData createData(PlayerConfigurator configurator);
+
+	abstract Party[] getSlotParties();
+
+}

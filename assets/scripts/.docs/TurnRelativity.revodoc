@@ -1,0 +1,27 @@
+enum TurnRelativity {
+
+	AROUND,
+ 	LEFT,
+ 	RIGHT,
+ 	TOWARD_TARGET,
+ 	AWAY_FROM_TARGET,
+ 	LIKE_TARGET,
+ 	UNLIKE_TARGET;
+
+	final boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	final int compareTo(TurnRelativity arg0) {}
+
+	final String name() {}
+
+	final int ordinal() {}
+
+	static TurnRelativity[] values() {}
+
+	static TurnRelativity valueOf(String name) {}
+
+}

@@ -1,0 +1,64 @@
+final RainbowColor(CColor) {
+
+	float r;
+	float g;
+	float b;
+	float a;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	CColor add(float arg0, float arg1, float arg2, float arg3) {}
+
+	CColor add(Color arg0) {}
+
+	CColor set(Color arg0) {}
+
+	CColor set(float arg0, float arg1, float arg2, float arg3) {}
+
+	Color set(int arg0) {}
+
+	CColor mul(Color arg0) {}
+
+	CColor mul(float arg0, float arg1, float arg2, float arg3) {}
+
+	CColor mul(float arg0) {}
+
+	CColor lerp(Color arg0, float arg1) {}
+
+	CColor lerp(float arg0, float arg1, float arg2, float arg3, float arg4) {}
+
+	Color clamp() {}
+
+	CColor sub(Color arg0) {}
+
+	CColor sub(float arg0, float arg1, float arg2, float arg3) {}
+
+	CColor cpy() {}
+
+	int toIntBits() {}
+
+	Color fromHsv(float[] arg0) {}
+
+	Color fromHsv(float arg0, float arg1, float arg2) {}
+
+	float toFloatBits() {}
+
+	Color premultiplyAlpha() {}
+
+	float[] toHsv(float[] arg0) {}
+
+	CColor mulAlpha(float arg0) {}
+
+	void update(float arg0) {}
+
+	void update() {}
+
+	void random() {}
+
+}

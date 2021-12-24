@@ -1,0 +1,67 @@
+HitExplodeListener(Object) : BattleEntityListener, Danger {
+
+	new(BattleEntity user, VocElement elementHit, int amount, HitProperty property, AttackEffect effect) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	float getDangerPriority(BattleEntity entity) {}
+
+	boolean isDangerous(BattleEntity entity, int x, int y) {}
+
+	float getDangerIgnore(int level) {}
+
+	void disappear(int x, int y, DangerDisappearListener onDisappear) {}
+
+	void actionTriggered(Runnable action) {}
+
+	void actionTriggered(Object[] action) {}
+
+	boolean isActionRollback(Object[] action) {}
+
+	void add() {}
+
+	void remove() {}
+
+	void update(float delta) {}
+
+	void cast(AttackPlan plan) {}
+
+	void init() {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void dispose() {}
+
+	PatchworkStateId setState(PatchworkStateId id) {}
+
+	void attack(Attack attack) {}
+
+	CColor getTint() {}
+
+	void inflict(OwnedHitProperty property) {}
+
+	double crush(double amount, int crushStrength) {}
+
+	void inflictPre(OwnedHitProperty property) {}
+
+	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
+
+	int hurt(BattleEntity origin, int amount, boolean display) {}
+
+	int heal(BattleEntity origin, int amount, boolean display) {}
+
+	void inflictPost(OwnedHitProperty property) {}
+
+	AilmentInflict inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
+
+	void drawHud(CustomSpriteBatch batch, float xOfs, float yOfs, float width, float height) {}
+
+	void explode() {}
+
+	int getHurtAmount() {}
+
+}

@@ -1,0 +1,159 @@
+ThrowSpawnAttack(PanelSelectAttack) : LandAction {
+
+	Array attackTasks;
+	String name;
+	int level;
+	int gaugeIndex;
+	double gaugeConsume;
+	boolean timerStopped;
+	float timer;
+	float duration;
+	boolean interruptable;
+	boolean moveable;
+	boolean locksControls;
+	boolean locksTurn;
+	KeyCode keyCode;
+	PatchworkStateId castAnimation;
+	PatchworkStateId attackAnimation;
+	Party party;
+	BattleEntity user;
+	BattleEntityList targets;
+	AttackPlan plan;
+	Object origin;
+	WrappedAttackSender wrappedSender;
+	OwnedHitProperty property;
+	Array particles;
+	int selectedXTile;
+	int selectedYTile;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	Attack clone() {}
+
+	boolean isActionRollback(Object[] arg0) {}
+
+	void actionTriggered(Object[] arg0) {}
+
+	final void actionTriggered(Runnable arg0) {}
+
+	boolean triggerButton(ButtonEvent arg0) {}
+
+	boolean keyDown(int arg0) {}
+
+	boolean triggerTouch(TouchEvent arg0) {}
+
+	boolean addButtonTips(ButtonTipList arg0) {}
+
+	boolean keyTyped(char arg0) {}
+
+	boolean triggerType(int arg0) {}
+
+	int getInputPriority() {}
+
+	boolean keyUp(int arg0) {}
+
+	void controllerConnected(Controller arg0) {}
+
+	void controllerDisconnected(Controller arg0) {}
+
+	String getName() {}
+
+	void update(float arg0) {}
+
+	Attack cast(BattleEntity arg0, AttackPlan arg1) {}
+
+	final BattleField getField() {}
+
+	void start() {}
+
+	final void copy(Attack arg0) {}
+
+	BattleEntity getTarget() {}
+
+	void flip() {}
+
+	final float getY(int arg0) {}
+
+	final float getX(int arg0) {}
+
+	SoundContainer playSound(SoundInfo arg0) {}
+
+	boolean active() {}
+
+	final Origin getOrigin(int arg0) {}
+
+	void finish() {}
+
+	final Controller getController() {}
+
+	final void triggerAction(Object[] arg0) {}
+
+	boolean attackAnimation(float arg0) {}
+
+	boolean castAnimation(float arg0) {}
+
+	boolean fillGauges() {}
+
+	final int getXTile() {}
+
+	final int getYTile() {}
+
+	void updateAttackTasks(float arg0) {}
+
+	final BattleEntityList getBattleEntities() {}
+
+	void increaseGauge(double arg0) {}
+
+	double getGaugeProgress() {}
+
+	void scheduleAction(int arg0, float arg1) {}
+
+	void scheduleAction(Runnable arg0, float arg1) {}
+
+	AttackPortal getPortal(BattleEntity arg0, float arg1, float arg2, float arg3) {}
+
+	final int getXTileInFront() {}
+
+	void addWrappers(AttackWrappers arg0) {}
+
+	boolean reduceGauge(double arg0) {}
+
+	boolean reduceGauge() {}
+
+	boolean acceptsInput(ButtonEvent arg0) {}
+
+	void runAction(int arg0) {}
+
+	final int getTurn() {}
+
+	Attack getWrapped(AttackWrapper arg0, boolean arg1, boolean arg2) {}
+
+	Attack charge() {}
+
+	boolean setAnimationState(PatchworkStateId arg0, float arg1) {}
+
+	boolean hasAnimationState(PatchworkStateId arg0) {}
+
+	void flickerField(BattleField arg0, int arg1, int arg2) {}
+
+	void setDefTile() {}
+
+	List getPatchworkData() {}
+
+	boolean disappear() {}
+
+	void land(int arg0, int arg1, boolean arg2) {}
+
+	boolean isBannedPanel(BattleEntity arg0, int arg1, int arg2, int arg3, int arg4) {}
+
+	void limit() {}
+
+	BattleEntity getThrown() {}
+
+}

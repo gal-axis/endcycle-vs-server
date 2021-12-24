@@ -1,0 +1,174 @@
+DefaultBattlePlayer(BattlePlayer) {
+
+	final Array buttons;
+	ClientPlayer client;
+	final BattleEntity entity;
+	Battle battle;
+	boolean proMode;
+	boolean roleSwitchedLeft;
+	boolean roleSwitchedRight;
+	BattlePlayerIndicator indicator;
+	VocBar vocBar;
+	VocUnlockDisplay vocDisplay;
+	VocChain chain;
+	boolean leftPressed;
+	boolean rightPressed;
+	boolean upPressed;
+	boolean downPressed;
+	boolean nonePressed;
+	final Point origin;
+	final Point move;
+	final Point moveBuffer;
+	float xSpeed;
+	float ySpeed;
+	float moveBufferTime;
+	float moveReaction;
+	float moveReactionTime;
+	KeyCode bufferCode;
+	int bufferedIndex;
+	VocEntry buffered;
+	float vocBufferTime;
+
+	new(BattleEntity arg0) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	boolean triggerButton(ButtonEvent arg0) {}
+
+	boolean keyDown(int arg0) {}
+
+	boolean triggerTouch(TouchEvent arg0) {}
+
+	boolean addButtonTips(ButtonTipList arg0) {}
+
+	boolean keyTyped(char arg0) {}
+
+	boolean triggerType(int arg0) {}
+
+	int getInputPriority() {}
+
+	boolean keyUp(int arg0) {}
+
+	void controllerConnected(Controller arg0) {}
+
+	void controllerDisconnected(Controller arg0) {}
+
+	void add() {}
+
+	void remove() {}
+
+	void update(float arg0) {}
+
+	void init() {}
+
+	void interrupt() {}
+
+	void dispose() {}
+
+	void hit(HitProperty arg0) {}
+
+	boolean isAuthorative() {}
+
+	void hitEntity(BattleEntity arg0, OwnedHitProperty arg1) {}
+
+	BattleEntityActionSave getSave() {}
+
+	final Controller getController() {}
+
+	void move(int arg0, int arg1) {}
+
+	int getGauge(VocEntry arg0, int arg1) {}
+
+	void vibrateController(float arg0, float arg1) {}
+
+	GameScreenMessage createRewardMessage(RandomVocRewards arg0, Random arg1, boolean arg2) {}
+
+	boolean sendClientInput(Object arg0, boolean arg1) {}
+
+	MockController setKeyPressed(KeyCode arg0, boolean arg1) {}
+
+	void applyInput(float arg0, Object arg1) {}
+
+	boolean applyInput(KeyCode arg0, boolean arg1, boolean arg2) {}
+
+	void clientInput(ButtonEvent arg0) {}
+
+	void cancelMove() {}
+
+	void setCombat(boolean arg0) {}
+
+	boolean canUpgrade() {}
+
+	void createHud(int arg0) {}
+
+	void upgrade() {}
+
+	void setHudButtons(BattleHUD arg0) {}
+
+	boolean cast(VocEntry arg0, int arg1, KeyCode arg2) {}
+
+	void buffer(VocEntry arg0, int arg1, KeyCode arg2) {}
+
+	boolean attack(AttackPlan arg0) {}
+
+	int xTile() {}
+
+	int yTile() {}
+
+	boolean use(KeyCode arg0, int arg1, VocEntry arg2) {}
+
+	void turn() {}
+
+	void startMove(int arg0, int arg1) {}
+
+	void bufferMove(int arg0, int arg1) {}
+
+	void updateButtons() {}
+
+	boolean isPanelRun(int arg0, int arg1) {}
+
+	void updateMove(int arg0, int arg1) {}
+
+	void updateMove(float arg0) {}
+
+	void updateMove() {}
+
+	void resetButtons() {}
+
+	void resetMoveBuffer() {}
+
+	boolean triggerVoc(ButtonEvent arg0) {}
+
+	void wiggleCrushGauge() {}
+
+	AttackPlan createAttackPlan(VocEntry arg0, KeyCode arg1, int arg2) {}
+
+	boolean triggerSet(ButtonEvent arg0) {}
+
+	void updateVoc(float arg0) {}
+
+	void updateCurrentSet(boolean arg0) {}
+
+	void resetVocBuffer() {}
+
+	void addMove(int arg0, int arg1) {}
+
+	boolean useVoc(int arg0, KeyCode arg1) {}
+
+	boolean canAttack() {}
+
+	boolean useUltra(KeyCode arg0) {}
+
+	void moveCurrentSet(int arg0) {}
+
+	boolean canBuffer(VocEntry arg0, int arg1) {}
+
+	boolean triggerMove(ButtonEvent arg0) {}
+
+	void setCurrentSet(int arg0, boolean arg1) {}
+
+}

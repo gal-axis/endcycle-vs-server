@@ -1,0 +1,52 @@
+final ID(Object) : Comparable, Serializable {
+
+	long group;
+	long id;
+
+	new() {}
+
+	new(long arg0) {}
+
+	new(long arg0, long arg1) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void write(Json arg0) {}
+
+	void read(Json arg0, JsonValue arg1) {}
+
+	int compareTo(ID arg0) {}
+
+	boolean equals(long arg0, long arg1) {}
+
+	static boolean equals(ID arg0, ID arg1) {}
+
+	static int compare(ID arg0, ID arg1) {}
+
+	void increment() {}
+
+	static String combine(ID arg0, String arg1) {}
+
+	static ID copy(ID arg0) {}
+
+	void set(ID arg0) {}
+
+	static ID temp(long arg0, long arg1) {}
+
+	static ID temp(long arg0) {}
+
+	static IdEntity findObject(List arg0, ID arg1) {}
+
+	static IdEntity findObject(Array arg0, ID arg1) {}
+
+	static ID fromString(String arg0) {}
+
+	static int findObjectIndex(Array arg0, ID arg1) {}
+
+	static int findObjectIndex(List arg0, ID arg1) {}
+
+}

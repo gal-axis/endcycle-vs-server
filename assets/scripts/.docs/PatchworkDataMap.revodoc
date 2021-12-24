@@ -1,0 +1,29 @@
+PatchworkDataMap(Object) {
+
+	new(String path, String pathPatch, String pathMeta, String pathMetaPatch) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void load() {}
+
+	void save() {}
+
+	boolean occupied(ID id) {}
+
+	PatchworkData createData() {}
+
+	List getAllData() {}
+
+	List getPatchworks() {}
+
+	ID getNextId() {}
+
+	List getAllPatchworks() {}
+
+	List getPatchworkMetaData() {}
+
+}

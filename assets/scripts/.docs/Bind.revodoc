@@ -1,0 +1,15 @@
+interface @Bind {
+
+	boolean optimizePositive() default false;
+
+	Class serializer() default null;
+
+	Class serializerFactory() default null;
+
+	Class valueClass() default Object;
+
+	boolean canBeNull() default true;
+
+	boolean variableLengthEncoding() default true;
+
+}

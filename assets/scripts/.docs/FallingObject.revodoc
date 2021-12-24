@@ -1,0 +1,107 @@
+FallingObject(Object) : ScreenObject, ShadowEntity, Danger, AttackParticleObject {
+
+	final DrawableState drawable;
+	final int targetX;
+	final int targetY;
+	final ShaderManager shaderManager;
+	final BoundedFloat delay;
+	final BoundedFloat flying;
+	final BoundedFloat disappear;
+	final float speed;
+	final float offsetX;
+	final float offsetY;
+	FallingLandAction landAction;
+	AttackParticleSpawner particles;
+	Color tint;
+	Battle battle;
+	float tileX;
+	float tileY;
+	boolean empty;
+
+	new(Drawable drawable, int targetX, int targetY, float delay, float speed, float fadeOut, float offsetX, float offsetY) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void dispose() {}
+
+	void update(float delta) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void show(GameScreen screen) {}
+
+	void hide(GameScreen screen) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	float getComparisonKey() {}
+
+	byte getLayer() {}
+
+	Origin getOrigin() {}
+
+	float getWidth() {}
+
+	float getHeight() {}
+
+	void addObject(ScreenObject object) {}
+
+	float getCenterY() {}
+
+	float getCenterX() {}
+
+	float getDangerPriority(BattleEntity entity) {}
+
+	boolean isDangerous(BattleEntity entity, int x, int y) {}
+
+	void disappear(int x, int y, DangerDisappearListener onDisappear) {}
+
+	float getDangerIgnore(int level) {}
+
+	float getYScale() {}
+
+	float getXScale() {}
+
+	Patchwork getPatchwork() {}
+
+	boolean isFlipY() {}
+
+	boolean isFlipX() {}
+
+	List getShadowDrawables() {}
+
+	float getShadowZ() {}
+
+	float getShadowX() {}
+
+	float getShadowAlpha() {}
+
+	float getShadowY() {}
+
+	float getOffsetX() {}
+
+	float getSpeed() {}
+
+	float getDelay() {}
+
+	float getFadeout() {}
+
+	float getDrawX() {}
+
+	float getOffsetY() {}
+
+	float getDrawY() {}
+
+}

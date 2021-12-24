@@ -1,0 +1,37 @@
+CrushGauge(Object) {
+
+	final BoundedFloat reduceTimer;
+	final BoundedFloat reduceMultiplier;
+	BattleEntity entity;
+	double amount;
+	double tintTimer;
+	double speed;
+	boolean crushed;
+
+	new(BattleEntity entity) {}
+
+	boolean equals(Object o) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void update(float delta) {}
+
+	void reset() {}
+
+	void increase(double amount, int crushStrength) {}
+
+	void increase(double amount) {}
+
+	void crush() {}
+
+	void decrease(double amount) {}
+
+	void uncrush() {}
+
+	void setAmount(double amount) {}
+
+	void setGauges(boolean filled) {}
+
+}

@@ -1,0 +1,40 @@
+final DrawableLoader(Object) {
+
+	static final String IMAGE_PATH;
+	static final String DATA_PATH;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	static DrawableLoader get() {}
+
+	static void init() {}
+
+	TextureRegion getRegion(Long mod, String path, boolean required, int x, int y, int width, int height) {}
+
+	TextureRegion getRegion(DrawableFrameData data, boolean colorblind) {}
+
+	DrawableData getData(ID id) {}
+
+	void dispose(boolean mods) {}
+
+	static DrawableImage getImage(long group, long id) {}
+
+	DrawableImage getImage(ID id) {}
+
+	Drawable createDrawable(ID id) {}
+
+	static String getColorblindPath(String path) {}
+
+	static boolean isMock() {}
+
+	List getAllData() {}
+
+	static void enableMock() {}
+
+}

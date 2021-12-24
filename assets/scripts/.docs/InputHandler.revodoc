@@ -1,0 +1,53 @@
+InputHandler(Object) : InputListener {
+
+	Controller last;
+	boolean lastTouch;
+	Array listeners;
+
+	new() {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void controllerConnected(Controller controller) {}
+
+	void controllerDisconnected(Controller controller) {}
+
+	boolean triggerTouch(TouchEvent event) {}
+
+	boolean triggerButton(ButtonEvent event) {}
+
+	boolean keyDown(int keycode) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean keyUp(int keycode) {}
+
+	int getInputPriority() {}
+
+	boolean triggerType(int character) {}
+
+	boolean keyTyped(char character) {}
+
+	void add(InputListener listener) {}
+
+	boolean remove(InputListener listener) {}
+
+	InputListener type(int character) {}
+
+	void clear() {}
+
+	InputListener button(ButtonEvent event) {}
+
+	InputListener touch(TouchEvent event) {}
+
+	boolean isFree() {}
+
+	InputListener down(int keycode) {}
+
+	InputListener up(int keycode) {}
+
+}

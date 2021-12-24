@@ -1,0 +1,191 @@
+RecordLabel(MenuLabel) {
+
+	Origin origin;
+	GameScreen screen;
+	boolean showing;
+
+	new() {}
+
+	final boolean equals(Object obj) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	void dispose() {}
+
+	void update(float delta) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void draw(CustomSpriteBatch batch, float x, float y) {}
+
+	void show(GameScreen screen) {}
+
+	void hide(GameScreen screen) {}
+
+	final Origin getOrigin() {}
+
+	byte getLayer() {}
+
+	float getComparisonKey() {}
+
+	final void removeObject() {}
+
+	final void addObject(ScreenObject object) {}
+
+	final SoundContainer playSound(Sounds sound) {}
+
+	SoundContainer playSound(SoundInfo sound) {}
+
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
+
+	void actionTriggered(MenuElementAction action) {}
+
+	MenuElementGroup getParent() {}
+
+	MenuElement setParent(MenuElementGroup parent) {}
+
+	void calculateSize() {}
+
+	MenuElement setEnabled(boolean enabled) {}
+
+	boolean select() {}
+
+	float getX() {}
+
+	float getY() {}
+
+	MenuElement getAbsoluteParent() {}
+
+	MenuElement setLayer(byte layer) {}
+
+	float getWidth() {}
+
+	float getHeight() {}
+
+	MenuLabel setHeight(float height) {}
+
+	boolean touch(TouchEvent trigger) {}
+
+	final void triggerAction(MenuElementActionType type) {}
+
+	MenuElement setX(float x) {}
+
+	MenuElement setY(float y) {}
+
+	float calcX() {}
+
+	float calcY() {}
+
+	MenuLabel setWidth(float width) {}
+
+	boolean isFocused() {}
+
+	int getAnchorHAlign() {}
+
+	float getAbsoluteY() {}
+
+	void setCursor(Rectangle rectangle) {}
+
+	boolean canDrawCursor() {}
+
+	boolean isAbsoluteHidden() {}
+
+	MenuButtonTips getButtonTips() {}
+
+	boolean isFocusable() {}
+
+	MenuElement setVAlign(int vAlign) {}
+
+	int getHAlign() {}
+
+	MenuElement setAnchorHAlign(int anchorHAlign) {}
+
+	void addElements(Array elements, float x, float y) {}
+
+	MenuElement setAnchorVAlign(int anchorVAlign) {}
+
+	MenuElement getAnchor() {}
+
+	MenuElement setFocused(boolean focused) {}
+
+	int getVAlign() {}
+
+	float getAbsoluteX() {}
+
+	int getAnchorVAlign() {}
+
+	MenuElement setHAlign(int hAlign) {}
+
+	MenuElement setHidden(boolean hidden) {}
+
+	MenuElement setAnchor(MenuElement anchor) {}
+
+	boolean isEnabled() {}
+
+	boolean isTouching(float x, float y) {}
+
+	Set getActionListeners() {}
+
+	final void setMenuControllerSelection(MenuElement element) {}
+
+	MenuElement setFocusable(boolean focusable) {}
+
+	StringCache getCache() {}
+
+	String getText() {}
+
+	MenuLabel setText(String text) {}
+
+	MenuLabel setBackground(MenuThemeDrawable background) {}
+
+	float getBorder() {}
+
+	MenuLabel setFont(Fonts font) {}
+
+	MenuLabel setTextVAlign(int textVAlign) {}
+
+	float getTextWidth() {}
+
+	void drawString(CustomSpriteBatch batch, float x, float y) {}
+
+	MenuLabel setBorder(float border) {}
+
+	MenuThemeDrawable getBackground() {}
+
+	boolean isMonoSpace() {}
+
+	MenuElementShowAnim getShowAnimation() {}
+
+	int getTextVAlign() {}
+
+	int getTextHAlign() {}
+
+	void updateCache() {}
+
+	MenuLabel setMonoSpace(boolean monoSpace) {}
+
+	void drawBackground(CustomSpriteBatch batch, float x, float y, float width, float height) {}
+
+	float getPosition(int align, float size) {}
+
+	Fonts getFont() {}
+
+	MenuLabel setTextHAlign(int textHAlign) {}
+
+	MenuLabel setCache(StringCache cache) {}
+
+	MenuLabel setText(String text, boolean record) {}
+
+}

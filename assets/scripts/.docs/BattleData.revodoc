@@ -1,0 +1,46 @@
+final BattleData {
+
+	ID id;
+	String dataName;
+	LocalizedMessage name;
+	boolean run;
+	ID field;
+	ID background;
+	ID music;
+	double time;
+	boolean timeWin;
+	Script startScript;
+	Script timeoutScript;
+	Array entityShells;
+	Array entityGoals;
+	Array modes;
+	Array spawnPoints;
+	Array liberations;
+
+	new() {}
+
+	new(BattleData arg0, boolean arg1) {}
+
+	final boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	final int hashCode() {}
+
+	final ID getId() {}
+
+	String getDataName() {}
+
+	String getName() {}
+
+	GameScreen test(GameScreen arg0, Object arg1) {}
+
+	boolean hasPlayer() {}
+
+	void addEntityShell(EntityShell arg0) {}
+
+	boolean hasMode(GameMode arg0) {}
+
+	boolean hasMode(String arg0) {}
+
+}

@@ -1,0 +1,77 @@
+BattleCamera(Object) : ScreenObject {
+
+	final NumDisplay speed;
+	final Array offsets;
+	final Battle battle;
+	NumDisplay x;
+	NumDisplay y;
+	boolean locked;
+	Vector2 focus;
+
+	new(Battle battle) {}
+
+	boolean equals(Object arg0) {}
+
+	String toString() {}
+
+	int hashCode() {}
+
+	void dispose() {}
+
+	void update(float delta) {}
+
+	boolean remove() {}
+
+	String getName() {}
+
+	void init(GameScreen screen) {}
+
+	boolean isHidden() {}
+
+	void resize(boolean landscape, int width, int height) {}
+
+	void hide(GameScreen screen) {}
+
+	void show(GameScreen screen) {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	Origin getOrigin() {}
+
+	byte getLayer() {}
+
+	float getComparisonKey() {}
+
+	void reset() {}
+
+	float getOffset(int size) {}
+
+	void sync() {}
+
+	float getX() {}
+
+	float getY() {}
+
+	BattleEntity getCameraFocus() {}
+
+	void setPosition(float x, float y) {}
+
+	void moveX(float x) {}
+
+	float getFocusX() {}
+
+	float getOffsetX() {}
+
+	float getFocusY() {}
+
+	void moveY(float y) {}
+
+	float getYReal() {}
+
+	void limitCamera(BattleEntity focused) {}
+
+	boolean isFocusing() {}
+
+	float getXReal() {}
+
+}

@@ -44,13 +44,13 @@ SpawnedEntityShell(LoneEntityShell) {
 
 	void set(LoneEntityShell shell) {}
 
-	BattleEntityData getData(ID id) {}
-
-	void setAction(BattleEntity entity) {}
-
 	BattleEntity generate(ID id, int x, int y) {}
 
 	BattleEntity generate(int x, int y, BattleEntityData data, CustomCache custom) {}
+
+	BattleEntityData getData(ID id) {}
+
+	void setAction(BattleEntity entity) {}
 
 	Patchwork getPatchwork() {}
 

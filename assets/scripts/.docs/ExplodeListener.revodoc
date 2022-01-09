@@ -10,11 +10,11 @@ ExplodeListener(Object) : BattleEntityListener, GameEventListener {
 
 	void handle(GameEvent event) {}
 
-	void actionTriggered(Runnable action) {}
+	boolean isActionRollback(Object[] action) {}
 
 	void actionTriggered(Object[] action) {}
 
-	boolean isActionRollback(Object[] action) {}
+	void actionTriggered(Runnable action) {}
 
 	void add() {}
 
@@ -30,29 +30,31 @@ ExplodeListener(Object) : BattleEntityListener, GameEventListener {
 
 	void dispose() {}
 
-	PatchworkStateId setState(PatchworkStateId id) {}
-
 	void attack(Attack attack) {}
+
+	PatchworkStateId setState(PatchworkStateId id) {}
 
 	CColor getTint() {}
 
-	void inflict(OwnedHitProperty property) {}
-
 	double crush(double amount, int crushStrength) {}
-
-	void inflictPre(OwnedHitProperty property) {}
-
-	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
-
-	int hurt(BattleEntity origin, int amount, boolean display) {}
-
-	int heal(BattleEntity origin, int amount, boolean display) {}
-
-	void inflictPost(OwnedHitProperty property) {}
 
 	AilmentInflict inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
 
+	int heal(BattleEntity origin, int amount, Color display) {}
+
+	void inflictPre(OwnedHitProperty property) {}
+
+	int hurt(BattleEntity origin, int amount, Color display) {}
+
+	void inflict(OwnedHitProperty property) {}
+
+	void inflictPost(OwnedHitProperty property) {}
+
+	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
+
 	void drawHud(CustomSpriteBatch batch, float xOfs, float yOfs, float width, float height) {}
+
+	void highlight(BattleEntity entity, Color color, LocalizedMessage message) {}
 
 	void explode() {}
 

@@ -38,29 +38,29 @@ abstract SlideInMessage(GameScreenMessage) {
 
 	final Origin getOrigin() {}
 
-	byte getLayer() {}
-
 	float getComparisonKey() {}
+
+	byte getLayer() {}
 
 	final void removeObject() {}
 
 	final void addObject(ScreenObject object) {}
 
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
 	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(SoundInfo sound) {}
-
-	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
 	final void removeInitializeListener(Runnable runnable) {}
 
-	final void removeDisposeListener(Runnable runnable) {}
+	final void addInitializeListener(Runnable runnable) {}
 
 	final void addDisposeListener(Runnable runnable) {}
 
-	final void addInitializeListener(Runnable runnable) {}
+	final void removeDisposeListener(Runnable runnable) {}
 
 	void scheduleMessage(GameScreenMessage message) {}
 
@@ -68,10 +68,10 @@ abstract SlideInMessage(GameScreenMessage) {
 
 	void setSpeed(float speed) {}
 
+	void setStay() {}
+
 	float getPosition() {}
 
 	boolean isStaying() {}
-
-	void setStay() {}
 
 }

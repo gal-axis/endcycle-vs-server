@@ -45,9 +45,9 @@ RogueBattleMode(ScoredBattleMode) : Consumer {
 
 	void hide(GameScreen screen) {}
 
-	float getComparisonKey() {}
-
 	Origin getOrigin() {}
+
+	float getComparisonKey() {}
 
 	byte getLayer() {}
 
@@ -57,76 +57,76 @@ RogueBattleMode(ScoredBattleMode) : Consumer {
 
 	String getDiscordMessage(Party winner) {}
 
-	Looter createLooter() {}
-
 	ScreenObject createStarter() {}
 
-	boolean isDespawn(BattleEntity entity) {}
+	Looter createLooter() {}
 
 	boolean isSpawn(BattleEntity entity) {}
 
+	boolean isDespawn(BattleEntity entity) {}
+
 	boolean showStart() {}
-
-	void addLoot(Looter looter) {}
-
-	LocalizedMessage getLoseMessage() {}
-
-	void calculateTint(BattleEntity entity, CColor color) {}
 
 	boolean isRestart() {}
 
-	int adjustDamage(BattleEntity entity, int damage) {}
-
-	double adjustGaugeSpeed(BattleEntity entity) {}
+	BattlePlayer createPlayer(BattleEntity entity) {}
 
 	boolean loot() {}
 
-	BattlePlayer createPlayer(BattleEntity entity) {}
+	int adjustDamage(BattleEntity entity, int damage) {}
+
+	LocalizedMessage getLoseMessage() {}
+
+	double adjustGaugeSpeed(BattleEntity entity) {}
+
+	void addLoot(Looter looter) {}
+
+	void calculateTint(BattleEntity entity, CColor color) {}
 
 	void sendServerUpdate(List messages) {}
 
-	void initHUD(BattleHUD hud) {}
+	void finish(Party winner) {}
 
 	String getBattleName(String name) {}
 
-	void finish(Party winner) {}
+	void initHUD(BattleHUD hud) {}
 
 	String createTeamName(Party party) {}
 
-	void updateScoreDisplay(int amount) {}
-
 	void initScore() {}
-
-	void increaseWave() {}
 
 	String getWaveString() {}
 
+	void playerHeal(BattleEntity entity, int amount) {}
+
+	void setHideScore(boolean hideScore) {}
+
+	void saveScore() {}
+
 	void entityDefeat(boolean over, boolean enemyDefeated) {}
+
+	void enemyHurt(BattleEntity entity, int amount) {}
+
+	void increaseWave() {}
 
 	void addScore(float x, float y, int score) {}
 
 	void addScore(BattleEntity entity, int score) {}
 
-	void playerHeal(BattleEntity entity, int amount) {}
-
-	void saveScore() {}
-
-	void enemyHurt(BattleEntity entity, int amount) {}
-
-	void setHideScore(boolean hideScore) {}
+	void updateScoreDisplay(int amount) {}
 
 	void accept(BattleEntity entity) {}
 
-	void showRewardMessage(int index) {}
-
-	PlayerUpgrades getUpgrades(BattlePlayer controller) {}
+	void fillBattles() {}
 
 	boolean isBoss() {}
 
-	void fillBattles() {}
-
 	void randomizeBattle() {}
 
+	PlayerUpgrades getUpgrades(BattlePlayer controller) {}
+
 	void finishUpgrade(int index) {}
+
+	void showRewardMessage(int index) {}
 
 }

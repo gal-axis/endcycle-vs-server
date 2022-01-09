@@ -16,24 +16,24 @@ FrameBuffer {
 
 	void end(int arg0, int arg1, int arg2, int arg3) {}
 
-	void bind() {}
+	int getHeight() {}
 
 	int getWidth() {}
 
-	int getHeight() {}
-
 	void begin() {}
-
-	Texture getColorBufferTexture() {}
 
 	static void unbind() {}
 
-	Array getTextureAttachments() {}
+	void bind() {}
 
-	int getDepthBufferHandle() {}
+	Texture getColorBufferTexture() {}
 
 	int getStencilBufferHandle() {}
 
 	int getFramebufferHandle() {}
+
+	Array getTextureAttachments() {}
+
+	int getDepthBufferHandle() {}
 
 }

@@ -68,11 +68,9 @@ VocPreviewElement(SimpleMenuElement) {
 
 	boolean select() {}
 
-	float getX() {}
-
 	float getY() {}
 
-	MenuElement setLayer(byte layer) {}
+	float getX() {}
 
 	float getWidth() {}
 
@@ -80,63 +78,17 @@ VocPreviewElement(SimpleMenuElement) {
 
 	MenuElement setHeight(float height) {}
 
-	MenuElement getAbsoluteParent() {}
+	MenuElement setLayer(byte layer) {}
 
 	boolean touch(TouchEvent trigger) {}
 
 	final void triggerAction(MenuElementActionType type) {}
 
+	MenuElement getAbsoluteParent() {}
+
 	MenuElement setY(float y) {}
 
 	MenuElement setX(float x) {}
-
-	MenuElement setFocusable(boolean focusable) {}
-
-	boolean isTouching(float x, float y) {}
-
-	MenuElement getAnchor() {}
-
-	float getAbsoluteX() {}
-
-	void setCursor(Rectangle rectangle) {}
-
-	MenuElement setAnchor(MenuElement anchor) {}
-
-	int getAnchorHAlign() {}
-
-	MenuElement setAnchorHAlign(int anchorHAlign) {}
-
-	boolean canDrawCursor() {}
-
-	MenuElement setVAlign(int vAlign) {}
-
-	MenuElement setHAlign(int hAlign) {}
-
-	MenuButtonTips getButtonTips() {}
-
-	int getVAlign() {}
-
-	void addElements(Array elements, float x, float y) {}
-
-	boolean isFocused() {}
-
-	float getAbsoluteY() {}
-
-	boolean isEnabled() {}
-
-	MenuElement setFocused(boolean focused) {}
-
-	boolean isAbsoluteHidden() {}
-
-	boolean isFocusable() {}
-
-	int getAnchorVAlign() {}
-
-	MenuElement setAnchorVAlign(int anchorVAlign) {}
-
-	int getHAlign() {}
-
-	MenuElement setHidden(boolean hidden) {}
 
 	float calcX() {}
 
@@ -144,9 +96,59 @@ VocPreviewElement(SimpleMenuElement) {
 
 	MenuElement setWidth(float width) {}
 
+	MenuElement setFocusable(boolean focusable) {}
+
 	final void setMenuControllerSelection(MenuElement element) {}
 
 	Set getActionListeners() {}
+
+	boolean isTouching(float x, float y) {}
+
+	boolean isAbsoluteHidden() {}
+
+	MenuElement getAnchor() {}
+
+	int getAnchorVAlign() {}
+
+	boolean isFocusable() {}
+
+	MenuElement setAnchorVAlign(int anchorVAlign) {}
+
+	boolean isFocused() {}
+
+	MenuElement setAnchor(MenuElement anchor) {}
+
+	int getAnchorHAlign() {}
+
+	MenuElement setHidden(boolean hidden) {}
+
+	float getAbsoluteX() {}
+
+	float getAbsoluteY() {}
+
+	MenuElement setVAlign(int vAlign) {}
+
+	boolean canDrawCursor() {}
+
+	MenuElement setHAlign(int hAlign) {}
+
+	MenuElementController findController() {}
+
+	MenuButtonTips getButtonTips() {}
+
+	int getHAlign() {}
+
+	void addElements(Array elements, float x, float y) {}
+
+	int getVAlign() {}
+
+	void setCursor(Rectangle rectangle) {}
+
+	MenuElement setAnchorHAlign(int anchorHAlign) {}
+
+	boolean isEnabled() {}
+
+	MenuElement setFocused(boolean focused) {}
 
 	void drawElement(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 

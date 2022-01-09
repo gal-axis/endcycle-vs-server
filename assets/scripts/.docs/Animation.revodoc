@@ -12,24 +12,24 @@ Animation(Object) {
 
 	int hashCode() {}
 
-	float getAnimationDuration() {}
-
 	boolean isAnimationFinished(float arg0) {}
 
-	void setPlayMode(PlayMode arg0) {}
-
-	Object[] getKeyFrames() {}
-
-	PlayMode getPlayMode() {}
-
-	void setFrameDuration(float arg0) {}
+	float getAnimationDuration() {}
 
 	Object getKeyFrame(float arg0) {}
 
 	Object getKeyFrame(float arg0, boolean arg1) {}
 
+	float getFrameDuration() {}
+
 	int getKeyFrameIndex(float arg0) {}
 
-	float getFrameDuration() {}
+	void setPlayMode(PlayMode arg0) {}
+
+	PlayMode getPlayMode() {}
+
+	Object[] getKeyFrames() {}
+
+	void setFrameDuration(float arg0) {}
 
 }

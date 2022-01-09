@@ -34,19 +34,19 @@ MenuSlider(MenuElement) : InputListener {
 
 	final Origin getOrigin() {}
 
-	byte getLayer() {}
-
 	float getComparisonKey() {}
+
+	byte getLayer() {}
 
 	final void removeObject() {}
 
 	final void addObject(ScreenObject object) {}
 
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
 	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(SoundInfo sound) {}
-
-	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
@@ -62,13 +62,9 @@ MenuSlider(MenuElement) : InputListener {
 
 	boolean select() {}
 
-	float getX() {}
-
 	float getY() {}
 
-	MenuElement getAbsoluteParent() {}
-
-	MenuElement setLayer(byte layer) {}
+	float getX() {}
 
 	float getWidth() {}
 
@@ -76,13 +72,17 @@ MenuSlider(MenuElement) : InputListener {
 
 	MenuElement setHeight(float height) {}
 
+	MenuElement setLayer(byte layer) {}
+
 	boolean touch(TouchEvent trigger) {}
 
 	final void triggerAction(MenuElementActionType type) {}
 
-	MenuElement setX(float x) {}
+	MenuElement getAbsoluteParent() {}
 
 	MenuElement setY(float y) {}
+
+	MenuElement setX(float x) {}
 
 	float calcX() {}
 
@@ -90,61 +90,65 @@ MenuSlider(MenuElement) : InputListener {
 
 	MenuElement setWidth(float width) {}
 
-	boolean isFocused() {}
-
-	int getAnchorHAlign() {}
-
-	float getAbsoluteY() {}
-
-	void setCursor(Rectangle rectangle) {}
-
-	boolean canDrawCursor() {}
-
-	boolean isAbsoluteHidden() {}
-
-	MenuButtonTips getButtonTips() {}
-
-	boolean isFocusable() {}
-
-	MenuElement setVAlign(int vAlign) {}
-
-	int getHAlign() {}
-
-	MenuElement setAnchorHAlign(int anchorHAlign) {}
-
-	void addElements(Array elements, float x, float y) {}
-
-	MenuElement setAnchorVAlign(int anchorVAlign) {}
-
-	MenuElement getAnchor() {}
-
-	MenuElement setFocused(boolean focused) {}
-
-	int getVAlign() {}
-
-	float getAbsoluteX() {}
-
-	int getAnchorVAlign() {}
-
-	MenuElement setHAlign(int hAlign) {}
-
-	MenuElement setHidden(boolean hidden) {}
-
-	MenuElement setAnchor(MenuElement anchor) {}
-
-	boolean isEnabled() {}
-
-	boolean isTouching(float x, float y) {}
-
-	Set getActionListeners() {}
+	MenuElement setFocusable(boolean focusable) {}
 
 	final void setMenuControllerSelection(MenuElement element) {}
 
-	MenuElement setFocusable(boolean focusable) {}
+	Set getActionListeners() {}
+
+	boolean isTouching(float x, float y) {}
+
+	boolean isAbsoluteHidden() {}
+
+	MenuElement getAnchor() {}
+
+	int getAnchorVAlign() {}
+
+	boolean isFocusable() {}
+
+	MenuElement setAnchorVAlign(int anchorVAlign) {}
+
+	boolean isFocused() {}
+
+	MenuElement setAnchor(MenuElement anchor) {}
+
+	int getAnchorHAlign() {}
+
+	MenuElement setHidden(boolean hidden) {}
+
+	float getAbsoluteX() {}
+
+	float getAbsoluteY() {}
+
+	MenuElement setVAlign(int vAlign) {}
+
+	boolean canDrawCursor() {}
+
+	MenuElement setHAlign(int hAlign) {}
+
+	MenuElementController findController() {}
+
+	MenuButtonTips getButtonTips() {}
+
+	int getHAlign() {}
+
+	void addElements(Array elements, float x, float y) {}
+
+	int getVAlign() {}
+
+	void setCursor(Rectangle rectangle) {}
+
+	MenuElement setAnchorHAlign(int anchorHAlign) {}
+
+	boolean isEnabled() {}
+
+	MenuElement setFocused(boolean focused) {}
 
 	void controllerConnected(Controller controller) {}
 
 	void controllerDisconnected(Controller controller) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
 
 	boolean triggerTouch(TouchEvent event) {}
 
@@ -152,15 +156,13 @@ MenuSlider(MenuElement) : InputListener {
 
 	boolean keyDown(int keycode) {}
 
-	boolean addButtonTips(ButtonTipList tips) {}
+	boolean triggerType(int character) {}
+
+	boolean keyTyped(char character) {}
 
 	boolean keyUp(int keycode) {}
 
 	int getInputPriority() {}
-
-	boolean triggerType(int character) {}
-
-	boolean keyTyped(char character) {}
 
 	float getValue() {}
 
@@ -168,54 +170,54 @@ MenuSlider(MenuElement) : InputListener {
 
 	MenuSliderListener getListener() {}
 
-	MenuElementShowAnim getShowAnimation() {}
-
-	MenuSlider setDisplayValue(boolean displayValue) {}
-
-	MenuSlider setMaximum(float maximum) {}
-
-	MenuSlider setSteps(float steps) {}
+	boolean isMouseDrag() {}
 
 	MenuSlider setAutoSelect(boolean autoSelect) {}
 
-	MenuSlider setMinimum(float minimum) {}
-
-	void stopDragging() {}
-
-	Drawable getSliderKnob() {}
+	boolean isDisplayValue() {}
 
 	float getMinimum() {}
 
-	boolean isDragging() {}
-
-	void changeValue(float value) {}
-
-	boolean isDisplayValue() {}
-
-	float translateToValue(float slider) {}
+	boolean isAutoSelect() {}
 
 	float getMaximum() {}
 
-	boolean isAutoSelect() {}
+	float translateToValue(float slider) {}
 
-	void startDragging() {}
-
-	MenuSlider setMouseDrag(boolean mouseDrag) {}
+	float getDragSpeed() {}
 
 	MenuSlider setDragSpeed(float dragSpeed) {}
 
 	MenuSlider setDragging(boolean dragging) {}
 
-	boolean isMouseDrag() {}
+	MenuSlider setMinimum(float minimum) {}
 
-	float getDragSpeed() {}
+	void changeValue(float value) {}
 
 	float getSteps() {}
 
+	MenuSlider setMouseDrag(boolean mouseDrag) {}
+
 	MenuSlider setListener(MenuSliderListener listener) {}
+
+	Drawable getSliderKnob() {}
+
+	MenuSlider setSteps(float steps) {}
+
+	void stopDragging() {}
+
+	MenuSlider setMaximum(float maximum) {}
+
+	void startDragging() {}
+
+	boolean isDragging() {}
+
+	MenuSlider setDisplayValue(boolean displayValue) {}
 
 	float translateToSlider(float value) {}
 
 	Drawable[] getSliderDrawable() {}
+
+	MenuElementShowAnim getShowAnimation() {}
 
 }

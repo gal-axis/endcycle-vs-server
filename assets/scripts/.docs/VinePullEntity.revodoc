@@ -49,46 +49,42 @@ VinePullEntity(GameScreenObject) : AttackParticleObject {
 
 	final Origin getOrigin() {}
 
-	byte getLayer() {}
-
 	float getComparisonKey() {}
+
+	byte getLayer() {}
 
 	final void removeObject() {}
 
 	final void addObject(ScreenObject object) {}
 
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
 	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(SoundInfo sound) {}
 
-	SoundContainer playSound(float x, float y, SoundInfo sound) {}
-
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
-	float getWidth() {}
+	Vector2 getSize() {}
 
-	float getHeight() {}
-
-	float getCenterY() {}
-
-	float getCenterX() {}
-
-	void hitEntity(int distance, BattleEntity entity) {}
+	Vector2 toCenter(Vector2 center) {}
 
 	void hit() {}
+
+	void hitEntity(int distance, BattleEntity entity) {}
 
 	float getSpeed() {}
 
 	int getDistance() {}
 
-	float getExtend() {}
-
 	boolean isPushed(BattleEntity entity) {}
+
+	boolean attackDone() {}
 
 	void setExtend(float extend) {}
 
-	int getPanels() {}
+	float getExtend() {}
 
-	boolean attackDone() {}
+	int getPanels() {}
 
 }

@@ -49,19 +49,19 @@ final StringDisplay(GameScreenObject) {
 
 	final Origin getOrigin() {}
 
-	byte getLayer() {}
-
 	float getComparisonKey() {}
+
+	byte getLayer() {}
 
 	final void removeObject() {}
 
 	final void addObject(ScreenObject object) {}
 
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
 	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(SoundInfo sound) {}
-
-	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
@@ -75,9 +75,9 @@ final StringDisplay(GameScreenObject) {
 
 	void setTint(float r, float g, float b, float alpha) {}
 
-	void setDisplay(String display) {}
-
 	void setCharacterSpeed(float speed) {}
+
+	void setDisplay(String display) {}
 
 	float getCharacterSpeed() {}
 

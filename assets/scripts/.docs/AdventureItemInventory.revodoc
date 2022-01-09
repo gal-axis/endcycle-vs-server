@@ -19,25 +19,25 @@ AdventureItemInventory(Object) : Serializable {
 
 	void dispose() {}
 
-	void removeItem(AdventureBattleItem arg0) {}
-
 	void removeItem(AdventureBattleItem arg0, BattlePlayer arg1) {}
 
-	AdventureBattleItem addItem(AdventureItem arg0) {}
+	void removeItem(AdventureBattleItem arg0) {}
 
 	AdventureBattleItem getItem(ID arg0) {}
 
-	boolean hasItem(ID arg0, int arg1) {}
+	AdventureBattleItem addItem(AdventureItem arg0) {}
 
 	void finishZone() {}
 
+	boolean hasItem(ID arg0, int arg1) {}
+
 	void removeItems(BattlePlayer arg0) {}
 
-	boolean canHaveItem(AdventureItem arg0) {}
+	void increaseItemAge() {}
 
 	void applyItems(BattlePlayer arg0) {}
 
-	void increaseItemAge() {}
+	boolean canHaveItem(AdventureItem arg0) {}
 
 	void applyItem(AdventureBattleItem arg0, BattlePlayer arg1) {}
 

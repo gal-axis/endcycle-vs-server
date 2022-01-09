@@ -41,33 +41,33 @@ AdventureBattleMode(InstantWinBattleMode) {
 
 	Origin getOrigin() {}
 
-	byte getLayer() {}
-
 	float getComparisonKey() {}
+
+	byte getLayer() {}
 
 	void start() {}
 
 	void stop() {}
 
+	ScreenObject createStarter() {}
+
 	Looter createLooter() {}
 
-	ScreenObject createStarter() {}
+	boolean showStart() {}
 
 	boolean isSpawn(BattleEntity entity) {}
 
 	boolean isDespawn(BattleEntity entity) {}
 
-	boolean showStart() {}
+	double adjustGaugeSpeed(BattleEntity entity) {}
+
+	LocalizedMessage getLoseMessage() {}
+
+	boolean isRestart() {}
 
 	boolean loot() {}
 
 	void addLoot(Looter looter) {}
-
-	LocalizedMessage getLoseMessage() {}
-
-	double adjustGaugeSpeed(BattleEntity entity) {}
-
-	boolean isRestart() {}
 
 	BattlePlayer createPlayer(BattleEntity entity) {}
 
@@ -77,15 +77,15 @@ AdventureBattleMode(InstantWinBattleMode) {
 
 	String getDiscordMessage(Party winner) {}
 
+	void initHUD(BattleHUD hud) {}
+
 	void finish(Party winner) {}
+
+	void sendServerUpdate(List messages) {}
 
 	String createTeamName(Party party) {}
 
-	void initHUD(BattleHUD hud) {}
-
 	String getBattleName(String name) {}
-
-	void sendServerUpdate(List messages) {}
 
 	Party getWinner() {}
 

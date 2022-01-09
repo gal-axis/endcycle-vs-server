@@ -11,7 +11,7 @@ PatchworkState(Object) {
 
 	new() {}
 
-	new(DrawableState[] arg0, PatchworkStateId arg1) {}
+	new(DrawableState[] drawables, PatchworkStateId leadsInto) {}
 
 	boolean equals(Object arg0) {}
 
@@ -23,28 +23,30 @@ PatchworkState(Object) {
 
 	PatchworkState copy() {}
 
-	Rectangle getBounds(Patchwork arg0) {}
+	Rectangle getBounds(Patchwork patchwork) {}
 
-	void draw(Batch arg0, Patchwork arg1, float arg2, float arg3, float arg4, float arg5, double arg6, Color arg7) {}
+	void draw(Batch batch, Patchwork patchwork, float posX, float posY, float scaleX, float scaleY, double animState, Color tint) {}
 
-	boolean isFinished(Patchwork arg0, double arg1) {}
+	boolean isFinished(Patchwork patchwork, double animState) {}
 
-	boolean hasShadow(Patchwork arg0) {}
+	double getAnimationDuration(Patchwork patchwork) {}
 
-	double getAnimationDuration(Patchwork arg0) {}
+	boolean hasShadow(Patchwork patchwork) {}
+
+	void drawShadow(CustomSpriteBatch batch, float alpha, float shadowMidPoint, float x, float xShadow, float yShadow, float z, Patchwork patchwork, float xScale, float yScale) {}
 
 	PatchworkState fullCopy() {}
 
-	Array getDrawables(Patchwork arg0) {}
+	Array getDrawables(Patchwork patchwork) {}
 
-	float calcShadowX(double arg0) {}
+	float calcScaleY(double animState) {}
 
-	float calcShadowY(double arg0) {}
+	float calcShadowX(double animState) {}
 
-	float calcShadowZ(double arg0) {}
+	float calcShadowZ(double animState) {}
 
-	float calcScaleX(double arg0) {}
+	float calcScaleX(double animState) {}
 
-	float calcScaleY(double arg0) {}
+	float calcShadowY(double animState) {}
 
 }

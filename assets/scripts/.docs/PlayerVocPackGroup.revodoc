@@ -40,19 +40,19 @@ PlayerVocPackGroup(VocPackGroup) {
 
 	final Origin getOrigin() {}
 
-	byte getLayer() {}
-
 	float getComparisonKey() {}
+
+	byte getLayer() {}
 
 	final void removeObject() {}
 
 	final void addObject(ScreenObject object) {}
 
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
 	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(SoundInfo sound) {}
-
-	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
@@ -64,89 +64,91 @@ PlayerVocPackGroup(VocPackGroup) {
 
 	void calculateSize() {}
 
-	float getX() {}
-
-	float getY() {}
+	MenuElement setEnabled(boolean enabled) {}
 
 	boolean select() {}
 
-	MenuElement setEnabled(boolean enabled) {}
+	float getY() {}
 
-	MenuElement getAbsoluteParent() {}
-
-	MenuElement setLayer(byte layer) {}
-
-	float getHeight() {}
+	float getX() {}
 
 	float getWidth() {}
 
+	float getHeight() {}
+
 	MenuElement setHeight(float height) {}
+
+	MenuElement setLayer(byte layer) {}
 
 	boolean touch(TouchEvent trigger) {}
 
 	final void triggerAction(MenuElementActionType type) {}
 
-	MenuElement setX(float x) {}
+	MenuElement getAbsoluteParent() {}
 
 	MenuElement setY(float y) {}
 
-	MenuElement setWidth(float width) {}
+	MenuElement setX(float x) {}
 
 	float calcX() {}
 
 	float calcY() {}
 
-	MenuElement setFocused(boolean focused) {}
-
-	void addElements(Array elements, float x, float y) {}
-
-	int getHAlign() {}
-
-	int getVAlign() {}
-
-	MenuElement setAnchorHAlign(int anchorHAlign) {}
-
-	float getAbsoluteY() {}
-
-	boolean isFocused() {}
-
-	int getAnchorHAlign() {}
-
-	boolean canDrawCursor() {}
-
-	boolean isFocusable() {}
-
-	boolean isAbsoluteHidden() {}
-
-	void setCursor(Rectangle rectangle) {}
-
-	boolean isEnabled() {}
-
-	MenuElement setAnchorVAlign(int anchorVAlign) {}
-
-	int getAnchorVAlign() {}
-
-	MenuButtonTips getButtonTips() {}
-
-	MenuElement setVAlign(int vAlign) {}
-
-	MenuElement setAnchor(MenuElement anchor) {}
-
-	MenuElement getAnchor() {}
-
-	float getAbsoluteX() {}
-
-	MenuElement setHidden(boolean hidden) {}
-
-	MenuElement setHAlign(int hAlign) {}
-
-	Set getActionListeners() {}
-
-	final void setMenuControllerSelection(MenuElement element) {}
+	MenuElement setWidth(float width) {}
 
 	MenuElement setFocusable(boolean focusable) {}
 
+	final void setMenuControllerSelection(MenuElement element) {}
+
+	Set getActionListeners() {}
+
 	boolean isTouching(float x, float y) {}
+
+	boolean isAbsoluteHidden() {}
+
+	MenuElement getAnchor() {}
+
+	int getAnchorVAlign() {}
+
+	boolean isFocusable() {}
+
+	MenuElement setAnchorVAlign(int anchorVAlign) {}
+
+	boolean isFocused() {}
+
+	MenuElement setAnchor(MenuElement anchor) {}
+
+	int getAnchorHAlign() {}
+
+	MenuElement setHidden(boolean hidden) {}
+
+	float getAbsoluteX() {}
+
+	float getAbsoluteY() {}
+
+	MenuElement setVAlign(int vAlign) {}
+
+	boolean canDrawCursor() {}
+
+	MenuElement setHAlign(int hAlign) {}
+
+	MenuElementController findController() {}
+
+	MenuButtonTips getButtonTips() {}
+
+	int getHAlign() {}
+
+	void addElements(Array elements, float x, float y) {}
+
+	int getVAlign() {}
+
+	void setCursor(Rectangle rectangle) {}
+
+	MenuElement setAnchorHAlign(int anchorHAlign) {}
+
+	boolean isEnabled() {}
+
+	MenuElement setFocused(boolean focused) {}
 
 	int compare(MenuElement o1, MenuElement o2) {}
 
@@ -156,9 +158,9 @@ PlayerVocPackGroup(VocPackGroup) {
 
 	void removeObject(MenuElement object) {}
 
-	MenuElement addObject(MenuElement object) {}
-
 	List getObjects() {}
+
+	MenuElement addObject(MenuElement object) {}
 
 	void setDefaultElement(MenuElement defaultElement) {}
 
@@ -168,23 +170,31 @@ PlayerVocPackGroup(VocPackGroup) {
 
 	void setBackground(MenuThemeDrawable background) {}
 
+	void setController(MenuElementController controller) {}
+
+	MenuElementController getController() {}
+
 	float getOffsetX() {}
+
+	float getOffsetY() {}
+
+	Color getBackgroundColor() {}
+
+	void setBackgroundColor(Color backgroundColor) {}
 
 	void drawBackground(CustomSpriteBatch batch, float x, float y) {}
 
-	void addElements(Array elements, float x, float y, MenuElement object) {}
+	MenuElementShowAnim getShowAnimation() {}
 
 	MenuThemeDrawable getBackground() {}
 
-	MenuElementShowAnim getShowAnimation() {}
+	void addElements(Array elements, float x, float y, MenuElement object) {}
 
 	void setObjects(List objects) {}
 
+	List getCountSize() {}
+
 	void setBgPad(float bgPad) {}
-
-	void setCountSize(List countSize) {}
-
-	float getBgPad() {}
 
 	void setOffsetY(float offsetY) {}
 
@@ -192,19 +202,15 @@ PlayerVocPackGroup(VocPackGroup) {
 
 	void setOffsetX(float offsetX) {}
 
-	List getCountSize() {}
+	void setCountSize(List countSize) {}
 
-	void setBackgroundColor(Color backgroundColor) {}
+	float getBgPad() {}
 
-	Color getBackgroundColor() {}
-
-	float getOffsetY() {}
+	void setCharacter(boolean character) {}
 
 	MenuTable getSetContainer(int set) {}
 
 	VocEntry getSelectedVoc() {}
-
-	void setCharacter(boolean character) {}
 
 	InventoryVocTable getVocTable() {}
 
@@ -214,9 +220,9 @@ PlayerVocPackGroup(VocPackGroup) {
 
 	void addVoc(VocEntry entry, int index) {}
 
-	void highlight(MenuTable container, int slot) {}
-
 	void stopHighlight() {}
+
+	void highlight(MenuTable container, int slot) {}
 
 	void setPack(PlayerVocPack pack) {}
 

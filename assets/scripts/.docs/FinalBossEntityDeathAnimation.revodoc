@@ -32,15 +32,15 @@ FinalBossEntityDeathAnimation(Object) : BattleEntityAnimation, ScreenObject {
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void show(GameScreen screen) {}
-
 	void hide(GameScreen screen) {}
+
+	void show(GameScreen screen) {}
 
 	Origin getOrigin() {}
 
-	byte getLayer() {}
-
 	float getComparisonKey() {}
+
+	byte getLayer() {}
 
 	ScreenObject start(BattleEntity entity) {}
 

@@ -10,20 +10,21 @@ MovingTileMove(InstantTileMove) {
 	float goalX;
 	float goalY;
 	Array next;
+	Point freed;
 
-	new(BattleEntity arg0) {}
+	new(BattleEntity parent) {}
 
-	new(BattleEntity arg0, float arg1) {}
+	new(BattleEntity parent, float speed) {}
 
-	boolean equals(Object arg0) {}
+	boolean equals(Object o) {}
 
 	String toString() {}
 
 	int hashCode() {}
 
-	void update(float arg0) {}
+	void update(float delta) {}
 
-	void init(int arg0, int arg1, float arg2) {}
+	void init(int xTile, int yTile, float speed) {}
 
 	void start() {}
 
@@ -33,7 +34,7 @@ MovingTileMove(InstantTileMove) {
 
 	Battle getBattle() {}
 
-	void set(int arg0, int arg1, float arg2) {}
+	void set(int xTile, int yTile, float speed) {}
 
 	void reset() {}
 
@@ -43,6 +44,6 @@ MovingTileMove(InstantTileMove) {
 
 	void freeField() {}
 
-	void setSpeed(float arg0) {}
+	void setSpeed(float speed) {}
 
 }

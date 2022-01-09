@@ -55,67 +55,67 @@ abstract RushAttack(Attack) {
 
 	Attack clone() {}
 
-	boolean isActionRollback(Object[] arg0) {}
+	boolean isActionRollback(Object[] action) {}
 
-	void actionTriggered(Object[] arg0) {}
+	void actionTriggered(Object[] action) {}
 
-	final void actionTriggered(Runnable arg0) {}
+	final void actionTriggered(Runnable action) {}
 
-	boolean triggerButton(ButtonEvent arg0) {}
+	void controllerDisconnected(Controller controller) {}
 
-	boolean keyDown(int arg0) {}
+	void controllerConnected(Controller controller) {}
 
-	boolean triggerTouch(TouchEvent arg0) {}
+	boolean triggerButton(ButtonEvent event) {}
 
-	boolean addButtonTips(ButtonTipList arg0) {}
+	boolean triggerType(int character) {}
 
-	boolean keyTyped(char arg0) {}
+	boolean keyTyped(char character) {}
 
-	boolean triggerType(int arg0) {}
+	boolean keyUp(int keycode) {}
+
+	boolean keyDown(int keycode) {}
 
 	int getInputPriority() {}
 
-	boolean keyUp(int arg0) {}
+	boolean addButtonTips(ButtonTipList tips) {}
 
-	void controllerConnected(Controller arg0) {}
-
-	void controllerDisconnected(Controller arg0) {}
+	boolean triggerTouch(TouchEvent event) {}
 
 	String getName() {}
 
-	void update(float arg0) {}
+	void update(float delta) {}
 
-	Attack cast(BattleEntity arg0, AttackPlan arg1) {}
+	Attack cast(BattleEntity user, AttackPlan plan) {}
 
 	final BattleField getField() {}
 
 	void start() {}
 
-	final void copy(Attack arg0) {}
+	final void copy(Attack attack) {}
 
 	BattleEntity getTarget() {}
 
 	void flip() {}
 
-	final float getY(int arg0) {}
+	final float getY(int yTile) {}
 
-	final float getX(int arg0) {}
+	final float getX(int xTile) {}
 
-	SoundContainer playSound(SoundInfo arg0) {}
+	SoundContainer playSound(SoundInfo sound) {}
 
 	boolean active() {}
 
-	final Origin getOrigin(int arg0) {}
+	final Origin getOrigin(int index) {}
 
 	void finish() {}
 
 	final Controller getController() {}
 
-	final void triggerAction(Object[] arg0) {}
+	final void triggerAction(Object[] parameters) {}
 
-	boolean attackAnimation(float arg0) {}
+	boolean castAnimation(float duration) {}
 
-	boolean castAnimation(float arg0) {}
+	boolean attackAnimation(float duration) {}
 
 	boolean fillGauges() {}
 
@@ -123,54 +123,54 @@ abstract RushAttack(Attack) {
 
 	final int getYTile() {}
 
-	void updateAttackTasks(float arg0) {}
-
-	final BattleEntityList getBattleEntities() {}
-
-	void increaseGauge(double arg0) {}
-
-	double getGaugeProgress() {}
-
-	void scheduleAction(int arg0, float arg1) {}
-
-	void scheduleAction(Runnable arg0, float arg1) {}
-
-	AttackPortal getPortal(BattleEntity arg0, float arg1, float arg2, float arg3) {}
+	Attack charge() {}
 
 	final int getXTileInFront() {}
 
-	void addWrappers(AttackWrappers arg0) {}
+	void runAction(int action) {}
 
-	boolean reduceGauge(double arg0) {}
+	boolean reduceGauge(double amount) {}
 
 	boolean reduceGauge() {}
 
-	boolean acceptsInput(ButtonEvent arg0) {}
+	Attack getWrapped(AttackWrapper wrapper, boolean shareHit, boolean gauge) {}
 
-	void runAction(int arg0) {}
+	boolean acceptsInput(ButtonEvent event) {}
+
+	AttackPortal getPortal(BattleEntity entity, float portalX, float portalY, float time) {}
 
 	final int getTurn() {}
 
-	Attack getWrapped(AttackWrapper arg0, boolean arg1, boolean arg2) {}
+	double getGaugeProgress() {}
 
-	Attack charge() {}
+	void scheduleAction(Runnable action, float delay) {}
 
-	boolean setAnimationState(PatchworkStateId arg0, float arg1) {}
+	void scheduleAction(int action, float delay) {}
 
-	boolean hasAnimationState(PatchworkStateId arg0) {}
+	void addWrappers(AttackWrappers wrappers) {}
 
-	void moveToTile(int arg0, int arg1) {}
+	void increaseGauge(double amount) {}
 
-	void moveToTile(int arg0, int arg1, MoveType arg2, float arg3) {}
+	boolean setAnimationState(PatchworkStateId state, float duration) {}
 
-	void applyHitBorder() {}
+	void updateAttackTasks(float delta) {}
+
+	boolean hasAnimationState(PatchworkStateId state) {}
+
+	final BattleEntityList getBattleEntities() {}
+
+	void moveToTile(int x, int y, MoveType moveType, float speed) {}
+
+	void moveToTile(int x, int y) {}
 
 	boolean hitObject() {}
 
 	void applyHitObject() {}
 
-	boolean hitBorder() {}
-
 	void moveAnimation() {}
+
+	void applyHitBorder() {}
+
+	boolean hitBorder() {}
 
 }

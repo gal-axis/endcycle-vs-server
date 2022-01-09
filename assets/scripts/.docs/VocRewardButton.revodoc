@@ -28,25 +28,25 @@ VocRewardButton(MenuButton) {
 
 	void draw(CustomSpriteBatch batch, float x, float y) {}
 
-	void show(GameScreen screen) {}
-
 	void hide(GameScreen screen) {}
+
+	void show(GameScreen screen) {}
 
 	final Origin getOrigin() {}
 
-	byte getLayer() {}
-
 	float getComparisonKey() {}
 
-	final void removeObject() {}
+	byte getLayer() {}
 
 	final void addObject(ScreenObject object) {}
 
+	final void removeObject() {}
+
 	final SoundContainer playSound(Sounds sound) {}
 
-	SoundContainer playSound(SoundInfo sound) {}
-
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	SoundContainer playSound(SoundInfo sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
@@ -58,7 +58,7 @@ VocRewardButton(MenuButton) {
 
 	void calculateSize() {}
 
-	MenuElement setEnabled(boolean enabled) {}
+	MenuElement getAbsoluteParent() {}
 
 	boolean select() {}
 
@@ -66,15 +66,15 @@ VocRewardButton(MenuButton) {
 
 	float getY() {}
 
-	MenuElement getAbsoluteParent() {}
+	MenuElement setEnabled(boolean enabled) {}
 
-	MenuElement setLayer(byte layer) {}
+	MenuElement setHeight(float height) {}
 
 	float getWidth() {}
 
 	float getHeight() {}
 
-	MenuElement setHeight(float height) {}
+	MenuElement setLayer(byte layer) {}
 
 	boolean touch(TouchEvent trigger) {}
 
@@ -90,69 +90,69 @@ VocRewardButton(MenuButton) {
 
 	MenuElement setWidth(float width) {}
 
-	boolean isFocused() {}
+	final void setMenuControllerSelection(MenuElement element) {}
 
-	int getAnchorHAlign() {}
+	Set getActionListeners() {}
 
-	float getAbsoluteY() {}
-
-	void setCursor(Rectangle rectangle) {}
-
-	boolean canDrawCursor() {}
-
-	boolean isAbsoluteHidden() {}
-
-	MenuButtonTips getButtonTips() {}
-
-	boolean isFocusable() {}
-
-	MenuElement setVAlign(int vAlign) {}
-
-	int getHAlign() {}
-
-	MenuElement setAnchorHAlign(int anchorHAlign) {}
+	boolean isTouching(float x, float y) {}
 
 	void addElements(Array elements, float x, float y) {}
 
+	boolean canDrawCursor() {}
+
+	MenuElementController findController() {}
+
+	boolean isAbsoluteHidden() {}
+
+	float getAbsoluteY() {}
+
+	MenuElement setAnchor(MenuElement anchor) {}
+
+	void setCursor(Rectangle rectangle) {}
+
+	MenuElement setHAlign(int hAlign) {}
+
+	MenuButtonTips getButtonTips() {}
+
+	MenuElement setVAlign(int vAlign) {}
+
 	MenuElement setAnchorVAlign(int anchorVAlign) {}
+
+	int getAnchorVAlign() {}
+
+	int getVAlign() {}
+
+	MenuElement setHidden(boolean hidden) {}
+
+	float getAbsoluteX() {}
+
+	int getHAlign() {}
+
+	boolean isEnabled() {}
+
+	MenuElement setAnchorHAlign(int anchorHAlign) {}
+
+	int getAnchorHAlign() {}
+
+	boolean isFocusable() {}
 
 	MenuElement getAnchor() {}
 
 	MenuElement setFocused(boolean focused) {}
 
-	int getVAlign() {}
-
-	float getAbsoluteX() {}
-
-	int getAnchorVAlign() {}
-
-	MenuElement setHAlign(int hAlign) {}
-
-	MenuElement setHidden(boolean hidden) {}
-
-	MenuElement setAnchor(MenuElement anchor) {}
-
-	boolean isEnabled() {}
-
-	boolean isTouching(float x, float y) {}
-
-	Set getActionListeners() {}
-
-	final void setMenuControllerSelection(MenuElement element) {}
-
-	MenuButtonAction getAction() {}
+	boolean isFocused() {}
 
 	MenuElement setFocusable(boolean focusable) {}
 
-	void updateText() {}
-
-	MenuElement setSelected(boolean selected) {}
-
-	MenuButton setAction(MenuButtonAction action) {}
+	MenuButtonAction getAction() {}
 
 	String getText() {}
 
 	MenuButton setText(String text) {}
+
+	MenuButton setAction(MenuButtonAction action) {}
+
+	MenuElement setSelected(boolean selected) {}
 
 	MenuButton setBackground(MenuThemeDrawable background) {}
 
@@ -160,55 +160,57 @@ VocRewardButton(MenuButton) {
 
 	void setColor(CustomSpriteBatch batch) {}
 
-	MenuButton setDrawable(Drawable drawable) {}
-
 	Drawable getDrawable() {}
 
-	MenuButton setDefaultColor(Color defaultColor) {}
+	MenuButton setDrawable(Drawable drawable) {}
 
-	BoundedFloat getTaint() {}
+	boolean isDisableBackground() {}
 
-	BoundedFloat getTaintDisabled() {}
+	MenuButton setDisableBackground(boolean disableBackground) {}
 
-	Color getDefaultColor() {}
+	void drawBackground(CustomSpriteBatch batch, float x, float y, float width, float height) {}
 
-	boolean isFitDrawable() {}
+	MenuElementShowAnim getShowAnimation() {}
 
-	void drawOverlay(CustomSpriteBatch batch, float x, float y, float width, float height) {}
-
-	MenuButtonClickedAnimation getAnimation() {}
-
-	void drawText(Painter painter, String text) {}
-
-	MenuButton setFitDrawable(boolean fitDrawable) {}
-
-	MenuButton setSelectedColor(Color selectedColor) {}
-
-	MenuButton setSingleClick(boolean singleClick) {}
+	MenuThemeDrawable getBackground() {}
 
 	Color getDisabledColor() {}
 
-	boolean isSingleClick() {}
+	BoundedFloat getTaintDisabled() {}
 
 	Color getSelectedColor() {}
 
 	void drawDrawable(Painter painter) {}
 
+	void drawText(Painter painter, String text) {}
+
 	MenuButton setDisabledColor(Color disabledColor) {}
 
+	MenuButton setFitDrawable(boolean fitDrawable) {}
+
+	boolean isSelected() {}
+
+	void updateText() {}
+
+	Color getDefaultColor() {}
+
+	boolean isSingleClick() {}
+
+	BoundedFloat getTaint() {}
+
+	MenuButtonClickedAnimation getAnimation() {}
+
+	MenuButton setSingleClick(boolean singleClick) {}
+
+	MenuButton setDefaultColor(Color defaultColor) {}
+
+	boolean isFitDrawable() {}
+
+	void drawOverlay(CustomSpriteBatch batch, float x, float y, float width, float height) {}
+
+	MenuButton setSelectedColor(Color selectedColor) {}
+
 	MenuButton setFont(Fonts font) {}
-
-	MenuThemeDrawable getBackground() {}
-
-	MenuElementShowAnim getShowAnimation() {}
-
-	void drawBackground(CustomSpriteBatch batch, float x, float y, float width, float height) {}
-
-	void drawButton(CustomSpriteBatch batch, float x, float y, float width, float height) {}
-
-	MenuButton setDisableBackground(boolean disableBackground) {}
-
-	boolean isDisableBackground() {}
 
 	Fonts getFont() {}
 
@@ -216,7 +218,7 @@ VocRewardButton(MenuButton) {
 
 	boolean drawBG(float width, float height) {}
 
-	boolean isSelected() {}
+	void drawButton(CustomSpriteBatch batch, float x, float y, float width, float height) {}
 
 	VocEntry getVoc() {}
 

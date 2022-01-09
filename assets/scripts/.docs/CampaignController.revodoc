@@ -4,21 +4,21 @@ interface CampaignController : ScreenObject, InputListener {
 
 	void controllerDisconnected(Controller controller) {}
 
+	boolean addButtonTips(ButtonTipList tips) {}
+
 	boolean triggerTouch(TouchEvent event) {}
 
 	boolean triggerButton(ButtonEvent event) {}
 
 	boolean keyDown(int keycode) {}
 
-	boolean addButtonTips(ButtonTipList tips) {}
+	boolean triggerType(int character) {}
+
+	boolean keyTyped(char character) {}
 
 	boolean keyUp(int keycode) {}
 
 	int getInputPriority() {}
-
-	boolean triggerType(int character) {}
-
-	boolean keyTyped(char character) {}
 
 	void dispose() {}
 
@@ -42,9 +42,9 @@ interface CampaignController : ScreenObject, InputListener {
 
 	Origin getOrigin() {}
 
-	byte getLayer() {}
-
 	float getComparisonKey() {}
+
+	byte getLayer() {}
 
 	abstract void show();
 

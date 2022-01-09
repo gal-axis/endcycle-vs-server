@@ -26,31 +26,31 @@ BattleEntityListenerList(Object) {
 
 	void set(BattleEntityData info) {}
 
-	void dispose() {}
-
 	void draw(CustomSpriteBatch batch, float x, float y) {}
 
+	void dispose() {}
+
+	PatchworkStateId setState(PatchworkStateId name) {}
+
+	void attack(Attack attack) {}
+
+	CColor getTint(CColor tint) {}
+
+	double crush(double amount, int crushStrength) {}
+
+	void inflictPre(OwnedHitProperty property) {}
+
 	void inflictPost(OwnedHitProperty property) {}
-
-	int heal(BattleEntity origin, int amount, boolean display) {}
-
-	Mover move(MoveType type, int xTile, int yTile, float speed, Mover movement) {}
 
 	AilmentInflict inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
 
 	void inflict(OwnedHitProperty property) {}
 
-	void inflictPre(OwnedHitProperty property) {}
+	int heal(BattleEntity origin, int amount, Color display) {}
 
-	int hurt(BattleEntity origin, int amount, boolean display) {}
+	Mover move(MoveType type, int xTile, int yTile, float speed, Mover movement) {}
 
-	double crush(double amount, int crushStrength) {}
-
-	void attack(Attack attack) {}
-
-	PatchworkStateId setState(PatchworkStateId name) {}
-
-	CColor getTint(CColor tint) {}
+	int hurt(BattleEntity origin, int amount, Color display) {}
 
 	void drawHud(CustomSpriteBatch batch, float xOfs, float yOfs, float width, float height) {}
 

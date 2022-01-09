@@ -2,16 +2,14 @@ AttachedParticle(Object) : ScreenObject {
 
 	final ShaderManager shader;
 	final Color tint;
+	final Vector2 position;
+	final Vector2 scale;
 	GameObject parent;
 	Drawable drawable;
 	final boolean removeOnFinished;
 	boolean flicker;
 	boolean pulsate;
-	float x;
-	float y;
 	float animState;
-	float scaleX;
-	float scaleY;
 	int hAlign;
 	int vAlign;
 	int parentHAlign;
@@ -50,13 +48,13 @@ AttachedParticle(Object) : ScreenObject {
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void show(GameScreen screen) {}
-
 	void hide(GameScreen screen) {}
 
-	Origin getOrigin() {}
+	void show(GameScreen screen) {}
 
 	byte getLayer() {}
+
+	Origin getOrigin() {}
 
 	float getComparisonKey() {}
 

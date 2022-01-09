@@ -22,9 +22,9 @@ interface Background : ScreenObject {
 
 	Origin getOrigin() {}
 
-	byte getLayer() {}
-
 	float getComparisonKey() {}
+
+	byte getLayer() {}
 
 	Drawable getFrame(Party party) {}
 

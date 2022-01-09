@@ -42,56 +42,56 @@ NoiseAdventureFaction(SideAdventureFaction) {
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void lose() {}
-
 	boolean loot(AdventureFieldNode entry) {}
+
+	void lose() {}
 
 	DrawableImage getIcon() {}
 
-	void startBattle(BattleEntityList entities) {}
-
 	void stopBattle(BattleEntityList entities) {}
+
+	void startBattle(BattleEntityList entities) {}
 
 	void finishZone(AdventureFieldData entry) {}
 
 	void startNode(AdventureFieldNode entry) {}
 
-	void startZone(AdventureFieldData data) {}
-
-	void updatePlayer(BattlePlayer player) {}
-
-	void addWinLoot(Looter looter) {}
-
-	void addLoseLoot(Looter looter) {}
-
 	void generateFinal(AdventureNodeGraph graph) {}
 
-	void finishNode(AdventureFieldNode entry) {}
+	void generateFinish(AdventureNodeGraph graph) {}
 
 	void generateBranches(AdventureNodeGraph graph) {}
 
 	void generateStart(AdventureNodeGraph graph) {}
 
-	void generateFinish(AdventureNodeGraph graph) {}
-
 	void generateNodes(AdventureNodeGraph graph) {}
+
+	void startZone(AdventureFieldData data) {}
+
+	void addLoseLoot(Looter looter) {}
+
+	void addWinLoot(Looter looter) {}
+
+	void updatePlayer(BattlePlayer player) {}
+
+	void finishNode(AdventureFieldNode entry) {}
 
 	void goToZone(ID zoneId) {}
 
-	int getStatModifier() {}
-
 	void selectZone(AdventureZone zone) {}
 
-	boolean canChangeSide(AdventureSide side) {}
-
-	void setSide(AdventureSide side) {}
-
-	boolean excuse(AdventureSide side) {}
+	int getStatModifier() {}
 
 	void betray(AdventureSide side) {}
 
-	AdventureSideChange getChange(BattleEntity entity, AdventureSide side) {}
+	void setSide(AdventureSide side) {}
+
+	boolean canChangeSide(AdventureSide side) {}
+
+	boolean excuse(AdventureSide side) {}
 
 	AdventurePathChange getChange(AdventureSide side) {}
+
+	AdventureSideChange getChange(BattleEntity entity, AdventureSide side) {}
 
 }

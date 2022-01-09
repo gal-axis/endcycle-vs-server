@@ -1,5 +1,7 @@
 ShadowPainter(Object) {
 
+	static final TextureRegion region;
+
 	new() {}
 
 	boolean equals(Object arg0) {}
@@ -10,14 +12,10 @@ ShadowPainter(Object) {
 
 	static void load() {}
 
-	static List list(DrawableState arg0) {}
+	static List list(DrawableState drawable) {}
 
 	static void dispose() {}
 
-	static void drawShadow(CustomSpriteBatch arg0, float arg1, float arg2, ShadowEntity arg3) {}
-
-	static void drawShadow(Batch arg0, TextureRegion arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8) {}
-
-	static void drawShadow(CustomSpriteBatch arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, double arg7, DrawableState arg8, float arg9) {}
+	static void drawShadow(Batch batch, TextureRegion region, float shearX, float x, float y, float z, float scaleX, float scaleY, float alpha) {}
 
 }

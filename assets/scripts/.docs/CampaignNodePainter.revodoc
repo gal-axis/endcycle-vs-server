@@ -28,12 +28,12 @@ CampaignNodePainter(Object) {
 
 	BoundedFloat getScoreAnimation() {}
 
-	static void drawStars(CustomSpriteBatch batch, float x, float y, float stars) {}
-
-	boolean isNewHighScore() {}
+	void updateHighScore() {}
 
 	void completeScore() {}
 
-	void updateHighScore() {}
+	boolean isNewHighScore() {}
+
+	static void drawStars(CustomSpriteBatch batch, float x, float y, float stars) {}
 
 }

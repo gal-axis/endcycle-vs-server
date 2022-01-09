@@ -30,11 +30,11 @@ CharacterCustomizer(MenuMessage) {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
 	void show(GameScreen screen) {}
 
 	void hide(GameScreen screen) {}
-
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	final Origin getOrigin() {}
 
@@ -42,25 +42,25 @@ CharacterCustomizer(MenuMessage) {
 
 	byte getLayer() {}
 
+	final void removeObject() {}
+
 	final void addObject(ScreenObject object) {}
 
-	final void removeObject() {}
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(SoundInfo sound) {}
 
-	SoundContainer playSound(float x, float y, SoundInfo sound) {}
-
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
 	final void removeInitializeListener(Runnable runnable) {}
 
+	final void addInitializeListener(Runnable runnable) {}
+
 	final void addDisposeListener(Runnable runnable) {}
 
 	final void removeDisposeListener(Runnable runnable) {}
-
-	final void addInitializeListener(Runnable runnable) {}
 
 	void scheduleMessage(GameScreenMessage message) {}
 
@@ -70,29 +70,29 @@ CharacterCustomizer(MenuMessage) {
 
 	void setStay() {}
 
-	boolean isStaying() {}
-
 	float getPosition() {}
+
+	boolean isStaying() {}
 
 	void controllerConnected(Controller controller) {}
 
 	void controllerDisconnected(Controller controller) {}
 
-	int getInputPriority() {}
-
-	boolean keyUp(int keycode) {}
-
-	boolean keyDown(int keycode) {}
-
-	boolean keyTyped(char character) {}
-
-	boolean triggerButton(ButtonEvent event) {}
+	boolean addButtonTips(ButtonTipList tips) {}
 
 	boolean triggerTouch(TouchEvent event) {}
 
-	boolean addButtonTips(ButtonTipList tips) {}
+	boolean triggerButton(ButtonEvent event) {}
+
+	boolean keyDown(int keycode) {}
 
 	boolean triggerType(int character) {}
+
+	boolean keyTyped(char character) {}
+
+	boolean keyUp(int keycode) {}
+
+	int getInputPriority() {}
 
 	void setDefaultElement(MenuElement defaultElement) {}
 
@@ -102,13 +102,13 @@ CharacterCustomizer(MenuMessage) {
 
 	void drawScreenTint(CustomSpriteBatch batch, float alpha) {}
 
-	MenuElement getMenuElement() {}
+	void drawMenu(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void setElement(MenuElement menuElement) {}
+	MenuElement getMenuElement() {}
 
 	boolean isBackKey(ButtonEvent trigger) {}
 
-	void drawMenu(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	void setElement(MenuElement menuElement) {}
 
 	float calcOffset() {}
 

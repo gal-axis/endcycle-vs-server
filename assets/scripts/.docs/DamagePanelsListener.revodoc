@@ -12,11 +12,11 @@ final DamagePanelsListener(Object) : BattleEntityListener, Danger, BECondition {
 
 	float getDangerPriority(BattleEntity entity) {}
 
+	float getDangerIgnore(int level) {}
+
 	boolean isDangerous(BattleEntity entity, int x, int y) {}
 
 	void disappear(int x, int y, DangerDisappearListener onDisappear) {}
-
-	float getDangerIgnore(int level) {}
 
 	void add() {}
 
@@ -32,28 +32,30 @@ final DamagePanelsListener(Object) : BattleEntityListener, Danger, BECondition {
 
 	void dispose() {}
 
-	void inflict(OwnedHitProperty property) {}
+	void attack(Attack attack) {}
 
 	PatchworkStateId setState(PatchworkStateId id) {}
-
-	void attack(Attack attack) {}
 
 	CColor getTint() {}
 
 	double crush(double amount, int crushStrength) {}
 
-	int hurt(BattleEntity origin, int amount, boolean display) {}
+	AilmentInflict inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
+
+	int heal(BattleEntity origin, int amount, Color display) {}
 
 	void inflictPre(OwnedHitProperty property) {}
 
-	AilmentInflict inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
+	int hurt(BattleEntity origin, int amount, Color display) {}
 
-	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
-
-	int heal(BattleEntity origin, int amount, boolean display) {}
+	void inflict(OwnedHitProperty property) {}
 
 	void inflictPost(OwnedHitProperty property) {}
 
+	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
+
 	void drawHud(CustomSpriteBatch batch, float xOfs, float yOfs, float width, float height) {}
+
+	void highlight(BattleEntity entity, Color color, LocalizedMessage message) {}
 
 }

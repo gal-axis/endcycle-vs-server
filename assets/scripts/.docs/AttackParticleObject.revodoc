@@ -22,18 +22,14 @@ interface AttackParticleObject : ScreenObject {
 
 	Origin getOrigin() {}
 
+	float getComparisonKey() {}
+
 	byte getLayer() {}
 
-	float getComparisonKey() {}
+	abstract Vector2 getSize();
 
 	abstract void addObject(ScreenObject object);
 
-	abstract float getWidth();
-
-	abstract float getHeight();
-
-	abstract float getCenterY();
-
-	abstract float getCenterX();
+	abstract Vector2 toCenter(Vector2 center);
 
 }

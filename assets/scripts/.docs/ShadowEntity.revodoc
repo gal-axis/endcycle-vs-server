@@ -1,20 +1,14 @@
 interface ShadowEntity {
 
-	float getYScale() {}
+	Vector2 getScale() {}
+
+	boolean isFlipY() {}
 
 	boolean isFlipX() {}
 
 	Patchwork getPatchwork() {}
 
-	boolean isFlipY() {}
-
-	float getXScale() {}
-
-	abstract float getShadowX();
-
-	abstract float getShadowY();
-
-	abstract float getShadowZ();
+	void drawShadow(CustomSpriteBatch batch, float x, float y, float z) {}
 
 	float getShadowAlpha() {}
 

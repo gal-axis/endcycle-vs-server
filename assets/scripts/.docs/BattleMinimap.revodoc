@@ -21,7 +21,7 @@ BattleMinimap(HUDButton) {
 	int mapVAlign;
 	Vector2 offset;
 
-	new(BattleCamera arg0, BattlePlayer arg1) {}
+	new(BattleCamera camera, BattlePlayer player) {}
 
 	boolean equals(Object arg0) {}
 
@@ -29,23 +29,23 @@ BattleMinimap(HUDButton) {
 
 	int hashCode() {}
 
-	final int compareTo(HUDButton arg0) {}
+	final int compareTo(HUDButton o) {}
 
-	void update(float arg0) {}
+	void update(float delta) {}
 
 	boolean isHidden() {}
 
-	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
-
 	float getY() {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	float getX() {}
 
-	void event(GameEvent arg0) {}
+	void event(GameEvent event) {}
 
-	boolean button(ButtonEvent arg0) {}
+	boolean button(ButtonEvent trigger) {}
 
-	boolean touch(TouchEvent arg0) {}
+	boolean touch(TouchEvent trigger) {}
 
 	int getOrder() {}
 
@@ -53,22 +53,22 @@ BattleMinimap(HUDButton) {
 
 	float calcY() {}
 
-	void finishMoving() {}
-
-	boolean finishedMoving() {}
-
-	boolean isTouching(float arg0, float arg1) {}
-
 	boolean increaseOffset() {}
 
 	float getMove() {}
 
-	void drawBackground(CustomSpriteBatch arg0, float arg1, float arg2, boolean arg3, float arg4, float arg5) {}
+	boolean finishedMoving() {}
 
-	void drawMinimap(CustomSpriteBatch arg0, float arg1, float arg2, boolean arg3) {}
+	void finishMoving() {}
 
-	float getCameraX() {}
+	boolean isTouching(float x, float y) {}
+
+	void drawMinimap(CustomSpriteBatch batch, float xOfs, float yOfs, boolean full) {}
+
+	void drawBackground(CustomSpriteBatch batch, float xOfs, float yOfs, boolean full, float width, float height) {}
 
 	float getCameraY() {}
+
+	float getCameraX() {}
 
 }

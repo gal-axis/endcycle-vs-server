@@ -30,55 +30,55 @@ MoveAction(GameScreenObject) : InputListener {
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void hide(GameScreen screen) {}
-
 	void show(GameScreen screen) {}
+
+	void hide(GameScreen screen) {}
 
 	final Origin getOrigin() {}
 
-	byte getLayer() {}
-
 	float getComparisonKey() {}
 
-	final SoundContainer playSound(Sounds sound) {}
-
-	SoundContainer playSound(SoundInfo sound) {}
-
-	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+	byte getLayer() {}
 
 	final void removeObject() {}
 
 	final void addObject(ScreenObject object) {}
 
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	final SoundContainer playSound(Sounds sound) {}
+
+	SoundContainer playSound(SoundInfo sound) {}
+
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
-
-	boolean triggerButton(ButtonEvent event) {}
-
-	boolean addButtonTips(ButtonTipList tips) {}
-
-	boolean keyTyped(char character) {}
-
-	boolean keyDown(int keycode) {}
-
-	boolean triggerTouch(TouchEvent event) {}
-
-	int getInputPriority() {}
-
-	boolean triggerType(int character) {}
-
-	boolean keyUp(int keycode) {}
-
-	void controllerDisconnected(Controller controller) {}
 
 	void controllerConnected(Controller controller) {}
 
-	void select() {}
+	void controllerDisconnected(Controller controller) {}
 
-	void cancel() {}
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean triggerTouch(TouchEvent event) {}
+
+	boolean triggerButton(ButtonEvent event) {}
+
+	boolean keyDown(int keycode) {}
+
+	boolean triggerType(int character) {}
+
+	boolean keyTyped(char character) {}
+
+	boolean keyUp(int keycode) {}
+
+	int getInputPriority() {}
+
+	void select() {}
 
 	void moveX(int offset) {}
 
 	void moveY(int offset) {}
+
+	void cancel() {}
 
 	void moveVoc() {}
 

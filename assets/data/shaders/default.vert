@@ -17,8 +17,10 @@ float toAdd(float color){
 }
 
 void main() {
-	v_color_tint = vec4(toTint(a_color.r), toTint(a_color.g), toTint(a_color.b), toTint(a_color.a) * 254.0 / 244.0);
-	v_color_add = vec4(toAdd(a_color.r), toAdd(a_color.g), toAdd(a_color.b), 0.0) * toAdd(a_color.a);
+	float extra = max(0.0, 2.0 * (0.5 - max(a_color.r + a_color.g + a_color.b - 1.5, 0.0)));
+	v_color_tint = vec4(toTint(a_color.r) * extra, toTint(a_color.g) * extra, toTint(a_color.b) * extra, toTint(a_color.a) * 254.0 / 244.0);
+	v_color_add = vec4(toAdd(a_color.r), toAdd(a_color.g), toAdd(a_color.b), 0.0) * (1.0 - extra);
+	
     v_texCoords = a_texCoord0;
     gl_Position = u_projTrans * a_position;
 }

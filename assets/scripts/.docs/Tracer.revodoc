@@ -8,8 +8,7 @@ final Tracer(Object) : ScreenObject {
 	Color color;
 	Vector2[] frames;
 	boolean removeWhenSynced;
-	float xOffset;
-	float yOffset;
+	Vector2 offset;
 	float animationOffset;
 	boolean unsynced;
 
@@ -37,13 +36,13 @@ final Tracer(Object) : ScreenObject {
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void show(GameScreen screen) {}
-
 	void hide(GameScreen screen) {}
 
-	Origin getOrigin() {}
+	void show(GameScreen screen) {}
 
 	byte getLayer() {}
+
+	Origin getOrigin() {}
 
 	float getComparisonKey() {}
 

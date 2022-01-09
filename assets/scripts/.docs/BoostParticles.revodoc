@@ -37,15 +37,15 @@ BoostParticles(Object) : GameObjectParticle {
 
 	void invert() {}
 
+	static BoostParticles getBuff(BattleEntity entity, Color color) {}
+
 	static BoostParticles getHeal(BattleEntity entity, Color color) {}
 
 	static BoostParticles getNerf(BattleEntity entity, Color color) {}
 
-	static BoostParticles getBuff(BattleEntity entity, Color color) {}
+	static BoostParticles getSpeedDown(BattleEntity entity) {}
 
 	static BoostParticles getSpeedUp(BattleEntity entity) {}
-
-	static BoostParticles getSpeedDown(BattleEntity entity) {}
 
 	static BoostParticles getStars(BattleEntity entity) {}
 

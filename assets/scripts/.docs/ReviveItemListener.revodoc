@@ -21,10 +21,10 @@ ReviveItemListener(AdventureItemListener) {
 
 	void init(AdventureBattle battle, AdventureBattleItem item) {}
 
+	boolean isUsable(BattlePlayer player) {}
+
 	void dispose() {}
 
 	void use(BattlePlayer player) {}
-
-	boolean isUsable(BattlePlayer player) {}
 
 }

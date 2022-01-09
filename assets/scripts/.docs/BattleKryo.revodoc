@@ -17,36 +17,36 @@ BattleKryo {
 
 	void reference(Object arg0) {}
 
-	boolean getReferences() {}
+	void setRegistrationRequired(boolean arg0) {}
 
-	int getDepth() {}
+	int getNextRegistrationId() {}
 
-	void setAutoReset(boolean arg0) {}
-
-	boolean setReferences(boolean arg0) {}
-
-	void setMaxDepth(int arg0) {}
-
-	Object copyShallow(Object arg0) {}
+	void setCopyReferences(boolean arg0) {}
 
 	void setWarnUnregisteredClasses(boolean arg0) {}
 
 	boolean isRegistrationRequired() {}
 
-	void setOptimizedGenerics(boolean arg0) {}
-
-	void setCopyReferences(boolean arg0) {}
-
 	boolean getWarnUnregisteredClasses() {}
 
-	void setRegistrationRequired(boolean arg0) {}
+	void setOptimizedGenerics(boolean arg0) {}
 
-	int getNextRegistrationId() {}
+	Object copyShallow(Object arg0) {}
+
+	void setAutoReset(boolean arg0) {}
+
+	void setMaxDepth(int arg0) {}
+
+	boolean getReferences() {}
+
+	boolean setReferences(boolean arg0) {}
+
+	int getDepth() {}
 
 	String log(Object object) {}
 
-	void setBattle(Battle battle) {}
-
 	void registerJava() {}
+
+	void setBattle(Battle battle) {}
 
 }

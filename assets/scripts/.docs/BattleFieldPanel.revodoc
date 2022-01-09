@@ -37,19 +37,19 @@ BattleFieldPanel(Object) : SpeedSupplier {
 
 	double getSpeed(BattleEntity entity) {}
 
-	boolean isActionRollback(Object[] action) {}
+	void actionTriggered(Runnable action) {}
 
 	void actionTriggered(Object[] action) {}
 
-	void actionTriggered(Runnable action) {}
+	boolean isActionRollback(Object[] action) {}
 
 	void update(float delta) {}
 
 	void init() {}
 
-	boolean isAccessible(BattleEntity entity, boolean checkFree, boolean checkParty) {}
-
 	boolean isAccessible(Party party) {}
+
+	boolean isAccessible(BattleEntity entity, boolean checkFree, boolean checkParty) {}
 
 	PanelType getType() {}
 
@@ -57,13 +57,13 @@ BattleFieldPanel(Object) : SpeedSupplier {
 
 	void setType(PanelType tile) {}
 
-	void playSound(SoundInfo sound) {}
-
 	void draw(Batch batch, float x, float y) {}
 
 	void draw(Batch batch, float x, float y, float shade) {}
 
-	boolean isBattleClient() {}
+	boolean canRevertParty(Party direction) {}
+
+	void playSound(SoundInfo sound) {}
 
 	OwnedHitProperty hit(OwnedHitProperty hitProperty) {}
 
@@ -81,44 +81,44 @@ BattleFieldPanel(Object) : SpeedSupplier {
 
 	void changeType(PanelType type) {}
 
+	BattleFieldBorder getCameraBorder(BattleEntity focused) {}
+
 	boolean changeParty(Party newParty, BattleFieldPanel connected) {}
+
+	boolean isBattleClient() {}
 
 	boolean free(BattleEntity entity) {}
 
 	void occupy(BattleEntity entity) {}
 
-	BattleFieldBorder getCameraBorder(BattleEntity focused) {}
+	boolean isPartyChanged() {}
 
 	boolean occupied(boolean ignoreFloat) {}
 
-	void resetRevert() {}
-
-	boolean isOccupied() {}
-
-	boolean isOccupied(BattleEntity entity) {}
-
-	void effectInit() {}
-
-	void effectRefresh() {}
+	boolean occupiedBy(Party party) {}
 
 	void calculateOffsets() {}
 
-	boolean isShared() {}
-
 	void drawDefault(Batch batch, float x, float y, Party party, float shade) {}
+
+	void effectDispose() {}
 
 	void revertPanel() {}
 
-	boolean occupiedBy(Party party) {}
-
-	boolean canRevertParty(Party direction) {}
-
-	OwnedHitProperty affect(OwnedHitProperty hitProperty) {}
+	boolean isShared() {}
 
 	boolean isTypeChanged() {}
 
-	boolean isPartyChanged() {}
+	OwnedHitProperty affect(OwnedHitProperty hitProperty) {}
 
-	void effectDispose() {}
+	void effectRefresh() {}
+
+	void resetRevert() {}
+
+	boolean isOccupied(BattleEntity entity) {}
+
+	boolean isOccupied() {}
+
+	void effectInit() {}
 
 }

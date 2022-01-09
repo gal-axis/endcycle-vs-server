@@ -568,7 +568,11 @@
 	"imageIndex": 112,
 	"tags": [ "COUNTER", "AFFECTS_ALLY" ],
 	"optimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
-	"preview": {},
+	"preview": {
+		"enemyInput": [
+			{ "key": "BATTLE_ATTACK_2" }
+		]
+	},
 	"attackShell": {
 		"nameMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Guard.Name" },
 		"descriptionMessage": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.VocMessages", "key": "Voc.Guard.Description" },
@@ -5590,10 +5594,7 @@
 					"vAlign": -1
 				},
 				"onHitOriginal": true
-			},
-			"points": [
-				{ "x": 2 }
-			]
+			}
 		}
 	}
 },

@@ -11,13 +11,13 @@ DefaultLooter(Looter) : InputListener {
 
 	int hashCode() {}
 
-	void onRewardOpened() {}
+	void onRewardEarned() {}
 
-	void onRewardClosed() {}
+	void onRewardOpened() {}
 
 	void onRewardError() {}
 
-	void onRewardEarned() {}
+	void onRewardClosed() {}
 
 	void dispose() {}
 
@@ -41,9 +41,9 @@ DefaultLooter(Looter) : InputListener {
 
 	Origin getOrigin() {}
 
-	byte getLayer() {}
-
 	float getComparisonKey() {}
+
+	byte getLayer() {}
 
 	void addLoot(Lootable loot) {}
 
@@ -51,19 +51,21 @@ DefaultLooter(Looter) : InputListener {
 
 	void addRandomLoot(int money, boolean items) {}
 
+	void addAffinity(ID entity, float amount) {}
+
 	void addAffinity(BattleEntity entity, float amount) {}
 
-	void addAffinity(ID entity, float amount) {}
+	boolean hasExtra() {}
 
 	void addRandomVoc() {}
 
 	void addRandomStyle() {}
 
-	boolean hasExtra() {}
-
 	void controllerConnected(Controller controller) {}
 
 	void controllerDisconnected(Controller controller) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
 
 	boolean triggerTouch(TouchEvent event) {}
 
@@ -71,15 +73,13 @@ DefaultLooter(Looter) : InputListener {
 
 	boolean keyDown(int keycode) {}
 
-	boolean addButtonTips(ButtonTipList tips) {}
+	boolean triggerType(int character) {}
+
+	boolean keyTyped(char character) {}
 
 	boolean keyUp(int keycode) {}
 
 	int getInputPriority() {}
-
-	boolean triggerType(int character) {}
-
-	boolean keyTyped(char character) {}
 
 	void finish() {}
 

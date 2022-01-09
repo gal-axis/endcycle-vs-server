@@ -22,28 +22,30 @@ final ExplosiveListener(Object) : BattleEntityListener {
 
 	void dispose() {}
 
-	CColor getTint() {}
+	void attack(Attack attack) {}
 
 	PatchworkStateId setState(PatchworkStateId id) {}
 
-	void attack(Attack attack) {}
+	CColor getTint() {}
 
 	double crush(double amount, int crushStrength) {}
 
-	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
-
-	void inflictPost(OwnedHitProperty property) {}
-
-	int heal(BattleEntity origin, int amount, boolean display) {}
-
 	AilmentInflict inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
 
-	void inflict(OwnedHitProperty property) {}
+	int heal(BattleEntity origin, int amount, Color display) {}
 
 	void inflictPre(OwnedHitProperty property) {}
 
-	int hurt(BattleEntity origin, int amount, boolean display) {}
+	int hurt(BattleEntity origin, int amount, Color display) {}
+
+	void inflict(OwnedHitProperty property) {}
+
+	void inflictPost(OwnedHitProperty property) {}
+
+	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
 
 	void drawHud(CustomSpriteBatch batch, float xOfs, float yOfs, float width, float height) {}
+
+	void highlight(BattleEntity entity, Color color, LocalizedMessage message) {}
 
 }

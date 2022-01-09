@@ -43,29 +43,29 @@ AdventureItemGetMessage(MenuMessage) {
 
 	final Origin getOrigin() {}
 
-	byte getLayer() {}
-
 	float getComparisonKey() {}
+
+	byte getLayer() {}
 
 	final void removeObject() {}
 
 	final void addObject(ScreenObject object) {}
 
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
 	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(SoundInfo sound) {}
-
-	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
 	final void removeInitializeListener(Runnable runnable) {}
 
-	final void removeDisposeListener(Runnable runnable) {}
+	final void addInitializeListener(Runnable runnable) {}
 
 	final void addDisposeListener(Runnable runnable) {}
 
-	final void addInitializeListener(Runnable runnable) {}
+	final void removeDisposeListener(Runnable runnable) {}
 
 	void scheduleMessage(GameScreenMessage message) {}
 
@@ -73,15 +73,17 @@ AdventureItemGetMessage(MenuMessage) {
 
 	void setSpeed(float speed) {}
 
+	void setStay() {}
+
 	float getPosition() {}
 
 	boolean isStaying() {}
 
-	void setStay() {}
-
 	void controllerConnected(Controller controller) {}
 
 	void controllerDisconnected(Controller controller) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
 
 	boolean triggerTouch(TouchEvent event) {}
 
@@ -89,15 +91,13 @@ AdventureItemGetMessage(MenuMessage) {
 
 	boolean keyDown(int keycode) {}
 
-	boolean addButtonTips(ButtonTipList tips) {}
+	boolean triggerType(int character) {}
+
+	boolean keyTyped(char character) {}
 
 	boolean keyUp(int keycode) {}
 
 	int getInputPriority() {}
-
-	boolean triggerType(int character) {}
-
-	boolean keyTyped(char character) {}
 
 	void setDefaultElement(MenuElement defaultElement) {}
 
@@ -107,14 +107,14 @@ AdventureItemGetMessage(MenuMessage) {
 
 	void drawScreenTint(CustomSpriteBatch batch, float alpha) {}
 
-	void setElement(MenuElement menuElement) {}
+	void drawMenu(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	MenuElement getMenuElement() {}
 
-	float calcOffset() {}
-
-	void drawMenu(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
 	boolean isBackKey(ButtonEvent trigger) {}
+
+	void setElement(MenuElement menuElement) {}
+
+	float calcOffset() {}
 
 }

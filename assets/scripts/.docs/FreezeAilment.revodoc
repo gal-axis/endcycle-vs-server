@@ -17,11 +17,11 @@ FreezeAilment(Ailment) : BECondition, GameEventListener {
 
 	int hashCode() {}
 
-	void actionTriggered(Runnable action) {}
+	boolean isActionRollback(Object[] action) {}
 
 	void actionTriggered(Object[] action) {}
 
-	boolean isActionRollback(Object[] action) {}
+	void actionTriggered(Runnable action) {}
 
 	void paint(Painter parameters) {}
 
@@ -45,13 +45,13 @@ FreezeAilment(Ailment) : BECondition, GameEventListener {
 
 	boolean canTarget() {}
 
-	void setIntensity(float intensity) {}
-
 	void increaseDuration() {}
+
+	boolean isDisplayed() {}
 
 	float getIntensity() {}
 
-	boolean isDisplayed() {}
+	void setIntensity(float intensity) {}
 
 	void handle(GameEvent event) {}
 

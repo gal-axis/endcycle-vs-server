@@ -19,9 +19,9 @@ BackgroundObject(GameScreenObject) : Background, GameEventListener {
 	float xOffset;
 	float yOffset;
 
-	new(BackgroundData arg0, boolean arg1) {}
+	new(BackgroundData data, boolean battle) {}
 
-	final boolean equals(Object arg0) {}
+	final boolean equals(Object obj) {}
 
 	String toString() {}
 
@@ -29,56 +29,56 @@ BackgroundObject(GameScreenObject) : Background, GameEventListener {
 
 	void dispose() {}
 
-	void update(float arg0) {}
+	void update(float delta) {}
 
 	boolean remove() {}
 
 	String getName() {}
 
-	void init(GameScreen arg0) {}
+	void init(GameScreen screen) {}
 
 	boolean isHidden() {}
 
-	void resize(boolean arg0, int arg1, int arg2) {}
+	void resize(boolean landscape, int width, int height) {}
 
-	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void show(GameScreen arg0) {}
+	void hide(GameScreen screen) {}
 
-	void hide(GameScreen arg0) {}
-
-	final Origin getOrigin() {}
+	void show(GameScreen screen) {}
 
 	byte getLayer() {}
 
-	float getComparisonKey() {}
+	final Origin getOrigin() {}
 
-	final void addObject(ScreenObject arg0) {}
+	float getComparisonKey() {}
 
 	final void removeObject() {}
 
-	final SoundContainer playSound(Sounds arg0) {}
+	final void addObject(ScreenObject object) {}
 
-	SoundContainer playSound(float arg0, float arg1, SoundInfo arg2) {}
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
-	SoundContainer playSound(SoundInfo arg0) {}
+	final SoundContainer playSound(Sounds sound) {}
 
-	void triggerEvent(Object arg0, Object arg1, Object[] arg2) {}
+	SoundContainer playSound(SoundInfo sound) {}
 
-	void handle(GameEvent arg0) {}
+	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
-	Drawable getFrame(Party arg0) {}
+	void handle(GameEvent event) {}
 
-	void dim(CustomSpriteBatch arg0) {}
+	Drawable getFrame(Party party) {}
 
 	boolean drawBG() {}
 
+	void dim(CustomSpriteBatch batch) {}
+
 	Color getColor() {}
 
-	void createFrames(BackgroundData arg0) {}
+	void createFrames(BackgroundData data) {}
 
-	void drawBackground(CustomSpriteBatch arg0, float arg1, float arg2, float arg3, float arg4) {}
+	void drawBackground(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void drawBackground(CustomSpriteBatch arg0, float arg1, float arg2) {}
+	void drawBackground(CustomSpriteBatch batch, float x, float y, float xOfs, float yOfs, float width, float height) {}
 
 }

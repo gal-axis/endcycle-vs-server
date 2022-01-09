@@ -1,20 +1,31 @@
 final Point(Object) {
 
+	static final Point Zero;
 	int x;
 	int y;
 
-	new(int x, int y) {}
-
 	new() {}
 
-	boolean equals(Object o) {}
+	new(int arg0, int arg1) {}
+
+	boolean equals(Object arg0) {}
 
 	String toString() {}
 
 	int hashCode() {}
 
-	void set(int x, int y) {}
+	void add(Point arg0) {}
 
-	boolean is(int x, int y) {}
+	void add(int arg0, int arg1) {}
+
+	void set(int arg0, int arg1) {}
+
+	void set(Point arg0) {}
+
+	boolean is(int arg0, int arg1) {}
+
+	void sub(Point arg0) {}
+
+	void sub(int arg0, int arg1) {}
 
 }

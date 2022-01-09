@@ -37,19 +37,19 @@ AttackPickerMenu(MenuElementGroup) : MenuTableAction {
 
 	final Origin getOrigin() {}
 
-	byte getLayer() {}
-
 	float getComparisonKey() {}
+
+	byte getLayer() {}
 
 	final void removeObject() {}
 
 	final void addObject(ScreenObject object) {}
 
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
 	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(SoundInfo sound) {}
-
-	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
@@ -65,13 +65,9 @@ AttackPickerMenu(MenuElementGroup) : MenuTableAction {
 
 	boolean select() {}
 
-	float getX() {}
-
 	float getY() {}
 
-	MenuElement getAbsoluteParent() {}
-
-	MenuElement setLayer(byte layer) {}
+	float getX() {}
 
 	float getWidth() {}
 
@@ -79,13 +75,17 @@ AttackPickerMenu(MenuElementGroup) : MenuTableAction {
 
 	MenuElement setHeight(float height) {}
 
+	MenuElement setLayer(byte layer) {}
+
 	boolean touch(TouchEvent trigger) {}
 
 	final void triggerAction(MenuElementActionType type) {}
 
-	MenuElement setX(float x) {}
+	MenuElement getAbsoluteParent() {}
 
 	MenuElement setY(float y) {}
+
+	MenuElement setX(float x) {}
 
 	float calcX() {}
 
@@ -93,57 +93,59 @@ AttackPickerMenu(MenuElementGroup) : MenuTableAction {
 
 	MenuElement setWidth(float width) {}
 
-	boolean isFocused() {}
-
-	int getAnchorHAlign() {}
-
-	float getAbsoluteY() {}
-
-	void setCursor(Rectangle rectangle) {}
-
-	boolean canDrawCursor() {}
-
-	boolean isAbsoluteHidden() {}
-
-	MenuButtonTips getButtonTips() {}
-
-	boolean isFocusable() {}
-
-	MenuElement setVAlign(int vAlign) {}
-
-	int getHAlign() {}
-
-	MenuElement setAnchorHAlign(int anchorHAlign) {}
-
-	void addElements(Array elements, float x, float y) {}
-
-	MenuElement setAnchorVAlign(int anchorVAlign) {}
-
-	MenuElement getAnchor() {}
-
-	MenuElement setFocused(boolean focused) {}
-
-	int getVAlign() {}
-
-	float getAbsoluteX() {}
-
-	int getAnchorVAlign() {}
-
-	MenuElement setHAlign(int hAlign) {}
-
-	MenuElement setHidden(boolean hidden) {}
-
-	MenuElement setAnchor(MenuElement anchor) {}
-
-	boolean isEnabled() {}
-
-	boolean isTouching(float x, float y) {}
-
-	Set getActionListeners() {}
+	MenuElement setFocusable(boolean focusable) {}
 
 	final void setMenuControllerSelection(MenuElement element) {}
 
-	MenuElement setFocusable(boolean focusable) {}
+	Set getActionListeners() {}
+
+	boolean isTouching(float x, float y) {}
+
+	boolean isAbsoluteHidden() {}
+
+	MenuElement getAnchor() {}
+
+	int getAnchorVAlign() {}
+
+	boolean isFocusable() {}
+
+	MenuElement setAnchorVAlign(int anchorVAlign) {}
+
+	boolean isFocused() {}
+
+	MenuElement setAnchor(MenuElement anchor) {}
+
+	int getAnchorHAlign() {}
+
+	MenuElement setHidden(boolean hidden) {}
+
+	float getAbsoluteX() {}
+
+	float getAbsoluteY() {}
+
+	MenuElement setVAlign(int vAlign) {}
+
+	boolean canDrawCursor() {}
+
+	MenuElement setHAlign(int hAlign) {}
+
+	MenuElementController findController() {}
+
+	MenuButtonTips getButtonTips() {}
+
+	int getHAlign() {}
+
+	void addElements(Array elements, float x, float y) {}
+
+	int getVAlign() {}
+
+	void setCursor(Rectangle rectangle) {}
+
+	MenuElement setAnchorHAlign(int anchorHAlign) {}
+
+	boolean isEnabled() {}
+
+	MenuElement setFocused(boolean focused) {}
 
 	int compare(MenuElement o1, MenuElement o2) {}
 
@@ -153,9 +155,9 @@ AttackPickerMenu(MenuElementGroup) : MenuTableAction {
 
 	void removeObject(MenuElement object) {}
 
-	MenuElement addObject(MenuElement object) {}
-
 	List getObjects() {}
+
+	MenuElement addObject(MenuElement object) {}
 
 	void setDefaultElement(MenuElement defaultElement) {}
 
@@ -165,45 +167,49 @@ AttackPickerMenu(MenuElementGroup) : MenuTableAction {
 
 	void setBackground(MenuThemeDrawable background) {}
 
+	void setController(MenuElementController controller) {}
+
+	MenuElementController getController() {}
+
 	float getOffsetX() {}
 
-	List getCountSize() {}
+	float getOffsetY() {}
 
-	void countSize(MenuElement object) {}
+	Color getBackgroundColor() {}
+
+	void setBackgroundColor(Color backgroundColor) {}
+
+	void drawBackground(CustomSpriteBatch batch, float x, float y) {}
+
+	MenuElementShowAnim getShowAnimation() {}
+
+	MenuThemeDrawable getBackground() {}
+
+	void addElements(Array elements, float x, float y, MenuElement object) {}
 
 	void setObjects(List objects) {}
 
-	void setOffsetX(float offsetX) {}
+	List getCountSize() {}
+
+	void setBgPad(float bgPad) {}
 
 	void setOffsetY(float offsetY) {}
+
+	void countSize(MenuElement object) {}
+
+	void setOffsetX(float offsetX) {}
 
 	void setCountSize(List countSize) {}
 
 	float getBgPad() {}
 
-	void setBgPad(float bgPad) {}
-
-	MenuThemeDrawable getBackground() {}
-
-	MenuElementShowAnim getShowAnimation() {}
-
-	void addElements(Array elements, float x, float y, MenuElement object) {}
-
-	void drawBackground(CustomSpriteBatch batch, float x, float y) {}
-
-	void setBackgroundColor(Color backgroundColor) {}
-
-	Color getBackgroundColor() {}
-
-	float getOffsetY() {}
+	boolean selectTableHeader() {}
 
 	void specialTableSelect(int selection, VocShell selected) {}
 
 	void updateTableSelection(int selection) {}
 
 	void moveTableSelection(int selection) {}
-
-	boolean selectTableHeader() {}
 
 	void clickedTable(int selection, VocShell selected, float x, float y) {}
 

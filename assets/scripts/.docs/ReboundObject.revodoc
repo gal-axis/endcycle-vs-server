@@ -24,55 +24,45 @@ ReboundObject(Object) : ScreenObject, ShadowEntity, Danger, AttackParticleObject
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
 	void show(GameScreen screen) {}
 
 	void hide(GameScreen screen) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	Origin getOrigin() {}
 
 	float getComparisonKey() {}
 
 	byte getLayer() {}
 
-	Origin getOrigin() {}
-
-	float getWidth() {}
-
-	float getHeight() {}
+	Vector2 getSize() {}
 
 	void addObject(ScreenObject object) {}
 
-	float getCenterY() {}
-
-	float getCenterX() {}
+	Vector2 toCenter(Vector2 center) {}
 
 	float getDangerPriority(BattleEntity entity) {}
 
-	boolean isDangerous(BattleEntity entity, int x, int y) {}
-
 	void disappear(int x, int y, DangerDisappearListener onDisappear) {}
+
+	boolean isDangerous(BattleEntity entity, int x, int y) {}
 
 	float getDangerIgnore(int level) {}
 
-	float getYScale() {}
-
-	float getXScale() {}
-
 	Patchwork getPatchwork() {}
-
-	boolean isFlipY() {}
 
 	boolean isFlipX() {}
 
+	Vector2 getScale() {}
+
+	boolean isFlipY() {}
+
 	List getShadowDrawables() {}
 
-	float getShadowZ() {}
-
-	float getShadowX() {}
+	void drawShadow(CustomSpriteBatch batch, float x, float y, float z) {}
 
 	float getShadowAlpha() {}
-
-	float getShadowY() {}
 
 	OwnedHitProperty getProperty() {}
 
@@ -82,50 +72,50 @@ ReboundObject(Object) : ScreenObject, ShadowEntity, Danger, AttackParticleObject
 
 	float getTime() {}
 
-	float getX() {}
+	float getY() {}
 
 	boolean isActive() {}
 
-	float getY() {}
-
-	float getSpeed() {}
+	float getX() {}
 
 	Battle getBattle() {}
 
-	OwnedHitProperty getCurrentProperty() {}
+	float getSpeed() {}
 
-	void updatePosition() {}
-
-	AttackParticleSpawner getParticles() {}
-
-	float getTimeOffset() {}
-
-	FieldFlicker getFlicker() {}
-
-	int getXTile() {}
-
-	int getCurrentPanel() {}
+	ShaderManager getShaderManager() {}
 
 	DrawableState getDrawable() {}
-
-	boolean isShadow() {}
-
-	int getCurrentX() {}
-
-	void clearHits() {}
 
 	float getDelay() {}
 
 	Map getHitEntities() {}
 
-	int getYTile() {}
-
-	ShaderManager getShaderManager() {}
-
-	float getYOffset() {}
+	void updatePosition() {}
 
 	int getCurrentY() {}
 
+	int getCurrentPanel() {}
+
+	float getTimeOffset() {}
+
+	FieldFlicker getFlicker() {}
+
+	int getYTile() {}
+
 	float getRadius() {}
+
+	int getCurrentX() {}
+
+	void clearHits() {}
+
+	int getXTile() {}
+
+	float getYOffset() {}
+
+	boolean isShadow() {}
+
+	AttackParticleSpawner getParticles() {}
+
+	OwnedHitProperty getCurrentProperty() {}
 
 }

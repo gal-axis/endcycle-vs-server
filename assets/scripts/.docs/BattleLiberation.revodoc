@@ -2,10 +2,11 @@ BattleLiberation(Object) : ScreenObject {
 
 	final BattleLiberationData data;
 	final List required;
+	Point position;
 	Battle battle;
 	Party toLiberate;
 
-	new(BattleLiberationData data) {}
+	new(BattleLiberationData arg0) {}
 
 	boolean equals(Object arg0) {}
 
@@ -15,34 +16,36 @@ BattleLiberation(Object) : ScreenObject {
 
 	void dispose() {}
 
-	void update(float delta) {}
+	void update(float arg0) {}
 
 	boolean remove() {}
 
 	String getName() {}
 
-	void init(GameScreen screen) {}
+	void init(GameScreen arg0) {}
 
 	boolean isHidden() {}
 
-	void resize(boolean landscape, int width, int height) {}
+	void resize(boolean arg0, int arg1, int arg2) {}
 
-	void show(GameScreen screen) {}
+	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
 
-	void hide(GameScreen screen) {}
+	void hide(GameScreen arg0) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	float getComparisonKey() {}
+	void show(GameScreen arg0) {}
 
 	byte getLayer() {}
 
+	float getComparisonKey() {}
+
 	Origin getOrigin() {}
 
-	boolean occupies(BattleEntity entity) {}
-
-	void changeParty(Party party) {}
-
 	void liberate() {}
+
+	void changeParty(Party arg0) {}
+
+	boolean occupies(int arg0, int arg1) {}
+
+	boolean occupies(BattleEntity arg0) {}
 
 }

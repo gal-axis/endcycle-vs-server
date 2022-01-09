@@ -7,16 +7,15 @@ Patchwork(Object) : IdEntity, Paintable {
 	PatchworkStateId state;
 	PatchworkStateId defaultState;
 	PatchworkStateId leadsInto;
-	float maxWidth;
-	float maxHeight;
+	final Vector2 maxSize;
 	int hAlign;
 	int vAlign;
 	double animationSpeed;
 	double animState;
 
-	new(ID arg0, Map arg1) {}
+	new(ID id) {}
 
-	new(ID arg0) {}
+	new(ID id, Map states) {}
 
 	boolean equals(Object arg0) {}
 
@@ -24,66 +23,64 @@ Patchwork(Object) : IdEntity, Paintable {
 
 	int hashCode() {}
 
-	void paint(Painter arg0) {}
+	void paint(Painter painter) {}
 
 	ID getId() {}
 
-	void update(float arg0) {}
+	void update(float delta) {}
 
 	PatchworkStateId getState() {}
 
-	static PatchworkStateId getState(String arg0) {}
+	static PatchworkStateId getState(String name) {}
 
 	Patchwork copy() {}
 
-	void draw(Batch arg0, float arg1, float arg2, float arg3, float arg4, double arg5, int arg6, int arg7, Color arg8) {}
+	Vector2 getSize() {}
 
-	void draw(Batch arg0, float arg1, float arg2, float arg3, float arg4, Color arg5) {}
+	void draw(Batch batch, float posX, float posY, float scaleX, float scaleY, Color tint) {}
+
+	void draw(Batch batch, float posX, float posY, float scaleX, float scaleY, double animState, int hAlign, int vAlign, Color tint) {}
 
 	boolean isFinished() {}
 
-	float getWidth() {}
+	double getAnimationDuration() {}
 
-	float getHeight() {}
+	boolean setState(PatchworkStateId name) {}
 
-	float getYPosition(float arg0, float arg1) {}
+	boolean hasState(PatchworkStateId name) {}
 
-	float getYPosition(float arg0, float arg1, double arg2, int arg3) {}
-
-	boolean setState(PatchworkStateId arg0) {}
+	boolean inState(PatchworkStateId name) {}
 
 	void resetAnimation() {}
 
-	boolean hasState(PatchworkStateId arg0) {}
+	float getYPosition(float y, float scaleY, double animState, int vAlign) {}
 
-	boolean inState(PatchworkStateId arg0) {}
+	float getYPosition(float y, float scaleY) {}
 
-	float getXPosition(float arg0, float arg1, double arg2, int arg3) {}
+	float getXPosition(float x, float scaleX) {}
 
-	float getXPosition(float arg0, float arg1) {}
+	float getXPosition(float x, float scaleX, double animState, int hAlign) {}
 
-	void setPalette(Array arg0) {}
-
-	boolean hasShadow() {}
-
-	double getAnimationDuration() {}
+	void setPalette(Array palette) {}
 
 	PatchworkState getPatchworkState() {}
 
-	void setStates(Map arg0) {}
+	boolean hasShadow() {}
 
-	PatchworkState getDefaultState() {}
-
-	Patchwork fullCopy() {}
+	void setStates(Map states) {}
 
 	void copyStates() {}
 
-	PatchworkState addState(PatchworkStateId arg0, PatchworkStateId arg1, DrawableState[] arg2) {}
-
-	void addState(PatchworkStateId arg0, DrawableState[] arg1) {}
-
-	PatchworkState addState(PatchworkStateId arg0, PatchworkState arg1) {}
+	Patchwork fullCopy() {}
 
 	void resetSizes() {}
+
+	PatchworkState getDefaultState() {}
+
+	PatchworkState addState(PatchworkStateId name, PatchworkStateId leadsInto, DrawableState[] images) {}
+
+	PatchworkState addState(PatchworkStateId name, PatchworkState state) {}
+
+	void addState(PatchworkStateId name, DrawableState[] images) {}
 
 }

@@ -33,15 +33,15 @@ BattleHUD(HUD) {
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void hide(GameScreen screen) {}
-
 	void show(GameScreen screen) {}
+
+	void hide(GameScreen screen) {}
 
 	Origin getOrigin() {}
 
-	byte getLayer() {}
-
 	float getComparisonKey() {}
+
+	byte getLayer() {}
 
 	boolean button(ButtonEvent trigger) {}
 
@@ -51,9 +51,9 @@ BattleHUD(HUD) {
 
 	void remove(Array buttons) {}
 
-	boolean setPlayerButtons(int player, Array buttons) {}
-
 	void addButtonTips(ButtonTipList tips) {}
+
+	boolean setPlayerButtons(int player, Array buttons) {}
 
 	void createButtons() {}
 

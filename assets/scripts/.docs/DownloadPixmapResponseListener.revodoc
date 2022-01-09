@@ -1,7 +1,7 @@
 interface DownloadPixmapResponseListener {
 
-	abstract void downloadComplete(Pixmap arg0);
-
 	abstract void downloadFailed(Throwable arg0);
+
+	abstract void downloadComplete(Pixmap arg0);
 
 }

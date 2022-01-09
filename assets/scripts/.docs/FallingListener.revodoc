@@ -17,11 +17,11 @@ FallingListener(Object) : BattleEntityListener, BECondition {
 
 	int hashCode() {}
 
-	void actionTriggered(Runnable action) {}
+	boolean isActionRollback(Object[] action) {}
 
 	void actionTriggered(Object[] action) {}
 
-	boolean isActionRollback(Object[] action) {}
+	void actionTriggered(Runnable action) {}
 
 	boolean test(BattleEntity entity) {}
 
@@ -35,11 +35,9 @@ FallingListener(Object) : BattleEntityListener, BECondition {
 
 	void init() {}
 
-	void dispose() {}
-
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	double crush(double amount, int crushStrength) {}
+	void dispose() {}
 
 	void attack(Attack attack) {}
 
@@ -47,21 +45,25 @@ FallingListener(Object) : BattleEntityListener, BECondition {
 
 	CColor getTint() {}
 
-	int heal(BattleEntity origin, int amount, boolean display) {}
+	double crush(double amount, int crushStrength) {}
 
 	AilmentInflict inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
 
-	int hurt(BattleEntity origin, int amount, boolean display) {}
+	int heal(BattleEntity origin, int amount, Color display) {}
+
+	void inflictPre(OwnedHitProperty property) {}
+
+	int hurt(BattleEntity origin, int amount, Color display) {}
 
 	void inflict(OwnedHitProperty property) {}
 
 	void inflictPost(OwnedHitProperty property) {}
 
-	void inflictPre(OwnedHitProperty property) {}
-
 	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
 
 	void drawHud(CustomSpriteBatch batch, float xOfs, float yOfs, float width, float height) {}
+
+	void highlight(BattleEntity entity, Color color, LocalizedMessage message) {}
 
 	float getOffset() {}
 

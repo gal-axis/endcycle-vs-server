@@ -30,25 +30,25 @@ CustomizablePicker(SimpleMenuElement) : InputListener {
 
 	final void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void show(GameScreen screen) {}
-
 	void hide(GameScreen screen) {}
+
+	void show(GameScreen screen) {}
 
 	final Origin getOrigin() {}
 
-	byte getLayer() {}
-
 	float getComparisonKey() {}
 
-	final void removeObject() {}
+	byte getLayer() {}
 
 	final void addObject(ScreenObject object) {}
 
+	final void removeObject() {}
+
 	final SoundContainer playSound(Sounds sound) {}
 
-	SoundContainer playSound(SoundInfo sound) {}
-
 	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	SoundContainer playSound(SoundInfo sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
@@ -60,7 +60,7 @@ CustomizablePicker(SimpleMenuElement) : InputListener {
 
 	void calculateSize() {}
 
-	MenuElement setEnabled(boolean enabled) {}
+	MenuElement getAbsoluteParent() {}
 
 	boolean select() {}
 
@@ -68,15 +68,15 @@ CustomizablePicker(SimpleMenuElement) : InputListener {
 
 	float getY() {}
 
-	MenuElement getAbsoluteParent() {}
+	MenuElement setEnabled(boolean enabled) {}
 
-	MenuElement setLayer(byte layer) {}
+	MenuElement setHeight(float height) {}
 
 	float getWidth() {}
 
 	float getHeight() {}
 
-	MenuElement setHeight(float height) {}
+	MenuElement setLayer(byte layer) {}
 
 	boolean touch(TouchEvent trigger) {}
 
@@ -92,79 +92,81 @@ CustomizablePicker(SimpleMenuElement) : InputListener {
 
 	MenuElement setWidth(float width) {}
 
-	boolean isFocused() {}
+	final void setMenuControllerSelection(MenuElement element) {}
 
-	int getAnchorHAlign() {}
+	Set getActionListeners() {}
 
-	float getAbsoluteY() {}
-
-	void setCursor(Rectangle rectangle) {}
-
-	boolean canDrawCursor() {}
-
-	boolean isAbsoluteHidden() {}
-
-	MenuButtonTips getButtonTips() {}
-
-	boolean isFocusable() {}
-
-	MenuElement setVAlign(int vAlign) {}
-
-	int getHAlign() {}
-
-	MenuElement setAnchorHAlign(int anchorHAlign) {}
+	boolean isTouching(float x, float y) {}
 
 	void addElements(Array elements, float x, float y) {}
 
+	boolean canDrawCursor() {}
+
+	MenuElementController findController() {}
+
+	boolean isAbsoluteHidden() {}
+
+	float getAbsoluteY() {}
+
+	MenuElement setAnchor(MenuElement anchor) {}
+
+	void setCursor(Rectangle rectangle) {}
+
+	MenuElement setHAlign(int hAlign) {}
+
+	MenuButtonTips getButtonTips() {}
+
+	MenuElement setVAlign(int vAlign) {}
+
 	MenuElement setAnchorVAlign(int anchorVAlign) {}
+
+	int getAnchorVAlign() {}
+
+	int getVAlign() {}
+
+	MenuElement setHidden(boolean hidden) {}
+
+	float getAbsoluteX() {}
+
+	int getHAlign() {}
+
+	boolean isEnabled() {}
+
+	MenuElement setAnchorHAlign(int anchorHAlign) {}
+
+	int getAnchorHAlign() {}
+
+	boolean isFocusable() {}
 
 	MenuElement getAnchor() {}
 
 	MenuElement setFocused(boolean focused) {}
 
-	int getVAlign() {}
-
-	float getAbsoluteX() {}
-
-	int getAnchorVAlign() {}
-
-	MenuElement setHAlign(int hAlign) {}
-
-	MenuElement setHidden(boolean hidden) {}
-
-	MenuElement setAnchor(MenuElement anchor) {}
-
-	boolean isEnabled() {}
-
-	boolean isTouching(float x, float y) {}
-
-	Set getActionListeners() {}
-
-	final void setMenuControllerSelection(MenuElement element) {}
+	boolean isFocused() {}
 
 	MenuElement setFocusable(boolean focusable) {}
 
 	void drawElement(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void controllerConnected(Controller controller) {}
-
 	void controllerDisconnected(Controller controller) {}
 
-	boolean triggerTouch(TouchEvent event) {}
+	void controllerConnected(Controller controller) {}
+
+	int getInputPriority() {}
 
 	boolean triggerButton(ButtonEvent event) {}
 
-	boolean keyDown(int keycode) {}
+	boolean triggerTouch(TouchEvent event) {}
 
 	boolean addButtonTips(ButtonTipList tips) {}
 
 	boolean keyUp(int keycode) {}
 
-	int getInputPriority() {}
-
-	boolean triggerType(int character) {}
+	boolean keyDown(int keycode) {}
 
 	boolean keyTyped(char character) {}
+
+	boolean triggerType(int character) {}
 
 	int getIndex(float x) {}
 

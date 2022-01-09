@@ -14,13 +14,13 @@ final Inventory(Object) {
 
 	int hashCode() {}
 
-	boolean add(VocShell arg0) {}
+	boolean add(Voc arg0) {}
 
 	boolean add(VocStyleShell arg0) {}
 
 	boolean add(VocStyle arg0) {}
 
-	boolean add(Voc arg0) {}
+	boolean add(VocShell arg0) {}
 
 	void load() {}
 
@@ -34,30 +34,30 @@ final Inventory(Object) {
 
 	boolean has(VocStyleShell arg0) {}
 
-	boolean has(VocShell arg0) {}
-
 	boolean has(Voc arg0) {}
+
+	boolean has(VocShell arg0) {}
 
 	PlayerVocPack getPack() {}
 
 	int addPack(PlayerVocPack arg0) {}
 
-	boolean removeMoney(int arg0) {}
-
 	int getMoney() {}
 
-	void addDefaultPack() {}
+	boolean removeMoney(int arg0) {}
+
+	void saveLocal() {}
 
 	void addMoney(int arg0) {}
 
 	void loadFallback() {}
 
+	void addDefaultPack() {}
+
+	boolean loadLocal() {}
+
 	boolean canAdd(VocShell arg0) {}
 
 	boolean canAdd(VocStyleShell arg0) {}
-
-	void saveLocal() {}
-
-	boolean loadLocal() {}
 
 }

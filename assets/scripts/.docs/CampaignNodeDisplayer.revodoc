@@ -34,19 +34,19 @@ CampaignNodeDisplayer(GameScreenObject) {
 
 	final Origin getOrigin() {}
 
-	byte getLayer() {}
-
 	float getComparisonKey() {}
+
+	byte getLayer() {}
 
 	final void removeObject() {}
 
 	final void addObject(ScreenObject object) {}
 
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
 	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(SoundInfo sound) {}
-
-	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
@@ -64,18 +64,18 @@ CampaignNodeDisplayer(GameScreenObject) {
 
 	CampaignNodePainter getCurrentNode() {}
 
-	CampaignData getCampaign() {}
-
-	float getNodeY() {}
-
-	float getNodeX() {}
-
-	float getNodeOffset() {}
-
 	List gatherScores() {}
 
 	CampaignBattle startNode(boolean retry) {}
 
+	CampaignData getCampaign() {}
+
+	float getNodeOffset() {}
+
 	List getNodes() {}
+
+	float getNodeX() {}
+
+	float getNodeY() {}
 
 }

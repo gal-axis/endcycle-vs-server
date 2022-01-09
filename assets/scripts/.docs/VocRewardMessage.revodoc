@@ -36,31 +36,31 @@ VocRewardMessage(MenuMessage) {
 
 	void hide(GameScreen screen) {}
 
-	float getComparisonKey() {}
-
 	final Origin getOrigin() {}
+
+	float getComparisonKey() {}
 
 	byte getLayer() {}
 
+	final void removeObject() {}
+
 	final void addObject(ScreenObject object) {}
 
-	final void removeObject() {}
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(SoundInfo sound) {}
 
-	SoundContainer playSound(float x, float y, SoundInfo sound) {}
-
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
 	final void removeInitializeListener(Runnable runnable) {}
 
-	final void removeDisposeListener(Runnable runnable) {}
+	final void addInitializeListener(Runnable runnable) {}
 
 	final void addDisposeListener(Runnable runnable) {}
 
-	final void addInitializeListener(Runnable runnable) {}
+	final void removeDisposeListener(Runnable runnable) {}
 
 	void scheduleMessage(GameScreenMessage message) {}
 
@@ -68,29 +68,29 @@ VocRewardMessage(MenuMessage) {
 
 	void setSpeed(float speed) {}
 
+	void setStay() {}
+
 	float getPosition() {}
 
 	boolean isStaying() {}
-
-	void setStay() {}
 
 	void controllerConnected(Controller controller) {}
 
 	void controllerDisconnected(Controller controller) {}
 
+	boolean addButtonTips(ButtonTipList tips) {}
+
 	boolean triggerTouch(TouchEvent event) {}
 
-	boolean keyUp(int keycode) {}
-
-	boolean triggerType(int character) {}
-
-	boolean addButtonTips(ButtonTipList tips) {}
+	boolean triggerButton(ButtonEvent event) {}
 
 	boolean keyDown(int keycode) {}
 
+	boolean triggerType(int character) {}
+
 	boolean keyTyped(char character) {}
 
-	boolean triggerButton(ButtonEvent event) {}
+	boolean keyUp(int keycode) {}
 
 	int getInputPriority() {}
 
@@ -102,18 +102,18 @@ VocRewardMessage(MenuMessage) {
 
 	void drawScreenTint(CustomSpriteBatch batch, float alpha) {}
 
-	void setElement(MenuElement menuElement) {}
-
-	boolean isBackKey(ButtonEvent trigger) {}
-
 	void drawMenu(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	MenuElement getMenuElement() {}
 
+	boolean isBackKey(ButtonEvent trigger) {}
+
+	void setElement(MenuElement menuElement) {}
+
 	float calcOffset() {}
 
-	VocTag getPreference(DefaultBattlePlayer player) {}
-
 	void addVoc(RandomVocRewards vocs, Random random, MenuElementGroup group, int slot, KeyCode code, VocTag preference) {}
+
+	VocTag getPreference(DefaultBattlePlayer player) {}
 
 }

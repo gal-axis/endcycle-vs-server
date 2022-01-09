@@ -22,8 +22,6 @@ IceTile(NormalTile) : BECondition {
 
 	boolean isAccessible(BattleEntity entity, boolean checkFree, boolean checkParty) {}
 
-	void dispose() {}
-
 	int getY() {}
 
 	void draw(Batch batch, float x, float y, float shade) {}
@@ -34,15 +32,17 @@ IceTile(NormalTile) : BECondition {
 
 	void refresh() {}
 
+	void dispose() {}
+
 	OwnedHitProperty hit(OwnedHitProperty property) {}
 
 	final void triggerAction(Object[] parameters) {}
 
 	void free() {}
 
-	BattleFieldBorder getCameraBorder(BattleEntity focused) {}
-
 	boolean changeType(PanelType type) {}
+
+	BattleFieldBorder getCameraBorder(BattleEntity focused) {}
 
 	void actionTriggered(Object[] action) {}
 

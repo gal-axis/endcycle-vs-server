@@ -34,19 +34,19 @@ BattleReconnectCursor(GameScreenObject) : InputListener {
 
 	final Origin getOrigin() {}
 
-	byte getLayer() {}
-
 	float getComparisonKey() {}
+
+	byte getLayer() {}
 
 	final void removeObject() {}
 
 	final void addObject(ScreenObject object) {}
 
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
 	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(SoundInfo sound) {}
-
-	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
@@ -54,21 +54,21 @@ BattleReconnectCursor(GameScreenObject) : InputListener {
 
 	void controllerDisconnected(Controller controller) {}
 
+	boolean addButtonTips(ButtonTipList tips) {}
+
 	boolean triggerTouch(TouchEvent event) {}
 
 	boolean triggerButton(ButtonEvent event) {}
 
 	boolean keyDown(int keycode) {}
 
-	boolean addButtonTips(ButtonTipList tips) {}
+	boolean triggerType(int character) {}
+
+	boolean keyTyped(char character) {}
 
 	boolean keyUp(int keycode) {}
 
 	int getInputPriority() {}
-
-	boolean triggerType(int character) {}
-
-	boolean keyTyped(char character) {}
 
 	void stop() {}
 
@@ -78,12 +78,12 @@ BattleReconnectCursor(GameScreenObject) : InputListener {
 
 	Controller getController() {}
 
+	boolean isTouching(BattlePlayer player) {}
+
 	void updateCurrent() {}
 
 	boolean isLockedIn() {}
 
 	boolean lockIn(boolean position) {}
-
-	boolean isTouching(BattlePlayer player) {}
 
 }

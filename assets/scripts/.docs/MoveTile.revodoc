@@ -35,25 +35,25 @@ MoveTile(NormalExpiringTile) : BECondition {
 
 	void dispose() {}
 
-	final void triggerAction(Object[] parameters) {}
-
 	OwnedHitProperty hit(OwnedHitProperty property) {}
+
+	final void triggerAction(Object[] parameters) {}
 
 	void free() {}
 
-	BattleFieldBorder getCameraBorder(BattleEntity focused) {}
-
 	boolean changeType(PanelType type) {}
+
+	BattleFieldBorder getCameraBorder(BattleEntity focused) {}
 
 	void actionTriggered(Object[] action) {}
 
 	Battle getBattle() {}
 
+	boolean shareBorder(BattleFieldPanel panel2) {}
+
 	OwnedHitProperty affect(OwnedHitProperty property) {}
 
 	void enter(BattleEntity entity) {}
-
-	boolean shareBorder(BattleFieldPanel panel2) {}
 
 	DrawableImage getDrawable(Party party) {}
 

@@ -40,27 +40,23 @@ FallingObject(Object) : ScreenObject, ShadowEntity, Danger, AttackParticleObject
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void show(GameScreen screen) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void hide(GameScreen screen) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	void show(GameScreen screen) {}
+
+	Origin getOrigin() {}
 
 	float getComparisonKey() {}
 
 	byte getLayer() {}
 
-	Origin getOrigin() {}
-
-	float getWidth() {}
-
-	float getHeight() {}
+	Vector2 getSize() {}
 
 	void addObject(ScreenObject object) {}
 
-	float getCenterY() {}
-
-	float getCenterX() {}
+	Vector2 toCenter(Vector2 center) {}
 
 	float getDangerPriority(BattleEntity entity) {}
 
@@ -70,25 +66,19 @@ FallingObject(Object) : ScreenObject, ShadowEntity, Danger, AttackParticleObject
 
 	float getDangerIgnore(int level) {}
 
-	float getYScale() {}
-
-	float getXScale() {}
-
-	Patchwork getPatchwork() {}
+	Vector2 getScale() {}
 
 	boolean isFlipY() {}
+
+	Patchwork getPatchwork() {}
 
 	boolean isFlipX() {}
 
 	List getShadowDrawables() {}
 
-	float getShadowZ() {}
-
-	float getShadowX() {}
+	void drawShadow(CustomSpriteBatch batch, float x, float y, float z) {}
 
 	float getShadowAlpha() {}
-
-	float getShadowY() {}
 
 	float getOffsetX() {}
 
@@ -100,8 +90,8 @@ FallingObject(Object) : ScreenObject, ShadowEntity, Danger, AttackParticleObject
 
 	float getDrawX() {}
 
-	float getOffsetY() {}
-
 	float getDrawY() {}
+
+	float getOffsetY() {}
 
 }

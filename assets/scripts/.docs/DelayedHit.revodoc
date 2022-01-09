@@ -36,11 +36,11 @@ DelayedHit(Object) : ScreenObject, Danger {
 
 	float getDangerPriority(BattleEntity entity) {}
 
+	void disappear(int x, int y, DangerDisappearListener onDisappear) {}
+
 	boolean isDangerous(BattleEntity entity, int x, int y) {}
 
 	float getDangerIgnore(int level) {}
-
-	void disappear(int x, int y, DangerDisappearListener onDisappear) {}
 
 	void dispose() {}
 
@@ -70,23 +70,23 @@ DelayedHit(Object) : ScreenObject, Danger {
 
 	void setPosition(int xTile, int yTile, boolean turned) {}
 
+	boolean hit() {}
+
 	void inflict(BattleEntityList entities) {}
 
 	void inflict(BattleEntity entity) {}
 
-	boolean hit() {}
-
-	void inflictSticky(BattleEntity entity) {}
-
 	BattleEntityList hitEntities() {}
 
-	boolean hasHit() {}
+	void hitPanel() {}
 
 	void doHitAction(boolean force) {}
 
 	void affectPanel(boolean force) {}
 
-	void hitPanel() {}
+	boolean hasHit() {}
+
+	void inflictSticky(BattleEntity entity) {}
 
 	void startHit() {}
 

@@ -28,23 +28,25 @@ InstantWinBattleMode(BattleMode) {
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void hide(GameScreen screen) {}
-
 	void show(GameScreen screen) {}
+
+	void hide(GameScreen screen) {}
 
 	Origin getOrigin() {}
 
-	byte getLayer() {}
-
 	float getComparisonKey() {}
+
+	byte getLayer() {}
 
 	void start() {}
 
 	void stop() {}
 
-	Looter createLooter() {}
+	String getDiscordMessage(Party winner) {}
 
 	ScreenObject createStarter() {}
+
+	Looter createLooter() {}
 
 	boolean isSpawn(BattleEntity entity) {}
 
@@ -52,33 +54,31 @@ InstantWinBattleMode(BattleMode) {
 
 	boolean showStart() {}
 
+	boolean isRestart() {}
+
+	BattlePlayer createPlayer(BattleEntity entity) {}
+
 	boolean loot() {}
 
-	void addLoot(Looter looter) {}
+	int adjustDamage(BattleEntity entity, int damage) {}
 
 	LocalizedMessage getLoseMessage() {}
 
 	double adjustGaugeSpeed(BattleEntity entity) {}
 
-	boolean isRestart() {}
-
-	BattlePlayer createPlayer(BattleEntity entity) {}
+	void addLoot(Looter looter) {}
 
 	void calculateTint(BattleEntity entity, CColor color) {}
 
-	int adjustDamage(BattleEntity entity, int damage) {}
-
-	String getDiscordMessage(Party winner) {}
+	void sendServerUpdate(List messages) {}
 
 	void finish(Party winner) {}
 
-	String createTeamName(Party party) {}
+	String getBattleName(String name) {}
 
 	void initHUD(BattleHUD hud) {}
 
-	String getBattleName(String name) {}
-
-	void sendServerUpdate(List messages) {}
+	String createTeamName(Party party) {}
 
 	Party getWinner() {}
 

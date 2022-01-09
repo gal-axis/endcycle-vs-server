@@ -19,11 +19,11 @@ HpChangerAilment(Ailment) {
 
 	int hashCode() {}
 
-	void actionTriggered(Runnable action) {}
+	boolean isActionRollback(Object[] action) {}
 
 	void actionTriggered(Object[] action) {}
 
-	boolean isActionRollback(Object[] action) {}
+	void actionTriggered(Runnable action) {}
 
 	void paint(Painter parameters) {}
 
@@ -43,9 +43,9 @@ HpChangerAilment(Ailment) {
 
 	final void triggerAction(Object[] parameters) {}
 
-	boolean over() {}
-
 	boolean canTarget() {}
+
+	boolean over() {}
 
 	void setIntensity(float intensity) {}
 

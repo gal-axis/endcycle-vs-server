@@ -1,6 +1,10 @@
 ScaleUpTransition(Transition) {
 
+	AttachedParticle particle;
+
 	new() {}
+
+	new(float defaultValue) {}
 
 	boolean equals(Object arg0) {}
 
@@ -10,12 +14,10 @@ ScaleUpTransition(Transition) {
 
 	void update(float delta) {}
 
-	void start(AttachedParticle attachedParticle) {}
+	void start(AttachedParticle particle) {}
 
 	void draw(Painter painter) {}
 
 	boolean isDone() {}
-
-	AttachedParticle getAttachedParticle() {}
 
 }

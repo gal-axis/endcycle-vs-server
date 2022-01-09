@@ -113,15 +113,15 @@ JsonValue(Object) : Iterable {
 
 	boolean isNull() {}
 
+	void setType(ValueType arg0) {}
+
+	String getString(int arg0) {}
+
 	String getString(String arg0) {}
 
 	String getString(String arg0, String arg1) {}
 
-	String getString(int arg0) {}
-
 	String trace() {}
-
-	void setType(ValueType arg0) {}
 
 	JsonValue child() {}
 
@@ -137,33 +137,29 @@ JsonValue(Object) : Iterable {
 
 	String toJson(OutputType arg0) {}
 
+	void prettyPrint(OutputType arg0, Writer arg1) {}
+
 	String prettyPrint(OutputType arg0, int arg1) {}
 
 	String prettyPrint(PrettyPrintSettings arg0) {}
 
-	void prettyPrint(OutputType arg0, Writer arg1) {}
+	byte asByte() {}
 
 	long asLong() {}
-
-	boolean isString() {}
-
-	void addChild(String arg0, JsonValue arg1) {}
-
-	void addChild(JsonValue arg0) {}
-
-	JsonValue getChild(String arg0) {}
 
 	int asInt() {}
 
 	boolean isNumber() {}
 
+	boolean asBoolean() {}
+
+	boolean isString() {}
+
+	JsonValue getChild(String arg0) {}
+
 	float asFloat() {}
 
 	double asDouble() {}
-
-	boolean asBoolean() {}
-
-	void setPrev(JsonValue arg0) {}
 
 	boolean isBoolean() {}
 
@@ -171,35 +167,39 @@ JsonValue(Object) : Iterable {
 
 	float[] asFloatArray() {}
 
-	int[] asIntArray() {}
-
-	byte[] asByteArray() {}
-
-	long[] asLongArray() {}
-
-	byte asByte() {}
-
-	char[] asCharArray() {}
-
-	String[] asStringArray() {}
-
-	boolean isDouble() {}
-
-	boolean isValue() {}
-
-	double[] asDoubleArray() {}
-
 	JsonValue require(int arg0) {}
 
 	JsonValue require(String arg0) {}
 
 	short[] asShortArray() {}
 
-	boolean hasChild(String arg0) {}
-
 	char asChar() {}
 
+	char[] asCharArray() {}
+
+	void setPrev(JsonValue arg0) {}
+
 	boolean[] asBooleanArray() {}
+
+	void addChild(String arg0, JsonValue arg1) {}
+
+	void addChild(JsonValue arg0) {}
+
+	long[] asLongArray() {}
+
+	byte[] asByteArray() {}
+
+	int[] asIntArray() {}
+
+	boolean isValue() {}
+
+	String[] asStringArray() {}
+
+	double[] asDoubleArray() {}
+
+	boolean hasChild(String arg0) {}
+
+	boolean isDouble() {}
 
 	boolean isLong() {}
 

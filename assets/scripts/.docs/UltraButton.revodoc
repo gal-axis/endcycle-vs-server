@@ -14,25 +14,25 @@ abstract UltraButton(MobileVocButton) {
 
 	int hashCode() {}
 
-	void controllerConnected(Controller controller) {}
-
 	void controllerDisconnected(Controller controller) {}
 
-	boolean triggerTouch(TouchEvent event) {}
+	void controllerConnected(Controller controller) {}
+
+	int getInputPriority() {}
 
 	boolean triggerButton(ButtonEvent event) {}
 
-	int getInputPriority() {}
+	boolean triggerTouch(TouchEvent event) {}
+
+	boolean addButtonTips(ButtonTipList tips) {}
+
+	boolean keyUp(int keycode) {}
+
+	boolean keyDown(int keycode) {}
 
 	boolean keyTyped(char character) {}
 
 	boolean triggerType(int character) {}
-
-	boolean keyUp(int keycode) {}
-
-	boolean addButtonTips(ButtonTipList tips) {}
-
-	boolean keyDown(int keycode) {}
 
 	void update(float delta) {}
 
@@ -50,22 +50,22 @@ abstract UltraButton(MobileVocButton) {
 
 	abstract float getY();
 
-	KeyCode getCode() {}
-
 	CColor getColor(VocEntry voc) {}
 
-	abstract float getVocSize();
-
-	void drawButton(CustomSpriteBatch batch, float scale, float sizeX, float sizeY, float x, float y) {}
-
-	abstract float getSizeY();
-
-	abstract float getSizeX();
-
-	VocEntry getVoc(VocSet set) {}
+	KeyCode getCode() {}
 
 	boolean isTouching(int posX, int posY) {}
 
 	void drawVoc(CustomSpriteBatch batch, VocEntry voc, float x, float y, float scale, Color color) {}
+
+	abstract float getVocSize();
+
+	abstract float getSizeX();
+
+	abstract float getSizeY();
+
+	VocEntry getVoc(VocSet set) {}
+
+	void drawButton(CustomSpriteBatch batch, float scale, float sizeX, float sizeY, float x, float y) {}
 
 }

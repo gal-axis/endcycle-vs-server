@@ -28,17 +28,17 @@ AttackPlan(Object) {
 
 	void flip() {}
 
-	void finish() {}
-
 	boolean active() {}
+
+	void finish() {}
 
 	boolean isMoveable() {}
 
 	void modify(VocStyle style) {}
 
-	void setAttack(Attack attack, boolean clone) {}
-
 	void setAttackShell(AttackShell shell) {}
+
+	void setAttack(Attack attack, boolean clone) {}
 
 	void replaceAttack(Attack attack) {}
 

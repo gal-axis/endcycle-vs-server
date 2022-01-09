@@ -1,6 +1,6 @@
 SplitListener(Object) : BattleEntityListener {
 
-	new(BattleEntityMode arg0, BattleEntity arg1) {}
+	new(BattleEntityMode mode, BattleEntity entity) {}
 
 	boolean equals(Object arg0) {}
 
@@ -12,40 +12,42 @@ SplitListener(Object) : BattleEntityListener {
 
 	void remove() {}
 
-	void update(float arg0) {}
+	void update(float delta) {}
 
-	void cast(AttackPlan arg0) {}
+	void cast(AttackPlan plan) {}
 
 	void init() {}
 
-	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void dispose() {}
 
+	void attack(Attack attack) {}
+
+	PatchworkStateId setState(PatchworkStateId id) {}
+
 	CColor getTint() {}
 
-	PatchworkStateId setState(PatchworkStateId arg0) {}
+	double crush(double amount, int crushStrength) {}
 
-	void inflict(OwnedHitProperty arg0) {}
+	AilmentInflict inflictAilment(BattleEntity owner, AilmentInflict inflict) {}
 
-	void attack(Attack arg0) {}
+	int heal(BattleEntity origin, int amount, Color display) {}
 
-	double crush(double arg0, int arg1) {}
+	void inflictPre(OwnedHitProperty property) {}
 
-	AilmentInflict inflictAilment(BattleEntity arg0, AilmentInflict arg1) {}
+	int hurt(BattleEntity origin, int amount, Color display) {}
 
-	Mover move(MoveType arg0, int arg1, int arg2, float arg3, Mover arg4) {}
+	void inflict(OwnedHitProperty property) {}
 
-	int hurt(BattleEntity arg0, int arg1, boolean arg2) {}
+	void inflictPost(OwnedHitProperty property) {}
 
-	int heal(BattleEntity arg0, int arg1, boolean arg2) {}
+	Mover move(MoveType type, int xTile, int yTile, float speed, Mover mover) {}
 
-	void inflictPost(OwnedHitProperty arg0) {}
+	void drawHud(CustomSpriteBatch batch, float xOfs, float yOfs, float width, float height) {}
 
-	void inflictPre(OwnedHitProperty arg0) {}
+	void highlight(BattleEntity entity, Color color, LocalizedMessage message) {}
 
-	void drawHud(CustomSpriteBatch arg0, float arg1, float arg2, float arg3, float arg4) {}
-
-	void createCopy(float arg0, float arg1, float arg2) {}
+	void createCopy(float delay, float xOfs, float yOfs) {}
 
 }

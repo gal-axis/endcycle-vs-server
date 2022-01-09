@@ -37,13 +37,17 @@ Layers(Object) : UpdateCondition {
 
 	ScreenObject getObject(Object origin, int id) {}
 
-	ScreenObject getObject(String name) {}
-
 	ScreenObject getObject(Origin origin) {}
+
+	ScreenObject getObject(String name) {}
 
 	boolean isHidden(ScreenObject screenObject) {}
 
 	void resize(boolean landscape, int width, int height) {}
+
+	void updateObjects(float delta) {}
+
+	void clearObjects() {}
 
 	boolean removeObject(ScreenObject object) {}
 
@@ -51,17 +55,13 @@ Layers(Object) : UpdateCondition {
 
 	ScreenObject addObject(ScreenObject object) {}
 
-	void clearObjects() {}
+	void removeRenderProcessor(RenderProcessor renderProcessor) {}
+
+	void addRenderProcessor(RenderProcessor renderProcessor) {}
 
 	void show() {}
 
 	void hide() {}
-
-	void updateObjects(float delta) {}
-
-	void addRenderProcessor(RenderProcessor renderProcessor) {}
-
-	void removeRenderProcessor(RenderProcessor renderProcessor) {}
 
 	void startRendering(CustomSpriteBatch batch, byte layer) {}
 

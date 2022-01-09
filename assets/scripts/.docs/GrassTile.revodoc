@@ -22,13 +22,13 @@ GrassTile(NormalExpiringTile) {
 
 	boolean isAccessible(BattleEntity entity, boolean checkFree, boolean checkParty) {}
 
-	int getX() {}
-
 	int getY() {}
 
 	void draw(Batch batch, float x, float y, float shade) {}
 
 	void draw(Batch batch, float x, float y, Party party, float shade, float alpha) {}
+
+	int getX() {}
 
 	void refresh() {}
 
@@ -40,13 +40,13 @@ GrassTile(NormalExpiringTile) {
 
 	void free() {}
 
-	BattleFieldBorder getCameraBorder(BattleEntity focused) {}
-
 	boolean changeType(PanelType type) {}
 
-	Battle getBattle() {}
+	BattleFieldBorder getCameraBorder(BattleEntity focused) {}
 
 	void actionTriggered(Object[] action) {}
+
+	Battle getBattle() {}
 
 	boolean shareBorder(BattleFieldPanel panel2) {}
 

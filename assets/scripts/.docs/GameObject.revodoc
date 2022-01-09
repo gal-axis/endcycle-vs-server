@@ -6,27 +6,24 @@ GameObject(GameScreenObject) : AttackParticleObject, Named {
 	ShaderManager shaderManager;
 	GameObjectParticles particles;
 	String name;
-	float x;
-	float y;
+	Vector2 position;
+	Vector2 offset;
+	Vector2 scale;
 	byte layer;
 	boolean flipX;
 	boolean flipY;
 	CColor tint;
 	TintManager tintManager;
 	Patchwork patchwork;
-	float xScale;
-	float yScale;
-	float xOffset;
-	float yOffset;
 	Rectangle mask;
 
-	new(String name, float x, float y, ID patchwork) {}
+	new(String name, float x, float y) {}
 
 	new(String name) {}
 
 	new() {}
 
-	new(String name, float x, float y) {}
+	new(String name, float x, float y, ID patchwork) {}
 
 	final boolean equals(Object obj) {}
 
@@ -48,41 +45,41 @@ GameObject(GameScreenObject) : AttackParticleObject, Named {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
 	void hide(GameScreen screen) {}
 
 	void show(GameScreen screen) {}
-
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	byte getLayer() {}
 
 	final Origin getOrigin() {}
 
 	float getComparisonKey() {}
 
-	SoundContainer playSound(float x, float y, SoundInfo sound) {}
-
-	final SoundContainer playSound(Sounds sound) {}
-
-	SoundContainer playSound(SoundInfo sound) {}
+	byte getLayer() {}
 
 	final void addObject(ScreenObject object) {}
 
 	final void removeObject() {}
 
+	final SoundContainer playSound(Sounds sound) {}
+
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
+	SoundContainer playSound(SoundInfo sound) {}
+
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
-	final float getHeight() {}
+	final Vector2 getSize() {}
 
-	final float getWidth() {}
-
-	float getCenterX() {}
-
-	float getCenterY() {}
+	Vector2 toCenter(Vector2 center) {}
 
 	final PatchworkStateId getState() {}
 
 	void resetState() {}
+
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scaleX, float scaleY) {}
+
+	void draw(CustomSpriteBatch batch) {}
 
 	CColor calculateTint() {}
 
@@ -90,36 +87,30 @@ GameObject(GameScreenObject) : AttackParticleObject, Named {
 
 	final boolean isAnimationFinished() {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs, float scaleX, float scaleY) {}
+	final Patchwork setPatchwork(ID id) {}
 
-	void draw(CustomSpriteBatch batch) {}
-
-	void updateParticles(float delta) {}
-
-	final void resetAnimation() {}
-
-	final void resetTint() {}
-
-	final boolean hasState(PatchworkStateId name) {}
-
-	final boolean isFlipX() {}
+	Patchwork setPatchwork(Patchwork patchwork) {}
 
 	void updateGraphics(float delta) {}
 
 	boolean setState(PatchworkStateId state) {}
 
-	Patchwork setPatchwork(Patchwork patchwork) {}
-
-	final Patchwork setPatchwork(ID id) {}
-
-	final float getXScale() {}
-
-	final Patchwork getPatchwork() {}
+	final boolean hasState(PatchworkStateId name) {}
 
 	final boolean inState(PatchworkStateId name) {}
 
+	final void resetAnimation() {}
+
+	final Vector2 getScale() {}
+
 	final boolean isFlipY() {}
 
-	final float getYScale() {}
+	void updateParticles(float delta) {}
+
+	final Patchwork getPatchwork() {}
+
+	final void resetTint() {}
+
+	final boolean isFlipX() {}
 
 }

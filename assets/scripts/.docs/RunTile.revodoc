@@ -23,37 +23,37 @@ RunTile(PanelEffect) : BECondition {
 
 	boolean isAccessible(BattleEntity entity, boolean checkFree, boolean checkParty) {}
 
-	int getX() {}
+	int getY() {}
 
 	void draw(Batch batch, float x, float y, float shade) {}
 
 	void draw(Batch batch, float x, float y, Party party, float shade, float alpha) {}
 
-	int getY() {}
-
-	void dispose() {}
+	int getX() {}
 
 	void refresh() {}
 
-	final void triggerAction(Object[] parameters) {}
+	void dispose() {}
 
 	OwnedHitProperty hit(OwnedHitProperty property) {}
 
-	void free() {}
+	final void triggerAction(Object[] parameters) {}
 
-	BattleFieldBorder getCameraBorder(BattleEntity focused) {}
+	void free() {}
 
 	boolean changeType(PanelType type) {}
 
-	Battle getBattle() {}
+	BattleFieldBorder getCameraBorder(BattleEntity focused) {}
 
 	void actionTriggered(Object[] action) {}
 
+	Battle getBattle() {}
+
 	boolean shareBorder(BattleFieldPanel panel2) {}
 
-	void enter(BattleEntity entity) {}
-
 	OwnedHitProperty affect(OwnedHitProperty property) {}
+
+	void enter(BattleEntity entity) {}
 
 	boolean test(BattleEntity entity) {}
 

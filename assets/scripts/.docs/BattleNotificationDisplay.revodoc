@@ -36,31 +36,31 @@ BattleNotificationDisplay(Object) : ScreenObject {
 
 	Origin getOrigin() {}
 
-	byte getLayer() {}
-
 	float getComparisonKey() {}
+
+	byte getLayer() {}
 
 	BattleNotificationData get(String text, Color color) {}
 
-	void show(BattleNotificationData data) {}
+	void show(String text, BattleEntity entity) {}
 
 	void show(String text, Color color) {}
 
-	void show(String text, BattleEntity entity) {}
+	void show(BattleNotificationData data) {}
 
 	void kill(BattleEntity entity, BattleEntity killed) {}
 
-	void winning(Party party) {}
-
 	void killed(BattleEntity killer, BattleEntity entity) {}
 
+	void winning(Party party) {}
+
 	void revenge(BattleEntity entity, BattleEntity killed) {}
+
+	void multikill(BattleEntity entity, int amount) {}
 
 	void killjoy(BattleEntity entity, BattleEntity killer) {}
 
 	void killstreak(BattleEntity entity, int streak) {}
-
-	void multikill(BattleEntity entity, int amount) {}
 
 	void friendlyFire(BattleEntity entity, BattleEntity killed) {}
 

@@ -30,17 +30,17 @@ BattleFreeCamera(BattleCamera) : GameEventListener, InputListener, DragListener 
 
 	void resize(boolean landscape, int width, int height) {}
 
-	void hide(GameScreen screen) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	void show(GameScreen screen) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	void hide(GameScreen screen) {}
 
 	Origin getOrigin() {}
 
-	byte getLayer() {}
-
 	float getComparisonKey() {}
+
+	byte getLayer() {}
 
 	void reset() {}
 
@@ -48,17 +48,21 @@ BattleFreeCamera(BattleCamera) : GameEventListener, InputListener, DragListener 
 
 	void sync() {}
 
-	float getX() {}
-
 	float getY() {}
+
+	float getX() {}
 
 	BattleEntity getCameraFocus() {}
 
 	void setPosition(float x, float y) {}
 
-	void moveX(float x) {}
+	boolean isFocusing() {}
 
 	float getFocusX() {}
+
+	void limitCamera(BattleEntity focused) {}
+
+	void moveX(float x) {}
 
 	float getOffsetX() {}
 
@@ -68,37 +72,33 @@ BattleFreeCamera(BattleCamera) : GameEventListener, InputListener, DragListener 
 
 	float getYReal() {}
 
-	void limitCamera(BattleEntity focused) {}
-
-	boolean isFocusing() {}
-
 	float getXReal() {}
 
 	void drag(float deltaX, float deltaY) {}
 
-	void stopDrag(float x, float y, float deltaX, float deltaY, boolean clickScrolled) {}
-
 	void startDrag(float x, float y) {}
 
-	void controllerDisconnected(Controller controller) {}
+	void stopDrag(float x, float y, float deltaX, float deltaY, boolean clickScrolled) {}
 
 	void controllerConnected(Controller controller) {}
 
-	boolean keyTyped(char character) {}
-
-	boolean triggerTouch(TouchEvent event) {}
-
-	boolean triggerType(int character) {}
-
-	boolean keyUp(int keycode) {}
-
-	boolean triggerButton(ButtonEvent event) {}
-
-	int getInputPriority() {}
+	void controllerDisconnected(Controller controller) {}
 
 	boolean addButtonTips(ButtonTipList tips) {}
 
+	boolean triggerTouch(TouchEvent event) {}
+
+	boolean triggerButton(ButtonEvent event) {}
+
 	boolean keyDown(int keycode) {}
+
+	boolean triggerType(int character) {}
+
+	boolean keyTyped(char character) {}
+
+	boolean keyUp(int keycode) {}
+
+	int getInputPriority() {}
 
 	void handle(GameEvent event) {}
 

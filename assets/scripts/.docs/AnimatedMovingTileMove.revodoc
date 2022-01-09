@@ -10,18 +10,19 @@ AnimatedMovingTileMove(MovingTileMove) {
 	float goalX;
 	float goalY;
 	Array next;
+	Point freed;
 
-	new(BattleEntity arg0) {}
+	new(BattleEntity parent) {}
 
-	boolean equals(Object arg0) {}
+	boolean equals(Object o) {}
 
 	String toString() {}
 
 	int hashCode() {}
 
-	void update(float arg0) {}
+	void update(float delta) {}
 
-	void init(int arg0, int arg1, float arg2) {}
+	void init(int xTile, int yTile, float speed) {}
 
 	void start() {}
 
@@ -31,7 +32,7 @@ AnimatedMovingTileMove(MovingTileMove) {
 
 	Battle getBattle() {}
 
-	void set(int arg0, int arg1, float arg2) {}
+	void set(int xTile, int yTile, float speed) {}
 
 	void reset() {}
 
@@ -41,6 +42,6 @@ AnimatedMovingTileMove(MovingTileMove) {
 
 	void freeField() {}
 
-	void setSpeed(float arg0) {}
+	void setSpeed(float speed) {}
 
 }

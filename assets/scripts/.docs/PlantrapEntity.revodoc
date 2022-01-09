@@ -44,25 +44,21 @@ PlantrapEntity(SimpleAttackObject) : BECondition {
 
 	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void show(GameScreen screen) {}
-
 	void hide(GameScreen screen) {}
+
+	void show(GameScreen screen) {}
 
 	final Origin getOrigin() {}
 
+	float getComparisonKey() {}
+
 	byte getLayer() {}
 
-	float getComparisonKey() {}
+	Vector2 getSize() {}
 
 	void addObject(ScreenObject object) {}
 
-	float getWidth() {}
-
-	float getHeight() {}
-
-	float getCenterY() {}
-
-	float getCenterX() {}
+	Vector2 toCenter(Vector2 center) {}
 
 	void actionTriggered(Runnable action) {}
 
@@ -70,25 +66,19 @@ PlantrapEntity(SimpleAttackObject) : BECondition {
 
 	boolean isActionRollback(Object[] action) {}
 
-	float getYScale() {}
-
-	boolean isFlipX() {}
-
-	Patchwork getPatchwork() {}
+	Vector2 getScale() {}
 
 	boolean isFlipY() {}
 
-	float getXScale() {}
+	Patchwork getPatchwork() {}
 
-	float getShadowX() {}
-
-	float getShadowY() {}
-
-	float getShadowZ() {}
-
-	float getShadowAlpha() {}
+	boolean isFlipX() {}
 
 	List getShadowDrawables() {}
+
+	void drawShadow(CustomSpriteBatch batch, float x, float y, float z) {}
+
+	float getShadowAlpha() {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 

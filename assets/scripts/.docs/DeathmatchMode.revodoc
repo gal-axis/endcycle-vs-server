@@ -30,17 +30,17 @@ DeathmatchMode(DefaultBattleMode) {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
 	void show(GameScreen screen) {}
 
 	void hide(GameScreen screen) {}
 
-	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+	Origin getOrigin() {}
 
 	float getComparisonKey() {}
 
 	byte getLayer() {}
-
-	Origin getOrigin() {}
 
 	void start() {}
 
@@ -48,57 +48,57 @@ DeathmatchMode(DefaultBattleMode) {
 
 	String getDiscordMessage(Party winner) {}
 
-	void initHUD(BattleHUD hud) {}
-
-	String getBattleName(String name) {}
-
-	void finish(Party winner) {}
-
-	void sendServerUpdate(List messages) {}
-
-	boolean showStart() {}
-
 	ScreenObject createStarter() {}
 
 	Looter createLooter() {}
 
-	boolean isDespawn(BattleEntity entity) {}
-
 	boolean isSpawn(BattleEntity entity) {}
 
-	int adjustDamage(BattleEntity entity, int damage) {}
+	boolean isDespawn(BattleEntity entity) {}
 
-	BattlePlayer createPlayer(BattleEntity entity) {}
+	boolean showStart() {}
 
 	boolean isRestart() {}
 
+	BattlePlayer createPlayer(BattleEntity entity) {}
+
 	boolean loot() {}
 
-	void calculateTint(BattleEntity entity, CColor color) {}
+	int adjustDamage(BattleEntity entity, int damage) {}
 
-	void addLoot(Looter looter) {}
+	LocalizedMessage getLoseMessage() {}
 
 	double adjustGaugeSpeed(BattleEntity entity) {}
 
-	LocalizedMessage getLoseMessage() {}
+	void addLoot(Looter looter) {}
+
+	void calculateTint(BattleEntity entity, CColor color) {}
+
+	void sendServerUpdate(List messages) {}
+
+	void finish(Party winner) {}
+
+	String getBattleName(String name) {}
+
+	void initHUD(BattleHUD hud) {}
 
 	String createTeamName(Party party) {}
 
 	void timeout() {}
 
-	void setCurrentTime(float currentTime) {}
-
-	void forceEnd() {}
-
 	void updateTimeCache() {}
 
 	Party getWinnerParty() {}
 
+	void setCurrentTime(float currentTime) {}
+
+	void forceEnd() {}
+
 	float getCurrentTime() {}
 
-	void updateWinner(float delta) {}
-
 	void entityDied(BattleEntity killer, BattleEntity entity) {}
+
+	void updateWinner(float delta) {}
 
 	void paintLives(CustomSpriteBatch batch, boolean enemy) {}
 

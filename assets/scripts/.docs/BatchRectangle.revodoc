@@ -47,22 +47,22 @@ BatchRectangle(Object) : ScreenObject {
 
 	Origin getOrigin() {}
 
-	byte getLayer() {}
-
 	float getComparisonKey() {}
+
+	byte getLayer() {}
 
 	void draw(Batch batch, float xOfs, float yOfs, float scaleX, float scaleY) {}
 
-	void setTint(float r, float g, float b, float a) {}
-
 	void setTint(Color color) {}
 
-	float getTintR() {}
+	void setTint(float r, float g, float b, float a) {}
 
 	float getTintA() {}
 
 	float getTintG() {}
 
 	float getTintB() {}
+
+	float getTintR() {}
 
 }

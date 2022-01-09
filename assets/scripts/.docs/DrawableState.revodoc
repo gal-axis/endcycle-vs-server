@@ -37,55 +37,57 @@ DrawableState(Drawable) {
 
 	void set(Drawable drawable) {}
 
-	TextureRegion getRegion(double animState, float x, float y, float width, float height) {}
+	Vector2 getSize() {}
 
 	TextureRegion getRegion(TextureRegion region, double animState) {}
 
 	TextureRegion getRegion(TextureRegion region, double animState, float x, float y, float width, float height) {}
 
-	void draw(Batch batch, float posX, float posY) {}
+	TextureRegion getRegion(double animState, float x, float y, float width, float height) {}
 
-	void draw(Batch batch, float posX, float posY, float scaleX, float scaleY) {}
+	void draw(Batch batch, float posX, float posY, int hAlign, int vAlign) {}
 
 	void draw(Batch batch, float posX, float posY, double animState) {}
 
 	void draw(Batch batch, float posX, float posY, Color tint) {}
 
+	void draw(Batch batch, float posX, float posY) {}
+
+	void draw(Batch batch, float posX, float posY, float scaleX, float scaleY) {}
+
 	void draw(Batch batch, float posX, float posY, float scaleX, float scaleY, double animState, int hAlign, int vAlign, Color tint) {}
 
-	void draw(Batch batch, float posX, float posY, int hAlign, int vAlign) {}
-
 	double getAnimationDuration() {}
-
-	float getWidth() {}
-
-	float getWidth(double animState) {}
 
 	float getHeight(double animState) {}
 
 	float getHeight() {}
 
-	Drawable setTint(Color color) {}
+	float getWidth() {}
+
+	float getWidth(double animState) {}
 
 	Drawable setTint(float r, float g, float b, float a) {}
 
-	float getYPosition(float y, float scaleY, double animState, int vAlign) {}
+	Drawable setTint(Color color) {}
 
-	float getXPosition(float x, float scaleX, double animState, int hAlign) {}
+	float getYPosition(float scaleY, double animState, int vAlign) {}
+
+	float getXPosition(float scaleX, double animState, int hAlign) {}
 
 	Drawable setScale(float scale) {}
-
-	double getAnimState() {}
 
 	double getFrameDuration() {}
 
 	int getFrames() {}
 
+	double getAnimState() {}
+
 	Drawable setScaleFromSize(float width, float height, boolean aspect) {}
 
-	Drawable setScaleFromHeight(float height) {}
-
 	Drawable setScaleFromWidth(float width) {}
+
+	Drawable setScaleFromHeight(float height) {}
 
 	void update(float delta) {}
 
@@ -93,8 +95,10 @@ DrawableState(Drawable) {
 
 	void resetAnimation() {}
 
-	void setPositions(float posX, float posY) {}
+	void drawShadow(CustomSpriteBatch batch, float x, float y, float z, float scaleX, float scaleY, float shearX, double animState, float alpha) {}
 
 	boolean isAnimationDone() {}
+
+	void setPositions(float posX, float posY) {}
 
 }

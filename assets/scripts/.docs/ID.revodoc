@@ -39,14 +39,14 @@ final ID(Object) : Comparable, Serializable {
 
 	static ID temp(long arg0) {}
 
-	static IdEntity findObject(List arg0, ID arg1) {}
-
-	static IdEntity findObject(Array arg0, ID arg1) {}
-
-	static ID fromString(String arg0) {}
+	static int findObjectIndex(List arg0, ID arg1) {}
 
 	static int findObjectIndex(Array arg0, ID arg1) {}
 
-	static int findObjectIndex(List arg0, ID arg1) {}
+	static ID fromString(String arg0) {}
+
+	static IdEntity findObject(Array arg0, ID arg1) {}
+
+	static IdEntity findObject(List arg0, ID arg1) {}
 
 }

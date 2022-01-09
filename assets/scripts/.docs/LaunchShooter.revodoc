@@ -1,6 +1,6 @@
 LaunchShooter(GameScreenTimerTask) {
 
-	new(BattleEntity arg0, DrawableId arg1, OwnedHitProperty arg2, AttackEffect arg3, BattleEntity arg4, Array arg5) {}
+	new(BattleEntity user, DrawableId drawable, OwnedHitProperty property, AttackEffect effect, BattleEntity target, Array points) {}
 
 	boolean equals(Object arg0) {}
 
@@ -14,6 +14,6 @@ LaunchShooter(GameScreenTimerTask) {
 
 	boolean isScheduled() {}
 
-	void createObject(Point arg0) {}
+	void createObject(Point point) {}
 
 }

@@ -36,19 +36,19 @@ MenuElementController(GameScreenObject) : InputListener {
 
 	final Origin getOrigin() {}
 
-	byte getLayer() {}
-
 	float getComparisonKey() {}
+
+	byte getLayer() {}
 
 	final void removeObject() {}
 
 	final void addObject(ScreenObject object) {}
 
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
+
 	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(SoundInfo sound) {}
-
-	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
@@ -56,21 +56,21 @@ MenuElementController(GameScreenObject) : InputListener {
 
 	void controllerDisconnected(Controller controller) {}
 
+	boolean addButtonTips(ButtonTipList tips) {}
+
 	boolean triggerTouch(TouchEvent event) {}
 
 	boolean triggerButton(ButtonEvent event) {}
 
 	boolean keyDown(int keycode) {}
 
-	boolean addButtonTips(ButtonTipList tips) {}
+	boolean triggerType(int character) {}
+
+	boolean keyTyped(char character) {}
 
 	boolean keyUp(int keycode) {}
 
 	int getInputPriority() {}
-
-	boolean triggerType(int character) {}
-
-	boolean keyTyped(char character) {}
 
 	void start() {}
 
@@ -78,46 +78,46 @@ MenuElementController(GameScreenObject) : InputListener {
 
 	void removeElement(MenuElement element) {}
 
-	void buildNeighbors() {}
-
-	void buildNeighbors(boolean separate, Array elements) {}
-
-	void buildNeighbors(MenuElement element) {}
-
-	void buildNeighbors(Array elements) {}
-
-	void buildNeighbors(boolean separate, MenuElement[] elements) {}
+	void syncCursor() {}
 
 	boolean setSelected(MenuElement selected) {}
 
 	boolean setSelected(int x, int y) {}
 
-	void syncCursor() {}
+	MenuElement getSelected() {}
 
 	void setMasterElement(MenuElement masterElement) {}
 
-	MenuElement getSelected() {}
+	void buildNeighbors(MenuElement element) {}
+
+	void buildNeighbors(boolean separate, Array elements) {}
+
+	void buildNeighbors(boolean separate, MenuElement[] elements) {}
+
+	void buildNeighbors() {}
+
+	void buildNeighbors(Array elements) {}
 
 	void setController(Controller controller) {}
 
 	boolean move(Direction direction) {}
 
-	MenuButtonTips getButtonTips() {}
-
 	void setAllowEmptySelection(boolean allowEmptySelection) {}
 
-	void setMouseInput(boolean mouseInput) {}
-
-	void drawCursor(CustomSpriteBatch batch, float xOfs, float yOfs) {}
-
-	boolean moveContainer(Direction direction) {}
+	MenuButtonTips getButtonTips() {}
 
 	boolean hasNeighbor(Direction direction) {}
 
-	void setCursorElement(MenuElement selected) {}
+	boolean moveContainer(Direction direction) {}
+
+	void drawCursor(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
+	void setKeyBoardInput(boolean keyBoardInput) {}
 
 	void updateCursor(float delta) {}
 
-	void setKeyBoardInput(boolean keyBoardInput) {}
+	void setCursorElement(MenuElement selected) {}
+
+	void setMouseInput(boolean mouseInput) {}
 
 }

@@ -28,11 +28,11 @@ AdventureFactionDisplay(SimpleMenuElement) {
 
 	void resize(boolean landscape, int width, int height) {}
 
+	final void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
+
 	void show(GameScreen screen) {}
 
 	void hide(GameScreen screen) {}
-
-	final void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
 	final Origin getOrigin() {}
 
@@ -40,15 +40,15 @@ AdventureFactionDisplay(SimpleMenuElement) {
 
 	byte getLayer() {}
 
+	final void removeObject() {}
+
 	final void addObject(ScreenObject object) {}
 
-	final void removeObject() {}
+	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	final SoundContainer playSound(Sounds sound) {}
 
 	SoundContainer playSound(SoundInfo sound) {}
-
-	SoundContainer playSound(float x, float y, SoundInfo sound) {}
 
 	void triggerEvent(Object type, Object trigger, Object[] parameters) {}
 
@@ -76,73 +76,75 @@ AdventureFactionDisplay(SimpleMenuElement) {
 
 	MenuElement setLayer(byte layer) {}
 
-	MenuElement getAbsoluteParent() {}
-
 	boolean touch(TouchEvent trigger) {}
 
 	final void triggerAction(MenuElementActionType type) {}
 
-	MenuElement setX(float x) {}
+	MenuElement getAbsoluteParent() {}
 
 	MenuElement setY(float y) {}
 
-	MenuElement setWidth(float width) {}
-
-	float calcY() {}
+	MenuElement setX(float x) {}
 
 	float calcX() {}
 
-	MenuElement getAnchor() {}
+	float calcY() {}
 
-	boolean isFocusable() {}
-
-	MenuElement setFocused(boolean focused) {}
-
-	boolean isFocused() {}
-
-	MenuElement setVAlign(int vAlign) {}
-
-	int getAnchorHAlign() {}
-
-	int getHAlign() {}
-
-	MenuElement setHidden(boolean hidden) {}
-
-	MenuElement setAnchorHAlign(int anchorHAlign) {}
-
-	float getAbsoluteX() {}
-
-	boolean isAbsoluteHidden() {}
-
-	MenuElement setHAlign(int hAlign) {}
-
-	void setCursor(Rectangle rectangle) {}
-
-	int getAnchorVAlign() {}
-
-	void addElements(Array elements, float x, float y) {}
-
-	float getAbsoluteY() {}
-
-	MenuElement setAnchor(MenuElement anchor) {}
-
-	MenuElement setAnchorVAlign(int anchorVAlign) {}
-
-	MenuButtonTips getButtonTips() {}
-
-	boolean canDrawCursor() {}
-
-	boolean isEnabled() {}
-
-	int getVAlign() {}
-
-	Set getActionListeners() {}
-
-	final void setMenuControllerSelection(MenuElement element) {}
+	MenuElement setWidth(float width) {}
 
 	MenuElement setFocusable(boolean focusable) {}
 
+	final void setMenuControllerSelection(MenuElement element) {}
+
+	Set getActionListeners() {}
+
 	boolean isTouching(float x, float y) {}
+
+	boolean isAbsoluteHidden() {}
+
+	MenuElement getAnchor() {}
+
+	int getAnchorVAlign() {}
+
+	boolean isFocusable() {}
+
+	MenuElement setAnchorVAlign(int anchorVAlign) {}
+
+	boolean isFocused() {}
+
+	MenuElement setAnchor(MenuElement anchor) {}
+
+	int getAnchorHAlign() {}
+
+	MenuElement setHidden(boolean hidden) {}
+
+	float getAbsoluteX() {}
+
+	float getAbsoluteY() {}
+
+	MenuElement setVAlign(int vAlign) {}
+
+	boolean canDrawCursor() {}
+
+	MenuElement setHAlign(int hAlign) {}
+
+	MenuElementController findController() {}
+
+	MenuButtonTips getButtonTips() {}
+
+	int getHAlign() {}
+
+	void addElements(Array elements, float x, float y) {}
+
+	int getVAlign() {}
+
+	void setCursor(Rectangle rectangle) {}
+
+	MenuElement setAnchorHAlign(int anchorHAlign) {}
+
+	boolean isEnabled() {}
+
+	MenuElement setFocused(boolean focused) {}
 
 	void drawElement(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 

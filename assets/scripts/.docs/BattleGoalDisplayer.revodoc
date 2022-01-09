@@ -13,9 +13,9 @@ BattleGoalDisplayer(BattleTimeDisplayer) : GameEventListener {
 	String defeat;
 	boolean hidden;
 
-	new(Battle arg0, double arg1, double arg2) {}
+	new(Battle battle, double bestTime, double okTime) {}
 
-	new(Battle arg0) {}
+	new(Battle battle) {}
 
 	boolean equals(Object arg0) {}
 
@@ -25,46 +25,46 @@ BattleGoalDisplayer(BattleTimeDisplayer) : GameEventListener {
 
 	void dispose() {}
 
-	void update(float arg0) {}
+	void update(float delta) {}
 
 	boolean remove() {}
 
 	String getName() {}
 
-	void init(GameScreen arg0) {}
+	void init(GameScreen screen) {}
 
 	boolean isHidden() {}
 
-	void resize(boolean arg0, int arg1, int arg2) {}
+	void resize(boolean landscape, int width, int height) {}
 
-	void draw(CustomSpriteBatch arg0, float arg1, float arg2) {}
+	void draw(CustomSpriteBatch batch, float xOfs, float yOfs) {}
 
-	void show(GameScreen arg0) {}
+	void show(GameScreen screen) {}
 
-	void hide(GameScreen arg0) {}
+	void hide(GameScreen screen) {}
 
 	Origin getOrigin() {}
 
-	byte getLayer() {}
-
 	float getComparisonKey() {}
 
-	void updateTime() {}
-
-	void updateTime(float arg0) {}
+	byte getLayer() {}
 
 	boolean isTimed() {}
 
-	void handle(GameEvent arg0) {}
+	void updateTime(float delta) {}
 
-	void append(StringBuilder arg0, String arg1) {}
+	void updateTime() {}
+
+	void handle(GameEvent event) {}
+
+	void append(StringBuilder goal, String str) {}
 
 	void updateGoals() {}
-
-	boolean newline(StringBuilder arg0) {}
 
 	String getGoalString() {}
 
 	void updateStatic() {}
+
+	boolean newline(StringBuilder goal) {}
 
 }

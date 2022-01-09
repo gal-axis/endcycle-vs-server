@@ -1,5 +1,7 @@
 SpeedTransition(ScaleUpTransition) {
 
+	AttachedParticle particle;
+
 	new() {}
 
 	new(boolean speedup) {}
@@ -12,13 +14,11 @@ SpeedTransition(ScaleUpTransition) {
 
 	void update(float delta) {}
 
-	void start(AttachedParticle attachedParticle) {}
+	void start(AttachedParticle particle) {}
 
 	void draw(Painter painter) {}
 
 	boolean isDone() {}
-
-	AttachedParticle getAttachedParticle() {}
 
 	boolean speedLimit() {}
 

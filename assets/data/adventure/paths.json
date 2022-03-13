@@ -2,8 +2,8 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.paths.AdventurePath",
 	"dataName": "Rozu",
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Rozu" },
-	"hint": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Rozu.Hint" },
+	"name": "gamedata|Adventure.Path.Rozu",
+	"hint": "gamedata|Adventure.Path.Rozu.Hint",
 	"requiredCharacter": { "id": 7 },
 	"visible": true,
 	"endScript": {
@@ -40,8 +40,8 @@
 	"class": "com.one2b3.endcycle.features.adventure.paths.AdventurePath",
 	"id": { "id": 1 },
 	"dataName": "Spark",
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Spark" },
-	"hint": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Spark.Hint" },
+	"name": "gamedata|Adventure.Path.Spark",
+	"hint": "gamedata|Adventure.Path.Spark.Hint",
 	"requiredCharacter": { "id": 2 },
 	"visible": true,
 	"endScript": {
@@ -84,8 +84,8 @@
 	"class": "com.one2b3.endcycle.features.adventure.paths.AdventurePath",
 	"id": { "id": 2 },
 	"dataName": "Fin",
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Fin" },
-	"hint": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Fin.Hint" },
+	"name": "gamedata|Adventure.Path.Fin",
+	"hint": "gamedata|Adventure.Path.Fin.Hint",
 	"requiredCharacter": {},
 	"visible": true,
 	"endScript": {
@@ -125,8 +125,8 @@
 	"class": "com.one2b3.endcycle.features.adventure.paths.AdventurePath",
 	"id": { "id": 3 },
 	"dataName": "AV.atar",
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Avatar" },
-	"hint": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Avatar.Hint" },
+	"name": "gamedata|Adventure.Path.Avatar",
+	"hint": "gamedata|Adventure.Path.Avatar.Hint",
 	"requiredCharacter": { "id": 5 },
 	"visible": true,
 	"changes": [
@@ -144,8 +144,8 @@
 	"class": "com.one2b3.endcycle.features.adventure.paths.AdventurePath",
 	"id": { "id": 4 },
 	"dataName": "AV.atar>Agent",
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Avatar.Agent" },
-	"hint": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Avatar.Agent.Hint" },
+	"name": "gamedata|Adventure.Path.Avatar.Agent",
+	"hint": "gamedata|Adventure.Path.Avatar.Agent.Hint",
 	"requiredCharacter": { "id": 5 },
 	"visible": true
 },
@@ -153,8 +153,8 @@
 	"class": "com.one2b3.endcycle.features.adventure.paths.AdventurePath",
 	"id": { "id": 5 },
 	"dataName": "AV.atar>Punk",
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Avatar.Punk" },
-	"hint": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Avatar.Punk.Hint" },
+	"name": "gamedata|Adventure.Path.Avatar.Punk",
+	"hint": "gamedata|Adventure.Path.Avatar.Punk.Hint",
 	"requiredCharacter": { "id": 5 },
 	"visible": true
 },
@@ -162,8 +162,8 @@
 	"class": "com.one2b3.endcycle.features.adventure.paths.AdventurePath",
 	"id": { "id": 6 },
 	"dataName": "Own Path",
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Avatar.Own" },
-	"hint": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Avatar.Own.Hint" },
+	"name": "gamedata|Adventure.Path.Avatar.Own",
+	"hint": "gamedata|Adventure.Path.Avatar.Own.Hint",
 	"visible": true,
 	"endScript": {
 		"class": "com.one2b3.endcycle.features.scripts.battle.BattleCharacterBranchScript",
@@ -206,6 +206,9 @@
 	},
 	"zoneScripts": [
 		{
+			"zones": [
+				{ "id": 13 }
+			],
 			"script": {
 				"class": "com.one2b3.endcycle.features.scripts.battle.BattleCharacterBranchScript",
 				"branches": [
@@ -232,8 +235,8 @@
 	"class": "com.one2b3.endcycle.features.adventure.paths.AdventurePath",
 	"id": { "id": 7 },
 	"dataName": "Punk",
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Punk" },
-	"hint": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Punk.Hint" },
+	"name": "gamedata|Adventure.Path.Punk",
+	"hint": "gamedata|Adventure.Path.Punk.Hint",
 	"requiredCharacter": { "id": 23 },
 	"visible": true,
 	"endScript": {
@@ -267,8 +270,8 @@
 	"class": "com.one2b3.endcycle.features.adventure.paths.AdventurePath",
 	"id": { "id": 8 },
 	"dataName": "Punk>Rogue",
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Punk.Rogue" },
-	"hint": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Punk.Rogue.Hint" },
+	"name": "gamedata|Adventure.Path.Punk.Rogue",
+	"hint": "gamedata|Adventure.Path.Punk.Rogue.Hint",
 	"requiredCharacter": { "id": 23 },
 	"visible": true,
 	"endScript": {
@@ -305,8 +308,8 @@
 	"class": "com.one2b3.endcycle.features.adventure.paths.AdventurePath",
 	"id": { "id": 10 },
 	"dataName": "Punk>Agent",
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Punk.Agent" },
-	"hint": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Punk.Agent.Hint" },
+	"name": "gamedata|Adventure.Path.Punk.Agent",
+	"hint": "gamedata|Adventure.Path.Punk.Agent.Hint",
 	"requiredCharacter": { "id": 23 },
 	"visible": true,
 	"endScript": {
@@ -333,8 +336,8 @@
 	"class": "com.one2b3.endcycle.features.adventure.paths.AdventurePath",
 	"id": { "id": 11 },
 	"dataName": "Cress",
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Cress" },
-	"hint": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Cress.Hint" },
+	"name": "gamedata|Adventure.Path.Cress",
+	"hint": "gamedata|Adventure.Path.Cress.Hint",
 	"requiredCharacter": { "id": 21 },
 	"visible": true,
 	"endScript": {
@@ -392,8 +395,8 @@
 	"class": "com.one2b3.endcycle.features.adventure.paths.AdventurePath",
 	"id": { "id": 12 },
 	"dataName": "Agent",
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Agent" },
-	"hint": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Agent.Hint" },
+	"name": "gamedata|Adventure.Path.Agent",
+	"hint": "gamedata|Adventure.Path.Agent.Hint",
 	"requiredCharacter": { "id": 13 },
 	"visible": true,
 	"endScript": {
@@ -420,8 +423,8 @@
 	"class": "com.one2b3.endcycle.features.adventure.paths.AdventurePath",
 	"id": { "id": 13 },
 	"dataName": "Agent>Rogue",
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Agent.Rogue" },
-	"hint": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Agent.Rogue.Hint" },
+	"name": "gamedata|Adventure.Path.Agent.Rogue",
+	"hint": "gamedata|Adventure.Path.Agent.Rogue.Hint",
 	"requiredCharacter": { "id": 13 },
 	"visible": true,
 	"endScript": {
@@ -454,8 +457,8 @@
 	"class": "com.one2b3.endcycle.features.adventure.paths.AdventurePath",
 	"id": { "id": 15 },
 	"dataName": "Agent>Punk",
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Agent.Punk" },
-	"hint": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Agent.Punk.Hint" },
+	"name": "gamedata|Adventure.Path.Agent.Punk",
+	"hint": "gamedata|Adventure.Path.Agent.Punk.Hint",
 	"requiredCharacter": { "id": 13 },
 	"visible": true,
 	"endScript": {
@@ -489,8 +492,8 @@
 	"class": "com.one2b3.endcycle.features.adventure.paths.AdventurePath",
 	"id": { "id": 16 },
 	"dataName": "Del",
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Del" },
-	"hint": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Del.Hint" },
+	"name": "gamedata|Adventure.Path.Del",
+	"hint": "gamedata|Adventure.Path.Del.Hint",
 	"requiredCharacter": { "id": 9 },
 	"visible": true,
 	"endScript": {
@@ -534,18 +537,27 @@
 },
 {
 	"class": "com.one2b3.endcycle.features.adventure.paths.AdventurePath",
+	"id": { "id": 14 },
+	"dataName": "Yven",
+	"name": "|Yven",
+	"hint": "|Work In progress!",
+	"requiredCharacter": { "id": 59 },
+	"visible": true
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.paths.AdventurePath",
 	"id": { "id": 17 },
 	"dataName": "Noise",
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Noise" },
-	"hint": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Noise.Hint" },
+	"name": "gamedata|Adventure.Path.Noise",
+	"hint": "gamedata|Adventure.Path.Noise.Hint",
 	"visible": true
 },
 {
 	"class": "com.one2b3.endcycle.features.adventure.paths.AdventurePath",
 	"id": { "id": 18 },
 	"dataName": "Jeremy",
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Jeremy" },
-	"hint": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Jeremy.Hint" },
+	"name": "gamedata|Adventure.Path.Jeremy",
+	"hint": "gamedata|Adventure.Path.Jeremy.Hint",
 	"requiredCharacter": { "id": 48 },
 	"visible": true
 },
@@ -553,8 +565,8 @@
 	"class": "com.one2b3.endcycle.features.adventure.paths.AdventurePath",
 	"id": { "id": 19 },
 	"dataName": "Bella",
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Bella" },
-	"hint": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Bella.Hint" },
+	"name": "gamedata|Adventure.Path.Bella",
+	"hint": "gamedata|Adventure.Path.Bella.Hint",
 	"requiredCharacter": { "id": 11 },
 	"visible": true,
 	"endScript": {
@@ -671,8 +683,8 @@
 	"class": "com.one2b3.endcycle.features.adventure.paths.AdventurePath",
 	"id": { "id": 9 },
 	"dataName": "Tri-Wing",
-	"name": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Triwing" },
-	"hint": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Path.Triwing.Hint" },
+	"name": "gamedata|Adventure.Path.Triwing",
+	"hint": "gamedata|Adventure.Path.Triwing.Hint",
 	"requiredCharacter": { "id": 8 },
 	"visible": true
 }

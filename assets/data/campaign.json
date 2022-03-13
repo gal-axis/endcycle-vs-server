@@ -6,7 +6,6 @@
 	"color": { "r": 0.7019608, "g": 0.28627452, "b": 0.16078432, "a": 1 },
 	"description": "In the year 2X83.... a young Noise Hunter pledges to protect the roads of the world, but Rozu must first find his own path.",
 	"victory": "You have brought Rozu one step closer to becoming a great Noise Hunter!",
-	"character": { "id": 7 },
 	"music": { "id": 6 },
 	"nodes": [
 		{
@@ -68,14 +67,7 @@
 			"battle": { "id": 6 },
 			"dialogue": { "id": 11 },
 			"startAfterDialogue": false,
-			"onLoad": {
-				"class": "com.one2b3.endcycle.features.scripts.ScriptList",
-				"scripts": [
-					{
-						"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "player" }
-					}
-				]
-			},
+			"onLoad": { "class": "com.one2b3.endcycle.features.scripts.ScriptList" },
 			"onWin": {}
 		},
 		{
@@ -96,7 +88,7 @@
 {
 	"class": "com.one2b3.endcycle.features.campaign.CampaignData",
 	"name": "Spark's Battle",
-	"color": { "r": 0.92156863, "g": 0.56078434, "b": 0.47843137, "a": 1 },
+	"color": { "r": 0.44313726, "g": 0.8784314, "b": 0.30980393, "a": 1 },
 	"description": "Tough fighter Spark is looking for a way to use her powers for more than just tournaments. This proves harder than she thought.",
 	"victory": "A new opportunity opens up for Spark! How is she going to use it?",
 	"character": { "id": 2 },
@@ -214,8 +206,9 @@
 		}
 	],
 	"unlockCondition": {
-		"campaigns": [
+		"requirements": [
 			{
+				"class": "com.one2b3.endcycle.player.progress.unlock.CampaignCondition",
 				"campaign": { "id": 1 }
 			}
 		]
@@ -334,8 +327,9 @@
 		}
 	],
 	"unlockCondition": {
-		"campaigns": [
+		"requirements": [
 			{
+				"class": "com.one2b3.endcycle.player.progress.unlock.CampaignCondition",
 				"campaign": {}
 			}
 		]
@@ -346,7 +340,7 @@
 	"id": { "id": 5 },
 	"name": "Punk Uprising",
 	"color": { "r": 0.6784314, "g": 0.09019608, "b": 0.16862746, "a": 1 },
-	"description": "Sturdy, broad and loyal: The punks live a carefree life... until a certain young woman breaks into their base one day and forces them to become more than just outlaws. How will they cope?",
+	"description": "Sturdy, broad, loyal: The punks live a carefree life... until a certain young woman breaks into their base and forces them to become more than just outlaws. How will they cope?",
 	"victory": "The fight against Azure Shield has officially begun... the punks finally found a goal worth fighting for.",
 	"character": { "id": 23 },
 	"nodes": [
@@ -587,8 +581,9 @@
 		}
 	],
 	"unlockCondition": {
-		"campaigns": [
+		"requirements": [
 			{
+				"class": "com.one2b3.endcycle.player.progress.unlock.CampaignCondition",
 				"campaign": { "id": 2 }
 			}
 		]
@@ -598,10 +593,9 @@
 	"class": "com.one2b3.endcycle.features.campaign.CampaignData",
 	"id": { "id": 6 },
 	"name": "Crimson Force",
-	"color": { "r": 0.43137255, "g": 0.015686275, "b": 0.015686275, "a": 1 },
+	"color": { "r": 0.8784314, "g": 0.7372549, "b": 0.1764706, "a": 1 },
 	"description": "Crimson Force's mission is to save Anikka. But who will save them?",
 	"victory": "With the Punks and Everod destroyed, the future of Crimson Force and Anikka lies on the shoulders of those that remained. But what can they achieve on their own?",
-	"character": { "id": 7 },
 	"music": { "id": 33 },
 	"nodes": [
 		{
@@ -735,8 +729,9 @@
 		}
 	],
 	"unlockCondition": {
-		"campaigns": [
+		"requirements": [
 			{
+				"class": "com.one2b3.endcycle.player.progress.unlock.CampaignCondition",
 				"campaign": { "id": 5 }
 			}
 		]
@@ -791,7 +786,7 @@
 	"class": "com.one2b3.endcycle.features.campaign.CampaignData",
 	"id": { "id": 4 },
 	"name": "Break The Servers",
-	"color": { "r": 0.3254902, "g": 0.76862746, "b": 0.28627452, "a": 1 },
+	"color": { "r": 0.19215687, "g": 0.56078434, "b": 0.15686275, "a": 1 },
 	"description": "This extra challenge will put you into a Battle Run with any character of your choice!\nDestroy all servers as fast as you can! Good luck!",
 	"victory": "Congratulations! Can you do it faster?",
 	"character": null,
@@ -809,8 +804,9 @@
 		}
 	],
 	"unlockCondition": {
-		"campaigns": [
+		"requirements": [
 			{
+				"class": "com.one2b3.endcycle.player.progress.unlock.CampaignCondition",
 				"campaign": { "id": 2 }
 			}
 		]

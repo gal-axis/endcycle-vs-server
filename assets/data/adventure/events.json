@@ -152,9 +152,10 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
 	"id": { "id": 11 },
-	"dataName": "VS Bomby Shooting",
+	"dataName": "VS Bomby Shooting Zone 2",
 	"battle": { "id": 34 },
 	"song": { "id": 3 },
+	"practiceData": false,
 	"trigger": {
 		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
 		"entities": [
@@ -166,6 +167,10 @@
 			{
 				"entity": { "id": 4 },
 				"x": 5
+			},
+			{
+				"entity": { "id": 69 },
+				"x": 4
 			}
 		]
 	}
@@ -182,6 +187,11 @@
 			{
 				"entity": { "id": 5 },
 				"x": 4
+			},
+			{
+				"entity": { "id": 69 },
+				"x": 4,
+				"y": 2
 			}
 		]
 	}
@@ -211,7 +221,7 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
 	"id": { "id": 14 },
-	"dataName": "VS Bomby Bombing/Minibomb #2",
+	"dataName": "VS Bomby Bombing/Minibomb #2 Zone 2",
 	"battle": { "id": 34 },
 	"song": { "id": 3 },
 	"trigger": {
@@ -225,6 +235,11 @@
 			{
 				"entity": { "id": 1 },
 				"x": 5
+			},
+			{
+				"entity": { "id": 72 },
+				"x": 3,
+				"y": 1
 			}
 		]
 	}
@@ -542,16 +557,20 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
 	"id": { "id": 21 },
-	"dataName": "VS Bomby Placer",
+	"dataName": "VS Bomby Placer + Fossile Fule Zone 1",
 	"battle": { "id": 34 },
 	"song": { "id": 3 },
 	"trigger": {
 		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
 		"entities": [
 			{
-				"entity": { "id": 6 },
+				"entity": { "id": 67 },
 				"x": 5,
 				"y": 1
+			},
+			{
+				"entity": { "id": 6 },
+				"x": 4
 			}
 		]
 	}
@@ -569,6 +588,11 @@
 				"entity": { "id": 7 },
 				"x": 4,
 				"y": 1
+			},
+			{
+				"entity": { "id": 71 },
+				"x": 5,
+				"y": 2
 			}
 		]
 	}
@@ -576,7 +600,7 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
 	"id": { "id": 23 },
-	"dataName": "VS Q.T. PushStun",
+	"dataName": "VS Q.T. PushStun zone 1",
 	"battle": { "id": 35 },
 	"song": { "id": 3 },
 	"trigger": {
@@ -848,7 +872,7 @@
 						"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 						"scripts": [
 							{
-								"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript", "baseLevel": 5 }
+								"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript" }
 							},
 							{
 								"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureBetraySideScript", "side": "Azure" }
@@ -1052,7 +1076,7 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
 	"id": { "id": 34 },
-	"dataName": "Boss: Dreamy Alexsander",
+	"dataName": "Boss: Dreamy Cherry",
 	"icon": {
 		"drawable": { "id": 618 }
 	},
@@ -2170,5 +2194,1006 @@
 	"dataName": "VS Fossil Fuel Boss",
 	"battle": { "id": 104 },
 	"trigger": { "class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BossBattleEventTrigger", "leaveVitalAlive": true }
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 67 }
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 68 },
+	"dataName": "Agent Trap #1",
+	"icon": {
+		"drawable": { "id": 565 }
+	},
+	"battle": { "id": 123 },
+	"rewardItems": [
+		{
+			"item": { "id": 18 }
+		}
+	],
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"onStart": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+			"dialogue": { "id": 759 },
+			"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.BattleStartScript" }
+		},
+		"onWin": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+			"dialogue": { "id": 760 },
+			"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.LootBattleScript" }
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 69 },
+	"dataName": "Agent Trap #2",
+	"icon": {
+		"drawable": { "id": 565 }
+	},
+	"battle": { "id": 132 },
+	"rewardItems": [
+		{
+			"item": { "id": 18 }
+		},
+		{
+			"item": { "id": 61 }
+		}
+	],
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"onStart": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+			"dialogue": { "id": 762 },
+			"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.BattleStartScript" }
+		},
+		"onWin": {
+			"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+			"scripts": [
+				{}
+			]
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 70 },
+	"dataName": "Rozu Gift",
+	"icon": {
+		"drawable": { "id": 569 }
+	},
+	"battle": { "id": 133 },
+	"rewardItems": [
+		{
+			"item": { "id": 24 }
+		},
+		{
+			"item": { "id": 28 }
+		},
+		{
+			"item": { "id": 29 }
+		},
+		{
+			"item": { "id": 30 }
+		}
+	],
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.StartScriptEventTrigger",
+		"script": { "id": 216 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 71 },
+	"dataName": "VS Farmadile Zone 0",
+	"icon": {
+		"drawable": { "id": 567 }
+	},
+	"battle": { "id": 34 },
+	"practiceData": false,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 14 },
+				"x": 5,
+				"y": 2
+			},
+			{
+				"entity": { "id": 73 },
+				"x": 4,
+				"y": 1
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 72 },
+	"dataName": "Spark Gift",
+	"icon": {
+		"drawable": { "id": 569 }
+	},
+	"battle": { "id": 135 },
+	"practiceData": false,
+	"rewardItems": [
+		{
+			"item": { "id": 28 },
+			"amount": 3
+		}
+	],
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.StartScriptEventTrigger",
+		"script": { "id": 217 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 73 },
+	"dataName": "VS Q.T. Elecray Zone 0",
+	"battle": { "id": 42 },
+	"song": { "id": 3 },
+	"practiceData": false,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 12 },
+				"x": 3
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 74 },
+	"dataName": "VS Q.T. PushStun Zone 0",
+	"battle": { "id": 35 },
+	"song": { "id": 3 },
+	"practiceData": false,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 8 },
+				"x": 3,
+				"y": 1
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 75 },
+	"dataName": "VS Q.T. Cannon Follow Zone 0",
+	"battle": { "id": 34 },
+	"song": { "id": 3 },
+	"practiceData": false,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 9 },
+				"x": 5
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 76 },
+	"dataName": "VS Q.T. Cannon Up Zone 0",
+	"battle": { "id": 34 },
+	"song": { "id": 3 },
+	"practiceData": false,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 10 },
+				"x": 4,
+				"y": 1
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 77 },
+	"dataName": "VS Q.T. Cannon (Rescue) Zone 0",
+	"battle": { "id": 34 },
+	"song": { "id": 3 },
+	"practiceData": false,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 10 },
+				"x": 4,
+				"y": 1
+			},
+			{
+				"entity": { "id": 19 },
+				"name": "rescued",
+				"y": 1,
+				"vital": false,
+				"party": "NEUTRAL"
+			}
+		],
+		"onWin": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+			"script": { "id": 125 }
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 78 },
+	"dataName": "VS Tankitty Rebound Zone 0",
+	"battle": { "id": 34 },
+	"song": { "id": 3 },
+	"practiceData": false,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 27 },
+				"x": 4,
+				"y": 1
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 79 },
+	"dataName": "VS Greed Poison Zone 0",
+	"battle": { "id": 34 },
+	"song": { "id": 3 },
+	"practiceData": false,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 14 },
+				"x": 5
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 80 },
+	"dataName": "VS Bomby Shooting Zone 0",
+	"battle": { "id": 34 },
+	"song": { "id": 3 },
+	"practiceData": false,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 3 },
+				"x": 4,
+				"y": 2
+			},
+			{
+				"entity": { "id": 4 },
+				"x": 5
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 81 },
+	"dataName": "Punk Gift",
+	"icon": {
+		"drawable": { "id": 569 }
+	},
+	"battle": { "id": 136 },
+	"practiceData": false,
+	"rewardItems": [
+		{
+			"item": { "id": 51 },
+			"amount": 3
+		}
+	],
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.StartScriptEventTrigger",
+		"script": { "id": 218 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 82 },
+	"dataName": "Agent Gift #1",
+	"icon": {
+		"drawable": { "id": 569 }
+	},
+	"battle": { "id": 137 },
+	"practiceData": false,
+	"rewardItems": [
+		{
+			"item": { "id": 29 },
+			"amount": 3
+		}
+	],
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.StartScriptEventTrigger",
+		"script": { "id": 219 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 83 },
+	"dataName": "Noise Gift #1",
+	"icon": {
+		"drawable": { "id": 569 }
+	},
+	"battle": { "id": 138 },
+	"practiceData": false,
+	"rewardItems": [
+		{
+			"item": { "id": 61 },
+			"amount": 3
+		}
+	],
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.StartScriptEventTrigger",
+		"script": { "id": 220 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 84 },
+	"dataName": "VS Tankitty Electrack Zone 0",
+	"battle": { "id": 34 },
+	"song": { "id": 3 },
+	"practiceData": false,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 25 },
+				"x": 4
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 85 },
+	"dataName": "VS Tankitty Generator Zone 1+2",
+	"battle": { "id": 34 },
+	"song": { "id": 3 },
+	"practiceData": false,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 26 },
+				"x": 5,
+				"y": 1
+			},
+			{
+				"entity": { "id": 34 },
+				"x": 5,
+				"y": 2
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 86 },
+	"dataName": "VS Q.T. PushStun Zone 0+1",
+	"battle": { "id": 35 },
+	"song": { "id": 3 },
+	"practiceData": false,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 8 },
+				"x": 3,
+				"y": 1
+			},
+			{
+				"entity": { "id": 11 },
+				"x": 4
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 87 },
+	"dataName": "Spark Gift Rozu",
+	"icon": {
+		"drawable": { "id": 569 }
+	},
+	"battle": { "id": 135 },
+	"practiceData": false,
+	"rewardItems": [
+		{
+			"item": { "id": 23 }
+		}
+	],
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.StartScriptEventTrigger",
+		"script": { "id": 222 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 88 },
+	"dataName": "Fin VS Spark",
+	"icon": {
+		"drawable": { "id": 565 }
+	},
+	"battle": { "id": 78 },
+	"song": { "id": 17 },
+	"practiceData": false,
+	"reward": 300,
+	"rewardItems": [
+		{
+			"item": { "id": 50 }
+		},
+		{
+			"item": { "id": 51 }
+		},
+		{
+			"item": { "id": 52 }
+		},
+		{
+			"item": { "id": 53 }
+		}
+	],
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BossBattleEventTrigger",
+		"leaveVitalAlive": true,
+		"onStart": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+			"dialogues": [
+				{
+					"dialogue": { "id": 774 }
+				}
+			],
+			"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.BattleStartScript" }
+		},
+		"onWin": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+			"dialogues": [
+				{
+					"dialogue": { "id": 775 },
+					"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.LootBattleScript" }
+				}
+			],
+			"onFinish": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 185 }
+			}
+		},
+		"onLose": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+			"onFinish": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 186 }
+			}
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 89 },
+	"dataName": "VS Bomby Placer Zone 2",
+	"battle": { "id": 34 },
+	"song": { "id": 3 },
+	"practiceData": false,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 6 },
+				"x": 4,
+				"y": 1
+			},
+			{
+				"entity": { "id": 6 },
+				"x": 5,
+				"y": 2
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 90 },
+	"dataName": "VS Bomby FireSlash Zone 2",
+	"battle": { "id": 34 },
+	"song": { "id": 3 },
+	"practiceData": false,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 7 },
+				"x": 4
+			},
+			{
+				"entity": { "id": 7 },
+				"x": 4,
+				"y": 2
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 91 },
+	"dataName": "A-Event> Bella Gift",
+	"icon": {
+		"drawable": { "id": 569 }
+	},
+	"battle": { "id": 139 },
+	"rewardItems": [
+		{
+			"item": { "id": 25 }
+		}
+	],
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.StartScriptEventTrigger",
+		"script": { "id": 224 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 92 },
+	"dataName": "VS Greed Froster Zone 2",
+	"battle": { "id": 35 },
+	"song": { "id": 3 },
+	"practiceData": false,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 15 },
+				"x": 3,
+				"y": 1
+			},
+			{
+				"entity": { "id": 15 },
+				"x": 4,
+				"y": 2
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 93 },
+	"dataName": "Punk Trap #1",
+	"icon": {
+		"drawable": { "id": 564 }
+	},
+	"battle": { "id": 140 },
+	"song": { "id": 26 },
+	"practiceData": false,
+	"rewardItems": [
+		{
+			"item": { "id": 18 }
+		}
+	],
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"onStart": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+			"dialogue": { "id": 777 },
+			"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.BattleStartScript" }
+		},
+		"onWin": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+			"dialogue": { "id": 779 },
+			"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.LootBattleScript" }
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 94 },
+	"dataName": "Punk Trap #2",
+	"icon": {
+		"drawable": { "id": 569 }
+	},
+	"battle": { "id": 141 },
+	"song": { "id": 26 },
+	"practiceData": false,
+	"rewardItems": [
+		{
+			"item": { "id": 20 }
+		}
+	],
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"onStart": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+			"dialogue": { "id": 778 },
+			"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.BattleStartScript" }
+		},
+		"onWin": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+			"dialogue": { "id": 796 },
+			"onFinish": {
+				"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+				"scripts": [
+					{
+						"script": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "rozu" }
+					},
+					{
+						"script": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "spark" }
+					},
+					{
+						"script": { "class": "com.one2b3.endcycle.features.scripts.battle.LootBattleScript" }
+					}
+				]
+			}
+		},
+		"onLose": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureLoseScript" }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 95 },
+	"dataName": "VS Bomby Bombing/Minibomb #2 Zone 1",
+	"battle": { "id": 34 },
+	"song": { "id": 3 },
+	"practiceData": false,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 67 },
+				"x": 4,
+				"y": 1
+			},
+			{
+				"entity": { "id": 1 },
+				"x": 5
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 96 },
+	"dataName": "VS Bomby Placer",
+	"battle": { "id": 34 },
+	"song": { "id": 3 },
+	"practiceData": false,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 6 }
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 97 },
+	"dataName": "VS Bomby FireSlash Zone 0",
+	"battle": { "id": 34 },
+	"song": { "id": 3 },
+	"practiceData": false,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 7 },
+				"x": 4,
+				"y": 1
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 98 },
+	"dataName": "VS Greed Froster Zone 2",
+	"battle": { "id": 35 },
+	"song": { "id": 3 },
+	"practiceData": false,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 15 },
+				"x": 3,
+				"y": 1
+			},
+			{
+				"entity": { "id": 15 },
+				"x": 4,
+				"y": 2
+			},
+			{
+				"entity": { "id": 15 },
+				"x": 4
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 99 },
+	"dataName": "VS Greed Poison Zone 0",
+	"battle": { "id": 34 },
+	"song": { "id": 3 },
+	"practiceData": false,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 14 },
+				"x": 5
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 100 },
+	"dataName": "VS Tankitty Rebound Zone 0",
+	"battle": { "id": 34 },
+	"song": { "id": 3 },
+	"practiceData": false,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 27 },
+				"x": 4,
+				"y": 1
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 101 },
+	"dataName": "VS Bomby Bombing/Minibomb Zone 0",
+	"battle": { "id": 34 },
+	"song": { "id": 3 },
+	"practiceData": false,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 5 },
+				"x": 4,
+				"y": 1
+			},
+			{
+				"entity": { "id": 71 },
+				"x": 3,
+				"y": 1
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 103 },
+	"dataName": "VS Q.T. Cannon Follow Zone 0",
+	"battle": { "id": 34 },
+	"song": { "id": 3 },
+	"practiceData": false,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 9 },
+				"x": 5
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 102 },
+	"dataName": "VS Bomby Shooting (Rescue) Zone 0",
+	"battle": { "id": 34 },
+	"song": { "id": 3 },
+	"practiceData": false,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 3 },
+				"x": 4,
+				"y": 2
+			},
+			{
+				"entity": { "id": 4 },
+				"x": 5
+			},
+			{
+				"entity": { "id": 19 },
+				"name": "rescued",
+				"y": 1,
+				"turned": false,
+				"vital": false,
+				"party": "NEUTRAL"
+			}
+		],
+		"onWin": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+			"script": { "id": 125 }
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 104 },
+	"dataName": "VS Bomby FireSlash Zone 0",
+	"battle": { "id": 34 },
+	"song": { "id": 3 },
+	"practiceData": false,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 7 },
+				"x": 4,
+				"y": 1
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 105 },
+	"dataName": "VS Q.T. Cannon Up Zone 2",
+	"battle": { "id": 34 },
+	"song": { "id": 3 },
+	"practiceData": false,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 10 },
+				"x": 4,
+				"y": 1
+			},
+			{
+				"entity": { "id": 11 },
+				"x": 5,
+				"y": 1
+			},
+			{
+				"entity": { "id": 25 },
+				"x": 5,
+				"y": 2
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 106 },
+	"dataName": "VS Farmadile 2 Zone 2",
+	"battle": { "id": 34 },
+	"song": { "id": 3 },
+	"practiceData": false,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 75 },
+				"x": 4,
+				"y": 1
+			},
+			{
+				"entity": { "id": 73 },
+				"x": 5,
+				"y": 1
+			},
+			{
+				"entity": { "id": 14 },
+				"x": 5,
+				"y": 2
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 107 },
+	"dataName": "VS Farmadile Zone 2",
+	"icon": {
+		"drawable": { "id": 567 }
+	},
+	"battle": { "id": 34 },
+	"practiceData": false,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 14 },
+				"x": 5
+			},
+			{
+				"entity": { "id": 73 },
+				"x": 4,
+				"y": 1
+			},
+			{
+				"entity": { "id": 14 },
+				"x": 5,
+				"y": 2
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 108 },
+	"dataName": "VS Greed Froster/Farmadile",
+	"battle": { "id": 35 },
+	"song": { "id": 3 },
+	"practiceData": false,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 15 },
+				"x": 3,
+				"y": 1
+			},
+			{
+				"entity": { "id": 75 },
+				"x": 4
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 109 },
+	"dataName": "VS Fossil Fuel Zone 0",
+	"battle": { "id": 34 },
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 67 },
+				"x": 5
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 110 },
+	"dataName": "VS Fossil Fuel Zone 2",
+	"battle": { "id": 34 },
+	"practiceData": false,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"entities": [
+			{
+				"entity": { "id": 67 },
+				"x": 5
+			},
+			{
+				"entity": { "id": 67 },
+				"x": 5,
+				"y": 1
+			}
+		]
+	}
 }
 ]

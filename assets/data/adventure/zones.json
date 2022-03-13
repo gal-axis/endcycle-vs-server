@@ -1,13 +1,12 @@
 [
 {
 	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
-	"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Snow" },
+	"message": "gamedata|BG.Snow",
 	"cursorPosition": { "x": 132, "y": 20 },
 	"background": {},
 	"music": { "id": 14 },
 	"pathLength": 7,
 	"pathLengthDeviation": 0,
-	"branchDistanceX": 9,
 	"branchDistanceY": 11,
 	"renderers": [ "Snow" ],
 	"startEvents": [
@@ -21,7 +20,7 @@
 	],
 	"randomEvents": [
 		{
-			"name": "Noise",
+			"name": "Noise Zone 0",
 			"icon": {
 				"drawable": { "id": 567 }
 			},
@@ -30,7 +29,41 @@
 					"event": { "id": 25 }
 				},
 				{
+					"event": { "id": 99 }
+				},
+				{
+					"event": { "id": 55 }
+				},
+				{
 					"event": { "id": 26 }
+				},
+				{
+					"event": { "id": 9 }
+				},
+				{
+					"event": { "id": 63 }
+				},
+				{
+					"event": { "id": 75 }
+				},
+				{
+					"event": { "id": 71 }
+				}
+			],
+			"zoneLevel": { "type": "EQUAL" },
+			"appearChance": 1
+		},
+		{
+			"name": "Noise Zone 1",
+			"icon": {
+				"drawable": { "id": 567 }
+			},
+			"events": [
+				{
+					"event": { "id": 25 }
+				},
+				{
+					"event": { "id": 79 }
 				},
 				{
 					"event": { "id": 27 }
@@ -48,9 +81,54 @@
 					"event": { "id": 56 }
 				},
 				{
-					"event": { "id": 65 }
+					"event": { "id": 26 }
+				},
+				{
+					"event": { "id": 75 }
+				},
+				{
+					"event": { "id": 108 }
 				}
 			],
+			"zoneLevel": { "type": "EQUAL", "number": 1 },
+			"appearChance": 1
+		},
+		{
+			"name": "Noise Zone 2",
+			"icon": {
+				"drawable": { "id": 567 }
+			},
+			"events": [
+				{
+					"event": { "id": 26 }
+				},
+				{
+					"event": { "id": 27 }
+				},
+				{
+					"event": { "id": 28 }
+				},
+				{
+					"event": { "id": 50 }
+				},
+				{
+					"event": { "id": 56 }
+				},
+				{
+					"event": { "id": 65 }
+				},
+				{
+					"event": { "id": 26 }
+				},
+				{
+					"event": { "id": 71 }
+				},
+				{
+					"event": { "id": 107 }
+				}
+			],
+			"characterEqual": false,
+			"zoneLevel": { "type": "EQUAL", "number": 2 },
 			"appearChance": 1
 		},
 		{
@@ -133,6 +211,133 @@
 			],
 			"minimum": 2,
 			"maximum": 3
+		},
+		{
+			"name": "Agent Traps",
+			"icon": {
+				"drawable": { "id": 73 }
+			},
+			"song": { "id": 17 },
+			"events": [
+				{
+					"event": { "id": 68 }
+				},
+				{
+					"event": { "id": 69 }
+				}
+			],
+			"character": { "id": 21 },
+			"characterEqual": true,
+			"zoneLevel": { "type": "EQUAL", "number": 2 },
+			"appearChance": 0.7
+		},
+		{
+			"name": "Friend Zones",
+			"icon": {
+				"drawable": { "id": 569 }
+			},
+			"events": [
+				{
+					"event": { "id": 70 }
+				}
+			],
+			"character": { "id": 21 },
+			"characterEqual": true,
+			"appearChance": 0.1
+		},
+		{
+			"name": "Friend Events Del",
+			"icon": {
+				"drawable": { "id": 569 }
+			},
+			"events": [
+				{
+					"event": { "id": 82 }
+				},
+				{
+					"event": { "id": 83 }
+				}
+			],
+			"character": { "id": 9 },
+			"characterEqual": true,
+			"zoneLevel": { "type": "BIGGER" },
+			"appearChance": 0.1
+		},
+		{
+			"name": "Friend Events Cress",
+			"icon": {
+				"drawable": { "id": 569 }
+			},
+			"events": [
+				{
+					"event": { "id": 72 }
+				},
+				{
+					"event": { "id": 81 }
+				}
+			],
+			"character": { "id": 21 },
+			"characterEqual": true,
+			"zoneLevel": { "type": "BIGGER" },
+			"appearChance": 0.1
+		},
+		{
+			"name": "Friend Events Rozu",
+			"icon": {
+				"drawable": { "id": 569 }
+			},
+			"events": [
+				{
+					"event": { "id": 87 }
+				}
+			],
+			"character": { "id": 7 },
+			"characterEqual": true,
+			"appearChance": 0.1
+		},
+		{
+			"name": "Friend Event Fin",
+			"icon": {
+				"drawable": { "id": 569 }
+			},
+			"events": [
+				{
+					"event": { "id": 88 }
+				}
+			],
+			"character": {},
+			"characterEqual": true
+		},
+		{
+			"name": "Guest Event",
+			"events": [
+				{
+					"event": { "id": 91 }
+				}
+			],
+			"character": { "id": 11 },
+			"characterEqual": false,
+			"zoneLevel": { "type": "EQUAL", "number": 2 },
+			"appearChance": 0.05
+		},
+		{
+			"name": "Punk Traps",
+			"icon": {
+				"drawable": { "id": 73 }
+			},
+			"song": { "id": 17 },
+			"events": [
+				{
+					"event": { "id": 93 }
+				},
+				{
+					"event": { "id": 94 }
+				}
+			],
+			"character": { "id": 9 },
+			"characterEqual": true,
+			"zoneLevel": { "type": "NOT_EQUAL", "number": 2 },
+			"appearChance": 0.1
 		}
 	],
 	"finalEvents": [
@@ -156,13 +361,12 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
 	"id": { "id": 1 },
-	"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Forest" },
+	"message": "gamedata|BG.Forest",
 	"cursorPosition": { "x": 123, "y": 32 },
 	"background": { "id": 2 },
 	"music": { "id": 29 },
 	"pathLength": 7,
 	"pathLengthDeviation": 0,
-	"branchDistanceX": 9,
 	"branchDistanceY": 11,
 	"startEvents": [
 		{
@@ -175,7 +379,38 @@
 	],
 	"randomEvents": [
 		{
-			"name": "Noise",
+			"name": "Noise Zone 0",
+			"icon": {
+				"drawable": { "id": 567 }
+			},
+			"events": [
+				{
+					"event": { "id": 9 }
+				},
+				{
+					"event": { "id": 26 }
+				},
+				{
+					"event": { "id": 13 }
+				},
+				{
+					"event": { "id": 28 }
+				},
+				{
+					"event": { "id": 22 }
+				},
+				{
+					"event": { "id": 25 }
+				},
+				{
+					"event": { "id": 71 }
+				}
+			],
+			"zoneLevel": { "type": "EQUAL", "number": 2 },
+			"appearChance": 1
+		},
+		{
+			"name": "Noise Zone 1",
 			"icon": {
 				"drawable": { "id": 567 }
 			},
@@ -199,12 +434,64 @@
 					"event": { "id": 65 }
 				},
 				{
-					"event": { "id": 25 }
+					"event": { "id": 108 }
 				},
 				{
 					"event": { "id": 48 }
+				},
+				{
+					"event": { "id": 71 }
+				},
+				{
+					"event": { "id": 107 }
 				}
 			],
+			"characterEqual": false,
+			"zoneLevel": { "type": "EQUAL", "number": 1 },
+			"appearChance": 1
+		},
+		{
+			"name": "Noise Zone 2",
+			"icon": {
+				"drawable": { "id": 567 }
+			},
+			"events": [
+				{
+					"event": { "id": 9 }
+				},
+				{
+					"event": { "id": 26 }
+				},
+				{
+					"event": { "id": 13 }
+				},
+				{
+					"event": { "id": 28 }
+				},
+				{
+					"event": { "id": 22 }
+				},
+				{
+					"event": { "id": 65 }
+				},
+				{
+					"event": { "id": 98 }
+				},
+				{
+					"event": { "id": 48 }
+				},
+				{
+					"event": { "id": 106 }
+				},
+				{
+					"event": { "id": 107 }
+				},
+				{
+					"event": { "id": 108 }
+				}
+			],
+			"characterEqual": false,
+			"zoneLevel": { "type": "EQUAL", "number": 2 },
 			"appearChance": 1
 		},
 		{
@@ -287,6 +574,117 @@
 			],
 			"minimum": 3,
 			"maximum": 4
+		},
+		{
+			"name": "Agent Traps",
+			"song": { "id": 17 },
+			"events": [
+				{
+					"event": { "id": 68 }
+				},
+				{
+					"event": { "id": 69 }
+				}
+			],
+			"character": { "id": 21 },
+			"characterEqual": true,
+			"zoneLevel": { "type": "EQUAL", "number": 2 },
+			"appearChance": 0.07
+		},
+		{
+			"name": "Punk Traps",
+			"icon": {
+				"drawable": { "id": 73 }
+			},
+			"song": { "id": 17 },
+			"events": [
+				{
+					"event": { "id": 93 }
+				},
+				{
+					"event": { "id": 94 }
+				}
+			],
+			"character": { "id": 9 },
+			"characterEqual": true,
+			"zoneLevel": { "type": "EQUAL", "number": 2 },
+			"appearChance": 0.07
+		},
+		{
+			"name": "Friend Events Cress",
+			"icon": {
+				"drawable": { "id": 569 }
+			},
+			"events": [
+				{
+					"event": { "id": 72 }
+				},
+				{
+					"event": { "id": 81 }
+				}
+			],
+			"character": { "id": 21 },
+			"characterEqual": true,
+			"zoneLevel": { "type": "BIGGER" },
+			"appearChance": 0.05
+		},
+		{
+			"name": "Friend Events Del",
+			"icon": {
+				"drawable": { "id": 569 }
+			},
+			"events": [
+				{
+					"event": { "id": 82 }
+				},
+				{
+					"event": { "id": 83 }
+				}
+			],
+			"character": { "id": 9 },
+			"characterEqual": true,
+			"zoneLevel": { "type": "BIGGER" },
+			"appearChance": 0.05
+		},
+		{
+			"name": "Friend Events Rozu",
+			"icon": {
+				"drawable": { "id": 569 }
+			},
+			"events": [
+				{
+					"event": { "id": 87 }
+				}
+			],
+			"character": { "id": 7 },
+			"characterEqual": true,
+			"appearChance": 0.05
+		},
+		{
+			"name": "Friend Event Fin",
+			"icon": {
+				"drawable": { "id": 569 }
+			},
+			"events": [
+				{
+					"event": { "id": 88 }
+				}
+			],
+			"character": {},
+			"characterEqual": true,
+			"appearChance": 0.07
+		},
+		{
+			"name": "Guest Event",
+			"events": [
+				{
+					"event": { "id": 91 }
+				}
+			],
+			"character": { "id": 11 },
+			"characterEqual": false,
+			"zoneLevel": { "type": "EQUAL", "number": 2 },
+			"appearChance": 0.05
 		}
 	],
 	"finalEvents": [
@@ -312,13 +710,12 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
 	"id": { "id": 2 },
-	"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.City" },
+	"message": "gamedata|BG.City",
 	"cursorPosition": { "x": 114, "y": 72 },
 	"background": { "id": 12 },
 	"music": { "id": 16 },
 	"pathLength": 7,
 	"pathLengthDeviation": 0,
-	"branchDistanceX": 9,
 	"branchDistanceY": 11,
 	"startEvents": [
 		{
@@ -331,7 +728,43 @@
 	],
 	"randomEvents": [
 		{
-			"name": "Noise",
+			"name": "Noise Zone",
+			"icon": {
+				"drawable": { "id": 567 }
+			},
+			"events": [
+				{
+					"event": { "id": 74 }
+				},
+				{
+					"event": { "id": 73 }
+				},
+				{
+					"event": { "id": 75 }
+				},
+				{
+					"event": { "id": 76 }
+				},
+				{
+					"event": { "id": 77 }
+				},
+				{
+					"event": { "id": 78 }
+				},
+				{
+					"event": { "id": 79 }
+				},
+				{
+					"event": { "id": 80 }
+				},
+				{
+					"event": { "id": 109 }
+				}
+			],
+			"appearChance": 1
+		},
+		{
+			"name": "Noise Zone 1",
 			"icon": {
 				"drawable": { "id": 567 }
 			},
@@ -361,6 +794,41 @@
 					"event": { "id": 11 }
 				}
 			],
+			"characterEqual": false,
+			"appearChance": 1
+		},
+		{
+			"name": "Noise Zone 2",
+			"icon": {
+				"drawable": { "id": 567 }
+			},
+			"events": [
+				{
+					"event": { "id": 23 }
+				},
+				{
+					"event": { "id": 24 }
+				},
+				{
+					"event": { "id": 27 }
+				},
+				{
+					"event": { "id": 28 }
+				},
+				{
+					"event": { "id": 64 }
+				},
+				{
+					"event": { "id": 50 }
+				},
+				{
+					"event": { "id": 26 }
+				},
+				{
+					"event": { "id": 11 }
+				}
+			],
+			"characterEqual": false,
 			"appearChance": 1
 		},
 		{
@@ -440,6 +908,116 @@
 			],
 			"minimum": 2,
 			"maximum": 3
+		},
+		{
+			"name": "Agent Traps",
+			"song": { "id": 17 },
+			"events": [
+				{
+					"event": { "id": 68 }
+				},
+				{
+					"event": { "id": 69 }
+				}
+			],
+			"character": { "id": 21 },
+			"characterEqual": true,
+			"zoneLevel": { "type": "BIGGER" },
+			"appearChance": 0.05
+		},
+		{
+			"name": "Punk Traps",
+			"icon": {
+				"drawable": { "id": 73 }
+			},
+			"song": { "id": 17 },
+			"events": [
+				{
+					"event": { "id": 93 }
+				},
+				{
+					"event": { "id": 94 }
+				}
+			],
+			"character": { "id": 9 },
+			"characterEqual": true,
+			"zoneLevel": { "type": "EQUAL", "number": 2 },
+			"appearChance": 0.1
+		},
+		{
+			"name": "Friend Zones",
+			"icon": {
+				"drawable": { "id": 569 }
+			},
+			"events": [
+				{
+					"event": { "id": 70 }
+				}
+			],
+			"character": { "id": 21 },
+			"characterEqual": true,
+			"maximum": 1,
+			"appearChance": 0.1
+		},
+		{
+			"name": "Friend Events Del",
+			"icon": {
+				"drawable": { "id": 569 }
+			},
+			"events": [
+				{
+					"event": { "id": 82 }
+				},
+				{
+					"event": { "id": 83 }
+				}
+			],
+			"character": { "id": 9 },
+			"characterEqual": true,
+			"zoneLevel": { "type": "BIGGER" },
+			"appearChance": 0.1
+		},
+		{
+			"name": "Friend Events Rozu",
+			"icon": {
+				"drawable": { "id": 569 }
+			},
+			"events": [
+				{
+					"event": { "id": 87 }
+				}
+			],
+			"character": { "id": 7 },
+			"characterEqual": true,
+			"appearChance": 0.1
+		},
+		{
+			"name": "Friend Event Fin",
+			"icon": {
+				"drawable": { "id": 569 }
+			},
+			"events": [
+				{
+					"event": { "id": 88 }
+				}
+			],
+			"character": {},
+			"characterEqual": true,
+			"maximum": 1,
+			"appearChance": 0.1
+		},
+		{
+			"name": "Guest Event",
+			"events": [
+				{
+					"event": { "id": 91 }
+				}
+			],
+			"character": { "id": 11 },
+			"characterEqual": false,
+			"maximum": 1,
+			"zoneLevel": { "type": "EQUAL", "number": 2 },
+			"appearChance": 0.03
 		}
 	],
 	"finalEvents": [
@@ -463,13 +1041,12 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
 	"id": { "id": 3 },
-	"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Clock" },
+	"message": "gamedata|BG.Clock",
 	"cursorPosition": { "x": 71, "y": 24 },
 	"background": { "id": 5 },
 	"music": { "id": 24 },
 	"pathLength": 7,
 	"pathLengthDeviation": 0,
-	"branchDistanceX": 9,
 	"branchDistanceY": 11,
 	"startEvents": [
 		{
@@ -482,16 +1059,52 @@
 	],
 	"randomEvents": [
 		{
-			"name": "Noise",
+			"name": "Noise Zone 0",
 			"icon": {
 				"drawable": { "id": 567 }
 			},
 			"events": [
 				{
-					"event": { "id": 23 }
+					"event": { "id": 86 }
 				},
 				{
-					"event": { "id": 24 }
+					"event": { "id": 73 }
+				},
+				{
+					"event": { "id": 27 }
+				},
+				{
+					"event": { "id": 28 }
+				},
+				{
+					"event": { "id": 84 }
+				},
+				{
+					"event": { "id": 49 }
+				},
+				{
+					"event": { "id": 100 }
+				},
+				{
+					"event": { "id": 55 }
+				},
+				{
+					"event": { "id": 56 }
+				},
+				{
+					"event": { "id": 63 }
+				}
+			],
+			"appearChance": 1
+		},
+		{
+			"name": "Noise Zone 1",
+			"icon": {
+				"drawable": { "id": 567 }
+			},
+			"events": [
+				{
+					"event": { "id": 86 }
 				},
 				{
 					"event": { "id": 27 }
@@ -503,7 +1116,7 @@
 					"event": { "id": 48 }
 				},
 				{
-					"event": { "id": 49 }
+					"event": { "id": 85 }
 				},
 				{
 					"event": { "id": 50 }
@@ -516,8 +1129,49 @@
 				},
 				{
 					"event": { "id": 63 }
+				},
+				{
+					"event": { "id": 85 }
 				}
 			],
+			"characterEqual": false,
+			"appearChance": 1
+		},
+		{
+			"name": "Noise Zone 2",
+			"icon": {
+				"drawable": { "id": 567 }
+			},
+			"events": [
+				{
+					"event": { "id": 23 }
+				},
+				{
+					"event": { "id": 27 }
+				},
+				{
+					"event": { "id": 105 }
+				},
+				{
+					"event": { "id": 48 }
+				},
+				{
+					"event": { "id": 50 }
+				},
+				{
+					"event": { "id": 55 }
+				},
+				{
+					"event": { "id": 56 }
+				},
+				{
+					"event": { "id": 63 }
+				},
+				{
+					"event": { "id": 85 }
+				}
+			],
+			"characterEqual": false,
 			"appearChance": 1
 		},
 		{
@@ -538,7 +1192,8 @@
 				}
 			],
 			"minimum": 1,
-			"maximum": 2
+			"maximum": 2,
+			"appearChance": 0.1
 		},
 		{
 			"name": "Azure Agents",
@@ -577,7 +1232,6 @@
 			"maximum": 1
 		},
 		{
-			"name": "",
 			"events": [
 				{
 					"event": { "id": 44 },
@@ -601,6 +1255,120 @@
 			],
 			"minimum": 2,
 			"maximum": 3
+		},
+		{
+			"name": "Agent Traps",
+			"song": { "id": 17 },
+			"events": [
+				{
+					"event": { "id": 68 }
+				},
+				{
+					"event": { "id": 69 }
+				}
+			],
+			"character": { "id": 21 },
+			"characterEqual": true,
+			"zoneLevel": { "type": "EQUAL", "number": 2 }
+		},
+		{
+			"name": "Punk Traps",
+			"icon": {
+				"drawable": { "id": 73 }
+			},
+			"song": { "id": 17 },
+			"events": [
+				{
+					"event": { "id": 93 }
+				},
+				{
+					"event": { "id": 94 }
+				}
+			],
+			"character": { "id": 9 },
+			"characterEqual": true,
+			"maximum": 1,
+			"zoneLevel": { "type": "EQUAL", "number": 2 },
+			"appearChance": 0.05
+		},
+		{
+			"name": "Friend Events Cress",
+			"icon": {
+				"drawable": { "id": 569 }
+			},
+			"events": [
+				{
+					"event": { "id": 72 }
+				},
+				{
+					"event": { "id": 81 }
+				}
+			],
+			"character": { "id": 21 },
+			"characterEqual": true,
+			"maximum": 1,
+			"zoneLevel": { "type": "BIGGER" },
+			"appearChance": 0.05
+		},
+		{
+			"name": "Friend Events Del",
+			"icon": {
+				"drawable": { "id": 569 }
+			},
+			"events": [
+				{
+					"event": { "id": 82 }
+				},
+				{
+					"event": { "id": 83 }
+				}
+			],
+			"character": { "id": 9 },
+			"characterEqual": true,
+			"maximum": 1,
+			"zoneLevel": { "type": "BIGGER" },
+			"appearChance": 0.1
+		},
+		{
+			"name": "Friend Events Rozu",
+			"icon": {
+				"drawable": { "id": 569 }
+			},
+			"events": [
+				{
+					"event": { "id": 87 }
+				}
+			],
+			"character": { "id": 7 },
+			"characterEqual": true,
+			"appearChance": 0
+		},
+		{
+			"name": "Friend Event Fin",
+			"icon": {
+				"drawable": { "id": 569 }
+			},
+			"events": [
+				{
+					"event": { "id": 88 }
+				}
+			],
+			"character": {},
+			"characterEqual": true,
+			"appearChance": 0
+		},
+		{
+			"name": "Guest Event",
+			"events": [
+				{
+					"event": { "id": 91 }
+				}
+			],
+			"character": { "id": 11 },
+			"characterEqual": false,
+			"maximum": 1,
+			"zoneLevel": { "type": "EQUAL", "number": 2 },
+			"appearChance": 0.05
 		}
 	],
 	"finalEvents": [
@@ -624,13 +1392,12 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
 	"id": { "id": 4 },
-	"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Desert" },
+	"message": "gamedata|BG.Desert",
 	"cursorPosition": { "x": 83, "y": 72 },
 	"background": { "id": 3 },
 	"music": { "id": 21 },
 	"pathLength": 7,
 	"pathLengthDeviation": 0,
-	"branchDistanceX": 9,
 	"branchDistanceY": 11,
 	"renderers": [ "Desert" ],
 	"startEvents": [
@@ -644,7 +1411,77 @@
 	],
 	"randomEvents": [
 		{
-			"name": "Noise",
+			"name": "Noise Zone 0",
+			"icon": {
+				"drawable": { "id": 567 }
+			},
+			"events": [
+				{
+					"event": { "id": 96 }
+				},
+				{
+					"event": { "id": 97 }
+				},
+				{
+					"event": { "id": 12 }
+				},
+				{
+					"event": { "id": 102 }
+				},
+				{
+					"event": { "id": 13 }
+				},
+				{
+					"event": { "id": 101 }
+				},
+				{
+					"event": { "id": 103 }
+				}
+			],
+			"appearChance": 1
+		},
+		{
+			"name": "Noise Zone 1",
+			"icon": {
+				"drawable": { "id": 567 }
+			},
+			"events": [
+				{
+					"event": { "id": 21 }
+				},
+				{
+					"event": { "id": 21 }
+				},
+				{
+					"event": { "id": 22 }
+				},
+				{
+					"event": { "id": 11 }
+				},
+				{
+					"event": { "id": 12 }
+				},
+				{
+					"event": { "id": 46 }
+				},
+				{
+					"event": { "id": 13 }
+				},
+				{
+					"event": { "id": 95 }
+				},
+				{
+					"event": { "id": 27 }
+				},
+				{
+					"event": { "id": 110 }
+				}
+			],
+			"characterEqual": false,
+			"appearChance": 1
+		},
+		{
+			"name": "Noise Zone 2",
 			"icon": {
 				"drawable": { "id": 567 }
 			},
@@ -672,8 +1509,12 @@
 				},
 				{
 					"event": { "id": 27 }
+				},
+				{
+					"event": { "id": 110 }
 				}
 			],
+			"characterEqual": false,
 			"appearChance": 1
 		},
 		{
@@ -733,7 +1574,6 @@
 			"maximum": 1
 		},
 		{
-			"name": "",
 			"events": [
 				{
 					"event": { "id": 44 },
@@ -761,6 +1601,121 @@
 			],
 			"minimum": 2,
 			"maximum": 3
+		},
+		{
+			"name": "Agent Traps",
+			"song": { "id": 17 },
+			"events": [
+				{
+					"event": { "id": 68 }
+				},
+				{
+					"event": { "id": 69 }
+				}
+			],
+			"character": { "id": 21 },
+			"characterEqual": true,
+			"zoneLevel": { "type": "EQUAL", "number": 2 }
+		},
+		{
+			"name": "Friend Events Cress",
+			"icon": {
+				"drawable": { "id": 569 }
+			},
+			"events": [
+				{
+					"event": { "id": 72 }
+				},
+				{
+					"event": { "id": 81 }
+				}
+			],
+			"character": { "id": 21 },
+			"characterEqual": true,
+			"maximum": 1,
+			"zoneLevel": { "type": "BIGGER" },
+			"appearChance": 0.05
+		},
+		{
+			"name": "Friend Events Del",
+			"icon": {
+				"drawable": { "id": 569 }
+			},
+			"events": [
+				{
+					"event": { "id": 82 }
+				},
+				{
+					"event": { "id": 83 }
+				}
+			],
+			"character": { "id": 9 },
+			"characterEqual": true,
+			"maximum": 1,
+			"zoneLevel": { "type": "BIGGER" },
+			"appearChance": 0.1
+		},
+		{
+			"name": "Friend Events Rozu",
+			"icon": {
+				"drawable": { "id": 569 }
+			},
+			"events": [
+				{
+					"event": { "id": 87 }
+				}
+			],
+			"character": { "id": 7 },
+			"characterEqual": true,
+			"maximum": 1,
+			"appearChance": 0.1
+		},
+		{
+			"name": "Friend Event Fin",
+			"icon": {
+				"drawable": { "id": 569 }
+			},
+			"events": [
+				{
+					"event": { "id": 88 }
+				}
+			],
+			"character": {},
+			"characterEqual": true,
+			"maximum": 1
+		},
+		{
+			"name": "Guest Event",
+			"events": [
+				{
+					"event": { "id": 91 }
+				}
+			],
+			"character": { "id": 11 },
+			"characterEqual": false,
+			"maximum": 1,
+			"zoneLevel": { "type": "EQUAL", "number": 2 },
+			"appearChance": 0.02
+		},
+		{
+			"name": "Punk Traps",
+			"icon": {
+				"drawable": { "id": 73 }
+			},
+			"song": { "id": 17 },
+			"events": [
+				{
+					"event": { "id": 93 }
+				},
+				{
+					"event": { "id": 94 }
+				}
+			],
+			"character": { "id": 9 },
+			"characterEqual": true,
+			"maximum": 1,
+			"zoneLevel": { "type": "EQUAL", "number": 2 },
+			"appearChance": 0.05
 		}
 	],
 	"finalEvents": [
@@ -783,8 +1738,377 @@
 },
 {
 	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
+	"id": { "id": 6 },
+	"message": "gamedata|BG.Beach",
+	"cursorPosition": { "x": 30, "y": 54 },
+	"background": { "id": 21 },
+	"music": { "id": 12 },
+	"pathLength": 7,
+	"pathLengthDeviation": 0,
+	"branchDistanceY": 11,
+	"startEvents": [
+		{
+			"events": [
+				{
+					"event": { "id": 2 }
+				}
+			]
+		}
+	],
+	"randomEvents": [
+		{
+			"name": "Noise Zone 0",
+			"icon": {
+				"drawable": { "id": 567 }
+			},
+			"events": [
+				{
+					"event": { "id": 21 }
+				},
+				{
+					"event": { "id": 75 }
+				},
+				{
+					"event": { "id": 76 }
+				},
+				{
+					"event": { "id": 101 }
+				},
+				{
+					"event": { "id": 25 }
+				},
+				{
+					"event": { "id": 84 }
+				},
+				{
+					"event": { "id": 73 }
+				},
+				{
+					"event": { "id": 77 }
+				},
+				{
+					"event": { "id": 109 }
+				}
+			],
+			"appearChance": 1
+		},
+		{
+			"name": "Noise Zone 1",
+			"icon": {
+				"drawable": { "id": 567 }
+			},
+			"events": [
+				{
+					"event": { "id": 27 }
+				},
+				{
+					"event": { "id": 28 }
+				},
+				{
+					"event": { "id": 10 }
+				},
+				{
+					"event": { "id": 25 }
+				},
+				{
+					"event": { "id": 50 }
+				},
+				{
+					"event": { "id": 48 }
+				},
+				{
+					"event": { "id": 63 }
+				},
+				{
+					"event": { "id": 90 },
+					"chance": 0.5
+				},
+				{
+					"event": { "id": 89 },
+					"chance": 0.5
+				},
+				{
+					"event": { "id": 21 }
+				},
+				{
+					"event": { "id": 110 }
+				},
+				{
+					"event": { "id": 101 },
+					"characterEqual": false
+				}
+			],
+			"characterEqual": false,
+			"appearChance": 1
+		},
+		{
+			"name": "Noise Zone 2",
+			"icon": {
+				"drawable": { "id": 567 }
+			},
+			"events": [
+				{
+					"event": { "id": 89 }
+				},
+				{
+					"event": { "id": 90 }
+				},
+				{
+					"event": { "id": 27 }
+				},
+				{
+					"event": { "id": 28 }
+				},
+				{
+					"event": { "id": 10 }
+				},
+				{
+					"event": { "id": 92 }
+				},
+				{
+					"event": { "id": 50 }
+				},
+				{
+					"event": { "id": 48 }
+				},
+				{
+					"event": { "id": 63 }
+				},
+				{
+					"event": { "id": 110 }
+				},
+				{
+					"event": { "id": 21 }
+				}
+			],
+			"characterEqual": false,
+			"appearChance": 1
+		},
+		{
+			"name": "Crimson Punks",
+			"events": [
+				{
+					"event": { "id": 7 }
+				},
+				{
+					"event": { "id": 19 }
+				},
+				{
+					"event": { "id": 20 }
+				},
+				{
+					"event": { "id": 31 },
+					"maximum": 1
+				}
+			],
+			"minimum": 2,
+			"maximum": 3
+		},
+		{
+			"name": "Azure Agents",
+			"events": [
+				{
+					"event": { "id": 8 }
+				},
+				{
+					"event": { "id": 17 }
+				},
+				{
+					"event": { "id": 18 }
+				},
+				{
+					"event": { "id": 30 },
+					"maximum": 1
+				}
+			],
+			"minimum": 2,
+			"maximum": 3
+		},
+		{
+			"name": "Shop",
+			"icon": {
+				"drawable": { "id": 568 }
+			},
+			"events": [
+				{
+					"event": { "id": 16 }
+				},
+				{
+					"event": { "id": 29 }
+				}
+			],
+			"minimum": 1,
+			"maximum": 1
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 44 },
+					"maximum": 1
+				},
+				{
+					"event": { "id": 45 },
+					"maximum": 1
+				},
+				{
+					"event": { "id": 4 }
+				},
+				{
+					"event": { "id": 5 },
+					"chance": 0.5
+				}
+			],
+			"minimum": 2,
+			"maximum": 3
+		},
+		{
+			"name": "Friend Events Cress",
+			"icon": {
+				"drawable": { "id": 569 }
+			},
+			"events": [
+				{
+					"event": { "id": 72 },
+					"chance": 0.2
+				},
+				{
+					"event": { "id": 81 }
+				},
+				{
+					"event": { "id": 70 }
+				}
+			],
+			"character": { "id": 21 },
+			"characterEqual": true,
+			"zoneLevel": { "type": "BIGGER" },
+			"appearChance": 0.1
+		},
+		{
+			"name": "Friend Events Del",
+			"icon": {
+				"drawable": { "id": 569 }
+			},
+			"events": [
+				{
+					"event": { "id": 82 },
+					"chance": 0.2
+				},
+				{
+					"event": { "id": 83 },
+					"chance": 0.2
+				}
+			],
+			"character": { "id": 9 },
+			"characterEqual": true,
+			"maximum": 1,
+			"zoneLevel": { "type": "BIGGER" },
+			"appearChance": 0.1
+		},
+		{
+			"name": "Friend Events Rozu",
+			"icon": {
+				"drawable": { "id": 569 }
+			},
+			"events": [
+				{
+					"event": { "id": 87 },
+					"chance": 0.2
+				}
+			],
+			"character": { "id": 7 },
+			"characterEqual": true,
+			"maximum": 1,
+			"appearChance": 0.1
+		},
+		{
+			"name": "Friend Event Fin",
+			"icon": {
+				"drawable": { "id": 414 }
+			},
+			"events": [
+				{
+					"event": { "id": 88 }
+				}
+			],
+			"character": {},
+			"characterEqual": true,
+			"maximum": 1,
+			"zoneLevel": { "type": "EQUAL", "number": 2 },
+			"appearChance": 0.05
+		},
+		{
+			"name": "Guest Event",
+			"events": [
+				{
+					"event": { "id": 91 }
+				}
+			],
+			"character": { "id": 11 },
+			"characterEqual": false,
+			"maximum": 1,
+			"zoneLevel": { "type": "EQUAL", "number": 2 },
+			"appearChance": 0.02
+		},
+		{
+			"name": "Agent Traps",
+			"song": { "id": 17 },
+			"events": [
+				{
+					"event": { "id": 68 }
+				},
+				{
+					"event": { "id": 69 }
+				}
+			],
+			"character": { "id": 21 },
+			"characterEqual": true,
+			"minimum": 1,
+			"maximum": 1,
+			"zoneLevel": { "type": "EQUAL", "number": 2 }
+		},
+		{
+			"name": "Punk Traps",
+			"icon": {
+				"drawable": { "id": 73 }
+			},
+			"song": { "id": 17 },
+			"events": [
+				{
+					"event": { "id": 93 }
+				},
+				{
+					"event": { "id": 94 }
+				}
+			],
+			"character": { "id": 9 },
+			"characterEqual": true,
+			"minimum": 1,
+			"maximum": 1,
+			"zoneLevel": { "type": "EQUAL", "number": 2 }
+		}
+	],
+	"finalEvents": [
+		{
+			"name": "Boss",
+			"events": [
+				{
+					"event": { "id": 34 }
+				}
+			]
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 1 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
 	"id": { "id": 5 },
-	"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Ruins" },
+	"message": "gamedata|BG.Ruins",
 	"secret": true,
 	"cursorPosition": { "x": 74, "y": 62 },
 	"background": { "id": 7 },
@@ -793,7 +2117,6 @@
 	"pathLengthDeviation": 0,
 	"branches": 1,
 	"branchDeviation": 0,
-	"branchDistanceX": 9,
 	"branchDistanceY": 11,
 	"randomEvents": [
 		{
@@ -854,257 +2177,8 @@
 },
 {
 	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
-	"id": { "id": 6 },
-	"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Beach" },
-	"cursorPosition": { "x": 30, "y": 54 },
-	"background": { "id": 21 },
-	"music": { "id": 12 },
-	"pathLength": 7,
-	"pathLengthDeviation": 0,
-	"branchDistanceX": 9,
-	"branchDistanceY": 11,
-	"startEvents": [
-		{
-			"events": [
-				{
-					"event": { "id": 2 }
-				}
-			]
-		}
-	],
-	"randomEvents": [
-		{
-			"name": "Noise",
-			"icon": {
-				"drawable": { "id": 567 }
-			},
-			"events": [
-				{
-					"event": { "id": 21 }
-				},
-				{
-					"event": { "id": 22 }
-				},
-				{
-					"event": { "id": 27 }
-				},
-				{
-					"event": { "id": 28 }
-				},
-				{
-					"event": { "id": 10 }
-				},
-				{
-					"event": { "id": 25 }
-				},
-				{
-					"event": { "id": 50 }
-				},
-				{
-					"event": { "id": 48 }
-				},
-				{
-					"event": { "id": 63 }
-				}
-			],
-			"appearChance": 1
-		},
-		{
-			"name": "Crimson Punks",
-			"events": [
-				{
-					"event": { "id": 7 }
-				},
-				{
-					"event": { "id": 19 }
-				},
-				{
-					"event": { "id": 20 }
-				},
-				{
-					"event": { "id": 31 },
-					"maximum": 1
-				}
-			],
-			"minimum": 2,
-			"maximum": 3
-		},
-		{
-			"name": "Azure Agents",
-			"events": [
-				{
-					"event": { "id": 8 }
-				},
-				{
-					"event": { "id": 17 }
-				},
-				{
-					"event": { "id": 18 }
-				},
-				{
-					"event": { "id": 30 },
-					"maximum": 1
-				}
-			],
-			"minimum": 2,
-			"maximum": 3
-		},
-		{
-			"name": "Shop",
-			"icon": {
-				"drawable": { "id": 568 }
-			},
-			"events": [
-				{
-					"event": { "id": 16 }
-				},
-				{
-					"event": { "id": 29 }
-				}
-			],
-			"minimum": 1,
-			"maximum": 1
-		},
-		{
-			"name": "",
-			"events": [
-				{
-					"event": { "id": 44 },
-					"maximum": 1
-				},
-				{
-					"event": { "id": 45 },
-					"maximum": 1
-				},
-				{
-					"event": { "id": 4 }
-				},
-				{
-					"event": { "id": 5 },
-					"chance": 0.5
-				}
-			],
-			"minimum": 2,
-			"maximum": 3
-		}
-	],
-	"finalEvents": [
-		{
-			"name": "Boss",
-			"events": [
-				{
-					"event": { "id": 34 }
-				}
-			]
-		},
-		{
-			"events": [
-				{
-					"event": { "id": 1 }
-				}
-			]
-		}
-	]
-},
-{
-	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
-	"id": { "id": 7 },
-	"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Everod" },
-	"secret": true,
-	"cursorPosition": { "x": 132, "y": 12 },
-	"background": {},
-	"music": { "id": 14 },
-	"pathLength": 0,
-	"pathLengthDeviation": 0,
-	"branches": 1,
-	"branchDeviation": 0,
-	"branchDistanceX": 9,
-	"branchDistanceY": 11,
-	"startEvents": [
-		{
-			"events": [
-				{
-					"event": { "id": 2 }
-				}
-			]
-		},
-		{
-			"events": [
-				{
-					"event": { "id": 5 }
-				}
-			]
-		},
-		{
-			"events": [
-				{
-					"event": { "id": 7 }
-				}
-			]
-		},
-		{
-			"events": [
-				{
-					"event": { "id": 8 }
-				}
-			]
-		},
-		{
-			"events": [
-				{
-					"event": { "id": 7 }
-				}
-			]
-		},
-		{
-			"events": [
-				{
-					"event": { "id": 8 }
-				}
-			]
-		},
-		{
-			"events": [
-				{
-					"event": { "id": 7 }
-				}
-			]
-		}
-	],
-	"randomEvents": [
-		{
-			"icon": {
-				"drawable": { "id": 568 }
-			},
-			"events": [
-				{
-					"event": { "id": 26 }
-				}
-			],
-			"maximum": 1
-		}
-	],
-	"finalEvents": [
-		{
-			"events": [
-				{
-					"event": { "id": 15 }
-				}
-			]
-		},
-		{
-			"events": [
-				{
-					"event": { "id": 1 }
-				}
-			]
-		}
-	]
-},
-{
-	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
 	"id": { "id": 8 },
-	"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Dark" },
+	"message": "gamedata|BG.Dark",
 	"cursorPosition": { "x": 10, "y": 17 },
 	"background": { "id": 17 },
 	"music": { "id": 22 },
@@ -1231,7 +2305,7 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
 	"id": { "id": 9 },
-	"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Lunar" },
+	"message": "gamedata|BG.Lunar",
 	"secret": true,
 	"map": {
 		"drawable": { "id": 600 }
@@ -1241,7 +2315,6 @@
 	"music": { "id": 8 },
 	"pathLength": 5,
 	"pathLengthDeviation": 0,
-	"branchDistanceX": 9,
 	"branchDistanceY": 11,
 	"randomEvents": [
 		{
@@ -1336,7 +2409,7 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
 	"id": { "id": 10 },
-	"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.IceCave" },
+	"message": "gamedata|BG.IceCave",
 	"secret": true,
 	"cursorPosition": { "x": 110, "y": 8 },
 	"background": { "id": 15 },
@@ -1345,7 +2418,6 @@
 	"pathLengthDeviation": 0,
 	"branches": 1,
 	"branchDeviation": 0,
-	"branchDistanceX": 9,
 	"branchDistanceY": 11,
 	"randomEvents": [
 		{
@@ -1401,7 +2473,7 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
 	"id": { "id": 11 },
-	"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Zone.Final" },
+	"message": "gamedata|Adventure.Zone.Final",
 	"secret": true,
 	"map": {
 		"drawable": { "id": 600 }
@@ -1412,7 +2484,6 @@
 	"pathLengthDeviation": 0,
 	"branches": 1,
 	"branchDeviation": 0,
-	"branchDistanceX": 9,
 	"branchDistanceY": 11,
 	"startEvents": [
 		{
@@ -1437,7 +2508,7 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
 	"id": { "id": 12 },
-	"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.objects.BattleDataMessages", "key": "BG.Networld" },
+	"message": "gamedata|BG.Networld",
 	"secret": true,
 	"map": {
 		"drawable": { "id": 563 }
@@ -1448,7 +2519,6 @@
 	"pathLength": 3,
 	"branches": 1,
 	"branchDeviation": 0,
-	"branchDistanceX": 9,
 	"branchDistanceY": 11,
 	"lootBox": { "id": 14 },
 	"lootCache": {
@@ -1478,19 +2548,10 @@
 					"event": { "id": 10 }
 				},
 				{
-					"event": { "id": 11 }
-				},
-				{
 					"event": { "id": 12 }
 				},
 				{
 					"event": { "id": 13 }
-				},
-				{
-					"event": { "id": 14 }
-				},
-				{
-					"event": { "id": 21 }
 				},
 				{
 					"event": { "id": 22 }
@@ -1552,7 +2613,7 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
 	"id": { "id": 13 },
-	"message": { "class": "com.one2b3.endcycle.engine.language.FreeLocalizedMessage", "messageClass": "com.one2b3.endcycle.engine.language.messages.screens.AdventureMessages", "key": "Zone.BossRush" },
+	"message": "gamedata|Adventure.Zone.BossRush",
 	"secret": true,
 	"map": {
 		"drawable": { "id": 600 }
@@ -1615,6 +2676,100 @@
 	],
 	"followUpZones": [
 		{ "id": 11 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
+	"id": { "id": 7 },
+	"message": "gamedata|BG.Everod",
+	"secret": true,
+	"cursorPosition": { "x": 132, "y": 12 },
+	"background": {},
+	"music": { "id": 14 },
+	"pathLength": 0,
+	"pathLengthDeviation": 0,
+	"branches": 1,
+	"branchDeviation": 0,
+	"branchDistanceY": 11,
+	"startEvents": [
+		{
+			"events": [
+				{
+					"event": { "id": 2 }
+				}
+			]
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 5 }
+				}
+			]
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 7 }
+				}
+			]
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 8 }
+				}
+			]
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 7 }
+				}
+			]
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 8 }
+				}
+			]
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 7 }
+				}
+			]
+		}
+	],
+	"randomEvents": [
+		{
+			"icon": {
+				"drawable": { "id": 568 }
+			},
+			"events": [
+				{
+					"event": { "id": 26 }
+				}
+			],
+			"maximum": 1
+		}
+	],
+	"finalEvents": [
+		{
+			"events": [
+				{
+					"event": { "id": 15 }
+				}
+			]
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 1 }
+				}
+			]
+		}
 	]
 }
 ]

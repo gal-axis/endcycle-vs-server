@@ -12259,5 +12259,133 @@
 			{ "party": "ENEMY" }
 		]
 	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
+	"id": { "id": 57 },
+	"name": "Parallelogram",
+	"width": 8,
+	"panels": [
+		[
+			null,
+			null,
+			{ "party": "FRIENDLY", "fixed": true }
+		],
+		[
+			null,
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY" }
+		],
+		[
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY" },
+			{}
+		],
+		[
+			{ "party": "FRIENDLY" },
+			{},
+			{}
+		],
+		[
+			{},
+			{},
+			{ "party": "ENEMY" }
+		],
+		[
+			{},
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY", "fixed": true }
+		],
+		[
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY", "fixed": true },
+			null
+		],
+		[
+			{ "party": "ENEMY", "fixed": true },
+			null,
+			null
+		]
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
+	"id": { "id": 58 },
+	"name": "Fiery Palace",
+	"width": 7,
+	"panels": [
+		[
+			null,
+			{ "party": "FRIENDLY", "type": "LAVA", "fixed": true },
+			null
+		],
+		[
+			{ "party": "FRIENDLY", "type": "LAVA", "fixed": true },
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY", "type": "LAVA", "fixed": true }
+		],
+		[
+			{ "party": "FRIENDLY" },
+			{},
+			{ "party": "FRIENDLY" }
+		],
+		[
+			{ "type": "LAVA" },
+			{},
+			{ "type": "LAVA" }
+		],
+		[
+			{ "party": "ENEMY" },
+			{},
+			{ "party": "ENEMY" }
+		],
+		[
+			{ "party": "ENEMY", "type": "LAVA", "fixed": true },
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY", "type": "LAVA", "fixed": true }
+		],
+		[
+			null,
+			{ "party": "ENEMY", "type": "LAVA", "fixed": true },
+			null
+		]
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
+	"id": { "id": 59 },
+	"name": "Rainy Day",
+	"panels": [
+		[
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "type": "SNOW", "fixed": true },
+			{ "party": "FRIENDLY", "fixed": true }
+		],
+		[
+			{ "party": "FRIENDLY", "type": "SNOW" },
+			{},
+			{ "party": "FRIENDLY", "type": "SNOW" }
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{},
+			{},
+			{}
+		],
+		[
+			{ "party": "ENEMY", "type": "SNOW" },
+			{},
+			{ "party": "ENEMY", "type": "SNOW" }
+		],
+		[
+			{ "party": "ENEMY", "fixed": true },
+			{ "party": "ENEMY", "type": "SNOW", "fixed": true },
+			{ "party": "ENEMY", "fixed": true }
+		]
+	]
 }
 ]

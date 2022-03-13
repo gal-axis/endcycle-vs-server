@@ -2528,7 +2528,7 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 54 },
-	"name": "Alexsander IceCrawl",
+	"name": "Cherry IceCrawl",
 	"target": {
 		"party": "ENEMY",
 		"invert": true,
@@ -2620,7 +2620,7 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 55 },
-	"name": "Alexsander Hurt",
+	"name": "Cherry Hurt",
 	"target": {
 		"party": "ENEMY",
 		"invert": true,
@@ -4942,7 +4942,7 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 117 },
-	"name": "Alexsander Adventure #1",
+	"name": "Cherry Adventure #1",
 	"target": {
 		"party": "ENEMY",
 		"invert": true,
@@ -4971,7 +4971,7 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 118 },
-	"name": "Alexsander Adventure #2",
+	"name": "Cherry Adventure #2",
 	"target": {
 		"party": "ENEMY",
 		"invert": true,
@@ -5009,7 +5009,7 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 119 },
-	"name": "Alexsander Adventure #3",
+	"name": "Cherry Adventure #3",
 	"target": {
 		"party": "ENEMY",
 		"invert": true,
@@ -5044,7 +5044,7 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 120 },
-	"name": "Alexsander Adventure #3b",
+	"name": "Cherry Adventure #3b",
 	"target": {
 		"party": "ENEMY",
 		"invert": true,
@@ -6330,6 +6330,159 @@
 	},
 	"acts": [
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 167 },
+	"name": "VOC Gigantree",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 106 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 3 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 168 },
+	"name": "Shoot Lava",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "time": 3 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 116 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 169 },
+	"name": "Rainy Day Rainmaker",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 4,
+			"voc": { "id": 117 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 170 },
+	"name": "Rainy Day Rainmaker 2",
+	"next": { "id": 169 },
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 3 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 171 },
+	"name": "Spiketrap Move Right",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"action": { "id": 172 },
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" }
+			]
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "MOVING_TILE", "xTile": 1, "moveSpeed": 2 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 172 },
+	"name": "Spiketrap Move Down",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"action": { "id": 173 },
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" }
+			]
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "MOVING_TILE", "yTile": 1, "moveSpeed": 2 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 173 },
+	"name": "Spiketrap Move Left",
+	"target": {
+		"party": "ENEMY",
+		"vital": false,
+		"facing": false,
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"action": { "id": 174 },
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" }
+			]
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "MOVING_TILE", "xTile": -1, "moveSpeed": 2 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 174 },
+	"name": "Spiketrap Move Up",
+	"target": {
+		"party": "ENEMY",
+		"vital": false,
+		"facing": false,
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"action": { "id": 171 },
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" }
+			]
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "MOVING_TILE", "yTile": -1, "moveSpeed": 2 }
 	]
 }
 ]

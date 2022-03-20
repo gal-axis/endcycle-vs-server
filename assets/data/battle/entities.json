@@ -568,99 +568,6 @@
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
-	"id": { "id": 5 },
-	"name": "gamedata|Character.Neo",
-	"card": { "id": 422 },
-	"win": { "id": 711 },
-	"patchworks": [
-		{
-			"id": { "id": 86 }
-		}
-	],
-	"health": 1100,
-	"speed": 125,
-	"crush": 50,
-	"skills": [ "Virtual" ],
-	"ultraVoc": {
-		"cutIn": {
-			"drawable": { "id": 643 }
-		},
-		"voc": { "id": 69 },
-		"unfilled": { "id": 115 },
-		"idleSpeed": 0
-	},
-	"voice": {
-		"bubble": {
-			"drawable": { "id": 1122 },
-			"color": { "r": 0.41960785, "g": 0.37254903, "b": 0.41960785, "a": 1 }
-		}
-	},
-	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
-	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
-	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.RunInEntityAnimation" },
-	"player": {
-		"tease": true,
-		"nameable": true,
-		"price": 4000,
-		"description": "|AV.atar could be anyone really. Who hides behind the helmet? You decide.",
-		"adventure": {
-			"faction": "Independent",
-			"money": 600,
-			"startZone": { "id": 2 },
-			"startingPack": {
-				"vocs": [
-					{
-						"items": [
-							{
-								"id": { "id": 10010 },
-								"style": null
-							},
-							{
-								"id": { "id": 10016 },
-								"style": null
-							},
-							{
-								"id": { "id": 10102 },
-								"style": null
-							},
-							{
-								"id": { "id": 10423 },
-								"style": null
-							}
-						]
-					},
-					{
-						"items": [ null, null, null, null ]
-					},
-					{
-						"items": [ null, null, null, null ]
-					}
-				]
-			},
-			"changes": [
-				{
-					"side": "Azure",
-					"character": { "id": 13 },
-					"paletteChanges": [ 0, 2, 1, 0 ]
-				},
-				{
-					"side": "Crimson",
-					"character": { "id": 23 },
-					"paletteChanges": [ 0, 2, 1, 0 ]
-				}
-			],
-			"startScript": {
-				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
-				"script": { "id": 13 }
-			},
-			"path": { "id": 3 }
-		},
-		"unlockCondition": {},
-		"customizationUnlockCondition": {}
-	}
-},
-{
-	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
 	"id": { "id": 23 },
 	"name": "gamedata|Character.CFGrunt",
 	"card": { "id": 398 },
@@ -1052,6 +959,99 @@
 				}
 			]
 		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 5 },
+	"name": "gamedata|Character.Neo",
+	"card": { "id": 422 },
+	"win": { "id": 711 },
+	"patchworks": [
+		{
+			"id": { "id": 86 }
+		}
+	],
+	"health": 1100,
+	"speed": 125,
+	"crush": 50,
+	"skills": [ "Virtual" ],
+	"ultraVoc": {
+		"cutIn": {
+			"drawable": { "id": 643 }
+		},
+		"voc": { "id": 69 },
+		"unfilled": { "id": 115 },
+		"idleSpeed": 0
+	},
+	"voice": {
+		"bubble": {
+			"drawable": { "id": 1122 },
+			"color": { "r": 0.41960785, "g": 0.37254903, "b": 0.41960785, "a": 1 }
+		}
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.RunInEntityAnimation" },
+	"player": {
+		"tease": true,
+		"nameable": true,
+		"price": 4000,
+		"description": "|AV.atar could be anyone really. Who hides behind the helmet? You decide.",
+		"adventure": {
+			"faction": "Independent",
+			"money": 600,
+			"startZone": { "id": 2 },
+			"startingPack": {
+				"vocs": [
+					{
+						"items": [
+							{
+								"id": { "id": 10010 },
+								"style": null
+							},
+							{
+								"id": { "id": 10016 },
+								"style": null
+							},
+							{
+								"id": { "id": 10102 },
+								"style": null
+							},
+							{
+								"id": { "id": 10423 },
+								"style": null
+							}
+						]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
+			"changes": [
+				{
+					"side": "Azure",
+					"character": { "id": 13 },
+					"paletteChanges": [ 0, 2, 1, 0 ]
+				},
+				{
+					"side": "Crimson",
+					"character": { "id": 23 },
+					"paletteChanges": [ 0, 2, 1, 0 ]
+				}
+			],
+			"startScript": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 13 }
+			},
+			"path": { "id": 3 }
+		},
+		"unlockCondition": {},
+		"customizationUnlockCondition": {}
 	}
 },
 {

@@ -16,7 +16,7 @@
 				{ "type": "FLINCHING", "intensity": 0.29999998 }
 			],
 			"power": 100,
-			"crushPower": 175
+			"crushPower": 150
 		},
 		"targetType": {},
 		"attack": {
@@ -284,14 +284,7 @@
 		"nameMessage": "gamedata|Voc.Crusher.Name",
 		"descriptionMessage": "gamedata|Voc.Crusher.Description",
 		"level": 2,
-		"property": {
-			"element": "WATER",
-			"ailments": [
-				{ "type": "FLINCHING", "intensity": 0.3 }
-			],
-			"power": 100,
-			"crushPower": 280
-		},
+		"property": { "element": "WATER", "power": 80, "crushPower": 240 },
 		"targetType": {
 			"party": "ENEMY",
 			"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerSameRow" }
@@ -300,7 +293,7 @@
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
 			"attacks": [
 				{
-					"xSpeed": 320,
+					"xSpeed": 240,
 					"stick": {}
 				}
 			],
@@ -998,16 +991,14 @@
 		"property": {
 			"element": "ELEC",
 			"ailments": [
-				{ "type": "HEAL", "intensity": 100 }
+				{ "type": "HEAL", "intensity": 80 }
 			]
 		},
 		"targetType": { "party": "FRIENDLY", "self": true },
 		"attack": {
-			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
 			"limiter": { "limit": true, "team": true, "countGlobal": true },
-			"type": "LIGHTMASS",
-			"entity": { "id": 29 },
-			"action": { "id": 18 },
+			"entity": { "id": 129 },
 			"overrideHit": true
 		}
 	}
@@ -1043,11 +1034,9 @@
 			"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
 		},
 		"attack": {
-			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
 			"limiter": { "limit": true, "countGlobal": true },
-			"type": "LIGHTMASS",
-			"entity": { "id": 30 },
-			"action": { "id": 107 },
+			"entity": { "id": 128 },
 			"overrideHit": true
 		}
 	}
@@ -1591,7 +1580,7 @@
 		"nameMessage": "gamedata|Voc.IceSpear.Name",
 		"descriptionMessage": "gamedata|Voc.IceSpear.Description",
 		"level": 1,
-		"property": { "element": "WATER", "power": 160, "crushPower": 150 },
+		"property": { "element": "WATER", "power": 160, "crushPower": 150, "panel": "SNOW" },
 		"targetType": null,
 		"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.IceSpearAttack", "delay": 0.05, "landDuration": 0.15, "fadeout": 0.2, "xOffset": 100, "yOffset": 85 }
 	}
@@ -1948,7 +1937,7 @@
 			"ailments": [
 				{ "type": "STUN", "duration": 1 }
 			],
-			"power": 120,
+			"power": 110,
 			"crushPower": 160
 		},
 		"targetType": {},
@@ -2603,7 +2592,7 @@
 			"otherwise": {
 				"stats": {
 					"ailments": [
-						{ "type": "HP_CHANGER", "intensity": -20, "duration": 5 }
+						{ "type": "HP_CHANGER", "intensity": -10, "duration": 7 }
 					]
 				},
 				"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.status.AilmentInflicterAttack" }
@@ -4011,7 +4000,8 @@
 						"checkOccupied": false,
 						"xOffset": 3,
 						"type": "BOULDER",
-						"entity": { "id": 10 }
+						"entity": { "id": 10 },
+						"instant": true
 					}
 				}
 			]
@@ -5053,6 +5043,8 @@
 	"attackShell": {
 		"nameMessage": "gamedata|Ultra.Zawarudo",
 		"descriptionMessage": "gamedata|Ultra.Zawarudo.Desc",
+		"interruptable": false,
+		"invincible": true,
 		"property": {
 			"ailments": [
 				{ "type": "FLINCHING" },
@@ -5348,8 +5340,8 @@
 			"ailments": [
 				{ "type": "FLINCHING" }
 			],
-			"power": 80,
-			"crushPower": 100
+			"power": 60,
+			"crushPower": 80
 		},
 		"targetType": {},
 		"attack": {

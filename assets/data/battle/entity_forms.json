@@ -1693,7 +1693,8 @@
 	"patchwork": { "id": 31 },
 	"configuration": {
 		"modes": [
-			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" }
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" },
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
 		]
 	},
 	"action": { "id": 168 }
@@ -1710,7 +1711,8 @@
 				"class": "com.one2b3.endcycle.features.battle.mode.StatusImmuneEntityMode",
 				"ailments": [ "FLINCHING", "SPEED", "TIME", "STUN", "FLIP" ],
 				"exclude": true
-			}
+			},
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
 		]
 	},
 	"action": { "id": 169 }
@@ -1727,7 +1729,8 @@
 				"class": "com.one2b3.endcycle.features.battle.mode.StatusImmuneEntityMode",
 				"ailments": [ "FLINCHING", "SPEED", "TIME", "STUN", "FLIP" ],
 				"exclude": true
-			}
+			},
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
 		]
 	},
 	"action": { "id": 170 }
@@ -1795,5 +1798,31 @@
 			}
 		]
 	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 128 },
+	"dataName": "VOC Anthem",
+	"patchwork": { "id": 106 },
+	"configuration": {
+		"stats": { "hp": 500, "strength": 100, "speed": 100 },
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HealthDrainEntityMode", "drain": 25 }
+		]
+	},
+	"action": { "id": 107 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 129 },
+	"dataName": "VOC Lightmass",
+	"patchwork": { "id": 102 },
+	"configuration": {
+		"stats": { "hp": 400 },
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HealthDrainEntityMode", "drain": 25 }
+		]
+	},
+	"action": { "id": 18 }
 }
 ]

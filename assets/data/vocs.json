@@ -54,7 +54,7 @@
 				{ "type": "FLINCHING", "intensity": 0.3 }
 			],
 			"power": 220,
-			"crushPower": 270
+			"crushPower": 210
 		},
 		"targetType": {},
 		"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.JumperJetAttack" }
@@ -114,7 +114,7 @@
 				{ "type": "STUN", "duration": 0.4 }
 			],
 			"power": 170,
-			"crushPower": 230
+			"crushPower": 190
 		},
 		"targetType": {
 			"party": "ENEMY",
@@ -370,8 +370,8 @@
 			"ailments": [
 				{ "type": "FLINCHING", "intensity": 0.3 }
 			],
-			"power": 160,
-			"crushPower": 200
+			"power": 150,
+			"crushPower": 180
 		},
 		"targetType": {
 			"party": "FRIENDLY",
@@ -497,8 +497,8 @@
 			"ailments": [
 				{ "type": "STUN", "duration": 0.3 }
 			],
-			"power": 90,
-			"crushPower": 100
+			"power": 80,
+			"crushPower": 80
 		},
 		"targetType": {
 			"party": "ENEMY",
@@ -1660,8 +1660,8 @@
 			"ailments": [
 				{ "type": "STUN", "intensity": 1.5 }
 			],
-			"power": 200,
-			"crushPower": 200
+			"power": 220,
+			"crushPower": 220
 		},
 		"targetType": {},
 		"attack": {
@@ -2108,7 +2108,7 @@
 				{ "type": "FLINCHING", "intensity": 0.3 }
 			],
 			"power": 100,
-			"crushPower": 140
+			"crushPower": 110
 		},
 		"targetType": {},
 		"attack": {
@@ -2834,7 +2834,7 @@
 				{ "type": "FLINCHING" }
 			],
 			"power": 250,
-			"crushPower": 300
+			"crushPower": 230
 		},
 		"targetType": {},
 		"attack": {
@@ -3056,7 +3056,7 @@
 			"ailments": [
 				{ "type": "FLINCHING" }
 			],
-			"power": 150,
+			"power": 160,
 			"crushPower": 200
 		},
 		"targetType": {},
@@ -3346,7 +3346,7 @@
 				"drawables": [
 					{
 						"drawable": { "id": 1225 },
-						"color": { "r": 1, "g": 0.4392157, "b": 0.4392157, "a": 1 }
+						"color": { "r": 1, "g": 0.7921569, "b": 0.30980393, "a": 1 }
 					}
 				],
 				"minAmount": 2,
@@ -3361,7 +3361,7 @@
 				"drawables": [
 					{
 						"drawable": { "id": 102 },
-						"color": { "r": 1, "g": 0.4392157, "b": 0.4392157, "a": 1 }
+						"color": { "r": 1, "g": 0.7921569, "b": 0.30980393, "a": 1 }
 					}
 				],
 				"minAmount": 5,
@@ -3405,7 +3405,7 @@
 		"nameMessage": "gamedata|Voc.MirrorForce",
 		"descriptionMessage": "gamedata|Voc.MirrorForce.Description",
 		"level": 4,
-		"property": { "power": 25, "crushPower": 25 },
+		"property": { "power": 40, "crushPower": 50 },
 		"targetType": {},
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
@@ -4026,7 +4026,7 @@
 			"ailments": [
 				{ "type": "FLINCHING" }
 			],
-			"power": 130,
+			"power": 120,
 			"crushPower": 110
 		},
 		"targetType": {},
@@ -4066,7 +4066,7 @@
 				{ "type": "FLINCHING" }
 			],
 			"power": 110,
-			"crushPower": 130
+			"crushPower": 120
 		},
 		"targetType": {},
 		"attack": {
@@ -5052,8 +5052,31 @@
 			],
 			"crushPower": 100
 		},
-		"targetType": { "party": "ENEMY" },
-		"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.status.AilmentInflicterAttack" }
+		"targetType": {
+			"party": "ENEMY",
+			"seeker": {
+				"class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest",
+				"position": { "xType": "CLOSER", "xDistance": 3, "yType": "IGNORE" }
+			}
+		},
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.MultiWrapperAttack",
+			"wrappers": [
+				{
+					"attack": {
+						"class": "com.one2b3.endcycle.screens.battle.attacks.data.modifiers.ParticleModifierAttack",
+						"attackParticles": [
+							{
+								"particle": { "id": 24 }
+							}
+						]
+					}
+				},
+				{
+					"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.status.AilmentInflicterAttack" }
+				}
+			]
+		}
 	}
 },
 {
@@ -5150,7 +5173,7 @@
 				{ "type": "FLINCHING" }
 			],
 			"power": 180,
-			"crushPower": 260,
+			"crushPower": 220,
 			"panel": "LAVA"
 		},
 		"party": "NEUTRAL",
@@ -5234,16 +5257,16 @@
 				{ "type": "STUN", "duration": 1.5 }
 			],
 			"power": 130,
-			"crushPower": 210
+			"crushPower": 100
 		},
 		"targetType": {},
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
 			"attacks": [
 				{
-					"xSpeed": 100,
+					"xSpeed": 80,
 					"speed": [
-						{ "ySpeed": 210, "sineSpeedY": 7.8, "sineOffsetY": 0.5, "delay": 0.15 }
+						{ "ySpeed": 168, "sineSpeedY": 6.24, "sineOffsetY": 0.5, "delay": 0.15 }
 					],
 					"stick": {}
 				}

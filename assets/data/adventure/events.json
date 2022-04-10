@@ -1175,7 +1175,8 @@
 				"x": 7,
 				"y": 1
 			}
-		]
+		],
+		"onWin": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
 	}
 },
 {
@@ -2223,7 +2224,8 @@
 			"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
 			"dialogue": { "id": 760 },
 			"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.LootBattleScript" }
-		}
+		},
+		"onOver": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
 	}
 },
 {

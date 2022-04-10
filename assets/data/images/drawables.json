@@ -3857,7 +3857,7 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 215 },
-	"name": "training_dummy",
+	"name": "Training Dummy",
 	"frames": [
 		{ "texturePath": "battle/entities/others/training_dummy.png", "width": 26, "height": 51 }
 	]
@@ -11008,6 +11008,26 @@
 	"name": "Style Mindgame",
 	"frames": [
 		{ "texturePath": "programs/style_mindgame.png", "width": 9, "height": 9 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 167 },
+	"name": "Training Dummy Stun Start",
+	"speed": 0.06,
+	"frames": [
+		{ "texturePath": "battle/entities/others/training_dummy.png", "x": 54, "width": 26, "height": 51 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 297 },
+	"name": "Training Dummy Stun End",
+	"speed": 0.03,
+	"playMode": "REVERSED",
+	"frames": [
+		{ "texturePath": "battle/entities/others/training_dummy.png", "x": 27, "width": 26, "height": 51 },
+		{ "texturePath": "battle/entities/others/training_dummy.png", "x": 54, "width": 26, "height": 51 }
 	]
 }
 ]

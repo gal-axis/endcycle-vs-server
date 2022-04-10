@@ -339,7 +339,7 @@
 		"customizations": [ 3 ]
 	},
 	"configuration": {
-		"stats": { "hp": 3000, "strength": 100, "crushStrength": 150, "resistance": 300, "speed": 100 },
+		"stats": { "hp": 2200, "strength": 100, "crushStrength": 150, "resistance": 300, "speed": 100 },
 		"modes": [
 			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" },
 			{ "class": "com.one2b3.endcycle.features.battle.mode.BigEntityMode", "size": 3, "extraWidth": 1, "extraHeight": 1 },
@@ -399,7 +399,7 @@
 		"customizations": [ 4 ]
 	},
 	"configuration": {
-		"stats": { "hp": 3000, "strength": 200, "crushStrength": 300, "resistance": 100, "speed": 100 },
+		"stats": { "hp": 2500, "strength": 200, "crushStrength": 300, "resistance": 100, "speed": 100 },
 		"modes": [
 			{ "class": "com.one2b3.endcycle.features.battle.mode.BigEntityMode" },
 			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" },
@@ -598,7 +598,7 @@
 		"customizations": [ 3 ]
 	},
 	"configuration": {
-		"stats": { "hp": 3000, "crushStrength": 50, "resistance": 150, "speed": 200 },
+		"stats": { "hp": 2500, "crushStrength": 50, "resistance": 150, "speed": 200 },
 		"modes": [
 			{ "class": "com.one2b3.endcycle.features.battle.mode.BigEntityMode" },
 			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" },
@@ -612,7 +612,9 @@
 	"id": { "id": 37 },
 	"dataName": "Boss Greed",
 	"talkingName": "|Hungry Greed",
-	"configuration": {}
+	"configuration": {
+		"stats": { "hp": 2000 }
+	}
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
@@ -626,7 +628,9 @@
 	"id": { "id": 39 },
 	"dataName": "Boss Fossil",
 	"talkingName": "|Fatty Fuel",
-	"configuration": {}
+	"configuration": {
+		"stats": { "hp": 2000 }
+	}
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
@@ -1824,5 +1828,36 @@
 		]
 	},
 	"action": { "id": 18 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 130 },
+	"dataName": "Crush Fin",
+	"entity": {},
+	"type": "INVINCIBLE",
+	"configuration": {
+		"stats": { "resistance": -100, "actionSpeed": 0.8 }
+	},
+	"action": { "id": 19 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 131 },
+	"dataName": "Weak Fin",
+	"entity": {},
+	"configuration": {
+		"stats": { "hp": 300, "resistance": -100 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 132 },
+	"dataName": "Crush Fin Upgrade",
+	"entity": {},
+	"type": "INVINCIBLE",
+	"configuration": {
+		"stats": { "resistance": -50 }
+	},
+	"action": { "id": 48 }
 }
 ]

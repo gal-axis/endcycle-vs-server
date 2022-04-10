@@ -807,7 +807,7 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 19 },
-	"name": "Weak boi fin",
+	"name": "Crush Fin",
 	"target": {
 		"party": "ENEMY",
 		"invert": true,
@@ -823,16 +823,17 @@
 		}
 	],
 	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 1.6,
 			"voc": { "id": 10010 }
 		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.6 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 1.2,
 			"voc": { "id": 10031 }
-		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 2 }
+		}
 	]
 },
 {
@@ -1886,6 +1887,7 @@
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -2078,7 +2080,7 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 48 },
-	"name": "Weak boi fin upgrade",
+	"name": "Crush Fin V2",
 	"target": {
 		"party": "ENEMY",
 		"invert": true,
@@ -2439,6 +2441,7 @@
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -2474,6 +2477,7 @@
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.8 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"turn": "TOWARD_TARGET",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -6484,6 +6488,50 @@
 	],
 	"acts": [
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "MOVING_TILE", "yTile": -1, "moveSpeed": 1 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 175 },
+	"name": "Desert AV. Supporter",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10231 },
+			"style": { "id": 26 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": -1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 2 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10032 },
+			"style": { "id": 45 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 176 },
+	"name": "R&B Cress Supporter",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10016 },
+			"style": { "id": 45 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "relation": "TARGET_RELATIVE" }
 	]
 }
 ]

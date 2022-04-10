@@ -365,17 +365,12 @@
 	"music": { "id": 3 },
 	"entityShells": [
 		{
-			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
 			"y": 2,
 			"party": "FRIENDLY",
 			"mustSurvive": true,
 			"name": "fin",
-			"id": { "id": 16 },
-			"talkingName": "",
-			"configuration": {
-				"stats": {}
-			},
-			"pack": {}
+			"form": { "id": 131 }
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
@@ -436,19 +431,12 @@
 			"pack": {}
 		},
 		{
-			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
 			"x": 4,
 			"y": 1,
 			"turned": true,
 			"name": "fin",
-			"id": { "id": 16 },
-			"talkingName": "",
-			"action": { "id": 19 },
-			"configuration": {
-				"stats": { "resistance": -100, "actionSpeed": 0.8 }
-			},
-			"pack": {},
-			"type": "INVINCIBLE"
+			"form": { "id": 130 }
 		}
 	],
 	"entityGoals": [
@@ -799,17 +787,12 @@
 			"pack": {}
 		},
 		{
-			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
 			"x": 4,
 			"y": 1,
 			"turned": true,
 			"name": "fin",
-			"id": { "id": 16 },
-			"talkingName": "",
-			"action": { "id": 48 },
-			"configuration": {},
-			"pack": {},
-			"type": "INVINCIBLE"
+			"form": { "id": 132 }
 		}
 	],
 	"entityGoals": [
@@ -1150,7 +1133,9 @@
 			"cache": {
 				"customizations": [ 1 ]
 			},
-			"configuration": {},
+			"configuration": {
+				"stats": { "hp": 300 }
+			},
 			"pack": {}
 		},
 		{
@@ -1160,7 +1145,9 @@
 			"id": { "id": 1 },
 			"talkingName": "",
 			"action": { "id": 16 },
-			"configuration": {},
+			"configuration": {
+				"stats": { "hp": 300 }
+			},
 			"pack": {}
 		},
 		{
@@ -1170,7 +1157,9 @@
 			"id": { "id": 6 },
 			"talkingName": "",
 			"action": { "id": 2 },
-			"configuration": {},
+			"configuration": {
+				"stats": { "hp": 300 }
+			},
 			"pack": {}
 		},
 		{
@@ -1180,7 +1169,9 @@
 			"id": { "id": 4 },
 			"talkingName": "",
 			"action": { "id": 10 },
-			"configuration": {},
+			"configuration": {
+				"stats": { "hp": 200 }
+			},
 			"pack": {}
 		},
 		{
@@ -1191,7 +1182,9 @@
 			"id": { "id": 1 },
 			"talkingName": "",
 			"action": { "id": 1 },
-			"configuration": {},
+			"configuration": {
+				"stats": { "hp": 400 }
+			},
 			"pack": {}
 		},
 		{
@@ -1202,7 +1195,9 @@
 			"id": { "id": 3 },
 			"talkingName": "",
 			"action": { "id": 28 },
-			"configuration": {},
+			"configuration": {
+				"stats": { "hp": 200 }
+			},
 			"pack": {}
 		},
 		{
@@ -1212,7 +1207,9 @@
 			"id": { "id": 1 },
 			"talkingName": "",
 			"action": {},
-			"configuration": {},
+			"configuration": {
+				"stats": { "hp": 300 }
+			},
 			"pack": {}
 		},
 		{
@@ -1223,7 +1220,9 @@
 			"id": { "id": 4 },
 			"talkingName": "",
 			"action": { "id": 10 },
-			"configuration": {},
+			"configuration": {
+				"stats": { "hp": 300 }
+			},
 			"pack": {}
 		},
 		{
@@ -1236,7 +1235,9 @@
 			"cache": {
 				"customizations": [ 0 ]
 			},
-			"configuration": {},
+			"configuration": {
+				"stats": { "hp": 200 }
+			},
 			"pack": {}
 		},
 		{
@@ -1247,7 +1248,9 @@
 			"id": { "id": 4 },
 			"talkingName": "",
 			"action": { "id": 10 },
-			"configuration": {},
+			"configuration": {
+				"stats": { "hp": 300 }
+			},
 			"pack": {}
 		},
 		{
@@ -1258,7 +1261,9 @@
 			"id": { "id": 4 },
 			"talkingName": "",
 			"action": { "id": 10 },
-			"configuration": {},
+			"configuration": {
+				"stats": { "hp": 200 }
+			},
 			"pack": {}
 		},
 		{
@@ -1290,7 +1295,9 @@
 			"id": { "id": 6 },
 			"talkingName": "",
 			"action": { "id": 2 },
-			"configuration": {},
+			"configuration": {
+				"stats": { "hp": 200 }
+			},
 			"pack": {}
 		},
 		{
@@ -1300,7 +1307,9 @@
 			"id": { "id": 3 },
 			"talkingName": "",
 			"action": { "id": 28 },
-			"configuration": {},
+			"configuration": {
+				"stats": { "hp": 400 }
+			},
 			"pack": {}
 		},
 		{
@@ -5596,21 +5605,28 @@
 	"class": "com.one2b3.endcycle.features.battle.BattleData",
 	"id": { "id": 128 },
 	"dataName": "C - R&B 1",
-	"background": { "id": 3 },
+	"field": { "id": 60 },
+	"background": { "id": 21 },
 	"entityShells": [
-		{
-			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
-			"x": 4,
-			"y": 1,
-			"turned": true,
-			"form": { "id": 31 }
-		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
 			"x": 1,
 			"y": 1,
 			"party": "FRIENDLY",
 			"form": { "id": 47 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 3,
+			"turned": true,
+			"party": "NEUTRAL",
+			"form": { "id": 130 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"y": 2,
+			"party": "FRIENDLY",
+			"form": { "id": 131 }
 		}
 	]
 },

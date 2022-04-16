@@ -1390,54 +1390,40 @@
 	"states": [
 		{
 			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
-			"shadowOffsetY": -1.5,
 			"images": [
 				{
 					"drawable": { "id": 488 },
-					"yPos": -3
+					"yPos": -2
 				}
 			]
 		},
 		{
-			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
-			"type": "TILE_MOVE_FORWARD",
-			"shadowOffsetY": -1.5,
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_OPEN" },
 			"images": [
 				{
-					"drawable": { "id": 488 },
-					"yPos": -3
-				}
-			]
-		},
-		{
-			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
-			"type": "TILE_MOVE_BACKWARD",
-			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
-			"shadowOffsetY": -1.5,
-			"images": [
-				{
-					"drawable": { "id": 488 },
-					"yPos": -3
+					"drawable": { "id": 825 },
+					"yPos": -2
 				}
 			]
 		}
 	],
+	"keepUncustomized": true,
 	"customizables": [
 		{
 			"name": "Color",
 			"replace": [
-				{ "replace": 846116607 },
+				{ "replace": -446807809 },
 				{
-					"replace": 590845183,
+					"replace": -1339413761,
 					"newColor": { "r": 0.5411765, "g": 0.5411765, "b": 0.5411765, "a": 1 }
 				},
 				{
-					"replace": 35802111,
+					"replace": -1794685953,
 					"newColor": { "r": 0.25882354, "g": 0.25882354, "b": 0.25882354, "a": 1 }
 				}
 			],
 			"colors": [
-				{ "r": 0.7882353, "g": 0.1254902, "b": 0.1254902 },
+				{ "r": 0.1254902, "g": 0.76862746, "b": 0.7882353 },
 				{ "r": 0.69803923, "g": 0 },
 				{ "g": 0.78431374, "b": 0 },
 				{ "r": 0.31764707, "b": 0 }
@@ -2723,6 +2709,14 @@
 			"images": [
 				{
 					"drawable": { "id": 46 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "DEATH" },
+			"images": [
+				{
+					"drawable": { "id": 815 }
 				}
 			]
 		}
@@ -5391,6 +5385,133 @@
 			"images": [
 				{
 					"drawable": { "id": 153 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 50 },
+	"name": "Godius Campaign",
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "SPAWN" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_OPEN" },
+			"shadowOffsetY": -22,
+			"images": [
+				{
+					"drawable": { "id": 664 },
+					"xPos": 6,
+					"yPos": -16,
+					"shadow": false
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_OPEN" },
+			"images": [
+				{
+					"drawable": { "id": 665 },
+					"shadow": false
+				},
+				{
+					"drawable": { "id": 666 },
+					"xPos": 48,
+					"shadow": false,
+					"ignoreSize": true
+				},
+				{
+					"drawable": { "id": 667 },
+					"xPos": -40,
+					"shadow": false,
+					"ignoreSize": true
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 51 },
+	"name": "Del Sad",
+	"states": [
+		{
+			"shadowOffsetY": 1,
+			"images": [
+				{
+					"drawable": { "id": 816 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "COUCH" },
+			"images": [
+				{
+					"drawable": { "id": 817 },
+					"xPos": -15,
+					"yPos": -15
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 52 },
+	"name": "Cress Hurt",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" },
+			"images": [
+				{
+					"drawable": { "id": 815 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"images": [
+				{
+					"drawable": { "id": 49 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 818 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 53 },
+	"name": "Crystal Rainbow",
+	"states": [
+		{
+			"images": [
+				{
+					"drawable": { "id": 820 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 54 },
+	"name": "Godius Sphere",
+	"states": [
+		{
+			"images": [
+				{
+					"drawable": { "id": 664 },
+					"yPos": -16
 				}
 			]
 		}

@@ -58,7 +58,7 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
 	"id": { "id": 5 },
-	"dataName": "Mimic Basic",
+	"dataName": "Mimic Zone 2",
 	"icon": {
 		"drawable": { "id": 569 }
 	},
@@ -3196,6 +3196,39 @@
 				"y": 1
 			}
 		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 111 },
+	"dataName": "Mimic Zone 0&1",
+	"icon": {
+		"drawable": { "id": 569 }
+	},
+	"battle": { "id": 53 },
+	"reward": 300,
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.MimicEventTrigger",
+		"realBattle": [
+			{ "id": 9 },
+			{ "id": 10 },
+			{ "id": 12 },
+			{ "id": 13 },
+			{ "id": 21 },
+			{ "id": 22 },
+			{ "id": 23 },
+			{ "id": 24 },
+			{ "id": 25 },
+			{ "id": 26 },
+			{ "id": 27 },
+			{ "id": 28 }
+		],
+		"property": {
+			"ailments": [
+				{ "type": "STUN", "duration": 4 }
+			],
+			"power": 100
+		}
 	}
 }
 ]

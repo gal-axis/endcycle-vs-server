@@ -83,6 +83,7 @@
 		{
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
 			"x": 4,
+			"name": "bomb1",
 			"form": { "id": 1 }
 		},
 		{ "class": "com.one2b3.endcycle.features.battle.PlayerEntityShell", "x": 2, "y": 1, "party": "FRIENDLY", "name": "player" }
@@ -506,7 +507,7 @@
 	"dataName": "C - Spark 5",
 	"name": "",
 	"field": { "id": 1 },
-	"background": {},
+	"background": { "id": 26 },
 	"music": { "id": 2 },
 	"entityShells": [
 		{
@@ -598,7 +599,7 @@
 	"id": { "id": 16 },
 	"dataName": "C - Agent 1",
 	"name": "",
-	"background": {},
+	"background": { "id": 7 },
 	"music": { "id": 2 },
 	"entityShells": [
 		{
@@ -956,13 +957,13 @@
 		}
 	],
 	"liberations": [
-		{ "x": 12, "y": 17, "width": 3, "height": 4 },
-		{ "x": 18, "y": 5, "width": 4, "height": 3 },
 		{ "x": 7, "y": 11, "width": 4, "height": 3 },
 		{ "x": 25, "y": 11, "width": 4, "height": 3 },
 		{ "x": 25, "width": 4, "height": 4 },
-		{ "x": 13, "y": 5, "width": 2, "height": 3 },
-		{ "x": 18, "y": 17, "width": 3, "height": 4 }
+		{ "x": 13, "y": 5, "width": 3, "height": 3 },
+		{ "x": 12, "y": 17, "width": 4, "height": 4 },
+		{ "x": 18, "y": 17, "width": 4, "height": 4 },
+		{ "x": 19, "y": 4, "width": 3, "height": 4 }
 	]
 },
 {
@@ -2095,7 +2096,7 @@
 	"dataName": "C - Punk 5",
 	"name": "",
 	"field": { "id": 26 },
-	"background": { "id": 3 },
+	"background": { "id": 7 },
 	"music": { "id": 17 },
 	"entityShells": [
 		{
@@ -2681,7 +2682,7 @@
 	"dataName": "C - Crimson Force 3",
 	"name": "gamedata|",
 	"field": { "id": 53 },
-	"background": { "id": 2 },
+	"background": { "id": 3 },
 	"music": { "id": 3 },
 	"entityShells": [
 		{
@@ -2740,24 +2741,23 @@
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
 			"x": 2,
 			"y": 22,
-			"turned": true,
 			"vital": false,
 			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
 			"form": { "id": 98 }
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
-			"x": 4,
+			"x": 6,
 			"y": 23,
+			"turned": true,
 			"vital": false,
 			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
 			"form": { "id": 99 }
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
-			"x": 2,
+			"x": 1,
 			"y": 24,
-			"turned": true,
 			"vital": false,
 			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
 			"form": { "id": 100 }
@@ -2927,15 +2927,16 @@
 		{
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
 			"x": 7,
-			"y": 25,
+			"y": 26,
+			"turned": true,
 			"vital": false,
 			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
 			"form": { "id": 99 }
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
-			"x": 2,
-			"y": 26,
+			"x": 3,
+			"y": 25,
 			"vital": false,
 			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
 			"form": { "id": 101 }
@@ -3127,20 +3128,20 @@
 		{ "party": "FRIENDLY", "x": 1, "y": 4 }
 	],
 	"liberations": [
-		{ "x": 3, "y": 5, "width": 5, "height": 6 },
 		{ "x": 27, "y": 13, "width": 7, "height": 4 },
 		{ "x": 36, "y": 20, "height": 2 },
 		{ "x": 30, "y": 7, "width": 3 },
 		{ "x": 11, "y": 27, "width": 2 },
-		{ "y": 18, "width": 7, "height": 4 },
 		{ "x": 32, "y": 20, "width": 5, "height": 3 },
 		{ "x": 11, "y": 24, "width": 6, "height": 4 },
-		{ "x": 11, "y": 4, "width": 8, "height": 3 },
 		{ "x": 23, "y": 4, "width": 6, "height": 3 },
 		{ "x": 33, "y": 23, "width": 2, "height": 4 },
 		{ "x": 31, "y": 23, "width": 2, "height": 3 },
 		{ "x": 30, "y": 26, "width": 2 },
-		{ "x": 8, "y": 29, "width": 6, "height": 4 }
+		{ "x": 8, "y": 29, "width": 6, "height": 4 },
+		{ "x": 3, "y": 5, "width": 5, "height": 6 },
+		{ "y": 18, "width": 8, "height": 4 },
+		{ "x": 14, "y": 4, "width": 5, "height": 3 }
 	]
 },
 {
@@ -5605,28 +5606,54 @@
 	"class": "com.one2b3.endcycle.features.battle.BattleData",
 	"id": { "id": 128 },
 	"dataName": "C - R&B 1",
+	"name": "gamedata|null",
 	"field": { "id": 60 },
 	"background": { "id": 21 },
+	"music": { "id": 26 },
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
-			"x": 1,
-			"y": 1,
+			"x": 2,
+			"y": 2,
+			"turned": true,
+			"vital": false,
 			"party": "FRIENDLY",
-			"form": { "id": 47 }
+			"name": "del",
+			"form": { "id": 133 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 1,
+			"y": 2,
+			"party": "FRIENDLY",
+			"player": true,
+			"name": "cress",
+			"form": { "id": 134 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"turned": true,
+			"name": "bandit2",
+			"parent": "",
+			"form": { "id": 163 }
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
 			"x": 3,
+			"y": 1,
 			"turned": true,
-			"party": "NEUTRAL",
-			"form": { "id": 130 }
+			"name": "bandit1",
+			"form": { "id": 162 }
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
 			"y": 2,
-			"party": "FRIENDLY",
-			"form": { "id": 131 }
+			"turned": true,
+			"name": "bandit3",
+			"parent": "",
+			"form": { "id": 164 }
 		}
 	]
 },
@@ -5652,7 +5679,28 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.BattleData",
 	"id": { "id": 130 },
-	"dataName": "C - R&B 5"
+	"dataName": "C - R&B 5",
+	"run": true,
+	"field": { "id": 64 },
+	"background": { "id": 17 },
+	"music": { "id": 34 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"turned": true,
+			"form": { "id": 139 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 1,
+			"y": 2,
+			"party": "FRIENDLY",
+			"player": true,
+			"form": { "id": 31 }
+		}
+	]
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.BattleData",
@@ -6019,5 +6067,542 @@
 		}
 	],
 	"modes": [ "Singles" ]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 146 },
+	"dataName": "R&B 2",
+	"name": "",
+	"run": true,
+	"field": { "id": 61 },
+	"background": { "id": 27 },
+	"music": { "id": 17 },
+	"time": 80,
+	"startScript": { "class": "com.one2b3.endcycle.features.scripts.battle.BattlePlayMusicScript", "playNormal": true },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 30,
+			"y": 3,
+			"turned": true,
+			"form": { "id": 136 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 45,
+			"y": 2,
+			"turned": true,
+			"form": { "id": 136 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 45,
+			"y": 4,
+			"turned": true,
+			"form": { "id": 138 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 37,
+			"y": 3,
+			"turned": true,
+			"form": { "id": 137 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 38,
+			"y": 4,
+			"turned": true,
+			"form": { "id": 138 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 4,
+			"vital": false,
+			"party": "FRIENDLY",
+			"name": "cress",
+			"form": { "id": 134 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 5,
+			"y": 3,
+			"party": "FRIENDLY",
+			"player": true,
+			"name": "del",
+			"form": { "id": 133 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 52,
+			"y": 4,
+			"turned": true,
+			"form": { "id": 156 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 52,
+			"y": 2,
+			"turned": true,
+			"form": { "id": 154 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 53,
+			"y": 5,
+			"turned": true,
+			"form": { "id": 155 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 53,
+			"y": 1,
+			"turned": true,
+			"form": { "id": 156 }
+		}
+	],
+	"liberations": [
+		{ "x": 29, "y": 2, "width": 4, "height": 3 },
+		{ "x": 36, "y": 2, "width": 5, "height": 3 },
+		{ "x": 44, "y": 2, "width": 4, "height": 3 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 147 },
+	"dataName": "R&B 4",
+	"name": "",
+	"field": { "id": 63 },
+	"background": { "id": 7 },
+	"music": {},
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"y": 2,
+			"party": "FRIENDLY",
+			"player": true,
+			"name": "del",
+			"parent": "",
+			"form": { "id": 149 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 5,
+			"y": 2,
+			"turned": true,
+			"vital": false,
+			"preview": false,
+			"name": "godius",
+			"parent": "",
+			"form": { "id": 161 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 3,
+			"y": 3,
+			"name": "punk1",
+			"parent": "",
+			"form": { "id": 140 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"vital": false,
+			"name": "punk3",
+			"parent": "",
+			"form": { "id": 142 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 6,
+			"y": 3,
+			"turned": true,
+			"vital": false,
+			"name": "punk2",
+			"parent": "",
+			"form": { "id": 141 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"y": 1,
+			"party": "FRIENDLY",
+			"name": "yven",
+			"form": { "id": 150 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 149 },
+	"dataName": "R&B 3 - Cutscene 1",
+	"field": { "id": 30 },
+	"background": { "id": 17 },
+	"music": { "id": 22 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 6,
+			"y": 1,
+			"party": "FRIENDLY",
+			"name": "del",
+			"form": { "id": 146 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 7,
+			"y": 1,
+			"turned": true,
+			"party": "FRIENDLY",
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" },
+			"name": "cress",
+			"form": { "id": 147 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 150 },
+	"dataName": "R&B 3 - Cutscene 2",
+	"field": { "id": 34 },
+	"background": { "id": 25 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 1,
+			"y": 1,
+			"party": "NEUTRAL",
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "COUCH" },
+			"name": "del",
+			"form": { "id": 146 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 5,
+			"y": 1,
+			"turned": true,
+			"party": "NEUTRAL",
+			"name": "cress",
+			"form": { "id": 147 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 151 },
+	"dataName": "R&B 3 - Cutscene 3",
+	"field": { "id": 30 },
+	"background": { "id": 12 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 7,
+			"y": 1,
+			"party": "NEUTRAL",
+			"name": "cress",
+			"form": { "id": 134 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 152 },
+	"dataName": "R&B 3 - Cutscene 4",
+	"name": "gamedata|null",
+	"field": { "id": 34 },
+	"background": { "id": 25 },
+	"music": { "id": 28 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 1,
+			"y": 1,
+			"party": "NEUTRAL",
+			"name": "del",
+			"form": { "id": 133 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 5,
+			"y": 1,
+			"turned": true,
+			"party": "NEUTRAL",
+			"name": "cress",
+			"form": { "id": 134 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 2,
+			"y": 1,
+			"turned": true,
+			"party": "NEUTRAL",
+			"name": "yven",
+			"form": { "id": 148 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 153 },
+	"dataName": "R&B 3",
+	"name": "",
+	"field": { "id": 62 },
+	"background": { "id": 7 },
+	"music": { "id": 28 },
+	"startScript": {
+		"class": "com.one2b3.endcycle.features.scripts.battle.BattlePlayMusicScript",
+		"song": { "id": 17 }
+	},
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 15,
+			"y": 4,
+			"vital": false,
+			"party": "NEUTRAL",
+			"form": { "id": 91 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 16,
+			"y": 3,
+			"vital": false,
+			"party": "NEUTRAL",
+			"form": { "id": 91 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 14,
+			"y": 3,
+			"vital": false,
+			"party": "NEUTRAL",
+			"form": { "id": 91 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 15,
+			"y": 2,
+			"vital": false,
+			"party": "NEUTRAL",
+			"form": { "id": 91 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 3,
+			"y": 3,
+			"party": "FRIENDLY",
+			"player": true,
+			"name": "cress",
+			"form": { "id": 152 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 12,
+			"y": 2,
+			"vital": false,
+			"party": "NEUTRAL",
+			"name": "yven",
+			"form": { "id": 148 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 11,
+			"y": 4,
+			"party": "FRIENDLY",
+			"name": "del",
+			"form": { "id": 151 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 25,
+			"y": 3,
+			"turned": true,
+			"name": "godius",
+			"form": { "id": 135 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 154 },
+	"dataName": "R&B 4 - Cutscene 1",
+	"field": { "id": 34 },
+	"background": { "id": 25 },
+	"music": { "id": 28 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 1,
+			"y": 1,
+			"party": "NEUTRAL",
+			"name": "del",
+			"form": { "id": 133 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"turned": true,
+			"party": "NEUTRAL",
+			"name": "cress",
+			"form": { "id": 147 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 148 },
+	"dataName": "R&B 5",
+	"name": "|R&B Finale",
+	"field": { "id": 1 },
+	"background": { "id": 17 },
+	"music": { "id": 34 },
+	"entityShells": [
+		{ "class": "com.one2b3.endcycle.features.battle.EntityFormShell", "x": 1, "y": 1, "party": "FRIENDLY", "player": true, "name": "cress" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"turned": true,
+			"name": "del",
+			"form": { "id": 139 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 155 },
+	"dataName": "After Credits Scene",
+	"field": { "id": 34 },
+	"background": {},
+	"music": { "id": 23 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 1,
+			"y": 1,
+			"party": "NEUTRAL",
+			"name": "rozu",
+			"form": { "id": 89 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 2,
+			"y": 1,
+			"turned": true,
+			"party": "NEUTRAL",
+			"name": "spark",
+			"form": { "id": 32 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 156 },
+	"dataName": "After Credits Fin Scene",
+	"field": { "id": 66 },
+	"background": { "id": 28 },
+	"music": { "id": 23 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 3,
+			"y": 2,
+			"party": "NEUTRAL",
+			"form": { "id": 114 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 6,
+			"form": { "id": 157 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 6,
+			"y": 2,
+			"form": { "id": 160 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 7,
+			"turned": true,
+			"form": { "id": 159 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 5,
+			"y": 4,
+			"form": { "id": 33 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 6,
+			"y": 4,
+			"party": "FRIENDLY",
+			"form": { "id": 140 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 2,
+			"party": "FRIENDLY",
+			"form": { "id": 43 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 2,
+			"y": 3,
+			"turned": true,
+			"party": "FRIENDLY",
+			"form": { "id": 143 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 2,
+			"y": 4,
+			"turned": true,
+			"party": "FRIENDLY",
+			"form": { "id": 86 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 1,
+			"y": 3,
+			"party": "FRIENDLY",
+			"form": { "id": 117 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"party": "FRIENDLY",
+			"form": { "id": 50 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 7,
+			"y": 4,
+			"turned": true,
+			"form": { "id": 142 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 7,
+			"y": 1,
+			"form": { "id": 43 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 2,
+			"turned": true,
+			"party": "NEUTRAL",
+			"form": { "id": 85 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 4,
+			"form": { "id": 158 }
+		}
+	]
 }
 ]

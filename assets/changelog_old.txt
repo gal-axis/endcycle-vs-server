@@ -1,3 +1,141 @@
+>>> 10th April 2022: Crystal.6 <<<
++ Added early alpha Rollback Netcode setting
+	+ This allows you to experience battles with half the latency you usually would see
+	+ This feature is experimental and full of bugs! Enable at your own risk
++ Reworked some sound effects and added new ones
+* Improved settings menu navigation
+* Fixed / rebalanced some campaign battles
+* Reworked push/pull to prevent getting stuck mid-panel
+	
+
+>>> 31th March 2022: Crystal.5 <<<
+* Fixed online multiplayer bugs
+* Rebalanced crush resistance
+* VOCs:
+	* Red Espresso: Reduced range and added particle effect
+	* Lv1 SpikeTrap: Power 150 -> 160
+	* Lv1 DownBlade: Crush 13% -> 12%
+	* Lv1 Upblade: Power 130 -> 120
+	* Lv2 WideSword: Power 160 -> 150, Crush 20% -> 18%
+	* Lv2 LogLaunch: Crush 14% -> 11%
+	* Lv3 Companion: Crush 30% -> 23%
+	* Lv3 Rebound: Power 90 -> 80, Crush 10% -> 8%
+	* Lv3 Anthem: HP 500 -> 400
+	* Lv3 MineCake: Power 200 -> 220, Crush 20% -> 22%
+	* Lv3 JumperJet: Crush 27% -> 21%
+	* Lv3 VoltSpread: Crush 23% -> 19%
+	* Lv4 NoticeMe: Lifetime 20 sec -> 12 sec
+	* Lv4 SineBall: Slowed down trajectory, Crush 21% -> 10%
+	* Lv4 Reflector: Power 25 -> 40, Crush 2% -> 5%
+	* Lv4 HeatStorm: Crush 26% -> 22%
+* Styles:
+	* Lv0 Cyber: Added short delay before VOC casting
+
+
+>>> 27th March 2022: Crystal.4 <<<
++ Readded Replay functionality
+* Improved NetCode stability
+* VOCs:
+	* Lv1 IceSpear: Now creates an ice panel
+	* Lv1 Droplets: Increased casting speed
+	* Lv1 Cannon: Crush 17% -> 15%
+	* Lv1 ElectroRay: Power 120 -> 110
+	* Lv2 AquaCrusher: Power 100 -> 80, Crush 28% -> 24%, removed Flinch
+	* Lv2 BioHeart: Poison 20% -> 10%
+	* Lv3 Anthem: Added health decay
+	* Lv3 MineCake: Decreased explosion timer
+	* Lv4 LeafCross: Power 80 -> 60, Crush 10% -> 8%
+	* Lv4 Lightmass: Added health decay, HP 300 -> 400, increased speed, heals 100 -> 80
+	* Fixed Red Espresso not granting invulnerability
+	* Increased fall speed for objects
+* Styles:
+	* Lv0 Infuse: Now damages user more with multi-hit attacks
+
+
+>>> 20th March 2022: Crystal.3 <<<
+* Updated character portraits to look better
+* VOCs:
+	* Lv3 WickedScreen -> Increased to Level 4
+* Fixed vital crash when errors occurred
+
+
+>>> 16th March 2022: Crystal.2 <<<
+* Fixed online chat scrolling issues
+* Fixed outdate descriptions
+* Optimized netcode somewhat
+* Fixed some netcode issues with object spawning
+
+
+>>> 13th March 2022: Crystal.1 <<<
++ Added battle start and victory comments!
++ New immersive dialogue boxes that are on top of battle!
++ Completely revamped and added high-resolution fonts!
++ VOC Pack Characters are now visible on pack select screen
++ New Final Boss theme!
++ CPUs in Online multiplayer and offline Versus can now be customized
++ Tons of additions and improvements to the Adventure Mode:
+	+ Reworked adventure new game / loading screen
+	+ New boss defeat animation
+	+ New character-based encounter depending on player
+	+ Shops can now sell normal VOCs!
+	* Changed Noise encounters to start easy but become tougher with each zone
++ Unlocked characters now have descriptions when selecting them!
+* Improved support for international keyboard layouts
++ New Character: Yven - Azure Shield's second in command!
+	+ Shrouded in mystery with unique crystal abilities
+	+ Place Crystal Shards on enemies by hiting them with attacks!
+	+ Activate the Ultra VOC to make the shards explode!
+	+ Depending on the last-VOC, the Ultra VOC effect will differ!
++ Completely revamped some character's ultras!
+	+ Crimson Punk - Standing Proud: Gets help from other punks for a punching combo!
+	+ Azure Agent - Specialist: Now rushes towards enemy before creating explosion!
+	+ Jeremy - Pieces: Added simple helper and revamped attack pattern!
+	+ AV.atar - Rhinestone Ripple: Charge up Ultra to unleash splitting data wave!
+	+ Q.T. - Mech Rhythm: Now shoots multiple projectiles from nozzle diagonally!
+	+ Bombarbara - Wretch Trigger: Now drops special Bomboyages where user explodes!
+	* Fin - Courage: Now instantly heals up 200 health
+	* Bella - Infinity Slash: Now can only try targeting up to 5 times
+	* Sofa Sogood - Green Haze: Reduced poison duration to increase poison DPS
+	* Greed - Gooey Stream: Reduced amount of rushes to 3 but increased power
+	* Fossil Fuel - Mass Extinction: Now also unleashes four fireballs
+	* Cherry - Calorie Bombs: Changes shape and pattern of ice cream balls
++ VOCs:
+	+ Lv4 Gigantree: Creates immovable tree creating grass panels!
+	+ Lv3 InkSplash: Splashes T pattern in front with blinding ink!
+	* Lv2 BackFlash: Crush 0% -> 15%
+	* Lv2 ChronoRip: Crush 0% -> 10%
+	* Lv3 FireGate: Can now only stop 5 projectiles instead of 1000 damage worth
+	* Lv2 Showstopper: Speed decrease 50% / 3 sec. -> 75% / 5 sec., Crush 0% -> 10%
+	* Lv2 Virus: Poison duration 25% / 15 sec. -> 25% / 8 sec.
+	* Lv3 WickedScreen: Duration 3 sec. -> 2.4 sec.
+	* Ice panels now freeze entities on top if entity is hit by a water attack
+	* Revamped VOC designs to look more like cards
++ Styles:
+	+ Lv1 Ninja Style - Disguises with adjacent object and makes it attack!
+	+ Lv1 Sand Style - Places sand panel on target position
+	+ Lv1 Lava Style - Places lava panel on target position
+	+ Lv1 Grab Style - Takes over one panel when using attack
+	+ Lv0 Storm Style - Rushes forward before using attack
+	+ Lv0 Escape Style - Rushes backward after using attack
+	+ Lv0 Treasure Style - Wraps VOC in loot box that activates when hit!
+	+ Revamped all style icons!
+	* Replaced some styles with more unique and fun alternatives!
+		* Lv0 Rush-Up > Lv0 Storm
+		* Lv0 Rush-Down > Lv0 Escape
+		* Lv0 Tense > Lv0 Treasure
+		* Lv0 Alarmed > Lv0 Mindgame
+		* Lv0 Slow > Lv0 Counter
+		* Lv1 Flinch > Lv1 Sand
+		* Lv1 Fast > Lv1 Lava
+		* Lv1 Neutral > Lv1 Grab
++ Toolbox:
+	+ Added Campaign Tutorial
+	+ Added Dialogues Tutorial
+	+ Added Battle scenario Tutorial
+	+ Added VOC / Attack tutorial
+	+ New debug command system that enables dev commands for modding!
+	
+	
 >>> 9th January 2022: Tools.03 <<<
 + Added visuals when entity skills activate
 * Damage number now shows weaknesses and strengths

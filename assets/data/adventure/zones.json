@@ -188,7 +188,7 @@
 			"maximum": 1
 		},
 		{
-			"name": "",
+			"name": "Random Events",
 			"events": [
 				{
 					"event": { "id": 44 },
@@ -203,14 +203,11 @@
 				},
 				{
 					"event": { "id": 4 }
-				},
-				{
-					"event": { "id": 5 },
-					"chance": 0.5
 				}
 			],
 			"minimum": 2,
-			"maximum": 3
+			"maximum": 3,
+			"zoneLevel": { "type": "EQUAL", "number": 2 }
 		},
 		{
 			"name": "Agent Traps",
@@ -341,6 +338,28 @@
 			"characterEqual": true,
 			"zoneLevel": { "type": "NOT_EQUAL", "number": 2 },
 			"appearChance": 0.1
+		},
+		{
+			"name": "Mimic Zone 2",
+			"events": [
+				{
+					"event": { "id": 5 }
+				}
+			],
+			"minimum": 1,
+			"maximum": 1,
+			"zoneLevel": { "type": "EQUAL", "number": 2 }
+		},
+		{
+			"name": "Mimic Zone 0&1",
+			"events": [
+				{
+					"event": { "id": 111 }
+				}
+			],
+			"minimum": 1,
+			"maximum": 1,
+			"zoneLevel": { "type": "SMALLER", "number": 2 }
 		}
 	],
 	"finalEvents": [
@@ -569,10 +588,6 @@
 				},
 				{
 					"event": { "id": 4 }
-				},
-				{
-					"event": { "id": 5 },
-					"chance": 0.5
 				}
 			],
 			"minimum": 3,
@@ -695,6 +710,28 @@
 			"characterEqual": false,
 			"zoneLevel": { "type": "EQUAL", "number": 2 },
 			"appearChance": 0.05
+		},
+		{
+			"name": "Mimic Zone 0&1",
+			"events": [
+				{
+					"event": { "id": 111 }
+				}
+			],
+			"minimum": 1,
+			"maximum": 1,
+			"zoneLevel": { "type": "SMALLER", "number": 2 }
+		},
+		{
+			"name": "Mimic Zone 2",
+			"events": [
+				{
+					"event": { "id": 5 }
+				}
+			],
+			"minimum": 1,
+			"maximum": 1,
+			"zoneLevel": { "type": "EQUAL", "number": 2 }
 		}
 	],
 	"finalEvents": [
@@ -799,9 +836,6 @@
 				},
 				{
 					"event": { "id": 26 }
-				},
-				{
-					"event": { "id": 11 }
 				}
 			],
 			"characterEqual": false,
@@ -910,14 +944,10 @@
 				},
 				{
 					"event": { "id": 4 }
-				},
-				{
-					"event": { "id": 5 },
-					"chance": 0.5
 				}
 			],
-			"minimum": 2,
-			"maximum": 3
+			"minimum": 1,
+			"maximum": 2
 		},
 		{
 			"name": "Agent Traps",
@@ -1046,6 +1076,28 @@
 			"maximum": 1,
 			"zoneLevel": { "type": "EQUAL", "number": 2 },
 			"appearChance": 0.03
+		},
+		{
+			"name": "Mimic Zone 0&1",
+			"events": [
+				{
+					"event": { "id": 111 }
+				}
+			],
+			"minimum": 1,
+			"maximum": 1,
+			"zoneLevel": { "type": "SMALLER", "number": 2 }
+		},
+		{
+			"name": "Mimic Zone 2",
+			"events": [
+				{
+					"event": { "id": 5 }
+				}
+			],
+			"minimum": 1,
+			"maximum": 1,
+			"zoneLevel": { "type": "EQUAL", "number": 2 }
 		}
 	],
 	"finalEvents": [
@@ -1408,6 +1460,28 @@
 			"maximum": 1,
 			"zoneLevel": { "type": "EQUAL", "number": 2 },
 			"appearChance": 0.05
+		},
+		{
+			"name": "Mimic Zone 2",
+			"events": [
+				{
+					"event": { "id": 5 }
+				}
+			],
+			"minimum": 1,
+			"maximum": 1,
+			"zoneLevel": { "type": "EQUAL", "number": 2 }
+		},
+		{
+			"name": "Mimic Zone 0&1",
+			"events": [
+				{
+					"event": { "id": 111 }
+				}
+			],
+			"minimum": 1,
+			"maximum": 1,
+			"zoneLevel": { "type": "SMALLER", "number": 2 }
 		}
 	],
 	"finalEvents": [
@@ -1632,10 +1706,6 @@
 				},
 				{
 					"event": { "id": 4 }
-				},
-				{
-					"event": { "id": 5 },
-					"chance": 0.5
 				}
 			],
 			"minimum": 2,
@@ -1755,6 +1825,17 @@
 			"maximum": 1,
 			"zoneLevel": { "type": "EQUAL", "number": 2 },
 			"appearChance": 0.05
+		},
+		{
+			"name": "Mimic Zone 0&1",
+			"events": [
+				{
+					"event": { "id": 111 }
+				}
+			],
+			"minimum": 1,
+			"maximum": 1,
+			"zoneLevel": { "type": "SMALLER", "number": 2 }
 		}
 	],
 	"finalEvents": [
@@ -1991,10 +2072,6 @@
 				},
 				{
 					"event": { "id": 4 }
-				},
-				{
-					"event": { "id": 5 },
-					"chance": 0.5
 				}
 			],
 			"minimum": 2,
@@ -2132,6 +2209,28 @@
 			"minimum": 1,
 			"maximum": 1,
 			"zoneLevel": { "type": "EQUAL", "number": 2 }
+		},
+		{
+			"name": "Mimic Zone 2",
+			"events": [
+				{
+					"event": { "id": 5 }
+				}
+			],
+			"minimum": 1,
+			"maximum": 1,
+			"zoneLevel": { "type": "EQUAL", "number": 2 }
+		},
+		{
+			"name": "Mimic Zone 0&1",
+			"events": [
+				{
+					"event": { "id": 111 }
+				}
+			],
+			"minimum": 1,
+			"maximum": 1,
+			"zoneLevel": { "type": "SMALLER", "number": 2 }
 		}
 	],
 	"finalEvents": [
@@ -2818,5 +2917,19 @@
 			]
 		}
 	]
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
+	"id": { "id": 14 },
+	"message": "|Oscawatt (Campaign)",
+	"secret": true,
+	"cursorPosition": { "x": 83, "y": 11 }
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
+	"id": { "id": 15 },
+	"message": "|Ambervale (Campaign)",
+	"secret": true,
+	"cursorPosition": { "x": 54, "y": 73 }
 }
 ]

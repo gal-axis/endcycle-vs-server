@@ -25,10 +25,8 @@
 				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "player", "animation": true }
 			},
 			{
+				"delay": 0.2,
 				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "bomb1", "flip": true }
-			},
-			{
-				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "bomb2", "flip": true }
 			}
 		]
 	}
@@ -327,7 +325,14 @@
 		{ "entity": "fin", "textMessage": "dialogues|Spark.2.1" },
 		{ "entity": "player", "textMessage": "dialogues|Spark.2.2" },
 		{ "entity": "fin", "textMessage": "dialogues|Spark.2.3" },
-		{ "entity": "player", "textMessage": "dialogues|Spark.2.4" }
+		{
+			"entity": "player",
+			"textMessage": "dialogues|Spark.2.4",
+			"options": {
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "fin", "animation": true }
+			}
+		},
+		{ "entity": "player", "textMessage": "|... should've asked him to take me to dinner." }
 	],
 	"start": {
 		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
@@ -384,7 +389,8 @@
 		{ "entity": "player", "textMessage": "dialogues|Spark.3.11" },
 		{ "entity": "fin", "textMessage": "dialogues|Spark.C3B2.10" },
 		{ "entity": "player", "textMessage": "dialogues|Spark.C3B2.11" },
-		{ "entity": "fin", "textMessage": "dialogues|Spark.C3B2.12" }
+		{ "entity": "fin", "textMessage": "dialogues|Spark.C3B2.12" },
+		{ "entity": "player", "textMessage": "|It 100% is!" }
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
@@ -637,7 +643,6 @@
 	"id": { "id": 32 },
 	"name": "Spark C6B",
 	"lines": [
-		{ "textMessage": "dialogues|Pass.Weeks" },
 		{
 			"textMessage": "dialogues|Spark.1",
 			"options": { "talkingMessage": "gamedata|Character.Audience" }
@@ -653,7 +658,10 @@
 		{ "entity": "player", "textMessage": "dialogues|Spark.6.2" },
 		{ "entity": "rozu", "textMessage": "dialogues|Spark.6.3" },
 		{ "entity": "player", "textMessage": "dialogues|Spark.6.4" },
-		{ "entity": "rozu", "textMessage": "dialogues|Spark.6.5" }
+		{ "entity": "rozu", "textMessage": "dialogues|Spark.6.5" },
+		{ "entity": "player", "textMessage": "|I don't work for anyone!" },
+		{ "entity": "rozu", "textMessage": "|We don't pay very well but... there's always an all-you-can eat buffet at our HQ." },
+		{ "entity": "player", "textMessage": "|... yeah I'm definitely gonna work for you guys." }
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
@@ -816,6 +824,25 @@
 		{ "entity": "tim", "textMessage": "dialogues|Agent.2.10" },
 		{ "entity": "lisa, tim", "textMessage": "dialogues|Agent.2.11" }
 	],
+	"start": {
+		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+		"scripts": [
+			{
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.general.SetStateScript",
+					"name": "lisa",
+					"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" }
+				}
+			},
+			{
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.general.SetStateScript",
+					"name": "tim",
+					"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" }
+				}
+			}
+		]
+	},
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 		"scripts": [
@@ -1016,7 +1043,8 @@
 		{ "entity": "player", "textMessage": "dialogues|Agent.5.2" },
 		{ "entity": "del", "textMessage": "dialogues|Agent.5.3" },
 		{ "entity": "del", "textMessage": "dialogues|Agent.5.4" },
-		{ "entity": "del", "textMessage": "dialogues|Agent.5.12" }
+		{ "entity": "del", "textMessage": "dialogues|Agent.5.12" },
+		{ "entity": "del", "textMessage": "|Good luck." }
 	]
 },
 {
@@ -1151,7 +1179,8 @@
 			"options": {
 				"color": { "r": 0.30980393, "g": 0.49411765, "b": 0.72156864, "a": 1 }
 			}
-		}
+		},
+		{ "entity": "del", "textMessage": "|Operation \"Everod\" starts immediately. Brace youself. The real battle begins." }
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
@@ -2068,8 +2097,8 @@
 			{
 				"script": {
 					"class": "com.one2b3.endcycle.features.scripts.general.EventScript",
-					"trigger": "noise 1",
 					"type": "BATTLE_START_DEATH",
+					"trigger": "noise 1",
 					"script": {
 						"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 						"scripts": [
@@ -2115,8 +2144,8 @@
 			{
 				"script": {
 					"class": "com.one2b3.endcycle.features.scripts.general.EventScript",
-					"trigger": "noise 2",
 					"type": "BATTLE_START_DEATH",
+					"trigger": "noise 2",
 					"script": {
 						"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 						"scripts": [
@@ -7697,7 +7726,7 @@
 {
 	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
 	"id": { "id": 669 },
-	"name": "C-Crimson C1B1",
+	"name": "CF 1.1",
 	"lines": [
 		{ "entity": "cress", "textMessage": "dialogues|C.Crimson.C1B1.1" },
 		{
@@ -7715,7 +7744,12 @@
 			"entity": "player",
 			"textMessage": "dialogues|C.Crimson.C1B1.6",
 			"options": {
-				"script": { "class": "com.one2b3.endcycle.features.scripts.general.EmotupScript", "name": "player", "emotup": "SURPRISE" }
+				"emotup": "SURPRISE",
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.general.SetStateScript",
+					"name": "player",
+					"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" }
+				}
 			}
 		},
 		{ "entity": "cress", "textMessage": "dialogues|C.Crimson.C1B1.7" },
@@ -7739,6 +7773,7 @@
 			}
 		},
 		{ "entity": "cress", "textMessage": "dialogues|C.Crimson.C1B1.15" },
+		{ "entity": "cress", "textMessage": "|Thought an exiled one might know us though." },
 		{ "entity": "player", "textMessage": "dialogues|C.Crimson.C1B1.16" },
 		{ "entity": "cress", "textMessage": "dialogues|C.Crimson.C1B1.17" }
 	],
@@ -7750,7 +7785,7 @@
 {
 	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
 	"id": { "id": 670 },
-	"name": "Crimson Force C1A1",
+	"name": "CF 1.2",
 	"lines": [
 		{ "entity": "cress", "textMessage": "dialogues|Crimson.Force.C1A1.1" },
 		{ "entity": "player", "textMessage": "dialogues|Crimson.Force.C1A1.2" },
@@ -7760,7 +7795,7 @@
 {
 	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
 	"id": { "id": 671 },
-	"name": "C-Crimson C1B2",
+	"name": "CF 1.3",
 	"lines": [
 		{ "entity": "cress", "textMessage": "dialogues|C.Crimson.C1B2" }
 	],
@@ -7769,7 +7804,7 @@
 {
 	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
 	"id": { "id": 672 },
-	"name": "Crimson Force C1A2",
+	"name": "CF 1.4",
 	"lines": [
 		{ "entity": "player", "textMessage": "dialogues|Crimson.Force.C1A2.1" },
 		{ "entity": "cress", "textMessage": "dialogues|Crimson.Force.C1A2.2" }
@@ -7778,43 +7813,14 @@
 },
 {
 	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
-	"id": { "id": 673 },
-	"name": "Crimson Force",
-	"lines": [
-		{ "entity": "cress", "textMessage": "dialogues|Crimson.Force.1" },
-		{
-			"entity": "punks",
-			"textMessage": "dialogues|Pause",
-			"options": { "emotup": "SAD", "charTimer": 20 }
-		},
-		{ "entity": "cress", "textMessage": "dialogues|Crimson.Force.3" },
-		{ "entity": "flink", "textMessage": "dialogues|Crimson.Force.4" },
-		{ "entity": "cress", "textMessage": "dialogues|Crimson.Force.5" },
-		{
-			"entity": "flink",
-			"textMessage": "dialogues|Crimson.Force.6",
-			"options": {
-				"talkingMessage": "gamedata|Character.Flink",
-				"script": {
-					"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityScript",
-					"shell": {
-						"talkingName": "",
-						"configuration": {}
-					}
-				}
-			}
-		}
-	]
-},
-{
-	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
 	"id": { "id": 675 },
-	"name": "Crimson Force 2",
+	"name": "CF 2",
 	"lines": [
 		{ "entity": "", "textMessage": "dialogues|Crimson.Force.2.1" },
 		{ "entity": "Cress", "textMessage": "dialogues|Crimson.Force.2.2" },
 		{ "entity": "Flink", "textMessage": "dialogues|Crimson.Force.2.3" },
 		{ "entity": "Cress", "textMessage": "dialogues|Crimson.Force.2.4" },
+		{ "entity": "Flink", "textMessage": "|Yah. For sure. We'll make her regret that. Me included we still got 20 Punks left!" },
 		{
 			"entity": "Spark",
 			"textMessage": "dialogues|Crimson.Force.2.5",
@@ -7837,7 +7843,7 @@
 {
 	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
 	"id": { "id": 676 },
-	"name": "CF 3 -1",
+	"name": "CF 3.1",
 	"lines": [
 		{ "entity": "Spark", "textMessage": "dialogues|CF.3.1.1" },
 		{
@@ -7944,7 +7950,7 @@
 {
 	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
 	"id": { "id": 677 },
-	"name": "CF 3-2",
+	"name": "CF 3.2",
 	"lines": [
 		{ "entity": "Spark", "textMessage": "dialogues|CF.3.2.1" },
 		{ "entity": "Rozu", "textMessage": "dialogues|CF.3.2.2" },
@@ -8025,7 +8031,6 @@
 			"textMessage": "dialogues|CF.3.2.31",
 			"options": {
 				"talkingMessage": "gamedata|Character.Rozu",
-				"voice": {},
 				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ShakeEntityScript", "name": "Rozu", "intensity": 2 }
 			}
 		},
@@ -8120,7 +8125,7 @@
 {
 	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
 	"id": { "id": 679 },
-	"name": "Crimson Force 5.1",
+	"name": "CF 5.1",
 	"lines": [
 		{ "entity": "Flink", "textMessage": "dialogues|Crimson.Force.5.1.1" },
 		{ "entity": "punk2", "textMessage": "dialogues|Crimson.Force.5.1.2" },
@@ -8178,7 +8183,7 @@
 {
 	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
 	"id": { "id": 681 },
-	"name": "Crimson Force 5.3",
+	"name": "CF 5.3",
 	"lines": [
 		{ "entity": "Flink", "textMessage": "dialogues|Crimson.Force.5.3.1" },
 		{ "entity": "punk2", "textMessage": "dialogues|Crimson.Force.5.3.2" },
@@ -8244,7 +8249,7 @@
 {
 	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
 	"id": { "id": 683 },
-	"name": "Crimson Force 5.4",
+	"name": "CF 5.4",
 	"lines": [
 		{ "entity": "Sarah", "textMessage": "dialogues|Crimson.Force.5.4.1" },
 		{ "entity": "Flink", "textMessage": "dialogues|Crimson.Force.5.4.2" },
@@ -8289,7 +8294,7 @@
 {
 	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
 	"id": { "id": 682 },
-	"name": "Crimson Force 5.5",
+	"name": "CF 5.5",
 	"lines": [
 		{ "entity": "Flink", "textMessage": "dialogues|Crimson.Force.5.5.1" },
 		{ "entity": "punk1", "textMessage": "dialogues|Crimson.Force.5.5.2" }
@@ -8298,14 +8303,47 @@
 		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 		"scripts": [
 			{
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityScript",
+					"shell": {
+						"x": 1,
+						"y": 1,
+						"turned": true,
+						"name": "???",
+						"id": { "id": 59 },
+						"talkingName": "|???",
+						"configuration": {}
+					}
+				}
+			},
+			{
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityScript",
+					"shell": {
+						"x": 1,
+						"y": 1,
+						"name": "del",
+						"parent": "",
+						"id": { "id": 9 },
+						"configuration": {}
+					}
+				}
+			},
+			{
 				"script": { "class": "com.one2b3.endcycle.features.scripts.general.ShakeScreenScript", "x": 10, "y": 10, "duration": 4 }
 			},
 			{
 				"script": {
 					"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
 					"color": { "r": 0.3019608, "g": 0.3019608, "b": 1, "a": 1 },
-					"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
+					"onFinish": {
+						"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+						"dialogue": { "id": 833 }
+					}
 				}
+			},
+			{
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleBattleHudScript" }
 			}
 		]
 	}
@@ -9872,6 +9910,1176 @@
 		{ "entity": "1", "textMessage": "|Go back to your quarry!" },
 		{ "entity": "1", "textMessage": "|Is your arm too heavy to use?" },
 		{ "entity": "1", "textMessage": "|Paper beats rock! \\u2026Paper is made from trees, you see." }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 833 },
+	"name": "CF 5.6",
+	"lines": [
+		{
+			"entity": "???",
+			"textMessage": "|Operation \"Everod\" has been carried out succesfully.",
+			"options": { "talkingMessage": "|???", "hidden": true }
+		},
+		{
+			"entity": "???",
+			"textMessage": "|No traces of any living being remain. This town never existed.",
+			"options": { "talkingMessage": "|???", "hidden": true }
+		},
+		{
+			"entity": "???",
+			"textMessage": "|Oh yeah they fought valiantly. Not that it matters.",
+			"options": { "talkingMessage": "|???", "hidden": true }
+		},
+		{
+			"entity": "???",
+			"textMessage": "|Now how about we grab some lunch? My treat, Del dear.",
+			"options": { "talkingMessage": "|???", "hidden": true }
+		},
+		{
+			"entity": "del",
+			"textMessage": "|Sounds good... but first I'll send the leader of Crimson Force to her Punks.",
+			"options": { "talkingMessage": "|del" }
+		}
+	],
+	"end": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 834 },
+	"name": "R&B 1.1",
+	"lines": [
+		{
+			"entity": "cress",
+			"textMessage": "|You\\u2019ve built an entire school?",
+			"options": { "emotup": "BIG_SURPRISE" }
+		},
+		{ "entity": "del", "textMessage": "|My childhood in Midius was\\u2026 messy." },
+		{ "entity": "del", "textMessage": "|So I want to give all the kids there the same opportunities you and Dad gave me." },
+		{ "entity": "cress", "textMessage": "|You just needed a hand is all. " },
+		{
+			"entity": "del",
+			"textMessage": "|\"A hand\"?",
+			"options": { "emotup": "LAUGHING" }
+		},
+		{ "entity": "cress", "textMessage": "|You know what I mean. When we took you in... dad already knew you'd turn out great." },
+		{ "entity": "del", "textMessage": "|The kids attending our Midius-Program are also full of potential." },
+		{ "entity": "del", "textMessage": "|I am really excited to see how they\\u2019re gonna change the world." },
+		{ "entity": "cress", "textMessage": "|With you as their teacher I\\u2019m sure they're gonna cause an uproar!\r" },
+		{ "entity": "del", "textMessage": "|Are you sure you don\\u2019t want to teach as well? We could use someone for the history classes...\r" },
+		{ "entity": "cress", "textMessage": "|Noo haha I really don\\u2019t want anything to do with authority.\r" },
+		{ "entity": "cress", "textMessage": "|Just leave me to my books and my Voxel-Tournaments thank you very much." }
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+		"scripts": [
+			{
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "bandit1", "animation": true }
+			},
+			{
+				"delay": 0.2,
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "bandit2", "animation": true }
+			},
+			{
+				"delay": 0.3,
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "bandit3", "animation": true }
+			},
+			{
+				"delay": 0.6,
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+					"dialogue": { "id": 835 }
+				}
+			},
+			{
+				"delay": 0.4,
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "del" }
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 835 },
+	"name": "R&B 1.2",
+	"lines": [
+		{ "entity": "bandit1", "textMessage": "|Hello Ladies. How about you give us all your E-bits and Vocs." },
+		{ "entity": "cress", "textMessage": "|Oh-ho ho. Buddy you are\\u2026" },
+		{ "entity": "del", "textMessage": "|Messing with the wrong sisters." }
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+		"script": { "id": 233 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 836 },
+	"name": "R&B Tutorial 1",
+	"lines": [
+		{ "textMessage": "|In the battles of Red & Blue you are able to switch between two characters by using your ultra VOC!" },
+		{ "entity": "", "textMessage": "|Try overcoming the odds by utilizing both characters to their full extent!" }
+	],
+	"end": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignStartBattleScript" }
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 837 },
+	"name": "R&B 1.3",
+	"lines": [
+		{
+			"entity": "del",
+			"textMessage": "|Hey you three!",
+			"options": {
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"delay": 0.2,
+							"script": { "class": "com.one2b3.endcycle.features.scripts.general.EmotupScript", "name": "bandit1", "emotup": "QUESTION" }
+						}
+					]
+				}
+			}
+		},
+		{ "entity": "del", "textMessage": "|Why were you trying to rob us?" },
+		{ "entity": "bandit1", "textMessage": "|I just... couldn\\u2019t see another way to provide for my kids." },
+		{ "entity": "del", "textMessage": "|You fought well\\u2026 go to the Azure Shield base near here. We might have a job for you and your buddies." },
+		{ "entity": "bandit1", "textMessage": "|Ok... we\\u2019ll think about it. Sarah, Echs... let\\u2019s go." },
+		{ "entity": "bandit2", "textMessage": "|You got it Vanessa." }
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+		"scripts": [
+			{
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "bandit1", "animation": true }
+			},
+			{
+				"delay": 0.2,
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "bandit2", "animation": true }
+			},
+			{
+				"delay": 0.3,
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "bandit3", "animation": true }
+			},
+			{
+				"delay": 0.4,
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "cress", "turned": true }
+			},
+			{
+				"delay": 0.7,
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+					"dialogue": { "id": 838 }
+				}
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 838 },
+	"name": "R&B 1.4",
+	"lines": [
+		{ "entity": "cress", "textMessage": "|Wow, saving the world even in your spare time huh?" },
+		{ "entity": "del", "textMessage": "|Well people hunger in their spare time\\u2026 gotta do what I can." },
+		{ "entity": "del", "textMessage": "|For most it\\u2019s getting harder and harder these days to feed themselves, let alone others." },
+		{ "entity": "cress", "textMessage": "|I appreciate you still taking time for your big sis." },
+		{ "entity": "del", "textMessage": "|Well I need to remember what I\\u2019m fighting for don't I." },
+		{ "entity": "cress", "textMessage": "|You are SO corny." },
+		{ "entity": "del", "textMessage": "|Hahaha! I\\u2019m not the one with the super-hero getup!" }
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+		"scripts": [
+			{
+				"script": { "class": "com.one2b3.endcycle.features.scripts.general.EmotupScript", "name": "del", "emotup": "LAUGHING" }
+			},
+			{
+				"script": { "class": "com.one2b3.endcycle.features.scripts.general.EmotupScript", "name": "cress", "emotup": "UNCOMFORTABLE" }
+			},
+			{
+				"delay": 0.5,
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+					"dialogue": { "id": 839 }
+				}
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 839 },
+	"name": "R&B 1.5",
+	"lines": [
+		{ "entity": "", "textMessage": "|*beep beep beep*" }
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+		"scripts": [
+			{
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "del", "flip": true }
+			},
+			{
+				"delay": 0.6,
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+					"dialogue": { "id": 840 }
+				}
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 840 },
+	"name": "R&B 1.6",
+	"lines": [
+		{ "entity": "cress", "textMessage": "|What's up?" },
+		{
+			"entity": "del",
+			"textMessage": "|Some\\u2026 strange readings coming from Midius. We better go there fast.",
+			"options": {
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "del", "flip": true }
+			}
+		},
+		{ "entity": "cress", "textMessage": "|You got it!" }
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+		"scripts": [
+			{
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "cress", "animation": true }
+			},
+			{
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "del", "animation": true }
+			},
+			{
+				"delay": 0.8,
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 841 },
+	"name": "R&B 2.1",
+	"lines": [
+		{
+			"entity": "cress",
+			"textMessage": "|Midius is just up ahead right?",
+			"options": { "duration": 1, "skippable": false }
+		},
+		{
+			"entity": "del",
+			"textMessage": "|Yes but...",
+			"options": { "duration": 0.6, "skippable": false }
+		}
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+		"scripts": [
+			{
+				"delay": 1.8,
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+					"dialogue": { "id": 842 }
+				}
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 842 },
+	"name": "R&B 2.2",
+	"lines": [
+		{ "entity": "del", "textMessage": "|There aren\\u2019t supposed to be any Noises here. Azure Shield put up Noise protection all over the place." },
+		{ "entity": "cress", "textMessage": "|Noises in the middle of desert\\u2026 something is wrong." },
+		{ "entity": "del", "textMessage": "|Come on\\u2026 let\\u2019s delete them." }
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+		"scripts": [
+			{
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "cress", "x": -256, "y": -256 }
+			},
+			{
+				"delay": 0.25,
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignStartBattleScript" }
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 843 },
+	"name": "R&B 2.3",
+	"lines": [
+		{
+			"entity": "del",
+			"textMessage": "|Midius is just up ahe-",
+			"options": { "duration": 0.4 }
+		}
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+		"script": { "id": 227 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 844 },
+	"name": "R&B 3.1",
+	"lines": [
+		{ "entity": "cress", "textMessage": "|Del... are you ok?" }
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+		"scripts": [
+			{
+				"delay": 2.1,
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+					"dialogue": { "id": 845 }
+				}
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 845 },
+	"name": "R&B 3.2",
+	"lines": [
+		{ "entity": "cress", "textMessage": "|Del?" },
+		{ "entity": "del", "textMessage": "|I'm... not ok. What was that thing?" }
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+		"scripts": [
+			{
+				"delay": 0.7,
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+					"dialogue": { "id": 846 }
+				}
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 846 },
+	"name": "R&B 3.3",
+	"lines": [
+		{ "entity": "cress", "textMessage": "|It looked like a Godius...\nbut that can\\u2019t be..." },
+		{ "entity": "del", "textMessage": "|Were the people in Midius\nstill there when it attacked?" },
+		{ "entity": "cress", "textMessage": "|... Let\\u2019s get you out of here.\nWe'll talk at home." }
+	],
+	"end": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 847 },
+	"name": "R&B 3.4",
+	"lines": [
+		{ "entity": "", "textMessage": "|A month later..." }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 848 },
+	"name": "R&B 3.5",
+	"lines": [
+		{ "entity": "cress", "textMessage": "|Hey, I brought you something!" },
+		{ "entity": "del", "textMessage": "|Uh-huh." },
+		{ "entity": "cress", "textMessage": "|Have you gone outside today?" }
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+		"scripts": [
+			{
+				"delay": 1.2,
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+					"dialogue": { "id": 849 }
+				}
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 849 },
+	"name": "R&B 3.6",
+	"lines": [
+		{ "entity": "cress", "textMessage": "|It's a beautiful day. Come on, I'll take you to Myste Edun." },
+		{ "entity": "del", "textMessage": "|\\u2026 Maybe later." },
+		{ "entity": "cress", "textMessage": "|\\u2026 Ok, I'll come back in a few hours\\u2026 promise me you'll at least get out of bed until then." }
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+		"onFinish": {
+			"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+			"scripts": [
+				{
+					"script": {
+						"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+						"dialogue": { "id": 850 }
+					}
+				},
+				{
+					"script": { "class": "com.one2b3.endcycle.features.scripts.general.SetStateScript", "name": "del" }
+				}
+			]
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 850 },
+	"name": "R&B 3.7",
+	"lines": [
+		{ "entity": "", "textMessage": "|Two months later..." },
+		{ "entity": "", "textMessage": "|*beep beep beep*" },
+		{ "entity": "cress", "textMessage": "|Hey there. How\\u2019s your depression going today?" },
+		{ "entity": "del", "textMessage": "|... Uhm." },
+		{ "entity": "cress", "textMessage": "|... Too soon for jokes huh. Sorry. I'll call you again next week." }
+	],
+	"end": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 851 },
+	"name": "R&B 3.8",
+	"lines": [
+		{ "textMessage": "|One year later..." }
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+		"stop": true,
+		"onFinish": {
+			"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+			"dialogue": { "id": 852 }
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 852 },
+	"name": "R&B 3.9",
+	"lines": [
+		{ "entity": "cress", "textMessage": "|Haven\\u2019t visited her this month\\u2026 let\\u2019s see how she\\u2019s holding up." }
+	],
+	"end": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 853 },
+	"name": "R&B 3.10",
+	"lines": [
+		{ "entity": "cress", "textMessage": "|Hey! Del do you know this person?" },
+		{
+			"entity": "yven",
+			"textMessage": "|You must be Cress! Del has told me so much about you!",
+			"options": {
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "yven", "flip": true }
+			}
+		},
+		{
+			"entity": "del",
+			"textMessage": "|Hi there sister!",
+			"options": {
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "del", "relative": true, "moveType": "ANIMATED_MOVING_TILE", "speed": 1, "x": 1, "y": 1 }
+			}
+		},
+		{ "entity": "cress", "textMessage": "|Your room is so clean... what\\u2019s going on?" },
+		{ "entity": "del", "textMessage": "|I feel great sis! I'm ready to get back out there and fulfill my purpose!" },
+		{ "entity": "cress", "textMessage": "|... And what\\u2019s that?" },
+		{ "entity": "del", "textMessage": "|The end of all Godi of course." }
+	],
+	"end": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 854 },
+	"name": "R&B 3.11",
+	"lines": [
+		{ "entity": "cress", "textMessage": "|You again!" },
+		{
+			"entity": "yven",
+			"textMessage": "|Yes I work here.",
+			"options": {
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "yven", "flip": true }
+			}
+		},
+		{ "entity": "del", "textMessage": "|Cress if you want to help Azure Shield you need to get along with Yven." },
+		{ "entity": "del", "textMessage": "|Because without him... THIS wouldn\\u2019t be possible. " }
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+		"script": { "id": 230 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 855 },
+	"name": "R&B 3.12",
+	"lines": [
+		{ "entity": "del", "textMessage": "|Q.T., shoot this rock!" }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 856 },
+	"name": "R&B 3.13",
+	"lines": [
+		{ "entity": "del", "textMessage": "|We're finally able to reach the monster that has destroyed Midius back then..." },
+		{ "entity": "cress", "textMessage": "|... Be careful Del." },
+		{ "entity": "del", "textMessage": "|I always am." }
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+		"script": { "id": 231 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 857 },
+	"name": "R&B 3.14",
+	"lines": [
+		{ "entity": "cress", "textMessage": "|I can't believe it\\u2026 if I\\u2019m correct this must be \"Exerian\"\\u2026" },
+		{ "entity": "cress", "textMessage": "|It's even uglier than I imagined." },
+		{ "entity": "yven", "textMessage": "|Scientists of old have created this creature and its siblings as a way of generating infinite resources..." },
+		{ "entity": "yven", "textMessage": "|One Godius for each nation. But soon they discovered that true infinity cannot be reached with just one." },
+		{ "entity": "yven", "textMessage": "|Instead of working together -or even just compromising- the Godi were repurposed as war machines." },
+		{ "entity": "yven", "textMessage": "|And so the nations tried to steal each others Godius... thus all of Anikka fell.\r" }
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+		"scripts": [
+			{
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "del", "turned": true }
+			},
+			{
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+					"dialogue": { "id": 858 }
+				}
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 858 },
+	"name": "R&B 3.15",
+	"lines": [
+		{ "entity": "del", "textMessage": "|We are in the middle of a new crisis..." },
+		{ "entity": "del", "textMessage": "|Resources are running out and the soil isn\\u2019t strong enough to feed everyone." },
+		{ "entity": "del", "textMessage": "|People are starting to get suspicious of their neighbours." },
+		{ "entity": "del", "textMessage": "|We must end the cycle of violence before it can begin." },
+		{ "entity": "cress", "textMessage": "|True, true... anyways this thing is giving me the creeps... hurry up Del." },
+		{
+			"entity": "del",
+			"textMessage": "|Yven\\u2026 Cress\\u2026 Operation \"Godius\" starts now.",
+			"options": {
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "del" }
+			}
+		}
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+		"scripts": [
+			{
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.UseVocScript",
+					"entity": "godius",
+					"voc": { "id": 132 }
+				}
+			},
+			{
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+					"dialogue": { "id": 859 }
+				}
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 859 },
+	"name": "R&B 3.16",
+	"lines": [
+		{ "entity": "yven", "textMessage": "|You'll have to weaken it first it seems." },
+		{ "entity": "cress", "textMessage": "|Well good thing we're ARMED. Amirite sister?" },
+		{ "entity": "del", "textMessage": "|..." },
+		{ "entity": "cress", "textMessage": "|...I thought that was a good joke." }
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+		"scripts": [
+			{
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "yven", "moveType": "PLAYER", "x": -256, "y": -256 }
+			},
+			{
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "del", "moveType": "PLAYER", "x": -256, "y": -256 }
+			},
+			{
+				"delay": 0.4,
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignStartBattleScript" }
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 860 },
+	"name": "R&B 3.17",
+	"lines": [
+		{ "entity": "del", "textMessage": "|IT WORKED!!!" },
+		{ "entity": "yven", "textMessage": "|It really did! Your sister came in quite HANDY Del." },
+		{ "entity": "del", "textMessage": "|Haha, good one Yven!" },
+		{ "entity": "cress", "textMessage": "|Hey! Wait \\u2026what worked? The arm is still there." },
+		{ "entity": "del", "textMessage": "|Yes and I was able to command it!" }
+	],
+	"end": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 861 },
+	"name": "R&B 4.1",
+	"lines": [
+		{ "entity": "cress", "textMessage": "|Are you crazy?!" },
+		{
+			"entity": "del",
+			"textMessage": "|I know what you're saying but-",
+			"options": { "duration": 0.6 }
+		},
+		{ "entity": "cress", "textMessage": "|But what? Everything we know about the Godi, and everything we don't tells us that we shouldn't be messing around with them." },
+		{
+			"entity": "del",
+			"textMessage": "|Sister, it's a safe process. With Exerian we can destroy the other 9 Godi. But first we can use it-",
+			"options": { "duration": 0.6 }
+		},
+		{ "entity": "cress", "textMessage": "|Del. Read a history book for once will you. Any historian will tell you that-" },
+		{ "entity": "del", "textMessage": "|The Godi were invented because people were scared of their world ending..." },
+		{ "entity": "del", "textMessage": "|Well I can see the world dying right before my eyes! Resources are running out, people are barely affording the bread on their tables..." },
+		{ "entity": "del", "textMessage": "|It's not only about destroying the Godi. With this technology we won't just save the world..." },
+		{ "entity": "del", "textMessage": "|We can finally end the cycle that turns people against each other!" }
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+		"scripts": [
+			{
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "cress", "relative": true, "moveType": "ANIMATED_MOVING_TILE", "speed": 1, "x": -1 }
+			},
+			{
+				"delay": 0.2,
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+					"dialogue": { "id": 862 }
+				}
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 862 },
+	"name": "R&B 4.2",
+	"lines": [
+		{ "entity": "cress", "textMessage": "|This isn't the way to do it sister. We can do this together. With my knowledge and your technology-" },
+		{
+			"entity": "del",
+			"textMessage": "|You can't see it yet but... people are starving and the Godi are about to awaken for good.",
+			"options": {
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "del", "flip": true }
+			}
+		},
+		{ "entity": "del", "textMessage": "|The last one was just a glimpse at what's to come." },
+		{ "entity": "del", "textMessage": "|I don't want anyone suffering like I... am." },
+		{ "entity": "del", "textMessage": "|There is no time to search for an alternative. This is the only way." },
+		{
+			"entity": "cress",
+			"textMessage": "|...There is always another way...",
+			"options": {
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "cress", "flip": true }
+			}
+		}
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+		"scripts": [
+			{
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "cress", "relative": true, "moveType": "ANIMATED_MOVING_TILE", "speed": 0.6, "x": 2 }
+			},
+			{
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+					"speed": 1.2,
+					"onFinish": {
+						"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+						"dialogue": { "id": 863 }
+					}
+				}
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 863 },
+	"name": "R&B 4.3",
+	"lines": [
+		{ "entity": "", "textMessage": "|Some time later..." }
+	],
+	"end": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 864 },
+	"name": "R&B 4.4",
+	"lines": [
+		{ "entity": "del", "textMessage": "|Huh?" },
+		{ "entity": "punk1", "textMessage": "|Aight boys let's destroy this thing, I got a girl waiting for me at home!" },
+		{ "entity": "punk2", "textMessage": "|I'm your girlfriend!" },
+		{ "entity": "punk1", "textMessage": "|You're here???" }
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+		"scripts": [
+			{
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.UseVocScript",
+					"entity": "punk2",
+					"voc": { "id": 21 },
+					"style": { "id": 45 }
+				}
+			},
+			{
+				"delay": 1,
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+					"dialogue": { "id": 865 }
+				}
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 865 },
+	"name": "R&B 4.5",
+	"lines": [
+		{ "entity": "del", "textMessage": "|HEY! GET AWAY FROM THERE!" },
+		{
+			"entity": "punk1, punk2, punk3",
+			"textMessage": "|Make us!",
+			"options": {
+				"talkingMessage": "|Crimson Punks",
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnAllToEntityScript", "name": "del" }
+			}
+		},
+		{
+			"entity": "yven",
+			"textMessage": "|Ma'am, allow me to aid you.",
+			"options": {
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "yven", "relative": true, "moveType": "ANIMATED_MOVING_TILE", "speed": 1, "x": 1 }
+			}
+		}
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+		"script": { "id": 236 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 866 },
+	"name": "R&B 4.6",
+	"lines": [
+		{ "entity": "flink", "textMessage": "|You can beat us but you'll never break our spirits!" },
+		{ "entity": "del", "textMessage": "|I don't care about your spirit. Go home." },
+		{ "entity": "flink", "textMessage": "|..." },
+		{ "entity": "del", "textMessage": "|I'm sure your \"leader\" needs you." },
+		{ "entity": "flink", "textMessage": "|tsk" }
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+		"scripts": [
+			{
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "flink", "animation": true }
+			},
+			{
+				"delay": 0.6,
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+					"dialogue": { "id": 867 }
+				}
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 867 },
+	"name": "R&B 4.7",
+	"lines": [
+		{ "entity": "yven", "textMessage": "|Ma'am don't you want to interrogate them?" },
+		{ "entity": "del", "textMessage": "|No. I know everything I need to know." }
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+		"onFinish": {
+			"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+			"scripts": [
+				{
+					"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleBattleHudScript" }
+				},
+				{
+					"script": {
+						"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityFormScript",
+						"shell": {
+							"x": -256,
+							"y": -256,
+							"name": "cress",
+							"parent": "",
+							"form": { "id": 147 }
+						}
+					}
+				},
+				{
+					"delay": 0.7,
+					"script": {
+						"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+						"dialogue": { "id": 868 }
+					}
+				}
+			]
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 868 },
+	"name": "R&B 4.8",
+	"lines": [
+		{ "entity": "del", "textMessage": "|Cress, don't send your friends again or you'll regret it." },
+		{ "entity": "cress", "textMessage": "|..." },
+		{
+			"entity": "del",
+			"textMessage": "|I told you that it's the only way. Why don't you-",
+			"options": { "duration": 0.6 }
+		},
+		{ "entity": "", "textMessage": "|*Beep*" }
+	],
+	"end": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 869 },
+	"name": "R&B 5.1",
+	"lines": [
+		{ "entity": "cress", "textMessage": "|All of Everod\\u2026 my punks\\u2026 they\\u2019re..." },
+		{ "entity": "del", "textMessage": "|You actually came here instead of going to Everod. I'm impressed.\r" },
+		{ "entity": "cress", "textMessage": "|The mission was always to stop Operation \"Godius\". Attacking the factory was just a distraction." },
+		{ "entity": "del", "textMessage": "|So was Everod. They're not dead. We put them somewhere safe.\r\r" },
+		{ "entity": "del", "textMessage": "|... I'll release them as soon as you join my cause.\r" },
+		{ "entity": "del", "textMessage": "|All I want to do is make Anikka a better place for everyone." },
+		{ "entity": "cress", "textMessage": "|Del\\u2026 please listen to me. You weren't always like this...\r" },
+		{ "entity": "del", "textMessage": "|You need to start looking at the bigger picture. We WILL destroy the Godi..." },
+		{
+			"entity": "del",
+			"textMessage": "|... But first we can use their power for the greater good.\r",
+			"options": {
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "cress", "relative": true, "moveType": "ANIMATED_MOVING_TILE", "speed": 1, "x": 1 }
+			}
+		},
+		{
+			"entity": "cress",
+			"textMessage": "|By AWAKENING them? Are you listening to yourself?\r",
+			"options": {
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ShakeEntityScript", "name": "cress", "intensity": 1 }
+			}
+		},
+		{
+			"entity": "del",
+			"textMessage": "|We can\\u2019t keep living in fear! ",
+			"options": {
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "del", "relative": true, "moveType": "ANIMATED_MOVING_TILE", "speed": 1, "x": -1 }
+			}
+		},
+		{ "entity": "del", "textMessage": "|You should see the work we\\u2019ve done with Exerian. We\\u2019ve been able to generate food out of thin air-" },
+		{ "entity": "cress", "textMessage": "|Don't you remember what Exerian did to YOUR people just with ONE arm?\r" },
+		{ "entity": "del", "textMessage": "|What happened to Midius\\u2026 it could have been prevented." },
+		{ "entity": "del", "textMessage": "|I can already control Exerian. This will be a safe process.\r" },
+		{ "entity": "del", "textMessage": "|You know it's only dangerous when mishandled." },
+		{ "entity": "cress", "textMessage": "|They\\u2019ve never NOT been mishandled!\r" },
+		{
+			"entity": "cress",
+			"textMessage": "|Talk to me! We can solve this! But controlling the Godi\\u2026 that\\u2019s just impossible.",
+			"options": {
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ShakeEntityScript", "name": "cress" }
+			}
+		},
+		{
+			"entity": "del",
+			"textMessage": "|All YOU ever talk about is the past and what COULD happen.\r",
+			"options": {
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "x": 1 }
+			}
+		},
+		{ "entity": "del", "textMessage": "|I only care about what IS happening right now! I stopped caring about WHAT IFs a long time ago." },
+		{ "entity": "cress", "textMessage": "|Del\\u2026 you\\u2019re going too far.\r" },
+		{ "entity": "del", "textMessage": "|Who do you think invented the Godi in the first place? It wasn\\u2019t some evil wizard.\r" },
+		{ "entity": "del", "textMessage": "|It was people like you and me who were trying to save their world." },
+		{ "entity": "cress", "textMessage": "|And their inventions almost killed them all!\r" },
+		{ "entity": "del", "textMessage": "|Well LOOK AROUND. Anikka is falling apart!\r" },
+		{
+			"entity": "del",
+			"textMessage": "|People\\u2026 FAMILIES disappear in a matter of seconds because nobody dares to touch the Godi.",
+			"options": {
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ShakeEntityScript", "name": "del", "intensity": 1 }
+			}
+		},
+		{
+			"entity": "del",
+			"textMessage": "|You\\u2019re scared of the world ending? Well MY World has ended a long time ago!",
+			"options": {
+				"color": { "r": 1, "b": 0.11764706, "a": 1 }
+			}
+		},
+		{
+			"entity": "cress",
+			"textMessage": "|Del. I'm going to stop you right here, right now.",
+			"options": {
+				"color": { "r": 0.14117648, "g": 0.654902, "b": 1, "a": 1 },
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ShakeEntityScript", "name": "cress" }
+			}
+		},
+		{
+			"entity": "del",
+			"textMessage": "|You can't even touch me.",
+			"options": {
+				"charTimer": 20,
+				"duration": 1,
+				"skippable": false,
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ShakeEntityScript", "name": "del" }
+						},
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "del" }
+						},
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "del", "relative": true, "moveType": "ANIMATED_MOVING_TILE", "speed": 1, "x": 1 }
+						}
+					]
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 870 },
+	"name": "R&B 5.2",
+	"lines": [
+		{ "entity": "cress", "textMessage": "|Couldn\\u2019t even bother to show up huh." },
+		{ "entity": "del", "textMessage": "|I\\u2019m generating a copy of myself from the other side of the continent..." },
+		{ "entity": "del", "textMessage": "|The power of the Godi is amazing isn\\u2019t it." },
+		{ "entity": "cress", "textMessage": "|Exerian fought pretty well but... it's just a busted proto type isn't it." },
+		{ "entity": "del", "textMessage": "|So you've figured it out." },
+		{ "entity": "cress", "textMessage": "|A real Godius wouldn\\u2019t crack." },
+		{ "entity": "del", "textMessage": "|Exactly." },
+		{ "entity": "cress", "textMessage": "|Still feels good to break your toys though." },
+		{ "entity": "del", "textMessage": "|Yes you\\u2019ve successfully stopped our plans\\u2026 for now." },
+		{ "entity": "cress", "textMessage": "|For now?" },
+		{ "entity": "del", "textMessage": "|Without Exerian, progress on our end does take a massive hit... " },
+		{ "entity": "del", "textMessage": "|I'm using a real Godius for this generation of myself\\u2026 but I\\u2019ll find the others and get them all working in less than a year. " },
+		{ "entity": "del", "textMessage": "|Then Anikka will finally prosper with infinite power. This will work." },
+		{
+			"entity": "cress",
+			"textMessage": "|Something will go wrong Del.\nHumans make mistakes.",
+			"options": {
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "cress" }
+			}
+		},
+		{
+			"entity": "del",
+			"textMessage": "|I don't.",
+			"options": {
+				"color": { "r": 0.827451, "g": 0.08235294, "b": 0.9098039, "a": 1 },
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "del" }
+			}
+		}
+	],
+	"end": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "del", "animation": true }
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 673 },
+	"name": "After Credits 1",
+	"lines": [
+		{ "entity": "rozu", "textMessage": "|Spark stop!" },
+		{ "entity": "spark", "textMessage": "|Fin and his brother are still in Everod we need to help them. NOW!" },
+		{ "entity": "rozu", "textMessage": "|We can't do anything without Crimson Force." },
+		{ "entity": "rozu", "textMessage": "|Let's first find the other Punks before-" }
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+		"scripts": [
+			{
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityFormScript",
+					"shell": {
+						"x": 4,
+						"y": 1,
+						"turned": true,
+						"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" },
+						"name": "cress",
+						"parent": "",
+						"form": { "id": 147 }
+					},
+					"animation": true
+				}
+			},
+			{
+				"delay": 0.6,
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.general.SetStateScript",
+					"name": "cress",
+					"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" }
+				}
+			},
+			{
+				"delay": 0.7,
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnAllToEntityScript", "name": "cress" }
+			},
+			{
+				"delay": 0.9,
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+					"dialogue": { "id": 871 }
+				}
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 871 },
+	"name": "After Credits 2",
+	"lines": [
+		{ "entity": "spark, rozu", "textMessage": "|CRESS!" },
+		{ "entity": "cress", "textMessage": "|Hey..." },
+		{ "entity": "spark", "textMessage": "|You came from Everod? Is everyone OK?" },
+		{ "entity": "cress", "textMessage": "|Everyone is... gone." },
+		{ "entity": "rozu", "textMessage": "|Gone?" },
+		{ "entity": "cress", "textMessage": "|Everod... our base... the punks... all gone." },
+		{ "entity": "spark", "textMessage": "|So we lost? It's over?" },
+		{ "entity": "cress", "textMessage": "|No no no we won *wheeze* we won." }
+	],
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+		"scripts": [
+			{
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "rozu", "relative": true, "moveType": "ANIMATED_MOVING_TILE", "x": 1 }
+			},
+			{
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "spark", "relative": true, "moveType": "ANIMATED_MOVING_TILE", "x": 1, "y": 1 }
+			},
+			{
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+					"dialogue": { "id": 872 }
+				}
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 872 },
+	"name": "After Credits 3",
+	"lines": [
+		{ "entity": "cress", "textMessage": "|For now... I've destroyed the Godius. But there are more to come." },
+		{ "entity": "spark", "textMessage": "|I don't care about that... where is Fin?" },
+		{ "entity": "cress", "textMessage": "|Your boyfriend? Ask him yourself." },
+		{ "entity": "", "textMessage": "|*Cress hands Spark one of Exerian's horns.*" },
+		{ "entity": "cress", "textMessage": "|After I destroyed the Godius I started hearing his voice coming from the rummage..." },
+		{ "entity": "fin", "textMessage": "|Spark? " },
+		{ "entity": "spark", "textMessage": "|FIN!!! ARE YOU AND ADAM OK? I'M SO GLAD!!!" },
+		{ "entity": "fin", "textMessage": "|Spark..." }
+	],
+	"start": {
+		"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityFormScript",
+		"shell": {
+			"x": -256,
+			"y": -256,
+			"name": "fin",
+			"parent": "",
+			"form": { "id": 114 }
+		}
+	},
+	"end": {
+		"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+		"script": { "id": 238 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 873 },
+	"name": "After Credits 4",
+	"lines": [
+		{ "entity": "fin", "textMessage": "|... I think all of Everod and Crimson Force is stuck inside the Networld." }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 874 },
+	"name": "After Credits 5",
+	"lines": [
+		{ "entity": "rozu", "textMessage": "|Where will I go now? The Crimson base was my home... the Punks my family..." },
+		{ "entity": "spark", "textMessage": "|We'll get you out of there Fin!" },
+		{ "entity": "cress", "textMessage": "|Azure Shield controls all entry points to the Networld... \nAnd the more popular they get the more people will join them." },
+		{ "entity": "rozu", "textMessage": "|What are you saying?" },
+		{ "entity": "cress", "textMessage": "|I'm saying it's us 3 VS the biggest army on this planet." },
+		{
+			"entity": "cress",
+			"textMessage": "|Crimson Force VS Azure Shield round two.",
+			"options": {
+				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "cress" }
+			}
+		},
+		{ "entity": "cress", "textMessage": "|We're coming to end your cycle... \"sister\"." }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
+	"id": { "id": 875 },
+	"name": "After Credits 6",
+	"lines": [
+		{
+			"textMessage": "|EndCycle    Act 1    End",
+			"options": {
+				"voice": {
+					"sound": { "sound": "ui/text_click.wav" },
+					"repeating": 1
+				},
+				"charTimer": 5,
+				"duration": 3,
+				"skippable": false
+			}
+		}
 	]
 }
 ]

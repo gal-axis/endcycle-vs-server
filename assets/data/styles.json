@@ -425,7 +425,7 @@
 				"stats": { "power": 0, "crushPower": 0, "overrideAilments": true },
 				"attack": {
 					"class": "com.one2b3.endcycle.screens.battle.attacks.data.status.CaffeineAttack",
-					"move": { "x": -6 }
+					"move": { "x": -4 }
 				}
 			}
 		}
@@ -448,7 +448,7 @@
 				"stats": { "power": 0, "crushPower": 0, "overrideAilments": true },
 				"attack": {
 					"class": "com.one2b3.endcycle.screens.battle.attacks.data.status.CaffeineAttack",
-					"move": { "x": 6 }
+					"move": { "x": 4 }
 				}
 			},
 			"wrapper": {},
@@ -956,7 +956,11 @@
 	"drawable": {
 		"drawable": { "id": 801 }
 	},
-	"preview": {},
+	"preview": {
+		"enemyInput": [
+			{ "key": "BATTLE_ATTACK_2", "delay": 0.6 }
+		]
+	},
 	"modifications": [
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.WrapperModification",

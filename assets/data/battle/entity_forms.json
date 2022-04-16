@@ -505,9 +505,10 @@
 		"modes": [
 			{ "class": "com.one2b3.endcycle.features.battle.mode.LevitatingEntityMode" },
 			{ "class": "com.one2b3.endcycle.features.battle.mode.FinalBossEntityMode" }
-		]
+		],
+		"skills": [ "Absolute Parent" ]
 	},
-	"action": { "id": 91 }
+	"action": { "id": 195 }
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
@@ -1019,7 +1020,6 @@
 	"configuration": {
 		"stats": { "hp": 1600, "resistance": 350, "actionSpeed": 0.6 },
 		"modes": [
-			{ "class": "com.one2b3.endcycle.features.battle.mode.BossEntityMode" },
 			{ "class": "com.one2b3.endcycle.features.battle.mode.BigEntityMode", "extraHeight": 1 }
 		]
 	},
@@ -1363,7 +1363,9 @@
 	"cache": {
 		"customizations": [ 0 ]
 	},
-	"configuration": {},
+	"configuration": {
+		"stats": { "hp": 300, "actionSpeed": 0.6 }
+	},
 	"action": { "id": 140 }
 },
 {
@@ -1374,7 +1376,9 @@
 	"cache": {
 		"customizations": [ 1 ]
 	},
-	"configuration": {},
+	"configuration": {
+		"stats": { "hp": 300, "actionSpeed": 0.4 }
+	},
 	"action": { "id": 140 }
 },
 {
@@ -1385,7 +1389,9 @@
 	"cache": {
 		"customizations": [ 2 ]
 	},
-	"configuration": {},
+	"configuration": {
+		"stats": { "hp": 300, "actionSpeed": 0.2 }
+	},
 	"action": { "id": 140 }
 },
 {
@@ -1859,5 +1865,500 @@
 		"stats": { "resistance": -50 }
 	},
 	"action": { "id": 48 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 133 },
+	"dataName": "Del (/ Cress)",
+	"entity": { "id": 9 },
+	"configuration": {
+		"ultra": {
+			"cutIn": {
+				"drawable": { "id": 320 }
+			},
+			"initialGauge": 10,
+			"gaugeRequired": 15,
+			"voc": { "id": 118 }
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 134 },
+	"dataName": "Cress (/ Del)",
+	"entity": { "id": 21 },
+	"configuration": {
+		"ultra": {
+			"cutIn": {
+				"drawable": { "id": 814 }
+			},
+			"initialGauge": 10,
+			"gaugeRequired": 15,
+			"voc": { "id": 119 }
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 135 },
+	"dataName": "Godius Right Arm Campaign",
+	"entity": { "id": 55 },
+	"configuration": {
+		"stats": { "hp": 2000, "resistance": 150 },
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.LevitatingEntityMode" }
+		]
+	},
+	"action": { "id": 195 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 136 },
+	"dataName": "R&B 2 Bombarbara",
+	"entity": { "id": 6 },
+	"cache": {
+		"customizations": [ 0 ]
+	},
+	"configuration": {
+		"stats": { "hp": 700 },
+		"element": "NORMAL"
+	},
+	"action": { "id": 183 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 137 },
+	"dataName": "R&B Cherry 1",
+	"entity": { "id": 24 },
+	"cache": {
+		"customizations": [ 0 ]
+	},
+	"configuration": {},
+	"action": { "id": 184 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 138 },
+	"dataName": "R&B Cherry 2 Support",
+	"entity": { "id": 24 },
+	"patchwork": { "id": 27 },
+	"cache": {
+		"customizations": [ 2 ]
+	},
+	"configuration": {
+		"stats": {}
+	},
+	"action": { "id": 185 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 139 },
+	"dataName": "R&B Del Final Boss",
+	"entity": { "id": 9 },
+	"cache": {
+		"customizations": [ 3, 0, -1 ]
+	},
+	"configuration": {
+		"stats": { "hp": 4000, "resistance": 150 },
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+		]
+	},
+	"action": { "id": 186 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 140 },
+	"dataName": "R&B Crimson Punk 1",
+	"entity": { "id": 23 },
+	"cache": {
+		"patchwork": 3,
+		"customizations": [ 15, 3, 1, 2 ]
+	},
+	"configuration": {
+		"stats": { "hp": 600 }
+	},
+	"action": { "id": 191 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 141 },
+	"dataName": "R&B Crimson Punk 2",
+	"entity": { "id": 23 },
+	"cache": {
+		"patchwork": 3,
+		"customizations": [ 10, 1, 1, 4 ]
+	},
+	"configuration": {
+		"stats": { "hp": 500 }
+	},
+	"action": { "id": 191 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 142 },
+	"dataName": "R&B Crimson Punk 3",
+	"entity": { "id": 23 },
+	"cache": {
+		"patchwork": 3,
+		"customizations": [ 0, 2, 3, 0 ]
+	},
+	"configuration": {
+		"stats": { "hp": 400 }
+	},
+	"action": { "id": 192 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 143 },
+	"dataName": "R&B Crimson Punk 4",
+	"entity": { "id": 23 },
+	"patchwork": { "id": 21 },
+	"cache": {
+		"customizations": [ 10, 1, 2, 2 ]
+	},
+	"configuration": {
+		"stats": { "hp": 400 }
+	},
+	"action": { "id": 194 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 144 },
+	"dataName": "R&B Flink",
+	"entity": { "id": 23 },
+	"talkingName": "|Flink",
+	"cache": {
+		"patchwork": 3,
+		"customizations": [ 0, 2, 1, 3 ]
+	},
+	"configuration": {
+		"stats": { "hp": 400 }
+	},
+	"action": { "id": 191 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 145 },
+	"dataName": "Godius Body Campaign",
+	"patchwork": { "id": 50 },
+	"talkingName": "gamedata|Adventure.Enemy.FinalBoss",
+	"configuration": {
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.LevitatingEntityMode", "min": 1, "max": 6, "speed": 0.5 },
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" },
+			{ "class": "com.one2b3.endcycle.features.battle.mode.BossEntityMode" }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 146 },
+	"dataName": "Del Sad",
+	"entity": { "id": 9 },
+	"patchwork": { "id": 51 },
+	"configuration": {}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 147 },
+	"dataName": "Cress Hurt",
+	"entity": { "id": 21 },
+	"patchwork": { "id": 52 },
+	"configuration": {}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 148 },
+	"dataName": "Yven Cutscene",
+	"entity": { "id": 59 },
+	"configuration": {
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 149 },
+	"dataName": "Del (/ Yven)",
+	"entity": { "id": 9 },
+	"configuration": {
+		"ultra": {
+			"cutIn": {
+				"drawable": { "id": 642 }
+			},
+			"initialGauge": 10,
+			"gaugeRequired": 15,
+			"voc": { "id": 135 }
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 150 },
+	"dataName": "Yven (/ Del)",
+	"entity": { "id": 59 },
+	"configuration": {
+		"ultra": {
+			"cutIn": {
+				"drawable": { "id": 790 }
+			},
+			"initialGauge": 10,
+			"gaugeRequired": 15,
+			"voc": { "id": 136 }
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 151 },
+	"dataName": "Del (/ Cress 2)",
+	"entity": { "id": 9 },
+	"configuration": {
+		"ultra": {
+			"cutIn": {
+				"drawable": { "id": 320 }
+			},
+			"initialGauge": 10,
+			"gaugeRequired": 15,
+			"voc": { "id": 134 }
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 152 },
+	"dataName": "Cress (/ Del 2)",
+	"entity": { "id": 21 },
+	"configuration": {
+		"ultra": {
+			"cutIn": {
+				"drawable": { "id": 814 }
+			},
+			"initialGauge": 10,
+			"gaugeRequired": 15,
+			"voc": { "id": 133 }
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 153 },
+	"dataName": "Yven Explode Crystal",
+	"patchwork": { "id": 53 },
+	"configuration": {
+		"modes": [
+			{
+				"class": "com.one2b3.endcycle.features.battle.mode.HitExplodeEntityMode",
+				"amount": 1,
+				"effect": {
+					"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.HitEffect",
+					"panels": [
+						{ "x": 1 },
+						{ "x": -1 }
+					],
+					"onHit": { "class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.ParticleEffect" }
+				}
+			},
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" },
+			{
+				"class": "com.one2b3.endcycle.features.battle.mode.StatusImmuneEntityMode",
+				"ailments": [ "STUN" ]
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 154 },
+	"dataName": "R&B 2.3 Mini Cherry ",
+	"entity": { "id": 24 },
+	"cache": {
+		"customizations": [ 0 ]
+	},
+	"configuration": {
+		"stats": { "hp": 500 },
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.BigEntityMode", "size": 0.5 }
+		]
+	},
+	"action": { "id": 184 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 155 },
+	"dataName": "R&B 2.3 Mini Cherry Support",
+	"entity": { "id": 24 },
+	"cache": {
+		"customizations": [ 2 ]
+	},
+	"configuration": {
+		"stats": { "hp": 500 },
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.BigEntityMode", "size": 0.5 }
+		]
+	},
+	"action": { "id": 185 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 156 },
+	"dataName": "R&B 2.3 Mini Bomb",
+	"entity": { "id": 6 },
+	"cache": {
+		"customizations": [ 0 ]
+	},
+	"configuration": {
+		"stats": { "hp": 500 },
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.BigEntityMode", "size": 0.5 }
+		]
+	},
+	"action": { "id": 197 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 157 },
+	"dataName": "Punk After Credits 1",
+	"entity": { "id": 23 },
+	"cache": {
+		"patchwork": 1,
+		"customizations": [ 4, 1, 2, 2 ]
+	},
+	"configuration": {}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 158 },
+	"dataName": "Punk After Credits 2",
+	"entity": { "id": 23 },
+	"cache": {
+		"patchwork": 1,
+		"customizations": [ 9, 2, 2, 2 ]
+	},
+	"configuration": {}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 159 },
+	"dataName": "Punk After Credits 3",
+	"entity": { "id": 23 },
+	"cache": {
+		"patchwork": 3,
+		"customizations": [ 1, 0, 3, 4 ]
+	},
+	"configuration": {}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 160 },
+	"dataName": "Punk After Credits 4",
+	"entity": { "id": 23 },
+	"cache": {
+		"patchwork": 2,
+		"customizations": [ 13, 0, 2, 1 ]
+	},
+	"configuration": {}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 161 },
+	"dataName": "Godius Body Campaign 2",
+	"patchwork": { "id": 54 },
+	"configuration": {
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" },
+			{ "class": "com.one2b3.endcycle.features.battle.mode.LevitatingEntityMode" }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 162 },
+	"dataName": "R&B Bandit 1",
+	"entity": { "id": 5 },
+	"cache": {
+		"customizations": [ 2, 4, 2 ]
+	},
+	"configuration": {
+		"stats": { "hp": 700 }
+	},
+	"action": { "id": 177 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 163 },
+	"dataName": "R&B Bandit 2",
+	"entity": { "id": 5 },
+	"cache": {
+		"customizations": [ 5, 1, 1 ]
+	},
+	"configuration": {
+		"stats": { "hp": 700 }
+	},
+	"action": { "id": 178 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 164 },
+	"dataName": "R&B Bandit 3",
+	"entity": { "id": 5 },
+	"cache": {
+		"customizations": [ 4, 7 ]
+	},
+	"configuration": {
+		"stats": { "hp": 700 }
+	},
+	"action": { "id": 179 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 165 },
+	"dataName": "R&B Bandit 1+",
+	"entity": { "id": 5 },
+	"cache": {
+		"customizations": [ 2, 4, 2 ]
+	},
+	"configuration": {},
+	"action": { "id": 180 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 166 },
+	"dataName": "R&B Bandit 2+",
+	"entity": { "id": 5 },
+	"cache": {
+		"customizations": [ 5, 1, 1 ]
+	},
+	"configuration": {},
+	"action": { "id": 181 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 167 },
+	"dataName": "R&B Bandit 3+",
+	"entity": { "id": 5 },
+	"cache": {
+		"customizations": [ 4, 7 ]
+	},
+	"configuration": {},
+	"action": { "id": 182 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 168 },
+	"dataName": "R&B Del Final Boss Copy",
+	"entity": { "id": 9 },
+	"cache": {
+		"customizations": [ -1, -1, -1 ]
+	},
+	"configuration": {
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" },
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" }
+		]
+	},
+	"action": { "id": 186 }
 }
 ]

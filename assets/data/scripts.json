@@ -13,6 +13,9 @@
 			}
 		},
 		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		},
+		{
 			"delay": 0.1,
 			"script": {
 				"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureSideScript",
@@ -75,6 +78,10 @@
 				],
 				"none": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
 			}
+		},
+		{
+			"delay": 0.15,
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true }
 		}
 	]
 },
@@ -234,6 +241,9 @@
 			}
 		},
 		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		},
+		{
 			"delay": 0.1,
 			"script": {
 				"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureSideScript",
@@ -305,14 +315,30 @@
 								}
 							],
 							"none": {
-								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
-								"script": { "id": 44 }
+								"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureItemBranchScript",
+								"branches": [
+									{
+										"item": { "id": 54 },
+										"script": {
+											"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+											"script": { "id": 103 }
+										}
+									}
+								],
+								"defaultScript": {
+									"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+									"script": { "id": 44 }
+								}
 							}
 						}
 					}
 				],
 				"none": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
 			}
+		},
+		{
+			"delay": 0.15,
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true }
 		}
 	]
 },
@@ -7284,7 +7310,7 @@
 	"name": "C-Crimson 1.2",
 	"scripts": [
 		{
-			"delay": 1,
+			"delay": 3.3,
 			"script": {
 				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
 				"dialogue": { "id": 670 },
@@ -7710,6 +7736,758 @@
 				"stay": 0.3,
 				"speed": 7,
 				"color": { "a": 1 }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 226 },
+	"name": "Prepare Sisters (Cress)",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.SwitchPlayerScript", "entity": "del" }
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "del", "moveType": "PLAYER", "x": -256, "y": -256 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 227 },
+	"name": "R&B 2 Godius",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+				"speed": 4,
+				"layer": 10,
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "del" }
+						},
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "cress" }
+						},
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.general.ShakeScreenScript" }
+						},
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleBattleHudScript" }
+						},
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript", "speed": 0, "layer": 4 }
+						}
+					]
+				}
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.ShakeScreenScript", "x": 5, "y": 5, "duration": 10 }
+		},
+		{
+			"delay": 1,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityFormScript",
+				"shell": {
+					"turned": true,
+					"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "SPAWN" },
+					"name": "godius",
+					"form": { "id": 145 }
+				},
+				"playerRelative": true
+			}
+		},
+		{
+			"delay": 1.016,
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ZoomOnEntityScript", "name": "godius", "heightOffset": 25, "zoom": 1.25 }
+		},
+		{
+			"delay": 4,
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ZoomOnEntityScript", "name": "godius", "heightOffset": 25, "zoom": 5 }
+		},
+		{
+			"delay": 4.3,
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
+		},
+		{
+			"delay": 4.3,
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript", "speed": 0, "layer": 10 }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.BattlePlayMusicScript",
+				"song": { "id": 27 }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 228 },
+	"name": "R&B 3 Cutscene 2",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+				"speed": 0,
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+					"dialogue": { "id": 847 },
+					"onFinish": {
+						"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+						"scripts": [
+							{
+								"script": { "class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript", "stop": true }
+							},
+							{
+								"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "cress", "relative": true, "moveType": "ANIMATED_MOVING_TILE", "speed": 0.4, "x": -3 }
+							},
+							{
+								"delay": 0.5,
+								"script": {
+									"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+									"dialogue": { "id": 848 }
+								}
+							}
+						]
+					}
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 229 },
+	"name": "R&B 3 Before",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.SwitchPlayerScript", "entity": "del" }
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "del" }
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "yven" }
+		},
+		{
+			"delay": 0.1,
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "del" }
+		},
+		{
+			"delay": 0.1,
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleEntityVisibilityScript", "name": "yven" }
+		},
+		{
+			"delay": 1.8,
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "cress", "moveType": "ANIMATED_MOVING_TILE", "speed": 0.4, "x": 10, "y": 3 }
+		},
+		{
+			"delay": 2.8,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 854 }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 230 },
+	"name": "R&B 3 Before 2",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.SetStateScript",
+				"name": "del",
+				"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" }
+			}
+		},
+		{
+			"delay": 0.1,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityFormScript",
+				"shell": {
+					"x": 12,
+					"y": 3,
+					"vital": false,
+					"name": "qt",
+					"form": { "id": 63 }
+				},
+				"animation": true
+			}
+		},
+		{
+			"delay": 0.3,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 855 },
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.battle.UseVocScript",
+								"entity": "qt",
+								"voc": { "id": 131 }
+							}
+						},
+						{
+							"delay": 2.6,
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+								"dialogue": { "id": 856 }
+							}
+						},
+						{
+							"delay": 2.4,
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "del", "flip": true }
+						}
+					]
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 231 },
+	"name": "R&B 3 Before 3",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "del" }
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "yven" }
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "del", "moveType": "ANIMATED_MOVING_TILE", "speed": 0.3, "x": 23, "y": 4 }
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "cress", "moveType": "ANIMATED_MOVING_TILE", "speed": 0.3, "x": 22, "y": 3 }
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "yven", "moveType": "ANIMATED_MOVING_TILE", "speed": 0.3, "x": 21, "y": 2 }
+		},
+		{
+			"delay": 3,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 857 }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 232 },
+	"name": "R&B 3 After",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "del", "moveType": "PLAYER", "x": 23, "y": 2 }
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "cress", "moveType": "PLAYER", "x": 22, "y": 3 }
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "yven", "moveType": "PLAYER", "x": 23, "y": 4 }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 860 }
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityFormScript",
+				"shell": {
+					"x": 25,
+					"y": 4,
+					"turned": true,
+					"vital": false,
+					"name": "godius",
+					"form": { "id": 135 }
+				}
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnAllToEntityScript", "name": "godius" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 233 },
+	"name": "R&B 1 Setup",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "del", "moveType": "PLAYER", "x": -256, "y": -256 }
+		},
+		{
+			"delay": 0.4,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 836 }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "bandit2", "animation": true }
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "bandit3", "animation": true }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.EventScript",
+				"type": "BATTLE_CHECK_WIN",
+				"trigger": "",
+				"params": [ "FRIENDLY" ],
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"delay": 0.1,
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityFormScript",
+								"shell": {
+									"x": 4,
+									"turned": true,
+									"name": "bandit2",
+									"parent": "",
+									"form": { "id": 163 }
+								},
+								"animation": true
+							}
+						},
+						{
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityFormScript",
+								"shell": {
+									"x": 5,
+									"y": 3,
+									"turned": true,
+									"name": "bandit3",
+									"parent": "",
+									"form": { "id": 164 }
+								},
+								"animation": true
+							}
+						},
+						{
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.general.EventScript",
+								"type": "BATTLE_CHECK_WIN",
+								"trigger": "",
+								"params": [ "FRIENDLY" ],
+								"script": {
+									"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+									"scripts": [
+										{
+											"script": {
+												"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityFormScript",
+												"shell": {
+													"x": 4,
+													"turned": true,
+													"name": "bandit3",
+													"parent": "",
+													"form": { "id": 167 }
+												},
+												"animation": true
+											}
+										},
+										{
+											"delay": 0.2,
+											"script": {
+												"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityFormScript",
+												"shell": {
+													"x": 5,
+													"y": 3,
+													"turned": true,
+													"name": "bandit2",
+													"parent": "",
+													"form": { "id": 166 }
+												},
+												"animation": true
+											}
+										},
+										{
+											"delay": 0.3,
+											"script": {
+												"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityFormScript",
+												"shell": {
+													"x": 4,
+													"y": 2,
+													"turned": true,
+													"name": "bandit1",
+													"parent": "",
+													"form": { "id": 165 }
+												},
+												"animation": true
+											}
+										},
+										{
+											"delay": 0.36,
+											"script": {
+												"class": "com.one2b3.endcycle.features.scripts.battle.CampaignSpareEntitiesScript",
+												"entities": [ "bandit1", "bandit2", "bandit3" ]
+											}
+										}
+									]
+								}
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 234 },
+	"name": "After Credits",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityScript",
+				"shell": {
+					"x": 1,
+					"y": 1,
+					"id": { "id": 7 },
+					"configuration": {}
+				}
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityScript",
+				"shell": {
+					"x": 2,
+					"y": 1,
+					"name": "",
+					"id": { "id": 2 },
+					"configuration": {}
+				}
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 673 }
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityFormScript",
+				"shell": {
+					"x": 3,
+					"y": 2,
+					"form": { "id": 147 }
+				}
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "rozu" }
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.EmotupScript", "name": "rozu", "emotup": "BIG_SURPRISE" }
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.EmotupScript", "name": "spark", "emotup": "WHAT" }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 871 }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.EmotupScript", "name": "rozu", "emotup": "QUESTION" }
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.EmotupScript", "name": "spark", "emotup": "QUESTION" }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 872 }
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 235 }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 235 },
+	"name": "After Credits Fin Scene",
+	"scripts": [
+		{}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 236 },
+	"name": "R&B 4 Setup",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "yven", "x": -256, "y": -256 }
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "punk2", "animation": true }
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "punk3", "animation": true }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.EventScript",
+				"type": "BATTLE_CHECK_WIN",
+				"trigger": "",
+				"params": [ "FRIENDLY" ],
+				"script": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"delay": 0.1,
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityFormScript",
+								"shell": {
+									"x": 4,
+									"y": 1,
+									"turned": true,
+									"name": "punk2",
+									"parent": "",
+									"form": { "id": 142 }
+								},
+								"animation": true
+							}
+						},
+						{
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityFormScript",
+								"shell": {
+									"x": 5,
+									"y": 3,
+									"turned": true,
+									"name": "punk3",
+									"parent": "",
+									"form": { "id": 141 }
+								},
+								"animation": true
+							}
+						},
+						{
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.general.EventScript",
+								"type": "BATTLE_CHECK_WIN",
+								"trigger": "",
+								"params": [ "FRIENDLY" ],
+								"script": {
+									"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+									"scripts": [
+										{
+											"script": {
+												"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityFormScript",
+												"shell": {
+													"x": 4,
+													"turned": true,
+													"name": "flink",
+													"parent": "",
+													"form": { "id": 144 }
+												},
+												"animation": true
+											}
+										},
+										{
+											"delay": 0.2,
+											"script": {
+												"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityFormScript",
+												"shell": {
+													"x": 5,
+													"y": 3,
+													"turned": true,
+													"name": "punk3",
+													"parent": "",
+													"form": { "id": 142 }
+												},
+												"animation": true
+											}
+										},
+										{
+											"delay": 0.3,
+											"script": {
+												"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityFormScript",
+												"shell": {
+													"x": 4,
+													"y": 2,
+													"turned": true,
+													"name": "punk2",
+													"parent": "",
+													"form": { "id": 143 }
+												},
+												"animation": true
+											}
+										},
+										{
+											"delay": 0.36,
+											"script": {
+												"class": "com.one2b3.endcycle.features.scripts.battle.CampaignSpareEntitiesScript",
+												"entities": [ "flink" ]
+											}
+										}
+									]
+								}
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"delay": 0.5,
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignStartBattleScript" }
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "godius", "animation": true }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 237 },
+	"name": "R&B 5 Win",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityFormScript",
+				"shell": {
+					"x": 4,
+					"y": 1,
+					"turned": true,
+					"name": "del",
+					"parent": "",
+					"form": { "id": 168 }
+				},
+				"animation": true
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.UseVocScript",
+				"entity": "del",
+				"voc": { "id": 132 }
+			}
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityFormScript",
+				"shell": {
+					"x": 6,
+					"y": 1,
+					"turned": true,
+					"name": "godius",
+					"parent": "",
+					"form": { "id": 145 }
+				}
+			}
+		},
+		{
+			"delay": 3,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 870 },
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"delay": 5,
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
+						},
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.KillEntityScript", "name": "godius" }
+						}
+					]
+				}
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ToggleBattleHudScript" }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.SetStateScript",
+				"name": "cress",
+				"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "DEATH" }
+			}
+		},
+		{
+			"delay": 1,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.SetStateScript",
+				"name": "cress",
+				"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "DEATH" }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 238 },
+	"name": "After Credits Networld",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.battle.OverlayBattleScript",
+				"overlay": { "id": 156 },
+				"fade": true,
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+								"dialogue": { "id": 873 },
+								"onFinish": {
+									"class": "com.one2b3.endcycle.features.scripts.battle.OverlayBattleScript",
+									"fade": true,
+									"onFinish": {
+										"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+										"dialogue": { "id": 874 },
+										"onFinish": {
+											"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+											"scripts": [
+												{
+													"script": {
+														"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+														"layer": 10,
+														"onFinish": {
+															"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+															"dialogue": { "id": 875 },
+															"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
+														}
+													}
+												},
+												{
+													"script": { "class": "com.one2b3.endcycle.features.scripts.battle.BattlePlayMusicScript" }
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					]
+				}
 			}
 		}
 	]

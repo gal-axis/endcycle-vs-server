@@ -368,7 +368,9 @@
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.7 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"xTile": 1,
 			"yTile": -1,
+			"relation": "TARGET_RELATIVE",
 			"target": {
 				"party": "ENEMY",
 				"invert": true,
@@ -2927,17 +2929,17 @@
 			"action": { "id": 62 },
 			"requireSingle": true,
 			"conditions": [
-				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 4 }
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 5 }
 			]
 		}
 	],
 	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": -1 },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.ParticleAct",
 			"particles": { "id": 2 }
 		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1, "relation": "TOWARD_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
@@ -2959,11 +2961,12 @@
 			"action": { "id": 63 },
 			"requireSingle": true,
 			"conditions": [
-				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 4 }
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 5 }
 			]
 		}
 	],
 	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1 },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.ParticleAct",
@@ -4000,8 +4003,8 @@
 		}
 	],
 	"acts": [
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1, "moveSpeed": 1.5, "invertableY": true, "checkAccessible": false },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1, "moveSpeed": 1.5, "invertableY": true, "checkAccessible": false },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "MOVING_TILE", "yTile": 1, "moveSpeed": 1.5, "invertableY": true, "checkAccessible": false },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "MOVING_TILE", "yTile": 1, "moveSpeed": 1.5, "invertableY": true, "checkAccessible": false },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" }
 	]
 },
@@ -4098,12 +4101,8 @@
 	"acts": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 0.6,
 			"voc": { "id": 98 }
-		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 },
-		{
-			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
-			"voc": { "id": 101 }
 		}
 	]
 },
@@ -5551,13 +5550,14 @@
 	},
 	"acts": [
 		{
-			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
-			"voc": { "id": 10010 }
-		},
-		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
+			"time": 0.4,
 			"turn": "TOWARD_TARGET",
 			"target": { "party": "FRIENDLY", "inSight": false }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10010 }
 		},
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 2.5 }
 	]
@@ -6532,6 +6532,849 @@
 		},
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "relation": "TARGET_RELATIVE" }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 177 },
+	"name": "R&B AV.Atar 1",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10016 },
+			"style": { "id": 32 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.5, "yTile": 1, "relation": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1, "relation": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 0.5,
+			"voc": { "id": 10434 },
+			"style": { "id": 45 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"resetUses": true,
+			"time": 1,
+			"voc": { "id": 10010 },
+			"style": { "id": 11 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1, "relation": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 1,
+			"voc": { "id": 10434 },
+			"style": { "id": 45 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1, "relation": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"resetUses": true,
+			"time": 1,
+			"voc": { "id": 10016 },
+			"style": { "id": 32 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1, "yTile": 1, "relation": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10434 },
+			"style": { "id": 45 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 178 },
+	"name": "R&B AV.Atar 2",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 1,
+			"voc": { "id": 10016 },
+			"style": { "id": 29 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"time": 1,
+			"yTile": 1,
+			"relation": "TARGET",
+			"target": { "party": "ENEMY" },
+			"invertableY": true
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10031 },
+			"style": { "id": 32 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": -1, "relation": "TARGET", "invertableY": true }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 179 },
+	"name": "R&B AV.Atar 2.1",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"action": { "id": 177 },
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnAloneChangeCondition" }
+			]
+		}
+	],
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"time": 1,
+			"yTile": 1,
+			"relation": "TARGET",
+			"target": { "party": "ENEMY" }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 2,
+			"voc": { "id": 6 },
+			"style": { "id": 26 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10022 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"time": 1,
+			"yTile": -1,
+			"relation": "TARGET",
+			"target": { "party": "ENEMY" }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1, "relation": "TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10034 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 180 },
+	"name": "R&B AV.Atar 3",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 82 },
+			"style": { "id": 32 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.5, "yTile": 1, "relation": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1, "relation": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 0.5,
+			"voc": { "id": 10434 },
+			"style": { "id": 45 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"resetUses": true,
+			"time": 1,
+			"voc": { "id": 10010 },
+			"style": { "id": 11 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1, "relation": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 1,
+			"voc": { "id": 10434 },
+			"style": { "id": 45 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1, "relation": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"resetUses": true,
+			"time": 1,
+			"voc": { "id": 10016 },
+			"style": { "id": 32 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1, "yTile": 1, "relation": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10434 },
+			"style": { "id": 45 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 181 },
+	"name": "R&B AV.Atar 3.1",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 1,
+			"voc": { "id": 10434 },
+			"style": { "id": 19 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"time": 1,
+			"yTile": 1,
+			"relation": "TARGET",
+			"target": { "party": "ENEMY" }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10111 },
+			"style": { "id": 32 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 182 },
+	"name": "R&B AV.Atar 3.2",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"action": { "id": 177 },
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnAloneChangeCondition" }
+			]
+		}
+	],
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"time": 1,
+			"yTile": 1,
+			"relation": "TARGET",
+			"target": { "party": "ENEMY" }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10231 },
+			"style": { "id": 26 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
+			"time": 1,
+			"yTile": -1,
+			"relation": "TARGET",
+			"target": { "party": "ENEMY" }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10034 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 183 },
+	"name": "R&B 2.1 Bombarbara ",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.3, "xTile": -1, "yTile": 1, "relation": "TOWARD_TARGET", "invertableX": true },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ParticleAct",
+			"uses": 1,
+			"time": 0.3,
+			"particles": { "id": 25 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 0.6,
+			"voc": { "id": 82 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.3, "xTile": 1, "yTile": -1, "relation": "TOWARD_TARGET", "invertableY": true },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.3, "xTile": -1, "yTile": 1, "relation": "TOWARD_TARGET", "invertableX": true },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ParticleAct",
+			"time": 0.3,
+			"particles": { "id": 25 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 120 },
+			"style": { "id": 45 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 184 },
+	"name": "R&B 2.2 Cherry",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{ "requireSingle": true }
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.5, "xTile": -1, "relation": "TARGET_RELATIVE" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "time": 0.5, "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 0.3,
+			"voc": { "id": 10028 },
+			"style": { "id": 29 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.3, "xTile": 1, "yTile": -1, "relation": "TARGET_RELATIVE" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "time": 0.5, "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 0.3,
+			"voc": { "id": 63 },
+			"style": { "id": 29 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.5, "xTile": 1, "relation": "TARGET_RELATIVE" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 0.5,
+			"voc": { "id": 26 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 185 },
+	"name": "R&B 2.2 Cherry Support",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.3, "xTile": -1, "yTile": 1, "relation": "TOWARD_TARGET", "invertableY": true },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.3, "xTile": 2, "relation": "TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "time": 0.3, "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 0.3,
+			"voc": { "id": 20 },
+			"style": { "id": 39 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "time": 0.3, "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 0.3,
+			"voc": { "id": 10031 },
+			"style": { "id": 29 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.3, "xTile": 2, "relation": "TARGET", "invertableY": true }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 186 },
+	"name": "R&B Del",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"action": { "id": 187 },
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.BelowHealthChangeCondition" }
+			]
+		},
+		{
+			"action": { "id": 189 },
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInterruptChangeCondition" }
+			]
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.5, "xTile": 3, "relation": "TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 0.5,
+			"voc": { "id": 84 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.5, "xTile": 3, "relation": "TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 1,
+			"voc": { "id": 13 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ParticleAct",
+			"particles": { "id": 27 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 3, "relation": "TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 1.3,
+			"voc": { "id": 122 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 187 },
+	"name": "R&B Del Act 2",
+	"autoTurn": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"action": { "id": 190 },
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.BelowHealthChangeCondition", "health": 0.2 }
+			]
+		}
+	],
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 1,
+			"voc": { "id": 123 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 3, "relation": "TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 122 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 123 },
+			"style": { "id": 45 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1, "relation": "TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ParticleAct",
+			"particles": { "id": 28 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 2, "relation": "TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.UseUltraVocAct" }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 188 },
+	"name": "R&B Yven",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 189 },
+	"name": "R&B Del Ultra",
+	"autoTurn": true,
+	"next": { "id": 186 },
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"action": { "id": 186 },
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 3 }
+			]
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "uses": 1, "time": 0.5, "xTile": 3 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ParticleAct",
+			"uses": 1,
+			"time": 0.6,
+			"particles": { "id": 28 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.UseUltraVocAct", "uses": 1 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 190 },
+	"name": "R&B Del Act 3",
+	"autoTurn": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1, "xTile": 3, "relation": "TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ParticleAct",
+			"time": 1,
+			"particles": { "id": 27 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 3,
+			"voc": { "id": 124 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 3, "relation": "TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 126 },
+			"style": { "id": 11 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 2, "xTile": 3, "relation": "TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ParticleAct",
+			"particles": { "id": 28 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ParticleAct",
+			"time": 1,
+			"particles": { "id": 27 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 127 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 5, "relation": "ABSOLUTE" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 4, "yTile": 1, "relation": "ABSOLUTE" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 5, "yTile": 2, "relation": "ABSOLUTE" }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 191 },
+	"name": "R&B Crimson Punk 1",
+	"autoTurn": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.5, "xTile": 1, "relation": "TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 0.5,
+			"voc": { "id": 10428 },
+			"style": { "id": 35 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.5, "xTile": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 0.5,
+			"voc": { "id": 21 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 0.5,
+			"voc": { "id": 21 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1, "xTile": 1, "relation": "TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ParticleAct",
+			"time": 1,
+			"particles": { "id": 13 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.UseUltraVocAct" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1, "xTile": 2 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 1,
+			"voc": { "id": 10016 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 192 },
+	"name": "R&B Crimson Punk 2",
+	"autoTurn": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"action": { "id": 193 },
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnAloneChangeCondition" }
+			]
+		}
+	],
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 1,
+			"voc": { "id": 21 },
+			"style": { "id": 39 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.5, "xTile": 2, "relation": "TARGET_RELATIVE" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 1,
+			"voc": {}
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1, "xTile": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 1,
+			"voc": { "id": 10032 },
+			"style": { "id": 11 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1, "xTile": 1, "yTile": -2, "invertableY": true }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 193 },
+	"name": "R&B Flink",
+	"autoTurn": true,
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 2, "relation": "TARGET_RELATIVE" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10016 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 3, "relation": "TARGET_RELATIVE" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ParticleAct",
+			"time": 0.3,
+			"particles": { "id": 13 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ParticleAct",
+			"particles": { "id": 13 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.5, "xTile": 1, "relation": "TARGET_RELATIVE" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 1,
+			"voc": { "id": 108 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 10428 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 194 },
+	"name": "R&B Crimson Punk 3",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"action": { "id": 191 },
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnAloneChangeCondition" }
+			]
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1, "xTile": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 1,
+			"voc": { "id": 46 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1, "xTile": -1, "relation": "TARGET_RELATIVE" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 1,
+			"voc": { "id": 10010 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1, "xTile": 4, "relation": "TARGET_RELATIVE" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 1,
+			"voc": { "id": 10231 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 195 },
+	"name": "R&B Godius Right Arm",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"action": { "id": 196 },
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.BelowHealthChangeCondition" }
+			]
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.5, "xTile": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 0.5,
+			"voc": { "id": 98 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.2, "yTile": -1, "invertableY": true },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 0.3,
+			"voc": { "id": 98 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.5, "yTile": 1, "invertableY": true },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.2, "yTile": 1, "invertableY": true },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.5, "xTile": -1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.2, "xTile": 1, "yTile": 1, "relation": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 0.3,
+			"voc": { "id": 72 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 196 },
+	"name": "R&B Godius Right Arm Phase 2",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{ "requireSingle": true }
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.5, "xTile": 1 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 0.5,
+			"voc": { "id": 98 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.2, "relation": "TARGET", "invertableY": true },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 0.5,
+			"voc": { "id": 98 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.2, "relation": "TARGET", "invertableY": true },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 0.5,
+			"voc": { "id": 98 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 72 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 197 },
+	"name": "R&B 2.3 Mini Bombarbara",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.3, "xTile": -1, "yTile": 1, "relation": "TOWARD_TARGET", "invertableX": true },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.3, "xTile": 1, "yTile": -1, "relation": "TOWARD_TARGET", "invertableY": true },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 1,
+			"voc": { "id": 10034 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.3, "xTile": -1, "yTile": 1, "relation": "TOWARD_TARGET", "invertableX": true },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ParticleAct",
+			"time": 0.3,
+			"particles": { "id": 25 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 1,
+			"voc": { "id": 120 },
+			"style": { "id": 45 }
+		}
 	]
 }
 ]

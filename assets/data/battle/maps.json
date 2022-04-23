@@ -243,10 +243,17 @@
 	"height": 5,
 	"panels": [
 		[
+			null,
 			{ "party": "FRIENDLY", "fixed": true },
 			{ "party": "FRIENDLY", "fixed": true },
 			{ "party": "FRIENDLY", "fixed": true },
+			null
+		],
+		[
 			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" },
 			{ "party": "FRIENDLY", "fixed": true }
 		],
 		[
@@ -257,13 +264,6 @@
 			{ "party": "FRIENDLY" }
 		],
 		[
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY" },
-			{ "party": "FRIENDLY" }
-		],
-		[
 			{},
 			{},
 			{},
@@ -285,18 +285,18 @@
 			{ "party": "ENEMY" }
 		],
 		[
+			{ "party": "ENEMY", "fixed": true },
 			{ "party": "ENEMY" },
 			{ "party": "ENEMY" },
 			{ "party": "ENEMY" },
-			{ "party": "ENEMY" },
-			{ "party": "ENEMY" }
-		],
-		[
-			{ "party": "ENEMY", "fixed": true },
-			{ "party": "ENEMY", "fixed": true },
-			{ "party": "ENEMY", "fixed": true },
-			{ "party": "ENEMY", "fixed": true },
 			{ "party": "ENEMY", "fixed": true }
+		],
+		[
+			null,
+			{ "party": "ENEMY", "fixed": true },
+			{ "party": "ENEMY", "fixed": true },
+			{ "party": "ENEMY", "fixed": true },
+			null
 		]
 	]
 },
@@ -13434,6 +13434,57 @@
 			{ "type": null },
 			{ "type": null },
 			{ "type": null }
+		]
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
+	"id": { "id": 67 },
+	"name": "Faction Big Battle",
+	"width": 7,
+	"height": 4,
+	"panels": [
+		[
+			null,
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "fixed": true },
+			null
+		],
+		[
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY", "fixed": true }
+		],
+		[
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" }
+		],
+		[
+			{},
+			{},
+			{},
+			{}
+		],
+		[
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" }
+		],
+		[
+			{ "party": "ENEMY", "fixed": true },
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY", "fixed": true }
+		],
+		[
+			null,
+			{ "party": "ENEMY", "fixed": true },
+			{ "party": "ENEMY", "fixed": true },
+			null
 		]
 	]
 }

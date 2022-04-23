@@ -679,33 +679,6 @@
 },
 {
 	"class": "com.one2b3.endcycle.features.vocs.styles.VocStyle",
-	"id": { "id": 29 },
-	"name": "gamedata|Style.Crack",
-	"prefix": "gamedata|Style.Crack",
-	"description": "gamedata|Style.Crack.Description",
-	"level": 1,
-	"drawable": {
-		"drawable": { "id": 316 }
-	},
-	"tagPreference": [ "AFFECTS_ENEMY" ],
-	"preview": {},
-	"particle": {
-		"drawable": {
-			"drawable": { "id": 752 },
-			"color": { "r": 0.6509804, "g": 0.6509804, "b": 0.6509804, "a": 1 }
-		}
-	},
-	"modifications": [
-		{
-			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
-			"inflicts": [
-				{ "type": "CHANGE_PANEL", "intensity": 1 }
-			]
-		}
-	]
-},
-{
-	"class": "com.one2b3.endcycle.features.vocs.styles.VocStyle",
 	"id": { "id": 30 },
 	"name": "gamedata|Style.Repair",
 	"prefix": "gamedata|Style.Repair",
@@ -719,7 +692,7 @@
 	"particle": {
 		"drawable": {
 			"drawable": { "id": 746 },
-			"color": { "r": 0.83137256, "g": 0.67058825, "b": 0.67058825, "a": 1 }
+			"color": { "r": 0.5137255, "g": 0.6509804, "b": 0.5176471, "a": 1 }
 		},
 		"speedY": 20,
 		"fade": 6
@@ -728,7 +701,7 @@
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
 			"inflicts": [
-				{ "type": "CHANGE_PANEL" }
+				{ "type": "AILMENT_STEAL", "intensity": 1 }
 			]
 		}
 	]
@@ -777,6 +750,33 @@
 	"preview": {},
 	"modifications": [
 		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.FlipModification" }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.styles.VocStyle",
+	"id": { "id": 29 },
+	"name": "gamedata|Style.Crack",
+	"prefix": "gamedata|Style.Crack",
+	"description": "gamedata|Style.Crack.Description",
+	"level": 1,
+	"drawable": {
+		"drawable": { "id": 316 }
+	},
+	"tagPreference": [ "AFFECTS_ENEMY" ],
+	"preview": {},
+	"particle": {
+		"drawable": {
+			"drawable": { "id": 752 },
+			"color": { "r": 0.6509804, "g": 0.6509804, "b": 0.6509804, "a": 1 }
+		}
+	},
+	"modifications": [
+		{
+			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
+			"inflicts": [
+				{ "type": "CHANGE_PANEL", "intensity": 1 }
+			]
+		}
 	]
 },
 {
@@ -1030,6 +1030,7 @@
 	"drawable": {
 		"drawable": { "id": 361 }
 	},
+	"tags": [ "COUNTER" ],
 	"preview": {},
 	"modifications": [
 		{
@@ -1068,6 +1069,7 @@
 	"drawable": {
 		"drawable": { "id": 362 }
 	},
+	"tags": [ "COUNTER" ],
 	"preview": {},
 	"modifications": [
 		{

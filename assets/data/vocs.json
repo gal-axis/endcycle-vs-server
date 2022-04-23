@@ -1002,7 +1002,7 @@
 				{ "type": "HEAL", "intensity": 80 }
 			]
 		},
-		"targetType": { "party": "FRIENDLY", "self": true },
+		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
 			"limiter": { "limit": true, "team": true, "countGlobal": true },
@@ -3048,10 +3048,9 @@
 	"visible": true,
 	"imageIndex": 39,
 	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY", "SPAWN" ],
-	"optimalPosition": { "xType": "EQUAL", "xDistance": 1, "yType": "EQUAL" },
+	"optimalPosition": { "xType": "EQUAL", "xDistance": 2, "yType": "EQUAL" },
 	"minimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "IGNORE" },
 	"preview": {
-		"playerPosition": { "x": 1 },
 		"enemyInput": [
 			{ "key": "BATTLE_MOVE_LEFT", "delay": 1 }
 		]
@@ -3072,6 +3071,7 @@
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
 			"limiter": { "limit": true },
 			"checkOccupied": false,
+			"xOffset": 2,
 			"type": "SPIKES",
 			"entity": { "id": 43 }
 		}
@@ -3663,11 +3663,12 @@
 		"interruptable": false,
 		"invincible": true,
 		"property": {
+			"element": "FIRE",
 			"ailments": [
 				{ "type": "FLINCHING" }
 			],
-			"power": 300,
-			"crushPower": 700
+			"power": 200,
+			"crushPower": 600
 		},
 		"targetType": {},
 		"attack": {
@@ -3675,16 +3676,16 @@
 			"attacks": [
 				{
 					"y": -1,
-					"xSpeed": 90,
+					"xSpeed": 140,
 					"stick": {}
 				},
 				{
-					"xSpeed": 90,
+					"xSpeed": 140,
 					"stick": {}
 				},
 				{
 					"y": 1,
-					"xSpeed": 90,
+					"xSpeed": 140,
 					"stick": {}
 				}
 			],
@@ -3692,12 +3693,13 @@
 			"simultaneous": false,
 			"piercing": true,
 			"projectileDelay": 0.3,
-			"delay": { "max": 0.6 },
+			"delay": { "max": 0.35 },
 			"drawable": {
-				"drawable": { "id": 1163 }
+				"drawable": { "id": 8 }
 			},
 			"portalTime": 0.3,
-			"shadowOffsetY": 15
+			"trace": false,
+			"shadowOffsetY": 8
 		}
 	}
 },
@@ -3782,7 +3784,7 @@
 	"vocType": "CAST",
 	"visible": true,
 	"imageIndex": 59,
-	"tags": [ "AFFECTS_ALLY", "BUFF" ],
+	"tags": [ "AFFECTS_ALLY", "BUFF", "COUNTER" ],
 	"optimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
 	"preview": {},
 	"attackShell": {
@@ -3877,7 +3879,7 @@
 					"shareHitproperty": true,
 					"wrappers": [
 						{
-							"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.modifiers.ToHealModifierAttack" }
+							"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.modifiers.ToHealModifierAttack", "percent": 1.5 }
 						},
 						{
 							"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.status.AilmentInflicterAttack" }
@@ -3892,21 +3894,7 @@
 			"flicker": true,
 			"flickerColor": { "r": 0.9607843, "g": 0.18431373, "b": 0.18431373, "a": 1 },
 			"infuseProperty": true,
-			"unsuccessful": {
-				"stats": {
-					"power": 50,
-					"crushPower": 100,
-					"ailments": [
-						{ "type": "FLINCHING" }
-					],
-					"target": {
-						"party": "FRIENDLY",
-						"self": true,
-						"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
-					}
-				},
-				"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.status.DirectAttack" }
-			}
+			"unsuccessful": {}
 		}
 	}
 },

@@ -233,7 +233,7 @@
 			"name": "greed1",
 			"id": { "id": 4 },
 			"talkingName": "",
-			"action": { "id": 9 },
+			"action": { "id": 198 },
 			"configuration": {
 				"stats": { "hp": 700, "actionSpeed": 0.8 }
 			},
@@ -3683,7 +3683,7 @@
 			"id": { "id": 14 },
 			"talkingName": "",
 			"cache": {
-				"customizations": [ 1 ]
+				"customizations": [ -1 ]
 			},
 			"configuration": {},
 			"pack": {},
@@ -3850,7 +3850,7 @@
 	"id": { "id": 55 },
 	"dataName": "A - Punks #1",
 	"name": "",
-	"field": { "id": 7 },
+	"field": { "id": 67 },
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
@@ -3955,7 +3955,7 @@
 	"id": { "id": 56 },
 	"dataName": "A - Agents #1",
 	"name": "",
-	"field": { "id": 7 },
+	"field": { "id": 67 },
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
@@ -4308,6 +4308,7 @@
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
 			"x": 4,
 			"y": 1,
+			"preview": false,
 			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "caped" },
 			"name": "hooded",
 			"id": { "id": 5 },
@@ -4404,6 +4405,7 @@
 			"x": 4,
 			"y": 1,
 			"turned": true,
+			"preview": false,
 			"name": "tot",
 			"id": { "id": 5 },
 			"talkingName": "",
@@ -4425,6 +4427,7 @@
 			"x": 4,
 			"y": 1,
 			"turned": true,
+			"preview": false,
 			"name": "gunslinger",
 			"parent": "",
 			"form": { "id": 17 }
@@ -4442,6 +4445,7 @@
 			"x": 4,
 			"y": 1,
 			"turned": true,
+			"preview": false,
 			"name": "crushlord",
 			"form": { "id": 44 }
 		}
@@ -5754,10 +5758,6 @@
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.BattleData",
-	"id": { "id": 121 }
-},
-{
-	"class": "com.one2b3.endcycle.features.battle.BattleData",
 	"id": { "id": 123 },
 	"dataName": "Agent Trap #1",
 	"entityShells": [
@@ -5766,6 +5766,7 @@
 			"x": 4,
 			"y": 1,
 			"turned": true,
+			"preview": false,
 			"name": "Azure Agent",
 			"form": { "id": 103 }
 		},
@@ -5774,12 +5775,14 @@
 			"x": 4,
 			"y": 2,
 			"turned": true,
+			"preview": false,
 			"form": { "id": 34 }
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
 			"x": 3,
 			"turned": true,
+			"preview": false,
 			"form": { "id": 98 }
 		}
 	]
@@ -5795,12 +5798,14 @@
 			"x": 4,
 			"y": 1,
 			"turned": true,
+			"preview": false,
 			"form": { "id": 34 }
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
 			"x": 3,
 			"turned": true,
+			"preview": false,
 			"name": "agent 1",
 			"form": { "id": 94 }
 		},
@@ -5809,6 +5814,7 @@
 			"x": 4,
 			"y": 2,
 			"turned": true,
+			"preview": false,
 			"name": "agent",
 			"form": { "id": 92 }
 		}
@@ -5826,6 +5832,7 @@
 			"x": 3,
 			"y": 1,
 			"turned": true,
+			"preview": false,
 			"party": "FRIENDLY",
 			"name": "rozu",
 			"form": { "id": 89 }
@@ -5842,6 +5849,7 @@
 			"x": 4,
 			"y": 1,
 			"turned": true,
+			"preview": false,
 			"form": { "id": 73 }
 		}
 	]
@@ -5856,8 +5864,9 @@
 			"x": 4,
 			"y": 1,
 			"turned": true,
+			"preview": false,
 			"name": "spark",
-			"form": { "id": 32 }
+			"form": { "id": 169 }
 		}
 	]
 },
@@ -5872,6 +5881,7 @@
 			"x": 4,
 			"y": 1,
 			"turned": true,
+			"preview": false,
 			"name": "flink",
 			"form": { "id": 85 }
 		}
@@ -5887,6 +5897,7 @@
 			"x": 4,
 			"y": 1,
 			"turned": true,
+			"preview": false,
 			"name": "agent",
 			"form": { "id": 92 }
 		}
@@ -5902,6 +5913,7 @@
 			"x": 4,
 			"y": 1,
 			"turned": true,
+			"preview": false,
 			"name": "tankitty",
 			"form": { "id": 102 }
 		}
@@ -5917,6 +5929,7 @@
 			"x": 4,
 			"y": 1,
 			"turned": true,
+			"preview": false,
 			"name": "bella",
 			"form": { "id": 41 }
 		}
@@ -5932,6 +5945,7 @@
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
 			"x": 3,
 			"turned": true,
+			"preview": false,
 			"party": "NEUTRAL",
 			"name": "flink",
 			"form": { "id": 85 }
@@ -5941,6 +5955,7 @@
 			"x": 4,
 			"y": 2,
 			"turned": true,
+			"preview": false,
 			"form": { "id": 86 }
 		},
 		{
@@ -5948,6 +5963,7 @@
 			"x": 2,
 			"y": 2,
 			"turned": true,
+			"preview": false,
 			"party": "NEUTRAL",
 			"form": { "id": 113 }
 		},
@@ -5964,6 +5980,7 @@
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
 			"x": 4,
 			"turned": true,
+			"preview": false,
 			"name": "rozu",
 			"form": { "id": 89 }
 		},
@@ -5972,6 +5989,7 @@
 			"x": 4,
 			"y": 2,
 			"turned": true,
+			"preview": false,
 			"name": "spark",
 			"form": { "id": 84 }
 		}
@@ -6408,6 +6426,7 @@
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
 			"x": 11,
 			"y": 4,
+			"vital": false,
 			"party": "FRIENDLY",
 			"name": "del",
 			"form": { "id": 151 }
@@ -6601,6 +6620,24 @@
 			"x": 4,
 			"y": 4,
 			"form": { "id": 158 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 157 },
+	"dataName": "A - Fin VS Spark",
+	"name": "gamedata|",
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"turned": true,
+			"preview": false,
+			"name": "spark",
+			"parent": "",
+			"form": { "id": 52 }
 		}
 	]
 }

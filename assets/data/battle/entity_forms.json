@@ -929,7 +929,7 @@
 	"entity": { "id": 5 },
 	"cache": null,
 	"configuration": {
-		"stats": { "actionSpeed": 0.8 }
+		"stats": { "strength": -150, "actionSpeed": 0.6 }
 	},
 	"action": { "id": 7 }
 },
@@ -1625,8 +1625,7 @@
 					],
 					"power": 150,
 					"crushPower": 150
-				},
-				"particle": { "id": 19 }
+				}
 			},
 			{ "class": "com.one2b3.endcycle.features.battle.mode.HealthDrainEntityMode" },
 			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" }
@@ -1648,8 +1647,7 @@
 					],
 					"power": 50,
 					"crushPower": 150
-				},
-				"particle": { "id": 20 }
+				}
 			}
 		]
 	}
@@ -1668,8 +1666,7 @@
 						{ "type": "HEAL", "intensity": 100 }
 					],
 					"panel": "CRACKED"
-				},
-				"particle": { "id": 21 }
+				}
 			}
 		]
 	}
@@ -1677,22 +1674,63 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
 	"id": { "id": 121 },
-	"dataName": "VOC Yven Crystal Control",
-	"patchwork": { "id": 48 },
+	"dataName": "VOC Yven Crystal",
+	"patchwork": { "id": 53 },
 	"configuration": {
 		"modes": [
 			{
 				"class": "com.one2b3.endcycle.features.battle.mode.CrystalAbsorbEntityMode",
-				"hitProperty": {
-					"ailments": [
-						{ "type": "GRAB_PANEL", "intensity": 1 }
-					],
-					"power": 50,
-					"crushPower": 150,
-					"panel": "CRACKED"
-				},
-				"particle": { "id": 22 }
-			}
+				"roles": [
+					{
+						"role": "ATTACK",
+						"hitProperty": {
+							"ailments": [
+								{ "type": "FLINCHING", "intensity": 0.3 }
+							],
+							"power": 150,
+							"crushPower": 150
+						},
+						"particle": { "id": 19 }
+					},
+					{
+						"role": "GUARD",
+						"hitProperty": {
+							"ailments": [
+								{ "type": "HEAL_OWNER", "intensity": 100 }
+							],
+							"power": 50,
+							"crushPower": 100,
+							"panel": "CRACKED"
+						},
+						"particle": { "id": 21 }
+					},
+					{
+						"role": "EFFECT",
+						"hitProperty": {
+							"ailments": [
+								{ "type": "STUN", "intensity": 0.8, "duration": 0.8 }
+							],
+							"power": 50,
+							"crushPower": 150
+						},
+						"particle": { "id": 20 }
+					},
+					{
+						"role": "EXECUTION",
+						"hitProperty": {
+							"ailments": [
+								{ "type": "GRAB_PANEL", "intensity": 1 }
+							],
+							"power": 50,
+							"crushPower": 150,
+							"panel": "CRACKED"
+						},
+						"particle": { "id": 22 }
+					}
+				]
+			},
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HealthDrainEntityMode" },
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" }
 		]
 	}
 },
@@ -2374,5 +2412,24 @@
 		"stats": { "hp": 1300, "strength": 100, "crushStrength": 100, "speed": 100 }
 	},
 	"action": { "id": 25 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 170 },
+	"dataName": "Tutorial Sofa",
+	"entity": { "id": 3 },
+	"configuration": {
+		"stats": { "hp": 300 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 171 },
+	"dataName": "Tutorial Q.T.",
+	"entity": { "id": 1 },
+	"configuration": {
+		"stats": { "hp": 500, "strength": -150, "crushStrength": -150, "actionSpeed": 0.8 }
+	},
+	"action": {}
 }
 ]

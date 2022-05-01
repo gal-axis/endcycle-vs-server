@@ -4,6 +4,9 @@
 	"name": "gamedata|Style.Heal",
 	"prefix": "gamedata|Style.Heal",
 	"description": "gamedata|Style.Heal.Description",
+	"characters": [
+		{ "id": 7 }
+	],
 	"level": 1,
 	"drawable": {
 		"drawable": { "id": 178 }
@@ -28,10 +31,14 @@
 	"name": "gamedata|Style.Normal",
 	"prefix": "gamedata|Style.Normal",
 	"description": "gamedata|Style.Normal.Description",
+	"characters": [
+		{ "id": 9 }
+	],
 	"element": "NORMAL",
 	"drawable": {
 		"drawable": { "id": 1107 }
 	},
+	"tagPreference": [ "DIFFERENT_ELEMENT" ],
 	"preview": {},
 	"modifications": [
 		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.ElementChangeModification" }
@@ -43,10 +50,15 @@
 	"name": "gamedata|Style.Fire",
 	"prefix": "gamedata|Style.Fire",
 	"description": "gamedata|Style.Fire.Description",
+	"characters": [
+		{ "id": 21 },
+		{ "id": 3 }
+	],
 	"element": "FIRE",
 	"drawable": {
 		"drawable": { "id": 1106 }
 	},
+	"tagPreference": [ "DIFFERENT_ELEMENT" ],
 	"preview": {},
 	"modifications": [
 		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.ElementChangeModification" }
@@ -58,10 +70,14 @@
 	"name": "gamedata|Style.Nature",
 	"prefix": "gamedata|Style.Nature",
 	"description": "gamedata|Style.Nature.Description",
+	"characters": [
+		{ "id": 8 }
+	],
 	"element": "NATURE",
 	"drawable": {
 		"drawable": { "id": 1108 }
 	},
+	"tagPreference": [ "DIFFERENT_ELEMENT" ],
 	"preview": {},
 	"modifications": [
 		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.ElementChangeModification" }
@@ -73,10 +89,14 @@
 	"name": "gamedata|Style.Elec",
 	"prefix": "gamedata|Style.Elec",
 	"description": "gamedata|Style.Elec.Description",
+	"characters": [
+		{ "id": 48 }
+	],
 	"element": "ELEC",
 	"drawable": {
 		"drawable": { "id": 1105 }
 	},
+	"tagPreference": [ "DIFFERENT_ELEMENT" ],
 	"preview": {},
 	"modifications": [
 		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.ElementChangeModification" }
@@ -88,10 +108,15 @@
 	"name": "gamedata|Style.Water",
 	"prefix": "gamedata|Style.Water",
 	"description": "gamedata|Style.Water.Description",
+	"characters": [
+		{ "id": 1 },
+		{ "id": 8 }
+	],
 	"element": "WATER",
 	"drawable": {
 		"drawable": { "id": 1104 }
 	},
+	"tagPreference": [ "DIFFERENT_ELEMENT" ],
 	"preview": {},
 	"modifications": [
 		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.ElementChangeModification" }
@@ -103,6 +128,10 @@
 	"name": "gamedata|Style.Copy",
 	"prefix": "gamedata|Style.Copy",
 	"description": "gamedata|Style.Copy.Description",
+	"characters": [
+		{ "id": 2 },
+		{ "id": 24 }
+	],
 	"level": 1,
 	"drawable": {
 		"drawable": { "id": 651 }
@@ -118,6 +147,40 @@
 	},
 	"modifications": [
 		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.CopyElementModification" }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.styles.VocStyle",
+	"id": { "id": 8 },
+	"name": "gamedata|Style.Regen",
+	"prefix": "gamedata|Style.Regen",
+	"description": "gamedata|Style.Regen.Description",
+	"characters": [
+		{},
+		{ "id": 57 }
+	],
+	"level": 1,
+	"drawable": {
+		"drawable": { "id": 803 }
+	},
+	"tagPreference": [ "AFFECTS_ALLY" ],
+	"tags": [ "HEAL" ],
+	"preview": {},
+	"particle": {
+		"drawable": {
+			"drawable": { "id": 162 },
+			"color": { "r": 0.14901961, "g": 1, "b": 0.09019608, "a": 1 }
+		},
+		"speedY": 15,
+		"fade": 6
+	},
+	"modifications": [
+		{
+			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
+			"inflicts": [
+				{ "type": "HP_CHANGER", "intensity": 10, "duration": 6 }
+			]
+		}
 	]
 },
 {
@@ -150,40 +213,11 @@
 },
 {
 	"class": "com.one2b3.endcycle.features.vocs.styles.VocStyle",
-	"id": { "id": 8 },
-	"name": "gamedata|Style.Regen",
-	"prefix": "gamedata|Style.Regen",
-	"description": "gamedata|Style.Regen.Description",
-	"level": 1,
-	"drawable": {
-		"drawable": { "id": 803 }
-	},
-	"tagPreference": [ "AFFECTS_ALLY" ],
-	"tags": [ "HEAL" ],
-	"preview": {},
-	"particle": {
-		"drawable": {
-			"drawable": { "id": 162 },
-			"color": { "r": 0.14901961, "g": 1, "b": 0.09019608, "a": 1 }
-		},
-		"speedY": 15,
-		"fade": 6
-	},
-	"modifications": [
-		{
-			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
-			"inflicts": [
-				{ "type": "HP_CHANGER", "intensity": 10, "duration": 6 }
-			]
-		}
-	]
-},
-{
-	"class": "com.one2b3.endcycle.features.vocs.styles.VocStyle",
 	"id": { "id": 9 },
 	"name": "gamedata|Style.Berserk",
 	"prefix": "gamedata|Style.Berserk",
 	"description": "gamedata|Style.Berserk.Description",
+	"visible": false,
 	"level": 1,
 	"drawable": {
 		"drawable": { "id": 804 }
@@ -203,7 +237,7 @@
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
 			"inflicts": [
-				{ "type": "BERSERK", "intensity": 0.25 }
+				{ "type": "BERSERK", "intensity": 0.3 }
 			]
 		}
 	]
@@ -214,6 +248,7 @@
 	"name": "gamedata|Style.Meek",
 	"prefix": "gamedata|Style.Meek",
 	"description": "gamedata|Style.Meek.Description",
+	"visible": false,
 	"level": 1,
 	"drawable": {
 		"drawable": { "id": 805 }
@@ -233,7 +268,69 @@
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
 			"inflicts": [
-				{ "type": "BERSERK", "intensity": -0.25 }
+				{ "type": "BERSERK", "intensity": -0.3 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.styles.VocStyle",
+	"id": { "id": 23 },
+	"name": "gamedata|Style.Haste",
+	"prefix": "gamedata|Style.Haste",
+	"description": "gamedata|Style.Haste.Description",
+	"visible": false,
+	"level": 1,
+	"drawable": {
+		"drawable": { "id": 806 }
+	},
+	"tagPreference": [ "AFFECTS_ALLY" ],
+	"preview": {},
+	"particle": {
+		"drawable": {
+			"drawable": { "id": 1241 },
+			"color": { "r": 0.5294118, "g": 0.80784315, "b": 0.92156863, "a": 1 }
+		},
+		"speedY": 15,
+		"multiplier": 1.25,
+		"fade": 6
+	},
+	"modifications": [
+		{
+			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
+			"inflicts": [
+				{ "type": "SPEED", "intensity": 0.35 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.styles.VocStyle",
+	"id": { "id": 24 },
+	"name": "gamedata|Style.Brake",
+	"prefix": "gamedata|Style.Brake",
+	"description": "gamedata|Style.Brake.Description",
+	"visible": false,
+	"level": 1,
+	"drawable": {
+		"drawable": { "id": 807 }
+	},
+	"tagPreference": [ "AFFECTS_ENEMY" ],
+	"preview": {},
+	"particle": {
+		"drawable": {
+			"drawable": { "id": 325 },
+			"color": { "r": 0.4509804, "g": 0.09411765, "b": 0.67058825, "a": 1 }
+		},
+		"speedY": -15,
+		"multiplier": 1.25,
+		"fade": 6
+	},
+	"modifications": [
+		{
+			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
+			"inflicts": [
+				{ "type": "SPEED", "intensity": -0.35 }
 			]
 		}
 	]
@@ -244,6 +341,10 @@
 	"name": "gamedata|Style.Push",
 	"prefix": "gamedata|Style.Push",
 	"description": "gamedata|Style.Push.Description",
+	"characters": [
+		{ "id": 12 },
+		{ "id": 11 }
+	],
 	"level": 1,
 	"drawable": {
 		"drawable": { "id": 1177 }
@@ -273,6 +374,10 @@
 	"name": "gamedata|Style.Pull",
 	"prefix": "gamedata|Style.Pull",
 	"description": "gamedata|Style.Pull.Description",
+	"characters": [
+		{ "id": 3 },
+		{ "id": 12 }
+	],
 	"level": 1,
 	"drawable": {
 		"drawable": { "id": 1178 }
@@ -302,6 +407,11 @@
 	"name": "gamedata|Style.Up",
 	"prefix": "gamedata|Style.Up",
 	"description": "gamedata|Style.Up.Description",
+	"characters": [
+		{ "id": 5 },
+		{ "id": 13 },
+		{ "id": 9 }
+	],
 	"level": 1,
 	"drawable": {
 		"drawable": { "id": 1233 }
@@ -360,6 +470,7 @@
 	"name": "gamedata|Style.RushBack",
 	"prefix": "gamedata|Style.RushBack.Prefix",
 	"description": "gamedata|Style.RushBack.Description",
+	"visible": false,
 	"rarity": 0.5,
 	"drawable": {
 		"drawable": { "id": 214 }
@@ -378,6 +489,9 @@
 	"name": "gamedata|Style.Rush2",
 	"prefix": "gamedata|Style.Rush2.Prefix",
 	"description": "gamedata|Style.Rush2.Description",
+	"characters": [
+		{ "id": 8 }
+	],
 	"rarity": 0.25,
 	"drawable": {
 		"drawable": { "id": 1268 }
@@ -385,7 +499,7 @@
 	"tagPreference": [ "DISABLED" ],
 	"preview": {},
 	"modifications": [
-		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.RushModification", "xMove": 2, "forward": "ANIMATED_MOVING_TILE", "speed": 20 }
+		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.RushModification", "xMove": 2, "turn": null, "forward": "ANIMATED_MOVING_TILE", "speed": 20 }
 	]
 },
 {
@@ -394,6 +508,9 @@
 	"name": "gamedata|Style.Rush3",
 	"prefix": "gamedata|Style.Rush3.Prefix",
 	"description": "gamedata|Style.Rush3.Description",
+	"characters": [
+		{ "id": 5 }
+	],
 	"rarity": 0.25,
 	"drawable": {
 		"drawable": { "id": 1269 }
@@ -401,7 +518,7 @@
 	"tagPreference": [ "DISABLED" ],
 	"preview": {},
 	"modifications": [
-		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.RushModification", "xMove": 3, "forward": "ANIMATED_MOVING_TILE", "speed": 20 }
+		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.RushModification", "xMove": 3, "turn": null, "forward": "ANIMATED_MOVING_TILE", "speed": 20 }
 	]
 },
 {
@@ -410,6 +527,10 @@
 	"name": "gamedata|Style.RushUp",
 	"prefix": "gamedata|Style.RushUp.Prefix",
 	"description": "gamedata|Style.RushUp.Description",
+	"characters": [
+		{ "id": 9 },
+		{ "id": 24 }
+	],
 	"drawable": {
 		"drawable": { "id": 1271 }
 	},
@@ -437,6 +558,10 @@
 	"name": "gamedata|Style.RushDown",
 	"prefix": "gamedata|Style.RushDown.Prefix",
 	"description": "gamedata|Style.RushDown.Description",
+	"characters": [
+		{ "id": 7 },
+		{ "id": 21 }
+	],
 	"drawable": {
 		"drawable": { "id": 1270 }
 	},
@@ -462,6 +587,9 @@
 	"name": "gamedata|Style.Turn",
 	"prefix": "gamedata|Style.Turn",
 	"description": "gamedata|Style.Turn.Description",
+	"characters": [
+		{ "id": 49 }
+	],
 	"level": 1,
 	"drawable": {
 		"drawable": { "id": 213 }
@@ -507,70 +635,13 @@
 },
 {
 	"class": "com.one2b3.endcycle.features.vocs.styles.VocStyle",
-	"id": { "id": 23 },
-	"name": "gamedata|Style.Haste",
-	"prefix": "gamedata|Style.Haste",
-	"description": "gamedata|Style.Haste.Description",
-	"level": 1,
-	"drawable": {
-		"drawable": { "id": 806 }
-	},
-	"tagPreference": [ "AFFECTS_ALLY" ],
-	"preview": {},
-	"particle": {
-		"drawable": {
-			"drawable": { "id": 1241 },
-			"color": { "r": 0.5294118, "g": 0.80784315, "b": 0.92156863, "a": 1 }
-		},
-		"speedY": 15,
-		"multiplier": 1.25,
-		"fade": 6
-	},
-	"modifications": [
-		{
-			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
-			"inflicts": [
-				{ "type": "SPEED", "intensity": 0.25 }
-			]
-		}
-	]
-},
-{
-	"class": "com.one2b3.endcycle.features.vocs.styles.VocStyle",
-	"id": { "id": 24 },
-	"name": "gamedata|Style.Brake",
-	"prefix": "gamedata|Style.Brake",
-	"description": "gamedata|Style.Brake.Description",
-	"level": 1,
-	"drawable": {
-		"drawable": { "id": 807 }
-	},
-	"tagPreference": [ "AFFECTS_ENEMY" ],
-	"preview": {},
-	"particle": {
-		"drawable": {
-			"drawable": { "id": 325 },
-			"color": { "r": 0.4509804, "g": 0.09411765, "b": 0.67058825, "a": 1 }
-		},
-		"speedY": -15,
-		"multiplier": 1.25,
-		"fade": 6
-	},
-	"modifications": [
-		{
-			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
-			"inflicts": [
-				{ "type": "SPEED", "intensity": -0.25 }
-			]
-		}
-	]
-},
-{
-	"class": "com.one2b3.endcycle.features.vocs.styles.VocStyle",
 	"id": { "id": 25 },
 	"name": "gamedata|Style.Blind",
 	"prefix": "gamedata|Style.Blind",
 	"description": "gamedata|Style.Blind.Description",
+	"characters": [
+		{}
+	],
 	"level": 1,
 	"drawable": {
 		"drawable": { "id": 808 }
@@ -588,7 +659,7 @@
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
 			"inflicts": [
 				{ "type": "FLASH" },
-				{ "type": "BLINDED", "duration": 1 }
+				{ "type": "BLINDED", "duration": 2.5 }
 			]
 		}
 	]
@@ -626,6 +697,11 @@
 	"name": "gamedata|Style.Freeze",
 	"prefix": "gamedata|Style.Freeze",
 	"description": "gamedata|Style.Freeze.Description",
+	"characters": [
+		{ "id": 5 },
+		{ "id": 59 },
+		{ "id": 6 }
+	],
 	"level": 1,
 	"drawable": {
 		"drawable": { "id": 810 }
@@ -644,7 +720,7 @@
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
 			"inflicts": [
-				{ "type": "FREEZE", "duration": 0.7 }
+				{ "type": "FREEZE", "duration": 0.9 }
 			]
 		}
 	]
@@ -655,10 +731,16 @@
 	"name": "gamedata|Style.Eject",
 	"prefix": "gamedata|Style.Eject",
 	"description": "gamedata|Style.Eject.Description",
+	"characters": [
+		{ "id": 21 },
+		{ "id": 4 },
+		{ "id": 12 }
+	],
 	"level": 1,
 	"drawable": {
 		"drawable": { "id": 1223 }
 	},
+	"tagPreference": [ "AFFECTS_ALLY" ],
 	"preview": {},
 	"particle": {
 		"drawable": {
@@ -683,11 +765,15 @@
 	"name": "gamedata|Style.Repair",
 	"prefix": "gamedata|Style.Repair",
 	"description": "gamedata|Style.Repair.Description",
+	"characters": [
+		{},
+		{ "id": 59 },
+		{ "id": 1 }
+	],
 	"level": 1,
 	"drawable": {
 		"drawable": { "id": 315 }
 	},
-	"tagPreference": [ "AFFECTS_ALLY" ],
 	"preview": {},
 	"particle": {
 		"drawable": {
@@ -712,6 +798,11 @@
 	"name": "gamedata|Style.SuperArmor",
 	"prefix": "gamedata|Style.SuperArmor.Prefix",
 	"description": "gamedata|Style.SuperArmor.Description",
+	"characters": [
+		{ "id": 7 },
+		{ "id": 6 },
+		{ "id": 57 }
+	],
 	"level": 1,
 	"drawable": {
 		"drawable": { "id": 1222 }
@@ -727,10 +818,14 @@
 	"name": "gamedata|Style.Infuse",
 	"prefix": "gamedata|Style.Infuse",
 	"description": "gamedata|Style.Infuse.Description",
+	"characters": [
+		{ "id": 23 },
+		{ "id": 59 }
+	],
 	"drawable": {
 		"drawable": { "id": 209 }
 	},
-	"tagPreference": [ "ATTACK", "HEAL" ],
+	"tagPreference": [ "REQUIRES_POWER" ],
 	"preview": {},
 	"modifications": [
 		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.PowerMultiplierModification", "power": 1.25, "crush": 1.1, "selfHurt": 0.2 }
@@ -742,6 +837,10 @@
 	"name": "gamedata|Style.Flip",
 	"prefix": "gamedata|Style.Flip",
 	"description": "gamedata|Style.Flip.Description",
+	"characters": [
+		{ "id": 2 },
+		{ "id": 49 }
+	],
 	"rarity": 0,
 	"drawable": {
 		"drawable": { "id": 126 }
@@ -758,6 +857,9 @@
 	"name": "gamedata|Style.Crack",
 	"prefix": "gamedata|Style.Crack",
 	"description": "gamedata|Style.Crack.Description",
+	"characters": [
+		{ "id": 13 }
+	],
 	"level": 1,
 	"drawable": {
 		"drawable": { "id": 316 }
@@ -785,11 +887,14 @@
 	"name": "gamedata|Style.Metal",
 	"prefix": "gamedata|Style.Metal",
 	"description": "gamedata|Style.Metal.Description",
+	"characters": [
+		{ "id": 4 },
+		{ "id": 49 }
+	],
 	"level": 1,
 	"drawable": {
 		"drawable": { "id": 317 }
 	},
-	"tagPreference": [ "AFFECTS_ALLY" ],
 	"preview": {},
 	"particle": {
 		"drawable": {
@@ -812,6 +917,10 @@
 	"name": "gamedata|Style.Ice",
 	"prefix": "gamedata|Style.Ice",
 	"description": "gamedata|Style.Ice.Description",
+	"characters": [
+		{ "id": 24 },
+		{ "id": 48 }
+	],
 	"level": 1,
 	"drawable": {
 		"drawable": { "id": 318 }
@@ -838,11 +947,13 @@
 	"name": "gamedata|Style.Grass",
 	"prefix": "gamedata|Style.Grass",
 	"description": "gamedata|Style.Grass.Description",
+	"characters": [
+		{ "id": 11 }
+	],
 	"level": 1,
 	"drawable": {
 		"drawable": { "id": 319 }
 	},
-	"tagPreference": [ "AFFECTS_ALLY" ],
 	"preview": {},
 	"particle": {
 		"drawable": {
@@ -865,6 +976,9 @@
 	"name": "gamedata|Style.Fast",
 	"prefix": "gamedata|Style.Fast",
 	"description": "gamedata|Style.Fast.Description",
+	"characters": [
+		{ "id": 4 }
+	],
 	"level": 1,
 	"drawable": {
 		"drawable": { "id": 211 }
@@ -913,11 +1027,16 @@
 	"name": "gamedata|Style.Anti",
 	"prefix": "gamedata|Style.Anti",
 	"description": "gamedata|Style.Anti.Description",
+	"characters": [
+		{ "id": 23 },
+		{ "id": 9 },
+		{ "id": 3 }
+	],
 	"level": 1,
 	"drawable": {
 		"drawable": { "id": 50 }
 	},
-	"tagPreference": [ "ATTACK", "AFFECTS_ENEMY" ],
+	"tagPreference": [ "AFFECTS_ENEMY" ],
 	"preview": {},
 	"particle": {
 		"drawable": {
@@ -953,6 +1072,11 @@
 	"name": "gamedata|Style.Treasure",
 	"prefix": "gamedata|Style.Treasure",
 	"description": "gamedata|Style.Treasure.Desc",
+	"characters": [
+		{ "id": 2 },
+		{ "id": 3 },
+		{ "id": 6 }
+	],
 	"drawable": {
 		"drawable": { "id": 801 }
 	},
@@ -988,9 +1112,15 @@
 	"name": "gamedata|Style.Panic",
 	"prefix": "gamedata|Style.Panic",
 	"description": "gamedata|Style.Panic.Description",
+	"characters": [
+		{ "id": 5 },
+		{ "id": 4 },
+		{ "id": 57 }
+	],
 	"drawable": {
 		"drawable": { "id": 813 }
 	},
+	"tagPreference": [ "DISABLED" ],
 	"preview": {},
 	"modifications": [
 		{
@@ -998,7 +1128,7 @@
 			"gaugeConsume": 1,
 			"before": {},
 			"wrapper": {
-				"stats": { "power": 0, "crushPower": 0, "element": "NORMAL", "overrideAilments": true },
+				"stats": { "power": 0, "crushPower": 0, "element": "NORMAL", "overrideAilments": true, "overridePanel": true },
 				"attack": {
 					"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
 					"attacks": [
@@ -1026,6 +1156,11 @@
 	"name": "gamedata|Style.Invis",
 	"prefix": "gamedata|Style.Invis",
 	"description": "gamedata|Style.Invis.Desc",
+	"characters": [
+		{ "id": 21 },
+		{ "id": 6 },
+		{ "id": 57 }
+	],
 	"level": 1,
 	"drawable": {
 		"drawable": { "id": 361 }
@@ -1065,6 +1200,9 @@
 	"name": "gamedata|Style.Guard",
 	"prefix": "gamedata|Style.Guard",
 	"description": "gamedata|Style.Guard.Desc",
+	"characters": [
+		{ "id": 12 }
+	],
 	"level": 1,
 	"drawable": {
 		"drawable": { "id": 362 }
@@ -1110,6 +1248,10 @@
 	"name": "gamedata|Style.Panel",
 	"prefix": "gamedata|Style.Panel",
 	"description": "gamedata|Style.Panel.Desc",
+	"characters": [
+		{ "id": 13 },
+		{ "id": 1 }
+	],
 	"level": 1,
 	"drawable": {
 		"drawable": { "id": 378 }
@@ -1133,6 +1275,10 @@
 	"name": "gamedata|Style.Cyber",
 	"prefix": "gamedata|Style.Cyber",
 	"description": "gamedata|Style.Cyber.Desc",
+	"characters": [
+		{ "id": 7 },
+		{ "id": 48 }
+	],
 	"level": 1,
 	"drawable": {
 		"drawable": { "id": 1235 }
@@ -1166,6 +1312,11 @@
 	"name": "gamedata|Style.Invert",
 	"prefix": "gamedata|Style.Invert",
 	"description": "gamedata|Style.Invert.Desc",
+	"characters": [
+		{ "id": 13 },
+		{ "id": 49 },
+		{ "id": 48 }
+	],
 	"level": 1,
 	"drawable": {
 		"drawable": { "id": 811 }
@@ -1194,6 +1345,10 @@
 	"name": "gamedata|Style.Survivor",
 	"prefix": "gamedata|Style.Survivor.Prefix",
 	"description": "gamedata|Style.Survivor.Description",
+	"characters": [
+		{ "id": 2 },
+		{ "id": 23 }
+	],
 	"level": 1,
 	"drawable": {
 		"drawable": { "id": 51 }
@@ -1220,6 +1375,75 @@
 				}
 			},
 			"after": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.styles.VocStyle",
+	"id": { "id": 47 },
+	"name": "|Impact",
+	"prefix": "|Impact",
+	"description": "|Target gains berserk buff and brake debuff!",
+	"characters": [
+		{ "id": 23 },
+		{ "id": 11 }
+	],
+	"drawable": {
+		"drawable": { "id": 831 }
+	},
+	"tags": [ "BUFF", "DEBUFF" ],
+	"preview": {},
+	"particle": {
+		"drawable": {
+			"drawable": { "id": 165 },
+			"color": { "r": 1, "g": 0.26666668, "b": 0.11372549, "a": 1 }
+		},
+		"speedY": 15,
+		"multiplier": 1.25,
+		"fade": 6
+	},
+	"modifications": [
+		{
+			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
+			"inflicts": [
+				{ "type": "SPEED", "intensity": -0.35 },
+				{ "type": "BERSERK", "intensity": 0.3 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.styles.VocStyle",
+	"id": { "id": 48 },
+	"name": "|Tempo",
+	"prefix": "|Tempo",
+	"description": "|Target gains haste buff and meek debuff!",
+	"characters": [
+		{},
+		{ "id": 59 },
+		{ "id": 1 }
+	],
+	"drawable": {
+		"drawable": { "id": 830 }
+	},
+	"tags": [ "BUFF", "DEBUFF" ],
+	"preview": {},
+	"particle": {
+		"drawable": {
+			"drawable": { "id": 1241 },
+			"color": { "r": 0.5294118, "g": 0.80784315, "b": 0.92156863, "a": 1 }
+		},
+		"speedY": 15,
+		"multiplier": 1.25,
+		"fade": 6
+	},
+	"modifications": [
+		{
+			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
+			"inflicts": [
+				{ "type": "BERSERK", "intensity": -0.3 },
+				{ "type": "SPEED", "intensity": 0.35 }
+			]
 		}
 	]
 }

@@ -646,7 +646,7 @@
 	"drawable": {
 		"drawable": { "id": 808 }
 	},
-	"tagPreference": [ "ATTACK", "COUNTER", "DEBUFF", "AFFECTS_ENEMY" ],
+	"tagPreference": [ "AFFECTS_ENEMY" ],
 	"preview": {},
 	"particle": {
 		"drawable": {
@@ -658,7 +658,6 @@
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
 			"inflicts": [
-				{ "type": "FLASH" },
 				{ "type": "BLINDED", "duration": 2.5 }
 			]
 		}
@@ -815,9 +814,9 @@
 {
 	"class": "com.one2b3.endcycle.features.vocs.styles.VocStyle",
 	"id": { "id": 35 },
-	"name": "gamedata|Style.Infuse",
-	"prefix": "gamedata|Style.Infuse",
-	"description": "gamedata|Style.Infuse.Description",
+	"name": "gamedata|Style.Berserk",
+	"prefix": "gamedata|Style.Berserk",
+	"description": "gamedata|Style.Berserk.Description",
 	"characters": [
 		{ "id": 23 },
 		{ "id": 59 }
@@ -825,10 +824,29 @@
 	"drawable": {
 		"drawable": { "id": 209 }
 	},
-	"tagPreference": [ "REQUIRES_POWER" ],
 	"preview": {},
 	"modifications": [
-		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.PowerMultiplierModification", "power": 1.25, "crush": 1.1, "selfHurt": 0.2 }
+		{
+			"class": "com.one2b3.endcycle.features.vocs.modifications.types.WrapperModification",
+			"before": {
+				"stats": {
+					"power": 50,
+					"crushPower": 0,
+					"element": "NORMAL",
+					"overrideAilments": true,
+					"ailments": [
+						{ "type": "BERSERK", "intensity": 0.2 }
+					],
+					"overridePanel": true,
+					"target": {
+						"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
+					}
+				},
+				"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.status.DirectAttack" }
+			},
+			"wrapper": {},
+			"after": {}
+		}
 	]
 },
 {
@@ -1285,8 +1303,10 @@
 	},
 	"preview": {},
 	"modifications": [
+		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.PowerMultiplierModification", "power": 0.75, "crush": 0.75 },
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.WrapperModification",
+			"gaugeConsume": 1,
 			"before": {},
 			"wrapper": {
 				"attack": {
@@ -1302,8 +1322,7 @@
 			"after": {
 				"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.modifiers.AnimationModifierAttack", "time": 0.2 }
 			}
-		},
-		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.PowerMultiplierModification", "power": 0.75, "crush": 0.75 }
+		}
 	]
 },
 {
@@ -1407,7 +1426,7 @@
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
 			"inflicts": [
 				{ "type": "SPEED", "intensity": -0.35 },
-				{ "type": "BERSERK", "intensity": 0.3 }
+				{ "type": "BERSERK", "intensity": 0.2 }
 			]
 		}
 	]
@@ -1441,7 +1460,7 @@
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
 			"inflicts": [
-				{ "type": "BERSERK", "intensity": -0.3 },
+				{ "type": "BERSERK", "intensity": -0.2 },
 				{ "type": "SPEED", "intensity": 0.35 }
 			]
 		}

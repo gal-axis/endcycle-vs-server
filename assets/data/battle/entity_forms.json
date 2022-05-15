@@ -967,7 +967,11 @@
 	"id": { "id": 65 },
 	"dataName": "Fossil Fuel Tutorial",
 	"entity": { "id": 49 },
-	"configuration": {},
+	"configuration": {
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+		]
+	},
 	"action": { "id": 8 }
 },
 {
@@ -1020,7 +1024,8 @@
 	"configuration": {
 		"stats": { "hp": 1600, "resistance": 350, "actionSpeed": 0.6 },
 		"modes": [
-			{ "class": "com.one2b3.endcycle.features.battle.mode.BigEntityMode", "extraHeight": 1 }
+			{ "class": "com.one2b3.endcycle.features.battle.mode.BigEntityMode" },
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
 		]
 	},
 	"action": { "id": 110 }
@@ -1034,18 +1039,11 @@
 		"customizations": [ 4 ]
 	},
 	"configuration": {
-		"stats": { "strength": 100, "resistance": 200 }
+		"stats": { "strength": 100, "resistance": 200 },
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+		]
 	},
-	"action": { "id": 109 }
-},
-{
-	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
-	"id": { "id": 70 },
-	"entity": { "id": 49 },
-	"cache": {
-		"customizations": [ 5 ]
-	},
-	"configuration": {},
 	"action": { "id": 109 }
 },
 {
@@ -1057,7 +1055,10 @@
 		"customizations": [ 1 ]
 	},
 	"configuration": {
-		"stats": {}
+		"stats": {},
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+		]
 	},
 	"action": { "id": 111 }
 },
@@ -1070,7 +1071,10 @@
 		"customizations": [ 0 ]
 	},
 	"configuration": {
-		"stats": { "hp": 700, "crushStrength": -100 }
+		"stats": { "hp": 700, "crushStrength": -100 },
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+		]
 	},
 	"action": { "id": 112 }
 },
@@ -1083,7 +1087,10 @@
 		"customizations": [ 2 ]
 	},
 	"configuration": {
-		"stats": { "hp": 800, "crushStrength": 100 }
+		"stats": { "hp": 800, "crushStrength": 100 },
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+		]
 	},
 	"action": { "id": 113 }
 },
@@ -1096,7 +1103,10 @@
 		"customizations": [ 3 ]
 	},
 	"configuration": {
-		"stats": { "hp": 700, "resistance": 100 }
+		"stats": { "hp": 700, "resistance": 100 },
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+		]
 	},
 	"action": { "id": 114 }
 },
@@ -1106,7 +1116,10 @@
 	"dataName": "Farmadile - PotatoBomb / Leafcross",
 	"entity": { "id": 57 },
 	"configuration": {
-		"stats": { "hp": 700, "strength": 500 }
+		"stats": { "hp": 700, "strength": 500 },
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+		]
 	},
 	"action": { "id": 115 }
 },
@@ -1135,7 +1148,11 @@
 	"cache": {
 		"customizations": [ 4 ]
 	},
-	"configuration": {},
+	"configuration": {
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+		]
+	},
 	"action": { "id": 117 }
 },
 {
@@ -1144,7 +1161,10 @@
 	"dataName": "Cherry Adventure #2",
 	"entity": { "id": 24 },
 	"configuration": {
-		"stats": { "hp": 800 }
+		"stats": { "hp": 800 },
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+		]
 	},
 	"action": { "id": 118 }
 },
@@ -1156,7 +1176,11 @@
 	"cache": {
 		"customizations": [ 1 ]
 	},
-	"configuration": {},
+	"configuration": {
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+		]
+	},
 	"action": { "id": 119 }
 },
 {
@@ -1167,7 +1191,11 @@
 	"cache": {
 		"customizations": [ 0 ]
 	},
-	"configuration": {},
+	"configuration": {
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+		]
+	},
 	"action": { "id": 120 }
 },
 {
@@ -1191,7 +1219,12 @@
 	"id": { "id": 82 },
 	"dataName": "Mini Boss Greed",
 	"entity": { "id": 4 },
-	"configuration": { "element": "WATER" },
+	"configuration": {
+		"element": "WATER",
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+		]
+	},
 	"action": { "id": 123 }
 },
 {
@@ -1305,7 +1338,10 @@
 	},
 	"configuration": {
 		"stats": { "hp": 600, "resistance": 150 },
-		"element": "NATURE"
+		"element": "NATURE",
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+		]
 	},
 	"action": { "id": 138 }
 },
@@ -1321,7 +1357,11 @@
 	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
 	"id": { "id": 95 },
 	"dataName": "Farmadile CF 2.1",
-	"configuration": {}
+	"configuration": {
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+		]
+	}
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
@@ -1333,7 +1373,10 @@
 	},
 	"configuration": {
 		"stats": { "hp": 700 },
-		"element": "NATURE"
+		"element": "NATURE",
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+		]
 	},
 	"action": { "id": 136 }
 },
@@ -1342,7 +1385,11 @@
 	"id": { "id": 97 },
 	"dataName": "Greed Factory",
 	"entity": { "id": 4 },
-	"configuration": {},
+	"configuration": {
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+		]
+	},
 	"action": { "id": 139 }
 },
 {
@@ -1351,7 +1398,10 @@
 	"dataName": "Factory QT",
 	"entity": { "id": 1 },
 	"configuration": {
-		"stats": { "hp": 300 }
+		"stats": { "hp": 300 },
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+		]
 	},
 	"action": { "id": 140 }
 },
@@ -1364,7 +1414,10 @@
 		"customizations": [ 0 ]
 	},
 	"configuration": {
-		"stats": { "hp": 300, "actionSpeed": 0.6 }
+		"stats": { "hp": 300, "actionSpeed": 0.6 },
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+		]
 	},
 	"action": { "id": 140 }
 },
@@ -1377,7 +1430,10 @@
 		"customizations": [ 1 ]
 	},
 	"configuration": {
-		"stats": { "hp": 300, "actionSpeed": 0.4 }
+		"stats": { "hp": 300, "actionSpeed": 0.4 },
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+		]
 	},
 	"action": { "id": 140 }
 },
@@ -1390,14 +1446,17 @@
 		"customizations": [ 2 ]
 	},
 	"configuration": {
-		"stats": { "hp": 300, "actionSpeed": 0.2 }
+		"stats": { "hp": 300, "actionSpeed": 0.2 },
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+		]
 	},
 	"action": { "id": 140 }
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
 	"id": { "id": 102 },
-	"dataName": "Tankkitty Factory #1",
+	"dataName": "Tankkitty Factory #1 (DOWN)",
 	"entity": { "id": 12 },
 	"configuration": {
 		"stats": { "hp": 600 },
@@ -1530,7 +1589,8 @@
 					"onHitOriginal": true
 				}
 			},
-			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" }
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" },
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
 		]
 	},
 	"action": { "id": 156 }
@@ -1592,11 +1652,10 @@
 	"dataName": "VOC Gigantree",
 	"patchwork": { "id": 43 },
 	"configuration": {
-		"stats": {},
+		"stats": { "hp": 600 },
 		"element": "NATURE",
 		"modes": [
-			{ "class": "com.one2b3.endcycle.features.battle.mode.HealthDrainEntityMode", "drain": 50 },
-			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" },
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HealthDrainEntityMode", "drain": 30 },
 			{ "class": "com.one2b3.endcycle.features.battle.mode.StatusImmuneEntityMode" }
 		]
 	},
@@ -2219,7 +2278,8 @@
 	"configuration": {
 		"stats": { "hp": 500 },
 		"modes": [
-			{ "class": "com.one2b3.endcycle.features.battle.mode.BigEntityMode", "size": 0.5 }
+			{ "class": "com.one2b3.endcycle.features.battle.mode.BigEntityMode", "size": 0.5 },
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
 		]
 	},
 	"action": { "id": 184 }
@@ -2235,7 +2295,8 @@
 	"configuration": {
 		"stats": { "hp": 500 },
 		"modes": [
-			{ "class": "com.one2b3.endcycle.features.battle.mode.BigEntityMode", "size": 0.5 }
+			{ "class": "com.one2b3.endcycle.features.battle.mode.BigEntityMode", "size": 0.5 },
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
 		]
 	},
 	"action": { "id": 185 }
@@ -2251,7 +2312,8 @@
 	"configuration": {
 		"stats": { "hp": 500 },
 		"modes": [
-			{ "class": "com.one2b3.endcycle.features.battle.mode.BigEntityMode", "size": 0.5 }
+			{ "class": "com.one2b3.endcycle.features.battle.mode.BigEntityMode", "size": 0.5 },
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
 		]
 	},
 	"action": { "id": 197 }
@@ -2419,7 +2481,10 @@
 	"dataName": "Tutorial Sofa",
 	"entity": { "id": 3 },
 	"configuration": {
-		"stats": { "hp": 300 }
+		"stats": { "hp": 300 },
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+		]
 	}
 },
 {
@@ -2428,8 +2493,86 @@
 	"dataName": "Tutorial Q.T.",
 	"entity": { "id": 1 },
 	"configuration": {
-		"stats": { "hp": 500, "strength": -150, "crushStrength": -150, "actionSpeed": 0.8 }
+		"stats": { "hp": 500, "strength": -150, "crushStrength": -150, "actionSpeed": 0.8 },
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+		]
 	},
 	"action": {}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 172 },
+	"dataName": "Tankkitty Factory #1 (UP)",
+	"entity": { "id": 12 },
+	"configuration": {
+		"stats": { "hp": 600 },
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+		]
+	},
+	"action": { "id": 163 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 173 },
+	"dataName": "VOC Generator",
+	"patchwork": { "id": 23 },
+	"configuration": {
+		"stats": { "hp": 400 },
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HealthDrainEntityMode", "drain": 25 },
+			{
+				"class": "com.one2b3.endcycle.features.battle.mode.StatusImmuneEntityMode",
+				"ailments": [ "HEAL", "HEAL_PERCENT", "HP_CHANGER" ],
+				"exclude": true
+			},
+			{
+				"class": "com.one2b3.endcycle.features.battle.mode.ElementImmunityEntityMode",
+				"elements": [ "ELEC" ]
+			},
+			{
+				"class": "com.one2b3.endcycle.features.battle.mode.AnimationsEntityMode",
+				"spawnAnimation": {
+					"class": "com.one2b3.endcycle.features.battle.entities.animations.data.FadeEntityAnimation",
+					"sound": { "sound": "battle/entity/spawn_noise.wav" }
+				}
+			}
+		]
+	},
+	"action": { "id": 31 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 174 },
+	"dataName": "VOC Falling Ice Cube",
+	"entity": { "id": 34 },
+	"type": "ICE_CUBE",
+	"configuration": {
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.FallingEntityMode", "offset": 0, "shake": 3 },
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 175 },
+	"dataName": "Adventure Crimson Punk",
+	"entity": { "id": 23 },
+	"cache": null,
+	"configuration": {}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 176 },
+	"dataName": "Code Tablet",
+	"patchwork": { "id": 32 },
+	"talkingName": "gamedata|Character.Unknown",
+	"configuration": {
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" }
+		]
+	}
 }
 ]

@@ -6046,14 +6046,10 @@
 		],
 		[
 			{ "party": "ENEMY", "type": null, "fixed": true },
-			{ "party": "ENEMY", "type": null, "fixed": true },
+			null,
 			null
 		],
-		[
-			{ "party": "ENEMY", "type": null, "fixed": true },
-			{ "party": "ENEMY", "type": null, "fixed": true },
-			null
-		]
+		[ null, null, null ]
 	]
 },
 {
@@ -13481,6 +13477,43 @@
 			{ "party": "ENEMY", "fixed": true },
 			{ "party": "ENEMY", "fixed": true },
 			null
+		]
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.field.BattleFieldData",
+	"id": { "id": 68 },
+	"name": "Cracked",
+	"panels": [
+		[
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "fixed": true },
+			{ "party": "FRIENDLY", "type": "CRACKED", "fixed": true }
+		],
+		[
+			{ "party": "FRIENDLY", "type": "CRACKED" },
+			{ "party": "FRIENDLY" },
+			{ "party": "FRIENDLY" }
+		],
+		[
+			{},
+			{},
+			{ "type": "CRACKED" }
+		],
+		[
+			{ "type": "CRACKED" },
+			{},
+			{}
+		],
+		[
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY" },
+			{ "party": "ENEMY", "type": "CRACKED" }
+		],
+		[
+			{ "party": "ENEMY", "type": "CRACKED", "fixed": true },
+			{ "party": "ENEMY", "fixed": true },
+			{ "party": "ENEMY", "fixed": true }
 		]
 	]
 }

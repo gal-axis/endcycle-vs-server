@@ -2790,7 +2790,7 @@
 			"y": 9,
 			"vital": false,
 			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.OnLiberationSpawnCondition" },
-			"form": { "id": 102 }
+			"form": { "id": 172 }
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
@@ -4356,24 +4356,30 @@
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
 			"x": 6,
-			"y": 1,
 			"vital": false,
 			"party": "NEUTRAL",
-			"id": { "id": 51 },
+			"name": "teleporter",
+			"parent": "",
+			"id": { "id": 47 },
 			"talkingName": "",
 			"configuration": {},
 			"type": "TELEPORTER"
 		},
 		{
-			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"x": 7,
-			"y": 1,
-			"vital": false,
-			"party": "NEUTRAL",
-			"id": { "id": 52 },
-			"talkingName": "",
-			"configuration": {},
-			"type": "INVINCIBLE"
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 5,
+			"turned": true,
+			"name": "punk_1",
+			"form": { "id": 175 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 2,
+			"turned": true,
+			"name": "punk_2",
+			"parent": "",
+			"form": { "id": 175 }
 		}
 	]
 },
@@ -4524,13 +4530,13 @@
 	"id": { "id": 75 },
 	"dataName": "A - Hurt AV.atar",
 	"name": "gamedata|",
-	"field": { "id": 34 },
 	"entityShells": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
 			"x": 3,
 			"y": 1,
 			"turned": true,
+			"preview": false,
 			"name": "hurt",
 			"form": { "id": 24 }
 		}
@@ -6068,7 +6074,7 @@
 	"field": { "id": 61 },
 	"background": { "id": 27 },
 	"music": { "id": 17 },
-	"time": 80,
+	"time": 120,
 	"startScript": { "class": "com.one2b3.endcycle.features.scripts.battle.BattlePlayMusicScript", "playNormal": true },
 	"entityShells": [
 		{
@@ -6621,6 +6627,153 @@
 			"name": "spark",
 			"parent": "",
 			"form": { "id": 52 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 121 },
+	"dataName": "Adventure Miniboss",
+	"name": "",
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"vital": false,
+			"name": "tablet",
+			"form": { "id": 176 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 158 },
+	"dataName": "Ambush - Glacial",
+	"field": { "id": 17 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 159 },
+	"dataName": "Ambush - Midius",
+	"field": { "id": 68 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 160 },
+	"dataName": "Adventure Miniboss Glacial",
+	"name": "",
+	"field": { "id": 17 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"vital": false,
+			"name": "tablet",
+			"form": { "id": 176 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 161 },
+	"dataName": "Adventure Miniboss Forest",
+	"name": "",
+	"field": { "id": 23 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"vital": false,
+			"name": "tablet",
+			"form": { "id": 176 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 162 },
+	"dataName": "Adventure Miniboss Astrat",
+	"name": "",
+	"field": { "id": 1 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"vital": false,
+			"name": "tablet",
+			"form": { "id": 176 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 163 },
+	"dataName": "Adventure Miniboss Arahas",
+	"name": "",
+	"field": { "id": 18 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"vital": false,
+			"name": "tablet",
+			"form": { "id": 176 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 164 },
+	"dataName": "Adventure Miniboss Myste",
+	"name": "",
+	"field": { "id": 26 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"vital": false,
+			"name": "tablet",
+			"form": { "id": 176 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 165 },
+	"dataName": "Adventure Miniboss Midius",
+	"name": "",
+	"field": { "id": 68 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"vital": false,
+			"name": "tablet",
+			"form": { "id": 176 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 166 },
+	"dataName": "Adventure Miniboss Factory",
+	"name": "",
+	"field": { "id": 29 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"vital": false,
+			"name": "tablet",
+			"form": { "id": 176 }
 		}
 	]
 }

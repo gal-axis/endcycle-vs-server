@@ -3,7 +3,7 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 10010 },
 	"vocType": "PROJECTILE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 90,
 	"characters": [
 		{ "id": 1 },
@@ -45,7 +45,7 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 10011 },
 	"vocType": "SPAWN",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 15,
 	"tags": [ "ATTACK", "AFFECTS_ENEMY", "SPAWN" ],
 	"preview": {},
@@ -70,7 +70,7 @@
 	"id": { "id": 10012 },
 	"role": "EFFECT",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 16,
 	"tags": [ "COUNTER", "AFFECTS_ENEMY" ],
 	"optimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
@@ -105,7 +105,7 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 10013 },
 	"vocType": "PROJECTILE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 94,
 	"characters": [
 		{ "id": 9 },
@@ -168,7 +168,7 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 10016 },
 	"vocType": "DAMAGE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 95,
 	"characters": [
 		{ "id": 12 }
@@ -208,7 +208,7 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 10019 },
 	"vocType": "PROJECTILE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 85,
 	"characters": [
 		{ "id": 23 },
@@ -247,7 +247,7 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 10022 },
 	"vocType": "DAMAGE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 97,
 	"characters": [
 		{ "id": 12 },
@@ -296,7 +296,7 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 10028 },
 	"vocType": "PROJECTILE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 91,
 	"tags": [ "ATTACK", "AFFECTS_ENEMY", "SHOOT" ],
 	"preview": {},
@@ -332,7 +332,7 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 10031 },
 	"vocType": "PROJECTILE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 92,
 	"characters": [
 		{ "id": 1 },
@@ -378,7 +378,7 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 10032 },
 	"vocType": "DAMAGE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 17,
 	"characters": [
 		{ "id": 21 }
@@ -428,7 +428,7 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 10034 },
 	"vocType": "PROJECTILE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 93,
 	"tags": [ "ATTACK", "AFFECTS_ENEMY", "SHOOT" ],
 	"preview": {},
@@ -478,7 +478,7 @@
 	"id": { "id": 10037 },
 	"role": "EFFECT",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 46,
 	"characters": [
 		{ "id": 7 },
@@ -495,8 +495,7 @@
 		"property": {
 			"ailments": [
 				{ "type": "BLINDED", "duration": 1.5 },
-				{ "type": "SPEED", "intensity": 1, "duration": 1.5 },
-				{ "type": "FLASH" }
+				{ "type": "SPEED", "intensity": 1, "duration": 1.5 }
 			]
 		},
 		"targetType": {
@@ -511,7 +510,7 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 10040 },
 	"vocType": "DAMAGE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 99,
 	"characters": [
 		{ "id": 1 },
@@ -541,14 +540,14 @@
 			"invert": true,
 			"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
 		},
-		"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ReboundAttack", "speed": 4, "yOffset": 10 }
+		"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ReboundAttack", "speed": 4, "spins": 1, "yOffset": 10 }
 	}
 },
 {
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 10052 },
 	"vocType": "DAMAGE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 96,
 	"characters": [
 		{ "id": 23 },
@@ -598,7 +597,7 @@
 	"id": { "id": 10100 },
 	"role": "GUARD",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 112,
 	"characters": [
 		{ "id": 59 }
@@ -627,7 +626,7 @@
 	"id": { "id": 10101 },
 	"role": "EFFECT",
 	"vocType": "DAMAGE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 47,
 	"characters": [
 		{},
@@ -671,7 +670,7 @@
 	"id": { "id": 10102 },
 	"role": "GUARD",
 	"vocType": "SPAWN",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 115,
 	"tags": [ "HEAL", "BUFF", "AFFECTS_ALLY", "THROW" ],
 	"optimalPosition": { "xType": "FURTHER", "xDistance": 4, "yType": "IGNORE" },
@@ -691,11 +690,7 @@
 				{ "type": "HEAL", "intensity": 50 }
 			]
 		},
-		"targetType": {
-			"party": "FRIENDLY",
-			"self": true,
-			"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
-		},
+		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ThrowSpawnAttack",
 			"selectedXTile": 1,
@@ -711,7 +706,7 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 10103 },
 	"vocType": "SPAWN",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 45,
 	"tags": [ "ATTACK", "AFFECTS_ENEMY", "SPAWN", "REQUIRES_ELEMENT" ],
 	"optimalPosition": { "xType": "FURTHER", "xDistance": 1, "yType": "IGNORE" },
@@ -725,16 +720,14 @@
 			"ailments": [
 				{ "type": "STUN", "duration": 0.5 }
 			],
-			"power": 120,
-			"crushPower": 160
+			"power": 110,
+			"crushPower": 140
 		},
-		"targetType": { "party": "FRIENDLY", "self": true },
+		"targetType": null,
 		"attack": {
-			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
 			"limiter": { "limit": true, "countGlobal": true },
-			"type": "HIT_AMOUNT",
-			"entity": { "id": 26 },
-			"action": { "id": 31 },
+			"entity": { "id": 173 },
 			"overrideHit": true
 		}
 	}
@@ -744,7 +737,7 @@
 	"id": { "id": 10104 },
 	"role": "GUARD",
 	"vocType": "DAMAGE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 113,
 	"characters": [
 		{ "id": 49 },
@@ -757,12 +750,8 @@
 		"nameMessage": "gamedata|Voc.Eject.Name",
 		"descriptionMessage": "gamedata|Voc.Eject.Description",
 		"level": 1,
-		"property": { "shader": "RECOLOR", "power": 70, "crushPower": 140 },
-		"targetType": {
-			"party": "FRIENDLY",
-			"self": true,
-			"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
-		},
+		"property": { "power": 70, "crushPower": 140 },
+		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AntiAilmentWrapperAttack",
 			"wrapper": {
@@ -807,7 +796,7 @@
 	"id": { "id": 10105 },
 	"role": "GUARD",
 	"vocType": "DAMAGE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 114,
 	"tags": [ "BUFF", "AFFECTS_ENEMY", "THROW" ],
 	"optimalPosition": { "xType": "IGNORE", "yType": "CLOSER", "yDistance": 2 },
@@ -816,12 +805,8 @@
 		"nameMessage": "gamedata|Voc.EjectPlus.Name",
 		"descriptionMessage": "gamedata|Voc.EjectPlus.Description",
 		"level": 2,
-		"property": { "shader": "RECOLOR", "power": 150, "crushPower": 210 },
-		"targetType": {
-			"party": "FRIENDLY",
-			"self": true,
-			"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
-		},
+		"property": { "power": 150, "crushPower": 210 },
+		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AntiAilmentWrapperAttack",
 			"wrapper": {
@@ -867,7 +852,7 @@
 	"id": { "id": 10106 },
 	"role": "GUARD",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 119,
 	"tags": [ "HEAL", "COUNTER", "BUFF", "AFFECTS_ALLY" ],
 	"optimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
@@ -903,7 +888,7 @@
 	"id": { "id": 10110 },
 	"role": "GUARD",
 	"vocType": "SPAWN",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 110,
 	"characters": [
 		{ "id": 59 },
@@ -927,11 +912,7 @@
 				{ "type": "HEAL", "intensity": 200 }
 			]
 		},
-		"targetType": {
-			"party": "FRIENDLY",
-			"self": true,
-			"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
-		},
+		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ThrowSpawnAttack",
 			"selectedXTile": 1,
@@ -947,7 +928,7 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 10111 },
 	"vocType": "SPAWN",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 44,
 	"characters": [
 		{ "id": 49 },
@@ -990,7 +971,7 @@
 	"id": { "id": 10114 },
 	"role": "GUARD",
 	"vocType": "SPAWN",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 118,
 	"characters": [
 		{ "id": 5 },
@@ -1032,7 +1013,7 @@
 	"id": { "id": 10116 },
 	"role": "GUARD",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 111,
 	"characters": [
 		{ "id": 7 },
@@ -1049,6 +1030,7 @@
 	"attackShell": {
 		"nameMessage": "gamedata|Voc.Blocker.Name",
 		"descriptionMessage": "gamedata|Voc.Blocker.Description",
+		"interruptable": false,
 		"level": 2,
 		"targetType": {},
 		"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.guarding.BlockerAttack" }
@@ -1059,7 +1041,7 @@
 	"id": { "id": 10231 },
 	"role": "GUARD",
 	"vocType": "SPAWN",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 87,
 	"characters": [
 		{}
@@ -1079,7 +1061,7 @@
 		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
-			"limiter": { "limit": true, "team": true, "countGlobal": true },
+			"limiter": { "limit": true, "countGlobal": true },
 			"entity": { "id": 129 },
 			"overrideHit": true
 		}
@@ -1090,7 +1072,7 @@
 	"id": { "id": 10234 },
 	"role": "EFFECT",
 	"vocType": "SPAWN",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 86,
 	"characters": [
 		{ "id": 23 },
@@ -1115,11 +1097,7 @@
 			],
 			"power": 100
 		},
-		"targetType": {
-			"party": "FRIENDLY",
-			"self": true,
-			"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
-		},
+		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
 			"limiter": { "limit": true, "countGlobal": true },
@@ -1133,7 +1111,7 @@
 	"id": { "id": 10296 },
 	"role": "EFFECT",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"drawable": {
 		"drawable": { "id": 1106 }
 	},
@@ -1164,7 +1142,7 @@
 	"id": { "id": 10297 },
 	"role": "EFFECT",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"drawable": {
 		"drawable": { "id": 1104 }
 	},
@@ -1199,7 +1177,7 @@
 	"id": { "id": 10298 },
 	"role": "EFFECT",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"drawable": {
 		"drawable": { "id": 1105 }
 	},
@@ -1233,7 +1211,7 @@
 	"id": { "id": 10299 },
 	"role": "EFFECT",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"drawable": {
 		"drawable": { "id": 1108 }
 	},
@@ -1269,7 +1247,7 @@
 	"id": { "id": 10346 },
 	"role": "EFFECT",
 	"vocType": "PROJECTILE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 67,
 	"characters": [
 		{ "id": 6 },
@@ -1317,7 +1295,7 @@
 	"id": { "id": 10352 },
 	"role": "EFFECT",
 	"vocType": "PROJECTILE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 66,
 	"tags": [ "DEBUFF", "AFFECTS_ENEMY", "SHOOT" ],
 	"preview": {},
@@ -1362,7 +1340,7 @@
 	"id": { "id": 10422 },
 	"role": "EXECUTION",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 70,
 	"characters": [
 		{ "id": 7 },
@@ -1394,7 +1372,7 @@
 	"id": { "id": 10423 },
 	"role": "EXECUTION",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 71,
 	"characters": [
 		{ "id": 2 },
@@ -1415,7 +1393,7 @@
 	"id": { "id": 10425 },
 	"role": "EXECUTION",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 72,
 	"characters": [
 		{},
@@ -1447,7 +1425,7 @@
 	"id": { "id": 10428 },
 	"role": "EXECUTION",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 73,
 	"tags": [ "BUFF", "AFFECTS_ALLY" ],
 	"preview": {
@@ -1475,7 +1453,7 @@
 	"id": { "id": 10431 },
 	"role": "EXECUTION",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 74,
 	"characters": [
 		{ "id": 5 },
@@ -1516,7 +1494,7 @@
 	"id": { "id": 10434 },
 	"role": "EXECUTION",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 75,
 	"characters": [
 		{ "id": 21 },
@@ -1551,7 +1529,7 @@
 	"id": { "id": 10440 },
 	"role": "EXECUTION",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 77,
 	"characters": [
 		{ "id": 8 }
@@ -1590,7 +1568,7 @@
 	"id": { "id": 10443 },
 	"role": "EXECUTION",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 78,
 	"tags": [ "AREA_DEFENSE", "AFFECTS_ALLY", "HEAL" ],
 	"preview": {
@@ -1631,7 +1609,7 @@
 	"id": { "id": 10446 },
 	"role": "EXECUTION",
 	"vocType": "DAMAGE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 79,
 	"characters": [
 		{ "id": 9 },
@@ -1700,7 +1678,7 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 1 },
 	"vocType": "DAMAGE",
-	"visible": true,
+	"unlockCondition": {},
 	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
 	"optimalPosition": { "xType": "EQUAL", "xDistance": 3, "yType": "EQUAL" },
 	"minimalPosition": { "xType": "EQUAL", "xDistance": 3, "yType": "IGNORE" },
@@ -1722,7 +1700,7 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"role": "EFFECT",
 	"vocType": "DAMAGE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 1,
 	"characters": [
 		{},
@@ -1750,7 +1728,7 @@
 	"id": { "id": 2 },
 	"role": "GUARD",
 	"vocType": "SPAWN",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 3,
 	"characters": [
 		{ "id": 2 },
@@ -1781,7 +1759,7 @@
 	"id": { "id": 5 },
 	"role": "EXECUTION",
 	"vocType": "SPAWN",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 5,
 	"characters": [
 		{ "id": 49 },
@@ -1824,7 +1802,7 @@
 	"id": { "id": 6 },
 	"role": "EXECUTION",
 	"vocType": "SPAWN",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 6,
 	"characters": [
 		{ "id": 5 }
@@ -1838,7 +1816,7 @@
 		"property": {
 			"element": "WATER",
 			"ailments": [
-				{ "type": "FLINCHING", "intensity": 0.3 }
+				{ "type": "FLINCHING" }
 			],
 			"power": 250,
 			"crushPower": 300
@@ -1846,7 +1824,7 @@
 		"targetType": {},
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
-			"limiter": { "limit": true, "team": true, "countGlobal": true },
+			"limiter": { "limit": true, "id": "IceCube", "countGlobal": true },
 			"type": "ICE_CUBE",
 			"entity": { "id": 34 }
 		}
@@ -1857,7 +1835,7 @@
 	"id": { "id": 7 },
 	"role": "EXECUTION",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 7,
 	"characters": [
 		{ "id": 5 },
@@ -1879,7 +1857,7 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 8 },
 	"vocType": "SPAWN",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 9,
 	"tags": [ "AFFECTS_ENEMY", "THROW", "ATTACK", "REQUIRES_ELEMENT" ],
 	"optimalPosition": { "xType": "EQUAL", "xDistance": 2, "yType": "EQUAL" },
@@ -1904,7 +1882,7 @@
 			"type": "EXPLODING",
 			"entity": { "id": 35 },
 			"hurt": true,
-			"limiter": { "limit": true, "team": true, "countGlobal": true },
+			"limiter": { "limit": true, "countGlobal": true },
 			"limitOnThrow": true
 		}
 	}
@@ -1914,7 +1892,7 @@
 	"id": { "id": 9 },
 	"role": "EXECUTION",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 69,
 	"characters": [
 		{ "id": 2 },
@@ -1938,7 +1916,7 @@
 	"id": { "id": 10 },
 	"role": "EXECUTION",
 	"vocType": "DAMAGE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 10,
 	"characters": [
 		{ "id": 21 },
@@ -2003,7 +1981,7 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 11 },
 	"vocType": "PROJECTILE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 11,
 	"characters": [
 		{},
@@ -2051,7 +2029,7 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 12 },
 	"vocType": "PROJECTILE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 12,
 	"characters": [
 		{ "id": 49 },
@@ -2093,7 +2071,7 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 13 },
 	"vocType": "DAMAGE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 18,
 	"characters": [
 		{ "id": 13 },
@@ -2146,7 +2124,7 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 14 },
 	"vocType": "DAMAGE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 13,
 	"tags": [ "ATTACK", "AFFECTS_ENEMY" ],
 	"optimalPosition": { "xType": "EQUAL", "xDistance": 3, "yType": "EQUAL" },
@@ -2164,11 +2142,7 @@
 			"power": 110,
 			"crushPower": 90
 		},
-		"targetType": {
-			"party": "FRIENDLY",
-			"self": true,
-			"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
-		},
+		"targetType": null,
 		"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.MeteorsAttack", "delay": 0, "landDuration": 0.4, "xOffset": 100, "yOffset": 110, "cooldown": 0.4 }
 	}
 },
@@ -2176,7 +2150,7 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 15 },
 	"vocType": "PROJECTILE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 19,
 	"characters": [
 		{ "id": 49 }
@@ -2236,7 +2210,7 @@
 	"id": { "id": 16 },
 	"role": "EFFECT",
 	"vocType": "SPAWN",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 20,
 	"tags": [ "AREA_DEFENSE", "COUNTER", "AFFECTS_ENEMY", "SPAWN" ],
 	"preview": {
@@ -2271,7 +2245,7 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 17 },
 	"vocType": "PROJECTILE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 21,
 	"characters": [
 		{ "id": 3 },
@@ -2319,7 +2293,7 @@
 	"id": { "id": 18 },
 	"role": "GUARD",
 	"vocType": "DAMAGE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 14,
 	"characters": [
 		{ "id": 2 }
@@ -2355,7 +2329,7 @@
 	"id": { "id": 19 },
 	"role": "EXECUTION",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 22,
 	"characters": [
 		{ "id": 24 }
@@ -2375,7 +2349,7 @@
 		"property": {
 			"element": "WATER",
 			"ailments": [
-				{ "type": "SPEED", "intensity": 0.35, "duration": 2.5 }
+				{ "type": "SPEED", "intensity": 0.35 }
 			]
 		},
 		"targetType": {
@@ -2389,7 +2363,7 @@
 	"id": { "id": 20 },
 	"role": "EXECUTION",
 	"vocType": "PROJECTILE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 23,
 	"characters": [
 		{ "id": 13 },
@@ -2412,11 +2386,7 @@
 			"crushPower": 100,
 			"panel": "SNOW"
 		},
-		"targetType": {
-			"party": "FRIENDLY",
-			"self": true,
-			"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
-		},
+		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ThrowAttack",
 			"selectedXTile": 2,
@@ -2456,7 +2426,7 @@
 	"id": { "id": 21 },
 	"role": "EXECUTION",
 	"vocType": "DAMAGE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 24,
 	"characters": [
 		{ "id": 6 }
@@ -2532,7 +2502,7 @@
 	"id": { "id": 23 },
 	"role": "EXECUTION",
 	"vocType": "DAMAGE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 25,
 	"characters": [
 		{ "id": 23 },
@@ -2570,7 +2540,7 @@
 	"id": { "id": 25 },
 	"role": "EXECUTION",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 27,
 	"tags": [ "AFFECTS_ALLY" ],
 	"preview": {
@@ -2594,7 +2564,7 @@
 	"id": { "id": 26 },
 	"role": "EXECUTION",
 	"vocType": "DAMAGE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 28,
 	"characters": [
 		{},
@@ -2635,7 +2605,7 @@
 	"id": { "id": 27 },
 	"role": "EXECUTION",
 	"vocType": "DAMAGE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 29,
 	"characters": [
 		{ "id": 11 }
@@ -2670,10 +2640,10 @@
 	"id": { "id": 29 },
 	"role": "EXECUTION",
 	"vocType": "PROJECTILE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 30,
 	"tags": [ "AREA_OFFENSE", "AFFECTS_ENEMY", "THROW" ],
-	"optimalPosition": { "xType": "CLOSER", "xDistance": 5, "yType": "EQUAL" },
+	"optimalPosition": { "xType": "CLOSER", "xDistance": 4, "yType": "EQUAL" },
 	"preview": {},
 	"attackShell": {
 		"nameMessage": "gamedata|Voc.Explant.Name",
@@ -2706,7 +2676,7 @@
 	"id": { "id": 30 },
 	"role": "EFFECT",
 	"vocType": "SPAWN",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 31,
 	"tags": [ "BUFF", "AFFECTS_ENEMY", "SPAWN" ],
 	"preview": {
@@ -2734,7 +2704,7 @@
 	"id": { "id": 31 },
 	"role": "EXECUTION",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 32,
 	"characters": [
 		{ "id": 9 },
@@ -2779,7 +2749,7 @@
 	"id": { "id": 32 },
 	"role": "GUARD",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 33,
 	"tags": [ "AFFECTS_ALLY" ],
 	"preview": {},
@@ -2897,7 +2867,7 @@
 	"id": { "id": 35 },
 	"role": "EFFECT",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 34,
 	"characters": [
 		{ "id": 9 },
@@ -2917,7 +2887,6 @@
 		"property": {
 			"element": "ELEC",
 			"ailments": [
-				{ "type": "FLASH" },
 				{ "type": "BLINDED", "duration": 6 }
 			],
 			"crushPower": 150
@@ -2939,7 +2908,7 @@
 	"id": { "id": 36 },
 	"role": "EFFECT",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 42,
 	"characters": [
 		{ "id": 7 },
@@ -2956,7 +2925,6 @@
 		"property": {
 			"element": "ELEC",
 			"ailments": [
-				{ "type": "FLASH" },
 				{ "type": "BLINDED", "duration": 2.5 }
 			],
 			"power": 140,
@@ -2989,7 +2957,7 @@
 	"id": { "id": 42 },
 	"role": "EXECUTION",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 35,
 	"characters": [
 		{ "id": 24 }
@@ -3011,22 +2979,20 @@
 				{ "type": "FLINCHING" }
 			],
 			"power": 250,
-			"crushPower": 300,
-			"panel": "BROKEN"
+			"crushPower": 300
 		},
 		"targetType": {},
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.guarding.CounterWrapperAttack",
 			"wrapper": {
 				"attack": {
-					"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
-					"limiter": {},
+					"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
+					"limiter": { "limit": true, "id": "IceCube", "countGlobal": true },
 					"checkBounds": false,
 					"checkOccupied": false,
 					"xOffset": 0,
-					"target": true,
-					"type": "BOULDER",
-					"entity": { "id": 34 }
+					"entity": { "id": 174 },
+					"overrideHit": true
 				}
 			},
 			"flicker": true,
@@ -3040,7 +3006,7 @@
 	"id": { "id": 43 },
 	"role": "GUARD",
 	"vocType": "SPAWN",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 36,
 	"characters": [
 		{ "id": 2 },
@@ -3068,7 +3034,7 @@
 		"targetType": {},
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
-			"limiter": { "limit": true, "team": true, "id": "Companion", "countGlobal": true },
+			"limiter": { "limit": true, "id": "Companion", "countGlobal": true },
 			"type": "COMPANION",
 			"entity": { "id": 38 }
 		}
@@ -3079,7 +3045,7 @@
 	"id": { "id": 44 },
 	"role": "EXECUTION",
 	"vocType": "DAMAGE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 37,
 	"characters": [
 		{ "id": 48 }
@@ -3120,7 +3086,7 @@
 	"id": { "id": 45 },
 	"role": "EFFECT",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 38,
 	"characters": [
 		{ "id": 5 }
@@ -3159,7 +3125,7 @@
 	"id": { "id": 46 },
 	"role": "EFFECT",
 	"vocType": "SPAWN",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 41,
 	"characters": [
 		{ "id": 57 }
@@ -3195,7 +3161,7 @@
 	"id": { "id": 47 },
 	"role": "EFFECT",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 40,
 	"tags": [ "COUNTER", "AFFECTS_ENEMY" ],
 	"preview": {
@@ -3275,7 +3241,7 @@
 	"id": { "id": 37 },
 	"role": "EXECUTION",
 	"vocType": "SPAWN",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 39,
 	"characters": [
 		{ "id": 59 }
@@ -3315,7 +3281,7 @@
 	"id": { "id": 38 },
 	"role": "EXECUTION",
 	"vocType": "PROJECTILE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 43,
 	"characters": [
 		{ "id": 23 },
@@ -3392,7 +3358,7 @@
 	"id": { "id": 28 },
 	"role": "GUARD",
 	"vocType": "DAMAGE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 48,
 	"characters": [
 		{ "id": 2 }
@@ -3427,7 +3393,7 @@
 	"id": { "id": 39 },
 	"role": "EXECUTION",
 	"vocType": "DAMAGE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 49,
 	"characters": [
 		{ "id": 7 },
@@ -3464,7 +3430,7 @@
 	"id": { "id": 40 },
 	"role": "EFFECT",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 50,
 	"characters": [
 		{ "id": 49 },
@@ -3480,7 +3446,7 @@
 		"property": {
 			"ailments": [
 				{ "type": "SPEED", "intensity": -0.35 },
-				{ "type": "BERSERK", "intensity": 0.3 }
+				{ "type": "BERSERK", "intensity": 0.2 }
 			]
 		},
 		"targetType": {
@@ -3496,7 +3462,7 @@
 	"id": { "id": 41 },
 	"role": "EFFECT",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 51,
 	"characters": [
 		{ "id": 2 },
@@ -3512,7 +3478,7 @@
 		"level": 1,
 		"property": {
 			"ailments": [
-				{ "type": "BERSERK", "intensity": -0.3 },
+				{ "type": "BERSERK", "intensity": -0.2 },
 				{ "type": "SPEED", "intensity": 0.35 }
 			]
 		},
@@ -3655,7 +3621,7 @@
 	"id": { "id": 50 },
 	"role": "GUARD",
 	"vocType": "SPAWN",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 52,
 	"characters": [
 		{ "id": 7 },
@@ -3677,7 +3643,7 @@
 		"targetType": {},
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
-			"limiter": { "limit": true },
+			"limiter": { "limit": true, "countGlobal": true },
 			"type": "MIRROR",
 			"entity": { "id": 40 }
 		}
@@ -3688,7 +3654,7 @@
 	"id": { "id": 51 },
 	"role": "EFFECT",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 53,
 	"characters": [
 		{ "id": 23 },
@@ -3705,7 +3671,7 @@
 		"level": 2,
 		"property": {
 			"ailments": [
-				{ "type": "PUSH", "intensity": -4 }
+				{ "type": "PUSH", "intensity": -4, "duration": 24 }
 			],
 			"crushPower": 50
 		},
@@ -3715,9 +3681,9 @@
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.StationarySwordAttack",
 			"areas": [
 				{ "x": 1 },
-				{ "timer": 0.025, "x": 2 },
-				{ "timer": 0.05, "x": 3 },
-				{ "timer": 0.075, "x": 4 }
+				{ "timer": 0.04, "x": 2 },
+				{ "timer": 0.08, "x": 3 },
+				{ "timer": 0.12, "x": 4 }
 			],
 			"hitDuration": 0.4,
 			"delay": 0,
@@ -3737,7 +3703,7 @@
 	"id": { "id": 52 },
 	"role": "EFFECT",
 	"vocType": "DAMAGE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 54,
 	"characters": [
 		{ "id": 1 },
@@ -3809,7 +3775,7 @@
 	"id": { "id": 53 },
 	"role": "EFFECT",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 55,
 	"characters": [
 		{ "id": 11 }
@@ -3870,7 +3836,7 @@
 	"id": { "id": 54 },
 	"role": "EFFECT",
 	"vocType": "PROJECTILE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 56,
 	"characters": [
 		{ "id": 9 }
@@ -3886,8 +3852,8 @@
 			"ailments": [
 				{ "type": "AILMENT_STEAL", "intensity": 1 }
 			],
-			"power": 90,
-			"crushPower": 160
+			"power": 70,
+			"crushPower": 170
 		},
 		"targetType": {},
 		"attack": {
@@ -3983,7 +3949,7 @@
 	"id": { "id": 57 },
 	"role": "EXECUTION",
 	"vocType": "PROJECTILE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 57,
 	"characters": [
 		{ "id": 23 },
@@ -4043,7 +4009,7 @@
 	"id": { "id": 58 },
 	"role": "EXECUTION",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 58,
 	"characters": [
 		{ "id": 7 }
@@ -4065,7 +4031,7 @@
 	"id": { "id": 59 },
 	"role": "GUARD",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 59,
 	"characters": [
 		{ "id": 5 },
@@ -4097,7 +4063,7 @@
 	"id": { "id": 60 },
 	"role": "EFFECT",
 	"vocType": "PROJECTILE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 60,
 	"characters": [
 		{ "id": 13 },
@@ -4112,10 +4078,10 @@
 		"property": {
 			"element": "WATER",
 			"ailments": [
-				{ "type": "SPEED", "intensity": -0.35, "duration": 2 }
+				{ "type": "SPEED", "intensity": -0.35 }
 			],
-			"power": 110,
-			"crushPower": 100
+			"power": 130,
+			"crushPower": 130
 		},
 		"targetType": {},
 		"attack": {
@@ -4141,7 +4107,7 @@
 	"id": { "id": 61 },
 	"role": "GUARD",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 61,
 	"tags": [ "COUNTER", "AFFECTS_ALLY", "HEAL" ],
 	"preview": {
@@ -4171,7 +4137,7 @@
 					"shareHitproperty": true,
 					"wrappers": [
 						{
-							"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.modifiers.ToHealModifierAttack", "percent": 1.5 }
+							"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.modifiers.ToHealModifierAttack", "percent": 1.25 }
 						},
 						{
 							"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.status.AilmentInflicterAttack" }
@@ -4194,7 +4160,7 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 62 },
 	"vocType": "PROJECTILE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 62,
 	"characters": [
 		{ "id": 13 }
@@ -4252,7 +4218,7 @@
 	"id": { "id": 63 },
 	"role": "EFFECT",
 	"vocType": "SPAWN",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 63,
 	"characters": [
 		{ "id": 4 },
@@ -4307,7 +4273,7 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 64 },
 	"vocType": "DAMAGE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 64,
 	"characters": [
 		{ "id": 5 },
@@ -4350,7 +4316,7 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 65 },
 	"vocType": "DAMAGE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 65,
 	"characters": [
 		{ "id": 49 },
@@ -5300,7 +5266,7 @@
 	"id": { "id": 78 },
 	"role": "GUARD",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 122,
 	"characters": [
 		{ "id": 21 }
@@ -5468,7 +5434,7 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 82 },
 	"vocType": "DAMAGE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 89,
 	"characters": [
 		{ "id": 2 },
@@ -5530,7 +5496,7 @@
 	"id": { "id": 83 },
 	"role": "EXECUTION",
 	"vocType": "CAST",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 88,
 	"characters": [
 		{ "id": 13 },
@@ -5562,7 +5528,7 @@
 	"id": { "id": 84 },
 	"role": "EFFECT",
 	"vocType": "PROJECTILE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 123,
 	"characters": [
 		{ "id": 23 },
@@ -5611,7 +5577,7 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 85 },
 	"vocType": "PROJECTILE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 121,
 	"characters": [
 		{},
@@ -5679,7 +5645,7 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 86 },
 	"vocType": "PROJECTILE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 120,
 	"characters": [
 		{ "id": 2 },
@@ -6118,7 +6084,7 @@
 	"id": { "id": 96 },
 	"role": "GUARD",
 	"vocType": "DAMAGE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 124,
 	"characters": [
 		{},
@@ -6337,7 +6303,7 @@
 	"id": { "id": 3 },
 	"role": "EXECUTION",
 	"vocType": "SPAWN",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 125,
 	"characters": [
 		{ "id": 3 }
@@ -6391,28 +6357,6 @@
 },
 {
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
-	"id": { "id": 104 },
-	"vocType": "DAMAGE",
-	"tags": [ "ATTACK" ],
-	"optimalPosition": { "xType": "EQUAL", "xDistance": 1, "yType": "EQUAL" },
-	"minimalPosition": { "xType": "EQUAL", "xDistance": 1, "yType": "IGNORE" },
-	"preview": {},
-	"attackShell": {
-		"nameMessage": "|Bombicide",
-		"descriptionMessage": "|tututut",
-		"interruptable": false,
-		"property": { "power": 2000 },
-		"party": "ENEMY",
-		"targetType": {
-			"self": true,
-			"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
-		},
-		"attackAnimation": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" },
-		"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.status.DirectAttack" }
-	}
-},
-{
-	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 4 },
 	"preview": {},
 	"attackShell": {
@@ -6447,7 +6391,7 @@
 	"id": { "id": 105 },
 	"role": "GUARD",
 	"vocType": "SPAWN",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 126,
 	"characters": [
 		{ "id": 21 },
@@ -6467,7 +6411,7 @@
 		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
-			"limiter": { "limit": true },
+			"limiter": { "limit": true, "countGlobal": true },
 			"xOffset": 3,
 			"entity": { "id": 116 },
 			"overrideHit": true
@@ -6502,7 +6446,7 @@
 	"id": { "id": 107 },
 	"role": "EFFECT",
 	"vocType": "DAMAGE",
-	"visible": true,
+	"unlockCondition": {},
 	"imageIndex": 127,
 	"characters": [
 		{},
@@ -6563,6 +6507,7 @@
 					"particle": { "id": 12 }
 				}
 			],
+			"sound": { "sound": "battle/programs/inksplash.wav" },
 			"separateHits": true
 		}
 	}
@@ -6935,6 +6880,7 @@
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
 			"limiter": { "limit": true, "id": "" },
+			"checkOccupied": false,
 			"xOffset": 2,
 			"entity": { "id": 121 },
 			"spawnedName": ""
@@ -7839,6 +7785,76 @@
 				{ "invisible": true },
 				{ "invisible": true, "xOffset": 0, "yOffset": -1 }
 			]
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 101 },
+	"preview": {},
+	"attackShell": {
+		"nameMessage": "|Volt Down",
+		"property": {
+			"element": "ELEC",
+			"ailments": [
+				{ "type": "STUN", "duration": 0.3 }
+			],
+			"power": 160,
+			"crushPower": 200
+		},
+		"targetType": {},
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
+			"attacks": [
+				{
+					"speed": [
+						{ "xSpeed": 200, "ySpeed": -245, "overwrite": true, "sineSpeedX": 30, "sineSpeedY": 15, "delay": 0.26 },
+						{ "xSpeed": -400, "overwrite": true, "delay": 0.4 }
+					],
+					"stick": {}
+				}
+			],
+			"limitX": 6,
+			"piercing": true,
+			"drawable": {
+				"drawable": { "id": 153 }
+			},
+			"trace": false
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 104 },
+	"preview": {},
+	"attackShell": {
+		"nameMessage": "|Volt Up",
+		"property": {
+			"element": "ELEC",
+			"ailments": [
+				{ "type": "STUN", "duration": 0.3 }
+			],
+			"power": 160,
+			"crushPower": 200
+		},
+		"targetType": {},
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
+			"attacks": [
+				{
+					"speed": [
+						{ "xSpeed": 200, "ySpeed": 245, "overwrite": true, "sineSpeedX": 30, "sineSpeedY": 15, "delay": 0.26 },
+						{ "xSpeed": -400, "overwrite": true, "delay": 0.4 }
+					],
+					"stick": {}
+				}
+			],
+			"limitX": 4,
+			"piercing": true,
+			"drawable": {
+				"drawable": { "id": 153 }
+			},
+			"trace": false
 		}
 	}
 }

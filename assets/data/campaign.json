@@ -16,7 +16,6 @@
 			"battle": { "id": 3 },
 			"dialogue": { "id": 3 },
 			"dialogueAfter": { "id": 5 },
-			"timeOneStar": 30,
 			"timeTwoStars": 20,
 			"onLoad": {
 				"class": "com.one2b3.endcycle.features.scripts.ScriptList",
@@ -38,7 +37,6 @@
 			"dialogueDelay": 0.6,
 			"dialogueAfter": { "id": 7 },
 			"endAfterDialogue": false,
-			"timeOneStar": 30,
 			"timeTwoStars": 20,
 			"onLoad": {
 				"class": "com.one2b3.endcycle.features.scripts.ScriptList",
@@ -62,7 +60,6 @@
 			"dialogue": { "id": 9 },
 			"dialogueAfter": { "id": 10 },
 			"startAfterDialogue": false,
-			"timeOneStar": 30,
 			"timeTwoStars": 20,
 			"onLoad": {},
 			"onWin": {}
@@ -75,6 +72,7 @@
 			"battle": { "id": 6 },
 			"dialogue": { "id": 11 },
 			"startAfterDialogue": false,
+			"timeOneStar": 60,
 			"onLoad": { "class": "com.one2b3.endcycle.features.scripts.ScriptList" },
 			"onWin": {}
 		},
@@ -818,6 +816,9 @@
 			"dialogueAfter": { "id": 837 },
 			"startAfterDialogue": false,
 			"endAfterDialogue": false,
+			"attackStar": 30,
+			"timeOneStar": 80,
+			"timeTwoStars": 50,
 			"onLoad": {
 				"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 				"scripts": [
@@ -869,6 +870,9 @@
 			"dialogueAfter": { "id": 843 },
 			"startAfterDialogue": false,
 			"endAfterDialogue": false,
+			"attackStar": 25,
+			"timeOneStar": 100,
+			"timeTwoStars": 75,
 			"onLoad": {
 				"class": "com.one2b3.endcycle.features.scripts.ScriptList",
 				"scripts": [
@@ -927,6 +931,7 @@
 			"battle": { "id": 153 },
 			"startAfterDialogue": false,
 			"endAfterDialogue": false,
+			"attackStar": 20,
 			"onLoad": {
 				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
 				"script": { "id": 229 }
@@ -1013,6 +1018,9 @@
 			"dialogueAfter": { "id": 866 },
 			"startAfterDialogue": false,
 			"endAfterDialogue": false,
+			"attackStar": 25,
+			"timeOneStar": 60,
+			"timeTwoStars": 45,
 			"onLoad": { "class": "com.one2b3.endcycle.features.scripts.battle.SwitchPlayerScript", "entity": "yven" },
 			"onWin": {
 				"class": "com.one2b3.endcycle.features.scripts.ScriptList",
@@ -1046,6 +1054,9 @@
 			"dialogue": { "id": 869 },
 			"endAfterDialogue": false,
 			"autoWin": false,
+			"attackStar": 35,
+			"timeOneStar": 90,
+			"timeTwoStars": 60,
 			"onWin": {
 				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
 				"script": { "id": 237 }

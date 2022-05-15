@@ -1304,6 +1304,13 @@
 			"conditions": [
 				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnHitCondition", "element": "ELEC" }
 			]
+		},
+		{
+			"action": { "id": 157 },
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnEmptyChangeCondition", "all": false }
+			]
 		}
 	],
 	"acts": [
@@ -1313,6 +1320,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"uses": 4,
 			"voc": { "id": 24 }
 		},
 		{
@@ -6013,11 +6021,12 @@
 	"id": { "id": 156 },
 	"name": "Bombarbara CF 5",
 	"target": {
-		"party": "ENEMY",
+		"party": "FRIENDLY",
+		"notParty": true,
 		"inSight": false,
 		"facing": true,
 		"invert": true,
-		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerSameCol" }
 	},
 	"change": [
 		{
@@ -6039,18 +6048,16 @@
 {
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 157 },
-	"name": "Bombicide CF 5",
+	"name": "Kill Entity",
 	"resetStatus": true,
 	"target": {
-		"party": "ENEMY",
+		"party": "FRIENDLY",
+		"notParty": true,
 		"invert": true,
 		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
 	},
 	"acts": [
-		{
-			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
-			"voc": { "id": 104 }
-		}
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.KillAct" }
 	]
 },
 {
@@ -6108,8 +6115,6 @@
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 160 },
 	"name": "Tankitty Factory Move Down",
-	"autoTurn": true,
-	"rememberMove": true,
 	"target": {
 		"party": "ENEMY",
 		"invert": true,
@@ -6117,27 +6122,22 @@
 	},
 	"change": [
 		{
-			"action": { "id": 162 },
-			"conditions": [
-				{
-					"class": "com.one2b3.endcycle.features.battle.ai.changes.TargetPositionChangeCondition",
-					"position": { "xType": "FURTHER", "xDistance": 1, "yType": "EQUAL" }
-				},
-				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 2 }
-			]
-		},
-		{
 			"action": { "id": 165 },
 			"conditions": [
-				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" }
+				{
+					"class": "com.one2b3.endcycle.features.battle.ai.changes.EntityPositionChangeCondition",
+					"position": { "yType": "EQUAL", "yDistance": 4 }
+				}
 			]
 		}
 	],
 	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "LEFT" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1, "yTile": 1 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
-			"voc": { "id": 10040 }
+			"time": 1.7,
+			"voc": { "id": 101 }
 		}
 	]
 },
@@ -6175,7 +6175,8 @@
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"time": 2,
-			"voc": { "id": 10013 }
+			"voc": { "id": 10013 },
+			"style": { "id": 14 }
 		}
 	]
 },
@@ -6183,8 +6184,6 @@
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 163 },
 	"name": "Factory Tankitty Move Up",
-	"autoTurn": true,
-	"rememberMove": true,
 	"target": {
 		"party": "ENEMY",
 		"invert": true,
@@ -6192,39 +6191,23 @@
 	},
 	"change": [
 		{
-			"action": { "id": 164 },
-			"conditions": [
-				{
-					"class": "com.one2b3.endcycle.features.battle.ai.changes.TargetPositionChangeCondition",
-					"position": { "xType": "FURTHER", "xDistance": 1, "yType": "EQUAL" }
-				},
-				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 2 }
-			]
-		},
-		{
 			"action": { "id": 166 },
 			"conditions": [
-				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnInaccessiblePanelChangeCondition" }
+				{
+					"class": "com.one2b3.endcycle.features.battle.ai.changes.EntityPositionChangeCondition",
+					"position": { "yType": "EQUAL" }
+				}
 			]
 		}
 	],
 	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "RIGHT" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1, "yTile": -1 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
-			"voc": { "id": 10040 }
-		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1, "yTile": -1 },
-		{
-			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
-			"voc": { "id": 10040 }
-		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1, "yTile": -1 },
-		{
-			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
-			"voc": { "id": 10040 }
-		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1, "yTile": -1 }
+			"time": 1.7,
+			"voc": { "id": 104 }
+		}
 	]
 },
 {
@@ -6252,13 +6235,24 @@
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 165 },
 	"name": "Factory Tankitty Move Left",
-	"next": { "id": 163 },
 	"target": {
 		"party": "ENEMY",
 		"invert": true,
 		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
 	},
+	"change": [
+		{
+			"action": { "id": 163 },
+			"conditions": [
+				{
+					"class": "com.one2b3.endcycle.features.battle.ai.changes.EntityPositionChangeCondition",
+					"position": { "xType": "EQUAL" }
+				}
+			]
+		}
+	],
 	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1 },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": -1 }
 	]
 },
@@ -6266,13 +6260,24 @@
 	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
 	"id": { "id": 166 },
 	"name": "Factory Tankitty Move Right",
-	"next": { "id": 160 },
 	"target": {
 		"party": "ENEMY",
 		"invert": true,
 		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
 	},
+	"change": [
+		{
+			"action": { "id": 160 },
+			"conditions": [
+				{
+					"class": "com.one2b3.endcycle.features.battle.ai.changes.EntityPositionChangeCondition",
+					"position": { "xType": "EQUAL", "xDistance": 3 }
+				}
+			]
+		}
+	],
 	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": -1 },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1 }
 	]
 },

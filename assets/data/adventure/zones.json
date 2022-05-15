@@ -2,6 +2,7 @@
 {
 	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
 	"message": "gamedata|BG.Snow",
+	"description": "|A bright ice tundra, filled with mysterious crystalline formations. Supposedly ancient artefacts can be found beneath the ground...\r",
 	"cursorPosition": { "x": 132, "y": 20 },
 	"background": {},
 	"music": { "id": 14 },
@@ -162,10 +163,6 @@
 				},
 				{
 					"event": { "id": 18 }
-				},
-				{
-					"event": { "id": 30 },
-					"maximum": 1
 				}
 			],
 			"minimum": 1,
@@ -199,20 +196,26 @@
 					"maximum": 1
 				},
 				{
-					"event": { "id": 47 }
+					"event": { "id": 47 },
+					"maximum": 1
 				},
 				{
-					"event": { "id": 4 }
+					"event": { "id": 4 },
+					"maximum": 1
+				},
+				{
+					"event": { "id": 99 },
+					"maximum": 1
 				}
 			],
-			"minimum": 2,
+			"minimum": 3,
 			"maximum": 3,
-			"zoneLevel": { "type": "EQUAL", "number": 2 }
+			"appearChance": 1
 		},
 		{
 			"name": "Agent Traps",
 			"icon": {
-				"drawable": { "id": 73 }
+				"drawable": { "id": 569 }
 			},
 			"song": { "id": 17 },
 			"events": [
@@ -229,31 +232,18 @@
 			"appearChance": 0.7
 		},
 		{
-			"name": "Friend Zones",
-			"icon": {
-				"drawable": { "id": 569 }
-			},
-			"events": [
-				{
-					"event": { "id": 70 },
-					"maximum": 1
-				}
-			],
-			"character": { "id": 21 },
-			"characterEqual": true,
-			"appearChance": 0.1
-		},
-		{
 			"name": "Friend Events Del",
 			"icon": {
 				"drawable": { "id": 569 }
 			},
 			"events": [
 				{
-					"event": { "id": 82 }
+					"event": { "id": 82 },
+					"oneTime": true
 				},
 				{
-					"event": { "id": 83 }
+					"event": { "id": 83 },
+					"oneTime": true
 				}
 			],
 			"character": { "id": 9 },
@@ -270,11 +260,13 @@
 			"events": [
 				{
 					"event": { "id": 70 },
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				},
 				{
 					"event": { "id": 81 },
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				}
 			],
 			"character": { "id": 21 },
@@ -290,7 +282,8 @@
 			},
 			"events": [
 				{
-					"event": { "id": 87 }
+					"event": { "id": 87 },
+					"oneTime": true
 				}
 			],
 			"character": { "id": 7 },
@@ -305,7 +298,8 @@
 			},
 			"events": [
 				{
-					"event": { "id": 88 }
+					"event": { "id": 88 },
+					"oneTime": true
 				}
 			],
 			"character": {},
@@ -316,7 +310,8 @@
 			"name": "Guest Event",
 			"events": [
 				{
-					"event": { "id": 91 }
+					"event": { "id": 91 },
+					"oneTime": true
 				}
 			],
 			"character": { "id": 11 },
@@ -366,6 +361,20 @@
 			"minimum": 1,
 			"maximum": 1,
 			"zoneLevel": { "type": "SMALLER", "number": 2 }
+		},
+		{
+			"name": "Miniboss",
+			"icon": {
+				"drawable": { "id": 832 }
+			},
+			"song": { "id": 17 },
+			"events": [
+				{
+					"event": { "id": 104 }
+				}
+			],
+			"minimum": 1,
+			"maximum": 1
 		}
 	],
 	"finalEvents": [
@@ -390,6 +399,7 @@
 	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
 	"id": { "id": 1 },
 	"message": "gamedata|BG.Forest",
+	"description": "|Quiet woods obscuring secrets behind every tree. Despite humanity's best efforts, this forest is still thriving.",
 	"cursorPosition": { "x": 123, "y": 32 },
 	"background": { "id": 2 },
 	"music": { "id": 29 },
@@ -579,7 +589,7 @@
 			"maximum": 1
 		},
 		{
-			"name": "",
+			"name": "Random Events",
 			"events": [
 				{
 					"event": { "id": 44 },
@@ -590,10 +600,16 @@
 					"maximum": 1
 				},
 				{
-					"event": { "id": 47 }
+					"event": { "id": 47 },
+					"maximum": 1
 				},
 				{
-					"event": { "id": 4 }
+					"event": { "id": 4 },
+					"maximum": 1
+				},
+				{
+					"event": { "id": 118 },
+					"maximum": 1
 				}
 			],
 			"minimum": 3,
@@ -618,7 +634,7 @@
 		{
 			"name": "Punk Traps",
 			"icon": {
-				"drawable": { "id": 73 }
+				"drawable": { "id": 569 }
 			},
 			"song": { "id": 17 },
 			"events": [
@@ -642,11 +658,13 @@
 			"events": [
 				{
 					"event": { "id": 72 },
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				},
 				{
 					"event": { "id": 81 },
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				}
 			],
 			"character": { "id": 21 },
@@ -662,11 +680,13 @@
 			"events": [
 				{
 					"event": { "id": 82 },
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				},
 				{
 					"event": { "id": 83 },
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				}
 			],
 			"character": { "id": 9 },
@@ -682,7 +702,8 @@
 			"events": [
 				{
 					"event": { "id": 87 },
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				}
 			],
 			"character": { "id": 7 },
@@ -697,7 +718,8 @@
 			"events": [
 				{
 					"event": { "id": 88 },
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				}
 			],
 			"character": {},
@@ -709,7 +731,8 @@
 			"events": [
 				{
 					"event": { "id": 91 },
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				}
 			],
 			"character": { "id": 11 },
@@ -738,6 +761,20 @@
 			"minimum": 1,
 			"maximum": 1,
 			"zoneLevel": { "type": "EQUAL", "number": 2 }
+		},
+		{
+			"name": "Miniboss",
+			"icon": {
+				"drawable": { "id": 832 }
+			},
+			"song": { "id": 17 },
+			"events": [
+				{
+					"event": { "id": 112 }
+				}
+			],
+			"minimum": 1,
+			"maximum": 1
 		}
 	],
 	"finalEvents": [
@@ -764,6 +801,7 @@
 	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
 	"id": { "id": 2 },
 	"message": "gamedata|BG.City",
+	"description": "|This city is creating its own artificial gravity through rotation. It was built beneath a crater which is known for attracting hundreds of asteroids everyday.\r",
 	"cursorPosition": { "x": 114, "y": 72 },
 	"background": { "id": 12 },
 	"music": { "id": 16 },
@@ -952,7 +990,16 @@
 					"maximum": 1
 				},
 				{
-					"event": { "id": 4 }
+					"event": { "id": 4 },
+					"maximum": 1
+				},
+				{
+					"event": { "id": 47 },
+					"maximum": 1
+				},
+				{
+					"event": { "id": 119 },
+					"maximum": 1
 				}
 			],
 			"minimum": 1,
@@ -1005,15 +1052,18 @@
 			"events": [
 				{
 					"event": { "id": 70 },
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				},
 				{
 					"event": { "id": 81 },
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				},
 				{
 					"event": { "id": 72 },
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				}
 			],
 			"character": { "id": 21 },
@@ -1029,11 +1079,13 @@
 			"events": [
 				{
 					"event": { "id": 82 },
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				},
 				{
 					"event": { "id": 83 },
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				}
 			],
 			"character": { "id": 9 },
@@ -1049,7 +1101,8 @@
 			"events": [
 				{
 					"event": { "id": 87 },
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				}
 			],
 			"character": { "id": 7 },
@@ -1064,7 +1117,8 @@
 			"events": [
 				{
 					"event": { "id": 88 },
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				}
 			],
 			"character": {},
@@ -1077,7 +1131,8 @@
 			"events": [
 				{
 					"event": { "id": 91 },
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				}
 			],
 			"character": { "id": 11 },
@@ -1107,6 +1162,20 @@
 			"minimum": 1,
 			"maximum": 1,
 			"zoneLevel": { "type": "EQUAL", "number": 2 }
+		},
+		{
+			"name": "Miniboss",
+			"icon": {
+				"drawable": { "id": 832 }
+			},
+			"song": { "id": 17 },
+			"events": [
+				{
+					"event": { "id": 113 }
+				}
+			],
+			"minimum": 1,
+			"maximum": 1
 		}
 	],
 	"finalEvents": [
@@ -1131,6 +1200,7 @@
 	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
 	"id": { "id": 3 },
 	"message": "gamedata|BG.Clock",
+	"description": "|One of many factories built by Azure Shield in order to produce everyday necessities like VOCs. Expands and contracts through the use of a house-sized Voxel Generator.",
 	"cursorPosition": { "x": 71, "y": 24 },
 	"background": { "id": 5 },
 	"music": { "id": 24 },
@@ -1335,14 +1405,15 @@
 				},
 				{
 					"event": { "id": 47 },
-					"maximum": 2
+					"maximum": 1
 				},
 				{
-					"event": { "id": 4 }
+					"event": { "id": 4 },
+					"maximum": 1
 				},
 				{
-					"event": { "id": 5 },
-					"chance": 0.5
+					"event": { "id": 122 },
+					"maximum": 1
 				}
 			],
 			"minimum": 2,
@@ -1395,11 +1466,13 @@
 			"events": [
 				{
 					"event": { "id": 72 },
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				},
 				{
 					"event": { "id": 81 },
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				}
 			],
 			"character": { "id": 21 },
@@ -1416,11 +1489,13 @@
 			"events": [
 				{
 					"event": { "id": 82 },
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				},
 				{
 					"event": { "id": 83 },
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				}
 			],
 			"character": { "id": 9 },
@@ -1437,7 +1512,8 @@
 			"events": [
 				{
 					"event": { "id": 87 },
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				}
 			],
 			"character": { "id": 7 },
@@ -1452,7 +1528,8 @@
 			"events": [
 				{
 					"event": { "id": 88 },
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				}
 			],
 			"character": {},
@@ -1464,7 +1541,8 @@
 			"events": [
 				{
 					"event": { "id": 91 },
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				}
 			],
 			"character": { "id": 11 },
@@ -1494,6 +1572,20 @@
 			"minimum": 1,
 			"maximum": 1,
 			"zoneLevel": { "type": "SMALLER", "number": 2 }
+		},
+		{
+			"name": "Miniboss",
+			"icon": {
+				"drawable": { "id": 832 }
+			},
+			"song": { "id": 17 },
+			"events": [
+				{
+					"event": { "id": 117 }
+				}
+			],
+			"minimum": 1,
+			"maximum": 1
 		}
 	],
 	"finalEvents": [
@@ -1518,6 +1610,7 @@
 	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
 	"id": { "id": 4 },
 	"message": "gamedata|BG.Desert",
+	"description": "|This desert in the heart of Anika was created by two Godi fighting centuries ago. According to scientists like Del, it is still growing everyday...\r",
 	"cursorPosition": { "x": 83, "y": 72 },
 	"background": { "id": 3 },
 	"music": { "id": 21 },
@@ -1699,10 +1792,15 @@
 				},
 				{
 					"event": { "id": 47 },
-					"maximum": 2
+					"maximum": 1
 				},
 				{
-					"event": { "id": 4 }
+					"event": { "id": 4 },
+					"maximum": 1
+				},
+				{
+					"event": { "id": 120 },
+					"maximum": 1
 				}
 			],
 			"minimum": 2,
@@ -1730,10 +1828,12 @@
 			},
 			"events": [
 				{
-					"event": { "id": 72 }
+					"event": { "id": 72 },
+					"oneTime": true
 				},
 				{
-					"event": { "id": 81 }
+					"event": { "id": 81 },
+					"oneTime": true
 				}
 			],
 			"character": { "id": 21 },
@@ -1749,10 +1849,12 @@
 			},
 			"events": [
 				{
-					"event": { "id": 82 }
+					"event": { "id": 82 },
+					"oneTime": true
 				},
 				{
-					"event": { "id": 83 }
+					"event": { "id": 83 },
+					"oneTime": true
 				}
 			],
 			"character": { "id": 9 },
@@ -1768,7 +1870,8 @@
 			},
 			"events": [
 				{
-					"event": { "id": 87 }
+					"event": { "id": 87 },
+					"oneTime": true
 				}
 			],
 			"character": { "id": 7 },
@@ -1783,7 +1886,8 @@
 			},
 			"events": [
 				{
-					"event": { "id": 88 }
+					"event": { "id": 88 },
+					"oneTime": true
 				}
 			],
 			"character": {},
@@ -1794,7 +1898,8 @@
 			"name": "Guest Event",
 			"events": [
 				{
-					"event": { "id": 91 }
+					"event": { "id": 91 },
+					"oneTime": true
 				}
 			],
 			"character": { "id": 11 },
@@ -1833,6 +1938,20 @@
 			"minimum": 1,
 			"maximum": 1,
 			"zoneLevel": { "type": "SMALLER", "number": 2 }
+		},
+		{
+			"name": "Miniboss",
+			"icon": {
+				"drawable": { "id": 832 }
+			},
+			"song": { "id": 17 },
+			"events": [
+				{
+					"event": { "id": 114 }
+				}
+			],
+			"minimum": 1,
+			"maximum": 1
 		}
 	],
 	"finalEvents": [
@@ -1857,6 +1976,7 @@
 	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
 	"id": { "id": 6 },
 	"message": "gamedata|BG.Beach",
+	"description": "|This beach is one of the few safe swimming spots in Anikka making it very popular among those that can afford vacations.",
 	"cursorPosition": { "x": 30, "y": 54 },
 	"background": { "id": 21 },
 	"music": { "id": 12 },
@@ -2072,6 +2192,14 @@
 				},
 				{
 					"event": { "id": 4 }
+				},
+				{
+					"event": { "id": 47 },
+					"maximum": 1
+				},
+				{
+					"event": { "id": 123 },
+					"maximum": 1
 				}
 			],
 			"minimum": 2,
@@ -2086,11 +2214,13 @@
 				{
 					"event": { "id": 72 },
 					"chance": 0.2,
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				},
 				{
 					"event": { "id": 81 },
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				}
 			],
 			"character": { "id": 21 },
@@ -2107,12 +2237,14 @@
 				{
 					"event": { "id": 82 },
 					"chance": 0.2,
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				},
 				{
 					"event": { "id": 83 },
 					"chance": 0.2,
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				}
 			],
 			"character": { "id": 9 },
@@ -2130,7 +2262,8 @@
 				{
 					"event": { "id": 87 },
 					"chance": 0.2,
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				}
 			],
 			"character": { "id": 7 },
@@ -2146,7 +2279,8 @@
 			"events": [
 				{
 					"event": { "id": 88 },
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				}
 			],
 			"character": {},
@@ -2160,7 +2294,8 @@
 			"events": [
 				{
 					"event": { "id": 91 },
-					"maximum": 1
+					"maximum": 1,
+					"oneTime": true
 				}
 			],
 			"character": { "id": 11 },
@@ -2231,6 +2366,20 @@
 			"minimum": 1,
 			"maximum": 1,
 			"zoneLevel": { "type": "SMALLER", "number": 2 }
+		},
+		{
+			"name": "Miniboss",
+			"icon": {
+				"drawable": { "id": 832 }
+			},
+			"song": { "id": 17 },
+			"events": [
+				{
+					"event": { "id": 115 }
+				}
+			],
+			"minimum": 1,
+			"maximum": 1
 		}
 	],
 	"finalEvents": [
@@ -2325,6 +2474,7 @@
 	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
 	"id": { "id": 8 },
 	"message": "gamedata|BG.Dark",
+	"description": "|Midius is a thriving little town, filled with bustling squares and beautiful fountains. The community has received great support from De- DESTINATION NO LONGER POPULATED",
 	"cursorPosition": { "x": 10, "y": 17 },
 	"background": { "id": 17 },
 	"music": { "id": 22 },
@@ -2342,6 +2492,7 @@
 	],
 	"randomEvents": [
 		{
+			"name": "Noises",
 			"icon": {
 				"drawable": { "id": 567 }
 			},
@@ -2406,6 +2557,7 @@
 			]
 		},
 		{
+			"name": "Portal",
 			"events": [
 				{
 					"event": { "id": 57 }
@@ -2417,6 +2569,7 @@
 			"maximum": 1
 		},
 		{
+			"name": "Random Events",
 			"events": [
 				{
 					"event": { "id": 4 },
@@ -2424,9 +2577,26 @@
 				},
 				{
 					"event": { "id": 5 }
+				},
+				{
+					"event": { "id": 121 }
 				}
 			],
-			"minimum": 1,
+			"minimum": 3,
+			"maximum": 3
+		},
+		{
+			"name": "Miniboss",
+			"icon": {
+				"drawable": { "id": 832 }
+			},
+			"song": { "id": 17 },
+			"events": [
+				{
+					"event": { "id": 116 }
+				}
+			],
+			"minimum": 3,
 			"maximum": 3
 		}
 	],
@@ -2503,10 +2673,20 @@
 			},
 			"events": [
 				{
-					"event": { "id": 4 }
+					"event": { "id": 4 },
+					"maximum": 1
 				},
 				{
-					"event": { "id": 5 }
+					"event": { "id": 5 },
+					"maximum": 1
+				},
+				{
+					"event": { "id": 125 },
+					"maximum": 1
+				},
+				{
+					"event": { "id": 47 },
+					"maximum": 1
 				}
 			],
 			"entityModes": [
@@ -2515,7 +2695,20 @@
 					"mode": { "class": "com.one2b3.endcycle.features.battle.mode.MurkEntityMode" }
 				}
 			],
-			"minimum": 1,
+			"minimum": 2,
+			"maximum": 2
+		},
+		{
+			"icon": {
+				"drawable": { "id": 832 }
+			},
+			"song": { "id": 17 },
+			"events": [
+				{
+					"event": { "id": 124 }
+				}
+			],
+			"minimum": 2,
 			"maximum": 2
 		}
 	],
@@ -2889,7 +3082,8 @@
 			},
 			"events": [
 				{
-					"event": { "id": 26 }
+					"event": { "id": 26 },
+					"oneTime": true
 				}
 			],
 			"maximum": 1
@@ -2910,6 +3104,9 @@
 				}
 			]
 		}
+	],
+	"followUpZones": [
+		{ "id": 7 }
 	]
 },
 {
@@ -2925,5 +3122,77 @@
 	"message": "|Ambervale (Campaign)",
 	"secret": true,
 	"cursorPosition": { "x": 54, "y": 73 }
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.AdventureZone",
+	"id": { "id": 16 },
+	"dataName": "Ancient Ruins (Unlocked)",
+	"message": "gamedata|BG.Ruins",
+	"description": "|It is unclear why Azure Shield relocated their HQ from the futuristic Astrat to a sandy wasteland. Only accessible with Azure ID.",
+	"secret": true,
+	"cursorPosition": { "x": 74, "y": 62 },
+	"background": { "id": 7 },
+	"music": { "id": 28 },
+	"pathLength": 2,
+	"pathLengthDeviation": 0,
+	"branches": 1,
+	"branchDeviation": 0,
+	"branchDistanceY": 11,
+	"randomEvents": [
+		{
+			"icon": {
+				"drawable": { "id": 564 }
+			},
+			"events": [
+				{
+					"event": { "id": 8 }
+				},
+				{
+					"event": { "id": 17 }
+				},
+				{
+					"event": { "id": 18 }
+				}
+			]
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 30 }
+				}
+			],
+			"minimum": 1,
+			"maximum": 1
+		}
+	],
+	"finalEvents": [
+		{
+			"name": "Boss",
+			"events": [
+				{
+					"event": { "id": 33 }
+				}
+			],
+			"character": { "id": 9 },
+			"characterEqual": true
+		},
+		{
+			"name": "Boss",
+			"events": [
+				{
+					"event": { "id": 61 }
+				}
+			],
+			"character": { "id": 9 },
+			"characterEqual": false
+		},
+		{
+			"events": [
+				{
+					"event": { "id": 1 }
+				}
+			]
+		}
+	]
 }
 ]

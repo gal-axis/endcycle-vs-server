@@ -70,8 +70,17 @@
 								}
 							],
 							"defaultScript": {
-								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
-								"script": { "id": 66 }
+								"class": "com.one2b3.endcycle.features.scripts.battle.RandomScript",
+								"scripts": [
+									{
+										"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+										"script": { "id": 66 }
+									},
+									{
+										"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+										"script": { "id": 251 }
+									}
+								]
 							}
 						}
 					}
@@ -326,8 +335,17 @@
 									}
 								],
 								"defaultScript": {
-									"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
-									"script": { "id": 44 }
+									"class": "com.one2b3.endcycle.features.scripts.battle.RandomScript",
+									"scripts": [
+										{
+											"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+											"script": { "id": 44 }
+										},
+										{
+											"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+											"script": { "id": 250 }
+										}
+									]
 								}
 							}
 						}
@@ -2634,6 +2652,18 @@
 					{
 						"dialogue": { "id": 444 },
 						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 876 },
+						"entity": { "id": 59 }
+					},
+					{
+						"dialogue": { "id": 877 },
+						"entity": { "id": 59 }
+					},
+					{
+						"dialogue": { "id": 878 },
+						"entity": { "id": 59 }
 					}
 				],
 				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
@@ -3971,6 +4001,30 @@
 					{
 						"dialogue": { "id": 347 },
 						"entity": { "id": 9 }
+					},
+					{
+						"dialogue": { "id": 879 },
+						"entity": { "id": 59 }
+					},
+					{
+						"dialogue": { "id": 880 },
+						"entity": { "id": 59 }
+					},
+					{
+						"dialogue": { "id": 881 },
+						"entity": { "id": 59 }
+					},
+					{
+						"dialogue": { "id": 882 },
+						"entity": { "id": 59 }
+					},
+					{
+						"dialogue": { "id": 883 },
+						"entity": { "id": 59 }
+					},
+					{
+						"dialogue": { "id": 884 },
+						"entity": { "id": 59 }
 					}
 				],
 				"name": "agent_2",
@@ -7383,22 +7437,12 @@
 	"scripts": [
 		{
 			"script": {
-				"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
-				"speed": 2,
-				"layer": 14,
+				"class": "com.one2b3.endcycle.features.scripts.battle.OverlayBattleScript",
+				"overlay": { "id": 6 },
+				"fade": true,
 				"onFinish": {
-					"class": "com.one2b3.endcycle.features.scripts.battle.OverlayBattleScript",
-					"overlay": { "id": 6 },
-					"onFinish": {
-						"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
-						"speed": 2,
-						"stop": true,
-						"layer": 14,
-						"onFinish": {
-							"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
-							"script": { "id": 214 }
-						}
-					}
+					"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+					"script": { "id": 214 }
 				}
 			}
 		}
@@ -7610,14 +7654,14 @@
 			}
 		},
 		{
-			"delay": 33,
+			"delay": 33.5,
 			"script": {
 				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
 				"script": { "id": 198 }
 			}
 		},
 		{
-			"delay": 53,
+			"delay": 53.5,
 			"script": {
 				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
 				"script": { "id": 199 }
@@ -8482,7 +8526,7 @@
 			"script": {
 				"class": "com.one2b3.endcycle.features.scripts.general.SetStateScript",
 				"name": "cress",
-				"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "DEATH" }
+				"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "Hurt" }
 			}
 		},
 		{
@@ -8490,7 +8534,7 @@
 			"script": {
 				"class": "com.one2b3.endcycle.features.scripts.general.SetStateScript",
 				"name": "cress",
-				"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "DEATH" }
+				"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "Hurt" }
 			}
 		}
 	]
@@ -8603,6 +8647,383 @@
 				"help": { "id": 56 },
 				"firstOnly": true,
 				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShowZoneScript" }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 243 },
+	"name": "A-Miniboss Glacial",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 885 }
+					},
+					{
+						"dialogue": { "id": 886 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.KillEntityScript", "name": "tablet" }
+						},
+						{
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureTriggerScript",
+								"trigger": {
+									"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.MiniBossEventTrigger",
+									"noises": [
+										{ "id": 24 },
+										{ "id": 4 },
+										{ "id": 12 }
+									],
+									"modes": [
+										{ "class": "com.one2b3.endcycle.features.battle.mode.BigEntityMode" },
+										{ "class": "com.one2b3.endcycle.features.battle.mode.SplitEntityMode", "power": 0.33 }
+									]
+								}
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 244 },
+	"name": "A-Miniboss Forest",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 887 }
+					},
+					{
+						"dialogue": { "id": 888 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.KillEntityScript", "name": "tablet" }
+						},
+						{
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureTriggerScript",
+								"trigger": {
+									"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.MiniBossEventTrigger",
+									"noises": [
+										{ "id": 57 },
+										{ "id": 3 },
+										{ "id": 4 }
+									],
+									"modes": [
+										{ "class": "com.one2b3.endcycle.features.battle.mode.BigEntityMode" },
+										{ "class": "com.one2b3.endcycle.features.battle.mode.SplitEntityMode", "power": 0.33 }
+									]
+								}
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 245 },
+	"name": "A-Miniboss Astrat",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 889 }
+					},
+					{
+						"dialogue": { "id": 890 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.KillEntityScript", "name": "tablet" }
+						},
+						{
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureTriggerScript",
+								"trigger": {
+									"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.MiniBossEventTrigger",
+									"noises": [
+										{ "id": 1 },
+										{ "id": 12 },
+										{ "id": 49 }
+									],
+									"modes": [
+										{ "class": "com.one2b3.endcycle.features.battle.mode.BigEntityMode" },
+										{ "class": "com.one2b3.endcycle.features.battle.mode.SplitEntityMode", "power": 0.33 }
+									]
+								}
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 246 },
+	"name": "A-Miniboss Arahas",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 891 }
+					},
+					{
+						"dialogue": { "id": 893 }
+					},
+					{
+						"dialogue": { "id": 894 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.KillEntityScript", "name": "tablet" }
+						},
+						{
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureTriggerScript",
+								"trigger": {
+									"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.MiniBossEventTrigger",
+									"noises": [
+										{ "id": 49 },
+										{ "id": 6 },
+										{ "id": 1 }
+									],
+									"modes": [
+										{ "class": "com.one2b3.endcycle.features.battle.mode.BigEntityMode" },
+										{ "class": "com.one2b3.endcycle.features.battle.mode.SplitEntityMode", "power": 0.33 }
+									]
+								}
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 247 },
+	"name": "A-Miniboss Myste",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 892 }
+					},
+					{
+						"dialogue": { "id": 895 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.KillEntityScript", "name": "tablet" }
+						},
+						{
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureTriggerScript",
+								"trigger": {
+									"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.MiniBossEventTrigger",
+									"noises": [
+										{ "id": 49 },
+										{ "id": 24 },
+										{ "id": 12 }
+									],
+									"modes": [
+										{ "class": "com.one2b3.endcycle.features.battle.mode.BigEntityMode" },
+										{ "class": "com.one2b3.endcycle.features.battle.mode.SplitEntityMode", "power": 0.33 }
+									]
+								}
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 248 },
+	"name": "A-Miniboss Midius",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 896 }
+					},
+					{
+						"dialogue": { "id": 897 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.KillEntityScript", "name": "tablet" }
+						},
+						{
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureTriggerScript",
+								"trigger": {
+									"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.MiniBossEventTrigger",
+									"noises": [
+										{ "id": 1 },
+										{ "id": 24 },
+										{ "id": 4 },
+										{ "id": 12 },
+										{ "id": 3 },
+										{ "id": 49 },
+										{ "id": 57 },
+										{ "id": 6 }
+									],
+									"modes": [
+										{ "class": "com.one2b3.endcycle.features.battle.mode.BigEntityMode" },
+										{ "class": "com.one2b3.endcycle.features.battle.mode.SplitEntityMode", "power": 0.33 }
+									]
+								}
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 249 },
+	"name": "A-Miniboss Factory",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 898 }
+					},
+					{
+						"dialogue": { "id": 899 }
+					}
+				],
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.battle.KillEntityScript", "name": "tablet" }
+						},
+						{
+							"script": {
+								"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureTriggerScript",
+								"trigger": {
+									"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.MiniBossEventTrigger",
+									"noises": [
+										{ "id": 1 },
+										{ "id": 49 },
+										{ "id": 12 }
+									],
+									"modes": [
+										{ "class": "com.one2b3.endcycle.features.battle.mode.BigEntityMode" },
+										{ "class": "com.one2b3.endcycle.features.battle.mode.SplitEntityMode", "power": 0.33 }
+									]
+								}
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 250 },
+	"name": "A-Punk>Other Sus",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 900 }
+					},
+					{
+						"dialogue": { "id": 901 }
+					},
+					{
+						"dialogue": { "id": 902 }
+					},
+					{
+						"dialogue": { "id": 903 }
+					}
+				],
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureForceBattleScript", "generatePack": true }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 251 },
+	"name": "A-Azure>Other Sus",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+				"dialogues": [
+					{
+						"dialogue": { "id": 904 }
+					},
+					{
+						"dialogue": { "id": 905 }
+					},
+					{
+						"dialogue": { "id": 906 }
+					},
+					{
+						"dialogue": { "id": 907 }
+					}
+				],
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureForceBattleScript", "generatePack": true }
 			}
 		}
 	]

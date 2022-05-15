@@ -1295,7 +1295,25 @@
 	"icon": {
 		"drawable": { "id": 569 }
 	},
-	"battle": { "id": 67 }
+	"battle": { "id": 67 },
+	"rewardItems": [
+		{
+			"item": { "id": 50 }
+		}
+	],
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
+		"onWin": {
+			"class": "com.one2b3.endcycle.features.scripts.adventure.TeleporterScriptActionScript",
+			"name": "teleporter",
+			"combat": false,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.adventure.AdventureChangeZoneScript",
+				"zone": { "id": 10 }
+			}
+		},
+		"onOver": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
+	}
 },
 {
 	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
@@ -2163,10 +2181,8 @@
 	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
 	"id": { "id": 71 },
 	"dataName": "VS Farmadile Zone 0",
-	"icon": {
-		"drawable": { "id": 567 }
-	},
 	"battle": { "id": 34 },
+	"song": { "id": 3 },
 	"practiceData": false,
 	"trigger": {
 		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
@@ -2955,10 +2971,8 @@
 	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
 	"id": { "id": 107 },
 	"dataName": "VS Farmadile Zone 2",
-	"icon": {
-		"drawable": { "id": 567 }
-	},
 	"battle": { "id": 34 },
+	"song": { "id": 3 },
 	"practiceData": false,
 	"trigger": {
 		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
@@ -2986,7 +3000,6 @@
 	"dataName": "VS Greed Froster/Farmadile",
 	"battle": { "id": 35 },
 	"song": { "id": 3 },
-	"practiceData": false,
 	"trigger": {
 		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
 		"entities": [
@@ -3007,6 +3020,7 @@
 	"id": { "id": 109 },
 	"dataName": "VS Fossil Fuel Zone 0",
 	"battle": { "id": 34 },
+	"song": { "id": 3 },
 	"trigger": {
 		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
 		"entities": [
@@ -3022,6 +3036,7 @@
 	"id": { "id": 110 },
 	"dataName": "VS Fossil Fuel Zone 2",
 	"battle": { "id": 34 },
+	"song": { "id": 3 },
 	"practiceData": false,
 	"trigger": {
 		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.BattleEventTrigger",
@@ -3069,6 +3084,883 @@
 			],
 			"power": 100
 		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 99 },
+	"dataName": "Ambush - Glacial",
+	"icon": {
+		"drawable": { "id": 569 }
+	},
+	"battle": { "id": 158 },
+	"song": { "id": 3 },
+	"entityModes": [
+		{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+	],
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.AmbushEventTrigger",
+		"noises": [
+			{ "id": 4 },
+			{ "id": 24 },
+			{ "id": 1 },
+			{ "id": 12 }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 104 },
+	"dataName": "Miniboss - Glacial",
+	"battle": { "id": 160 },
+	"reward": 200,
+	"rewardItems": [
+		{
+			"item": {}
+		},
+		{
+			"item": { "id": 1 }
+		},
+		{
+			"item": { "id": 2 }
+		},
+		{
+			"item": { "id": 4 }
+		},
+		{
+			"item": { "id": 5 }
+		},
+		{
+			"item": { "id": 6 }
+		},
+		{
+			"item": { "id": 7 }
+		},
+		{
+			"item": { "id": 8 }
+		},
+		{
+			"item": { "id": 9 }
+		},
+		{
+			"item": { "id": 10 }
+		},
+		{
+			"item": { "id": 11 }
+		},
+		{
+			"item": { "id": 12 }
+		},
+		{
+			"item": { "id": 13 }
+		},
+		{
+			"item": { "id": 14 }
+		},
+		{
+			"item": { "id": 15 }
+		},
+		{
+			"item": { "id": 16 }
+		},
+		{
+			"item": { "id": 17 }
+		},
+		{
+			"item": { "id": 18 }
+		},
+		{
+			"item": { "id": 19 }
+		},
+		{
+			"item": { "id": 20 }
+		},
+		{
+			"item": { "id": 21 }
+		},
+		{
+			"item": { "id": 22 }
+		},
+		{
+			"item": { "id": 23 }
+		}
+	],
+	"entityModes": [
+		{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+	],
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.StartScriptEventTrigger",
+		"script": { "id": 243 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 112 },
+	"dataName": "Miniboss - Forest",
+	"battle": { "id": 161 },
+	"reward": 200,
+	"rewardItems": [
+		{
+			"item": {}
+		},
+		{
+			"item": { "id": 1 }
+		},
+		{
+			"item": { "id": 2 }
+		},
+		{
+			"item": { "id": 4 }
+		},
+		{
+			"item": { "id": 5 }
+		},
+		{
+			"item": { "id": 6 }
+		},
+		{
+			"item": { "id": 7 }
+		},
+		{
+			"item": { "id": 8 }
+		},
+		{
+			"item": { "id": 9 }
+		},
+		{
+			"item": { "id": 10 }
+		},
+		{
+			"item": { "id": 11 }
+		},
+		{
+			"item": { "id": 12 }
+		},
+		{
+			"item": { "id": 13 }
+		},
+		{
+			"item": { "id": 14 }
+		},
+		{
+			"item": { "id": 15 }
+		},
+		{
+			"item": { "id": 16 }
+		},
+		{
+			"item": { "id": 17 }
+		},
+		{
+			"item": { "id": 18 }
+		},
+		{
+			"item": { "id": 19 }
+		},
+		{
+			"item": { "id": 20 }
+		},
+		{
+			"item": { "id": 21 }
+		},
+		{
+			"item": { "id": 22 }
+		},
+		{
+			"item": { "id": 23 }
+		}
+	],
+	"entityModes": [
+		{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+	],
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.StartScriptEventTrigger",
+		"script": { "id": 244 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 113 },
+	"dataName": "Miniboss - Astrat",
+	"battle": { "id": 162 },
+	"reward": 200,
+	"rewardItems": [
+		{
+			"item": {}
+		},
+		{
+			"item": { "id": 1 }
+		},
+		{
+			"item": { "id": 2 }
+		},
+		{
+			"item": { "id": 4 }
+		},
+		{
+			"item": { "id": 5 }
+		},
+		{
+			"item": { "id": 6 }
+		},
+		{
+			"item": { "id": 7 }
+		},
+		{
+			"item": { "id": 8 }
+		},
+		{
+			"item": { "id": 9 }
+		},
+		{
+			"item": { "id": 10 }
+		},
+		{
+			"item": { "id": 11 }
+		},
+		{
+			"item": { "id": 12 }
+		},
+		{
+			"item": { "id": 13 }
+		},
+		{
+			"item": { "id": 14 }
+		},
+		{
+			"item": { "id": 15 }
+		},
+		{
+			"item": { "id": 16 }
+		},
+		{
+			"item": { "id": 17 }
+		},
+		{
+			"item": { "id": 18 }
+		},
+		{
+			"item": { "id": 19 }
+		},
+		{
+			"item": { "id": 20 }
+		},
+		{
+			"item": { "id": 21 }
+		},
+		{
+			"item": { "id": 22 }
+		},
+		{
+			"item": { "id": 23 }
+		}
+	],
+	"entityModes": [
+		{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+	],
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.StartScriptEventTrigger",
+		"script": { "id": 245 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 114 },
+	"dataName": "Miniboss - Arahas",
+	"battle": { "id": 163 },
+	"reward": 200,
+	"rewardItems": [
+		{
+			"item": {}
+		},
+		{
+			"item": { "id": 1 }
+		},
+		{
+			"item": { "id": 2 }
+		},
+		{
+			"item": { "id": 4 }
+		},
+		{
+			"item": { "id": 5 }
+		},
+		{
+			"item": { "id": 6 }
+		},
+		{
+			"item": { "id": 7 }
+		},
+		{
+			"item": { "id": 8 }
+		},
+		{
+			"item": { "id": 9 }
+		},
+		{
+			"item": { "id": 10 }
+		},
+		{
+			"item": { "id": 11 }
+		},
+		{
+			"item": { "id": 12 }
+		},
+		{
+			"item": { "id": 13 }
+		},
+		{
+			"item": { "id": 14 }
+		},
+		{
+			"item": { "id": 15 }
+		},
+		{
+			"item": { "id": 16 }
+		},
+		{
+			"item": { "id": 17 }
+		},
+		{
+			"item": { "id": 18 }
+		},
+		{
+			"item": { "id": 19 }
+		},
+		{
+			"item": { "id": 20 }
+		},
+		{
+			"item": { "id": 21 }
+		},
+		{
+			"item": { "id": 22 }
+		},
+		{
+			"item": { "id": 23 }
+		}
+	],
+	"entityModes": [
+		{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+	],
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.StartScriptEventTrigger",
+		"script": { "id": 246 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 115 },
+	"dataName": "Miniboss - Myste",
+	"battle": { "id": 164 },
+	"reward": 200,
+	"rewardItems": [
+		{
+			"item": {}
+		},
+		{
+			"item": { "id": 1 }
+		},
+		{
+			"item": { "id": 2 }
+		},
+		{
+			"item": { "id": 4 }
+		},
+		{
+			"item": { "id": 5 }
+		},
+		{
+			"item": { "id": 6 }
+		},
+		{
+			"item": { "id": 7 }
+		},
+		{
+			"item": { "id": 8 }
+		},
+		{
+			"item": { "id": 9 }
+		},
+		{
+			"item": { "id": 10 }
+		},
+		{
+			"item": { "id": 11 }
+		},
+		{
+			"item": { "id": 12 }
+		},
+		{
+			"item": { "id": 13 }
+		},
+		{
+			"item": { "id": 14 }
+		},
+		{
+			"item": { "id": 15 }
+		},
+		{
+			"item": { "id": 16 }
+		},
+		{
+			"item": { "id": 17 }
+		},
+		{
+			"item": { "id": 18 }
+		},
+		{
+			"item": { "id": 19 }
+		},
+		{
+			"item": { "id": 20 }
+		},
+		{
+			"item": { "id": 21 }
+		},
+		{
+			"item": { "id": 22 }
+		},
+		{
+			"item": { "id": 23 }
+		}
+	],
+	"entityModes": [
+		{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+	],
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.StartScriptEventTrigger",
+		"script": { "id": 247 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 116 },
+	"dataName": "Miniboss - Midius",
+	"battle": { "id": 165 },
+	"reward": 200,
+	"rewardItems": [
+		{
+			"item": {}
+		},
+		{
+			"item": { "id": 1 }
+		},
+		{
+			"item": { "id": 2 }
+		},
+		{
+			"item": { "id": 4 }
+		},
+		{
+			"item": { "id": 5 }
+		},
+		{
+			"item": { "id": 6 }
+		},
+		{
+			"item": { "id": 7 }
+		},
+		{
+			"item": { "id": 8 }
+		},
+		{
+			"item": { "id": 9 }
+		},
+		{
+			"item": { "id": 10 }
+		},
+		{
+			"item": { "id": 11 }
+		},
+		{
+			"item": { "id": 12 }
+		},
+		{
+			"item": { "id": 13 }
+		},
+		{
+			"item": { "id": 14 }
+		},
+		{
+			"item": { "id": 15 }
+		},
+		{
+			"item": { "id": 16 }
+		},
+		{
+			"item": { "id": 17 }
+		},
+		{
+			"item": { "id": 18 }
+		},
+		{
+			"item": { "id": 19 }
+		},
+		{
+			"item": { "id": 20 }
+		},
+		{
+			"item": { "id": 21 }
+		},
+		{
+			"item": { "id": 22 }
+		},
+		{
+			"item": { "id": 23 }
+		}
+	],
+	"entityModes": [
+		{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+	],
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.StartScriptEventTrigger",
+		"script": { "id": 248 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 117 },
+	"dataName": "Miniboss - Factory",
+	"battle": { "id": 166 },
+	"reward": 200,
+	"rewardItems": [
+		{
+			"item": {}
+		},
+		{
+			"item": { "id": 1 }
+		},
+		{
+			"item": { "id": 2 }
+		},
+		{
+			"item": { "id": 4 }
+		},
+		{
+			"item": { "id": 5 }
+		},
+		{
+			"item": { "id": 6 }
+		},
+		{
+			"item": { "id": 7 }
+		},
+		{
+			"item": { "id": 8 }
+		},
+		{
+			"item": { "id": 9 }
+		},
+		{
+			"item": { "id": 10 }
+		},
+		{
+			"item": { "id": 11 }
+		},
+		{
+			"item": { "id": 12 }
+		},
+		{
+			"item": { "id": 13 }
+		},
+		{
+			"item": { "id": 14 }
+		},
+		{
+			"item": { "id": 15 }
+		},
+		{
+			"item": { "id": 16 }
+		},
+		{
+			"item": { "id": 17 }
+		},
+		{
+			"item": { "id": 18 }
+		},
+		{
+			"item": { "id": 19 }
+		},
+		{
+			"item": { "id": 20 }
+		},
+		{
+			"item": { "id": 21 }
+		},
+		{
+			"item": { "id": 22 }
+		},
+		{
+			"item": { "id": 23 }
+		}
+	],
+	"entityModes": [
+		{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+	],
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.StartScriptEventTrigger",
+		"script": { "id": 249 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 118 },
+	"dataName": "Ambush - Forest",
+	"icon": {
+		"drawable": { "id": 569 }
+	},
+	"battle": { "id": 41 },
+	"song": { "id": 3 },
+	"entityModes": [
+		{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+	],
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.AmbushEventTrigger",
+		"noises": [
+			{ "id": 3 },
+			{ "id": 57 },
+			{ "id": 4 },
+			{ "id": 1 }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 119 },
+	"dataName": "Ambush - Astrat",
+	"icon": {
+		"drawable": { "id": 569 }
+	},
+	"battle": { "id": 35 },
+	"song": { "id": 3 },
+	"entityModes": [
+		{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+	],
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.AmbushEventTrigger",
+		"noises": [
+			{ "id": 4 },
+			{ "id": 49 },
+			{ "id": 1 },
+			{ "id": 12 }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 120 },
+	"dataName": "Ambush - Arahas",
+	"icon": {
+		"drawable": { "id": 569 }
+	},
+	"battle": { "id": 40 },
+	"song": { "id": 3 },
+	"entityModes": [
+		{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+	],
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.AmbushEventTrigger",
+		"noises": [
+			{ "id": 49 },
+			{ "id": 6 },
+			{ "id": 1 },
+			{ "id": 3 }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 121 },
+	"dataName": "Ambush - Midius",
+	"icon": {
+		"drawable": { "id": 569 }
+	},
+	"battle": { "id": 159 },
+	"song": { "id": 3 },
+	"entityModes": [
+		{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+	],
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.AmbushEventTrigger",
+		"noises": [
+			{ "id": 1 },
+			{ "id": 24 },
+			{ "id": 4 },
+			{ "id": 12 },
+			{ "id": 3 },
+			{ "id": 49 },
+			{ "id": 57 },
+			{ "id": 6 }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 122 },
+	"dataName": "Ambush - Factory",
+	"icon": {
+		"drawable": { "id": 569 }
+	},
+	"battle": { "id": 42 },
+	"song": { "id": 3 },
+	"entityModes": [
+		{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+	],
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.AmbushEventTrigger",
+		"noises": [
+			{ "id": 1 },
+			{ "id": 49 },
+			{ "id": 3 },
+			{ "id": 12 }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 123 },
+	"dataName": "Ambush - Myste",
+	"icon": {
+		"drawable": { "id": 569 }
+	},
+	"battle": { "id": 37 },
+	"song": { "id": 3 },
+	"entityModes": [
+		{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+	],
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.AmbushEventTrigger",
+		"noises": [
+			{ "id": 49 },
+			{ "id": 24 },
+			{ "id": 12 },
+			{ "id": 3 }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 124 },
+	"dataName": "Miniboss - Phantom",
+	"battle": { "id": 34 },
+	"reward": 200,
+	"rewardItems": [
+		{
+			"item": {}
+		},
+		{
+			"item": { "id": 1 }
+		},
+		{
+			"item": { "id": 2 }
+		},
+		{
+			"item": { "id": 4 }
+		},
+		{
+			"item": { "id": 5 }
+		},
+		{
+			"item": { "id": 6 }
+		},
+		{
+			"item": { "id": 7 }
+		},
+		{
+			"item": { "id": 8 }
+		},
+		{
+			"item": { "id": 9 }
+		},
+		{
+			"item": { "id": 10 }
+		},
+		{
+			"item": { "id": 11 }
+		},
+		{
+			"item": { "id": 12 }
+		},
+		{
+			"item": { "id": 13 }
+		},
+		{
+			"item": { "id": 14 }
+		},
+		{
+			"item": { "id": 15 }
+		},
+		{
+			"item": { "id": 16 }
+		},
+		{
+			"item": { "id": 17 }
+		},
+		{
+			"item": { "id": 18 }
+		},
+		{
+			"item": { "id": 19 }
+		},
+		{
+			"item": { "id": 20 }
+		},
+		{
+			"item": { "id": 21 }
+		},
+		{
+			"item": { "id": 22 }
+		},
+		{
+			"item": { "id": 23 }
+		}
+	],
+	"entityModes": [
+		{ "class": "com.one2b3.endcycle.features.battle.mode.MurkEntityMode" }
+	],
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.MiniBossEventTrigger",
+		"noises": [
+			{ "id": 1 },
+			{ "id": 3 },
+			{ "id": 4 },
+			{ "id": 49 },
+			{ "id": 6 },
+			{ "id": 24 },
+			{ "id": 12 },
+			{ "id": 57 }
+		],
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.BigEntityMode" },
+			{ "class": "com.one2b3.endcycle.features.battle.mode.SplitEntityMode", "power": 0.33 }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 125 },
+	"dataName": "Ambush - Phantom",
+	"icon": {
+		"drawable": { "id": 569 }
+	},
+	"battle": { "id": 34 },
+	"song": { "id": 3 },
+	"entityModes": [
+		{ "class": "com.one2b3.endcycle.features.battle.mode.MurkEntityMode" }
+	],
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.battle.AmbushEventTrigger",
+		"noises": [
+			{ "id": 1 },
+			{ "id": 3 },
+			{ "id": 4 },
+			{ "id": 49 },
+			{ "id": 6 },
+			{ "id": 24 },
+			{ "id": 12 },
+			{ "id": 57 }
+		]
 	}
 }
 ]

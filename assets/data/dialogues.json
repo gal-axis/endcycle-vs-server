@@ -332,7 +332,7 @@
 				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "fin", "animation": true }
 			}
 		},
-		{ "entity": "player", "textMessage": "|... should've asked him to take me to dinner." }
+		{ "entity": "player", "textMessage": "|... Should've asked him to take me to dinner." }
 	],
 	"start": {
 		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
@@ -390,7 +390,7 @@
 		{ "entity": "fin", "textMessage": "dialogues|Spark.C3B2.10" },
 		{ "entity": "player", "textMessage": "dialogues|Spark.C3B2.11" },
 		{ "entity": "fin", "textMessage": "dialogues|Spark.C3B2.12" },
-		{ "entity": "player", "textMessage": "|It 100% is!" }
+		{ "entity": "player", "textMessage": "dialogues|Spark.C3B2.13" }
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
@@ -659,9 +659,9 @@
 		{ "entity": "rozu", "textMessage": "dialogues|Spark.6.3" },
 		{ "entity": "player", "textMessage": "dialogues|Spark.6.4" },
 		{ "entity": "rozu", "textMessage": "dialogues|Spark.6.5" },
-		{ "entity": "player", "textMessage": "|I don't work for anyone!" },
-		{ "entity": "rozu", "textMessage": "|We don't pay very well but... there's always an all-you-can eat buffet at our HQ." },
-		{ "entity": "player", "textMessage": "|... yeah I'm definitely gonna work for you guys." }
+		{ "entity": "player", "textMessage": "dialogues|Spark.C6A.5" },
+		{ "entity": "rozu", "textMessage": "dialogues|Spark.C6A.6" },
+		{ "entity": "player", "textMessage": "dialogues|Spark.C6A.7" }
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
@@ -1044,7 +1044,7 @@
 		{ "entity": "del", "textMessage": "dialogues|Agent.5.3" },
 		{ "entity": "del", "textMessage": "dialogues|Agent.5.4" },
 		{ "entity": "del", "textMessage": "dialogues|Agent.5.12" },
-		{ "entity": "del", "textMessage": "|Good luck." }
+		{ "entity": "del", "textMessage": "dialogues|Agent.C5B.6" }
 	]
 },
 {
@@ -1180,7 +1180,7 @@
 				"color": { "r": 0.30980393, "g": 0.49411765, "b": 0.72156864, "a": 1 }
 			}
 		},
-		{ "entity": "del", "textMessage": "|Operation \"Everod\" starts immediately. Brace youself. The real battle begins." }
+		{ "entity": "del", "textMessage": "dialogues|Agent.C6A2.4" }
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
@@ -7773,7 +7773,7 @@
 			}
 		},
 		{ "entity": "cress", "textMessage": "dialogues|C.Crimson.C1B1.15" },
-		{ "entity": "cress", "textMessage": "|Thought an exiled one might know us though." },
+		{ "entity": "cress", "textMessage": "dialogues|CF.1.1.16" },
 		{ "entity": "player", "textMessage": "dialogues|C.Crimson.C1B1.16" },
 		{ "entity": "cress", "textMessage": "dialogues|C.Crimson.C1B1.17" }
 	],
@@ -7820,7 +7820,7 @@
 		{ "entity": "Cress", "textMessage": "dialogues|Crimson.Force.2.2" },
 		{ "entity": "Flink", "textMessage": "dialogues|Crimson.Force.2.3" },
 		{ "entity": "Cress", "textMessage": "dialogues|Crimson.Force.2.4" },
-		{ "entity": "Flink", "textMessage": "|Yah. For sure. We'll make her regret that. Me included we still got 20 Punks left!" },
+		{ "entity": "Flink", "textMessage": "dialogues|CF.2.52" },
 		{
 			"entity": "Spark",
 			"textMessage": "dialogues|Crimson.Force.2.5",
@@ -8310,8 +8310,9 @@
 						"y": 1,
 						"turned": true,
 						"name": "???",
+						"parent": "",
 						"id": { "id": 59 },
-						"talkingName": "|???",
+						"talkingName": "gamedata|Character.Unknown",
 						"configuration": {}
 					}
 				}
@@ -9220,15 +9221,15 @@
 	"id": { "id": 759 },
 	"name": "A-Event>Agent Trap #1",
 	"lines": [
-		{ "entity": "Azure Agent", "textMessage": "|Ohoho I didn't think the GREAT Cress would fall into my trap!" },
-		{ "entity": "player", "textMessage": "|Hey hold on a minute. I don't fall. I ran here." },
-		{ "entity": "Azure Agent", "textMessage": "|Whatever, let's go girls!" }
+		{ "entity": "Azure Agent", "textMessage": "dialogues|A.Event.Agent.Trap.1.1" },
+		{ "entity": "player", "textMessage": "dialogues|A.Event.Agent.Trap.1.2" },
+		{ "entity": "Azure Agent", "textMessage": "dialogues|A.Event.Agent.Trap.1.3" }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
 	"id": { "id": 760 },
-	"name": "A-Event> Agent Trap #1.2",
+	"name": "A-Event>Agent Trap #1.2",
 	"lines": [
 		{ "entity": "player", "textMessage": "|Like I said: I don't fall. I run all over you!" }
 	]
@@ -9236,7 +9237,7 @@
 {
 	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
 	"id": { "id": 762 },
-	"name": "A-Event Agent Trap #2.1",
+	"name": "A-Event>Agent Trap #2.1",
 	"lines": [
 		{ "entity": "agent", "textMessage": "|She REALLY fell for it ohmygoshh" },
 		{ "entity": "agent 1", "textMessage": "|Uh m'am? For an archeologist you seem pretty dumb." },
@@ -9252,7 +9253,7 @@
 {
 	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
 	"id": { "id": 763 },
-	"name": "A-Event> Rozu Gift Dialogue",
+	"name": "A-Event>Rozu Gift",
 	"lines": [
 		{ "entity": "rozu", "textMessage": "|Hey!" },
 		{ "entity": "player", "textMessage": "|'sup I'm in a hurry here" },
@@ -9265,7 +9266,7 @@
 {
 	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
 	"id": { "id": 764 },
-	"name": "A-Event> Spark Gift Dialogue",
+	"name": "A-Event>Spark Gift 1",
 	"lines": [
 		{ "entity": "spark", "textMessage": "|Yo!" },
 		{ "entity": "player", "textMessage": "|Spark I'm in a hurry!" },
@@ -9278,7 +9279,7 @@
 {
 	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
 	"id": { "id": 771 },
-	"name": "A-Event> Spark Gift #2 Dialogue ",
+	"name": "A-Event>Spark Gift 2.1",
 	"lines": [
 		{ "entity": "player", "textMessage": "|Spark!" },
 		{ "entity": "spark", "textMessage": "|Hey Brozu whatcha doing?" },
@@ -9295,7 +9296,7 @@
 {
 	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
 	"id": { "id": 766 },
-	"name": "A-Event> Flink Gift Dialogue",
+	"name": "A-Event>Flink Gift",
 	"lines": [
 		{ "entity": "flink", "textMessage": "|Cress-sis!" },
 		{ "entity": "player", "textMessage": "|Flink!" },
@@ -9310,20 +9311,20 @@
 {
 	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
 	"id": { "id": 767 },
-	"name": "A-Event> Agent Gift Dialogue",
+	"name": "A-Event>Agent Gift",
 	"lines": [
 		{ "entity": "player", "textMessage": "|Agent." },
 		{ "entity": "agent", "textMessage": "|Boss! Provisions have arrived!" },
 		{ "entity": "player", "textMessage": "|Brewed the right way I assume" },
 		{ "entity": "agent", "textMessage": "|Of course! 80 Degrees, soaked for 2 minutes!" },
 		{ "entity": "player", "textMessage": "|Perfect. As you were agent." },
-		{ "entity": "agent", "textMessage": "|M'am!" }
+		{ "entity": "agent", "textMessage": "|Ma'am!" }
 	]
 },
 {
 	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
 	"id": { "id": 768 },
-	"name": "A-Event> Noise Gift Dialogue",
+	"name": "A-Event>Noise Gift 1",
 	"lines": [
 		{ "entity": "tankitty", "textMessage": "|:3" },
 		{ "entity": "player", "textMessage": "|Oh, hello there little fella. Why aren't you attacking me?" },
@@ -9345,7 +9346,7 @@
 {
 	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
 	"id": { "id": 770 },
-	"name": "A-Event> Noise Gift Dialogue 2",
+	"name": "A-Event>Noise Gift 2",
 	"lines": [
 		{ "entity": "player", "textMessage": "|Aw." }
 	],
@@ -9354,7 +9355,7 @@
 {
 	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
 	"id": { "id": 772 },
-	"name": "A-Event> Spark Gift Dialogue 2.1",
+	"name": "A-Event>Spark Gift 2.2",
 	"lines": [
 		{ "entity": "player", "textMessage": "|That girl is driving me crazy. Whoa she dropped something... on purpose?" }
 	]
@@ -9362,7 +9363,7 @@
 {
 	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
 	"id": { "id": 774 },
-	"name": "A-Event> Fin VS Spark Dialogue #1",
+	"name": "A-Event>Fin VS Spark",
 	"lines": [
 		{ "entity": "spark", "textMessage": "|Found you!" },
 		{ "entity": "player", "textMessage": "|Spark!" },
@@ -9374,9 +9375,9 @@
 {
 	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
 	"id": { "id": 775 },
-	"name": "A-Event> Fin VS Spark Dialogue Win #1",
+	"name": "A-Event>Fin VS Spark Win",
 	"lines": [
-		{ "entity": "spark", "textMessage": "|You beat me... I've been a good teacher... now I can die in peace" },
+		{ "entity": "spark", "textMessage": "|You beat me... I've been a good teacher... now I can die in peace." },
 		{
 			"entity": "player",
 			"textMessage": "|DIE?",
@@ -9391,7 +9392,7 @@
 		{ "entity": "player", "textMessage": "|Oh." },
 		{ "entity": "spark", "textMessage": "|You old worrywart. " },
 		{
-			"textMessage": "|Spark proceeds to do a perfect backflip and then runs off.",
+			"textMessage": "|*Spark proceeds to do a perfect backflip and then runs off.*",
 			"options": {
 				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "spark" }
 			}
@@ -9402,7 +9403,7 @@
 {
 	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
 	"id": { "id": 776 },
-	"name": "A-Event> Bella Dialogue",
+	"name": "A-Event>Bella",
 	"lines": [
 		{ "entity": "bella", "textMessage": "|Hi! I don't know who you are or even where we are but I can see you're doing your best out here! I'll leave you a little gift to ease your struggle a bit. See ya!" }
 	]
@@ -9410,7 +9411,7 @@
 {
 	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
 	"id": { "id": 777 },
-	"name": "A-Event> Punk Trap #1",
+	"name": "A-Event>Punk Trap #1",
 	"lines": [
 		{ "entity": "player", "textMessage": "|Punks." },
 		{ "entity": "flink", "textMessage": "|Delicia." },
@@ -9423,7 +9424,7 @@
 {
 	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
 	"id": { "id": 778 },
-	"name": "A-Event> Punk Trap #2",
+	"name": "A-Event>Punk Trap #2",
 	"lines": [
 		{ "entity": "spark", "textMessage": "|I told you she'd come here!" },
 		{ "entity": "rozu", "textMessage": "|You didn't! We got lost and now the leader of Azure Shield is going to kill us." },
@@ -9436,7 +9437,7 @@
 {
 	"class": "com.one2b3.endcycle.features.dialogues.Dialogue",
 	"id": { "id": 779 },
-	"name": "A-Event> Punk Trap #1.1",
+	"name": "A-Event>Punk Trap #1.1",
 	"lines": [
 		{ "entity": "player", "textMessage": "|Run back to your base and remember who gave you these bruises." }
 	]
@@ -9580,10 +9581,10 @@
 	"id": { "id": 796 },
 	"name": "Punk Trap #2.1",
 	"lines": [
-		{ "entity": "player", "textMessage": "|I hope that didn't hurt TOO bad. " },
-		{ "entity": "spark", "textMessage": "|Owch. It did!" },
-		{ "entity": "rozu", "textMessage": "|You're just going to leave us here? There are Noises about!" },
-		{ "entity": "player", "textMessage": "|My agents will come and pick you up. We'll talk more at my HQ. See you there!" }
+		{ "entity": "player", "textMessage": "dialogues|Punk.Trap.2.1.1" },
+		{ "entity": "spark", "textMessage": "dialogues|Punk.Trap.2.1.2" },
+		{ "entity": "rozu", "textMessage": "dialogues|Punk.Trap.2.1.3" },
+		{ "entity": "player", "textMessage": "dialogues|Punk.Trap.2.1.4" }
 	]
 },
 {
@@ -9907,9 +9908,9 @@
 	"id": { "id": 832 },
 	"name": "Spark WIN Yven",
 	"lines": [
-		{ "entity": "1", "textMessage": "|Go back to your quarry!" },
-		{ "entity": "1", "textMessage": "|Is your arm too heavy to use?" },
-		{ "entity": "1", "textMessage": "|Paper beats rock! \\u2026Paper is made from trees, you see." }
+		{ "entity": "1", "textMessage": "dialogues|Spark.WIN.Yven.1" },
+		{ "entity": "1", "textMessage": "dialogues|Spark.WIN.Yven.2" },
+		{ "entity": "1", "textMessage": "dialogues|Spark.WIN.Yven.3" }
 	]
 },
 {
@@ -9919,28 +9920,27 @@
 	"lines": [
 		{
 			"entity": "???",
-			"textMessage": "|Operation \"Everod\" has been carried out succesfully.",
-			"options": { "talkingMessage": "|???", "hidden": true }
+			"textMessage": "dialogues|CF.5.6.1",
+			"options": { "talkingMessage": "dialogues|Character.Unknown", "hidden": true }
 		},
 		{
 			"entity": "???",
-			"textMessage": "|No traces of any living being remain. This town never existed.",
-			"options": { "talkingMessage": "|???", "hidden": true }
+			"textMessage": "dialogues|CF.5.6.2",
+			"options": { "talkingMessage": "dialogues|Character.Unknown", "hidden": true }
 		},
 		{
 			"entity": "???",
-			"textMessage": "|Oh yeah they fought valiantly. Not that it matters.",
-			"options": { "talkingMessage": "|???", "hidden": true }
+			"textMessage": "dialogues|CF.5.6.3",
+			"options": { "talkingMessage": "dialogues|Character.Unknown", "hidden": true }
 		},
 		{
 			"entity": "???",
-			"textMessage": "|Now how about we grab some lunch? My treat, Del dear.",
-			"options": { "talkingMessage": "|???", "hidden": true }
+			"textMessage": "dialogues|CF.5.6.4",
+			"options": { "talkingMessage": "dialogues|Character.Unknown", "hidden": true }
 		},
 		{
 			"entity": "del",
-			"textMessage": "|Sounds good... but first I'll send the leader of Crimson Force to her Punks.",
-			"options": { "talkingMessage": "|del" }
+			"textMessage": "dialogues|CF.5.6.5"
 		}
 	],
 	"end": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
@@ -9952,24 +9952,24 @@
 	"lines": [
 		{
 			"entity": "cress",
-			"textMessage": "|You\\u2019ve built an entire school?",
+			"textMessage": "dialogues|R&B.1.1.1",
 			"options": { "emotup": "BIG_SURPRISE" }
 		},
-		{ "entity": "del", "textMessage": "|My childhood in Midius was\\u2026 messy." },
-		{ "entity": "del", "textMessage": "|So I want to give all the kids there the same opportunities you and Dad gave me." },
-		{ "entity": "cress", "textMessage": "|You just needed a hand is all. " },
+		{ "entity": "del", "textMessage": "dialogues|R&B.1.1.2" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.1.1.3" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.1.1.4" },
 		{
 			"entity": "del",
-			"textMessage": "|\"A hand\"?",
+			"textMessage": "dialogues|R&B.1.1.5",
 			"options": { "emotup": "LAUGHING" }
 		},
-		{ "entity": "cress", "textMessage": "|You know what I mean. When we took you in... dad already knew you'd turn out great." },
-		{ "entity": "del", "textMessage": "|The kids attending our Midius-Program are also full of potential." },
-		{ "entity": "del", "textMessage": "|I am really excited to see how they\\u2019re gonna change the world." },
-		{ "entity": "cress", "textMessage": "|With you as their teacher I\\u2019m sure they're gonna cause an uproar!\r" },
-		{ "entity": "del", "textMessage": "|Are you sure you don\\u2019t want to teach as well? We could use someone for the history classes...\r" },
-		{ "entity": "cress", "textMessage": "|Noo haha I really don\\u2019t want anything to do with authority.\r" },
-		{ "entity": "cress", "textMessage": "|Just leave me to my books and my Voxel-Tournaments thank you very much." }
+		{ "entity": "cress", "textMessage": "dialogues|R&B.1.1.6" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.1.1.7" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.1.1.8" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.1.1.9" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.1.1.10" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.1.1.11" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.1.1.12" }
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
@@ -10004,9 +10004,9 @@
 	"id": { "id": 835 },
 	"name": "R&B 1.2",
 	"lines": [
-		{ "entity": "bandit1", "textMessage": "|Hello Ladies. How about you give us all your E-bits and Vocs." },
-		{ "entity": "cress", "textMessage": "|Oh-ho ho. Buddy you are\\u2026" },
-		{ "entity": "del", "textMessage": "|Messing with the wrong sisters." }
+		{ "entity": "bandit1", "textMessage": "dialogues|R&B.1.2.1" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.1.2.2" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.1.2.3" }
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
@@ -10018,8 +10018,8 @@
 	"id": { "id": 836 },
 	"name": "R&B Tutorial 1",
 	"lines": [
-		{ "textMessage": "|In the battles of Red & Blue you are able to switch between two characters by using your ultra VOC!" },
-		{ "entity": "", "textMessage": "|Try overcoming the odds by utilizing both characters to their full extent!" }
+		{ "textMessage": "dialogues|R&B.Tutorial.1.1" },
+		{ "entity": "", "textMessage": "dialogues|R&B.Tutorial.1.2" }
 	],
 	"end": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignStartBattleScript" }
 },
@@ -10030,7 +10030,7 @@
 	"lines": [
 		{
 			"entity": "del",
-			"textMessage": "|Hey you three!",
+			"textMessage": "dialogues|R&B.1.3.1",
 			"options": {
 				"script": {
 					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
@@ -10043,11 +10043,11 @@
 				}
 			}
 		},
-		{ "entity": "del", "textMessage": "|Why were you trying to rob us?" },
-		{ "entity": "bandit1", "textMessage": "|I just... couldn\\u2019t see another way to provide for my kids." },
-		{ "entity": "del", "textMessage": "|You fought well\\u2026 go to the Azure Shield base near here. We might have a job for you and your buddies." },
-		{ "entity": "bandit1", "textMessage": "|Ok... we\\u2019ll think about it. Sarah, Echs... let\\u2019s go." },
-		{ "entity": "bandit2", "textMessage": "|You got it Vanessa." }
+		{ "entity": "del", "textMessage": "dialogues|R&B.1.3.2" },
+		{ "entity": "bandit1", "textMessage": "dialogues|R&B.1.3.3" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.1.3.4" },
+		{ "entity": "bandit1", "textMessage": "dialogues|R&B.1.3.5" },
+		{ "entity": "bandit2", "textMessage": "dialogues|R&B.1.3.6" }
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
@@ -10082,13 +10082,13 @@
 	"id": { "id": 838 },
 	"name": "R&B 1.4",
 	"lines": [
-		{ "entity": "cress", "textMessage": "|Wow, saving the world even in your spare time huh?" },
-		{ "entity": "del", "textMessage": "|Well people hunger in their spare time\\u2026 gotta do what I can." },
-		{ "entity": "del", "textMessage": "|For most it\\u2019s getting harder and harder these days to feed themselves, let alone others." },
-		{ "entity": "cress", "textMessage": "|I appreciate you still taking time for your big sis." },
-		{ "entity": "del", "textMessage": "|Well I need to remember what I\\u2019m fighting for don't I." },
-		{ "entity": "cress", "textMessage": "|You are SO corny." },
-		{ "entity": "del", "textMessage": "|Hahaha! I\\u2019m not the one with the super-hero getup!" }
+		{ "entity": "cress", "textMessage": "dialogues|R&B.1.4.1" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.1.4.2" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.1.4.3" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.1.4.4" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.1.4.5" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.1.4.6" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.1.4.7" }
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
@@ -10114,7 +10114,7 @@
 	"id": { "id": 839 },
 	"name": "R&B 1.5",
 	"lines": [
-		{ "entity": "", "textMessage": "|*beep beep beep*" }
+		{ "entity": "", "textMessage": "dialogues|R&B.1.5" }
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
@@ -10137,15 +10137,15 @@
 	"id": { "id": 840 },
 	"name": "R&B 1.6",
 	"lines": [
-		{ "entity": "cress", "textMessage": "|What's up?" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.1.6.1" },
 		{
 			"entity": "del",
-			"textMessage": "|Some\\u2026 strange readings coming from Midius. We better go there fast.",
+			"textMessage": "dialogues|R&B.1.6.2",
 			"options": {
 				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "del", "flip": true }
 			}
 		},
-		{ "entity": "cress", "textMessage": "|You got it!" }
+		{ "entity": "cress", "textMessage": "dialogues|R&B.1.6.3" }
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
@@ -10170,12 +10170,12 @@
 	"lines": [
 		{
 			"entity": "cress",
-			"textMessage": "|Midius is just up ahead right?",
+			"textMessage": "dialogues|R&B.2.1.1",
 			"options": { "duration": 1, "skippable": false }
 		},
 		{
 			"entity": "del",
-			"textMessage": "|Yes but...",
+			"textMessage": "dialogues|R&B.2.1.2",
 			"options": { "duration": 0.6, "skippable": false }
 		}
 	],
@@ -10197,9 +10197,9 @@
 	"id": { "id": 842 },
 	"name": "R&B 2.2",
 	"lines": [
-		{ "entity": "del", "textMessage": "|There aren\\u2019t supposed to be any Noises here. Azure Shield put up Noise protection all over the place." },
-		{ "entity": "cress", "textMessage": "|Noises in the middle of desert\\u2026 something is wrong." },
-		{ "entity": "del", "textMessage": "|Come on\\u2026 let\\u2019s delete them." }
+		{ "entity": "del", "textMessage": "dialogues|R&B.2.2.1" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.2.2.2" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.2.2.3" }
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
@@ -10221,7 +10221,7 @@
 	"lines": [
 		{
 			"entity": "del",
-			"textMessage": "|Midius is just up ahe-",
+			"textMessage": "dialogues|R&B.2.3",
 			"options": { "duration": 0.4 }
 		}
 	],
@@ -10235,7 +10235,7 @@
 	"id": { "id": 844 },
 	"name": "R&B 3.1",
 	"lines": [
-		{ "entity": "cress", "textMessage": "|Del... are you ok?" }
+		{ "entity": "cress", "textMessage": "dialogues|R&B.3.1" }
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
@@ -10255,8 +10255,8 @@
 	"id": { "id": 845 },
 	"name": "R&B 3.2",
 	"lines": [
-		{ "entity": "cress", "textMessage": "|Del?" },
-		{ "entity": "del", "textMessage": "|I'm... not ok. What was that thing?" }
+		{ "entity": "cress", "textMessage": "dialogues|R&B.3.2.1" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.3.2.2" }
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
@@ -10276,9 +10276,9 @@
 	"id": { "id": 846 },
 	"name": "R&B 3.3",
 	"lines": [
-		{ "entity": "cress", "textMessage": "|It looked like a Godius...\nbut that can\\u2019t be..." },
-		{ "entity": "del", "textMessage": "|Were the people in Midius\nstill there when it attacked?" },
-		{ "entity": "cress", "textMessage": "|... Let\\u2019s get you out of here.\nWe'll talk at home." }
+		{ "entity": "cress", "textMessage": "dialogues|R&B.3.3.1" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.3.3.2" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.3.3.3" }
 	],
 	"end": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
 },
@@ -10287,7 +10287,7 @@
 	"id": { "id": 847 },
 	"name": "R&B 3.4",
 	"lines": [
-		{ "entity": "", "textMessage": "|A month later..." }
+		{ "entity": "", "textMessage": "dialogues|R&B.3.4" }
 	]
 },
 {
@@ -10295,9 +10295,9 @@
 	"id": { "id": 848 },
 	"name": "R&B 3.5",
 	"lines": [
-		{ "entity": "cress", "textMessage": "|Hey, I brought you something!" },
-		{ "entity": "del", "textMessage": "|Uh-huh." },
-		{ "entity": "cress", "textMessage": "|Have you gone outside today?" }
+		{ "entity": "cress", "textMessage": "dialogues|R&B.3.5.1" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.3.5.2" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.3.5.3" }
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
@@ -10317,9 +10317,9 @@
 	"id": { "id": 849 },
 	"name": "R&B 3.6",
 	"lines": [
-		{ "entity": "cress", "textMessage": "|It's a beautiful day. Come on, I'll take you to Myste Edun." },
-		{ "entity": "del", "textMessage": "|\\u2026 Maybe later." },
-		{ "entity": "cress", "textMessage": "|\\u2026 Ok, I'll come back in a few hours\\u2026 promise me you'll at least get out of bed until then." }
+		{ "entity": "cress", "textMessage": "dialogues|R&B.3.6.1" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.3.6.2" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.3.6.3" }
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
@@ -10344,11 +10344,11 @@
 	"id": { "id": 850 },
 	"name": "R&B 3.7",
 	"lines": [
-		{ "entity": "", "textMessage": "|Two months later..." },
-		{ "entity": "", "textMessage": "|*beep beep beep*" },
-		{ "entity": "cress", "textMessage": "|Hey there. How\\u2019s your depression going today?" },
-		{ "entity": "del", "textMessage": "|... Uhm." },
-		{ "entity": "cress", "textMessage": "|... Too soon for jokes huh. Sorry. I'll call you again next week." }
+		{ "entity": "", "textMessage": "dialogues|R&B.3.7.1" },
+		{ "entity": "", "textMessage": "dialogues|R&B.3.7.2" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.3.7.3" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.3.7.4" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.3.7.5" }
 	],
 	"end": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
 },
@@ -10357,7 +10357,7 @@
 	"id": { "id": 851 },
 	"name": "R&B 3.8",
 	"lines": [
-		{ "textMessage": "|One year later..." }
+		{ "textMessage": "dialogues|R&B.3.8" }
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
@@ -10373,7 +10373,7 @@
 	"id": { "id": 852 },
 	"name": "R&B 3.9",
 	"lines": [
-		{ "entity": "cress", "textMessage": "|Haven\\u2019t visited her this month\\u2026 let\\u2019s see how she\\u2019s holding up." }
+		{ "entity": "cress", "textMessage": "dialogues|R&B.3.9" }
 	],
 	"end": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
 },
@@ -10382,25 +10382,25 @@
 	"id": { "id": 853 },
 	"name": "R&B 3.10",
 	"lines": [
-		{ "entity": "cress", "textMessage": "|Hey! Del do you know this person?" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.3.10.1" },
 		{
 			"entity": "yven",
-			"textMessage": "|You must be Cress! Del has told me so much about you!",
+			"textMessage": "dialogues|R&B.3.10.2",
 			"options": {
 				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "yven", "flip": true }
 			}
 		},
 		{
 			"entity": "del",
-			"textMessage": "|Hi there sister!",
+			"textMessage": "dialogues|R&B.3.10.3",
 			"options": {
 				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "del", "relative": true, "moveType": "ANIMATED_MOVING_TILE", "speed": 1, "x": 1, "y": 1 }
 			}
 		},
-		{ "entity": "cress", "textMessage": "|Your room is so clean... what\\u2019s going on?" },
-		{ "entity": "del", "textMessage": "|I feel great sis! I'm ready to get back out there and fulfill my purpose!" },
-		{ "entity": "cress", "textMessage": "|... And what\\u2019s that?" },
-		{ "entity": "del", "textMessage": "|The end of all Godi of course." }
+		{ "entity": "cress", "textMessage": "dialogues|R&B.3.10.4" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.3.10.5" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.3.10.6" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.3.10.7" }
 	],
 	"end": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
 },
@@ -10409,16 +10409,16 @@
 	"id": { "id": 854 },
 	"name": "R&B 3.11",
 	"lines": [
-		{ "entity": "cress", "textMessage": "|You again!" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.3.11.1" },
 		{
 			"entity": "yven",
-			"textMessage": "|Yes I work here.",
+			"textMessage": "dialogues|R&B.3.11.2",
 			"options": {
 				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "yven", "flip": true }
 			}
 		},
-		{ "entity": "del", "textMessage": "|Cress if you want to help Azure Shield you need to get along with Yven." },
-		{ "entity": "del", "textMessage": "|Because without him... THIS wouldn\\u2019t be possible. " }
+		{ "entity": "del", "textMessage": "dialogues|R&B.3.11.3" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.3.11.4" }
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
@@ -10430,7 +10430,7 @@
 	"id": { "id": 855 },
 	"name": "R&B 3.12",
 	"lines": [
-		{ "entity": "del", "textMessage": "|Q.T., shoot this rock!" }
+		{ "entity": "del", "textMessage": "dialogues|R&B.3.12" }
 	]
 },
 {
@@ -10438,9 +10438,9 @@
 	"id": { "id": 856 },
 	"name": "R&B 3.13",
 	"lines": [
-		{ "entity": "del", "textMessage": "|We're finally able to reach the monster that has destroyed Midius back then..." },
-		{ "entity": "cress", "textMessage": "|... Be careful Del." },
-		{ "entity": "del", "textMessage": "|I always am." }
+		{ "entity": "del", "textMessage": "dialogues|R&B.3.13.1" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.3.13.2" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.3.13.3" }
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
@@ -10452,12 +10452,12 @@
 	"id": { "id": 857 },
 	"name": "R&B 3.14",
 	"lines": [
-		{ "entity": "cress", "textMessage": "|I can't believe it\\u2026 if I\\u2019m correct this must be \"Exerian\"\\u2026" },
-		{ "entity": "cress", "textMessage": "|It's even uglier than I imagined." },
-		{ "entity": "yven", "textMessage": "|Scientists of old have created this creature and its siblings as a way of generating infinite resources..." },
-		{ "entity": "yven", "textMessage": "|One Godius for each nation. But soon they discovered that true infinity cannot be reached with just one." },
-		{ "entity": "yven", "textMessage": "|Instead of working together -or even just compromising- the Godi were repurposed as war machines." },
-		{ "entity": "yven", "textMessage": "|And so the nations tried to steal each others Godius... thus all of Anikka fell.\r" }
+		{ "entity": "cress", "textMessage": "dialogues|R&B.3.14.1" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.3.14.2" },
+		{ "entity": "yven", "textMessage": "dialogues|R&B.3.14.3" },
+		{ "entity": "yven", "textMessage": "dialogues|R&B.3.14.4" },
+		{ "entity": "yven", "textMessage": "dialogues|R&B.3.14.5" },
+		{ "entity": "yven", "textMessage": "dialogues|R&B.3.14.6" }
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
@@ -10479,14 +10479,14 @@
 	"id": { "id": 858 },
 	"name": "R&B 3.15",
 	"lines": [
-		{ "entity": "del", "textMessage": "|We are in the middle of a new crisis..." },
-		{ "entity": "del", "textMessage": "|Resources are running out and the soil isn\\u2019t strong enough to feed everyone." },
-		{ "entity": "del", "textMessage": "|People are starting to get suspicious of their neighbours." },
-		{ "entity": "del", "textMessage": "|We must end the cycle of violence before it can begin." },
-		{ "entity": "cress", "textMessage": "|True, true... anyways this thing is giving me the creeps... hurry up Del." },
+		{ "entity": "del", "textMessage": "dialogues|R&B.3.15.1" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.3.15.2" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.3.15.3" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.3.15.4" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.3.15.5" },
 		{
 			"entity": "del",
-			"textMessage": "|Yven\\u2026 Cress\\u2026 Operation \"Godius\" starts now.",
+			"textMessage": "dialogues|R&B.3.15.6",
 			"options": {
 				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "del" }
 			}
@@ -10516,10 +10516,10 @@
 	"id": { "id": 859 },
 	"name": "R&B 3.16",
 	"lines": [
-		{ "entity": "yven", "textMessage": "|You'll have to weaken it first it seems." },
-		{ "entity": "cress", "textMessage": "|Well good thing we're ARMED. Amirite sister?" },
-		{ "entity": "del", "textMessage": "|..." },
-		{ "entity": "cress", "textMessage": "|...I thought that was a good joke." }
+		{ "entity": "yven", "textMessage": "dialogues|R&B.3.16.1" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.3.16.2" },
+		{ "entity": "del", "textMessage": "dialogues|Pause" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.3.16.4" }
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
@@ -10542,11 +10542,11 @@
 	"id": { "id": 860 },
 	"name": "R&B 3.17",
 	"lines": [
-		{ "entity": "del", "textMessage": "|IT WORKED!!!" },
-		{ "entity": "yven", "textMessage": "|It really did! Your sister came in quite HANDY Del." },
-		{ "entity": "del", "textMessage": "|Haha, good one Yven!" },
-		{ "entity": "cress", "textMessage": "|Hey! Wait \\u2026what worked? The arm is still there." },
-		{ "entity": "del", "textMessage": "|Yes and I was able to command it!" }
+		{ "entity": "del", "textMessage": "dialogues|R&B.3.17.1" },
+		{ "entity": "yven", "textMessage": "dialogues|R&B.3.17.2" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.3.17.3" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.3.17.4" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.3.17.5" }
 	],
 	"end": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
 },
@@ -10555,23 +10555,23 @@
 	"id": { "id": 861 },
 	"name": "R&B 4.1",
 	"lines": [
-		{ "entity": "cress", "textMessage": "|Are you crazy?!" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.4.1.1" },
 		{
 			"entity": "del",
-			"textMessage": "|I know what you're saying but-",
+			"textMessage": "dialogues|R&B.4.1.2",
 			"options": { "duration": 0.6 }
 		},
-		{ "entity": "cress", "textMessage": "|But what? Everything we know about the Godi, and everything we don't tells us that we shouldn't be messing around with them." },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.4.1.3" },
 		{
 			"entity": "del",
-			"textMessage": "|Sister, it's a safe process. With Exerian we can destroy the other 9 Godi. But first we can use it-",
+			"textMessage": "dialogues|R&B.4.1.4",
 			"options": { "duration": 0.6 }
 		},
-		{ "entity": "cress", "textMessage": "|Del. Read a history book for once will you. Any historian will tell you that-" },
-		{ "entity": "del", "textMessage": "|The Godi were invented because people were scared of their world ending..." },
-		{ "entity": "del", "textMessage": "|Well I can see the world dying right before my eyes! Resources are running out, people are barely affording the bread on their tables..." },
-		{ "entity": "del", "textMessage": "|It's not only about destroying the Godi. With this technology we won't just save the world..." },
-		{ "entity": "del", "textMessage": "|We can finally end the cycle that turns people against each other!" }
+		{ "entity": "cress", "textMessage": "dialogues|R&B.4.1.5" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.4.1.6" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.4.1.7" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.4.1.8" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.4.1.9" }
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
@@ -10594,20 +10594,20 @@
 	"id": { "id": 862 },
 	"name": "R&B 4.2",
 	"lines": [
-		{ "entity": "cress", "textMessage": "|This isn't the way to do it sister. We can do this together. With my knowledge and your technology-" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.4.2.1" },
 		{
 			"entity": "del",
-			"textMessage": "|You can't see it yet but... people are starving and the Godi are about to awaken for good.",
+			"textMessage": "dialogues|R&B.4.2.2",
 			"options": {
 				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "del", "flip": true }
 			}
 		},
-		{ "entity": "del", "textMessage": "|The last one was just a glimpse at what's to come." },
-		{ "entity": "del", "textMessage": "|I don't want anyone suffering like I... am." },
-		{ "entity": "del", "textMessage": "|There is no time to search for an alternative. This is the only way." },
+		{ "entity": "del", "textMessage": "dialogues|R&B.4.2.3" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.4.2.4" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.4.2.5" },
 		{
 			"entity": "cress",
-			"textMessage": "|...There is always another way...",
+			"textMessage": "dialogues|R&B.4.2.6",
 			"options": {
 				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "cress", "flip": true }
 			}
@@ -10637,7 +10637,7 @@
 	"id": { "id": 863 },
 	"name": "R&B 4.3",
 	"lines": [
-		{ "entity": "", "textMessage": "|Some time later..." }
+		{ "entity": "", "textMessage": "dialogues|R&B.4.3" }
 	],
 	"end": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
 },
@@ -10646,10 +10646,10 @@
 	"id": { "id": 864 },
 	"name": "R&B 4.4",
 	"lines": [
-		{ "entity": "del", "textMessage": "|Huh?" },
-		{ "entity": "punk1", "textMessage": "|Aight boys let's destroy this thing, I got a girl waiting for me at home!" },
-		{ "entity": "punk2", "textMessage": "|I'm your girlfriend!" },
-		{ "entity": "punk1", "textMessage": "|You're here???" }
+		{ "entity": "del", "textMessage": "dialogues|R&B.4.4.1" },
+		{ "entity": "punk1", "textMessage": "dialogues|R&B.4.4.2" },
+		{ "entity": "punk2", "textMessage": "dialogues|R&B.4.4.3" },
+		{ "entity": "punk1", "textMessage": "dialogues|R&B.4.4.4" }
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
@@ -10677,18 +10677,18 @@
 	"id": { "id": 865 },
 	"name": "R&B 4.5",
 	"lines": [
-		{ "entity": "del", "textMessage": "|HEY! GET AWAY FROM THERE!" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.4.5.1" },
 		{
 			"entity": "punk1, punk2, punk3",
-			"textMessage": "|Make us!",
+			"textMessage": "dialogues|R&B.4.5.2",
 			"options": {
-				"talkingMessage": "|Crimson Punks",
+				"talkingMessage": "dialogues|R&B.4.5.22",
 				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnAllToEntityScript", "name": "del" }
 			}
 		},
 		{
 			"entity": "yven",
-			"textMessage": "|Ma'am, allow me to aid you.",
+			"textMessage": "dialogues|R&B.4.5.3",
 			"options": {
 				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "yven", "relative": true, "moveType": "ANIMATED_MOVING_TILE", "speed": 1, "x": 1 }
 			}
@@ -10704,11 +10704,11 @@
 	"id": { "id": 866 },
 	"name": "R&B 4.6",
 	"lines": [
-		{ "entity": "flink", "textMessage": "|You can beat us but you'll never break our spirits!" },
-		{ "entity": "del", "textMessage": "|I don't care about your spirit. Go home." },
-		{ "entity": "flink", "textMessage": "|..." },
-		{ "entity": "del", "textMessage": "|I'm sure your \"leader\" needs you." },
-		{ "entity": "flink", "textMessage": "|tsk" }
+		{ "entity": "flink", "textMessage": "dialogues|R&B.4.6.1" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.4.6.2" },
+		{ "entity": "flink", "textMessage": "dialogues|Pause" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.4.6.4" },
+		{ "entity": "flink", "textMessage": "dialogues|R&B.4.6.5" }
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
@@ -10731,8 +10731,8 @@
 	"id": { "id": 867 },
 	"name": "R&B 4.7",
 	"lines": [
-		{ "entity": "yven", "textMessage": "|Ma'am don't you want to interrogate them?" },
-		{ "entity": "del", "textMessage": "|No. I know everything I need to know." }
+		{ "entity": "yven", "textMessage": "dialogues|R&B.4.7.1" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.4.7.2" }
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
@@ -10770,14 +10770,14 @@
 	"id": { "id": 868 },
 	"name": "R&B 4.8",
 	"lines": [
-		{ "entity": "del", "textMessage": "|Cress, don't send your friends again or you'll regret it." },
-		{ "entity": "cress", "textMessage": "|..." },
+		{ "entity": "del", "textMessage": "dialogues|R&B.4.8.1" },
+		{ "entity": "cress", "textMessage": "dialogues|Pause" },
 		{
 			"entity": "del",
-			"textMessage": "|I told you that it's the only way. Why don't you-",
+			"textMessage": "dialogues|R&B.4.8.3",
 			"options": { "duration": 0.6 }
 		},
-		{ "entity": "", "textMessage": "|*Beep*" }
+		{ "entity": "", "textMessage": "dialogues|R&B.4.8.4" }
 	],
 	"end": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
 },
@@ -10786,78 +10786,78 @@
 	"id": { "id": 869 },
 	"name": "R&B 5.1",
 	"lines": [
-		{ "entity": "cress", "textMessage": "|All of Everod\\u2026 my punks\\u2026 they\\u2019re..." },
-		{ "entity": "del", "textMessage": "|You actually came here instead of going to Everod. I'm impressed.\r" },
-		{ "entity": "cress", "textMessage": "|The mission was always to stop Operation \"Godius\". Attacking the factory was just a distraction." },
-		{ "entity": "del", "textMessage": "|So was Everod. They're not dead. We put them somewhere safe.\r\r" },
-		{ "entity": "del", "textMessage": "|... I'll release them as soon as you join my cause.\r" },
-		{ "entity": "del", "textMessage": "|All I want to do is make Anikka a better place for everyone." },
-		{ "entity": "cress", "textMessage": "|Del\\u2026 please listen to me. You weren't always like this...\r" },
-		{ "entity": "del", "textMessage": "|You need to start looking at the bigger picture. We WILL destroy the Godi..." },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.5.1.1" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.5.1.2" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.5.1.3" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.5.1.4" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.5.1.5" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.5.1.6" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.5.1.7" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.5.1.8" },
 		{
 			"entity": "del",
-			"textMessage": "|... But first we can use their power for the greater good.\r",
+			"textMessage": "dialogues|R&B.5.1.9",
 			"options": {
 				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "cress", "relative": true, "moveType": "ANIMATED_MOVING_TILE", "speed": 1, "x": 1 }
 			}
 		},
 		{
 			"entity": "cress",
-			"textMessage": "|By AWAKENING them? Are you listening to yourself?\r",
+			"textMessage": "dialogues|R&B.5.1.10",
 			"options": {
 				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ShakeEntityScript", "name": "cress", "intensity": 1 }
 			}
 		},
 		{
 			"entity": "del",
-			"textMessage": "|We can\\u2019t keep living in fear! ",
+			"textMessage": "dialogues|R&B.5.1.11",
 			"options": {
 				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "name": "del", "relative": true, "moveType": "ANIMATED_MOVING_TILE", "speed": 1, "x": -1 }
 			}
 		},
-		{ "entity": "del", "textMessage": "|You should see the work we\\u2019ve done with Exerian. We\\u2019ve been able to generate food out of thin air-" },
-		{ "entity": "cress", "textMessage": "|Don't you remember what Exerian did to YOUR people just with ONE arm?\r" },
-		{ "entity": "del", "textMessage": "|What happened to Midius\\u2026 it could have been prevented." },
-		{ "entity": "del", "textMessage": "|I can already control Exerian. This will be a safe process.\r" },
-		{ "entity": "del", "textMessage": "|You know it's only dangerous when mishandled." },
-		{ "entity": "cress", "textMessage": "|They\\u2019ve never NOT been mishandled!\r" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.5.1.12" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.5.1.13" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.5.1.14" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.5.1.15" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.5.1.16" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.5.1.17" },
 		{
 			"entity": "cress",
-			"textMessage": "|Talk to me! We can solve this! But controlling the Godi\\u2026 that\\u2019s just impossible.",
+			"textMessage": "dialogues|R&B.5.1.18",
 			"options": {
 				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ShakeEntityScript", "name": "cress" }
 			}
 		},
 		{
 			"entity": "del",
-			"textMessage": "|All YOU ever talk about is the past and what COULD happen.\r",
+			"textMessage": "dialogues|R&B.5.1.19",
 			"options": {
 				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.MoveEntityScript", "x": 1 }
 			}
 		},
-		{ "entity": "del", "textMessage": "|I only care about what IS happening right now! I stopped caring about WHAT IFs a long time ago." },
-		{ "entity": "cress", "textMessage": "|Del\\u2026 you\\u2019re going too far.\r" },
-		{ "entity": "del", "textMessage": "|Who do you think invented the Godi in the first place? It wasn\\u2019t some evil wizard.\r" },
-		{ "entity": "del", "textMessage": "|It was people like you and me who were trying to save their world." },
-		{ "entity": "cress", "textMessage": "|And their inventions almost killed them all!\r" },
-		{ "entity": "del", "textMessage": "|Well LOOK AROUND. Anikka is falling apart!\r" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.5.1.20" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.5.1.21" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.5.1.22" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.5.1.23" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.5.1.24" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.5.1.25" },
 		{
 			"entity": "del",
-			"textMessage": "|People\\u2026 FAMILIES disappear in a matter of seconds because nobody dares to touch the Godi.",
+			"textMessage": "dialogues|R&B.5.1.26",
 			"options": {
 				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ShakeEntityScript", "name": "del", "intensity": 1 }
 			}
 		},
 		{
 			"entity": "del",
-			"textMessage": "|You\\u2019re scared of the world ending? Well MY World has ended a long time ago!",
+			"textMessage": "dialogues|R&B.5.1.27",
 			"options": {
 				"color": { "r": 1, "b": 0.11764706, "a": 1 }
 			}
 		},
 		{
 			"entity": "cress",
-			"textMessage": "|Del. I'm going to stop you right here, right now.",
+			"textMessage": "dialogues|R&B.5.1.28",
 			"options": {
 				"color": { "r": 0.14117648, "g": 0.654902, "b": 1, "a": 1 },
 				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.ShakeEntityScript", "name": "cress" }
@@ -10865,7 +10865,7 @@
 		},
 		{
 			"entity": "del",
-			"textMessage": "|You can't even touch me.",
+			"textMessage": "dialogues|R&B.5.1.29",
 			"options": {
 				"charTimer": 20,
 				"duration": 1,
@@ -10893,29 +10893,29 @@
 	"id": { "id": 870 },
 	"name": "R&B 5.2",
 	"lines": [
-		{ "entity": "cress", "textMessage": "|Couldn\\u2019t even bother to show up huh." },
-		{ "entity": "del", "textMessage": "|I\\u2019m generating a copy of myself from the other side of the continent..." },
-		{ "entity": "del", "textMessage": "|The power of the Godi is amazing isn\\u2019t it." },
-		{ "entity": "cress", "textMessage": "|Exerian fought pretty well but... it's just a busted proto type isn't it." },
-		{ "entity": "del", "textMessage": "|So you've figured it out." },
-		{ "entity": "cress", "textMessage": "|A real Godius wouldn\\u2019t crack." },
-		{ "entity": "del", "textMessage": "|Exactly." },
-		{ "entity": "cress", "textMessage": "|Still feels good to break your toys though." },
-		{ "entity": "del", "textMessage": "|Yes you\\u2019ve successfully stopped our plans\\u2026 for now." },
-		{ "entity": "cress", "textMessage": "|For now?" },
-		{ "entity": "del", "textMessage": "|Without Exerian, progress on our end does take a massive hit... " },
-		{ "entity": "del", "textMessage": "|I'm using a real Godius for this generation of myself\\u2026 but I\\u2019ll find the others and get them all working in less than a year. " },
-		{ "entity": "del", "textMessage": "|Then Anikka will finally prosper with infinite power. This will work." },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.5.2.1" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.5.2.2" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.5.2.3" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.5.2.4" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.5.2.5" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.5.2.6" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.5.2.7" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.5.2.8" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.5.2.9" },
+		{ "entity": "cress", "textMessage": "dialogues|R&B.5.2.10" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.5.2.11" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.5.2.12" },
+		{ "entity": "del", "textMessage": "dialogues|R&B.5.2.13" },
 		{
 			"entity": "cress",
-			"textMessage": "|Something will go wrong Del.\nHumans make mistakes.",
+			"textMessage": "dialogues|R&B.5.2.14",
 			"options": {
 				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "cress" }
 			}
 		},
 		{
 			"entity": "del",
-			"textMessage": "|I don't.",
+			"textMessage": "dialogues|R&B.5.2.15",
 			"options": {
 				"color": { "r": 0.827451, "g": 0.08235294, "b": 0.9098039, "a": 1 },
 				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "del" }
@@ -10929,10 +10929,10 @@
 	"id": { "id": 673 },
 	"name": "After Credits 1",
 	"lines": [
-		{ "entity": "rozu", "textMessage": "|Spark stop!" },
-		{ "entity": "spark", "textMessage": "|Fin and his brother are still in Everod we need to help them. NOW!" },
-		{ "entity": "rozu", "textMessage": "|We can't do anything without Crimson Force." },
-		{ "entity": "rozu", "textMessage": "|Let's first find the other Punks before-" }
+		{ "entity": "rozu", "textMessage": "dialogues|After.Credits.1.1" },
+		{ "entity": "spark", "textMessage": "dialogues|After.Credits.1.2" },
+		{ "entity": "rozu", "textMessage": "dialogues|After.Credits.1.3" },
+		{ "entity": "rozu", "textMessage": "dialogues|After.Credits.1.4" }
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
@@ -10979,14 +10979,14 @@
 	"id": { "id": 871 },
 	"name": "After Credits 2",
 	"lines": [
-		{ "entity": "spark, rozu", "textMessage": "|CRESS!" },
-		{ "entity": "cress", "textMessage": "|Hey..." },
-		{ "entity": "spark", "textMessage": "|You came from Everod? Is everyone OK?" },
-		{ "entity": "cress", "textMessage": "|Everyone is... gone." },
-		{ "entity": "rozu", "textMessage": "|Gone?" },
-		{ "entity": "cress", "textMessage": "|Everod... our base... the punks... all gone." },
-		{ "entity": "spark", "textMessage": "|So we lost? It's over?" },
-		{ "entity": "cress", "textMessage": "|No no no we won *wheeze* we won." }
+		{ "entity": "spark, rozu", "textMessage": "dialogues|After.Credits.2.1" },
+		{ "entity": "cress", "textMessage": "dialogues|After.Credits.2.2" },
+		{ "entity": "spark", "textMessage": "dialogues|After.Credits.2.3" },
+		{ "entity": "cress", "textMessage": "dialogues|After.Credits.2.4" },
+		{ "entity": "rozu", "textMessage": "dialogues|After.Credits.2.5" },
+		{ "entity": "cress", "textMessage": "dialogues|After.Credits.2.6" },
+		{ "entity": "spark", "textMessage": "dialogues|After.Credits.2.7" },
+		{ "entity": "cress", "textMessage": "dialogues|After.Credits.2.8" }
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
@@ -11011,14 +11011,14 @@
 	"id": { "id": 872 },
 	"name": "After Credits 3",
 	"lines": [
-		{ "entity": "cress", "textMessage": "|For now... I've destroyed the Godius. But there are more to come." },
-		{ "entity": "spark", "textMessage": "|I don't care about that... where is Fin?" },
-		{ "entity": "cress", "textMessage": "|Your boyfriend? Ask him yourself." },
-		{ "entity": "", "textMessage": "|*Cress hands Spark one of Exerian's horns.*" },
-		{ "entity": "cress", "textMessage": "|After I destroyed the Godius I started hearing his voice coming from the rummage..." },
-		{ "entity": "fin", "textMessage": "|Spark? " },
-		{ "entity": "spark", "textMessage": "|FIN!!! ARE YOU AND ADAM OK? I'M SO GLAD!!!" },
-		{ "entity": "fin", "textMessage": "|Spark..." }
+		{ "entity": "cress", "textMessage": "dialogues|After.Credits.3.1" },
+		{ "entity": "spark", "textMessage": "dialogues|After.Credits.3.2" },
+		{ "entity": "cress", "textMessage": "dialogues|After.Credits.3.3" },
+		{ "entity": "", "textMessage": "dialogues|After.Credits.3.4" },
+		{ "entity": "cress", "textMessage": "dialogues|After.Credits.3.5" },
+		{ "entity": "fin", "textMessage": "dialogues|After.Credits.3.6" },
+		{ "entity": "spark", "textMessage": "dialogues|After.Credits.3.7" },
+		{ "entity": "fin", "textMessage": "dialogues|After.Credits.3.8" }
 	],
 	"start": {
 		"class": "com.one2b3.endcycle.features.scripts.battle.AddEntityFormScript",
@@ -11040,7 +11040,7 @@
 	"id": { "id": 873 },
 	"name": "After Credits 4",
 	"lines": [
-		{ "entity": "fin", "textMessage": "|... I think all of Everod and Crimson Force is stuck inside the Networld." }
+		{ "entity": "fin", "textMessage": "dialogues|After.Credits.4" }
 	]
 },
 {
@@ -11048,19 +11048,19 @@
 	"id": { "id": 874 },
 	"name": "After Credits 5",
 	"lines": [
-		{ "entity": "rozu", "textMessage": "|Where will I go now? The Crimson base was my home... the Punks my family..." },
-		{ "entity": "spark", "textMessage": "|We'll get you out of there Fin!" },
-		{ "entity": "cress", "textMessage": "|Azure Shield controls all entry points to the Networld... \nAnd the more popular they get the more people will join them." },
-		{ "entity": "rozu", "textMessage": "|What are you saying?" },
-		{ "entity": "cress", "textMessage": "|I'm saying it's us 3 VS the biggest army on this planet." },
+		{ "entity": "rozu", "textMessage": "dialogues|After.Credits.5.1" },
+		{ "entity": "spark", "textMessage": "dialogues|After.Credits.5.2" },
+		{ "entity": "cress", "textMessage": "dialogues|After.Credits.5.3" },
+		{ "entity": "rozu", "textMessage": "dialogues|After.Credits.5.4" },
+		{ "entity": "cress", "textMessage": "dialogues|After.Credits.5.5" },
 		{
 			"entity": "cress",
-			"textMessage": "|Crimson Force VS Azure Shield round two.",
+			"textMessage": "dialogues|After.Credits.5.6",
 			"options": {
 				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.TurnEntityScript", "name": "cress" }
 			}
 		},
-		{ "entity": "cress", "textMessage": "|We're coming to end your cycle... \"sister\"." }
+		{ "entity": "cress", "textMessage": "dialogues|After.Credits.5.7" }
 	]
 },
 {
@@ -11069,7 +11069,7 @@
 	"name": "After Credits 6",
 	"lines": [
 		{
-			"textMessage": "|EndCycle    Act 1    End",
+			"textMessage": "dialogues|After.Credits.6",
 			"options": {
 				"voice": {
 					"sound": { "sound": "ui/text_click.wav" },
@@ -11087,7 +11087,7 @@
 	"id": { "id": 876 },
 	"name": "A-Agent Yven #1",
 	"lines": [
-		{ "entity": "agent_1", "textMessage": "|Sir!" }
+		{ "entity": "agent_1", "textMessage": "dialogues|A.Agent.Yven.1" }
 	]
 },
 {
@@ -11095,7 +11095,7 @@
 	"id": { "id": 877 },
 	"name": "A-Agent Yven #2",
 	"lines": [
-		{ "entity": "agent_1", "textMessage": "|We hope everything is to your satisfaction!" }
+		{ "entity": "agent_1", "textMessage": "dialogues|A.Agent.Yven.2" }
 	]
 },
 {
@@ -11103,7 +11103,7 @@
 	"id": { "id": 878 },
 	"name": "A-Agent Yven #3",
 	"lines": [
-		{ "entity": "agent_1", "textMessage": "|How has your mission been so far sir?" }
+		{ "entity": "agent_1", "textMessage": "dialogues|A.Agent.Yven.3" }
 	]
 },
 {
@@ -11111,15 +11111,15 @@
 	"id": { "id": 879 },
 	"name": "A-Agent>Yven Banter #1",
 	"lines": [
-		{ "entity": "agent_2", "textMessage": "|Sir, how come you are so good at fighting Noises?" },
+		{ "entity": "agent_2", "textMessage": "dialogues|A.Agent.Yven.Banter.1.1" },
 		{
 			"entity": "player",
-			"textMessage": "|Giant Crystal Arm?",
+			"textMessage": "dialogues|A.Agent.Yven.Banter.1.2",
 			"options": {
 				"color": { "r": 1, "g": 1, "b": 1, "a": 1 }
 			}
 		},
-		{ "entity": "agent_2", "textMessage": "|Riiiight." }
+		{ "entity": "agent_2", "textMessage": "dialogues|A.Agent.Yven.Banter.1.3" }
 	]
 },
 {
@@ -11127,10 +11127,10 @@
 	"id": { "id": 880 },
 	"name": "A-Agent>Yven Banter #2",
 	"lines": [
-		{ "entity": "agent_2", "textMessage": "|There is a rumor that you were the first Azure Agent, is that true sir?" },
+		{ "entity": "agent_2", "textMessage": "dialogues|A.Agent.Yven.Banter.2.1" },
 		{
 			"entity": "player",
-			"textMessage": "|No comment.",
+			"textMessage": "dialogues|A.Agent.Yven.Banter.2.2",
 			"options": {
 				"color": { "r": 1, "g": 1, "b": 1, "a": 1 }
 			}
@@ -11142,17 +11142,17 @@
 	"id": { "id": 881 },
 	"name": "A-Agent>Yven Banter #3",
 	"lines": [
-		{ "entity": "agent_2", "textMessage": "|What's your secret sir?" },
+		{ "entity": "agent_2", "textMessage": "dialogues|A.Agent.Yven.Banter.3.1" },
 		{
 			"entity": "player",
-			"textMessage": "|My secret to what?",
+			"textMessage": "dialogues|A.Agent.Yven.Banter.3.2",
 			"options": {
 				"color": { "r": 1, "g": 1, "b": 1, "a": 1 }
 			}
 		},
-		{ "entity": "agent_2", "textMessage": "|Your success." },
-		{ "entity": "player", "textMessage": "|What success? Is the mission finished?" },
-		{ "entity": "agent_2", "textMessage": "|No I was just... nevermind." }
+		{ "entity": "agent_2", "textMessage": "dialogues|A.Agent.Yven.Banter.3.3" },
+		{ "entity": "player", "textMessage": "dialogues|A.Agent.Yven.Banter.3.4" },
+		{ "entity": "agent_2", "textMessage": "dialogues|A.Agent.Yven.Banter.3.5" }
 	]
 },
 {
@@ -11160,16 +11160,16 @@
 	"id": { "id": 882 },
 	"name": "A-Agent>Yven Banter #4",
 	"lines": [
-		{ "entity": "agent_2", "textMessage": "|The mission is going well sir!" },
+		{ "entity": "agent_2", "textMessage": "dialogues|A.Agent.Yven.Banter.4.1" },
 		{
 			"entity": "player",
-			"textMessage": "|I would hope so... but I just can\\u2019t help but get involved myself.",
+			"textMessage": "dialogues|A.Agent.Yven.Banter.4.2",
 			"options": {
 				"color": { "r": 1, "g": 1, "b": 1, "a": 1 }
 			}
 		},
-		{ "entity": "agent_2", "textMessage": "|Oh... I wasn't... I didn't mean to offend!" },
-		{ "entity": "player", "textMessage": "|... At ease agent." }
+		{ "entity": "agent_2", "textMessage": "dialogues|A.Agent.Yven.Banter.4.3" },
+		{ "entity": "player", "textMessage": "dialogues|A.Agent.Yven.Banter.4.4" }
 	]
 },
 {
@@ -11177,16 +11177,16 @@
 	"id": { "id": 883 },
 	"name": "A-Agent>Yven Banter #5",
 	"lines": [
-		{ "entity": "agent_2", "textMessage": "|Sir, I've always wondered... is your arm a VOC?" },
+		{ "entity": "agent_2", "textMessage": "dialogues|A.Agent.Yven.Banter.5.1" },
 		{
 			"entity": "player",
-			"textMessage": "|Which arm?",
+			"textMessage": "dialogues|A.Agent.Yven.Banter.5.2",
 			"options": {
 				"color": { "r": 1, "g": 1, "b": 1, "a": 1 }
 			}
 		},
-		{ "entity": "agent_2", "textMessage": "|The giant crystal one." },
-		{ "entity": "player", "textMessage": "|Oh, that one isn't a VOC no." }
+		{ "entity": "agent_2", "textMessage": "dialogues|A.Agent.Yven.Banter.5.3" },
+		{ "entity": "player", "textMessage": "dialogues|A.Agent.Yven.Banter.5.4" }
 	]
 },
 {
@@ -11194,17 +11194,17 @@
 	"id": { "id": 884 },
 	"name": "A-Agent>Yven Banter #6",
 	"lines": [
-		{ "entity": "player", "textMessage": "|HEY! No slacking off!" },
+		{ "entity": "player", "textMessage": "dialogues|A.Agent.Yven.Banter.6.1" },
 		{
 			"entity": "agent_2",
-			"textMessage": "|SORRY SIR! MS. DEL SAID I COULD HAVE THE DAY OFF!",
+			"textMessage": "dialogues|A.Agent.Yven.Banter.6.2",
 			"options": {
 				"color": { "r": 1, "g": 1, "b": 1, "a": 1 }
 			}
 		},
-		{ "entity": "player", "textMessage": "|And where is your proof of that?" },
-		{ "entity": "agent_2", "textMessage": "|... I guess I have none." },
-		{ "entity": "player", "textMessage": "|Just kidding, happy birthday Charlie." }
+		{ "entity": "player", "textMessage": "dialogues|A.Agent.Yven.Banter.6.3" },
+		{ "entity": "agent_2", "textMessage": "dialogues|A.Agent.Yven.Banter.6.4" },
+		{ "entity": "player", "textMessage": "dialogues|A.Agent.Yven.Banter.6.5" }
 	],
 	"end": { "class": "com.one2b3.endcycle.features.scripts.general.EmotupScript", "name": "agent_2", "emotup": "BLUSH" }
 },
@@ -11213,8 +11213,8 @@
 	"id": { "id": 885 },
 	"name": "A-Log 1",
 	"lines": [
-		{ "entity": "tablet", "textMessage": "|Log #1: Ok I\\u2019m gonna record everything I know here just in case anybody would be CRAZY enough to re-active this thing." },
-		{ "entity": "tablet", "textMessage": "|Here are 700 reasons why YOU shouldn\\u2019t re-activate the Godius known as \\u201CEX-erian\\u201D..." }
+		{ "entity": "tablet", "textMessage": "dialogues|A.Log.1.1" },
+		{ "entity": "tablet", "textMessage": "dialogues|A.Log.1.2" }
 	]
 },
 {
@@ -11222,8 +11222,8 @@
 	"id": { "id": 886 },
 	"name": "A-Log 350",
 	"lines": [
-		{ "entity": "tablet", "textMessage": "|Log #350: Whew! Already halfway through! Ok here goes the next one: You will grow to love it. Seriously." },
-		{ "entity": "tablet", "textMessage": "|And then all the 700 reasons I\\u2019ve named won\\u2019t be able to sway you! Even if it kills everyone else in your life. The people here can tell you that first hand." }
+		{ "entity": "tablet", "textMessage": "dialogues|A.Log.350.1" },
+		{ "entity": "tablet", "textMessage": "dialogues|A.Log.350.2" }
 	]
 },
 {
@@ -11231,8 +11231,8 @@
 	"id": { "id": 887 },
 	"name": "A-Log 274",
 	"lines": [
-		{ "entity": "tablet", "textMessage": "|Log #274: It hates trees! What? Yeah!" },
-		{ "entity": "tablet", "textMessage": "|Why? Because trees are good! And this machi- this creature kills anything that is good in this world!" }
+		{ "entity": "tablet", "textMessage": "dialogues|A.Log.274.1" },
+		{ "entity": "tablet", "textMessage": "dialogues|A.Log.274.2" }
 	]
 },
 {
@@ -11240,8 +11240,8 @@
 	"id": { "id": 888 },
 	"name": "A-Log 580",
 	"lines": [
-		{ "entity": "tablet", "textMessage": "|Log #580: Is it my fault? Maybe, who knows. I just gave them what they wanted." },
-		{ "entity": "tablet", "textMessage": "|And it wouldn\\u2019t have been fair to only give ONE nation one of these. I can\\u2019t be responsible for how they use it, can I?" }
+		{ "entity": "tablet", "textMessage": "dialogues|A.Log.580.1" },
+		{ "entity": "tablet", "textMessage": "dialogues|A.Log.580.2" }
 	]
 },
 {
@@ -11249,8 +11249,8 @@
 	"id": { "id": 889 },
 	"name": "A-Log 111",
 	"lines": [
-		{ "entity": "tablet", "textMessage": "|Log #111: Oh I forgot to mention that it can read your mind and use your weaknesses against you." },
-		{ "entity": "tablet", "textMessage": "|Wasn\\u2019t easy to implement that feature but here we are." }
+		{ "entity": "tablet", "textMessage": "dialogues|A.Log.111.1" },
+		{ "entity": "tablet", "textMessage": "dialogues|A.Log.111.2" }
 	]
 },
 {
@@ -11258,9 +11258,9 @@
 	"id": { "id": 890 },
 	"name": "A-Log 600",
 	"lines": [
-		{ "entity": "tablet", "textMessage": "|Log #600: It has no face." },
-		{ "entity": "tablet", "textMessage": "|But Y#1!Lq$qT5 I can clearly see that it has one." },
-		{ "entity": "tablet", "textMessage": "|That\\u2019s the messed up thing! It DOESN'T... I can see it too but I swear to you. I did not put a face there and it- well trust me it\\u2019s just not there!" }
+		{ "entity": "tablet", "textMessage": "dialogues|A.Log.600.1" },
+		{ "entity": "tablet", "textMessage": "dialogues|A.Log.600.2" },
+		{ "entity": "tablet", "textMessage": "dialogues|A.Log.600.3" }
 	]
 },
 {
@@ -11268,8 +11268,8 @@
 	"id": { "id": 891 },
 	"name": "A-Log 14",
 	"lines": [
-		{ "entity": "tablet", "textMessage": "|Log #14: It\\u2019ll enter your dreams. How? I\\u2019d rather not say. But it\\u2019ll wait for you there." },
-		{ "entity": "tablet", "textMessage": "|If you don\\u2019t meet it tonight, it just means it\\u2019s hiding in a corner of your mind you can\\u2019t see." }
+		{ "entity": "tablet", "textMessage": "dialogues|A.Log.14.1" },
+		{ "entity": "tablet", "textMessage": "dialogues|A.Log.14.2" }
 	]
 },
 {
@@ -11277,8 +11277,8 @@
 	"id": { "id": 892 },
 	"name": "A-Log 80",
 	"lines": [
-		{ "entity": "tablet", "textMessage": "|Log: #80: A lot of people have met Exerian and soon after forgotten all about it." },
-		{ "entity": "tablet", "textMessage": "|Yes that\\u2019s intentional, and YES that made it a nightmare to design." }
+		{ "entity": "tablet", "textMessage": "dialogues|A.Log.80.1" },
+		{ "entity": "tablet", "textMessage": "dialogues|A.Log.80.2" }
 	]
 },
 {
@@ -11286,8 +11286,8 @@
 	"id": { "id": 893 },
 	"name": "A-Log 504",
 	"lines": [
-		{ "entity": "tablet", "textMessage": "|Log #504: It\\u2019s really annoying to keep clean. I haven\\u2019t been able to invent all the tools necessary to reach the deepest corners of this thing..." },
-		{ "entity": "tablet", "textMessage": "|... And you don\\u2019t want to know what gets stuck in there. Or who." }
+		{ "entity": "tablet", "textMessage": "dialogues|A.Log.504.1" },
+		{ "entity": "tablet", "textMessage": "dialogues|A.Log.504.2" }
 	]
 },
 {
@@ -11295,8 +11295,8 @@
 	"id": { "id": 894 },
 	"name": "A-Log 7",
 	"lines": [
-		{ "entity": "tablet", "textMessage": "|Log #7: This continent used to be a whole lot bigger before this monstrosity got activated." },
-		{ "entity": "tablet", "textMessage": "|But I guess you could say that for all the Godi..." }
+		{ "entity": "tablet", "textMessage": "dialogues|A.Log.7.1" },
+		{ "entity": "tablet", "textMessage": "dialogues|A.Log.7.2" }
 	]
 },
 {
@@ -11304,8 +11304,8 @@
 	"id": { "id": 895 },
 	"name": "A-Log 327",
 	"lines": [
-		{ "entity": "tablet", "textMessage": "|Log: #327: I did NOT give it that color. I do not know HOW it turned that shade..." },
-		{ "entity": "tablet", "textMessage": "|... but judging from how fresh the paint always looks, I\\u2019m thinking it regularly kills something to soak itself in- well you get the point." }
+		{ "entity": "tablet", "textMessage": "dialogues|A.Log.327.1" },
+		{ "entity": "tablet", "textMessage": "dialogues|A.Log.327.2" }
 	]
 },
 {
@@ -11313,8 +11313,8 @@
 	"id": { "id": 896 },
 	"name": "A-Log 28",
 	"lines": [
-		{ "entity": "tablet", "textMessage": "|Log: #28: It never stops. It\\u2019s not designed to. The prototype \\u201CExerian\\u201D is supposed to decompose..." },
-		{ "entity": "tablet", "textMessage": "|... but my contractors told me to remove that feature. Not sure why they thought that was a good idea..." }
+		{ "entity": "tablet", "textMessage": "dialogues|A.Log.28.1" },
+		{ "entity": "tablet", "textMessage": "dialogues|A.Log.28.2" }
 	]
 },
 {
@@ -11322,8 +11322,8 @@
 	"id": { "id": 897 },
 	"name": "A-Log 94",
 	"lines": [
-		{ "entity": "tablet", "textMessage": "|Log: #94: It once disappeared for a whole month. I didn\\u2019t find it... as much as it just popped back into existence in front of my house." },
-		{ "entity": "tablet", "textMessage": "|Actually I'm not sure if that really happened \\u2026 Wait, that\\u2019s another reason!" }
+		{ "entity": "tablet", "textMessage": "dialogues|A.Log.94.1" },
+		{ "entity": "tablet", "textMessage": "dialogues|A.Log.94.2" }
 	]
 },
 {
@@ -11331,7 +11331,7 @@
 	"id": { "id": 898 },
 	"name": "A-Log 5",
 	"lines": [
-		{ "entity": "tablet", "textMessage": "|Log: #5: If you think you have found a way to control it: YOU. CAN\\u2019T." }
+		{ "entity": "tablet", "textMessage": "dialogues|A.Log.5" }
 	]
 },
 {
@@ -11339,8 +11339,8 @@
 	"id": { "id": 899 },
 	"name": "A-Log 10",
 	"lines": [
-		{ "entity": "tablet", "textMessage": "|Log: #10: Yes, it does contain the means to create infinite resources." },
-		{ "entity": "tablet", "textMessage": "|But like I said: The cost is EVERYTHING." }
+		{ "entity": "tablet", "textMessage": "dialogues|A.Log.10.1" },
+		{ "entity": "tablet", "textMessage": "dialogues|A.Log.10.2" }
 	]
 },
 {
@@ -11348,7 +11348,7 @@
 	"id": { "id": 900 },
 	"name": "A-Punk>Sus #1",
 	"lines": [
-		{ "entity": "punk_1", "textMessage": "|You can\\u2019t just waltz in here!" }
+		{ "entity": "punk_1", "textMessage": "dialogues|A.Punk.Sus.1" }
 	]
 },
 {
@@ -11356,7 +11356,7 @@
 	"id": { "id": 901 },
 	"name": "A-Punk>Sus #2",
 	"lines": [
-		{ "entity": "punk_1", "textMessage": "|Your hair ain\\u2019t punk-y at all!" }
+		{ "entity": "punk_1", "textMessage": "dialogues|A.Punk.Sus.2" }
 	]
 },
 {
@@ -11364,7 +11364,7 @@
 	"id": { "id": 902 },
 	"name": "A-Punk>Sus #3",
 	"lines": [
-		{ "entity": "punk_1", "textMessage": "|Not sure who you are, but just to be safe..." }
+		{ "entity": "punk_1", "textMessage": "dialogues|A.Punk.Sus.3" }
 	]
 },
 {
@@ -11372,7 +11372,7 @@
 	"id": { "id": 903 },
 	"name": "A-Punk>Sus #4",
 	"lines": [
-		{ "entity": "punk_1", "textMessage": "|Let us show you what a \"Plan\" is!" }
+		{ "entity": "punk_1", "textMessage": "dialogues|A.Punk.Sus.4" }
 	]
 },
 {
@@ -11380,7 +11380,7 @@
 	"id": { "id": 904 },
 	"name": "A-Agent>Sus #1",
 	"lines": [
-		{ "entity": "agent_1", "textMessage": "|Well you\\u2019re obviously a spy." }
+		{ "entity": "agent_1", "textMessage": "dialogues|A.Agent.Sus.1" }
 	]
 },
 {
@@ -11388,7 +11388,7 @@
 	"id": { "id": 905 },
 	"name": "A-Agent>Sus #2",
 	"lines": [
-		{ "entity": "agent_1", "textMessage": "|No ID, no entry! Get out!" }
+		{ "entity": "agent_1", "textMessage": "dialogues|A.Agent.Sus.2" }
 	]
 },
 {
@@ -11396,7 +11396,7 @@
 	"id": { "id": 906 },
 	"name": "A-Agent>Sus #3",
 	"lines": [
-		{ "entity": "agent_1", "textMessage": "|This one stinks of PUNK." }
+		{ "entity": "agent_1", "textMessage": "dialogues|A.Agent.Sus.3" }
 	]
 },
 {
@@ -11404,7 +11404,7 @@
 	"id": { "id": 907 },
 	"name": "A-Agent>Sus #4",
 	"lines": [
-		{ "entity": "agent_1", "textMessage": "|Hey, this one must've heard about our secret mission! Get 'em!" }
+		{ "entity": "agent_1", "textMessage": "dialogues|A.Agent.Sus.4" }
 	]
 }
 ]

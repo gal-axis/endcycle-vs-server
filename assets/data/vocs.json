@@ -85,7 +85,7 @@
 		"level": 2,
 		"property": {
 			"ailments": [
-				{ "type": "TIME", "intensity": -0.75, "duration": 3 }
+				{ "type": "TIME", "intensity": -0.6, "duration": 3 }
 			],
 			"crushPower": 100
 		},
@@ -686,8 +686,8 @@
 		"level": 3,
 		"property": {
 			"ailments": [
-				{ "type": "HP_CHANGER", "intensity": 20, "duration": 15 },
-				{ "type": "HEAL", "intensity": 50 }
+				{ "type": "HP_CHANGER", "intensity": 20, "duration": 10 },
+				{ "type": "HEAL", "intensity": 80 }
 			]
 		},
 		"targetType": null,
@@ -1126,7 +1126,8 @@
 		"property": {
 			"element": "FIRE",
 			"ailments": [
-				{ "type": "ELEMENT", "intensity": 1 }
+				{ "type": "ELEMENT", "intensity": 1 },
+				{ "type": "TIME", "intensity": 0.2, "duration": 3.5 }
 			]
 		},
 		"targetType": {
@@ -1156,12 +1157,13 @@
 	"preview": {},
 	"attackShell": {
 		"nameMessage": "gamedata|Voc.WaterSoul.Name",
-		"descriptionMessage": "gamedata|Voc.WaterSoul.Description",
+		"descriptionMessage": "gamedata|Voc.FireSoul.Description",
 		"level": 4,
 		"property": {
 			"element": "WATER",
 			"ailments": [
-				{ "type": "ELEMENT", "intensity": 2 }
+				{ "type": "ELEMENT", "intensity": 2 },
+				{ "type": "TIME", "intensity": 0.2, "duration": 3.5 }
 			]
 		},
 		"targetType": {
@@ -1190,12 +1192,13 @@
 	"preview": {},
 	"attackShell": {
 		"nameMessage": "gamedata|Voc.ElecSoul.Name",
-		"descriptionMessage": "gamedata|Voc.ElecSoul.Description",
+		"descriptionMessage": "gamedata|Voc.FireSoul.Description",
 		"level": 4,
 		"property": {
 			"element": "ELEC",
 			"ailments": [
-				{ "type": "ELEMENT", "intensity": 4 }
+				{ "type": "ELEMENT", "intensity": 4 },
+				{ "type": "TIME", "intensity": 0.2, "duration": 3.5 }
 			]
 		},
 		"targetType": {
@@ -1226,12 +1229,13 @@
 	"preview": {},
 	"attackShell": {
 		"nameMessage": "gamedata|Voc.NatureSoul.Name",
-		"descriptionMessage": "gamedata|Voc.NatureSoul.Description",
+		"descriptionMessage": "gamedata|Voc.FireSoul.Description",
 		"level": 4,
 		"property": {
 			"element": "NATURE",
 			"ailments": [
-				{ "type": "ELEMENT", "intensity": 3 }
+				{ "type": "ELEMENT", "intensity": 3 },
+				{ "type": "TIME", "intensity": 0.2, "duration": 3.5 }
 			]
 		},
 		"targetType": {
@@ -2768,7 +2772,7 @@
 			"wrapper": {
 				"stats": {
 					"ailments": [
-						{ "type": "HEAL", "intensity": 120 }
+						{ "type": "HEAL", "intensity": 140 }
 					]
 				},
 				"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.status.AilmentInflicterAttack" }

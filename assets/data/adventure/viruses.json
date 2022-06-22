@@ -1,22 +1,22 @@
 [
 {
-	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"class": "com.one2b3.endcycle.features.adventure.viruses.AdventureVirus",
 	"name": "|True Rogue",
 	"description": "|Deletes your save file upon death!",
 	"bonusDescription": "|Grants a R.E.D.O. at start!",
 	"modifiers": [
-		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.DeleteSaveVirusModifier" }
+		{ "class": "com.one2b3.endcycle.features.adventure.viruses.modifiers.DeleteSaveVirusModifier" }
 	],
 	"bonus": [
 		{
-			"class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.GrantItemVirusModifier",
+			"class": "com.one2b3.endcycle.features.adventure.viruses.modifiers.GrantItemVirusModifier",
 			"item": { "id": 25 }
 		}
 	],
 	"unlockCondition": {}
 },
 {
-	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"class": "com.one2b3.endcycle.features.adventure.viruses.AdventureVirus",
 	"id": { "id": 1 },
 	"name": "|Protected",
 	"description": "|Enemies start battles with Cybarrier",
@@ -25,10 +25,10 @@
 		"drawable": { "id": 833 }
 	},
 	"modifiers": [
-		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.CybarrierVirusModifier" }
+		{ "class": "com.one2b3.endcycle.features.adventure.viruses.modifiers.CybarrierVirusModifier" }
 	],
 	"bonus": [
-		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.CybarrierVirusModifier", "self": true }
+		{ "class": "com.one2b3.endcycle.features.adventure.viruses.modifiers.CybarrierVirusModifier", "self": true }
 	],
 	"unlockCondition": {
 		"requirements": [
@@ -40,7 +40,7 @@
 	}
 },
 {
-	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"class": "com.one2b3.endcycle.features.adventure.viruses.AdventureVirus",
 	"id": { "id": 2 },
 	"name": "|Chain Reaction",
 	"description": "|Enemies explode upon death!",
@@ -49,10 +49,10 @@
 		"drawable": { "id": 834 }
 	},
 	"modifiers": [
-		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.ExplodeEntitiesVirusModifier" }
+		{ "class": "com.one2b3.endcycle.features.adventure.viruses.modifiers.ExplodeEntitiesVirusModifier" }
 	],
 	"bonus": [
-		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.ExplodeEntitiesVirusModifier", "self": true }
+		{ "class": "com.one2b3.endcycle.features.adventure.viruses.modifiers.ExplodeEntitiesVirusModifier", "self": true }
 	],
 	"unlockCondition": {
 		"requirements": [
@@ -64,7 +64,7 @@
 	}
 },
 {
-	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"class": "com.one2b3.endcycle.features.adventure.viruses.AdventureVirus",
 	"id": { "id": 3 },
 	"name": "|Immune System 0.5",
 	"description": "|Your heals are only half as effective!",
@@ -73,10 +73,10 @@
 		"drawable": { "id": 835 }
 	},
 	"modifiers": [
-		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.HitChangerVirusModifier", "heal": 0.5 }
+		{ "class": "com.one2b3.endcycle.features.adventure.viruses.modifiers.HitChangerVirusModifier", "heal": 0.5 }
 	],
 	"bonus": [
-		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.HitChangerVirusModifier", "self": true, "heal": 0.5 }
+		{ "class": "com.one2b3.endcycle.features.adventure.viruses.modifiers.HitChangerVirusModifier", "self": true, "heal": 0.5 }
 	],
 	"unlockCondition": {
 		"requirements": [
@@ -88,7 +88,7 @@
 	}
 },
 {
-	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"class": "com.one2b3.endcycle.features.adventure.viruses.AdventureVirus",
 	"id": { "id": 4 },
 	"name": "|CRUSH!!! CRUSH!!!",
 	"description": "|You take doubled crush damage!",
@@ -97,10 +97,10 @@
 		"drawable": { "id": 836 }
 	},
 	"modifiers": [
-		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.HitChangerVirusModifier", "crush": 2 }
+		{ "class": "com.one2b3.endcycle.features.adventure.viruses.modifiers.HitChangerVirusModifier", "crush": 2 }
 	],
 	"bonus": [
-		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.HitChangerVirusModifier", "self": true, "crush": 1.5 }
+		{ "class": "com.one2b3.endcycle.features.adventure.viruses.modifiers.HitChangerVirusModifier", "self": true, "crush": 1.5 }
 	],
 	"unlockCondition": {
 		"requirements": [
@@ -112,16 +112,16 @@
 	}
 },
 {
-	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"class": "com.one2b3.endcycle.features.adventure.viruses.AdventureVirus",
 	"id": { "id": 5 },
 	"name": "|Big Tough",
 	"description": "|Enemies have twice as much HP!",
 	"bonusDescription": "|You start with twice as much HP!",
 	"modifiers": [
-		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.HealthVirusModifier" }
+		{ "class": "com.one2b3.endcycle.features.adventure.viruses.modifiers.HealthVirusModifier" }
 	],
 	"bonus": [
-		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.HealthVirusModifier", "self": true }
+		{ "class": "com.one2b3.endcycle.features.adventure.viruses.modifiers.HealthVirusModifier", "self": true }
 	],
 	"unlockCondition": {
 		"requirements": [
@@ -133,7 +133,7 @@
 	}
 },
 {
-	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"class": "com.one2b3.endcycle.features.adventure.viruses.AdventureVirus",
 	"id": { "id": 6 },
 	"name": "|Improvise!",
 	"description": "|Randomizes entire pack after every zone!",
@@ -142,10 +142,10 @@
 		"drawable": { "id": 842 }
 	},
 	"modifiers": [
-		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.RandomPackVirusModifier" }
+		{ "class": "com.one2b3.endcycle.features.adventure.viruses.modifiers.RandomPackVirusModifier" }
 	],
 	"bonus": [
-		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.FullUpgradeVirusModifier" }
+		{ "class": "com.one2b3.endcycle.features.adventure.viruses.modifiers.FullUpgradeVirusModifier" }
 	],
 	"unlockCondition": {
 		"requirements": [
@@ -157,7 +157,7 @@
 	}
 },
 {
-	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"class": "com.one2b3.endcycle.features.adventure.viruses.AdventureVirus",
 	"id": { "id": 7 },
 	"name": "|Gotta Go Fast",
 	"description": "|Adds a time limit to each zone!",
@@ -166,10 +166,10 @@
 		"drawable": { "id": 467 }
 	},
 	"modifiers": [
-		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.TimeLimitVirusModifier" }
+		{ "class": "com.one2b3.endcycle.features.adventure.viruses.modifiers.TimeLimitVirusModifier" }
 	],
 	"bonus": [
-		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.BattleSpeedVirusModifier", "modifier": 1.3 }
+		{ "class": "com.one2b3.endcycle.features.adventure.viruses.modifiers.BattleSpeedVirusModifier", "modifier": 1.3 }
 	],
 	"unlockCondition": {
 		"requirements": [
@@ -181,7 +181,7 @@
 	}
 },
 {
-	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"class": "com.one2b3.endcycle.features.adventure.viruses.AdventureVirus",
 	"id": { "id": 8 },
 	"name": "|Unintelligible",
 	"description": "|Randomizes all dialogue lines",
@@ -189,7 +189,7 @@
 		"drawable": { "id": 569 }
 	},
 	"modifiers": [
-		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.RandomDialoguesVirusModifier" }
+		{ "class": "com.one2b3.endcycle.features.adventure.viruses.modifiers.RandomDialoguesVirusModifier" }
 	],
 	"unlockCondition": {
 		"requirements": [
@@ -205,7 +205,7 @@
 	}
 },
 {
-	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"class": "com.one2b3.endcycle.features.adventure.viruses.AdventureVirus",
 	"id": { "id": 9 },
 	"name": "|Icognito",
 	"description": "|Your character is randomized before each event!",
@@ -214,15 +214,15 @@
 		"drawable": { "id": 837 }
 	},
 	"modifiers": [
-		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.RandomCharacterVirusModifier", "self": true }
+		{ "class": "com.one2b3.endcycle.features.adventure.viruses.modifiers.RandomCharacterVirusModifier", "self": true }
 	],
 	"bonus": [
-		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.RandomCharacterVirusModifier" }
+		{ "class": "com.one2b3.endcycle.features.adventure.viruses.modifiers.RandomCharacterVirusModifier" }
 	],
 	"unlockCondition": {}
 },
 {
-	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"class": "com.one2b3.endcycle.features.adventure.viruses.AdventureVirus",
 	"id": { "id": 10 },
 	"name": "|Hard to Miss",
 	"description": "|All zones consist of only one branch",
@@ -230,7 +230,7 @@
 		"drawable": { "id": 838 }
 	},
 	"modifiers": [
-		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.SingleBranchZonesVirusModifier" }
+		{ "class": "com.one2b3.endcycle.features.adventure.viruses.modifiers.SingleBranchZonesVirusModifier" }
 	],
 	"unlockCondition": {
 		"requirements": [
@@ -242,7 +242,7 @@
 	}
 },
 {
-	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"class": "com.one2b3.endcycle.features.adventure.viruses.AdventureVirus",
 	"id": { "id": 11 },
 	"name": "|Mirror World",
 	"description": "|Flips screen horizontally!",
@@ -251,16 +251,16 @@
 		"drawable": { "id": 839 }
 	},
 	"modifiers": [
-		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.MirrorVirusModifier" }
+		{ "class": "com.one2b3.endcycle.features.adventure.viruses.modifiers.MirrorVirusModifier" }
 	],
 	"bonusReplace": true,
 	"bonus": [
-		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.MirrorVirusModifier", "vertical": true }
+		{ "class": "com.one2b3.endcycle.features.adventure.viruses.modifiers.MirrorVirusModifier", "vertical": true }
 	],
 	"unlockCondition": {}
 },
 {
-	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"class": "com.one2b3.endcycle.features.adventure.viruses.AdventureVirus",
 	"id": { "id": 12 },
 	"name": "|Sudden Disco!",
 	"description": "|All non-enemy panels are randomized on battle start!",
@@ -269,15 +269,15 @@
 		"drawable": { "id": 840 }
 	},
 	"modifiers": [
-		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.RandomFieldVirusModifier", "player": true }
+		{ "class": "com.one2b3.endcycle.features.adventure.viruses.modifiers.RandomFieldVirusModifier", "player": true }
 	],
 	"bonus": [
-		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.RandomFieldVirusModifier" }
+		{ "class": "com.one2b3.endcycle.features.adventure.viruses.modifiers.RandomFieldVirusModifier" }
 	],
 	"unlockCondition": {}
 },
 {
-	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"class": "com.one2b3.endcycle.features.adventure.viruses.AdventureVirus",
 	"id": { "id": 13 },
 	"name": "|Emotional Damage",
 	"description": "|Enemies deal double damage!",
@@ -286,10 +286,10 @@
 		"drawable": { "id": 841 }
 	},
 	"modifiers": [
-		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.HitChangerVirusModifier", "power": 2 }
+		{ "class": "com.one2b3.endcycle.features.adventure.viruses.modifiers.HitChangerVirusModifier", "power": 2 }
 	],
 	"bonus": [
-		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.HitChangerVirusModifier", "self": true, "power": 1.5 }
+		{ "class": "com.one2b3.endcycle.features.adventure.viruses.modifiers.HitChangerVirusModifier", "self": true, "power": 1.5 }
 	],
 	"unlockCondition": {
 		"requirements": [
@@ -298,7 +298,7 @@
 	}
 },
 {
-	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"class": "com.one2b3.endcycle.features.adventure.viruses.AdventureVirus",
 	"id": { "id": 14 },
 	"name": "|Microtransactions",
 	"description": "|Using VOCs costs money!",
@@ -307,15 +307,15 @@
 		"drawable": { "id": 571 }
 	},
 	"modifiers": [
-		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.VocMoneyVirusModifier" }
+		{ "class": "com.one2b3.endcycle.features.adventure.viruses.modifiers.VocMoneyVirusModifier" }
 	],
 	"bonus": [
-		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.MoneyHitVirusModifier" }
+		{ "class": "com.one2b3.endcycle.features.adventure.viruses.modifiers.MoneyHitVirusModifier" }
 	],
 	"unlockCondition": {}
 },
 {
-	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"class": "com.one2b3.endcycle.features.adventure.viruses.AdventureVirus",
 	"id": { "id": 15 },
 	"name": "|Stick to the Beat",
 	"description": "|Battles move along to the music!",
@@ -325,7 +325,7 @@
 		"color": { "r": 0.98039216, "g": 0.8392157, "b": 1, "a": 1 }
 	},
 	"modifiers": [
-		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.BeatMovementVirusModifier" }
+		{ "class": "com.one2b3.endcycle.features.adventure.viruses.modifiers.BeatMovementVirusModifier" }
 	],
 	"unlockCondition": null
 }

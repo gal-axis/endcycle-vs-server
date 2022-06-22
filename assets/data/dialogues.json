@@ -332,7 +332,7 @@
 				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "fin", "animation": true }
 			}
 		},
-		{ "entity": "player", "textMessage": "|... Should've asked him to take me to dinner." }
+		{ "entity": "player", "textMessage": "dialogues|Spark.C2A.5" }
 	],
 	"start": {
 		"class": "com.one2b3.endcycle.features.scripts.ScriptList",
@@ -9231,7 +9231,7 @@
 	"id": { "id": 760 },
 	"name": "A-Event>Agent Trap #1.2",
 	"lines": [
-		{ "entity": "player", "textMessage": "|Like I said: I don't fall. I run all over you!" }
+		{ "entity": "player", "textMessage": "dialogues|A.Event.Agent.Trap.1.22" }
 	]
 },
 {
@@ -9239,11 +9239,11 @@
 	"id": { "id": 762 },
 	"name": "A-Event>Agent Trap #2.1",
 	"lines": [
-		{ "entity": "agent", "textMessage": "|She REALLY fell for it ohmygoshh" },
-		{ "entity": "agent 1", "textMessage": "|Uh m'am? For an archeologist you seem pretty dumb." },
+		{ "entity": "agent", "textMessage": "dialogues|A.Event.Agent.Trap.2.1.1" },
+		{ "entity": "agent 1", "textMessage": "dialogues|A.Event.Agent.Trap.2.1.2" },
 		{
 			"entity": "player",
-			"textMessage": "|How am I the dumb one when you've decided to stand in my way?",
+			"textMessage": "dialogues|A.Event.Agent.Trap.2.1.3",
 			"options": {
 				"color": { "r": 1, "g": 1, "b": 1, "a": 1 }
 			}
@@ -9255,11 +9255,11 @@
 	"id": { "id": 763 },
 	"name": "A-Event>Rozu Gift",
 	"lines": [
-		{ "entity": "rozu", "textMessage": "|Hey!" },
-		{ "entity": "player", "textMessage": "|'sup I'm in a hurry here" },
-		{ "entity": "rozu", "textMessage": "|That's why I brought you some nice caffeine!" },
-		{ "entity": "player", "textMessage": "|You are a literal life saver Brozu. I'd kill for some coffee right now." },
-		{ "entity": "rozu", "textMessage": "|Coffee... right. I'll just... leave this here and we'll see each other back at HQ. Later!" }
+		{ "entity": "rozu", "textMessage": "dialogues|Spark.5.2" },
+		{ "entity": "player", "textMessage": "dialogues|A.Event.Rozu.Gift.2" },
+		{ "entity": "rozu", "textMessage": "dialogues|A.Event.Rozu.Gift.3" },
+		{ "entity": "player", "textMessage": "dialogues|A.Event.Rozu.Gift.4" },
+		{ "entity": "rozu", "textMessage": "dialogues|A.Event.Rozu.Gift.5" }
 	],
 	"end": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "rozu", "animation": true }
 },
@@ -9268,11 +9268,11 @@
 	"id": { "id": 764 },
 	"name": "A-Event>Spark Gift 1",
 	"lines": [
-		{ "entity": "spark", "textMessage": "|Yo!" },
-		{ "entity": "player", "textMessage": "|Spark I'm in a hurry!" },
-		{ "entity": "spark", "textMessage": "|Well so am I! Just thought I'd bring you a little support." },
-		{ "entity": "player", "textMessage": "|...you mean coffee? You brought me coffee?" },
-		{ "entity": "spark", "textMessage": "|Definitely. See ya later. Oh and remember my gift next time we duel!" }
+		{ "entity": "spark", "textMessage": "dialogues|A.Event.Spark.Gift.1.1" },
+		{ "entity": "player", "textMessage": "dialogues|A.Event.Spark.Gift.1.2" },
+		{ "entity": "spark", "textMessage": "dialogues|A.Event.Spark.Gift.1.3" },
+		{ "entity": "player", "textMessage": "dialogues|A.Event.Spark.Gift.1.4" },
+		{ "entity": "spark", "textMessage": "dialogues|A.Event.Spark.Gift.1.5" }
 	],
 	"end": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "spark", "animation": true }
 },
@@ -9281,12 +9281,12 @@
 	"id": { "id": 771 },
 	"name": "A-Event>Spark Gift 2.1",
 	"lines": [
-		{ "entity": "player", "textMessage": "|Spark!" },
-		{ "entity": "spark", "textMessage": "|Hey Brozu whatcha doing?" },
-		{ "entity": "player", "textMessage": "|...My job? Our job?" },
-		{ "entity": "spark", "textMessage": "|Oh, cool cool... keep doing that. I'll see you at the finish line." },
-		{ "entity": "player", "textMessage": "|This isn't a race..." },
-		{ "entity": "spark", "textMessage": "|Not with that attitude it's not! See ya chump!" }
+		{ "entity": "player", "textMessage": "dialogues|CF.4.3.3" },
+		{ "entity": "spark", "textMessage": "dialogues|A.Event.Spark.Gift.2.1.2" },
+		{ "entity": "player", "textMessage": "dialogues|A.Event.Spark.Gift.2.1.3" },
+		{ "entity": "spark", "textMessage": "dialogues|A.Event.Spark.Gift.2.1.4" },
+		{ "entity": "player", "textMessage": "dialogues|A.Event.Spark.Gift.2.1.5" },
+		{ "entity": "spark", "textMessage": "dialogues|A.Event.Spark.Gift.2.1.6" }
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
@@ -9298,13 +9298,13 @@
 	"id": { "id": 766 },
 	"name": "A-Event>Flink Gift",
 	"lines": [
-		{ "entity": "flink", "textMessage": "|Cress-sis!" },
-		{ "entity": "player", "textMessage": "|Flink!" },
-		{ "entity": "flink", "textMessage": "|CRESS-SIS" },
-		{ "entity": "player", "textMessage": "|FLINK" },
-		{ "entity": "flink", "textMessage": "|WHY ARE WE SHOUTING" },
-		{ "entity": "player", "textMessage": "|BECAUSE OF ALL THESE NOISES SURROUNDING US" },
-		{ "entity": "flink", "textMessage": "|Heh, nice one. Look I can turn into a lootbox." }
+		{ "entity": "flink", "textMessage": "dialogues|A.Event.Flink.Gift.1" },
+		{ "entity": "player", "textMessage": "dialogues|A.Event.Flink.Gift.2" },
+		{ "entity": "flink", "textMessage": "dialogues|A.Event.Flink.Gift.3" },
+		{ "entity": "player", "textMessage": "dialogues|A.Event.Flink.Gift.4" },
+		{ "entity": "flink", "textMessage": "dialogues|A.Event.Flink.Gift.5" },
+		{ "entity": "player", "textMessage": "dialogues|A.Event.Flink.Gift.6" },
+		{ "entity": "flink", "textMessage": "dialogues|A.Event.Flink.Gift.7" }
 	],
 	"end": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "flink", "animation": true }
 },
@@ -9313,12 +9313,12 @@
 	"id": { "id": 767 },
 	"name": "A-Event>Agent Gift",
 	"lines": [
-		{ "entity": "player", "textMessage": "|Agent." },
-		{ "entity": "agent", "textMessage": "|Boss! Provisions have arrived!" },
-		{ "entity": "player", "textMessage": "|Brewed the right way I assume" },
-		{ "entity": "agent", "textMessage": "|Of course! 80 Degrees, soaked for 2 minutes!" },
-		{ "entity": "player", "textMessage": "|Perfect. As you were agent." },
-		{ "entity": "agent", "textMessage": "|Ma'am!" }
+		{ "entity": "player", "textMessage": "dialogues|A.Event.Agent.Gift.1" },
+		{ "entity": "agent", "textMessage": "dialogues|A.Event.Agent.Gift.2" },
+		{ "entity": "player", "textMessage": "dialogues|A.Event.Agent.Gift.3" },
+		{ "entity": "agent", "textMessage": "dialogues|A.Event.Agent.Gift.4" },
+		{ "entity": "player", "textMessage": "dialogues|A.Event.Agent.Gift.5" },
+		{ "entity": "agent", "textMessage": "dialogues|A.Event.Agent.Gift.6" }
 	]
 },
 {
@@ -9326,16 +9326,16 @@
 	"id": { "id": 768 },
 	"name": "A-Event>Noise Gift 1",
 	"lines": [
-		{ "entity": "tankitty", "textMessage": "|:3" },
-		{ "entity": "player", "textMessage": "|Oh, hello there little fella. Why aren't you attacking me?" },
-		{ "entity": "tankitty", "textMessage": "|*meow*" },
-		{ "entity": "player", "textMessage": "|...wait. I remember you. You're one of the first Noises I caught! \nHow... are you?" },
+		{ "entity": "tankitty", "textMessage": "dialogues|A.Event.Noise.Gift.1.1" },
+		{ "entity": "player", "textMessage": "dialogues|A.Event.Noise.Gift.1.2" },
+		{ "entity": "tankitty", "textMessage": "dialogues|A.Event.Noise.Gift.1.3" },
+		{ "entity": "player", "textMessage": "dialogues|A.Event.Noise.Gift.1.4" },
 		{
 			"entity": "tankitty",
-			"textMessage": "|CAT NOISE",
+			"textMessage": "dialogues|A.Event.Noise.Gift.1.5",
 			"options": { "charTimer": 20 }
 		},
-		{ "entity": "player", "textMessage": "|Did you just say \"Cat Noise\"? I need to write this down this is incredible - wait don't go!" }
+		{ "entity": "player", "textMessage": "dialogues|A.Event.Noise.Gift.1.6" }
 	],
 	"end": {
 		"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
@@ -9348,7 +9348,7 @@
 	"id": { "id": 770 },
 	"name": "A-Event>Noise Gift 2",
 	"lines": [
-		{ "entity": "player", "textMessage": "|Aw." }
+		{ "entity": "player", "textMessage": "dialogues|A.Event.Noise.Gift.2" }
 	],
 	"start": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "tankitty", "animation": true }
 },
@@ -9357,7 +9357,7 @@
 	"id": { "id": 772 },
 	"name": "A-Event>Spark Gift 2.2",
 	"lines": [
-		{ "entity": "player", "textMessage": "|That girl is driving me crazy. Whoa she dropped something... on purpose?" }
+		{ "entity": "player", "textMessage": "dialogues|A.Event.Spark.Gift.2.2" }
 	]
 },
 {
@@ -9365,11 +9365,11 @@
 	"id": { "id": 774 },
 	"name": "A-Event>Fin VS Spark",
 	"lines": [
-		{ "entity": "spark", "textMessage": "|Found you!" },
-		{ "entity": "player", "textMessage": "|Spark!" },
-		{ "entity": "spark", "textMessage": "|You've been skipping on our training session!" },
-		{ "entity": "player", "textMessage": "|...no I haven't. Today is artifact day, remember?" },
-		{ "entity": "spark", "textMessage": "|Don't give me excuses! Let me hear your battlecry!" }
+		{ "entity": "spark", "textMessage": "dialogues|A.Event.Fin.VS.Spark.1" },
+		{ "entity": "player", "textMessage": "dialogues|CF.4.3.3" },
+		{ "entity": "spark", "textMessage": "dialogues|A.Event.Fin.VS.Spark.3" },
+		{ "entity": "player", "textMessage": "dialogues|A.Event.Fin.VS.Spark.4" },
+		{ "entity": "spark", "textMessage": "dialogues|A.Event.Fin.VS.Spark.5" }
 	]
 },
 {
@@ -9377,27 +9377,27 @@
 	"id": { "id": 775 },
 	"name": "A-Event>Fin VS Spark Win",
 	"lines": [
-		{ "entity": "spark", "textMessage": "|You beat me... I've been a good teacher... now I can die in peace." },
+		{ "entity": "spark", "textMessage": "dialogues|A.Event.Fin.VS.Spark.Win.1" },
 		{
 			"entity": "player",
-			"textMessage": "|DIE?",
+			"textMessage": "dialogues|A.Event.Fin.VS.Spark.Win.2",
 			"options": {
 				"voice": {},
 				"script": { "class": "com.one2b3.endcycle.features.scripts.general.ShakeScreenScript", "x": 2, "y": 4, "duration": 2 }
 			}
 		},
-		{ "entity": "spark", "textMessage": "|..." },
-		{ "entity": "player", "textMessage": "|..." },
-		{ "entity": "spark", "textMessage": "|I was just joking you know." },
-		{ "entity": "player", "textMessage": "|Oh." },
-		{ "entity": "spark", "textMessage": "|You old worrywart. " },
+		{ "entity": "spark", "textMessage": "dialogues|Pause" },
+		{ "entity": "player", "textMessage": "dialogues|Pause" },
+		{ "entity": "spark", "textMessage": "dialogues|A.Event.Fin.VS.Spark.Win.5" },
+		{ "entity": "player", "textMessage": "dialogues|C.Crimson.C1B1.11" },
+		{ "entity": "spark", "textMessage": "dialogues|A.Event.Fin.VS.Spark.Win.7" },
 		{
-			"textMessage": "|*Spark proceeds to do a perfect backflip and then runs off.*",
+			"textMessage": "dialogues|A.Event.Fin.VS.Spark.Win.8",
 			"options": {
 				"script": { "class": "com.one2b3.endcycle.features.scripts.battle.RemoveEntityScript", "name": "spark" }
 			}
 		},
-		{ "entity": "player", "textMessage": "|I'm so embarrased." }
+		{ "entity": "player", "textMessage": "dialogues|A.Event.Fin.VS.Spark.Win.9" }
 	]
 },
 {
@@ -9405,7 +9405,7 @@
 	"id": { "id": 776 },
 	"name": "A-Event>Bella",
 	"lines": [
-		{ "entity": "bella", "textMessage": "|Hi! I don't know who you are or even where we are but I can see you're doing your best out here! I'll leave you a little gift to ease your struggle a bit. See ya!" }
+		{ "entity": "bella", "textMessage": "dialogues|A.Event.Bella" }
 	]
 },
 {
@@ -9413,12 +9413,12 @@
 	"id": { "id": 777 },
 	"name": "A-Event>Punk Trap #1",
 	"lines": [
-		{ "entity": "player", "textMessage": "|Punks." },
-		{ "entity": "flink", "textMessage": "|Delicia." },
-		{ "entity": "player", "textMessage": "|Ah I remember you. You're Cress' favorite right?" },
-		{ "entity": "flink", "textMessage": "|... how would you know that." },
-		{ "entity": "reginald", "textMessage": "|Cress has favorites?" },
-		{ "entity": "player", "textMessage": "|Until she forgets them. Let's see if she'll remember you after I'm done here." }
+		{ "entity": "player", "textMessage": "dialogues|A.Event.Punk.Trap.1.1" },
+		{ "entity": "flink", "textMessage": "dialogues|A.Event.Punk.Trap.1.2" },
+		{ "entity": "player", "textMessage": "dialogues|A.Event.Punk.Trap.1.3" },
+		{ "entity": "flink", "textMessage": "dialogues|A.Event.Punk.Trap.1.4" },
+		{ "entity": "reginald", "textMessage": "dialogues|A.Event.Punk.Trap.1.5" },
+		{ "entity": "player", "textMessage": "dialogues|A.Event.Punk.Trap.1.6" }
 	]
 },
 {
@@ -9426,12 +9426,12 @@
 	"id": { "id": 778 },
 	"name": "A-Event>Punk Trap #2",
 	"lines": [
-		{ "entity": "spark", "textMessage": "|I told you she'd come here!" },
-		{ "entity": "rozu", "textMessage": "|You didn't! We got lost and now the leader of Azure Shield is going to kill us." },
-		{ "entity": "player", "textMessage": "|Why does everyone think of me as a killer?" },
-		{ "entity": "rozu", "textMessage": "|You won't hurt us?" },
-		{ "entity": "player", "textMessage": "|Well.. are you standing in my way?" },
-		{ "entity": "spark", "textMessage": "|One hundred percent! Let's go!" }
+		{ "entity": "spark", "textMessage": "dialogues|A.Event.Punk.Trap.2.1" },
+		{ "entity": "rozu", "textMessage": "dialogues|A.Event.Punk.Trap.2.2" },
+		{ "entity": "player", "textMessage": "dialogues|A.Event.Punk.Trap.2.3" },
+		{ "entity": "rozu", "textMessage": "dialogues|A.Event.Punk.Trap.2.4" },
+		{ "entity": "player", "textMessage": "dialogues|A.Event.Punk.Trap.2.5" },
+		{ "entity": "spark", "textMessage": "dialogues|A.Event.Punk.Trap.2.6" }
 	]
 },
 {
@@ -9439,7 +9439,7 @@
 	"id": { "id": 779 },
 	"name": "A-Event>Punk Trap #1.1",
 	"lines": [
-		{ "entity": "player", "textMessage": "|Run back to your base and remember who gave you these bruises." }
+		{ "entity": "player", "textMessage": "dialogues|A.Event.Punk.Trap.1.12" }
 	]
 },
 {
@@ -9938,10 +9938,7 @@
 			"textMessage": "dialogues|CF.5.6.4",
 			"options": { "talkingMessage": "dialogues|Character.Unknown", "hidden": true }
 		},
-		{
-			"entity": "del",
-			"textMessage": "dialogues|CF.5.6.5"
-		}
+		{ "entity": "del", "textMessage": "dialogues|CF.5.6.5" }
 	],
 	"end": { "class": "com.one2b3.endcycle.features.scripts.battle.CampaignEndBattleScript" }
 },

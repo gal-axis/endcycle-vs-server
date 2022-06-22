@@ -3283,8 +3283,8 @@
 {
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 38 },
-	"role": "EXECUTION",
-	"vocType": "PROJECTILE",
+	"role": "EFFECT",
+	"vocType": "DAMAGE",
 	"unlockCondition": {},
 	"imageIndex": 43,
 	"characters": [
@@ -3293,32 +3293,49 @@
 		{ "id": 11 }
 	],
 	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY", "SHOOT" ],
-	"preview": {},
+	"preview": {
+		"enemyPosition": { "x": -1 }
+	},
 	"attackShell": {
 		"nameMessage": "gamedata|Voc.PanelCannon",
 		"descriptionMessage": "gamedata|Voc.PanelCannon.Description",
 		"level": 2,
 		"property": {
+			"element": "WATER",
 			"ailments": [
-				{ "type": "GRAB_PANEL" }
+				{ "type": "HP_CHANGER", "intensity": -15, "duration": 7 },
+				{ "type": "FLINCHING" }
 			],
-			"power": 125,
-			"crushPower": 160
+			"power": 120,
+			"crushPower": 160,
+			"panel": "NORMAL"
 		},
 		"targetType": {},
 		"attack": {
-			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
-			"attacks": [
-				{
-					"stick": {}
-				}
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.HitPanelsAttack",
+			"areas": [
+				{ "timer": 0.1, "duration": 0.2, "x": 1, "y": 1 },
+				{ "timer": 0.1, "duration": 0.2, "x": 1, "y": -1 },
+				{ "timer": 0.36, "duration": 0.2, "x": 2 }
 			],
-			"projectileDelay": 0.15,
-			"drawable": {
-				"drawable": { "id": 1163 }
-			},
-			"portalTime": 0.2,
-			"shadowOffsetY": 15
+			"attackParticles": [
+				{
+					"x": 32,
+					"y": 20,
+					"particle": { "id": 30 }
+				},
+				{
+					"x": 32,
+					"y": -30,
+					"particle": { "id": 31 }
+				},
+				{
+					"delay": 0.3,
+					"x": 70,
+					"y": -1,
+					"particle": { "id": 32 }
+				}
+			]
 		}
 	}
 },
@@ -4011,7 +4028,7 @@
 {
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 58 },
-	"role": "EXECUTION",
+	"role": "GUARD",
 	"vocType": "CAST",
 	"unlockCondition": {},
 	"imageIndex": 58,
@@ -4020,14 +4037,31 @@
 	],
 	"tags": [ "AREA_DEFENSE", "AFFECTS_ALLY" ],
 	"optimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
-	"preview": {},
+	"preview": {
+		"enemyInput": [
+			{ "key": "BATTLE_ATTACK_2" }
+		]
+	},
 	"attackShell": {
 		"nameMessage": "gamedata|Voc.AreaRevert",
 		"descriptionMessage": "gamedata|Voc.AreaRevert.Desc",
 		"level": 3,
-		"property": { "power": 50, "crushPower": 50 },
-		"targetType": {},
-		"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.field.AreaGrabAttack", "revert": true }
+		"property": { "element": "WATER" },
+		"targetType": {
+			"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
+		},
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.guarding.ShieldAttack",
+			"shieldDuration": 3.2,
+			"blockHits": 0,
+			"reflect": true,
+			"particle": {
+				"drawable": {
+					"drawable": { "id": 846 }
+				}
+			},
+			"sound": { "sound": "battle/programs/bubble.wav" }
+		}
 	}
 },
 {

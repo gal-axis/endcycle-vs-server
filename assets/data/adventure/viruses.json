@@ -1,0 +1,332 @@
+[
+{
+	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"name": "|True Rogue",
+	"description": "|Deletes your save file upon death!",
+	"bonusDescription": "|Grants a R.E.D.O. at start!",
+	"modifiers": [
+		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.DeleteSaveVirusModifier" }
+	],
+	"bonus": [
+		{
+			"class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.GrantItemVirusModifier",
+			"item": { "id": 25 }
+		}
+	],
+	"unlockCondition": {}
+},
+{
+	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"id": { "id": 1 },
+	"name": "|Protected",
+	"description": "|Enemies start battles with Cybarrier",
+	"bonusDescription": "|You start battles with Cybarrier",
+	"icon": {
+		"drawable": { "id": 833 }
+	},
+	"modifiers": [
+		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.CybarrierVirusModifier" }
+	],
+	"bonus": [
+		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.CybarrierVirusModifier", "self": true }
+	],
+	"unlockCondition": {
+		"requirements": [
+			{
+				"class": "com.one2b3.endcycle.player.progress.unlock.AdventureEventRequirement",
+				"event": { "id": 104 }
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"id": { "id": 2 },
+	"name": "|Chain Reaction",
+	"description": "|Enemies explode upon death!",
+	"bonusDescription": "|You explode when getting crushed!",
+	"icon": {
+		"drawable": { "id": 834 }
+	},
+	"modifiers": [
+		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.ExplodeEntitiesVirusModifier" }
+	],
+	"bonus": [
+		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.ExplodeEntitiesVirusModifier", "self": true }
+	],
+	"unlockCondition": {
+		"requirements": [
+			{
+				"class": "com.one2b3.endcycle.player.progress.unlock.AdventureEventRequirement",
+				"event": { "id": 112 }
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"id": { "id": 3 },
+	"name": "|Immune System 0.5",
+	"description": "|Your heals are only half as effective!",
+	"bonusDescription": "|Healing yourself damages enemies!",
+	"icon": {
+		"drawable": { "id": 835 }
+	},
+	"modifiers": [
+		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.HitChangerVirusModifier", "heal": 0.5 }
+	],
+	"bonus": [
+		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.HitChangerVirusModifier", "self": true, "heal": 0.5 }
+	],
+	"unlockCondition": {
+		"requirements": [
+			{
+				"class": "com.one2b3.endcycle.player.progress.unlock.AdventureEventRequirement",
+				"event": { "id": 113 }
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"id": { "id": 4 },
+	"name": "|CRUSH!!! CRUSH!!!",
+	"description": "|You take doubled crush damage!",
+	"bonusDescription": "|Enemies take 1.5x crush damage!",
+	"icon": {
+		"drawable": { "id": 836 }
+	},
+	"modifiers": [
+		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.HitChangerVirusModifier", "crush": 2 }
+	],
+	"bonus": [
+		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.HitChangerVirusModifier", "self": true, "crush": 1.5 }
+	],
+	"unlockCondition": {
+		"requirements": [
+			{
+				"class": "com.one2b3.endcycle.player.progress.unlock.AdventureEventRequirement",
+				"event": { "id": 114 }
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"id": { "id": 5 },
+	"name": "|Big Tough",
+	"description": "|Enemies have twice as much HP!",
+	"bonusDescription": "|You start with twice as much HP!",
+	"modifiers": [
+		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.HealthVirusModifier" }
+	],
+	"bonus": [
+		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.HealthVirusModifier", "self": true }
+	],
+	"unlockCondition": {
+		"requirements": [
+			{
+				"class": "com.one2b3.endcycle.player.progress.unlock.AdventureEventRequirement",
+				"event": { "id": 115 }
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"id": { "id": 6 },
+	"name": "|Improvise!",
+	"description": "|Randomizes entire pack after every zone!",
+	"bonusDescription": "|Start the Adventure with a fully upgraded Voc Pack!",
+	"icon": {
+		"drawable": { "id": 842 }
+	},
+	"modifiers": [
+		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.RandomPackVirusModifier" }
+	],
+	"bonus": [
+		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.FullUpgradeVirusModifier" }
+	],
+	"unlockCondition": {
+		"requirements": [
+			{
+				"class": "com.one2b3.endcycle.player.progress.unlock.AdventureEventRequirement",
+				"event": { "id": 116 }
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"id": { "id": 7 },
+	"name": "|Gotta Go Fast",
+	"description": "|Adds a time limit to each zone!",
+	"bonusDescription": "|Increases game speed!",
+	"icon": {
+		"drawable": { "id": 467 }
+	},
+	"modifiers": [
+		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.TimeLimitVirusModifier" }
+	],
+	"bonus": [
+		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.BattleSpeedVirusModifier", "modifier": 1.3 }
+	],
+	"unlockCondition": {
+		"requirements": [
+			{
+				"class": "com.one2b3.endcycle.player.progress.unlock.AdventureEventRequirement",
+				"event": { "id": 117 }
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"id": { "id": 8 },
+	"name": "|Unintelligible",
+	"description": "|Randomizes all dialogue lines",
+	"icon": {
+		"drawable": { "id": 569 }
+	},
+	"modifiers": [
+		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.RandomDialoguesVirusModifier" }
+	],
+	"unlockCondition": {
+		"requirements": [
+			{
+				"class": "com.one2b3.endcycle.player.progress.unlock.AdventureEventRequirement",
+				"event": { "id": 41 }
+			},
+			{
+				"class": "com.one2b3.endcycle.player.progress.unlock.CampaignCondition",
+				"campaign": { "id": 7 }
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"id": { "id": 9 },
+	"name": "|Icognito",
+	"description": "|Your character is randomized before each event!",
+	"bonusDescription": "|Enemies are randomized at the start of each battle!",
+	"icon": {
+		"drawable": { "id": 837 }
+	},
+	"modifiers": [
+		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.RandomCharacterVirusModifier", "self": true }
+	],
+	"bonus": [
+		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.RandomCharacterVirusModifier" }
+	],
+	"unlockCondition": {}
+},
+{
+	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"id": { "id": 10 },
+	"name": "|Hard to Miss",
+	"description": "|All zones consist of only one branch",
+	"icon": {
+		"drawable": { "id": 838 }
+	},
+	"modifiers": [
+		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.SingleBranchZonesVirusModifier" }
+	],
+	"unlockCondition": {
+		"requirements": [
+			{
+				"class": "com.one2b3.endcycle.player.progress.unlock.AdventureZoneRequirement",
+				"zone": { "id": 13 }
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"id": { "id": 11 },
+	"name": "|Mirror World",
+	"description": "|Flips screen horizontally!",
+	"bonusDescription": "|Flips screen vertically!",
+	"icon": {
+		"drawable": { "id": 839 }
+	},
+	"modifiers": [
+		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.MirrorVirusModifier" }
+	],
+	"bonusReplace": true,
+	"bonus": [
+		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.MirrorVirusModifier", "vertical": true }
+	],
+	"unlockCondition": {}
+},
+{
+	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"id": { "id": 12 },
+	"name": "|Sudden Disco!",
+	"description": "|All non-enemy panels are randomized on battle start!",
+	"bonusDescription": "|All enemy panels are randomized on battle start!",
+	"icon": {
+		"drawable": { "id": 840 }
+	},
+	"modifiers": [
+		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.RandomFieldVirusModifier", "player": true }
+	],
+	"bonus": [
+		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.RandomFieldVirusModifier" }
+	],
+	"unlockCondition": {}
+},
+{
+	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"id": { "id": 13 },
+	"name": "|Emotional Damage",
+	"description": "|Enemies deal double damage!",
+	"bonusDescription": "|You deal 1.5x damage!",
+	"icon": {
+		"drawable": { "id": 841 }
+	},
+	"modifiers": [
+		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.HitChangerVirusModifier", "power": 2 }
+	],
+	"bonus": [
+		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.HitChangerVirusModifier", "self": true, "power": 1.5 }
+	],
+	"unlockCondition": {
+		"requirements": [
+			{ "class": "com.one2b3.endcycle.player.progress.unlock.BattlesLostRequirement", "amount": 20 }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"id": { "id": 14 },
+	"name": "|Microtransactions",
+	"description": "|Using VOCs costs money!",
+	"bonusDescription": "|Hitting enemies grants money!",
+	"icon": {
+		"drawable": { "id": 571 }
+	},
+	"modifiers": [
+		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.VocMoneyVirusModifier" }
+	],
+	"bonus": [
+		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.MoneyHitVirusModifier" }
+	],
+	"unlockCondition": {}
+},
+{
+	"class": "com.one2b3.endcycle.screens.adventure.viruses.AdventureVirus",
+	"id": { "id": 15 },
+	"name": "|Stick to the Beat",
+	"description": "|Battles move along to the music!",
+	"bonusDescription": "|You start battles with a One-Time \"Pieces\" ultra VOC!",
+	"icon": {
+		"drawable": { "id": 567 },
+		"color": { "r": 0.98039216, "g": 0.8392157, "b": 1, "a": 1 }
+	},
+	"modifiers": [
+		{ "class": "com.one2b3.endcycle.screens.adventure.viruses.modifiers.BeatMovementVirusModifier" }
+	],
+	"unlockCondition": null
+}
+]

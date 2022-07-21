@@ -3913,7 +3913,14 @@
 			"self": true,
 			"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
 		},
-		"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.status.DirectAttack" }
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.guarding.ShieldAttack",
+			"particle": {
+				"drawable": {
+					"drawable": { "id": 1142 }
+				}
+			}
+		}
 	}
 },
 {
@@ -7893,6 +7900,52 @@
 				"drawable": { "id": 153 }
 			},
 			"trace": false
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 121 },
+	"preview": {},
+	"attackShell": {
+		"nameMessage": "|Spark Repair",
+		"targetType": {
+			"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
+		},
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.MultiWrapperAttack",
+			"wrappers": [
+				{
+					"attack": {
+						"class": "com.one2b3.endcycle.screens.battle.attacks.data.guarding.ShieldAttack",
+						"shieldDuration": 7,
+						"blockHits": 0,
+						"particle": {
+							"drawable": {
+								"drawable": { "id": 1142 }
+							},
+							"pulsate": true
+						},
+						"instant": true
+					}
+				},
+				{
+					"attack": {
+						"class": "com.one2b3.endcycle.screens.battle.attacks.data.field.FieldChangerAttack",
+						"areas": [
+							{ "y": -1 },
+							{ "x": 1, "y": -1 },
+							{ "x": -1, "y": -1 },
+							{ "x": 1 },
+							{},
+							{ "x": -1 },
+							{ "x": -1, "y": 1 },
+							{ "y": 1 },
+							{ "x": 1, "y": 1 }
+						]
+					}
+				}
+			]
 		}
 	}
 }

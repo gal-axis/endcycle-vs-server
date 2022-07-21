@@ -126,14 +126,17 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"x": 4,
+			"x": 3,
 			"turned": true,
 			"name": "sofa1",
 			"id": { "id": 3 },
 			"talkingName": "",
 			"action": { "id": 4 },
 			"configuration": {
-				"stats": { "hp": 800, "actionSpeed": 0.8 }
+				"stats": { "hp": 800, "actionSpeed": 0.8 },
+				"modes": [
+					{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+				]
 			},
 			"pack": {}
 		},
@@ -147,7 +150,10 @@
 			"talkingName": "",
 			"action": { "id": 4 },
 			"configuration": {
-				"stats": { "hp": 800, "actionSpeed": 0.6 }
+				"stats": { "hp": 800, "actionSpeed": 0.6 },
+				"modes": [
+					{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+				]
 			},
 			"pack": {}
 		}
@@ -181,7 +187,11 @@
 			"id": { "id": 1 },
 			"talkingName": "",
 			"action": { "id": 34 },
-			"configuration": {},
+			"configuration": {
+				"modes": [
+					{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+				]
+			},
 			"pack": {}
 		}
 	]
@@ -235,7 +245,10 @@
 			"talkingName": "",
 			"action": { "id": 198 },
 			"configuration": {
-				"stats": { "hp": 700, "actionSpeed": 0.8 }
+				"stats": { "hp": 700, "actionSpeed": 0.8 },
+				"modes": [
+					{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+				]
 			},
 			"pack": {}
 		},
@@ -252,7 +265,10 @@
 				"customizations": [ 0 ]
 			},
 			"configuration": {
-				"stats": { "hp": 500, "actionSpeed": 0.8 }
+				"stats": { "hp": 500, "actionSpeed": 0.8 },
+				"modes": [
+					{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+				]
 			},
 			"pack": {}
 		}
@@ -394,7 +410,11 @@
 			"id": { "id": 1 },
 			"talkingName": "",
 			"action": { "id": 16 },
-			"configuration": {},
+			"configuration": {
+				"modes": [
+					{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+				]
+			},
 			"pack": {}
 		},
 		{
@@ -406,7 +426,11 @@
 			"id": { "id": 4 },
 			"talkingName": "",
 			"action": { "id": 9 },
-			"configuration": {},
+			"configuration": {
+				"modes": [
+					{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+				]
+			},
 			"pack": {}
 		}
 	]
@@ -485,7 +509,11 @@
 			"id": { "id": 3 },
 			"talkingName": "",
 			"action": { "id": 4 },
-			"configuration": {},
+			"configuration": {
+				"modes": [
+					{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+				]
+			},
 			"pack": {}
 		},
 		{
@@ -496,7 +524,11 @@
 			"id": { "id": 15 },
 			"talkingName": "",
 			"action": { "id": 7 },
-			"configuration": {},
+			"configuration": {
+				"modes": [
+					{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+				]
+			},
 			"pack": {}
 		}
 	]
@@ -704,7 +736,9 @@
 			"id": { "id": 2 },
 			"talkingName": "",
 			"action": { "id": 25 },
-			"configuration": {},
+			"configuration": {
+				"stats": { "hp": 900, "strength": 150, "resistance": 50, "speed": 75 }
+			},
 			"pack": {},
 			"type": "INVINCIBLE"
 		}
@@ -842,7 +876,11 @@
 			"id": { "id": 3 },
 			"talkingName": "",
 			"action": { "id": 4 },
-			"configuration": {},
+			"configuration": {
+				"modes": [
+					{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+				]
+			},
 			"pack": {}
 		},
 		{
@@ -870,7 +908,11 @@
 			"cache": {
 				"customizations": [ 3 ]
 			},
-			"configuration": {},
+			"configuration": {
+				"modes": [
+					{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+				]
+			},
 			"pack": {}
 		},
 		{
@@ -884,31 +926,11 @@
 			"cache": {
 				"customizations": [ 3 ]
 			},
-			"configuration": {},
-			"pack": {}
-		},
-		{
-			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"x": 19,
-			"y": 18,
-			"turned": true,
-			"id": { "id": 6 },
-			"talkingName": "",
-			"action": { "id": 7 },
 			"configuration": {
-				"stats": { "hp": 600, "actionSpeed": 0.8 }
+				"modes": [
+					{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+				]
 			},
-			"pack": {}
-		},
-		{
-			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"x": 18,
-			"y": 19,
-			"turned": true,
-			"id": { "id": 4 },
-			"talkingName": "",
-			"action": { "id": 131 },
-			"configuration": {},
 			"pack": {}
 		},
 		{
@@ -952,6 +974,20 @@
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
 			"x": 20,
 			"y": 6,
+			"turned": true,
+			"form": { "id": 15 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 18,
+			"y": 18,
+			"turned": true,
+			"form": { "id": 4 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 19,
+			"y": 19,
 			"turned": true,
 			"form": { "id": 15 }
 		}
@@ -999,7 +1035,7 @@
 				"customizations": [ 4, -1, 3 ]
 			},
 			"configuration": {
-				"stats": { "actionSpeed": 0.7 }
+				"stats": { "hp": 1500, "resistance": 125, "actionSpeed": 0.7 }
 			},
 			"pack": {}
 		}
@@ -1668,7 +1704,9 @@
 			"id": { "id": 21 },
 			"talkingName": "",
 			"action": { "id": 56 },
-			"configuration": {},
+			"configuration": {
+				"stats": { "hp": 1300, "strength": 100, "resistance": 150, "speed": 100 }
+			},
 			"pack": {}
 		}
 	]
@@ -1707,7 +1745,11 @@
 			"id": { "id": 24 },
 			"talkingName": "",
 			"action": { "id": 54 },
-			"configuration": {},
+			"configuration": {
+				"modes": [
+					{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+				]
+			},
 			"pack": {}
 		},
 		{
@@ -2109,7 +2151,11 @@
 			"cache": {
 				"customizations": [ 1 ]
 			},
-			"configuration": {},
+			"configuration": {
+				"modes": [
+					{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+				]
+			},
 			"pack": {}
 		},
 		{
@@ -2123,7 +2169,11 @@
 			"cache": {
 				"customizations": [ 4 ]
 			},
-			"configuration": {},
+			"configuration": {
+				"modes": [
+					{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+				]
+			},
 			"pack": {}
 		},
 		{
@@ -2137,7 +2187,11 @@
 			"cache": {
 				"customizations": [ 3 ]
 			},
-			"configuration": {},
+			"configuration": {
+				"modes": [
+					{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+				]
+			},
 			"pack": {}
 		}
 	]
@@ -2807,7 +2861,7 @@
 			"y": 16,
 			"vital": false,
 			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.OnLiberationSpawnCondition" },
-			"form": { "id": 102 }
+			"form": { "id": 172 }
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",

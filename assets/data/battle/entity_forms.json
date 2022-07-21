@@ -1485,7 +1485,11 @@
 	"cache": {
 		"customizations": [ 1 ]
 	},
-	"configuration": {},
+	"configuration": {
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+		]
+	},
 	"action": { "id": 143 }
 },
 {
@@ -1533,7 +1537,10 @@
 	"dataName": "Factory Bombarbara",
 	"entity": { "id": 6 },
 	"configuration": {
-		"stats": { "hp": 700, "actionSpeed": 0.8 }
+		"stats": { "hp": 700, "actionSpeed": 0.8 },
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
+		]
 	},
 	"action": { "id": 149 }
 },

@@ -718,7 +718,8 @@
 		"property": {
 			"element": "ELEC",
 			"ailments": [
-				{ "type": "STUN", "duration": 0.5 }
+				{ "type": "STUN", "duration": 0.5 },
+				{ "type": "CHANGE_PANEL", "intensity": 5 }
 			],
 			"power": 110,
 			"crushPower": 140
@@ -1395,7 +1396,7 @@
 {
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 10425 },
-	"role": "EXECUTION",
+	"role": "GUARD",
 	"vocType": "CAST",
 	"unlockCondition": {},
 	"imageIndex": 72,
@@ -4978,7 +4979,7 @@
 {
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 73 },
-	"tags": [ "ATTACK", "AFFECTS_ENEMY", "COUNTER" ],
+	"tags": [ "ATTACK", "AFFECTS_ENEMY", "COUNTER", "SWORD" ],
 	"preview": {
 		"input": [
 			{ "key": "BATTLE_ATTACK_1", "delay": 0.33 },
@@ -5494,11 +5495,11 @@
 		"property": {
 			"element": "FIRE",
 			"ailments": [
-				{ "type": "FLINCHING" }
+				{ "type": "FLINCHING" },
+				{ "type": "CHANGE_PANEL", "intensity": 7 }
 			],
 			"power": 180,
-			"crushPower": 220,
-			"panel": "LAVA"
+			"crushPower": 220
 		},
 		"party": "NEUTRAL",
 		"targetType": {},
@@ -5637,7 +5638,8 @@
 		"property": {
 			"element": "NATURE",
 			"ailments": [
-				{ "type": "FLINCHING" }
+				{ "type": "FLINCHING" },
+				{ "type": "CHANGE_PANEL", "intensity": 6 }
 			],
 			"power": 190,
 			"crushPower": 100
@@ -7946,6 +7948,272 @@
 					}
 				}
 			]
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 138 },
+	"role": "EXECUTION",
+	"vocType": "PROJECTILE",
+	"preview": {
+		"enemyPosition": { "x": -2 }
+	},
+	"attackShell": {
+		"nameMessage": "|Temp",
+		"level": 4,
+		"property": {
+			"element": "WATER",
+			"ailments": [
+				{ "type": "PUSH", "intensity": 1 }
+			],
+			"power": 60,
+			"crushPower": 70
+		},
+		"targetType": {},
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
+			"attacks": [
+				{
+					"xSpeed": 120,
+					"speed": [
+						{ "xSpeed": 80, "sineSpeedX": 16, "sineOffsetX": 2 }
+					],
+					"stick": {}
+				},
+				{
+					"x": -1,
+					"y": 1,
+					"xSpeed": 120,
+					"speed": [
+						{ "xSpeed": 80, "sineSpeedX": 16, "sineOffsetX": 2 }
+					],
+					"stick": {}
+				},
+				{
+					"x": -1,
+					"y": -1,
+					"xSpeed": 120,
+					"speed": [
+						{ "xSpeed": 80, "sineSpeedX": 16, "sineOffsetX": 2 }
+					],
+					"stick": {}
+				}
+			],
+			"shareHit": null,
+			"limitX": 4,
+			"checkFloor": true,
+			"piercing": true,
+			"projectileDelay": 0,
+			"drawable": {
+				"drawable": { "id": 769 }
+			},
+			"portalTime": 0.4,
+			"yOffset": 14,
+			"trace": false,
+			"shadowOffsetY": -2
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 139 },
+	"vocType": "PROJECTILE",
+	"unlockCondition": {},
+	"imageIndex": 129,
+	"tags": [ "ATTACK", "DEBUFF", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "CLOSER", "xDistance": 2, "yType": "EQUAL" },
+	"minimalPosition": { "xType": "CLOSER", "xDistance": 4, "yType": "CLOSER", "yDistance": 2 },
+	"preview": {
+		"enemyPosition": { "x": -2 }
+	},
+	"attackShell": {
+		"nameMessage": "|H2Go",
+		"descriptionMessage": "|Fires freezing and pushing splashes down three rows!",
+		"level": 4,
+		"property": {
+			"element": "WATER",
+			"ailments": [
+				{ "type": "PUSH", "intensity": 1 },
+				{ "type": "FREEZE", "duration": 1 }
+			],
+			"power": 80,
+			"crushPower": 90
+		},
+		"targetType": {},
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.HitPanelsAttack",
+			"postDelay": 0.2,
+			"areas": [
+				{ "timer": 0.1, "duration": 0.3, "x": 1 },
+				{ "timer": 0.4, "duration": 0.3, "x": 2 },
+				{ "timer": 0.7, "duration": 0.3, "x": 3 },
+				{ "timer": 0.1, "duration": 0.3, "y": 1 },
+				{ "timer": 0.4, "duration": 0.3, "x": 1, "y": 1 },
+				{ "timer": 0.7, "duration": 0.3, "x": 2, "y": 1 },
+				{ "timer": 0.1, "duration": 0.3, "y": -1 },
+				{ "timer": 0.4, "duration": 0.3, "x": 1, "y": -1 },
+				{ "timer": 0.7, "duration": 0.3, "x": 2, "y": -1 }
+			],
+			"attackParticles": [
+				{
+					"x": 44,
+					"y": -1,
+					"particle": { "id": 33 }
+				},
+				{
+					"delay": 0.43,
+					"x": 81,
+					"y": -1,
+					"particle": { "id": 35 }
+				},
+				{
+					"delay": 0.71,
+					"x": 120,
+					"y": -1,
+					"particle": { "id": 34 }
+				},
+				{
+					"x": 4,
+					"y": 23,
+					"particle": { "id": 33 }
+				},
+				{
+					"delay": 0.43,
+					"x": 41,
+					"y": 23,
+					"particle": { "id": 35 }
+				},
+				{
+					"delay": 0.71,
+					"x": 80,
+					"y": 23,
+					"particle": { "id": 34 }
+				},
+				{
+					"x": 4,
+					"y": -25,
+					"particle": { "id": 33 }
+				},
+				{
+					"delay": 0.43,
+					"x": 41,
+					"y": -25,
+					"particle": { "id": 35 }
+				},
+				{
+					"delay": 0.71,
+					"x": 80,
+					"y": -25,
+					"particle": { "id": 34 }
+				}
+			],
+			"sound": { "sound": "battle/programs/inksplash.wav" },
+			"separateHits": true
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 140 },
+	"role": "EXECUTION",
+	"vocType": "PROJECTILE",
+	"unlockCondition": {},
+	"imageIndex": 128,
+	"tags": [ "ATTACK", "SPAWN", "SHOOT", "AFFECTS_ENEMY" ],
+	"preview": {},
+	"attackShell": {
+		"nameMessage": "|ShotCorn",
+		"descriptionMessage": "|Shoots corn that falls to ground and explodes when hit with fire!",
+		"level": 1,
+		"property": { "element": "NATURE", "power": 60, "crushPower": 60 },
+		"targetType": {},
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
+			"attacks": [
+				{
+					"stick": {}
+				}
+			],
+			"projectileDelay": 0.15,
+			"hitEffect": {
+				"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.UseVocEffect",
+				"voc": { "id": 141 },
+				"turned": true
+			},
+			"delay": { "max": 0.1, "val": 0.1 },
+			"drawable": {
+				"drawable": { "id": 276 },
+				"scaleX": 1.5,
+				"scaleY": 1.5
+			},
+			"portalTime": 0.2,
+			"trace": false,
+			"shadowOffsetY": 15
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 141 },
+	"role": "GUARD",
+	"vocType": "SPAWN",
+	"imageIndex": 110,
+	"tags": [ "HEAL", "AFFECTS_ALLY", "THROW" ],
+	"optimalPosition": { "xType": "FURTHER", "xDistance": 4, "yType": "IGNORE" },
+	"minimalPosition": { "xType": "FURTHER", "xDistance": 2, "yType": "IGNORE" },
+	"preview": {},
+	"attackShell": {
+		"nameMessage": "|ShotCorn Thrown",
+		"descriptionMessage": "gamedata|",
+		"property": {
+			"ailments": [
+				{}
+			],
+			"panel": "GRASS"
+		},
+		"targetType": null,
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ThrowEntityAttack",
+			"selectedXTile": 1,
+			"entity": { "id": 70 },
+			"limiter": { "limit": true },
+			"limitOnThrow": true
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 142 },
+	"preview": {},
+	"attackShell": {
+		"nameMessage": "|ShotCorn Explode Throw",
+		"property": {
+			"element": "NATURE",
+			"ailments": [
+				{ "type": "FLINCHING" }
+			],
+			"power": 160,
+			"crushPower": 200
+		},
+		"targetType": null,
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.MultiThrowAttack",
+			"panels": [
+				{},
+				{ "x": -1, "y": -1 },
+				{ "x": -1, "y": 1 },
+				{ "x": 1, "y": -1 },
+				{ "x": 1, "y": 1 }
+			],
+			"drawable": {
+				"drawable": { "id": 123 }
+			},
+			"speed": 5,
+			"hitEffect": {
+				"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.HitEffect",
+				"onHit": { "class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.ParticleEffect" }
+			}
 		}
 	}
 }

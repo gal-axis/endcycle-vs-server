@@ -2581,5 +2581,51 @@
 			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" }
 		]
 	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 70 },
+	"dataName": "ShotCorn Kernel",
+	"patchwork": { "id": 55 },
+	"configuration": {
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" },
+			{ "class": "com.one2b3.endcycle.features.battle.mode.TimeoutEntityMode" },
+			{
+				"class": "com.one2b3.endcycle.features.battle.mode.HitPassEntityMode",
+				"pass": true,
+				"property": {
+					"element": "NATURE",
+					"ailments": [
+						{ "type": "FLINCHING" }
+					],
+					"power": 160,
+					"crushPower": 160
+				},
+				"elements": [ "FIRE", "ELEC" ],
+				"panels": [ "LAVA" ],
+				"onHit": {
+					"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.MultiEffect",
+					"effects": [
+						{
+							"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.UseVocEffect",
+							"parent": true,
+							"voc": { "id": 142 }
+						},
+						{
+							"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.ChangeParentModeEffect",
+							"modes": [
+								{
+									"class": "com.one2b3.endcycle.features.battle.mode.AnimationsEntityMode",
+									"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.StateEntityAnimation", "sound": null }
+								}
+							]
+						}
+					]
+				}
+			},
+			{ "class": "com.one2b3.endcycle.features.battle.mode.FreePanelsEntityMode" }
+		]
+	}
 }
 ]

@@ -120,7 +120,7 @@
 					"title": "dialogues|Adventure.AzureJoin.Message",
 					"choices": [
 						{
-							"title": "|Yes",
+							"title": "menus|Menu.Yes",
 							"onSelect": {
 								"class": "com.one2b3.endcycle.features.scripts.battle.BattleCharacterBranchScript",
 								"branches": [
@@ -139,7 +139,7 @@
 							}
 						},
 						{
-							"title": "|No",
+							"title": "menus|Menu.No",
 							"onSelect": {
 								"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
 								"dialogues": [
@@ -1007,14 +1007,14 @@
 					"title": "dialogues|Adventure.AzureJoin.Message",
 					"choices": [
 						{
-							"title": "|Yes",
+							"title": "menus|Menu.Yes",
 							"onSelect": {
 								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
 								"script": { "id": 36 }
 							}
 						},
 						{
-							"title": "|No",
+							"title": "menus|Menu.No",
 							"onSelect": {
 								"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
 								"dialogues": [
@@ -1901,14 +1901,14 @@
 							"title": "dialogues|Adventure.Event.Crushlord.5",
 							"choices": [
 								{
-									"title": "|Yes",
+									"title": "menus|Menu.Yes",
 									"onSelect": {
 										"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
 										"script": { "id": 52 }
 									}
 								},
 								{
-									"title": "|No",
+									"title": "menus|Menu.No",
 									"onSelect": {
 										"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
 										"dialogue": { "id": 225 }
@@ -2152,14 +2152,14 @@
 							"title": "dialogues|Adventure.Event.Gunslinger.4",
 							"choices": [
 								{
-									"title": "|Yes",
+									"title": "menus|Menu.Yes",
 									"onSelect": {
 										"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
 										"script": { "id": 55 }
 									}
 								},
 								{
-									"title": "|No",
+									"title": "menus|Menu.No",
 									"onSelect": {
 										"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
 										"dialogue": { "id": 232 }
@@ -3694,13 +3694,13 @@
 					"title": "dialogues|Adventure.Punk.Join.2",
 					"choices": [
 						{
-							"title": "|Yes",
+							"title": "menus|Menu.Yes",
 							"onSelect": {
 								"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
 								"script": { "id": 95 }
 							}
 						},
-						{ "title": "|No" }
+						{ "title": "menus|Menu.No" }
 					]
 				}
 			}
@@ -4289,7 +4289,7 @@
 				"title": "dialogues|Adventure.Crimson.Join.1",
 				"choices": [
 					{
-						"title": "|Yes",
+						"title": "menus|Menu.Yes",
 						"onSelect": {
 							"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
 							"dialogues": [
@@ -4304,7 +4304,7 @@
 						}
 					},
 					{
-						"title": "|No",
+						"title": "menus|Menu.No",
 						"onSelect": {
 							"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
 							"dialogues": [
@@ -6401,7 +6401,7 @@
 				"title": "dialogues|Adventure.Crimson.Join.1",
 				"choices": [
 					{
-						"title": "|Yes",
+						"title": "menus|Menu.Yes",
 						"onSelect": {
 							"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
 							"dialogues": [
@@ -6416,7 +6416,7 @@
 						}
 					},
 					{
-						"title": "|No",
+						"title": "menus|Menu.No",
 						"onSelect": {
 							"class": "com.one2b3.endcycle.features.scripts.battle.StartPlayerDialogueScript",
 							"dialogues": [
@@ -6877,7 +6877,7 @@
 					"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "" },
 					"name": "cress",
 					"id": { "id": 21 },
-					"talkingName": "|Cress",
+					"talkingName": "gamedata|Character.Cress",
 					"configuration": {}
 				}
 			}

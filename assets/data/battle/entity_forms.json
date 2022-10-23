@@ -2627,5 +2627,43 @@
 			{ "class": "com.one2b3.endcycle.features.battle.mode.FreePanelsEntityMode" }
 		]
 	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 177 },
+	"dataName": "JumperJet",
+	"patchwork": { "id": 110 },
+	"configuration": {
+		"stats": { "hp": 1 },
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" },
+			{ "class": "com.one2b3.endcycle.features.battle.mode.LevitatingEntityMode", "min": 10, "max": 13 },
+			{
+				"class": "com.one2b3.endcycle.features.battle.mode.AnimationsEntityMode",
+				"deathAnimation": {
+					"class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation",
+					"sound": { "sound": "explosions/1.wav" },
+					"particles": []
+				}
+			},
+			{ "class": "com.one2b3.endcycle.features.battle.mode.FreePanelsEntityMode" }
+		],
+		"skills": [ "Floating" ]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 178 },
+	"dataName": "TugerHook",
+	"patchwork": { "id": 56 },
+	"configuration": {
+		"stats": { "hp": 1 },
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" },
+			{ "class": "com.one2b3.endcycle.features.battle.mode.AnimationsEntityMode" },
+			{ "class": "com.one2b3.endcycle.features.battle.mode.FreePanelsEntityMode" }
+		],
+		"skills": [ "Floating" ]
+	}
 }
 ]

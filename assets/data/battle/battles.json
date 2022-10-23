@@ -2462,6 +2462,8 @@
 			"y": 9,
 			"vital": false,
 			"party": "NEUTRAL",
+			"name": "boulder1",
+			"parent": "",
 			"form": { "id": 91 }
 		},
 		{
@@ -6832,6 +6834,44 @@
 			"vital": false,
 			"name": "tablet",
 			"form": { "id": 176 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 167 },
+	"dataName": "Crimson Force Intro",
+	"name": "gamedata|null",
+	"run": true,
+	"field": { "id": 51 },
+	"background": {},
+	"music": { "id": 3 },
+	"time": 60,
+	"timeWin": true,
+	"startScript": {
+		"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+		"script": { "id": 252 }
+	},
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"y": 1,
+			"vital": false,
+			"preview": false,
+			"party": "FRIENDLY",
+			"mustSurvive": true,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.AlwaysSpawnCondition" },
+			"name": "Everod",
+			"form": { "id": 112 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 8,
+			"y": 1,
+			"party": "FRIENDLY",
+			"player": true,
+			"name": "Flink",
+			"form": { "id": 85 }
 		}
 	]
 }

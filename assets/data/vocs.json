@@ -62,7 +62,10 @@
 			"crushPower": 210
 		},
 		"targetType": {},
-		"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.JumperJetAttack" }
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.JumperJetAttack",
+			"form": { "id": 177 }
+		}
 	}
 },
 {
@@ -8018,7 +8021,7 @@
 {
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 139 },
-	"vocType": "PROJECTILE",
+	"vocType": "DAMAGE",
 	"unlockCondition": {},
 	"imageIndex": 129,
 	"tags": [ "ATTACK", "DEBUFF", "AFFECTS_ENEMY" ],
@@ -8175,7 +8178,6 @@
 		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ThrowEntityAttack",
-			"selectedXTile": 1,
 			"entity": { "id": 70 },
 			"limiter": { "limit": true },
 			"limitOnThrow": true
@@ -8214,6 +8216,100 @@
 				"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.HitEffect",
 				"onHit": { "class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.ParticleEffect" }
 			}
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 143 },
+	"role": "EFFECT",
+	"vocType": "CAST",
+	"unlockCondition": {},
+	"imageIndex": 130,
+	"tags": [ "DEBUFF", "COUNTER", "AREA_DEFENSE", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "CLOSER", "xDistance": 2, "yType": "CLOSER", "yDistance": 2 },
+	"minimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "CLOSER", "yDistance": 3 },
+	"preview": {
+		"enemyPosition": { "x": -2 }
+	},
+	"attackShell": {
+		"nameMessage": "gamedata|Voc.Senpai",
+		"descriptionMessage": "gamedata|Voc.Senpai.Desc",
+		"level": 1,
+		"property": {
+			"ailments": [
+				{ "type": "PUSH", "intensity": 4 },
+				{ "type": "FLINCHING" }
+			],
+			"crushPower": 140
+		},
+		"targetType": {},
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.MultiWrapperAttack",
+			"wrappers": [
+				{
+					"attack": {
+						"class": "com.one2b3.endcycle.screens.battle.attacks.data.modifiers.ScriptAttack",
+						"script": { "class": "com.one2b3.endcycle.features.scripts.general.EmotupScript", "emotup": "BLUSH" }
+					}
+				},
+				{
+					"attack": {
+						"class": "com.one2b3.endcycle.screens.battle.attacks.data.field.HumidityAttack",
+						"preDrawable": null,
+						"explodeDrawable": {
+							"drawables": [
+								{
+									"drawable": { "id": 102 }
+								}
+							],
+							"minAmount": 4,
+							"maxAmount": 4,
+							"offsetY": 20
+						},
+						"explodeTime": 0,
+						"hits": [
+							{ "x": -1, "y": -1 },
+							{ "y": -1 },
+							{ "x": 1, "y": -1 },
+							{ "x": -1 },
+							{ "x": 1 },
+							{ "x": -1, "y": 1 },
+							{ "y": 1 },
+							{ "x": 1, "y": 1 }
+						]
+					}
+				}
+			]
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 144 },
+	"role": "EFFECT",
+	"vocType": "SPAWN",
+	"unlockCondition": {},
+	"imageIndex": 131,
+	"tags": [ "ATTACK", "AFFECTS_ENEMY", "SPAWN" ],
+	"preview": {},
+	"attackShell": {
+		"nameMessage": "gamedata|Voc.Tuger",
+		"descriptionMessage": "gamedata|Voc.Tuger.Desc",
+		"level": 3,
+		"property": {
+			"element": "NATURE",
+			"ailments": [
+				{ "type": "FLINCHING", "intensity": 0.3 }
+			],
+			"power": 140,
+			"crushPower": 210
+		},
+		"targetType": {},
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.JumperJetAttack",
+			"form": { "id": 178 },
+			"hook": true
 		}
 	}
 }

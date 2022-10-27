@@ -8241,6 +8241,7 @@
 				{ "type": "PUSH", "intensity": 4 },
 				{ "type": "FLINCHING" }
 			],
+			"power": 10,
 			"crushPower": 140
 		},
 		"targetType": {},
@@ -8260,12 +8261,14 @@
 						"explodeDrawable": {
 							"drawables": [
 								{
-									"drawable": { "id": 102 }
+									"drawable": { "id": 771 },
+									"color": { "r": 1, "g": 0.52156866, "b": 0.92156863, "a": 1 }
 								}
 							],
-							"minAmount": 4,
+							"minAmount": 8,
 							"maxAmount": 4,
-							"offsetY": 20
+							"fadeOut": 0.4,
+							"speedY": 20
 						},
 						"explodeTime": 0,
 						"hits": [

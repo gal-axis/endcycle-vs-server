@@ -1516,19 +1516,27 @@
 		"nameMessage": "gamedata|Voc.Singularity.Name",
 		"descriptionMessage": "gamedata|Voc.Singularity.Description",
 		"level": 2,
-		"property": { "element": "FIRE" },
+		"property": { "element": "FIRE", "power": 120, "crushPower": 80, "panel": "HOLE" },
 		"targetType": {
 			"party": "FRIENDLY",
 			"self": true,
 			"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
 		},
 		"attack": {
-			"class": "com.one2b3.endcycle.screens.battle.attacks.data.field.FieldChangerAttack",
-			"type": "HOLE",
-			"areas": [
-				{ "x": 1 },
-				{ "x": 2 }
-			]
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
+			"attacks": [
+				{
+					"stick": {}
+				}
+			],
+			"limitX": 2,
+			"piercing": true,
+			"projectileDelay": 0.1,
+			"drawable": {
+				"drawable": { "id": 863 }
+			},
+			"yOffset": 28,
+			"trace": false
 		}
 	}
 },
@@ -8295,7 +8303,14 @@
 	"unlockCondition": {},
 	"imageIndex": 131,
 	"tags": [ "ATTACK", "AFFECTS_ENEMY", "SPAWN" ],
-	"preview": {},
+	"preview": {
+		"enemyPosition": { "y": -1 },
+		"input": [
+			{ "key": "BATTLE_MOVE_DOWN", "delay": 0.3 },
+			{ "key": "BATTLE_MOVE_RIGHT", "delay": 0.4 },
+			{ "key": "BATTLE_MOVE_UP", "delay": 0.5 }
+		]
+	},
 	"attackShell": {
 		"nameMessage": "gamedata|Voc.Tuger",
 		"descriptionMessage": "gamedata|Voc.Tuger.Desc",
@@ -8313,6 +8328,86 @@
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.JumperJetAttack",
 			"form": { "id": 178 },
 			"hook": true
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 145 },
+	"role": "GUARD",
+	"vocType": "SPAWN",
+	"unlockCondition": {},
+	"imageIndex": 132,
+	"tags": [ "COUNTER", "DEBUFF", "AFFECTS_ENEMY", "DISABLED" ],
+	"preview": {
+		"enemyPosition": { "y": 1 },
+		"enemyInput": [
+			{ "key": "BATTLE_ATTACK_3", "delay": 0.6 },
+			{ "key": "BATTLE_MOVE_LEFT", "delay": 2 }
+		]
+	},
+	"attackShell": {
+		"nameMessage": "gamedata|Voc.Tsun",
+		"descriptionMessage": "gamedata|Voc.Tsun.Desc",
+		"level": 3,
+		"property": {
+			"element": "NATURE",
+			"ailments": [
+				{ "type": "FLINCHING" }
+			],
+			"power": 130,
+			"crushPower": 60
+		},
+		"targetType": null,
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
+			"limiter": { "limit": true },
+			"entity": { "id": 179 },
+			"overrideHit": true
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 146 },
+	"role": "EFFECT",
+	"vocType": "CAST",
+	"unlockCondition": {},
+	"imageIndex": 133,
+	"tags": [ "ATTACK", "BUFF", "AFFECTS_ENEMY" ],
+	"preview": {
+		"playerPosition": { "x": 1 },
+		"input": [
+			{ "key": "BATTLE_MOVE_RIGHT", "delay": 1 },
+			{ "key": "BATTLE_MOVE_DOWN", "delay": 1.6 }
+		],
+		"enemyInput": [
+			{ "key": "BATTLE_MOVE_DOWN", "delay": 2 }
+		]
+	},
+	"attackShell": {
+		"nameMessage": "gamedata|Voc.Sandstorm",
+		"descriptionMessage": "gamedata|Voc.Sandstorm.Desc",
+		"level": 3,
+		"property": {
+			"element": "FIRE",
+			"ailments": [
+				{ "type": "CHANGE_PANEL", "intensity": 4 }
+			],
+			"power": 30,
+			"crushPower": 30
+		},
+		"targetType": {},
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ReboundAttack",
+			"speed": 4,
+			"spins": 4,
+			"passive": true,
+			"yOffset": 0,
+			"drawable": {
+				"drawable": { "id": 863 }
+			},
+			"shadow": true
 		}
 	}
 }

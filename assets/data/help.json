@@ -1,22 +1,15 @@
 [
 {
 	"class": "com.one2b3.endcycle.features.help.HelpData",
-	"id": { "id": 4 },
-	"name": "help|Help.Battle.Name",
-	"text": "help|Help.Battle.Description",
-	"drawable": { "id": 1228 }
-},
-{
-	"class": "com.one2b3.endcycle.features.help.HelpData",
-	"id": { "id": 20 },
-	"name": "help|Help.Inventory.Name",
-	"text": "help|Inventory.Description",
-	"drawable": { "id": 395 }
+	"id": { "id": 41 },
+	"name": "help|Tutorial.Basics.Immersive",
+	"text": "help|Tutorial.Basics.Immersive.Desc",
+	"drawable": { "id": 1228 },
+	"tutorial": "IMMERSIVE"
 },
 {
 	"class": "com.one2b3.endcycle.features.help.HelpData",
 	"id": { "id": 11 },
-	"parent": { "id": 20 },
 	"name": "help|Inventory.Tutorial1.Name",
 	"text": "help|Inventory.Tutorial1.Description",
 	"drawable": { "id": 472 },
@@ -25,7 +18,6 @@
 {
 	"class": "com.one2b3.endcycle.features.help.HelpData",
 	"id": { "id": 43 },
-	"parent": { "id": 20 },
 	"name": "help|Inventory.Tutorial2",
 	"text": "help|Inventory.Tutorial2.Desc",
 	"drawable": { "id": 26 },
@@ -34,26 +26,22 @@
 {
 	"class": "com.one2b3.endcycle.features.help.HelpData",
 	"id": { "id": 48 },
-	"parent": { "id": 20 },
 	"name": "help|Inventory.Elements",
 	"text": "help|Inventory.Elements.Desc",
 	"tutorial": "ELEMENTS"
 },
 {
 	"class": "com.one2b3.endcycle.features.help.HelpData",
-	"id": { "id": 42 },
-	"parent": { "id": 20 },
-	"name": "help|Inventory.Roles",
-	"text": "help|Inventory.Roles.Desc",
-	"preview": "com.one2b3.endcycle.features.previews.tutorials.VocSetPreview"
+	"id": { "id": 65 },
+	"name": "gamedata|Help.Tips"
 },
 {
 	"class": "com.one2b3.endcycle.features.help.HelpData",
-	"id": { "id": 44 },
-	"parent": { "id": 20 },
-	"name": "help|Inventory.Recipes",
-	"text": "help|Inventory.Recipes.Desc",
-	"drawable": { "id": 569 }
+	"id": { "id": 4 },
+	"parent": { "id": 65 },
+	"name": "help|Help.Battle.Name",
+	"text": "help|Help.Battle.Description",
+	"drawable": { "id": 1228 }
 },
 {
 	"class": "com.one2b3.endcycle.features.help.HelpData",
@@ -62,33 +50,6 @@
 	"name": "help|Inventory.StyleLevel",
 	"text": "help|Inventory.StyleLevel.Description",
 	"preview": "com.one2b3.endcycle.features.previews.tutorials.StyleLevelPreview"
-},
-{
-	"class": "com.one2b3.endcycle.features.help.HelpData",
-	"id": { "id": 41 },
-	"parent": { "id": 4 },
-	"name": "help|Tutorial.Basics.Immersive",
-	"text": "help|Tutorial.Basics.Immersive.Desc",
-	"drawable": { "id": 1228 },
-	"tutorial": "IMMERSIVE"
-},
-{
-	"class": "com.one2b3.endcycle.features.help.HelpData",
-	"id": { "id": 5 },
-	"parent": { "id": 4 },
-	"name": "help|Help.Battle.Basics.Name",
-	"text": "help|Help.Battle.Basics.Description",
-	"drawable": { "id": 406 },
-	"tutorial": "BASIC_BATTLE"
-},
-{
-	"class": "com.one2b3.endcycle.features.help.HelpData",
-	"id": { "id": 6 },
-	"parent": { "id": 4 },
-	"name": "help|Help.Battle.Crush.Name",
-	"text": "help|Help.Battle.Crush.Description",
-	"drawable": { "id": 120 },
-	"tutorial": "BASIC_CRUSH"
 },
 {
 	"class": "com.one2b3.endcycle.features.help.HelpData",
@@ -237,17 +198,10 @@
 {
 	"class": "com.one2b3.endcycle.features.help.HelpData",
 	"id": { "id": 12 },
+	"parent": { "id": 65 },
 	"name": "help|Vocs",
 	"text": "help|Vocs.Description",
 	"drawable": { "id": 584 }
-},
-{
-	"class": "com.one2b3.endcycle.features.help.HelpData",
-	"id": { "id": 46 },
-	"parent": { "id": 12 },
-	"name": "help|Inventory.Style",
-	"text": "help|Inventory.Style.Descriptions",
-	"preview": "com.one2b3.endcycle.features.previews.tutorials.StyleEffectPreview"
 },
 {
 	"class": "com.one2b3.endcycle.features.help.HelpData",
@@ -307,6 +261,7 @@
 },
 {
 	"class": "com.one2b3.endcycle.features.help.HelpData",
+	"parent": { "id": 65 },
 	"name": "help|Help.Online.Name",
 	"text": "help|Help.Online.Description",
 	"drawable": { "id": 563 }
@@ -354,6 +309,7 @@
 {
 	"class": "com.one2b3.endcycle.features.help.HelpData",
 	"id": { "id": 1 },
+	"parent": { "id": 65 },
 	"name": "help|Help.Modding.Name",
 	"text": "help|Help.Modding.Description",
 	"drawable": { "id": 448 }
@@ -398,10 +354,50 @@
 },
 {
 	"class": "com.one2b3.endcycle.features.help.HelpData",
+	"id": { "id": 44 },
+	"parent": { "id": 65 },
+	"name": "help|Inventory.Recipes",
+	"text": "help|Inventory.Recipes.Desc",
+	"drawable": { "id": 569 }
+},
+{
+	"class": "com.one2b3.endcycle.features.help.HelpData",
 	"id": { "id": 58 },
 	"name": "help|Help.Popups.1",
 	"text": "help|Help.Popups.2",
 	"drawable": { "id": 73 }
+},
+{
+	"class": "com.one2b3.endcycle.features.help.HelpData",
+	"id": { "id": 20 },
+	"parent": { "id": 58 },
+	"name": "help|Help.Inventory.Name",
+	"text": "help|Inventory.Description",
+	"drawable": { "id": 395 }
+},
+{
+	"class": "com.one2b3.endcycle.features.help.HelpData",
+	"id": { "id": 42 },
+	"parent": { "id": 20 },
+	"name": "help|Inventory.Roles",
+	"text": "help|Inventory.Roles.Desc",
+	"preview": "com.one2b3.endcycle.features.previews.tutorials.VocSetPreview"
+},
+{
+	"class": "com.one2b3.endcycle.features.help.HelpData",
+	"id": { "id": 46 },
+	"parent": { "id": 20 },
+	"name": "help|Inventory.Style",
+	"text": "help|Inventory.Style.Descriptions",
+	"preview": "com.one2b3.endcycle.features.previews.tutorials.StyleEffectPreview"
+},
+{
+	"class": "com.one2b3.endcycle.features.help.HelpData",
+	"id": { "id": 63 },
+	"parent": { "id": 20 },
+	"name": "help|Help.Set.1",
+	"text": "help|Help.Sets.2",
+	"preview": "com.one2b3.endcycle.features.previews.tutorials.VocSetPreview"
 },
 {
 	"class": "com.one2b3.endcycle.features.help.HelpData",
@@ -494,13 +490,5 @@
 	"parent": { "id": 58 },
 	"name": "help|Help.Shop.1",
 	"text": "help|Help.Shop.2"
-},
-{
-	"class": "com.one2b3.endcycle.features.help.HelpData",
-	"id": { "id": 63 },
-	"parent": { "id": 58 },
-	"name": "help|Help.Set.1",
-	"text": "help|Help.Sets.2",
-	"preview": "com.one2b3.endcycle.features.previews.tutorials.VocSetPreview"
 }
 ]

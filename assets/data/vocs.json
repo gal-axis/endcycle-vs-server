@@ -1516,27 +1516,19 @@
 		"nameMessage": "gamedata|Voc.Singularity.Name",
 		"descriptionMessage": "gamedata|Voc.Singularity.Description",
 		"level": 2,
-		"property": { "element": "FIRE", "power": 120, "crushPower": 80, "panel": "HOLE" },
+		"property": { "element": "FIRE" },
 		"targetType": {
 			"party": "FRIENDLY",
 			"self": true,
 			"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
 		},
 		"attack": {
-			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
-			"attacks": [
-				{
-					"stick": {}
-				}
-			],
-			"limitX": 2,
-			"piercing": true,
-			"projectileDelay": 0.1,
-			"drawable": {
-				"drawable": { "id": 863 }
-			},
-			"yOffset": 28,
-			"trace": false
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.field.FieldChangerAttack",
+			"type": "HOLE",
+			"areas": [
+				{ "x": 1 },
+				{ "x": 2 }
+			]
 		}
 	}
 },
@@ -8304,13 +8296,13 @@
 	"imageIndex": 131,
 	"tags": [ "ATTACK", "AFFECTS_ENEMY", "SPAWN" ],
 	"preview": {
-		"enemyPosition": { "y": -1 },
-		"input": [
-			{ "key": "BATTLE_MOVE_DOWN", "delay": 0.3 },
-			{ "key": "BATTLE_MOVE_RIGHT", "delay": 0.4 },
-			{ "key": "BATTLE_MOVE_UP", "delay": 0.5 }
-		]
-	},
+        "enemyPosition": { "y": -1 },
+        "input": [
+            { "key": "BATTLE_MOVE_DOWN", "delay": 0.3 },
+            { "key": "BATTLE_MOVE_RIGHT", "delay": 0.4 },
+            { "key": "BATTLE_MOVE_UP", "delay": 0.5 }
+        ]
+    },
 	"attackShell": {
 		"nameMessage": "gamedata|Voc.Tuger",
 		"descriptionMessage": "gamedata|Voc.Tuger.Desc",
@@ -8337,15 +8329,8 @@
 	"role": "GUARD",
 	"vocType": "SPAWN",
 	"unlockCondition": {},
-	"imageIndex": 132,
 	"tags": [ "COUNTER", "DEBUFF", "AFFECTS_ENEMY", "DISABLED" ],
-	"preview": {
-		"enemyPosition": { "y": 1 },
-		"enemyInput": [
-			{ "key": "BATTLE_ATTACK_3", "delay": 0.6 },
-			{ "key": "BATTLE_MOVE_LEFT", "delay": 2 }
-		]
-	},
+	"preview": {},
 	"attackShell": {
 		"nameMessage": "gamedata|Voc.Tsun",
 		"descriptionMessage": "gamedata|Voc.Tsun.Desc",
@@ -8373,18 +8358,8 @@
 	"role": "EFFECT",
 	"vocType": "CAST",
 	"unlockCondition": {},
-	"imageIndex": 133,
 	"tags": [ "ATTACK", "BUFF", "AFFECTS_ENEMY" ],
-	"preview": {
-		"playerPosition": { "x": 1 },
-		"input": [
-			{ "key": "BATTLE_MOVE_RIGHT", "delay": 1 },
-			{ "key": "BATTLE_MOVE_DOWN", "delay": 1.6 }
-		],
-		"enemyInput": [
-			{ "key": "BATTLE_MOVE_DOWN", "delay": 2 }
-		]
-	},
+	"preview": {},
 	"attackShell": {
 		"nameMessage": "gamedata|Voc.Sandstorm",
 		"descriptionMessage": "gamedata|Voc.Sandstorm.Desc",

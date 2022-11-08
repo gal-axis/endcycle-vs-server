@@ -697,23 +697,10 @@
 	},
 	"modifications": [
 		{
-			"class": "com.one2b3.endcycle.features.vocs.modifications.types.WrapperModification",
-			"before": {
-				"stats": {
-					"power": 0,
-					"crushPower": 0,
-					"overrideAilments": true,
-					"ailments": [
-						{ "type": "FREEZE", "intensity": -1, "duration": 6 }
-					],
-					"target": {
-						"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
-					}
-				},
-				"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.status.DirectAttack" }
-			},
-			"wrapper": {},
-			"after": {}
+			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
+			"inflicts": [
+				{ "type": "FREEZE", "intensity": -1, "duration": 3 }
+			]
 		}
 	]
 },

@@ -927,7 +927,9 @@
 	"id": { "id": 60 },
 	"dataName": "AV.Atar Tutorial",
 	"entity": { "id": 5 },
-	"cache": null,
+	"cache": {
+		"customizations": [ -1, -1, 0 ]
+	},
 	"configuration": {
 		"stats": { "strength": -150, "actionSpeed": 0.6 }
 	},
@@ -2673,9 +2675,10 @@
 	"patchwork": { "id": 57 },
 	"type": "TSUNDERE",
 	"configuration": {
-		"stats": { "hp": 600 },
+		"stats": { "hp": 500 },
 		"modes": [
-			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" }
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" },
+			{ "class": "com.one2b3.endcycle.features.battle.mode.TimeoutEntityMode" }
 		]
 	}
 },
@@ -2698,6 +2701,62 @@
 		"modes": [
 			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" }
 		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 182 },
+	"dataName": "Immersive Q.T.",
+	"entity": { "id": 1 },
+	"configuration": {
+		"stats": { "hp": 180 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 183 },
+	"dataName": "Immersive Greed",
+	"entity": { "id": 4 },
+	"configuration": {
+		"stats": { "hp": 250, "resistance": 2000 }
+	},
+	"action": { "id": 200 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 184 },
+	"dataName": "Immersive Q.T. 3",
+	"entity": { "id": 1 },
+	"configuration": {
+		"stats": { "hp": 250 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 185 },
+	"dataName": "Immersive Q.T. 2",
+	"entity": { "id": 1 },
+	"configuration": {
+		"stats": { "hp": 100 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 186 },
+	"dataName": "Immersive Greed 2",
+	"entity": { "id": 4 },
+	"configuration": {
+		"stats": { "hp": 110, "resistance": 2000 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 187 },
+	"dataName": "Set Switch Agent",
+	"entity": { "id": 13 },
+	"cache": null,
+	"configuration": {
+		"stats": { "hp": 140 }
 	}
 }
 ]

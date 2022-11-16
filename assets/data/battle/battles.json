@@ -1551,23 +1551,12 @@
 			"pack": {}
 		},
 		{
-			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
-			"x": 8,
-			"y": 1,
-			"turned": true,
-			"vital": false,
-			"id": { "id": 19 },
-			"talkingName": "",
-			"configuration": {},
-			"pack": {}
-		},
-		{
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
 			"x": 14,
 			"y": 1,
 			"turned": true,
 			"name": "",
-			"form": { "id": 171 }
+			"form": { "id": 182 }
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
@@ -1596,18 +1585,18 @@
 			"vital": false,
 			"preview": false,
 			"party": "NEUTRAL",
-			"name": "21:1",
+			"name": "17:1",
 			"form": { "id": 55 }
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
-			"x": 18,
+			"x": 28,
 			"y": 1,
 			"form": { "id": 170 }
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
-			"x": 34,
+			"x": 39,
 			"y": 1,
 			"turned": true,
 			"name": "final",
@@ -1615,14 +1604,76 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
-			"x": 26,
+			"x": 25,
 			"y": 1,
-			"turned": true,
 			"vital": false,
 			"preview": false,
 			"party": "NEUTRAL",
-			"name": "30:1",
+			"name": "31:1",
 			"form": { "id": 59 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 8,
+			"y": 1,
+			"turned": true,
+			"form": { "id": 182 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 15,
+			"turned": true,
+			"name": "rush-qt2",
+			"form": { "id": 182 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 20,
+			"y": 1,
+			"party": "NEUTRAL",
+			"name": "22:1",
+			"form": { "id": 56 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 19,
+			"y": 1,
+			"turned": true,
+			"form": { "id": 183 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 24,
+			"y": 1,
+			"turned": true,
+			"name": "attacking",
+			"form": { "id": 184 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 40,
+			"y": -2,
+			"turned": true,
+			"name": "bomb3",
+			"parent": "",
+			"form": { "id": 185 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 39,
+			"y": -2,
+			"turned": true,
+			"name": "bomb1",
+			"form": { "id": 186 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 38,
+			"y": -2,
+			"turned": true,
+			"name": "bomb2",
+			"parent": "",
+			"form": { "id": 170 }
 		}
 	],
 	"entityGoals": [
@@ -1630,8 +1681,10 @@
 	],
 	"liberations": [
 		{ "x": 7, "width": 3, "height": 3 },
+		{ "x": 18, "width": 3, "height": 3 },
+		{ "x": 28, "width": 2, "height": 3 },
 		{ "x": 13, "width": 3, "height": 3 },
-		{ "x": 18, "width": 2, "height": 3 }
+		{ "x": 23, "width": 2, "height": 3 }
 	]
 },
 {
@@ -6915,6 +6968,91 @@
 			"form": { "id": 181 }
 		},
 		{ "class": "com.one2b3.endcycle.features.battle.EntityFormShell", "x": 3, "y": 2, "vital": false, "party": "NEUTRAL", "player": true }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 171 },
+	"dataName": "Set Switch",
+	"name": "",
+	"background": { "id": 2 },
+	"music": { "id": 10 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 1,
+			"y": 1,
+			"party": "FRIENDLY",
+			"player": true,
+			"name": "player",
+			"id": { "id": 2 },
+			"talkingName": "",
+			"configuration": {},
+			"pack": {}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": 1,
+			"turned": true,
+			"name": "dummy",
+			"form": { "id": 48 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 5,
+			"y": -1,
+			"turned": true,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
+			"name": "agent1",
+			"form": { "id": 187 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 4,
+			"y": -1,
+			"turned": true,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
+			"name": "agent2",
+			"form": { "id": 187 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 3,
+			"y": -1,
+			"turned": true,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
+			"name": "agent3",
+			"form": { "id": 187 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 2,
+			"y": -1,
+			"turned": true,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
+			"name": "agent4",
+			"form": { "id": 187 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 1,
+			"y": -1,
+			"turned": true,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
+			"name": "agent5",
+			"form": { "id": 187 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
+			"x": 6,
+			"y": 1,
+			"turned": true,
+			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.SameBorderSpawnCondition" },
+			"name": "dummy2",
+			"parent": "",
+			"form": { "id": 48 }
+		}
 	]
 }
 ]

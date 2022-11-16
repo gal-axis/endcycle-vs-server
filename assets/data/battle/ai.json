@@ -7388,5 +7388,55 @@
 			"voc": { "id": 21 }
 		}
 	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 200 },
+	"name": "Heal On Hit - Idle",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"action": { "id": 201 },
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnHitCondition", "condition": true }
+			]
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 201 },
+	"name": "Heal On Hit - Heal",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"action": { "id": 200 },
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 2 }
+			]
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.6 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.InflictHitAct",
+			"property": {
+				"ailments": [
+					{ "type": "HEAL", "intensity": 250 }
+				]
+			}
+		}
+	]
 }
 ]

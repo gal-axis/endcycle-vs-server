@@ -15,26 +15,6 @@
 						"style": null
 					},
 					{
-						"id": { "id": 10110 },
-						"style": null
-					},
-					{
-						"id": { "id": 10013 },
-						"style": null
-					},
-					{
-						"id": { "id": 9 },
-						"style": null
-					}
-				]
-			},
-			{
-				"items": [
-					{
-						"id": { "id": 10100 },
-						"style": null
-					},
-					{
 						"id": { "id": 10016 },
 						"style": null
 					},
@@ -43,27 +23,7 @@
 						"style": null
 					},
 					{
-						"id": { "id": 10106 },
-						"style": null
-					}
-				]
-			},
-			{
-				"items": [
-					{
-						"id": { "id": 23 },
-						"style": null
-					},
-					{
-						"id": { "id": 10352 },
-						"style": null
-					},
-					{
-						"id": { "id": 10422 },
-						"style": null
-					},
-					{
-						"id": { "id": 10423 },
+						"id": { "id": 9 },
 						"style": null
 					}
 				]
@@ -169,7 +129,7 @@
 			{
 				"items": [
 					{
-						"id": {},
+						"id": { "id": 10010 },
 						"style": null
 					},
 					{
@@ -177,51 +137,31 @@
 						"style": null
 					},
 					{
-						"id": { "id": 18 },
-						"style": null
-					},
-					{
-						"id": { "id": 9 },
-						"style": null
-					}
-				]
-			},
-			{
-				"items": [
-					{
-						"id": { "id": 65 },
-						"style": { "id": 19 }
-					},
-					{
-						"id": { "id": 16 },
-						"style": { "id": 30 }
-					},
-					{
-						"id": { "id": 47 },
-						"style": { "id": 25 }
-					},
-					{
-						"id": { "id": 85 },
-						"style": null
-					}
-				]
-			},
-			{
-				"items": [
-					{
-						"id": { "id": 15 },
-						"style": { "id": 18 }
-					},
-					{
-						"id": { "id": 38 },
-						"style": null
-					},
-					{
 						"id": { "id": 10102 },
 						"style": null
 					},
 					{
-						"id": { "id": 8 },
+						"id": { "id": 10423 },
+						"style": null
+					}
+				]
+			},
+			{
+				"items": [
+					{
+						"id": {},
+						"style": null
+					},
+					{
+						"id": { "id": 11 },
+						"style": null
+					},
+					{
+						"id": { "id": 18 },
+						"style": null
+					},
+					{
+						"id": { "id": 85 },
 						"style": null
 					}
 				]
@@ -353,12 +293,14 @@
 			"onWin": {}
 		}
 	],
+	"teaseCondition": {},
 	"unlockCondition": {
 		"requirements": [
 			{
 				"class": "com.one2b3.endcycle.player.progress.unlock.CampaignCondition",
 				"campaign": { "id": 1 }
-			}
+			},
+			{ "class": "com.one2b3.endcycle.player.progress.unlock.TutorialRequirement", "tutorial": "TUTORIAL_SET_SWITCHING" }
 		]
 	}
 },
@@ -551,12 +493,21 @@
 			"onWin": {}
 		}
 	],
+	"teaseCondition": {
+		"requirements": [
+			{
+				"class": "com.one2b3.endcycle.player.progress.unlock.CampaignCondition",
+				"campaign": { "id": 1 }
+			}
+		]
+	},
 	"unlockCondition": {
 		"requirements": [
 			{
 				"class": "com.one2b3.endcycle.player.progress.unlock.CampaignCondition",
 				"campaign": {}
-			}
+			},
+			{ "class": "com.one2b3.endcycle.player.progress.unlock.TutorialRequirement", "tutorial": "TUTORIAL_LV3" }
 		]
 	}
 },
@@ -886,6 +837,14 @@
 			]
 		}
 	],
+	"teaseCondition": {
+		"requirements": [
+			{
+				"class": "com.one2b3.endcycle.player.progress.unlock.CampaignCondition",
+				"campaign": {}
+			}
+		]
+	},
 	"unlockCondition": {
 		"requirements": [
 			{
@@ -1110,6 +1069,14 @@
 			"timeTwoStars": 65
 		}
 	],
+	"teaseCondition": {
+		"requirements": [
+			{
+				"class": "com.one2b3.endcycle.player.progress.unlock.CampaignCondition",
+				"campaign": { "id": 2 }
+			}
+		]
+	},
 	"unlockCondition": {
 		"requirements": [
 			{
@@ -1468,6 +1435,14 @@
 			}
 		}
 	],
+	"teaseCondition": {
+		"requirements": [
+			{
+				"class": "com.one2b3.endcycle.player.progress.unlock.CampaignCondition",
+				"campaign": { "id": 5 }
+			}
+		]
+	},
 	"unlockCondition": {
 		"requirements": [
 			{

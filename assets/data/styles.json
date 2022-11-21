@@ -1495,5 +1495,45 @@
 			]
 		}
 	]
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.styles.VocStyle",
+	"id": { "id": 49 },
+	"name": "gamedata|Style.Magnet",
+	"prefix": "gamedata|Style.Magnet",
+	"description": "gamedata|Style.Magnet.Desc",
+	"level": 1,
+	"drawable": {
+		"drawable": { "id": 877 }
+	},
+	"preview": {},
+	"modifications": [
+		{
+			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
+			"inflicts": [
+				{ "type": "MAGNET", "duration": 4 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.styles.VocStyle",
+	"id": { "id": 50 },
+	"name": "gamedata|Style.Repel",
+	"prefix": "gamedata|Style.Repel",
+	"description": "gamedata|Style.Repel.Desc",
+	"level": 1,
+	"drawable": {
+		"drawable": { "id": 878 }
+	},
+	"preview": {},
+	"modifications": [
+		{
+			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
+			"inflicts": [
+				{ "type": "MAGNET", "intensity": -1, "duration": 4 }
+			]
+		}
+	]
 }
 ]

@@ -334,6 +334,7 @@
 {
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 10031 },
+	"role": "EFFECT",
 	"vocType": "PROJECTILE",
 	"unlockCondition": {},
 	"imageIndex": 92,
@@ -352,7 +353,8 @@
 		"property": {
 			"element": "ELEC",
 			"ailments": [
-				{ "type": "STUN", "duration": 0.6 }
+				{ "type": "STUN", "duration": 0.6 },
+				{ "type": "MAGNET", "intensity": 1, "duration": 4 }
 			],
 			"power": 200,
 			"crushPower": 150
@@ -361,6 +363,7 @@
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ThrowAttack",
 			"selectedXTile": 3,
+			"speed": 1.4,
 			"throwDuration": 0.25,
 			"hitEffect": {
 				"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.HitEffect",
@@ -877,7 +880,7 @@
 		},
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.guarding.ShieldAttack",
-			"shieldDuration": 6,
+			"shieldDuration": 5,
 			"particle": {
 				"drawable": {
 					"drawable": { "id": 1142 }
@@ -3195,7 +3198,7 @@
 		"property": {
 			"element": "NATURE",
 			"ailments": [
-				{ "type": "HP_CHANGER", "intensity": -25, "duration": 8 },
+				{ "type": "HP_CHANGER", "intensity": -25, "duration": 6 },
 				{ "type": "FLINCHING" }
 			],
 			"power": 50,
@@ -3424,37 +3427,21 @@
 {
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 39 },
-	"role": "EXECUTION",
-	"vocType": "DAMAGE",
+	"role": "GUARD",
 	"unlockCondition": {},
-	"imageIndex": 49,
-	"characters": [
-		{ "id": 7 },
-		{ "id": 21 },
-		{ "id": 4 }
-	],
-	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY" ],
-	"optimalPosition": { "xType": "CLOSER", "xDistance": 4, "yType": "EQUAL" },
-	"preview": {},
+	"imageIndex": 134,
+	"preview": { "duration": 4 },
 	"attackShell": {
-		"nameMessage": "gamedata|Voc.AdvanceRush",
-		"descriptionMessage": "gamedata|Voc.AdvanceRush.Description",
+		"nameMessage": "gamedata|Voc.Snacker",
+		"descriptionMessage": "gamedata|Voc.Snacker.Desc",
 		"level": 3,
-		"property": {
-			"ailments": [
-				{ "type": "GRAB_PANEL" }
-			],
-			"power": 100,
-			"crushPower": 150
-		},
-		"targetType": {},
+		"property": { "power": 20, "crushPower": 20 },
+		"targetType": null,
 		"attack": {
-			"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.RushWrapperAttack",
-			"ignoresEntities": true,
-			"hitPanels": true,
-			"maxDistance": 3,
-			"borderHit": {},
-			"entityHit": {}
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
+			"limiter": { "limit": true },
+			"entity": { "id": 188 },
+			"overrideHit": true
 		}
 	}
 },
@@ -4183,13 +4170,7 @@
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.guarding.CounterWrapperAttack",
 			"wrapper": {
-				"stats": {
-					"target": {
-						"party": "FRIENDLY",
-						"self": true,
-						"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
-					}
-				},
+				"stats": {},
 				"attack": {
 					"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.MultiWrapperAttack",
 					"shareHitproperty": true,
@@ -5281,7 +5262,7 @@
 		"invincible": true,
 		"property": {
 			"ailments": [
-				{ "type": "STUN", "duration": 3 }
+				{ "type": "STUN", "duration": 2 }
 			],
 			"power": 150,
 			"crushPower": 100
@@ -8196,6 +8177,7 @@
 {
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 142 },
+	"role": null,
 	"preview": {},
 	"attackShell": {
 		"nameMessage": "|ShotCorn Explode Throw",
@@ -8291,6 +8273,21 @@
 							{ "x": 1, "y": 1 }
 						]
 					}
+				},
+				{
+					"stats": {
+						"power": 0,
+						"crushPower": 0,
+						"element": "NORMAL",
+						"overrideAilments": true,
+						"ailments": [
+							{ "type": "MAGNET", "intensity": -1, "duration": 4 }
+						],
+						"target": {
+							"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
+						}
+					},
+					"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.status.DirectAttack" }
 				}
 			]
 		}
@@ -8409,6 +8406,126 @@
 				"drawable": { "id": 863 }
 			},
 			"shadow": true
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 148 },
+	"preview": {},
+	"attackShell": {
+		"nameMessage": "|Snacker Shot",
+		"targetType": {},
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
+			"attacks": [
+				{
+					"stick": {}
+				}
+			],
+			"limitX": 4,
+			"projectileDelay": 0,
+			"drawable": {
+				"drawable": { "id": 123 }
+			}
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 150 },
+	"preview": {},
+	"attackShell": {
+		"nameMessage": "|Snacker Shot 2",
+		"targetType": {},
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
+			"attacks": [
+				{
+					"stick": {}
+				}
+			],
+			"limitX": 4,
+			"projectileDelay": 0,
+			"drawable": {
+				"drawable": { "id": 276 }
+			}
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 147 },
+	"role": null,
+	"optimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "CLOSER", "yDistance": 2 },
+	"minimalPosition": { "xType": "FURTHER", "xDistance": 1, "yType": "IGNORE" },
+	"preview": {
+		"input": [
+			{ "key": "BATTLE_ATTACK_2" },
+			{ "key": "BATTLE_ATTACK_1", "delay": 0.6 }
+		]
+	},
+	"attackShell": {
+		"nameMessage": "|Crystal Reign",
+		"descriptionMessage": "|Places shard absorbing crystal that changes depending on shard role!",
+		"interruptable": false,
+		"invincible": true,
+		"property": { "power": 100, "crushPower": 100 },
+		"targetType": null,
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.CrystalWrapperAttack",
+			"wrapper": {
+				"attack": {
+					"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
+					"limiter": { "limit": true, "id": "" },
+					"checkOccupied": false,
+					"xOffset": 2,
+					"entity": { "id": 189 },
+					"spawnedName": "",
+					"overrideHit": true
+				}
+			},
+			"roles": [
+				{
+					"role": "ATTACK",
+					"hitProperty": { "element": null, "power": 100, "crushPower": 50 },
+					"particle": { "id": 19 }
+				},
+				{
+					"role": "GUARD",
+					"hitProperty": { "element": null, "power": 50, "crushPower": 50 },
+					"selfProperty": {
+						"element": null,
+						"ailments": [
+							{ "type": "HEAL", "intensity": 100 }
+						]
+					},
+					"particle": { "id": 21 }
+				},
+				{
+					"role": "EXECUTION",
+					"hitProperty": { "element": null, "power": 50, "crushPower": 50 },
+					"selfProperty": {
+						"element": null,
+						"ailments": [
+							{ "type": "GRAB_PANEL", "intensity": 1, "duration": 3 }
+						]
+					},
+					"particle": { "id": 22 }
+				},
+				{
+					"role": "EFFECT",
+					"hitProperty": {
+						"element": null,
+						"ailments": [
+							{ "type": "STUN", "duration": 1 }
+						],
+						"power": 50,
+						"crushPower": 100
+					},
+					"particle": { "id": 20 }
+				}
+			]
 		}
 	}
 }

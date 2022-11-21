@@ -1665,7 +1665,10 @@
 		"element": "NATURE",
 		"modes": [
 			{ "class": "com.one2b3.endcycle.features.battle.mode.HealthDrainEntityMode", "drain": 30 },
-			{ "class": "com.one2b3.endcycle.features.battle.mode.StatusImmuneEntityMode" }
+			{
+				"class": "com.one2b3.endcycle.features.battle.mode.StatusImmuneEntityMode",
+				"ailments": [ "MAGNET" ]
+			}
 		]
 	},
 	"action": { "id": 167 }
@@ -1787,7 +1790,7 @@
 						"role": "EXECUTION",
 						"hitProperty": {
 							"ailments": [
-								{ "type": "GRAB_PANEL", "intensity": 1 }
+								{ "type": "GRAB_PANEL", "intensity": 1, "duration": 3 }
 							],
 							"power": 50,
 							"crushPower": 150,
@@ -1906,7 +1909,7 @@
 	"patchwork": { "id": 99 },
 	"configuration": {
 		"modes": [
-			{ "class": "com.one2b3.endcycle.features.battle.mode.HitUseVocEntityMode" },
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HitUseVocEntityMode", "skipCounter": true },
 			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" },
 			{
 				"class": "com.one2b3.endcycle.features.battle.mode.StatusImmuneEntityMode",
@@ -2663,7 +2666,12 @@
 		"modes": [
 			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" },
 			{ "class": "com.one2b3.endcycle.features.battle.mode.AnimationsEntityMode" },
-			{ "class": "com.one2b3.endcycle.features.battle.mode.FreePanelsEntityMode" }
+			{ "class": "com.one2b3.endcycle.features.battle.mode.FreePanelsEntityMode" },
+			{
+				"class": "com.one2b3.endcycle.features.battle.mode.StatusImmuneEntityMode",
+				"ailments": [ "PUSH", "PUSH_VERTICAL" ],
+				"exclude": true
+			}
 		],
 		"skills": [ "Floating" ]
 	}
@@ -2757,6 +2765,62 @@
 	"cache": null,
 	"configuration": {
 		"stats": { "hp": 140 }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 188 },
+	"dataName": "Snacker",
+	"patchwork": { "id": 58 },
+	"configuration": {
+		"stats": { "hp": 400 },
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HealthDrainEntityMode", "drain": 40 }
+		]
+	},
+	"action": { "id": 202 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 189 },
+	"dataName": "Yven Crystal V2",
+	"patchwork": { "id": 53 },
+	"configuration": {
+		"modes": [
+			{
+				"class": "com.one2b3.endcycle.features.battle.mode.HazardEntityMode",
+				"property": { "shader": null, "element": null },
+				"effect": {
+					"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.MultiEffect",
+					"effects": [
+						{
+							"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.HitEffect",
+							"panels": [
+								{ "x": -1 },
+								{ "x": 1 },
+								{ "y": -1 },
+								{ "y": 1 }
+							],
+							"onHit": { "class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.ParticleEffect" }
+						},
+						{
+							"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.HitEffect",
+							"panels": [
+								{ "x": -1, "y": -1 },
+								{ "x": 1, "y": 1 },
+								{ "x": -1, "y": 1 },
+								{ "x": 1, "y": -1 }
+							],
+							"delay": 0.1,
+							"onHit": { "class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.ParticleEffect" }
+						}
+					]
+				},
+				"cooldown": -1,
+				"proximity": true
+			},
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" }
+		]
 	}
 }
 ]

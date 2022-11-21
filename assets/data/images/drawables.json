@@ -694,7 +694,7 @@
 	"id": { "id": 195 },
 	"name": "checkmark_checked",
 	"frames": [
-		{ "texturePath": "general/menus/online_ready.png", "width": 18, "height": 18 }
+		{ "texturePath": "general/menus/online_ready.png", "width": 12, "height": 12 }
 	]
 },
 {
@@ -702,7 +702,7 @@
 	"id": { "id": 196 },
 	"name": "checkmark_unchecked",
 	"frames": [
-		{ "texturePath": "general/menus/online_unready.png", "width": 18, "height": 18 }
+		{ "texturePath": "general/menus/online_unready.png", "width": 12, "height": 12 }
 	]
 },
 {
@@ -11631,6 +11631,93 @@
 	"name": "Kali Angry",
 	"frames": [
 		{ "texturePath": "battle/vocs/kali2.png", "width": 42, "height": 52 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 874 },
+	"name": "Popcorn Machine",
+	"speed": 0.06,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/entities/others/popcorn_machine.png", "width": 25, "height": 50 },
+		{ "texturePath": "battle/entities/others/popcorn_machine.png", "x": 26, "width": 25, "height": 50, "yOffset": 1 },
+		{ "texturePath": "battle/entities/others/popcorn_machine.png", "x": 52, "width": 25, "height": 50 },
+		{ "texturePath": "battle/entities/others/popcorn_machine.png", "x": 78, "width": 25, "height": 50, "yOffset": 1 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 875 },
+	"name": "Magnetize Particle",
+	"speed": 0.04,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/visuals/magnet.png", "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/magnet.png", "x": 95, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/magnet.png", "x": 190, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/magnet.png", "x": 285, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/magnet.png", "x": 380, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/magnet.png", "y": 92, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/magnet.png", "x": 95, "y": 92, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/magnet.png", "x": 190, "y": 92, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/magnet.png", "x": 285, "y": 92, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/magnet.png", "x": 380, "y": 92, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/magnet.png", "y": 184, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/magnet.png", "x": 95, "y": 184, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/magnet.png", "x": 190, "y": 184, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/magnet.png", "x": 285, "y": 184, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/magnet.png", "x": 380, "y": 184, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/magnet.png", "y": 276, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/magnet.png", "x": 95, "y": 276, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/magnet.png", "x": 190, "y": 276, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/magnet.png", "x": 285, "y": 276, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/magnet.png", "x": 380, "y": 276, "width": 95, "height": 92 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 876 },
+	"name": "AntiMagnetize Particle",
+	"speed": 0.04,
+	"playMode": "LOOP_REVERSED",
+	"frames": [
+		{ "texturePath": "battle/visuals/repel.png", "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/repel.png", "x": 95, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/repel.png", "x": 190, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/repel.png", "x": 285, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/repel.png", "x": 380, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/repel.png", "y": 92, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/repel.png", "x": 95, "y": 92, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/repel.png", "x": 190, "y": 92, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/repel.png", "x": 285, "y": 92, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/repel.png", "x": 380, "y": 92, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/repel.png", "y": 184, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/repel.png", "x": 95, "y": 184, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/repel.png", "x": 190, "y": 184, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/repel.png", "x": 285, "y": 184, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/repel.png", "x": 380, "y": 184, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/repel.png", "y": 276, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/repel.png", "x": 95, "y": 276, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/repel.png", "x": 190, "y": 276, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/repel.png", "x": 285, "y": 276, "width": 95, "height": 92 },
+		{ "texturePath": "battle/visuals/repel.png", "x": 380, "y": 276, "width": 95, "height": 92 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 877 },
+	"name": "Style Magnet",
+	"frames": [
+		{ "texturePath": "programs/style_magnet.png", "width": 9, "height": 9 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 878 },
+	"name": "Style Repel",
+	"frames": [
+		{ "texturePath": "programs/style_repel.png", "width": 9, "height": 9 }
 	]
 }
 ]

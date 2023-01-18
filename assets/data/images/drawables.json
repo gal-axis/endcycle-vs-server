@@ -2720,9 +2720,14 @@
 {
 	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
 	"id": { "id": 1220 },
-	"name": "b_spreader_shot",
+	"name": "Spreader Shot",
+	"speed": 0.08,
+	"playMode": "LOOP",
 	"frames": [
-		{ "texturePath": "battle/vocs/spreader.png", "width": 11, "height": 11 }
+		{ "texturePath": "battle/vocs/spreader.png", "width": 30, "height": 24 },
+		{ "texturePath": "battle/vocs/spreader.png", "x": 31, "width": 30, "height": 24 },
+		{ "texturePath": "battle/vocs/spreader.png", "x": 62, "width": 30, "height": 24 },
+		{ "texturePath": "battle/vocs/spreader.png", "x": 93, "width": 30, "height": 24 }
 	]
 },
 {
@@ -11718,6 +11723,88 @@
 	"name": "Style Repel",
 	"frames": [
 		{ "texturePath": "programs/style_repel.png", "width": 9, "height": 9 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 879 },
+	"name": "Battle Start Intro",
+	"speed": 0.04,
+	"frames": [
+		{ "texturePath": "general/menus/start/battle_1.png", "width": 122, "height": 79, "yOffset": 22 },
+		{ "texturePath": "general/menus/start/battle_2.png", "width": 195, "height": 79, "yOffset": 22 },
+		{ "texturePath": "general/menus/start/battle_3.png", "width": 285, "height": 79, "yOffset": 22 },
+		{ "texturePath": "general/menus/start/battle_4.png", "width": 480, "height": 92, "yOffset": 9 },
+		{ "texturePath": "general/menus/start/battle_5.png", "width": 307, "height": 92, "xOffset": 173, "yOffset": 9 },
+		{ "texturePath": "general/menus/start/battle_6.png", "width": 317, "height": 105, "xOffset": 163, "yOffset": 8 },
+		{ "texturePath": "general/menus/start/battle_7.png", "width": 315, "height": 106, "xOffset": 165, "yOffset": 9 },
+		{ "texturePath": "general/menus/start/battle_8.png", "width": 150, "height": 106, "xOffset": 165, "yOffset": 9 },
+		{ "texturePath": "general/menus/start/battle_9.png", "width": 150, "height": 92, "xOffset": 165, "yOffset": 9 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 880 },
+	"name": "Battle Start Dissolve",
+	"speed": 0.04,
+	"frames": [
+		{ "texturePath": "general/menus/start/battle_10.png", "width": 150, "height": 92, "xOffset": 28, "yOffset": 9 },
+		{ "texturePath": "general/menus/start/battle_11.png", "width": 203, "height": 108, "xOffset": -9, "yOffset": 2 },
+		{ "texturePath": "general/menus/start/battle_12.png", "width": 226, "height": 115, "xOffset": -20 },
+		{ "texturePath": "general/menus/start/battle_13.png", "width": 219, "height": 113, "xOffset": -15, "yOffset": 2 },
+		{ "texturePath": "general/menus/start/battle_14.png", "width": 219, "height": 113, "xOffset": -15, "yOffset": 2 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 881 },
+	"name": "Battle Start",
+	"speed": 0.04,
+	"frames": [
+		{ "texturePath": "general/menus/start/battle_1.png", "x": 120, "y": 77, "width": 2, "height": 2, "yOffset": 22 },
+		{ "texturePath": "general/menus/start/battle_1.png", "width": 122, "height": 79, "yOffset": 22 },
+		{ "texturePath": "general/menus/start/battle_2.png", "width": 195, "height": 79, "yOffset": 22 },
+		{ "texturePath": "general/menus/start/battle_3.png", "width": 285, "height": 79, "yOffset": 22 },
+		{ "texturePath": "general/menus/start/battle_4.png", "width": 480, "height": 92, "yOffset": 9 },
+		{ "texturePath": "general/menus/start/battle_5.png", "width": 307, "height": 92, "xOffset": 173, "yOffset": 9 },
+		{ "texturePath": "general/menus/start/battle_6.png", "width": 317, "height": 105, "xOffset": 163, "yOffset": 8 },
+		{ "texturePath": "general/menus/start/battle_7.png", "width": 315, "height": 106, "xOffset": 165, "yOffset": 9 },
+		{ "texturePath": "general/menus/start/battle_8.png", "width": 150, "height": 106, "xOffset": 165, "yOffset": 9 },
+		{ "texturePath": "general/menus/start/battle_9.png", "width": 150, "height": 92, "xOffset": 165, "yOffset": 9 },
+		{ "texturePath": "general/menus/start/battle_10.png", "width": 150, "height": 92, "xOffset": 165, "yOffset": 9 },
+		{ "texturePath": "general/menus/start/battle_11.png", "width": 203, "height": 108, "xOffset": 126, "yOffset": 4 },
+		{ "texturePath": "general/menus/start/battle_12.png", "width": 226, "height": 115, "xOffset": 115 },
+		{ "texturePath": "general/menus/start/battle_13.png", "width": 219, "height": 113, "xOffset": 120, "yOffset": 1 },
+		{ "texturePath": "general/menus/start/battle_14.png", "width": 219, "height": 113, "xOffset": 120, "yOffset": 1 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 882 },
+	"name": "X-Flame Shot",
+	"speed": 0.06,
+	"playMode": "LOOP",
+	"frames": [
+		{ "texturePath": "battle/vocs/xbomb.png", "width": 19, "height": 19 },
+		{ "texturePath": "battle/vocs/xbomb.png", "x": 20, "width": 19, "height": 19 },
+		{ "texturePath": "battle/vocs/xbomb.png", "x": 40, "width": 19, "height": 19 },
+		{ "texturePath": "battle/vocs/xbomb.png", "x": 60, "width": 19, "height": 19 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 883 },
+	"name": "Style Right",
+	"frames": [
+		{ "texturePath": "programs/righty.png", "width": 9, "height": 7 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.data.DrawableData",
+	"id": { "id": 884 },
+	"name": "Style Left",
+	"frames": [
+		{ "texturePath": "programs/righty.png", "width": -9, "height": 7 }
 	]
 }
 ]

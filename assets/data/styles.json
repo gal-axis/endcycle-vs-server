@@ -1069,6 +1069,70 @@
 },
 {
 	"class": "com.one2b3.endcycle.features.vocs.styles.VocStyle",
+	"id": { "id": 51 },
+	"name": "gamedata|Style.Right",
+	"prefix": "gamedata|Style.Right",
+	"description": "gamedata|Style.Right.Desc",
+	"characters": [
+		{ "id": 9 },
+		{ "id": 11 }
+	],
+	"level": 1,
+	"drawable": {
+		"drawable": { "id": 883 }
+	},
+	"tags": [ "AREA_OFFENSE" ],
+	"preview": {},
+	"particle": {
+		"drawable": {
+			"drawable": { "id": 752 },
+			"color": { "r": 0.8901961, "g": 0.80784315, "b": 0.6509804, "a": 1 }
+		},
+		"speedX": 96
+	},
+	"modifications": [
+		{
+			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
+			"inflicts": [
+				{ "type": "CHANGE_PANEL", "intensity": 11 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.styles.VocStyle",
+	"id": { "id": 52 },
+	"name": "gamedata|Style.Left",
+	"prefix": "gamedata|Style.Left",
+	"description": "gamedata|Style.Left.Desc",
+	"characters": [
+		{ "id": 9 },
+		{ "id": 11 }
+	],
+	"level": 1,
+	"drawable": {
+		"drawable": { "id": 884 }
+	},
+	"tags": [ "AREA_OFFENSE" ],
+	"preview": {},
+	"particle": {
+		"drawable": {
+			"drawable": { "id": 752 },
+			"color": { "r": 0.8901961, "g": 0.80784315, "b": 0.6509804, "a": 1 }
+		},
+		"speedX": -96
+	},
+	"modifications": [
+		{
+			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
+			"inflicts": [
+				{ "type": "CHANGE_PANEL", "intensity": 12 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.styles.VocStyle",
 	"id": { "id": 33 },
 	"name": "gamedata|Style.Anti",
 	"prefix": "gamedata|Style.Anti",

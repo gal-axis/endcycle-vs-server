@@ -92,7 +92,7 @@
 			],
 			"crushPower": 100
 		},
-		"targetType": {},
+		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.guarding.CounterWrapperAttack",
 			"wrapper": {
@@ -162,6 +162,7 @@
 				"drawable": { "id": 1220 }
 			},
 			"portalTime": 0.25,
+			"trace": false,
 			"shadowOffsetY": 14,
 			"shotSound": { "sound": "battle/programs/spreader_shot.wav" }
 		}
@@ -2198,7 +2199,12 @@
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
 			"attacks": [
 				{
-					"stick": {}
+					"stick": {
+						"drawable": {
+							"drawable": { "id": 882 }
+						},
+						"damage": false
+					}
 				}
 			],
 			"limitX": 7,
@@ -2216,10 +2222,10 @@
 				"onHit": { "class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.ParticleEffect", "tintElement": true }
 			},
 			"drawable": {
-				"drawable": { "id": 8 }
+				"drawable": { "id": 882 }
 			},
 			"portalTime": 0.2,
-			"yOffset": 25,
+			"yOffset": 19,
 			"shadowOffsetY": 14,
 			"shotSound": { "sound": "battle/programs/flame_shot.wav" }
 		}

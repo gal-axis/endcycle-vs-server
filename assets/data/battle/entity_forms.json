@@ -2563,7 +2563,7 @@
 	"type": "ICE_CUBE",
 	"configuration": {
 		"modes": [
-			{ "class": "com.one2b3.endcycle.features.battle.mode.FallingEntityMode", "offset": 0, "shake": 3 },
+			{ "class": "com.one2b3.endcycle.features.battle.mode.FallingEntityMode", "startingSpeed": 0.7, "offset": 0, "distance": 70, "shake": 3 },
 			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" }
 		]
 	}
@@ -2774,7 +2774,7 @@
 	"dataName": "Snacker",
 	"patchwork": { "id": 58 },
 	"configuration": {
-		"stats": { "hp": 400 },
+		"stats": { "hp": 250 },
 		"modes": [
 			{ "class": "com.one2b3.endcycle.features.battle.mode.HealthDrainEntityMode", "drain": 40 }
 		]
@@ -2821,6 +2821,58 @@
 				"proximity": true
 			},
 			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" }
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 190 },
+	"dataName": "Saffron",
+	"entity": { "id": 16 },
+	"configuration": {}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 191 },
+	"dataName": "Lemon Tree",
+	"patchwork": { "id": 61 },
+	"configuration": {
+		"stats": { "hp": 500 },
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HealthDrainEntityMode", "drain": 40 }
+		]
+	},
+	"action": { "id": 204 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 192 },
+	"dataName": "Swords of Light",
+	"entity": { "id": 26 },
+	"configuration": {
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" },
+			{
+				"class": "com.one2b3.endcycle.features.battle.mode.HazardEntityMode",
+				"effect": { "class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.KillParentEffect" }
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 193 },
+	"dataName": "Greedling",
+	"patchwork": { "id": 81 },
+	"type": "GHOST",
+	"configuration": {
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.FreePanelsEntityMode" },
+			{ "class": "com.one2b3.endcycle.features.battle.mode.BigEntityMode", "size": 0.5 },
+			{
+				"class": "com.one2b3.endcycle.features.battle.mode.GreedlingMode",
+				"voc": { "id": 158 }
+			}
 		]
 	}
 }

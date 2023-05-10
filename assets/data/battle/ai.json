@@ -1406,7 +1406,7 @@
 		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
 	},
 	"acts": [
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"time": 0.9,
@@ -7477,6 +7477,51 @@
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 150 }
 		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 204 },
+	"name": "Lemon Tree",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 0.2,
+			"voc": { "id": 155 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 0.2,
+			"voc": { "id": 153 }
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 0.2,
+			"voc": { "id": 154 }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 205 },
+	"name": "Swords of Light Explode",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 2.5 },
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 156 }
+		},
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.KillAct" }
 	]
 }
 ]

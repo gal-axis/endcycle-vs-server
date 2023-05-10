@@ -9080,5 +9080,42 @@
 			}
 		}
 	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 253 },
+	"name": "A-Start Saffron",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript", "speed": 0, "layer": 14 }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 926 },
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+					"stop": true,
+					"onFinish": {
+						"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+						"script": { "id": 241 }
+					}
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 254 },
+	"name": "A-Event>Saffron Event",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 929 }
+			}
+		}
+	]
 }
 ]

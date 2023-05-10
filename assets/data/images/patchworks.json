@@ -5642,5 +5642,138 @@
 			]
 		}
 	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 59 },
+	"name": "Saffron",
+	"defaultState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+	"states": [
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 886 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "CASTING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 897 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 887 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING" },
+			"images": [
+				{
+					"drawable": { "id": 898 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FLINCH" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 899 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_START" },
+			"images": [
+				{
+					"drawable": { "id": 900 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "STUN_END" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{
+					"drawable": { "id": 901 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_FORWARD" },
+			"type": "TILE_MOVE_FORWARD",
+			"images": [
+				{}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "MOVING_BACKWARD" },
+			"type": "TILE_MOVE_BACKWARD",
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "DEFENDING" },
+			"images": [
+				{}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "SPAWN" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "IDLE" },
+			"images": [
+				{}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 60 },
+	"name": "Swords of Light",
+	"states": [
+		{
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "loop" },
+			"images": [
+				{
+					"drawable": { "id": 890 }
+				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.NamedPatchworkState", "name": "loop" },
+			"images": [
+				{
+					"drawable": { "id": 891 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 61 },
+	"name": "Lemon Tree",
+	"states": [
+		{
+			"images": [
+				{
+					"drawable": { "id": 903 }
+				}
+			]
+		}
+	]
 }
 ]

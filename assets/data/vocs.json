@@ -317,11 +317,12 @@
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
 			"attacks": [
 				{
-					"xSpeed": 240,
+					"xSpeed": 330,
 					"stick": {}
 				}
 			],
 			"piercing": true,
+			"projectileDelay": 0.15,
 			"delay": { "max": 0.1, "val": 0.1 },
 			"drawable": {
 				"drawable": { "id": 521 }
@@ -446,7 +447,8 @@
 		"property": {
 			"element": "FIRE",
 			"ailments": [
-				{ "type": "FLINCHING", "intensity": 0.3 }
+				{ "type": "FLINCHING", "intensity": 0.3 },
+				{ "type": "BLINDED", "duration": 3 }
 			],
 			"power": 150,
 			"crushPower": 150
@@ -646,13 +648,15 @@
 	"attackShell": {
 		"nameMessage": "gamedata|Voc.FreezeRush",
 		"descriptionMessage": "gamedata|Voc.FreezeRush.Description",
+		"interruptable": false,
 		"level": 2,
 		"property": {
 			"element": "WATER",
 			"ailments": [
-				{ "type": "FREEZE", "duration": 1.8 }
+				{ "type": "FREEZE", "duration": 1.8 },
+				{ "type": "FLINCHING" }
 			],
-			"power": 100,
+			"power": 150,
 			"crushPower": 150
 		},
 		"targetType": {
@@ -813,7 +817,7 @@
 		"nameMessage": "gamedata|Voc.EjectPlus.Name",
 		"descriptionMessage": "gamedata|Voc.EjectPlus.Description",
 		"level": 2,
-		"property": { "power": 150, "crushPower": 210 },
+		"property": { "power": 180, "crushPower": 210 },
 		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AntiAilmentWrapperAttack",
@@ -830,7 +834,9 @@
 						"panels": [
 							{},
 							{ "y": -1 },
-							{ "y": 1 }
+							{ "y": 1 },
+							{ "x": -1 },
+							{ "x": 1 }
 						],
 						"onHit": {
 							"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.ParticleEffect",
@@ -1276,10 +1282,10 @@
 			"element": "NATURE",
 			"ailments": [
 				{ "type": "FLINCHING", "intensity": 0.29999998 },
-				{ "type": "HP_CHANGER", "intensity": -20, "duration": 15 }
+				{ "type": "HP_CHANGER", "intensity": -20, "duration": 9 }
 			],
 			"power": 80,
-			"crushPower": 100
+			"crushPower": 160
 		},
 		"targetType": {},
 		"attack": {
@@ -1422,7 +1428,7 @@
 		"level": 1,
 		"property": {
 			"ailments": [
-				{ "type": "HEAL", "intensity": 120 }
+				{ "type": "HEAL", "intensity": 170 }
 			]
 		},
 		"targetType": {
@@ -1450,7 +1456,7 @@
 		"level": 2,
 		"property": {
 			"ailments": [
-				{ "type": "BERSERK", "intensity": 0.25 }
+				{ "type": "BERSERK", "intensity": 0.4 }
 			]
 		},
 		"targetType": {
@@ -1735,7 +1741,7 @@
 		"nameMessage": "gamedata|Voc.VinePull.Name",
 		"descriptionMessage": "gamedata|Voc.VinePull.Description",
 		"level": 1,
-		"property": { "element": "NATURE", "power": 50, "crushPower": 150 },
+		"property": { "element": "NATURE", "power": 90, "crushPower": 170 },
 		"targetType": {
 			"party": "ENEMY",
 			"invert": true,
@@ -1869,7 +1875,7 @@
 	"attackShell": {
 		"nameMessage": "gamedata|Voc.Swap.Name",
 		"descriptionMessage": "gamedata|Voc.Swap.Description",
-		"level": 2,
+		"level": 1,
 		"targetType": {},
 		"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.field.SwapAttack" }
 	}
@@ -2066,8 +2072,8 @@
 			"ailments": [
 				{ "type": "FLINCHING", "intensity": 0.3 }
 			],
-			"power": 50,
-			"crushPower": 80
+			"power": 60,
+			"crushPower": 50
 		},
 		"targetType": {},
 		"attack": {
@@ -2192,7 +2198,7 @@
 				{ "type": "FLINCHING", "intensity": 0.3 }
 			],
 			"power": 70,
-			"crushPower": 110
+			"crushPower": 130
 		},
 		"targetType": {},
 		"attack": {
@@ -2290,20 +2296,21 @@
 				{ "type": "FLINCHING", "intensity": 0.3 }
 			],
 			"power": 90,
-			"crushPower": 110
+			"crushPower": 110,
+			"panel": "GRASS"
 		},
 		"targetType": {},
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
 			"attacks": [
 				{
-					"xSpeed": 80,
+					"xSpeed": 120,
 					"stick": {}
 				}
 			],
 			"repeatCost": 0.25,
 			"checkFloor": true,
-			"delay": { "max": 0.3 },
+			"delay": { "max": 0.2 },
 			"drawable": {
 				"drawable": { "id": 1255 }
 			},
@@ -2464,13 +2471,12 @@
 	"attackShell": {
 		"nameMessage": "gamedata|Voc.Push.Name",
 		"descriptionMessage": "gamedata|Voc.Push.Description",
-		"gauge": 0,
 		"property": {
 			"ailments": [
 				{ "type": "PUSH", "intensity": 1 }
 			],
-			"power": 80,
-			"crushPower": 60
+			"power": 120,
+			"crushPower": 120
 		},
 		"targetType": {},
 		"attack": {
@@ -2674,7 +2680,7 @@
 	"attackShell": {
 		"nameMessage": "gamedata|Voc.Explant.Name",
 		"descriptionMessage": "gamedata|Voc.Explant.Description",
-		"level": 3,
+		"level": 2,
 		"property": { "element": "NATURE", "power": 150, "crushPower": 150, "panel": "GRASS" },
 		"targetType": null,
 		"attack": {
@@ -2713,7 +2719,7 @@
 	"attackShell": {
 		"nameMessage": "gamedata|Voc.FireGate.Name",
 		"descriptionMessage": "gamedata|Voc.FireGate.Description",
-		"level": 3,
+		"level": 2,
 		"property": { "element": "FIRE", "power": 25, "crushPower": 25 },
 		"targetType": {},
 		"attack": {
@@ -2913,7 +2919,8 @@
 		"property": {
 			"element": "ELEC",
 			"ailments": [
-				{ "type": "BLINDED", "duration": 6 }
+				{ "type": "BLINDED", "duration": 6 },
+				{ "type": "STUN", "duration": 2.5 }
 			],
 			"crushPower": 150
 		},
@@ -2998,7 +3005,7 @@
 	"attackShell": {
 		"nameMessage": "gamedata|Voc.BoulderBack",
 		"descriptionMessage": "gamedata|Voc.BoulderBack.Description",
-		"level": 2,
+		"level": 1,
 		"property": {
 			"element": "WATER",
 			"ailments": [
@@ -3054,8 +3061,8 @@
 			"ailments": [
 				{ "type": "FLINCHING" }
 			],
-			"power": 250,
-			"crushPower": 230
+			"power": 300,
+			"crushPower": 300
 		},
 		"targetType": {},
 		"attack": {
@@ -3169,7 +3176,8 @@
 		"property": {
 			"element": "NATURE",
 			"ailments": [
-				{ "type": "SPEED", "intensity": 0.35 }
+				{ "type": "SPEED", "intensity": 0.35 },
+				{ "type": "TIME", "intensity": 0.5, "duration": 3 }
 			]
 		},
 		"targetType": null,
@@ -3337,7 +3345,9 @@
 			"areas": [
 				{ "timer": 0.1, "duration": 0.2, "x": 1, "y": 1 },
 				{ "timer": 0.1, "duration": 0.2, "x": 1, "y": -1 },
-				{ "timer": 0.36, "duration": 0.2, "x": 2 }
+				{ "timer": 0.36, "duration": 0.2, "x": 2 },
+				{ "timer": 0.6, "duration": 0.2, "x": 3, "y": -1 },
+				{ "timer": 0.6, "duration": 0.2, "x": 3, "y": 1 }
 			],
 			"attackParticles": [
 				{
@@ -3355,6 +3365,18 @@
 					"x": 70,
 					"y": -1,
 					"particle": { "id": 32 }
+				},
+				{
+					"delay": 0.5,
+					"x": 112,
+					"y": 20,
+					"particle": { "id": 30 }
+				},
+				{
+					"delay": 0.5,
+					"x": 112,
+					"y": -30,
+					"particle": { "id": 31 }
 				}
 			]
 		}
@@ -3417,8 +3439,24 @@
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AntiAilmentWrapperAttack",
 			"wrapper": {
 				"attack": {
-					"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.SwordAttack",
-					"sound": { "sound": "battle/programs/antisword.wav" }
+					"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.MultiWrapperAttack",
+					"wrappers": [
+						{
+							"attack": {
+								"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.ParallelWrapperAttack",
+								"wrapper": {
+									"attack": {
+										"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.SwordAttack",
+										"sound": { "sound": "battle/programs/antisword.wav" }
+									}
+								},
+								"xOffset": 0
+							}
+						},
+						{
+							"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.modifiers.AnimationModifierAttack" }
+						}
+					]
 				}
 			},
 			"seeking": "NERF",
@@ -3442,7 +3480,7 @@
 		"nameMessage": "gamedata|Voc.Snacker",
 		"descriptionMessage": "gamedata|Voc.Snacker.Desc",
 		"level": 3,
-		"property": { "power": 20, "crushPower": 20 },
+		"property": { "power": 25, "crushPower": 25 },
 		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
@@ -3472,7 +3510,6 @@
 		"level": 1,
 		"property": {
 			"ailments": [
-				{ "type": "SPEED", "intensity": -0.35 },
 				{ "type": "BERSERK", "intensity": 0.2 }
 			]
 		},
@@ -3505,7 +3542,6 @@
 		"level": 1,
 		"property": {
 			"ailments": [
-				{ "type": "BERSERK", "intensity": -0.2 },
 				{ "type": "SPEED", "intensity": 0.35 }
 			]
 		},
@@ -3595,6 +3631,7 @@
 	"preview": {},
 	"attackShell": {
 		"nameMessage": "gamedata|Voc.Lightmass.Attack",
+		"interruptable": false,
 		"targetType": {},
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.field.HumidityAttack",
@@ -3754,7 +3791,7 @@
 				{ "type": "STUN", "duration": 1 },
 				{ "type": "FLASH", "duration": 0.1 }
 			],
-			"power": 170,
+			"power": 200,
 			"crushPower": 240
 		},
 		"targetType": {},
@@ -3790,7 +3827,26 @@
 				{ "x": 1, "y": 1 },
 				{ "x": 2, "y": -1 },
 				{ "x": 2 },
-				{ "x": 2, "y": 1 }
+				{ "x": 2, "y": 1 },
+				{ "x": 3 },
+				{ "x": 3, "y": -1 },
+				{ "x": 3, "y": 1 },
+				{ "x": 4 },
+				{ "x": 4, "y": -1 },
+				{ "x": 4, "y": 1 },
+				{ "x": 5 },
+				{ "x": 5, "y": -1 },
+				{ "x": 5, "y": 1 },
+				{ "x": 1, "y": -2 },
+				{ "x": 1, "y": 2 },
+				{ "x": 2, "y": -2 },
+				{ "x": 2, "y": 2 },
+				{ "x": 3, "y": 2 },
+				{ "x": 3, "y": -2 },
+				{ "x": 4, "y": 2 },
+				{ "x": 4, "y": -2 },
+				{ "x": 5, "y": -2 },
+				{ "x": 5, "y": 2 }
 			],
 			"explodeSound": { "sound": "explosions/2.wav" },
 			"requireOccupied": true,
@@ -4009,7 +4065,7 @@
 					"wrappers": [
 						{
 							"stats": { "power": 0, "crushPower": 0, "element": "NORMAL", "overrideAilments": true },
-							"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.field.PanelGrabAttack", "revert": true, "animation": false }
+							"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.field.AreaGrabAttack", "revert": true, "animation": false }
 						},
 						{
 							"attack": {
@@ -4033,9 +4089,24 @@
 			},
 			"otherwise": {},
 			"panels": [
-				{ "x": 1 }
+				{ "x": 1 },
+				{ "x": 2 },
+				{ "x": 3 },
+				{ "x": 4 },
+				{ "x": 5 },
+				{ "x": 1, "y": -1 },
+				{ "x": 1, "y": 1 },
+				{ "x": 2, "y": -1 },
+				{ "x": 2, "y": 1 },
+				{ "x": 3, "y": -1 },
+				{ "x": 3, "y": 1 },
+				{ "x": 4, "y": -1 },
+				{ "x": 4, "y": 1 },
+				{ "x": 5, "y": -1 },
+				{ "x": 5, "y": 1 }
 			],
-			"panelConverted": true
+			"panelConverted": true,
+			"anyPanel": true
 		}
 	}
 },
@@ -4096,7 +4167,7 @@
 	"attackShell": {
 		"nameMessage": "gamedata|Voc.Invis",
 		"descriptionMessage": "gamedata|Voc.Invis.Desc",
-		"level": 3,
+		"level": 2,
 		"property": {
 			"ailments": [
 				{ "type": "BLINDED", "intensity": -1, "duration": 3.5 }
@@ -4183,7 +4254,7 @@
 					"shareHitproperty": true,
 					"wrappers": [
 						{
-							"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.modifiers.ToHealModifierAttack", "percent": 1.25 }
+							"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.modifiers.ToHealModifierAttack", "percent": 0.75, "crush": 0.5 }
 						},
 						{
 							"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.status.AilmentInflicterAttack" }
@@ -4574,10 +4645,10 @@
 			"holdDuration": 0.5,
 			"hits": [
 				{ "x": 2 },
-				{ "x": 1, "y": 1 },
-				{ "x": 3, "y": -1 },
-				{ "x": 3, "y": 1 },
-				{ "x": 1, "y": -1 }
+				{ "x": 3 },
+				{ "x": 2, "y": -1 },
+				{ "x": 2, "y": 1 },
+				{ "x": 1 }
 			],
 			"onHit": {
 				"stats": {
@@ -5357,9 +5428,7 @@
 	"id": { "id": 79 },
 	"tags": [ "DEBUFF", "AFFECTS_ENEMY", "COUNTER" ],
 	"optimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
-	"preview": {
-		"playerPosition": { "x": 1 }
-	},
+	"preview": {},
 	"attackShell": {
 		"nameMessage": "gamedata|Ultra.Zawarudo",
 		"descriptionMessage": "gamedata|Ultra.Zawarudo.Desc",
@@ -5380,22 +5449,75 @@
 			}
 		},
 		"attack": {
-			"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.MultiWrapperAttack",
-			"wrappers": [
-				{
-					"attack": {
-						"class": "com.one2b3.endcycle.screens.battle.attacks.data.modifiers.ParticleModifierAttack",
-						"attackParticles": [
-							{
-								"particle": { "id": 24 }
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.RushWrapperAttack",
+			"borderHit": {
+				"attack": {
+					"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.MultiWrapperAttack",
+					"wrappers": [
+						{
+							"attack": {
+								"class": "com.one2b3.endcycle.screens.battle.attacks.data.modifiers.ParticleModifierAttack",
+								"attackParticles": [
+									{
+										"particle": { "id": 24 }
+									}
+								]
 							}
-						]
-					}
-				},
-				{
-					"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.status.AilmentInflicterAttack" }
+						},
+						{
+							"stats": {
+								"power": 0,
+								"crushPower": 0,
+								"overrideAilments": true,
+								"ailments": [
+									{ "type": "TIME", "intensity": 0.3, "duration": 3 }
+								],
+								"target": {
+									"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
+								}
+							},
+							"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.status.DirectAttack" }
+						},
+						{
+							"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.status.AilmentInflicterAttack" }
+						}
+					]
 				}
-			]
+			},
+			"entityHit": {
+				"attack": {
+					"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.MultiWrapperAttack",
+					"wrappers": [
+						{
+							"attack": {
+								"class": "com.one2b3.endcycle.screens.battle.attacks.data.modifiers.ParticleModifierAttack",
+								"attackParticles": [
+									{
+										"particle": { "id": 24 }
+									}
+								]
+							}
+						},
+						{
+							"stats": {
+								"power": 0,
+								"crushPower": 0,
+								"overrideAilments": true,
+								"ailments": [
+									{ "type": "TIME", "intensity": 0.3, "duration": 3 }
+								],
+								"target": {
+									"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
+								}
+							},
+							"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.status.DirectAttack" }
+						},
+						{
+							"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.status.AilmentInflicterAttack" }
+						}
+					]
+				}
+			}
 		}
 	}
 },
@@ -5591,8 +5713,8 @@
 			"ailments": [
 				{ "type": "STUN", "duration": 1.5 }
 			],
-			"power": 130,
-			"crushPower": 100
+			"power": 160,
+			"crushPower": 140
 		},
 		"targetType": {},
 		"attack": {
@@ -5679,6 +5801,7 @@
 			],
 			"shots": 4,
 			"simultaneous": false,
+			"limitY": 5,
 			"startup": { "max": 0.1 },
 			"drawable": {
 				"drawable": { "id": 615 }
@@ -5825,6 +5948,7 @@
 		"descriptionMessage": "gamedata|Ultra.Greed.Desc",
 		"interruptable": false,
 		"invincible": true,
+		"gauge": 0.33333,
 		"property": {
 			"element": "WATER",
 			"ailments": [
@@ -5834,21 +5958,21 @@
 			"crushPower": 140,
 			"panel": "SNOW"
 		},
-		"targetType": {},
+		"targetType": null,
 		"attack": {
-			"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.RepeatWrapperAttack",
-			"wrapper": {
-				"attack": {
-					"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.RushWrapperAttack",
-					"canTurn": false,
-					"ignoresEntities": true,
-					"hitPanels": true,
-					"backMove": "INSTANT_TILE",
-					"borderHit": {},
-					"entityHit": {}
-				}
-			},
-			"amount": 3
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
+			"limiter": {},
+			"checkBounds": false,
+			"checkOccupied": false,
+			"xOffset": 0,
+			"panels": [
+				{},
+				{},
+				{}
+			],
+			"entity": { "id": 193 },
+			"spawnedParty": "FRIENDLY",
+			"overrideHit": true
 		}
 	}
 },
@@ -5865,7 +5989,6 @@
 		"invincible": true,
 		"property": {
 			"ailments": [
-				{ "type": "GRAB_PANEL" },
 				{ "type": "HP_CHANGER", "intensity": -30, "duration": 4 }
 			],
 			"power": 200,
@@ -5874,24 +5997,39 @@
 		},
 		"targetType": {},
 		"attack": {
-			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.StationarySwordAttack",
-			"areas": [
-				{ "x": 2 },
-				{ "x": 2, "y": 1 },
-				{ "x": 2, "y": -1 },
-				{ "x": 1 },
-				{ "x": 1, "y": 1 },
-				{ "x": 1, "y": -1 }
-			],
-			"drawable": {
-				"drawable": { "id": 151 },
-				"scaleX": 4,
-				"scaleY": 4
-			},
-			"drawableX": 40,
-			"drawableHAlign": 0,
-			"drawableVAlign": 0,
-			"drawableFade": 0.5
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.MultiWrapperAttack",
+			"wrappers": [
+				{
+					"stats": { "power": 0, "crushPower": 0, "overrideAilments": true, "overridePanel": true },
+					"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.field.AreaGrabAttack", "animation": false }
+				},
+				{
+					"stats": { "power": 0, "crushPower": 0, "overrideAilments": true, "overridePanel": true },
+					"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.field.AreaGrabAttack", "animation": false }
+				},
+				{
+					"attack": {
+						"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.StationarySwordAttack",
+						"areas": [
+							{ "x": 2 },
+							{ "x": 2, "y": 1 },
+							{ "x": 2, "y": -1 },
+							{ "x": 1 },
+							{ "x": 1, "y": 1 },
+							{ "x": 1, "y": -1 }
+						],
+						"drawable": {
+							"drawable": { "id": 151 },
+							"scaleX": 4,
+							"scaleY": 4
+						},
+						"drawableX": 40,
+						"drawableHAlign": 0,
+						"drawableVAlign": 0,
+						"drawableFade": 0.5
+					}
+				}
+			]
 		}
 	}
 },
@@ -6089,40 +6227,31 @@
 			"ailments": [
 				{ "type": "FLINCHING" }
 			],
-			"power": 100,
-			"crushPower": 160,
+			"power": 200,
+			"crushPower": 240,
 			"panel": "LAVA"
 		},
 		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.special.ThrowUserAttack",
 			"selectedXTile": 3,
-			"speed": 1.4,
+			"speed": 2,
 			"hitEffect": {
-				"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.MultiEffect",
-				"effects": [
-					{
-						"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.SpawnEffect",
-						"type": "EXPLODING",
-						"entity": { "id": 35 },
-						"palette": {
-							"customizations": [ 0 ]
-						},
-						"limiter": {}
-					},
-					{
-						"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.HitEffect",
-						"panels": [
-							{ "x": -1 },
-							{ "x": 1 },
-							{ "y": -1 },
-							{ "y": 1 }
-						],
-						"onHit": { "class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.ParticleEffect", "tintElement": true },
-						"onHitOriginal": true
-					}
-				]
-			}
+				"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.HitEffect",
+				"panels": [
+					{ "x": -1 },
+					{ "x": 1 },
+					{ "y": -1 },
+					{ "y": 1 },
+					{ "x": -1, "y": -1 },
+					{ "x": -1, "y": 1 },
+					{ "x": 1, "y": 1 },
+					{ "x": 1, "y": -1 }
+				],
+				"onHit": { "class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.ParticleEffect", "tintElement": true },
+				"onHitOriginal": true
+			},
+			"chain": 0
 		}
 	}
 },
@@ -6139,16 +6268,12 @@
 		{ "id": 3 }
 	],
 	"tags": [ "ATTACK", "AFFECTS_ENEMY", "HEAL" ],
-	"preview": {
-		"input": [
-			{ "key": "BATTLE_MOVE_RIGHT", "delay": 1 }
-		]
-	},
+	"preview": {},
 	"attackShell": {
 		"nameMessage": "gamedata|Voc.HealHook",
 		"descriptionMessage": "gamedata|Voc.HealHook.Description",
 		"level": 1,
-		"property": { "element": "ELEC", "power": 80, "crushPower": 100 },
+		"property": { "element": "ELEC", "power": 80, "crushPower": 140 },
 		"targetType": {},
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.VinePullAttack",
@@ -6191,12 +6316,13 @@
 		},
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ThrowSpawnAttack",
-			"selectedXTile": 1,
+			"throwDelay": 0.05,
 			"type": "PICKUP",
 			"entity": { "id": 41 },
 			"limiter": { "limit": true },
 			"limitOnThrow": true,
-			"spawnedName": "Heal"
+			"spawnedName": "Heal",
+			"speed": 1.6
 		}
 	}
 },
@@ -6305,6 +6431,7 @@
 {
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 103 },
+	"vocType": "PROJECTILE",
 	"preview": {},
 	"attackShell": {
 		"nameMessage": "gamedata|Ultra.Farmadile",
@@ -6654,14 +6781,26 @@
 					"player": false,
 					"xOffset": 4,
 					"yOffset": 1,
-					"turned": true
+					"turned": true,
+					"stats": {
+						"overrideAilments": true,
+						"ailments": [
+							{ "type": "PUSH_VERTICAL", "intensity": -1 }
+						]
+					}
 				},
 				{
 					"entity": { "id": 117 },
 					"player": false,
 					"xOffset": 4,
 					"yOffset": -1,
-					"turned": true
+					"turned": true,
+					"stats": {
+						"overrideAilments": true,
+						"ailments": [
+							{ "type": "PUSH_VERTICAL", "intensity": 1 }
+						]
+					}
 				}
 			]
 		}
@@ -8428,11 +8567,13 @@
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
 			"attacks": [
 				{
+					"xSpeed": 450,
 					"stick": {}
 				}
 			],
 			"limitX": 4,
 			"projectileDelay": 0,
+			"delay": { "max": 0.2 },
 			"drawable": {
 				"drawable": { "id": 123 }
 			}
@@ -8450,11 +8591,13 @@
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
 			"attacks": [
 				{
+					"xSpeed": 450,
 					"stick": {}
 				}
 			],
 			"limitX": 4,
 			"projectileDelay": 0,
+			"delay": { "max": 0.2 },
 			"drawable": {
 				"drawable": { "id": 276 }
 			}
@@ -8534,6 +8677,353 @@
 					"particle": { "id": 20 }
 				}
 			]
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 149 },
+	"vocType": "PROJECTILE",
+	"imageIndex": 85,
+	"characters": [
+		{ "id": 23 },
+		{ "id": 48 }
+	],
+	"tags": [ "ATTACK", "AFFECTS_ENEMY", "SHOOT" ],
+	"preview": {},
+	"attackShell": {
+		"nameMessage": "|Field Bracer",
+		"gauge": 0,
+		"property": {
+			"ailments": [
+				{ "type": "GAUGE", "intensity": 4, "duration": 0.04 }
+			],
+			"power": 10
+		},
+		"targetType": {},
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
+			"attacks": [
+				{
+					"xSpeed": 500,
+					"stick": {}
+				}
+			],
+			"repeatCost": 0,
+			"projectileDelay": 0.05,
+			"delay": { "max": 0.3, "val": 0.1 },
+			"drawable": {
+				"drawable": { "id": 888 },
+				"color": { "r": 1, "g": 0.8, "b": 0.9607843, "a": 1 }
+			},
+			"xOffset": 10,
+			"yOffset": 31,
+			"shadowOffsetY": 20,
+			"shotSound": { "sound": "battle/programs/machinegun.wav" }
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 151 },
+	"role": "EXECUTION",
+	"vocType": "SPAWN",
+	"imageIndex": 39,
+	"characters": [
+		{ "id": 59 }
+	],
+	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY", "SPAWN" ],
+	"optimalPosition": { "xType": "EQUAL", "xDistance": 2, "yType": "EQUAL" },
+	"minimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "IGNORE" },
+	"preview": {},
+	"attackShell": {
+		"nameMessage": "|Swords of Light",
+		"descriptionMessage": "|Drops freezing swords around cursor position.",
+		"interruptable": false,
+		"invincible": true,
+		"gauge": 0.2,
+		"property": {
+			"ailments": [
+				{ "type": "FLINCHING" },
+				{ "type": "FREEZE", "duration": 3 }
+			],
+			"power": 150,
+			"crushPower": 150
+		},
+		"targetType": null,
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
+			"limiter": {},
+			"checkOccupied": false,
+			"xOffset": 2,
+			"panels": [
+				{},
+				{ "x": -1 },
+				{ "x": 1 },
+				{ "y": -1 },
+				{ "y": 1 }
+			],
+			"type": "SPIKES",
+			"entity": { "id": 26 },
+			"action": { "id": 205 },
+			"overrideHit": true
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 152 },
+	"preview": {},
+	"attackShell": {
+		"nameMessage": "|Lemon Tree",
+		"property": { "element": "NATURE", "power": 50, "crushPower": 50, "panel": "GRASS" },
+		"targetType": null,
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
+			"limiter": { "limit": true },
+			"entity": { "id": 191 },
+			"overrideHit": true
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 153 },
+	"preview": {},
+	"attackShell": {
+		"nameMessage": "|Lemon Tree 2",
+		"targetType": null,
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ThrowAttack",
+			"selectedXTile": 3,
+			"drawable": {
+				"drawable": { "id": 902 }
+			},
+			"hitEffect": {
+				"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.HitEffect",
+				"panels": [
+					{ "x": -1 },
+					{ "x": 1 },
+					{ "y": -1 },
+					{ "y": 1 }
+				],
+				"onHit": { "class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.ParticleEffect", "shader": "RECOLOR", "tintElement": true },
+				"onHitOriginal": true
+			}
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 154 },
+	"preview": {},
+	"attackShell": {
+		"nameMessage": "|Lemon Tree 3",
+		"targetType": null,
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ThrowAttack",
+			"selectedXTile": 4,
+			"drawable": {
+				"drawable": { "id": 902 }
+			},
+			"hitEffect": {
+				"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.HitEffect",
+				"panels": [
+					{ "y": -1 },
+					{ "y": 1 },
+					{ "x": 1 }
+				],
+				"onHit": { "class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.ParticleEffect", "shader": "RECOLOR", "tintElement": true },
+				"onHitOriginal": true
+			}
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 155 },
+	"preview": {},
+	"attackShell": {
+		"nameMessage": "|Lemon Tree 1",
+		"targetType": null,
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ThrowAttack",
+			"selectedXTile": 2,
+			"drawable": {
+				"drawable": { "id": 902 }
+			},
+			"hitEffect": {
+				"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.HitEffect",
+				"panels": [
+					{ "y": -1 },
+					{ "y": 1 },
+					{ "x": -1 }
+				],
+				"onHit": { "class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.ParticleEffect", "shader": "RECOLOR", "tintElement": true },
+				"onHitOriginal": true
+			}
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 156 },
+	"preview": {},
+	"attackShell": {
+		"nameMessage": "|Swords of Light Explode",
+		"targetType": {},
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.ParallelWrapperAttack",
+			"wrapper": {
+				"attack": {
+					"class": "com.one2b3.endcycle.screens.battle.attacks.data.field.HumidityAttack",
+					"preDrawable": null,
+					"explodeDrawable": {
+						"drawables": [
+							{
+								"drawable": { "id": 904 }
+							}
+						],
+						"minAmount": 14,
+						"maxAmount": 16,
+						"fadeTimer": 0.1,
+						"fadeOut": 0.3,
+						"speedY": 40
+					},
+					"explodeTime": 0,
+					"hits": [
+						{ "y": -1 },
+						{ "x": -1 },
+						{ "x": 1 },
+						{ "y": 1 }
+					]
+				}
+			},
+			"invisible": true,
+			"xOffset": 0
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 157 },
+	"imageIndex": -1,
+	"preview": {},
+	"attackShell": {
+		"nameMessage": "|Devour",
+		"gauge": 0,
+		"property": {
+			"ailments": [
+				{ "type": "GAUGE", "intensity": 4, "duration": 0.25 }
+			],
+			"panel": "NORMAL"
+		},
+		"targetType": {
+			"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
+		},
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.ConditionalWrapperAttack",
+			"wrapper": {},
+			"otherwise": {
+				"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.field.BuildPanelAttack" }
+			},
+			"panelType": "NORMAL"
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 158 },
+	"preview": {},
+	"attackShell": {
+		"nameMessage": "|Greedling Rush",
+		"interruptable": false,
+		"targetType": {
+			"party": "ENEMY",
+			"invert": true,
+			"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+		},
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.RushWrapperAttack",
+			"canSteer": false,
+			"floating": true,
+			"bypassGhost": true,
+			"maxDistance": 4,
+			"rushSpeed": 10,
+			"borderHit": {
+				"attack": {
+					"class": "com.one2b3.endcycle.screens.battle.attacks.data.field.HumidityAttack",
+					"preDrawable": {
+						"drawables": [
+							{
+								"drawable": { "id": 1225 }
+							}
+						],
+						"minAmount": 2,
+						"maxAmount": 2,
+						"speedY": -10
+					},
+					"explodeDrawable": {
+						"drawables": [
+							{
+								"drawable": { "id": 1186 }
+							}
+						],
+						"minAmount": 3,
+						"maxAmount": 3,
+						"offsetY": 15
+					},
+					"explodeTime": 0,
+					"hits": [
+						{ "x": -1, "y": -1 },
+						{ "y": -1 },
+						{ "x": 1, "y": -1 },
+						{ "x": -1 },
+						{ "x": 1 },
+						{ "x": -1, "y": 1 },
+						{ "y": 1 },
+						{ "x": 1, "y": 1 }
+					],
+					"attackParty": "FRIENDLY"
+				}
+			},
+			"entityHit": {
+				"attack": {
+					"class": "com.one2b3.endcycle.screens.battle.attacks.data.field.HumidityAttack",
+					"preDrawable": {
+						"drawables": [
+							{
+								"drawable": { "id": 1225 }
+							}
+						],
+						"minAmount": 2,
+						"maxAmount": 2,
+						"speedY": -10
+					},
+					"explodeDrawable": {
+						"drawables": [
+							{
+								"drawable": { "id": 1186 }
+							}
+						],
+						"minAmount": 3,
+						"maxAmount": 3,
+						"offsetY": 15
+					},
+					"explodeTime": 0,
+					"hits": [
+						{ "x": -1, "y": -1 },
+						{ "y": -1 },
+						{ "x": 1, "y": -1 },
+						{ "x": -1 },
+						{ "x": 1 },
+						{ "x": -1, "y": 1 },
+						{ "y": 1 },
+						{ "x": 1, "y": 1 }
+					],
+					"attackParty": "FRIENDLY"
+				}
+			}
 		}
 	}
 }

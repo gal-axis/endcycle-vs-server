@@ -126,6 +126,11 @@
 				"class": "com.one2b3.endcycle.features.battle.entities.comments.VersusBattleEntityComment",
 				"opponent": { "id": 59 },
 				"dialogue": { "id": 802 }
+			},
+			{
+				"class": "com.one2b3.endcycle.features.battle.entities.comments.VersusBattleEntityComment",
+				"opponent": { "id": 16 },
+				"dialogue": { "id": 927 }
 			}
 		],
 		"winComments": [
@@ -590,10 +595,10 @@
 			"label": "Long Hair / No Beard"
 		}
 	],
-	"power": 75,
+	"power": 125,
 	"speed": 50,
 	"crush": 150,
-	"skills": [ "Determination (Punk)" ],
+	"skills": [ "Determination (Punk)", "Heated" ],
 	"ultraVoc": {
 		"cutIn": {
 			"drawable": { "id": 644 }
@@ -1525,7 +1530,7 @@
 	"element": "NATURE",
 	"health": 900,
 	"crush": 125,
-	"skills": [ "Crystal2", "Overheal", "Role Color Changer" ],
+	"skills": [ "Crystal2", "Role Color Changer" ],
 	"ultraVoc": {
 		"cutIn": {
 			"drawable": { "id": 790 }
@@ -1643,6 +1648,11 @@
 			{
 				"class": "com.one2b3.endcycle.features.battle.entities.comments.VersusBattleEntityComment",
 				"dialogue": { "id": 814 }
+			},
+			{
+				"class": "com.one2b3.endcycle.features.battle.entities.comments.VersusBattleEntityComment",
+				"opponent": { "id": 16 },
+				"dialogue": { "id": 928 }
 			}
 		],
 		"winComments": [
@@ -1842,7 +1852,7 @@
 	"power": 125,
 	"speed": 75,
 	"crush": 75,
-	"skills": [ "Floating2" ],
+	"skills": [ "PanelPoison" ],
 	"ultraVoc": {
 		"cutIn": {
 			"drawable": { "id": 639 }
@@ -1955,13 +1965,15 @@
 	"power": 75,
 	"speed": 125,
 	"crush": 125,
-	"skills": [ "Fluid", "Glide" ],
+	"skills": [ "Growing", "Glide" ],
 	"ultraVoc": {
 		"cutIn": {
 			"drawable": { "id": 637 }
 		},
-		"initialGauge": 10,
-		"voc": { "id": 88 }
+		"voc": { "id": 88 },
+		"unfilled": { "id": 157 },
+		"idleSpeed": 0,
+		"hurtSelfFill": 0
 	},
 	"voice": {
 		"sound": { "sound": "ui/dialogue/low.wav", "pitch": 0.5 }
@@ -2176,13 +2188,15 @@
 	"health": 800,
 	"speed": 150,
 	"crush": 125,
-	"skills": [ "Explosive" ],
+	"skills": [ "Explosive", "DamageSpeed" ],
 	"ultraVoc": {
 		"cutIn": {
 			"drawable": { "id": 635 }
 		},
-		"initialGauge": 10,
-		"voc": { "id": 95 }
+		"initialGauge": 7.5,
+		"gaugeRequired": 15,
+		"voc": { "id": 95 },
+		"hurtSelfFill": 0.03
 	},
 	"voice": {
 		"sound": { "sound": "ui/dialogue/low.wav", "pitch": 0.5 }
@@ -2516,7 +2530,7 @@
 		"cutIn": {
 			"drawable": { "id": 756 }
 		},
-		"voc": { "id": 103 }
+		"voc": { "id": 152 }
 	},
 	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
 	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
@@ -2749,7 +2763,7 @@
 	"health": 800,
 	"power": 150,
 	"crush": 50,
-	"skills": [ "Stack" ],
+	"skills": [ "Tetra" ],
 	"ultraVoc": {
 		"cutIn": {
 			"drawable": { "id": 242 }
@@ -3613,5 +3627,188 @@
 	},
 	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
 	"deathAnimation": null
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 16 },
+	"name": "|Saffron",
+	"card": { "id": 894 },
+	"win": { "id": 895 },
+	"patchworks": [
+		{
+			"id": { "id": 59 }
+		}
+	],
+	"element": "ELEC",
+	"health": 900,
+	"speed": 150,
+	"skills": [ "One Step" ],
+	"ultraVoc": {
+		"cutIn": {
+			"drawable": { "id": 896 }
+		},
+		"voc": { "id": 151 },
+		"unfilled": { "id": 149 },
+		"idleSpeed": 0
+	},
+	"spawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawnSound": null },
+	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
+	"player": {
+		"guest": true,
+		"description": "|A scientist from another world, always on the move and fastest after landing attacks.\r\nCharges up her ultra by hitting the opponent with bolts from her magical bracelet. \r",
+		"adventure": {
+			"faction": "Azure",
+			"startZone": { "id": 5 },
+			"startScript": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 253 }
+			}
+		},
+		"startComments": [
+			{
+				"class": "com.one2b3.endcycle.features.battle.entities.comments.VersusBattleEntityComment",
+				"opponent": { "id": 2 },
+				"dialogue": { "id": 911 }
+			},
+			{
+				"class": "com.one2b3.endcycle.features.battle.entities.comments.VersusBattleEntityComment",
+				"opponent": { "id": 7 },
+				"dialogue": { "id": 909 }
+			},
+			{
+				"class": "com.one2b3.endcycle.features.battle.entities.comments.VersusBattleEntityComment",
+				"opponent": { "id": 9 },
+				"dialogue": { "id": 910 }
+			},
+			{
+				"class": "com.one2b3.endcycle.features.battle.entities.comments.VersusBattleEntityComment",
+				"opponent": {},
+				"dialogue": { "id": 908 }
+			},
+			{
+				"class": "com.one2b3.endcycle.features.battle.entities.comments.VersusBattleEntityComment",
+				"opponent": { "id": 23 },
+				"dialogue": { "id": 912 }
+			},
+			{
+				"class": "com.one2b3.endcycle.features.battle.entities.comments.VersusBattleEntityComment",
+				"opponent": { "id": 13 },
+				"dialogue": { "id": 913 }
+			},
+			{
+				"class": "com.one2b3.endcycle.features.battle.entities.comments.VersusBattleEntityComment",
+				"opponent": { "id": 21 },
+				"dialogue": { "id": 914 }
+			},
+			{
+				"class": "com.one2b3.endcycle.features.battle.entities.comments.VersusBattleEntityComment",
+				"opponent": { "id": 59 },
+				"dialogue": { "id": 915 }
+			},
+			{
+				"class": "com.one2b3.endcycle.features.battle.entities.comments.FactionBattleEntityComment",
+				"faction": "Noise",
+				"dialogue": { "id": 916 }
+			},
+			{
+				"class": "com.one2b3.endcycle.features.battle.entities.comments.VersusBattleEntityComment",
+				"dialogue": { "id": 917 }
+			}
+		],
+		"winComments": [
+			{
+				"class": "com.one2b3.endcycle.features.battle.entities.comments.VersusBattleEntityComment",
+				"opponent": { "id": 2 },
+				"dialogue": { "id": 918 }
+			},
+			{
+				"class": "com.one2b3.endcycle.features.battle.entities.comments.VersusBattleEntityComment",
+				"opponent": { "id": 7 },
+				"dialogue": { "id": 919 }
+			},
+			{
+				"class": "com.one2b3.endcycle.features.battle.entities.comments.VersusBattleEntityComment",
+				"opponent": { "id": 9 },
+				"dialogue": { "id": 920 }
+			},
+			{
+				"class": "com.one2b3.endcycle.features.battle.entities.comments.VersusBattleEntityComment",
+				"opponent": {},
+				"dialogue": { "id": 921 }
+			},
+			{
+				"class": "com.one2b3.endcycle.features.battle.entities.comments.VersusBattleEntityComment",
+				"opponent": { "id": 23 },
+				"dialogue": { "id": 922 }
+			},
+			{
+				"class": "com.one2b3.endcycle.features.battle.entities.comments.VersusBattleEntityComment",
+				"opponent": { "id": 13 },
+				"dialogue": { "id": 923 }
+			},
+			{
+				"class": "com.one2b3.endcycle.features.battle.entities.comments.VersusBattleEntityComment",
+				"opponent": { "id": 59 },
+				"dialogue": { "id": 924 }
+			},
+			{
+				"class": "com.one2b3.endcycle.features.battle.entities.comments.VersusBattleEntityComment",
+				"dialogue": { "id": 925 }
+			}
+		],
+		"shop": {
+			"enter": [
+				{ "message": "|Shopping!!!" },
+				{ "message": "|Where's the shop keeper? I want to fight!" },
+				{ "message": "|It's business time." }
+			],
+			"confirm": [
+				{ "message": "|This won't dissapear after I lose?" }
+			],
+			"vocBuy": [
+				{ "message": "|Yay for capitalism!" },
+				{ "message": "|Who do I attack for these prices?" }
+			]
+		},
+		"unlockCondition": {},
+		"customizationUnlockCondition": {
+			"requirements": [
+				{
+					"class": "com.one2b3.endcycle.player.progress.AffinityProgress",
+					"character": { "id": 16 },
+					"amount": 1
+				}
+			]
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.entities.BattleEntityData",
+	"id": { "id": 26 },
+	"dataName": "VOC Swords of Light",
+	"patchworks": [
+		{
+			"id": { "id": 60 }
+		}
+	],
+	"health": 1,
+	"ultraVoc": {},
+	"spawnAnimation": {
+		"class": "com.one2b3.endcycle.features.battle.entities.animations.data.FadeEntityAnimation",
+		"sound": { "sound": "battle/entity/spawn.wav" }
+	},
+	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
+	"deathAnimation": {
+		"class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation",
+		"particles": [
+			{
+				"drawable": { "id": 892 }
+			},
+			{
+				"drawable": { "id": 893 }
+			}
+		]
+	}
 }
 ]

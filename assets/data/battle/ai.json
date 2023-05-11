@@ -421,7 +421,7 @@
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 1 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
-			"voc": { "id": 10031 },
+			"voc": { "id": 10352 },
 			"style": { "id": 5 }
 		},
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.4 }
@@ -832,7 +832,7 @@
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"time": 1.2,
-			"voc": { "id": 10031 }
+			"voc": { "id": 10105 }
 		}
 	]
 },
@@ -962,7 +962,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
-			"voc": { "id": 10031 }
+			"voc": { "id": 10105 }
 		},
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
 		{
@@ -987,7 +987,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
-			"voc": { "id": 10031 }
+			"voc": { "id": 10105 }
 		},
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
 		{
@@ -1751,9 +1751,9 @@
 	"acts": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
-			"voc": { "id": 10031 }
+			"voc": { "id": 10105 }
 		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.3 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.5 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct",
 			"moveType": "ANIMATED_TILE",
@@ -1983,7 +1983,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
-			"voc": { "id": 10031 }
+			"voc": { "id": 10352 }
 		},
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.4 },
 		{
@@ -2110,8 +2110,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
-			"voc": { "id": 10031 },
-			"style": { "id": 2 }
+			"voc": { "id": 10031 }
 		},
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.5 },
 		{
@@ -2446,7 +2445,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
-			"voc": { "id": 10031 }
+			"voc": { "id": 10105 }
 		},
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.3 }
 	]
@@ -6576,7 +6575,7 @@
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
-			"voc": { "id": 10031 },
+			"voc": { "id": 10105 },
 			"style": { "id": 32 }
 		},
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
@@ -6869,7 +6868,7 @@
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"time": 0.3,
-			"voc": { "id": 10031 },
+			"voc": { "id": 10105 },
 			"style": { "id": 29 }
 		},
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 0.3, "xTile": 2, "relation": "TARGET", "invertableY": true }
@@ -7522,6 +7521,19 @@
 			"voc": { "id": 156 }
 		},
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.KillAct" }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 206 },
+	"name": "Extinction Meteor",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.FollowParentAct", "x": 80, "y": -24, "speed": 450 }
 	]
 }
 ]

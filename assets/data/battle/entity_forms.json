@@ -1340,7 +1340,7 @@
 		"customizations": [ 0 ]
 	},
 	"configuration": {
-		"stats": { "hp": 600, "resistance": 150 },
+		"stats": { "hp": 550, "resistance": 150 },
 		"element": "NATURE",
 		"modes": [
 			{ "class": "com.one2b3.endcycle.features.battle.mode.NoiseEntityMode" }
@@ -2875,5 +2875,47 @@
 			}
 		]
 	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 194 },
+	"dataName": "Extinction Meteor",
+	"patchwork": { "id": 62 },
+	"configuration": {
+		"modes": [
+			{
+				"class": "com.one2b3.endcycle.features.battle.mode.FallingEntityMode",
+				"maxSpeed": 0.4,
+				"distance": 200,
+				"flash": 0.4,
+				"shake": 20,
+				"killOnLand": true,
+				"onLand": {
+					"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.HitEffect",
+					"panels": [
+						{},
+						{ "x": 1 },
+						{ "x": 2 },
+						{ "y": -1 },
+						{ "x": 1, "y": -1 },
+						{ "x": 2, "y": -1 },
+						{ "y": -2 },
+						{ "x": 1, "y": -2 },
+						{ "x": 2, "y": -2 }
+					],
+					"onHit": { "class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.ParticleEffect" }
+				}
+			},
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" },
+			{
+				"class": "com.one2b3.endcycle.features.battle.mode.AnimationsEntityMode",
+				"deathAnimation": {
+					"class": "com.one2b3.endcycle.features.battle.entities.animations.data.ParticleEntityAnimation",
+					"sound": { "sound": "explosions/3.wav", "pitch": 0.5 }
+				}
+			}
+		]
+	},
+	"action": { "id": 206 }
 }
 ]

@@ -5256,73 +5256,23 @@
 	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY", "COUNTER" ],
 	"optimalPosition": { "xType": "CLOSER", "xDistance": 2, "yType": "CLOSER", "yDistance": 5 },
 	"minimalPosition": { "xType": "FURTHER", "xDistance": 1, "yType": "IGNORE" },
-	"preview": { "duration": 3.5 },
+	"preview": { "duration": 4.5 },
 	"attackShell": {
 		"nameMessage": "gamedata|Ultra.Meteor",
 		"descriptionMessage": "gamedata|Ultra.Meteor.Desc",
 		"interruptable": false,
 		"invincible": true,
-		"property": { "element": "FIRE", "power": 110, "crushPower": 130, "panel": "LAVA" },
-		"targetType": {
-			"party": "FRIENDLY",
-			"self": true,
-			"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
-		},
+		"property": { "element": "FIRE", "power": 600, "crushPower": 600, "panel": "LAVA" },
+		"targetType": null,
 		"attack": {
-			"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.MultiWrapperAttack",
-			"wrappers": [
-				{
-					"stats": { "power": 60, "crushPower": 40 },
-					"attack": {
-						"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
-						"attacks": [
-							{
-								"xSpeed": 180,
-								"stick": {}
-							}
-						],
-						"shots": 4,
-						"simultaneous": false,
-						"projectileDelay": 0.4,
-						"drawable": {
-							"drawable": { "id": 769 }
-						},
-						"trace": false,
-						"shadowOffsetY": 10
-					}
-				},
-				{
-					"attack": {
-						"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.LaunchFallingAttack",
-						"effect": {
-							"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.HitEffect",
-							"onHit": {
-								"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.DissolvingParticlesEffect",
-								"particles": { "id": 7 }
-							},
-							"onHitOriginal": true
-						},
-						"delay": 0,
-						"points": [
-							{ "x": 2, "y": -1 },
-							{ "x": 4 },
-							{ "x": 2 },
-							{ "x": 3, "y": 1 },
-							{ "x": 4, "y": -1 },
-							{ "x": 2, "y": 1 },
-							{ "x": 3 },
-							{ "x": 4, "y": 1 },
-							{ "x": 3, "y": -1 },
-							{ "x": 2 },
-							{ "x": 3, "y": 1 },
-							{ "x": 3 },
-							{ "x": 4 },
-							{ "x": 3, "y": -1 }
-						],
-						"interval": 0.1
-					}
-				}
-			]
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
+			"limiter": {},
+			"checkBounds": false,
+			"checkOccupied": false,
+			"xOffset": 2,
+			"yOffset": 1,
+			"entity": { "id": 194 },
+			"overrideHit": true
 		}
 	}
 },
@@ -6432,19 +6382,23 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 103 },
 	"vocType": "PROJECTILE",
-	"preview": {},
+	"unlockCondition": {},
+	"imageIndex": 135,
+	"preview": {
+		"battle": { "id": 173 },
+		"duration": 3
+	},
 	"attackShell": {
 		"nameMessage": "gamedata|Ultra.Farmadile",
 		"descriptionMessage": "gamedata|Ultra.Farmadile.Desc",
-		"interruptable": false,
-		"invincible": true,
+		"level": 4,
 		"property": {
 			"element": "NATURE",
 			"ailments": [
 				{ "type": "FLINCHING" }
 			],
-			"power": 70,
-			"crushPower": 70
+			"power": 60,
+			"crushPower": 60
 		},
 		"targetType": {},
 		"attack": {
@@ -8776,6 +8730,7 @@
 	"preview": {},
 	"attackShell": {
 		"nameMessage": "|Lemon Tree",
+		"descriptionMessage": "|Spawns tree that shoots forward barrage of lemons!",
 		"property": { "element": "NATURE", "power": 50, "crushPower": 50, "panel": "GRASS" },
 		"targetType": null,
 		"attack": {

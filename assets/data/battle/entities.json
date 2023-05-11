@@ -3156,6 +3156,7 @@
 	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation" },
 	"deathAnimation": {
 		"class": "com.one2b3.endcycle.features.battle.entities.animations.data.ParticleEntityAnimation",
+		"sound": { "sound": "explosions/4.wav" },
 		"particles": { "id": 4 }
 	}
 },
@@ -3656,7 +3657,7 @@
 	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"player": {
 		"guest": true,
-		"description": "|A scientist from another world, always on the move and fastest after landing attacks.\r\nCharges up her ultra by hitting the opponent with bolts from her magical bracelet. \r",
+		"description": "gamedata|Character.Saffron.Description",
 		"adventure": {
 			"faction": "Azure",
 			"startZone": { "id": 5 },
@@ -3759,16 +3760,16 @@
 		],
 		"shop": {
 			"enter": [
-				{ "message": "|Shopping!!!" },
-				{ "message": "|Where's the shop keeper? I want to fight!" },
-				{ "message": "|It's business time." }
+				{ "message": "dialogues|Shop.Saffron.1" },
+				{ "message": "dialogues|Shop.Saffron.2" },
+				{ "message": "dialogues|Shop.Saffron.3" }
 			],
 			"confirm": [
-				{ "message": "|This won't dissapear after I lose?" }
+				{ "message": "dialogues|Shop.Saffron.4" }
 			],
 			"vocBuy": [
-				{ "message": "|Yay for capitalism!" },
-				{ "message": "|Who do I attack for these prices?" }
+				{ "message": "dialogues|Shop.Saffron.5" },
+				{ "message": "dialogues|Shop.Saffron.6" }
 			]
 		},
 		"unlockCondition": {},

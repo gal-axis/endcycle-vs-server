@@ -1590,12 +1590,53 @@
 		"description": "gamedata|Character.Yven.Description",
 		"adventure": {
 			"faction": "Azure",
-			"startZone": {},
+			"money": 1500,
+			"startZone": { "id": 5 },
+			"startingPack": {
+				"vocs": [
+					{
+						"items": [
+							{
+								"id": { "id": 10022 },
+								"style": null
+							},
+							{
+								"id": { "id": 14 },
+								"style": null
+							},
+							{
+								"id": { "id": 10013 },
+								"style": null
+							},
+							{
+								"id": { "id": 85 },
+								"style": null
+							}
+						]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
+			"startScript": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 257 }
+			},
 			"path": { "id": 14 },
 			"items": [
 				{
 					"item": { "id": 64 },
 					"amount": 3
+				},
+				{
+					"item": { "id": 54 }
+				},
+				{
+					"item": { "id": 57 }
 				}
 			]
 		},
@@ -3660,11 +3701,55 @@
 		"description": "gamedata|Character.Saffron.Description",
 		"adventure": {
 			"faction": "Azure",
+			"money": 1000,
 			"startZone": { "id": 5 },
+			"startingPack": {
+				"vocs": [
+					{
+						"items": [
+							{
+								"id": { "id": 10010 },
+								"style": null
+							},
+							{
+								"id": { "id": 10032 },
+								"style": null
+							},
+							{
+								"id": { "id": 10040 },
+								"style": null
+							},
+							{
+								"id": { "id": 52 },
+								"style": null
+							}
+						]
+					},
+					{
+						"items": [ null, null, null, null ]
+					},
+					{
+						"items": [ null, null, null, null ]
+					}
+				]
+			},
 			"startScript": {
 				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
 				"script": { "id": 253 }
-			}
+			},
+			"path": { "id": 20 },
+			"items": [
+				{
+					"item": { "id": 64 },
+					"amount": 3
+				},
+				{
+					"item": { "id": 54 }
+				},
+				{
+					"item": { "id": 57 }
+				}
+			]
 		},
 		"startComments": [
 			{

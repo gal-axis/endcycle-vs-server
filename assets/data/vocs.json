@@ -356,7 +356,7 @@
 			"element": "ELEC",
 			"ailments": [
 				{ "type": "STUN", "duration": 0.6 },
-				{ "type": "MAGNET", "intensity": 1, "duration": 4 }
+				{ "type": "MAGNET", "intensity": 1, "duration": 2 }
 			],
 			"power": 200,
 			"crushPower": 150
@@ -707,7 +707,7 @@
 			"selectedXTile": 1,
 			"type": "PICKUP",
 			"entity": { "id": 42 },
-			"limiter": { "limit": true },
+			"limiter": { "limit": 1 },
 			"limitOnThrow": true,
 			"spawnedName": "Regen"
 		}
@@ -738,7 +738,7 @@
 		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
-			"limiter": { "limit": true, "countGlobal": true },
+			"limiter": { "limit": 1, "countGlobal": true },
 			"entity": { "id": 173 },
 			"overrideHit": true
 		}
@@ -932,7 +932,7 @@
 			"selectedXTile": 1,
 			"type": "PICKUP",
 			"entity": { "id": 41 },
-			"limiter": { "limit": true },
+			"limiter": { "limit": 1 },
 			"limitOnThrow": true,
 			"spawnedName": "Heal"
 		}
@@ -1016,7 +1016,7 @@
 		"targetType": {},
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
-			"limiter": { "limit": true, "countGlobal": true },
+			"limiter": { "limit": 1, "countGlobal": true },
 			"type": "NOTICE_ME",
 			"entity": { "id": 28 }
 		}
@@ -1075,7 +1075,7 @@
 		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
-			"limiter": { "limit": true, "countGlobal": true },
+			"limiter": { "limit": 1, "countGlobal": true },
 			"entity": { "id": 129 },
 			"overrideHit": true
 		}
@@ -1114,7 +1114,7 @@
 		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
-			"limiter": { "limit": true, "countGlobal": true },
+			"limiter": { "limit": 1, "countGlobal": true },
 			"entity": { "id": 128 },
 			"overrideHit": true
 		}
@@ -1661,15 +1661,16 @@
 			"crushPower": 250,
 			"panel": "BROKEN"
 		},
-		"targetType": {},
+		"party": "NEUTRAL",
+		"targetType": null,
 		"attack": {
-			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
 			"limiter": {},
 			"checkBounds": false,
 			"checkOccupied": false,
 			"xOffset": 2,
-			"type": "BOULDER",
-			"entity": { "id": 31 }
+			"entity": { "id": 195 },
+			"overrideHit": true
 		}
 	}
 },
@@ -1817,7 +1818,7 @@
 		"targetType": {},
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
-			"limiter": { "limit": true },
+			"limiter": { "limit": 1 },
 			"checkOccupied": false,
 			"type": "MINE",
 			"entity": { "id": 33 }
@@ -1851,7 +1852,7 @@
 		"targetType": {},
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
-			"limiter": { "limit": true, "id": "IceCube", "countGlobal": true },
+			"limiter": { "limit": 1, "id": "IceCube", "countGlobal": true },
 			"type": "ICE_CUBE",
 			"entity": { "id": 34 }
 		}
@@ -1909,7 +1910,7 @@
 			"type": "EXPLODING",
 			"entity": { "id": 35 },
 			"hurt": true,
-			"limiter": { "limit": true, "countGlobal": true },
+			"limiter": { "limit": 1, "countGlobal": true },
 			"limitOnThrow": true
 		}
 	}
@@ -2265,7 +2266,7 @@
 		"targetType": {},
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
-			"limiter": { "limit": true },
+			"limiter": { "limit": 1 },
 			"checkBounds": false,
 			"checkOccupied": false,
 			"type": "FIRE_MANTLE",
@@ -2471,12 +2472,13 @@
 	"attackShell": {
 		"nameMessage": "gamedata|Voc.Push.Name",
 		"descriptionMessage": "gamedata|Voc.Push.Description",
+		"gauge": 0,
 		"property": {
 			"ailments": [
 				{ "type": "PUSH", "intensity": 1 }
 			],
-			"power": 120,
-			"crushPower": 120
+			"power": 40,
+			"crushPower": 60
 		},
 		"targetType": {},
 		"attack": {
@@ -2724,7 +2726,7 @@
 		"targetType": {},
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
-			"limiter": { "limit": true, "countGlobal": true },
+			"limiter": { "limit": 1, "countGlobal": true },
 			"checkOccupied": false,
 			"type": "FIRE_GATE",
 			"entity": { "id": 37 }
@@ -2831,7 +2833,7 @@
 				{
 					"attack": {
 						"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
-						"limiter": { "limit": true },
+						"limiter": { "limit": 1 },
 						"entity": { "id": 44 },
 						"spawnedParty": "FRIENDLY",
 						"vital": true,
@@ -2920,7 +2922,7 @@
 			"element": "ELEC",
 			"ailments": [
 				{ "type": "BLINDED", "duration": 6 },
-				{ "type": "STUN", "duration": 2.5 }
+				{ "type": "STUN", "duration": 1 }
 			],
 			"crushPower": 150
 		},
@@ -3020,7 +3022,7 @@
 			"wrapper": {
 				"attack": {
 					"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
-					"limiter": { "limit": true, "id": "IceCube", "countGlobal": true },
+					"limiter": { "limit": 1, "id": "IceCube", "countGlobal": true },
 					"checkBounds": false,
 					"checkOccupied": false,
 					"xOffset": 0,
@@ -3067,7 +3069,7 @@
 		"targetType": {},
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
-			"limiter": { "limit": true, "id": "Companion", "countGlobal": true },
+			"limiter": { "limit": 1, "id": "Companion", "countGlobal": true },
 			"type": "COMPANION",
 			"entity": { "id": 38 }
 		}
@@ -3177,7 +3179,7 @@
 			"element": "NATURE",
 			"ailments": [
 				{ "type": "SPEED", "intensity": 0.35 },
-				{ "type": "TIME", "intensity": 0.5, "duration": 3 }
+				{ "type": "TIME", "intensity": 0.3, "duration": 3 }
 			]
 		},
 		"targetType": null,
@@ -3186,7 +3188,7 @@
 			"selectedXTile": 1,
 			"type": "PICKUP",
 			"entity": { "id": 39 },
-			"limiter": { "limit": true }
+			"limiter": { "limit": 1 }
 		}
 	}
 },
@@ -3302,7 +3304,7 @@
 		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
-			"limiter": { "limit": true },
+			"limiter": { "limit": 1 },
 			"checkOccupied": false,
 			"xOffset": 2,
 			"type": "SPIKES",
@@ -3484,7 +3486,7 @@
 		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
-			"limiter": { "limit": true },
+			"limiter": { "limit": 1 },
 			"entity": { "id": 188 },
 			"overrideHit": true
 		}
@@ -3707,7 +3709,7 @@
 		"targetType": {},
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
-			"limiter": { "limit": true, "countGlobal": true },
+			"limiter": { "limit": 1, "countGlobal": true },
 			"type": "MIRROR",
 			"entity": { "id": 40 }
 		}
@@ -4637,7 +4639,7 @@
 		"descriptionMessage": "gamedata|Ultra.Nova.Desc",
 		"interruptable": false,
 		"invincible": true,
-		"property": { "element": "NATURE", "power": 35, "crushPower": 50 },
+		"property": { "element": "NATURE", "power": 40, "crushPower": 50 },
 		"targetType": {},
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.guarding.PlantrapAttack",
@@ -5904,14 +5906,14 @@
 			"ailments": [
 				{ "type": "FREEZE", "duration": 3.5 }
 			],
-			"power": 125,
-			"crushPower": 140,
+			"power": 110,
+			"crushPower": 90,
 			"panel": "SNOW"
 		},
 		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
-			"limiter": {},
+			"limiter": { "limit": 3 },
 			"checkBounds": false,
 			"checkOccupied": false,
 			"xOffset": 0,
@@ -6269,7 +6271,7 @@
 			"throwDelay": 0.05,
 			"type": "PICKUP",
 			"entity": { "id": 41 },
-			"limiter": { "limit": true },
+			"limiter": { "limit": 1 },
 			"limitOnThrow": true,
 			"spawnedName": "Heal",
 			"speed": 1.6
@@ -6539,7 +6541,7 @@
 		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
-			"limiter": { "limit": true, "countGlobal": true },
+			"limiter": { "limit": 1, "countGlobal": true },
 			"xOffset": 3,
 			"entity": { "id": 116 },
 			"overrideHit": true
@@ -7019,7 +7021,7 @@
 		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
-			"limiter": { "limit": true, "id": "" },
+			"limiter": { "limit": 1, "id": "" },
 			"checkOccupied": false,
 			"xOffset": 2,
 			"entity": { "id": 121 },
@@ -7646,7 +7648,7 @@
 				{
 					"attack": {
 						"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
-						"limiter": { "limit": true, "id": "" },
+						"limiter": { "limit": 1, "id": "" },
 						"entity": { "id": 118 }
 					}
 				}
@@ -8270,7 +8272,7 @@
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ThrowEntityAttack",
 			"entity": { "id": 70 },
-			"limiter": { "limit": true },
+			"limiter": { "limit": 1 },
 			"limitOnThrow": true
 		}
 	}
@@ -8460,7 +8462,7 @@
 		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
-			"limiter": { "limit": true },
+			"limiter": { "limit": 1 },
 			"entity": { "id": 179 },
 			"overrideHit": true
 		}
@@ -8582,7 +8584,7 @@
 			"wrapper": {
 				"attack": {
 					"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
-					"limiter": { "limit": true, "id": "" },
+					"limiter": { "limit": 1, "id": "" },
 					"checkOccupied": false,
 					"xOffset": 2,
 					"entity": { "id": 189 },
@@ -8706,7 +8708,7 @@
 		},
 		"targetType": null,
 		"attack": {
-			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
 			"limiter": {},
 			"checkOccupied": false,
 			"xOffset": 2,
@@ -8717,9 +8719,7 @@
 				{ "y": -1 },
 				{ "y": 1 }
 			],
-			"type": "SPIKES",
-			"entity": { "id": 26 },
-			"action": { "id": 205 },
+			"entity": { "id": 192 },
 			"overrideHit": true
 		}
 	}
@@ -8735,7 +8735,7 @@
 		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
-			"limiter": { "limit": true },
+			"limiter": { "limit": 1 },
 			"entity": { "id": 191 },
 			"overrideHit": true
 		}
@@ -8786,7 +8786,7 @@
 				"panels": [
 					{ "y": -1 },
 					{ "y": 1 },
-					{ "x": 1 }
+					{ "x": -1 }
 				],
 				"onHit": { "class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.ParticleEffect", "shader": "RECOLOR", "tintElement": true },
 				"onHitOriginal": true
@@ -8812,7 +8812,7 @@
 				"panels": [
 					{ "y": -1 },
 					{ "y": 1 },
-					{ "x": -1 }
+					{ "x": 1 }
 				],
 				"onHit": { "class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.ParticleEffect", "shader": "RECOLOR", "tintElement": true },
 				"onHitOriginal": true
@@ -8869,7 +8869,7 @@
 		"gauge": 0,
 		"property": {
 			"ailments": [
-				{ "type": "GAUGE", "intensity": 4, "duration": 0.25 }
+				{ "type": "GAUGE", "intensity": 4, "duration": 0.2 }
 			],
 			"panel": "NORMAL"
 		},

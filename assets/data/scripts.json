@@ -9117,5 +9117,81 @@
 			}
 		}
 	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 255 },
+	"name": "A-Complete Saffron",
+	"scripts": [
+		{
+			"delay": 2,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 931 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.LootBattleScript" }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 256 }
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 257 },
+	"name": "A-Start Yven",
+	"scripts": [
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript", "speed": 0, "layer": 14 }
+		},
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 932 },
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.battle.FadeBattleScript",
+					"stop": true,
+					"onFinish": {
+						"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+						"script": { "id": 239 }
+					}
+				}
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 258 },
+	"name": "A-Complete Yven",
+	"scripts": [
+		{
+			"delay": 2,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 933 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.battle.LootBattleScript" }
+			}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 259 },
+	"name": "A-Enter Yven Tower",
+	"scripts": [
+		{
+			"delay": 0.5,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 936 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		}
+	]
 }
 ]

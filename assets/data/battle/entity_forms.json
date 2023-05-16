@@ -1909,6 +1909,7 @@
 	"dataName": "Treasure Style Chest",
 	"patchwork": { "id": 99 },
 	"configuration": {
+		"element": "NORMAL",
 		"modes": [
 			{ "class": "com.one2b3.endcycle.features.battle.mode.HitUseVocEntityMode", "skipCounter": true },
 			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" },
@@ -2837,7 +2838,7 @@
 	"dataName": "Lemon Tree",
 	"patchwork": { "id": 61 },
 	"configuration": {
-		"stats": { "hp": 500 },
+		"stats": { "hp": 400 },
 		"modes": [
 			{ "class": "com.one2b3.endcycle.features.battle.mode.HealthDrainEntityMode", "drain": 40 }
 		]
@@ -2849,13 +2850,12 @@
 	"id": { "id": 192 },
 	"dataName": "Swords of Light",
 	"entity": { "id": 26 },
+	"type": "GHOST",
 	"configuration": {
 		"modes": [
-			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" },
-			{
-				"class": "com.one2b3.endcycle.features.battle.mode.HazardEntityMode",
-				"effect": { "class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.KillParentEffect" }
-			}
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HazardEntityMode", "cooldown": -1 },
+			{ "class": "com.one2b3.endcycle.features.battle.mode.StatusImmuneEntityMode" },
+			{ "class": "com.one2b3.endcycle.features.battle.mode.FreePanelsEntityMode" }
 		]
 	}
 },
@@ -2913,9 +2913,40 @@
 					"class": "com.one2b3.endcycle.features.battle.entities.animations.data.ParticleEntityAnimation",
 					"sound": { "sound": "explosions/3.wav", "pitch": 0.5 }
 				}
-			}
+			},
+			{ "class": "com.one2b3.endcycle.features.battle.mode.StatusImmuneEntityMode" }
 		]
 	},
 	"action": { "id": 206 }
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 195 },
+	"dataName": "VOC Boulder Drop",
+	"entity": { "id": 31 },
+	"configuration": {
+		"modes": [
+			{
+				"class": "com.one2b3.endcycle.features.battle.mode.FallingEntityMode",
+				"shake": 1,
+				"killOnLand": true,
+				"onLand": {
+					"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.MultiEffect",
+					"effects": [
+						{ "class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.HitEffect" },
+						{
+							"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.HitEffect",
+							"panels": [
+								{ "x": -1 },
+								{ "x": 1 }
+							],
+							"propertyOverride": { "panel": "CRACKED" }
+						}
+					]
+				}
+			},
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" }
+		]
+	}
 }
 ]

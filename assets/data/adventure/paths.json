@@ -542,7 +542,33 @@
 	"name": "gamedata|Adventure.Path.Yven",
 	"hint": "gamedata|Adventure.Path.Yven.Hint",
 	"requiredCharacter": { "id": 59 },
-	"visible": true
+	"visible": true,
+	"endScript": {
+		"class": "com.one2b3.endcycle.features.scripts.general.StartRandomDialogueScript",
+		"dialogues": [
+			{
+				"dialogue": { "id": 934 }
+			},
+			{
+				"dialogue": { "id": 935 }
+			}
+		]
+	},
+	"completeScript": {
+		"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+		"script": { "id": 258 }
+	},
+	"zoneScripts": [
+		{
+			"zones": [
+				{ "id": 13 }
+			],
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 259 }
+			}
+		}
+	]
 },
 {
 	"class": "com.one2b3.endcycle.features.adventure.paths.AdventurePath",
@@ -687,5 +713,33 @@
 	"hint": "gamedata|Adventure.Path.Triwing.Hint",
 	"requiredCharacter": { "id": 8 },
 	"visible": true
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.paths.AdventurePath",
+	"id": { "id": 20 },
+	"dataName": "Saffron",
+	"name": "|One Step At A Time",
+	"hint": "|Complete an adventure with Saffron",
+	"requiredCharacter": { "id": 16 },
+	"visible": true,
+	"endScript": {
+		"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+		"dialogue": { "id": 931 }
+	},
+	"completeScript": {
+		"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+		"script": { "id": 255 }
+	},
+	"zoneScripts": [
+		{
+			"zones": [
+				{ "id": 13 }
+			],
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+				"script": { "id": 254 }
+			}
+		}
+	]
 }
 ]

@@ -4354,7 +4354,7 @@
 		"property": {
 			"element": "WATER",
 			"ailments": [
-				{ "type": "FREEZE", "duration": 2.2 }
+				{ "type": "FREEZE", "duration": 1.2 }
 			],
 			"power": 80,
 			"crushPower": 120
@@ -5894,7 +5894,13 @@
 	"id": { "id": 88 },
 	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY", "COUNTER", "DEBUFF" ],
 	"optimalPosition": { "xType": "CLOSER", "xDistance": 5, "yType": "CLOSER", "yDistance": 1 },
-	"preview": {},
+	"preview": {
+		"input": [
+			{ "key": "BATTLE_ATTACK_2", "delay": 1 },
+			{ "key": "BATTLE_ATTACK_2", "delay": 2 },
+			{ "key": "BATTLE_ATTACK_2", "delay": 3 }
+		]
+	},
 	"attackShell": {
 		"nameMessage": "gamedata|Ultra.Greed",
 		"descriptionMessage": "gamedata|Ultra.Greed.Desc",
@@ -5904,9 +5910,9 @@
 		"property": {
 			"element": "WATER",
 			"ailments": [
-				{ "type": "FREEZE", "duration": 3.5 }
+				{ "type": "FREEZE", "duration": 0.5 }
 			],
-			"power": 110,
+			"power": 100,
 			"crushPower": 90,
 			"panel": "SNOW"
 		},
@@ -8904,7 +8910,7 @@
 			"floating": true,
 			"bypassGhost": true,
 			"maxDistance": 4,
-			"rushSpeed": 10,
+			"rushSpeed": 8,
 			"borderHit": {
 				"attack": {
 					"class": "com.one2b3.endcycle.screens.battle.attacks.data.field.HumidityAttack",
@@ -8965,7 +8971,7 @@
 						"maxAmount": 3,
 						"offsetY": 15
 					},
-					"explodeTime": 0,
+					"explodeTime": 0.1,
 					"hits": [
 						{ "x": -1, "y": -1 },
 						{ "y": -1 },

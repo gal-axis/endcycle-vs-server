@@ -2935,6 +2935,15 @@
 					"zone": { "id": 9 }
 				}
 			]
+		},
+		"customizationUnlockCondition": {
+			"requirements": [
+				{
+					"class": "com.one2b3.endcycle.player.progress.AffinityProgress",
+					"character": { "id": 11 },
+					"amount": 1
+				}
+			]
 		}
 	}
 },
@@ -3697,7 +3706,9 @@
 	"despawnAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.SpawnEntityAnimation", "spawnSound": null },
 	"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.NoiseEntityAnimation" },
 	"player": {
+		"tease": true,
 		"guest": true,
+		"price": 10000,
 		"description": "gamedata|Character.Saffron.Description",
 		"adventure": {
 			"faction": "Azure",
@@ -3751,6 +3762,7 @@
 				}
 			]
 		},
+		"onslaughtTheme": { "id": 36 },
 		"startComments": [
 			{
 				"class": "com.one2b3.endcycle.features.battle.entities.comments.VersusBattleEntityComment",
@@ -3857,7 +3869,11 @@
 				{ "message": "dialogues|Shop.Saffron.6" }
 			]
 		},
-		"unlockCondition": {},
+		"unlockCondition": {
+			"requirements": [
+				{ "class": "com.one2b3.endcycle.player.progress.unlock.OnslaughtWaveRequirement", "wave": 20, "difficulty": "EASY" }
+			]
+		},
 		"customizationUnlockCondition": {
 			"requirements": [
 				{

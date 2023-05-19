@@ -3228,7 +3228,6 @@
 		{ "x": 30, "y": 7, "width": 3 },
 		{ "x": 11, "y": 27, "width": 2 },
 		{ "x": 32, "y": 20, "width": 5, "height": 3 },
-		{ "x": 11, "y": 24, "width": 6, "height": 4 },
 		{ "x": 23, "y": 4, "width": 6, "height": 3 },
 		{ "x": 33, "y": 23, "width": 2, "height": 4 },
 		{ "x": 31, "y": 23, "width": 2, "height": 3 },
@@ -3236,7 +3235,8 @@
 		{ "x": 8, "y": 29, "width": 6, "height": 4 },
 		{ "x": 3, "y": 5, "width": 5, "height": 6 },
 		{ "y": 18, "width": 8, "height": 4 },
-		{ "x": 14, "y": 4, "width": 5, "height": 3 }
+		{ "x": 14, "y": 4, "width": 5, "height": 3 },
+		{ "x": 11, "y": 24, "width": 5, "height": 3 }
 	]
 },
 {
@@ -7093,6 +7093,83 @@
 			"id": { "id": 18 },
 			"talkingName": "",
 			"configuration": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 174 },
+	"dataName": "A - Shop Eden",
+	"name": "",
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 3,
+			"y": 1,
+			"turned": true,
+			"party": "NEUTRAL",
+			"name": "shopkeeper",
+			"id": { "id": 16 },
+			"talkingName": "",
+			"cache": {
+				"customizations": [ -1, -1, -1, -1, 1 ]
+			},
+			"configuration": {}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 3,
+			"turned": true,
+			"vital": false,
+			"party": "NEUTRAL",
+			"id": { "id": 45 },
+			"talkingName": "",
+			"cache": {
+				"customizations": [ 1 ]
+			},
+			"configuration": {
+				"modes": [
+					{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" }
+				]
+			},
+			"pack": {}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 4,
+			"turned": true,
+			"vital": false,
+			"party": "NEUTRAL",
+			"id": { "id": 45 },
+			"talkingName": "",
+			"cache": {
+				"customizations": [ 1 ]
+			},
+			"configuration": {
+				"modes": [
+					{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" }
+				]
+			},
+			"pack": {}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 4,
+			"y": 1,
+			"turned": true,
+			"vital": false,
+			"party": "NEUTRAL",
+			"id": { "id": 45 },
+			"talkingName": "",
+			"cache": {
+				"customizations": [ 1 ]
+			},
+			"configuration": {
+				"modes": [
+					{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" }
+				]
+			},
+			"pack": {}
 		}
 	]
 }

@@ -2099,6 +2099,7 @@
 		}
 	],
 	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
 			"turn": "TOWARD_TARGET",
@@ -2110,7 +2111,7 @@
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
-			"voc": { "id": 10031 }
+			"voc": { "id": 1 }
 		},
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.5 },
 		{
@@ -2128,8 +2129,7 @@
 				"invert": true,
 				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
 			}
-		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.9 }
+		}
 	]
 },
 {
@@ -2170,11 +2170,6 @@
 				"invert": true,
 				"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
 			}
-		},
-		{
-			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
-			"time": 1,
-			"voc": { "id": 10106 }
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
@@ -5491,7 +5486,7 @@
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1, "xTile": 1, "yTile": 1, "relation": "TOWARD_TARGET" },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
-			"voc": { "id": 10446 }
+			"voc": { "id": 1 }
 		},
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1, "relation": "TOWARD_TARGET" }
@@ -5586,7 +5581,7 @@
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 2, "yTile": 1, "relation": "TARGET" },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
-			"voc": { "id": 10111 }
+			"voc": { "id": 13 }
 		},
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 }
 	]
@@ -6955,10 +6950,12 @@
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 3, "relation": "TARGET" },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 1,
 			"voc": { "id": 122 }
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 1,
 			"voc": { "id": 123 },
 			"style": { "id": 45 }
 		},
@@ -6968,7 +6965,7 @@
 			"particles": { "id": 28 }
 		},
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "xTile": 2, "relation": "TARGET" },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.UseUltraVocAct" }
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.UseUltraVocAct", "time": 2 }
 	]
 },
 {

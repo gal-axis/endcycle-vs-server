@@ -3933,5 +3933,51 @@
 		"class": "com.one2b3.endcycle.screens.adventure.events.data.StartScriptEventTrigger",
 		"script": { "id": 254 }
 	}
+},
+{
+	"class": "com.one2b3.endcycle.features.adventure.events.AdventureEvent",
+	"id": { "id": 128 },
+	"dataName": "Shop Eden",
+	"icon": {
+		"drawable": { "id": 568 }
+	},
+	"battle": { "id": 174 },
+	"reward": 1000,
+	"rewardItems": [
+		{
+			"item": { "id": 41 }
+		},
+		{
+			"item": { "id": 25 }
+		}
+	],
+	"trigger": {
+		"class": "com.one2b3.endcycle.screens.adventure.events.data.side.AdventureSideEventTrigger",
+		"sides": [
+			{
+				"side": "Noise",
+				"trigger": {
+					"class": "com.one2b3.endcycle.screens.adventure.events.data.ScriptEventTrigger",
+					"script": {
+						"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
+						"script": { "id": 260 }
+					}
+				}
+			},
+			{
+				"trigger": {
+					"class": "com.one2b3.endcycle.screens.adventure.events.data.ShopEventTrigger",
+					"meet": {
+						"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+						"dialogue": { "id": 940 },
+						"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
+					},
+					"enter": { "id": 942 },
+					"shop": { "id": 7 },
+					"onAttack": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript" }
+				}
+			}
+		]
+	}
 }
 ]

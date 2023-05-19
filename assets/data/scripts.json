@@ -2664,6 +2664,10 @@
 					{
 						"dialogue": { "id": 878 },
 						"entity": { "id": 59 }
+					},
+					{
+						"dialogue": { "id": 939 },
+						"entity": { "id": 16 }
 					}
 				],
 				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureFinishEventScript" }
@@ -4449,6 +4453,12 @@
 							"class": "com.one2b3.endcycle.features.scripts.general.StartScriptsScript",
 							"script": { "id": 112 }
 						}
+					},
+					{
+						"character": { "id": 59 }
+					},
+					{
+						"character": { "id": 16 }
 					}
 				],
 				"defaultScript": {
@@ -9191,6 +9201,27 @@
 		},
 		{
 			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 260 },
+	"name": "Eden Shop Noise",
+	"scripts": [
+		{
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 941 },
+				"onFinish": {
+					"class": "com.one2b3.endcycle.features.scripts.ScriptList",
+					"scripts": [
+						{
+							"script": { "class": "com.one2b3.endcycle.features.scripts.adventure.AdventureShopBattleScript" }
+						}
+					]
+				}
+			}
 		}
 	]
 }

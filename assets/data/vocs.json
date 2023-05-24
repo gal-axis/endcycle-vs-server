@@ -503,7 +503,7 @@
 		"level": 2,
 		"property": {
 			"ailments": [
-				{ "type": "BLINDED", "duration": 1.5 },
+				{ "type": "BLINDED", "intensity": 1, "duration": 1.5 },
 				{ "type": "SPEED", "intensity": 1, "duration": 1.5 }
 			]
 		},
@@ -2069,22 +2069,23 @@
 		"nameMessage": "gamedata|Voc.Gatling.Name",
 		"descriptionMessage": "gamedata|Voc.Gatling.Description",
 		"level": 2,
-		"property": {
-			"ailments": [
-				{ "type": "FLINCHING", "intensity": 0.3 }
-			],
-			"power": 60,
-			"crushPower": 50
-		},
+		"property": { "power": 60, "crushPower": 50 },
 		"targetType": {},
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
 			"attacks": [
 				{
 					"stick": {}
+				},
+				{
+					"stick": {}
+				},
+				{
+					"stick": {}
 				}
 			],
 			"shots": 3,
+			"simultaneous": false,
 			"projectileDelay": 0.1,
 			"delay": { "max": 0.1, "val": 0.1 },
 			"drawable": {
@@ -2926,7 +2927,7 @@
 			],
 			"crushPower": 150
 		},
-		"targetType": {},
+		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.guarding.CounterWrapperAttack",
 			"wrapper": {
@@ -5269,7 +5270,6 @@
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
 			"limiter": {},
-			"checkBounds": false,
 			"checkOccupied": false,
 			"xOffset": 2,
 			"yOffset": 1,
@@ -8390,7 +8390,7 @@
 						"element": "NORMAL",
 						"overrideAilments": true,
 						"ailments": [
-							{ "type": "MAGNET", "intensity": -1, "duration": 4 }
+							{ "type": "MAGNET", "intensity": -1, "duration": 3 }
 						],
 						"target": {
 							"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }

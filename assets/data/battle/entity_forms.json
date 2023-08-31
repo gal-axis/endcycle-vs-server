@@ -1931,7 +1931,7 @@
 	"configuration": {
 		"stats": { "hp": 400, "strength": 100, "speed": 100 },
 		"modes": [
-			{ "class": "com.one2b3.endcycle.features.battle.mode.HealthDrainEntityMode", "drain": 25 }
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HealthDrainEntityMode", "drain": 35 }
 		]
 	},
 	"action": { "id": 107 }
@@ -2840,9 +2840,13 @@
 	"dataName": "Lemon Tree",
 	"patchwork": { "id": 61 },
 	"configuration": {
-		"stats": { "hp": 400 },
+		"stats": { "hp": 800 },
 		"modes": [
-			{ "class": "com.one2b3.endcycle.features.battle.mode.HealthDrainEntityMode", "drain": 40 }
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HealthDrainEntityMode", "drain": 60 },
+			{
+				"class": "com.one2b3.endcycle.features.battle.mode.StatusImmuneEntityMode",
+				"ailments": [ "MAGNET" ]
+			}
 		]
 	},
 	"action": { "id": 204 }

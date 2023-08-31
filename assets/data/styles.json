@@ -780,7 +780,7 @@
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
 			"inflicts": [
-				{ "type": "EJECT", "intensity": 1 }
+				{ "type": "EJECT", "intensity": 10, "duration": 1 }
 			]
 		}
 	]
@@ -937,7 +937,6 @@
 		{ "id": 4 },
 		{ "id": 49 }
 	],
-	"level": 1,
 	"drawable": {
 		"drawable": { "id": 317 }
 	},
@@ -967,7 +966,6 @@
 		{ "id": 24 },
 		{ "id": 48 }
 	],
-	"level": 1,
 	"drawable": {
 		"drawable": { "id": 318 }
 	},
@@ -996,7 +994,6 @@
 	"characters": [
 		{ "id": 11 }
 	],
-	"level": 1,
 	"drawable": {
 		"drawable": { "id": 319 }
 	},
@@ -1337,7 +1334,8 @@
 				},
 				"attack": {
 					"class": "com.one2b3.endcycle.screens.battle.attacks.data.guarding.ShieldAttack",
-					"shieldDuration": 0.25,
+					"shieldDuration": 0.8,
+					"blockHits": 0,
 					"particle": {
 						"drawable": {
 							"drawable": { "id": 62 }
@@ -1403,6 +1401,7 @@
 			"gaugeConsume": 1,
 			"before": {},
 			"wrapper": {
+				"stats": { "party": "NEUTRAL" },
 				"attack": {
 					"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.ParallelWrapperAttack",
 					"wrapper": {
@@ -1444,6 +1443,7 @@
 		"fade": 6
 	},
 	"modifications": [
+		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.FlipModification" },
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
 			"inflicts": [
@@ -1462,7 +1462,6 @@
 		{ "id": 2 },
 		{ "id": 23 }
 	],
-	"level": 1,
 	"drawable": {
 		"drawable": { "id": 51 }
 	},
@@ -1597,6 +1596,33 @@
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
 			"inflicts": [
 				{ "type": "MAGNET", "intensity": -1, "duration": 2 }
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.styles.VocStyle",
+	"id": { "id": 53 },
+	"name": "gamedata|Style.Holy",
+	"prefix": "gamedata|Style.Holy",
+	"description": "gamedata|Style.Holy.Description",
+	"level": 1,
+	"drawable": {
+		"drawable": { "id": 911 }
+	},
+	"preview": {},
+	"particle": {
+		"drawable": {
+			"drawable": { "id": 910 },
+			"color": { "r": 1, "g": 0.7882353, "b": 0.16078432, "a": 1 }
+		},
+		"speedY": 20
+	},
+	"modifications": [
+		{
+			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
+			"inflicts": [
+				{ "type": "CHANGE_PANEL", "intensity": 17 }
 			]
 		}
 	]

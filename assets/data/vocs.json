@@ -361,6 +361,7 @@
 			"power": 200,
 			"crushPower": 150
 		},
+		"party": "NEUTRAL",
 		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ThrowAttack",
@@ -505,7 +506,8 @@
 			"ailments": [
 				{ "type": "BLINDED", "intensity": 1, "duration": 1.5 },
 				{ "type": "SPEED", "intensity": 1, "duration": 1.5 }
-			]
+			],
+			"crushPower": 200
 		},
 		"targetType": {
 			"party": "FRIENDLY",
@@ -748,7 +750,7 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 10104 },
 	"role": "GUARD",
-	"vocType": "DAMAGE",
+	"vocType": "PROJECTILE",
 	"unlockCondition": {},
 	"imageIndex": 113,
 	"characters": [
@@ -763,6 +765,7 @@
 		"descriptionMessage": "gamedata|Voc.Eject.Description",
 		"level": 1,
 		"property": { "power": 70, "crushPower": 140 },
+		"party": "NEUTRAL",
 		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AntiAilmentWrapperAttack",
@@ -807,7 +810,7 @@
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 10105 },
 	"role": "GUARD",
-	"vocType": "DAMAGE",
+	"vocType": "PROJECTILE",
 	"unlockCondition": {},
 	"imageIndex": 114,
 	"tags": [ "BUFF", "AFFECTS_ENEMY", "THROW" ],
@@ -818,6 +821,7 @@
 		"descriptionMessage": "gamedata|Voc.EjectPlus.Description",
 		"level": 2,
 		"property": { "power": 180, "crushPower": 210 },
+		"party": "NEUTRAL",
 		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AntiAilmentWrapperAttack",
@@ -1566,7 +1570,7 @@
 	"attackShell": {
 		"nameMessage": "gamedata|Voc.RepairPlus.Name",
 		"descriptionMessage": "gamedata|Voc.RepairPlus.Description",
-		"level": 3,
+		"level": 2,
 		"property": {
 			"ailments": [
 				{ "type": "HP_CHANGER", "intensity": 10, "duration": 5 }
@@ -1604,7 +1608,7 @@
 	"attackShell": {
 		"nameMessage": "gamedata|Voc.RepairAll.Name",
 		"descriptionMessage": "gamedata|Voc.RepairAll.Description",
-		"level": 4,
+		"level": 3,
 		"property": {
 			"ailments": [
 				{ "type": "HP_CHANGER", "intensity": 15, "duration": 8 }
@@ -1764,12 +1768,16 @@
 		{ "id": 24 }
 	],
 	"tags": [ "ATTACK", "HEAL", "AFFECTS_ENEMY", "SPAWN" ],
-	"preview": {},
+	"preview": {
+		"duration": 5,
+		"playerPosition": { "x": 1, "y": -1 },
+		"enemyPosition": { "y": 1 }
+	},
 	"attackShell": {
 		"nameMessage": "gamedata|Voc.Mosquito.Name",
 		"descriptionMessage": "gamedata|Voc.Mosquito.Description",
 		"level": 2,
-		"property": { "element": "NATURE", "power": 200, "crushPower": 150 },
+		"property": { "element": "NATURE", "power": 150, "crushPower": 100 },
 		"targetType": {},
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
@@ -2041,7 +2049,7 @@
 					"stick": {}
 				}
 			],
-			"limitX": 4,
+			"limitX": 6,
 			"projectileDelay": 0.15,
 			"delay": { "max": 0.1, "val": 0.1 },
 			"drawable": {
@@ -2421,6 +2429,7 @@
 			"crushPower": 100,
 			"panel": "SNOW"
 		},
+		"party": "NEUTRAL",
 		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ThrowAttack",
@@ -2685,6 +2694,7 @@
 		"descriptionMessage": "gamedata|Voc.Explant.Description",
 		"level": 2,
 		"property": { "element": "NATURE", "power": 150, "crushPower": 150, "panel": "GRASS" },
+		"party": "NEUTRAL",
 		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ThrowAttack",
@@ -3058,7 +3068,7 @@
 	"attackShell": {
 		"nameMessage": "gamedata|Voc.Companion",
 		"descriptionMessage": "gamedata|Voc.Companion.Description",
-		"level": 3,
+		"level": 1,
 		"property": {
 			"element": "NATURE",
 			"ailments": [
@@ -4693,7 +4703,8 @@
 		"invincible": true,
 		"property": {
 			"ailments": [
-				{ "type": "FLINCHING" }
+				{ "type": "EJECT", "intensity": 10, "duration": 1 },
+				{ "type": "STUN", "duration": 1.6 }
 			],
 			"power": 160,
 			"crushPower": 120
@@ -4748,7 +4759,7 @@
 				"attack": {
 					"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ReboundAttack",
 					"x": 2,
-					"speed": 1.5,
+					"speed": 1.6,
 					"radius": 1.1,
 					"amount": 6,
 					"spins": 3,
@@ -5069,7 +5080,7 @@
 		"property": {
 			"element": "ELEC",
 			"ailments": [
-				{ "type": "STUN", "duration": 1 }
+				{ "type": "STUN", "duration": 2 }
 			],
 			"power": 100,
 			"crushPower": 160
@@ -5627,7 +5638,7 @@
 	"attackShell": {
 		"nameMessage": "gamedata|Voc.Geddon",
 		"descriptionMessage": "gamedata|Voc.Geddon.Desc",
-		"level": 4,
+		"level": 3,
 		"targetType": {},
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.field.FieldChangerAttack",
@@ -6180,6 +6191,8 @@
 	"attackShell": {
 		"nameMessage": "gamedata|Ultra.Bomb",
 		"descriptionMessage": "gamedata|Ultra.Bomb.Description",
+		"interruptable": false,
+		"invincible": true,
 		"property": {
 			"element": "FIRE",
 			"ailments": [
@@ -6405,8 +6418,8 @@
 			"ailments": [
 				{ "type": "FLINCHING" }
 			],
-			"power": 60,
-			"crushPower": 60
+			"power": 70,
+			"crushPower": 70
 		},
 		"targetType": {},
 		"attack": {
@@ -6414,7 +6427,7 @@
 			"wrapper": {
 				"attack": {
 					"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.OtherVocAttack",
-					"voc": { "id": 17 }
+					"voc": { "id": 161 }
 				}
 			},
 			"otherwise": {
@@ -6964,8 +6977,8 @@
 		"nameMessage": "|AVatar Ultra Explode",
 		"property": {
 			"ailments": [
-				{ "type": "EJECT", "intensity": 10 },
-				{ "type": "FLINCHING" }
+				{ "type": "EJECT", "intensity": 10, "duration": 1 },
+				{ "type": "STUN", "duration": 1.2 }
 			],
 			"power": 200,
 			"crushPower": 200
@@ -7053,7 +7066,8 @@
 			},
 			"cooldowns": [
 				{ "gauge": 4, "change": 0.33 }
-			]
+			],
+			"damageChange": 0.75
 		}
 	}
 },
@@ -8341,7 +8355,7 @@
 				{ "type": "PUSH", "intensity": 4 },
 				{ "type": "FLINCHING" }
 			],
-			"power": 10,
+			"power": 25,
 			"crushPower": 140
 		},
 		"targetType": {},
@@ -8382,21 +8396,6 @@
 							{ "x": 1, "y": 1 }
 						]
 					}
-				},
-				{
-					"stats": {
-						"power": 0,
-						"crushPower": 0,
-						"element": "NORMAL",
-						"overrideAilments": true,
-						"ailments": [
-							{ "type": "MAGNET", "intensity": -1, "duration": 3 }
-						],
-						"target": {
-							"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
-						}
-					},
-					"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.status.DirectAttack" }
 				}
 			]
 		}
@@ -8736,7 +8735,7 @@
 	"preview": {},
 	"attackShell": {
 		"nameMessage": "|Lemon Tree",
-		"descriptionMessage": "|Spawns tree that shoots forward barrage of lemons!",
+		"descriptionMessage": "|Unleashes green hell with barrage of lemons!",
 		"property": { "element": "NATURE", "power": 50, "crushPower": 50, "panel": "GRASS" },
 		"targetType": null,
 		"attack": {
@@ -8792,7 +8791,8 @@
 				"panels": [
 					{ "y": -1 },
 					{ "y": 1 },
-					{ "x": -1 }
+					{ "x": -1 },
+					{ "x": 1 }
 				],
 				"onHit": { "class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.ParticleEffect", "shader": "RECOLOR", "tintElement": true },
 				"onHitOriginal": true
@@ -8818,7 +8818,8 @@
 				"panels": [
 					{ "y": -1 },
 					{ "y": 1 },
-					{ "x": 1 }
+					{ "x": 1 },
+					{ "x": -1 }
 				],
 				"onHit": { "class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.ParticleEffect", "shader": "RECOLOR", "tintElement": true },
 				"onHitOriginal": true
@@ -8872,6 +8873,7 @@
 	"preview": {},
 	"attackShell": {
 		"nameMessage": "|Devour",
+		"interruptable": false,
 		"gauge": 0,
 		"property": {
 			"ailments": [
@@ -8985,6 +8987,73 @@
 					"attackParty": "FRIENDLY"
 				}
 			}
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 159 },
+	"role": "GUARD",
+	"vocType": "CAST",
+	"unlockCondition": {},
+	"imageIndex": 136,
+	"preview": {},
+	"attackShell": {
+		"nameMessage": "|Last Hope",
+		"descriptionMessage": "|Refills all VOCs and enters Determination.",
+		"gauge": 0,
+		"level": 10,
+		"targetType": {},
+		"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.special.LastHopeAttack" }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 160 },
+	"preview": {},
+	"attackShell": {
+		"nameMessage": "|Lemon Tree Vines",
+		"party": "FRIENDLY",
+		"targetType": {},
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.guarding.PlantrapAttack",
+			"hitAmount": 3,
+			"holdDuration": 0.2,
+			"hits": [
+				{ "x": 1, "y": 1 },
+				{ "x": 1, "y": -1 },
+				{ "x": 1 }
+			],
+			"onHit": {}
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 161 },
+	"preview": {},
+	"attackShell": {
+		"nameMessage": "|HolzWalz Logs",
+		"gauge": 0.5,
+		"targetType": {},
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
+			"attacks": [
+				{
+					"xSpeed": 120,
+					"stick": {}
+				}
+			],
+			"repeatCost": 0.5,
+			"checkFloor": true,
+			"delay": { "max": 0.2 },
+			"drawable": {
+				"drawable": { "id": 1255 }
+			},
+			"portalTime": 0.3,
+			"yOffset": 10,
+			"trace": false,
+			"shotSound": { "sound": "battle/programs/log_roll.wav" }
 		}
 	}
 }

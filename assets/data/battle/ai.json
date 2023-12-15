@@ -3957,13 +3957,13 @@
 			"action": { "id": 95 },
 			"requireSingle": true,
 			"conditions": [
-				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.BelowHealthChangeCondition", "health": 0.6 }
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.BelowHealthChangeCondition" }
 			]
 		}
 	],
 	"acts": [
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "MOVING_TILE", "yTile": 1, "moveSpeed": 1.5, "invertableY": true, "checkAccessible": false },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "MOVING_TILE", "yTile": 1, "moveSpeed": 1.5, "invertableY": true, "checkAccessible": false },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "MOVING_TILE", "yTile": 1, "moveSpeed": 1.2, "invertableY": true, "checkAccessible": false },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "moveType": "MOVING_TILE", "yTile": 1, "moveSpeed": 1.2, "invertableY": true, "checkAccessible": false },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "TOWARD_TARGET" }
 	]
 },
@@ -4032,11 +4032,12 @@
 		}
 	],
 	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct" },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 1.3,
 			"voc": { "id": 100 }
-		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 0.4 }
+		}
 	]
 },
 {
@@ -4053,16 +4054,16 @@
 			"action": { "id": 92 },
 			"requireSingle": true,
 			"conditions": [
-				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 3 }
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition", "acts": 2 }
 			]
 		}
 	],
 	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1, "moveType": "MOVING_TILE", "xTile": -1, "checkAccessible": false },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 98 }
-		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.FollowParentAct", "time": 1.4, "x": 40, "speed": 300 }
+		}
 	]
 },
 {

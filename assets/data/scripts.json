@@ -9224,5 +9224,23 @@
 			}
 		}
 	]
+},
+{
+	"class": "com.one2b3.endcycle.features.scripts.ScriptCache",
+	"id": { "id": 261 },
+	"name": "A-Enter Saffron>Tower",
+	"scripts": [
+		{
+			"delay": 0.5,
+			"script": {
+				"class": "com.one2b3.endcycle.features.scripts.general.StartDialogueScript",
+				"dialogue": { "id": 930 },
+				"onFinish": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript", "enabled": true }
+			}
+		},
+		{
+			"script": { "class": "com.one2b3.endcycle.features.scripts.general.InputToggleScript" }
+		}
+	]
 }
 ]

@@ -1110,7 +1110,6 @@
 		"property": {
 			"element": "ELEC",
 			"ailments": [
-				{ "type": "STUN", "duration": 1 },
 				{ "type": "PUSH", "intensity": 1 }
 			],
 			"power": 100
@@ -3027,7 +3026,7 @@
 			"power": 250,
 			"crushPower": 300
 		},
-		"targetType": {},
+		"targetType": null,
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.guarding.CounterWrapperAttack",
 			"wrapper": {
@@ -4513,17 +4512,6 @@
 						]
 					},
 					"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.status.AilmentInflicterAttack" }
-				},
-				{
-					"attack": {
-						"class": "com.one2b3.endcycle.screens.battle.attacks.data.modifiers.ChangeGaugeModifierAttack",
-						"cooldowns": [
-							{ "change": 1 },
-							{ "gauge": 1, "change": 1 },
-							{ "gauge": 2, "change": 1 },
-							{ "gauge": 3, "change": 1 }
-						]
-					}
 				}
 			]
 		}
@@ -4759,7 +4747,7 @@
 				"attack": {
 					"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ReboundAttack",
 					"x": 2,
-					"speed": 1.6,
+					"speed": 1.7,
 					"radius": 1.1,
 					"amount": 6,
 					"spins": 3,
@@ -6245,7 +6233,7 @@
 		"descriptionMessage": "gamedata|Voc.HealHook.Description",
 		"level": 1,
 		"property": { "element": "ELEC", "power": 80, "crushPower": 140 },
-		"targetType": {},
+		"targetType": { "vital": false, "inSight": false },
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.VinePullAttack",
 			"reach": 4,
@@ -8243,7 +8231,7 @@
 		"nameMessage": "gamedata|Voc.ShotCorn",
 		"descriptionMessage": "gamedata|Voc.ShotCorn.Description",
 		"level": 1,
-		"property": { "element": "NATURE", "power": 60, "crushPower": 60 },
+		"property": { "element": "NATURE", "power": 40, "crushPower": 70 },
 		"targetType": {},
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
@@ -8310,8 +8298,8 @@
 			"ailments": [
 				{ "type": "FLINCHING" }
 			],
-			"power": 160,
-			"crushPower": 200
+			"power": 120,
+			"crushPower": 150
 		},
 		"targetType": null,
 		"attack": {

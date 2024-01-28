@@ -1929,9 +1929,9 @@
 	"dataName": "VOC Anthem",
 	"patchwork": { "id": 106 },
 	"configuration": {
-		"stats": { "hp": 400, "strength": 100, "speed": 100 },
+		"stats": { "hp": 300, "strength": 100, "speed": 100 },
 		"modes": [
-			{ "class": "com.one2b3.endcycle.features.battle.mode.HealthDrainEntityMode", "drain": 35 }
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HealthDrainEntityMode", "drain": 30 }
 		]
 	},
 	"action": { "id": 107 }
@@ -2535,7 +2535,7 @@
 	"dataName": "VOC Generator",
 	"patchwork": { "id": 23 },
 	"configuration": {
-		"stats": { "hp": 400 },
+		"stats": { "hp": 300 },
 		"modes": [
 			{ "class": "com.one2b3.endcycle.features.battle.mode.HealthDrainEntityMode", "drain": 25 },
 			{
@@ -2892,7 +2892,9 @@
 		"modes": [
 			{
 				"class": "com.one2b3.endcycle.features.battle.mode.FallingEntityMode",
-				"maxSpeed": 0.4,
+				"startingSpeed": 0.25,
+				"maxSpeed": 0.25,
+				"acceleration": 6,
 				"distance": 200,
 				"flash": 0.4,
 				"shake": 20,

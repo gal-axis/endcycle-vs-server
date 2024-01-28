@@ -704,7 +704,7 @@
 					"crushPower": 0,
 					"overrideAilments": true,
 					"ailments": [
-						{ "type": "FREEZE", "intensity": -1, "duration": 6 }
+						{ "type": "FREEZE", "intensity": -1, "duration": 5 }
 					],
 					"target": {
 						"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
@@ -894,7 +894,7 @@
 	"tagPreference": [ "DISABLED" ],
 	"preview": {},
 	"modifications": [
-		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.FlipModification" }
+		{ "class": "com.one2b3.endcycle.features.vocs.modifications.types.FlipModification", "power": 0.75, "crush": 1.25 }
 	]
 },
 {
@@ -1371,7 +1371,7 @@
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.WrapperModification",
 			"before": {
-				"stats": { "power": 0, "crushPower": 0, "overrideAilments": true },
+				"stats": { "power": 0, "crushPower": 0, "overrideAilments": true, "party": "FRIENDLY" },
 				"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.field.PanelGrabAttack", "animation": false }
 			},
 			"wrapper": {},
@@ -1502,6 +1502,7 @@
 		{ "id": 23 },
 		{ "id": 11 }
 	],
+	"level": 1,
 	"drawable": {
 		"drawable": { "id": 831 }
 	},
@@ -1537,6 +1538,7 @@
 		{ "id": 59 },
 		{ "id": 1 }
 	],
+	"level": 1,
 	"drawable": {
 		"drawable": { "id": 830 }
 	},
@@ -1576,7 +1578,7 @@
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
 			"inflicts": [
-				{ "type": "MAGNET", "duration": 2 }
+				{ "type": "MAGNET", "duration": 2.5 }
 			]
 		}
 	]
@@ -1596,7 +1598,7 @@
 		{
 			"class": "com.one2b3.endcycle.features.vocs.modifications.types.AilmentModification",
 			"inflicts": [
-				{ "type": "MAGNET", "intensity": -1, "duration": 2 }
+				{ "type": "MAGNET", "intensity": -1, "duration": 4 }
 			]
 		}
 	]

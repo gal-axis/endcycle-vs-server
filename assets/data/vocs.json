@@ -224,13 +224,13 @@
 		"nameMessage": "gamedata|Voc.Chipper.Name",
 		"descriptionMessage": "gamedata|Voc.Chipper.Description",
 		"gauge": 0.2,
-		"property": { "power": 25 },
+		"property": { "power": 25, "crushPower": 10 },
 		"targetType": {},
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
 			"attacks": [
 				{
-					"xSpeed": 571.4286,
+					"xSpeed": 550,
 					"stick": {}
 				}
 			],
@@ -1658,6 +1658,7 @@
 		"descriptionMessage": "gamedata|Voc.BoulderDrop.Description",
 		"level": 2,
 		"property": {
+			"element": "NATURE",
 			"ailments": [
 				{ "type": "FLINCHING", "intensity": 0.3 }
 			],
@@ -2202,14 +2203,7 @@
 		"nameMessage": "gamedata|Voc.ChargeFlame.Name",
 		"descriptionMessage": "gamedata|Voc.ChargeFlame.Description",
 		"level": 1,
-		"property": {
-			"element": "FIRE",
-			"ailments": [
-				{ "type": "FLINCHING", "intensity": 0.3 }
-			],
-			"power": 70,
-			"crushPower": 130
-		},
+		"property": { "element": "FIRE", "power": 70, "crushPower": 130 },
 		"targetType": {},
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
@@ -2226,16 +2220,9 @@
 			"limitX": 7,
 			"projectileDelay": 0.15,
 			"hitEffect": {
-				"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.HitEffect",
-				"panels": [
-					{ "x": 1, "y": -1 },
-					{ "x": -1, "y": 1 },
-					{ "x": 1, "y": 1 },
-					{ "x": -1, "y": -1 }
-				],
-				"powerMultiplier": 2,
-				"crushMultiplier": 2,
-				"onHit": { "class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.ParticleEffect", "tintElement": true }
+				"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.UseVocEffect",
+				"voc": { "id": 162 },
+				"overrideProperty": true
 			},
 			"drawable": {
 				"drawable": { "id": 882 }
@@ -2423,7 +2410,7 @@
 		"property": {
 			"element": "WATER",
 			"ailments": [
-				{ "type": "FREEZE", "duration": 1.5 }
+				{ "type": "FREEZE", "duration": 1.8 }
 			],
 			"power": 100,
 			"crushPower": 100,
@@ -2437,6 +2424,7 @@
 			"drawable": {
 				"drawable": { "id": 15 }
 			},
+			"speed": 1.3,
 			"hitEffect": {
 				"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.HitEffect",
 				"panels": [
@@ -2732,13 +2720,19 @@
 	"attackShell": {
 		"nameMessage": "gamedata|Voc.FireGate.Name",
 		"descriptionMessage": "gamedata|Voc.FireGate.Description",
+		"gauge": 0.33,
 		"level": 2,
 		"property": { "element": "FIRE", "power": 25, "crushPower": 25 },
 		"targetType": {},
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
-			"limiter": { "limit": 1, "countGlobal": true },
+			"limiter": { "limit": 3 },
 			"checkOccupied": false,
+			"panels": [
+				{},
+				{ "y": 1 },
+				{ "y": -1 }
+			],
 			"type": "FIRE_GATE",
 			"entity": { "id": 37 }
 		}
@@ -2755,37 +2749,39 @@
 		{ "id": 9 },
 		{ "id": 48 }
 	],
-	"preview": {},
+	"preview": {
+		"battle": { "id": 74 },
+		"playerPosition": { "x": 1 }
+	},
 	"attackShell": {
 		"nameMessage": "gamedata|Voc.GreenPiece.Name",
 		"descriptionMessage": "gamedata|Voc.GreenPiece.Description",
-		"gauge": 0,
-		"property": { "element": "NATURE" },
-		"targetType": {},
+		"property": { "element": "NATURE", "panel": "GRASS" },
+		"targetType": {
+			"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
+		},
 		"attack": {
-			"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.ChargeWrapperAttack",
-			"wrapper": {
-				"attack": {
-					"class": "com.one2b3.endcycle.screens.battle.attacks.data.field.FieldChangerAttack",
-					"type": "GRASS",
-					"areas": [
-						{},
-						{ "y": 1 },
-						{ "y": -1 },
-						{ "x": -1 },
-						{ "x": 1 }
-					]
-				}
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ThrowAttack",
+			"drawable": {
+				"drawable": { "id": 1170 },
+				"color": { "r": 0.9098039, "g": 0.9098039, "b": 0.15294118, "a": 1 }
 			},
-			"uncharged": {},
-			"chargeDuration": 0.5,
-			"chargeColor": { "r": 0.27058825, "g": 1, "b": 0.38039216, "a": 0.9 },
-			"chargingDrawable": {
-				"color": { "r": 0.27058825, "g": 1, "b": 0.38039216, "a": 0.8980392 }
-			},
-			"chargedDrawable": {},
-			"unmoveable": true,
-			"instant": true
+			"speed": 1.2,
+			"hitEffect": {
+				"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.HitEffect",
+				"panels": [
+					{},
+					{ "x": -1 },
+					{ "x": 1 },
+					{ "y": 1 },
+					{ "y": -1 }
+				],
+				"onHit": {
+					"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.DissolvingParticlesEffect",
+					"particles": { "id": 36 }
+				},
+				"onHitOriginal": true
+			}
 		}
 	}
 },
@@ -3306,6 +3302,7 @@
 		"descriptionMessage": "gamedata|Voc.Spikes.Description",
 		"level": 1,
 		"property": {
+			"element": "ELEC",
 			"ailments": [
 				{ "type": "FLINCHING" }
 			],
@@ -3314,12 +3311,33 @@
 		},
 		"targetType": null,
 		"attack": {
-			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
-			"limiter": { "limit": 1 },
-			"checkOccupied": false,
-			"xOffset": 2,
-			"type": "SPIKES",
-			"entity": { "id": 43 }
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.MultiWrapperAttack",
+			"wrappers": [
+				{
+					"stats": {
+						"power": 0,
+						"crushPower": 0,
+						"overrideAilments": true,
+						"party": "FRIENDLY",
+						"panel": "METAL",
+						"target": {
+							"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
+						}
+					},
+					"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.field.BuildPanelAttack", "xTile": 2 }
+				},
+				{
+					"attack": {
+						"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawningAttack",
+						"limiter": { "limit": 1 },
+						"checkOccupied": false,
+						"xOffset": 2,
+						"type": "SPIKES",
+						"entity": { "id": 43 },
+						"instant": true
+					}
+				}
+			]
 		}
 	}
 },
@@ -4216,19 +4234,31 @@
 			"ailments": [
 				{ "type": "SPEED", "intensity": -0.35 }
 			],
-			"power": 130,
-			"crushPower": 130
+			"power": 70,
+			"crushPower": 70
 		},
 		"targetType": {},
 		"attack": {
 			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ShootAttack",
 			"attacks": [
 				{
-					"xSpeed": 500,
+					"y": 0.08,
+					"stick": {}
+				},
+				{
+					"y": 0.08,
+					"ySpeed": 60,
+					"delay": 0.2,
+					"stick": {}
+				},
+				{
+					"y": 0.08,
+					"ySpeed": -60,
+					"delay": 0.2,
 					"stick": {}
 				}
 			],
-			"projectileDelay": 0.8,
+			"projectileDelay": 0.6,
 			"drawable": {
 				"drawable": { "id": 384 }
 			},
@@ -4329,7 +4359,11 @@
 					{ "x": -1, "y": -1 },
 					{ "x": -1, "y": 1 },
 					{ "x": 1, "y": -1 },
-					{ "x": 1, "y": 1 }
+					{ "x": 1, "y": 1 },
+					{ "x": -1 },
+					{ "x": 1 },
+					{ "y": -1 },
+					{ "y": 1 }
 				],
 				"onHit": { "class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.ParticleEffect", "tintElement": true },
 				"onHitOriginal": true
@@ -6382,9 +6416,24 @@
 {
 	"class": "com.one2b3.endcycle.features.vocs.Voc",
 	"id": { "id": 102 },
-	"preview": {},
+	"role": "EFFECT",
+	"vocType": "CAST",
+	"unlockCondition": {},
+	"imageIndex": 141,
+	"preview": {
+		"enemyPosition": { "x": -2 }
+	},
 	"attackShell": {
-		"nameMessage": "|Speaker Wave",
+		"nameMessage": "gamedata|Voc.Chant",
+		"descriptionMessage": "gamedata|Voc.Chant.Description",
+		"level": 2,
+		"property": {
+			"element": "ELEC",
+			"ailments": [
+				{ "type": "PUSH", "intensity": 1 }
+			],
+			"power": 100
+		},
 		"targetType": {},
 		"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.special.SpeakerWaveAttack" }
 	}
@@ -9044,6 +9093,430 @@
 			"yOffset": 10,
 			"trace": false,
 			"shotSound": { "sound": "battle/programs/log_roll.wav" }
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 162 },
+	"preview": {},
+	"attackShell": {
+		"nameMessage": "|FlameLoop Spin",
+		"property": { "element": "FIRE", "power": 100, "crushPower": 100 },
+		"targetType": {},
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ReboundAttack",
+			"delay": 0,
+			"speed": 5,
+			"spins": 1,
+			"drawable": {
+				"drawable": { "id": 626 }
+			}
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 163 },
+	"role": "EFFECT",
+	"vocType": "CAST",
+	"unlockCondition": {},
+	"imageIndex": 139,
+	"tags": [ "AFFECTS_ALLY", "BUFF" ],
+	"optimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+	"preview": {},
+	"attackShell": {
+		"nameMessage": "gamedata|Voc.HeatSoul",
+		"descriptionMessage": "gamedata|Voc.HeatSoul.Description",
+		"level": 2,
+		"property": {
+			"element": "FIRE",
+			"ailments": [
+				{ "type": "TIME", "intensity": 0.35, "duration": 3 },
+				{ "type": "HP_CHANGER", "intensity": -10, "duration": 3 }
+			]
+		},
+		"targetType": {
+			"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
+		},
+		"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.status.AilmentInflicterAttack" }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 164 },
+	"role": "GUARD",
+	"vocType": "CAST",
+	"unlockCondition": {},
+	"imageIndex": 138,
+	"tags": [ "AREA_DEFENSE", "AFFECTS_ALLY", "SPAWN" ],
+	"optimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+	"preview": {
+		"input": [
+			{ "key": "BATTLE_MOVE_RIGHT", "delay": 0.5 }
+		]
+	},
+	"attackShell": {
+		"nameMessage": "gamedata|Voc.Prayer",
+		"descriptionMessage": "gamedata|Voc.Prayer.Description",
+		"level": 1,
+		"property": {
+			"ailments": [
+				{ "type": "HEAL", "intensity": 80 }
+			],
+			"panel": "HOLY"
+		},
+		"targetType": {
+			"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
+		},
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
+			"limiter": {},
+			"checkBounds": false,
+			"checkOccupied": false,
+			"entity": { "id": 196 },
+			"overrideHit": true
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 165 },
+	"role": "GUARD",
+	"vocType": "CAST",
+	"unlockCondition": {},
+	"imageIndex": 137,
+	"tags": [ "DISABLED", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+	"preview": {},
+	"attackShell": {
+		"nameMessage": "gamedata|Voc.Vaccine",
+		"descriptionMessage": "gamedata|Voc.Vaccine.Description",
+		"level": 1,
+		"property": { "element": "WATER", "power": 50, "crushPower": -25 },
+		"targetType": {
+			"party": "FRIENDLY",
+			"self": true,
+			"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
+		},
+		"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.status.AilmentInflicterAttack" }
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 166 },
+	"role": "EXECUTION",
+	"vocType": "SPAWN",
+	"unlockCondition": {},
+	"imageIndex": 140,
+	"characters": [
+		{ "id": 59 }
+	],
+	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY", "SPAWN" ],
+	"optimalPosition": { "xType": "EQUAL", "xDistance": 2, "yType": "EQUAL" },
+	"minimalPosition": { "xType": "CLOSER", "xDistance": 3, "yType": "EQUAL" },
+	"preview": {
+		"enemyPosition": { "x": -1 }
+	},
+	"attackShell": {
+		"nameMessage": "gamedata|Voc.Durandal",
+		"descriptionMessage": "gamedata|Voc.Durandal.Desc",
+		"interruptable": false,
+		"invincible": true,
+		"level": 2,
+		"property": {
+			"element": "FIRE",
+			"ailments": [
+				{ "type": "FLINCHING" }
+			],
+			"power": 300,
+			"crushPower": 200,
+			"panel": "HOLY"
+		},
+		"targetType": null,
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
+			"limiter": {},
+			"checkOccupied": false,
+			"xOffset": 2,
+			"entity": { "id": 197 },
+			"overrideHit": true
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 167 },
+	"role": "GUARD",
+	"vocType": "CAST",
+	"unlockCondition": {},
+	"imageIndex": 143,
+	"characters": [
+		{ "id": 2 }
+	],
+	"tags": [ "AFFECTS_ALLY", "BUFF" ],
+	"optimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+	"preview": {},
+	"attackShell": {
+		"nameMessage": "gamedata|Voc.Cauterize",
+		"descriptionMessage": "gamedata|Voc.Cauterize.Desc",
+		"level": 2,
+		"property": {
+			"element": "FIRE",
+			"ailments": [
+				{ "type": "HEAL", "intensity": 50 }
+			]
+		},
+		"targetType": {
+			"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
+		},
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.AntiAilmentWrapperAttack",
+			"wrapper": {
+				"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.status.AilmentInflicterAttack" }
+			},
+			"seeking": "NERF",
+			"remove": true,
+			"single": false,
+			"other": {},
+			"copy": false,
+			"multiplyIntensity": 1.5,
+			"noAilmentPower": 1,
+			"noAilmentCrush": 1,
+			"noAilmentEffect": 1
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 168 },
+	"role": "EFFECT",
+	"vocType": "CAST",
+	"unlockCondition": {},
+	"imageIndex": 142,
+	"characters": [
+		{ "id": 2 },
+		{ "id": 59 },
+		{ "id": 8 }
+	],
+	"tags": [ "BUFF", "AFFECTS_ALLY" ],
+	"optimalPosition": { "xType": "IGNORE", "yType": "IGNORE" },
+	"preview": {
+		"battle": { "id": 176 }
+	},
+	"attackShell": {
+		"nameMessage": "gamedata|Voc.Electrise",
+		"descriptionMessage": "gamedata|Voc.Electrise.Desc",
+		"level": 2,
+		"property": {
+			"element": "ELEC",
+			"ailments": [
+				{ "type": "FREEZE", "intensity": -0.35, "duration": 4 }
+			]
+		},
+		"targetType": {
+			"party": "FRIENDLY",
+			"self": true,
+			"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.Self" }
+		},
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.ConditionalWrapperAttack",
+			"wrapper": {
+				"stats": {
+					"ailments": [
+						{ "type": "HEAL", "intensity": 100 }
+					]
+				},
+				"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.status.AilmentInflicterAttack" }
+			},
+			"otherwise": {
+				"attack": { "class": "com.one2b3.endcycle.screens.battle.attacks.data.status.AilmentInflicterAttack" }
+			},
+			"panelType": "METAL"
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 169 },
+	"role": "EFFECT",
+	"vocType": "SPAWN",
+	"unlockCondition": {},
+	"imageIndex": 144,
+	"tags": [ "ATTACK", "AFFECTS_ENEMY", "SPAWN" ],
+	"optimalPosition": { "xType": "EQUAL", "xDistance": 1, "yType": "CLOSER", "yDistance": 2 },
+	"minimalPosition": { "xType": "CLOSER", "xDistance": 2, "yType": "IGNORE" },
+	"preview": {
+		"playerPosition": { "x": 1 },
+		"input": [
+			{ "key": "BATTLE_MOVE_LEFT", "delay": 0.6 },
+			{ "key": "BATTLE_ATTACK_2", "delay": 1 }
+		]
+	},
+	"attackShell": {
+		"nameMessage": "gamedata|Voc.SnowMan",
+		"descriptionMessage": "gamedata|Voc.SnowMan.Desc",
+		"level": 3,
+		"property": {
+			"element": "WATER",
+			"ailments": [
+				{ "type": "FREEZE", "duration": 0.7 }
+			],
+			"power": 70,
+			"crushPower": 50
+		},
+		"targetType": null,
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.abstracts.SpawnAttack",
+			"limiter": { "limit": 1, "countGlobal": true },
+			"entity": { "id": 198 },
+			"overrideHit": true
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 170 },
+	"preview": {},
+	"attackShell": {
+		"nameMessage": "|SnowMan Spin",
+		"targetType": {},
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ReboundAttack",
+			"delay": 0.1,
+			"speed": 5,
+			"spins": 1,
+			"yOffset": 5,
+			"drawable": {
+				"drawable": { "id": 918 }
+			}
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 171 },
+	"role": "EXECUTION",
+	"vocType": "PROJECTILE",
+	"unlockCondition": {},
+	"imageIndex": 145,
+	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY", "THROW" ],
+	"optimalPosition": { "xType": "CLOSER", "xDistance": 5, "yType": "CLOSER", "yDistance": 2 },
+	"minimalPosition": { "xType": "FURTHER", "xDistance": 1, "yType": "IGNORE" },
+	"preview": {
+		"battle": { "id": 176 }
+	},
+	"attackShell": {
+		"nameMessage": "gamedata|Voc.Multinade",
+		"descriptionMessage": "gamedata|Voc.Multinade.Desc",
+		"level": 1,
+		"property": {
+			"ailments": [
+				{ "type": "FLINCHING", "duration": 0.6 }
+			],
+			"power": 50,
+			"crushPower": 100
+		},
+		"party": "NEUTRAL",
+		"targetType": null,
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.wrappers.PanelCopyWrapperAttack",
+			"wrapper": {
+				"attack": {
+					"class": "com.one2b3.endcycle.screens.battle.attacks.data.damaging.ThrowAttack",
+					"selectedXTile": 3,
+					"drawable": {
+						"drawable": { "id": 916 }
+					},
+					"speed": 1.4,
+					"throwDuration": 0.25,
+					"hitEffect": {
+						"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.HitEffect",
+						"panels": [
+							{ "x": -1 },
+							{ "x": 1 },
+							{ "y": -1 },
+							{ "y": 1 }
+						],
+						"delay": 0.08,
+						"onHit": {
+							"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.ParticleEffect",
+							"tintElement": true,
+							"drawable": {
+								"drawable": { "id": 496 }
+							}
+						},
+						"onHitOriginal": true
+					},
+					"throwParticles": [
+						{
+							"drawable": {
+								"drawable": { "id": 910 },
+								"color": { "r": 0.7490196, "g": 0.7490196, "b": 0.7490196, "a": 1 }
+							},
+							"speedY": -3,
+							"fade": 4
+						}
+					]
+				}
+			}
+		}
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.vocs.Voc",
+	"id": { "id": 172 },
+	"role": "EXECUTION",
+	"vocType": "DAMAGE",
+	"unlockCondition": {},
+	"imageIndex": 146,
+	"characters": [
+		{ "id": 21 },
+		{ "id": 24 }
+	],
+	"tags": [ "ATTACK", "AREA_OFFENSE", "AFFECTS_ENEMY" ],
+	"optimalPosition": { "xType": "CLOSER", "xDistance": 2, "yType": "CLOSER", "yDistance": 2 },
+	"minimalPosition": { "xType": "CLOSER", "xDistance": 2, "yType": "IGNORE" },
+	"preview": {
+		"duration": 1.6,
+		"playerPosition": { "x": 2 }
+	},
+	"attackShell": {
+		"nameMessage": "gamedata|Voc.Galvanize",
+		"descriptionMessage": "gamedata|Voc.Galvanize.Desc",
+		"level": 1,
+		"property": { "element": "ELEC", "power": 80, "crushPower": 50, "panel": "METAL" },
+		"targetType": {},
+		"castAnimation": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" },
+		"attack": {
+			"class": "com.one2b3.endcycle.screens.battle.attacks.data.field.HumidityAttack",
+			"preDrawable": {
+				"drawables": [
+					{
+						"drawable": { "id": 1225 }
+					}
+				],
+				"minAmount": 2,
+				"maxAmount": 2,
+				"speedY": -10
+			},
+			"explodeDrawable": {
+				"drawables": [
+					{
+						"drawable": { "id": 1186 }
+					}
+				],
+				"minAmount": 3,
+				"maxAmount": 3,
+				"offsetY": 15
+			},
+			"explodeTime": 0.2,
+			"explodeDuration": 0.1,
+			"hits": [
+				{ "x": 1, "y": -1 },
+				{ "x": 1 },
+				{ "x": 1, "y": 1 }
+			]
 		}
 	}
 }

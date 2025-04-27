@@ -3131,6 +3131,7 @@
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
 			"x": 12,
 			"y": 29,
+			"turned": true,
 			"vital": false,
 			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.OnLiberationSpawnCondition" },
 			"form": { "id": 98 }
@@ -3139,6 +3140,7 @@
 			"class": "com.one2b3.endcycle.features.battle.EntityFormShell",
 			"x": 12,
 			"y": 32,
+			"turned": true,
 			"vital": false,
 			"spawnCondition": { "class": "com.one2b3.endcycle.features.battle.spawn.OnLiberationSpawnCondition" },
 			"form": { "id": 98 }
@@ -7170,6 +7172,39 @@
 				]
 			},
 			"pack": {}
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 175 },
+	"dataName": "2v2 - Coin Mode",
+	"field": { "id": 71 },
+	"modes": [ "Coin" ]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.BattleData",
+	"id": { "id": 176 },
+	"dataName": "Voc Preview Metal",
+	"name": "gamedata|",
+	"field": { "id": 72 },
+	"entityShells": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"y": 1,
+			"party": "FRIENDLY",
+			"player": true,
+			"talkingName": "",
+			"configuration": {}
+		},
+		{
+			"class": "com.one2b3.endcycle.features.battle.BattleEntityShell",
+			"x": 3,
+			"y": 1,
+			"turned": true,
+			"id": { "id": 18 },
+			"talkingName": "",
+			"configuration": {}
 		}
 	]
 }

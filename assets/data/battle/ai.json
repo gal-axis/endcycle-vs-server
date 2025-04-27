@@ -5498,23 +5498,18 @@
 	"id": { "id": 140 },
 	"name": "Factory QT",
 	"autoTurn": true,
-	"target": {
-		"party": "ENEMY",
-		"invert": true,
-		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerSameRow" }
-	},
+	"target": { "party": "ENEMY", "invert": true },
 	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1.5 },
 		{
-			"class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct",
-			"time": 0.4,
-			"turn": "TOWARD_TARGET",
-			"target": { "party": "FRIENDLY", "inSight": false }
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.ChangeStateAct",
+			"time": 0.8,
+			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "HATCH_OPEN" }
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"voc": { "id": 10010 }
-		},
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 2.5 }
+		}
 	]
 },
 {
@@ -5599,6 +5594,7 @@
 	"acts": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"time": 1,
 			"voc": { "id": 10016 },
 			"style": { "id": 4 }
 		}
@@ -5699,13 +5695,12 @@
 	"acts": [
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.ChangeStateAct",
-			"time": 0.9,
+			"time": 1.2,
 			"changeState": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" }
 		},
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
-			"voc": { "id": 10022 },
-			"style": { "id": 45 }
+			"voc": { "id": 10022 }
 		}
 	]
 },
@@ -5719,7 +5714,7 @@
 		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
 	},
 	"acts": [
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 2 },
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "yTile": 1, "relation": "TOWARD_TARGET" },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
@@ -6141,7 +6136,7 @@
 	],
 	"acts": [
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "LEFT" },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1, "yTile": 1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1.5, "yTile": 1 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"time": 1.7,
@@ -6210,7 +6205,7 @@
 	],
 	"acts": [
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.TurnAct", "turn": "RIGHT" },
-		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1, "yTile": -1 },
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.MoveAct", "time": 1.5, "yTile": -1 },
 		{
 			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
 			"time": 1.7,
@@ -7536,6 +7531,53 @@
 	},
 	"acts": [
 		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.FollowParentAct", "x": 80, "y": -24, "speed": 450 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 207 },
+	"name": "SnowMan Idle",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"action": { "id": 208 },
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.OnHitCondition", "condition": true }
+			]
+		}
+	],
+	"acts": [
+		{ "class": "com.one2b3.endcycle.features.battle.ai.moves.WaitAct", "time": 999 }
+	]
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.ai.BattleEntityActionData",
+	"id": { "id": 208 },
+	"name": "SnowMan Attack",
+	"target": {
+		"party": "ENEMY",
+		"invert": true,
+		"seeker": { "class": "com.one2b3.endcycle.screens.battle.attacks.targets.SeekerFarthest" }
+	},
+	"change": [
+		{
+			"action": { "id": 207 },
+			"requireSingle": true,
+			"conditions": [
+				{ "class": "com.one2b3.endcycle.features.battle.ai.changes.ActAmountChangeCondition" }
+			]
+		}
+	],
+	"acts": [
+		{
+			"class": "com.one2b3.endcycle.features.battle.ai.moves.UseVocAct",
+			"voc": { "id": 170 }
+		}
 	]
 }
 ]

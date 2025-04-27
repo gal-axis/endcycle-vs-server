@@ -933,7 +933,7 @@
 	"configuration": {
 		"stats": { "strength": -150, "actionSpeed": 0.6 }
 	},
-	"action": { "id": 7 }
+	"action": { "id": 15 }
 },
 {
 	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
@@ -2957,5 +2957,89 @@
 			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" }
 		]
 	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 196 },
+	"dataName": "VOC Prayer",
+	"entity": { "id": 31 },
+	"patchwork": { "id": 65 },
+	"configuration": {
+		"modes": [
+			{
+				"class": "com.one2b3.endcycle.features.battle.mode.FallingEntityMode",
+				"acceleration": 3,
+				"shake": 1,
+				"killOnLand": true,
+				"onLand": {
+					"class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.MultiEffect",
+					"effects": [
+						{ "class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.HitEffect" }
+					]
+				}
+			},
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" },
+			{
+				"class": "com.one2b3.endcycle.features.battle.mode.AnimationsEntityMode",
+				"deathAnimation": {
+					"class": "com.one2b3.endcycle.features.battle.entities.animations.data.ParticleEntityAnimation",
+					"sound": { "sound": "battle/panels/fluid_fix.wav" },
+					"particles": { "id": 37 }
+				}
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 197 },
+	"dataName": "VOC Durandal",
+	"entity": { "id": 26 },
+	"cache": {
+		"customizations": [ 0 ]
+	},
+	"configuration": {
+		"modes": [
+			{
+				"class": "com.one2b3.endcycle.features.battle.mode.FallingEntityMode",
+				"startingSpeed": 1,
+				"maxSpeed": 7,
+				"acceleration": 15,
+				"shake": 1,
+				"killOnLand": true,
+				"onLand": { "class": "com.one2b3.endcycle.screens.battle.attacks.effects.data.HitEffect" }
+			},
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HideHealthEntityMode" },
+			{
+				"class": "com.one2b3.endcycle.features.battle.mode.AnimationsEntityMode",
+				"deathAnimation": { "class": "com.one2b3.endcycle.features.battle.entities.animations.data.ExplodingEntityAnimation", "speed": 3 }
+			}
+		]
+	}
+},
+{
+	"class": "com.one2b3.endcycle.features.battle.forms.EntityForm",
+	"id": { "id": 198 },
+	"dataName": "VOC SnowMan",
+	"patchwork": { "id": 64 },
+	"configuration": {
+		"stats": { "hp": 500 },
+		"modes": [
+			{ "class": "com.one2b3.endcycle.features.battle.mode.HealthDrainEntityMode", "drain": 20 },
+			{
+				"class": "com.one2b3.endcycle.features.battle.mode.StatusImmuneEntityMode",
+				"ailments": [ "HEAL", "HEAL_PERCENT", "HP_CHANGER" ],
+				"exclude": true
+			},
+			{
+				"class": "com.one2b3.endcycle.features.battle.mode.AnimationsEntityMode",
+				"spawnAnimation": {
+					"class": "com.one2b3.endcycle.features.battle.entities.animations.data.FadeEntityAnimation",
+					"sound": { "sound": "battle/entity/spawn_noise.wav" }
+				}
+			}
+		]
+	},
+	"action": { "id": 207 }
 }
 ]

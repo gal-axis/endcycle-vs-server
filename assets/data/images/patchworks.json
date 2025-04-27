@@ -5892,7 +5892,7 @@
 	"name": "Swords of Light",
 	"states": [
 		{
-			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" },
+			"leadsInto": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "LANDED" },
 			"images": [
 				{
 					"drawable": { "id": 890 }
@@ -5900,11 +5900,35 @@
 			]
 		},
 		{
-			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "ATTACKING" },
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "LANDED" },
 			"images": [
 				{
 					"drawable": { "id": 891 }
 				}
+			]
+		},
+		{
+			"state": { "class": "com.one2b3.endcycle.engine.graphics.patchworks.states.BattlePatchworkState", "value": "FALLING" },
+			"images": [
+				{
+					"drawable": { "id": 914 }
+				}
+			]
+		}
+	],
+	"keepUncustomized": true,
+	"customizables": [
+		{
+			"name": "|Light",
+			"replace": [
+				{ "replace": 1374338047 },
+				{
+					"replace": 532848639,
+					"newColor": { "r": 0.6313726, "g": 0.6313726, "b": 0.6313726, "a": 1 }
+				}
+			],
+			"colors": [
+				{ "g": 0.3019608, "b": 0 }
 			]
 		}
 	]
@@ -5935,6 +5959,48 @@
 					"xPos": 35,
 					"scaleX": 4,
 					"scaleY": 4
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 63 },
+	"name": "Coin",
+	"states": [
+		{
+			"images": [
+				{
+					"drawable": { "id": 913 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 64 },
+	"name": "SnowMan",
+	"states": [
+		{
+			"images": [
+				{
+					"drawable": { "id": 915 }
+				}
+			]
+		}
+	]
+},
+{
+	"class": "com.one2b3.endcycle.engine.graphics.patchworks.data.PatchworkData",
+	"id": { "id": 65 },
+	"name": "Halo",
+	"states": [
+		{
+			"images": [
+				{
+					"drawable": { "id": 917 }
 				}
 			]
 		}
